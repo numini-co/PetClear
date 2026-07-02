@@ -48,6 +48,9 @@ export const ROUTE_LINKS: NavLink[] = [
   { label: 'India to Dubai', to: '/routes/india-to-dubai/' },
   { label: 'Australia to Dubai', to: '/routes/australia-to-dubai/' },
   { label: 'New Zealand to Dubai', to: '/routes/new-zealand-to-dubai/' },
+  { label: 'Canada to Dubai', to: '/routes/canada-to-dubai/' },
+  { label: 'South Africa to Dubai', to: '/routes/south-africa-to-dubai/' },
+  { label: 'Philippines to Dubai', to: '/routes/philippines-to-dubai/' },
   { label: 'Dubai to UK', to: '/routes/dubai-to-uk/' },
   { label: 'Dubai to USA', to: '/routes/dubai-to-usa/' },
 ]
