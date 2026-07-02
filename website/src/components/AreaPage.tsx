@@ -7,6 +7,7 @@ import { getWhatsAppUrl, BASE_URL, siteConfig, shortSubtitle } from '../lib/seo.
 import type { ServiceBlock, ServiceFAQ } from '../types/servicePage.ts'
 import type { AreaPageData } from '../types/areaPage.ts'
 import { SERVICE_LINKS } from '../data/nav.ts'
+import { dubaiAreas } from '../data/areas/dubai/index.ts'
 import OfficialSources from './OfficialSources.tsx'
 import Hero from './Hero.tsx'
 
@@ -158,6 +159,22 @@ export default function AreaPage({ data }: { data: AreaPageData }) {
             {data.relatedAreas.map((l, i) => (
               <Link key={i} to={l.to} className="flex items-center justify-between gap-2 bg-[#F5F6FD] hover:bg-[#E9ECFB] rounded-2xl px-5 py-4 text-[#2A2A2A] font-semibold text-sm transition-colors">{l.label} <ArrowRight className="w-4 h-4 text-[#4F5BD5] shrink-0" /></Link>
             ))}
+          </div>
+
+          <h3 className="text-[18px] sm:text-[22px] font-bold text-[#2A2A2A] mt-10 mb-4">All Dubai communities we cover</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+            {dubaiAreas
+              .filter((a) => a.slug !== data.slug)
+              .sort((a, b) => a.areaName.localeCompare(b.areaName))
+              .map((a) => (
+                <Link
+                  key={a.slug}
+                  to={`/dubai/${a.slug}/`}
+                  className="text-sm text-[#4F5BD5] hover:text-[#3A45B0] hover:underline truncate"
+                >
+                  {a.areaName}
+                </Link>
+              ))}
           </div>
         </div>
       </section>
