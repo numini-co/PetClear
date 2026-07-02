@@ -742,7 +742,15 @@ export default function HomePage() {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {servicePages.map((service) => (
-              <Card key={service.slug} className="flex flex-col h-full">
+              <Card key={service.slug} className="flex flex-col h-full overflow-hidden">
+                <img
+                  src={service.heroImage}
+                  alt={service.heroImageAlt}
+                  loading="lazy"
+                  width={800}
+                  height={600}
+                  className="rounded-[16px] w-full object-cover aspect-[4/3] mb-5"
+                />
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center shrink-0">
                     <PawPrint className="w-5 h-5 text-[#4F5BD5]" />
@@ -794,7 +802,15 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            <Card>
+            <Card className="overflow-hidden">
+              <img
+                src="/images/cost-hero.jpg"
+                alt="Pet relocation cost guide for Dubai with calculator and documents"
+                loading="lazy"
+                width={800}
+                height={600}
+                className="rounded-[16px] w-full object-cover aspect-[4/3] mb-5"
+              />
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Pet Relocation Cost in Dubai</h3>
               <p className="text-body mb-4">
                 The most-read guide on our site. We break down government fees, veterinary costs, cargo shipping, crates, and service fees. We also explain why some quotes balloon and how to avoid surprise charges. If you only read one guide before messaging us, read this one.
@@ -803,7 +819,15 @@ export default function HomePage() {
                 See the 2026 cost breakdown <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </Card>
-            <Card>
+            <Card className="overflow-hidden">
+              <img
+                src="/images/import-hero.jpg"
+                alt="UAE pet import requirements checklist with passport and vaccination records"
+                loading="lazy"
+                width={800}
+                height={600}
+                className="rounded-[16px] w-full object-cover aspect-[4/3] mb-5"
+              />
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">UAE Pet Import Requirements</h3>
               <p className="text-body mb-4">
                 The definitive step-by-step checklist for bringing dogs and cats into the UAE. Covers MOCCAE permits, microchip standards, rabies vaccinations, titer tests, health certificates, banned breeds, and post-arrival Dubai Municipality registration.
@@ -812,7 +836,15 @@ export default function HomePage() {
                 Read the import checklist <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </Card>
-            <Card>
+            <Card className="overflow-hidden">
+              <img
+                src="/images/guide-banned-breeds.jpg"
+                alt="Banned and restricted dog breeds for UAE import eligibility"
+                loading="lazy"
+                width={800}
+                height={600}
+                className="rounded-[16px] w-full object-cover aspect-[4/3] mb-5"
+              />
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Banned Dog Breeds in Dubai</h3>
               <p className="text-body mb-4">
                 Not all dogs can enter the UAE. We maintain the current banned and restricted breed list, explain the difference between a full ban and a restricted breed, and tell you what to do if your dog is on the list. We verify breed eligibility before quoting so you do not waste time or money.
@@ -821,7 +853,15 @@ export default function HomePage() {
                 Check breed eligibility <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </Card>
-            <Card>
+            <Card className="overflow-hidden">
+              <img
+                src="/images/guide-iata-crate.jpg"
+                alt="IATA-compliant pet travel crate with proper ventilation and sizing"
+                loading="lazy"
+                width={800}
+                height={600}
+                className="rounded-[16px] w-full object-cover aspect-[4/3] mb-5"
+              />
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">IATA Pet Crate Requirements</h3>
               <p className="text-body mb-4">
                 The crate is not just a box. It is your pet's safety cabin for the flight. This guide explains IATA sizing rules, ventilation requirements, food and water bowls, live animal labels, and why a crate that works in your car may be rejected by the airline.
@@ -830,7 +870,15 @@ export default function HomePage() {
                 Get crate sizing right <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </Card>
-            <Card>
+            <Card className="overflow-hidden">
+              <img
+                src="/images/guide-moccae.jpg"
+                alt="MOCCAE import permit application for pets entering the UAE"
+                loading="lazy"
+                width={800}
+                height={600}
+                className="rounded-[16px] w-full object-cover aspect-[4/3] mb-5"
+              />
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">MOCCAE Import Permit</h3>
               <p className="text-body mb-4">
                 The MOCCAE import permit is the gatekeeper for every pet entering the UAE. We explain who needs it, how to apply, what documents to attach, how long it takes, and what to do if your permit is rejected or expires before travel.
@@ -839,7 +887,15 @@ export default function HomePage() {
                 Understand MOCCAE permits <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </Card>
-            <Card>
+            <Card className="overflow-hidden">
+              <img
+                src="/images/guide-titer.jpg"
+                alt="Rabies titer test blood sample for UAE pet import"
+                loading="lazy"
+                width={800}
+                height={600}
+                className="rounded-[16px] w-full object-cover aspect-[4/3] mb-5"
+              />
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Rabies Titer Test for Dubai</h3>
               <p className="text-body mb-4">
                 Some countries require a rabies neutralising antibody titre test (RNATT) before pets can enter the UAE. This guide explains which countries are affected, the 90-day waiting period, accredited laboratories, and how to schedule the test so it does not delay your move.
@@ -922,12 +978,22 @@ export default function HomePage() {
       {/* ═══════════ DUBAI AREA DEEP DIVE ═══════════ */}
       <section className="bg-[#F5F6FD] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Local SEO</span>
-            <h2 className="text-section mt-3 mb-4">Pet Relocation in Every Dubai Community</h2>
-            <p className="text-body-large max-w-3xl mx-auto">
-              Dubai is a city of neighbourhoods, each with its own access routes, building rules, and veterinary clinics. We have built dedicated landing pages for 40 Dubai communities so residents can find locally relevant pet relocation guidance. Each area page links to the Dubai hub, neighbouring areas, and the service or route that matches the searcher's intent.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-14">
+            <div>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Local SEO</span>
+              <h2 className="text-section mt-3 mb-4">Pet Relocation in Every Dubai Community</h2>
+              <p className="text-body-large">
+                Dubai is a city of neighbourhoods, each with its own access routes, building rules, and veterinary clinics. We have built dedicated landing pages for 40 Dubai communities so residents can find locally relevant pet relocation guidance. Each area page links to the Dubai hub, neighbouring areas, and the service or route that matches the searcher's intent.
+              </p>
+            </div>
+            <img
+              src="/images/hero-dubai.jpg"
+              alt="Dubai skyline with pet-friendly communities and waterfront towers"
+              loading="lazy"
+              width={1536}
+              height={1024}
+              className="rounded-[28px] shadow-lg w-full object-cover aspect-[4/3]"
+            />
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
             <Link
@@ -974,12 +1040,22 @@ export default function HomePage() {
       {/* ═══════════ PROCESS DEEP DIVE ═══════════ */}
       <section className="bg-white section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Behind the Scenes</span>
-            <h2 className="text-section mt-3 mb-4">What Actually Happens During a Pet Relocation</h2>
-            <p className="text-body-large max-w-3xl mx-auto">
-              A successful pet relocation is a chain of small, time-sensitive tasks. Missing one link can delay the whole move. Below is the process we run for every booking, from first WhatsApp message to reunion at your door.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-14">
+            <div>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Behind the Scenes</span>
+              <h2 className="text-section mt-3 mb-4">What Actually Happens During a Pet Relocation</h2>
+              <p className="text-body-large">
+                A successful pet relocation is a chain of small, time-sensitive tasks. Missing one link can delay the whole move. Below is the process we run for every booking, from first WhatsApp message to reunion at your door.
+              </p>
+            </div>
+            <img
+              src="/images/how-it-works-hero.jpg"
+              alt="Pet relocation coordinator reviewing travel documents and crate requirements in a bright Dubai office"
+              loading="lazy"
+              width={1536}
+              height={1024}
+              className="rounded-[28px] shadow-lg w-full object-cover aspect-[4/3]"
+            />
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {[
@@ -1033,7 +1109,7 @@ export default function HomePage() {
       <section className="bg-[#EEF0FC] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="order-2 lg:order-1">
               <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Radical Transparency</span>
               <h2 className="text-section mt-3 mb-5">What Pet Relocation in Dubai Really Costs</h2>
               <p className="text-body-large mb-6">
@@ -1060,23 +1136,33 @@ export default function HomePage() {
                 Read the Full Cost Guide <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
-            <Card>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">Cost Ranges by Scenario</h3>
-              <div className="space-y-4">
-                {[
-                  { label: 'Small cat from UK/EU', range: 'AED 8,000 – 12,000', note: 'No titer test, direct routing' },
-                  { label: 'Medium dog from UK/EU', range: 'AED 12,000 – 18,000', note: 'No titer test, larger crate' },
-                  { label: 'Large dog from USA/Canada', range: 'AED 18,000 – 25,000', note: 'Titer test + 90-day wait' },
-                  { label: 'Brachycephalic breed summer move', range: 'Add AED 2,000 – 5,000', note: 'Seasonal routing/embargo' },
-                ].map((row) => (
-                  <div key={row.label} className="pb-4 border-b border-[#E6E8F5] last:border-0 last:pb-0">
-                    <p className="font-semibold text-[#2A2A2A]">{row.label}</p>
-                    <p className="text-[#4F5BD5] font-bold text-sm">{row.range}</p>
-                    <p className="text-xs text-[#8A8A8A]">{row.note}</p>
-                  </div>
-                ))}
-              </div>
-            </Card>
+            <div className="order-1 lg:order-2">
+              <img
+                src="/images/cost-hero.jpg"
+                alt="Transparent pet relocation cost breakdown with calculator, documents and travel crate on a clean desk"
+                loading="lazy"
+                width={1536}
+                height={1024}
+                className="rounded-[28px] shadow-lg w-full object-cover aspect-[4/3] mb-6"
+              />
+              <Card>
+                <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">Cost Ranges by Scenario</h3>
+                <div className="space-y-4">
+                  {[
+                    { label: 'Small cat from UK/EU', range: 'AED 8,000 – 12,000', note: 'No titer test, direct routing' },
+                    { label: 'Medium dog from UK/EU', range: 'AED 12,000 – 18,000', note: 'No titer test, larger crate' },
+                    { label: 'Large dog from USA/Canada', range: 'AED 18,000 – 25,000', note: 'Titer test + 90-day wait' },
+                    { label: 'Brachycephalic breed summer move', range: 'Add AED 2,000 – 5,000', note: 'Seasonal routing/embargo' },
+                  ].map((row) => (
+                    <div key={row.label} className="pb-4 border-b border-[#E6E8F5] last:border-0 last:pb-0">
+                      <p className="font-semibold text-[#2A2A2A]">{row.label}</p>
+                      <p className="text-[#4F5BD5] font-bold text-sm">{row.range}</p>
+                      <p className="text-xs text-[#8A8A8A]">{row.note}</p>
+                    </div>
+                  ))}
+                </div>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -1084,12 +1170,22 @@ export default function HomePage() {
       {/* ═══════════ DOCUMENT CHECKLIST ═══════════ */}
       <section className="bg-white section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Paperwork</span>
-            <h2 className="text-section mt-3 mb-4">The Pet Relocation Document Checklist</h2>
-            <p className="text-body-large max-w-3xl mx-auto">
-              Paperwork errors are the single biggest cause of pet travel delays. Use this checklist as a starting point, then let us review your documents before submission. Requirements vary by origin country, so always confirm your specific route with our team.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-14">
+            <img
+              src="/images/import-hero.jpg"
+              alt="Pet travel document checklist with passport, vaccination records and health certificate arranged neatly"
+              loading="lazy"
+              width={1536}
+              height={1024}
+              className="rounded-[28px] shadow-lg w-full object-cover aspect-[4/3]"
+            />
+            <div>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Paperwork</span>
+              <h2 className="text-section mt-3 mb-4">The Pet Relocation Document Checklist</h2>
+              <p className="text-body-large">
+                Paperwork errors are the single biggest cause of pet travel delays. Use this checklist as a starting point, then let us review your documents before submission. Requirements vary by origin country, so always confirm your specific route with our team.
+              </p>
+            </div>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             <Card>
@@ -1158,7 +1254,15 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            <Card>
+            <Card className="overflow-hidden">
+              <img
+                src="/images/guide-banned-breeds.jpg"
+                alt="Professional assessment of dog breed eligibility for UAE pet import requirements"
+                loading="lazy"
+                width={800}
+                height={600}
+                className="rounded-[16px] w-full object-cover aspect-[4/3] mb-5"
+              />
               <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
                 <Shield className="w-5 h-5 text-[#4F5BD5]" />
               </div>
@@ -1170,7 +1274,15 @@ export default function HomePage() {
                 See the breed list <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </Card>
-            <Card>
+            <Card className="overflow-hidden">
+              <img
+                src="/images/guide-iata-crate.jpg"
+                alt="IATA-approved travel crate with proper ventilation for a brachycephalic pet"
+                loading="lazy"
+                width={800}
+                height={600}
+                className="rounded-[16px] w-full object-cover aspect-[4/3] mb-5"
+              />
               <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
                 <Thermometer className="w-5 h-5 text-[#4F5BD5]" />
               </div>
@@ -1182,7 +1294,15 @@ export default function HomePage() {
                 Crate requirements for flat-faced breeds <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </Card>
-            <Card>
+            <Card className="overflow-hidden">
+              <img
+                src="/images/guide-summer.jpg"
+                alt="Pet travel planning during Dubai summer heat with early morning flight routing"
+                loading="lazy"
+                width={800}
+                height={600}
+                className="rounded-[16px] w-full object-cover aspect-[4/3] mb-5"
+              />
               <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
                 <Sun className="w-5 h-5 text-[#4F5BD5]" />
               </div>
@@ -1359,6 +1479,25 @@ export default function HomePage() {
             <p className="text-body-large max-w-3xl mx-auto">
               The rules for bringing a pet to Dubai depend almost entirely on where the pet is coming from. Low-risk rabies countries have shorter timelines. High-risk countries require a rabies titer test and a 90-day waiting period. Outbound moves depend on the destination country's import rules.
             </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-14">
+            {[
+              { src: '/images/hero-uk.jpg', alt: 'Pet relocation from the UK to Dubai' },
+              { src: '/images/hero-usa.jpg', alt: 'Pet relocation from the USA to Dubai' },
+              { src: '/images/hero-india.jpg', alt: 'Pet relocation from India to Dubai' },
+              { src: '/images/hero-australia.jpg', alt: 'Pet relocation from Australia to Dubai' },
+              { src: '/images/hero-dubai-to-uk.jpg', alt: 'Pet relocation from Dubai to the UK' },
+            ].map((img) => (
+              <img
+                key={img.src}
+                src={img.src}
+                alt={img.alt}
+                loading="lazy"
+                width={400}
+                height={300}
+                className="rounded-[16px] shadow-md w-full object-cover aspect-[4/3]"
+              />
+            ))}
           </div>
           <div className="space-y-6">
             {[
@@ -1615,6 +1754,14 @@ export default function HomePage() {
               </p>
             </div>
             <div className="space-y-5">
+              <img
+                src="/images/hero-dubai.jpg"
+                alt="Expat family with their pet arriving in Dubai with the city skyline in the background"
+                loading="lazy"
+                width={1536}
+                height={1024}
+                className="rounded-[28px] shadow-lg w-full object-cover aspect-[4/3]"
+              />
               {[
                 { title: 'Start early', body: 'Begin planning 8–16 weeks before your move, or 4 months if you need a titer test.' },
                 { title: 'Check your lease', body: 'Confirm your new home allows pets and has space for a travel crate.' },
@@ -1636,12 +1783,22 @@ export default function HomePage() {
       {/* ═══════════ IMPORT PROCESS DEEP DIVE ═══════════ */}
       <section className="bg-white section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Regulations</span>
-            <h2 className="text-section mt-3 mb-4">Understanding the UAE Pet Import Process</h2>
-            <p className="text-body-large max-w-3xl mx-auto">
-              The UAE regulates pet imports through the Ministry of Climate Change and Environment (MOCCAE). The rules are designed to prevent rabies and other diseases from entering the country. Understanding the framework helps you see why each document matters.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-14">
+            <img
+              src="/images/guide-moccae.jpg"
+              alt="MOCCAE pet import permit documentation being prepared for UAE entry"
+              loading="lazy"
+              width={1536}
+              height={1024}
+              className="rounded-[28px] shadow-lg w-full object-cover aspect-[4/3]"
+            />
+            <div>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Regulations</span>
+              <h2 className="text-section mt-3 mb-4">Understanding the UAE Pet Import Process</h2>
+              <p className="text-body-large">
+                The UAE regulates pet imports through the Ministry of Climate Change and Environment (MOCCAE). The rules are designed to prevent rabies and other diseases from entering the country. Understanding the framework helps you see why each document matters.
+              </p>
+            </div>
           </div>
           <div className="space-y-6">
             <Card>
@@ -2267,12 +2424,22 @@ export default function HomePage() {
       {/* ═══════════ AFTER YOU MESSAGE US ═══════════ */}
       <section className="bg-white section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Onboarding</span>
-            <h2 className="text-section mt-3 mb-4">What Happens After You Message Us</h2>
-            <p className="text-body-large max-w-3xl mx-auto">
-              We have designed our onboarding to be fast, clear, and low-pressure. Here is exactly what to expect when you contact Dubai Pet Relocation on WhatsApp.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-14">
+            <div>
+              <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Onboarding</span>
+              <h2 className="text-section mt-3 mb-4">What Happens After You Message Us</h2>
+              <p className="text-body-large">
+                We have designed our onboarding to be fast, clear, and low-pressure. Here is exactly what to expect when you contact Dubai Pet Relocation on WhatsApp.
+              </p>
+            </div>
+            <img
+              src="/images/contact-hero.jpg"
+              alt="Pet owner receiving a friendly WhatsApp reply from the Dubai Pet Relocation team"
+              loading="lazy"
+              width={1536}
+              height={1024}
+              className="rounded-[28px] shadow-lg w-full object-cover aspect-[4/3]"
+            />
           </div>
           <div className="space-y-4">
             {[
@@ -2397,6 +2564,14 @@ export default function HomePage() {
       <section className="bg-[#F5F6FD] section-padding">
         <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <img
+              src="/images/faq-hero.jpg"
+              alt="Friendly pet relocation consultant answering common questions about moving pets to Dubai"
+              loading="lazy"
+              width={900}
+              height={600}
+              className="rounded-[28px] shadow-lg w-full object-cover aspect-[3/2] mb-8"
+            />
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Common Questions</span>
             <h2 className="text-section mt-3 mb-4">Frequently Asked Questions About Pet Relocation in Dubai</h2>
             <p className="text-body-large">
