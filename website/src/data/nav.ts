@@ -20,6 +20,8 @@ export const SERVICE_LINKS: NavLink[] = [
 ]
 
 export const TOP_AREA_LINKS: NavLink[] = [
+  { label: 'Dubai City Guide', to: '/cities/dubai/' },
+  { label: 'Abu Dhabi City Guide', to: '/cities/abu-dhabi/' },
   { label: 'Dubai Marina', to: '/dubai/dubai-marina/' },
   { label: 'Jumeirah', to: '/dubai/jumeirah/' },
   { label: 'Downtown Dubai', to: '/dubai/downtown-dubai/' },
@@ -37,6 +39,7 @@ export const GUIDE_LINKS: NavLink[] = [
   { label: 'IATA Crate Rules', to: '/guides/iata-pet-crate-requirements/' },
   { label: 'MOCCAE Permit', to: '/guides/moccae-import-permit/' },
   { label: 'Rabies Titer Test', to: '/guides/rabies-titer-test-dubai/' },
+  { label: 'Summer Travel', to: '/guides/pet-travel-summer-dubai/' },
 ]
 
 export const ROUTE_LINKS: NavLink[] = [
@@ -44,6 +47,7 @@ export const ROUTE_LINKS: NavLink[] = [
   { label: 'USA to Dubai', to: '/routes/usa-to-dubai/' },
   { label: 'India to Dubai', to: '/routes/india-to-dubai/' },
   { label: 'Australia to Dubai', to: '/routes/australia-to-dubai/' },
+  { label: 'New Zealand to Dubai', to: '/routes/new-zealand-to-dubai/' },
   { label: 'Dubai to UK', to: '/routes/dubai-to-uk/' },
   { label: 'Dubai to USA', to: '/routes/dubai-to-usa/' },
 ]
