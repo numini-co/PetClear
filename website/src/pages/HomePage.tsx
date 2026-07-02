@@ -804,8 +804,8 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="overflow-hidden">
               <img
-                src="/images/cost-hero.jpg"
-                alt="Pet relocation cost guide for Dubai with calculator and documents"
+                src="/images/services-hero.jpg"
+                alt="Pet relocation concierge desk in Dubai with dog, cat and travel crate"
                 loading="lazy"
                 width={800}
                 height={600}
@@ -821,8 +821,8 @@ export default function HomePage() {
             </Card>
             <Card className="overflow-hidden">
               <img
-                src="/images/import-hero.jpg"
-                alt="UAE pet import requirements checklist with passport and vaccination records"
+                src="/images/service-pet-import-dubai.jpg"
+                alt="Golden retriever with travel documents at Dubai airport import check-in"
                 loading="lazy"
                 width={800}
                 height={600}
@@ -1172,8 +1172,8 @@ export default function HomePage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-14">
             <img
-              src="/images/import-hero.jpg"
-              alt="Pet travel document checklist with passport, vaccination records and health certificate arranged neatly"
+              src="/images/support-consult.jpg"
+              alt="Pet relocation coordinator reviewing import documents with a dog nearby"
               loading="lazy"
               width={1536}
               height={1024}
@@ -1256,8 +1256,8 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="overflow-hidden">
               <img
-                src="/images/guide-banned-breeds.jpg"
-                alt="Professional assessment of dog breed eligibility for UAE pet import requirements"
+                src="/images/dog-crate.jpg"
+                alt="Dog resting inside an IATA-approved travel crate at a Dubai cargo terminal"
                 loading="lazy"
                 width={800}
                 height={600}
@@ -1276,8 +1276,8 @@ export default function HomePage() {
             </Card>
             <Card className="overflow-hidden">
               <img
-                src="/images/guide-iata-crate.jpg"
-                alt="IATA-approved travel crate with proper ventilation for a brachycephalic pet"
+                src="/images/cat-crate.jpg"
+                alt="Relaxed cat inside a well-ventilated IATA travel crate"
                 loading="lazy"
                 width={800}
                 height={600}
@@ -1755,8 +1755,8 @@ export default function HomePage() {
             </div>
             <div className="space-y-5">
               <img
-                src="/images/hero-dubai.jpg"
-                alt="Expat family with their pet arriving in Dubai with the city skyline in the background"
+                src="/images/owner-reunion.jpg"
+                alt="Owner reuniting with their dog at the airport after relocation to Dubai"
                 loading="lazy"
                 width={1536}
                 height={1024}
@@ -1785,8 +1785,8 @@ export default function HomePage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-14">
             <img
-              src="/images/guide-moccae.jpg"
-              alt="MOCCAE pet import permit documentation being prepared for UAE entry"
+              src="/images/service-moccae-pet-permit.jpg"
+              alt="MOCCAE import permit folder and stamp on a desk next to a Labrador"
               loading="lazy"
               width={1536}
               height={1024}
