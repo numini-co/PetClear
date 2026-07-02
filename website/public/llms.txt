@@ -1,0 +1,72 @@
+# Dubai Pet Relocation
+
+Dubai Pet Relocation is a transparent concierge service that helps pet owners move dogs and cats to and from Dubai and the UAE. We coordinate permits, paperwork, veterinary preparation, airline cargo booking, customs clearance, and door-to-door delivery. We do not own an airline or veterinary clinic; we connect clients with vetted licensed partners and provide one WhatsApp point of contact with updates at every step.
+
+## Core pages
+
+- [Homepage](https://dubai-pet-relocation.ae/): Overview of pet relocation services in Dubai, process, cost ranges, and links to every service, guide, route, and area page.
+- [Services](https://dubai-pet-relocation.ae/services/): Full list of pet relocation services including import, export, transport, dog relocation, cat relocation, and MOCCAE permit support.
+- [How It Works](https://dubai-pet-relocation.ae/how-it-works/): Step-by-step explanation of the pet relocation process from consultation to reunion.
+- [About Us](https://dubai-pet-relocation.ae/about/): Our story, values, partner vetting process, and commitment to transparent pricing.
+- [Contact](https://dubai-pet-relocation.ae/contact/): WhatsApp, phone, email, and office details for Dubai Pet Relocation.
+- [FAQ](https://dubai-pet-relocation.ae/faq/): Answers to the most common questions about pet relocation to and from Dubai.
+
+## Guides
+
+- [Pet Relocation Cost in Dubai](https://dubai-pet-relocation.ae/guides/pet-relocation-cost-dubai/): Itemised cost breakdown including government fees, veterinary costs, cargo shipping, crates, and service fees.
+- [UAE Pet Import Requirements](https://dubai-pet-relocation.ae/guides/uae-pet-import-requirements/): Complete checklist for bringing dogs and cats to Dubai, including MOCCAE permits, microchips, vaccinations, titer tests, and banned breeds.
+- [Banned Dog Breeds in Dubai](https://dubai-pet-relocation.ae/guides/banned-dog-breeds-dubai/): Current UAE banned and restricted breed list with eligibility guidance.
+- [IATA Pet Crate Requirements](https://dubai-pet-relocation.ae/guides/iata-pet-crate-requirements/): How to choose, size, and prepare an IATA-compliant travel crate.
+- [MOCCAE Import Permit](https://dubai-pet-relocation.ae/guides/moccae-import-permit/): How to apply for the mandatory UAE pet import permit.
+- [Rabies Titer Test for Dubai](https://dubai-pet-relocation.ae/guides/rabies-titer-test-dubai/): When the RNATT is required, accredited labs, and the 90-day waiting period.
+- [Summer Pet Travel in Dubai](https://dubai-pet-relocation.ae/guides/pet-travel-summer-dubai/): Heat embargoes, seasonal routing, and safety tips for warm-weather moves.
+
+## Service pages
+
+- [Pet Relocation Dubai](https://dubai-pet-relocation.ae/service/pet-relocation-dubai/)
+- [Pet Import to Dubai](https://dubai-pet-relocation.ae/service/pet-import-dubai/)
+- [Pet Export from Dubai](https://dubai-pet-relocation.ae/service/pet-export-dubai/)
+- [Pet Transport Dubai](https://dubai-pet-relocation.ae/service/pet-transport-dubai/)
+- [International Pet Relocation](https://dubai-pet-relocation.ae/service/international-pet-relocation/)
+- [Pet Relocation to Dubai](https://dubai-pet-relocation.ae/service/pet-relocation-to-dubai/)
+- [Pet Relocation from Dubai](https://dubai-pet-relocation.ae/service/pet-relocation-from-dubai/)
+- [Dog Relocation Dubai](https://dubai-pet-relocation.ae/service/dog-relocation-dubai/)
+- [Cat Relocation Dubai](https://dubai-pet-relocation.ae/service/cat-relocation-dubai/)
+- [MOCCAE Pet Permit](https://dubai-pet-relocation.ae/service/moccae-pet-permit/)
+
+## Route pages
+
+- [UK to Dubai](https://dubai-pet-relocation.ae/routes/uk-to-dubai/)
+- [USA to Dubai](https://dubai-pet-relocation.ae/routes/usa-to-dubai/)
+- [India to Dubai](https://dubai-pet-relocation.ae/routes/india-to-dubai/)
+- [Australia to Dubai](https://dubai-pet-relocation.ae/routes/australia-to-dubai/)
+- [Philippines to Dubai](https://dubai-pet-relocation.ae/routes/philippines-to-dubai/)
+- [Canada to Dubai](https://dubai-pet-relocation.ae/routes/canada-to-dubai/)
+- [New Zealand to Dubai](https://dubai-pet-relocation.ae/routes/new-zealand-to-dubai/)
+- [South Africa to Dubai](https://dubai-pet-relocation.ae/routes/south-africa-to-dubai/)
+- [Dubai to UK](https://dubai-pet-relocation.ae/routes/dubai-to-uk/)
+- [Dubai to USA](https://dubai-pet-relocation.ae/routes/dubai-to-usa/)
+
+## Dubai area pages
+
+- [Pet Relocation in Dubai](https://dubai-pet-relocation.ae/dubai/)
+- [Dubai Marina](https://dubai-pet-relocation.ae/dubai/dubai-marina/)
+- [Jumeirah](https://dubai-pet-relocation.ae/dubai/jumeirah/)
+- [Downtown Dubai](https://dubai-pet-relocation.ae/dubai/downtown-dubai/)
+- [Palm Jumeirah](https://dubai-pet-relocation.ae/dubai/palm-jumeirah/)
+- [Business Bay](https://dubai-pet-relocation.ae/dubai/business-bay/)
+- [Arabian Ranches](https://dubai-pet-relocation.ae/dubai/arabian-ranches/)
+- [JVC](https://dubai-pet-relocation.ae/dubai/jvc/)
+- [All Dubai areas](https://dubai-pet-relocation.ae/dubai/)
+
+## Contact
+
+- WhatsApp: +971 55 174 4849
+- Email: hallo@dubai-pet-relocation.ae
+- Address: 217 Zahra Townhouses, Town Square, Dubai, UAE
+- Hours: Open daily, 9:00 AM – 8:00 PM
+
+## Policies
+
+- [Privacy Policy](https://dubai-pet-relocation.ae/privacy-policy/)
+- [Terms of Service](https://dubai-pet-relocation.ae/terms-of-service/)

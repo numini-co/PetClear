@@ -25,3 +25,4 @@ src/_ssrprobe.tsx
 *.njsproj
 *.sln
 *.sw?
+.vercel
