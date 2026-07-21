@@ -143,7 +143,7 @@ export default function CatRelocationPage() {
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "Cat Relocation to Dubai: A Complete Guide for Cat Owners",
-            description: "Comprehensive guide to relocating your cat to Dubai. Covers documents, crate requirements, airline options, costs, sedation guidance, and seasonal considerations. Written by Dubai Pet Relocation, Dubai's transparent pet relocation concierge.",
+            description: "Comprehensive guide to relocating your cat to Dubai. Covers documents, crate requirements, airline options, costs, sedation guidance, and seasonal considerations. Written by Dubai Pet Relocation, Dubai's transparent pet relocation coordination service.",
             image: `${BASE_URL}/assets/cat-relocation-hero.jpg`,
             author: { "@type": "Organization", name: "Dubai Pet Relocation", url: BASE_URL },
             publisher: {
@@ -876,7 +876,7 @@ export default function CatRelocationPage() {
       <section className="bg-white border-t border-gray-100 py-8">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <p className="text-sm text-[#8A8A8A]">
-            Dubai Pet Relocation — Dubai's transparent pet relocation concierge. We guide you through MOCCAE import requirements. Vetted relocation partners. IATA compliant. Clear prices. Real humans. Safe pets.
+            Dubai Pet Relocation — Dubai's transparent pet relocation coordination service. We guide you through MOCCAE import requirements. Vetted relocation partners. IATA compliant. Clear prices. Real humans. Safe pets.
           </p>
         </div>
       </section>

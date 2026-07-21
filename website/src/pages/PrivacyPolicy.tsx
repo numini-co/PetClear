@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
       <SEOHead
         meta={{
           title: 'Privacy Policy | Dubai Pet Relocation',
-          description: 'Privacy policy for Dubai Pet Relocation pet relocation concierge services. Learn how we collect, use, and protect your personal data.',
+          description: 'Privacy policy for Dubai Pet Relocation pet relocation coordination services. Learn how we collect, use, and protect your personal data.',
           canonical: `${BASE_URL}/privacy-policy/`,
           noindex: true,
         }}
@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-xl font-bold text-[#2A2A2A] mb-3">1. Introduction</h2>
             <p>
-              Dubai Pet Relocation ("Dubai Pet Relocation," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you use our pet relocation concierge services, visit our website, or communicate with us via WhatsApp, email, or other channels.
+              Dubai Pet Relocation ("Dubai Pet Relocation," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you use our pet relocation coordination services, visit our website, or communicate with us via WhatsApp, email, or other channels.
             </p>
             <p className="mt-3">
               By using our services, you consent to the practices described in this policy. If you do not agree, please do not use our services or provide personal information to us.
@@ -65,7 +65,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-xl font-bold text-[#2A2A2A] mb-3">4. Data Sharing with Partners</h2>
             <p>
-              Dubai Pet Relocation operates as a concierge service that coordinates with third-party specialists to complete your pet relocation. We share your personal and pet information only with:
+              Dubai Pet Relocation operates as a coordination service that coordinates with third-party specialists to complete your pet relocation. We share your personal and pet information only with:
             </p>
             <ul className="list-disc pl-6 space-y-2 mt-3">
               <li><strong>Veterinary partners</strong> to arrange health checks, vaccinations, and certificates.</li>
@@ -166,7 +166,7 @@ export default function PrivacyPolicy() {
               If you have questions about this Privacy Policy, want to exercise your rights, or have concerns about how we handle your data, please contact us:
             </p>
             <div className="space-y-2">
-              <p><strong>Email:</strong> <a href="mailto:hallo@dubai-pet-relocation.ae" className="text-[#4F5BD5] hover:underline">hallo@dubai-pet-relocation.ae</a></p>
+              <p><strong>Email:</strong> <a href="mailto:hello@dubai-pet-relocation.ae" className="text-[#4F5BD5] hover:underline">hello@dubai-pet-relocation.ae</a></p>
               <p><strong>Address:</strong> Al Quoz Industrial Area 4, Al Quoz Industrial Area, Al Quoz, Dubai</p>
               <p><strong>WhatsApp:</strong> <a href="https://wa.me/971551744849" target="_blank" rel="noopener noreferrer" className="text-[#4F5BD5] hover:underline">+971 55 174 4849</a></p>
             </div>

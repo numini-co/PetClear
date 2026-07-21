@@ -31,7 +31,7 @@ const catRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'We are a coordination and concierge service. We do not physically fly the animals ourselves; we connect you with vetted veterinary and transport partners, confirm your cat is document-ready, and make sure the paperwork, carrier and flight line up. For the full cross-species picture, see our main pet relocation in Dubai page. The sections below focus on what matters specifically for cats: why they travel differently, how to acclimate the carrier, why sedation is discouraged, the documents and timeline, and cost.',
+          text: 'We are a coordination service. We do not physically fly the animals ourselves; we connect you with vetted veterinary and transport partners, confirm your cat is document-ready, and make sure the paperwork, carrier and flight line up. For the full cross-species picture, see our main pet relocation in Dubai page. The sections below focus on what matters specifically for cats: why they travel differently, how to acclimate the carrier, why sedation is discouraged, the documents and timeline, and cost.',
         },
         {
           type: 'list',

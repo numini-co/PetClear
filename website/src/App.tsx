@@ -1,6 +1,7 @@
 import { lazy } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout.tsx'
+import NotFoundPage from './pages/NotFoundPage.tsx'
 
 // Core pages (V1)
 const HomePage = lazy(() => import('./pages/HomePage.tsx'))
@@ -112,6 +113,10 @@ export default function App() {
           {dubaiAreas.map((a) => (
             <Route key={a.slug} path={`/dubai/${a.slug}/`} element={<AreaPage data={a} />} />
           ))}
+
+          {/* 404 */}
+          <Route path="/404" element={<NotFoundPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Layout>
   )

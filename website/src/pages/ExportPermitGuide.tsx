@@ -539,7 +539,7 @@ export default function ExportPermitGuide() {
               <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A]">How Dubai Pet Relocation Coordinates Your Export</h2>
             </div>
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-6">
-              We are a coordination and concierge service — we do not physically fly the animals ourselves. We connect you with vetted veterinary and transport partners and make sure your paperwork, timeline, and inspection are correct so your pet leaves Dubai without a hitch. For our full export service, see <Link to="/service/pet-export-dubai/" className="text-[#4F5BD5] underline">Pet Export from Dubai</Link>.
+              We are a coordination service — we do not physically fly the animals ourselves. We connect you with vetted veterinary and transport partners and make sure your paperwork, timeline, and inspection are correct so your pet leaves Dubai without a hitch. For our full export service, see <Link to="/service/pet-export-dubai/" className="text-[#4F5BD5] underline">Pet Export from Dubai</Link>.
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="flex items-start gap-3">

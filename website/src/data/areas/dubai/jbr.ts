@@ -26,7 +26,7 @@ const jbr: AreaPageData = {
     {
       h2: 'Pet Relocation Services for JBR Residents',
       intro:
-        'We act as your relocation coordinator and concierge — managing every moving part of the journey so you never have to chase a clinic, a permit office or a cargo desk yourself. Living in a high-rise beachfront tower brings its own logistics, and we plan around them.',
+        'We act as your relocation coordinator — managing every moving part of the journey so you never have to chase a clinic, a permit office or a cargo desk yourself. Living in a high-rise beachfront tower brings its own logistics, and we plan around them.',
       body: [
         { type: 'list', items: [
           'Door-to-door pickup from your JBR tower or building — Rimal, Murjan, Sadaf, Bahar and the surrounding blocks',

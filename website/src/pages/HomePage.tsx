@@ -102,17 +102,13 @@ export default function HomePage() {
       availableLanguage: ['English', 'Arabic'],
       areaServed: 'AE',
     },
-    sameAs: [
-      siteConfig.social.instagram,
-      siteConfig.social.facebook,
-    ],
   }
 
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Dubai Pet Relocation',
-    description: 'Pet relocation concierge service in Dubai',
+    description: 'Pet relocation coordination service in Dubai',
     url: BASE_URL,
     telephone: siteConfig.phone,
     email: siteConfig.email,
@@ -227,7 +223,7 @@ export default function HomePage() {
       <SEOHead
         meta={{
           title: 'Pet Relocation Dubai — Transparent, Safe, Expert',
-          description: 'Transparent pet relocation concierge for Dubai and the UAE. We help you understand the process, check requirements, and connect with trusted partners.',
+          description: 'Transparent pet relocation coordination service for Dubai and the UAE. We help you understand the process, check requirements, and connect with trusted partners.',
           keywords: 'pet relocation Dubai, dog relocation Dubai, cat relocation Dubai, pet transport UAE, MOCCAE import permit, pet relocation cost Dubai',
           ogType: 'website',
         }}
@@ -489,7 +485,7 @@ export default function HomePage() {
           <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Our Approach</span>
           <h2 className="text-section mt-3 mb-4 max-w-2xl mx-auto">A Transparent Partner Model</h2>
           <p className="text-body-large max-w-2xl mx-auto mb-12">
-            We do not own an airline. We are not a government agency. We are a concierge service that helps you understand the process and connects you with the right specialists.
+            We do not own an airline. We are not a government agency. We are a coordination service that helps you understand the process and connects you with the right specialists.
           </p>
           <div className="grid md:grid-cols-3 gap-6 text-left">
             {[
@@ -737,7 +733,7 @@ export default function HomePage() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Full Service Directory</span>
             <h2 className="text-section mt-3 mb-4">Every Pet Relocation Service We Coordinate</h2>
             <p className="text-body-large max-w-3xl mx-auto">
-              Dubai Pet Relocation is a concierge and coordination service. We do not own an airline or a veterinary clinic. Instead, we understand the full ecosystem and connect you with the right licensed partner for each step. Below is every service page on our site, each written to answer a specific question pet owners ask Google.
+              Dubai Pet Relocation is a coordination service. We do not own an airline or a veterinary clinic. Instead, we understand the full ecosystem and connect you with the right licensed partner for each step. Below is every service page on our site, each written to answer a specific question pet owners ask Google.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -805,7 +801,7 @@ export default function HomePage() {
             <Card className="overflow-hidden">
               <img
                 src="/images/services-hero.jpg"
-                alt="Pet relocation concierge desk in Dubai with dog, cat and travel crate"
+                alt="Pet relocation service desk in Dubai with dog, cat and travel crate"
                 loading="lazy"
                 width={800}
                 height={600}
@@ -1750,7 +1746,7 @@ export default function HomePage() {
                 The second decision is accommodation. Not every rental property in Dubai allows pets, and some buildings have weight or breed restrictions. We recommend confirming your new home is pet-friendly before you book flights. If you are staying in a hotel temporarily, check whether the hotel accepts pets and whether they have size limits.
               </p>
               <p className="text-body">
-                The third decision is who coordinates the move. You can try to manage the vet, the airline cargo desk, the MOCCAE portal, and customs clearance yourself. Many people do. But one mistake in timing or paperwork can cost you thousands of dirhams and weeks of delay. Our concierge service exists to remove that risk and give you one point of contact who speaks your language and updates you on WhatsApp.
+                The third decision is who coordinates the move. You can try to manage the vet, the airline cargo desk, the MOCCAE portal, and customs clearance yourself. Many people do. But one mistake in timing or paperwork can cost you thousands of dirhams and weeks of delay. Our coordination service exists to remove that risk and give you one point of contact who speaks your language and updates you on WhatsApp.
               </p>
             </div>
             <div className="space-y-5">
@@ -1840,12 +1836,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══════════ DIY VS CONCIERGE ═══════════ */}
+      {/* ═══════════ DIY VS COORDINATION ═══════════ */}
       <section className="bg-[#EEF0FC] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Compare</span>
-            <h2 className="text-section mt-3 mb-4">DIY Pet Relocation vs a Concierge Service</h2>
+            <h2 className="text-section mt-3 mb-4">DIY Pet Relocation vs a Coordination Service</h2>
             <p className="text-body-large max-w-3xl mx-auto">
               Some pet owners manage the entire relocation themselves. Others prefer to hand the coordination to a specialist. Both are valid. Here is how they compare.
             </p>
@@ -1861,24 +1857,24 @@ export default function HomePage() {
               </thead>
               <tbody className="text-sm">
                 {[
-                  { task: 'Document review', diy: 'You research and verify each document yourself.', concierge: 'We audit every document and flag issues before submission.' },
-                  { task: 'MOCCAE permit', diy: 'You create the account, fill the forms, and follow up.', concierge: 'We prepare and submit the application for you.' },
-                  { task: 'Flight booking', diy: 'You contact airline cargo desks directly.', concierge: 'We book with confirmed live animal handling in writing.' },
-                  { task: 'Vet coordination', diy: 'You find a clinic familiar with travel certificates.', concierge: 'We refer you to vetted travel-certificate clinics.' },
-                  { task: 'Customs clearance', diy: 'You handle paperwork at DXB or DWC cargo terminal.', concierge: 'Our ground partner clears your pet and delivers to your door.' },
-                  { task: 'Timeline risk', diy: 'One error can delay your pet by weeks.', concierge: 'We catch errors early and keep the timeline on track.' },
+                  { task: 'Document review', diy: 'You research and verify each document yourself.', coordination: 'We audit every document and flag issues before submission.' },
+                  { task: 'MOCCAE permit', diy: 'You create the account, fill the forms, and follow up.', coordination: 'We prepare and submit the application for you.' },
+                  { task: 'Flight booking', diy: 'You contact airline cargo desks directly.', coordination: 'We book with confirmed live animal handling in writing.' },
+                  { task: 'Vet coordination', diy: 'You find a clinic familiar with travel certificates.', coordination: 'We refer you to vetted travel-certificate clinics.' },
+                  { task: 'Customs clearance', diy: 'You handle paperwork at DXB or DWC cargo terminal.', coordination: 'Our ground partner clears your pet and delivers to your door.' },
+                  { task: 'Timeline risk', diy: 'One error can delay your pet by weeks.', coordination: 'We catch errors early and keep the timeline on track.' },
                 ].map((row, i) => (
                   <tr key={row.task} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F6FD]'}>
                     <td className="p-4 font-semibold text-[#2A2A2A]">{row.task}</td>
                     <td className="p-4 text-[#5A5A5A]">{row.diy}</td>
-                    <td className="p-4 text-[#5A5A5A]">{row.concierge}</td>
+                    <td className="p-4 text-[#5A5A5A]">{row.coordination}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
           <p className="text-center text-body mt-6">
-            The right choice depends on your time, budget, and risk tolerance. If you value peace of mind and a single point of contact, a concierge service is usually worth the coordination fee.
+            The right choice depends on your time, budget, and risk tolerance. If you value peace of mind and a single point of contact, a coordination service is usually worth the coordination fee.
           </p>
         </div>
       </section>
@@ -1949,7 +1945,7 @@ export default function HomePage() {
               },
               {
                 title: 'Service level',
-                body: 'A basic documentation-and-booking package costs less than a full door-to-door concierge service with real-time updates and customs clearance. We explain the difference clearly so you can choose the right level.',
+                body: 'A basic documentation-and-booking package costs less than a full door-to-door coordination service with real-time updates and customs clearance. We explain the difference clearly so you can choose the right level.',
               },
               {
                 title: 'Seasonal factors',
@@ -2067,7 +2063,7 @@ export default function HomePage() {
               {
                 when: 'After arrival',
                 title: 'Customs clearance and registration',
-                body: 'We clear customs and deliver your pet. You then register with Dubai Municipality through the Aleef app within 30 days.',
+                body: 'Your customs clearance is handled by our licensed partner, and your pet is delivered to you. You then register with Dubai Municipality through the Aleef app within 30 days.',
               },
             ].map((item, i) => (
               <div key={item.title} className="flex gap-4">

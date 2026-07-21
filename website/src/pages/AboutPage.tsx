@@ -65,7 +65,7 @@ export default function AboutPage() {
     name: 'Dubai Pet Relocation',
     url: BASE_URL,
     logo: `${BASE_URL}/assets/logo.png`,
-    description: 'Transparent pet relocation concierge for Dubai and the UAE.',
+    description: 'Transparent pet relocation coordination service for Dubai and the UAE.',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Dubai',
@@ -78,9 +78,9 @@ export default function AboutPage() {
     <div>
       <SEOHead
         meta={{
-          title: 'About Dubai Pet Relocation | Pet Relocation Concierge Dubai',
-          description: 'Learn about Dubai Pet Relocation — a Dubai-based concierge built by pet owners who understand moving with animals. Transparent, partner-matched, animal-first.',
-          keywords: 'about Dubai Pet Relocation, pet relocation company Dubai, pet concierge Dubai, who is Dubai Pet Relocation, pet relocation experts UAE',
+          title: 'About Dubai Pet Relocation | Pet Relocation Coordination Dubai',
+          description: 'Learn about Dubai Pet Relocation — a Dubai-based coordination built by pet owners who understand moving with animals. Transparent, partner-matched, animal-first.',
+          keywords: 'about Dubai Pet Relocation, pet relocation company Dubai, pet coordination Dubai, who is Dubai Pet Relocation, pet relocation experts UAE',
           canonical: `${BASE_URL}/about/`,
           ogType: 'website',
         }}
@@ -115,7 +115,7 @@ export default function AboutPage() {
                   We realized the problem was not a lack of services — it was a lack of transparency. Pet owners were expected to trust opaque processes without understanding what was happening, why it cost what it did, or whether their pet was in safe hands.
                 </p>
                 <p>
-                  So we built Dubai Pet Relocation as a concierge model: we help you understand the process, we check every document, we connect you with vetted partners, and we stay on WhatsApp with you every step of the way.
+                  So we built Dubai Pet Relocation as a coordination model: we help you understand the process, we check every document, we connect you with vetted partners, and we stay on WhatsApp with you every step of the way.
                 </p>
               </div>
             </div>
@@ -247,7 +247,7 @@ export default function AboutPage() {
             <div>
               <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">How We Work</span>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-3 mb-4">
-                We Are Not a Middleman. We Are a Concierge.
+                We Are Not a Middleman. We Are a Coordination.
               </h2>
               <div className="space-y-4 text-[#5A5A5A] text-base leading-relaxed">
                 <p>

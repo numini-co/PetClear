@@ -41,7 +41,7 @@ const petTransportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'We are a coordination and concierge service. We do not operate the vehicles ourselves — we connect you with vetted, animal-experienced transport partners and manage the booking, timing and updates so your pet transport in Dubai runs smoothly from start to finish.',
+          text: 'We are a coordination service. We do not operate the vehicles ourselves — we connect you with vetted, animal-experienced transport partners and manage the booking, timing and updates so your pet transport in Dubai runs smoothly from start to finish.',
         },
       ],
     },
@@ -190,7 +190,7 @@ const petTransportDubai: ServicePageData = {
     },
     {
       q: 'Do you transport pets yourselves?',
-      a: 'We are a coordination and concierge service. We do not operate the vehicles ourselves — we connect you with vetted, animal-experienced transport partners and manage the booking, timing and updates so the journey runs smoothly from start to finish.',
+      a: 'We are a coordination service. We do not operate the vehicles ourselves — we connect you with vetted, animal-experienced transport partners and manage the booking, timing and updates so the journey runs smoothly from start to finish.',
     },
     {
       q: 'Can you take my pet to the airport for an international flight?',

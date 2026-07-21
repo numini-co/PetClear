@@ -31,7 +31,7 @@ const moccaePetPermit: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'We are a coordination and concierge service, not a government department. We are not MOCCAE-licensed and we do not issue permits — only the Ministry can do that. What we do is guide and support you through the application: we review your microchip, vaccination and health-certificate details against the current requirements, prepare the portal submission with you, flag anything that could trigger a rejection, and track the application until the permit is approved.',
+          text: 'We are a coordination service, not a government department. We are not MOCCAE-licensed and we do not issue permits — only the Ministry can do that. What we do is guide and support you through the application: we review your microchip, vaccination and health-certificate details against the current requirements, prepare the portal submission with you, flag anything that could trigger a rejection, and track the application until the permit is approved.',
         },
         {
           type: 'list',
@@ -206,7 +206,7 @@ const moccaePetPermit: ServicePageData = {
     },
     {
       q: 'Do you issue the MOCCAE permit yourselves?',
-      a: 'No. Only MOCCAE can issue permits — we are a coordination and concierge service and are not MOCCAE-licensed. We guide and support you through the application: reviewing your documents, helping you submit on the official portal, and tracking approval so the permit is issued correctly.',
+      a: 'No. Only MOCCAE can issue permits — we are a coordination service and are not MOCCAE-licensed. We guide and support you through the application: reviewing your documents, helping you submit on the official portal, and tracking approval so the permit is issued correctly.',
     },
     {
       q: 'How much does a MOCCAE pet permit cost?',

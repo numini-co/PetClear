@@ -45,7 +45,7 @@ const petRelocationToDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'One thing we want to be clear about: we are a coordination and concierge service. We do not operate aircraft or physically fly your animal ourselves. Instead, we connect you with vetted veterinary and transport partners, prepare and sense-check every document, and make sure the timeline holds together — so nothing is missed and nobody is left guessing.',
+          text: 'One thing we want to be clear about: we are a coordination service. We do not operate aircraft or physically fly your animal ourselves. Instead, we connect you with vetted veterinary and transport partners, prepare and sense-check every document, and make sure the timeline holds together — so nothing is missed and nobody is left guessing.',
         },
       ],
     },
@@ -124,7 +124,7 @@ const petRelocationToDubai: ServicePageData = {
     {
       h2: 'Cost Expectations',
       intro:
-        'Total pet relocation to Dubai typically ranges from around AED 2,000 for a straightforward regional move to AED 22,000 for a long-haul journey with full door-to-door, concierge-level handling. The biggest variables are your origin country, your pet’s size and weight, and the airline route.',
+        'Total pet relocation to Dubai typically ranges from around AED 2,000 for a straightforward regional move to AED 22,000 for a long-haul journey with full door-to-door, full-service handling. The biggest variables are your origin country, your pet’s size and weight, and the airline route.',
       body: [
         {
           type: 'p',
@@ -197,7 +197,7 @@ const petRelocationToDubai: ServicePageData = {
     },
     {
       q: 'Do you transport the pet yourselves, or just handle the paperwork?',
-      a: 'We are a coordination and concierge service. We do not operate flights ourselves; we connect you with vetted veterinary and transport partners, prepare and check every document, and manage the timeline so nothing is missed. We stay with you on WhatsApp at every step.',
+      a: 'We are a coordination service. We do not operate flights ourselves; we connect you with vetted veterinary and transport partners, prepare and check every document, and manage the timeline so nothing is missed. We stay with you on WhatsApp at every step.',
     },
   ],
   relatedLinks: [

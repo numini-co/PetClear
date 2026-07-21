@@ -173,7 +173,7 @@ export default function HowItWorksPage() {
           name: 'Are you a middleman?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'No. A middleman takes a cut and adds no value. We are a concierge and quality controller. We handle your permit, book your flight, provide your crate, coordinate your vet, arrange your transport, and update you every step of the way. If anything goes wrong, we fix it. You pay one fee for one point of contact and a network of experts. That\'s not a markup — that\'s a service.',
+            text: 'No. A middleman takes a cut and adds no value. We are a coordination and quality controller. We handle your permit, book your flight, provide your crate, coordinate your vet, arrange your transport, and update you every step of the way. If anything goes wrong, we fix it. You pay one fee for one point of contact and a network of experts. That\'s not a markup — that\'s a service.',
           },
         },
         {
@@ -214,7 +214,7 @@ export default function HowItWorksPage() {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
       name: 'How to Relocate Your Pet to or from Dubai',
-      description: 'A step-by-step guide to relocating your dog or cat to or from Dubai using a professional pet relocation concierge service.',
+      description: 'A step-by-step guide to relocating your dog or cat to or from Dubai using a professional pet relocation coordination service.',
       totalTime: 'P4W',
       estimatedCost: {
         '@type': 'MonetaryAmount',
@@ -314,7 +314,7 @@ export default function HowItWorksPage() {
         imageAlt="A dog beside a travel crate and a checklist, representing the step-by-step relocation process"
         eyebrow="How It Works"
         title="How Pet Relocation Works in Dubai: A Clear, Step-by-Step Guide"
-        subtitle="Your pet relocation concierge — we coordinate a team of vetted specialists so you don't manage five companies from your phone at 2 AM."
+        subtitle="Your pet relocation coordination service — we coordinate a team of vetted specialists so you don't manage five companies from your phone at 2 AM."
         updated="Updated June 2026"
         whatsappMessage={heroWaText}
       />
@@ -652,7 +652,7 @@ export default function HowItWorksPage() {
             How We Make Money (And Why It Costs What It Costs)
           </h2>
           <p className="text-[#5A5A5A] mb-8">
-            We make money in two ways: a partner commission and a concierge fee. We don&apos;t mark up government fees. We don&apos;t add hidden charges. We show you exactly where every dirham goes.
+            We make money in two ways: a partner commission and a coordination fee. We don&apos;t mark up government fees. We don&apos;t add hidden charges. We show you exactly where every dirham goes.
           </p>
 
           <div className="overflow-x-auto rounded-2xl shadow-sm border border-gray-100 mb-8">
@@ -735,7 +735,7 @@ export default function HowItWorksPage() {
           <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 sm:p-8">
             <FAQItem
               question="Are you a middleman?"
-              answer="No. A middleman takes a cut and adds no value. We are a concierge and quality controller. Think of it this way: if you planned your own wedding, you'd still pay the caterer, the band, and the venue. But you'd spend 100 hours coordinating them, and if the flowers were late, you'd be the one making phone calls while wearing a tuxedo. A wedding planner charges a fee, but they save you time, prevent problems, and handle crises. That's what we do for your pet's move. Specifically: we handle your permit, book your flight, provide your crate, coordinate your vet, arrange your transport, and update you every step of the way. If anything goes wrong, we fix it. You pay one fee for one point of contact and a network of experts. That's not a markup — that's a service."
+              answer="No. A middleman takes a cut and adds no value. We are a coordination and quality controller. Think of it this way: if you planned your own wedding, you'd still pay the caterer, the band, and the venue. But you'd spend 100 hours coordinating them, and if the flowers were late, you'd be the one making phone calls while wearing a tuxedo. A wedding planner charges a fee, but they save you time, prevent problems, and handle crises. That's what we do for your pet's move. Specifically: we handle your permit, book your flight, provide your crate, coordinate your vet, arrange your transport, and update you every step of the way. If anything goes wrong, we fix it. You pay one fee for one point of contact and a network of experts. That's not a markup — that's a service."
             />
             <FAQItem
               question="Why not just go direct to the airline or vet?"
@@ -766,7 +766,7 @@ export default function HowItWorksPage() {
             Ready to See How Simple Pet Relocation Can Be?
           </h2>
           <p className="text-white/80 max-w-2xl mx-auto mb-4">
-            You&apos;ve read the process. You know what we do, what our partners do, and how we make money. You know we&apos;re not a middleman — we&apos;re your pet relocation concierge.
+            You&apos;ve read the process. You know what we do, what our partners do, and how we make money. You know we&apos;re not a middleman — we&apos;re your pet relocation coordination service.
           </p>
           <p className="text-white/80 max-w-2xl mx-auto mb-8">
             The next step is a 15-minute WhatsApp conversation. No forms. No phone calls. No obligation. Tell us about your pet. We&apos;ll tell you what&apos;s needed, what it costs, and how long it takes. Then you decide.

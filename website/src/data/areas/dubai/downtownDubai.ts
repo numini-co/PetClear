@@ -26,7 +26,7 @@ const downtownDubai: AreaPageData = {
     {
       h2: 'Pet Relocation Services for Downtown Dubai Residents',
       intro:
-        'We act as your relocation coordinator and concierge — managing every moving part of the journey so a busy professional schedule is never derailed by paperwork. We plan the move around your building access and your calendar, not the other way round.',
+        'We act as your relocation coordinator — managing every moving part of the journey so a busy professional schedule is never derailed by paperwork. We plan the move around your building access and your calendar, not the other way round.',
       body: [
         { type: 'list', items: [
           'Door-to-door pickup from your Downtown tower, serviced residence or apartment',
@@ -36,7 +36,7 @@ const downtownDubai: AreaPageData = {
           'Flight booking, cargo handling and customs clearance at DXB or DWC',
           'WhatsApp updates at every checkpoint, from collection to delivery',
         ] },
-        { type: 'p', text: 'Downtown towers route deliveries through valet bays, loading docks and concierge desks, and the streets around The Dubai Mall and the Dubai Fountain can be congested at peak times. We coordinate with building management and time collection so the experience stays calm and orderly for a crated pet.' },
+        { type: 'p', text: 'Downtown towers route deliveries through valet bays, loading docks and reception desks, and the streets around The Dubai Mall and the Dubai Fountain can be congested at peak times. We coordinate with building management and time collection so the experience stays calm and orderly for a crated pet.' },
       ],
     },
     {

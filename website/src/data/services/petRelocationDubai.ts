@@ -37,7 +37,7 @@ const petRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'We are a coordination and concierge service: we do not physically fly the animals ourselves, we connect you with vetted veterinary and transport partners and make sure the paperwork and timeline are correct.',
+          text: 'We are a coordination service: we do not physically fly the animals ourselves, we connect you with vetted veterinary and transport partners and make sure the paperwork and timeline are correct.',
         },
       ],
     },
@@ -105,7 +105,7 @@ const petRelocationDubai: ServicePageData = {
   faq: [
     { q: 'How much does pet relocation in Dubai cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on origin/destination, pet size and service level. Government fees are roughly AED 700/dog and AED 450/cat; the rest covers veterinary work, crate, cargo and coordination.' },
     { q: 'How long does pet relocation to Dubai take?', a: 'From low-risk countries, typically 2–6 weeks. From high-risk rabies countries that require a titer test, plan for about 4 months because of the mandatory waiting period.' },
-    { q: 'Do you physically transport the pet yourselves?', a: 'We are a coordination and concierge service. We connect you with vetted veterinary and transport partners and manage the documents and timeline so nothing is missed.' },
+    { q: 'Do you physically transport the pet yourselves?', a: 'We are a coordination service. We connect you with vetted veterinary and transport partners and manage the documents and timeline so nothing is missed.' },
     { q: 'Which pets can you relocate?', a: 'Primarily dogs and cats to and from Dubai and the wider UAE. Restricted dog breeds are subject to the official UAE rules — we check eligibility before you commit.' },
     { q: 'What documents do I need?', a: 'A microchip, valid rabies vaccination, a government health certificate, a MOCCAE import or export permit, and a rabies titer test for high-risk countries. We review everything first.' },
     { q: 'How do I get started?', a: 'Message us on WhatsApp with your pet type, breed, origin and destination. We reply within 15 minutes during business hours with the exact requirements and a cost range.' },

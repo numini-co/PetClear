@@ -37,7 +37,7 @@ export default function Footer() {
               <span className="text-lg font-bold">Dubai Pet Relocation</span>
             </Link>
             <p className="text-white/80 text-sm leading-relaxed mb-5 max-w-xs">
-              A transparent pet relocation concierge for Dubai and the UAE. We guide you through MOCCAE requirements, vetted partners and door-to-door delivery.
+              A transparent pet relocation coordination service for Dubai and the UAE. We guide you through MOCCAE requirements, vetted partners and door-to-door delivery.
             </p>
             <ul className="space-y-3 text-sm text-white/80">
               <li>
@@ -47,9 +47,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:hallo@dubai-pet-relocation.ae" className="group flex items-center gap-3 hover:text-white transition-colors">
+                <a href="mailto:hello@dubai-pet-relocation.ae" className="group flex items-center gap-3 hover:text-white transition-colors">
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/10 group-hover:bg-white/20 transition-colors"><Mail className="h-4 w-4" /></span>
-                  <span className="break-all">hallo@dubai-pet-relocation.ae</span>
+                  <span className="break-all">hello@dubai-pet-relocation.ae</span>
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -82,7 +82,7 @@ export default function Footer() {
 
         {/* Disclaimer */}
         <p className="mt-8 text-xs text-white/70 leading-relaxed max-w-4xl">
-          <strong className="text-white/80">Disclaimer:</strong> Dubai Pet Relocation is a pet relocation concierge and coordination service — not a veterinary clinic, airline, or government agency. Veterinary, cargo and transport services are provided by independent licensed partners. Government fees (MOCCAE, customs, municipality) are passed through at cost. Please verify all documentation directly with MOCCAE and your airline before travel.
+          <strong className="text-white/80">Disclaimer:</strong> Dubai Pet Relocation is a pet relocation coordination service — not a veterinary clinic, airline, or government agency. Veterinary, cargo and transport services are provided by independent licensed partners. Government fees (MOCCAE, customs, municipality) are passed through at cost. Please verify all documentation directly with MOCCAE and your airline before travel.
         </p>
 
         {/* Bottom bar */}

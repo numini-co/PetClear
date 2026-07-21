@@ -380,7 +380,7 @@ export default function CostGuidePage() {
                   <td>+ Door-to-door pickup and delivery, IATA crate, vet coordination, 24/7 WhatsApp support, photo updates</td>
                 </tr>
                 <tr>
-                  <td><strong>PawVIP</strong> (Concierge)</td>
+                  <td><strong>PawVIP</strong> (Coordination)</td>
                   <td>5,000–8,000</td>
                   <td>+ Personal handler assigned, real-time tracking, video updates at every checkpoint, comprehensive travel insurance, priority rebooking if flights change</td>
                 </tr>
@@ -929,7 +929,7 @@ export default function CostGuidePage() {
             Last updated: June 2026. Prices are based on current partner rates and government fee schedules. Cargo and airline fees fluctuate with fuel prices and seasonal demand. Your personalized quote will reflect real-time pricing for your specific route and dates.
           </p>
           <p className="text-xs text-[#8A8A8A] leading-relaxed">
-            Dubai Pet Relocation is a pet relocation concierge. We coordinate with vetted partners — veterinarians, cargo handlers, ground transport teams — to manage every step of your pet's journey. We guide you through MOCCAE import requirements and work with vetted relocation partners.
+            Dubai Pet Relocation is a pet relocation coordination service. We coordinate with vetted partners — veterinarians, cargo handlers, ground transport teams — to manage every step of your pet's journey. We guide you through MOCCAE import requirements and work with vetted relocation partners.
           </p>
         </div>
       </Section>

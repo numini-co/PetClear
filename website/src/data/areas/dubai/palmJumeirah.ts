@@ -36,7 +36,7 @@ const palmJumeirah: AreaPageData = {
     {
       h2: 'Pet Relocation Services for Palm Jumeirah Residents',
       intro:
-        'We act as your relocation coordinator and concierge — not a carrier. We plan every step, line up the right specialists, and keep you updated, while vets, airlines and customs handle their parts of the move.',
+        'We act as your relocation coordinator — not a carrier. We plan every step, line up the right specialists, and keep you updated, while vets, airlines and customs handle their parts of the move.',
       body: [
         {
           type: 'list',
@@ -52,7 +52,7 @@ const palmJumeirah: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'Many of our Palm clients value a discreet, fully managed service — we coordinate access through gated entrances and building security, work around concierge schedules, and keep the logistics seamless so the relocation feels effortless from your side.',
+          text: 'Many of our Palm clients value a discreet, fully managed service — we coordinate access through gated entrances and building security, work around building access schedules, and keep the logistics seamless so the relocation feels effortless from your side.',
         },
       ],
     },

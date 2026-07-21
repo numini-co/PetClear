@@ -36,7 +36,7 @@ const jumeirah: AreaPageData = {
     {
       h2: 'Pet Relocation Services for Jumeirah Residents',
       intro:
-        'We act as your relocation coordinator and concierge — not a carrier. That means we plan every step, line up the right people, and keep you updated, while specialist vets, airlines and customs handle their parts of the move.',
+        'We act as your relocation coordinator — not a carrier. That means we plan every step, line up the right people, and keep you updated, while specialist vets, airlines and customs handle their parts of the move.',
       body: [
         {
           type: 'list',

@@ -570,7 +570,7 @@ export default function DubaiToUSA() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Our Service</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">What Dubai Pet Relocation Handles for Dubai to USA</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              Dubai Pet Relocation is a full-service pet relocation concierge. We manage every detail of your pet's journey from Dubai to the USA, so you can focus on your own move.
+              Dubai Pet Relocation is a full-service pet relocation coordination service. We manage every detail of your pet's journey from Dubai to the USA, so you can focus on your own move.
             </p>
           </div>
 

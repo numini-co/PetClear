@@ -56,7 +56,7 @@ export default function DubaiCity() {
       "description": "Professional pet relocation services to and from Dubai. Dog and cat transport, documentation, flight booking, and customs clearance.",
       "url": pageUrl,
       "telephone": "+971 55 174 4849",
-      "email": "hallo@dubai-pet-relocation.ae",
+      "email": "hello@dubai-pet-relocation.ae",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Dubai",

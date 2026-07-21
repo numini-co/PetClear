@@ -532,7 +532,7 @@ export default function MOCCAEPermitGuide() {
                 <Clock className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">How Dubai Pet Relocation Works</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Learn about our transparent concierge process from start to finish.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">Learn about our transparent coordination process from start to finish.</p>
             </Link>
             <Link to="/dog-relocation-to-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#C89F5A]/10 flex items-center justify-center mb-4 group-hover:bg-[#C89F5A]/20 transition-colors">

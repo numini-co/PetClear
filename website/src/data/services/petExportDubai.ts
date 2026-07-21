@@ -43,7 +43,7 @@ const petExportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'We are a coordination and concierge service: we do not physically fly the animals ourselves. We connect you with vetted veterinary and transport partners and make sure your paperwork, timeline and inspection are correct so your pet leaves Dubai without a hitch.',
+          text: 'We are a coordination service: we do not physically fly the animals ourselves. We connect you with vetted veterinary and transport partners and make sure your paperwork, timeline and inspection are correct so your pet leaves Dubai without a hitch.',
         },
       ],
     },
@@ -219,7 +219,7 @@ const petExportDubai: ServicePageData = {
     },
     {
       q: 'Do you physically transport the pet yourselves?',
-      a: 'We are a coordination and concierge service. We connect you with vetted veterinary and transport partners and manage the documents, timeline and airport inspection so nothing is missed. We do not operate the aircraft ourselves.',
+      a: 'We are a coordination service. We connect you with vetted veterinary and transport partners and manage the documents, timeline and airport inspection so nothing is missed. We do not operate the aircraft ourselves.',
     },
     {
       q: 'How do I get started with exporting my pet from Dubai?',

@@ -3,12 +3,7 @@
   "installCommand": "cd website && npm install",
   "buildCommand": "cd website && npm run build",
   "outputDirectory": "website/dist",
-  "rewrites": [
-    {
-      "source": "/((?!assets/|images/|favicon.svg|icons.svg|robots.txt|sitemap.xml|.*\\.[a-zA-Z0-9]+$).*)",
-      "destination": "/index.html"
-    }
-  ],
+  "rewrites": [],
   "headers": [
     {
       "source": "/(.*)",

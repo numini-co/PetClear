@@ -40,7 +40,7 @@ const petImportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'We are a coordination and concierge service, not a carrier. We do not fly the animals ourselves and we are not a MOCCAE-licensed agency. What we do is guide you through MOCCAE requirements, connect you with vetted veterinary and transport partners and keep your paperwork and timeline correct from first message to final delivery.',
+          text: 'We are a coordination service, not a carrier. We do not fly the animals ourselves and we are not a MOCCAE-licensed agency. What we do is guide you through MOCCAE requirements, connect you with vetted veterinary and transport partners and keep your paperwork and timeline correct from first message to final delivery.',
         },
       ],
     },
@@ -252,7 +252,7 @@ const petImportDubai: ServicePageData = {
     },
     {
       q: 'Do you handle the import yourselves?',
-      a: 'We are a coordination and concierge service, not a carrier, and we are not a MOCCAE-licensed agency. We guide you through MOCCAE requirements, connect you with vetted veterinary and transport partners, and keep your documents and timeline correct so your pet clears customs at DXB or AUH without surprises.',
+      a: 'We are a coordination service, not a carrier, and we are not a MOCCAE-licensed agency. We guide you through MOCCAE requirements, connect you with vetted veterinary and transport partners, and keep your documents and timeline correct so your pet clears customs at DXB or AUH without surprises.',
     },
   ],
   relatedLinks: [

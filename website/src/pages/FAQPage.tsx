@@ -69,8 +69,8 @@ const faqs: FAQEntry[] = [
   {
     category: 'general',
     question: 'What does Dubai Pet Relocation actually do?',
-    answer: <p>Dubai Pet Relocation is a pet relocation concierge service. We help you understand the requirements for your route, check your documents, connect you with vetted veterinary and transport partners, and coordinate the entire process on WhatsApp. We do not physically transport pets ourselves — we are the coordination layer that makes sure nothing is missed.</p>,
-    plain: 'Dubai Pet Relocation is a pet relocation concierge service. We help you understand the requirements for your route, check your documents, connect you with vetted veterinary and transport partners, and coordinate the entire process on WhatsApp. We do not physically transport pets ourselves — we are the coordination layer that makes sure nothing is missed.',
+    answer: <p>Dubai Pet Relocation is a pet relocation coordination service. We help you understand the requirements for your route, check your documents, connect you with vetted veterinary and transport partners, and coordinate the entire process on WhatsApp. We do not physically transport pets ourselves — we are the coordination layer that makes sure nothing is missed.</p>,
+    plain: 'Dubai Pet Relocation is a pet relocation coordination service. We help you understand the requirements for your route, check your documents, connect you with vetted veterinary and transport partners, and coordinate the entire process on WhatsApp. We do not physically transport pets ourselves — we are the coordination layer that makes sure nothing is missed.',
   },
   {
     category: 'general',
@@ -81,8 +81,8 @@ const faqs: FAQEntry[] = [
   {
     category: 'general',
     question: 'Is Dubai Pet Relocation a carrier or airline?',
-    answer: <p>No. Dubai Pet Relocation is a coordination and concierge service. We work with vetted airlines, veterinarians, and transport partners to handle the physical relocation. We are the layer that connects you to the right specialists and ensures the timeline and paperwork are correct.</p>,
-    plain: 'No. Dubai Pet Relocation is a coordination and concierge service. We work with vetted airlines, veterinarians, and transport partners to handle the physical relocation. We are the layer that connects you to the right specialists and ensures the timeline and paperwork are correct.',
+    answer: <p>No. Dubai Pet Relocation is a coordination service. We work with vetted airlines, veterinarians, and transport partners to handle the physical relocation. We are the layer that connects you to the right specialists and ensures the timeline and paperwork are correct.</p>,
+    plain: 'No. Dubai Pet Relocation is a coordination service. We work with vetted airlines, veterinarians, and transport partners to handle the physical relocation. We are the layer that connects you to the right specialists and ensures the timeline and paperwork are correct.',
   },
   {
     category: 'general',

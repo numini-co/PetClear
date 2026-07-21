@@ -457,7 +457,7 @@ export default function PetHealthCertificateGuide() {
         </div>
       </section>
 
-      {/* How the concierge checks it */}
+      {/* How the coordination checks it */}
       <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10">
@@ -469,7 +469,7 @@ export default function PetHealthCertificateGuide() {
                 <h3 className="text-xl font-bold text-[#2A2A2A]">How Dubai Pet Relocation Checks Your Certificate</h3>
               </div>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-5">
-                Because the certificate cannot be re-issued from inside the UAE, our concierge service reviews it against your other documents before your pet flies — so problems are caught while they can still be fixed.
+                Because the certificate cannot be re-issued from inside the UAE, our coordination service reviews it against your other documents before your pet flies — so problems are caught while they can still be fixed.
               </p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
@@ -524,7 +524,7 @@ export default function PetHealthCertificateGuide() {
                 </Link>
                 <Link to="/service/pet-import-dubai/" className="block p-4 bg-[#F5F6FD] rounded-xl hover:shadow-md transition-shadow group">
                   <p className="font-semibold text-[#2A2A2A] text-sm group-hover:text-[#4F5BD5] transition-colors">Pet Import to Dubai Service</p>
-                  <p className="text-xs text-[#5A5A5A]">How our concierge service handles the whole import process for you.</p>
+                  <p className="text-xs text-[#5A5A5A]">How our coordination service handles the whole import process for you.</p>
                 </Link>
                 <Link to="/contact/" className="block p-4 bg-[#F5F6FD] rounded-xl hover:shadow-md transition-shadow group">
                   <p className="font-semibold text-[#2A2A2A] text-sm group-hover:text-[#4F5BD5] transition-colors">Contact Dubai Pet Relocation</p>

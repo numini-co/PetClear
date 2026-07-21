@@ -624,7 +624,7 @@ export default function BannedBreedsGuide() {
                 <Clock className="w-5 h-5 text-[#C89F5A]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#C89F5A] transition-colors">How Dubai Pet Relocation Works</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Learn about our transparent concierge process, from breed check to arrival in Dubai.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">Learn about our transparent coordination process, from breed check to arrival in Dubai.</p>
             </Link>
           </div>
         </div>

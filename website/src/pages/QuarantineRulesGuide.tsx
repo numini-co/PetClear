@@ -677,7 +677,7 @@ export default function QuarantineRulesGuide() {
                 <PawPrint className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">Pet Import to Dubai</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Our concierge service that handles compliance end to end so there is no quarantine surprise.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">Our coordination service that handles compliance end to end so there is no quarantine surprise.</p>
             </Link>
           </div>
         </div>

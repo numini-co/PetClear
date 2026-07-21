@@ -343,7 +343,7 @@ export default function CorporateRelocationPage() {
             <p className="text-[#5A5A5A] text-base leading-relaxed">
               The coordination fee sits on top of the unavoidable government, veterinary, crate, and cargo costs.
               We publish three tiers so you can align the level of service with your relocation policy — a baseline
-              allowance for some grades, a fuller concierge level for senior or executive moves. The figures below
+              allowance for some grades, a fuller coordination level for senior or executive moves. The figures below
               are the coordination fee only; the full per-employee quote adds the route-specific costs.
             </p>
           </div>
@@ -372,7 +372,7 @@ export default function CorporateRelocationPage() {
                   <td>Most corporate moves — hands-off for the employee</td>
                 </tr>
                 <tr>
-                  <td><strong>PawVIP</strong> (Concierge)</td>
+                  <td><strong>PawVIP</strong> (Coordination)</td>
                   <td>5,000–8,000</td>
                   <td>+ Personal handler assigned, real-time tracking, video updates at every checkpoint, comprehensive travel insurance, priority rebooking if flights change</td>
                   <td>Senior and executive relocations</td>
@@ -524,7 +524,7 @@ export default function CorporateRelocationPage() {
             <div className="flex items-start gap-3">
               <ShieldCheck className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
               <p className="text-sm text-[#2A2A2A] leading-relaxed">
-                <strong>Honest scope:</strong> We are a pet relocation concierge that coordinates vetted partners —
+                <strong>Honest scope:</strong> We are a pet relocation coordination service that coordinates vetted partners —
                 veterinarians, cargo handlers, and ground transport teams. We do not own an airline, and the rules
                 are set by MOCCAE and the relevant authorities, not by us. Government fees and entry requirements are
                 fixed and apply to every provider equally. Each employee&apos;s quote reflects live figures for their

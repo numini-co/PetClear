@@ -41,7 +41,7 @@ const petRelocationFromDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'We are a coordination and concierge service. We do not fly the animals ourselves and we are not the carrier. Instead we connect you with vetted veterinary clinics and pet-experienced transport partners, keep your documents consistent, and make sure each step happens in the correct sequence so your pet is cleared to fly and cleared to land.',
+          text: 'We are a coordination service. We do not fly the animals ourselves and we are not the carrier. Instead we connect you with vetted veterinary clinics and pet-experienced transport partners, keep your documents consistent, and make sure each step happens in the correct sequence so your pet is cleared to fly and cleared to land.',
         },
         {
           type: 'list',
@@ -184,7 +184,7 @@ const petRelocationFromDubai: ServicePageData = {
     },
     {
       q: 'Do you physically fly my pet yourselves?',
-      a: 'No. We are a coordination and concierge service, not the carrier. We connect you with vetted veterinary clinics and pet-experienced transport partners, keep your documents consistent, and make sure each step happens in the right order so your pet is cleared to fly and cleared to land.',
+      a: 'No. We are a coordination service, not the carrier. We connect you with vetted veterinary clinics and pet-experienced transport partners, keep your documents consistent, and make sure each step happens in the right order so your pet is cleared to fly and cleared to land.',
     },
     {
       q: 'How do I get started with relocating my pet from Dubai?',

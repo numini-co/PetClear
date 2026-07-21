@@ -31,7 +31,7 @@ const internationalPetRelocation: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'We are a coordination and concierge service, not an airline or a carrier. We do not physically fly the animals ourselves — we connect you with vetted veterinary, crate and ground-handling partners, work with pet-experienced airlines, and make sure the documentation and timing are correct for your specific destination.',
+          text: 'We are a coordination service, not an airline or a carrier. We do not physically fly the animals ourselves — we connect you with vetted veterinary, crate and ground-handling partners, work with pet-experienced airlines, and make sure the documentation and timing are correct for your specific destination.',
         },
         {
           type: 'list',
@@ -189,7 +189,7 @@ const internationalPetRelocation: ServicePageData = {
     },
     {
       q: 'Do you physically transport the pet yourselves?',
-      a: 'No. We are a coordination and concierge service, not an airline or carrier. We connect you with vetted veterinary, crate and ground-handling partners, book with pet-experienced airlines, and manage the documents and timeline so nothing is missed.',
+      a: 'No. We are a coordination service, not an airline or carrier. We connect you with vetted veterinary, crate and ground-handling partners, book with pet-experienced airlines, and manage the documents and timeline so nothing is missed.',
     },
     {
       q: 'How do I get started?',

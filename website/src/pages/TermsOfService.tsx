@@ -9,7 +9,7 @@ export default function TermsOfService() {
       <SEOHead
         meta={{
           title: 'Terms of Service | Dubai Pet Relocation',
-          description: 'Terms of Service for Dubai Pet Relocation pet relocation concierge services. Please read these terms carefully before using our services.',
+          description: 'Terms of Service for Dubai Pet Relocation pet relocation coordination services. Please read these terms carefully before using our services.',
           canonical: `${BASE_URL}/terms-of-service/`,
           noindex: true,
         }}
@@ -39,7 +39,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-bold text-[#2A2A2A] mb-3">2. Description of Services</h2>
             <p>
-              Dubai Pet Relocation is a pet relocation concierge and coordination service. We help pet owners understand the requirements for relocating pets to and from Dubai, check and prepare documents, and connect clients with trusted third-party partners including veterinarians, airlines, cargo agents, and ground transport providers.
+              Dubai Pet Relocation is a pet relocation coordination service. We help pet owners understand the requirements for relocating pets to and from Dubai, check and prepare documents, and connect clients with trusted third-party partners including veterinarians, airlines, cargo agents, and ground transport providers.
             </p>
             <p className="mt-3 font-semibold text-[#2A2A2A]">
               Important: Dubai Pet Relocation is not a licensed carrier, airline, veterinary clinic, or government agency. We do not physically transport pets, provide veterinary care, or issue government permits. We are a coordination and advisory service that connects you with specialists who perform these functions.
@@ -169,7 +169,7 @@ export default function TermsOfService() {
               If you have questions about these Terms of Service, please contact us:
             </p>
             <div className="space-y-2">
-              <p><strong>Email:</strong> <a href="mailto:hallo@dubai-pet-relocation.ae" className="text-[#4F5BD5] hover:underline">hallo@dubai-pet-relocation.ae</a></p>
+              <p><strong>Email:</strong> <a href="mailto:hello@dubai-pet-relocation.ae" className="text-[#4F5BD5] hover:underline">hello@dubai-pet-relocation.ae</a></p>
               <p><strong>Address:</strong> Al Quoz Industrial Area 4, Al Quoz Industrial Area, Al Quoz, Dubai</p>
               <p><strong>WhatsApp:</strong> <a href="https://wa.me/971551744849" target="_blank" rel="noopener noreferrer" className="text-[#4F5BD5] hover:underline">+971 55 174 4849</a></p>
             </div>

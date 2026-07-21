@@ -69,5 +69,36 @@ for (const route of routes) {
     console.error('PRERENDER FAIL', route, '->', e.message)
   }
 }
+
+// Render a styled 404 page to /404.html for Vercel to serve on unknown routes.
+try {
+  let appHtml = await render('/404')
+
+  const head = []
+  appHtml = appHtml.replace(/<title>[\s\S]*?<\/title>/i, (m) => {
+    head.push(m)
+    return ''
+  })
+  appHtml = appHtml.replace(/<meta\b[^>]*>/gi, (m) => {
+    head.push(m)
+    return ''
+  })
+  appHtml = appHtml.replace(/<link\b[^>]*\brel="canonical"[^>]*>/gi, (m) => {
+    head.push(m)
+    return ''
+  })
+
+  if (!ROOT_RE.test(template)) throw new Error('root placeholder not found in template')
+  const html = template
+    .replace(ROOT_RE, `<div id="root">${appHtml}</div>`)
+    .replace('</head>', `${head.join('')}</head>`)
+
+  fs.writeFileSync(path.join(CLIENT_DIR, '404.html'), html)
+  ok++
+} catch (e) {
+  fail++
+  console.error('PRERENDER FAIL', '/404', '->', e.message)
+}
+
 console.log(`prerendered ${ok} routes ok, ${fail} failed (of ${routes.length})`)
 if (fail > 0) process.exit(1)

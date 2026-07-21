@@ -31,7 +31,7 @@ const dogRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'We are a coordination and concierge service. We do not physically fly the animals ourselves; instead we connect you with vetted veterinary and transport partners, confirm your dog is eligible and ready, and make sure the paperwork, crate and flight all line up. For the wider picture across both species, see our main pet relocation in Dubai page. The sections below focus on what is specific to dogs: breed rules, crate sizing, snub-nosed and summer travel, the document timeline, and cost.',
+          text: 'We are a coordination service. We do not physically fly the animals ourselves; instead we connect you with vetted veterinary and transport partners, confirm your dog is eligible and ready, and make sure the paperwork, crate and flight all line up. For the wider picture across both species, see our main pet relocation in Dubai page. The sections below focus on what is specific to dogs: breed rules, crate sizing, snub-nosed and summer travel, the document timeline, and cost.',
         },
         {
           type: 'list',

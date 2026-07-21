@@ -80,7 +80,7 @@ const tiers = [
   },
   {
     name: 'PawVIP',
-    subtitle: 'Concierge',
+    subtitle: 'Coordination',
     price: 'AED 5,000 – 8,000',
     description: 'White-glove service for complex relocations, nervous first-timers, or anyone who wants every detail handled.',
     icon: Heart,
@@ -167,9 +167,9 @@ export default function ServicesPage() {
     <div>
       <SEOHead
         meta={{
-          title: 'Pet Relocation Services Dubai | Essential to Concierge',
-          description: 'Three pet relocation service tiers: PawPilot (Essential), PawPartner (Premium), and PawVIP (Concierge). Transparent pricing and clear inclusions.',
-          keywords: 'pet relocation services Dubai, pet concierge Dubai, pet relocation cost tiers, dog transport service UAE, cat transport service UAE, pet relocation packages',
+          title: 'Pet Relocation Services Dubai | Essential to Coordination',
+          description: 'Three pet relocation service tiers: PawPilot (Essential), PawPartner (Premium), and PawVIP (Coordination). Transparent pricing and clear inclusions.',
+          keywords: 'pet relocation services Dubai, pet coordination Dubai, pet relocation cost tiers, dog transport service UAE, cat transport service UAE, pet relocation packages',
           canonical: `${BASE_URL}/services/`,
           ogType: 'website',
         }}
@@ -183,7 +183,7 @@ export default function ServicesPage() {
         image="/images/services-hero.jpg"
         imageAlt="A happy dog and cat beside a travel crate in a welcoming Dubai pet relocation office"
         eyebrow="Our Services"
-        title="Dubai Pet Relocation Services — From Essential to Concierge"
+        title="Dubai Pet Relocation Services — From Essential to Coordination"
         subtitle="Choose the level of support that fits your experience, timeline, and pet's needs — with transparency and WhatsApp updates at every tier."
         updated="Updated June 2026"
       />
