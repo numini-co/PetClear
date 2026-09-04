@@ -8,6 +8,7 @@ import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
 import FAQItem from '../components/FAQItem.tsx'
+import SnippetAnswer from '../components/SnippetAnswer.tsx'
 import ContentImage from '../components/ContentImage.tsx'
 import { SERVICE_LINKS } from '../data/nav.ts'
 
@@ -154,6 +155,14 @@ const addOns = [
 
 const SERVICES_FAQS = [
   {
+    q: 'What is the best pet relocation service in Dubai?',
+    a: 'There is no honest number-one ranking and we do not invent ratings. Judge a Dubai relocator by licensing and permit guidance, fee transparency, a named process, and cabin-versus-cargo fit. We are a provider — Dubai Pet Relocation. Compare tiers on this hub, then open door-to-door pet relocation and Get a Quote. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.',
+  },
+  {
+    q: 'Best pet relocation services Dubai',
+    a: 'Use criteria, not a trophy list: who will confirm MOCCAE fees on the portal, who will not force cabin onto a cargo animal, and who quotes the file. This hub compares how much help we hold. The commercial door-to-door page is pet relocation in Dubai. We disclose we are the provider.',
+  },
+  {
     q: 'What is the difference between PawPilot, PawPartner and PawVIP?',
     a: 'PawPilot is document guidance. PawPartner adds booking and travel-day coordination. PawVIP adds a dedicated manager and contingency planning. The MOCCAE and airline steps do not change — only who holds each task.',
   },
@@ -256,6 +265,10 @@ export default function ServicesPage() {
 
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
+          <SnippetAnswer
+            question="What is the best pet relocation service in Dubai?"
+            answer="There is no honest number-one ranking. Judge a Dubai relocator by licensing and permit guidance, fee transparency, a named process, and whether cabin, cargo, jet or charter fits the animal. We are a provider — Dubai Pet Relocation — and we quote the file. Compare tiers here, then Get a Quote."
+          />
           <p className="text-body mb-4">
             This hub compares tiers. It does not own “pet relocation Dubai” — that money head is{' '}
             <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
