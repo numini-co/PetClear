@@ -67,6 +67,14 @@ const IMPORT_PAA_FAQS: { q: string; a: string; link?: { to: string; label: strin
     a: 'The UAE typically has no long quarantine when the file is correct. Compliant pets are examined by MOCCAE veterinary staff at the entry port and released to the owner. Incomplete papers can mean a hold, refusal or re-export at your expense — we do not invent a day-count for that hold. The import permit is valid 30 days.',
   },
   {
+    q: 'Is there quarantine for pets in Dubai?',
+    a: 'No routine quarantine for a compliant file. MOCCAE veterinary staff examine the pet at the entry port and release the owner. There is no new quarantine URL on this site — this import-requirements page owns the question. A paperwork problem can still mean a hold, refusal or re-export at your expense.',
+  },
+  {
+    q: 'What are the quarantine rules for pets entering the UAE?',
+    a: 'Compliant pets are not routinely quarantined. The rule is examination and release at the port when the microchip, rabies papers, health certificate and 30-day MOCCAE import permit match. We do not invent a hold duration. Depth stays on this page — we did not create a separate quarantine guide URL.',
+  },
+  {
     q: 'What are the rules and regulations for pets in the UAE?',
     a: 'UAE pet rules cover an ISO microchip, current rabies vaccination, a government health certificate, a MOCCAE import permit valid 30 days, cargo entry (except Etihad cabin into Abu Dhabi), municipality registration after arrival, and breed bans. Confirm contested government fees on the official portal. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.',
     link: { to: '/guides/banned-dog-breeds-dubai/', label: 'Banned dog breeds in Dubai' },
@@ -87,7 +95,8 @@ const IMPORT_PAA_FAQS: { q: string; a: string; link?: { to: string; label: strin
   },
   {
     q: 'Do I need a MOCCAE import permit for my dog?',
-    a: 'Yes. Every dog entering the UAE needs a MOCCAE import permit. It is valid 30 days from issuance — not 90. Confirm the live permit and arrival-release amounts on the official portal; published figures have differed. Apply before travel so the pet lands inside that window.',
+    a: 'Yes — and every cat too. The permit is valid 30 days from issuance. Apply questions and the walkthrough live on the MOCCAE import permit guide. This page stays on the full import-rules checklist, including quarantine.',
+    link: { to: '/guides/moccae-import-permit/', label: 'MOCCAE import permit guide' },
   },
 ]
 

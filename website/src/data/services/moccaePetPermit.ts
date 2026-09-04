@@ -31,12 +31,16 @@ const moccaePetPermit: ServicePageData = {
     'Hi Dubai Pet Relocation! I need MOCCAE import or export permit help. Can you review my documents before I submit?',
   ctaLabel: 'Check Documents',
   heroEyebrow: 'MOCCAE Permit Assistance',
+  snippetQuestion: 'Do I need a MOCCAE import permit?',
+  snippetAnswer:
+    'Yes. Every pet entering the UAE needs a MOCCAE import permit, valid 30 days from issuance. This page is the commercial application-help service. The apply walkthrough lives on the MOCCAE import permit guide. Confirm current portal fees. WhatsApp +971 50 478 2999 or support@dubai-pet-relocation.ae.',
   trustBadges: [
     '30-day import-permit window',
     'Document review before submit',
     'Portal + UAE Pass guidance',
     'WhatsApp during business hours',
   ],
+  costRange: { low: '200', high: '700' },
   hasHowTo: true,
   howToName: 'How we assist a MOCCAE pet import permit application',
   sections: [
@@ -248,6 +252,14 @@ const moccaePetPermit: ServicePageData = {
     },
   ],
   faq: [
+    {
+      q: 'Do I need a MOCCAE import permit?',
+      a: 'Yes. Every dog or cat entering the UAE needs a MOCCAE import permit before travel. It is valid 30 days from issuance — not 90. This page is the commercial application-help service. The step-by-step apply walkthrough lives on the [MOCCAE import permit guide](/guides/moccae-import-permit/).',
+    },
+    {
+      q: 'What is a MOCCAE pet permit?',
+      a: 'It is the official UAE government approval that allows a dog or cat to legally enter or leave the country. MOCCAE is the Ministry of Climate Change and Environment. Imports need a MOCCAE import permit; exports need a MOCCAE export health certificate. Both are applied for online via the MOCCAE portal using UAE Pass.',
+    },
     {
       q: 'Do you issue MOCCAE pet permits?',
       a: 'No. Only the Ministry of Climate Change and Environment issues permits. We review documents, help you submit on the official portal with UAE Pass, and track approval. We are not MOCCAE-licensed.',

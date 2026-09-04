@@ -15,11 +15,23 @@ import { FLIGHT_MODE_PATHS, UAE_MANIFEST_CARGO_RULE } from '../data/flightModes.
 const WA =
   'Hi Dubai Pet Relocation! I need help choosing how my pet should fly to or from Dubai. Can you recommend a mode and quote the coordination?'
 
-const snippetQuestion = 'How should my pet fly to or from Dubai?'
+const snippetQuestion = 'Which airlines fly pets to Dubai?'
 const snippetAnswer =
-  'A pet can fly to or from Dubai in six modes: Etihad cabin into Abu Dhabi, accompanied checked baggage on eligible outbound journeys, Emirates SkyCargo / manifest cargo, a private jet, a shared charter, or door-to-door coordination. UAE arrivals are manifest cargo except Etihad cabin into AUH. Cabin on Emirates, flydubai and Air Arabia is falcons-only, not dogs or cats.'
+  'Etihad flies small dogs and cats in the cabin into Abu Dhabi. Emirates, flydubai and Air Arabia do not carry cats or dogs in the cabin — falcons only, plus Emirates guide dogs. The default into Dubai is manifest cargo, often Emirates SkyCargo. Cabin, baggage, cargo, jet and charter sit on this comparison hub, not on one airline page.'
 
 const faqData = [
+  {
+    q: 'Which airlines fly pets to Dubai?',
+    a: 'Etihad is the only UAE cabin path for cats and dogs, and those flights land at Abu Dhabi (AUH). Emirates, flydubai and Air Arabia do not carry cats or dogs in the cabin (falcons; Emirates also lists guide dogs). Most Dubai International arrivals are manifest cargo — Emirates SkyCargo is the common DXB product. This hub is the comparison. Emirates fees and booking steps live on the Emirates pet cargo guide; Etihad cabin rules live on the Etihad guide.',
+  },
+  {
+    q: 'Pet friendly airlines Dubai',
+    a: '“Pet friendly airlines Dubai” is a comparison, not a cabin free-for-all. Etihad cabin (AUH) is the exception for small dogs and cats. Emirates, flydubai and Air Arabia keep cats and dogs out of the cabin. Cargo is the default into Dubai. Open a child guide when you already know the carrier; use this hub when you are choosing.',
+  },
+  {
+    q: 'Best airline to fly a dog to Dubai?',
+    a: 'There is no single best airline. Cabin only exists on Etihad into AUH for pets that meet the weight and carrier limits. A DXB arrival is almost always cargo. We do not rank carriers or sell tickets — we match the animal to a legal mode, then quote coordination. Compare the table on this page, then open the matching child guide.',
+  },
   {
     q: 'Can I bring my pet on an Emirates flight?',
     a: 'Yes, but not in the cabin. Emirates carries dogs and cats as checked baggage on some outbound journeys under 17 hours, and as SkyCargo manifest cargo — and every itinerary ending in Dubai must use cargo (source: Emirates). Cabin on Emirates is limited to falcons on certain Pakistan routings and guide dogs. Open the Emirates pet cargo guide or the checked-baggage guide for the mode that matches your route.',
@@ -74,7 +86,7 @@ export default function PetFlightOptionsHub() {
   const canonical = `${BASE_URL}${FLIGHT_MODE_PATHS.hub}`
   const title = 'Pet Flight Options from Dubai | Cabin, Cargo, Jet & Charter'
   const description =
-    'Chooser hub: compare six pet flight modes to or from Dubai — cabin, checked baggage, manifest cargo, private jet, shared charter, and door-to-door. Decision table and UAE cargo rule only; airline fee grids live on the child guides.'
+    'Which airlines fly pets to Dubai? Compare Etihad cabin into AUH with Emirates, flydubai and Air Arabia (no cabin cats or dogs) and the cargo default. Six flight modes; fee grids live on the child guides.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -102,7 +114,7 @@ export default function PetFlightOptionsHub() {
           title,
           description,
           keywords:
-            'pet flight options Dubai, fly pet to or from Dubai, cabin vs cargo vs charter UAE, pet travel modes Dubai, how should my pet fly Dubai',
+            'which airlines fly pets to Dubai, pet friendly airlines Dubai, pet flight options Dubai, fly pet to or from Dubai, cabin vs cargo vs charter UAE, pet travel modes Dubai',
           canonical,
           ogType: 'article',
         }}
@@ -115,7 +127,7 @@ export default function PetFlightOptionsHub() {
         imageAlt="A dog and cat beside travel documents, representing the choice of how a pet flies to or from Dubai"
         eyebrow="Flight options hub"
         title="Six Ways a Pet Can Fly to or from Dubai"
-        subtitle="Chooser hub only — decision table, mode cards and a UAE cargo callout. Airline policy tables and commercial jet or charter copy live on the child URLs."
+        subtitle="Chooser and airline comparison: Etihad cabin into AUH, Emirates / flydubai / Air Arabia no cabin cats or dogs, cargo the Dubai default. Fee grids live on the child guides."
         updated="Updated September 2026"
         primaryLabel="Ask which mode fits"
         whatsappMessage={WA}
@@ -126,11 +138,11 @@ export default function PetFlightOptionsHub() {
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            This page is the navigational chooser. It does not own Etihad cabin-fee tables, Emirates animal-charge tiers, or the “pet relocation Dubai” money head. Those live on the child guides and on{' '}
+            This page owns the comparison queries — which airlines fly pets to Dubai, and which carriers are “pet friendly” here. It does not own Etihad cabin-fee tables, Emirates animal-charge tiers, or the “pet relocation Dubai” money head. Those live on the child guides and on{' '}
             <Link to={FLIGHT_MODE_PATHS.doorToDoor} className="font-semibold text-[#4F5BD5] hover:underline">
               door-to-door pet relocation in Dubai
             </Link>
-            . Air Arabia cabin is falcons-only (source: Air Arabia) — not a dog or cat product. Open a child page when you already know the mode; message us when you want us to choose and coordinate.
+            . Air Arabia cabin is falcons-only (source: Air Arabia) — not a dog or cat product. Open a child page when you already know the carrier or mode; message us when you want us to choose and coordinate.
           </p>
           <ContentImage
             src="/assets/w-flight-modes/pet-airline-options-cabin-baggage-cargo-diagram.png"
@@ -149,6 +161,69 @@ export default function PetFlightOptionsHub() {
       </section>
 
       <section className="section-padding bg-[#F5F6FD]">
+        <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
+          <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
+            Which airlines fly pets to Dubai — a comparison
+          </h2>
+          <p className="mb-6 max-w-3xl text-base leading-relaxed text-[#5A5A5A]">
+            This is the comparison, not an Emirates-only sponge. Cabin cats and dogs exist on Etihad into Abu Dhabi.
+            Emirates, flydubai and Air Arabia do not offer that cabin product. Cargo is the default into Dubai. Airline
+            fee numerals stay on the child guides.
+          </p>
+          <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
+            <table className="w-full min-w-[720px] border-collapse text-sm">
+              <thead>
+                <tr className="bg-[#E9ECFB]">
+                  <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Airline</th>
+                  <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Cabin cats / dogs</th>
+                  <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Typical Dubai / UAE arrival</th>
+                  <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Open</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-white">
+                  <td className="border border-[#E2E5F6] px-4 py-3 font-semibold text-[#2A2A2A]">Etihad</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
+                    Yes — small pets into AUH only. Confirm live cabin fees at booking; the 2026 from-USD-399 promo is expired.
+                  </td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Cabin into AUH, then ground to Dubai if needed</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3">
+                    <Link to={FLIGHT_MODE_PATHS.cabin} className="font-semibold text-[#4F5BD5] hover:underline">
+                      Etihad cabin guide
+                    </Link>
+                  </td>
+                </tr>
+                <tr className="bg-[#F5F6FD]">
+                  <td className="border border-[#E2E5F6] px-4 py-3 font-semibold text-[#2A2A2A]">Emirates</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
+                    No — falcons on certain Pakistan routings and guide dogs only (source: Emirates)
+                  </td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Manifest cargo / SkyCargo for DXB-ending itineraries</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3">
+                    <Link to={FLIGHT_MODE_PATHS.cargo} className="font-semibold text-[#4F5BD5] hover:underline">
+                      Emirates cargo guide
+                    </Link>
+                  </td>
+                </tr>
+                <tr className="bg-white">
+                  <td className="border border-[#E2E5F6] px-4 py-3 font-semibold text-[#2A2A2A]">flydubai</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">No — falcons only (source: flydubai)</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Cargo when the route accepts the animal</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">This comparison — not a flydubai fee page</td>
+                </tr>
+                <tr className="bg-[#F5F6FD]">
+                  <td className="border border-[#E2E5F6] px-4 py-3 font-semibold text-[#2A2A2A]">Air Arabia</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">No — falcons only (source: Air Arabia)</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Not a cat or dog cabin product</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">This comparison — not an Air Arabia fee page</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-white">
         <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Decision table</h2>
           <p className="mb-6 max-w-3xl text-base leading-relaxed text-[#5A5A5A]">

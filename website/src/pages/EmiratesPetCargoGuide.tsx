@@ -158,15 +158,17 @@ export default function EmiratesPetCargoGuide() {
             Manifest cargo is an unaccompanied (or separately ticketed) live-animal booking on an air waybill. The crate is accepted at the cargo terminal — at DXB that is typically the cargo village, not the passenger hall. Emirates SkyCargo publishes a dedicated Emirates Pets product under IATA Live Animals Regulations (source: Emirates SkyCargo).
           </p>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            Emirates does not carry dogs or cats in the cabin (falcons and guide dogs are the published exceptions; source: Emirates). flydubai and Air Arabia likewise keep dogs and cats off the cabin (falcons only). Cabin into the UAE is the{' '}
-            <Link to={FLIGHT_MODE_PATHS.cabin} className="font-semibold text-[#4F5BD5] hover:underline">
-              Etihad in-cabin path into Abu Dhabi
-            </Link>
-            . Accompanied hold travel is explained on{' '}
+            This guide stays on Emirates / SkyCargo: cabin is closed for dogs and cats except falcons on certain Pakistan
+            routings and guide dogs (source: Emirates). Accompanied hold travel is explained on{' '}
             <Link to={FLIGHT_MODE_PATHS.baggage} className="font-semibold text-[#4F5BD5] hover:underline">
               pet as checked baggage
             </Link>{' '}
-            — and is blocked for Emirates itineraries that end in Dubai.
+            and is blocked for Emirates itineraries that end in Dubai. For which airlines fly pets to Dubai — Etihad cabin
+            into AUH versus Emirates, flydubai and Air Arabia — use the{' '}
+            <Link to={FLIGHT_MODE_PATHS.hub} className="font-semibold text-[#4F5BD5] hover:underline">
+              pet flight options hub
+            </Link>
+            , not this page.
           </p>
           <ContentImage
             src="/assets/w1-w3/iata-crate-hardware-detail-compliance-dubai.jpg"

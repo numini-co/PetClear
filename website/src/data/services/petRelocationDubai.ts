@@ -54,6 +54,27 @@ const petRelocationDubai: ServicePageData = {
       ],
     },
     {
+      h2: 'Honest criteria for choosing a pet relocator',
+      intro:
+        'We do not publish a companies ranking page. Use criteria, then Get a Quote. We disclose that we are Dubai Pet Relocation.',
+      body: [
+        {
+          type: 'list',
+          items: [
+            'Will they confirm contested MOCCAE and government fees on the official portal instead of inventing a 90-day permit?',
+            'Do they name a process — documents, crate, cargo or cabin, last mile — or only a from-price?',
+            'Will they match the animal to a legal flight mode (Etihad cabin into AUH, cargo into DXB, jet or charter only when scheduled lift fails)?',
+            'Are they a coordinator, not a fake airline or invented IPATA member?',
+            'Can you reach a human on WhatsApp (+971 50 478 2999) or support@dubai-pet-relocation.ae?',
+          ],
+        },
+        {
+          type: 'p',
+          text: 'Those questions beat a trophy list. Compare how much help we hold on [compare our service tiers](/services/), then quote the file on this door-to-door page.',
+        },
+      ],
+    },
+    {
       h2: 'Flight modes we arrange',
       intro:
         'Door-to-door is the umbrella: we pick the air product, then hold documents, crate and the last mile. These six cards are the modes — not a second money page. The comparison hub is navigational; this page stays the commercial head for pet relocation Dubai.',

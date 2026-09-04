@@ -27,6 +27,7 @@ import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import LastVerified from '../components/LastVerified.tsx'
 import ContentImage from '../components/ContentImage.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
+import SnippetAnswer from '../components/SnippetAnswer.tsx'
 import { BASE_URL, siteConfig } from '../lib/seo.ts'
 import {
   LAST_VERIFIED_LABEL,
@@ -34,6 +35,10 @@ import {
   PERMIT_PROCESSING_ESTIMATE,
   PERMIT_VALIDITY,
 } from '../lib/regulatory.ts'
+
+const snippetQuestion = 'Do I need a MOCCAE import permit?'
+const snippetAnswer =
+  'Yes. Every dog or cat entering the UAE needs a MOCCAE import permit before travel. Apply on the official portal with UAE Pass, or we review the file and submit with you. The permit is valid 30 days from issuance — not 90. Confirm current fees on the portal. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.'
 
 /* ─── FAQ accordion helper ─── */
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
@@ -57,6 +62,26 @@ export default function MOCCAEPermitGuide() {
   const ogImage = `${BASE_URL}/assets/og-moccae-permit.jpg`
 
   const faqData = [
+    {
+      question: 'Do I need a MOCCAE import permit?',
+      answer:
+        'Yes. Every dog or cat entering the UAE needs a MOCCAE import permit before travel. Airlines will not board the pet without it, and customs will refuse entry. The permit is valid 30 days from issuance — not 90. Apply on the official MOCCAE portal with UAE Pass, or we review the file and submit with you. Confirm current fees on the portal. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.',
+    },
+    {
+      question: 'Do I need a MOCCAE import permit for my dog?',
+      answer:
+        'Yes. Each dog needs its own permit. Cats too — one pet, one permit. Validity is 30 days from issuance. Apply online before you book cargo so the arrival sits inside that window. Confirm the live portal fee; published amounts have differed. This guide owns the apply questions; the commercial help page is the MOCCAE pet permit service.',
+    },
+    {
+      question: 'How do I apply for a MOCCAE import permit?',
+      answer:
+        'Log in to the MOCCAE portal or app with UAE Pass, choose Import Permit for Pets, upload the owner passport copy, pet photo, vaccination records, microchip certificate and health-certificate details, then pay the current portal fee. Processing is typically a few business days. We error-check the file first so a rejection does not reset the clock.',
+    },
+    {
+      question: 'How long does the MOCCAE import permit take?',
+      answer:
+        'Complete applications are typically estimated at 2–5 working days. That figure is secondary-sourced, not a first-party SLA. Incomplete or inconsistent files are returned and the estimate restarts. Apply once the travel date is real enough to fit the 30-day validity window.',
+    },
     {
       question: 'What is the UAE Pass path for a MOCCAE import permit?',
       answer:
@@ -186,7 +211,7 @@ export default function MOCCAEPermitGuide() {
     canonical,
     ogImage,
     ogType: 'article',
-    keywords: 'MOCCAE import permit UAE, MOCCAE pet permit Dubai, UAE pet import permit, how to apply MOCCAE permit, MOCCAE permit cost, MOCCAE permit processing time, Dubai pet import documents, MOCCAE export permit, pet relocation permit UAE, MOCCAE online portal',
+    keywords: 'do I need a MOCCAE import permit, MOCCAE import permit UAE, MOCCAE pet permit Dubai, UAE pet import permit, how to apply MOCCAE permit, MOCCAE permit cost, MOCCAE permit processing time, Dubai pet import documents, MOCCAE export permit, pet relocation permit UAE, MOCCAE online portal',
   }
 
   return (
@@ -206,6 +231,12 @@ export default function MOCCAEPermitGuide() {
         primaryLabel="Get the file checked"
         secondary={{ label: 'Permit assistance service', to: '/service/moccae-pet-permit/' }}
       />
+
+      <section className="section-padding bg-white">
+        <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
+          <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
+        </div>
+      </section>
 
       {/* What is MOCCAE */}
       <section className="section-padding bg-[#F5F6FD]">

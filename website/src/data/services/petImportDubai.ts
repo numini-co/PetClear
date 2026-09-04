@@ -283,7 +283,7 @@ const petImportDubai: ServicePageData = {
     },
     {
       q: 'Do I need a MOCCAE import permit for my dog?',
-      a: 'Yes. Every dog entering the UAE needs a MOCCAE import permit, valid 30 days from issuance — not 90. Confirm the live portal fee; published amounts have differed. How to apply is on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+      a: 'Yes. Every dog entering the UAE needs a MOCCAE import permit, valid 30 days from issuance — not 90. Confirm the live portal fee; published amounts have differed. Apply questions live on the [MOCCAE import permit guide](/guides/moccae-import-permit/). This commercial import page does not deep-own that query.',
     },
     {
       q: 'How much does it cost to import a pet to Dubai?',
