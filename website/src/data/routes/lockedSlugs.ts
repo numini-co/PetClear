@@ -1,0 +1,71 @@
+/** Exact locked slugs from docs/route50/LOCKED_50_URLS.txt — do not rename. */
+export const LOCKED_50_SLUGS = [
+  'dubai-to-india',
+  'dubai-to-philippines',
+  'saudi-arabia-to-dubai',
+  'dubai-to-australia',
+  'dubai-to-saudi-arabia',
+  'germany-to-dubai',
+  'france-to-dubai',
+  'dubai-to-canada',
+  'dubai-to-south-africa',
+  'qatar-to-dubai',
+  'singapore-to-dubai',
+  'dubai-to-germany',
+  'dubai-to-qatar',
+  'turkey-to-dubai',
+  'spain-to-dubai',
+  'netherlands-to-dubai',
+  'dubai-to-france',
+  'dubai-to-turkey',
+  'dubai-to-oman',
+  'dubai-to-singapore',
+  'pakistan-to-dubai',
+  'oman-to-dubai',
+  'bahrain-to-dubai',
+  'kuwait-to-dubai',
+  'italy-to-dubai',
+  'ireland-to-dubai',
+  'dubai-to-netherlands',
+  'dubai-to-pakistan',
+  'egypt-to-dubai',
+  'dubai-to-egypt',
+  'dubai-to-new-zealand',
+  'dubai-to-spain',
+  'dubai-to-bahrain',
+  'dubai-to-kuwait',
+  'dubai-to-italy',
+  'dubai-to-ireland',
+  'japan-to-dubai',
+  'dubai-to-japan',
+  'hong-kong-to-dubai',
+  'dubai-to-hong-kong',
+  'thailand-to-dubai',
+  'dubai-to-thailand',
+  'indonesia-to-dubai',
+  'dubai-to-indonesia',
+  'malaysia-to-dubai',
+  'dubai-to-malaysia',
+  'china-to-dubai',
+  'dubai-to-china',
+  'south-korea-to-dubai',
+  'dubai-to-south-korea',
+] as const
+
+export type LockedRouteSlug = (typeof LOCKED_50_SLUGS)[number]
+
+/** Live inbound pages that already exist — outbound twins must not reverse their copy. */
+export const LIVE_INBOUND_SLUGS = [
+  'uk-to-dubai',
+  'usa-to-dubai',
+  'india-to-dubai',
+  'australia-to-dubai',
+  'philippines-to-dubai',
+  'canada-to-dubai',
+  'new-zealand-to-dubai',
+  'south-africa-to-dubai',
+] as const
+
+export const LIVE_OUTBOUND_SLUGS = ['dubai-to-uk', 'dubai-to-usa'] as const
+
+export const LIVE_ROUTE_SLUGS = [...LIVE_INBOUND_SLUGS, ...LIVE_OUTBOUND_SLUGS] as const

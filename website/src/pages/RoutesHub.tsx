@@ -7,6 +7,7 @@ import OfficialSources from '../components/OfficialSources.tsx'
 import LastVerified from '../components/LastVerified.tsx'
 import HubCrossLinks from '../components/HubCrossLinks.tsx'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
+import { ROUTE50_INBOUND_CARDS, ROUTE50_OUTBOUND_CARDS } from '../data/routes/registry.ts'
 
 const INBOUND = [
   { title: 'UK to Dubai', to: '/routes/uk-to-dubai/', image: '/images/hero-uk.jpg', desc: 'Low-risk origin: microchip, vaccinations, MOCCAE permit and a DEFRA health certificate.' },
@@ -17,11 +18,13 @@ const INBOUND = [
   { title: 'Canada to Dubai', to: '/routes/canada-to-dubai/', image: '/images/hero-canada.jpg', desc: 'CFIA-endorsed health certificate, MOCCAE permit, and DXB clearance.' },
   { title: 'New Zealand to Dubai', to: '/routes/new-zealand-to-dubai/', image: '/images/hero-new-zealand.jpg', desc: 'Rabies-free origin advantage, still with a full UAE import document chain.' },
   { title: 'South Africa to Dubai', to: '/routes/south-africa-to-dubai/', image: '/images/hero-south-africa.jpg', desc: 'Titer-required origin with permit, crate and cargo steps mapped out.' },
+  ...ROUTE50_INBOUND_CARDS,
 ]
 
 const OUTBOUND = [
   { title: 'Dubai to UK', to: '/routes/dubai-to-uk/', image: '/images/hero-dubai-to-uk.jpg', desc: 'MOCCAE export certificate, GB pet health certificate and tapeworm timing.' },
   { title: 'Dubai to USA', to: '/routes/dubai-to-usa/', image: '/images/hero-dubai-to-usa.jpg', desc: 'CDC dog import rules, health certificate and US arrival inspection.' },
+  ...ROUTE50_OUTBOUND_CARDS,
 ]
 
 export default function RoutesHub() {
@@ -56,7 +59,7 @@ export default function RoutesHub() {
         imageAlt="A dog ready for an international flight beside travel documents"
         eyebrow="Relocation Routes"
         title="Pet Relocation Routes to and from Dubai"
-        subtitle="Existing country guides, grouped inbound versus outbound. Each route page covers documents, timing and what we coordinate — no generic copy-paste across borders."
+        subtitle="Country guides, grouped inbound versus outbound. Each route page covers documents, timing and what we coordinate — no generic copy-paste across borders."
         updated="Last verified 4 September 2026"
         secondary={{ label: 'UAE Import Requirements', to: '/guides/uae-pet-import-requirements/' }}
       />
