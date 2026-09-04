@@ -98,8 +98,9 @@ export default function DubaiToUSA() {
 
       {/* HERO */}
       <Hero
-        image="/images/hero-dubai-to-usa.jpg"
+        image="/assets/route-heroes/route-dubai-to-usa-dog-flag-hero.jpg"
         imageAlt="Pet relocation from Dubai to USA"
+        fallbackSrc="/images/hero-dubai-to-usa.jpg"
         eyebrow="Dubai → United States"
         title="Dubai to USA Pet Relocation — Exporting Your Pet to America"
         subtitle="Direct Emirates flights and clear CDC rules. We handle CDC Dog Import forms, USDA APHIS health certificates, and US customs."

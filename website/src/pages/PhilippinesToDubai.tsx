@@ -96,7 +96,8 @@ export default function PhilippinesToDubai() {
 
       {/* HERO */}
       <Hero
-        image="/images/hero-philippines.jpg"
+        image="/assets/route-heroes/route-philippines-to-dubai-dog-flag-hero.jpg"
+        fallbackSrc="/images/hero-philippines.jpg"
         imageAlt="Pet relocation from Philippines to Dubai"
         eyebrow="Philippines → Dubai"
         title="Philippines to Dubai Pet Relocation — Complete Guide"

@@ -5,6 +5,8 @@ import { getWhatsAppUrl, PHONE_DISPLAY, PHONE_E164 } from '../lib/seo.ts'
 interface HeroProps {
   image: string
   imageAlt: string
+  /** Used if the primary hero asset fails to load. */
+  fallbackSrc?: string
   eyebrow?: string
   title: string
   subtitle?: string
@@ -20,6 +22,7 @@ interface HeroProps {
 export default function Hero({
   image,
   imageAlt,
+  fallbackSrc,
   eyebrow,
   title,
   subtitle,
@@ -33,6 +36,11 @@ export default function Hero({
       <img
         src={image}
         alt={imageAlt}
+        onError={(e) => {
+          if (fallbackSrc && e.currentTarget.src !== fallbackSrc) {
+            e.currentTarget.src = fallbackSrc
+          }
+        }}
         width={1536}
         height={1024}
         loading="eager"

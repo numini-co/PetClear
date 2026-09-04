@@ -11,7 +11,14 @@ const SOURCES: { label: string; href: string }[] = [
   { label: 'USDA APHIS — Pet Travel (US health certificates)', href: 'https://www.aphis.usda.gov/pet-travel' },
 ]
 
-export default function OfficialSources() {
+export default function OfficialSources({
+  extra,
+}: {
+  extra?: { label: string; href: string }[]
+}) {
+  const sources = extra?.length
+    ? [...SOURCES, ...extra.filter((s) => !SOURCES.some((b) => b.href === s.href))]
+    : SOURCES
   return (
     <section className="bg-[#EEF0FC] section-padding">
       <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
@@ -25,7 +32,7 @@ export default function OfficialSources() {
         </p>
         <LastVerified className="mb-6 text-sm text-[#5A5A5A]" />
         <ul className="flex flex-wrap gap-3">
-          {SOURCES.map((s) => (
+          {sources.map((s) => (
             <li key={s.href}>
               <a
                 href={s.href}

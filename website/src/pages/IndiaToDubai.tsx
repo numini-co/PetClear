@@ -96,7 +96,8 @@ export default function IndiaToDubai() {
 
       {/* HERO */}
       <Hero
-        image="/images/hero-india.jpg"
+        image="/assets/route-heroes/route-india-to-dubai-dog-flag-hero.jpg"
+        fallbackSrc="/images/hero-india.jpg"
         imageAlt="Pet relocation from India to Dubai"
         eyebrow="India → Dubai"
         title="India to Dubai Pet Relocation — Complete Guide"

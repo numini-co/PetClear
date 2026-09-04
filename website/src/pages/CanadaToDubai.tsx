@@ -96,7 +96,8 @@ export default function CanadaToDubai() {
 
       {/* HERO */}
       <Hero
-        image="/images/hero-canada.jpg"
+        image="/assets/route-heroes/route-canada-to-dubai-dog-flag-hero.jpg"
+        fallbackSrc="/images/hero-canada.jpg"
         imageAlt="Pet relocation from Canada to Dubai"
         eyebrow="Canada → Dubai"
         title="Canada to Dubai Pet Relocation — Complete Guide"

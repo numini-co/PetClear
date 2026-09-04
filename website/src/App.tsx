@@ -48,6 +48,7 @@ const EmiratesPetCargoGuide = lazy(() => import('./pages/EmiratesPetCargoGuide.t
 // City pages (V2 - Month 1)
 const AbuDhabiCity = lazy(() => import('./pages/AbuDhabiCity.tsx'))
 const RoutesHub = lazy(() => import('./pages/RoutesHub.tsx'))
+const RoutePageLoader = lazy(() => import('./pages/RoutePageLoader.tsx'))
 const CitiesHub = lazy(() => import('./pages/CitiesHub.tsx'))
 
 // Data-driven service pages (Blue Book Phase 2)
@@ -122,6 +123,9 @@ export default function App() {
           <Route path="/routes/south-africa-to-dubai/" element={<SouthAfricaToDubai />} />
           <Route path="/routes/dubai-to-uk/" element={<DubaiToUK />} />
           <Route path="/routes/dubai-to-usa/" element={<DubaiToUSA />} />
+          {/* Route50 tranche — 50 new corridors via shared template (existing 10 stay above) */}
+          <Route path="/routes/:slug/" element={<RoutePageLoader />} />
+          <Route path="/routes/:slug" element={<RoutePageLoader />} />
 
           {/* Guide pages */}
           <Route path="/guides/" element={<GuidesHub />} />

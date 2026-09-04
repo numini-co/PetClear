@@ -96,7 +96,8 @@ export default function SouthAfricaToDubai() {
 
       {/* HERO */}
       <Hero
-        image="/images/hero-south-africa.jpg"
+        image="/assets/route-heroes/route-south-africa-to-dubai-dog-flag-hero.jpg"
+        fallbackSrc="/images/hero-south-africa.jpg"
         imageAlt="Pet relocation from South Africa to Dubai"
         eyebrow="South Africa → Dubai"
         title="South Africa to Dubai Pet Relocation — Complete Guide"

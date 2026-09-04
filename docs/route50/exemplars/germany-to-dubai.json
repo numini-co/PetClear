@@ -1,0 +1,167 @@
+{
+  "slug": "germany-to-dubai",
+  "direction": "inbound",
+  "countryKey": "germany",
+  "title": "Pet Relocation Germany to Dubai | PetClear",
+  "meta": "Move a dog or cat from Germany to Dubai: FRA/MUC export airports, UAE MOCCAE permit timing, titer sample window, and cargo vs cabin checks.",
+  "h1": "Pet relocation from Germany to Dubai",
+  "heroImage": "/assets/routes/heroes/germany-to-dubai.jpg",
+  "heroAlt": "Dog ready for pet relocation from Germany to Dubai",
+  "intro": "Relocating a dog or cat from Germany to Dubai is an export-then-import problem, not a single airline booking with a health form stapled on. On the German side you need an origin health certificate that a government-endorsed veterinarian can issue against the UAE destination rules, plus airline acceptance for the live animal on the exact FRA or MUC (and sometimes BER or DUS) itinerary you intend to fly. On the UAE side the centre of gravity is MOCCAE: an import permit that remains valid for thirty days from issuance, microchip and vaccination alignment, and — when a rabies antibody titer is required for your origin status — a blood sample drawn within ninety days before travel with a result of at least 0.5 IU/ml. That titer rule is a pre-travel sample window; it is never a ninety-day waiting period after the draw. Most pets on this corridor leave via Frankfurt or Munich and clear in the UAE as manifest cargo through Dubai cargo pathways, with Abu Dhabi relevant mainly when an Etihad product applies. This page is written for the Germany→Dubai direction only. It is not a mirror of Dubai→Germany with the country names swapped: inbound owns UAE arrival, MOCCAE permit timing, and how German export paperwork must line up to that arrival window. Airline rows below come from the Route50 seed and remain verificationStatus unverified — confirm current pet policy for your exact OD before you book or crate.",
+  "rulesSpecialties": "Corridor rules on Germany→Dubai specialise around three interlocking clocks. First is the German export health certificate: it must reflect the animal that will travel, match the ISO microchip, and be issued close enough to departure that it still satisfies UAE entry timing when the pet lands. Second is the MOCCAE import permit. For inbound UAE moves the permit is valid for thirty days from the date of issuance, and the animal must enter the UAE inside that window — do not plan around a ninety-day permit myth. Third is the rabies titer (RNATT) when required: the blood sample must be taken within ninety days before travel and must read at least 0.5 IU/ml. Germany is an EU origin with established veterinary infrastructure, which helps with laboratory quality and endorsement pathways, but it does not erase UAE-side rules. ISO microchip implant timing relative to rabies vaccination must follow MOCCAE sequencing; parasite treatments and any additional vaccines must meet the current portal checklist before flight week. Specialty of this corridor versus a generic inbound page: German gateways FRA and MUC dominate long-haul pet export capacity, Lufthansa products are often considered alongside Emirates and Etihad cargo pathways, and handlers routinely plan cargo clearance rather than passenger baggage reclaim. Always re-check the MOCCAE portal and your airline before travel; PetClear is not affiliated with MOCCAE or any carrier.",
+  "difficulties": "What usually goes wrong on Germany→Dubai is timing collision, not a missing stamp in isolation. Families book a passenger ticket weeks before the MOCCAE permit is issued, then discover the permit’s thirty-day validity no longer covers the flight — forcing a reissue or a date change under crate and airline pressure. Another failure mode is treating the titer as a post-draw waiting period: people draw blood early, wait ninety days, and arrive with a sample that is now outside the ninety-day-before-travel window. Correct framing is sample within ninety days before travel (≥0.5 IU/ml) when a titer is required. Microchip-versus-certificate mismatches also strand pets: the chip number on the German health certificate must match the animal and the MOCCAE file. Airline-mode assumptions fail when someone expects cabin into Dubai because a Lufthansa Europe product allowed cabin; UAE entry for most dogs and cats is manifest cargo, and Emirates seed mode on this corridor is cargo. Etihad cabin into AUH, if available at all, is airline- and OD-specific — confirm current policy. Connection itineraries via DOH or other hubs add live-animal connection risk that a direct FRA–DXB cargo plan would avoid. Finally, fee invention: do not rely on blog AED bands for MOCCAE or release costs — confirm amounts on the official portal; PetClear packages remain quote-only via Get Route Checked or WhatsApp +971504782999.",
+  "howItWorks": "A realistic Germany→Dubai scenario starts months out with a corridor check: species, breed, weight, preferred German export city, and target UAE arrival month. Week −12 to −8: confirm whether a rabies titer is required for this origin profile; if yes, schedule the blood draw so the sample date will still fall within ninety days before the eventual travel date, and keep the ≥0.5 IU/ml result with the file. Implant or verify the ISO microchip before rabies vaccination sequencing if that order is not already correct. Week −6 to −4: align German veterinary appointments for the government-endorsed health certificate window and begin the MOCCAE import permit application so issuance will leave enough of the thirty-day validity for the booked flight. Week −3: lock airline acceptance and crate dimensions against the carrier’s live pet policy for Germany→UAE — Lufthansa cabin_or_cargo seed mode, Emirates cargo, Etihad cargo with possible AUH nuance, Qatar cargo via DOH, Eurowings confirm — all still unverified on this page. Week −1 to departure: final parasite treatments per MOCCAE timing, certificate endorsement, and cargo booking confirmation. Arrival day in the UAE is a cargo and veterinary release pathway story for most consignments, often associated with DXB or DWC cargo handling rather than the passenger baggage hall. After MOCCAE release, your handler tells you where to collect. This timeline is a scenario narrative for planning conversations, not a guaranteed SLA — every date still depends on portal and airline confirmation.",
+  "airportsNarrative": "German export airports on the seed list are Frankfurt (FRA), Munich (MUC), Berlin (BER), and Düsseldorf (DUS). FRA and MUC are the primary long-haul pet export gateways; BER and DUS appear when itinerary and handler routing support live-animal acceptance — never assume every German airport offers the same pet product. On the UAE side, Dubai International (DXB) is the familiar passenger hub, but pets moving as manifest cargo are typically processed through cargo and veterinary release pathways, not baggage reclaim. Al Maktoum / Dubai World Central (DWC) is cargo-centric on many Emirates SkyCargo-style routings. Abu Dhabi (AUH) matters when the itinerary uses Etihad; any cabin exception into AUH is airline- and OD-specific and must be confirmed on the current Etihad pet policy. Choosing FRA versus MUC is usually driven by carrier schedule, handler coverage, and crate logistics rather than a regulatory preference. Document the export IATA on the booking and the MOCCAE file so collection instructions match reality.",
+  "airlinesNarrative": "Seed airlines for Germany include Lufthansa (mode cabin_or_cargo), Emirates (cargo), Etihad (cargo), Qatar Airways (cargo), and Eurowings (confirm). Every row on this exemplar carries verificationStatus unverified and must be confirmed against the carrier’s official pet policy for the exact Germany→Dubai OD before booking. Lufthansa is often discussed for cabin or cargo products out of FRA/MUC, but cabin into Dubai must not be assumed from a European cabin product. Emirates itineraries ending in Dubai generally require manifest cargo under live-animal conditions — confirm current Emirates policy. Etihad may surface cabin language into AUH on some products; treat that as an exception to verify, not a default. Qatar via DOH adds connection risk for live animals. Eurowings must not be assumed to accept pets on Germany–UAE routings. PetClear has no airline affiliation, displays no carrier logos as partnership marks, and never claims a carrier is MOCCAE-approved. UI copy should keep “confirm current policy” until a first-party check sets verificationStatus to verified with a dated lastVerified note.",
+  "airports": [
+    {
+      "iata": "FRA",
+      "city": "Frankfurt",
+      "role": "export",
+      "notes": "Primary long-haul pet export gateway from Germany"
+    },
+    {
+      "iata": "MUC",
+      "city": "Munich",
+      "role": "export",
+      "notes": "Common alternate export airport"
+    },
+    {
+      "iata": "BER",
+      "city": "Berlin",
+      "role": "export",
+      "notes": "Used when itinerary/handler routing supports it — confirm acceptance"
+    },
+    {
+      "iata": "DUS",
+      "city": "Düsseldorf",
+      "role": "export",
+      "notes": "Regional option; confirm live-animal handling for your carrier"
+    }
+  ],
+  "uaeAirports": [
+    {
+      "iata": "DXB",
+      "city": "Dubai International",
+      "notes": "Typical passenger hub; pet clearance for cargo itineraries often via cargo pathways, not baggage reclaim"
+    },
+    {
+      "iata": "DWC",
+      "city": "Al Maktoum / Dubai World Central",
+      "notes": "Cargo-centric pathway on many Emirates SkyCargo routings"
+    },
+    {
+      "iata": "AUH",
+      "city": "Abu Dhabi",
+      "notes": "Relevant when itinerary uses Etihad; cabin exception (if any) is airline- and OD-specific — confirm current policy"
+    }
+  ],
+  "airlines": [
+    {
+      "name": "Lufthansa",
+      "mode": "cabin_or_cargo",
+      "notes": "Seed: cabin/cargo. Mode and breed/weight limits are OD-specific — confirm current policy before booking.",
+      "verified": false,
+      "verificationStatus": "unverified"
+    },
+    {
+      "name": "Emirates",
+      "mode": "cargo",
+      "notes": "Seed: cargo. Itineraries ending in Dubai generally require manifest cargo — confirm current Emirates pet policy.",
+      "verified": false,
+      "verificationStatus": "unverified"
+    },
+    {
+      "name": "Etihad",
+      "mode": "cargo",
+      "notes": "Seed: cargo. Cabin into AUH may exist as an exception on some products — confirm current Etihad pet policy for this OD.",
+      "verified": false,
+      "verificationStatus": "unverified"
+    },
+    {
+      "name": "Qatar Airways",
+      "mode": "cargo",
+      "notes": "Seed: cargo (often via DOH). Connection risk for live animals — confirm current policy and routing.",
+      "verified": false,
+      "verificationStatus": "unverified"
+    },
+    {
+      "name": "Eurowings",
+      "mode": "confirm",
+      "notes": "Seed: confirm. Do not assume pet acceptance on Germany–UAE routings.",
+      "verified": false,
+      "verificationStatus": "unverified"
+    }
+  ],
+  "uaeRules": {
+    "permitValidityDays": 30,
+    "titerSampleWindowDays": 90,
+    "titerMinIUml": 0.5,
+    "manifestCargoDefault": true,
+    "bullets": [
+      "Obtain a MOCCAE import permit before the pet travels; the permit is valid for 30 days from issuance — the animal must enter the UAE within that window.",
+      "UAE entry for most dogs and cats is as manifest cargo under IATA live-animal conditions (cabin into Dubai is not the default).",
+      "ISO microchip must match the health certificate; implant timing relative to rabies vaccination must follow MOCCAE rules.",
+      "When a rabies antibody titer (RNATT) is required, the blood sample must be taken within 90 days before travel and result ≥ 0.5 IU/ml — this is a pre-travel sample window, not a 90-day waiting period after the draw.",
+      "Government-endorsed origin health certificate and parasite treatments must meet MOCCAE timing — verify current portal requirements before flight week.",
+      "MOCCAE and on-arrival release fee amounts: confirm on the official portal — we do not publish fee numerals here.",
+      "German EU health certificate paperwork must be sequenced so endorsement and flight dates still sit inside the MOCCAE permit’s thirty-day validity.",
+      "Do not invent exempt-country claims for titer; verify current MOCCAE lists on the portal before skipping a titer."
+    ],
+    "disclaimer": "Rules summarised from regulatory-source-of-truth.csv. Always re-check MOCCAE and your airline before travel. PetClear is not affiliated with MOCCAE or any airline."
+  },
+  "faqs": [
+    {
+      "question": "Which German airports are typically used to fly a pet to Dubai?",
+      "answer": "Seed routing focuses on FRA (Frankfurt) and MUC (Munich), with BER and DUS as alternates when the carrier and handler accept live animals there. Confirm the exact export airport on your booking — do not assume every German airport offers the same pet product. Collection and crate logistics usually follow the chosen gateway’s handler coverage."
+    },
+    {
+      "question": "Will my pet clear at DXB passenger arrivals?",
+      "answer": "Usually not for cargo consignments. Pets moving as manifest cargo are processed through cargo and veterinary release pathways (often associated with DXB or DWC cargo handling), not the passenger baggage hall. Ask your handler where to collect after MOCCAE release."
+    },
+    {
+      "question": "Can my dog fly in the cabin from Germany into Dubai?",
+      "answer": "Do not assume cabin into Dubai. UAE entry for most dogs and cats is manifest cargo. Lufthansa seed mode is cabin_or_cargo, Emirates and Etihad seed as cargo, with any AUH cabin exception being OD-specific. Every airline row on this page is still unverified; confirm the live pet policy for your exact itinerary."
+    },
+    {
+      "question": "How long is the MOCCAE import permit valid for a Germany → Dubai move?",
+      "answer": "30 days from the date of issuance. The pet must enter the UAE within that window. Do not plan around a 90-day permit validity."
+    },
+    {
+      "question": "When should the rabies titer blood sample be taken?",
+      "answer": "When a titer is required for UAE import, the blood sample must be taken within 90 days before travel and must show at least 0.5 IU/ml. That is a sample-timing rule before travel — not a requirement to wait 90 days after the blood is drawn."
+    },
+    {
+      "question": "How much does PetClear charge for Germany to Dubai packages?",
+      "answer": "We do not publish package or government fee bands on this page. Share your pet's details and preferred dates via Get Route Checked or WhatsApp +971504782999 for a quote based on the live corridor constraints."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "All pet relocation routes",
+      "href": "/routes/"
+    },
+    {
+      "label": "Dubai to Germany (outbound twin)",
+      "href": "/routes/dubai-to-germany/"
+    },
+    {
+      "label": "Pet relocation to Dubai",
+      "href": "/service/pet-relocation-to-dubai/"
+    },
+    {
+      "label": "Pet relocation Dubai",
+      "href": "/service/pet-relocation-dubai/"
+    }
+  ],
+  "cta": {
+    "label": "Get Route Checked",
+    "whatsapp": "+971504782999",
+    "note": "Quote-only. No published package prices. Confirm airline policy and MOCCAE portal fees before booking."
+  },
+  "hubCardDesc": "FRA/MUC export pathways into DXB/DWC cargo clearance for dogs and cats.",
+  "lastVerified": "2026-09-05",
+  "copyStatus": "exemplar",
+  "depthBar": "OWNER ≥1000 unique",
+  "wordCountEstimate": 1763
+}

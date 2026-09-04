@@ -96,8 +96,9 @@ export default function USAToDubai() {
 
       {/* HERO */}
       <Hero
-        image="/images/hero-usa.jpg"
+        image="/assets/route-heroes/route-usa-to-dubai-dog-flag-hero.jpg"
         imageAlt="Pet relocation from USA to Dubai"
+        fallbackSrc="/images/hero-usa.jpg"
         eyebrow="United States → Dubai"
         title="USA to Dubai Pet Relocation — Complete Guide"
         subtitle="The USA is a low-risk country — most pets need no titer test. We handle the full process from USDA endorsement to Dubai customs."
