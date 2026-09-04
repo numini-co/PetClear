@@ -11,6 +11,7 @@ import FAQItem from '../components/FAQItem.tsx'
 import SnippetAnswer from '../components/SnippetAnswer.tsx'
 import ContentImage from '../components/ContentImage.tsx'
 import { SERVICE_LINKS } from '../data/nav.ts'
+import { cardImageFor } from '../data/cardImages.ts'
 
 const WhatsAppCta = ({
   text,
@@ -410,21 +411,29 @@ export default function ServicesPage() {
           <p className="mb-6 max-w-3xl text-[#5A5A5A]">
             After you pick a tier, open the URL that owns the search. Children use /service/ singular. The homepage and this hub are the parents.
           </p>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {SERVICE_LINKS.map((l) => (
-              <Link
-                key={l.to}
-                to={l.to}
-                className="rounded-2xl bg-[#F5F6FD] px-5 py-4 hover:bg-[#E9ECFB]"
-              >
-                <span className="flex items-center justify-between text-sm font-semibold text-[#2A2A2A]">
-                  {l.label} <ArrowRight className="h-4 w-4 shrink-0 text-[#4F5BD5]" />
-                </span>
-                {SERVICE_BLURBS[l.to] ? (
-                  <p className="mt-2 text-sm leading-relaxed text-[#5A5A5A]">{SERVICE_BLURBS[l.to]}</p>
-                ) : null}
-              </Link>
-            ))}
+          <div className="grid gap-4 sm:grid-cols-2">
+            {SERVICE_LINKS.map((l) => {
+              const img = cardImageFor(l.to)
+              return (
+                <Link
+                  key={l.to}
+                  to={l.to}
+                  className="overflow-hidden rounded-2xl bg-[#F5F6FD] hover:bg-[#E9ECFB]"
+                >
+                  {img ? (
+                    <img src={img.src} alt={img.alt} width={1200} height={800} loading="lazy" className="aspect-[16/9] w-full object-cover" />
+                  ) : null}
+                  <div className="px-5 py-4">
+                    <span className="flex items-center justify-between text-sm font-semibold text-[#2A2A2A]">
+                      {l.label} <ArrowRight className="h-4 w-4 shrink-0 text-[#4F5BD5]" />
+                    </span>
+                    {SERVICE_BLURBS[l.to] ? (
+                      <p className="mt-2 text-sm leading-relaxed text-[#5A5A5A]">{SERVICE_BLURBS[l.to]}</p>
+                    ) : null}
+                  </div>
+                </Link>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -435,19 +444,27 @@ export default function ServicesPage() {
           <p className="mb-6 max-w-3xl text-[#5A5A5A]">
             Door-to-door stays the money page. These cards are how the pet actually flies — plus the two quote-only charter products.
           </p>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {FLIGHT_MODE_SERVICE_CARDS.map((l) => (
-              <Link
-                key={l.to}
-                to={l.to}
-                className="rounded-2xl bg-white px-5 py-4 shadow-sm hover:bg-[#E9ECFB]"
-              >
-                <span className="flex items-center justify-between text-sm font-semibold text-[#2A2A2A]">
-                  {l.label} <ArrowRight className="h-4 w-4 shrink-0 text-[#4F5BD5]" />
-                </span>
-                <p className="mt-2 text-sm leading-relaxed text-[#5A5A5A]">{l.desc}</p>
-              </Link>
-            ))}
+          <div className="grid gap-4 sm:grid-cols-2">
+            {FLIGHT_MODE_SERVICE_CARDS.map((l) => {
+              const img = cardImageFor(l.to)
+              return (
+                <Link
+                  key={l.to}
+                  to={l.to}
+                  className="overflow-hidden rounded-2xl bg-white shadow-sm hover:bg-[#E9ECFB]"
+                >
+                  {img ? (
+                    <img src={img.src} alt={img.alt} width={1200} height={800} loading="lazy" className="aspect-[16/9] w-full object-cover" />
+                  ) : null}
+                  <div className="px-5 py-4">
+                    <span className="flex items-center justify-between text-sm font-semibold text-[#2A2A2A]">
+                      {l.label} <ArrowRight className="h-4 w-4 shrink-0 text-[#4F5BD5]" />
+                    </span>
+                    <p className="mt-2 text-sm leading-relaxed text-[#5A5A5A]">{l.desc}</p>
+                  </div>
+                </Link>
+              )
+            })}
           </div>
         </div>
       </section>
