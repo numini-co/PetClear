@@ -26,11 +26,11 @@ const faqData = [
   },
   {
     q: 'What does Emirates charge for animals as baggage?',
-    a: 'USD 500 when pet + carrier is ≤23 kg and ≤150 cm; USD 650 for 24–32 kg and 150–300 cm; USD 800 above 32 kg up to 300 cm. Containers over 300 cm travel as cargo (source: Emirates). Confirm live amounts on the Emirates animals page.',
+    a: 'Airline fees (source: Emirates) when the itinerary is eligible: USD 500 when pet + carrier is ≤23 kg and ≤150 cm; USD 650 for 24–32 kg and 150–300 cm; USD 800 above 32 kg up to 300 cm. Containers over 300 cm travel as cargo. Into Dubai this is often cargo — never assume every UAE route qualifies. Confirm live amounts on the Emirates animals page.',
   },
   {
     q: 'Does flydubai offer checked-baggage pets?',
-    a: 'flydubai does not allow animals in the cabin except falcons. Other pets travel via flydubai Cargo (source: flydubai). A secondary source states flydubai does not offer AVIH checked-baggage service — treat that as secondary until the cargo desk confirms your booking.',
+    a: 'flydubai does not allow animals in the cabin except falcons. Other pets travel via flydubai Cargo (source: flydubai). Air Arabia likewise does not carry cats or dogs (falcons only). A secondary source states flydubai does not offer AVIH checked-baggage service — treat that as secondary until the cargo desk confirms your booking.',
   },
   {
     q: 'Is checked baggage the same as manifest cargo?',
@@ -52,9 +52,9 @@ const faqData = [
 
 export default function PetAsCheckedBaggageGuide() {
   const canonical = `${BASE_URL}${FLIGHT_MODE_PATHS.baggage}`
-  const title = 'Pet as Checked Baggage | When Hold Travel Is Allowed'
+  const title = 'Pets as Checked Baggage UAE | Accompanied Hold Rules'
   const description =
-    'When a pet can travel as accompanied checked baggage versus when UAE and Emirates rules block it. Emirates under-17-hour outbound rule and DXB cargo-only arrivals explained.'
+    'Pets as checked baggage in the UAE: when accompanied hold / excess / AVIH is allowed, the Emirates under-17-hour outbound rule, and why DXB-ending itineraries must use manifest cargo.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -91,7 +91,7 @@ export default function PetAsCheckedBaggageGuide() {
           title,
           description,
           keywords:
-            'pet as checked baggage, AVIH pet Dubai, Emirates checked baggage pets, fly pet in hold to Dubai, accompanied pet baggage UAE',
+            'pets as checked baggage UAE, pet as checked baggage, accompanied pet baggage UAE, excess baggage pets UAE, AVIH pet Dubai',
           canonical,
           ogType: 'article',
         }}
@@ -149,6 +149,7 @@ export default function PetAsCheckedBaggageGuide() {
                 <li>Itineraries ending in Dubai on Emirates — animals must travel as SkyCargo (source: Emirates).</li>
                 <li>UAE import as cabin or accompanied baggage, except Etihad in-cabin into Abu Dhabi.</li>
                 <li>flydubai dogs and cats — cabin is falcons only; other pets go via cargo (source: flydubai).</li>
+                <li>Air Arabia — no cats or dogs (falcons only); not a cabin or AVIH workaround for UAE arrivals.</li>
               </ul>
             </div>
             <div className="rounded-[20px] bg-white p-6 shadow-sm">
@@ -177,7 +178,7 @@ export default function PetAsCheckedBaggageGuide() {
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Emirates animal charges (source: Emirates)</h2>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            These tiers apply to Emirates animal carriage. Containers over 300 cm travel as cargo. We repeat them here so you can compare baggage vs SkyCargo; the cargo-owned keywords live on the{' '}
+            These tiers are first-party Emirates animal charges. They are not a Dubai Pet Relocation price list. Dubai-ending itineraries often must travel as manifest cargo — these figures do not unlock checked-baggage arrival into DXB. Containers over 300 cm travel as cargo. We repeat them here so you can compare baggage vs SkyCargo; the cargo-owned keywords live on the{' '}
             <Link to={FLIGHT_MODE_PATHS.cargo} className="font-semibold text-[#4F5BD5] hover:underline">
               Emirates pet cargo guide
             </Link>
@@ -189,7 +190,7 @@ export default function PetAsCheckedBaggageGuide() {
               <thead>
                 <tr className="bg-[#E9ECFB]">
                   <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Tier (pet + carrier)</th>
-                  <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Published charge</th>
+                  <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Airline fee (source: Emirates)</th>
                 </tr>
               </thead>
               <tbody>

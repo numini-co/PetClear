@@ -6,7 +6,7 @@ const petRelocationDubai: ServicePageData = {
   metaDescription:
     'Door-to-door pet relocation in Dubai: MOCCAE document checks, IATA-compliant crates, cargo booking coordination, and clear WhatsApp timelines. Get a relocation quote.',
   keywords:
-    'pet relocation dubai, pet relocation services dubai, pet shipping dubai, pet movers dubai, pet cargo dubai, door to door pet relocation dubai',
+    'pet relocation dubai, pet relocation services dubai, pet shipping dubai, pet movers dubai, door to door pet relocation dubai',
   h1: 'Pet Relocation in Dubai — Door-to-Door, Transparently Coordinated',
   primaryKeyword: 'pet relocation dubai',
   heroValueProp:
@@ -74,7 +74,7 @@ const petRelocationDubai: ServicePageData = {
             },
             {
               title: 'Manifest air cargo',
-              text: 'Default for UAE import. Emirates SkyCargo flagship, fee tiers and booking.',
+              text: 'Educational cargo process. Emirates airline animal-charge tiers; freight quoted per route/weight.',
               to: '/guides/emirates-pet-cargo/',
               kind: 'Guide',
             },
@@ -94,7 +94,7 @@ const petRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'We are not the airline. Cabin and cargo figures on the child guides are cited from Etihad and Emirates. Jet and charter stay Get a Quote — we do not invent aircraft prices.',
+          text: 'We are not the airline. Cabin and cargo figures on the child guides are cited from Etihad (from USD 399) and Emirates (USD 500 / 650 / 800). Jet and charter stay Get a Quote — we do not invent aircraft prices.',
         },
       ],
     },

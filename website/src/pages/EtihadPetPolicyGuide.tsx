@@ -18,7 +18,7 @@ const WA =
 const faqData = [
   {
     q: 'Can pets fly in the cabin into Dubai International (DXB)?',
-    a: 'Not on Emirates or flydubai for dogs and cats. Cabin into the UAE is an Etihad product that arrives at Abu Dhabi (AUH). Pets entering Dubai itself travel as manifest cargo. We can still coordinate an AUH cabin arrival and a ground transfer to a Dubai address.',
+    a: 'Not on Emirates, flydubai or Air Arabia for dogs and cats (falcons are the published exception on those carriers). Cabin into the UAE is an Etihad product that arrives at Abu Dhabi (AUH). Pets entering Dubai itself travel as manifest cargo. We can still coordinate an AUH cabin arrival and a ground transfer to a Dubai address.',
   },
   {
     q: 'What does Etihad charge for a cabin pet?',
@@ -103,8 +103,8 @@ export default function EtihadPetPolicyGuide() {
         image="/assets/w1-w3/british-shorthair-cat-carrier-cat-relocation-dubai.jpg"
         imageAlt="A cat in a soft travel carrier, the kind of under-seat carrier used for Etihad in-cabin pet travel"
         eyebrow="Airline guide"
-        title="Etihad Pet Travel: The Only UAE In-Cabin Option"
-        subtitle="Small dogs and cats, one published fee, booked early — arriving at Abu Dhabi, not Dubai International. We coordinate the file; Etihad operates the flight."
+        title="Etihad Pets in Cabin — The Only UAE In-Cabin Option"
+        subtitle="Small dogs and cats, booked early — arriving at Abu Dhabi, not Dubai International. Etihad publishes cabin pet fees that change; confirm at booking. We coordinate the file; Etihad operates the flight."
         updated="Updated September 2026"
         primaryLabel="Check cabin eligibility"
         whatsappMessage={WA}
@@ -116,7 +116,7 @@ export default function EtihadPetPolicyGuide() {
           <UaeCargoRuleCallout extra="This page is the exception path: Etihad in-cabin into Abu Dhabi. It is not a cabin product into DXB." />
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Who can fly in the cabin</h2>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            Etihad is the only UAE airline that accepts small dogs and cats in the cabin (source: Etihad). Pets must be at least 16 weeks old and weigh up to 8 kg including the carrier. The accompanying passenger must be 18 or older. Emirates does not carry dogs or cats in the cabin except falcons and guide dogs (source: Emirates). flydubai does not allow cabin animals except falcons (source: flydubai).
+            Etihad is the only UAE airline that accepts small dogs and cats in the cabin (source: Etihad). Pets must be at least 16 weeks old and weigh up to 8 kg including the carrier. The accompanying passenger must be 18 or older. Emirates does not carry dogs or cats in the cabin except falcons and guide dogs (source: Emirates). flydubai does not allow cabin animals except falcons (source: flydubai). Air Arabia likewise does not carry cats or dogs — falcons only.
           </p>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             Cabin is not a shortcut around UAE import paperwork. A MOCCAE import permit is still required and is valid for 30 days from issuance. Pair this guide with{' '}
@@ -141,7 +141,16 @@ export default function EtihadPetPolicyGuide() {
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Verified Etihad cabin rules</h2>
           <p className="mb-4 text-sm leading-relaxed text-[#5A5A5A]">
-            Figures below are from Etihad’s travelling-with-pets page. Confirm them on the airline site before you pay — we are not affiliated with Etihad.
+            Eligibility figures below are from Etihad’s{' '}
+            <a
+              href="https://www.etihad.com/en-ae/plan/travel-companion/travelling-with-pets"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[#4F5BD5] hover:underline"
+            >
+              travelling-with-pets
+            </a>{' '}
+            page. Figures in the table are labelled airline fees, not a DPR package. Cabin fees change — confirm the live amount at booking. We are not affiliated with Etihad.
           </p>
           <LastVerified note="Airline fees and carrier limits can change. Recheck Etihad before you submit the form." />
           <div className="mb-6 overflow-x-auto">
@@ -149,13 +158,13 @@ export default function EtihadPetPolicyGuide() {
               <thead>
                 <tr className="bg-[#E9ECFB]">
                   <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Rule</th>
-                  <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Published figure (source: Etihad)</th>
+                  <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Published figure / status (source: Etihad unless noted)</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  ['Economy cabin fee', 'From USD 399 per flight'],
-                  ['Business cabin fee', 'Extra seat required + USD 399'],
+                  ['Cabin pet fee', 'From USD 399 per flight in Economy (source: Etihad). Confirm live before you pay.'],
+                  ['Business cabin pet fee', 'Extra seat plus USD 399 (source: Etihad)'],
                   ['Weight', 'Pet + carrier up to 8 kg'],
                   ['Minimum age', '16 weeks'],
                   ['Under-seat carrier', 'Maximum 40 × 40 × 22 cm'],
@@ -241,7 +250,7 @@ export default function EtihadPetPolicyGuide() {
         <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">We coordinate the Etihad cabin file</h2>
           <p className="mb-8 text-base leading-relaxed text-white/80">
-            Eligibility, booking-form timing, AUH release steps and the Dubai transfer — quoted on WhatsApp. Email{' '}
+            Eligibility, booking-form timing, AUH release steps and the Dubai transfer — DPR coordination is Get a Quote on WhatsApp. Airline cabin fees are paid to Etihad. Email{' '}
             <a href="mailto:support@dubai-pet-relocation.ae" className="underline">
               support@dubai-pet-relocation.ae
             </a>{' '}

@@ -5,13 +5,13 @@ const privateJetPetTravel: ServicePageData = {
   slug: 'private-jet-pet-travel',
   seoTitle: 'Private Jet Pet Travel from Dubai | Quote-Only Coordination',
   metaDescription:
-    'Private jet pet travel when scheduled cabin, baggage or cargo will not work. We coordinate eligibility, documents and the last mile. Quote only — no invented jet prices.',
+    'Offer page for private jet pet travel when scheduled cabin, baggage or cargo will not work. We coordinate eligibility, documents and the last mile. Quote only — no published jet prices.',
   keywords:
-    'private jet pet travel Dubai, private jet with dog UAE, fly pet private aircraft Dubai, dedicated aircraft pet relocation',
+    'private jet pet travel Dubai, private jet with dog UAE, fly pet private aircraft Dubai, dedicated aircraft pet travel',
   h1: 'Private Jet Pet Travel — When a Scheduled Flight Is Not the Right Fit',
   primaryKeyword: 'private jet pet travel Dubai',
   heroValueProp:
-    'A dedicated aircraft is a last-resort air product: tight calendars, animals scheduled carriers will not accept, or owners who need the whole cabin. We coordinate the file. Quotes only — we do not publish jet prices.',
+    'A menu offer for a dedicated aircraft: tight calendars, animals scheduled carriers will not accept, or owners who need the whole cabin. This is not the door-to-door pet relocation page. Quote only — we do not publish jet prices.',
   heroImage: '/images/service-international-pet-relocation.jpg',
   heroImageAlt:
     'A calm dog beside a travel crate and an aircraft in the background — private jet pet travel coordinated from Dubai',
@@ -19,14 +19,14 @@ const privateJetPetTravel: ServicePageData = {
     'Hi Dubai Pet Relocation! I need a private-jet option for my pet. Can you review the route and send a quote? I understand this is quote-only.',
   ctaLabel: 'Get a Private Jet Quote',
   heroEyebrow: 'Charter coordination',
-  trustBadges: ['Quote only — no published jet prices', 'Independent of any airline', 'Documents still required', 'WhatsApp during business hours'],
+  trustBadges: ['Custom charter quote only', 'Independent of any airline', 'Documents still required', 'WhatsApp during business hours'],
   hasHowTo: true,
   howToName: 'How we coordinate private jet pet travel from Dubai',
   sections: [
     {
       h2: 'When a private jet is the right flight mode',
       intro:
-        'This is a commercial service page, not an airline. Most Dubai pet moves use [manifest air cargo](/guides/emirates-pet-cargo/). Cabin is the [Etihad AUH exception](/guides/etihad-pet-policy/). A jet is for the cases those products cannot cover.',
+        'This is an offer / menu page for dedicated-aircraft coordination, not an airline and not the [door-to-door pet relocation](/service/pet-relocation-dubai/) money page. Most Dubai pet moves use [manifest air cargo](/guides/emirates-pet-cargo/). Cabin is the [Etihad AUH exception](/guides/etihad-pet-policy/). A jet is for the cases those products cannot cover.',
       body: [
         {
           type: 'p',
@@ -43,14 +43,14 @@ const privateJetPetTravel: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'If a shared lift is enough, start on [shared / group pet charter](/service/shared-pet-charter/). If you want us to pick the cheapest legal mode, start on [door-to-door pet relocation](/service/pet-relocation-dubai/). Compare all six modes on the [pet flight options hub](/guides/pet-flight-options-dubai/).',
+          text: 'If you searched for pet relocation in Dubai, open [door-to-door pet relocation](/service/pet-relocation-dubai/). If the job is a multi-country cargo file, open [international pet relocation](/service/international-pet-relocation/). If a shared lift is enough, start on [shared / group pet charter](/service/shared-pet-charter/). Compare all six modes on the [pet flight options hub](/guides/pet-flight-options-dubai/).',
         },
       ],
     },
     {
       h2: 'What we coordinate (and what we do not price on this page)',
       intro:
-        'Private-jet cost is a function of aircraft, routing, handling and empty-leg availability. Those numbers change by the day. We will not invent a USD or AED jet table here. The CTA is Get a Quote.',
+        'Private-jet cost is a function of aircraft, routing, handling and empty-leg availability. Those numbers change by the day. We will not invent an all-in USD or AED jet table here. The only figure on this page is a custom charter quote after we know the aircraft and routing.',
       body: [
         {
           type: 'image',
@@ -75,7 +75,7 @@ const privateJetPetTravel: ServicePageData = {
             },
             {
               title: 'Quote',
-              text: 'A written WhatsApp range for coordination plus the operator’s aircraft quote when we have it. Nothing is booked until you accept the scope.',
+              text: 'A custom charter quote: coordination plus the operator’s aircraft figure when we have it. Nothing is booked until you accept the scope. We will not print an all-in jet number on this page.',
             },
             {
               title: 'Travel day',
@@ -137,7 +137,7 @@ const privateJetPetTravel: ServicePageData = {
   faq: [
     {
       q: 'Do you publish private-jet prices?',
-      a: 'No. Aircraft, routing and handling vary too widely. This page is quote-only. Message us on WhatsApp or write to support@dubai-pet-relocation.ae.',
+      a: 'No. Aircraft, routing and handling vary too widely. This page is a custom charter quote only — no all-in jet numbers. Message us on WhatsApp or write to support@dubai-pet-relocation.ae.',
     },
     {
       q: 'Are you an airline or a jet operator?',

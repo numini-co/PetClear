@@ -6,7 +6,7 @@ const internationalPetRelocation: ServicePageData = {
   metaDescription:
     'Worldwide pet relocation to and from Dubai. Destination-by-destination requirement checks, full documentation, vetted partners, door-to-door coordination.',
   keywords:
-    'international pet relocation dubai, worldwide pet relocation, global pet transport, overseas pet relocation, pet relocation international',
+    'international pet relocation dubai, worldwide pet relocation, global pet transport, overseas pet relocation, pet cargo dubai, pet relocation international',
   h1: 'Global Pet Relocation Services',
   primaryKeyword: 'international pet relocation dubai',
   heroValueProp:
@@ -17,7 +17,6 @@ const internationalPetRelocation: ServicePageData = {
   whatsappMessage:
     'Hi Dubai Pet Relocation! I need international pet relocation to or from Dubai. Can you tell me the requirements and cost for my destination country?',
   trustBadges: ['Route-by-route requirement checks', 'Vetted partners worldwide', 'Pet-experienced airlines', 'WhatsApp support'],
-  costRange: { low: '5000', high: '25000' },
   hasHowTo: false,
   sections: [
     {
@@ -27,7 +26,7 @@ const internationalPetRelocation: ServicePageData = {
       body: [
         {
           type: 'p',
-          text: 'Whether you are leaving the UAE for a new posting overseas or bringing a pet into Dubai from abroad, international pet relocation involves matching your animal against the destination country’s exact entry requirements, preparing documents in the right order, booking a suitable flight and clearing customs on both ends. We map the full route before you commit, so you know the timeline and cost up front.',
+          text: 'Whether you are leaving the UAE for a new posting overseas or bringing a pet into Dubai from abroad, international pet relocation involves matching your animal against the destination country’s exact entry requirements, preparing documents in the right order, booking a suitable flight and clearing customs on both ends. We map the full route before you commit, then send a WhatsApp quote — we do not publish an invented AED package table on this page.',
         },
         {
           type: 'p',
@@ -142,19 +141,19 @@ const internationalPetRelocation: ServicePageData = {
             },
             {
               title: 'Emirates / manifest cargo',
-              text: 'Default for itineraries ending in Dubai. SkyCargo fee tiers.',
+              text: 'Educational cargo process. Airline animal-charge tiers (source: Emirates); freight quoted per route/weight.',
               to: '/guides/emirates-pet-cargo/',
               kind: 'Guide',
             },
             {
               title: 'Private jet pet travel',
-              text: 'Dedicated aircraft when scheduled products will not work. Quote only.',
+              text: 'Dedicated aircraft when scheduled products will not work. Custom charter quote only.',
               to: '/service/private-jet-pet-travel/',
               kind: 'Service',
             },
             {
               title: 'Shared / group pet charter',
-              text: 'A dedicated lift shared with other pets. Quote only.',
+              text: 'Dedicated lift shared with other pets. Market EUR band as context; firm seat is Get a Quote.',
               to: '/service/shared-pet-charter/',
               kind: 'Service',
             },
@@ -167,28 +166,28 @@ const internationalPetRelocation: ServicePageData = {
       ],
     },
     {
-      h2: 'International Pet Relocation Cost',
+      h2: 'What drives the quote (Get a Quote — no invented DPR package prices)',
       intro:
-        'International moves cost more than regional transport because of long-haul cargo, destination-specific veterinary work and more complex documentation.',
+        'International moves cost more than a same-city transfer because of long-haul routing, destination-specific veterinary work and more complex documentation. Dubai Pet Relocation fees on this page are Get a Quote. We do not publish an AED package table.',
       body: [
         {
           type: 'p',
-          text: 'Total international pet relocation typically ranges from around AED 5,000 for shorter overseas routes to AED 25,000 or more for long-haul, multi-pet or premium door-to-door service. The biggest variables are the destination country’s requirements, your pet’s size, the flight routing and whether a titer test and waiting period are needed.',
+          text: 'Airline figures on the child guides are labelled airline fees, not DPR freight. Etihad cabin is from USD 399 Economy (source: Etihad; confirm live before you pay). Emirates animal-charge tiers USD 500 / 650 / 800 by weight and size (source: Emirates) apply when the itinerary is eligible; Dubai-ending arrivals must still use cargo. Those tiers are not a door-to-door package and not a commercial cargo freight quote. Freight and coordination are quoted per route and weight after we know the animal.',
         },
         {
           type: 'table',
-          headers: ['Cost component', 'Typical range (AED)'],
+          headers: ['Driver', 'Why it moves the quote'],
           rows: [
-            ['Government permits and release fees', '450 – 1,000'],
-            ['Veterinary (vaccines, health cert, titer test)', '1,200 – 3,000'],
-            ['IATA crate', '110 – 1,500'],
-            ['International flight / cargo', '5,000 – 18,000+'],
-            ['Coordination, customs and door-to-door handling', '2,000 – 7,000'],
+            ['Destination rules', 'Titer tests, waiting periods and quarantine sit on the country pair, not on a generic average'],
+            ['Pet size and crate', 'Chargeable weight and whether a larger IATA crate is required'],
+            ['Flight mode', 'Cabin, accompanied baggage, manifest cargo, shared charter or a private jet — see the [pet flight options hub](/guides/pet-flight-options-dubai/)'],
+            ['Season and aircraft', 'Heat embargoes and snub-nosed limits shrink which carriers will accept the booking'],
+            ['How much we hold', 'Document guidance only versus booking, travel-day and last mile — compare [service tiers](/services/)'],
           ],
         },
         {
           type: 'p',
-          text: 'We give you a firm cost range for your exact route once we have your origin, destination and pet details — no surprises mid-move.',
+          text: 'Commercial cargo handoff on this page and the door-to-door umbrella both stay quote-only. The Dubai money page is [door-to-door pet relocation](/service/pet-relocation-dubai/). Government portal fees are confirmed on the official site. Message WhatsApp or write to support@dubai-pet-relocation.ae for a route-specific quote.',
         },
       ],
     },
@@ -216,7 +215,7 @@ const internationalPetRelocation: ServicePageData = {
     },
     {
       q: 'How do I get started?',
-      a: 'Message us on WhatsApp with your pet type, breed, origin and destination country. We confirm the destination’s exact requirements, map the timeline and reply with a firm cost range — within 15 minutes during business hours.',
+      a: 'Message us on WhatsApp with your pet type, breed, origin and destination country. We confirm the destination’s exact requirements, map the timeline and send a Get a Quote reply — we do not publish unverified AED package tables. Email support@dubai-pet-relocation.ae if you prefer mail.',
     },
   ],
   relatedLinks: [

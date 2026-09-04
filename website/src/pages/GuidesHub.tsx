@@ -9,9 +9,9 @@ import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 
 const GUIDES = [
   { title: 'Pet Flight Options from Dubai', to: '/guides/pet-flight-options-dubai/', image: '/images/import-hero.jpg', desc: 'Cabin, checked baggage, manifest cargo, private jet, shared charter — which mode fits.' },
-  { title: 'Etihad Pet Policy (In-Cabin)', to: '/guides/etihad-pet-policy/', image: '/assets/w1-w3/british-shorthair-cat-carrier-cat-relocation-dubai.jpg', desc: 'The only UAE cabin option: fees, 8 kg limit, AUH arrival and transfer to Dubai.' },
+  { title: 'Etihad Pet Policy (In-Cabin)', to: '/guides/etihad-pet-policy/', image: '/assets/w1-w3/british-shorthair-cat-carrier-cat-relocation-dubai.jpg', desc: 'The only UAE cabin option: airline fees (confirm live), 8 kg limit, AUH arrival. Emirates/flydubai cabin N/A for cats and dogs.' },
   { title: 'Pet as Checked Baggage', to: '/guides/pet-as-checked-baggage/', image: '/images/dog-crate.jpg', desc: 'When accompanied hold travel is allowed — and why Dubai arrivals usually cannot use it.' },
-  { title: 'Emirates Pet Cargo & SkyCargo', to: '/guides/emirates-pet-cargo/', image: '/images/guide-iata-crate.jpg', desc: 'Manifest cargo into Dubai: fee tiers, booking window and arrival clearance.' },
+  { title: 'Emirates Pet Cargo & SkyCargo', to: '/guides/emirates-pet-cargo/', image: '/images/guide-iata-crate.jpg', desc: 'Educational cargo process: airline animal-charge tiers, booking window, and rates quoted per route/weight — not a cargo money page.' },
   { title: 'Pet Relocation Cost Guide', to: '/guides/pet-relocation-cost-dubai/', image: '/images/cost-hero.jpg', desc: 'What it really costs to bring a pet to Dubai — every fee, line by line.' },
   { title: 'UAE Pet Import Requirements', to: '/guides/uae-pet-import-requirements/', image: '/images/import-hero.jpg', desc: 'The full MOCCAE-aligned checklist for bringing dogs and cats to Dubai.' },
   { title: 'Banned & Restricted Dog Breeds', to: '/guides/banned-dog-breeds-dubai/', image: '/images/guide-banned-breeds.jpg', desc: 'Which breeds are prohibited or restricted under UAE federal and Dubai rules.' },

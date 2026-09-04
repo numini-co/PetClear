@@ -5,13 +5,13 @@ const sharedPetCharter: ServicePageData = {
   slug: 'shared-pet-charter',
   seoTitle: 'Shared Pet Charter | Group Charter Coordination from Dubai',
   metaDescription:
-    'Shared / group pet charter — a dedicated lift shared with other pets, between scheduled cargo and a full private jet. Coordination only. Quote — no invented charter prices.',
+    'Offer page for shared / group pet charter — a dedicated lift shared with other pets, between scheduled cargo and a full private jet. Labelled market listings; a firm DPR seat is Get a Quote.',
   keywords:
     'shared pet charter Dubai, group pet charter UAE, pet charter flight Dubai, shared animal charter',
   h1: 'Shared / Group Pet Charter — A Midpoint Between Cargo and a Private Jet',
   primaryKeyword: 'shared pet charter Dubai',
   heroValueProp:
-    'A shared charter is a dedicated lift with other pets on the same flight plan — more control than a scheduled belly hold, without buying the whole aircraft. Quote only. We do not publish charter prices.',
+    'A menu offer for a dedicated lift shared with other pets — more control than a scheduled belly hold, without buying the whole aircraft. This is not the door-to-door pet relocation page. Labelled market listings below are not DPR prices. A firm seat is Get a Quote.',
   heroImage: '/images/service-pet-transport-dubai.jpg',
   heroImageAlt:
     'A travel crate ready for a dedicated pet lift — shared charter coordination from Dubai',
@@ -19,14 +19,14 @@ const sharedPetCharter: ServicePageData = {
     'Hi Dubai Pet Relocation! I am considering a shared / group pet charter. Can you say whether a lift exists for my route and send a quote?',
   ctaLabel: 'Get a Shared Charter Quote',
   heroEyebrow: 'Charter coordination',
-  trustBadges: ['Quote only — no published charter prices', 'Qualitative alternative to a full jet', 'Documents still required', 'WhatsApp during business hours'],
+  trustBadges: ['Firm seat = Get a Quote', 'Market listings labelled, not DPR', 'Documents still required', 'WhatsApp during business hours'],
   hasHowTo: true,
   howToName: 'How a shared pet charter is coordinated',
   sections: [
     {
       h2: 'What a shared pet charter is (and is not)',
       intro:
-        'This page is the commercial shared-charter product. It is not [private jet pet travel](/service/private-jet-pet-travel/) and it is not scheduled [manifest cargo](/guides/emirates-pet-cargo/).',
+        'This is an offer / menu page for shared-charter coordination. It is not [door-to-door pet relocation](/service/pet-relocation-dubai/), it is not [private jet pet travel](/service/private-jet-pet-travel/), and it is not scheduled [manifest cargo](/guides/emirates-pet-cargo/).',
       body: [
         {
           type: 'p',
@@ -57,14 +57,14 @@ const sharedPetCharter: ServicePageData = {
             [
               'Price on this site',
               'Emirates published animal tiers on the cargo guide',
-              'Quote only — no invented charter fees',
-              'Quote only — no invented jet fees',
+              'Market listings labelled; firm seat = quote',
+              'Quote only — no published jet fees',
             ],
           ],
         },
         {
           type: 'p',
-          text: 'If scheduled cargo will accept the animal, start there. If you need the whole aircraft, open the jet page. If you want us to choose, use [door-to-door pet relocation](/service/pet-relocation-dubai/). All six modes sit on the [pet flight options hub](/guides/pet-flight-options-dubai/).',
+          text: 'If you searched for pet relocation in Dubai, open [door-to-door pet relocation](/service/pet-relocation-dubai/). If the job is a multi-country cargo file, open [international pet relocation](/service/international-pet-relocation/). If scheduled cargo will accept the animal, start on the [Emirates cargo guide](/guides/emirates-pet-cargo/). If you need the whole aircraft, open the [private jet](/service/private-jet-pet-travel/) page. All six modes sit on the [pet flight options hub](/guides/pet-flight-options-dubai/).',
         },
       ],
     },
@@ -86,7 +86,7 @@ const sharedPetCharter: ServicePageData = {
             },
             {
               title: 'Quote',
-              text: 'A WhatsApp range for our coordination plus the operator’s per-pet lift charge when we have it. No published charter table on this page.',
+              text: 'A WhatsApp Get a Quote for our coordination plus the operator’s per-pet lift charge when we have it. Market listings below are labelled context, not a DPR rate card.',
             },
             {
               title: 'Documents and crate',
@@ -101,6 +101,48 @@ const sharedPetCharter: ServicePageData = {
         {
           type: 'p',
           text: 'Cabin rules and baggage rules live on their own guides. Do not treat a charter as in-cabin Etihad or as Emirates checked baggage.',
+        },
+      ],
+    },
+    {
+      h2: 'Market context (labelled competitor seats — not a DPR price list)',
+      intro:
+        'These figures are published or reported by other operators and the press. They are labelled competitor / market context. A firm seat we coordinate is Get a Quote — we do not invent Dubai Pet Relocation charter prices.',
+      body: [
+        {
+          type: 'table',
+          headers: ['Source (labelled)', 'Figure', 'What it is'],
+          rows: [
+            [
+              'Elite Pets (competitor)',
+              'AED 45,000 per seat; return pair AED 85,000',
+              'Published competitor shared-seat. Not a DPR package.',
+            ],
+            [
+              'PetXJets (competitor)',
+              'AED 42,000 (some routings TBC)',
+              'Published / TBC competitor seat. Not a DPR package.',
+            ],
+            [
+              'JetCircle (competitor)',
+              'EUR 12,000–13,000 per passenger',
+              'Published JetCircle Europe↔Dubai seats; schedule-specific. Not a DPR quote.',
+            ],
+            [
+              'Press / listicle snapshots',
+              '~USD 10,000 typical; surge ~EUR 20,000',
+              'Secondary press figures. Not first-party and not a DPR quote.',
+            ],
+            [
+              'Dubai Pet Relocation firm seat',
+              'Get a Quote',
+              'Coordination plus the operator’s live lift charge for your pet and week.',
+            ],
+          ],
+        },
+        {
+          type: 'p',
+          text: 'Named operators above are independent of this site. We are not affiliated with Elite Pets, PetXJets or JetCircle and we cannot promise their seats. If no shared lift is forming, we move you to [manifest cargo](/guides/emirates-pet-cargo/) or a [custom charter quote](/service/private-jet-pet-travel/).',
         },
       ],
     },
@@ -155,11 +197,11 @@ const sharedPetCharter: ServicePageData = {
   faq: [
     {
       q: 'Do you publish shared-charter prices?',
-      a: 'No. Lifts are priced per aircraft, routing and how many animals confirm. This page is quote-only. WhatsApp or support@dubai-pet-relocation.ae.',
+      a: 'A firm DPR seat is Get a Quote. We cite labelled competitor seats on this page (Elite Pets AED 45,000 / return pair AED 85,000; PetXJets AED 42,000 some TBC; JetCircle EUR 12,000–13,000; press ~USD 10,000 / surge ~EUR 20,000). Those are not DPR prices. WhatsApp or support@dubai-pet-relocation.ae.',
     },
     {
       q: 'How is this cheaper than a private jet?',
-      a: 'Qualitatively: you share the aircraft cost with other pets instead of buying the empty cabin. We will not invent a percentage or an AED saving. The quote will show both options when both exist.',
+      a: 'Qualitatively: you share the aircraft cost with other pets instead of buying the empty cabin. We will not invent a percentage, an AED saving or a published seat price. The quote will show both options when both exist.',
     },
     {
       q: 'Is a shared charter always available?',

@@ -63,7 +63,7 @@ const SERVICE_BLURBS: Record<string, string> = {
   '/service/private-jet-pet-travel/':
     'Dedicated aircraft when scheduled cabin, baggage or cargo will not accept the animal. Quote only — no invented jet prices.',
   '/service/shared-pet-charter/':
-    'A dedicated lift shared with other pets — midpoint between scheduled cargo and a full jet. Quote only.',
+    'A dedicated lift shared with other pets — midpoint between scheduled cargo and a full jet. Market EUR band as context; firm seat is Get a Quote.',
 }
 
 const FLIGHT_MODE_SERVICE_CARDS = [
@@ -80,17 +80,17 @@ const FLIGHT_MODE_SERVICE_CARDS = [
   {
     to: '/service/shared-pet-charter/',
     label: 'Shared / group pet charter',
-    desc: 'A dedicated lift shared with other pets. Qualitative alternative to a full jet. Quote only.',
+    desc: 'A dedicated lift shared with other pets. Market context ~EUR 7k–13k Europe↔Dubai; firm seat is Get a Quote.',
   },
   {
     to: '/guides/etihad-pet-policy/',
     label: 'Etihad in-cabin guide',
-    desc: 'The UAE cabin exception — fees, 8 kg limit, AUH arrival and Dubai transfer.',
+    desc: 'The UAE cabin exception — airline fees (Etihad from USD 399 Economy cited; confirm live), 8 kg limit, AUH arrival. Emirates/flydubai cabin N/A for cats and dogs.',
   },
   {
     to: '/guides/emirates-pet-cargo/',
     label: 'Emirates pet cargo guide',
-    desc: 'Manifest cargo / SkyCargo: USD 500 / 650 / 800 tiers (source: Emirates) and booking steps.',
+    desc: 'Educational SkyCargo process. Airline animal-charge tiers USD 500 / 650 / 800 (source: Emirates); freight quoted per route/weight — not a DPR cargo price.',
   },
   {
     to: '/guides/pet-as-checked-baggage/',

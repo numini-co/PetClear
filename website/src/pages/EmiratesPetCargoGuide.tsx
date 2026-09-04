@@ -12,7 +12,7 @@ import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { FLIGHT_MODE_PATHS, UAE_MANIFEST_CARGO_RULE } from '../data/flightModes.ts'
 
 const WA =
-  'Hi Dubai Pet Relocation! I need Emirates SkyCargo / manifest pet cargo to or from Dubai. Can you review the route and quote the cargo coordination?'
+  'Hi Dubai Pet Relocation! I read the Emirates pet cargo guide. Can you review my pet and route and quote door-to-door or international relocation?'
 
 const faqData = [
   {
@@ -21,7 +21,7 @@ const faqData = [
   },
   {
     q: 'What are the Emirates animal charges?',
-    a: 'USD 500 (pet + carrier ≤23 kg and ≤150 cm), USD 650 (24–32 kg, 150–300 cm), USD 800 (over 32 kg, up to 300 cm). Over 300 cm travels as cargo (source: Emirates). Confirm live figures on the Emirates animals page. We do not add invented mark-ups to those numerals.',
+    a: 'Airline fees (source: Emirates animal-charge tiers — not DPR freight): USD 500 (pet + carrier ≤23 kg and ≤150 cm), USD 650 (24–32 kg, 150–300 cm), USD 800 (over 32 kg, up to 300 cm). Over 300 cm travels as cargo. Confirm live figures on the Emirates animals page. Commercial cargo freight and DPR coordination are quoted per route and weight.',
   },
   {
     q: 'How do I book Emirates Pets / SkyCargo?',
@@ -37,7 +37,7 @@ const faqData = [
   },
   {
     q: 'What happens on arrival at DXB?',
-    a: 'The pet is accepted at the cargo terminal, then examined by MOCCAE veterinary staff and released if compliant — there is no routine quarantine for compliant pets. We coordinate clearance and the last mile via the pet import and door-to-door pages. Confirm any release-fee amount on the official portal; published figures have differed.',
+    a: 'The pet is accepted at the cargo terminal, then examined by MOCCAE veterinary staff and released if compliant — there is no routine quarantine for compliant pets. Commercial clearance and last-mile work sit on international pet relocation and door-to-door pet relocation. Confirm any release-fee amount on the official portal; published figures have differed.',
   },
   {
     q: 'How long is the MOCCAE import permit valid?',
@@ -47,13 +47,17 @@ const faqData = [
     q: 'Are you part of Emirates SkyCargo?',
     a: 'No. We are an independent coordinator. Airline rules and fees on this page are cited from Emirates / SkyCargo first-party pages.',
   },
+  {
+    q: 'Is the USD 500 / 650 / 800 table a Dubai Pet Relocation freight quote?',
+    a: 'No. Those are Emirates airline animal-charge tiers (source: Emirates), not DPR freight. Commercial cargo handoff and coordination are quoted per route and weight on international pet relocation or door-to-door pet relocation.',
+  },
 ]
 
 export default function EmiratesPetCargoGuide() {
   const canonical = `${BASE_URL}${FLIGHT_MODE_PATHS.cargo}`
   const title = 'Emirates Pet Cargo & SkyCargo Pets — 2026 Guide'
   const description =
-    'Manifest cargo is the default for pets entering Dubai. Emirates SkyCargo rules, the USD 500 / 650 / 800 animal-charge tiers, booking steps, and how we coordinate the cargo file.'
+    'Educational guide to Emirates SkyCargo / manifest cargo into Dubai: USD 500 / 650 / 800 animal-charge tiers, booking steps and the UAE cargo rule. Coordination is quoted on the relocation service pages.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -102,10 +106,10 @@ export default function EmiratesPetCargoGuide() {
         image="/images/guide-iata-crate.jpg"
         imageAlt="An IATA-approved pet crate of the kind used for Emirates SkyCargo and other manifest cargo bookings"
         eyebrow="Airline guide"
-        title="Flying Your Pet with Emirates: SkyCargo, Rules & Costs"
-        subtitle="Manifest cargo is the flagship path into Dubai. Emirates animal-charge tiers, booking windows and unaccompanied cargo — cited from the airline, coordinated by us."
+        title="Emirates Pet Cargo: SkyCargo Rules, Manifest Cargo & Booking"
+        subtitle="An educational airline guide — not a cargo booking desk. Emirates animal-charge tiers, booking windows and unaccompanied cargo, cited from the airline. Commercial coordination lives on the relocation service pages."
         updated="Updated September 2026"
-        primaryLabel="Quote cargo coordination"
+        primaryLabel="Get a Relocation Quote"
         whatsappMessage={WA}
         secondary={{ label: 'All six flight modes', to: FLIGHT_MODE_PATHS.hub }}
       />
@@ -113,15 +117,26 @@ export default function EmiratesPetCargoGuide() {
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <div className="mb-8 rounded-[20px] border border-[#C8CEE8] bg-[#F5F6FD] p-6">
-            <h2 className="mb-2 text-xl font-bold text-[#2A2A2A]">Why this page owns cargo</h2>
+            <h2 className="mb-2 text-xl font-bold text-[#2A2A2A]">Why pets enter Dubai as manifest cargo</h2>
             <p className="text-sm leading-relaxed text-[#5A5A5A]">{UAE_MANIFEST_CARGO_RULE}</p>
+            <p className="mt-3 text-sm leading-relaxed text-[#5A5A5A]">
+              This URL is a policy and booking-steps guide, not a commercial cargo product page. If you want us to coordinate the file, open{' '}
+              <Link to="/service/international-pet-relocation/" className="font-semibold text-[#4F5BD5] hover:underline">
+                international pet relocation
+              </Link>{' '}
+              or door-to-door{' '}
+              <Link to={FLIGHT_MODE_PATHS.doorToDoor} className="font-semibold text-[#4F5BD5] hover:underline">
+                pet relocation in Dubai
+              </Link>
+              .
+            </p>
           </div>
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Manifest cargo vs everything else</h2>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             Manifest cargo is an unaccompanied (or separately ticketed) live-animal booking on an air waybill. The crate is accepted at the cargo terminal — at DXB that is typically the cargo village, not the passenger hall. Emirates SkyCargo publishes a dedicated Emirates Pets product under IATA Live Animals Regulations (source: Emirates SkyCargo).
           </p>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            Emirates does not carry dogs or cats in the cabin (falcons and guide dogs are the published exceptions; source: Emirates). flydubai likewise keeps dogs and cats on cargo (source: flydubai). Cabin into the UAE is the{' '}
+            Emirates does not carry dogs or cats in the cabin (falcons and guide dogs are the published exceptions; source: Emirates). flydubai and Air Arabia likewise keep dogs and cats off the cabin (falcons only). Cabin into the UAE is the{' '}
             <Link to={FLIGHT_MODE_PATHS.cabin} className="font-semibold text-[#4F5BD5] hover:underline">
               Etihad in-cabin path into Abu Dhabi
             </Link>
@@ -143,7 +158,7 @@ export default function EmiratesPetCargoGuide() {
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Verified Emirates fee tiers (source: Emirates)</h2>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            First-party animal charges. We do not invent a second price list. Confirm the live amount on Emirates before you pay.
+            First-party Emirates animal charges — labelled airline fees (source: Emirates), not a Dubai Pet Relocation freight table. Itineraries ending in Dubai must still use manifest cargo; these tiers do not unlock cabin or checked-baggage arrival into DXB. Commercial cargo freight and DPR coordination are quoted per route and weight. Confirm the live airline amount on Emirates before you pay.
           </p>
           <LastVerified note="Airline charges can change. Recheck the Emirates animals page for your travel month." />
           <div className="mb-6 overflow-x-auto">
@@ -151,7 +166,7 @@ export default function EmiratesPetCargoGuide() {
               <thead>
                 <tr className="bg-[#E9ECFB]">
                   <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Pet + carrier</th>
-                  <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Published charge</th>
+                  <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Airline fee (source: Emirates)</th>
                 </tr>
               </thead>
               <tbody>
@@ -188,7 +203,7 @@ export default function EmiratesPetCargoGuide() {
             ))}
           </ul>
           <p className="mt-4 text-sm leading-relaxed text-[#5A5A5A]">
-            Snub-nosed breed restrictions appear in secondary airline summaries; Emirates’ current first-party page did not list a complete breed ban at last check. We treat that as secondary and confirm acceptance on the specific routing before we book. Summer heat notes live on the{' '}
+            Dubai Pet Relocation cargo coordination is quote-only. Competitor context only: Foufoufly packages are often Estimated AED 4,000–15,000 (labelled competitor, not a DPR freight table). Summer heat notes live on the{' '}
             <Link to="/guides/pet-travel-summer-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               summer travel guide
             </Link>
@@ -235,8 +250,23 @@ export default function EmiratesPetCargoGuide() {
             ))}
           </div>
           <p className="mb-3 leading-relaxed text-[#5A5A5A]">
-            Import and arrival pages to open next:
+            Commercial handoff (we coordinate the cargo file from these service pages, not from this guide):
           </p>
+          <ul className="mb-6 space-y-2">
+            <li>
+              <Link to="/service/international-pet-relocation/" className="font-semibold text-[#4F5BD5] hover:underline">
+                International pet relocation
+              </Link>{' '}
+              — cargo booking and multi-country corridor coordination
+            </li>
+            <li>
+              <Link to={FLIGHT_MODE_PATHS.doorToDoor} className="font-semibold text-[#4F5BD5] hover:underline">
+                Door-to-door pet relocation in Dubai
+              </Link>{' '}
+              — umbrella service; we pick the mode and hold documents, crate and last mile
+            </li>
+          </ul>
+          <p className="mb-3 leading-relaxed text-[#5A5A5A]">Related import pages:</p>
           <ul className="space-y-2">
             <li>
               <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
@@ -262,19 +292,13 @@ export default function EmiratesPetCargoGuide() {
               </Link>{' '}
               — inbound-only sequence
             </li>
-            <li>
-              <Link to={FLIGHT_MODE_PATHS.doorToDoor} className="font-semibold text-[#4F5BD5] hover:underline">
-                Door-to-door pet relocation
-              </Link>{' '}
-              — umbrella coordination
-            </li>
           </ul>
         </div>
       </section>
 
       <FlightModeCards
         heading="Sibling modes"
-        intro="Cargo is the default. Cabin, baggage, jet and charter are the alternatives. Door-to-door is how we hold documents and the last mile around the air waybill."
+        intro="This guide explains the cargo product the airline sells. Cabin, baggage, jet and charter are the other air modes. Door-to-door and international relocation are how we hold documents and the last mile around the air waybill."
         exclude="cargo"
       />
 
@@ -293,9 +317,17 @@ export default function EmiratesPetCargoGuide() {
 
       <section className="section-padding bg-[#4F5BD5]">
         <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">We book and manage the cargo leg</h2>
-          <p className="mb-8 text-base leading-relaxed text-white/80">
-            Send pet, route and month. We confirm SkyCargo (or another cargo carrier) acceptance and quote coordination — not an invented freight table. WhatsApp or{' '}
+          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">Need the cargo file coordinated?</h2>
+          <p className="mb-6 text-base leading-relaxed text-white/80">
+            This page stays a guide. We do not sell a standalone cargo product here. Send pet, route and month — we quote coordination on{' '}
+            <Link to="/service/international-pet-relocation/" className="underline">
+              international pet relocation
+            </Link>{' '}
+            or door-to-door{' '}
+            <Link to={FLIGHT_MODE_PATHS.doorToDoor} className="underline">
+              pet relocation in Dubai
+            </Link>
+            . Email{' '}
             <a href="mailto:support@dubai-pet-relocation.ae" className="underline">
               support@dubai-pet-relocation.ae
             </a>
@@ -307,7 +339,7 @@ export default function EmiratesPetCargoGuide() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-7 py-4 text-sm font-semibold text-white hover:bg-[#1DA851]"
           >
-            <MessageCircle className="h-4 w-4" /> Get a cargo quote
+            <MessageCircle className="h-4 w-4" /> Get a Relocation Quote
           </a>
         </div>
       </section>

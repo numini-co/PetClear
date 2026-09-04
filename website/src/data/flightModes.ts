@@ -26,7 +26,7 @@ export const FLIGHT_MODE_CARDS: FlightModeCard[] = [
     id: 'cabin',
     title: 'Pet in cabin',
     blurb:
-      'Small dogs and cats on Etihad only. Combined pet + carrier ≤8 kg. UAE arrivals land at Abu Dhabi, not Dubai.',
+      'Small dogs and cats on Etihad only. Combined pet + carrier ≤8 kg. Emirates, flydubai and Air Arabia: no cabin cats or dogs (falcons excepted). UAE cabin arrivals land at Abu Dhabi, not Dubai. Fees live on the Etihad guide.',
     to: FLIGHT_MODE_PATHS.cabin,
     kind: 'guide',
   },
@@ -34,7 +34,7 @@ export const FLIGHT_MODE_CARDS: FlightModeCard[] = [
     id: 'baggage',
     title: 'Pet as checked baggage',
     blurb:
-      'Accompanied hold travel on the same ticket. Blocked for itineraries ending in Dubai. Emirates allows it from Dubai when the total journey is under 17 hours.',
+      'Accompanied hold travel on the same ticket. Into Dubai this is often cargo — never assume every UAE route qualifies. Airline animal-charge tiers live on the checked-baggage guide.',
     to: FLIGHT_MODE_PATHS.baggage,
     kind: 'guide',
   },
@@ -42,7 +42,7 @@ export const FLIGHT_MODE_CARDS: FlightModeCard[] = [
     id: 'cargo',
     title: 'Manifest air cargo',
     blurb:
-      'The default for UAE import. Unaccompanied live-animal cargo — Emirates SkyCargo for Dubai-ending itineraries.',
+      'The default for UAE import. Educational SkyCargo / booking-steps guide. DPR cargo coordination is quote-only — not a published freight list.',
     to: FLIGHT_MODE_PATHS.cargo,
     kind: 'guide',
   },
@@ -50,7 +50,7 @@ export const FLIGHT_MODE_CARDS: FlightModeCard[] = [
     id: 'jet',
     title: 'Private jet pet travel',
     blurb:
-      'A dedicated aircraft when scheduled cabin, baggage or cargo will not accept the animal or the timeline. Quote only.',
+      'A dedicated aircraft when scheduled cabin, baggage or cargo will not accept the animal or the timeline. Custom charter quote only — no all-in jet numbers.',
     to: FLIGHT_MODE_PATHS.jet,
     kind: 'service',
   },
@@ -58,7 +58,7 @@ export const FLIGHT_MODE_CARDS: FlightModeCard[] = [
     id: 'charter',
     title: 'Shared / group pet charter',
     blurb:
-      'A dedicated lift shared with other pets — a midpoint between scheduled cargo and a full private jet. Quote only.',
+      'A dedicated lift shared with other pets — a midpoint between scheduled cargo and a full private jet. Labelled competitor seats live on the charter page. A DPR firm seat is Get a Quote.',
     to: FLIGHT_MODE_PATHS.charter,
     kind: 'service',
   },
@@ -66,7 +66,7 @@ export const FLIGHT_MODE_CARDS: FlightModeCard[] = [
     id: 'doorToDoor',
     title: 'Door-to-door pet relocation',
     blurb:
-      'The umbrella service: we pick the flight mode, then coordinate documents, crate, booking and the last mile.',
+      'The umbrella service: we pick the flight mode, then coordinate documents, crate, booking and the last mile. DPR package fees are Get a Quote — no invented package prices.',
     to: FLIGHT_MODE_PATHS.doorToDoor,
     kind: 'service',
   },
