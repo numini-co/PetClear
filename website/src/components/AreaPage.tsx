@@ -71,7 +71,7 @@ export default function AreaPage({ data }: { data: AreaPageData }) {
   }
   const localBusiness: Record<string, unknown> = {
     '@context': 'https://schema.org', '@type': 'LocalBusiness', name: `${siteConfig.name} — ${data.areaName}`,
-    url, areaServed: `${data.areaName}, Dubai, UAE`, telephone: '+971551744849',
+    url, areaServed: `${data.areaName}, Dubai, UAE`, telephone: siteConfig.phoneE164,
     description: data.metaDescription, address: { '@type': 'PostalAddress', addressLocality: data.areaName, addressRegion: 'Dubai', addressCountry: 'AE' },
   }
   if (data.geo) localBusiness.geo = { '@type': 'GeoCoordinates', latitude: data.geo.lat, longitude: data.geo.lng }

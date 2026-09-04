@@ -42,7 +42,7 @@ export default function AbuDhabiPillar() {
   }
   const localBusiness = {
     '@context': 'https://schema.org', '@type': 'LocalBusiness', name: `${siteConfig.name} — Abu Dhabi`,
-    url, areaServed: 'Abu Dhabi, UAE', telephone: '+971551744849',
+    url, areaServed: 'Abu Dhabi, UAE', telephone: siteConfig.phoneE164,
     description: 'Pet relocation to and from Abu Dhabi — dog and cat transport, MOCCAE permits, customs clearance at AUH and door-to-door delivery.',
     address: { '@type': 'PostalAddress', addressLocality: 'Abu Dhabi', addressRegion: 'Abu Dhabi', addressCountry: 'AE' },
   }

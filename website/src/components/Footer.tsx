@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { PawPrint, MessageCircle, Phone, Mail, MapPin, Clock } from 'lucide-react'
-import { getWhatsAppUrl } from '../lib/seo.ts'
+import { getWhatsAppUrl, PHONE_DISPLAY, PHONE_E164 } from '../lib/seo.ts'
 import { SERVICE_LINKS, TOP_AREA_LINKS, GUIDE_LINKS, ROUTE_LINKS, COMPANY_LINKS } from '../data/nav.ts'
 import type { NavLink } from '../data/nav.ts'
 
@@ -41,9 +41,9 @@ export default function Footer() {
             </p>
             <ul className="space-y-3 text-sm text-white/80">
               <li>
-                <a href="tel:+971551744849" className="group flex items-center gap-3 hover:text-white transition-colors">
+                <a href={`tel:${PHONE_E164}`} className="group flex items-center gap-3 hover:text-white transition-colors">
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/10 group-hover:bg-white/20 transition-colors"><Phone className="h-4 w-4" /></span>
-                  +971 55 174 4849
+                  {PHONE_DISPLAY}
                 </a>
               </li>
               <li>

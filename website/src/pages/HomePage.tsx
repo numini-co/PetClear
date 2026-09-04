@@ -110,7 +110,7 @@ export default function HomePage() {
     name: 'Dubai Pet Relocation',
     description: 'Pet relocation coordination service in Dubai',
     url: BASE_URL,
-    telephone: siteConfig.phone,
+    telephone: siteConfig.phoneE164,
     email: siteConfig.email,
     address: {
       '@type': 'PostalAddress',

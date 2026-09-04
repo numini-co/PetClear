@@ -936,7 +936,7 @@ export default function DogRelocationPage() {
               Send us a WhatsApp message with your dog's breed, weight, and origin country. We will check your breed against UAE regulations, confirm your route, and send you an itemised quote — usually within 15 minutes.
             </p>
             <a
-              href="https://wa.me/971551744849?text=Hi%2C%20I%20want%20to%20relocate%20my%20dog%20to%20Dubai.%20Can%20you%20help%20me%20understand%20the%20process%20and%20cost%3F"
+              href={getWhatsAppUrl('Hi, I want to relocate my dog to Dubai. Can you help me understand the process and cost?')}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-base hover:bg-[#1ebe57] transition-colors shadow-lg"

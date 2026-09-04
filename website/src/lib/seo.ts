@@ -25,15 +25,21 @@ export function shortSubtitle(text: string, max = 155): string {
   return base.slice(0, max).replace(/\s+\S*$/, '') + '…'
 }
 
+/** Digits for wa.me / tel query strings (no plus, no spaces). */
+export const WHATSAPP_PHONE = '971504782999'
+/** E.164 — schema.org telephone, tel: hrefs. */
+export const PHONE_E164 = '+971504782999'
+/** Human-readable display. */
+export const PHONE_DISPLAY = '+971 50 478 2999'
+
 export function getWhatsAppUrl(message: string, campaign = 'pet-relocation'): string {
-  const phone = '971551744849'
   const params = new URLSearchParams({
     text: message,
     utm_source: 'site',
     utm_medium: 'whatsapp',
     utm_campaign: campaign,
   })
-  return `https://wa.me/${phone}?${params.toString()}`
+  return `https://wa.me/${WHATSAPP_PHONE}?${params.toString()}`
 }
 
 export const defaultOGImage = `${BASE_URL}/assets/og-default.jpg`
@@ -42,7 +48,8 @@ export const siteConfig = {
   name: 'Dubai Pet Relocation',
   tagline: 'Your pet\'s journey, made clear.',
   description: 'Transparent pet relocation coordination service for Dubai and the UAE. We help pet owners understand the process, check requirements, and connect with trusted relocation partners.',
-  phone: '+971 55 174 4849',
+  phone: PHONE_DISPLAY,
+  phoneE164: PHONE_E164,
   email: 'hello@dubai-pet-relocation.ae',
   address: {
     street: '217 Zahra Townhouses, Town Square',

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import SEOHead from '../components/SEOHead.tsx'
-import { BASE_URL } from '../lib/seo.ts'
+import { BASE_URL, getWhatsAppUrl, PHONE_DISPLAY } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 
 export default function TermsOfService() {
@@ -171,7 +171,7 @@ export default function TermsOfService() {
             <div className="space-y-2">
               <p><strong>Email:</strong> <a href="mailto:hello@dubai-pet-relocation.ae" className="text-[#4F5BD5] hover:underline">hello@dubai-pet-relocation.ae</a></p>
               <p><strong>Address:</strong> Al Quoz Industrial Area 4, Al Quoz Industrial Area, Al Quoz, Dubai</p>
-              <p><strong>WhatsApp:</strong> <a href="https://wa.me/971551744849" target="_blank" rel="noopener noreferrer" className="text-[#4F5BD5] hover:underline">+971 55 174 4849</a></p>
+              <p><strong>WhatsApp:</strong> <a href={getWhatsAppUrl('Hi, I have a question about the Terms of Service.')} target="_blank" rel="noopener noreferrer" className="text-[#4F5BD5] hover:underline">{PHONE_DISPLAY}</a></p>
             </div>
           </section>
         </div>

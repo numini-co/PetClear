@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { MessageCircle } from 'lucide-react'
+import { getWhatsAppUrl } from '../lib/seo.ts'
 
 interface WhatsAppButtonProps {
   message?: string
@@ -23,8 +24,7 @@ export default function WhatsAppButton({
     return () => window.removeEventListener('scroll', handleScroll)
   }, [variant])
 
-  const encodedMessage = encodeURIComponent(message)
-  const href = `https://wa.me/971551744849?text=${encodedMessage}`
+  const href = getWhatsAppUrl(message)
 
   if (variant === 'inline') {
     return (
