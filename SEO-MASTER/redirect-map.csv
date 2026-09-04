@@ -1,2 +1,11 @@
-from_path,to_path,type,reason,status,notes
-# Header stub only. Add a row when a redirect is planned or live. Do not invent paths.
+Old URL,New URL,Redirect Type,Reason,Status
+https://dubai-pet-relocation.ae/cities/dubai/,https://dubai-pet-relocation.ae/dubai/,301,"Architecture-brief merge ruling, confirmed by audit: /cities/dubai/ cannibalizes /service/pet-relocation-to-dubai/ (title targets ""to Dubai"") and duplicates /dubai/ hub role; salvage Municipality/emirate sections into /dubai/ before redirecting",proposed
+https://dubai-pet-relocation.ae/dubai/karama/,https://dubai-pet-relocation.ae/dubai/bur-dubai/,301,Grade C merge; ND1 member (0.55 similarity with bur-dubai — worst pair on site); Karama is within Bur Dubai district; no separate keyword demand,proposed
+https://dubai-pet-relocation.ae/dubai/bluewaters/,https://dubai-pet-relocation.ae/dubai/jbr/,301,"Grade C merge; ND2 member (~0.51 similarity); adjacent island, zero measured separate demand; fold pet-friendly notes into JBR page",proposed
+https://dubai-pet-relocation.ae/dubai/port-de-la-mer/,https://dubai-pet-relocation.ae/dubai/jumeirah/,301,Grade C merge; ND2 member; Jumeirah-adjacent beachfront; no separate keyword demand,proposed
+https://dubai-pet-relocation.ae/dubai/city-walk/,https://dubai-pet-relocation.ae/dubai/downtown-dubai/,301,Grade C merge; ND2 member; boutique lifestyle district adjacent to Downtown; no separate keyword demand,proposed
+https://dubai-pet-relocation.ae/dubai/al-wasl/,https://dubai-pet-relocation.ae/dubai/umm-suqeim/,301,Grade C merge; ND5 member (0.517 similarity); same coastal Jumeirah corridor; no separate keyword demand,proposed
+https://dubai-pet-relocation.ae/dubai/international-city/,https://dubai-pet-relocation.ae/dubai/dubai-silicon-oasis/,301,"Grade C merge; thin templated page (~1,104 words), zero keywords in universe, adjacent E311 corridor target can absorb content",proposed
+https://dubai-pet-relocation.ae/dubai/sheikh-zayed-road/,https://dubai-pet-relocation.ae/dubai/,301,"Grade D; corridor not a community — doorway-page risk; cover ""SZR corridor"" as a line item on the /dubai/ hub",proposed
+https://dubai-pet-relocation.ae/routes,https://dubai-pet-relocation.ae/routes/,301,Bare-URL fix: /routes (no slash) currently 404s while linked from 10 route pages; create /routes/ hub and 301 the bare variant,proposed (hub creation confirmed Week 1 in brief; redirect mechanics to verify at deploy)
+https://dubai-pet-relocation.ae/cities,https://dubai-pet-relocation.ae/cities/,301,Bare-URL fix: /cities (no slash) currently 404s while linked from 2 city pages; create /cities/ hub and 301 the bare variant,proposed (hub creation confirmed Week 1 in brief; redirect mechanics to verify at deploy)
