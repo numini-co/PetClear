@@ -25,7 +25,7 @@ const snippetAnswer =
 const faqData = [
   {
     q: 'How much does it cost to bring a cat in the cabin on an Etihad flight?',
-    a: 'Confirm the live cabin-pet fee at booking on Etihad’s travelling-with-pets page — fees change. A timed Economy promo from USD 399 (Business needed an extra seat plus USD 399) ran roughly 13 April–31 May 2026; that window is over as of September 2026 and is not the current standard. We are not Etihad and we do not sell airline tickets.',
+    a: 'Confirm the live cabin-pet fee at booking on Etihad’s travelling-with-pets page — fees change. A timed Economy promo from USD 399 (Business needed an extra seat plus USD 399) ran roughly 13 April–31 May 2026; that window is over as of September 2026 and is not the current standard. Until Etihad’s first-party current fee is confirmed, treat USD 1,500 as Estimated only. We are not Etihad and we do not sell airline tickets.',
   },
   {
     q: 'Etihad pet in cabin business class',
@@ -41,7 +41,7 @@ const faqData = [
   },
   {
     q: 'What does Etihad charge for a cabin pet?',
-    a: 'Confirm the live fee at booking. A 2026 Economy promo was from USD 399 (Business extra seat plus USD 399) for book-and-travel roughly 13 April–31 May 2026 — that window is over and is not the current standard. We are not Etihad and we do not sell airline tickets.',
+    a: 'Confirm the live fee at booking. A 2026 Economy promo was from USD 399 (Business extra seat plus USD 399) for book-and-travel roughly 13 April–31 May 2026 — that window is over and is not the current standard. Until Etihad’s first-party current fee is confirmed, treat USD 1,500 as Estimated only. We are not Etihad and we do not sell airline tickets.',
   },
   {
     q: 'What are the size and weight limits?',
@@ -179,6 +179,7 @@ export default function EtihadPetPolicyGuide() {
               <tbody>
                 {[
                   ['Cabin pet fee', 'Confirm live at booking. Expired 2026 promo was from USD 399 Economy (13 Apr–31 May) — not the current standard.'],
+                  ['Estimated only (until first-party current fee confirmed)', 'USD 1,500 — Estimated only, not a published Etihad rate'],
                   ['Business cabin pet fee', 'Extra seat plus a pet fee; confirm live. Expired 2026 promo used extra seat + USD 399.'],
                   ['Weight', 'Pet + carrier up to 8 kg'],
                   ['Minimum age', '16 weeks'],
