@@ -691,9 +691,9 @@ export default function HowItWorksPage() {
                 <tr><td>Etihad cabin — airline fee</td><td>Fees change; confirm at booking. 2026 from-USD-399 promo (13 Apr–31 May) expired. USD 1,500 = Estimated only</td><td>You, to the airline</td><td>Not a current standard fee and not a DPR package. Emirates / flydubai / Air Arabia cabin N/A for cats and dogs (falcons excepted).</td></tr>
                 <tr><td>Emirates animal charge — airline fee</td><td>USD 500 / 650 / 800 by weight and size (source: Emirates)</td><td>You, to the airline</td><td>Airline animal-charge tiers. Into Dubai the pet often must travel as cargo — not every UAE route qualifies as baggage.</td></tr>
                 <tr><td>Cargo freight</td><td>Quoted per route and weight</td><td>You</td><td>Not a published DPR freight list. The Emirates 500/650/800 bands are airline fees, not our cargo quote.</td></tr>
-                <tr><td>Shared charter seat</td><td>Get a Quote</td><td>You</td><td>Market context only: Europe↔Dubai shared seats often from ~EUR 7k–13k. Optional labelled JetCircle published Munich→Dubai EUR 12,000 / Dubai↔London EUR 13,000 per passenger (schedule-specific).</td></tr>
+                <tr><td>Shared charter seat</td><td>Get a Quote</td><td>You</td><td>No published charter prices on this site.</td></tr>
                 <tr><td>Private jet</td><td>Custom charter quote only</td><td>You</td><td>No all-in jet numbers on this site.</td></tr>
-                <tr className="bg-[#4F5BD5]/5"><td className="font-bold text-[#2A2A2A]">Dubai Pet Relocation coordination</td><td className="font-bold text-[#2A2A2A]">Get a Quote</td><td className="font-bold text-[#2A2A2A]">You</td><td className="font-bold text-[#2A2A2A]">No invented package prices. Competitor market (Foufoufly from-tiers AED 4k / 8k / 15k) is labelled competitor context, not a DPR rate card.</td></tr>
+                <tr className="bg-[#4F5BD5]/5"><td className="font-bold text-[#2A2A2A]">Dubai Pet Relocation coordination</td><td className="font-bold text-[#2A2A2A]">Get a Quote</td><td className="font-bold text-[#2A2A2A]">You</td><td className="font-bold text-[#2A2A2A]">No invented package prices.</td></tr>
               </tbody>
             </table>
           </div>

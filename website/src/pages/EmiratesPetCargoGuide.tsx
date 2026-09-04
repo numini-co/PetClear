@@ -203,7 +203,7 @@ export default function EmiratesPetCargoGuide() {
             ))}
           </ul>
           <p className="mt-4 text-sm leading-relaxed text-[#5A5A5A]">
-            Dubai Pet Relocation cargo coordination is quote-only. Competitor context only: Foufoufly packages are often Estimated AED 4,000–15,000 (labelled competitor, not a DPR freight table). Summer heat notes live on the{' '}
+            Dubai Pet Relocation cargo coordination is quote-only. Summer heat notes live on the{' '}
             <Link to="/guides/pet-travel-summer-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               summer travel guide
             </Link>
