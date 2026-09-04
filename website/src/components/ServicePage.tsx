@@ -83,12 +83,16 @@ function Block({ block }: { block: ServiceBlock }) {
 function defaultCtaLabel(slug: string): string {
   if (slug === 'pet-relocation-from-dubai') return 'Check Your Timeline'
   if (slug === 'pet-transport-dubai') return 'WhatsApp a Relocation Coordinator'
+  if (slug === 'moccae-pet-permit') return 'Check Documents'
+  if (slug === 'pet-import-dubai') return 'Get a Relocation Quote'
   if (slug === 'pet-relocation-dubai' || slug === 'pet-relocation-to-dubai') return 'Get a Relocation Quote'
   return 'Get a Relocation Quote'
 }
 
 function defaultEyebrow(slug: string): string {
   if (slug === 'pet-transport-dubai') return 'Pet Taxi & Ground Transport'
+  if (slug === 'pet-import-dubai') return 'Pet Import Service'
+  if (slug === 'moccae-pet-permit') return 'MOCCAE Permit Assistance'
   return 'Pet Relocation Service'
 }
 

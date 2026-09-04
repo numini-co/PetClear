@@ -72,11 +72,11 @@ export default function Header() {
       <div className="mx-auto max-w-[1200px] px-5 sm:px-6 lg:px-8">
         <div className="flex h-14 items-center justify-between">
           {/* Logo — compact */}
-          <Link to="/" className="flex shrink-0 items-center gap-2" onClick={closeMobile}>
-            <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#3A45B0]">
-              <PawPrint className="h-4 w-4 text-white" />
+          <Link to="/" className="flex shrink-0 items-center gap-1.5 lg:gap-1.5" onClick={closeMobile}>
+            <div className="flex h-6 w-6 items-center justify-center rounded-md bg-[#3A45B0] lg:h-5 lg:w-5">
+              <PawPrint className="h-3.5 w-3.5 text-white" />
             </div>
-            <span className="whitespace-nowrap text-base font-bold text-[#3A45B0] sm:text-lg">
+            <span className="whitespace-nowrap text-base font-bold text-[#3A45B0] lg:text-sm">
               Dubai Pet Relocation
             </span>
           </Link>
