@@ -1,8 +1,8 @@
 # SEO-MASTER — Shared operational memory
 
-These files are the Dubai Pet Relocation team's shared SEO operational memory. They are living stubs: headers and ownership only until the team adds verified rows.
+These files are the Dubai Pet Relocation team's shared SEO operational memory (PetClear only). CSV files are still header stubs from PR #2 until the orchestrator imports the full program pack via `gh`.
 
-**All agents and team members must read this folder before starting SEO, content, or visual work.** Do not invent keyword rankings, traffic numbers, or page claims. Add a row only when the fact is verified.
+**Read [`PROGRAM.md`](PROGRAM.md) for the 13-week program summary.** All agents and team members must read this folder before starting SEO, content, or visual work. Do not invent keyword rankings, traffic numbers, or page claims. Add a row only when the fact is verified.
 
 ## Ownership
 

@@ -1,2 +1,3 @@
 date,agent_or_person,change_summary,urls_affected,pr_or_commit,notes
+2026-09-04,cloud-agent,Add PROGRAM.md 13-week summary; README points to orchestrator gh import of full pack,,seo/master-program-pack,CSV stubs unchanged. Full pack not inlined.
 # Header stub only. Add a row when an SEO-MASTER or related site change is made.
