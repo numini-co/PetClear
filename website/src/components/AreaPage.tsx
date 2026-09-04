@@ -197,7 +197,7 @@ export default function AreaPage({ data }: { data: AreaPageData }) {
       <section className="bg-[#4F5BD5] section-padding">
         <div className="max-w-[820px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-[24px] sm:text-[32px] font-bold text-white mb-3">Relocating a pet in {data.areaName}?</h2>
-          <p className="text-white/90 mb-6">Message us on WhatsApp — we reply within 15 minutes during business hours.</p>
+          <p className="text-white/90 mb-6">Message us on WhatsApp during business hours with your community, pet and route.</p>
           <a href={wa} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-all shadow-sm"><MessageCircle className="w-5 h-5" /> Get Your Free Quote</a>
         </div>
       </section>

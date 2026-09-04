@@ -19,6 +19,7 @@ import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
+import LastVerified from '../components/LastVerified.tsx'
 
 /* ─── FAQ accordion helper ─── */
 function FAQItem({ question, answer }: { question: string; answer: string }) {
@@ -66,7 +67,7 @@ export default function ImportRequirementsPage() {
     'Administer rabies vaccination (pet must be ≥12 weeks old; ≥21 days before travel)',
     'Administer core vaccines (DHPPIL for dogs, FVRCP for cats)',
     'If high-risk country: rabies titer test (≥0.5 IU/ml), then wait 90 days',
-    'Apply for MOCCAE import permit (AED 200/pet, valid 90 days from issuance)',
+    'Apply for MOCCAE import permit (valid 30 days from issuance — confirm the current portal fee)',
     'Book manifest cargo flight (pets cannot fly in cabin or as checked baggage to Dubai)',
     'Administer antiparasitic treatment within 14 days of arrival',
     'Obtain International Health Certificate within 10 days of arrival',
@@ -118,9 +119,9 @@ export default function ImportRequirementsPage() {
       num: 6,
       title: 'Apply for MOCCAE Import Permit',
       days: 'Day 21–90',
-      body: 'Apply online via the MOCCAE portal or the MOCCAE mobile app. Fee: AED 200 per animal (import permit), plus a release fee on arrival of AED 500/dog or AED 250/cat — government total ~AED 700/dog, ~AED 450/cat. Validity: 90 days from issuance. Processing time: 3–7 working days. Required: Copy of owner\'s passport, UAE visa, pet\'s microchip number, vaccination records, and titer test result (if applicable).',
+      body: 'Apply online via the MOCCAE portal or the MOCCAE mobile app. Validity: 30 days from issuance. Processing time: typically a few working days. Confirm the current permit and arrival-release fees on the official portal — published amounts have differed. Required: Copy of owner\'s passport, UAE visa, pet\'s microchip number, vaccination records, and titer test result (if applicable).',
       icon: <FileText className="w-5 h-5" />,
-      warn: 'Apply as close to your travel date as safely possible (within the 90-day validity) while leaving time for flight booking.',
+      warn: 'Apply as close to your travel date as safely possible (within the 30-day validity) while leaving time for flight booking.',
     },
     {
       num: 7,
@@ -182,7 +183,7 @@ export default function ImportRequirementsPage() {
                 name: 'What is the MOCCAE import permit for pets?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'The MOCCAE import permit is a mandatory approval from the UAE Ministry of Climate Change and Environment required for all pets entering the UAE. It costs AED 200 per animal and is valid for 90 days from issuance. A release fee is also payable on arrival (AED 500/dog or AED 250/cat), bringing the government total to roughly AED 700/dog or AED 450/cat. You must apply online via the MOCCAE portal or app before your pet travels.',
+                  text: 'The MOCCAE import permit is a mandatory approval from the UAE Ministry of Climate Change and Environment required for all pets entering the UAE. It is valid for 30 days from issuance. Confirm the current permit and arrival-release fees on the official portal before you apply — published amounts have differed. You must apply online via the MOCCAE portal or app before your pet travels.',
                 },
               },
               {
@@ -290,7 +291,7 @@ export default function ImportRequirementsPage() {
             <div className="mt-8 pt-6 border-t border-gray-100">
               <h3 className="font-bold text-[#2A2A2A] mb-3">Key MOCCAE Rules at a Glance</h3>
               <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
-                <li><strong>Import permit:</strong> AED 200/pet, valid 90 days from issuance</li>
+                <li><strong>Import permit:</strong> valid 30 days from issuance — confirm the current fee on the official portal</li>
                 <li><strong>Pets per person:</strong> Maximum 2 pets per person per year</li>
                 <li><strong>Minimum import age:</strong> 12 weeks (low-risk countries) / 15 weeks (high-risk countries)</li>
                 <li><strong>Rabies antibody titer:</strong> Required only from high-risk countries — result ≥0.5 IU/ml, drawn ≥21 days after vaccination, valid 365 days</li>
@@ -333,8 +334,8 @@ export default function ImportRequirementsPage() {
                 <tr>
                   <td className="font-semibold text-[#2A2A2A]">MOCCAE Import Permit</td>
                   <td>Official approval from UAE Ministry of Climate Change and Environment</td>
-                  <td>90 days from issuance</td>
-                  <td>200</td>
+                  <td>30 days from issuance</td>
+                  <td>Verify on portal</td>
                 </tr>
                 <tr>
                   <td className="font-semibold text-[#2A2A2A]">ISO Microchip Certificate</td>
@@ -381,6 +382,7 @@ export default function ImportRequirementsPage() {
               </tbody>
             </table>
           </div>
+          <LastVerified className="mb-8 text-xs text-[#8A8A8A]" />
 
           <div className="warning-box mb-8">
             <div className="flex items-start gap-3">
@@ -489,9 +491,9 @@ export default function ImportRequirementsPage() {
               </p>
               <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
                 <li><strong>Apply:</strong> Online at moccae.gov.ae or via the MOCCAE app</li>
-                <li><strong>Cost:</strong> AED 200 per animal (import permit), plus a release fee on arrival of AED 500/dog or AED 250/cat — government total ~AED 700/dog, ~AED 450/cat</li>
+                <li><strong>Cost:</strong> confirm the current permit and arrival-release fees on the official MOCCAE portal</li>
                 <li><strong>Processing:</strong> 3–7 working days</li>
-                <li><strong>Validity:</strong> 90 days from issuance</li>
+                <li><strong>Validity:</strong> 30 days from issuance</li>
               </ul>
               <div className="warning-box">
                 <p className="text-sm text-[#2A2A2A]">
@@ -917,9 +919,9 @@ export default function ImportRequirementsPage() {
             <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <h3 className="font-bold text-[#2A2A2A] mb-4">Fees and Timeline</h3>
               <ul className="text-[#5A5A5A] space-y-1">
-                <li><strong>Fee:</strong> AED 200 per animal (plus release fee on arrival: AED 500/dog or AED 250/cat)</li>
+                <li><strong>Fee:</strong> confirm the current permit and arrival-release amounts on the official MOCCAE portal</li>
                 <li><strong>Processing:</strong> 3–7 working days</li>
-                <li><strong>Validity:</strong> 90 days from issuance</li>
+                <li><strong>Validity:</strong> 30 days from issuance</li>
               </ul>
             </div>
 
@@ -1193,7 +1195,7 @@ export default function ImportRequirementsPage() {
             />
             <FAQItem
               question="What is the MOCCAE import permit for pets?"
-              answer="The MOCCAE import permit is a mandatory approval from the UAE Ministry of Climate Change and Environment required for all pets entering the UAE. It costs AED 200 per animal and is valid for 90 days from issuance. A release fee is also payable on arrival (AED 500/dog or AED 250/cat), bringing the government total to roughly AED 700/dog or AED 450/cat. You must apply online via the MOCCAE portal or app before your pet travels."
+              answer="The MOCCAE import permit is a mandatory approval from the UAE Ministry of Climate Change and Environment required for all pets entering the UAE. It is valid for 30 days from issuance. Confirm the current permit and arrival-release fees on the official portal before you apply. You must apply online via the MOCCAE portal or app before your pet travels."
             />
             <FAQItem
               question="Is a rabies titer test required for Dubai?"

@@ -131,22 +131,22 @@ export default function AboutPage() {
                 <div className="w-12 h-12 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mx-auto mb-4">
                   <Globe className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
-                <p className="text-2xl font-bold text-[#2A2A2A] mb-1">50+</p>
-                <p className="text-sm text-[#8A8A8A]">Countries served</p>
+                <p className="text-lg font-bold text-[#2A2A2A] mb-1">Route-by-route checks</p>
+                <p className="text-sm text-[#8A8A8A]">Requirements confirmed per corridor</p>
               </Card>
               <Card className="text-center">
                 <div className="w-12 h-12 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mx-auto mb-4">
                   <Users className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
-                <p className="text-2xl font-bold text-[#2A2A2A] mb-1">15 min</p>
-                <p className="text-sm text-[#8A8A8A]">Average response time</p>
+                <p className="text-lg font-bold text-[#2A2A2A] mb-1">WhatsApp</p>
+                <p className="text-sm text-[#8A8A8A]">Replies during business hours</p>
               </Card>
               <Card className="text-center">
                 <div className="w-12 h-12 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mx-auto mb-4">
                   <Award className="w-5 h-5 text-[#4F5BD5]" />
                 </div>
-                <p className="text-2xl font-bold text-[#2A2A2A] mb-1">100%</p>
-                <p className="text-sm text-[#8A8A8A]">Document check rate</p>
+                <p className="text-lg font-bold text-[#2A2A2A] mb-1">Document review</p>
+                <p className="text-sm text-[#8A8A8A]">Checked before you fly</p>
               </Card>
             </div>
           </div>
@@ -322,7 +322,7 @@ export default function AboutPage() {
           />
           <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
             <span className="flex items-center gap-1.5 text-sm text-white/60">
-              <Phone className="w-4 h-4" /> WhatsApp response in 15 min
+              <Phone className="w-4 h-4" /> WhatsApp during business hours
             </span>
             <span className="flex items-center gap-1.5 text-sm text-white/60">
               <Shield className="w-4 h-4" /> No hidden fees

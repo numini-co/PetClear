@@ -39,7 +39,7 @@ const portDeLaMer: AreaPageData = {
     {
       h2: 'Moving To or From Port de La Mer With a Pet',
       body: [
-        { type: 'p', text: 'Most Port de La Mer relocations are international — families arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days. The MOCCAE permit itself costs AED 200 per pet, plus an airport release fee on arrival.' },
+        { type: 'p', text: 'Most Port de La Mer relocations are international — families arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 30 days. The MOCCAE permit itself costs AED 200 per pet, plus an airport release fee on arrival.' },
         { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks. A rabies titer test is only required when moving from or to certain high-risk countries — in those cases plan for around four months because of the mandatory waiting period. We map your exact timeline before you commit.' },
       ],
     },
@@ -60,7 +60,7 @@ const portDeLaMer: AreaPageData = {
     { q: 'Do you pick up from my building in Port de La Mer?', a: 'Yes — we arrange door-to-door pickup from your Port de La Mer apartment or building and coordinate the entire move from there.' },
     { q: 'How long does pet relocation from Port de La Mer take?', a: 'From low-risk countries, usually 2–6 weeks. If your route involves a high-risk rabies country that needs a titer test, plan for about four months because of the mandatory waiting period.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. The MOCCAE permit is AED 200 per pet plus an airport release fee. We give you a clear range on WhatsApp before you commit.' },
-    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit, or handle the application on your behalf depending on your service tier. The permit is valid for 90 days.' },
+    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit, or handle the application on your behalf depending on your service tier. The permit is valid for 30 days.' },
     { q: 'My building has pet rules — can you help?', a: 'We focus on the relocation itself, but we can advise on crate acclimation and travel-day logistics for apartment pets in beachfront communities like Port de La Mer.' },
   ],
   relatedAreas: [

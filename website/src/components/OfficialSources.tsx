@@ -1,4 +1,5 @@
 import { ExternalLink } from 'lucide-react'
+import LastVerified from './LastVerified.tsx'
 
 // Outbound citations to the actual authorities (audit: "cite official sources").
 // Linked at authority level (stable) — we never restate their rules as our own.
@@ -16,10 +17,11 @@ export default function OfficialSources() {
           Verify With the Authorities
         </span>
         <h2 className="text-section mt-3 mb-4">Official Sources</h2>
-        <p className="text-body-large max-w-2xl mb-6">
+        <p className="text-body-large max-w-2xl mb-3">
           We coordinate the paperwork, but the rules are set by government and industry
           authorities. Always confirm the current requirements directly with the official sources.
         </p>
+        <LastVerified className="mb-6 text-sm text-[#5A5A5A]" />
         <ul className="flex flex-wrap gap-3">
           {SOURCES.map((s) => (
             <li key={s.href}>

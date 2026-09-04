@@ -39,7 +39,7 @@ const alQuoz: AreaPageData = {
     {
       h2: 'Moving To or From Al Quoz With a Pet',
       body: [
-        { type: 'p', text: 'Most Al Quoz relocations are international — families and professionals arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days.' },
+        { type: 'p', text: 'Most Al Quoz relocations are international — families and professionals arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 30 days.' },
         { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan for around four months because of the mandatory waiting period. We map your exact timeline before you commit so there are no surprises at the airport.' },
       ],
     },

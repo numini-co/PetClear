@@ -70,7 +70,7 @@ const petImportDubai: ServicePageData = {
             },
             {
               title: 'Apply for the MOCCAE import permit',
-              text: 'We help you apply for the import permit through the MOCCAE portal. The permit costs AED 200 per pet and stays valid for 90 days, so your pet must arrive within that window. You will need the microchip number, vaccination records, titer result if applicable, and your passport and visa details.',
+              text: 'We help you apply for the import permit through the MOCCAE portal. The permit costs AED 200 per pet and stays valid for 30 days, so your pet must arrive within that window. You will need the microchip number, vaccination records, titer result if applicable, and your passport and visa details.',
             },
             {
               title: 'Get the health certificate and parasite treatment',
@@ -101,7 +101,7 @@ const petImportDubai: ServicePageData = {
             'Additional species vaccinations — dogs: distemper, hepatitis, parvovirus, leptospirosis; cats: rhinotracheitis, panleukopenia, calicivirus',
             'Rabies antibody titer test (RNATT) for high-risk countries only — result ≥ 0.5 IU/ml, valid 365 days, sample drawn ≥ 21 days after vaccination',
             'Government-endorsed international veterinary health certificate from the country of origin',
-            'MOCCAE import permit (AED 200 per pet, valid 90 days from issuance)',
+            'MOCCAE import permit (AED 200 per pet, valid 30 days from issuance)',
             'Antiparasitic treatment record (internal and external) within 14 days of arrival',
             'Owner passport copy and UAE visa or residency details for the permit application',
           ],
@@ -119,7 +119,7 @@ const petImportDubai: ServicePageData = {
       body: [
         {
           type: 'p',
-          text: 'The permit is issued by the Ministry of Climate Change and Environment through its online portal. Access requires a UAE Pass, which is why many newcomers ask us to coordinate the application on their behalf with a vetted local partner. The fee is AED 200 per pet, and the permit is valid for 90 days from issuance — your pet must land inside that window or the permit must be reissued.',
+          text: 'The permit is issued by the Ministry of Climate Change and Environment through its online portal. Access requires a UAE Pass, which is why many newcomers ask us to coordinate the application on their behalf with a vetted local partner. The fee is AED 200 per pet, and the permit is valid for 30 days from issuance — your pet must land inside that window or the permit must be reissued.',
         },
         {
           type: 'p',
@@ -236,7 +236,7 @@ const petImportDubai: ServicePageData = {
     },
     {
       q: 'What is the MOCCAE import permit and how much does it cost?',
-      a: 'The MOCCAE import permit is the document that authorizes your pet to enter the UAE, applied for online through the Ministry of Climate Change and Environment portal. It costs AED 200 per pet and is valid for 90 days from issuance, so your pet must arrive within that window. We guide you through the application end to end.',
+      a: 'The MOCCAE import permit is the document that authorizes your pet to enter the UAE, applied for online through the Ministry of Climate Change and Environment portal. It costs AED 200 per pet and is valid for 30 days from issuance, so your pet must arrive within that window. We guide you through the application end to end.',
     },
     {
       q: 'How many pets can I import to Dubai?',

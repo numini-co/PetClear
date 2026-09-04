@@ -13,7 +13,7 @@ export default function AbuDhabiPillar() {
   const faqs = [
     {
       question: 'Are the pet import rules different in Abu Dhabi than in Dubai?',
-      answer: 'No. Pet import rules in the UAE are set at the federal level by the Ministry of Climate Change and Environment (MOCCAE) and apply nationwide, regardless of which emirate you enter. Whether your pet lands in Abu Dhabi or Dubai, you need the same things: an ISO 11784/11785 microchip, a valid rabies vaccination administered at least 21 days before travel, core vaccinations, an International Health Certificate issued within 10 days of travel, and a MOCCAE import permit (AED 200 per animal, valid 90 days from issuance). Pets from high-risk rabies countries also need a rabies titer test with a 90-day waiting period. The differences between emirates are administrative — the municipality you register with and the airport and ground handler you clear through — not the import requirements themselves.',
+      answer: 'No. Pet import rules in the UAE are set at the federal level by the Ministry of Climate Change and Environment (MOCCAE) and apply nationwide, regardless of which emirate you enter. Whether your pet lands in Abu Dhabi or Dubai, you need the same things: an ISO 11784/11785 microchip, a valid rabies vaccination administered at least 21 days before travel, core vaccinations, an International Health Certificate issued within 10 days of travel, and a MOCCAE import permit (AED 200 per animal, valid 30 days from issuance). Pets from high-risk rabies countries also need a rabies titer test with a 90-day waiting period. The differences between emirates are administrative — the municipality you register with and the airport and ground handler you clear through — not the import requirements themselves.',
     },
     {
       question: 'Do pets arriving in Abu Dhabi have to go into quarantine?',
@@ -97,7 +97,7 @@ export default function AbuDhabiPillar() {
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> <span><strong>ISO microchip</strong> — an ISO 11784/11785 compliant 15-digit microchip, implanted before the rabies vaccination.</span></li>
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> <span><strong>Rabies vaccination</strong> — administered at least 21 days before travel and within 12 months of arrival, using an inactivated or recombinant vaccine.</span></li>
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> <span><strong>Core vaccinations</strong> — DHPPIL for dogs, FVRCP for cats.</span></li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> <span><strong>MOCCAE import permit</strong> — AED 200 per animal, valid 90 days from issuance, plus a release fee on arrival (AED 500/dog or AED 250/cat).</span></li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> <span><strong>MOCCAE import permit</strong> — AED 200 per animal, valid 30 days from issuance, plus a release fee on arrival (AED 500/dog or AED 250/cat).</span></li>
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> <span><strong>International Health Certificate</strong> — issued by a government-accredited vet within 10 days of arrival, with antiparasitic treatment recorded.</span></li>
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> <span><strong>Rabies titer test (high-risk countries only)</strong> — result ≥0.5 IU/ml, drawn at least 21 days after vaccination, followed by a 90-day waiting period.</span></li>
             </ul>
@@ -209,7 +209,7 @@ export default function AbuDhabiPillar() {
       <section className="bg-[#4F5BD5] section-padding">
         <div className="max-w-[820px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-[24px] sm:text-[32px] font-bold text-white mb-3">Relocating a pet to or from Abu Dhabi?</h2>
-          <p className="text-white/90 mb-6">Tell us your route on WhatsApp — we reply within 15 minutes during business hours with a clear, itemised quote.</p>
+          <p className="text-white/90 mb-6">Tell us your route on WhatsApp during business hours and we will outline the next steps.</p>
           <a href={wa} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-all shadow-sm"><MessageCircle className="w-5 h-5" /> Get Your Free Quote</a>
         </div>
       </section>

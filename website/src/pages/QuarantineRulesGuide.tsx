@@ -284,7 +284,7 @@ export default function QuarantineRulesGuide() {
               </div>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">
                 The gatekeeper. Applied for online via the MOCCAE portal or app, it costs AED 200 per pet and is valid for
-                90 days from issuance, with a release fee on arrival of AED 500 per dog or AED 250 per cat. Without it, your
+                30 days from issuance, with a release fee on arrival of AED 500 per dog or AED 250 per cat. Without it, your
                 pet cannot enter the UAE — and an arrival without a valid permit is exactly the kind of non-compliance that
                 leads to detention.
               </p>
@@ -381,7 +381,7 @@ export default function QuarantineRulesGuide() {
                 <tr>
                   <td className="font-medium">Missing or expired MOCCAE permit</td>
                   <td>Pet cannot legally enter; held or refused at the airport</td>
-                  <td>Apply within the 90-day validity and confirm it is valid on arrival day</td>
+                  <td>Apply within the 30-day validity and confirm it is valid on arrival day</td>
                 </tr>
                 <tr>
                   <td className="font-medium">Microchip number mismatch</td>

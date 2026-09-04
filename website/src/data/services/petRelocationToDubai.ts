@@ -75,7 +75,7 @@ const petRelocationToDubai: ServicePageData = {
             },
             {
               title: 'Apply for the MOCCAE import permit',
-              text: 'We guide the online MOCCAE import permit application via the official portal, using your microchip number, vaccination records, titer result where relevant and owner details. The permit costs AED 200 per animal, processing takes from one working day up to two weeks, and the permit is valid for 90 days — your pet must arrive inside that window.',
+              text: 'We guide the online MOCCAE import permit application via the official portal, using your microchip number, vaccination records, titer result where relevant and owner details. The permit costs AED 200 per animal, processing takes from one working day up to two weeks, and the permit is valid for 30 days — your pet must arrive inside that window.',
             },
             {
               title: 'Treat for parasites and get the health certificate',
@@ -109,7 +109,7 @@ const petRelocationToDubai: ServicePageData = {
             'Valid rabies vaccination given at least 21 days before travel and within the past 12 months (inactivated or recombinant vaccine only)',
             'Core species vaccinations — DHPPiL for dogs; feline rhinotracheitis, panleukopenia and calicivirus for cats',
             'Rabies antibody titer test (RNATT), at least 0.5 IU/ml, only for pets from high-risk countries',
-            'MOCCAE import permit (AED 200 per animal, valid 90 days from issuance)',
+            'MOCCAE import permit (AED 200 per animal, valid 30 days from issuance)',
             'Government-endorsed international health certificate from your origin country (valid 10 days until arrival)',
             'Record of internal and external antiparasitic treatment within 14 days of arrival',
             'Owner passport copy, UAE visa or residency details where applicable, and a recent photograph of the pet',
@@ -193,7 +193,7 @@ const petRelocationToDubai: ServicePageData = {
     },
     {
       q: 'How many pets can I bring to Dubai?',
-      a: 'The UAE generally allows a maximum of two pets per person per year. The MOCCAE import permit costs AED 200 per animal and is valid for 90 days from issuance, so your pet must arrive within that window.',
+      a: 'The UAE generally allows a maximum of two pets per person per year. The MOCCAE import permit costs AED 200 per animal and is valid for 30 days from issuance, so your pet must arrive within that window.',
     },
     {
       q: 'Do you transport the pet yourselves, or just handle the paperwork?',

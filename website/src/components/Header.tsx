@@ -30,6 +30,7 @@ const navLinks = [
   {
     label: 'Routes',
     children: [
+      { label: 'All Routes', to: '/routes/' },
       { label: 'UK to Dubai', to: '/routes/uk-to-dubai/' },
       { label: 'USA to Dubai', to: '/routes/usa-to-dubai/' },
       { label: 'India to Dubai', to: '/routes/india-to-dubai/' },
@@ -38,6 +39,14 @@ const navLinks = [
       { label: 'Canada to Dubai', to: '/routes/canada-to-dubai/' },
       { label: 'Dubai to UK', to: '/routes/dubai-to-uk/' },
       { label: 'Dubai to USA', to: '/routes/dubai-to-usa/' },
+    ],
+  },
+  {
+    label: 'Cities',
+    children: [
+      { label: 'All Emirates', to: '/cities/' },
+      { label: 'Dubai Communities', to: '/dubai/' },
+      { label: 'Abu Dhabi', to: '/cities/abu-dhabi/' },
     ],
   },
   { label: 'About', to: '/about/' },

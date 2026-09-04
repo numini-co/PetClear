@@ -53,7 +53,7 @@ const businessBay: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Most Business Bay relocations are international — professionals and couples arriving from the UK, India, the USA, Europe and beyond, or leaving Dubai when a contract ends. The exact requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days.',
+          text: 'Most Business Bay relocations are international — professionals and couples arriving from the UK, India, the USA, Europe and beyond, or leaving Dubai when a contract ends. The exact requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 30 days.',
         },
         {
           type: 'p',
@@ -99,7 +99,7 @@ const businessBay: AreaPageData = {
     },
     {
       q: 'Can you handle the MOCCAE permit for me?',
-      a: 'Yes. We guide you through the MOCCAE import or export permit — about AED 200 per pet, valid for 90 days — or handle the application on your behalf depending on your service tier.',
+      a: 'Yes. We guide you through the MOCCAE import or export permit — about AED 200 per pet, valid for 30 days — or handle the application on your behalf depending on your service tier.',
     },
     {
       q: 'My tower has pet rules — can you help?',

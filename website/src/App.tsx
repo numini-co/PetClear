@@ -1,5 +1,5 @@
 import { lazy } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Navigate, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout.tsx'
 import NotFoundPage from './pages/NotFoundPage.tsx'
 
@@ -40,8 +40,9 @@ const MOCCAEPermitGuide = lazy(() => import('./pages/MOCCAEPermitGuide.tsx'))
 const TiterTestGuide = lazy(() => import('./pages/TiterTestGuide.tsx'))
 
 // City pages (V2 - Month 1)
-const DubaiCity = lazy(() => import('./pages/DubaiCity.tsx'))
 const AbuDhabiCity = lazy(() => import('./pages/AbuDhabiCity.tsx'))
+const RoutesHub = lazy(() => import('./pages/RoutesHub.tsx'))
+const CitiesHub = lazy(() => import('./pages/CitiesHub.tsx'))
 
 // Data-driven service pages (Blue Book Phase 2)
 const ServicePage = lazy(() => import('./components/ServicePage.tsx'))
@@ -79,6 +80,30 @@ export default function App() {
           <Route path="/privacy-policy/" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service/" element={<TermsOfService />} />
 
+          {/* Route + city hubs (bare + trailing slash) */}
+          <Route path="/routes" element={<RoutesHub />} />
+          <Route path="/routes/" element={<RoutesHub />} />
+          <Route path="/cities" element={<CitiesHub />} />
+          <Route path="/cities/" element={<CitiesHub />} />
+
+          {/* Merged URL redirects */}
+          <Route path="/cities/dubai" element={<Navigate to="/dubai/" replace />} />
+          <Route path="/cities/dubai/" element={<Navigate to="/dubai/" replace />} />
+          <Route path="/dubai/karama" element={<Navigate to="/dubai/bur-dubai/" replace />} />
+          <Route path="/dubai/karama/" element={<Navigate to="/dubai/bur-dubai/" replace />} />
+          <Route path="/dubai/bluewaters" element={<Navigate to="/dubai/jbr/" replace />} />
+          <Route path="/dubai/bluewaters/" element={<Navigate to="/dubai/jbr/" replace />} />
+          <Route path="/dubai/port-de-la-mer" element={<Navigate to="/dubai/jumeirah/" replace />} />
+          <Route path="/dubai/port-de-la-mer/" element={<Navigate to="/dubai/jumeirah/" replace />} />
+          <Route path="/dubai/city-walk" element={<Navigate to="/dubai/downtown-dubai/" replace />} />
+          <Route path="/dubai/city-walk/" element={<Navigate to="/dubai/downtown-dubai/" replace />} />
+          <Route path="/dubai/international-city" element={<Navigate to="/dubai/dubai-silicon-oasis/" replace />} />
+          <Route path="/dubai/international-city/" element={<Navigate to="/dubai/dubai-silicon-oasis/" replace />} />
+          <Route path="/dubai/al-wasl" element={<Navigate to="/dubai/umm-suqeim/" replace />} />
+          <Route path="/dubai/al-wasl/" element={<Navigate to="/dubai/umm-suqeim/" replace />} />
+          <Route path="/dubai/sheikh-zayed-road" element={<Navigate to="/dubai/" replace />} />
+          <Route path="/dubai/sheikh-zayed-road/" element={<Navigate to="/dubai/" replace />} />
+
           {/* Route pages */}
           <Route path="/routes/uk-to-dubai/" element={<UKToDubai />} />
           <Route path="/routes/usa-to-dubai/" element={<USAToDubai />} />
@@ -100,7 +125,6 @@ export default function App() {
           <Route path="/guides/rabies-titer-test-dubai/" element={<TiterTestGuide />} />
 
           {/* City pages */}
-          <Route path="/cities/dubai/" element={<DubaiCity />} />
           <Route path="/cities/abu-dhabi/" element={<AbuDhabiCity />} />
 
           {/* Service pages (data-driven, Blue Book Phase 2) */}

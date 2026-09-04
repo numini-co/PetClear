@@ -327,7 +327,7 @@ export default function EmergencyRelocationPage() {
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">MOCCAE Import Permit (2–7 Working Days)</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  We prepare and submit the MOCCAE import permit (AED 200 per pet, valid 90 days from
+                  We prepare and submit the MOCCAE import permit (valid 30 days — confirm the current fee on the official MOCCAE portal from
                   issuance). Because we error-check every detail before submitting, we avoid the rejections
                   that quietly add a week or more to a rushed move.
                 </p>

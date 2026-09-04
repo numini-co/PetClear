@@ -39,7 +39,7 @@ const sheikhZayedRoad: AreaPageData = {
     {
       h2: 'Moving To or From Sheikh Zayed Road With a Pet',
       body: [
-        { type: 'p', text: 'Most relocations along Sheikh Zayed Road are international — professionals arriving from the UK, USA, India, Australia and across Europe for work in DIFC and the Trade Centre district, or leaving Dubai for the next assignment. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days.' },
+        { type: 'p', text: 'Most relocations along Sheikh Zayed Road are international — professionals arriving from the UK, USA, India, Australia and across Europe for work in DIFC and the Trade Centre district, or leaving Dubai for the next assignment. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 30 days.' },
         { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks. From high-risk rabies countries that require a titer test, plan for around four months because of the mandatory waiting period. We map your exact timeline before you commit, so it fits around a relocation contract or notice period.' },
       ],
     },

@@ -368,7 +368,7 @@ export default function CorporateRelocationPage() {
                 <tr>
                   <td><strong>PawPartner</strong> (Premium)</td>
                   <td>3,000–5,000</td>
-                  <td>+ Door-to-door pickup and delivery, IATA crate, vet coordination, 24/7 WhatsApp support, photo updates</td>
+                  <td>+ Door-to-door pickup and delivery, IATA crate, vet coordination, WhatsApp updates during the move, photo updates</td>
                   <td>Most corporate moves — hands-off for the employee</td>
                 </tr>
                 <tr>

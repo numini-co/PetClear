@@ -263,20 +263,20 @@ export default function CostGuidePage() {
                 </tr>
               </thead>
               <tbody>
-                <tr><td>MOCCAE Import Permit</td><td>200</td><td>Official approval to bring your pet into the UAE. Mandatory. No exceptions. Valid 90 days from issuance.</td><td>Before travel</td></tr>
-                <tr><td>MOCCAE Release Fee (on arrival)</td><td>500/dog · 250/cat</td><td>Government release fee paid when your pet clears at the cargo terminal. Government total ~AED 700/dog, ~AED 450/cat.</td><td>On arrival</td></tr>
+                <tr><td>MOCCAE Import Permit</td><td>Verify on portal</td><td>Official approval to bring your pet into the UAE. Mandatory. Valid 30 days from issuance. Confirm the current fee on the official MOCCAE portal — published amounts have differed.</td><td>Before travel</td></tr>
+                <tr><td>MOCCAE Release Fee (on arrival)</td><td>Verify on portal</td><td>Veterinary release/inspection fee paid when your pet clears at the cargo terminal. Confirm the current amount on the official portal.</td><td>On arrival</td></tr>
                 <tr><td>Dubai Customs Clearance / Bill of Entry</td><td>500–1,000</td><td>Agent handling at DXB or DWC cargo terminal.</td><td>On arrival</td></tr>
                 <tr><td>Dubai Municipality Registration</td><td>~10</td><td>Annual pet registration via the Aleef app.</td><td>Within 30 days of arrival</td></tr>
                 <tr><td>Municipality Microchipping (if not done)</td><td>~50</td><td>15-digit ISO chip implantation at government centers.</td><td>Pre-travel</td></tr>
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-[#5A5A5A] mt-3 font-medium">Core MOCCAE government total: ~AED 700/dog, ~AED 450/cat (import permit + release fee), plus customs clearing, registration and any microchipping.</p>
+          <p className="text-sm text-[#5A5A5A] mt-3 font-medium">MOCCAE permit and arrival-release fees are government charges — confirm the current amounts on the official portal. Customs, municipality registration and microchipping are additional.</p>
           <p className="text-sm text-[#5A5A5A] mt-2">
-            These are fixed costs. Every relocation company pays the same government fees. If a quote seems suspiciously low, they're either cutting corners on permits or hiding these in a surcharge later.
+            Government fees are the same whichever coordinator you use. If a quote seems suspiciously low, they may be omitting a permit step or hiding a surcharge later.
           </p>
           <p className="text-xs text-[#8A8A8A] mt-3 leading-relaxed">
-            Prices are indicative ranges based on published partner and government rates (last verified June 2026) and real-time cargo pricing. Government fees are set by MOCCAE and Dubai Municipality and may change — your personalized quote reflects live figures for your route and dates.
+            Last verified: 4 September 2026. Cargo and partner prices are indicative ranges. Confirm current MOCCAE and municipality fees on the official portals before you apply — your personalized quote reflects live figures for your route and dates.
           </p>
         </div>
 
@@ -377,7 +377,7 @@ export default function CostGuidePage() {
                 <tr>
                   <td><strong>PawPartner</strong> (Premium)</td>
                   <td>3,000–5,000</td>
-                  <td>+ Door-to-door pickup and delivery, IATA crate, vet coordination, 24/7 WhatsApp support, photo updates</td>
+                  <td>+ Door-to-door pickup and delivery, IATA crate, vet coordination, WhatsApp updates during the move, photo updates</td>
                 </tr>
                 <tr>
                   <td><strong>PawVIP</strong> (Coordination)</td>

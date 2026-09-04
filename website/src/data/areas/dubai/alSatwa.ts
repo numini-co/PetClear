@@ -39,7 +39,7 @@ const alSatwa: AreaPageData = {
     {
       h2: 'Moving To or From Al Satwa With a Pet',
       body: [
-        { type: 'p', text: 'Relocations from Al Satwa are a mix of long-term residents heading home and newcomers arriving from the UK, USA, India, the Philippines and across Europe. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days.' },
+        { type: 'p', text: 'Relocations from Al Satwa are a mix of long-term residents heading home and newcomers arriving from the UK, USA, India, the Philippines and across Europe. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 30 days.' },
         { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks. From high-risk rabies countries that require a titer test, plan for around four months because of the mandatory waiting period. We map your exact timeline before you commit, so there are no surprises during a busy move.' },
       ],
     },

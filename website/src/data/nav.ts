@@ -20,7 +20,8 @@ export const SERVICE_LINKS: NavLink[] = [
 ]
 
 export const TOP_AREA_LINKS: NavLink[] = [
-  { label: 'Dubai City Guide', to: '/cities/dubai/' },
+  { label: 'All Emirates', to: '/cities/' },
+  { label: 'Dubai Communities', to: '/dubai/' },
   { label: 'Abu Dhabi City Guide', to: '/cities/abu-dhabi/' },
   { label: 'Dubai Marina', to: '/dubai/dubai-marina/' },
   { label: 'Jumeirah', to: '/dubai/jumeirah/' },
@@ -43,6 +44,7 @@ export const GUIDE_LINKS: NavLink[] = [
 ]
 
 export const ROUTE_LINKS: NavLink[] = [
+  { label: 'All Routes', to: '/routes/' },
   { label: 'UK to Dubai', to: '/routes/uk-to-dubai/' },
   { label: 'USA to Dubai', to: '/routes/usa-to-dubai/' },
   { label: 'India to Dubai', to: '/routes/india-to-dubai/' },

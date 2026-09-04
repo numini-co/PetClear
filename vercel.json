@@ -3,6 +3,27 @@
   "installCommand": "cd website && npm install",
   "buildCommand": "cd website && npm run build",
   "outputDirectory": "website/dist",
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/routes", "destination": "/routes/", "permanent": true },
+    { "source": "/cities", "destination": "/cities/", "permanent": true },
+    { "source": "/cities/dubai", "destination": "/dubai/", "permanent": true },
+    { "source": "/cities/dubai/", "destination": "/dubai/", "permanent": true },
+    { "source": "/dubai/karama", "destination": "/dubai/bur-dubai/", "permanent": true },
+    { "source": "/dubai/karama/", "destination": "/dubai/bur-dubai/", "permanent": true },
+    { "source": "/dubai/bluewaters", "destination": "/dubai/jbr/", "permanent": true },
+    { "source": "/dubai/bluewaters/", "destination": "/dubai/jbr/", "permanent": true },
+    { "source": "/dubai/port-de-la-mer", "destination": "/dubai/jumeirah/", "permanent": true },
+    { "source": "/dubai/port-de-la-mer/", "destination": "/dubai/jumeirah/", "permanent": true },
+    { "source": "/dubai/city-walk", "destination": "/dubai/downtown-dubai/", "permanent": true },
+    { "source": "/dubai/city-walk/", "destination": "/dubai/downtown-dubai/", "permanent": true },
+    { "source": "/dubai/international-city", "destination": "/dubai/dubai-silicon-oasis/", "permanent": true },
+    { "source": "/dubai/international-city/", "destination": "/dubai/dubai-silicon-oasis/", "permanent": true },
+    { "source": "/dubai/al-wasl", "destination": "/dubai/umm-suqeim/", "permanent": true },
+    { "source": "/dubai/al-wasl/", "destination": "/dubai/umm-suqeim/", "permanent": true },
+    { "source": "/dubai/sheikh-zayed-road", "destination": "/dubai/", "permanent": true },
+    { "source": "/dubai/sheikh-zayed-road/", "destination": "/dubai/", "permanent": true }
+  ],
   "rewrites": [],
   "headers": [
     {

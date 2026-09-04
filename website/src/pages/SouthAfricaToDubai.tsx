@@ -200,7 +200,7 @@ export default function SouthAfricaToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">4. UAE Import Permit</p>
-                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 90 days from issuance. Must include the titer test certificate. Cost: AED 200 per pet (plus a release fee on arrival of AED 500/dog or AED 250/cat). Dubai Pet Relocation handles the application and Arabic translation.</p>
+                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 30 days from issuance. Must include the titer test certificate. Cost: confirm current permit and arrival-release fees on the official MOCCAE portal. Dubai Pet Relocation handles the application and Arabic translation.</p>
                   </div>
                 </div>
 

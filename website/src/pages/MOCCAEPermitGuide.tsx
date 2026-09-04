@@ -29,6 +29,7 @@ import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
+import LastVerified from '../components/LastVerified.tsx'
 import { BASE_URL } from '../lib/seo.ts'
 
 /* ─── FAQ accordion helper ─── */
@@ -67,11 +68,11 @@ export default function MOCCAEPermitGuide() {
     },
     {
       question: 'What happens if my permit expires before I travel?',
-      answer: 'MOCCAE import permits are valid for 90 days from issuance. If your permit expires before travel, you must submit a new application and pay the AED 200 fee again. Dubai Pet Relocation tracks permit expiry dates and coordinates your travel timeline to ensure your permit is valid on arrival day. We also set calendar reminders for reapplication if needed.',
+      answer: 'MOCCAE import permits are valid for 30 days from issuance. If your permit expires before travel, you must submit a new application and pay the current portal fee again. Confirm the fee on the official MOCCAE portal — published amounts have differed. Dubai Pet Relocation tracks permit expiry dates and coordinates your travel timeline to ensure your permit is valid on arrival day.',
     },
     {
       question: 'Do cats and dogs need separate permits?',
-      answer: 'Yes, each pet requires a separate MOCCAE import permit. The fee is AED 200 per pet. You cannot combine multiple pets on a single permit application. If you are relocating 2 dogs and 1 cat, you need 3 separate permits and will pay AED 600 total.',
+      answer: 'Yes, each pet requires a separate MOCCAE import permit. Confirm the current per-pet fee on the official MOCCAE portal when you apply — published amounts have differed. You cannot combine multiple pets on a single permit application.',
     },
     {
       question: 'What documents do I need for the MOCCAE import permit?',
@@ -79,7 +80,7 @@ export default function MOCCAEPermitGuide() {
     },
     {
       question: 'Is a MOCCAE export permit needed to leave Dubai?',
-      answer: 'Yes, if you are leaving Dubai with your pet, you need a MOCCAE export permit. The process is similar to the import permit: apply online, submit passport copy, pet photo, vaccination records, and microchip certificate. The fee is also AED 200 per pet. Some destination countries require additional health certificates endorsed by the UAE government vet. Dubai Pet Relocation handles both import and export permits.',
+      answer: 'Yes, if you are leaving Dubai with your pet, you need a MOCCAE export health certificate. The process is similar: apply online, submit passport copy, pet photo, vaccination records, and microchip certificate. Confirm the current fee on the official MOCCAE portal. Some destination countries also require additional health certificates endorsed by a UAE government vet.',
     },
     {
       question: 'What is the most common reason for MOCCAE permit rejection?',
@@ -133,7 +134,7 @@ export default function MOCCAEPermitGuide() {
         '@type': 'HowToStep',
         position: 3,
         name: 'Submit Application',
-        text: 'Upload all documents, enter pet details accurately, and pay AED 200 per pet.',
+        text: 'Upload all documents, enter pet details accurately, and pay the current portal fee (confirm the amount on the official MOCCAE site).',
       },
       {
         '@type': 'HowToStep',
@@ -173,7 +174,7 @@ export default function MOCCAEPermitGuide() {
         eyebrow="Pet Relocation Guide"
         title="MOCCAE Import Permit for Pets — Dubai & UAE Complete Guide (2026)"
         subtitle="A mandatory government approval for every pet entering the UAE. The application process, documents, costs, and common mistakes — explained."
-        updated="Updated June 2026"
+        updated="Last verified 4 September 2026"
       />
 
       {/* What is MOCCAE */}
@@ -208,8 +209,8 @@ export default function MOCCAEPermitGuide() {
               <div className="space-y-4">
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
                   <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Cost</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">Import permit AED 200 per pet</p>
-                  <p className="text-sm text-[#5A5A5A] mt-1">Plus release fee on arrival: AED 500/dog or AED 250/cat. Government total ~AED 700/dog, ~AED 450/cat.</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">Verify on the MOCCAE portal</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">Permit and arrival-release fees are paid to the government. Published amounts have differed — confirm the current figures on the official portal before you apply.</p>
                 </div>
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
                   <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Processing Time</p>
@@ -217,12 +218,13 @@ export default function MOCCAEPermitGuide() {
                 </div>
                 <div className="p-4 bg-[#C89F5A]/5 rounded-xl">
                   <p className="font-semibold text-[#C89F5A] text-sm mb-1">Validity</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">90 days from issuance</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">30 days from issuance</p>
                 </div>
                 <div className="p-4 bg-[#C9453A]/5 rounded-xl">
                   <p className="font-semibold text-[#C9453A] text-sm mb-1">Penalty Without Permit</p>
                   <p className="text-lg font-bold text-[#2A2A2A]">Refused entry, fines, re-export</p>
                 </div>
+                <LastVerified />
               </div>
             </div>
           </div>
@@ -302,7 +304,7 @@ export default function MOCCAEPermitGuide() {
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Submit the Application</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
-                  Log in to the portal, select "Import Permit for Pets," and fill out the application form. Upload all documents in the specified format (usually PDF or JPEG, under 2MB per file). Pay the AED 200 fee per pet via credit card or online bank transfer.
+                  Log in to the portal, select "Import Permit for Pets," and fill out the application form. Upload all documents in the specified format (usually PDF or JPEG, under 2MB per file). Pay the current portal fee (confirm the amount on the official MOCCAE site).
                 </p>
                 <div className="grid sm:grid-cols-2 gap-2">
                   <div className="p-3 bg-[#F5F6FD] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
@@ -432,7 +434,7 @@ export default function MOCCAEPermitGuide() {
               <div className="space-y-3">
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                   <DollarSign className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span><strong>Cost:</strong> AED 200 per pet (same as import)</span>
+                  <span><strong>Cost:</strong> confirm the current fee on the official MOCCAE portal</span>
                 </div>
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                   <Clock className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />

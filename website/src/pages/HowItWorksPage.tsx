@@ -622,8 +622,8 @@ export default function HowItWorksPage() {
               <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
                 <Clock className="w-5 h-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="font-bold text-[#2A2A2A] mb-2">24/7 availability</h3>
-              <p className="text-sm text-[#5A5A5A]">WhatsApp us anytime. We reply within the hour during business hours. For emergencies, we have an on-call line.</p>
+              <h3 className="font-bold text-[#2A2A2A] mb-2">WhatsApp during business hours</h3>
+              <p className="text-sm text-[#5A5A5A]">Message us on WhatsApp during opening hours (9:00 AM – 8:00 PM GST). For travel-day issues we prioritise replies on the active thread.</p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">

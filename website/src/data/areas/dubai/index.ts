@@ -19,21 +19,14 @@ import dubaiSouth from './dubaiSouth.ts'
 import alQuoz from './alQuoz.ts'
 import deira from './deira.ts'
 import burDubai from './burDubai.ts'
-import karama from './karama.ts'
-import sheikhZayedRoad from './sheikhZayedRoad.ts'
 import alSatwa from './alSatwa.ts'
 import ummSuqeim from './ummSuqeim.ts'
-import alWasl from './alWasl.ts'
-import cityWalk from './cityWalk.ts'
-import bluewaters from './bluewaters.ts'
-import portDeLaMer from './portDeLaMer.ts'
 // P2
 import creekHarbour from './creekHarbour.ts'
 import mudon from './mudon.ts'
 import victoryHeights from './victoryHeights.ts'
 import sportsCity from './sportsCity.ts'
 import motorCity from './motorCity.ts'
-import internationalCity from './internationalCity.ts'
 import dubaiInvestmentPark from './dubaiInvestmentPark.ts'
 import dubaiProductionCity from './dubaiProductionCity.ts'
 import alFurjan from './alFurjan.ts'
@@ -43,11 +36,13 @@ import emaarSouth from './emaarSouth.ts'
 import dubailand from './dubailand.ts'
 import meydan from './meydan.ts'
 
-// Registry of all /dubai/<slug>/ area pages (Blue Book Phase 3 — 40 Dubai areas).
+// Live /dubai/<slug>/ area pages. Merged communities redirect (see App.tsx + vercel.json):
+// karama→bur-dubai, bluewaters→jbr, port-de-la-mer→jumeirah, city-walk→downtown-dubai,
+// international-city→dubai-silicon-oasis, al-wasl→umm-suqeim, sheikh-zayed-road→/dubai/.
 export const dubaiAreas: AreaPageData[] = [
   dubaiMarina, jumeirah, jbr, downtownDubai, palmJumeirah, businessBay, alBarsha, arabianRanches, mirdif,
-  dubaiSiliconOasis, jlt, jvc, jvt, dubaiHills, dubaiSouth, alQuoz, deira, burDubai, karama,
-  sheikhZayedRoad, alSatwa, ummSuqeim, alWasl, cityWalk, bluewaters, portDeLaMer,
-  creekHarbour, mudon, victoryHeights, sportsCity, motorCity, internationalCity,
+  dubaiSiliconOasis, jlt, jvc, jvt, dubaiHills, dubaiSouth, alQuoz, deira, burDubai,
+  alSatwa, ummSuqeim,
+  creekHarbour, mudon, victoryHeights, sportsCity, motorCity,
   dubaiInvestmentPark, dubaiProductionCity, alFurjan, damacHills, damacHills2, emaarSouth, dubailand, meydan,
 ]

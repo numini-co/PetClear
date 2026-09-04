@@ -4,26 +4,26 @@ const internationalPetRelocation: ServicePageData = {
   slug: 'international-pet-relocation',
   seoTitle: 'International Pet Relocation Dubai | Global Service',
   metaDescription:
-    'Worldwide pet relocation to and from Dubai. 50+ countries served, full documentation, vetted partners, door-to-door coordination.',
+    'Worldwide pet relocation to and from Dubai. Destination-by-destination requirement checks, full documentation, vetted partners, door-to-door coordination.',
   keywords:
     'international pet relocation dubai, worldwide pet relocation, global pet transport, overseas pet relocation, pet relocation international',
   h1: 'Global Pet Relocation Services',
   primaryKeyword: 'international pet relocation dubai',
   heroValueProp:
-    'Relocating a dog or cat across borders to or from Dubai? We coordinate documentation, permits, airline-approved crates and customs for 50+ destination countries — connecting you with vetted partners and pet-experienced airlines, and keeping you updated on WhatsApp at every step.',
+    'Relocating a dog or cat across borders to or from Dubai? We coordinate documentation, permits, airline-approved crates and customs for your exact destination — connecting you with vetted partners and pet-experienced airlines, and keeping you updated on WhatsApp at every step.',
   heroImage: '/images/service-international-pet-relocation.jpg',
   heroImageAlt:
     'A calm dog and cat beside a travel crate with a world map and aircraft in the background — international pet relocation in Dubai',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I need international pet relocation to or from Dubai. Can you tell me the requirements and cost for my destination country?',
-  trustBadges: ['50+ countries served', 'Vetted partners worldwide', 'Pet-experienced airlines', 'WhatsApp support'],
+  trustBadges: ['Route-by-route requirement checks', 'Vetted partners worldwide', 'Pet-experienced airlines', 'WhatsApp support'],
   costRange: { low: '5000', high: '25000' },
   hasHowTo: false,
   sections: [
     {
       h2: 'Global Pet Relocation Services From Dubai',
       intro:
-        'International pet relocation is more complex than a regional move. Every destination country sets its own import rules, and the same pet can need different paperwork, vaccinations and waiting periods depending on where it is heading. We coordinate the whole journey to and from Dubai across more than 50 countries so nothing falls through the gaps.',
+        'International pet relocation is more complex than a regional move. Every destination country sets its own import rules, and the same pet can need different paperwork, vaccinations and waiting periods depending on where it is heading. We coordinate the whole journey to and from Dubai by checking the current rules for your exact corridor so nothing falls through the gaps.',
       body: [
         {
           type: 'p',
@@ -36,7 +36,7 @@ const internationalPetRelocation: ServicePageData = {
         {
           type: 'list',
           items: [
-            'Destination-by-destination requirement checks for 50+ countries',
+            'Destination-by-destination requirement checks for your exact corridor',
             'Microchip, rabies vaccination, titer test and health certificate review against the destination country’s rules',
             'MOCCAE import or export permit guidance, and origin/destination government paperwork coordination',
             'IATA-compliant crate sizing and sourcing through vetted partners',
@@ -173,7 +173,7 @@ const internationalPetRelocation: ServicePageData = {
   faq: [
     {
       q: 'How many countries do you cover for international pet relocation?',
-      a: 'We coordinate pet relocation to and from Dubai across 50+ countries, including popular destinations such as the UK, USA, India, Australia, the EU, Canada and Singapore. Because requirements vary by destination, we confirm the current rules for your exact country before quoting.',
+      a: 'We coordinate pet relocation to and from Dubai on a corridor-by-corridor basis, including popular destinations such as the UK, USA, India, Australia, the EU, Canada and Singapore. Because requirements vary by destination, we confirm the current rules for your exact country before quoting.',
     },
     {
       q: 'Do requirements differ by destination country?',
