@@ -29,7 +29,7 @@ const faqData = [
   },
   {
     q: 'Do you publish private-jet or shared-charter prices?',
-    a: 'No. Aircraft, routing and handling vary too widely. Those two commercial offer pages are quote-only — message us on WhatsApp. We do not publish jet or charter fee tables.',
+    a: 'A private jet is a custom charter quote only — no all-in numbers. Shared-charter firm seats are Get a Quote. Market context: Europe↔Dubai shared seats often from ~EUR 7,000–13,000 (operator/schedule); optional labelled JetCircle published Munich→Dubai EUR 12,000 / Dubai↔London EUR 13,000 per passenger (schedule-specific). Those are not DPR prices.',
   },
   {
     q: 'How long is a MOCCAE import permit valid?',
@@ -130,7 +130,7 @@ export default function PetFlightOptionsHub() {
         <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Decision table</h2>
           <p className="mb-6 max-w-3xl text-base leading-relaxed text-[#5A5A5A]">
-            Use this to pick a child page. Etihad cabin fees change — confirm at booking (the 2026 from-USD-399 promo is expired). Emirates animal-charge tiers are first-party when the itinerary is eligible. Cargo freight, jet, charter seats and door-to-door DPR packages are Get a Quote.
+            Use this to pick a child page. This hub does not publish airline policy or fee tables. Cabin, baggage and cargo numerals live on those guides. Jet, charter, cargo coordination and door-to-door stay quote-only.
           </p>
           <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
             <table className="w-full min-w-[880px] border-collapse text-sm">
@@ -151,7 +151,7 @@ export default function PetFlightOptionsHub() {
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">AUH only (Etihad exception)</td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
-                    Confirm at booking. 2026 from-USD-399 promo expired. USD 1,500 = Estimated only.
+                    See the Etihad guide — fees change; confirm at booking.
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.cabin} className="font-semibold text-[#4F5BD5] hover:underline">
@@ -166,7 +166,7 @@ export default function PetFlightOptionsHub() {
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Not for itineraries ending in Dubai</td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
-                    Emirates USD 500 / 650 / 800 (source: Emirates) when eligible. Not a DXB-arrival product.
+                    Airline tiers on the checked-baggage guide when the itinerary is eligible.
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.baggage} className="font-semibold text-[#4F5BD5] hover:underline">
@@ -181,7 +181,7 @@ export default function PetFlightOptionsHub() {
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Required for DXB-ending itineraries</td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
-                    Emirates animal-charge tiers on the educational cargo guide. Freight and coordination quoted on the relocation service pages.
+                    Educational cargo guide. DPR freight and coordination are quote-only.
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.cargo} className="font-semibold text-[#4F5BD5] hover:underline">
@@ -208,7 +208,7 @@ export default function PetFlightOptionsHub() {
                     A dedicated lift shared with other pets — less isolation than a full jet, more control than a belly hold
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Coordinated per lift</td>
-                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Get a Quote — no published charter prices</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Labelled competitor seats on the charter page; DPR = quote</td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.charter} className="font-semibold text-[#4F5BD5] hover:underline">
                       Shared charter service
