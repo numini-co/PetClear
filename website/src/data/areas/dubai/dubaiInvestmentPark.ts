@@ -39,7 +39,7 @@ const dubaiInvestmentPark: AreaPageData = {
     {
       h2: 'Moving To or From Dubai Investment Park With a Pet',
       body: [
-        { type: 'p', text: 'Most DIP relocations are international — families arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days.' },
+        { type: 'p', text: 'Most DIP relocations are international — families arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 30 days.' },
         { type: 'p', text: 'The MOCCAE import permit costs AED 200 per pet, and from low-risk countries the timeline is typically 2–6 weeks. From high-risk rabies countries that require a titer (blood antibody) test, plan for around four months because of the mandatory waiting period. We map your exact timeline before you commit.' },
       ],
     },
@@ -60,7 +60,7 @@ const dubaiInvestmentPark: AreaPageData = {
     { q: 'Do you pick up from my villa in Dubai Investment Park?', a: 'Yes — we arrange door-to-door pickup from your DIP or Green Community villa or apartment and coordinate the entire move from there.' },
     { q: 'How long does pet relocation from Dubai Investment Park take?', a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan for about four months because of the mandatory waiting period.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. We give you a clear range on WhatsApp before you commit.' },
-    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit — AED 200 per pet, valid for 90 days — or handle the application on your behalf depending on your service tier.' },
+    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit — AED 200 per pet, valid for 30 days — or handle the application on your behalf depending on your service tier.' },
     { q: 'Is a titer test needed to leave Dubai from DIP?', a: 'It depends on your destination. A rabies titer test is only required for certain high-risk routes; for many destinations it is not needed at all. We confirm exactly what your country requires before you start.' },
   ],
   relatedAreas: [

@@ -90,7 +90,7 @@ const tiers = [
       { label: 'Everything in PawPartner', included: true },
       { label: 'Emergency contingency plan', included: true },
       { label: 'Dedicated relocation manager', included: true },
-      { label: '24/7 WhatsApp availability', included: true },
+      { label: 'WhatsApp updates during the move', included: true },
       { label: 'Boarding & nanny arrangements', included: true },
       { label: 'Insurance coordination', included: true },
       { label: 'Home-to-home logistics', included: true },

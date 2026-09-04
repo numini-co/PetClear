@@ -263,7 +263,7 @@ export default function DogRelocationPage() {
               <p>We track every deadline. We remind you when the next step is due. We check every document three times before submission.</p>
             </Step>
             <Step number={3} title="MOCCAE import permit and flight booking">
-              <p>We apply for your dog's MOCCAE import permit online. The permit costs AED 200 per pet and is valid for 90 days from issuance (a release fee of AED 500/dog is also payable on arrival). We know which forms are current, which office to submit to, and the common reasons for rejection.</p>
+              <p>We apply for your dog's MOCCAE import permit online. The permit costs AED 200 per pet and is valid for 30 days from issuance (a release fee of AED 500/dog is also payable on arrival). We know which forms are current, which office to submit to, and the common reasons for rejection.</p>
               <p>Once the permit is approved, we book your dog's manifest cargo flight with the airline's cargo department — not the passenger reservation desk. We confirm pet-specific rules in writing: crate dimensions, breed restrictions, temperature limits, and transit care.</p>
             </Step>
             <Step number={4} title="Travel day and arrival in Dubai">
@@ -295,7 +295,7 @@ export default function DogRelocationPage() {
                   <span className="w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold shrink-0">1</span>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">MOCCAE Import Permit</p>
-                    <p className="text-sm text-[#5A5A5A]">Applied online via the MOCCAE portal. Valid 90 days from issuance. Cost: AED 200 per pet (plus AED 500/dog release fee on arrival).</p>
+                    <p className="text-sm text-[#5A5A5A]">Applied online via the MOCCAE portal. Valid 30 days from issuance. Cost: confirm current permit and arrival-release fees on the official MOCCAE portal.</p>
                   </div>
                 </li>
                 <li className="flex gap-4">

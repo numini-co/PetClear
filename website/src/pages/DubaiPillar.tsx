@@ -51,7 +51,7 @@ export default function DubaiPillar() {
       <section className="bg-white section-padding">
         <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-4">Pet Relocation in Dubai</h2>
-          <p className="text-[#5A5A5A] leading-relaxed mb-4">Dubai is home to one of the world's largest expat populations — and a huge number of dogs and cats who move with their families. Whether you are arriving from the UK, USA, India, Australia or beyond, or leaving the UAE for a new posting, the core requirements are the same: an ISO microchip, current vaccinations, a government health certificate and a MOCCAE permit valid for 90 days. High-risk countries also require a rabies titer test.</p>
+          <p className="text-[#5A5A5A] leading-relaxed mb-4">Dubai is home to one of the world's largest expat populations — and a huge number of dogs and cats who move with their families. Whether you are arriving from the UK, USA, India, Australia or beyond, or leaving the UAE for a new posting, the core requirements are the same: an ISO microchip, current vaccinations, a government health certificate and a MOCCAE permit valid for 30 days. High-risk countries also require a rabies titer test.</p>
           <p className="text-[#5A5A5A] leading-relaxed">We coordinate the whole move — permits, paperwork, IATA crate, flight, customs and door-to-door delivery — for every Dubai community below.</p>
         </div>
       </section>
@@ -75,7 +75,7 @@ export default function DubaiPillar() {
       <section className="bg-[#4F5BD5] section-padding">
         <div className="max-w-[820px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="text-[24px] sm:text-[32px] font-bold text-white mb-3">Relocating a pet in Dubai?</h2>
-          <p className="text-white/90 mb-6">Tell us your community and route on WhatsApp — we reply within 15 minutes during business hours.</p>
+          <p className="text-white/90 mb-6">Tell us your community and route on WhatsApp during business hours.</p>
           <a href={wa} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-all shadow-sm"><MessageCircle className="w-5 h-5" /> Get Your Free Quote</a>
         </div>
       </section>

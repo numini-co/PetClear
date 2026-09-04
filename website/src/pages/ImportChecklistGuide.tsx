@@ -24,6 +24,7 @@ import Hero from '../components/Hero.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
+import LastVerified from '../components/LastVerified.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 
 /* ─── FAQ accordion helper ─── */
@@ -88,8 +89,8 @@ export default function ImportChecklistGuide() {
     {
       num: 5,
       title: 'Apply for the MOCCAE Import Permit',
-      when: 'Within 90 days of travel',
-      body: 'Apply online via the MOCCAE portal or the MOCCAE mobile app. The import permit costs AED 200 per animal and is valid for 90 days from issuance. Processing takes 3–7 working days. You will need the owner’s passport, UAE visa, the pet’s microchip number, vaccination records, and the titer test result if applicable. A release fee is also payable on arrival: AED 500/dog or AED 250/cat.',
+      when: 'Within 30 days of travel',
+      body: 'Apply online via the MOCCAE portal or the MOCCAE mobile app. The import permit is valid for 30 days from issuance. Confirm the current permit and arrival-release fees on the official portal. Processing typically takes a few working days. You will need the owner’s passport, UAE visa, the pet’s microchip number, vaccination records, and the titer test result if applicable.',
       icon: <FileText className="w-5 h-5" />,
     },
     {
@@ -152,7 +153,7 @@ export default function ImportChecklistGuide() {
     },
     {
       question: 'How much is the MOCCAE import permit and when should I apply?',
-      answer: 'The MOCCAE import permit costs AED 200 per animal and is valid for 90 days from issuance, with processing taking 3–7 working days. A release fee is also payable on arrival — AED 500 per dog or AED 250 per cat — bringing the government total to roughly AED 700 per dog or AED 450 per cat. Apply within the 90-day validity window so the permit is still valid on your arrival day, while leaving time to book your cargo flight.',
+      answer: 'The MOCCAE import permit is valid for 30 days from issuance, with processing typically taking a few working days. Confirm the current permit and arrival-release fees on the official portal — published amounts have differed. Apply within the 30-day validity window so the permit is still valid on your arrival day, while leaving time to book your cargo flight.',
     },
   ]
 
@@ -249,8 +250,8 @@ export default function ImportChecklistGuide() {
               <div className="space-y-4">
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
                   <p className="font-semibold text-[#4F5BD5] text-sm mb-1">MOCCAE Import Permit</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">AED 200 per pet</p>
-                  <p className="text-sm text-[#5A5A5A] mt-1">Plus release fee on arrival: AED 500/dog or AED 250/cat. Government total ~AED 700/dog, ~AED 450/cat.</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">Valid 30 days from issuance</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">Confirm the current permit and arrival-release fees on the official MOCCAE portal — published amounts have differed.</p>
                 </div>
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
                   <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Timeline (Low-Risk Countries)</p>
@@ -377,7 +378,7 @@ export default function ImportChecklistGuide() {
                 <tr>
                   <td className="font-semibold text-[#2A2A2A]">MOCCAE Import Permit</td>
                   <td>Official approval from UAE Ministry of Climate Change and Environment</td>
-                  <td>90 days from issuance</td>
+                  <td>30 days from issuance</td>
                   <td>200</td>
                 </tr>
                 <tr>
@@ -439,7 +440,7 @@ export default function ImportChecklistGuide() {
                 </div>
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                   <FileText className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span><strong>Permit validity is 90 days.</strong> Apply too early and the permit may expire before travel; apply too late and you may miss the flight window.</span>
+                  <span><strong>Permit validity is 30 days.</strong> Apply too early and the permit may expire before travel; apply too late and you may miss the flight window.</span>
                 </div>
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                   <FileCheck className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />

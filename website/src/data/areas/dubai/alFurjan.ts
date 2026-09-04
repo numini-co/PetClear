@@ -39,7 +39,7 @@ const alFurjan: AreaPageData = {
     {
       h2: 'Moving To or From Al Furjan With a Pet',
       body: [
-        { type: 'p', text: 'Most Al Furjan relocations are international — young families arriving from the UK, USA, India, the Philippines, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days.' },
+        { type: 'p', text: 'Most Al Furjan relocations are international — young families arriving from the UK, USA, India, the Philippines, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 30 days.' },
         { type: 'p', text: 'The MOCCAE permit costs AED 200 per pet, and there is a separate inspection and release fee on arrival of roughly AED 700 per dog and AED 450 per cat. From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan for around four months because of the mandatory waiting period. We map your exact timeline before you commit.' },
       ],
     },
@@ -61,7 +61,7 @@ const alFurjan: AreaPageData = {
     { q: 'Can you relocate larger dogs from Al Furjan?', a: 'Absolutely. Many Al Furjan townhouse families own larger breeds, and we source IATA-compliant crates in the right size and allow extra acclimation time so bigger dogs travel comfortably.' },
     { q: 'How long does pet relocation from Al Furjan take?', a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan for about four months because of the mandatory waiting period.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 per pet depending on route, pet size and service level. Government fees include the AED 200 MOCCAE permit per pet plus a release fee of roughly AED 700 per dog or AED 450 per cat. We give you a clear range on WhatsApp before you commit.' },
-    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit, or handle the application on your behalf depending on your service tier. The permit costs AED 200 per pet and is valid for 90 days.' },
+    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit, or handle the application on your behalf depending on your service tier. The permit costs AED 200 per pet and is valid for 30 days.' },
   ],
   relatedAreas: [
     { label: 'DAMAC Hills', to: '/dubai/damac-hills/' },

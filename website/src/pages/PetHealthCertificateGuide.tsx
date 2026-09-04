@@ -62,7 +62,7 @@ export default function PetHealthCertificateGuide() {
     },
     {
       question: 'How does the health certificate relate to the MOCCAE import permit?',
-      answer: 'They are two separate documents and you need both. The MOCCAE import permit (AED 200 per pet, valid 90 days from issuance) is the government approval to bring your pet into the UAE and is applied for before travel. The International Health Certificate is the origin-country vet\'s confirmation that your pet is healthy, correctly identified, vaccinated, and treated for parasites — issued within 10 days of arrival. At Dubai customs you present the import permit, the original health certificate, vaccination records, the microchip certificate, the antiparasitic treatment record, and your passport and UAE visa together.',
+      answer: 'They are two separate documents and you need both. The MOCCAE import permit (AED 200 per pet, valid 30 days from issuance) is the government approval to bring your pet into the UAE and is applied for before travel. The International Health Certificate is the origin-country vet\'s confirmation that your pet is healthy, correctly identified, vaccinated, and treated for parasites — issued within 10 days of arrival. At Dubai customs you present the import permit, the original health certificate, vaccination records, the microchip certificate, the antiparasitic treatment record, and your passport and UAE visa together.',
     },
     {
       question: 'What does the antiparasitic treatment on the certificate cover?',
@@ -286,7 +286,7 @@ export default function PetHealthCertificateGuide() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-7 h-7 rounded-full bg-[#E9ECFB] text-[#4F5BD5] flex items-center justify-center text-xs font-bold shrink-0">4</span>
-                  <span className="text-sm text-[#5A5A5A] mt-0.5"><strong className="text-[#2A2A2A]">MOCCAE import permit</strong> — AED 200 per pet, valid 90 days from issuance</span>
+                  <span className="text-sm text-[#5A5A5A] mt-0.5"><strong className="text-[#2A2A2A]">MOCCAE import permit</strong> — AED 200 per pet, valid 30 days from issuance</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">5</span>

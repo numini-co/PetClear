@@ -66,7 +66,7 @@ const petRelocationDubai: ServicePageData = {
             'Valid rabies vaccination (timing depends on origin country)',
             'Rabies antibody titer test for high-risk countries (≥ 0.5 IU/ml, valid 365 days, drawn ≥ 21 days after vaccination)',
             'Government veterinary health certificate from the origin country',
-            'MOCCAE import permit (valid 90 days from issuance)',
+            'MOCCAE import permit (valid 30 days from issuance)',
           ],
         },
         { type: 'p', text: 'See our import and export guides for the full, current checklist verified against MOCCAE.' },

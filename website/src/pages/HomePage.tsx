@@ -244,11 +244,11 @@ export default function HomePage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
             {[
-              { value: '400+', label: 'Pets relocated' },
-              { value: '4.9★', label: 'Google rating' },
-              { value: '15 min', label: 'WhatsApp reply' },
-              { value: '0', label: 'Paperwork errors' },
-              { value: '24/7', label: 'Availability' },
+              { value: 'Document', label: 'Review before you fly' },
+              { value: 'MOCCAE', label: 'Permit guidance' },
+              { value: 'WhatsApp', label: 'Updates during hours' },
+              { value: 'IATA', label: 'Crate sizing help' },
+              { value: 'Door-to-door', label: 'Partner delivery' },
             ].map((stat) => (
               <div key={stat.label}>
                 <p className="text-2xl lg:text-3xl font-bold text-[#4F5BD5]">{stat.value}</p>
@@ -645,7 +645,7 @@ export default function HomePage() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Nationwide</span>
             <h2 className="text-section mt-3 mb-4">We Cover All 7 Emirates</h2>
             <p className="text-body-large max-w-2xl mx-auto">
-              Wherever you are in the UAE, we coordinate safe pet relocation — from Dubai and Abu Dhabi to every northern emirate.
+              Wherever you are in the UAE, we coordinate safe pet relocation — from Dubai and Abu Dhabi to every northern emirate. Start on the <Link to="/cities/" className="font-semibold text-[#4F5BD5] hover:underline">cities hub</Link>.
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -911,7 +911,7 @@ export default function HomePage() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Global Reach</span>
             <h2 className="text-section mt-3 mb-4">Country-Specific Relocation Routes</h2>
             <p className="text-body-large max-w-3xl mx-auto">
-              Every origin and destination has different rules. Our route pages map the exact documents, timelines, and costs for the most common moves to and from Dubai. Each route links to our broader guides and to the city or area page where your pet will be delivered.
+              Every origin and destination has different rules. Our route pages map the exact documents, timelines, and costs for the most common moves to and from Dubai. Browse the full <Link to="/routes/" className="font-semibold text-[#4F5BD5] hover:underline">routes hub</Link> for inbound and outbound guides.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -962,7 +962,7 @@ export default function HomePage() {
               </div>
               <div className="mt-6 p-5 rounded-[16px] bg-[#F5F6FD]">
                 <p className="text-sm text-[#5A5A5A]">
-                  Don't see your route? We coordinate pet relocation to and from most countries. Message us on WhatsApp with your origin and destination and we will send you the exact requirements and a realistic timeline within 15 minutes.
+                  Don't see your route? Message us on WhatsApp with your origin and destination and we will send you the current requirements and a realistic timeline.
                 </p>
                 <WhatsAppCta text="Ask About Your Route" className="!px-5 !py-2.5 !text-xs mt-4" />
               </div>
@@ -2441,7 +2441,7 @@ export default function HomePage() {
             {[
               {
                 step: '1',
-                title: 'We reply within 15 minutes',
+                title: 'A coordinator replies on WhatsApp',
                 body: 'A real person reads your message, confirms the information we have, and asks any follow-up questions. You are not talking to a bot or waiting in a queue.',
               },
               {
@@ -2784,7 +2784,7 @@ export default function HomePage() {
           </div>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <span className="flex items-center gap-1.5 text-xs text-[#8A8A8A]">
-              <Clock className="w-3.5 h-3.5" /> Reply within 15 min
+              <Clock className="w-3.5 h-3.5" /> WhatsApp during business hours
             </span>
             <span className="flex items-center gap-1.5 text-xs text-[#8A8A8A]">
               <Shield className="w-3.5 h-3.5" /> No hidden fees

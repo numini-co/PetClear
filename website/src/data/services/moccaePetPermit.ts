@@ -72,7 +72,7 @@ const moccaePetPermit: ServicePageData = {
             },
             {
               title: 'Pay the permit fee and submit',
-              text: 'The import permit fee is AED 200 per pet, paid online through the portal. We check the full application one final time before you submit.',
+              text: 'Pay the current permit fee online through the portal (confirm the amount on the official MOCCAE site). We check the full application one final time before you submit.',
             },
             {
               title: 'Track approval and download the permit',
@@ -138,14 +138,14 @@ const moccaePetPermit: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'A MOCCAE import permit is valid for 90 days from the date of issuance. Your pet must arrive in the UAE within that window, so we time the application to line up with your confirmed travel date. If your plans change and the permit expires before your pet travels, a new application and fee are required.',
+          text: 'A MOCCAE import permit is valid for 30 days from the date of issuance. Your pet must arrive in the UAE within that window, so we time the application to line up with your confirmed travel date. If your plans change and the permit expires before your pet travels, a new application and fee are required.',
         },
         {
           type: 'table',
           headers: ['Detail', 'What to expect'],
           rows: [
             ['Processing time', 'Around 3 to 5 business days for a complete application'],
-            ['Import permit validity', '90 days from the date of issuance'],
+            ['Import permit validity', '30 days from the date of issuance'],
             ['Where to apply', 'MOCCAE online portal (moccae.gov.ae) via UAE Pass'],
             ['Best time to apply', 'Once your travel date is confirmed and documents are ready'],
           ],
@@ -155,24 +155,24 @@ const moccaePetPermit: ServicePageData = {
     {
       h2: 'MOCCAE Permit Cost',
       intro:
-        'The government fees for a MOCCAE pet permit are predictable and the same whoever applies. The figures below are the official MOCCAE charges — our guidance and coordination fee is quoted separately and confirmed up front.',
+        'Government fees for a MOCCAE pet permit are paid on the official portal and at arrival. Published amounts have differed, so we do not hard-code a figure here — confirm the current permit and release fees on the portal when you apply. Our guidance and coordination fee is quoted separately.',
       body: [
         {
           type: 'p',
-          text: 'The import permit itself costs AED 200 per pet. On arrival, a veterinary release and inspection fee also applies: AED 500 per dog or AED 250 per cat. Adding these together, the typical government total comes to roughly AED 700 per dog and around AED 450 per cat. These are the Ministry and clearance fees only — they do not include veterinary work, the crate, flights or our coordination.',
+          text: 'The import permit fee is paid online through the MOCCAE portal. An arrival veterinary release/inspection fee is also payable at the cargo terminal. Confirm both current amounts on the official portal before you apply. These government charges do not include veterinary work, the crate, flights or our coordination.',
         },
         {
           type: 'table',
-          headers: ['Government fee', 'Dog', 'Cat'],
+          headers: ['Government fee', 'What to do'],
           rows: [
-            ['MOCCAE import permit (per pet)', 'AED 200', 'AED 200'],
-            ['Veterinary release / inspection', 'AED 500', 'AED 250'],
-            ['Typical government total', '~AED 700', '~AED 450'],
+            ['MOCCAE import permit (per pet)', 'Verify current amount on the official portal'],
+            ['Veterinary release / inspection', 'Verify current amount on the official portal'],
+            ['Validity', '30 days from issuance — pet must arrive inside that window'],
           ],
         },
         {
           type: 'p',
-          text: 'These figures are a guide and can change, so we confirm the current fees with you before you pay. The cost is the same whether you apply yourself or have us guide you — what we add is the document review and approval tracking that stops a rejected application from costing you far more in missed flights and re-bookings.',
+          text: 'The government fee is the same whether you apply yourself or have us guide you — what we add is the document review and approval tracking that stops a rejected application from costing you far more in missed flights and re-bookings.',
         },
       ],
     },
@@ -210,7 +210,7 @@ const moccaePetPermit: ServicePageData = {
     },
     {
       q: 'How much does a MOCCAE pet permit cost?',
-      a: 'The import permit is AED 200 per pet. A veterinary release and inspection fee also applies on arrival: AED 500 per dog or AED 250 per cat. The typical government total is therefore around AED 700 per dog and about AED 450 per cat, excluding veterinary work, crate, flights and coordination.',
+      a: 'Confirm the current MOCCAE import permit and arrival-release fees on the official portal when you apply — published amounts have differed. Those government charges exclude veterinary work, crate, flights and coordination.',
     },
     {
       q: 'How long does it take to get a MOCCAE import permit?',
@@ -218,7 +218,7 @@ const moccaePetPermit: ServicePageData = {
     },
     {
       q: 'How long is a MOCCAE import permit valid?',
-      a: 'A MOCCAE import permit is valid for 90 days from the date of issuance. Your pet must arrive in the UAE within that window. If the permit expires before your pet travels, a new application and fee are required, so we time the application to match your confirmed travel date.',
+      a: 'A MOCCAE import permit is valid for 30 days from the date of issuance. Your pet must arrive in the UAE within that window. If the permit expires before your pet travels, a new application and fee are required, so we time the application to match your confirmed travel date.',
     },
     {
       q: 'How do I apply for the permit online?',

@@ -40,7 +40,7 @@ const damacHills: AreaPageData = {
     {
       h2: 'Moving To or From DAMAC Hills With a Pet',
       body: [
-        { type: 'p', text: 'Most DAMAC Hills relocations are international — families arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days.' },
+        { type: 'p', text: 'Most DAMAC Hills relocations are international — families arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 30 days.' },
         { type: 'p', text: 'The MOCCAE permit costs AED 200 per pet, and there is a separate inspection and release fee on arrival of roughly AED 700 per dog and AED 450 per cat. From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan for around four months because of the mandatory waiting period. Because DAMAC Hills families often move with more than one pet, we map every animal’s timeline and paperwork in parallel so the household travels together where possible.' },
       ],
     },
@@ -62,7 +62,7 @@ const damacHills: AreaPageData = {
     { q: 'Can you relocate large dogs from DAMAC Hills?', a: 'Absolutely. Many DAMAC Hills families own large breeds, and we source IATA-compliant crates in the right size and allow extra acclimation time so big dogs travel comfortably.' },
     { q: 'We have several pets — can you move them all together?', a: 'Yes. Multi-pet households are common in DAMAC Hills. We map each animal’s permits and paperwork in parallel so the family can travel together where the routes allow, and give you one combined quote.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 per pet depending on route, pet size and service level. Government fees include the AED 200 MOCCAE permit per pet plus a release fee of roughly AED 700 per dog or AED 450 per cat. We give you a clear range on WhatsApp before you commit.' },
-    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit, or handle the application on your behalf depending on your service tier. The permit costs AED 200 per pet and is valid for 90 days.' },
+    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit, or handle the application on your behalf depending on your service tier. The permit costs AED 200 per pet and is valid for 30 days.' },
   ],
   relatedAreas: [
     { label: 'DAMAC Hills 2', to: '/dubai/damac-hills-2/' },
