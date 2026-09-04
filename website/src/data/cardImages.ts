@@ -47,12 +47,12 @@ export const CARD_IMAGES: Record<string, CardImage> = {
     alt: 'Hands reviewing a pet travel checklist for a MOCCAE permit application',
   },
   '/service/private-jet-pet-travel/': {
-    src: '/assets/w-flight-modes/private-jet-pet-travel-dog-cabin-dubai.jpg',
-    alt: 'A dog on a leather seat inside a private jet cabin for dedicated-jet pet travel from Dubai',
+    src: '/assets/w-flight-modes/private-jet-pet-travel-card.jpg',
+    alt: 'A dog sitting on a leather seat inside a private jet cabin for dedicated-jet pet travel from Dubai',
   },
   '/service/shared-pet-charter/': {
-    src: '/assets/w-flight-modes/shared-pet-charter-dogs-dedicated-lift-dubai.jpg',
-    alt: 'Two dogs in travel crates inside a dedicated animal-lift cabin for shared pet charter from Dubai',
+    src: '/assets/w-flight-modes/shared-pet-charter-card.jpg',
+    alt: 'A dog in an open travel crate inside a dedicated animal-lift cabin for shared pet charter from Dubai',
   },
   '/guides/pet-flight-options-dubai/': {
     src: '/assets/w-flight-modes/pet-flight-options-card.jpg',
