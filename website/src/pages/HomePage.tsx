@@ -251,6 +251,9 @@ export default function HomePage() {
             <p className="text-body-large mx-auto max-w-3xl">
               The homepage is a category entry, not the money result for “pet relocation Dubai”. That decision-stage term lives on the door-to-door service. Inbound arrivals, outbound departures, pet taxi and permits each have their own URL so we do not compete with ourselves. Cards below go only to service pages and the tiers hub.
             </p>
+            <p className="text-body mx-auto mt-4 max-w-3xl">
+              Use the money page when you want one coordinator to hold documents, crate, cargo and the last mile. Use the to-Dubai page when you are only arriving. Use the from-Dubai page when you are only leaving. Use pet taxi when the animal never leaves the road. Species pages exist for dog- and cat-specific crate and apartment rules; the federal permit chain is shared. If you already know you want document guidance versus full coordination, compare tiers first, then open the service URL — do not treat this grid as a second copy of those bodies.
+            </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {SERVICE_LINKS.map((s) => {
@@ -291,10 +294,13 @@ export default function HomePage() {
               <span className="text-sm font-semibold uppercase tracking-wider text-[#4F5BD5]">Popular Relocation Routes</span>
               <h2 className="text-section mt-3 mb-4">Corridors in both directions</h2>
               <p className="text-body mb-4">
-                UK, USA and India inbound each carry a different document spine. Dubai to UK and Dubai to USA are not reversed inbound checklists — destination rules drive the outbound clock. Use the routes hub for the full inbound versus outbound list; this strip is only the corridors families ask about first.
+                UK, USA and India inbound each carry a different document spine. A UK origin is usually a low-friction vaccination and certificate file plus the 30-day MOCCAE permit. A US origin adds endorsement steps that have to match the cargo date. India and other titer-required origins add a blood sample that must still be in date on travel day. Those differences are why we refuse to paste one “international checklist” onto every card.
+              </p>
+              <p className="text-body mb-4">
+                Dubai to UK and Dubai to USA are not reversed inbound checklists — destination rules drive the outbound clock. The UAE export certificate is comparatively quick and still useless if it is issued before the destination’s treatments or waiting periods are ready. Use the routes hub for the full inbound versus outbound list; this strip is only the corridors families ask about first.
               </p>
               <p className="text-body">
-                If your country is not listed, WhatsApp the origin and destination. We map current rules before anyone books cargo. We do not invent extra country pages on this homepage.
+                If your country is not listed, WhatsApp the origin and destination. We map current rules before anyone books cargo. We do not invent extra country pages on this homepage, and we do not claim a country-count we cannot evidence.
               </p>
             </div>
             <ContentImage
@@ -385,13 +391,16 @@ export default function HomePage() {
           <span className="text-sm font-semibold uppercase tracking-wider text-[#4F5BD5]">What Drives Pet Relocation Costs</span>
           <h2 className="text-section mt-3 mb-4">Drivers first — fee tables wait for Pricing</h2>
           <p className="text-body mb-4">
-            A relocation quote is a bundle: government steps, veterinary work, an IATA crate, live-animal cargo, and how much coordination you hand over. We do not publish AED fee tables, permit amounts or release fees on the homepage. Those figures are contested or route-specific and stay with the Pricing Specialist and the official portals.
+            A relocation quote is a bundle: government steps, veterinary work, an IATA crate, live-animal cargo, and how much coordination you hand over. We do not publish AED fee tables, permit amounts or release fees on the homepage. Those figures are contested or route-specific and stay with the Pricing Specialist and the official portals. Circulating MOCCAE permit amounts have disagreed with each other; export-certificate ranges have disagreed with first-party notes. Printing either here would be a guess dressed as a table.
           </p>
           <p className="text-body mb-4">
-            What actually moves a quote: direction (inbound permit window versus outbound destination rules), pet size and crate, season (heat embargoes and snub-nosed limits), and whether you want document guidance only or travel-day held for you. Local pet taxi is a separate ground product with its own typical market ranges on the transport page — it is not a substitute for cargo.
+            What actually moves a quote: direction (inbound permit window versus outbound destination rules), pet size and crate, season (heat embargoes and snub-nosed limits), and whether you want document guidance only or travel-day held for you. A small cat on a short inbound hop is a different job from a large dog leaving for a quarantine destination. Two pets can share a coordinator thread and still need two crates and two portal filings.
+          </p>
+          <p className="text-body mb-4">
+            Local pet taxi is a separate ground product. Typical market ranges for short city runs, DXB, AUH and Dubai–Abu Dhabi sit on the transport page, labelled as market bands and dated — not as Dubai Pet Relocation selling prices. A van to the cargo desk is not an international ticket, and we will not let a taxi quote pretend to be a relocation quote.
           </p>
           <p className="text-body mb-6">
-            Read the qualitative driver list on the cost guide, then message WhatsApp for a range that matches your pet and corridor. Until portal figures are verified, “how much does it cost?” is answered as a conversation, not a screenshot of invented cells.
+            Read the qualitative driver list on the cost guide, then message WhatsApp for a range that matches your pet and corridor. Until portal figures are verified, “how much does it cost?” is answered as a conversation, not a screenshot of invented cells. Bring species, breed, weight, origin or destination, and a month. That is enough to say which drivers apply.
           </p>
           <Link to="/guides/pet-relocation-cost-dubai/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#4F5BD5] hover:underline">
             Open the cost guide <ArrowRight className="h-4 w-4" />
@@ -407,7 +416,10 @@ export default function HomePage() {
               <span className="text-sm font-semibold uppercase tracking-wider text-[#4F5BD5]">UAE Pet Import Essentials</span>
               <h2 className="text-section mt-3 mb-4">Five facts the homepage is allowed to state</h2>
               <p className="text-body mb-4">
-                Full checklists live on the guides. The homepage only carries the facts owners misuse most often — and the links out. Last-verified stamps sit next to regulatory lines.
+                Full checklists live on the guides. The homepage only carries the facts owners misuse most often — and the links out. Last-verified stamps sit next to regulatory lines. We will not paste the 3,000-word import guide onto this page; that is how the old homepage became a second site.
+              </p>
+              <p className="text-body mb-4">
+                Two timing errors cause most inbound delays. The first is treating the import permit as if it lasted a quarter; it lasts 30 days from issuance, and the pet must arrive inside that window. The second is treating a titer as a 90-day wait after the blood draw. When a titer is required, the sample is taken within 90 days before travel and must read at least 0.5 IU/ml. Those two sentences are the whole homepage rule. The walkthroughs live on the permit and titer guides.
               </p>
               <LastVerified />
             </div>
@@ -485,10 +497,13 @@ export default function HomePage() {
               <span className="text-sm font-semibold uppercase tracking-wider text-[#4F5BD5]">Dubai Areas We Cover</span>
               <h2 className="text-section mt-3 mb-4">Communities first, then the other emirates</h2>
               <p className="text-body mb-4">
-                Door-to-door only works if the last mile matches the building. A Marina tower lobby is not an Arabian Ranches villa gate. The Dubai hub lists communities; the cities hub covers Abu Dhabi and the wider UAE. This strip is a way into those hubs, not a second copy of every area page.
+                Door-to-door only works if the last mile matches the building. A Marina tower lobby, a JBR walk-up, a Palm frond gate and an Arabian Ranches villa driveway are four different handoffs. Crate dimensions that fit a service lift in Downtown will not be the constraint in a villa community — heat and driveway access will. The Dubai hub lists communities with those notes; the cities hub covers Abu Dhabi and the wider UAE. This strip is a way into those hubs, not a second copy of every area page.
+              </p>
+              <p className="text-body mb-4">
+                We coordinate collection and delivery across the communities below and the rest of the directory. DXB is the usual cargo door for marina and downtown files; DWC is often the better road for south Dubai and villa belts. That is routing, not a promise that one airport is “better” for every pet.
               </p>
               <p className="text-body">
-                We coordinate collection and delivery across the communities below and the rest of the directory. Other emirates share the same federal MOCCAE rules; arrival airport and municipality steps change.
+                Other emirates share the same federal MOCCAE rules; arrival airport and municipality steps change. Abu Dhabi has its own city guide. Sharjah and the northern emirates are coordinated on request until dedicated pages exist — WhatsApp the community name rather than waiting for a URL.
               </p>
             </div>
             <ContentImage
@@ -526,13 +541,16 @@ export default function HomePage() {
           <span className="text-sm font-semibold uppercase tracking-wider text-[#4F5BD5]">Why Pet Owners Work With Us</span>
           <h2 className="text-section mt-3 mb-4">Process language — not invented proof</h2>
           <p className="text-body mb-4">
-            You are never handing a pet to a faceless ticket number. A coordinator reviews the file, names the next deadline, and stays on WhatsApp during published hours. We vet partners against handling and climate-control criteria; that is a process description, not a licence, IPATA card or government endorsement.
+            You are never handing a pet to a faceless ticket number. A coordinator reviews the file, names the next deadline, and stays on WhatsApp during published hours. We vet partners against handling and climate-control criteria; that is a process description, not a licence, IPATA card or government endorsement. We do not operate the aircraft. We do not claim to own the vans. We do not sell “approval” we cannot show.
           </p>
           <p className="text-body mb-4">
-            We do not claim hundreds of pets moved, star ratings, zero paperwork errors, 24/7 cover or a country-count. Those lines stay off the site until they can be evidenced. What we will say: every document is line-checked before it is submitted, crate size is measured on the animal, and inbound versus outbound is never copy-pasted.
+            We do not claim hundreds of pets moved, star ratings, zero paperwork errors, 24/7 cover or a country-count. Those lines stay off the site until they can be evidenced. What we will say: every document is line-checked before it is submitted, crate size is measured on the animal, and inbound versus outbound is never copy-pasted. A 15-minute reply is not an SLA we print. A same-day pet taxi is a slot when a partner is free, not a night desk.
+          </p>
+          <p className="text-body mb-4">
+            Transparency also means saying what we will not do. We will not invent a fee to look complete. We will not tell you a banned breed can “probably enter”. We will not book cargo before the permit window is understood. We will not treat a nervous cat as a small dog in a smaller box.
           </p>
           <p className="text-body mb-6">
-            Animal welfare sits in the sequence — heat, crate, no casual sedation talk, and a quiet first week after arrival. The longer story belongs on About. The conversion question belongs on WhatsApp.
+            Animal welfare sits in the sequence — heat, crate, no casual sedation talk, and a quiet first week after arrival. The longer story belongs on About. The conversion question belongs on WhatsApp: send the pet, the route and the month, and we will tell you which page and which next document actually apply.
           </p>
           <Link to="/about/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#4F5BD5] hover:underline">
             About the coordination model <ArrowRight className="h-4 w-4" />
