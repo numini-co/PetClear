@@ -14,7 +14,7 @@ const sharedPetCharter: ServicePageData = {
     'A menu offer for a dedicated lift shared with other pets — more control than a scheduled belly hold, without buying the whole aircraft. This is not the door-to-door pet relocation page. Market listings below are labelled third-party context. A firm seat is Get a Quote.',
   heroImage: '/assets/w-flight-modes/shared-pet-charter-dog-cabin-hero.jpg',
   heroImageAlt:
-    'Labrador sitting beside an open travel crate in a small private aircraft cabin for shared pet charter'
+    'Labrador sitting beside an open travel crate in a small private aircraft cabin for shared pet charter',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I am considering a shared / group pet charter. Can you say whether a lift exists for my route and send a quote?',
   ctaLabel: 'Get a Shared Charter Quote',
