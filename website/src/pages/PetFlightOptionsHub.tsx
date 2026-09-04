@@ -45,7 +45,7 @@ const faqData = [
   },
   {
     q: 'Where do verified airline fees live?',
-    a: 'Etihad cabin fees and Emirates animal-charge tiers are on the child guides, each labelled with the airline as the source (Etihad from USD 399; Emirates USD 500 / 650 / 800). Confirm live amounts on the carrier site before you pay. Jet, charter and DPR packages stay Get a Quote.',
+    a: 'On the child guides, not on this chooser hub. Etihad publishes cabin pet fees that change; confirm at booking. The 2026 from-USD-399 promo (book + travel ~13 Apr–31 May 2026) is expired and is not the current standard; USD 1,500 is Estimated only until first-party current fee is confirmed. Emirates USD 500 / 650 / 800 animal-charge tiers (source: Emirates) live on the baggage and cargo guides — Dubai-ending itineraries must still use cargo. Jet, shared charter and door-to-door coordination stay Get a Quote.',
   },
 ]
 
@@ -130,7 +130,7 @@ export default function PetFlightOptionsHub() {
         <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Decision table</h2>
           <p className="mb-6 max-w-3xl text-base leading-relaxed text-[#5A5A5A]">
-            Use this to pick a child page. Fees on cabin and cargo pages are first-party airline figures (Etihad from USD 399; Emirates 500 / 650 / 800). Confirm live amounts on the carrier site. Jet and charter stay quote-only.
+            Use this to pick a child page. Etihad cabin fees change — confirm at booking (the 2026 from-USD-399 promo is expired). Emirates animal-charge tiers are first-party when the itinerary is eligible. Cargo freight, jet, charter seats and door-to-door DPR packages are Get a Quote.
           </p>
           <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
             <table className="w-full min-w-[880px] border-collapse text-sm">
@@ -151,7 +151,7 @@ export default function PetFlightOptionsHub() {
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">AUH only (Etihad exception)</td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
-                    Etihad from USD 399 Economy (source: Etihad). Confirm live before you pay.
+                    Confirm at booking. 2026 from-USD-399 promo expired. USD 1,500 = Estimated only.
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.cabin} className="font-semibold text-[#4F5BD5] hover:underline">
