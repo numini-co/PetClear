@@ -52,7 +52,8 @@ export default function DubaiPillar() {
         <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-4">Pet Relocation in Dubai</h2>
           <p className="text-[#5A5A5A] leading-relaxed mb-4">Dubai is home to one of the world's largest expat populations — and a huge number of dogs and cats who move with their families. Whether you are arriving from the UK, USA, India, Australia or beyond, or leaving the UAE for a new posting, the core requirements are the same: an ISO microchip, current vaccinations, a government health certificate and a MOCCAE permit valid for 30 days. High-risk countries also require a rabies titer test.</p>
-          <p className="text-[#5A5A5A] leading-relaxed">We coordinate the whole move — permits, paperwork, IATA crate, flight, customs and door-to-door delivery — for every Dubai community below.</p>
+          <p className="text-[#5A5A5A] leading-relaxed mb-4">We coordinate the whole move — permits, paperwork, IATA crate, flight, customs and door-to-door delivery — for every Dubai community below. Door-to-door commercial work is <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">door-to-door pet relocation in Dubai</Link>. Same-city vans are <Link to="/service/pet-transport-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">climate-controlled pet transport in Dubai</Link>.</p>
+          <p className="text-[#5A5A5A] leading-relaxed">Category entry stays on the <Link to="/" className="font-semibold text-[#4F5BD5] hover:underline">homepage overview</Link>. Compare how much we hold on <Link to="/services/" className="font-semibold text-[#4F5BD5] hover:underline">compare our service tiers</Link>.</p>
         </div>
       </section>
 

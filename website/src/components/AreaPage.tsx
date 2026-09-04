@@ -10,6 +10,7 @@ import { SERVICE_LINKS } from '../data/nav.ts'
 import { dubaiAreas } from '../data/areas/dubai/index.ts'
 import OfficialSources from './OfficialSources.tsx'
 import Hero from './Hero.tsx'
+import ContentImage from './ContentImage.tsx'
 
 function Faq({ q, a }: ServiceFAQ) {
   const [open, setOpen] = useState(false)
@@ -47,6 +48,9 @@ function Block({ block }: { block: ServiceBlock }) {
         ))}
       </div>
     )
+  if (block.type === 'image') {
+    return <ContentImage src={block.src} alt={block.alt} caption={block.caption} />
+  }
   return (
     <div className="overflow-x-auto mb-4">
       <table className="w-full text-sm border-collapse">

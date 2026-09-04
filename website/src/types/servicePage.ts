@@ -6,6 +6,7 @@ export type ServiceBlock =
   | { type: 'list'; items: string[] }
   | { type: 'steps'; steps: { title: string; text: string }[] }
   | { type: 'table'; headers: string[]; rows: string[][] }
+  | { type: 'image'; src: string; alt: string; caption?: string }
 
 export interface ServiceSection {
   h2: string
@@ -33,12 +34,16 @@ export interface ServicePageData {
   h1: string
   /** <= 80 words, shown in the hero */
   heroValueProp: string
-  /** /images/service-<slug>.jpg */
+  /** Hero path — W3 assets use /assets/w1-w3/; blocked heroes keep existing placeholders. */
   heroImage: string
   heroImageAlt: string
   primaryKeyword: string
   /** pre-filled WhatsApp message for this page's CTAs */
   whatsappMessage: string
+  /** Final CTA button label. Defaults by slug when omitted. */
+  ctaLabel?: string
+  /** Hero eyebrow. Defaults to “Pet Relocation Service”. */
+  heroEyebrow?: string
   /** trust chips under the hero */
   trustBadges?: string[]
   /** AED range, drives Offer schema + the pricing line */

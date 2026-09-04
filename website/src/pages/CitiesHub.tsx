@@ -5,6 +5,7 @@ import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import LastVerified from '../components/LastVerified.tsx'
+import HubCrossLinks from '../components/HubCrossLinks.tsx'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 
 const CITIES = [
@@ -110,6 +111,18 @@ export default function CitiesHub() {
           </div>
         </div>
       </section>
+
+      <HubCrossLinks
+        heading="Emirates hub — then the service URL"
+        intro="Federal rules are shared. The job still has a home: category entry, tiers, door-to-door or pet taxi."
+        links={[
+          { to: '/', label: 'Homepage overview', note: 'Category entry for UAE pet relocation coordination' },
+          { to: '/services/', label: 'Compare our service tiers', note: 'Essential through full coordination' },
+          { to: '/service/pet-relocation-dubai/', label: 'Door-to-door pet relocation in Dubai', note: 'Money-head service after you pick the emirate' },
+          { to: '/service/pet-transport-dubai/', label: 'Pet transport across Dubai', note: 'Inter-emirate ground and pet taxi' },
+          { to: '/dubai/', label: 'Dubai communities we cover', note: 'Community directory for the largest emirate' },
+        ]}
+      />
 
       <OfficialSources />
 

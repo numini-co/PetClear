@@ -9,6 +9,7 @@ interface HeroProps {
   title: string
   subtitle?: string
   whatsappMessage?: string
+  primaryLabel?: string
   secondary?: { label: string; to: string }
   updated?: string
 }
@@ -23,6 +24,7 @@ export default function Hero({
   title,
   subtitle,
   whatsappMessage,
+  primaryLabel = 'Get a Free WhatsApp Quote',
   secondary,
   updated,
 }: HeroProps) {
@@ -62,7 +64,7 @@ export default function Hero({
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white shadow-lg transition hover:bg-[#1DA851]"
             >
               <MessageCircle className="h-4 w-4" />
-              Get a Free WhatsApp Quote
+              {primaryLabel}
             </a>
             {secondary ? (
               <Link
