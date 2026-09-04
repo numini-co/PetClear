@@ -29,7 +29,7 @@ const faqData = [
   },
   {
     q: 'Do you publish private-jet or shared-charter prices?',
-    a: 'No. Those two commercial offer pages are quote-only. Labelled competitor market listings (Elite Pets, PetXJets, JetCircle, press) live on the shared pet charter page — they are not DPR prices. We do not invent jet or charter fee tables.',
+    a: 'No. Aircraft, routing and handling vary too widely. Those two commercial offer pages are quote-only — message us on WhatsApp. We do not publish jet or charter fee tables.',
   },
   {
     q: 'How long is a MOCCAE import permit valid?',
@@ -37,7 +37,7 @@ const faqData = [
   },
   {
     q: 'Which page should I open if I just want you to handle everything?',
-    a: 'Door-to-door pet relocation in Dubai. That money page is the umbrella: we choose the flight mode, then coordinate documents, crate, booking and the last mile.',
+    a: 'Door-to-door pet relocation in Dubai. That is the umbrella service: we choose the flight mode, then coordinate documents, crate, booking and the last mile.',
   },
   {
     q: 'Are you affiliated with Emirates or Etihad?',
@@ -45,7 +45,7 @@ const faqData = [
   },
   {
     q: 'Where do verified airline fees live?',
-    a: 'On the child guides, not on this chooser hub. Etihad cabin-fee depth — including the expired 13 Apr–31 May 2026 USD 399 promo and the secondary USD 1,500 estimate — lives on the Etihad pets-in-cabin guide. Emirates USD 500 / 650 / 800 animal-charge tiers live on the Emirates pet cargo guide. Jet, shared charter and door-to-door coordination stay Get a Quote.',
+    a: 'Etihad cabin fees and Emirates animal-charge tiers are on the child guides, each labelled with the airline as the source (Etihad from USD 399; Emirates USD 500 / 650 / 800). Confirm live amounts on the carrier site before you pay. Jet, charter and DPR packages stay Get a Quote.',
   },
 ]
 
@@ -130,15 +130,16 @@ export default function PetFlightOptionsHub() {
         <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Decision table</h2>
           <p className="mb-6 max-w-3xl text-base leading-relaxed text-[#5A5A5A]">
-            Use this to pick a child page. This table is a chooser, not an airline policy grid — no Etihad fee rows and no Emirates 500 / 650 / 800 reprint. Jet, charter and door-to-door stay Get a Quote.
+            Use this to pick a child page. Cabin and Emirates animal-charge figures are labelled airline fees on the child guides. Cargo freight, jet, charter seats and door-to-door DPR packages are Get a Quote.
           </p>
           <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
-            <table className="w-full min-w-[720px] border-collapse text-sm">
+            <table className="w-full min-w-[880px] border-collapse text-sm">
               <thead>
                 <tr className="bg-[#E9ECFB]">
                   <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Mode</th>
                   <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Fits when</th>
                   <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">UAE arrival</th>
+                  <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Fees</th>
                   <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Open</th>
                 </tr>
               </thead>
@@ -149,6 +150,9 @@ export default function PetFlightOptionsHub() {
                     Small dog or cat on Etihad only. Air Arabia, flydubai and Emirates cabin = falcons (or guide dogs), not pets.
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">AUH only (Etihad exception)</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
+                    Airline fees: Etihad from USD 399 Economy (+ Business extra seat + USD 399) as a cited airline figure — confirm live. Emirates/flydubai cabin N/A for cats/dogs (falcons excepted).
+                  </td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.cabin} className="font-semibold text-[#4F5BD5] hover:underline">
                       Etihad cabin guide
@@ -160,7 +164,10 @@ export default function PetFlightOptionsHub() {
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
                     Owner on the same ticket; airline allows AVIH; journey rules met
                   </td>
-                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Not for itineraries ending in Dubai</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Not for itineraries ending in Dubai — into Dubai often must be cargo</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
+                    Airline fee when eligible: Emirates USD 500 / 650 / 800. Not all UAE routes qualify.
+                  </td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.baggage} className="font-semibold text-[#4F5BD5] hover:underline">
                       Checked-baggage guide
@@ -173,6 +180,9 @@ export default function PetFlightOptionsHub() {
                     Most inbound dogs and cats; unaccompanied or owner on a different flight
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Required for DXB-ending itineraries</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
+                    Airline animal-charge tiers USD 500 / 650 / 800 (source: Emirates). Freight quoted per route/weight — not a DPR cargo price.
+                  </td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.cargo} className="font-semibold text-[#4F5BD5] hover:underline">
                       Emirates / cargo guide
@@ -185,6 +195,7 @@ export default function PetFlightOptionsHub() {
                     Scheduled aircraft will not accept the pet, or the calendar will not wait
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Coordinated per flight plan</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Custom charter quote only — no all-in numbers</td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.jet} className="font-semibold text-[#4F5BD5] hover:underline">
                       Private jet service
@@ -197,6 +208,9 @@ export default function PetFlightOptionsHub() {
                     A dedicated lift shared with other pets — less isolation than a full jet, more control than a belly hold
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Coordinated per lift</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
+                    Market context ~EUR 7k–13k Europe↔Dubai; firm seat = Get a Quote
+                  </td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.charter} className="font-semibold text-[#4F5BD5] hover:underline">
                       Shared charter service
@@ -209,6 +223,7 @@ export default function PetFlightOptionsHub() {
                     You want one coordinator to pick the mode and hold documents, crate and last mile
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">We match the mode to the permit window</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">DPR package = Get a Quote (no invented package prices)</td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.doorToDoor} className="font-semibold text-[#4F5BD5] hover:underline">
                       Door-to-door service
@@ -223,7 +238,7 @@ export default function PetFlightOptionsHub() {
 
       <FlightModeCards
         heading="Open a child page"
-        intro="Each card is a dedicated URL. Cabin owns Etihad pets in cabin. Cargo owns Emirates pet cargo. Jet and charter own their capability terms. Door-to-door stays the money page."
+        intro="Each card is a dedicated URL. Cabin covers Etihad cabin rules. Cargo is the Emirates / manifest-cargo guide. Jet and charter are quote-only offers. Door-to-door remains the umbrella coordination service."
       />
 
       <section className="section-padding bg-white">
