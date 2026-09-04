@@ -8,27 +8,27 @@ export interface CardImage {
 export const CARD_IMAGES: Record<string, CardImage> = {
   '/service/pet-relocation-dubai/': {
     src: '/assets/homepage-cards/door-to-door-pet-relocation-card.jpg',
-    alt: 'A calm dog beside a travel crate for door-to-door pet relocation in Dubai',
+    alt: 'A golden retriever sitting in an open travel crate on a Dubai villa driveway before door-to-door relocation',
   },
   '/service/pet-import-dubai/': {
     src: '/assets/homepage-cards/pet-import-dubai-card.jpg',
-    alt: 'A pet arriving in Dubai with import documents and a travel carrier',
+    alt: 'Hands placing import documents on a pet travel crate with the Dubai skyline in the window',
   },
   '/service/pet-export-dubai/': {
     src: '/assets/homepage-cards/pet-export-from-dubai-card.jpg',
-    alt: 'A calm dog and cat beside a travel crate at a Dubai departure terminal',
+    alt: 'A husky sitting beside a packed travel crate at a Dubai villa doorway before export',
   },
   '/service/pet-transport-dubai/': {
     src: '/assets/homepage-cards/pet-transport-dubai-card.jpg',
-    alt: 'Climate-controlled pet taxi transfer inside Dubai',
+    alt: 'A secured travel crate inside a climate-controlled van with the Dubai skyline outside',
   },
   '/service/international-pet-relocation/': {
     src: '/assets/homepage-cards/international-pet-relocation-card.jpg',
-    alt: 'A dog beside a travel crate at an airport for international pet relocation',
+    alt: 'A travel crate with documents on a Dubai balcony overlooking the skyline before an international move',
   },
   '/service/pet-relocation-to-dubai/': {
     src: '/assets/homepage-cards/pet-relocation-to-dubai-card.jpg',
-    alt: 'A cat settling into a new Dubai apartment after inbound pet relocation',
+    alt: 'An orange tabby stepping out of a travel crate in a Dubai apartment after inbound relocation',
   },
   '/service/pet-relocation-from-dubai/': {
     src: '/assets/w1-w3/pet-relocation-from-dubai-husky-balcony-golden-hour.jpg',
