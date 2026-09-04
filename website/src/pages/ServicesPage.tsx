@@ -8,6 +8,7 @@ import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
 import FAQItem from '../components/FAQItem.tsx'
+import SnippetAnswer from '../components/SnippetAnswer.tsx'
 import ContentImage from '../components/ContentImage.tsx'
 import { SERVICE_LINKS } from '../data/nav.ts'
 
@@ -60,7 +61,44 @@ const SERVICE_BLURBS: Record<string, string> = {
     'Cat-specific carrier acclimation and quiet-arrival notes — same MOCCAE steps, a different crate file.',
   '/service/moccae-pet-permit/':
     'Commercial help filing the import or export permit without turning this hub into a second rules table.',
+  '/service/private-jet-pet-travel/':
+    'Dedicated aircraft when scheduled cabin, baggage or cargo will not accept the animal. Quote only — no invented jet prices.',
+  '/service/shared-pet-charter/':
+    'A dedicated lift shared with other pets — midpoint between scheduled cargo and a full jet. Market EUR band as context; firm seat is Get a Quote.',
 }
+
+const FLIGHT_MODE_SERVICE_CARDS = [
+  {
+    to: '/guides/pet-flight-options-dubai/',
+    label: 'Pet flight options hub',
+    desc: 'Compare all six modes: cabin, checked baggage, manifest cargo, private jet, shared charter and door-to-door.',
+  },
+  {
+    to: '/service/private-jet-pet-travel/',
+    label: 'Private jet pet travel',
+    desc: 'Commercial coordination when a scheduled aircraft is the wrong product. Get a Quote only.',
+  },
+  {
+    to: '/service/shared-pet-charter/',
+    label: 'Shared / group pet charter',
+    desc: 'A dedicated lift shared with other pets. Labelled competitor seats on that page; DPR firm seat is Get a Quote.',
+  },
+  {
+    to: '/guides/etihad-pet-policy/',
+    label: 'Etihad in-cabin guide',
+    desc: 'The UAE cabin exception — eligibility, 8 kg limit, AUH arrival. Cabin fees change; confirm at booking. Emirates / flydubai / Air Arabia: no cats or dogs in cabin (falcons excepted).',
+  },
+  {
+    to: '/guides/emirates-pet-cargo/',
+    label: 'Emirates pet cargo guide',
+    desc: 'Educational SkyCargo process. Airline animal-charge tiers USD 500 / 650 / 800 (source: Emirates); freight quoted per route/weight — not a DPR cargo price.',
+  },
+  {
+    to: '/guides/pet-as-checked-baggage/',
+    label: 'Checked-baggage guide',
+    desc: 'When accompanied hold travel is allowed — and why Dubai-ending itineraries cannot use it.',
+  },
+]
 
 const FEATURE_ROWS = [
   { label: 'Route & eligibility check', tiers: [true, true, true] },
@@ -116,6 +154,14 @@ const addOns = [
 ]
 
 const SERVICES_FAQS = [
+  {
+    q: 'What is the best pet relocation service in Dubai?',
+    a: 'There is no honest number-one ranking and we do not invent ratings. Judge a Dubai relocator by licensing and permit guidance, fee transparency, a named process, and cabin-versus-cargo fit. We are a provider — Dubai Pet Relocation. Compare tiers on this hub, then open door-to-door pet relocation and Get a Quote. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.',
+  },
+  {
+    q: 'Best pet relocation services Dubai',
+    a: 'Use criteria, not a trophy list: who will confirm MOCCAE fees on the portal, who will not force cabin onto a cargo animal, and who quotes the file. This hub compares how much help we hold. The commercial door-to-door page is pet relocation in Dubai. We disclose we are the provider.',
+  },
   {
     q: 'What is the difference between PawPilot, PawPartner and PawVIP?',
     a: 'PawPilot is document guidance. PawPartner adds booking and travel-day coordination. PawVIP adds a dedicated manager and contingency planning. The MOCCAE and airline steps do not change — only who holds each task.',
@@ -219,6 +265,10 @@ export default function ServicesPage() {
 
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
+          <SnippetAnswer
+            question="What is the best pet relocation service in Dubai?"
+            answer="There is no honest number-one ranking. Judge a Dubai relocator by licensing and permit guidance, fee transparency, a named process, and whether cabin, cargo, jet or charter fits the animal. We are a provider — Dubai Pet Relocation — and we quote the file. Compare tiers here, then Get a Quote."
+          />
           <p className="text-body mb-4">
             This hub compares tiers. It does not own “pet relocation Dubai” — that money head is{' '}
             <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
@@ -380,6 +430,29 @@ export default function ServicesPage() {
       </section>
 
       <section className="section-padding bg-[#F5F6FD]">
+        <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
+          <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Flight modes and airline guides</h2>
+          <p className="mb-6 max-w-3xl text-[#5A5A5A]">
+            Door-to-door stays the money page. These cards are how the pet actually flies — plus the two quote-only charter products.
+          </p>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {FLIGHT_MODE_SERVICE_CARDS.map((l) => (
+              <Link
+                key={l.to}
+                to={l.to}
+                className="rounded-2xl bg-white px-5 py-4 shadow-sm hover:bg-[#E9ECFB]"
+              >
+                <span className="flex items-center justify-between text-sm font-semibold text-[#2A2A2A]">
+                  {l.label} <ArrowRight className="h-4 w-4 shrink-0 text-[#4F5BD5]" />
+                </span>
+                <p className="mt-2 text-sm leading-relaxed text-[#5A5A5A]">{l.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-white">
         <div className="mx-auto max-w-[820px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-6 text-center text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Frequently asked questions</h2>
           <div className="space-y-3">

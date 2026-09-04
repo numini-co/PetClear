@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import {
   CheckCircle,
   ChevronDown,
@@ -17,6 +18,7 @@ import {
   Heart,
   Sparkles,
   Truck,
+  ArrowRight,
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
@@ -216,11 +218,6 @@ export default function HowItWorksPage() {
       name: 'How to Relocate Your Pet to or from Dubai',
       description: 'A step-by-step guide to relocating your dog or cat to or from Dubai using a professional pet relocation coordination service.',
       totalTime: 'P4W',
-      estimatedCost: {
-        '@type': 'MonetaryAmount',
-        currency: 'AED',
-        value: '8000-25000',
-      },
       supply: [
         { '@type': 'HowToSupply', name: 'ISO 11784/11785 microchip' },
         { '@type': 'HowToSupply', name: 'Rabies vaccination certificate' },
@@ -318,6 +315,28 @@ export default function HowItWorksPage() {
         updated="Updated June 2026"
         whatsappMessage={heroWaText}
       />
+
+      <section className="section-padding bg-white">
+        <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
+          <div className="rounded-[20px] border border-[#E2E5F6] bg-[#F5F6FD] p-6 sm:p-8">
+            <h2 className="mb-2 text-xl font-bold text-[#2A2A2A] sm:text-2xl">First: how will the pet fly?</h2>
+            <p className="mb-4 text-sm leading-relaxed text-[#5A5A5A] sm:text-base">
+              The seven steps below assume we already know the air product. Pets entering the UAE travel as manifest cargo, except Etihad in-cabin into Abu Dhabi. Compare all six modes on the flight-options hub — airline fees are labelled on the child guides; DPR packages stay Get a Quote — then come back here for the coordination sequence.
+            </p>
+            <div className="flex flex-wrap gap-3 text-sm font-semibold">
+              <Link to="/guides/pet-flight-options-dubai/" className="inline-flex items-center gap-1 text-[#4F5BD5] hover:underline">
+                Flight options hub <ArrowRight className="h-4 w-4" />
+              </Link>
+              <Link to="/guides/etihad-pet-policy/" className="text-[#4F5BD5] hover:underline">Etihad cabin</Link>
+              <Link to="/guides/pet-as-checked-baggage/" className="text-[#4F5BD5] hover:underline">Checked baggage</Link>
+              <Link to="/guides/emirates-pet-cargo/" className="text-[#4F5BD5] hover:underline">Emirates cargo</Link>
+              <Link to="/service/private-jet-pet-travel/" className="text-[#4F5BD5] hover:underline">Private jet</Link>
+              <Link to="/service/shared-pet-charter/" className="text-[#4F5BD5] hover:underline">Shared charter</Link>
+              <Link to="/service/pet-relocation-dubai/" className="text-[#4F5BD5] hover:underline">Door-to-door</Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ═══════════ WHAT WE ACTUALLY DO ═══════════ */}
       <section className="section-padding">
@@ -649,10 +668,10 @@ export default function HowItWorksPage() {
       <section className="section-padding bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-            How We Make Money (And Why It Costs What It Costs)
+            How We Make Money (And Why We Do Not Print a Package Price)
           </h2>
           <p className="text-[#5A5A5A] mb-8">
-            We make money in two ways: a partner commission and a coordination fee. We don&apos;t mark up government fees. We don&apos;t add hidden charges. We show you exactly where every dirham goes.
+            Dubai Pet Relocation fees are Get a Quote. We make money from a coordination fee (and, where a partner pays one, a disclosed commission). We do not invent AED package tables, mark up government portal fees, or treat airline animal-charge tiers as our freight quote.
           </p>
 
           <div className="overflow-x-auto rounded-2xl shadow-sm border border-gray-100 mb-8">
@@ -660,21 +679,21 @@ export default function HowItWorksPage() {
               <thead>
                 <tr>
                   <th>Item</th>
-                  <th>Cost (AED)</th>
-                  <th>Who Pays</th>
+                  <th>How it is priced</th>
+                  <th>Who pays</th>
                   <th>Notes</th>
                 </tr>
               </thead>
               <tbody>
-                <tr><td>MOCCAE export permit</td><td>200</td><td>You</td><td>Government fee, no markup</td></tr>
-                <tr><td>Veterinary health check &amp; certificate</td><td>800</td><td>You</td><td>Vet partner fee</td></tr>
-                <tr><td>ISO microchip (if needed)</td><td>150</td><td>You</td><td>One-time cost</td></tr>
-                <tr><td>IATA travel crate</td><td>600</td><td>You</td><td>Size-dependent</td></tr>
-                <tr><td>Air freight (cargo)</td><td>4,500</td><td>You</td><td>Airline fee, no markup</td></tr>
-                <tr><td>Customs clearance</td><td>400</td><td>You</td><td>Broker fee</td></tr>
-                <tr><td>Ground transport (pickup + delivery)</td><td>300</td><td>You</td><td>Transport partner fee</td></tr>
-                <tr className="bg-[#4F5BD5]/5"><td className="font-bold text-[#2A2A2A]">Dubai Pet Relocation service fee</td><td className="font-bold text-[#2A2A2A]">2,500</td><td className="font-bold text-[#2A2A2A]">You</td><td className="font-bold text-[#2A2A2A]">Our coordination + support fee</td></tr>
-                <tr className="bg-[#4F5BD5]/10"><td className="font-bold text-[#2A2A2A]">Total estimated cost</td><td className="font-bold text-[#2A2A2A]">9,450</td><td></td><td className="font-bold text-[#2A2A2A]">Varies by route and pet size</td></tr>
+                <tr><td>MOCCAE permit / government fees</td><td>Official portal (confirm live)</td><td>You</td><td>No DPR markup. Figures circulating online conflict — we do not reprint them here.</td></tr>
+                <tr><td>Veterinary work</td><td>Vet partner quote</td><td>You</td><td>Health certificate, vaccines, titer where the route requires one</td></tr>
+                <tr><td>IATA travel crate</td><td>Sized to the animal</td><td>You</td><td>Chargeable weight follows the crate, not a breed average</td></tr>
+                <tr><td>Etihad cabin — airline fee</td><td>Fees change; confirm at booking. 2026 from-USD-399 promo (13 Apr–31 May) expired. USD 1,500 = Estimated only</td><td>You, to the airline</td><td>Not a current standard fee and not a DPR package. Emirates / flydubai / Air Arabia cabin N/A for cats and dogs (falcons excepted).</td></tr>
+                <tr><td>Emirates animal charge — airline fee</td><td>USD 500 / 650 / 800 by weight and size (source: Emirates)</td><td>You, to the airline</td><td>Airline animal-charge tiers. Into Dubai the pet often must travel as cargo — not every UAE route qualifies as baggage.</td></tr>
+                <tr><td>Cargo freight</td><td>Quoted per route and weight</td><td>You</td><td>Not a published DPR freight list. The Emirates 500/650/800 bands are airline fees, not our cargo quote.</td></tr>
+                <tr><td>Shared charter seat</td><td>Get a Quote (DPR)</td><td>You</td><td>Labelled market listings (Elite Pets / PetXJets / JetCircle / press) live on the shared-charter page — not DPR prices.</td></tr>
+                <tr><td>Private jet</td><td>Custom charter quote only</td><td>You</td><td>No all-in jet numbers on this site.</td></tr>
+                <tr className="bg-[#4F5BD5]/5"><td className="font-bold text-[#2A2A2A]">Dubai Pet Relocation coordination</td><td className="font-bold text-[#2A2A2A]">Get a Quote</td><td className="font-bold text-[#2A2A2A]">You</td><td className="font-bold text-[#2A2A2A]">No invented package prices.</td></tr>
               </tbody>
             </table>
           </div>

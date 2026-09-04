@@ -8,6 +8,7 @@ import { SERVICE_LINKS } from '../data/nav.ts'
 import OfficialSources from './OfficialSources.tsx'
 import Hero from './Hero.tsx'
 import FAQItem from './FAQItem.tsx'
+import SnippetAnswer from './SnippetAnswer.tsx'
 import ContentImage from './ContentImage.tsx'
 import LinkedText from './LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
@@ -53,6 +54,29 @@ function Block({ block }: { block: ServiceBlock }) {
   }
   if (block.type === 'image') {
     return <ContentImage src={block.src} alt={block.alt} caption={block.caption} />
+  }
+  if (block.type === 'cards') {
+    return (
+      <div className="mb-4 grid gap-4 sm:grid-cols-2">
+        {block.cards.map((c) => (
+          <Link
+            key={c.to}
+            to={c.to}
+            className="flex flex-col rounded-[20px] border border-[#E2E5F6] bg-[#F5F6FD] p-5 transition hover:-translate-y-0.5 hover:bg-[#E9ECFB] hover:shadow-sm"
+          >
+            {c.kind ? (
+              <span className="mb-1 text-xs font-semibold uppercase tracking-wider text-[#4F5BD5]">{c.kind}</span>
+            ) : null}
+            <span className="mb-2 flex items-center justify-between gap-2 font-bold text-[#2A2A2A]">
+              {c.title} <ArrowRight className="h-4 w-4 shrink-0 text-[#4F5BD5]" />
+            </span>
+            <span className="text-sm leading-relaxed text-[#5A5A5A]">
+              <LinkedText text={c.text} />
+            </span>
+          </Link>
+        ))}
+      </div>
+    )
   }
   return (
     <div className="mb-4 overflow-x-auto">
@@ -168,12 +192,17 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         title={data.h1}
         subtitle={shortSubtitle(data.heroValueProp)}
         updated="Updated September 2026"
+        primaryLabel={data.ctaLabel}
+        whatsappMessage={data.whatsappMessage}
       />
 
       {/* SECTIONS */}
       {data.sections.map((sec, i) => (
         <section key={i} className={`section-padding ${i % 2 ? 'bg-[#F5F6FD]' : 'bg-white'}`}>
           <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
+            {i === 0 && data.snippetQuestion && data.snippetAnswer ? (
+              <SnippetAnswer question={data.snippetQuestion} answer={data.snippetAnswer} />
+            ) : null}
             <h2 className="text-[24px] sm:text-[30px] lg:text-[34px] font-bold text-[#2A2A2A] mb-4">{sec.h2}</h2>
             {sec.intro && (
               <p className="mb-4 leading-relaxed text-[#5A5A5A]">

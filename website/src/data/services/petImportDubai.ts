@@ -33,12 +33,16 @@ const petImportDubai: ServicePageData = {
     'Hi Dubai Pet Relocation! I want to import my pet to Dubai. Can you review origin, breed, documents and a commercial import quote?',
   ctaLabel: 'Get a Relocation Quote',
   heroEyebrow: 'Pet Import Service',
+  snippetQuestion: 'What are the requirements for traveling with my pet to the UAE?',
+  snippetAnswer:
+    'A pet entering the UAE needs an ISO microchip, current rabies vaccination, a government health certificate, and a MOCCAE import permit valid 30 days. There is typically no long quarantine when those papers match. Breed bans apply. Full rules live on the UAE import-requirements guide.',
   trustBadges: [
     '30-day MOCCAE permit window',
     'Titer sample timing checked',
     'DXB / AUH cargo clearance',
     'WhatsApp during business hours',
   ],
+  costRange: { low: '2000', high: '20000' },
   hasHowTo: true,
   howToName: 'How commercial pet import to Dubai is coordinated',
   sections: [
@@ -258,6 +262,34 @@ const petImportDubai: ServicePageData = {
   ],
   faq: [
     {
+      q: 'How long do pets stay in quarantine?',
+      a: 'The UAE typically has no long quarantine when documents are correct — compliant pets are examined at the entry port and released. We do not invent a day-count for a paperwork hold. Depth lives on the [UAE pet import requirements](/guides/uae-pet-import-requirements/) guide.',
+    },
+    {
+      q: 'What are the rules and regulations for pets in the UAE?',
+      a: 'Federal rules cover microchip, rabies, health certificate, a 30-day MOCCAE import permit, cargo entry (except Etihad cabin into Abu Dhabi), and breed bans. This commercial import page does not republish the full rules table — use [UAE pet import requirements](/guides/uae-pet-import-requirements/) and [banned dog breeds in Dubai](/guides/banned-dog-breeds-dubai/).',
+    },
+    {
+      q: 'What are the requirements for traveling with my pet to the UAE?',
+      a: 'ISO microchip, current rabies vaccination, government health certificate, antiparasitic timing, and a MOCCAE import permit valid 30 days. Pets enter as manifest cargo unless the Etihad Abu Dhabi cabin exception applies. Full checklist: [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    },
+    {
+      q: 'Does Dubai allow pet dogs?',
+      a: 'Yes. Dogs are legal in Dubai when the breed is permitted and the import file is complete. Some breeds are banned or restricted — check [banned dog breeds in Dubai](/guides/banned-dog-breeds-dubai/) before you book. Rules depth: [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    },
+    {
+      q: 'Is it legal to have a dog in Dubai?',
+      a: 'Yes. Owning a permitted dog is legal; you still need the 30-day MOCCAE import permit to bring one in, then municipality registration. Banned and restricted types are listed on [banned dog breeds in Dubai](/guides/banned-dog-breeds-dubai/).',
+    },
+    {
+      q: 'Do I need a MOCCAE import permit for my dog?',
+      a: 'Yes. Every dog entering the UAE needs a MOCCAE import permit, valid 30 days from issuance — not 90. Confirm the live portal fee; published amounts have differed. Apply questions live on the [MOCCAE import permit guide](/guides/moccae-import-permit/). This commercial import page does not deep-own that query.',
+    },
+    {
+      q: 'How much does it cost to import a pet to Dubai?',
+      a: 'Most imports fall between AED 2,000 and AED 20,000 depending on origin country, pet size, airline and service level. Government charges (MOCCAE permit and arrival release) are a small, contested slice — confirm live portal amounts rather than treating published AED 200 / 500 figures as settled. The flight and veterinary work make up most of the cost.',
+    },
+    {
       q: 'What does a commercial pet import to Dubai actually include?',
       a: 'On this page it means we coordinate eligibility, the document sequence, the 30-day MOCCAE import permit, IATA crate sizing, manifested cargo and cargo-village clearance through to a Dubai door. We are a coordination service, not the airline and not a MOCCAE-licensed issuer. Compare depth of help on [compare our service tiers](/services/).',
     },
@@ -302,6 +334,7 @@ const petImportDubai: ServicePageData = {
     { label: 'Pet Relocation to Dubai', to: '/service/pet-relocation-to-dubai/' },
     { label: 'Banned Dog Breeds in Dubai', to: '/guides/banned-dog-breeds-dubai/' },
     { label: 'Routes Hub', to: '/routes/' },
+    { label: 'Pet Relocation Cost Dubai', to: '/guides/pet-relocation-cost-dubai/' },
     { label: 'How It Works', to: '/how-it-works/' },
   ],
 }

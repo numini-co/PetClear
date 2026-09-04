@@ -28,9 +28,41 @@ import {
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
-import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
+import SnippetAnswer from '../components/SnippetAnswer.tsx'
+import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
 
 const costGuideMsg = 'Hi, I saw your cost guide and want a personalized quote for relocating my [dog/cat] from [country] to Dubai.'
+
+const snippetQuestion = 'How much does it cost to relocate a pet in Dubai?'
+const snippetAnswer =
+  'Relocating a pet through Dubai is a bundle of government permits, veterinary work, air freight, an IATA crate, airport handling, and coordination — not one ticket price. Confirm contested MOCCAE fees on the official portal. Airline charges vary by route and size. Our coordination package is quoted. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.'
+
+const COST_PAA_FAQS: { q: string; a: string }[] = [
+  {
+    q: 'How much does it cost to relocate a pet in Dubai?',
+    a: 'There is no single ticket price. A Dubai pet move splits into government permits (confirm contested MOCCAE amounts on the official portal), veterinary work, air freight, an IATA crate, airport handling, and coordination. Dubai Pet Relocation packages are Get a Quote — we do not publish a from-price. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.',
+  },
+  {
+    q: 'How much does it cost to relocate a cat?',
+    a: 'Cats usually sit at the lower end because the crate and volumetric freight are smaller, but they still pay the same government, veterinary, handling, and coordination types. Confirm MOCCAE permit fees on the portal. Our cat-relocation package is Get a Quote, not a published from-band. WhatsApp +971 50 478 2999 or support@dubai-pet-relocation.ae.',
+  },
+  {
+    q: 'How much does it cost to fly a dog to Dubai?',
+    a: 'Flying a dog is mostly freight plus crate size, plus government and vet steps. Larger dogs need larger IATA crates, so volumetric cargo is the main swing. Confirm MOCCAE fees on the portal. Emirates airline animal-charge tiers are on the Emirates pet cargo guide. Our coordination is Get a Quote.',
+  },
+  {
+    q: 'How much does it cost to move your dog to Dubai?',
+    a: 'A door-to-door dog move adds last-mile handling and coordination on top of government, veterinary, freight, and crate costs. Confirm contested government fees on the MOCCAE portal. Airline freight is quoted per route and weight. Dubai Pet Relocation’s package is Get a Quote — email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.',
+  },
+  {
+    q: 'How much does it cost to import a pet into the UAE?',
+    a: 'UAE import cost is the same type split: government (confirm the live permit and release amounts on the MOCCAE portal), veterinary prep, freight, crate, airport handling, and coordination. There is no single published import tariff. Our import package is Get a Quote. Rules live on the UAE import-requirements guide.',
+  },
+  {
+    q: 'How much does it cost to transport a pet on Emirates Airlines?',
+    a: 'Emirates publishes labelled animal-charge tiers of USD 500, 650 and 800 by pet-plus-carrier weight and size (source: Emirates) — those are airline fees, not freight and not a Dubai Pet Relocation rate. Commercial cargo is quoted per route and weight. See the Emirates pet cargo guide, then Get a Quote for coordination.',
+  },
+]
 
 const WhatsAppCta = ({
   text,
@@ -85,6 +117,11 @@ export default function CostGuidePage() {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: [
+      ...COST_PAA_FAQS.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
       {
         '@type': 'Question',
         name: 'Do dogs need to be quarantined in Dubai?',
@@ -114,7 +151,7 @@ export default function CostGuidePage() {
         name: 'What\'s the cheapest way to bring a pet to Dubai?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The absolute cheapest way is DIY from a low-risk country like the UK or EU, with a small pet, during off-peak season, with all documentation already complete. That could cost as little as AED 5,400. But "cheapest" rarely means "best value." The savings of doing it yourself are often wiped out by: one missed document (quarantine = AED 8,500+), one wrong crate (rebooking = AED 2,000+), 20+ hours of your time (what\'s your hourly rate?), the stress of managing five different providers. For most pet owners, our PawPilot tier (AED 1,500–2,500 service fee) covers the documentation and flight booking — eliminating the biggest error risks while keeping costs reasonable.',
+          text: 'The absolute cheapest way is DIY from a low-risk country like the UK or EU, with a small pet, during off-peak season, with all documentation already complete. That could cost as little as AED 5,400. But "cheapest" rarely means "best value." The savings of doing it yourself are often wiped out by: one missed document (quarantine = AED 8,500+), one wrong crate (rebooking = AED 2,000+), 20+ hours of your time (what\'s your hourly rate?), the stress of managing five different providers. For most pet owners, our PawPilot tier (Get a Quote) covers the documentation and flight booking — eliminating the biggest error risks while keeping coordination scoped to the file.',
         },
       },
       {
@@ -148,7 +185,7 @@ export default function CostGuidePage() {
       },
     },
     datePublished: '2026-06-25',
-    dateModified: '2026-06-25',
+    dateModified: '2026-09-04',
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `${BASE_URL}/guides/pet-relocation-cost-dubai/`,
@@ -190,9 +227,95 @@ export default function CostGuidePage() {
         imageAlt="Pet owner reviewing transparent Dubai pet relocation costs"
         eyebrow="Pet Relocation Guide"
         title="How Much Does It Cost to Bring a Dog or Cat to Dubai? 2026 Price Breakdown"
-        subtitle="Bringing a pet to Dubai costs AED 8,000–25,000, around AED 12,000 typical. We publish every cost, line by line — before you ever message us."
-        updated="Updated June 2026"
+        subtitle="A Dubai pet move is government, veterinary, freight, crate, handling and coordination — not one ticket. Contested MOCCAE fees are confirmed on the portal. Our package is Get a Quote."
+        updated="Updated September 2026"
       />
+
+      {/* ===== SNIPPET + COST TYPES ===== */}
+      <Section className="bg-white">
+        <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
+        <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
+          What you actually pay — by cost type
+        </h2>
+        <p className="text-[#5A5A5A] max-w-3xl mb-8 leading-relaxed">
+          How much it costs to relocate a pet in Dubai depends on six types, not a single airline ticket. Government and
+          veterinary amounts are paid to the portal or clinic. Freight and crate follow the animal&apos;s size. Handling is
+          the airport side. Coordination — the Dubai Pet Relocation package — is Get a Quote.
+        </p>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <Card>
+            <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+              <Shield className="w-5 h-5 text-[#4F5BD5]" />
+            </div>
+            <h3 className="font-bold text-[#2A2A2A] mb-2">Government</h3>
+            <p className="text-sm text-[#5A5A5A] leading-relaxed">
+              MOCCAE import permit (valid 30 days) and arrival release. Published amounts have differed — confirm the live
+              fee on the official portal. Municipality registration is a separate, small post-arrival step.
+            </p>
+          </Card>
+          <Card>
+            <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+              <PawPrint className="w-5 h-5 text-[#4F5BD5]" />
+            </div>
+            <h3 className="font-bold text-[#2A2A2A] mb-2">Veterinary</h3>
+            <p className="text-sm text-[#5A5A5A] leading-relaxed">
+              ISO microchip, rabies and core vaccines, health certificate, parasite treatment, and a titer test only when
+              the origin country requires one. Clinic prices vary by country — we do not invent a UAE clinic tariff.
+            </p>
+          </Card>
+          <Card>
+            <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+              <Plane className="w-5 h-5 text-[#4F5BD5]" />
+            </div>
+            <h3 className="font-bold text-[#2A2A2A] mb-2">Freight</h3>
+            <p className="text-sm text-[#5A5A5A] leading-relaxed">
+              Manifest cargo is quoted per route and volumetric weight. Emirates publishes labelled animal-charge tiers of
+              USD 500 / 650 / 800 (source: Emirates) — airline fees, not a freight quote.{' '}
+              <Link to="/guides/emirates-pet-cargo/" className="text-[#4F5BD5] font-medium hover:underline">
+                Emirates pet cargo guide
+              </Link>
+              .
+            </p>
+          </Card>
+          <Card>
+            <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+              <Package className="w-5 h-5 text-[#4F5BD5]" />
+            </div>
+            <h3 className="font-bold text-[#2A2A2A] mb-2">Crate</h3>
+            <p className="text-sm text-[#5A5A5A] leading-relaxed">
+              An IATA-compliant rigid crate sized so the animal can stand, turn and lie down. Wrong hardware is a common
+              check-in reject. See the{' '}
+              <Link to="/guides/iata-pet-crate-requirements/" className="text-[#4F5BD5] font-medium hover:underline">
+                IATA crate guide
+              </Link>
+              .
+            </p>
+          </Card>
+          <Card>
+            <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+              <Truck className="w-5 h-5 text-[#4F5BD5]" />
+            </div>
+            <h3 className="font-bold text-[#2A2A2A] mb-2">Handling</h3>
+            <p className="text-sm text-[#5A5A5A] leading-relaxed">
+              Cargo-terminal acceptance, customs paperwork and last-mile handover at DXB or DWC. This is airport and
+              ground work, not the airline animal charge.
+            </p>
+          </Card>
+          <Card>
+            <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
+              <Users className="w-5 h-5 text-[#4F5BD5]" />
+            </div>
+            <h3 className="font-bold text-[#2A2A2A] mb-2">Coordination</h3>
+            <p className="text-sm text-[#5A5A5A] leading-relaxed">
+              The Dubai Pet Relocation package — document checks, permit timing, booking and WhatsApp updates — is Get a
+              Quote. Competitor “from” bands are labelled market listings only, not our price.
+            </p>
+          </Card>
+        </div>
+        <p className="text-sm text-[#5A5A5A] mt-8 leading-relaxed">
+          Questions: {siteConfig.email} or WhatsApp {siteConfig.phone}.
+        </p>
+      </Section>
 
       {/* ===== WHY COSTS VARY ===== */}
       <Section className="bg-white">
@@ -346,12 +469,17 @@ export default function CostGuidePage() {
                 <tr><td>Short-haul (GCC, nearby Asia)</td><td>3,000–5,000</td><td>Shorter flights, lower fuel surcharges</td></tr>
                 <tr><td>Medium-haul (Europe, UK, Turkey)</td><td>5,000–8,000</td><td>Most common routes. Emirates SkyCargo dominates.</td></tr>
                 <tr><td>Long-haul (USA, Canada, Australia)</td><td>7,000–12,000+</td><td>Distance + fuel + size = higher cost.</td></tr>
-                <tr><td>In-cabin (Etihad to Abu Dhabi only, ≤8kg)</td><td>~1,460 (~USD 399)</td><td>Only for very small pets on Etihad. Not available to Dubai.</td></tr>
+                <tr><td>In-cabin (Etihad to Abu Dhabi only, ≤8kg)</td><td>Confirm at booking. Expired 2026 promo was ~USD 399. USD 1,500 = Estimated only</td><td>Not a current standard fee. Not available to Dubai. Eligibility: ≤8 kg incl. carrier.</td></tr>
               </tbody>
             </table>
           </div>
           <p className="text-sm text-[#5A5A5A] mt-3">
             Cargo fees are charged by <strong>volumetric weight</strong> — a formula using crate length × width × height. A large dog in a big crate can easily hit 8,000+ AED in freight alone. This is why crate size matters so much.
+          </p>
+          <p className="mt-2 text-sm">
+            <Link to="/guides/emirates-pet-cargo/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
+              Emirates pet cargo — airline tiers vs freight quote <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
           </p>
         </div>
 
@@ -361,27 +489,27 @@ export default function CostGuidePage() {
             <Users className="w-5 h-5 text-[#4F5BD5]" /> Dubai Pet Relocation Service Coordination Fee
           </h3>
           <p className="text-sm text-[#5A5A5A] mb-4">
-            This is what we charge to handle everything — permits, paperwork, flight booking, partner coordination, and WhatsApp updates at every step.
+            This is what we charge to handle everything — permits, paperwork, flight booking, partner coordination, and WhatsApp updates at every step. The Dubai Pet Relocation package is <strong>Get a Quote</strong> after we know the pet, route and month — we do not publish a from-price.
           </p>
           <div className="overflow-x-auto">
             <table className="data-table min-w-[560px]">
               <thead>
-                <tr><th>Tier</th><th>Cost (AED)</th><th>What's Included</th></tr>
+                <tr><th>Tier</th><th>Cost</th><th>What's Included</th></tr>
               </thead>
               <tbody>
                 <tr>
                   <td><strong>PawPilot</strong> (Essential)</td>
-                  <td>1,500–2,500</td>
+                  <td>Get a Quote</td>
                   <td>Documentation, MOCCAE permit application, flight booking, basic email/WhatsApp support</td>
                 </tr>
                 <tr>
                   <td><strong>PawPartner</strong> (Premium)</td>
-                  <td>3,000–5,000</td>
+                  <td>Get a Quote</td>
                   <td>+ Door-to-door pickup and delivery, IATA crate, vet coordination, WhatsApp updates during the move, photo updates</td>
                 </tr>
                 <tr>
                   <td><strong>PawVIP</strong> (Coordination)</td>
-                  <td>5,000–8,000</td>
+                  <td>Get a Quote</td>
                   <td>+ Personal handler assigned, real-time tracking, video updates at every checkpoint, comprehensive travel insurance, priority rebooking if flights change</td>
                 </tr>
               </tbody>
@@ -827,6 +955,31 @@ export default function CostGuidePage() {
       <Section className="bg-white">
         <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-10">Frequently Asked Questions</h2>
         <div className="max-w-3xl">
+          {COST_PAA_FAQS.map((f) => (
+            <FAQItem
+              key={f.q}
+              question={f.q}
+              answer={
+                <>
+                  <p>{f.a}</p>
+                  {f.q.includes('Emirates') ? (
+                    <p className="mt-3">
+                      <Link to="/guides/emirates-pet-cargo/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
+                        Emirates pet cargo guide <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    </p>
+                  ) : null}
+                  {f.q.includes('import a pet') ? (
+                    <p className="mt-3">
+                      <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
+                        UAE pet import requirements <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    </p>
+                  ) : null}
+                </>
+              }
+            />
+          ))}
           <FAQItem
             question="Do dogs need to be quarantined in Dubai?"
             answer={
@@ -891,7 +1044,7 @@ export default function CostGuidePage() {
                   <li>20+ hours of your time (what's your hourly rate?)</li>
                   <li>The stress of managing five different providers</li>
                 </ul>
-                <p className="mt-3">For most pet owners, our <strong>PawPilot tier</strong> (AED 1,500–2,500 service fee) covers the documentation and flight booking — eliminating the biggest error risks while keeping costs reasonable.</p>
+                <p className="mt-3">For most pet owners, our <strong>PawPilot tier</strong> (Get a Quote) covers the documentation and flight booking — eliminating the biggest error risks while keeping coordination scoped to the file.</p>
               </>
             }
           />

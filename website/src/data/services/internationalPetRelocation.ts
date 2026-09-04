@@ -6,7 +6,7 @@ const internationalPetRelocation: ServicePageData = {
   metaDescription:
     'Worldwide pet relocation to and from Dubai. Destination-by-destination requirement checks, full documentation, vetted partners, door-to-door coordination.',
   keywords:
-    'international pet relocation dubai, worldwide pet relocation, global pet transport, overseas pet relocation, pet relocation international',
+    'international pet relocation dubai, worldwide pet relocation, global pet transport, overseas pet relocation, pet cargo dubai, pet relocation international',
   h1: 'Global Pet Relocation Services',
   primaryKeyword: 'international pet relocation dubai',
   heroValueProp:
@@ -16,8 +16,10 @@ const internationalPetRelocation: ServicePageData = {
     'A calm dog and cat beside a travel crate with a world map and aircraft in the background — international pet relocation in Dubai',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I need international pet relocation to or from Dubai. Can you tell me the requirements and cost for my destination country?',
+  snippetQuestion: 'Do you handle pet cargo from Dubai?',
+  snippetAnswer:
+    'Yes. “Pet cargo Dubai” is a secondary commercial term on this international relocation page — not a separate /service/pet-cargo money URL. We coordinate manifested live-animal cargo on pet-experienced airlines. Emirates SkyCargo rules and the 500 / 650 / 800 animal-charge table live on the educational cargo guide. Private jet and shared charter have their own quote-only offer pages.',
   trustBadges: ['Route-by-route requirement checks', 'Vetted partners worldwide', 'Pet-experienced airlines', 'WhatsApp support'],
-  costRange: { low: '5000', high: '25000' },
   hasHowTo: false,
   sections: [
     {
@@ -27,7 +29,7 @@ const internationalPetRelocation: ServicePageData = {
       body: [
         {
           type: 'p',
-          text: 'Whether you are leaving the UAE for a new posting overseas or bringing a pet into Dubai from abroad, international pet relocation involves matching your animal against the destination country’s exact entry requirements, preparing documents in the right order, booking a suitable flight and clearing customs on both ends. We map the full route before you commit, so you know the timeline and cost up front.',
+          text: 'Whether you are leaving the UAE for a new posting overseas or bringing a pet into Dubai from abroad, international pet relocation involves matching your animal against the destination country’s exact entry requirements, preparing documents in the right order, booking a suitable flight and clearing customs on both ends. We map the full route before you commit, then send a WhatsApp quote — we do not publish an invented AED package table on this page.',
         },
         {
           type: 'p',
@@ -121,51 +123,74 @@ const internationalPetRelocation: ServicePageData = {
       ],
     },
     {
-      h2: 'Airlines We Work With',
+      h2: 'How we choose a flight mode (not an airline affiliation)',
       intro:
-        'Routing matters as much as paperwork on an international move. We work with pet-experienced airlines flying out of Dubai and coordinate connections that keep transit times and handling stress to a minimum.',
+        'We are independent of every carrier. Cabin, accompanied baggage and manifest cargo are chosen first. Private-jet and shared-charter capability live on their own offer pages — this URL does not own those keywords.',
       body: [
         {
-          type: 'list',
-          items: [
-            'Emirates SkyCargo — extensive global network from DXB with established live-animal handling.',
-            'Etihad — wide route map from the UAE, with cabin options for small cats and dogs on eligible routes.',
-            'Qatar Airways — strong connectivity for onward international destinations via its hub.',
+          type: 'cards',
+          cards: [
+            {
+              title: 'Pet flight options hub',
+              text: 'Compare all six modes in one decision table.',
+              to: '/guides/pet-flight-options-dubai/',
+              kind: 'Guide',
+            },
+            {
+              title: 'Etihad in-cabin',
+              text: 'The UAE cabin exception — small pets into Abu Dhabi.',
+              to: '/guides/etihad-pet-policy/',
+              kind: 'Guide',
+            },
+            {
+              title: 'Emirates / manifest cargo',
+              text: 'Educational cargo process. Airline animal-charge tiers (source: Emirates); freight quoted per route/weight.',
+              to: '/guides/emirates-pet-cargo/',
+              kind: 'Guide',
+            },
+            {
+              title: 'Private jet pet travel',
+              text: 'Open the capability page — quote only. This international URL does not own that keyword.',
+              to: '/service/private-jet-pet-travel/',
+              kind: 'Service',
+            },
+            {
+              title: 'Shared / group pet charter',
+              text: 'Open the capability page — labelled market listings, firm seat is Get a Quote.',
+              to: '/service/shared-pet-charter/',
+              kind: 'Service',
+            },
           ],
         },
         {
           type: 'p',
-          text: 'We choose the airline and routing around your destination, your pet’s size and breed, and any seasonal temperature restrictions — for example, snub-nosed (brachycephalic) breeds may face additional rules or seasonal embargoes. Because we are independent of any single carrier, we recommend the routing that suits your pet, not a fixed airline.',
-        },
-        {
-          type: 'p',
-          text: 'Airline policies, cargo rates and seasonal restrictions change regularly. We confirm current acceptance, crate rules and booking windows with the carrier for your specific travel dates before anything is booked.',
+          text: 'Emirates does not carry dogs or cats in the cabin (falcons and guide dogs excepted; source: Emirates). UAE arrivals travel as manifest cargo except Etihad in-cabin into Abu Dhabi. We confirm current acceptance, crate rules and booking windows with the carrier before anything is booked — we do not claim an airline partnership.',
         },
       ],
     },
     {
-      h2: 'International Pet Relocation Cost',
+      h2: 'What drives the quote (Get a Quote — no invented DPR package prices)',
       intro:
-        'International moves cost more than regional transport because of long-haul cargo, destination-specific veterinary work and more complex documentation.',
+        'International moves cost more than a same-city transfer because of long-haul routing, destination-specific veterinary work and more complex documentation. Dubai Pet Relocation fees on this page are Get a Quote. We do not publish an AED package table.',
       body: [
         {
           type: 'p',
-          text: 'Total international pet relocation typically ranges from around AED 5,000 for shorter overseas routes to AED 25,000 or more for long-haul, multi-pet or premium door-to-door service. The biggest variables are the destination country’s requirements, your pet’s size, the flight routing and whether a titer test and waiting period are needed.',
+          text: 'Airline fee grids live on the child guides, not here: Etihad cabin fees on the [Etihad pets-in-cabin guide](/guides/etihad-pet-policy/), Emirates animal-charge tiers on the [Emirates pet cargo](/guides/emirates-pet-cargo/) guide. Private-jet and shared-charter capability — including labelled market listings — live on [private jet pet travel](/service/private-jet-pet-travel/) and [shared pet charter](/service/shared-pet-charter/). Freight and coordination on this page stay Get a Quote. “Pet cargo Dubai” is a secondary commercial term on this URL, not a new /service/pet-cargo money page.',
         },
         {
           type: 'table',
-          headers: ['Cost component', 'Typical range (AED)'],
+          headers: ['Driver', 'Why it moves the quote'],
           rows: [
-            ['Government permits and release fees', '450 – 1,000'],
-            ['Veterinary (vaccines, health cert, titer test)', '1,200 – 3,000'],
-            ['IATA crate', '110 – 1,500'],
-            ['International flight / cargo', '5,000 – 18,000+'],
-            ['Coordination, customs and door-to-door handling', '2,000 – 7,000'],
+            ['Destination rules', 'Titer tests, waiting periods and quarantine sit on the country pair, not on a generic average'],
+            ['Pet size and crate', 'Chargeable weight and whether a larger IATA crate is required'],
+            ['Flight mode', 'Cabin, accompanied baggage or manifest cargo — compare on the [pet flight options hub](/guides/pet-flight-options-dubai/). Jet and charter are linked offer pages, not owned here.'],
+            ['Season and aircraft', 'Heat embargoes and snub-nosed limits shrink which carriers will accept the booking'],
+            ['How much we hold', 'Document guidance only versus booking, travel-day and last mile — compare [service tiers](/services/)'],
           ],
         },
         {
           type: 'p',
-          text: 'We give you a firm cost range for your exact route once we have your origin, destination and pet details — no surprises mid-move.',
+          text: 'Commercial cargo handoff on this page and the door-to-door umbrella both stay quote-only. The Dubai money page is [door-to-door pet relocation](/service/pet-relocation-dubai/). Government portal fees are confirmed on the official site. Message WhatsApp or write to support@dubai-pet-relocation.ae for a route-specific quote.',
         },
       ],
     },
@@ -185,7 +210,7 @@ const internationalPetRelocation: ServicePageData = {
     },
     {
       q: 'Which airlines do you use?',
-      a: 'We work with pet-experienced airlines flying from Dubai, including Emirates SkyCargo, Etihad and Qatar Airways. We are independent of any single carrier, so we choose the routing that best suits your pet’s size, breed, destination and travel dates.',
+      a: 'We are not affiliated with any airline. We confirm which pet-experienced carrier will accept the animal — often Emirates SkyCargo for Dubai-ending itineraries, or Etihad cabin into Abu Dhabi when the pet qualifies. Compare modes on the [pet flight options hub](/guides/pet-flight-options-dubai/).',
     },
     {
       q: 'Do you physically transport the pet yourselves?',
@@ -193,10 +218,15 @@ const internationalPetRelocation: ServicePageData = {
     },
     {
       q: 'How do I get started?',
-      a: 'Message us on WhatsApp with your pet type, breed, origin and destination country. We confirm the destination’s exact requirements, map the timeline and reply with a firm cost range — within 15 minutes during business hours.',
+      a: 'Message us on WhatsApp with your pet type, breed, origin and destination country. We confirm the destination’s exact requirements, map the timeline and send a Get a Quote reply — we do not publish unverified AED package tables. Email support@dubai-pet-relocation.ae if you prefer mail.',
     },
   ],
   relatedLinks: [
+    { label: 'Pet flight options hub', to: '/guides/pet-flight-options-dubai/' },
+    { label: 'Emirates pet cargo', to: '/guides/emirates-pet-cargo/' },
+    { label: 'Etihad pet policy', to: '/guides/etihad-pet-policy/' },
+    { label: 'Private jet pet travel', to: '/service/private-jet-pet-travel/' },
+    { label: 'Shared pet charter', to: '/service/shared-pet-charter/' },
     { label: 'Pet Relocation Dubai', to: '/service/pet-relocation-dubai/' },
     { label: 'Pet Export from Dubai', to: '/service/pet-export-dubai/' },
     { label: 'UK to Dubai', to: '/routes/uk-to-dubai/' },

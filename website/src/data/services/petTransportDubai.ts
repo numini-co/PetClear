@@ -199,6 +199,10 @@ const petTransportDubai: ServicePageData = {
   ],
   faq: [
     {
+      q: 'Is a pet taxi the same as flying a pet as air cargo?',
+      a: 'No. Pet taxi is a climate-controlled ground transfer inside the UAE — clinic, home, boarding or airport run. Air cargo is the default flight mode into Dubai. Compare cabin, baggage, cargo, jet and charter on the [pet flight options hub](/guides/pet-flight-options-dubai/). This page stays on the van.',
+    },
+    {
       q: 'What is a pet taxi in Dubai versus a full relocation?',
       a: 'A pet taxi is a climate-controlled ground transfer — clinic, home, boarding or airport. A relocation is the international document and cargo sequence. This page is the taxi and ground product. International work is [pet relocation services in Dubai](/service/pet-relocation-dubai/).',
     },
@@ -236,6 +240,7 @@ const petTransportDubai: ServicePageData = {
     { label: 'Pet relocation across the UAE', to: '/cities/' },
     { label: 'Abu Dhabi city guide', to: '/cities/abu-dhabi/' },
     { label: 'Talk to our relocation team', to: '/contact/' },
+    { label: 'Pet flight options hub', to: '/guides/pet-flight-options-dubai/' },
     { label: 'Pet relocation services in Dubai', to: '/service/pet-relocation-dubai/' },
     { label: 'Compare our service tiers', to: '/services/' },
     { label: 'How it works', to: '/how-it-works/' },

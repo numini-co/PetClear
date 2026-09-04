@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import {
   CheckCircle,
   AlertTriangle,
@@ -15,9 +16,9 @@ import {
   PawPrint,
   Syringe,
 } from 'lucide-react'
-import { Link } from 'react-router-dom'
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
+import SnippetAnswer from '../components/SnippetAnswer.tsx'
 import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import LastVerified from '../components/LastVerified.tsx'
@@ -39,7 +40,7 @@ import {
 } from '../lib/regulatory.ts'
 
 /* ─── FAQ accordion helper ─── */
-function FAQItem({ question, answer }: { question: string; answer: string }) {
+function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
   const [open, setOpen] = useState(false)
   return (
     <div className="faq-item">
@@ -51,14 +52,53 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
         <span>{question}</span>
         {open ? <ChevronUp className="w-5 h-5 shrink-0 ml-3" /> : <ChevronDown className="w-5 h-5 shrink-0 ml-3" />}
       </button>
-      {open && (
-        <div className="faq-answer">
-          <p>{answer}</p>
-        </div>
-      )}
+      {open && <div className="faq-answer">{answer}</div>}
     </div>
   )
 }
+
+const snippetQuestion = 'How long do pets stay in quarantine?'
+const snippetAnswer =
+  'The UAE typically has no long quarantine when documents are correct. Compliant dogs and cats are examined at the entry port and released to the owner. We do not invent a day-count for a paperwork hold. Dogs are legal; some breeds are banned. The MOCCAE import permit is valid 30 days.'
+
+const IMPORT_PAA_FAQS: { q: string; a: string; link?: { to: string; label: string } }[] = [
+  {
+    q: 'How long do pets stay in quarantine?',
+    a: 'The UAE typically has no long quarantine when the file is correct. Compliant pets are examined by MOCCAE veterinary staff at the entry port and released to the owner. Incomplete papers can mean a hold, refusal or re-export at your expense — we do not invent a day-count for that hold. The import permit is valid 30 days.',
+  },
+  {
+    q: 'Is there quarantine for pets in Dubai?',
+    a: 'No routine quarantine for a compliant file. MOCCAE veterinary staff examine the pet at the entry port and release the owner. There is no new quarantine URL on this site — this import-requirements page owns the question. A paperwork problem can still mean a hold, refusal or re-export at your expense.',
+  },
+  {
+    q: 'What are the quarantine rules for pets entering the UAE?',
+    a: 'Compliant pets are not routinely quarantined. The rule is examination and release at the port when the microchip, rabies papers, health certificate and 30-day MOCCAE import permit match. We do not invent a hold duration. Depth stays on this page — we did not create a separate quarantine guide URL.',
+  },
+  {
+    q: 'What are the rules and regulations for pets in the UAE?',
+    a: 'UAE pet rules cover an ISO microchip, current rabies vaccination, a government health certificate, a MOCCAE import permit valid 30 days, cargo entry (except Etihad cabin into Abu Dhabi), municipality registration after arrival, and breed bans. Confirm contested government fees on the official portal. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.',
+    link: { to: '/guides/banned-dog-breeds-dubai/', label: 'Banned dog breeds in Dubai' },
+  },
+  {
+    q: 'What are the requirements for traveling with my pet to the UAE?',
+    a: 'You need an ISO 15-digit microchip implanted before the rabies vaccine, a current rabies vaccination, core vaccines, a government-endorsed health certificate, antiparasitic timing, and a MOCCAE import permit valid 30 days. Pets enter Dubai as manifest cargo. High-risk origins add a titer pathway. Confirm live portal fees before you apply.',
+  },
+  {
+    q: 'Does Dubai allow pet dogs?',
+    a: 'Yes. Dubai allows pet dogs when the breed is permitted and the import documents are complete. Some types are federally banned or restricted in apartments. Check the banned-breed list before you book a crate or a flight. A MOCCAE import permit, valid 30 days, is still required.',
+    link: { to: '/guides/banned-dog-breeds-dubai/', label: 'Banned dog breeds in Dubai' },
+  },
+  {
+    q: 'Is it legal to have a dog in Dubai?',
+    a: 'Yes. It is legal to keep a permitted dog in Dubai. You still need the 30-day MOCCAE import permit to bring one in, then municipality registration. Banned and restricted breeds cannot be treated as a loophole. We are a coordinator — confirm the current list on the official portal and our banned-breeds guide.',
+    link: { to: '/guides/banned-dog-breeds-dubai/', label: 'Banned dog breeds in Dubai' },
+  },
+  {
+    q: 'Do I need a MOCCAE import permit for my dog?',
+    a: 'Yes — and every cat too. The permit is valid 30 days from issuance. Apply questions and the walkthrough live on the MOCCAE import permit guide. This page stays on the full import-rules checklist, including quarantine.',
+    link: { to: '/guides/moccae-import-permit/', label: 'MOCCAE import permit guide' },
+  },
+]
 
 /* ─── WhatsApp link builder ─── */
 
@@ -187,6 +227,11 @@ export default function ImportRequirementsPage() {
             '@context': 'https://schema.org',
             '@type': 'FAQPage',
             mainEntity: [
+              ...IMPORT_PAA_FAQS.map((f) => ({
+                '@type': 'Question',
+                name: f.q,
+                acceptedAnswer: { '@type': 'Answer', text: f.a },
+              })),
               {
                 '@type': 'Question',
                 name: 'Do dogs need to be quarantined in Dubai?',
@@ -330,6 +375,22 @@ export default function ImportRequirementsPage() {
         primaryLabel="Check my document list"
         secondary={{ label: 'Commercial import service', to: '/service/pet-import-dubai/' }}
       />
+
+      {/* ═══════════ SNIPPET ═══════════ */}
+      <section className="pt-12 pb-4">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
+          <p className="text-[#5A5A5A] leading-relaxed max-w-3xl">
+            The UAE typically has no long quarantine when the file is correct. Rules cover microchip, rabies, health
+            certificate, a 30-day MOCCAE import permit, cargo entry, and breed bans. Dogs are legal; some types are not.{' '}
+            <Link to="/guides/banned-dog-breeds-dubai/" className="text-[#4F5BD5] font-medium hover:underline">
+              Banned dog breeds in Dubai
+            </Link>
+            . Confirm contested government fees on the official portal. Email support@dubai-pet-relocation.ae or WhatsApp
+            +971 50 478 2999.
+          </p>
+        </div>
+      </section>
 
       {/* ═══════════ QUICK CHECKLIST ═══════════ */}
       <section className="py-20 lg:py-28">
@@ -1077,7 +1138,7 @@ export default function ImportRequirementsPage() {
                 Etihad is the most pet-friendly UAE airline — but only for Abu Dhabi.
               </p>
               <ul className="text-sm text-[#5A5A5A] space-y-1">
-                <li><strong>In-cabin (to Abu Dhabi only):</strong> Small dogs and cats allowed. Pet + carrier must weigh ≤8 kg. Carrier max: 40 x 40 x 22 cm. Fee: USD 399 per segment.</li>
+                <li><strong>In-cabin (to Abu Dhabi only):</strong> Small dogs and cats allowed. Pet + carrier must weigh ≤8 kg. Carrier max: 40 x 40 x 22 cm. Etihad publishes cabin pet fees that change; confirm at booking. A 2026 promo from USD 399 is expired; USD 1,500 is Estimated only.</li>
                 <li><strong>Checked baggage:</strong> Accepted on some routes.</li>
                 <li><strong>Cargo:</strong> Available for larger pets.</li>
                 <li><strong>Advance notice:</strong> Book via Contact Centre; submit form 7 days before, documents 72 hours before.</li>
@@ -1308,9 +1369,27 @@ export default function ImportRequirementsPage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-8">Frequently Asked Questions</h2>
           <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8">
+            {IMPORT_PAA_FAQS.map((f) => (
+              <FAQItem
+                key={f.q}
+                question={f.q}
+                answer={
+                  <>
+                    <p>{f.a}</p>
+                    {f.link ? (
+                      <p className="mt-3">
+                        <Link to={f.link.to} className="text-[#4F5BD5] font-medium hover:underline">
+                          {f.link.label}
+                        </Link>
+                      </p>
+                    ) : null}
+                  </>
+                }
+              />
+            ))}
             <FAQItem
               question="Do dogs need to be quarantined in Dubai?"
-              answer="No. If all documentation is complete and correct — including the MOCCAE import permit, ISO microchip, rabies vaccination, and health certificate — pets do not require mandatory quarantine in Dubai. However, incomplete documentation can result in conditional quarantine at the owner\'s expense."
+              answer="No. If all documentation is complete and correct — including the MOCCAE import permit, ISO microchip, rabies vaccination, and health certificate — pets do not require mandatory quarantine in Dubai. However, incomplete documentation can result in conditional quarantine at the owner's expense."
             />
             <FAQItem
               question="What is the MOCCAE import permit for pets?"
