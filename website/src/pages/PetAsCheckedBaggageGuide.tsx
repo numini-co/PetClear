@@ -9,13 +9,22 @@ import FlightModeCards from '../components/FlightModeCards.tsx'
 import UaeCargoRuleCallout from '../components/UaeCargoRuleCallout.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import LastVerified from '../components/LastVerified.tsx'
+import SnippetAnswer from '../components/SnippetAnswer.tsx'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { FLIGHT_MODE_PATHS } from '../data/flightModes.ts'
 
 const WA =
   'Hi Dubai Pet Relocation! I want to know whether my pet can travel as accompanied checked baggage, or whether we need manifest cargo instead.'
 
+const snippetQuestion = 'Can my pet fly as checked baggage to Dubai?'
+const snippetAnswer =
+  'Emirates does not accept pets as checked baggage on itineraries that end in Dubai — those animals must travel as SkyCargo. From Dubai, cats and dogs may travel as accompanied hold baggage if the total journey is under 17 hours (source: Emirates). UAE import still follows the manifest-cargo rule except Etihad cabin into Abu Dhabi.'
+
 const faqData = [
+  {
+    q: 'Emirates pet checked baggage vs cargo into Dubai',
+    a: 'Into Dubai they are not interchangeable. Emirates requires every itinerary ending in Dubai to travel as SkyCargo, not as accompanied checked baggage (source: Emirates). Checked baggage may apply from Dubai when the total journey is under 17 hours. UAE import still uses manifest cargo except Etihad cabin into Abu Dhabi. If you are flying into DXB, plan cargo.',
+  },
   {
     q: 'Can my pet arrive in Dubai as checked baggage?',
     a: 'Not on Emirates. All itineraries ending in Dubai must travel as cargo on Emirates SkyCargo (source: Emirates). UAE import rules also require manifested cargo, with the documented exception of Etihad in-cabin arrivals into Abu Dhabi. Do not book a passenger ticket assuming the pet can check in beside you at DXB.',
@@ -113,6 +122,7 @@ export default function PetAsCheckedBaggageGuide() {
 
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
+          <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
           <UaeCargoRuleCallout extra="Checked baggage is not a workaround for a Dubai-ending import. If the itinerary ends at DXB, plan manifest cargo." />
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">What “accompanied checked baggage” means</h2>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">

@@ -8,6 +8,7 @@ import { SERVICE_LINKS } from '../data/nav.ts'
 import OfficialSources from './OfficialSources.tsx'
 import Hero from './Hero.tsx'
 import FAQItem from './FAQItem.tsx'
+import SnippetAnswer from './SnippetAnswer.tsx'
 import ContentImage from './ContentImage.tsx'
 import LinkedText from './LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
@@ -197,6 +198,9 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
       {data.sections.map((sec, i) => (
         <section key={i} className={`section-padding ${i % 2 ? 'bg-[#F5F6FD]' : 'bg-white'}`}>
           <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
+            {i === 0 && data.snippetQuestion && data.snippetAnswer ? (
+              <SnippetAnswer question={data.snippetQuestion} answer={data.snippetAnswer} />
+            ) : null}
             <h2 className="text-[24px] sm:text-[30px] lg:text-[34px] font-bold text-[#2A2A2A] mb-4">{sec.h2}</h2>
             {sec.intro && (
               <p className="mb-4 leading-relaxed text-[#5A5A5A]">

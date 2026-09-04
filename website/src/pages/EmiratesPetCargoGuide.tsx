@@ -8,13 +8,34 @@ import ContentImage from '../components/ContentImage.tsx'
 import FlightModeCards from '../components/FlightModeCards.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import LastVerified from '../components/LastVerified.tsx'
+import SnippetAnswer from '../components/SnippetAnswer.tsx'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { FLIGHT_MODE_PATHS, UAE_MANIFEST_CARGO_RULE } from '../data/flightModes.ts'
 
 const WA =
   'Hi Dubai Pet Relocation! I read the Emirates pet cargo guide. Can you review my pet and route and quote door-to-door or international relocation?'
 
+const snippetQuestion = 'Does Emirates allow pets in cargo?'
+const snippetAnswer =
+  'Emirates accepts dogs and cats as SkyCargo manifest cargo. Itineraries ending in Dubai must use that product, not cabin or checked baggage. Airline animal-charge tiers of USD 500, 650 and 800 (source: Emirates) are labelled airline fees, not a firm freight quote. Commercial cargo is quoted per route and weight on the relocation pages.'
+
 const faqData = [
+  {
+    q: 'How much does Emirates pet cargo cost?',
+    a: 'There is no single Emirates pet-cargo freight price. Commercial cargo is quoted per route and weight. Emirates publishes labelled animal-charge tiers of USD 500, 650 and 800 by pet-plus-carrier weight and size (source: Emirates); those are airline fees, not a firm freight quote and not a Dubai Pet Relocation rate. We quote coordination on the international or door-to-door relocation pages.',
+  },
+  {
+    q: 'Does Emirates allow pets in cargo?',
+    a: 'Yes. Dogs and cats travel as Emirates SkyCargo / Emirates Pets manifest cargo under IATA Live Animals Regulations (source: Emirates). Itineraries ending in Dubai must use cargo. Emirates does not carry dogs or cats in the cabin except falcons on certain Pakistan routings and guide dogs. Submit the pet travel form at least one week before the flight (source: Emirates).',
+  },
+  {
+    q: 'How much does it cost to transport a pet on Emirates Airlines?',
+    a: 'Cost splits into the airline animal charge, cargo freight, and any coordinator. Emirates’ published animal-charge tiers are USD 500 / 650 / 800 (source: Emirates) when the itinerary is eligible; freight is quoted per route and weight. Dubai Pet Relocation does not publish a freight list — Get a Quote on the relocation service pages. Confirm live airline amounts on the Emirates animals page before you pay.',
+  },
+  {
+    q: 'Emirates pet checked baggage / excess baggage',
+    a: 'Emirates checked-baggage / excess-baggage (AVIH) pets are a different product from SkyCargo. Itineraries ending in Dubai must travel as cargo — baggage does not unlock a DXB arrival (source: Emirates). From Dubai, cats and dogs may travel as checked baggage if the total journey is under 17 hours. Eligibility and the DXB-ending cargo block live on the pet-as-checked-baggage guide; this page stays on the cargo process.',
+  },
   {
     q: 'Why do pets arriving in Dubai go as cargo?',
     a: 'Emirates requires all itineraries ending in Dubai to travel as cargo on SkyCargo (source: Emirates). UAE import rules also require manifested cargo, except Etihad in-cabin into Abu Dhabi. Cabin and accompanied baggage are the wrong products for a DXB arrival.',
@@ -116,6 +137,7 @@ export default function EmiratesPetCargoGuide() {
 
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
+          <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
           <div className="mb-8 rounded-[20px] border border-[#C8CEE8] bg-[#F5F6FD] p-6">
             <h2 className="mb-2 text-xl font-bold text-[#2A2A2A]">Why pets enter Dubai as manifest cargo</h2>
             <p className="text-sm leading-relaxed text-[#5A5A5A]">{UAE_MANIFEST_CARGO_RULE}</p>
@@ -203,7 +225,7 @@ export default function EmiratesPetCargoGuide() {
             ))}
           </ul>
           <p className="mt-4 text-sm leading-relaxed text-[#5A5A5A]">
-            Dubai Pet Relocation cargo coordination is quote-only. Summer heat notes live on the{' '}
+            Dubai Pet Relocation cargo coordination is quote-only. A labelled competitor (Foufoufly) publishes from-tiers around AED 4,000–15,000 — treat those as Estimated market context only, not a DPR freight quote. Summer heat notes live on the{' '}
             <Link to="/guides/pet-travel-summer-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               summer travel guide
             </Link>

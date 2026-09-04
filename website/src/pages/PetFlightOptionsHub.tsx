@@ -8,13 +8,34 @@ import ContentImage from '../components/ContentImage.tsx'
 import FlightModeCards from '../components/FlightModeCards.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import LastVerified from '../components/LastVerified.tsx'
+import SnippetAnswer from '../components/SnippetAnswer.tsx'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { FLIGHT_MODE_PATHS, UAE_MANIFEST_CARGO_RULE } from '../data/flightModes.ts'
 
 const WA =
   'Hi Dubai Pet Relocation! I need help choosing how my pet should fly to or from Dubai. Can you recommend a mode and quote the coordination?'
 
+const snippetQuestion = 'How should my pet fly to or from Dubai?'
+const snippetAnswer =
+  'A pet can fly to or from Dubai in six modes: Etihad cabin into Abu Dhabi, accompanied checked baggage on eligible outbound journeys, Emirates SkyCargo / manifest cargo, a private jet, a shared charter, or door-to-door coordination. UAE arrivals are manifest cargo except Etihad cabin into AUH. Cabin on Emirates, flydubai and Air Arabia is falcons-only, not dogs or cats.'
+
 const faqData = [
+  {
+    q: 'Can I bring my pet on an Emirates flight?',
+    a: 'Yes, but not in the cabin. Emirates carries dogs and cats as checked baggage on some outbound journeys under 17 hours, and as SkyCargo manifest cargo — and every itinerary ending in Dubai must use cargo (source: Emirates). Cabin on Emirates is limited to falcons on certain Pakistan routings and guide dogs. Open the Emirates pet cargo guide or the checked-baggage guide for the mode that matches your route.',
+  },
+  {
+    q: 'Can pets fly in cabin to Dubai?',
+    a: 'No. Pets entering Dubai International travel as manifest cargo, not in the cabin. The only UAE dog-and-cat cabin product is Etihad into Abu Dhabi. Emirates, flydubai and Air Arabia do not carry dogs or cats in the cabin (falcons excepted). We can still coordinate an AUH cabin arrival plus a ground transfer to a Dubai address.',
+  },
+  {
+    q: 'Which flights allow pets in the cabin?',
+    a: 'Into the UAE, only Etihad accepts small dogs and cats in the cabin, and those flights land at Abu Dhabi. Emirates, flydubai and Air Arabia cabin products are falcons-only (plus Emirates guide dogs). Cabin slots are limited and must be requested after you hold a passenger ticket. Compare modes on this hub; cabin-policy depth lives on the Etihad guide.',
+  },
+  {
+    q: 'Does a pet in cabin count as a carry-on?',
+    a: 'On Etihad, a cabin pet travels in an approved under-seat carrier and is a separate pet booking, not a free carry-on bag. Pet plus carrier must weigh up to 8 kg; the under-seat carrier maximum is 40 × 40 × 22 cm (source: Etihad). Buying an extra seat can raise the published carrier size. Confirm the live fee and inventory at booking — we do not sell Etihad tickets.',
+  },
   {
     q: 'What is the default way a pet enters the UAE?',
     a: 'Manifest cargo. Pets enter the UAE as manifested live-animal cargo, not as cabin pets or accompanied checked baggage. The documented exception is Etihad in-cabin arrivals into Abu Dhabi. See the Etihad pets-in-cabin guide and the Emirates pet cargo guide.',
@@ -45,7 +66,7 @@ const faqData = [
   },
   {
     q: 'Where do verified airline fees live?',
-    a: 'Etihad cabin fees and Emirates animal-charge tiers are on the child guides, each labelled with the airline as the source (Etihad from USD 399; Emirates USD 500 / 650 / 800). Confirm live amounts on the carrier site before you pay. Jet, charter and DPR packages stay Get a Quote.',
+    a: 'On the child guides, not on this chooser hub. Etihad cabin-fee depth — including the expired 2026 promo note and the Estimated secondary figure — lives on the Etihad pets-in-cabin guide. Emirates animal-charge tiers live on the Emirates pet cargo guide. Jet, shared charter and door-to-door stay Get a Quote.',
   },
 ]
 
@@ -103,6 +124,7 @@ export default function PetFlightOptionsHub() {
 
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
+          <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             This page is the navigational chooser. It does not own Etihad cabin-fee tables, Emirates animal-charge tiers, or the “pet relocation Dubai” money head. Those live on the child guides and on{' '}
             <Link to={FLIGHT_MODE_PATHS.doorToDoor} className="font-semibold text-[#4F5BD5] hover:underline">

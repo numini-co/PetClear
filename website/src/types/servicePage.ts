@@ -45,6 +45,9 @@ export interface ServicePageData {
   ctaLabel?: string
   /** Hero eyebrow. Defaults to “Pet Relocation Service”. */
   heroEyebrow?: string
+  /** Featured-snippet lead shown as the first block after the hero (40–60 words). */
+  snippetQuestion?: string
+  snippetAnswer?: string
   /** trust chips under the hero */
   trustBadges?: string[]
   /** AED range, drives Offer schema + the pricing line */

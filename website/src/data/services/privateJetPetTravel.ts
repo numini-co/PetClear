@@ -19,6 +19,9 @@ const privateJetPetTravel: ServicePageData = {
     'Hi Dubai Pet Relocation! I need a private-jet option for my pet. Can you review the route and send a quote? I understand this is quote-only.',
   ctaLabel: 'Get a Private Jet Quote',
   heroEyebrow: 'Charter coordination',
+  snippetQuestion: 'Can I fly my pet on a private jet from Dubai?',
+  snippetAnswer:
+    'A private jet is a dedicated aircraft for a pet when scheduled cabin, baggage or cargo will not accept the animal or the calendar. We coordinate eligibility, documents and the last mile; the operator flies the aeroplane. This page is a custom charter quote only — we do not publish jet prices. It is not the door-to-door pet relocation page.',
   trustBadges: ['Custom charter quote only', 'Independent of any airline', 'Documents still required', 'WhatsApp during business hours'],
   hasHowTo: true,
   howToName: 'How we coordinate private jet pet travel from Dubai',
