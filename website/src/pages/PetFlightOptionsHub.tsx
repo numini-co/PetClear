@@ -130,16 +130,15 @@ export default function PetFlightOptionsHub() {
         <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Decision table</h2>
           <p className="mb-6 max-w-3xl text-base leading-relaxed text-[#5A5A5A]">
-            Use this to pick a child page. Cabin and Emirates animal-charge figures are labelled airline fees on the child guides. Cargo freight, jet, charter seats and door-to-door DPR packages are Get a Quote.
+            Use this to pick a child page. This table is a chooser, not an airline policy grid — no Etihad fee rows and no Emirates 500 / 650 / 800 reprint. Jet, charter and door-to-door stay Get a Quote.
           </p>
           <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
-            <table className="w-full min-w-[880px] border-collapse text-sm">
+            <table className="w-full min-w-[720px] border-collapse text-sm">
               <thead>
                 <tr className="bg-[#E9ECFB]">
                   <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Mode</th>
                   <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Fits when</th>
                   <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">UAE arrival</th>
-                  <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Fees</th>
                   <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Open</th>
                 </tr>
               </thead>
@@ -150,9 +149,6 @@ export default function PetFlightOptionsHub() {
                     Small dog or cat on Etihad only. Air Arabia, flydubai and Emirates cabin = falcons (or guide dogs), not pets.
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">AUH only (Etihad exception)</td>
-                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
-                    Confirm at booking. 2026 from-USD-399 promo expired. USD 1,500 = Estimated only. Emirates / flydubai / Air Arabia cabin N/A for cats and dogs.
-                  </td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.cabin} className="font-semibold text-[#4F5BD5] hover:underline">
                       Etihad cabin guide
@@ -165,9 +161,6 @@ export default function PetFlightOptionsHub() {
                     Owner on the same ticket; airline allows AVIH; journey rules met
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Not for itineraries ending in Dubai — into Dubai often must be cargo</td>
-                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
-                    Airline fee when eligible: Emirates USD 500 / 650 / 800. Not all UAE routes qualify.
-                  </td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.baggage} className="font-semibold text-[#4F5BD5] hover:underline">
                       Checked-baggage guide
@@ -180,9 +173,6 @@ export default function PetFlightOptionsHub() {
                     Most inbound dogs and cats; unaccompanied or owner on a different flight
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Required for DXB-ending itineraries</td>
-                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
-                    Airline animal-charge tiers USD 500 / 650 / 800 (source: Emirates). Freight quoted per route/weight — not a DPR cargo price.
-                  </td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.cargo} className="font-semibold text-[#4F5BD5] hover:underline">
                       Emirates / cargo guide
@@ -195,7 +185,6 @@ export default function PetFlightOptionsHub() {
                     Scheduled aircraft will not accept the pet, or the calendar will not wait
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Coordinated per flight plan</td>
-                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Custom charter quote only — no all-in numbers</td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.jet} className="font-semibold text-[#4F5BD5] hover:underline">
                       Private jet service
@@ -208,9 +197,6 @@ export default function PetFlightOptionsHub() {
                     A dedicated lift shared with other pets — less isolation than a full jet, more control than a belly hold
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Coordinated per lift</td>
-                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
-                    Get a Quote — no published charter prices
-                  </td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.charter} className="font-semibold text-[#4F5BD5] hover:underline">
                       Shared charter service
@@ -223,7 +209,6 @@ export default function PetFlightOptionsHub() {
                     You want one coordinator to pick the mode and hold documents, crate and last mile
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">We match the mode to the permit window</td>
-                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">DPR package = Get a Quote (no invented package prices)</td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.doorToDoor} className="font-semibold text-[#4F5BD5] hover:underline">
                       Door-to-door service
