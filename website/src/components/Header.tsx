@@ -12,12 +12,17 @@ const navLinks = [
       { label: 'Dog Relocation', to: '/dog-relocation-to-dubai/' },
       { label: 'Cat Relocation', to: '/cat-relocation-to-dubai/' },
       { label: 'Our Services', to: '/services/' },
+      { label: 'Private Jet Pet Travel', to: '/service/private-jet-pet-travel/' },
+      { label: 'Shared Pet Charter', to: '/service/shared-pet-charter/' },
     ],
   },
   {
     label: 'Guides',
     children: [
       { label: 'All Guides', to: '/guides/' },
+      { label: 'Pet Flight Options', to: '/guides/pet-flight-options-dubai/' },
+      { label: 'Etihad Pet Policy', to: '/guides/etihad-pet-policy/' },
+      { label: 'Emirates Pet Cargo', to: '/guides/emirates-pet-cargo/' },
       { label: 'Cost Guide', to: '/guides/pet-relocation-cost-dubai/' },
       { label: 'Import Requirements', to: '/guides/uae-pet-import-requirements/' },
       { label: 'Banned Breeds', to: '/guides/banned-dog-breeds-dubai/' },

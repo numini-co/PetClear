@@ -60,7 +60,44 @@ const SERVICE_BLURBS: Record<string, string> = {
     'Cat-specific carrier acclimation and quiet-arrival notes — same MOCCAE steps, a different crate file.',
   '/service/moccae-pet-permit/':
     'Commercial help filing the import or export permit without turning this hub into a second rules table.',
+  '/service/private-jet-pet-travel/':
+    'Dedicated aircraft when scheduled cabin, baggage or cargo will not accept the animal. Quote only — no invented jet prices.',
+  '/service/shared-pet-charter/':
+    'A dedicated lift shared with other pets — midpoint between scheduled cargo and a full jet. Quote only.',
 }
+
+const FLIGHT_MODE_SERVICE_CARDS = [
+  {
+    to: '/guides/pet-flight-options-dubai/',
+    label: 'Pet flight options hub',
+    desc: 'Compare all six modes: cabin, checked baggage, manifest cargo, private jet, shared charter and door-to-door.',
+  },
+  {
+    to: '/service/private-jet-pet-travel/',
+    label: 'Private jet pet travel',
+    desc: 'Commercial coordination when a scheduled aircraft is the wrong product. Get a Quote only.',
+  },
+  {
+    to: '/service/shared-pet-charter/',
+    label: 'Shared / group pet charter',
+    desc: 'A dedicated lift shared with other pets. Qualitative alternative to a full jet. Quote only.',
+  },
+  {
+    to: '/guides/etihad-pet-policy/',
+    label: 'Etihad in-cabin guide',
+    desc: 'The UAE cabin exception — fees, 8 kg limit, AUH arrival and Dubai transfer.',
+  },
+  {
+    to: '/guides/emirates-pet-cargo/',
+    label: 'Emirates pet cargo guide',
+    desc: 'Manifest cargo / SkyCargo: USD 500 / 650 / 800 tiers (source: Emirates) and booking steps.',
+  },
+  {
+    to: '/guides/pet-as-checked-baggage/',
+    label: 'Checked-baggage guide',
+    desc: 'When accompanied hold travel is allowed — and why Dubai-ending itineraries cannot use it.',
+  },
+]
 
 const FEATURE_ROWS = [
   { label: 'Route & eligibility check', tiers: [true, true, true] },
@@ -380,6 +417,29 @@ export default function ServicesPage() {
       </section>
 
       <section className="section-padding bg-[#F5F6FD]">
+        <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
+          <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Flight modes and airline guides</h2>
+          <p className="mb-6 max-w-3xl text-[#5A5A5A]">
+            Door-to-door stays the money page. These cards are how the pet actually flies — plus the two quote-only charter products.
+          </p>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {FLIGHT_MODE_SERVICE_CARDS.map((l) => (
+              <Link
+                key={l.to}
+                to={l.to}
+                className="rounded-2xl bg-white px-5 py-4 shadow-sm hover:bg-[#E9ECFB]"
+              >
+                <span className="flex items-center justify-between text-sm font-semibold text-[#2A2A2A]">
+                  {l.label} <ArrowRight className="h-4 w-4 shrink-0 text-[#4F5BD5]" />
+                </span>
+                <p className="mt-2 text-sm leading-relaxed text-[#5A5A5A]">{l.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-white">
         <div className="mx-auto max-w-[820px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-6 text-center text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Frequently asked questions</h2>
           <div className="space-y-3">

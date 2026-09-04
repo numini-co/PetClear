@@ -5,7 +5,7 @@ export interface NavLink {
   to: string
 }
 
-// All 10 core service pages — every landing page links to these.
+// Core service pages — every landing page links to these.
 export const SERVICE_LINKS: NavLink[] = [
   { label: 'Pet Relocation Dubai', to: '/service/pet-relocation-dubai/' },
   { label: 'Pet Import to Dubai', to: '/service/pet-import-dubai/' },
@@ -17,6 +17,8 @@ export const SERVICE_LINKS: NavLink[] = [
   { label: 'Dog Relocation Dubai', to: '/service/dog-relocation-dubai/' },
   { label: 'Cat Relocation Dubai', to: '/service/cat-relocation-dubai/' },
   { label: 'MOCCAE Pet Permit', to: '/service/moccae-pet-permit/' },
+  { label: 'Private Jet Pet Travel', to: '/service/private-jet-pet-travel/' },
+  { label: 'Shared Pet Charter', to: '/service/shared-pet-charter/' },
 ]
 
 export const TOP_AREA_LINKS: NavLink[] = [
@@ -34,6 +36,10 @@ export const TOP_AREA_LINKS: NavLink[] = [
 ]
 
 export const GUIDE_LINKS: NavLink[] = [
+  { label: 'Pet Flight Options', to: '/guides/pet-flight-options-dubai/' },
+  { label: 'Etihad Pet Policy', to: '/guides/etihad-pet-policy/' },
+  { label: 'Pet as Checked Baggage', to: '/guides/pet-as-checked-baggage/' },
+  { label: 'Emirates Pet Cargo', to: '/guides/emirates-pet-cargo/' },
   { label: 'Cost Guide', to: '/guides/pet-relocation-cost-dubai/' },
   { label: 'Import Requirements', to: '/guides/uae-pet-import-requirements/' },
   { label: 'Banned Dog Breeds', to: '/guides/banned-dog-breeds-dubai/' },

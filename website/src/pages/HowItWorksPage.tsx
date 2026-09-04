@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import {
   CheckCircle,
   ChevronDown,
@@ -17,6 +18,7 @@ import {
   Heart,
   Sparkles,
   Truck,
+  ArrowRight,
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
@@ -318,6 +320,23 @@ export default function HowItWorksPage() {
         updated="Updated June 2026"
         whatsappMessage={heroWaText}
       />
+
+      <section className="section-padding bg-white">
+        <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
+          <div className="rounded-[20px] border border-[#E2E5F6] bg-[#F5F6FD] p-6 sm:p-8">
+            <h2 className="mb-2 text-xl font-bold text-[#2A2A2A] sm:text-2xl">First: how will the pet fly?</h2>
+            <p className="mb-4 text-sm leading-relaxed text-[#5A5A5A] sm:text-base">
+              The seven steps below assume we already know the air product. Pets entering the UAE travel as manifest cargo, except Etihad in-cabin into Abu Dhabi. Compare cabin, checked baggage, cargo, private jet and shared charter on the flight-options hub — then come back here for the coordination sequence.
+            </p>
+            <Link
+              to="/guides/pet-flight-options-dubai/"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-[#4F5BD5] hover:underline"
+            >
+              Open the pet flight options hub <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* ═══════════ WHAT WE ACTUALLY DO ═══════════ */}
       <section className="section-padding">

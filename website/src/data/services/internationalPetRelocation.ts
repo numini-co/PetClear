@@ -121,25 +121,48 @@ const internationalPetRelocation: ServicePageData = {
       ],
     },
     {
-      h2: 'Airlines We Work With',
+      h2: 'How we choose a flight mode (not an airline affiliation)',
       intro:
-        'Routing matters as much as paperwork on an international move. We work with pet-experienced airlines flying out of Dubai and coordinate connections that keep transit times and handling stress to a minimum.',
+        'We are independent of every carrier. The air product comes first — cabin, accompanied baggage, manifest cargo, a shared charter or a private jet — then we confirm which pet-experienced airline will actually accept the animal on that date.',
       body: [
         {
-          type: 'list',
-          items: [
-            'Emirates SkyCargo — extensive global network from DXB with established live-animal handling.',
-            'Etihad — wide route map from the UAE, with cabin options for small cats and dogs on eligible routes.',
-            'Qatar Airways — strong connectivity for onward international destinations via its hub.',
+          type: 'cards',
+          cards: [
+            {
+              title: 'Pet flight options hub',
+              text: 'Compare all six modes in one decision table.',
+              to: '/guides/pet-flight-options-dubai/',
+              kind: 'Guide',
+            },
+            {
+              title: 'Etihad in-cabin',
+              text: 'The UAE cabin exception — small pets into Abu Dhabi.',
+              to: '/guides/etihad-pet-policy/',
+              kind: 'Guide',
+            },
+            {
+              title: 'Emirates / manifest cargo',
+              text: 'Default for itineraries ending in Dubai. SkyCargo fee tiers.',
+              to: '/guides/emirates-pet-cargo/',
+              kind: 'Guide',
+            },
+            {
+              title: 'Private jet pet travel',
+              text: 'Dedicated aircraft when scheduled products will not work. Quote only.',
+              to: '/service/private-jet-pet-travel/',
+              kind: 'Service',
+            },
+            {
+              title: 'Shared / group pet charter',
+              text: 'A dedicated lift shared with other pets. Quote only.',
+              to: '/service/shared-pet-charter/',
+              kind: 'Service',
+            },
           ],
         },
         {
           type: 'p',
-          text: 'We choose the airline and routing around your destination, your pet’s size and breed, and any seasonal temperature restrictions — for example, snub-nosed (brachycephalic) breeds may face additional rules or seasonal embargoes. Because we are independent of any single carrier, we recommend the routing that suits your pet, not a fixed airline.',
-        },
-        {
-          type: 'p',
-          text: 'Airline policies, cargo rates and seasonal restrictions change regularly. We confirm current acceptance, crate rules and booking windows with the carrier for your specific travel dates before anything is booked.',
+          text: 'Emirates does not carry dogs or cats in the cabin (falcons and guide dogs excepted; source: Emirates). UAE arrivals travel as manifest cargo except Etihad in-cabin into Abu Dhabi. We confirm current acceptance, crate rules and booking windows with the carrier before anything is booked — we do not claim an airline partnership.',
         },
       ],
     },
@@ -185,7 +208,7 @@ const internationalPetRelocation: ServicePageData = {
     },
     {
       q: 'Which airlines do you use?',
-      a: 'We work with pet-experienced airlines flying from Dubai, including Emirates SkyCargo, Etihad and Qatar Airways. We are independent of any single carrier, so we choose the routing that best suits your pet’s size, breed, destination and travel dates.',
+      a: 'We are not affiliated with any airline. We confirm which pet-experienced carrier will accept the animal — often Emirates SkyCargo for Dubai-ending itineraries, or Etihad cabin into Abu Dhabi when the pet qualifies. Compare modes on the [pet flight options hub](/guides/pet-flight-options-dubai/).',
     },
     {
       q: 'Do you physically transport the pet yourselves?',
@@ -197,6 +220,11 @@ const internationalPetRelocation: ServicePageData = {
     },
   ],
   relatedLinks: [
+    { label: 'Pet flight options hub', to: '/guides/pet-flight-options-dubai/' },
+    { label: 'Emirates pet cargo', to: '/guides/emirates-pet-cargo/' },
+    { label: 'Etihad pet policy', to: '/guides/etihad-pet-policy/' },
+    { label: 'Private jet pet travel', to: '/service/private-jet-pet-travel/' },
+    { label: 'Shared pet charter', to: '/service/shared-pet-charter/' },
     { label: 'Pet Relocation Dubai', to: '/service/pet-relocation-dubai/' },
     { label: 'Pet Export from Dubai', to: '/service/pet-export-dubai/' },
     { label: 'UK to Dubai', to: '/routes/uk-to-dubai/' },

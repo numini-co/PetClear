@@ -40,6 +40,10 @@ const IATACrateGuide = lazy(() => import('./pages/IATACrateGuide.tsx'))
 const SummerTravelGuide = lazy(() => import('./pages/SummerTravelGuide.tsx'))
 const MOCCAEPermitGuide = lazy(() => import('./pages/MOCCAEPermitGuide.tsx'))
 const TiterTestGuide = lazy(() => import('./pages/TiterTestGuide.tsx'))
+const PetFlightOptionsHub = lazy(() => import('./pages/PetFlightOptionsHub.tsx'))
+const EtihadPetPolicyGuide = lazy(() => import('./pages/EtihadPetPolicyGuide.tsx'))
+const PetAsCheckedBaggageGuide = lazy(() => import('./pages/PetAsCheckedBaggageGuide.tsx'))
+const EmiratesPetCargoGuide = lazy(() => import('./pages/EmiratesPetCargoGuide.tsx'))
 
 // City pages (V2 - Month 1)
 const AbuDhabiCity = lazy(() => import('./pages/AbuDhabiCity.tsx'))
@@ -126,6 +130,10 @@ export default function App() {
           <Route path="/guides/pet-travel-summer-dubai/" element={<SummerTravelGuide />} />
           <Route path="/guides/moccae-import-permit/" element={<MOCCAEPermitGuide />} />
           <Route path="/guides/rabies-titer-test-dubai/" element={<TiterTestGuide />} />
+          <Route path="/guides/pet-flight-options-dubai/" element={<PetFlightOptionsHub />} />
+          <Route path="/guides/etihad-pet-policy/" element={<EtihadPetPolicyGuide />} />
+          <Route path="/guides/pet-as-checked-baggage/" element={<PetAsCheckedBaggageGuide />} />
+          <Route path="/guides/emirates-pet-cargo/" element={<EmiratesPetCargoGuide />} />
 
           {/* City pages */}
           <Route path="/cities/abu-dhabi/" element={<AbuDhabiCity />} />

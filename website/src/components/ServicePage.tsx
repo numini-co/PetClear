@@ -54,6 +54,29 @@ function Block({ block }: { block: ServiceBlock }) {
   if (block.type === 'image') {
     return <ContentImage src={block.src} alt={block.alt} caption={block.caption} />
   }
+  if (block.type === 'cards') {
+    return (
+      <div className="mb-4 grid gap-4 sm:grid-cols-2">
+        {block.cards.map((c) => (
+          <Link
+            key={c.to}
+            to={c.to}
+            className="flex flex-col rounded-[20px] border border-[#E2E5F6] bg-[#F5F6FD] p-5 transition hover:-translate-y-0.5 hover:bg-[#E9ECFB] hover:shadow-sm"
+          >
+            {c.kind ? (
+              <span className="mb-1 text-xs font-semibold uppercase tracking-wider text-[#4F5BD5]">{c.kind}</span>
+            ) : null}
+            <span className="mb-2 flex items-center justify-between gap-2 font-bold text-[#2A2A2A]">
+              {c.title} <ArrowRight className="h-4 w-4 shrink-0 text-[#4F5BD5]" />
+            </span>
+            <span className="text-sm leading-relaxed text-[#5A5A5A]">
+              <LinkedText text={c.text} />
+            </span>
+          </Link>
+        ))}
+      </div>
+    )
+  }
   return (
     <div className="mb-4 overflow-x-auto">
       <table className="w-full border-collapse text-sm">

@@ -8,6 +8,10 @@ import HubCrossLinks from '../components/HubCrossLinks.tsx'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 
 const GUIDES = [
+  { title: 'Pet Flight Options from Dubai', to: '/guides/pet-flight-options-dubai/', image: '/images/import-hero.jpg', desc: 'Cabin, checked baggage, manifest cargo, private jet, shared charter — which mode fits.' },
+  { title: 'Etihad Pet Policy (In-Cabin)', to: '/guides/etihad-pet-policy/', image: '/assets/w1-w3/british-shorthair-cat-carrier-cat-relocation-dubai.jpg', desc: 'The only UAE cabin option: fees, 8 kg limit, AUH arrival and transfer to Dubai.' },
+  { title: 'Pet as Checked Baggage', to: '/guides/pet-as-checked-baggage/', image: '/images/dog-crate.jpg', desc: 'When accompanied hold travel is allowed — and why Dubai arrivals usually cannot use it.' },
+  { title: 'Emirates Pet Cargo & SkyCargo', to: '/guides/emirates-pet-cargo/', image: '/images/guide-iata-crate.jpg', desc: 'Manifest cargo into Dubai: fee tiers, booking window and arrival clearance.' },
   { title: 'Pet Relocation Cost Guide', to: '/guides/pet-relocation-cost-dubai/', image: '/images/cost-hero.jpg', desc: 'What it really costs to bring a pet to Dubai — every fee, line by line.' },
   { title: 'UAE Pet Import Requirements', to: '/guides/uae-pet-import-requirements/', image: '/images/import-hero.jpg', desc: 'The full MOCCAE-aligned checklist for bringing dogs and cats to Dubai.' },
   { title: 'Banned & Restricted Dog Breeds', to: '/guides/banned-dog-breeds-dubai/', image: '/images/guide-banned-breeds.jpg', desc: 'Which breeds are prohibited or restricted under UAE federal and Dubai rules.' },
@@ -83,6 +87,9 @@ export default function GuidesHub() {
           { to: '/', label: 'Homepage overview', note: 'Category entry — not the money-head service page' },
           { to: '/services/', label: 'Compare our service tiers', note: 'How much of the file we hold' },
           { to: '/service/pet-relocation-dubai/', label: 'Our Dubai pet relocation service', note: 'Door-to-door money page after you have read the rule' },
+          { to: '/guides/pet-flight-options-dubai/', label: 'Pet flight options hub', note: 'Cabin, cargo, jet and charter compared' },
+          { to: '/service/private-jet-pet-travel/', label: 'Private jet pet travel', note: 'Quote-only dedicated aircraft' },
+          { to: '/service/shared-pet-charter/', label: 'Shared pet charter', note: 'Quote-only group lift' },
           { to: '/service/pet-transport-dubai/', label: 'Local pet transport and pet taxi service', note: 'Ground transfers and airport pet taxi' },
           { to: '/routes/', label: 'Routes hub', note: 'Country corridors inbound and outbound' },
           { to: '/dubai/', label: 'Dubai communities we cover', note: 'Last-mile pickup and delivery by community' },

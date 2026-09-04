@@ -1,0 +1,266 @@
+import { Link } from 'react-router-dom'
+import { CheckCircle, MessageCircle, XCircle } from 'lucide-react'
+import SEOHead from '../components/SEOHead.tsx'
+import Hero from '../components/Hero.tsx'
+import Breadcrumb from '../components/Breadcrumb.tsx'
+import FAQItem from '../components/FAQItem.tsx'
+import ContentImage from '../components/ContentImage.tsx'
+import FlightModeCards from '../components/FlightModeCards.tsx'
+import UaeCargoRuleCallout from '../components/UaeCargoRuleCallout.tsx'
+import OfficialSources from '../components/OfficialSources.tsx'
+import LastVerified from '../components/LastVerified.tsx'
+import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
+import { FLIGHT_MODE_PATHS } from '../data/flightModes.ts'
+
+const WA =
+  'Hi Dubai Pet Relocation! I want to know whether my pet can travel as accompanied checked baggage, or whether we need manifest cargo instead.'
+
+const faqData = [
+  {
+    q: 'Can my pet arrive in Dubai as checked baggage?',
+    a: 'Not on Emirates. All itineraries ending in Dubai must travel as cargo on Emirates SkyCargo (source: Emirates). UAE import rules also require manifested cargo, with the documented exception of Etihad in-cabin arrivals into Abu Dhabi. Do not book a passenger ticket assuming the pet can check in beside you at DXB.',
+  },
+  {
+    q: 'When does Emirates allow checked-baggage pets?',
+    a: 'From Dubai, falcons, cats, dogs and pet birds may travel as checked baggage in the hold if the total journey time is under 17 hours (source: Emirates). That is an outbound / through-journey rule, not a DXB-arrival rule.',
+  },
+  {
+    q: 'What does Emirates charge for animals as baggage?',
+    a: 'USD 500 when pet + carrier is ≤23 kg and ≤150 cm; USD 650 for 24–32 kg and 150–300 cm; USD 800 above 32 kg up to 300 cm. Containers over 300 cm travel as cargo (source: Emirates). Confirm live amounts on the Emirates animals page.',
+  },
+  {
+    q: 'Does flydubai offer checked-baggage pets?',
+    a: 'flydubai does not allow animals in the cabin except falcons. Other pets travel via flydubai Cargo (source: flydubai). A secondary source states flydubai does not offer AVIH checked-baggage service — treat that as secondary until the cargo desk confirms your booking.',
+  },
+  {
+    q: 'Is checked baggage the same as manifest cargo?',
+    a: 'No. Accompanied baggage travels on the owner’s ticket in the hold. Manifest cargo is a live-animal air-waybill booking, often unaccompanied, accepted at the cargo terminal. UAE arrivals use cargo except the Etihad AUH cabin path.',
+  },
+  {
+    q: 'Do I still need a MOCCAE import permit for baggage travel?',
+    a: 'If the pet is entering the UAE, yes. The permit is valid 30 days from issuance. Baggage status does not waive the permit. For most Dubai arrivals you should be on the cargo path anyway.',
+  },
+  {
+    q: 'What if my outbound journey is longer than 17 hours?',
+    a: 'Emirates checked-baggage pets require a total journey under 17 hours (source: Emirates). Longer itineraries move to SkyCargo. Open the Emirates pet cargo guide or door-to-door coordination.',
+  },
+  {
+    q: 'Can you decide this for me?',
+    a: 'Yes. Send the route, date and pet weight. We will tell you whether baggage is even legal on that itinerary, then quote cargo or door-to-door if it is not.',
+  },
+]
+
+export default function PetAsCheckedBaggageGuide() {
+  const canonical = `${BASE_URL}${FLIGHT_MODE_PATHS.baggage}`
+  const title = 'Pet as Checked Baggage | When Hold Travel Is Allowed'
+  const description =
+    'When a pet can travel as accompanied checked baggage versus when UAE and Emirates rules block it. Emirates under-17-hour outbound rule and DXB cargo-only arrivals explained.'
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: `${BASE_URL}/guides/` },
+      { '@type': 'ListItem', position: 3, name: 'Pet as checked baggage', item: canonical },
+    ],
+  }
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description,
+    author: { '@type': 'Organization', name: 'Dubai Pet Relocation', url: BASE_URL },
+    dateModified: '2026-09-04',
+    mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  }
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqData.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  }
+
+  return (
+    <div>
+      <SEOHead
+        meta={{
+          title,
+          description,
+          keywords:
+            'pet as checked baggage, AVIH pet Dubai, Emirates checked baggage pets, fly pet in hold to Dubai, accompanied pet baggage UAE',
+          canonical,
+          ogType: 'article',
+        }}
+        schemas={[breadcrumbSchema, articleSchema, faqSchema]}
+      />
+      <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Pet as checked baggage' }]} />
+
+      <Hero
+        image="/images/dog-crate.jpg"
+        imageAlt="A dog in a hard travel crate of the kind used when a pet travels as accompanied hold baggage"
+        eyebrow="Flight-mode guide"
+        title="Flying a Pet as Accompanied Checked Baggage"
+        subtitle="Hold travel on the same ticket is allowed on some outbound Emirates journeys — and blocked for itineraries that end in Dubai. Read the rule before you book a passenger seat."
+        updated="Updated September 2026"
+        primaryLabel="Check if baggage is allowed"
+        whatsappMessage={WA}
+        secondary={{ label: 'All six flight modes', to: FLIGHT_MODE_PATHS.hub }}
+      />
+
+      <section className="section-padding bg-white">
+        <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
+          <UaeCargoRuleCallout extra="Checked baggage is not a workaround for a Dubai-ending import. If the itinerary ends at DXB, plan manifest cargo." />
+          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">What “accompanied checked baggage” means</h2>
+          <p className="mb-4 leading-relaxed text-[#5A5A5A]">
+            The pet travels in the aircraft hold on the owner’s passenger booking (often labelled AVIH). You check the crate at the passenger or special-baggage desk, not at a cargo terminal. That is different from{' '}
+            <Link to={FLIGHT_MODE_PATHS.cargo} className="font-semibold text-[#4F5BD5] hover:underline">
+              manifest air cargo
+            </Link>
+            , where the animal has its own air waybill and is accepted at the cargo facility.
+          </p>
+          <p className="mb-4 leading-relaxed text-[#5A5A5A]">
+            Baggage is only useful when both the airline and the destination allow it. For UAE arrivals, the destination usually does not. Compare every mode on the{' '}
+            <Link to={FLIGHT_MODE_PATHS.hub} className="font-semibold text-[#4F5BD5] hover:underline">
+              pet flight options hub
+            </Link>
+            .
+          </p>
+          <ContentImage
+            src="/assets/w-flight-modes/pet-airline-options-cabin-baggage-cargo-diagram.png"
+            alt="Cabin, checked-baggage and cargo options for pet travel to or from Dubai"
+            caption="Accompanied hold travel is the middle column — and the one UAE arrivals usually cannot use."
+          />
+        </div>
+      </section>
+
+      <section className="section-padding bg-[#F5F6FD]">
+        <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
+          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">When it is allowed vs blocked for UAE arrivals</h2>
+          <div className="mb-6 grid gap-4 md:grid-cols-2">
+            <div className="rounded-[20px] bg-white p-6 shadow-sm">
+              <h3 className="mb-3 flex items-center gap-2 font-bold text-[#2A2A2A]">
+                <XCircle className="h-5 w-5 text-[#C45C5C]" /> Blocked
+              </h3>
+              <ul className="space-y-2 text-sm text-[#5A5A5A]">
+                <li>Itineraries ending in Dubai on Emirates — animals must travel as SkyCargo (source: Emirates).</li>
+                <li>UAE import as cabin or accompanied baggage, except Etihad in-cabin into Abu Dhabi.</li>
+                <li>flydubai dogs and cats — cabin is falcons only; other pets go via cargo (source: flydubai).</li>
+              </ul>
+            </div>
+            <div className="rounded-[20px] bg-white p-6 shadow-sm">
+              <h3 className="mb-3 flex items-center gap-2 font-bold text-[#2A2A2A]">
+                <CheckCircle className="h-5 w-5 text-[#4F5BD5]" /> Sometimes allowed
+              </h3>
+              <ul className="space-y-2 text-sm text-[#5A5A5A]">
+                <li>From Dubai on Emirates: cats, dogs, falcons and pet birds as checked baggage if the total journey is under 17 hours (source: Emirates).</li>
+                <li>Other carriers’ AVIH products on corridors that do not end in the UAE — confirm the specific airline, not this page.</li>
+                <li>Etihad cabin into AUH is a different product — see the{' '}
+                  <Link to={FLIGHT_MODE_PATHS.cabin} className="font-semibold text-[#4F5BD5] hover:underline">
+                    Etihad pet policy
+                  </Link>
+                  .
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p className="leading-relaxed text-[#5A5A5A]">
+            Emirates also requires the pet travel form at least one week before the flight and a minimum pet age of 4 months (source: Emirates). Pregnant animals are not accepted beyond one-third of gestation, nor within 48 hours of giving birth (source: Emirates).
+          </p>
+        </div>
+      </section>
+
+      <section className="section-padding bg-white">
+        <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
+          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Emirates animal charges (source: Emirates)</h2>
+          <p className="mb-4 leading-relaxed text-[#5A5A5A]">
+            These tiers apply to Emirates animal carriage. Containers over 300 cm travel as cargo. We repeat them here so you can compare baggage vs SkyCargo; the cargo-owned keywords live on the{' '}
+            <Link to={FLIGHT_MODE_PATHS.cargo} className="font-semibold text-[#4F5BD5] hover:underline">
+              Emirates pet cargo guide
+            </Link>
+            .
+          </p>
+          <LastVerified note="Confirm current Emirates animal charges on the official animals page before you pay." />
+          <div className="mb-6 overflow-x-auto">
+            <table className="w-full min-w-[520px] border-collapse text-sm">
+              <thead>
+                <tr className="bg-[#E9ECFB]">
+                  <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Tier (pet + carrier)</th>
+                  <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Published charge</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-white">
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">≤23 kg and ≤150 cm</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 font-semibold text-[#2A2A2A]">USD 500</td>
+                </tr>
+                <tr className="bg-[#F5F6FD]">
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">24–32 kg and 150–300 cm</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 font-semibold text-[#2A2A2A]">USD 650</td>
+                </tr>
+                <tr className="bg-white">
+                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">&gt;32 kg, ≤300 cm</td>
+                  <td className="border border-[#E2E5F6] px-4 py-3 font-semibold text-[#2A2A2A]">USD 800</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="leading-relaxed text-[#5A5A5A]">
+            A valid import permit and government-endorsed health certificate for the destination are required before Emirates accepts the animal (source: Emirates). Leaving the UAE still needs the MOCCAE export health certificate — plan destination rules backwards. If you want one coordinator for the whole outbound file, use{' '}
+            <Link to={FLIGHT_MODE_PATHS.doorToDoor} className="font-semibold text-[#4F5BD5] hover:underline">
+              door-to-door pet relocation
+            </Link>{' '}
+            or{' '}
+            <Link to="/service/pet-relocation-from-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet relocation from Dubai
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+
+      <FlightModeCards
+        heading="Sibling modes"
+        intro="If baggage is blocked — which it is for most UAE arrivals — cargo, cabin (AUH only), jet or charter are the remaining air products. Door-to-door is how we hold the file."
+        exclude="baggage"
+      />
+
+      <section className="section-padding bg-white">
+        <div className="mx-auto max-w-[820px] px-5 sm:px-6 lg:px-8">
+          <h2 className="mb-6 text-center text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Frequently asked questions</h2>
+          <div className="space-y-3">
+            {faqData.map((f) => (
+              <FAQItem key={f.q} question={f.q} answer={f.a} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <OfficialSources />
+
+      <section className="section-padding bg-[#4F5BD5]">
+        <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
+          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">Tell us the itinerary — we will say yes or no</h2>
+          <p className="mb-8 text-base leading-relaxed text-white/80">
+            Route, date, pet weight. We confirm whether accompanied baggage is legal, or we move you to cargo. WhatsApp or{' '}
+            <a href="mailto:support@dubai-pet-relocation.ae" className="underline">
+              support@dubai-pet-relocation.ae
+            </a>
+            .
+          </p>
+          <a
+            href={getWhatsAppUrl(WA)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-7 py-4 text-sm font-semibold text-white hover:bg-[#1DA851]"
+          >
+            <MessageCircle className="h-4 w-4" /> Check baggage eligibility
+          </a>
+        </div>
+      </section>
+    </div>
+  )
+}

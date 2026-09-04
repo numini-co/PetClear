@@ -7,6 +7,7 @@ export type ServiceBlock =
   | { type: 'steps'; steps: { title: string; text: string }[] }
   | { type: 'table'; headers: string[]; rows: string[][] }
   | { type: 'image'; src: string; alt: string; caption?: string }
+  | { type: 'cards'; cards: { title: string; text: string; to: string; kind?: string }[] }
 
 export interface ServiceSection {
   h2: string

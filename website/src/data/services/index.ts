@@ -9,6 +9,8 @@ import petRelocationFromDubai from './petRelocationFromDubai.ts'
 import dogRelocationDubai from './dogRelocationDubai.ts'
 import catRelocationDubai from './catRelocationDubai.ts'
 import moccaePetPermit from './moccaePetPermit.ts'
+import privateJetPetTravel from './privateJetPetTravel.ts'
+import sharedPetCharter from './sharedPetCharter.ts'
 
 // Registry of all /service/<slug>/ pages (Blue Book Phase 2).
 export const servicePages: ServicePageData[] = [
@@ -22,4 +24,6 @@ export const servicePages: ServicePageData[] = [
   dogRelocationDubai,
   catRelocationDubai,
   moccaePetPermit,
+  privateJetPetTravel,
+  sharedPetCharter,
 ]

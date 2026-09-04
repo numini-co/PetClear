@@ -47,6 +47,58 @@ const petRelocationDubai: ServicePageData = {
       ],
     },
     {
+      h2: 'Flight modes we arrange',
+      intro:
+        'Door-to-door is the umbrella: we pick the air product, then hold documents, crate and the last mile. These six cards are the modes — not a second money page. The comparison hub is navigational; this page stays the commercial head for pet relocation Dubai.',
+      body: [
+        {
+          type: 'cards',
+          cards: [
+            {
+              title: 'All six flight modes (hub)',
+              text: 'Decision table: cabin, baggage, cargo, jet, charter and this door-to-door umbrella.',
+              to: '/guides/pet-flight-options-dubai/',
+              kind: 'Guide',
+            },
+            {
+              title: 'Pet in cabin',
+              text: 'Etihad only; ≤8 kg including carrier; arrives Abu Dhabi. UAE imports otherwise travel as manifest cargo.',
+              to: '/guides/etihad-pet-policy/',
+              kind: 'Guide',
+            },
+            {
+              title: 'Pet as checked baggage',
+              text: 'Accompanied hold. Blocked for itineraries ending in Dubai. Emirates under-17-hour rule from Dubai.',
+              to: '/guides/pet-as-checked-baggage/',
+              kind: 'Guide',
+            },
+            {
+              title: 'Manifest air cargo',
+              text: 'Default for UAE import. Emirates SkyCargo flagship, fee tiers and booking.',
+              to: '/guides/emirates-pet-cargo/',
+              kind: 'Guide',
+            },
+            {
+              title: 'Private jet pet travel',
+              text: 'Dedicated aircraft when scheduled products will not accept the animal. Quote only.',
+              to: '/service/private-jet-pet-travel/',
+              kind: 'Service',
+            },
+            {
+              title: 'Shared / group pet charter',
+              text: 'A dedicated lift shared with other pets — midpoint vs a full jet. Quote only.',
+              to: '/service/shared-pet-charter/',
+              kind: 'Service',
+            },
+          ],
+        },
+        {
+          type: 'p',
+          text: 'We are not the airline. Cabin and cargo figures on the child guides are cited from Etihad and Emirates. Jet and charter stay Get a Quote — we do not invent aircraft prices.',
+        },
+      ],
+    },
+    {
       h2: 'How the five-stage relocation sequence works',
       intro:
         'Every international move through Dubai follows the same backbone. The depth of help changes by tier; the order does not.',
@@ -105,7 +157,7 @@ const petRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Pet shipping Dubai and pet cargo Dubai are the same commercial job as this page: manifested live-animal cargo, not cabin luggage. We coordinate the booking; we do not operate the aircraft. For country-level rules, use the [routes hub](/routes/) rather than treating this page as a corridor encyclopedia.',
+          text: 'Pet shipping Dubai and pet cargo Dubai are the same commercial job as this page: manifested live-animal cargo, not cabin luggage. We coordinate the booking; we do not operate the aircraft. Mode-level detail lives on the [pet flight options hub](/guides/pet-flight-options-dubai/) and the [Emirates pet cargo](/guides/emirates-pet-cargo/) guide. For country-level rules, use the [routes hub](/routes/) rather than treating this page as a corridor encyclopedia.',
         },
         {
           type: 'list',
@@ -190,8 +242,17 @@ const petRelocationDubai: ServicePageData = {
       q: 'What do you need for a relocation quote?',
       a: 'Pet type, breed, approximate weight, origin or destination, and a target month. We reply with drivers and a WhatsApp range. We do not publish unverified AED fee tables on this page. You can also [talk to our relocation team](/contact/).',
     },
+    {
+      q: 'Which flight modes do you arrange?',
+      a: 'Cabin (Etihad into Abu Dhabi), accompanied checked baggage where the airline allows it, manifest cargo (the default for UAE import), private jet, shared charter, and this door-to-door umbrella. Compare them on the [pet flight options hub](/guides/pet-flight-options-dubai/).',
+    },
   ],
   relatedLinks: [
+    { label: 'Pet flight options hub', to: '/guides/pet-flight-options-dubai/' },
+    { label: 'Emirates pet cargo', to: '/guides/emirates-pet-cargo/' },
+    { label: 'Etihad pet policy', to: '/guides/etihad-pet-policy/' },
+    { label: 'Private jet pet travel', to: '/service/private-jet-pet-travel/' },
+    { label: 'Shared pet charter', to: '/service/shared-pet-charter/' },
     { label: 'What pet relocation costs in 2026', to: '/guides/pet-relocation-cost-dubai/' },
     { label: 'Talk to our relocation team', to: '/contact/' },
     { label: 'Compare our service tiers', to: '/services/' },
