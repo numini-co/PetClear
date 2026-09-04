@@ -13,7 +13,7 @@ const petRelocationFromDubai: ServicePageData = {
     'Outbound only: destination rules first, then the MOCCAE export health-certificate path, cargo booking and departure from DXB or DWC.',
   heroImage: '/assets/w1-w3/pet-relocation-from-dubai-husky-balcony-golden-hour.jpg',
   heroImageAlt:
-    'Owner with their husky on a Dubai balcony beside a packed travel crate before relocating from Dubai',
+    'Husky sitting beside a packed travel crate on a Dubai balcony before relocating from Dubai',
   whatsappMessage:
     'Hi! I am leaving Dubai with my pet. Can you check the destination timeline and the MOCCAE export path?',
   trustBadges: [

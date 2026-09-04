@@ -53,7 +53,7 @@ const Card = ({ children, className = '' }: { children: React.ReactNode; classNa
 const SERVICE_CARD_IMAGES: Record<string, { src: string; alt: string }> = {
   '/service/dog-relocation-dubai/': {
     src: '/assets/w1-w3/german-shepherd-travel-crate-dog-relocation-dubai.jpg',
-    alt: 'German Shepherd in an open IATA travel crate before dog relocation from a Dubai villa',
+    alt: 'German Shepherd standing in an open IATA travel crate before dog relocation from Dubai',
   },
   '/service/cat-relocation-dubai/': {
     src: '/assets/w1-w3/british-shorthair-cat-carrier-cat-relocation-dubai.jpg',
@@ -61,7 +61,7 @@ const SERVICE_CARD_IMAGES: Record<string, { src: string; alt: string }> = {
   },
   '/service/moccae-pet-permit/': {
     src: '/assets/w1-w3/moccae-permit-document-check-hands-dubai.jpg',
-    alt: 'Coordinator reviewing a pet relocation document checklist for a MOCCAE permit application',
+    alt: 'Hands reviewing a pet travel checklist for a MOCCAE permit application',
   },
 }
 

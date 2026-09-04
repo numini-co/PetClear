@@ -92,7 +92,7 @@ const petRelocationDubai: ServicePageData = {
         {
           type: 'image',
           src: '/assets/w1-w3/measuring-toy-poodle-crate-sizing-dubai.jpg',
-          alt: 'Coordinator measuring a toy poodle for IATA crate sizing before a Dubai pet relocation',
+          alt: 'Hands measuring a toy poodle with a tape for IATA crate sizing before a Dubai pet relocation',
           caption: 'Crate size drives both welfare and the airline’s accept/reject decision. We measure the pet.',
         },
         {

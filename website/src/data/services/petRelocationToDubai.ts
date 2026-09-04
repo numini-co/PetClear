@@ -98,7 +98,7 @@ const petRelocationToDubai: ServicePageData = {
         {
           type: 'image',
           src: '/assets/w1-w3/moccae-permit-document-check-hands-dubai.jpg',
-          alt: 'Coordinator reviewing a pet relocation document checklist for a MOCCAE permit application',
+          alt: 'Hands reviewing a pet travel checklist for a MOCCAE permit application',
           caption: 'Permit, chip number and vaccination dates have to match across every page.',
         },
         {
@@ -127,7 +127,7 @@ const petRelocationToDubai: ServicePageData = {
         {
           type: 'image',
           src: '/assets/w1-w3/settling-in-first-week-dubai-spaniel-pet-corner.jpg',
-          alt: 'Owner preparing a pet corner for their cocker spaniel during the first week in Dubai',
+          alt: 'Cocker spaniel sniffing a pet bed in a new Dubai apartment during the first week after relocation',
           caption: 'Arrival day is day one of settling in — heat, walks and a local vet come next.',
         },
         {
