@@ -1,62 +1,65 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { MessageCircle, ChevronDown, ChevronUp, ArrowRight, CheckCircle, Shield } from 'lucide-react'
+import { MessageCircle, ArrowRight, CheckCircle } from 'lucide-react'
 import SEOHead from './SEOHead.tsx'
 import Breadcrumb from './Breadcrumb.tsx'
 import { getWhatsAppUrl, BASE_URL, siteConfig, shortSubtitle } from '../lib/seo.ts'
-import type { ServicePageData, ServiceBlock, ServiceFAQ } from '../types/servicePage.ts'
+import type { ServicePageData, ServiceBlock } from '../types/servicePage.ts'
 import { SERVICE_LINKS } from '../data/nav.ts'
 import OfficialSources from './OfficialSources.tsx'
 import Hero from './Hero.tsx'
-
-function Faq({ q, a }: ServiceFAQ) {
-  const [open, setOpen] = useState(false)
-  return (
-    <div className="faq-item">
-      <button onClick={() => setOpen(!open)} className="faq-question w-full text-left" aria-expanded={open}>
-        <span className="pr-4">{q}</span>
-        {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#8A8A8A] shrink-0" />}
-      </button>
-      {open && <div className="faq-answer">{a}</div>}
-    </div>
-  )
-}
+import FAQItem from './FAQItem.tsx'
+import ContentImage from './ContentImage.tsx'
+import { LinkedText, stripInternalMarkdownLinks } from './LinkedText.tsx'
 
 function Block({ block }: { block: ServiceBlock }) {
-  if (block.type === 'p') return <p className="text-[#5A5A5A] leading-relaxed mb-4">{block.text}</p>
-  if (block.type === 'list')
+  if (block.type === 'p') {
     return (
-      <ul className="space-y-2 mb-4">
+      <p className="mb-4 leading-relaxed text-[#5A5A5A]">
+        <LinkedText text={block.text} />
+      </p>
+    )
+  }
+  if (block.type === 'list') {
+    return (
+      <ul className="mb-4 space-y-2">
         {block.items.map((it, i) => (
           <li key={i} className="flex items-start gap-2 text-[#5A5A5A]">
-            <CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-            <span>{it}</span>
+            <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-[#4F5BD5]" />
+            <span>
+              <LinkedText text={it} />
+            </span>
           </li>
         ))}
       </ul>
     )
-  if (block.type === 'steps')
+  }
+  if (block.type === 'steps') {
     return (
-      <div className="space-y-4 mb-4">
+      <div className="mb-4 space-y-4">
         {block.steps.map((s, i) => (
           <div key={i} className="flex gap-4">
-            <div className="w-9 h-9 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center font-bold text-sm shrink-0">{i + 1}</div>
+            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#4F5BD5] text-sm font-bold text-white">{i + 1}</div>
             <div>
-              <p className="font-bold text-[#2A2A2A] mb-1">{s.title}</p>
-              <p className="text-[#5A5A5A] leading-relaxed">{s.text}</p>
+              <p className="mb-1 font-bold text-[#2A2A2A]">{s.title}</p>
+              <p className="leading-relaxed text-[#5A5A5A]">
+                <LinkedText text={s.text} />
+              </p>
             </div>
           </div>
         ))}
       </div>
     )
-  // table
+  }
+  if (block.type === 'image') {
+    return <ContentImage src={block.src} alt={block.alt} caption={block.caption} />
+  }
   return (
-    <div className="overflow-x-auto mb-4">
-      <table className="w-full text-sm border-collapse">
+    <div className="mb-4 overflow-x-auto">
+      <table className="w-full border-collapse text-sm">
         <thead>
           <tr className="bg-[#E9ECFB]">
             {block.headers.map((h, i) => (
-              <th key={i} className="text-left font-semibold text-[#2A2A2A] px-4 py-3 border border-[#E2E5F6]">{h}</th>
+              <th key={i} className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">{h}</th>
             ))}
           </tr>
         </thead>
@@ -64,7 +67,9 @@ function Block({ block }: { block: ServiceBlock }) {
           {block.rows.map((r, i) => (
             <tr key={i} className={i % 2 ? 'bg-[#F5F6FD]' : 'bg-white'}>
               {r.map((c, j) => (
-                <td key={j} className="px-4 py-3 border border-[#E2E5F6] text-[#5A5A5A]">{c}</td>
+                <td key={j} className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
+                  <LinkedText text={c} />
+                </td>
               ))}
             </tr>
           ))}
@@ -95,11 +100,28 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
   if (data.costRange) {
     serviceSchema.offers = { '@type': 'AggregateOffer', priceCurrency: 'AED', lowPrice: data.costRange.low, highPrice: data.costRange.high }
   }
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: siteConfig.name,
+    url: BASE_URL,
+    description: siteConfig.description,
+  }
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: siteConfig.name,
+    url: BASE_URL,
+  }
   const faqSchema = {
     '@context': 'https://schema.org', '@type': 'FAQPage',
-    mainEntity: data.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+    mainEntity: data.faq.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: stripInternalMarkdownLinks(f.a) },
+    })),
   }
-  const schemas: Record<string, unknown>[] = [breadcrumbSchema, serviceSchema, faqSchema]
+  const schemas: Record<string, unknown>[] = [organizationSchema, websiteSchema, breadcrumbSchema, serviceSchema, faqSchema]
   if (data.hasHowTo) {
     const stepBlock = data.sections.flatMap((s) => s.body).find((b) => b.type === 'steps')
     if (stepBlock && stepBlock.type === 'steps') {
@@ -134,7 +156,11 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         <section key={i} className={`section-padding ${i % 2 ? 'bg-[#F5F6FD]' : 'bg-white'}`}>
           <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[34px] font-bold text-[#2A2A2A] mb-4">{sec.h2}</h2>
-            {sec.intro && <p className="text-[#5A5A5A] leading-relaxed mb-4">{sec.intro}</p>}
+            {sec.intro && (
+              <p className="mb-4 leading-relaxed text-[#5A5A5A]">
+                <LinkedText text={sec.intro} />
+              </p>
+            )}
             {sec.body.map((b, j) => <Block key={j} block={b} />)}
           </div>
         </section>
@@ -161,7 +187,11 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         <section className="bg-[#F5F6FD] section-padding">
           <div className="max-w-[820px] mx-auto px-5 sm:px-6 lg:px-8">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[34px] font-bold text-[#2A2A2A] mb-6 text-center">Frequently Asked Questions</h2>
-            <div className="space-y-3">{data.faq.map((f, i) => <Faq key={i} {...f} />)}</div>
+            <div className="space-y-3">
+              {data.faq.map((f) => (
+                <FAQItem key={f.q} question={f.q} answer={<LinkedText text={f.a} />} />
+              ))}
+            </div>
           </div>
         </section>
       )}

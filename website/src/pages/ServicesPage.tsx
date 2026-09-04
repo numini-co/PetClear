@@ -1,18 +1,15 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
-  MessageCircle, CheckCircle, Shield, Plane, FileCheck, Heart, Stethoscope, Phone, Calendar, MapPin, PawPrint, Home, X, Star, Clock, ArrowRight
+  MessageCircle, CheckCircle, Shield, Plane, FileCheck, Heart, Stethoscope,
+  MapPin, PawPrint, Home, X, Star, ArrowRight,
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
-
-const Card = ({ children, className = '' }: { children: React.ReactNode; className?: string }) => (
-  <div className={`bg-white rounded-[20px] shadow-sm p-7 lg:p-8 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 ${className}`}>
-    {children}
-  </div>
-)
+import FAQItem from '../components/FAQItem.tsx'
+import ContentImage from '../components/ContentImage.tsx'
+import { SERVICE_LINKS } from '../data/nav.ts'
 
 const WhatsAppCta = ({
   text,
@@ -29,131 +26,108 @@ const WhatsAppCta = ({
     href={getWhatsAppUrl(message)}
     target="_blank"
     rel="noopener noreferrer"
-    className={`inline-flex items-center justify-center gap-2 px-7 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-all shadow-sm hover:shadow-md ${fullWidth ? 'w-full' : ''} ${className}`}
+    className={`inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-7 py-4 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#1DA851] ${fullWidth ? 'w-full' : ''} ${className}`}
   >
-    <MessageCircle className="w-4 h-4" />
+    <MessageCircle className="h-4 w-4" />
     {text}
   </a>
 )
+
+const Card = ({ children, className = '' }: { children: React.ReactNode; className?: string }) => (
+  <div className={`rounded-[20px] bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md lg:p-8 ${className}`}>
+    {children}
+  </div>
+)
+
+const FEATURE_ROWS = [
+  { label: 'Route & eligibility check', tiers: [true, true, true] },
+  { label: 'Document checklist & review', tiers: [true, true, true] },
+  { label: 'MOCCAE permit guidance', tiers: [true, true, true] },
+  { label: 'WhatsApp during business hours', tiers: [true, true, true] },
+  { label: 'Partner recommendations', tiers: [true, true, true] },
+  { label: 'Timeline tracking', tiers: [true, true, true] },
+  { label: 'Booking coordination', tiers: [false, true, true] },
+  { label: 'Travel-day support', tiers: [false, true, true] },
+  { label: 'Post-arrival check-in', tiers: [false, true, true] },
+  { label: 'Document submission handling', tiers: [false, true, true] },
+  { label: 'Dedicated relocation manager', tiers: [false, false, true] },
+  { label: 'Emergency contingency planning', tiers: [false, false, true] },
+  { label: 'Boarding & nanny arrangements', tiers: [false, false, true] },
+]
 
 const tiers = [
   {
     name: 'PawPilot',
     subtitle: 'Essential',
-    price: 'AED 1,500 – 2,500',
-    description: 'Perfect for experienced pet owners who need expert guidance and document checks but prefer to handle bookings themselves.',
+    description: 'Guidance and document checks for owners who will book flights and vets themselves. Same regulatory sequence — you hold the bookings.',
     icon: Plane,
-    color: 'bg-[#EEF0FC]',
     iconBg: 'bg-[#4F5BD5]',
-    features: [
-      { label: 'Route & eligibility check', included: true },
-      { label: 'Document checklist & review', included: true },
-      { label: 'MOCCAE permit guidance', included: true },
-      { label: 'WhatsApp support (business hours)', included: true },
-      { label: 'Partner recommendations', included: true },
-      { label: 'Timeline & deadline tracking', included: true },
-      { label: 'Booking coordination', included: false },
-      { label: 'Travel-day support', included: false },
-      { label: 'Post-arrival check-in', included: false },
-    ],
+    highlights: ['Route & eligibility check', 'Document checklist & review', 'MOCCAE permit guidance', 'WhatsApp during business hours', 'Partner recommendations'],
   },
   {
     name: 'PawPartner',
     subtitle: 'Premium',
-    price: 'AED 3,000 – 5,000',
-    description: 'Our most popular option. We handle the coordination, bookings, and communication so you can focus on your move.',
+    description: 'We coordinate bookings, travel-day updates and the handover so you are not juggling airline, clinic and cargo desk yourself.',
     icon: Star,
-    color: 'bg-[#E9ECFB]',
     iconBg: 'bg-[#4F5BD5]',
     popular: true,
-    features: [
-      { label: 'Everything in PawPilot', included: true },
-      { label: 'Booking coordination (airline, vet, transport)', included: true },
-      { label: 'Travel-day support & updates', included: true },
-      { label: 'Post-arrival check-in', included: true },
-      { label: 'Priority WhatsApp support', included: true },
-      { label: 'Document submission handling', included: true },
-      { label: 'Customs clearance guidance', included: true },
-      { label: 'Emergency contingency plan', included: false },
-      { label: 'Boarding & nanny services', included: false },
-    ],
+    highlights: ['Everything in PawPilot', 'Booking coordination', 'Travel-day support & updates', 'Post-arrival check-in', 'Document submission handling'],
   },
   {
     name: 'PawVIP',
     subtitle: 'Coordination',
-    price: 'AED 5,000 – 8,000',
-    description: 'White-glove service for complex relocations, nervous first-timers, or anyone who wants every detail handled.',
+    description: 'A named coordinator holds the complex file — multi-pet, tight months, or owners who want every handoff named.',
     icon: Heart,
-    color: 'bg-[#EEF0FC]',
     iconBg: 'bg-[#C89F5A]',
-    features: [
-      { label: 'Everything in PawPartner', included: true },
-      { label: 'Emergency contingency plan', included: true },
-      { label: 'Dedicated relocation manager', included: true },
-      { label: 'WhatsApp updates during the move', included: true },
-      { label: 'Boarding & nanny arrangements', included: true },
-      { label: 'Insurance coordination', included: true },
-      { label: 'Home-to-home logistics', included: true },
-      { label: 'Quarantine contingency prep', included: true },
-      { label: 'Reunion day coordination', included: true },
-    ],
+    highlights: ['Everything in PawPartner', 'Dedicated relocation manager', 'Emergency contingency planning', 'Boarding & nanny arrangements', 'Home-to-home logistics'],
   },
 ]
 
 const addOns = [
-  { icon: Shield, name: 'Travel Insurance', desc: 'Coverage for unexpected veterinary costs, flight cancellations, or delays during transit. Recommended for all long-haul relocations.' },
-  { icon: Home, name: 'Boarding & Quarantine Contingency', desc: 'If documents are delayed or flights are cancelled, we arrange temporary boarding or quarantine facilities with vetted partners.' },
-  { icon: PawPrint, name: 'Pet Nanny / Escort Service', desc: 'A trained pet nanny can accompany your pet on the journey, providing in-cabin care and reducing stress for anxious animals.' },
-  { icon: Stethoscope, name: 'Pre-Travel Health Package', desc: 'Comprehensive vet exam, health certificate, parasite treatment, and sedation alternatives arranged with our partner clinics.' },
-  { icon: MapPin, name: 'Door-to-Door Transport', desc: 'Collection from your home and delivery to your new address, including all ground transport in both origin and destination cities.' },
-  { icon: FileCheck, name: 'Expedited Document Processing', desc: 'Rush processing for urgent timelines. We prioritize your application and coordinate with government offices and airlines for faster turnaround.' },
+  { icon: Shield, name: 'Travel insurance coordination', desc: 'We help you ask the right coverage questions. We do not sell a numbered policy from this page.' },
+  { icon: Home, name: 'Boarding contingency', desc: 'If a document or flight slips, we arrange temporary boarding with a vetted partner — quoted when needed.' },
+  { icon: PawPrint, name: 'Pet nanny / escort', desc: 'A trained escort can accompany some journeys. Availability is confirmed per route, not assumed.' },
+  { icon: Stethoscope, name: 'Pre-travel health package', desc: 'Clinic exam, health certificate and parasite timing arranged with partner vets.' },
+  { icon: MapPin, name: 'Door-to-door ground', desc: 'Collection and delivery, including the pet taxi / ground page when the job never leaves the road.' },
+  { icon: FileCheck, name: 'Expedited document handling', desc: 'We prioritise the file and the portal steps. Government clocks still belong to the portal, not to us.' },
 ]
 
-const processSteps = [
-  { step: '1', icon: Phone, title: 'Initial Consultation', body: 'We learn about your pet, route, timeline, and budget. You get a realistic cost estimate and timeline overview.' },
-  { step: '2', icon: FileCheck, title: 'Document Check', body: 'We review your existing documents (vaccinations, microchip, health records) and identify any gaps or errors.' },
-  { step: '3', icon: Shield, title: 'Eligibility & Booking', body: 'We confirm breed eligibility, check airline policies, and begin booking flights and vet appointments.' },
-  { step: '4', icon: Calendar, title: 'Pre-Travel Prep', body: 'Final health checks, crate fitting, travel-day instructions, and contingency plans are put in place.' },
-  { step: '5', icon: Plane, title: 'Travel Day', body: 'We coordinate handoffs, check your pet in, and track the flight. You receive updates at every checkpoint.' },
-  { step: '6', icon: MapPin, title: 'Arrival & Customs', body: 'We guide you or our partner through customs clearance, MOCCAE inspection, and transport to your new home.' },
-  { step: '7', icon: Heart, title: 'Post-Arrival Check-In', body: 'We follow up after arrival to ensure your pet is settling in well and answer any questions about local registration or vets.' },
+const SERVICES_FAQS = [
+  {
+    q: 'What is the difference between PawPilot, PawPartner and PawVIP?',
+    a: 'PawPilot is document guidance. PawPartner adds booking and travel-day coordination. PawVIP adds a dedicated manager and contingency planning. The MOCCAE and airline steps do not change — only who holds each task.',
+  },
+  {
+    q: 'Which tier includes booking coordination?',
+    a: 'PawPartner and PawVIP. PawPilot owners book the airline and clinic themselves after we have checked the file.',
+  },
+  {
+    q: 'Do the tiers change the regulatory steps?',
+    a: 'No. A 30-day import permit is still 30 days. A titer sample, when required, is still taken within 90 days before travel. Tiers change labour, not the law.',
+  },
+  {
+    q: 'Can I start on Essential and upgrade later?',
+    a: 'Yes. If cargo booking or travel-day starts to overwhelm the file, we move you to a coordination tier and quote the difference on WhatsApp before we take the extra work.',
+  },
+  {
+    q: 'Are add-ons required for every move?',
+    a: 'No. Crate, boarding or an escort are added when the route or the animal needs them. We will not attach an add-on to inflate a quote.',
+  },
+  {
+    q: 'How do I pick a service page after choosing a tier?',
+    a: 'Tier is how much help you want. The service URL is the job: door-to-door, inbound only, outbound only, or pet taxi. Open the matching /service/ page from the list on this hub, or start from the homepage overview.',
+  },
+  {
+    q: 'Do you publish package prices on this page?',
+    a: 'No. Coordination fees are quoted on WhatsApp after we know the pet and the corridor. We do not invent AED package tables here. Government portal fees are confirmed on the official site.',
+  },
+  {
+    q: 'What happens after I message about a tier?',
+    a: 'We confirm the route, recommend a tier, and send a quote range. You can also write from Contact. Nothing is booked until you accept the scope in the thread.',
+  },
 ]
 
 export default function ServicesPage() {
-  const [compareTier, setCompareTier] = useState<string | null>(null)
-
-  const serviceSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: 'Dubai Pet Relocation Services',
-    provider: {
-      '@type': 'Organization',
-      name: 'Dubai Pet Relocation',
-      url: BASE_URL,
-    },
-    areaServed: {
-      '@type': 'City',
-      name: 'Dubai',
-    },
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: 'Pet Relocation Service Tiers',
-      itemListElement: tiers.map((tier) => {
-        const minPrice = tier.price.replace(/[^0-9]/g, '').slice(0, 5)
-        return {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: `${tier.name} — ${tier.subtitle}`,
-            description: tier.description,
-          },
-          priceCurrency: 'AED',
-          price: minPrice,
-        }
-      }),
-    },
-  }
-
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -163,67 +137,131 @@ export default function ServicesPage() {
     ],
   }
 
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Dubai Pet Relocation Services',
+    provider: { '@type': 'Organization', name: 'Dubai Pet Relocation', url: BASE_URL },
+    areaServed: { '@type': 'City', name: 'Dubai' },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Pet Relocation Service Tiers',
+      itemListElement: tiers.map((tier) => ({
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: `${tier.name} — ${tier.subtitle}`,
+          description: tier.description,
+        },
+      })),
+    },
+  }
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: SERVICES_FAQS.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  }
+
   return (
     <div>
       <SEOHead
         meta={{
-          title: 'Pet Relocation Services Dubai | Essential to Coordination',
-          description: 'Three pet relocation service tiers: PawPilot (Essential), PawPartner (Premium), and PawVIP (Coordination). Transparent pricing and clear inclusions.',
-          keywords: 'pet relocation services Dubai, pet coordination Dubai, pet relocation cost tiers, dog transport service UAE, cat transport service UAE, pet relocation packages',
+          title: 'Dubai Pet Relocation Services — From Essential to Coordination',
+          description:
+            'Compare Dubai pet relocation service tiers — from document guidance to full coordination. Choose a package, then open the service page for your move.',
+          keywords: 'pet relocation services Dubai, pet coordination Dubai, PawPilot, PawPartner, PawVIP',
           canonical: `${BASE_URL}/services/`,
           ogType: 'website',
         }}
-        schemas={[serviceSchema, breadcrumbSchema]}
+        schemas={[serviceSchema, breadcrumbSchema, faqSchema]}
       />
 
       <Breadcrumb items={[{ label: 'Services' }]} />
 
-      {/* ═══════════ HERO ═══════════ */}
       <Hero
         image="/images/services-hero.jpg"
         imageAlt="A happy dog and cat beside a travel crate in a welcoming Dubai pet relocation office"
         eyebrow="Our Services"
         title="Dubai Pet Relocation Services — From Essential to Coordination"
-        subtitle="Choose the level of support that fits your experience, timeline, and pet's needs — with transparency and WhatsApp updates at every tier."
-        updated="Updated June 2026"
+        subtitle="Choose how much of the file we hold, then open the service page for inbound, outbound, door-to-door or pet taxi. Quotes on WhatsApp — no invented package prices."
+        updated="Updated September 2026"
+        primaryLabel="Get a Relocation Quote"
+        secondary={{ label: 'Back to homepage overview', to: '/' }}
       />
 
-      {/* ═══════════ TIER CARDS ═══════════ */}
-      <section className="bg-[#F5F6FD] section-padding">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-6">
+      <section className="section-padding bg-white">
+        <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
+          <p className="text-body mb-4">
+            This hub compares tiers. It does not own “pet relocation Dubai” — that money head is{' '}
+            <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              our Dubai pet relocation service
+            </Link>
+            . Inbound arrivals use{' '}
+            <Link to="/service/pet-relocation-to-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet relocation to Dubai, step by step
+            </Link>
+            . Departures use{' '}
+            <Link to="/service/pet-relocation-from-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet relocation from Dubai
+            </Link>
+            . Ground transfers use{' '}
+            <Link to="/service/pet-transport-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              local pet transport and pet taxi service
+            </Link>
+            .
+          </p>
+          <p className="text-body">
+            Start from the{' '}
+            <Link to="/" className="font-semibold text-[#4F5BD5] hover:underline">
+              homepage overview
+            </Link>{' '}
+            if you are still choosing a direction, or from the{' '}
+            <Link to="/routes/" className="font-semibold text-[#4F5BD5] hover:underline">
+              routes hub
+            </Link>{' '}
+            if you already know the country.
+          </p>
+        </div>
+      </section>
+
+      <section className="section-padding bg-[#F5F6FD]">
+        <div className="mx-auto max-w-[1200px] px-5 sm:px-6 lg:px-8">
+          <ContentImage
+            src="/assets/w1-w3/pet-relocation-service-tiers-comparison-dubai.png"
+            alt="Comparison of PawPilot, PawPartner and PawVIP pet relocation service tiers in Dubai"
+            caption="Three tiers, one process. No prices in the diagram — they are quoted, not printed."
+          />
+          <div className="grid gap-6 md:grid-cols-3">
             {tiers.map((tier) => (
               <Card key={tier.name} className={`relative flex flex-col ${tier.popular ? 'ring-2 ring-[#4F5BD5]' : ''}`}>
                 {tier.popular && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-[#4F5BD5] text-white text-xs font-bold rounded-full uppercase tracking-wider">
-                    Most Popular
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[#4F5BD5] px-4 py-1 text-xs font-bold tracking-wider text-white uppercase">
+                    Most requested
                   </span>
                 )}
-                <div className={`w-12 h-12 rounded-[14px] ${tier.iconBg} flex items-center justify-center mb-5`}>
-                  <tier.icon className="w-5 h-5 text-white" />
+                <div className={`mb-5 flex h-12 w-12 items-center justify-center rounded-[14px] ${tier.iconBg}`}>
+                  <tier.icon className="h-5 w-5 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[#2A2A2A] mb-1">{tier.name}</h3>
-                <p className="text-sm font-semibold text-[#4F5BD5] mb-2">{tier.subtitle}</p>
-                <p className="text-lg font-bold text-[#2A2A2A] mb-4">{tier.price}</p>
-                <p className="text-sm text-[#5A5A5A] leading-relaxed mb-6 flex-1">{tier.description}</p>
-                <ul className="space-y-2.5 mb-6">
-                  {tier.features.slice(0, 5).map((feature) => (
-                    <li key={feature.label} className="flex items-start gap-2.5 text-sm text-[#5A5A5A]">
-                      <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                      <span>{feature.label}</span>
+                <h3 className="mb-1 text-xl font-bold text-[#2A2A2A]">{tier.name}</h3>
+                <p className="mb-2 text-sm font-semibold text-[#4F5BD5]">{tier.subtitle}</p>
+                <p className="mb-2 text-sm font-semibold text-[#2A2A2A]">Quote on WhatsApp</p>
+                <p className="mb-6 flex-1 text-sm leading-relaxed text-[#5A5A5A]">{tier.description}</p>
+                <ul className="mb-6 space-y-2.5">
+                  {tier.highlights.map((label) => (
+                    <li key={label} className="flex items-start gap-2.5 text-sm text-[#5A5A5A]">
+                      <CheckCircle className="mt-0.5 h-4 w-4 shrink-0 text-[#4F5BD5]" />
+                      <span>{label}</span>
                     </li>
                   ))}
                 </ul>
-                <button
-                  onClick={() => setCompareTier(compareTier === tier.name ? null : tier.name)}
-                  className="text-sm font-semibold text-[#4F5BD5] hover:underline inline-flex items-center gap-1 mb-4"
-                >
-                  {compareTier === tier.name ? 'Hide details' : 'See all features'}
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </button>
                 <WhatsAppCta
-                  text={`Get ${tier.name} Quote`}
-                  message={`Hi Dubai Pet Relocation! I am interested in the ${tier.name} tier (${tier.subtitle}) for my pet relocation. Can you give me a personalized quote?`}
+                  text={`Ask about ${tier.name}`}
+                  message={`Hi Dubai Pet Relocation! I am interested in the ${tier.name} tier (${tier.subtitle}) for my pet relocation. Can you quote the scope?`}
                   fullWidth
                   className="!py-3"
                 />
@@ -233,24 +271,21 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ═══════════ COMPARISON TABLE ═══════════ */}
-      <section className="bg-white section-padding">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-3">
-              Full Comparison
-            </h2>
-            <p className="text-[#5A5A5A] text-base leading-relaxed max-w-2xl mx-auto">
-              See exactly what is included in each tier so you can choose with confidence.
+      <section className="section-padding bg-white">
+        <div className="mx-auto max-w-[1200px] px-5 sm:px-6 lg:px-8">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px] lg:text-[36px]">Full comparison</h2>
+            <p className="mx-auto max-w-2xl text-base leading-relaxed text-[#5A5A5A]">
+              Same sequence on every tier. The ticks show who holds the task.
             </p>
           </div>
-          <div className="overflow-x-auto -mx-5 px-5 sm:mx-0 sm:px-0">
+          <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
             <table className="w-full min-w-[600px] text-sm">
               <thead>
                 <tr className="border-b border-[#E2E5F6]">
-                  <th className="text-left py-4 px-4 font-semibold text-[#2A2A2A]">Feature</th>
+                  <th className="px-4 py-4 text-left font-semibold text-[#2A2A2A]">Feature</th>
                   {tiers.map((tier) => (
-                    <th key={tier.name} className="text-center py-4 px-4 font-semibold text-[#2A2A2A]">
+                    <th key={tier.name} className="px-4 py-4 text-center font-semibold text-[#2A2A2A]">
                       {tier.name}
                       <span className="block text-xs font-normal text-[#8A8A8A]">{tier.subtitle}</span>
                     </th>
@@ -258,21 +293,14 @@ export default function ServicesPage() {
                 </tr>
               </thead>
               <tbody>
-                {tiers[0].features.map((feature, idx) => (
-                  <tr key={feature.label} className={idx % 2 === 0 ? 'bg-[#F0F2FB]' : ''}>
-                    <td className="py-3 px-4 text-[#5A5A5A]">{feature.label}</td>
-                    {tiers.map((tier) => {
-                      const f = tier.features[idx]
-                      return (
-                        <td key={tier.name} className="text-center py-3 px-4">
-                          {f?.included ? (
-                            <CheckCircle className="w-5 h-5 text-[#4F5BD5] mx-auto" />
-                          ) : (
-                            <X className="w-5 h-5 text-[#C8C8C8] mx-auto" />
-                          )}
-                        </td>
-                      )
-                    })}
+                {FEATURE_ROWS.map((row, idx) => (
+                  <tr key={row.label} className={idx % 2 === 0 ? 'bg-[#F0F2FB]' : ''}>
+                    <td className="px-4 py-3 text-[#5A5A5A]">{row.label}</td>
+                    {row.tiers.map((on, i) => (
+                      <td key={tiers[i].name} className="px-4 py-3 text-center">
+                        {on ? <CheckCircle className="mx-auto h-5 w-5 text-[#4F5BD5]" /> : <X className="mx-auto h-5 w-5 text-[#C8C8C8]" />}
+                      </td>
+                    ))}
                   </tr>
                 ))}
               </tbody>
@@ -281,88 +309,69 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ═══════════ ADD-ONS ═══════════ */}
-      <section className="bg-[#F5F6FD] section-padding">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Extras</span>
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-3 mb-3">
-              Add-On Services
-            </h2>
-            <p className="text-[#5A5A5A] text-base leading-relaxed max-w-2xl mx-auto">
-              Customize your relocation with additional services tailored to your pet's needs and your peace of mind.
+      <section className="section-padding bg-[#F5F6FD]">
+        <div className="mx-auto max-w-[1200px] px-5 sm:px-6 lg:px-8">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Add-on services</h2>
+            <p className="mx-auto max-w-2xl text-base leading-relaxed text-[#5A5A5A]">
+              Optional pieces. Quoted when the route needs them — not bundled as fake discounts.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {addOns.map((addon) => (
               <Card key={addon.name}>
-                <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
-                  <addon.icon className="w-5 h-5 text-[#4F5BD5]" />
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-[14px] bg-[#E9ECFB]">
+                  <addon.icon className="h-5 w-5 text-[#4F5BD5]" />
                 </div>
-                <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">{addon.name}</h3>
-                <p className="text-sm text-[#5A5A5A] leading-relaxed">{addon.desc}</p>
+                <h3 className="mb-2 text-lg font-bold text-[#2A2A2A]">{addon.name}</h3>
+                <p className="text-sm leading-relaxed text-[#5A5A5A]">{addon.desc}</p>
               </Card>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ═══════════ PROCESS OVERVIEW ═══════════ */}
-      <section className="bg-white section-padding">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">How It Works</span>
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-3 mb-4">
-              The Same 7-Step Process, Every Tier
-            </h2>
-            <p className="text-[#5A5A5A] text-base leading-relaxed max-w-2xl mx-auto">
-              No matter which tier you choose, we follow the same proven process. The difference is how much we handle for you versus how much you handle yourself.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {processSteps.map((s) => (
-              <div key={s.step} className="bg-[#F5F6FD] rounded-[20px] p-6 relative">
-                <span className="absolute top-4 right-4 text-[48px] font-bold text-[#4F5BD5]/[0.04] leading-none">{s.step}</span>
-                <div className="w-10 h-10 rounded-[12px] bg-[#E9ECFB] flex items-center justify-center mb-4">
-                  <s.icon className="w-5 h-5 text-[#4F5BD5]" />
-                </div>
-                <h3 className="text-sm font-bold text-[#2A2A2A] mb-2">{s.title}</h3>
-                <p className="text-xs text-[#5A5A5A] leading-relaxed">{s.body}</p>
-              </div>
+      <section className="section-padding bg-white">
+        <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
+          <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Open the service page for your move</h2>
+          <p className="mb-6 max-w-3xl text-[#5A5A5A]">
+            After you pick a tier, open the URL that owns the search. Children use /service/ singular. The homepage and this hub are the parents.
+          </p>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {SERVICE_LINKS.map((l) => (
+              <Link
+                key={l.to}
+                to={l.to}
+                className="flex items-center justify-between rounded-2xl bg-[#F5F6FD] px-5 py-4 text-sm font-semibold text-[#2A2A2A] hover:bg-[#E9ECFB]"
+              >
+                {l.label} <ArrowRight className="h-4 w-4 text-[#4F5BD5]" />
+              </Link>
             ))}
-          </div>
-          <div className="mt-10 text-center">
-            <Link to="/how-it-works/" className="inline-flex items-center gap-2 px-6 py-3.5 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors">
-              See the Full Process <ArrowRight className="w-4 h-4" />
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* ═══════════ CTA ═══════════ */}
-      <section className="bg-[#4F5BD5] section-padding">
-        <div className="max-w-[800px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
-            Not Sure Which Tier Is Right for You?
-          </h2>
-          <p className="text-white/70 text-base leading-relaxed mb-8">
-            Tell us about your pet, your route, and your timeline on WhatsApp. We will recommend the best tier and give you a personalized quote — no pressure, no obligation.
+      <section className="section-padding bg-[#F5F6FD]">
+        <div className="mx-auto max-w-[820px] px-5 sm:px-6 lg:px-8">
+          <h2 className="mb-6 text-center text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Frequently asked questions</h2>
+          <div className="space-y-3">
+            {SERVICES_FAQS.map((f) => (
+              <FAQItem key={f.q} question={f.q} answer={f.a} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-[#4F5BD5]">
+        <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
+          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">Not sure which tier fits?</h2>
+          <p className="mb-8 text-base leading-relaxed text-white/80">
+            Tell us the pet, the route and the month. We recommend a tier and quote the scope — no package price list, no 15-minute SLA.
           </p>
           <WhatsAppCta
             text="Get a Personalized Quote"
             message="Hi Dubai Pet Relocation! I am not sure which service tier is right for me. Can you help me choose based on my pet and route?"
           />
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
-            <span className="flex items-center gap-1.5 text-sm text-white/60">
-              <Clock className="w-4 h-4" /> Reply within 15 min
-            </span>
-            <span className="flex items-center gap-1.5 text-sm text-white/60">
-              <Shield className="w-4 h-4" /> No hidden fees
-            </span>
-            <span className="flex items-center gap-1.5 text-sm text-white/60">
-              <Heart className="w-4 h-4" /> Animal-first approach
-            </span>
-          </div>
         </div>
       </section>
     </div>

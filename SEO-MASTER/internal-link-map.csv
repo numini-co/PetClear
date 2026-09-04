@@ -399,3 +399,19 @@ https://dubai-pet-relocation.ae/routes/dubai-to-canada/,https://dubai-pet-reloca
 https://dubai-pet-relocation.ae/routes/dubai-to-australia/,https://dubai-pet-relocation.ae/service/pet-export-dubai/,Dubai pet export support,new route → commercial export service (money inlink),body context,P2
 https://dubai-pet-relocation.ae/routes/,https://dubai-pet-relocation.ae/service/international-pet-relocation/,worldwide pet relocation service,route hub → international relocation service (commercial escalation),body context,P2
 https://dubai-pet-relocation.ae/service/pet-import-dubai/,https://dubai-pet-relocation.ae/service/moccae-pet-permit/,MOCCAE import and export permit service,"import service → MOCCAE permit service (commercial cross-sell, ruling 5/10)",body context,P2
+https://dubai-pet-relocation.ae/services/,https://dubai-pet-relocation.ae/,homepage overview,W3 accelerate: services hub → homepage inbound (≥3 homepage inlinks),body context,P1
+https://dubai-pet-relocation.ae/routes/,https://dubai-pet-relocation.ae/,homepage overview,W3 accelerate: routes hub → homepage inbound,body context,P1
+https://dubai-pet-relocation.ae/guides/,https://dubai-pet-relocation.ae/,homepage overview,W3 accelerate: guides hub → homepage inbound,body context,P1
+https://dubai-pet-relocation.ae/dubai/,https://dubai-pet-relocation.ae/,homepage overview,W3 accelerate: dubai hub → homepage inbound,body context,P1
+https://dubai-pet-relocation.ae/cities/,https://dubai-pet-relocation.ae/,homepage overview,W3 accelerate: cities hub → homepage inbound,body context,P1
+https://dubai-pet-relocation.ae/routes/,https://dubai-pet-relocation.ae/services/,compare our service tiers,W3 accelerate: routes → services hub inbound,body context,P1
+https://dubai-pet-relocation.ae/guides/,https://dubai-pet-relocation.ae/services/,compare our service tiers,W3 accelerate: guides → services hub inbound,body context,P1
+https://dubai-pet-relocation.ae/dubai/,https://dubai-pet-relocation.ae/services/,compare our service tiers,W3 accelerate: dubai → services hub inbound,body context,P1
+https://dubai-pet-relocation.ae/cities/,https://dubai-pet-relocation.ae/services/,compare our service tiers,W3 accelerate: cities → services hub inbound,body context,P1
+https://dubai-pet-relocation.ae/routes/,https://dubai-pet-relocation.ae/service/pet-relocation-to-dubai/,bringing your pet to Dubai,W3 accelerate: routes hub → inbound directional (P1 inbound support),body context,P1
+https://dubai-pet-relocation.ae/routes/,https://dubai-pet-relocation.ae/service/pet-relocation-from-dubai/,leaving Dubai with your pet,W3 accelerate: routes hub → outbound directional (P1 inbound support),body context,P1
+https://dubai-pet-relocation.ae/routes/,https://dubai-pet-relocation.ae/service/pet-transport-dubai/,local pet transport and pet taxi service,W3 accelerate: routes → pet taxi/transport P1 inbound,body context,P1
+https://dubai-pet-relocation.ae/guides/,https://dubai-pet-relocation.ae/service/pet-transport-dubai/,local pet transport and pet taxi service,W3 accelerate: guides → pet taxi/transport P1 inbound,body context,P1
+https://dubai-pet-relocation.ae/guides/,https://dubai-pet-relocation.ae/service/pet-relocation-dubai/,our Dubai pet relocation service,W3 accelerate: guides → money head P1 inbound,body context,P1
+https://dubai-pet-relocation.ae/cities/,https://dubai-pet-relocation.ae/service/pet-relocation-dubai/,door-to-door pet relocation in Dubai,W3 accelerate: cities → money head P1 inbound,body context,P1
+https://dubai-pet-relocation.ae/cities/,https://dubai-pet-relocation.ae/service/pet-transport-dubai/,pet transport across Dubai,W3 accelerate: cities → transport/pet taxi P1 inbound,body context,P1

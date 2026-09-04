@@ -5,6 +5,7 @@ import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import LastVerified from '../components/LastVerified.tsx'
+import HubCrossLinks from '../components/HubCrossLinks.tsx'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 
 const INBOUND = [
@@ -120,6 +121,19 @@ export default function RoutesHub() {
           </div>
         </div>
       </section>
+
+      <HubCrossLinks
+        heading="Start here if you are still choosing the job"
+        intro="Country guides sit on this hub. Category entry, tiers and the directional service pages live one click away — use the anchors below so each URL keeps its own intent."
+        links={[
+          { to: '/', label: 'Homepage overview', note: 'Category entry for pet relocation coordination in Dubai' },
+          { to: '/services/', label: 'Compare our service tiers', note: 'Essential through full coordination — then open a service URL' },
+          { to: '/service/pet-relocation-to-dubai/', label: 'Bringing your pet to Dubai', note: 'Inbound-only arrival, permit and settling-in spine' },
+          { to: '/service/pet-relocation-from-dubai/', label: 'Leaving Dubai with your pet', note: 'Outbound-only destination-first timeline' },
+          { to: '/service/pet-transport-dubai/', label: 'Local pet transport and pet taxi service', note: 'Ground and airport runs — not international cargo' },
+          { to: '/guides/', label: 'Guides hub', note: 'Permits, titer, crates and cost drivers' },
+        ]}
+      />
 
       <OfficialSources />
 

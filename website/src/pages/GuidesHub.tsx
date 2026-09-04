@@ -4,6 +4,7 @@ import SEOHead from '../components/SEOHead.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
+import HubCrossLinks from '../components/HubCrossLinks.tsx'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 
 const GUIDES = [
@@ -74,6 +75,19 @@ export default function GuidesHub() {
           </div>
         </div>
       </section>
+
+      <HubCrossLinks
+        heading="From a guide to the service that matches"
+        intro="Guides explain the rule. Service pages take the booking. The homepage remains the category entry."
+        links={[
+          { to: '/', label: 'Homepage overview', note: 'Category entry — not the money-head service page' },
+          { to: '/services/', label: 'Compare our service tiers', note: 'How much of the file we hold' },
+          { to: '/service/pet-relocation-dubai/', label: 'Our Dubai pet relocation service', note: 'Door-to-door money page after you have read the rule' },
+          { to: '/service/pet-transport-dubai/', label: 'Local pet transport and pet taxi service', note: 'Ground transfers and airport pet taxi' },
+          { to: '/routes/', label: 'Routes hub', note: 'Country corridors inbound and outbound' },
+          { to: '/dubai/', label: 'Dubai communities we cover', note: 'Last-mile pickup and delivery by community' },
+        ]}
+      />
 
       <OfficialSources />
 

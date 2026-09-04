@@ -2,208 +2,237 @@ import type { ServicePageData } from '../../types/servicePage.ts'
 
 const petTransportDubai: ServicePageData = {
   slug: 'pet-transport-dubai',
-  seoTitle: 'Pet Transport Dubai | Safe Animal Transport',
+  seoTitle: 'Pet Taxi & Pet Transport Dubai | DXB, DWC & UAE',
   metaDescription:
-    'Safe pet transport across Dubai and the UAE. Climate-controlled vehicles, careful handlers, real-time WhatsApp updates. Get a free quote.',
+    'Pet taxi and pet transport across Dubai: climate-controlled transfers, DXB/DWC airport runs, and Dubai–Abu Dhabi inter-emirate trips. WhatsApp a relocation coordinator.',
   keywords:
-    'pet transport dubai, pet transportation dubai, animal transport dubai, pet courier dubai, pet cargo dubai',
-  h1: 'Professional Pet Transport Services in Dubai',
-  primaryKeyword: 'pet transport dubai',
+    'pet taxi dubai, pet transport dubai, pet transport UAE, pet transport Dubai to Abu Dhabi, airport pet pickup dubai, pet courier dubai',
+  h1: 'Pet Taxi & Pet Transport Services in Dubai and the UAE',
+  primaryKeyword: 'pet taxi dubai',
   heroValueProp:
-    'Need to move your dog, cat or other pet safely across Dubai or the wider UAE? We coordinate climate-controlled vehicles, careful handlers and real-time WhatsApp updates from pickup to delivery. Transparent pricing, vetted partners, no stress for you or your pet.',
+    'Pet taxi Dubai is the primary local job on this page: climate-controlled ground transfers, DXB and DWC airport runs, and Dubai–Abu Dhabi trips — not international cargo.',
   heroImage: '/images/service-pet-transport-dubai.jpg',
   heroImageAlt:
-    'A calm dog and cat being loaded into a clean, climate-controlled pet transport van in Dubai',
+    'Interior of an unbranded climate-controlled van with a secured travel crate for pet taxi service in Dubai',
   whatsappMessage:
-    'Hi Dubai Pet Relocation! I need to arrange pet transport in Dubai. Can you share the process and a cost estimate?',
-  trustBadges: ['Climate-controlled vehicles', 'Vetted transport partners', 'Real-time WhatsApp updates', 'Door-to-door service'],
-  costRange: { low: '300', high: '20000' },
-  hasHowTo: false,
+    'Hi Dubai Pet Relocation! I need a pet taxi or pet transport in Dubai. Pickup, drop-off and preferred time: …',
+  trustBadges: [
+    'Pet taxi & ground only',
+    'Climate-controlled partners',
+    'DXB / DWC airport runs',
+    'Same-day when slots exist',
+  ],
+  hasHowTo: true,
+  howToName: 'How a Dubai pet taxi booking works',
   sections: [
     {
-      h2: 'Pet Transport Services Across Dubai and the UAE',
+      h2: 'Pet taxi Dubai — the local commercial opportunity',
       intro:
-        'Whether you are moving across town, between emirates, or sending your pet to the airport for an international flight, safe ground transport is the part most owners worry about. We coordinate the whole journey so your pet travels in comfort and you always know where they are.',
+        'Ruling 7: this URL owns pet transport and the pet-taxi crossover. It does not own international “pet relocation Dubai”. Door-to-door cargo lives on [pet relocation services in Dubai](/service/pet-relocation-dubai/). This page is ground: a booked vehicle, a crate or carrier, and a handler who treats the animal as a passenger.',
       body: [
         {
           type: 'p',
-          text: 'Pet transport in Dubai covers far more than a quick car ride. Pets need climate-controlled vehicles in the UAE heat, secure crating, calm and experienced handling, and a route planned around traffic and timing. We bring all of that together into one coordinated service so nothing is left to chance.',
+          text: 'Pet taxi Dubai is a same-city or inter-emirate transfer: home to vet, home to boarding, community to community, or a timed run to DXB or DWC. People search “pet taxi” when they need a climate-controlled vehicle and a calm handover — not a MOCCAE import file. We keep that intent here so the money head page is not diluted.',
         },
         {
           type: 'list',
           items: [
-            'Local transport within Dubai — home to vet, groomer, boarding, new residence or relocation partner',
-            'Inter-emirate transport between Dubai, Abu Dhabi, Sharjah and the other emirates',
-            'Airport transfers to and from DXB and DWC for international relocations',
-            'Door-to-door collection and delivery so you never have to move the crate yourself',
-            'Coordination of crating, timing and handling around your pet’s temperament and needs',
+            'Pet taxi within Dubai — marina towers, villa communities, clinics and boarding',
+            'Airport pet taxi to and from DXB and DWC for cargo drop-off or collection',
+            'Dubai–Abu Dhabi and other inter-emirate ground transfers',
+            'Multi-pet households travelling in one booking when crate space allows',
+            'Same-day framing when a partner slot exists — not a 24/7 SLA',
           ],
         },
         {
           type: 'p',
-          text: 'We are a coordination service. We do not operate the vehicles ourselves — we connect you with vetted, animal-experienced transport partners and manage the booking, timing and updates so your pet transport in Dubai runs smoothly from start to finish.',
+          text: 'We coordinate vetted, animal-experienced transport partners. We do not claim to own the vans, and we do not publish district AED menus. Pricing is confirmed on quote.',
         },
       ],
     },
     {
-      h2: 'How Our Pet Transport Works',
+      h2: 'How a pet taxi booking works',
       intro:
-        'A simple, transparent process from your first message to safe delivery. You stay in the loop on WhatsApp the whole way.',
+        'Four steps. You stay on WhatsApp during business hours from booking to delivery.',
       body: [
         {
           type: 'steps',
           steps: [
             {
-              title: 'Booking',
-              text: 'Message us on WhatsApp with your pet type, size, pickup and drop-off locations and your preferred date and time. We confirm the route, vehicle, crate needs and a clear price before anything is booked.',
+              title: 'Send the run',
+              text: 'Pet type, size, temperament, pickup, drop-off, and a time window. Airport runs also need the flight or cargo slot if you already have one.',
+            },
+            {
+              title: 'Confirm vehicle and crate',
+              text: 'We match a climate-controlled partner vehicle and a crate or carrier that fits. Cats usually travel in a secure carrier; large dogs need a sized crate and a handler who can load calmly.',
             },
             {
               title: 'Pickup',
-              text: 'A vetted, animal-experienced handler arrives at your door at the agreed time. Your pet is settled into a clean, secure crate suited to their size, with calm handling to keep stress low.',
+              text: 'The handler arrives in the agreed window, settles the pet, and messages you when they leave. Tower lobbies and villa gates are planned, not improvised — see [Dubai communities we cover](/dubai/).',
             },
             {
-              title: 'Climate-controlled vehicle',
-              text: 'Your pet travels in a climate-controlled vehicle kept at a comfortable temperature — essential in the UAE heat. The route is planned around traffic and timing, and we send WhatsApp updates along the way.',
-            },
-            {
-              title: 'Delivery',
-              text: 'Your pet is delivered safely to the destination and handed over with care. We confirm arrival on WhatsApp so you have peace of mind that the journey is complete.',
+              title: 'Drop-off',
+              text: 'Handover at the clinic, home, boarding or cargo desk, then a WhatsApp confirmation. For cargo days this ground run is the last mile of [pet relocation services in Dubai](/service/pet-relocation-dubai/), not a substitute for it.',
             },
           ],
         },
       ],
     },
     {
-      h2: 'Pet Transport for All Animals',
-      body: [
-        {
-          type: 'p',
-          text: 'Different animals need different handling, crating and timing. We match each booking to a partner experienced with your pet so the journey is calm and safe — from a nervous cat to a large-breed dog.',
-        },
-        {
-          type: 'list',
-          items: [
-            'Dogs — from small breeds to large dogs needing oversized crates and extra space; see our dog relocation service for moves to or from Dubai',
-            'Cats — calm, quiet handling and secure carriers to keep stress low; see our cat relocation service for full moves',
-            'Birds — species-appropriate containers and careful temperature control',
-            'Small pets and exotics — rabbits, reptiles and others, with handling tailored to the animal',
-            'Multiple pets — coordinated transport so the whole household travels together',
-          ],
-        },
-        {
-          type: 'p',
-          text: 'If your pet is also leaving or entering the country, ground transport is just one piece. We can coordinate the full journey alongside our pet relocation, pet import and pet export services.',
-        },
-      ],
-    },
-    {
-      h2: 'Inter-Emirate Transport',
+      h2: 'Airport runs — DXB and DWC',
       intro:
-        'Moving a pet between emirates is one of our most requested services. We handle the planning, timing and comfort so the longer drive is no harder on your pet than a trip across Dubai.',
+        'Airport pet taxi is a timed ground product. It is not an international ticket.',
       body: [
         {
           type: 'p',
-          text: 'Inter-emirate transport covers the longer routes across the UAE, where climate control, route planning and rest considerations matter even more. Common journeys include Dubai to Abu Dhabi and Dubai to Sharjah, plus return trips and connections to the other emirates.',
+          text: 'DXB and DWC cargo terminals do not run on passenger-terminal logic. Collection and drop-off windows are short, and a late van can miss a live-animal acceptance cut-off. We plan the road time, the crate, and the document pouch location so the handler is not guessing at the desk.',
         },
         {
           type: 'list',
           items: [
-            'Dubai to Abu Dhabi — around 90 minutes each way; climate-controlled the whole route with WhatsApp updates',
-            'Dubai to Sharjah — a shorter cross-border hop, planned around traffic for a smooth, quick journey',
-            'Return and multi-stop trips — vet visits, boarding pickups or new-home deliveries across emirates',
-            'Connections to Ajman, Ras Al Khaimah, Fujairah, Umm Al Quwain and the wider UAE on request',
+            'Outbound airport drop-off timed to the cargo acceptance window',
+            'Inbound collection after veterinary release, then delivery into a Dubai community',
+            'DWC versus DXB routing — south Dubai and villa communities often prefer DWC; marina and downtown more often DXB',
+            'Abu Dhabi airport connections are planned as inter-emirate runs, not as a second cargo product',
           ],
         },
         {
           type: 'p',
-          text: 'Every inter-emirate booking is matched to a partner and vehicle suited to the distance and to your pet’s size and temperament, so longer drives stay calm and comfortable.',
+          text: 'If you do not yet have a cargo booking, start on the relocation page. If you already have a slot and only need the van, this is the page to WhatsApp.',
         },
       ],
     },
     {
-      h2: 'Vehicle and Safety Standards',
-      body: [
-        {
-          type: 'p',
-          text: 'Safety is the whole point of using a dedicated pet transport service instead of a regular car or taxi. We only work with partners whose vehicles and handling meet a clear standard before we put your pet in them.',
-        },
-        {
-          type: 'list',
-          items: [
-            'Climate-controlled vehicles kept at a comfortable temperature throughout the UAE heat',
-            'Secure, properly sized crates and carriers so pets cannot be jostled or injured in transit',
-            'Careful, animal-experienced handlers who load, settle and reassure pets calmly',
-            'Clean, well-ventilated transport spaces dedicated to animals',
-            'Planned routes and timing to minimise journey length and avoid the hottest hours where possible',
-            'Real-time WhatsApp updates from pickup to delivery so you are never left wondering',
-          ],
-        },
-        {
-          type: 'p',
-          text: 'We vet our transport partners so you do not have to. If a vehicle or handler does not meet these standards, we simply do not use them for your booking.',
-        },
-      ],
-    },
-    {
-      h2: 'Pet Transport Cost Dubai',
+      h2: 'Dubai–Abu Dhabi and other inter-emirate trips',
       intro:
-        'Pricing depends on distance, pet size, the number of animals and whether the trip is local, inter-emirate or an airport transfer for an international move.',
+        'The corridor people ask for most is Dubai to Abu Dhabi (and the return). Climate control and a water stop matter more than a faster highway time.',
+      body: [
+        {
+          type: 'image',
+          src: '/assets/w1-w3/dubai-abu-dhabi-pet-transport-route-map.png',
+          alt: 'Inter-emirate pet transport route between Dubai and Abu Dhabi with approximate drive time',
+          caption: 'Illustrative corridor only — drive time depends on traffic, pickup community and rest stops.',
+        },
+        {
+          type: 'image',
+          src: '/assets/w1-w3/pet-transport-rest-stop-water-border-collie.jpg',
+          alt: 'Handler giving water to a border collie during a shaded rest stop on a UAE pet transport journey',
+          caption: 'Longer inter-emirate runs get a shaded water stop. The pet travels as a passenger.',
+        },
+        {
+          type: 'p',
+          text: 'Dubai–Abu Dhabi is typically a one-and-a-half to two-hour road job before traffic, plus building access at both ends. We do not sell a “90-minute guarantee”. We sell a planned window, air-conditioning and a handler who will stop in shade. Sharjah, Ajman and the northern emirates are booked the same way — start at [pet relocation across the UAE](/cities/) for emirate context, then message the two addresses.',
+        },
+        {
+          type: 'p',
+          text: 'Inter-emirate pet taxi is still ground transport. It does not replace a MOCCAE import or export file. If the animal is entering or leaving the country that day, the taxi is one step inside a relocation, not the whole job.',
+        },
+      ],
+    },
+    {
+      h2: 'Same-day pet taxi — without a 24/7 claim',
+      intro:
+        'Same-day is a scheduling outcome when a partner is free, not a staffing slogan.',
       body: [
         {
           type: 'p',
-          text: 'Local transport within Dubai starts from around AED 300, while inter-emirate trips and longer or multi-pet bookings cost more. At the top end, transport that forms part of a full international relocation — with airport coordination and door-to-door handling — can reach up to AED 20,000 depending on the journey. We always confirm an exact price on WhatsApp before you book.',
+          text: 'We will try to place a same-day pet taxi when the time window, the community and the vehicle type line up. We do not advertise 24/7 availability or a 15-minute reply SLA. Messages are answered during published business hours. Night-before airport collections are planned as booked slots, not as an on-call promise.',
         },
+        {
+          type: 'list',
+          items: [
+            'Best same-day fit: weekday clinic or boarding transfers inside Dubai',
+            'Needs advance booking: first-time cargo drop-offs, very large crates, multi-pet loads',
+            'Not offered as an emergency medical ambulance — call a clinic if the animal is in distress',
+          ],
+        },
+      ],
+    },
+    {
+      h2: 'Vehicle and handling standards we require of partners',
+      body: [
+        {
+          type: 'list',
+          items: [
+            'Climate-controlled vehicles — essential in the UAE heat',
+            'Secure, correctly sized crates or carriers',
+            'Handlers experienced with dogs and cats, including nervous animals',
+            'Clean, ventilated space used for animals — not a last-minute ride-hailing car',
+            'Route planned around the hottest hours when the calendar allows',
+            'WhatsApp updates from pickup to delivery during business hours',
+          ],
+        },
+        {
+          type: 'p',
+          text: 'If a vehicle or handler does not meet that bar, we do not use them for your booking. Partnership language here is a vetting process, not a claimed licence, IATA membership or government endorsement.',
+        },
+      ],
+    },
+    {
+      h2: 'Typical market ranges for pet taxi in Dubai (not a DPR quote)',
+      intro:
+        'The bands below are typical market ranges observed for ground pet taxi in the UAE — labelled “from” / range, dated 4 September 2026. They are not Dubai Pet Relocation selling prices. Your actual quote depends on addresses, pet size, crate and time window. WhatsApp a coordinator for the DPR price before anything is booked.',
+      body: [
         {
           type: 'table',
-          headers: ['Transport type', 'Typical range (AED)'],
+          headers: ['Trip type', 'Typical market range (AED)', 'How to read it'],
           rows: [
-            ['Local transport within Dubai', '300 – 800'],
-            ['Inter-emirate (Dubai–Abu Dhabi, Dubai–Sharjah)', '500 – 1,500'],
-            ['Airport transfer (DXB / DWC)', '400 – 1,200'],
-            ['Multiple pets / oversized crate', '700 – 2,500'],
-            ['Transport as part of full relocation', '3,000 – 20,000'],
+            ['Local short transfer', 'from 75–150', 'Typical market range — not a DPR quote'],
+            ['By distance within the city', 'from 75–350', 'Typical market range — not a DPR quote'],
+            ['DXB airport pet taxi', 'from 450–525', 'Typical market range — not a DPR quote'],
+            ['AUH airport pet taxi', 'from 750–840', 'Typical market range — not a DPR quote'],
+            ['Dubai–Abu Dhabi inter-emirate', 'from 400–700', 'Typical market range — not a DPR quote'],
           ],
         },
         {
           type: 'p',
-          text: 'Ranges are a guide only. Message us with your route, pet and date and we will reply with a precise, all-in quote.',
+          text: 'Last verified: 4 September 2026. Confirm on quote. We do not publish contested MOCCAE or government fee numerals on this page. International cargo is a different product — see [pet relocation services in Dubai](/service/pet-relocation-dubai/) and [what pet relocation costs in 2026](/guides/pet-relocation-cost-dubai/).',
         },
       ],
     },
   ],
   faq: [
     {
-      q: 'How much does pet transport in Dubai cost?',
-      a: 'Local transport within Dubai starts from around AED 300, inter-emirate trips typically run AED 500–1,500, and transport that forms part of a full international relocation can reach up to AED 20,000. The exact price depends on distance, pet size and the number of animals — we confirm a precise quote on WhatsApp before you book.',
+      q: 'What is a pet taxi in Dubai versus a full relocation?',
+      a: 'A pet taxi is a climate-controlled ground transfer — clinic, home, boarding or airport. A relocation is the international document and cargo sequence. This page is the taxi and ground product. International work is [pet relocation services in Dubai](/service/pet-relocation-dubai/).',
     },
     {
-      q: 'Are your vehicles climate-controlled?',
-      a: 'Yes. We only work with partners whose vehicles are climate-controlled and kept at a comfortable temperature throughout the journey, which is essential in the UAE heat. Pets travel in secure, properly sized crates in clean, well-ventilated spaces.',
+      q: 'Do you offer same-day pet taxi bookings in Dubai?',
+      a: 'When a partner slot, vehicle type and community access line up, yes. Same-day is a scheduling outcome, not a 24/7 SLA. Message during business hours with both addresses and the window.',
     },
     {
-      q: 'Do you transport pets between emirates?',
-      a: 'Yes. Inter-emirate transport is one of our most requested services, including Dubai to Abu Dhabi and Dubai to Sharjah, plus connections to the other emirates. Every booking is climate-controlled and matched to a vehicle suited to the distance and your pet.',
+      q: 'Can a pet taxi take my dog to DXB or DWC?',
+      a: 'Yes. Airport pet taxi is a core use of this page: timed drop-off or collection at the cargo terminal, then delivery into a Dubai community. We still need the cargo slot or collection time — the van does not replace the airline booking.',
     },
     {
-      q: 'What types of animals can you transport?',
-      a: 'We coordinate transport for dogs, cats, birds and small or exotic pets, as well as multi-pet households. Each booking is matched to a partner experienced with your animal so the journey stays calm and safe.',
+      q: 'Do you run Dubai–Abu Dhabi pet transport?',
+      a: 'Yes. Dubai–Abu Dhabi is the inter-emirate corridor we book most often, with climate control and a shaded water stop on longer runs. We quote a window, not a guaranteed minute count.',
     },
     {
-      q: 'Do you transport pets yourselves?',
-      a: 'We are a coordination service. We do not operate the vehicles ourselves — we connect you with vetted, animal-experienced transport partners and manage the booking, timing and updates so the journey runs smoothly from start to finish.',
+      q: 'Are pet taxi vehicles climate-controlled in summer?',
+      a: 'We only use partners whose vehicles are climate-controlled. That is a handling standard, not an optional upgrade, in the UAE heat.',
     },
     {
-      q: 'Can you take my pet to the airport for an international flight?',
-      a: 'Yes. We arrange airport transfers to and from DXB and DWC and can coordinate the ground transport alongside our pet relocation, import and export services so the whole journey is handled in one place.',
+      q: 'Can I book a pet taxi for a vet or boarding trip only?',
+      a: 'Yes. Many bookings never touch an airport. Send the clinic or boarding address, pet details and the appointment time.',
+    },
+    {
+      q: 'Do you operate pet taxi 24 hours a day?',
+      a: 'No. We do not claim 24/7 coverage. Night-before airport collections are planned as booked slots. Messages are answered during published business hours.',
+    },
+    {
+      q: 'How is pet taxi pricing confirmed?',
+      a: 'Typical market ranges (dated 4 September 2026) are shown as a guide only — local short from AED 75–150, city-by-distance from 75–350, DXB from 450–525, AUH from 750–840, Dubai–Abu Dhabi from 400–700. Those are not DPR selling prices. WhatsApp the two addresses and pet size for the actual quote before you book.',
     },
   ],
   relatedLinks: [
-    { label: 'Pet Relocation Dubai', to: '/service/pet-relocation-dubai/' },
-    { label: 'Pet Import to Dubai', to: '/service/pet-import-dubai/' },
-    { label: 'Pet Export from Dubai', to: '/service/pet-export-dubai/' },
-    { label: 'Dog Relocation Dubai', to: '/service/dog-relocation-dubai/' },
-    { label: 'Cat Relocation Dubai', to: '/service/cat-relocation-dubai/' },
-    { label: 'How It Works', to: '/how-it-works/' },
+    { label: 'Dubai communities we cover', to: '/dubai/' },
+    { label: 'Pet relocation across the UAE', to: '/cities/' },
+    { label: 'Talk to our relocation team', to: '/contact/' },
+    { label: 'Pet relocation services in Dubai', to: '/service/pet-relocation-dubai/' },
+    { label: 'Compare our service tiers', to: '/services/' },
+    { label: 'How it works', to: '/how-it-works/' },
+    { label: 'Guides hub', to: '/guides/' },
   ],
 }
 
