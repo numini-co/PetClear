@@ -122,7 +122,7 @@ const internationalPetRelocation: ServicePageData = {
     {
       h2: 'How we choose a flight mode (not an airline affiliation)',
       intro:
-        'We are independent of every carrier. The air product comes first — cabin, accompanied baggage, manifest cargo, a shared charter or a private jet — then we confirm which pet-experienced airline will actually accept the animal on that date.',
+        'We are independent of every carrier. Cabin, accompanied baggage and manifest cargo are chosen first. Private-jet and shared-charter capability live on their own offer pages — this URL does not own those keywords.',
       body: [
         {
           type: 'cards',
@@ -147,13 +147,13 @@ const internationalPetRelocation: ServicePageData = {
             },
             {
               title: 'Private jet pet travel',
-              text: 'Dedicated aircraft when scheduled products will not work. Custom charter quote only.',
+              text: 'Open the capability page — quote only. This international URL does not own that keyword.',
               to: '/service/private-jet-pet-travel/',
               kind: 'Service',
             },
             {
               title: 'Shared / group pet charter',
-              text: 'Dedicated lift shared with other pets. Market EUR band as context; firm seat is Get a Quote.',
+              text: 'Open the capability page — labelled market listings, firm seat is Get a Quote.',
               to: '/service/shared-pet-charter/',
               kind: 'Service',
             },
@@ -172,7 +172,7 @@ const internationalPetRelocation: ServicePageData = {
       body: [
         {
           type: 'p',
-          text: 'Airline figures on the child guides are labelled airline fees, not DPR freight. Etihad cabin is from USD 399 Economy (source: Etihad; confirm live before you pay). Emirates animal-charge tiers USD 500 / 650 / 800 by weight and size (source: Emirates) apply when the itinerary is eligible; Dubai-ending arrivals must still use cargo. Those tiers are not a door-to-door package and not a commercial cargo freight quote. Freight and coordination are quoted per route and weight after we know the animal.',
+          text: 'Airline fee grids live on the child guides, not here: Etihad cabin fees on the [Etihad pets-in-cabin guide](/guides/etihad-pet-policy/), Emirates animal-charge tiers on the [Emirates pet cargo](/guides/emirates-pet-cargo/) guide. Private-jet and shared-charter capability — including labelled market listings — live on [private jet pet travel](/service/private-jet-pet-travel/) and [shared pet charter](/service/shared-pet-charter/). Freight and coordination on this page stay Get a Quote. “Pet cargo Dubai” is a secondary commercial term on this URL, not a new /service/pet-cargo money page.',
         },
         {
           type: 'table',
@@ -180,7 +180,7 @@ const internationalPetRelocation: ServicePageData = {
           rows: [
             ['Destination rules', 'Titer tests, waiting periods and quarantine sit on the country pair, not on a generic average'],
             ['Pet size and crate', 'Chargeable weight and whether a larger IATA crate is required'],
-            ['Flight mode', 'Cabin, accompanied baggage, manifest cargo, shared charter or a private jet — see the [pet flight options hub](/guides/pet-flight-options-dubai/)'],
+            ['Flight mode', 'Cabin, accompanied baggage or manifest cargo — compare on the [pet flight options hub](/guides/pet-flight-options-dubai/). Jet and charter are linked offer pages, not owned here.'],
             ['Season and aircraft', 'Heat embargoes and snub-nosed limits shrink which carriers will accept the booking'],
             ['How much we hold', 'Document guidance only versus booking, travel-day and last mile — compare [service tiers](/services/)'],
           ],
