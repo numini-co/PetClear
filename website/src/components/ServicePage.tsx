@@ -9,7 +9,8 @@ import OfficialSources from './OfficialSources.tsx'
 import Hero from './Hero.tsx'
 import FAQItem from './FAQItem.tsx'
 import ContentImage from './ContentImage.tsx'
-import { LinkedText, stripInternalMarkdownLinks } from './LinkedText.tsx'
+import LinkedText from './LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 
 function Block({ block }: { block: ServiceBlock }) {
   if (block.type === 'p') {

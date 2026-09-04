@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom'
-
-const LINK_RE = /\[([^\]]+)\]\((\/[^)]+)\)/g
+import { LINK_RE } from '../lib/linkedText.ts'
 
 /** Render plain copy with optional `[anchor](/path/)` internal links. */
-export function LinkedText({ text }: { text: string }) {
+export default function LinkedText({ text }: { text: string }) {
   const parts: React.ReactNode[] = []
   let last = 0
   const re = new RegExp(LINK_RE.source, 'g')
@@ -19,8 +18,4 @@ export function LinkedText({ text }: { text: string }) {
   }
   if (last < text.length) parts.push(text.slice(last))
   return <>{parts}</>
-}
-
-export function stripInternalMarkdownLinks(text: string): string {
-  return text.replace(LINK_RE, '$1')
 }
