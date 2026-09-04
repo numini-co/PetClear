@@ -65,6 +65,10 @@ const SERVICE_CARD_IMAGES: Record<string, { src: string; alt: string }> = {
     src: '/assets/w1-w3/moccae-permit-document-check-hands-dubai.jpg',
     alt: 'Hands reviewing a pet travel checklist for a MOCCAE permit application',
   },
+  '/service/pet-relocation-from-dubai/': {
+    src: '/assets/w1-w3/pet-relocation-from-dubai-husky-balcony-golden-hour.jpg',
+    alt: 'Husky sitting beside a packed travel crate on a Dubai balcony before relocating from Dubai',
+  },
 }
 
 const ROUTES = [
@@ -261,14 +265,14 @@ export default function HomePage() {
               Use the money page when you want one coordinator to hold documents, crate, cargo and the last mile. Use the to-Dubai page when you are only arriving. Use the from-Dubai page when you are only leaving. Use pet taxi when the animal never leaves the road. Species pages exist for dog- and cat-specific crate and apartment rules; the federal permit chain is shared. If you already know you want document guidance versus full coordination, compare tiers first, then open the service URL — do not treat this grid as a second copy of those bodies.
             </p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid items-start gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {SERVICE_LINKS.map((s) => {
               const img = SERVICE_CARD_IMAGES[s.to]
               return (
                 <Link
                   key={s.to}
                   to={s.to}
-                  className="group overflow-hidden rounded-[20px] bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                  className="group w-full overflow-hidden rounded-[20px] bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
                 >
                   {img ? (
                     <img src={img.src} alt={img.alt} width={1200} height={900} loading="lazy" className="aspect-[4/3] w-full object-cover" />
