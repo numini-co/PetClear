@@ -688,10 +688,10 @@ export default function HowItWorksPage() {
                 <tr><td>MOCCAE permit / government fees</td><td>Official portal (confirm live)</td><td>You</td><td>No DPR markup. Figures circulating online conflict — we do not reprint them here.</td></tr>
                 <tr><td>Veterinary work</td><td>Vet partner quote</td><td>You</td><td>Health certificate, vaccines, titer where the route requires one</td></tr>
                 <tr><td>IATA travel crate</td><td>Sized to the animal</td><td>You</td><td>Chargeable weight follows the crate, not a breed average</td></tr>
-                <tr><td>Etihad cabin — airline fee</td><td>From USD 399 in Economy (source: Etihad). Confirm live at booking.</td><td>You, to the airline</td><td>First-party airline fee, not a DPR package. Emirates / flydubai / Air Arabia cabin N/A for cats and dogs (falcons excepted).</td></tr>
+                <tr><td>Etihad cabin — airline fee</td><td>Fees change; confirm at booking. 2026 from-USD-399 promo (13 Apr–31 May) expired. USD 1,500 = Estimated only</td><td>You, to the airline</td><td>Not a current standard fee and not a DPR package. Emirates / flydubai / Air Arabia cabin N/A for cats and dogs (falcons excepted).</td></tr>
                 <tr><td>Emirates animal charge — airline fee</td><td>USD 500 / 650 / 800 by weight and size (source: Emirates)</td><td>You, to the airline</td><td>Airline animal-charge tiers. Into Dubai the pet often must travel as cargo — not every UAE route qualifies as baggage.</td></tr>
                 <tr><td>Cargo freight</td><td>Quoted per route and weight</td><td>You</td><td>Not a published DPR freight list. The Emirates 500/650/800 bands are airline fees, not our cargo quote.</td></tr>
-                <tr><td>Shared charter seat</td><td>Get a Quote (DPR)</td><td>You</td><td>No published charter prices on this site.</td></tr>
+                <tr><td>Shared charter seat</td><td>Get a Quote (DPR)</td><td>You</td><td>Labelled market listings (Elite Pets / PetXJets / JetCircle / press) live on the shared-charter page — not DPR prices.</td></tr>
                 <tr><td>Private jet</td><td>Custom charter quote only</td><td>You</td><td>No all-in jet numbers on this site.</td></tr>
                 <tr className="bg-[#4F5BD5]/5"><td className="font-bold text-[#2A2A2A]">Dubai Pet Relocation coordination</td><td className="font-bold text-[#2A2A2A]">Get a Quote</td><td className="font-bold text-[#2A2A2A]">You</td><td className="font-bold text-[#2A2A2A]">No invented package prices.</td></tr>
               </tbody>

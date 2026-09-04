@@ -9,7 +9,7 @@ import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 
 const GUIDES = [
   { title: 'Pet Flight Options from Dubai', to: '/guides/pet-flight-options-dubai/', image: '/images/import-hero.jpg', desc: 'Cabin, checked baggage, manifest cargo, private jet, shared charter — which mode fits.' },
-  { title: 'Etihad Pet Policy (In-Cabin)', to: '/guides/etihad-pet-policy/', image: '/assets/w1-w3/british-shorthair-cat-carrier-cat-relocation-dubai.jpg', desc: 'The only UAE cabin option: from USD 399 in Economy (source: Etihad; confirm live). 8 kg limit, AUH arrival. Emirates/flydubai/Air Arabia cabin N/A for cats and dogs.' },
+  { title: 'Etihad Pet Policy (In-Cabin)', to: '/guides/etihad-pet-policy/', image: '/assets/w1-w3/british-shorthair-cat-carrier-cat-relocation-dubai.jpg', desc: 'The only UAE cabin option: fees change (confirm at booking; 2026 USD-399 promo expired). 8 kg limit, AUH arrival. Emirates/flydubai/Air Arabia cabin N/A for cats and dogs.' },
   { title: 'Pet as Checked Baggage', to: '/guides/pet-as-checked-baggage/', image: '/images/dog-crate.jpg', desc: 'When accompanied hold travel is allowed — and why Dubai arrivals usually cannot use it.' },
   { title: 'Emirates Pet Cargo & SkyCargo', to: '/guides/emirates-pet-cargo/', image: '/images/guide-iata-crate.jpg', desc: 'Educational cargo process: airline animal-charge tiers, booking window, and rates quoted per route/weight — not a cargo money page.' },
   { title: 'Pet Relocation Cost Guide', to: '/guides/pet-relocation-cost-dubai/', image: '/images/cost-hero.jpg', desc: 'What it really costs to bring a pet to Dubai — every fee, line by line.' },

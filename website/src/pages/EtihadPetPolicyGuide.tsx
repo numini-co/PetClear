@@ -20,16 +20,16 @@ const WA =
 
 const snippetQuestion = 'Can I bring my pet in the cabin on Etihad?'
 const snippetAnswer =
-  'Etihad is the only UAE airline that takes small dogs and cats in the cabin. Pet plus carrier must be 8 kg or less and land at Abu Dhabi. Cabin fee from USD 399 in Economy (source: Etihad). Confirm the live amount on Etihad’s travelling-with-pets page before you pay.'
+  'Etihad is the only UAE airline that takes small dogs and cats in the cabin. Pet plus carrier must be 8 kg or less and land at Abu Dhabi. Cabin fees change — confirm the live amount at booking. A 2026 Economy promo from USD 399 (13 Apr–31 May) is expired and is not the current standard.'
 
 const faqData = [
   {
     q: 'How much does it cost to bring a cat in the cabin on an Etihad flight?',
-    a: 'From USD 399 per flight in Economy (source: Etihad). In Business you must buy an extra seat plus USD 399. Confirm the live amount on Etihad’s travelling-with-pets page before you pay. We are not Etihad and we do not sell airline tickets.',
+    a: 'Confirm the live cabin-pet fee at booking on Etihad’s travelling-with-pets page — fees change. A timed Economy promo from USD 399 (Business needed an extra seat plus USD 399) ran roughly 13 April–31 May 2026; that window is over as of September 2026 and is not the current standard. Until Etihad’s first-party current fee is confirmed, treat USD 1,500 as Estimated only. We are not Etihad and we do not sell airline tickets.',
   },
   {
     q: 'Etihad pet in cabin business class',
-    a: 'Etihad’s published Business cabin-pet path is an extra seat plus USD 399 (source: Etihad). Extra-seat carrier size is published at 50 × 43 × 50 cm. Confirm the live combination at booking. We coordinate eligibility and AUH arrival; we do not sell the seat.',
+    a: 'Etihad’s published Business cabin-pet path required an extra seat plus a pet fee; confirm the live combination at booking. An expired 2026 promo used extra seat plus USD 399 — that is not the current standard. Extra-seat carrier size is published at 50 × 43 × 50 cm (source: Etihad). We coordinate eligibility and AUH arrival; we do not sell the seat.',
   },
   {
     q: 'Can I buy my pet a seat on a plane?',
@@ -41,7 +41,7 @@ const faqData = [
   },
   {
     q: 'What does Etihad charge for a cabin pet?',
-    a: 'From USD 399 per flight in Economy (source: Etihad). In Business you must buy an extra seat plus USD 399. Confirm the live amount on Etihad’s travelling-with-pets page before you pay. We are not Etihad and we do not sell airline tickets.',
+    a: 'Confirm the live fee at booking. A 2026 Economy promo was from USD 399 (Business extra seat plus USD 399) for book-and-travel roughly 13 April–31 May 2026 — that window is over and is not the current standard. Until Etihad’s first-party current fee is confirmed, treat USD 1,500 as Estimated only. We are not Etihad and we do not sell airline tickets.',
   },
   {
     q: 'What are the size and weight limits?',
@@ -73,7 +73,7 @@ export default function EtihadPetPolicyGuide() {
   const canonical = `${BASE_URL}${FLIGHT_MODE_PATHS.cabin}`
   const title = 'Etihad Pets in Cabin 2026 — Policy, Fees & AUH Arrival'
   const description =
-    'Etihad pets in cabin: the only UAE dog-and-cat cabin product. From USD 399 in Economy (source: Etihad); confirm live at booking. ≤8 kg including carrier, AUH arrival and Dubai transfer.'
+    'Etihad pets in cabin: the only UAE dog-and-cat cabin product. Cabin fees change — confirm at booking. A 2026 from-USD-399 Economy promo is expired (13 Apr–31 May) and is not the current standard. ≤8 kg including carrier, AUH arrival and Dubai transfer.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -123,7 +123,7 @@ export default function EtihadPetPolicyGuide() {
         imageAlt="A cat in a soft travel carrier, the kind of under-seat carrier used for Etihad in-cabin pet travel"
         eyebrow="Airline guide"
         title="Etihad Pets in Cabin — The Only UAE In-Cabin Option"
-        subtitle="Small dogs and cats, booked early — arriving at Abu Dhabi, not Dubai International. From USD 399 in Economy (source: Etihad); confirm live at booking. We coordinate the file; Etihad operates the flight."
+        subtitle="Small dogs and cats, booked early — arriving at Abu Dhabi, not Dubai International. Cabin fees change; confirm at booking. We coordinate the file; Etihad operates the flight."
         updated="Updated September 2026"
         primaryLabel="Check cabin eligibility"
         whatsappMessage={WA}
@@ -165,7 +165,7 @@ export default function EtihadPetPolicyGuide() {
             <a href={ETIHAD_PETS_URL} target="_blank" rel="noopener noreferrer" className="font-semibold text-[#4F5BD5] hover:underline">
               travelling-with-pets
             </a>{' '}
-            page. Cabin fee from USD 399 in Economy (source: Etihad) — confirm the live amount at booking. We are not affiliated with Etihad.
+            page. Cabin fees change — confirm the live amount at booking. We are not affiliated with Etihad.
           </p>
           <LastVerified note="Airline fees and carrier limits can change. Recheck Etihad before you submit the form." />
           <div className="mb-6 overflow-x-auto">
@@ -178,8 +178,9 @@ export default function EtihadPetPolicyGuide() {
               </thead>
               <tbody>
                 {[
-                  ['Cabin pet fee', 'From USD 399 in Economy (source: Etihad). Confirm live at booking.'],
-                  ['Business cabin pet fee', 'Extra seat plus USD 399 (source: Etihad). Confirm live at booking.'],
+                  ['Cabin pet fee', 'Confirm live at booking. Expired 2026 promo was from USD 399 Economy (13 Apr–31 May) — not the current standard.'],
+                  ['Estimated only (until first-party current fee confirmed)', 'USD 1,500 — Estimated only, not a published Etihad rate'],
+                  ['Business cabin pet fee', 'Extra seat plus a pet fee; confirm live. Expired 2026 promo used extra seat + USD 399.'],
                   ['Weight', 'Pet + carrier up to 8 kg'],
                   ['Minimum age', '16 weeks'],
                   ['Under-seat carrier', 'Maximum 40 × 40 × 22 cm'],

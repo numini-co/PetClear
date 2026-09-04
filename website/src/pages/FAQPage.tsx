@@ -339,8 +339,8 @@ const faqs: FAQEntry[] = [
   {
     category: 'airlines',
     question: 'Can my pet fly in the cabin to Dubai?',
-    answer: <p>No. All pets entering Dubai must travel as manifest cargo — they cannot fly in the cabin or as checked baggage on flights to Dubai. The only in-cabin option in the region is Etihad to Abu Dhabi for very small pets up to 8kg. Etihad cabin fee from USD 399 in Economy (source: Etihad); confirm live at booking. That cabin product is not available to Dubai. For long-haul routes to Dubai, cargo is the rule, not the exception.</p>,
-    plain: 'No. All pets entering Dubai must travel as manifest cargo — they cannot fly in the cabin or as checked baggage on flights to Dubai. The only in-cabin option in the region is Etihad to Abu Dhabi for very small pets up to 8kg. Etihad cabin fee from USD 399 in Economy (source: Etihad); confirm live at booking. That cabin product is not available to Dubai. For long-haul routes to Dubai, cargo is the rule, not the exception.',
+    answer: <p>No. All pets entering Dubai must travel as manifest cargo — they cannot fly in the cabin or as checked baggage on flights to Dubai. The only in-cabin option in the region is Etihad to Abu Dhabi for very small pets up to 8kg. Etihad publishes cabin pet fees that change; confirm at booking. A 2026 promo from USD 399 is expired and is not the current standard. That cabin product is not available to Dubai. For long-haul routes to Dubai, cargo is the rule, not the exception.</p>,
+    plain: 'No. All pets entering Dubai must travel as manifest cargo — they cannot fly in the cabin or as checked baggage on flights to Dubai. The only in-cabin option in the region is Etihad to Abu Dhabi for very small pets up to 8kg. Etihad publishes cabin pet fees that change; confirm at booking. A 2026 promo from USD 399 is expired and is not the current standard. That cabin product is not available to Dubai. For long-haul routes to Dubai, cargo is the rule, not the exception.',
   },
   {
     category: 'airlines',
