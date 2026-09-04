@@ -7,27 +7,27 @@ export interface CardImage {
 
 export const CARD_IMAGES: Record<string, CardImage> = {
   '/service/pet-relocation-dubai/': {
-    src: '/images/service-pet-relocation-dubai.jpg',
+    src: '/assets/homepage-cards/door-to-door-pet-relocation-card.jpg',
     alt: 'A calm dog beside a travel crate for door-to-door pet relocation in Dubai',
   },
   '/service/pet-import-dubai/': {
-    src: '/images/service-pet-import-dubai.jpg',
-    alt: 'A pet arriving in Dubai with import documents and an IATA travel crate',
+    src: '/assets/homepage-cards/pet-import-dubai-card.jpg',
+    alt: 'A pet arriving in Dubai with import documents and a travel carrier',
   },
   '/service/pet-export-dubai/': {
-    src: '/images/service-pet-export-dubai.jpg',
+    src: '/assets/homepage-cards/pet-export-from-dubai-card.jpg',
     alt: 'A calm dog and cat beside a travel crate at a Dubai departure terminal',
   },
   '/service/pet-transport-dubai/': {
-    src: '/images/service-pet-transport-dubai.jpg',
+    src: '/assets/homepage-cards/pet-transport-dubai-card.jpg',
     alt: 'Climate-controlled pet taxi transfer inside Dubai',
   },
   '/service/international-pet-relocation/': {
-    src: '/images/service-international-pet-relocation.jpg',
+    src: '/assets/homepage-cards/international-pet-relocation-card.jpg',
     alt: 'A dog beside a travel crate at an airport for international pet relocation',
   },
   '/service/pet-relocation-to-dubai/': {
-    src: '/assets/w1-w3/pet-relocation-to-dubai-cat-arrival-new-apartment.jpg',
+    src: '/assets/homepage-cards/pet-relocation-to-dubai-card.jpg',
     alt: 'A cat settling into a new Dubai apartment after inbound pet relocation',
   },
   '/service/pet-relocation-from-dubai/': {
