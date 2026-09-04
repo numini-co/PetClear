@@ -44,7 +44,7 @@ export default function DubaiToUSA() {
     },
     {
       question: 'What does Dubai Pet Relocation handle for a Dubai to USA pet relocation?',
-      answer: 'Dubai Pet Relocation manages the entire Dubai to USA pet relocation process. We handle: (1) CDC Dog Import Form completion and submission (free online form, but we ensure accuracy); (2) health certificate scheduling with a USDA-accredited UAE veterinarian; (3) document review and airline compliance check; (4) IATA-compliant crate sourcing and fitting; (5) flight booking with Emirates, United, Delta, or American Airlines; (6) pre-flight veterinary health check; (7) DXB cargo check-in and customs clearance; (8) US CBP (Customs and Border Protection) inspection coordination at JFK, LAX, ORD, IAD, SFO, or your arrival airport; (9) ground transport from the US airport to your home or boarding facility; (10) state-specific requirement verification and post-arrival veterinary guidance. We provide WhatsApp updates at every step and a 24/7 emergency contact during travel days.'
+      answer: 'Dubai Pet Relocation manages the entire Dubai to USA pet relocation process. We handle: (1) CDC Dog Import Form completion and submission (free online form, but we ensure accuracy); (2) health certificate scheduling with a USDA-accredited UAE veterinarian; (3) document review and airline compliance check; (4) IATA-compliant crate sourcing and fitting; (5) flight booking with Emirates, United, Delta, or American Airlines; (6) pre-flight veterinary health check; (7) DXB cargo check-in and customs clearance; (8) US CBP (Customs and Border Protection) inspection coordination at JFK, LAX, ORD, IAD, SFO, or your arrival airport; (9) ground transport from the US airport to your home or boarding facility; (10) state-specific requirement verification and post-arrival veterinary guidance. We provide WhatsApp updates at every step and a named contact during travel days.'
     }
   ]
 
@@ -614,8 +614,8 @@ export default function DubaiToUSA() {
               <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Heart className="w-7 h-7 text-[#4F5BD5]" />
               </div>
-              <p className="font-bold text-[#2A2A2A] text-lg mb-1">24/7 Support</p>
-              <p className="text-[#5A5A5A] text-sm">We provide WhatsApp updates at every step, a 24/7 emergency contact during travel days, and post-arrival guidance on US veterinary registration and care.</p>
+              <p className="font-bold text-[#2A2A2A] text-lg mb-1">Travel-day contact</p>
+              <p className="text-[#5A5A5A] text-sm">We provide WhatsApp updates at every step, a named contact during travel days, and post-arrival guidance on US veterinary registration and care.</p>
             </div>
           </div>
         </div>
