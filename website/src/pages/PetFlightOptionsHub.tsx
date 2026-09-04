@@ -45,7 +45,7 @@ const faqData = [
   },
   {
     q: 'Where do verified airline fees live?',
-    a: 'Etihad cabin fees and Emirates animal-charge tiers are on the child guides, each labelled with the airline as the source (Etihad from USD 399; Emirates USD 500 / 650 / 800). Confirm live amounts on the carrier site before you pay. Jet, charter and DPR packages stay Get a Quote.',
+    a: 'On the child guides, not on this chooser hub. Etihad publishes cabin pet fees that change; confirm at booking. The 2026 from-USD-399 promo is expired and is not the current standard; USD 1,500 is Estimated only. Emirates USD 500 / 650 / 800 (source: Emirates) live on the baggage and cargo guides — Dubai-ending itineraries must still use cargo. Jet, charter and door-to-door stay Get a Quote.',
   },
 ]
 
@@ -151,7 +151,7 @@ export default function PetFlightOptionsHub() {
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">AUH only (Etihad exception)</td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
-                    Airline fees: Etihad from USD 399 Economy (+ Business extra seat + USD 399) as a cited airline figure — confirm live. Emirates/flydubai cabin N/A for cats/dogs (falcons excepted).
+                    Confirm at booking. 2026 from-USD-399 promo expired. USD 1,500 = Estimated only. Emirates / flydubai / Air Arabia cabin N/A for cats and dogs.
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.cabin} className="font-semibold text-[#4F5BD5] hover:underline">
