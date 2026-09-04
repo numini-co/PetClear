@@ -128,7 +128,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="text-[#4F5BD5] font-semibold text-sm hover:underline"
               >
-                +971 55 174 4849
+                {siteConfig.phone}
               </a>
             </Card>
             <Card className="text-center">
@@ -176,7 +176,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="font-bold text-[#2A2A2A]">Almost done — finish in WhatsApp</p>
-                      <p className="text-sm text-[#5A5A5A]">We opened WhatsApp with your enquiry — just tap send and we will reply fast. Or message us at +971 55 174 4849.</p>
+                      <p className="text-sm text-[#5A5A5A}">We opened WhatsApp with your enquiry — just tap send and we will reply fast. Or message us at {siteConfig.phone}.</p>
                     </div>
                   </div>
                 </div>

@@ -19,7 +19,7 @@ export default function DubaiPillar() {
   }
   const localBusiness = {
     '@context': 'https://schema.org', '@type': 'LocalBusiness', name: `${siteConfig.name} — Dubai`,
-    url, areaServed: 'Dubai, UAE', telephone: '+971551744849',
+    url, areaServed: 'Dubai, UAE', telephone: siteConfig.phoneE164,
     description: 'Pet relocation across every Dubai community — dog and cat transport, MOCCAE permits and door-to-door delivery.',
     address: { '@type': 'PostalAddress', addressLocality: 'Dubai', addressRegion: 'Dubai', addressCountry: 'AE' },
   }

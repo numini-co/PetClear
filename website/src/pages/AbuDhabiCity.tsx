@@ -3,7 +3,7 @@ import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import Hero from '../components/Hero.tsx'
-import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
+import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint, Heart, MapPin, Building, Phone, Dog, Cat, DollarSign, Briefcase, Globe, Scale } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
@@ -55,7 +55,7 @@ export default function AbuDhabiCity() {
       "name": "Dubai Pet Relocation",
       "description": "Professional pet relocation services to and from Abu Dhabi. Dog and cat transport, Etihad in-cabin booking, documentation, customs clearance, and ADCM registration.",
       "url": pageUrl,
-      "telephone": "+971 55 174 4849",
+      "telephone": siteConfig.phoneE164,
       "email": "hello@dubai-pet-relocation.ae",
       "address": {
         "@type": "PostalAddress",

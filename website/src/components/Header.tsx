@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X, MessageCircle, ChevronDown, Phone, PawPrint } from 'lucide-react'
-import { getWhatsAppUrl } from '../lib/seo.ts'
+import { getWhatsAppUrl, PHONE_DISPLAY, PHONE_E164 } from '../lib/seo.ts'
 
 const navLinks = [
   { label: 'Home', to: '/' },
@@ -228,11 +228,11 @@ export default function Header() {
                 Message on WhatsApp
               </a>
               <a
-                href="tel:+971551744849"
+                href={`tel:${PHONE_E164}`}
                 className="flex items-center justify-center gap-2 rounded-xl border border-gray-200 px-4 py-3 text-sm font-medium text-gray-700"
               >
                 <Phone className="h-4 w-4" />
-                +971 55 174 4849
+                {PHONE_DISPLAY}
               </a>
             </div>
           </div>

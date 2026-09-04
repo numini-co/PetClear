@@ -24,7 +24,7 @@ import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
-import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
+import { getWhatsAppUrl, BASE_URL, PHONE_DISPLAY, PHONE_E164 } from '../lib/seo.ts'
 
 /* ─── FAQ accordion helper ─── */
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
@@ -168,11 +168,11 @@ export default function EmergencyRelocationPage() {
           <div className="flex flex-wrap justify-center gap-3 shrink-0">
             <WhatsAppCta text={URGENT_MSG} label="Message Us Now" className="whatsapp-pulse" />
             <a
-              href="tel:+971551744849"
+              href={`tel:${PHONE_E164}`}
               className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 text-white rounded-2xl font-semibold text-sm hover:bg-white/20 transition-colors ring-1 ring-white/25"
             >
               <Phone className="w-4 h-4" />
-              +971 55 174 4849
+              {PHONE_DISPLAY}
             </a>
           </div>
         </div>
@@ -390,11 +390,11 @@ export default function EmergencyRelocationPage() {
               <div className="flex flex-wrap gap-3">
                 <WhatsAppCta text={URGENT_MSG} label="Start Now on WhatsApp" className="whatsapp-pulse" />
                 <a
-                  href="tel:+971551744849"
+                  href={`tel:${PHONE_E164}`}
                   className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#F5F6FD] text-[#2A2A2A] rounded-2xl font-semibold text-sm hover:bg-[#E9ECFB] transition-colors"
                 >
                   <Phone className="w-4 h-4 text-[#4F5BD5]" />
-                  Or call +971 55 174 4849
+                  Or call {PHONE_DISPLAY}
                 </a>
               </div>
             </div>
@@ -547,11 +547,11 @@ export default function EmergencyRelocationPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <WhatsAppCta text={URGENT_MSG} label="Message Us on WhatsApp" className="whatsapp-pulse" />
             <a
-              href="tel:+971551744849"
+              href={`tel:${PHONE_E164}`}
               className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 text-white rounded-2xl font-semibold text-sm hover:bg-white/20 transition-colors"
             >
               <Phone className="w-4 h-4" />
-              Call +971 55 174 4849
+              Call {PHONE_DISPLAY}
             </a>
             <Link
               to="/how-it-works/"

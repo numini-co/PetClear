@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { MessageCircle, Phone } from 'lucide-react'
-import { getWhatsAppUrl } from '../lib/seo.ts'
+import { getWhatsAppUrl, PHONE_DISPLAY, PHONE_E164 } from '../lib/seo.ts'
 
 interface HeroProps {
   image: string
@@ -73,11 +73,11 @@ export default function Hero({
               </Link>
             ) : (
               <a
-                href="tel:+971551744849"
+                href={`tel:${PHONE_E164}`}
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 px-6 py-3.5 text-sm font-semibold text-white ring-1 ring-white/30 backdrop-blur transition hover:bg-white/20"
               >
                 <Phone className="h-4 w-4" />
-                +971 55 174 4849
+                {PHONE_DISPLAY}
               </a>
             )}
           </div>
