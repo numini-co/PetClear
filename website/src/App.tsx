@@ -1,5 +1,7 @@
 import { lazy } from 'react'
 import { Navigate, Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import Layout from './components/Layout.tsx'
 import NotFoundPage from './pages/NotFoundPage.tsx'
 
@@ -55,6 +57,7 @@ import { dubaiAreas } from './data/areas/dubai/index.ts'
 
 export default function App() {
   return (
+    <>
     <Layout>
       <Routes>
           {/* Core V1 pages */}
@@ -143,5 +146,8 @@ export default function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Layout>
+      <Analytics />
+      <SpeedInsights />
+    </>
   )
 }
