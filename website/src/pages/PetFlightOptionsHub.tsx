@@ -45,7 +45,7 @@ const faqData = [
   },
   {
     q: 'Where do verified airline fees live?',
-    a: 'On the child guides, not on this chooser hub. Etihad publishes cabin pet fees that change; confirm at booking. The 2026 from-USD-399 promo is expired and is not the current standard; USD 1,500 is Estimated only. Emirates USD 500 / 650 / 800 (source: Emirates) live on the baggage and cargo guides — Dubai-ending itineraries must still use cargo. Jet, charter and door-to-door stay Get a Quote.',
+    a: 'On the child guides, not on this chooser hub. Etihad cabin-fee depth — including the expired 13 Apr–31 May 2026 USD 399 promo and the secondary USD 1,500 estimate — lives on the Etihad pets-in-cabin guide. Emirates USD 500 / 650 / 800 animal-charge tiers live on the Emirates pet cargo guide. Jet, shared charter and door-to-door coordination stay Get a Quote.',
   },
 ]
 

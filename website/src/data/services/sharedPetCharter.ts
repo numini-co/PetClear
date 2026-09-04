@@ -105,39 +105,44 @@ const sharedPetCharter: ServicePageData = {
       ],
     },
     {
-      h2: 'Market context (not a DPR price list)',
+      h2: 'Market context (labelled competitor seats — not a DPR price list)',
       intro:
-        'Shared-charter seats on Europe↔Dubai corridors often trade from about EUR 7,000–13,000 per passenger depending on the operator and the schedule. That band is labelled market context. A firm seat on a lift we coordinate is Get a Quote — we do not invent DPR charter prices.',
+        'Shared-charter seats on Europe↔Dubai corridors appear on third-party sites. Every figure below is a labelled market listing (Elite Pets / PetXJets / JetCircle / press) — not a Dubai Pet Relocation price. A firm seat we coordinate is Get a Quote.',
       body: [
         {
           type: 'table',
           headers: ['Label', 'Figure', 'What it is'],
           rows: [
             [
-              'Market context — Europe↔Dubai shared seats',
-              'Often from ~EUR 7,000–13,000',
-              'Operator- and schedule-dependent. Not a DPR package.',
+              'Elite Pets (market listing)',
+              'AED 45,000 per seat; return pair AED 85,000',
+              'Market listing — not a DPR price',
             ],
             [
-              'Optional labelled market — JetCircle Munich→Dubai',
-              'EUR 12,000 per passenger',
+              'PetXJets (market listing)',
+              'AED 42,000 (some figures TBC)',
+              'Market listing — some amounts TBC; not a DPR price',
+            ],
+            [
+              'JetCircle (market listing)',
+              'EUR 12,000–13,000 (e.g. Munich→Dubai / Dubai↔London snapshots)',
               'Published JetCircle figure; schedule-specific. Not a DPR quote.',
             ],
             [
-              'Optional labelled market — JetCircle Dubai↔London',
-              'EUR 13,000 per passenger',
-              'Published JetCircle figure; schedule-specific. Not a DPR quote.',
+              'Press / listicle snapshots',
+              '~USD 10,000 typical; surge ~EUR 20,000',
+              'Press / market — not a DPR price',
             ],
             [
               'Dubai Pet Relocation firm seat',
               'Get a Quote',
-              'Coordination plus the operator’s live lift charge for your pet and week.',
+              'Coordination plus the operator’s live lift charge. No invented DPR seat price.',
             ],
           ],
         },
         {
           type: 'p',
-          text: 'JetCircle numbers are a published third-party market snapshot, not an affiliation and not a promise we can fill that seat. If no shared lift is forming, we move you to [manifest cargo](/guides/emirates-pet-cargo/) or a [custom charter quote](/service/private-jet-pet-travel/).',
+          text: 'Named operators above are independent of this site. We are not affiliated with Elite Pets, PetXJets or JetCircle and we cannot promise their seats. If no shared lift is forming, we move you to [manifest cargo](/guides/emirates-pet-cargo/) or a [custom charter quote](/service/private-jet-pet-travel/).',
         },
       ],
     },
@@ -192,7 +197,7 @@ const sharedPetCharter: ServicePageData = {
   faq: [
     {
       q: 'Do you publish shared-charter prices?',
-      a: 'A firm seat is Get a Quote. We may cite labelled market context — shared Europe↔Dubai seats often from ~EUR 7,000–13,000, and optional JetCircle published figures (Munich→Dubai EUR 12,000 / Dubai↔London EUR 13,000 per passenger, schedule-specific). Those are not DPR prices. WhatsApp or support@dubai-pet-relocation.ae.',
+      a: 'A firm DPR seat is Get a Quote. Labelled market listings (not DPR) include Elite Pets AED 45,000/seat (return pair AED 85,000), PetXJets AED 42,000 (some TBC), JetCircle EUR 12,000–13,000, and press snapshots around USD 10,000. WhatsApp or support@dubai-pet-relocation.ae.',
     },
     {
       q: 'How is this cheaper than a private jet?',
