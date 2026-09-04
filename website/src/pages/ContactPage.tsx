@@ -138,10 +138,10 @@ export default function ContactPage() {
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Email</h3>
               <p className="text-sm text-[#5A5A5A] mb-3">For detailed inquiries and document sharing</p>
               <a
-                href="mailto:hello@dubai-pet-relocation.ae"
+                href={`mailto:${siteConfig.email}`}
                 className="text-[#4F5BD5] font-semibold text-sm hover:underline"
               >
-                hello@dubai-pet-relocation.ae
+                {siteConfig.email}
               </a>
             </Card>
             <Card className="text-center">

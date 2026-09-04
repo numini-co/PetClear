@@ -56,7 +56,7 @@ export default function AbuDhabiCity() {
       "description": "Professional pet relocation services to and from Abu Dhabi. Dog and cat transport, Etihad in-cabin booking, documentation, customs clearance, and ADCM registration.",
       "url": pageUrl,
       "telephone": siteConfig.phoneE164,
-      "email": "hello@dubai-pet-relocation.ae",
+      "email": siteConfig.email,
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Abu Dhabi",

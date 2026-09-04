@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import SEOHead from '../components/SEOHead.tsx'
-import { BASE_URL, getWhatsAppUrl, PHONE_DISPLAY } from '../lib/seo.ts'
+import { BASE_URL, getWhatsAppUrl, PHONE_DISPLAY, siteConfig } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 
 export default function PrivacyPolicy() {
@@ -166,7 +166,7 @@ export default function PrivacyPolicy() {
               If you have questions about this Privacy Policy, want to exercise your rights, or have concerns about how we handle your data, please contact us:
             </p>
             <div className="space-y-2">
-              <p><strong>Email:</strong> <a href="mailto:hello@dubai-pet-relocation.ae" className="text-[#4F5BD5] hover:underline">hello@dubai-pet-relocation.ae</a></p>
+              <p><strong>Email:</strong> <a href={`mailto:${siteConfig.email}`} className="text-[#4F5BD5] hover:underline">{siteConfig.email}</a></p>
               <p><strong>Address:</strong> Al Quoz Industrial Area 4, Al Quoz Industrial Area, Al Quoz, Dubai</p>
               <p><strong>WhatsApp:</strong> <a href={getWhatsAppUrl('Hi, I have a question about the Privacy Policy.')} target="_blank" rel="noopener noreferrer" className="text-[#4F5BD5] hover:underline">{PHONE_DISPLAY}</a></p>
             </div>
