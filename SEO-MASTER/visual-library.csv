@@ -1,0 +1,2 @@
+asset_id,asset_type,page_url,purpose,generation_prompt,model,version,aspect_ratio,resolution,filename,alt_text,section,approved_by,production_status,date_created,notes,duration,format,autoplay,has_audio,mobile_version,desktop_version,compression
+# Header stub only. Visual Media owns updates. Add a row when an asset exists or is commissioned. Do not invent prompts, models, or production status.

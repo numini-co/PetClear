@@ -1,0 +1,2 @@
+cost_item,category,country_or_route,supplier,currency,cost,selling_price,margin,source,date_verified,review_date,fixed_or_variable,verification_status,notes
+# Header stub only. Add a row when a cost is verified. Do not invent prices, margins, or supplier rates. verification_status must be one of: Verified fixed cost | Verified market price | Current supplier quote | Estimated range | Requires external quotation.

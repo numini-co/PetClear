@@ -1,0 +1,2 @@
+supplier,service,currency,cost_or_range,verification_status,source,date_verified,review_date,notes
+# Header stub only. Add a row when a supplier rate is verified. Do not invent prices. verification_status must be one of: Verified fixed cost | Verified market price | Current supplier quote | Estimated range | Requires external quotation.
