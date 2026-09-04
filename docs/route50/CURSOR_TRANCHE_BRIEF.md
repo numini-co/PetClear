@@ -1,7 +1,7 @@
 # ⛔ OWNER GATE — DO NOT LAUNCH CURSOR YET
 
 **No Cursor cloud-agent launch until all 50 dog + country-flag heroes are ready** (Visual Media).  
-Scaffold brief below is parked. Content block pattern + per-country tables are ready now; **full page body copy waits for SEO volume pass**.
+Scaffold brief below is parked for *new* launches. Content block pattern + per-country tables are ready; **DEPTH BAR binds PR #25 body expand and Tranche B** (SEO KW reassignment still required before AU/PH/IN outbound finals).
 
 When both heroes + SEO volume pass land, launch **one** Cursor tranche using:
 - `/workspace/route50/RouteAirportsAirlinesBlock.tsx.md`
@@ -21,6 +21,39 @@ When both heroes + SEO volume pass land, launch **one** Cursor tranche using:
 - **Inbound twins** keep arrival-side MOCCAE 30-day / titer-before-travel framing; outbound must not re-own those head terms.
 - Fold final KW targets into this brief when SEO Lead posts reassignment — then write bodies.
 
+---
+
+## 📏 DEPTH BAR (OWNER UPGRADE 2026-09-05) — BINDING
+
+**Every `/routes/{slug}/` page must be ≥1000 words of UNIQUE detailed copy** — not templated filler, not thin airport tables alone.
+
+**Applies to:** PR #25 body expand (`feat(routes): Route50 — 50 new corridor pages + shared template`) **and** future Tranche B. Gold samples: `/workspace/route50/exemplars/germany-to-dubai.json`, `dubai-to-germany.json` (each ≥1000 words concatenated prose). One-pager: `/workspace/route50/DEPTH_BAR.md`.
+
+### Must include (all ten)
+
+1. **Unique destination/corridor intro** — outbound ≠ reverse of inbound  
+2. **Corridor rules & specialties** — origin-side OR destination-side as direction requires (`rulesSpecialties`)  
+3. **Difficulties / failure modes** — what usually goes wrong on **THIS** corridor (`difficulties`)  
+4. **How-it-works narrative** — scenario timeline, not a generic 5-step clone (`howItWorks`)  
+5. **Airports section** (IATA + city) — seed + UAE **DXB / DWC / AUH** (`airportsNarrative` + tables)  
+6. **Airlines section** — cabin / cargo / generally not; **confirm current policy**; no affiliation (`airlinesNarrative` + rows)  
+7. **UAE import:** MOCCAE permit **30 days** (inbound); outbound: destination rules high-level + verify (`uaeRules` / `destinationRules`)  
+8. **FAQ 4–6 unique** — prefer SEO **PAA from DataForSEO** when provided; **no invented fees**  
+9. **Internal links** — ≥3 outbound meaningful (hub + reverse twin + guides)  
+10. **Quote-only DPR packages** — WhatsApp **+971504782999**; CTA **Get Route Checked**
+
+### Word-count rule (exemplars / PR steers)
+
+Concatenate and count: `intro` + `rulesSpecialties` + `difficulties` + `howItWorks` + `airportsNarrative` + `airlinesNarrative` + `uaeRules`/`destinationRules` prose (bullets + notes) + FAQ **answers**. Target **≥1000**. Set `depthBar: "OWNER ≥1000 unique"` and `wordCountEstimate` on filled payloads.
+
+### Anti-patterns (instant fail)
+
+- Templated filler / doorway intros that only swap country names  
+- Outbound = reverse paste of inbound (AU / PH / IN **extra-strict**)  
+- Invented MOCCAE / airline / package fee numerals  
+- Wrong titer framing (“90-day wait **after** draw”) — correct = sample within 90 days **before travel** (≥0.5 IU/ml)  
+- Thin pages that are only airport/airline tables without narrative depth
+
 # Cursor Cloud Agent Brief — Route50 Tranche A (+ data shape + 2 exemplars)
 
 > **Heroes:** Tranche A uses placeholder paths `/assets/routes/heroes/{slug}.jpg` — do **not** invent binaries and do **not** block scaffold on Visual delivery. Full hero art is a Visual Media handoff; pages must render with fallback until assets land.
@@ -30,7 +63,8 @@ When both heroes + SEO volume pass land, launch **one** Cursor tranche using:
 **Repo:** https://github.com/numini-co/PetClear  
 **Scope:** Content system for **50 NEW** locked route URLs (existing 10 live routes stay as-is)  
 **This brief covers:** **Tranche A** (scaffold + registry + hub + App routes) **+ data shape + 2 gold exemplars** already filled under `/workspace/route50/exemplars/`  
-**Does NOT cover:** inventing DataForSEO volumes; writing unique body copy for all 50 (that is Tranche B)
+**PR #25:** already open — `feat(routes): Route50 — 50 new corridor pages + shared template`. Cursor will be steered to **expand bodies** to the DEPTH BAR (≥1000 unique words); do **not** relaunch a new agent from this brief alone.
+**Does NOT cover:** inventing DataForSEO volumes; inventing fees. Unique body expand for remaining routes follows DEPTH BAR + Tranche B batches.
 
 ---
 
@@ -66,13 +100,15 @@ Avoid 50 near-duplicate `*ToDubai.tsx` / `DubaiTo*.tsx` monsters.
 
 ### RoutePageData fields (see schema)
 
-`slug`, `direction` (`inbound` \| `outbound`), `title`, `meta`, `h1`, `heroImage`, `heroAlt`, `intro` (unique), `airports[]`, `uaeAirports[]`, `airlines[{name, mode, notes, policyUrl?, verified}]`, `uaeRules`, `destinationRules` (outbound), `faqs[4–6]`, `relatedLinks`, `cta`, `lastVerified`.
+`slug`, `direction` (`inbound` | `outbound`), `title`, `meta`, `h1`, `heroImage`, `heroAlt`, `intro` (unique), `rulesSpecialties`, `difficulties`, `howItWorks`, `airportsNarrative`, `airlinesNarrative`, `airports[]`, `uaeAirports[]`, `airlines[{name, mode, notes, policyUrl?, verified}]`, `uaeRules`, `destinationRules` (outbound), `faqs[4–6]`, `relatedLinks`, `cta`, `lastVerified`, `depthBar`, `wordCountEstimate`.
 
 Airline `mode` enum: `cabin` \| `cargo` \| `cabin_or_cargo` \| `generally_not` \| `confirm`.
 
 ---
 
 ## EVERY page MUST render
+
+> **DEPTH BAR:** all ten items in the DEPTH BAR section above — ≥1000 unique words. Tables alone are not enough.
 
 1. **Unique destination/corridor intro** — outbound ≠ reverse paste of inbound  
 2. **Main airports** (IATA + city) from seed for the non-Dubai country + UAE note (DXB / DWC / AUH)  
@@ -139,7 +175,7 @@ Before marking any route copy **final**:
 | `germany-to-dubai` | inbound | `/workspace/route50/exemplars/germany-to-dubai.json` |
 | `dubai-to-germany` | outbound | `/workspace/route50/exemplars/dubai-to-germany.json` |
 
-Outbound exemplar is **not** a reverse paste of inbound — different intro angle, FAQs, and rules focus (EU entry / export cert vs UAE import).
+Outbound exemplar is **not** a reverse paste of inbound — different intro angle, FAQs, and rules focus (EU entry / export cert vs UAE import). Both exemplars meet the DEPTH BAR (≥1000 unique words concatenated prose) with `rulesSpecialties`, `difficulties`, `howItWorks`, `airportsNarrative`, `airlinesNarrative`.
 
 ---
 
@@ -156,7 +192,8 @@ Outbound exemplar is **not** a reverse paste of inbound — different intro angl
 - [ ] Airlines show unverified/confirm until first-party check  
 - [ ] Heroes use `/assets/routes/heroes/{slug}.jpg` placeholder path  
 - [ ] CTA = Get Route Checked + WhatsApp +971504782999  
-- [ ] Germany inbound + outbound exemplars render as gold samples  
+- [ ] Germany inbound + outbound exemplars render as gold samples (≥1000 words each per DEPTH BAR)
+- [ ] PR #25 body expand steered to DEPTH BAR (no thin table-only pages)  
 - [ ] Existing 10 live routes unchanged (or migration deferred)  
 
 ---
@@ -177,4 +214,4 @@ Outbound exemplar is **not** a reverse paste of inbound — different intro angl
 2. Map seed airline mode strings → enum (see content-system “Seed mode mapping”). Ambiguous → `confirm`.  
 3. `relatedLinks` minimum: hub `/routes/`, reverse twin slug, relevant money/service twin.  
 4. FAQ schema JSON-LD from `faqs[]` only — no cloned strings across routes.  
-5. When done: open PR titled `feat(routes): Route50 Tranche A scaffold + DE exemplars`.
+5. **PR #25 is already open** (`feat(routes): Route50 — 50 new corridor pages + shared template`) — expand bodies to DEPTH BAR; do not open a duplicate scaffold PR. Import DE exemplars as gold samples.
