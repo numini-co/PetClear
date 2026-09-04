@@ -175,7 +175,7 @@ const internationalPetRelocation: ServicePageData = {
       body: [
         {
           type: 'p',
-          text: 'Airline fee grids live on the child guides, not here: Etihad cabin fees on the [Etihad pets-in-cabin guide](/guides/etihad-pet-policy/), Emirates animal-charge tiers on the [Emirates pet cargo](/guides/emirates-pet-cargo/) guide. Private-jet and shared-charter capability — including labelled market listings — live on [private jet pet travel](/service/private-jet-pet-travel/) and [shared pet charter](/service/shared-pet-charter/). Freight and coordination on this page stay Get a Quote. “Pet cargo Dubai” is a secondary commercial term on this URL, not a new /service/pet-cargo money page.',
+          text: 'Airline fee grids live on the child guides, not here: Etihad cabin from USD 399 on the [Etihad pets-in-cabin guide](/guides/etihad-pet-policy/), Emirates animal-charge tiers on the [Emirates pet cargo](/guides/emirates-pet-cargo/) guide. Private-jet and shared-charter capability live on [private jet pet travel](/service/private-jet-pet-travel/) and [shared pet charter](/service/shared-pet-charter/) — those offer pages stay Get a Quote. Freight and coordination on this page stay Get a Quote. “Pet cargo Dubai” is a secondary commercial term on this URL, not a new /service/pet-cargo money page.',
         },
         {
           type: 'table',

@@ -469,7 +469,7 @@ export default function CostGuidePage() {
                 <tr><td>Short-haul (GCC, nearby Asia)</td><td>3,000–5,000</td><td>Shorter flights, lower fuel surcharges</td></tr>
                 <tr><td>Medium-haul (Europe, UK, Turkey)</td><td>5,000–8,000</td><td>Most common routes. Emirates SkyCargo dominates.</td></tr>
                 <tr><td>Long-haul (USA, Canada, Australia)</td><td>7,000–12,000+</td><td>Distance + fuel + size = higher cost.</td></tr>
-                <tr><td>In-cabin (Etihad to Abu Dhabi only, ≤8kg)</td><td>Confirm at booking. Expired 2026 promo was ~USD 399. USD 1,500 = Estimated only</td><td>Not a current standard fee. Not available to Dubai. Eligibility: ≤8 kg incl. carrier.</td></tr>
+                <tr><td>In-cabin (Etihad to Abu Dhabi only, ≤8kg)</td><td>From USD 399 (source: Etihad). Confirm live at booking.</td><td>First-party airline fee. Not available to Dubai. Eligibility: ≤8 kg incl. carrier.</td></tr>
               </tbody>
             </table>
           </div>

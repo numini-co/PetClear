@@ -192,6 +192,8 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         title={data.h1}
         subtitle={shortSubtitle(data.heroValueProp)}
         updated="Updated September 2026"
+        primaryLabel={data.ctaLabel}
+        whatsappMessage={data.whatsappMessage}
       />
 
       {/* SECTIONS */}

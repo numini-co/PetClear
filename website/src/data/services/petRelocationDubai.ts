@@ -122,7 +122,7 @@ const petRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'We are not the airline. Cabin-fee and Emirates animal-charge tables live on the child guides. Private-jet and shared-charter capability — including labelled market listings — live on [private jet pet travel](/service/private-jet-pet-travel/) and [shared pet charter](/service/shared-pet-charter/). Those pages stay Get a Quote.',
+          text: 'We are not the airline. Cabin-fee and Emirates animal-charge tables live on the child guides. Private-jet and shared-charter capability live on [private jet pet travel](/service/private-jet-pet-travel/) and [shared pet charter](/service/shared-pet-charter/). Those offer pages stay Get a Quote — no published jet or charter prices.',
         },
       ],
     },
@@ -221,7 +221,7 @@ const petRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Competitor market (not a DPR package): Foufoufly publishes from-tiers of Essentials AED 4,000 / Managed AED 8,000 / White Glove AED 15,000. Those are a labelled competitor reference only. Dubai Pet Relocation door-to-door fees remain Get a Quote.',
+          text: 'Dubai Pet Relocation door-to-door fees remain Get a Quote. We do not publish a from-price or reprint competitor package tables on this page.',
         },
       ],
     },

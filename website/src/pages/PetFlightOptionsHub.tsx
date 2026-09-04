@@ -78,7 +78,7 @@ const faqData = [
   },
   {
     q: 'Where do verified airline fees live?',
-    a: 'On the child guides, not on this chooser hub. Etihad cabin-fee depth — including the expired 2026 promo note and the Estimated secondary figure — lives on the Etihad pets-in-cabin guide. Emirates animal-charge tiers live on the Emirates pet cargo guide. Jet, shared charter and door-to-door stay Get a Quote.',
+    a: 'On the child guides, not on this chooser hub. Etihad cabin from USD 399 lives on the Etihad pets-in-cabin guide. Emirates animal-charge tiers live on the Emirates pet cargo guide. Jet, shared charter and door-to-door stay Get a Quote.',
   },
 ]
 
@@ -184,7 +184,7 @@ export default function PetFlightOptionsHub() {
                 <tr className="bg-white">
                   <td className="border border-[#E2E5F6] px-4 py-3 font-semibold text-[#2A2A2A]">Etihad</td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
-                    Yes — small pets into AUH only. Confirm live cabin fees at booking; the 2026 from-USD-399 promo is expired.
+                    Yes — small pets into AUH only. From USD 399 in Economy (source: Etihad); confirm live at booking.
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Cabin into AUH, then ground to Dubai if needed</td>
                   <td className="border border-[#E2E5F6] px-4 py-3">

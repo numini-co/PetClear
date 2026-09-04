@@ -58,7 +58,7 @@ export const FLIGHT_MODE_CARDS: FlightModeCard[] = [
     id: 'charter',
     title: 'Shared / group pet charter',
     blurb:
-      'A dedicated lift shared with other pets — a midpoint between scheduled cargo and a full private jet. Labelled competitor seats live on the charter page. A DPR firm seat is Get a Quote.',
+      'A dedicated lift shared with other pets — a midpoint between scheduled cargo and a full private jet. A firm seat is Get a Quote — we do not publish charter prices.',
     to: FLIGHT_MODE_PATHS.charter,
     kind: 'service',
   },

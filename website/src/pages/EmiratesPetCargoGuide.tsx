@@ -227,7 +227,7 @@ export default function EmiratesPetCargoGuide() {
             ))}
           </ul>
           <p className="mt-4 text-sm leading-relaxed text-[#5A5A5A]">
-            Dubai Pet Relocation cargo coordination is quote-only. A labelled competitor (Foufoufly) publishes from-tiers around AED 4,000–15,000 — treat those as Estimated market context only, not a DPR freight quote. Summer heat notes live on the{' '}
+            Dubai Pet Relocation cargo coordination is quote-only — we do not publish a freight list. Commercial handoff lives on international pet relocation and door-to-door pet relocation. Summer heat notes live on the{' '}
             <Link to="/guides/pet-travel-summer-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               summer travel guide
             </Link>
@@ -341,7 +341,7 @@ export default function EmiratesPetCargoGuide() {
 
       <section className="section-padding bg-[#4F5BD5]">
         <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">Need the cargo file coordinated?</h2>
+          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">Need this file coordinated?</h2>
           <p className="mb-6 text-base leading-relaxed text-white/80">
             This page stays a guide. We do not sell a standalone cargo product here. Send pet, route and month — we quote coordination on{' '}
             <Link to="/service/international-pet-relocation/" className="underline">
