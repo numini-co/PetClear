@@ -20,16 +20,16 @@ const WA =
 
 const snippetQuestion = 'Can I bring my pet in the cabin on Etihad?'
 const snippetAnswer =
-  'Etihad is the only UAE airline that takes small dogs and cats in the cabin. Pet plus carrier must be 8 kg or less and land at Abu Dhabi, not Dubai International. Cabin fees change — confirm the live amount at booking. A 2026 from-USD-399 Economy promo ran about 13 April to 31 May and is no longer current.'
+  'Etihad is the only UAE airline that takes small dogs and cats in the cabin. Pet plus carrier must be 8 kg or less and land at Abu Dhabi, not Dubai International. Cabin fees change — confirm the live amount at booking. Etihad publishes cabin pet fees from USD 399 Economy (source: Etihad); confirm live before you pay.'
 
 const faqData = [
   {
     q: 'How much does it cost to bring a cat in the cabin on an Etihad flight?',
-    a: 'Confirm the live cabin-pet fee at booking on Etihad’s travelling-with-pets page — fees change. A timed Economy promo from USD 399 (Business needed an extra seat plus USD 399) ran roughly 13 April–31 May 2026; that window is over as of September 2026 and is not the current standard. Until Etihad’s first-party current fee is confirmed, treat USD 1,500 as Estimated only. We are not Etihad and we do not sell airline tickets.',
+    a: 'From USD 399 per flight in Economy (source: Etihad). In Business you must buy an extra seat plus USD 399. Confirm the live amount on Etihad’s travelling-with-pets page before you pay.',
   },
   {
     q: 'Etihad pet in cabin business class',
-    a: 'Etihad’s published Business cabin-pet path required an extra seat plus a pet fee; confirm the live combination at booking. The 2026 extra-seat-plus-USD-399 figure was part of a timed promo (book and travel ~13 April–31 May 2026) and is not a current standard. Extra-seat carrier size is published at 50 × 43 × 50 cm (source: Etihad). We coordinate eligibility and AUH arrival; we do not sell the seat.',
+    a: 'Etihad’s published Business cabin-pet path required an extra seat plus a pet fee; confirm the live combination at booking. The published Business path is an extra seat plus USD 399 (source: Etihad); confirm live at booking. Extra-seat carrier size is published at 50 × 43 × 50 cm (source: Etihad). We coordinate eligibility and AUH arrival; we do not sell the seat.',
   },
   {
     q: 'Can I buy my pet a seat on a plane?',
@@ -41,7 +41,7 @@ const faqData = [
   },
   {
     q: 'What does Etihad charge for a cabin pet?',
-    a: 'Confirm the live fee at booking. A 2026 Economy promo was from USD 399 (Business extra seat plus USD 399) for book-and-travel roughly 13 April–31 May 2026 — that window is over and is not the current standard. Until Etihad’s first-party current fee is confirmed, treat USD 1,500 as Estimated only. We are not Etihad and we do not sell airline tickets.',
+    a: 'From USD 399 per flight in Economy (source: Etihad). In Business you must buy an extra seat plus USD 399. Confirm the live amount on Etihad’s travelling-with-pets page before you pay.',
   },
   {
     q: 'What are the size and weight limits?',
@@ -73,7 +73,7 @@ export default function EtihadPetPolicyGuide() {
   const canonical = `${BASE_URL}${FLIGHT_MODE_PATHS.cabin}`
   const title = 'Etihad Pets in Cabin 2026 — Policy, Fees & AUH Arrival'
   const description =
-    'Etihad pets in cabin: the only UAE dog-and-cat cabin product. Cabin fees change — confirm at booking. The 2026 from-USD-399 promo is expired; USD 1,500 is Estimated only. ≤8 kg including carrier, AUH arrival and Dubai transfer.'
+    'Etihad pets in cabin: the only UAE dog-and-cat cabin product. Cabin fees change — confirm at booking. From USD 399 Economy (source: Etihad); confirm live. ≤8 kg including carrier, AUH arrival and Dubai transfer.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -178,9 +178,8 @@ export default function EtihadPetPolicyGuide() {
               </thead>
               <tbody>
                 {[
-                  ['Cabin pet fee (current)', 'Etihad publishes cabin pet fees that change; confirm at booking'],
-                  ['Estimated only (until first-party current fee confirmed)', 'USD 1,500 — Estimated only, not a published Etihad rate'],
-                  ['Expired 2026 promo (not current)', 'From USD 399 Economy; Business extra seat + USD 399. Book + travel ~13 Apr–31 May 2026. Window over as of September 2026.'],
+                  ['Cabin pet fee', 'From USD 399 per flight in Economy (source: Etihad). Confirm live before you pay.'],
+                  ['Business cabin pet fee', 'Extra seat plus USD 399 (source: Etihad)'],
                   ['Weight', 'Pet + carrier up to 8 kg'],
                   ['Minimum age', '16 weeks'],
                   ['Under-seat carrier', 'Maximum 40 × 40 × 22 cm'],
