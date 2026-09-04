@@ -36,7 +36,7 @@ const petRelocationDubai: ServicePageData = {
             'MOCCAE import or export permit guidance, with the 30-day import-permit window called out before you book',
             'Breed eligibility against current UAE restricted-breed rules — before you commit to a flight',
             'IATA-compliant crate measurement and sourcing through partners, not a guess from a chart',
-            'Cargo booking coordination with pet-experienced airlines (pet shipping / pet cargo Dubai folded into this page)',
+            'Cargo booking coordination with pet-experienced airlines — “pet cargo Dubai” is a secondary commercial term on [international pet relocation](/service/international-pet-relocation/), not a keyword this door-to-door URL owns',
             'Customs and last-mile handover at DXB or DWC, then delivery into a Dubai community or collection for departure',
           ],
         },
@@ -157,7 +157,7 @@ const petRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Pet shipping Dubai and pet cargo Dubai are the same commercial job as this page: manifested live-animal cargo, not cabin luggage. We coordinate the booking; we do not operate the aircraft. Mode-level detail lives on the [pet flight options hub](/guides/pet-flight-options-dubai/) and the [Emirates pet cargo](/guides/emirates-pet-cargo/) guide. For country-level rules, use the [routes hub](/routes/) rather than treating this page as a corridor encyclopedia.',
+          text: 'Pet shipping Dubai is folded into this door-to-door money page. “Pet cargo Dubai” is parked as a secondary commercial term on [international pet relocation](/service/international-pet-relocation/) — not a new /service/pet-cargo URL and not a keyword this page owns. Educational SkyCargo rules live on the [Emirates pet cargo](/guides/emirates-pet-cargo/) guide. We coordinate the booking; we do not operate the aircraft. Compare modes on the [pet flight options hub](/guides/pet-flight-options-dubai/). For country-level rules, use the [routes hub](/routes/).',
         },
         {
           type: 'list',
@@ -220,7 +220,7 @@ const petRelocationDubai: ServicePageData = {
     },
     {
       q: 'Do you operate the airline or just coordinate cargo booking?',
-      a: 'We coordinate. Pet shipping and pet cargo Dubai are folded into this service page: we work with pet-experienced airlines and transport partners, then keep the documents and timeline aligned. We are not the carrier.',
+      a: 'We coordinate. Pet shipping sits on this door-to-door page. “Pet cargo Dubai” is a secondary commercial term on [international pet relocation](/service/international-pet-relocation/). Educational Emirates SkyCargo rules live on the [Emirates pet cargo](/guides/emirates-pet-cargo/) guide. We work with pet-experienced airlines and transport partners; we are not the carrier.',
     },
     {
       q: 'How long is a MOCCAE import permit valid for a Dubai relocation?',
