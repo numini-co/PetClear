@@ -1,266 +1,307 @@
 import type { ServicePageData } from '../../types/servicePage.ts'
+import {
+  EXEMPT_LIST_HOLD,
+  MANIFEST_CARGO,
+  MICROCHIP_BEFORE_RABIES,
+  NONCOMPLIANCE_FINE,
+  PARASITE_WINDOW,
+  PERMIT_FEE_VERIFY,
+  PERMIT_PROCESSING_ESTIMATE,
+  PERMIT_VALIDITY,
+  RABIES_AGE_WAIT,
+  RELEASE_FEE_VERIFY,
+  TITER_SAMPLE_RULE,
+  TWO_PETS_RULE,
+} from '../../lib/regulatory.ts'
 
 const petImportDubai: ServicePageData = {
   slug: 'pet-import-dubai',
-  seoTitle: 'Pet Import Dubai | Bring Your Pet to the UAE',
+  seoTitle: 'Pet Import Dubai | MOCCAE Permit & Customs Clearance (2026)',
   metaDescription:
-    'Bring your pet to Dubai with full documentation support. MOCCAE import permit, customs clearance & delivery. Get your free WhatsApp quote in 15 minutes.',
+    'Commercial pet import to Dubai: MOCCAE 30-day permit, titer sample timing, cargo clearance at DXB and door delivery. Message us on WhatsApp for a relocation quote.',
   keywords:
-    'pet import dubai, import pet to dubai, bringing pets to dubai, pet import requirements dubai, pet import permit dubai, pet customs dubai',
+    'pet import dubai, pet import UAE, how to import a pet to UAE, MOCCAE import permit application, import pet to dubai, pet customs dubai',
   h1: 'Pet Import Services in Dubai',
   primaryKeyword: 'pet import dubai',
   heroValueProp:
-    'Bringing your dog or cat to Dubai? We guide you through every step — MOCCAE import permit, rabies and titer rules, IATA crates, customs clearance at DXB and delivery to your door. Transparent pricing, vetted partners and WhatsApp support throughout.',
+    'Commercial import into the UAE: we sequence the 30-day MOCCAE permit, titer sample window, manifested cargo and DXB clearance so your dog or cat is released to a Dubai door — not left in a cargo hall.',
+  // Blocked original-photo placeholder — AI substitute not used for this hero.
   heroImage: '/images/service-pet-import-dubai.jpg',
   heroImageAlt:
-    'A relaxed dog and cat arriving beside a travel crate at a bright Dubai airport terminal — pet import to Dubai',
+    'Pet travel crates being handled in a Dubai air-cargo warehouse during pet import clearance (placeholder until an original cargo-facility photo is shot)',
   whatsappMessage:
-    'Hi Dubai Pet Relocation! I want to import my pet to Dubai. Can you guide me through the MOCCAE permit, requirements and cost?',
-  trustBadges: ['MOCCAE requirements guided', 'Vetted partners', 'DXB customs clearance', 'WhatsApp support'],
-  costRange: { low: '2000', high: '20000' },
+    'Hi Dubai Pet Relocation! I want to import my pet to Dubai. Can you review origin, breed, documents and a commercial import quote?',
+  ctaLabel: 'Get a Relocation Quote',
+  heroEyebrow: 'Pet Import Service',
+  trustBadges: [
+    '30-day MOCCAE permit window',
+    'Titer sample timing checked',
+    'DXB / AUH cargo clearance',
+    'WhatsApp during business hours',
+  ],
   hasHowTo: true,
-  howToName: 'Step-by-Step Pet Import Process for Dubai',
+  howToName: 'How commercial pet import to Dubai is coordinated',
   sections: [
     {
-      h2: 'Bringing Pets to Dubai: What You Need to Know',
+      h2: 'This page is the commercial import job — not the rules encyclopaedia',
       intro:
-        'Importing a pet into Dubai is a regulated process governed by the Ministry of Climate Change and Environment (MOCCAE). With the right documents in the right order, most dogs and cats clear customs at the airport within a couple of hours and head straight home with you.',
+        'Ruling 5: this URL owns importing a pet as a paid coordination job. The full statutory checklist lives on [UAE pet import requirements](/guides/uae-pet-import-requirements/). Arrival-side settling (first week, municipality registration) lives on [pet relocation to Dubai](/service/pet-relocation-to-dubai/). Permit filing as a standalone product lives on [MOCCAE permit assistance](/service/moccae-pet-permit/).',
       body: [
         {
           type: 'p',
-          text: 'The single most important factor in your pet import is your country of origin. The UAE classifies every country as either low-risk or high-risk for rabies, and that classification decides your entire timeline. From a low-risk country with an already-vaccinated pet, you can often be ready to fly in 2 to 6 weeks. From a high-risk country, a mandatory rabies titer test and a 90-day waiting period stretch the process to around 4 months. Knowing your classification before you do anything else saves you from booking flights you cannot use.',
+          text: 'If you are paying someone to get a dog or cat into the UAE, the work is operational: eligibility, document sequence, a permit that is still valid on landing, a manifested cargo booking, veterinary inspection at the cargo village, and last-mile handover. We coordinate that sequence with vetted veterinary and transport partners. We do not operate the aircraft and we are not a MOCCAE-licensed agency — only the Ministry issues permits.',
         },
         {
           type: 'p',
-          text: 'Every pet entering the UAE needs an ISO-compliant 15-digit microchip, a current rabies vaccination, additional species vaccinations, a government-endorsed health certificate from the origin country and a MOCCAE import permit. Pets must enter the UAE as manifested air cargo — not in the cabin and not as checked baggage — and travel in an IATA-compliant crate. We walk you through each requirement so nothing is missed and nothing is done out of sequence.',
+          text: `${MANIFEST_CARGO} Country-level corridors (UK certificates, India titer logistics, Philippines BAI) belong on the [routes hub](/routes/), not as a second copy of this page.`,
         },
         {
-          type: 'p',
-          text: 'A few rules trip up first-time importers. The microchip must be implanted before the rabies vaccination, or MOCCAE may treat the vaccination as invalid. Dogs must be at least 12 weeks old to import from a low-risk country and at least 15 weeks from a high-risk country, because of vaccination and titer timing. And each person may import a maximum of 2 pets per year through the standard process. We confirm all of this against your specific situation before you commit a single dirham.',
-        },
-        {
-          type: 'p',
-          text: 'We are a coordination service, not a carrier. We do not fly the animals ourselves and we are not a MOCCAE-licensed agency. What we do is guide you through MOCCAE requirements, connect you with vetted veterinary and transport partners and keep your paperwork and timeline correct from first message to final delivery.',
+          type: 'list',
+          items: [
+            'Eligibility review — breed against Federal Law 22/2016 Annex 2 before you commit to a flight',
+            'Document pack lined up in the correct order (microchip before rabies, then vaccinations, then titer if required)',
+            'MOCCAE import permit timed to the 30-day validity window',
+            'IATA crate sizing and manifested cargo booking into DXB, DWC or AUH',
+            'Arrival inspection coordination and door delivery in Dubai',
+          ],
         },
       ],
     },
     {
-      h2: 'Step-by-Step Pet Import Process',
+      h2: 'The six-stage import sequence we actually run',
       intro:
-        'Here is the full import journey for a dog or cat coming into Dubai. The order matters — doing steps out of sequence is the most common reason permits get rejected or pets are held at the airport.',
+        'Order is the product. Booking a ticket before the permit window and titer sample date are understood is the most expensive import mistake we see.',
       body: [
+        {
+          type: 'image',
+          src: '/assets/w5/pet-import-dubai-process-diagram.png',
+          alt: 'Pet import process for Dubai: MOCCAE permit, health certificate, flight, customs clearance, release, home delivery',
+          caption: 'Six commercial stages. Validity and fees are confirmed on the portal — they are not baked into this diagram.',
+        },
         {
           type: 'steps',
           steps: [
             {
-              title: 'Microchip your pet',
-              text: 'Your pet must be fitted with an ISO 11784/11785 compliant 15-digit microchip before anything else. This chip number must appear identically on every document that follows. A vaccination or test done before the chip is implanted has no legal standing with MOCCAE.',
+              title: 'Eligibility and origin check',
+              text: 'Send breed, age, weight, origin country and a target month. We check Annex 2 breed restrictions and whether your origin is treated as titer-required. We do not publish an unverified exempt-country list — confirm your origin on the MOCCAE portal, or we will check it with you.',
             },
             {
-              title: 'Vaccinate against rabies (and species diseases)',
-              text: 'After microchipping, your pet receives a rabies vaccination at least 21 days before travel and no more than 12 months prior to arrival. Dogs also need distemper, hepatitis, parvovirus and leptospirosis; cats need feline rhinotracheitis, panleukopenia and calicivirus. Only inactivated or recombinant rabies vaccines are accepted.',
+              title: 'Microchip, then vaccinate',
+              text: `${MICROCHIP_BEFORE_RABIES} ${RABIES_AGE_WAIT} Dogs also need distemper, parvovirus, infectious canine hepatitis and leptospirosis; cats need panleukopenia, rhinotracheitis and calicivirus.`,
             },
             {
-              title: 'Complete a rabies titer test (high-risk countries only)',
-              text: 'If you are importing from a high-risk country, your pet needs a rabies antibody titer test (RNATT) from an accredited laboratory. The blood sample must be drawn at least 21 days after the rabies vaccination and the result must be 0.5 IU/ml or higher. Low-risk countries skip this step entirely.',
+              title: 'Titer sample — only if your origin requires it',
+              text: `${TITER_SAMPLE_RULE} ${EXEMPT_LIST_HOLD} Deep timing lives on [rabies titer test for Dubai](/guides/rabies-titer-test-dubai/).`,
             },
             {
-              title: 'Observe the waiting period (high-risk countries)',
-              text: 'High-risk countries carry a mandatory 90-day waiting period measured from the date the titer blood sample was collected — not from when the result is issued. This window cannot be shortened, which is why a high-risk import takes roughly 4 months from start to finish.',
+              title: 'MOCCAE import permit — 30 days',
+              text: `${PERMIT_VALIDITY} ${PERMIT_FEE_VERIFY} ${PERMIT_PROCESSING_ESTIMATE} Walkthrough: [how to apply for a MOCCAE import permit](/guides/moccae-import-permit/). Hands-on filing: [MOCCAE permit assistance](/service/moccae-pet-permit/).`,
             },
             {
-              title: 'Apply for the MOCCAE import permit',
-              text: 'We help you apply for the import permit through the MOCCAE portal. The permit costs AED 200 per pet and stays valid for 30 days, so your pet must arrive within that window. You will need the microchip number, vaccination records, titer result if applicable, and your passport and visa details.',
+              title: 'Health certificate, parasites, crate and cargo',
+              text: `An official origin-country health certificate is commonly required within 5–10 days of departure. ${PARASITE_WINDOW} We size an IATA crate and coordinate a manifested cargo booking — not cabin, not hold baggage (Etihad cabin into Abu Dhabi is the published exception).`,
             },
             {
-              title: 'Get the health certificate and parasite treatment',
-              text: 'A government-endorsed veterinary health certificate is issued in your origin country shortly before travel. Around the same time, your pet receives internal and external antiparasitic treatment within 14 days of arrival. We give you the exact MOCCAE certificate model so your origin vet completes it correctly.',
-            },
-            {
-              title: 'Book an IATA crate and pet-experienced flight',
-              text: 'We help size an IATA-compliant crate — rigid plastic, metal bolts, metal door, ventilation on all four sides and tall enough for your pet to stand naturally. Snub-nosed breeds need a crate one size larger. We then coordinate a manifested cargo booking on a pet-experienced airline routed into Dubai.',
-            },
-            {
-              title: 'Clear customs at DXB and deliver home',
-              text: 'On arrival at Dubai Cargo Village, a MOCCAE veterinary inspector scans the microchip and reviews the documents, and customs processes the release. Once veterinary inspection and clearance fees are paid, your pet is released. We arrange door-to-door delivery and keep you updated on WhatsApp at every checkpoint.',
+              title: 'Clearance at DXB / AUH and door delivery',
+              text: `${RELEASE_FEE_VERIFY} A MOCCAE inspector scans the chip and reviews the pack. Compliant pets are examined and released — there is no routine quarantine. We arrange last-mile delivery and keep you on WhatsApp during business hours.`,
             },
           ],
         },
       ],
     },
     {
-      h2: 'Required Documents',
+      h2: 'Documents we line-check before anything is booked',
       intro:
-        'These are the documents MOCCAE and the airline will check. We review every one of them against your pet before travel, so a typo in a microchip number never costs you a flight.',
+        'This is a commercial review list, not a substitute for the statutory table on the requirements guide. Every certificate must show the same 15-digit microchip number.',
       body: [
+        {
+          type: 'image',
+          src: '/assets/w5/pet-import-document-folder-checklist-dubai.jpg',
+          alt: 'Pet import document folder for Dubai: vaccination records, microchip certificate and itinerary',
+          caption: 'One folder, every document, checked twice before anything is booked.',
+        },
         {
           type: 'list',
           items: [
-            'ISO 11784/11785 compliant 15-digit microchip, implanted before the rabies vaccination',
-            'Valid rabies vaccination certificate (administered 21 days to 12 months before arrival; inactivated or recombinant only)',
-            'Additional species vaccinations — dogs: distemper, hepatitis, parvovirus, leptospirosis; cats: rhinotracheitis, panleukopenia, calicivirus',
-            'Rabies antibody titer test (RNATT) for high-risk countries only — result ≥ 0.5 IU/ml, valid 365 days, sample drawn ≥ 21 days after vaccination',
-            'Government-endorsed international veterinary health certificate from the country of origin',
-            'MOCCAE import permit (AED 200 per pet, valid 30 days from issuance)',
-            'Antiparasitic treatment record (internal and external) within 14 days of arrival',
-            'Owner passport copy and UAE visa or residency details for the permit application',
+            'ISO 11784/11785 15-digit microchip implanted before the rabies vaccination',
+            'Rabies certificate: pet at least 12 weeks at vaccination; at least 21 days before arrival; inactivated or recombinant only',
+            'Species core vaccines as listed on [UAE pet import requirements](/guides/uae-pet-import-requirements/)',
+            'RNATT result ≥0.5 IU/ml when required — sample drawn within 90 days before travel',
+            'Government-endorsed international veterinary health certificate from the origin country',
+            'MOCCAE import permit still inside its 30-day window on the arrival date',
+            'Internal and external parasite treatments within 10 days before shipping',
+            'Owner passport copy and UAE visa / residency details used on the permit',
           ],
         },
         {
           type: 'p',
-          text: 'Every certificate, vaccination record and permit must show the exact same microchip number. We triple-check the whole pack before you fly. For the full, current checklist see our UAE pet import requirements guide.',
+          text: `${NONCOMPLIANCE_FINE} We triple-check the pack so a typo never becomes a refused landing.`,
         },
       ],
     },
     {
-      h2: 'MOCCAE Import Permit Application',
+      h2: 'How we time the 30-day MOCCAE permit against the flight',
       intro:
-        'The MOCCAE import permit is the document that legally authorizes your pet to enter the UAE. It is applied for online and we guide you through the application end to end.',
+        'The permit is the legal gate. Airlines will not accept the animal without it, and a cargo village will not release an animal on an expired permit. The commercial job is to issue it late enough to cover landing and early enough to survive processing.',
       body: [
         {
           type: 'p',
-          text: 'The permit is issued by the Ministry of Climate Change and Environment through its online portal. Access requires a UAE Pass, which is why many newcomers ask us to coordinate the application on their behalf with a vetted local partner. The fee is AED 200 per pet, and the permit is valid for 30 days from issuance — your pet must land inside that window or the permit must be reissued.',
+          text: `${PERMIT_VALIDITY} Applying the day you first think about moving is how permits expire on the tarmac. We work backwards from a confirmed cargo date, then open the portal application once the document pack is consistent.`,
         },
         {
           type: 'p',
-          text: 'To apply you will need the microchip number, complete vaccination records, the rabies titer result if you are coming from a high-risk country, a copy of the owner\'s passport, the UAE visa or residency details where applicable, and a recent photograph of the pet. The standard limit is 2 pets per person per year through this process.',
+          text: 'Access requires UAE Pass. Many newcomers ask us to coordinate the form with a vetted local partner rather than learn the portal under a flight deadline. We still do not issue the permit — MOCCAE does.',
         },
         {
           type: 'p',
-          text: 'Processing usually takes anywhere from one working day to about two weeks depending on how complete the application is, so we encourage clients to apply early. We do not hold a MOCCAE license ourselves — we guide you through the MOCCAE requirements and, on our higher service tiers, coordinate the submission through vetted partners. Learn more on our dedicated MOCCAE pet permit page.',
+          text: `${TWO_PETS_RULE} ${PERMIT_PROCESSING_ESTIMATE}`,
         },
       ],
     },
     {
-      h2: 'Pet Import Timeline',
+      h2: 'Import timeline — what actually sets the floor',
       intro:
-        'The biggest question every importer has is "how long will this take?" The honest answer depends entirely on whether your origin country is classified low-risk or high-risk for rabies.',
+        'The honest answer is not a single number. It depends on whether MOCCAE requires an RNATT for your origin, and whether the microchip-then-rabies sequence is already done.',
       body: [
         {
           type: 'p',
-          text: 'From a low-risk country — for example most of Western Europe — with a pet that is already microchipped and rabies-vaccinated, the import can be completed in roughly 2 to 6 weeks. The main constraints are the health certificate (issued close to travel), antiparasitic treatment within 14 days of arrival and permit processing of one to two weeks. Starting completely from scratch, including a new vaccination and its 21-day wait, pushes this closer to 4 to 8 weeks.',
+          text: 'When an RNATT is not required and the pet is already microchipped and rabies-vaccinated, the commercial path is usually a matter of weeks: health-certificate window, 10-day parasite treatments, crate, cargo slot and the 30-day permit. Starting from a new first rabies vaccination adds the 21-day wait before arrival.',
         },
         {
           type: 'p',
-          text: 'From a high-risk country, plan for approximately 4 months. The rabies titer test sample can only be drawn 21 days after vaccination, results take a further 2 to 3 weeks, and then a mandatory 90-day waiting period runs from the date the blood sample was collected. This 90-day window cannot be shortened under any circumstances, so it sets the floor for your entire timeline. We map your exact dates backward from your target arrival so every deadline lands in the right order.',
+          text: `${TITER_SAMPLE_RULE} Lab turnaround (often 1–3 weeks) and the 21-day post-vaccination wait before a valid sample can be drawn are what stretch high-risk files — not a mandatory 90-day sit after the result arrives. We map dates backwards from your target landing so the sample is still inside the 90-day window on travel day.`,
         },
         {
           type: 'table',
-          headers: ['Origin country', 'Typical timeline', 'Key driver'],
+          headers: ['Starting point', 'What usually drives the calendar', 'What we will not claim'],
           rows: [
-            ['Low-risk (already vaccinated)', '2 – 6 weeks', 'Health certificate + permit processing'],
-            ['Low-risk (from scratch)', '4 – 8 weeks', 'New vaccination + 21-day wait'],
-            ['High-risk (full protocol)', '~4 months', 'Titer test + 90-day waiting period'],
+            [
+              'RNATT not required; already vaccinated',
+              'Health certificate + 30-day permit + cargo slot',
+              'A guaranteed week count — cargo calendars move',
+            ],
+            [
+              'RNATT not required; new rabies vaccine',
+              '21-day wait after vaccination plus the pack above',
+              'That the 21 days can be waived',
+            ],
+            [
+              'RNATT required',
+              'Post-vaccine wait + lab time + sample still ≤90 days before travel',
+              'A 90-day waiting period after the test',
+            ],
           ],
         },
       ],
     },
     {
-      h2: 'Pet Import Cost Dubai',
+      h2: 'What an import quote is made of — without invented government fees',
       intro:
-        'Total import cost depends on your origin country, your pet\'s size, the airline and how much you want handled for you. Government fees are a small, fixed part of the picture; flights and veterinary work make up most of the spend.',
+        'Government charges are a small, contested slice. Published permit and release figures have differed, so this page does not print AED 200 vs 500 or 500/250 vs 1,000/500 as if they were settled.',
       body: [
         {
           type: 'p',
-          text: 'Most pet imports to Dubai fall between roughly AED 2,000 for a simple regional move and AED 20,000 for a long-haul, large-breed or premium door-to-door import. The government portion is modest and predictable: a MOCCAE import permit of AED 200 per pet, plus an airport release fee at clearance of about AED 500 per dog or AED 250 per cat. That works out to roughly AED 700 in government fees for a dog and AED 450 for a cat. Everything beyond that is veterinary work, the crate, cargo and coordination.',
+          text: `${PERMIT_FEE_VERIFY} ${RELEASE_FEE_VERIFY} Those portal amounts exclude origin veterinary work, the crate, manifested cargo and our coordination.`,
         },
         {
           type: 'table',
-          headers: ['Cost component', 'Typical range (AED)'],
+          headers: ['Cost type', 'How we treat it on this page'],
           rows: [
-            ['MOCCAE import permit', '200 per pet'],
-            ['Airport release / veterinary inspection', '250 (cat) – 500 (dog)'],
-            ['Veterinary (vaccines, health cert, titer)', '1,200 – 3,000'],
-            ['IATA-compliant crate', '300 – 2,000'],
-            ['Flight / manifested cargo', '3,000 – 12,000+'],
-            ['Coordination & handling', '1,500 – 6,000'],
+            ['MOCCAE import permit (per pet)', 'Confirm the live portal amount when you apply'],
+            ['Arrival veterinary release / inspection', 'Confirm the live portal / cargo-village amount'],
+            ['Origin veterinary (vaccines, certificate, titer if required)', 'Quoted from your origin vet — not a published DPR fee table'],
+            ['IATA-compliant crate', 'Sized to the animal; partner quote, not a guess from a chart'],
+            ['Manifested cargo', 'Airline and route specific — we itemise before you book'],
+            ['Coordination and handling', 'Quoted on WhatsApp for your origin, size and service tier'],
           ],
         },
         {
           type: 'p',
-          text: 'The single largest variable is the flight. Cargo from nearby regions can start around AED 3,000, while a large dog on a long-haul route can run well past AED 12,000. We give you a clear, itemized estimate up front so there are no surprises at the airport.',
+          text: 'Compare how much of the sequence we hold versus how much you hold on [compare our service tiers](/services/). Then message us for a relocation quote — we do not publish a fake AED total on this page.',
         },
       ],
     },
     {
-      h2: 'Banned Dog Breeds',
+      h2: 'Breed eligibility before you spend on cargo',
       intro:
-        'Before you plan anything, check that your dog\'s breed is allowed. The UAE prohibits the import of certain breeds outright, and Dubai adds its own residency restrictions on top.',
+        'Federal Law No. 22 of 2016 Annex 2 (as amended, including Ministerial Decree 190/2021) prohibits import of listed dangerous-dog types and their hybrids. We check your dog against the current list before you commit.',
       body: [
         {
           type: 'p',
-          text: 'Under Ministerial Resolution No. 448 of 2017, a number of breeds and their crosses are banned from import into the UAE, including Pit Bull types (Pit Bull Terrier, American Staffordshire Terrier, American Bully), most Mastiff types (Fila Brasileiro, Dogo Argentino, Tibetan Mastiff, Boerboel, Cane Corso, Bullmastiff, Dogue de Bordeaux, Neapolitan Mastiff, English Mastiff), the Japanese Tosa, Rottweiler, Doberman, Presa Canario, Boxer and wolf-dog hybrids. Any mixed breed that is morphologically identifiable as one of these may also be refused.',
+          text: 'Annex 2 includes Pit Bull types (Staffordshire Bull Terrier, American Pit Bull Terrier, American Staffordshire Terrier, American Bully and mixes), Mastiff types (including Fila Brasileiro, Dogo Argentino and other Mastiff / hybrids), Japanese Tosa, Rottweiler, Doberman Pinscher, Presa Canario and Boxer. Possession, trade or breeding of Annex-2 dogs is prohibited. Mixed dogs that are morphologically identifiable as a listed type can still be refused.',
         },
         {
           type: 'p',
-          text: 'Separately, Dubai restricts certain breeds from living in apartments and requires them to be leashed and muzzled in public and registered with the Veterinary Services Division — these include the Bull Terrier, Husky, English Bulldog, Ca de Bou, Bulldog and Shar Pei. Cats are generally not subject to breed bans, though early-generation Savannah and Bengal cats can face additional scrutiny.',
-        },
-        {
-          type: 'p',
-          text: 'There are narrow exceptions for service, emotional-support and other medical-purpose animals, which require training-centre documentation and a supporting medical report. Because enforcement is interpreted by type and can change, we always check your specific dog against the current MOCCAE list before you commit. See our banned dog breeds in Dubai guide for the full breakdown.',
+          text: 'Narrow exceptions for service, assistance or medical-purpose animals require training-centre documentation and a supporting medical report under the 2021 amendment. We do not treat an “emotional support” letter as a shortcut. Full list and enforcement notes: [banned dog breeds in Dubai](/guides/banned-dog-breeds-dubai/).',
         },
       ],
     },
     {
-      h2: 'Airport Clearance at DXB and AUH',
+      h2: 'Airport clearance we coordinate — DXB, DWC and AUH',
       intro:
-        'Pets enter the UAE as manifested cargo, so they arrive at a cargo terminal rather than the passenger hall. With documents in order, clearance is usually quick.',
+        'Pets enter as manifested cargo, so they arrive at a cargo terminal, not the passenger hall. A dedicated arrival walkthrough (Cargo Village, municipality registration) is scheduled as a later guide; until that URL is live, this section is the commercial summary.',
       body: [
         {
           type: 'p',
-          text: 'At Dubai International (DXB), your pet lands at the Emirates / dnata Cargo Village. A MOCCAE veterinary inspector examines the animal, scans the microchip and checks it against the import permit, then reviews the health certificate and vaccination records. Customs processes the clearance, the veterinary inspection and release fee is paid — roughly AED 500 for a dog and AED 250 for a cat — and the pet is released to you or your nominated agent. Most pets clear within 1 to 2 hours of landing when paperwork is complete.',
+          text: `At Dubai International the typical path is the cargo village: MOCCAE veterinary inspection, microchip scan against the permit, document review, customs release, then handover. ${RELEASE_FEE_VERIFY} When the pack is complete, compliant pets are released to the owner or nominated agent — there is no routine quarantine.`,
         },
         {
           type: 'p',
-          text: 'At Abu Dhabi International (AUH), the process mirrors DXB: arrival at the AUH cargo terminal, MOCCAE veterinary inspection, customs clearance through the Abu Dhabi portal and payment of the inspection fee. Pets arriving in Abu Dhabi on Etihad also need an Abu Dhabi Customs Bill of Entry arranged in advance. We advise clients on which airport suits their route and handle the advance notifications.',
+          text: 'Abu Dhabi arrivals follow the same federal permit and inspection logic at the AUH cargo side. Etihad in-cabin pets still need the UAE health paperwork plus an Abu Dhabi Customs Bill of Entry — we flag that path only when the animal actually qualifies. We advise which airport matches the route rather than forcing every file through DXB.',
         },
         {
           type: 'p',
-          text: 'A word of caution: pets that arrive from a high-risk country without a valid titer test, or with incomplete paperwork, can be held in quarantine at the owner\'s expense — so the airport is exactly where careful preparation pays off. Because inspection and clearance can take time, especially outside business hours, we strongly recommend using a coordinated clearance agent, which we arrange through vetted partners.',
+          text: `${NONCOMPLIANCE_FINE} Incomplete titer or permit files are exactly where coordinated clearance earns its keep. We do not invent 1–2 hour guarantees; we stay on the thread until the animal is in the van.`,
         },
       ],
     },
   ],
   faq: [
     {
-      q: 'How much does it cost to import a pet to Dubai?',
-      a: 'Most imports fall between AED 2,000 and AED 20,000 depending on origin country, pet size, airline and service level. Government fees are small and fixed — a MOCCAE import permit of AED 200 per pet plus an airport release fee of about AED 500 per dog or AED 250 per cat, roughly AED 700 per dog and AED 450 per cat in total. The flight and veterinary work make up most of the cost.',
+      q: 'What does a commercial pet import to Dubai actually include?',
+      a: 'On this page it means we coordinate eligibility, the document sequence, the 30-day MOCCAE import permit, IATA crate sizing, manifested cargo and cargo-village clearance through to a Dubai door. We are a coordination service, not the airline and not a MOCCAE-licensed issuer. Compare depth of help on [compare our service tiers](/services/).',
     },
     {
-      q: 'How long does it take to import a pet to Dubai?',
-      a: 'From a low-risk country with an already-vaccinated pet, typically 2 to 6 weeks. From a high-risk country, plan for about 4 months, because of the mandatory rabies titer test and a 90-day waiting period that runs from the date the blood sample is collected and cannot be shortened.',
+      q: 'How is this different from the UAE import-requirements guide?',
+      a: 'The guide owns the statutory checklist. This page owns the paid import job — sequencing, partners and clearance. Read the rules on [UAE pet import requirements](/guides/uae-pet-import-requirements/), then use this page when you want the work done.',
     },
     {
-      q: 'Do I need a rabies titer test to bring my pet to Dubai?',
-      a: 'Only if you are importing from a high-risk country. The titer test (RNATT) must show a result of at least 0.5 IU/ml, the blood sample must be drawn at least 21 days after the rabies vaccination, and the result is valid for 365 days. Pets from low-risk countries do not need a titer test at all.',
+      q: 'How long is the MOCCAE import permit valid?',
+      a: 'Thirty days from issuance. The pet must enter the UAE inside that window. If the permit expires, a new application and a new portal fee are required. We time filing against a confirmed cargo date, not against the day you first messaged us.',
     },
     {
-      q: 'What is the MOCCAE import permit and how much does it cost?',
-      a: 'The MOCCAE import permit is the document that authorizes your pet to enter the UAE, applied for online through the Ministry of Climate Change and Environment portal. It costs AED 200 per pet and is valid for 30 days from issuance, so your pet must arrive within that window. We guide you through the application end to end.',
+      q: 'Do I need a rabies titer test to import a pet to Dubai?',
+      a: 'Only if MOCCAE treats your origin as requiring an RNATT. When it is required, the blood sample must be taken within 90 days before travel and read at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the result. We do not publish an unverified exempt-country list — confirm your origin on the portal. Detail: [rabies titer test for Dubai](/guides/rabies-titer-test-dubai/).',
     },
     {
-      q: 'How many pets can I import to Dubai?',
-      a: 'The standard limit is a maximum of 2 pets per person per year through the normal import process. If you need to bring more, this can sometimes be arranged through a licensed agent, and we can advise on your options based on your situation.',
+      q: 'How much do government import fees cost?',
+      a: 'Confirm the current MOCCAE permit fee and the arrival release / inspection fee on the official portal. Published amounts have differed (permit AED 200 vs 500; release figures also conflict). Those government charges exclude veterinary work, crate, cargo and coordination.',
     },
     {
-      q: 'How old does my pet need to be to import to Dubai?',
-      a: 'The minimum import age is 12 weeks from a low-risk country and 15 weeks from a high-risk country. The higher age for high-risk countries reflects the time needed to complete the rabies vaccination and titer test in the correct sequence.',
+      q: 'Can my pet fly in the cabin into Dubai?',
+      a: 'Almost never. Pets must enter the UAE as manifested cargo, not cabin or accompanied checked baggage. Etihad publishes an in-cabin option for eligible small dogs and cats arriving into Abu Dhabi only. Emirates arrivals into Dubai travel as SkyCargo. We confirm the carrier rule in writing before you pay for a ticket.',
     },
     {
-      q: 'Which dog breeds are banned from import to Dubai?',
-      a: 'The UAE bans the import of Pit Bull types, most Mastiff types, the Japanese Tosa, Rottweiler, Doberman, Presa Canario, Boxer and wolf-dog hybrids, along with their crosses. Dubai also restricts breeds such as the Husky and English Bulldog from apartment living. We check your specific dog against the current MOCCAE list before you commit to anything.',
+      q: 'How many pets can I import on a personal permit?',
+      a: 'Personal (non-commercial) import is typically limited to a maximum of 2 pets per person (2 cats, or 2 dogs, or 1 cat and 1 dog) per permit / per year. Confirm the current portal rule for your household. Larger groups need a different conversation — message us before you book crates.',
     },
     {
-      q: 'Do you handle the import yourselves?',
-      a: 'We are a coordination service, not a carrier, and we are not a MOCCAE-licensed agency. We guide you through MOCCAE requirements, connect you with vetted veterinary and transport partners, and keep your documents and timeline correct so your pet clears customs at DXB or AUH without surprises.',
+      q: 'What happens if the paperwork is wrong on arrival?',
+      a: 'Non-compliant imports can face a fine of AED 5,000 per animal, and the animal may be rejected or confiscated. Compliant pets are examined by MOCCAE staff at the entry port and released — there is no routine quarantine. That is why we line-check the pack before the flight, not after.',
+    },
+    {
+      q: 'Do you issue the MOCCAE permit yourselves?',
+      a: 'No. Only MOCCAE issues permits. We review the file, time the 30-day window and, on higher tiers, coordinate portal submission through vetted partners. Standalone permit help: [MOCCAE permit assistance](/service/moccae-pet-permit/). DIY walkthrough: [MOCCAE import permit guide](/guides/moccae-import-permit/).',
     },
   ],
   relatedLinks: [
-    { label: 'Pet Relocation Dubai', to: '/service/pet-relocation-dubai/' },
-    { label: 'MOCCAE Pet Permit', to: '/service/moccae-pet-permit/' },
-    { label: 'Dog Relocation Dubai', to: '/service/dog-relocation-dubai/' },
     { label: 'UAE Pet Import Requirements', to: '/guides/uae-pet-import-requirements/' },
+    { label: 'MOCCAE Permit Assistance', to: '/service/moccae-pet-permit/' },
+    { label: 'MOCCAE Import Permit Guide', to: '/guides/moccae-import-permit/' },
+    { label: 'Rabies Titer Test Dubai', to: '/guides/rabies-titer-test-dubai/' },
+    { label: 'Pet Relocation to Dubai', to: '/service/pet-relocation-to-dubai/' },
     { label: 'Banned Dog Breeds in Dubai', to: '/guides/banned-dog-breeds-dubai/' },
+    { label: 'Routes Hub', to: '/routes/' },
     { label: 'How It Works', to: '/how-it-works/' },
   ],
 }

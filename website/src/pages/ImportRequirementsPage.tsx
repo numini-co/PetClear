@@ -15,11 +15,28 @@ import {
   PawPrint,
   Syringe,
 } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
-import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
+import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import LastVerified from '../components/LastVerified.tsx'
+import ContentImage from '../components/ContentImage.tsx'
+import OfficialSources from '../components/OfficialSources.tsx'
+import {
+  EXEMPT_LIST_HOLD,
+  LAST_VERIFIED_LABEL,
+  MANIFEST_CARGO,
+  MICROCHIP_BEFORE_RABIES,
+  NONCOMPLIANCE_FINE,
+  PARASITE_WINDOW,
+  PERMIT_FEE_VERIFY,
+  PERMIT_PROCESSING_ESTIMATE,
+  PERMIT_VALIDITY,
+  RABIES_AGE_WAIT,
+  TITER_SAMPLE_RULE,
+  TWO_PETS_RULE,
+} from '../lib/regulatory.ts'
 
 /* ─── FAQ accordion helper ─── */
 function FAQItem({ question, answer }: { question: string; answer: string }) {
@@ -63,13 +80,13 @@ export default function ImportRequirementsPage() {
   const checklistItems = [
     'Confirm your pet\'s breed is not banned in the UAE',
     'Check if your origin country requires a rabies titer test',
-    'Get an ISO 11784/11785 microchip implanted (must happen before rabies vaccination)',
-    'Administer rabies vaccination (pet must be ≥12 weeks old; ≥21 days before travel)',
+    MICROCHIP_BEFORE_RABIES,
+    RABIES_AGE_WAIT,
     'Administer core vaccines (DHPPIL for dogs, FVRCP for cats)',
-    'If high-risk country: rabies titer test (≥0.5 IU/ml), then wait 90 days',
-    'Apply for MOCCAE import permit (valid 30 days from issuance — confirm the current portal fee)',
-    'Book manifest cargo flight (pets cannot fly in cabin or as checked baggage to Dubai)',
-    'Administer antiparasitic treatment within 14 days of arrival',
+    TITER_SAMPLE_RULE,
+    `${PERMIT_VALIDITY} ${PERMIT_FEE_VERIFY}`,
+    MANIFEST_CARGO,
+    PARASITE_WINDOW,
     'Obtain International Health Certificate within 10 days of arrival',
     'Register with Dubai Municipality within 30 days of arrival',
   ]
@@ -79,15 +96,15 @@ export default function ImportRequirementsPage() {
       num: 1,
       title: 'Check Your Breed and Country',
       days: 'Day 0',
-      body: 'Before you do anything, confirm two things: (1) Is your dog\'s breed banned in the UAE? (2) Is your origin country high-risk or low-risk for rabies? This determines whether you need a titer test and how long you\'ll wait.',
+      body: 'Before you do anything, confirm two things: (1) Is your dog\'s breed listed under Federal Law 22/2016 Annex 2? (2) Does MOCCAE require an RNATT for your origin? That second question is answered on the official portal — not by an unofficial country list on this page.',
       icon: <Ban className="w-5 h-5" />,
-      warn: 'The exact high-risk/low-risk country list changes. Always verify your country\'s status on the MOCCAE portal before starting.',
+      warn: 'The exempt / rabies-controlled country list could not be captured first-party for publication. Always verify your origin on the MOCCAE portal before skipping a titer test.',
     },
     {
       num: 2,
       title: 'Implant the Microchip',
       days: 'Day 0',
-      body: 'Your pet must have an ISO 11784/11785 compliant 15-digit microchip. This must be implanted before the rabies vaccination. If your pet was vaccinated before being microchipped, the vaccination is invalid for UAE entry. The microchip number must appear on every subsequent document.',
+      body: MICROCHIP_BEFORE_RABIES + ' If your pet was vaccinated before being microchipped, the vaccination is invalid for UAE entry. The microchip number must appear on every subsequent document.',
       icon: <Microscope className="w-5 h-5" />,
       warn: 'If your pet was already vaccinated before getting microchipped, the vaccination is invalid for UAE entry. You\'ll need to re-vaccinate after microchipping and wait another 21 days.',
     },
@@ -95,7 +112,7 @@ export default function ImportRequirementsPage() {
       num: 3,
       title: 'Rabies Vaccination',
       days: 'Day 0',
-      body: 'Your pet must be at least 12 weeks old at the time of vaccination. The vaccine must be inactivated or recombinant (not attenuated live virus), administered ≥21 days before travel, and within 12 months of arrival.',
+      body: RABIES_AGE_WAIT + ' The vaccine must be inactivated or recombinant (not attenuated live virus) and within 12 months of arrival.',
       icon: <Syringe className="w-5 h-5" />,
       warn: null,
     },
@@ -110,16 +127,16 @@ export default function ImportRequirementsPage() {
     {
       num: 5,
       title: 'Rabies Titer Test — If Required',
-      days: 'Day 21–31',
-      body: 'If your pet is from a high-risk country, a blood sample must be drawn ≥21 days after the rabies vaccination. The sample is sent to a WOAH/ISO 17025 accredited laboratory. Minimum result: ≥0.5 IU/ml. You must then wait 90 days from the date of blood sample collection before your pet can enter the UAE.',
+      days: 'After day 21 — sample must sit within 90 days of travel',
+      body: TITER_SAMPLE_RULE + ' Draw the sample ≥21 days after the rabies vaccination and send it to an accredited laboratory.',
       icon: <Stethoscope className="w-5 h-5" />,
-      warn: 'Pets from Bahrain and Qatar must have a titer test even though they are classified as low-risk. This is frequently missed and causes delays.',
+      warn: 'We do not publish an unverified exempt-country list. Confirm your origin on the MOCCAE portal before you skip this step.',
     },
     {
       num: 6,
       title: 'Apply for MOCCAE Import Permit',
       days: 'Day 21–90',
-      body: 'Apply online via the MOCCAE portal or the MOCCAE mobile app. Validity: 30 days from issuance. Processing time: typically a few working days. Confirm the current permit and arrival-release fees on the official portal — published amounts have differed. Required: Copy of owner\'s passport, UAE visa, pet\'s microchip number, vaccination records, and titer test result (if applicable).',
+      body: `Apply online via the MOCCAE portal with UAE Pass (see the dedicated permit guide). ${PERMIT_VALIDITY} ${PERMIT_PROCESSING_ESTIMATE} ${PERMIT_FEE_VERIFY} Required: owner passport, UAE visa or residency details, microchip number, vaccination records, and titer result if your origin requires one.`,
       icon: <FileText className="w-5 h-5" />,
       warn: 'Apply as close to your travel date as safely possible (within the 30-day validity) while leaving time for flight booking.',
     },
@@ -127,7 +144,7 @@ export default function ImportRequirementsPage() {
       num: 7,
       title: 'Book Manifest Cargo Flight',
       days: '2–4 weeks before travel',
-      body: 'All pets entering Dubai must travel as manifest cargo. They cannot fly in the cabin or as checked baggage on flights to Dubai. Emirates SkyCargo is most common for DXB arrivals (72 hours advance notice). Etihad Cargo is an alternative for Abu Dhabi arrivals. Cargo costs typically range from AED 3,000–12,000 depending on route, airline, and pet size.',
+      body: `${MANIFEST_CARGO} Emirates arrivals into Dubai travel as SkyCargo. Cargo pricing is airline- and route-specific — we do not invent a total here.`,
       icon: <Plane className="w-5 h-5" />,
       warn: null,
     },
@@ -135,7 +152,7 @@ export default function ImportRequirementsPage() {
       num: 8,
       title: 'Health Certificate and Antiparasitics',
       days: 'Within 10–14 days of travel',
-      body: 'Antiparasitic treatment: internal (deworming/Praziquantel) and external (Fipronil or Permethrin) within 14 days before arrival. International Health Certificate: issued by a government-accredited veterinarian within 10 days of arrival.',
+      body: `${PARASITE_WINDOW} International health certificate: issued or endorsed by the competent origin authority, commonly within 5–10 days of departure.`,
       icon: <Stethoscope className="w-5 h-5" />,
       warn: null,
     },
@@ -191,7 +208,7 @@ export default function ImportRequirementsPage() {
                 name: 'Is a rabies titer test required for Dubai?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'A rabies titer test is only required for pets coming from high-risk rabies countries. It is not required for pets from low-risk countries including the UK, EU, USA, Canada, Australia, and New Zealand. However, pets from Bahrain and Qatar are a special exception — they do require a titer test despite being classified as low-risk.',
+                  text: 'A rabies titer test (RNATT) is required for pets arriving from countries that are not on MOCCAE\'s rabies-controlled / exempt list. When it is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. We do not publish an unverified country list — confirm your origin on the official portal.',
                 },
               },
               {
@@ -204,13 +221,59 @@ export default function ImportRequirementsPage() {
               },
               {
                 '@type': 'Question',
-                name: 'How long does pet relocation to Dubai take?',
+                name: 'How long does preparing a UAE import file take?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'From low-risk countries like the UK or EU, the process takes 4–6 weeks. From high-risk countries requiring a rabies titer test, the minimum timeline is 4 months (including the 90-day waiting period after the titer test). We recommend starting the process at least 8 weeks before your planned move.',
+                  text: 'When an RNATT is not required and vaccinations are already in place, owners often complete the pack in a matter of weeks (health-certificate window, 10-day parasite treatments, 30-day permit, cargo slot). When an RNATT is required, the floor is set by the 21-day post-vaccine wait, lab turnaround, and keeping the sample inside 90 days of travel — not by a 90-day sit after the result. Start as soon as the move is real.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How is this guide different from the pet-import service page?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'This URL owns the statutory checklist. The commercial import job — crate, cargo, clearance, door delivery — lives on /service/pet-import-dubai/. The permit walkthrough lives on /guides/moccae-import-permit/. We cross-link; we do not clone the tables.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the non-compliance fine for a wrong import file?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'MOCCAE states a fine of AED 5,000 per animal, and the animal may be rejected or confiscated. Compliant pets are examined at the entry port and released — there is no routine quarantine.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can a pet fly in the cabin into Dubai on Emirates?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Emirates does not carry ordinary dogs or cats in the cabin. Itineraries ending in Dubai must travel as SkyCargo. Do not read the USD 500 / 650 / 800 checked-baggage animal charges (or older cargo range figures) as a cabin fare into DXB. Etihad publishes an in-cabin option for eligible small pets into Abu Dhabi only.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When must parasite treatment be given?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'External parasite treatment and internal deworming are required within 10 days before shipping to the UAE. Time them to the cargo date, not to the week you first filled a form.',
                 },
               },
             ],
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: siteConfig.name,
+            url: BASE_URL,
+            email: siteConfig.email,
+            telephone: siteConfig.phone,
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: siteConfig.name,
+            url: BASE_URL,
           },
           {
             '@context': 'https://schema.org',
@@ -226,7 +289,7 @@ export default function ImportRequirementsPage() {
               name: 'Dubai Pet Relocation',
             },
             datePublished: '2026-06-01',
-            dateModified: '2026-06-01',
+            dateModified: '2026-09-04',
           },
           {
             '@context': 'https://schema.org',
@@ -257,12 +320,15 @@ export default function ImportRequirementsPage() {
       />
       {/* ═══════════ HERO ═══════════ */}
       <Hero
-        image="/images/import-hero.jpg"
-        imageAlt="Golden retriever in IATA-compliant travel crate at Dubai Airport cargo terminal"
-        eyebrow="Pet Relocation Guide"
+        image="/assets/w5/uae-pet-import-requirements-master-checklist-illustration.png"
+        imageAlt="Master checklist of UAE pet import requirements: microchip, vaccinations, titer test, permit and health certificate"
+        eyebrow="Statutory checklist — not the import service"
         title="UAE Pet Import Requirements 2026: Complete Guide to Bringing Dogs & Cats to Dubai"
-        subtitle="Everything you need to bring your pet to Dubai. No quarantine. No hidden steps. Just a clear, MOCCAE-aligned checklist."
-        updated="Updated June 2026"
+        subtitle="30-day MOCCAE permit, RNATT sample within 90 days before travel, microchip before rabies, manifested cargo. Confirm fees on the portal."
+        updated={LAST_VERIFIED_LABEL}
+        whatsappMessage="Hi, I need the UAE pet import requirements checked for my pet from [country] to Dubai."
+        primaryLabel="Check my document list"
+        secondary={{ label: 'Commercial import service', to: '/service/pet-import-dubai/' }}
       />
 
       {/* ═══════════ QUICK CHECKLIST ═══════════ */}
@@ -291,13 +357,15 @@ export default function ImportRequirementsPage() {
             <div className="mt-8 pt-6 border-t border-gray-100">
               <h3 className="font-bold text-[#2A2A2A] mb-3">Key MOCCAE Rules at a Glance</h3>
               <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
-                <li><strong>Import permit:</strong> valid 30 days from issuance — confirm the current fee on the official portal</li>
-                <li><strong>Pets per person:</strong> Maximum 2 pets per person per year</li>
-                <li><strong>Minimum import age:</strong> 12 weeks (low-risk countries) / 15 weeks (high-risk countries)</li>
-                <li><strong>Rabies antibody titer:</strong> Required only from high-risk countries — result ≥0.5 IU/ml, drawn ≥21 days after vaccination, valid 365 days</li>
-                <li><strong>Transport:</strong> Pets are shipped per IATA Live Animals Regulations (LAR)</li>
+                <li><strong>Import permit:</strong> {PERMIT_VALIDITY} {PERMIT_FEE_VERIFY}</li>
+                <li><strong>Pets per person:</strong> {TWO_PETS_RULE}</li>
+                <li><strong>Minimum import age:</strong> {RABIES_AGE_WAIT}</li>
+                <li><strong>Rabies antibody titer:</strong> {TITER_SAMPLE_RULE}</li>
+                <li><strong>Transport:</strong> {MANIFEST_CARGO}</li>
+                <li><strong>Non-compliance:</strong> {NONCOMPLIANCE_FINE}</li>
+                <li><strong>Processing estimate:</strong> {PERMIT_PROCESSING_ESTIMATE}</li>
               </ul>
-              <p className="text-xs text-[#8A8A8A]">Source: MOCCAE (moccae.gov.ae) — verified June 2026.</p>
+              <LastVerified className="text-xs text-[#8A8A8A]" />
             </div>
             <div className="mt-8 pt-6 border-t border-gray-100 flex flex-wrap gap-4">
               <WhatsAppLink
@@ -326,8 +394,8 @@ export default function ImportRequirementsPage() {
                 <tr>
                   <th>Document</th>
                   <th>What It Is</th>
-                  <th>Validity</th>
-                  <th>Cost (AED)</th>
+                  <th>Timing / validity</th>
+                  <th>Fee note</th>
                 </tr>
               </thead>
               <tbody>
@@ -340,38 +408,38 @@ export default function ImportRequirementsPage() {
                 <tr>
                   <td className="font-semibold text-[#2A2A2A]">ISO Microchip Certificate</td>
                   <td>15-digit ISO 11784/11785 compliant microchip</td>
-                  <td>Permanent</td>
-                  <td>300–600 (at vet)</td>
+                  <td>Permanent — implant before rabies vaccination</td>
+                  <td>Private vet charge</td>
                 </tr>
                 <tr>
                   <td className="font-semibold text-[#2A2A2A]">Rabies Vaccination Certificate</td>
                   <td>Proof of rabies vaccine administered by a licensed vet</td>
-                  <td>1 year (annual booster)</td>
-                  <td>Included in vet fee</td>
+                  <td>≥21 days and ≤12 months before arrival; pet ≥12 weeks at vaccination</td>
+                  <td>Private vet charge</td>
                 </tr>
                 <tr>
                   <td className="font-semibold text-[#2A2A2A]">Core Vaccination Records</td>
-                  <td>DHPPIL (dogs) or FVRCP (cats)</td>
+                  <td>Dogs: CDV, parvovirus, hepatitis, leptospirosis. Cats: panleukopenia, rhinotracheitis, calicivirus</td>
                   <td>Per vaccine schedule</td>
-                  <td>100–200</td>
+                  <td>Private vet charge</td>
                 </tr>
                 <tr>
                   <td className="font-semibold text-[#2A2A2A]">Rabies Titer Test (RNATT)</td>
-                  <td>Blood test proving rabies immunity</td>
-                  <td>90-day wait from sample</td>
-                  <td>500–1,200</td>
+                  <td>Blood test proving rabies antibodies when the origin requires it</td>
+                  <td>Sample within 90 days before travel; result ≥0.5 IU/ml</td>
+                  <td>Private lab / shipping</td>
                 </tr>
                 <tr>
                   <td className="font-semibold text-[#2A2A2A]">International Health Certificate</td>
-                  <td>Government-accredited vet certificate with parasite treatments</td>
-                  <td><strong>10 days</strong> from issuance</td>
-                  <td>400–1,500</td>
+                  <td>Origin-country government-endorsed veterinary certificate</td>
+                  <td>Commonly 5–10 days before departure</td>
+                  <td>Private / official vet</td>
                 </tr>
                 <tr>
                   <td className="font-semibold text-[#2A2A2A]">Antiparasitic Treatment Record</td>
                   <td>Internal deworming + external flea/tick treatment</td>
-                  <td>Within 14 days of arrival</td>
-                  <td>50–150</td>
+                  <td>Within 10 days before shipping</td>
+                  <td>Private vet charge</td>
                 </tr>
                 <tr>
                   <td className="font-semibold text-[#2A2A2A]">Owner&apos;s Passport &amp; UAE Visa</td>
@@ -399,8 +467,9 @@ export default function ImportRequirementsPage() {
               How Long Does It Take?
             </h3>
             <ul className="space-y-2 text-[#5A5A5A]">
-              <li><strong className="text-[#2A2A2A]">From low-risk countries</strong> (UK, EU, USA, Canada, Australia, New Zealand, Japan, Singapore): <strong className="text-[#2A2A2A]">4–6 weeks</strong></li>
-              <li><strong className="text-[#2A2A2A]">From high-risk countries</strong> (most of Africa, Latin America, Central Asia, parts of Asia): <strong className="text-[#2A2A2A]">Minimum 4 months</strong> (due to 90-day titer test waiting period)</li>
+              <li><strong className="text-[#2A2A2A]">RNATT not required</strong> and the pet is already vaccinated: usually a matter of weeks (health certificate, 10-day parasite treatments, 30-day permit, cargo slot)</li>
+              <li><strong className="text-[#2A2A2A]">RNATT required</strong>: 21-day post-vaccine wait + lab time + the sample must still fall within 90 days before travel — not a 90-day sit after the result</li>
+              <li>{EXEMPT_LIST_HOLD}</li>
             </ul>
           </div>
 
@@ -419,8 +488,17 @@ export default function ImportRequirementsPage() {
             Step-by-Step: How to Import Your Pet to Dubai
           </h2>
           <p className="text-[#5A5A5A] mb-10">
-            Follow these 10 steps in order. Each builds on the previous one.
+            Follow these 10 steps in order. Each builds on the previous one. This is the statutory sequence — the commercial import job lives on{' '}
+            <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet import to Dubai
+            </Link>
+            .
           </p>
+          <ContentImage
+            src="/assets/w5/uae-pet-import-step-by-step-timeline-diagram.png"
+            alt="Step-by-step UAE pet import timeline from vaccinations to arrival clearance"
+            caption="Timed steps use the 30-day permit and the sample-within-90-days titer rule. Fees are not baked into the graphic."
+          />
 
           <div className="relative">
             {/* vertical line */}
@@ -490,9 +568,9 @@ export default function ImportRequirementsPage() {
                 The import permit is the gatekeeper. Without it, your pet cannot enter the UAE.
               </p>
               <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
-                <li><strong>Apply:</strong> Online at moccae.gov.ae or via the MOCCAE app</li>
+                <li><strong>Apply:</strong> Online at moccae.gov.ae via UAE Pass — see the <Link to="/guides/moccae-import-permit/" className="font-semibold text-[#4F5BD5] hover:underline">MOCCAE import permit guide</Link></li>
                 <li><strong>Cost:</strong> confirm the current permit and arrival-release fees on the official MOCCAE portal</li>
-                <li><strong>Processing:</strong> 3–7 working days</li>
+                <li><strong>Processing:</strong> typically estimated at 2–5 working days (not a first-party SLA)</li>
                 <li><strong>Validity:</strong> 30 days from issuance</li>
               </ul>
               <div className="warning-box">
@@ -548,13 +626,12 @@ export default function ImportRequirementsPage() {
                 <h3 className="font-bold text-[#2A2A2A]">Rabies Titer Test (RNATT)</h3>
               </div>
               <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
-                <li>Required for pets from <strong>high-risk rabies countries</strong></li>
-                <li><strong>Not required</strong> for: UK, EU, USA, Canada, Australia, New Zealand, Japan, Singapore</li>
-                <li><strong>Required for:</strong> Bahrain and Qatar (special exception)</li>
+                <li>Required when MOCCAE does <strong>not</strong> treat the origin as exempt</li>
+                <li>Confirm your origin on the official portal — we do not publish an unverified country list</li>
                 <li>Blood sample drawn <strong>≥21 days after</strong> rabies vaccination</li>
                 <li>Minimum result: <strong>≥0.5 IU/ml</strong></li>
-                <li>90-day waiting period from sample collection date</li>
-                <li>Must be processed at a <strong>WOAH/ISO 17025 accredited laboratory</strong></li>
+                <li>Sample taken <strong>within 90 days before travel</strong> — not a 90-day wait after the result</li>
+                <li>Processed at a laboratory MOCCAE will accept (typically WOAH / ISO 17025 accredited)</li>
               </ul>
             </div>
 
@@ -582,8 +659,8 @@ export default function ImportRequirementsPage() {
                 <h3 className="font-bold text-[#2A2A2A]">Antiparasitic Treatment Record</h3>
               </div>
               <ul className="text-sm text-[#5A5A5A] space-y-1">
-                <li><strong>Internal deworming</strong> (Praziquantel or equivalent) within 14 days of arrival</li>
-                <li><strong>External parasite treatment</strong> (Fipronil or Permethrin) within 14 days of arrival</li>
+                <li><strong>Internal deworming</strong> within 10 days before shipping</li>
+                <li><strong>External parasite treatment</strong> (for example Fipronil or Permethrin) within 10 days before shipping</li>
                 <li>Record must include product name, date of administration, and vet&apos;s signature</li>
               </ul>
             </div>
@@ -620,7 +697,11 @@ export default function ImportRequirementsPage() {
             Banned and Restricted Dog Breeds
           </h2>
           <p className="text-[#5A5A5A] mb-8">
-            The UAE enforces a strict federal breed ban. If your dog is on this list, it <strong>cannot be imported</strong> — unless it is a certified service or emotional support animal.
+            Federal Law No. 22 of 2016 Annex 2 (as amended, including Ministerial Decree 190/2021) lists dangerous-dog types that cannot be imported as ordinary pets. The dedicated list lives on{' '}
+            <Link to="/guides/banned-dog-breeds-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              banned dog breeds in Dubai
+            </Link>
+            . Narrow service / assistance exceptions need training-centre and medical documentation — an “emotional support” letter is not a shortcut.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -662,6 +743,9 @@ export default function ImportRequirementsPage() {
                 <h4 className="font-semibold text-[#2A2A2A] text-sm mb-2">Other Banned Breeds</h4>
                 <ul className="text-sm text-[#5A5A5A] space-y-1">
                   <li>Japanese Tosa (Tosa Inu)</li>
+                  <li>Rottweiler</li>
+                  <li>Doberman</li>
+                  <li>Boxer</li>
                   <li>Wolf-dog hybrids (any dog mixed with a wolf)</li>
                   <li>Savannah cats and Bengal cats (unless 5th generation removed from pedigree)</li>
                 </ul>
@@ -688,13 +772,10 @@ export default function ImportRequirementsPage() {
                 <li>English Bulldog / Old English Bulldog</li>
                 <li>Perro de Presa Mallorquin</li>
                 <li>Shar Pei</li>
-                <li>Rottweiler (in some community contexts)</li>
-                <li>Doberman Pinscher (in some community contexts)</li>
-                <li>Boxer</li>
               </ul>
               <div className="warning-box mt-4">
                 <p className="text-sm text-[#2A2A2A]">
-                  Some sources list Rottweiler, Doberman Pinscher, and Boxer as fully banned. Other authoritative sources classify them as restricted. <strong>Always verify with MOCCAE before importing these breeds.</strong>
+                  Federal Law 22/2016 Annex 2 treats Rottweiler, Doberman, Presa Canario and Boxer as banned types, not merely Dubai-restricted. Confirm the current annex on the official source before you book — do not rely on a blog reprint.
                 </p>
               </div>
             </div>
@@ -721,7 +802,7 @@ export default function ImportRequirementsPage() {
             </ul>
             <div className="warning-box">
               <p className="text-sm text-[#2A2A2A]">
-                <strong>Penalty warning:</strong> Non-compliance with breed restrictions can result in fines from <strong>AED 10,000 to AED 700,000</strong>, possible jail sentences, and <strong>confiscation of the animal</strong>.
+                <strong>Penalty warning:</strong> {NONCOMPLIANCE_FINE} Possession rules for Annex-2 dogs are a separate federal matter — see the banned-breeds guide rather than an invented fine ladder here.
               </p>
             </div>
           </div>
@@ -738,6 +819,11 @@ export default function ImportRequirementsPage() {
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-8">Vaccination Requirements</h2>
+          <ContentImage
+            src="/assets/w5/vet-scanning-cat-microchip-uae-import-check.jpg"
+            alt="Vet scanning a cat's microchip during UAE pet import preparation"
+            caption="Microchip first, then rabies. A scan on the table is cheaper than a refused landing."
+          />
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="bg-[#F5F6FD] rounded-[20px] p-6 border border-[#4F5BD5]/10 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
@@ -818,13 +904,14 @@ export default function ImportRequirementsPage() {
             <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <h3 className="font-bold text-[#2A2A2A] mb-4">Do You Need a Titer Test?</h3>
               <p className="text-[#5A5A5A] mb-3">
-                <strong>Yes, if your pet is from a high-risk country.</strong> Most of Africa, Latin America, Central Asia, the Middle East, and parts of Asia are classified as high-risk.
-              </p>
-              <p className="text-[#5A5A5A] mb-3">
-                <strong>No, if your pet is from a low-risk country:</strong> UK, EU, USA, Canada, Australia, New Zealand, Japan, Singapore, and most other developed nations.
+                <strong>Yes, if MOCCAE does not treat your origin as exempt.</strong> The Ministry maintains a rabies-controlled / exempt-country list. We do not reprint an unofficial version of that list on this page.
               </p>
               <p className="text-[#5A5A5A] mb-4">
-                <strong>Yes, even if low-risk:</strong> Pets from <strong>Bahrain and Qatar</strong> must have a titer test. This is a specific exception.
+                Deep timing lives on the{' '}
+                <Link to="/guides/rabies-titer-test-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  rabies titer test guide
+                </Link>
+                . Confirm the origin on the portal before you skip the test.
               </p>
               <div className="warning-box">
                 <p className="text-sm text-[#2A2A2A]">
@@ -839,7 +926,7 @@ export default function ImportRequirementsPage() {
                 <li>Blood sample drawn <strong>≥21 days after</strong> primary rabies vaccination</li>
                 <li>Minimum result: <strong>≥0.5 IU/ml</strong></li>
                 <li>Must be processed at a <strong>WOAH/ISO 17025 accredited laboratory</strong></li>
-                <li><strong>90-day waiting period</strong> from the date of blood sample collection before the pet can enter the UAE</li>
+                <li>Sample taken <strong>within 90 days before travel</strong> — not a 90-day wait after the result</li>
                 <li>The test result must be included in your MOCCAE permit application</li>
               </ul>
             </div>
@@ -856,24 +943,24 @@ export default function ImportRequirementsPage() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td className="font-semibold">Day 0</td><td>Microchip + rabies vaccination</td></tr>
-                  <tr><td className="font-semibold">Day 21</td><td>Blood sample for titer test</td></tr>
-                  <tr><td className="font-semibold">Day 31</td><td>Receive result (≥0.5 IU/ml)</td></tr>
-                  <tr><td className="font-semibold">Day 111</td><td>Apply for MOCCAE import permit (90-day wait complete)</td></tr>
-                  <tr><td className="font-semibold">Day 118</td><td>Book cargo flight</td></tr>
-                  <tr><td className="font-semibold">Day 121</td><td>Antiparasitic treatment + health certificate</td></tr>
-                  <tr><td className="font-semibold">Day 121+</td><td>Pet arrives in Dubai</td></tr>
+                  <tr><td className="font-semibold">Day 0</td><td>Microchip, then rabies vaccination</td></tr>
+                  <tr><td className="font-semibold">Day 21+</td><td>Earliest useful blood sample for RNATT</td></tr>
+                  <tr><td className="font-semibold">Lab window</td><td>Operational estimate — often 1–3 weeks</td></tr>
+                  <tr><td className="font-semibold">Sample rule</td><td>Draw must fall within 90 days before arrival</td></tr>
+                  <tr><td className="font-semibold">Permit</td><td>Apply so the 30-day validity still covers landing</td></tr>
+                  <tr><td className="font-semibold">Last 10 days</td><td>Parasite treatments + origin health certificate</td></tr>
+                  <tr><td className="font-semibold">Travel day</td><td>Manifest cargo; sample and permit both still in date</td></tr>
                 </tbody>
               </table>
             </div>
             <p className="mt-4 font-semibold text-[#2A2A2A]">
-              Total minimum time from scratch for high-risk countries: ~4 months.
+              When an RNATT is required, the floor is set by vaccine wait + lab time + keeping the sample inside 90 days of travel — not by a post-test sit.
             </p>
           </div>
 
           <div className="warning-box mb-8">
             <p className="text-sm text-[#2A2A2A]">
-              <strong>Warning:</strong> The 90-day waiting period is <strong>not negotiable</strong>. You cannot apply for the import permit or book travel until this period has passed. There are no exceptions.
+              <strong>Warning:</strong> The sample-within-90-days rule is <strong>not negotiable</strong>. A passing result whose draw date is older than 90 days on arrival is the wrong certificate. Do not invent a 90-day sit after the PDF arrives.
             </p>
           </div>
 
@@ -899,7 +986,7 @@ export default function ImportRequirementsPage() {
               <ol className="text-[#5A5A5A] space-y-2 list-decimal list-inside">
                 <li><strong>Online:</strong> Visit <a href="https://www.moccae.gov.ae/en/services/export-import-services/import-permit-pets.aspx" target="_blank" rel="noopener noreferrer" className="text-[#4F5BD5] underline">moccae.gov.ae</a> and navigate to the pet import permit section</li>
                 <li><strong>Mobile app:</strong> Download the MOCCAE app (available on iOS and Android)</li>
-                <li><strong>Through a licensed agent:</strong> Dubai Pet Relocation can submit the application on your behalf</li>
+                <li><strong>With a coordinator:</strong> <Link to="/service/moccae-pet-permit/" className="font-semibold text-[#4F5BD5] hover:underline">MOCCAE permit assistance</Link> reviews the file — we still do not issue the permit</li>
               </ol>
             </div>
 
@@ -920,7 +1007,7 @@ export default function ImportRequirementsPage() {
               <h3 className="font-bold text-[#2A2A2A] mb-4">Fees and Timeline</h3>
               <ul className="text-[#5A5A5A] space-y-1">
                 <li><strong>Fee:</strong> confirm the current permit and arrival-release amounts on the official MOCCAE portal</li>
-                <li><strong>Processing:</strong> 3–7 working days</li>
+                <li><strong>Processing:</strong> typically estimated at 2–5 working days (not a first-party SLA)</li>
                 <li><strong>Validity:</strong> 30 days from issuance</li>
               </ul>
             </div>
@@ -972,7 +1059,7 @@ export default function ImportRequirementsPage() {
               <ul className="text-sm text-[#5A5A5A] space-y-1">
                 <li><strong>In-cabin:</strong> No regular pets allowed. Only trained service dogs and falcons on specific routes.</li>
                 <li><strong>Checked baggage:</strong> Not accepted for flights to Dubai.</li>
-                <li><strong>Cargo (SkyCargo):</strong> Mandatory for most pets. Cost: typically $1,500–$5,000 USD.</li>
+                <li><strong>Cargo (SkyCargo):</strong> Mandatory for itineraries ending in Dubai. First-party Emirates checked-baggage animal charges (USD 500 / 650 / 800 by weight and size) apply to eligible departures <em>from</em> Dubai under 17 hours — they are not a cabin fare and they are not a published DXB-arrival cargo tariff. Confirm current SkyCargo pricing with the airline.</li>
                 <li><strong>Advance notice:</strong> Minimum 72 hours</li>
                 <li><strong>Crate:</strong> IATA-approved, rigid, leak-proof. For restricted breeds, crate must be at least 10% larger than standard.</li>
                 <li><strong>Banned breeds:</strong> Even stricter than UAE law. Includes snub-nosed breeds with seasonal restrictions (November–April only).</li>
@@ -995,7 +1082,7 @@ export default function ImportRequirementsPage() {
                 <li><strong>Cargo:</strong> Available for larger pets.</li>
                 <li><strong>Advance notice:</strong> Book via Contact Centre; submit form 7 days before, documents 72 hours before.</li>
                 <li><strong>Banned breeds:</strong> Same as UAE federal list, plus Boxer.</li>
-                <li><strong>Abu Dhabi entry:</strong> Requires a Bill of Entry from MICCO Logistics (cost: AED 365) at least 24 hours before departure.</li>
+                <li><strong>Abu Dhabi entry:</strong> Etihad publishes a pet release permit, a completed UAE health certificate and an Abu Dhabi Customs Bill of Entry. Confirm current handling charges with the airline / customs broker — we do not invent an AED figure here.</li>
                 <li><strong>Pet age:</strong> Must be ≥16 weeks old for in-cabin.</li>
               </ul>
             </div>
@@ -1153,11 +1240,11 @@ export default function ImportRequirementsPage() {
                 Return or Euthanasia (Worst Cases)
               </h3>
               <p className="text-[#5A5A5A] mb-3">
-                In extreme cases, the animal may be <strong>returned to the origin country</strong> on the next available flight at the owner&apos;s expense. In the worst cases, <strong>euthanasia</strong> may be ordered if the animal poses a rabies risk and cannot be returned.
+                {NONCOMPLIANCE_FINE} In serious cases the animal may be refused entry or returned to origin at the owner&apos;s expense. We do not dramatise outcomes that are not in the first-party import rule.
               </p>
               <div className="warning-box">
                 <p className="text-sm text-[#2A2A2A]">
-                  These are not theoretical risks. They happen when pet owners assume &quot;it will be fine&quot; or rely on outdated information. We check every document three times because we&apos;ve seen what happens when one date is wrong.
+                  Outdated blogs still describe a 90-day permit or a 90-day wait after the titer. This page uses the locked rules: 30-day permit validity and a sample taken within 90 days before travel.
                 </p>
               </div>
             </div>
@@ -1184,6 +1271,38 @@ export default function ImportRequirementsPage() {
         </div>
       </section>
 
+      <section className="py-16 bg-[#F5F6FD]">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-8 text-center">Related services and guides</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Link to="/service/pet-import-dubai/" className="bg-white rounded-[20px] p-6 hover:shadow-md transition-shadow">
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Pet import service</h3>
+              <p className="text-sm text-[#5A5A5A]">Commercial twin — cargo, clearance and a Dubai door. This page stays the rules list.</p>
+            </Link>
+            <Link to="/guides/moccae-import-permit/" className="bg-white rounded-[20px] p-6 hover:shadow-md transition-shadow">
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">MOCCAE import permit guide</h3>
+              <p className="text-sm text-[#5A5A5A]">UAE Pass walkthrough and rejection reasons for the 30-day permit.</p>
+            </Link>
+            <Link to="/guides/rabies-titer-test-dubai/" className="bg-white rounded-[20px] p-6 hover:shadow-md transition-shadow">
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Rabies titer test (RNATT)</h3>
+              <p className="text-sm text-[#5A5A5A]">Sample within 90 days before travel. Threshold ≥0.5 IU/ml.</p>
+            </Link>
+            <Link to="/service/moccae-pet-permit/" className="bg-white rounded-[20px] p-6 hover:shadow-md transition-shadow">
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">MOCCAE permit assistance</h3>
+              <p className="text-sm text-[#5A5A5A]">Document review and portal tracking. The Ministry still issues the PDF.</p>
+            </Link>
+            <Link to="/guides/banned-dog-breeds-dubai/" className="bg-white rounded-[20px] p-6 hover:shadow-md transition-shadow">
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Banned dog breeds</h3>
+              <p className="text-sm text-[#5A5A5A]">Federal Law 22/2016 Annex 2 list and mixed-breed notes.</p>
+            </Link>
+            <Link to="/service/pet-relocation-to-dubai/" className="bg-white rounded-[20px] p-6 hover:shadow-md transition-shadow">
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Relocation to Dubai</h3>
+              <p className="text-sm text-[#5A5A5A]">Arrival-side settling after the statutory pack is complete.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ═══════════ FAQ ═══════════ */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
@@ -1199,15 +1318,31 @@ export default function ImportRequirementsPage() {
             />
             <FAQItem
               question="Is a rabies titer test required for Dubai?"
-              answer="A rabies titer test is only required for pets coming from high-risk rabies countries. It is not required for pets from low-risk countries including the UK, EU, USA, Canada, Australia, and New Zealand. However, pets from Bahrain and Qatar are a special exception — they do require a titer test despite being classified as low-risk."
+              answer="A rabies titer test (RNATT) is required when your origin is not on MOCCAE's rabies-controlled / exempt list. When it is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. We do not publish an unverified country list — confirm your origin on the official portal."
             />
             <FAQItem
               question="What documents are needed to bring a cat to the UAE?"
-              answer="To bring a cat to the UAE, you need: (1) MOCCAE import permit, (2) ISO 11784/11785 microchip certificate, (3) rabies vaccination certificate (≥21 days old), (4) FVRCP vaccination records, (5) international health certificate (within 10 days of travel), (6) antiparasitic treatment record, and (7) copy of owner\'s passport and UAE visa."
+              answer="A cat needs the same federal pack as a dog, with feline core vaccines (panleukopenia, rhinotracheitis, calicivirus) instead of the canine set: MOCCAE import permit (30-day validity), ISO microchip implanted before rabies, rabies certificate (12 weeks + 21 days), health certificate, parasite treatments within 10 days before shipping, and the owner's passport / UAE visa details."
             />
             <FAQItem
-              question="How long does pet relocation to Dubai take?"
-              answer="From low-risk countries like the UK or EU, the process takes 4–6 weeks. From high-risk countries requiring a rabies titer test, the minimum timeline is 4 months (including the 90-day waiting period after the titer test). We recommend starting the process at least 8 weeks before your planned move."
+              question="How long does preparing a UAE import file take?"
+              answer="When an RNATT is not required and vaccinations are already done, owners often finish in a matter of weeks. When an RNATT is required, the floor is the 21-day post-vaccine wait, lab turnaround, and keeping the sample inside 90 days of travel — not a 90-day sit after the result. Start as soon as the move is real."
+            />
+            <FAQItem
+              question="How is this guide different from the pet-import service page?"
+              answer="This URL owns the statutory checklist. The commercial import job — crate, cargo, clearance, door delivery — lives on /service/pet-import-dubai/. The permit walkthrough lives on /guides/moccae-import-permit/. We cross-link; we do not clone the tables."
+            />
+            <FAQItem
+              question="What is the non-compliance fine for a wrong import file?"
+              answer="MOCCAE states a fine of AED 5,000 per animal, and the animal may be rejected or confiscated. Compliant pets are examined at the entry port and released — there is no routine quarantine."
+            />
+            <FAQItem
+              question="Can a pet fly in the cabin into Dubai on Emirates?"
+              answer="No. Emirates does not carry ordinary dogs or cats in the cabin. Itineraries ending in Dubai must travel as SkyCargo. Do not read the USD 500 / 650 / 800 checked-baggage animal charges (or older cargo range figures) as a cabin fare into DXB. Etihad publishes an in-cabin option for eligible small pets into Abu Dhabi only."
+            />
+            <FAQItem
+              question="When must parasite treatment be given?"
+              answer="External parasite treatment and internal deworming are required within 10 days before shipping to the UAE. Time them to the cargo date, not to the week you first filled a form."
             />
           </div>
         </div>
@@ -1220,7 +1355,11 @@ export default function ImportRequirementsPage() {
             Ready to bring your pet home to Dubai?
           </h2>
           <p className="text-white/80 max-w-2xl mx-auto mb-8">
-            Every day, we help pet owners check their documents, time their vet appointments, and submit their MOCCAE permits. One WhatsApp message is all it takes to get clarity.
+            Send origin, breed and what you already have. We will tell you which items on this checklist are still open — or point you to the{' '}
+            <Link to="/service/pet-import-dubai/" className="underline font-semibold">
+              commercial import service
+            </Link>
+            . Email {siteConfig.email} if WhatsApp is not convenient.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -1247,14 +1386,7 @@ export default function ImportRequirementsPage() {
         </div>
       </section>
 
-      {/* ═══════════ FOOTER NOTE ═══════════ */}
-      <section className="py-8 bg-[#F5F6FD]">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm text-[#8A8A8A]">
-            Dubai Pet Relocation makes your pet&apos;s journey clear, calm, and certain. We guide you through MOCCAE import requirements. Vetted relocation partners. Human communication on WhatsApp at every step.
-          </p>
-        </div>
-      </section>
+      <OfficialSources />
     </div>
   )
 }

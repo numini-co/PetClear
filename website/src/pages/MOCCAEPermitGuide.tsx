@@ -9,13 +9,9 @@ import {
   Clock,
   DollarSign,
   CheckCircle,
-  XCircle,
   HelpCircle,
   Dog,
   Cat,
-  Globe,
-  Upload,
-  RefreshCw,
   MessageCircle,
   PawPrint,
   FileText,
@@ -23,14 +19,21 @@ import {
   Microscope,
   Ban,
   Plane,
-  Calendar,
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import LastVerified from '../components/LastVerified.tsx'
-import { BASE_URL } from '../lib/seo.ts'
+import ContentImage from '../components/ContentImage.tsx'
+import OfficialSources from '../components/OfficialSources.tsx'
+import { BASE_URL, siteConfig } from '../lib/seo.ts'
+import {
+  LAST_VERIFIED_LABEL,
+  PERMIT_FEE_VERIFY,
+  PERMIT_PROCESSING_ESTIMATE,
+  PERMIT_VALIDITY,
+} from '../lib/regulatory.ts'
 
 /* ─── FAQ accordion helper ─── */
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
@@ -55,36 +58,49 @@ export default function MOCCAEPermitGuide() {
 
   const faqData = [
     {
-      question: 'How long does the MOCCAE import permit take?',
-      answer: 'The MOCCAE import permit typically takes 2–5 business days to process once all documents are correctly submitted. However, if your application is incomplete, contains errors, or requires additional verification, processing can take 1–2 weeks or longer. Dubai Pet Relocation recommends applying at least 3–4 weeks before your planned travel date to account for any resubmission needs.',
+      question: 'What is the UAE Pass path for a MOCCAE import permit?',
+      answer:
+        'Log in at moccae.gov.ae with UAE Pass, then open Services → Export and Import Services → Import Permit for Pets. You cannot skip UAE Pass. If you do not yet have an account, set it up before you gather scans — the form will not open without it. This guide walks the path; the commercial twin is MOCCAE permit assistance if you want a coordinator on the thread.',
     },
     {
-      question: 'Can I apply for the MOCCAE import permit myself?',
-      answer: 'Yes, you can apply directly through the MOCCAE online portal or the MOCCAE UAE app. However, the process requires careful document preparation, correct photo formatting, and accurate breed/vaccination entry. Many owners make mistakes that lead to rejection or delays. Dubai Pet Relocation offers an application service where we handle the entire process, error-check all documents, and follow up with MOCCAE on your behalf.',
+      question: 'How long does MOCCAE take, and is that a guarantee?',
+      answer:
+        'Complete applications are typically estimated at 2–5 working days. That figure is secondary-sourced, not a first-party SLA. Incomplete or inconsistent files are returned and the estimate restarts. Apply once the travel date is real enough to fit the 30-day validity window.',
     },
     {
-      question: 'What if my MOCCAE permit is rejected?',
-      answer: 'If your permit is rejected, MOCCAE will specify the reason (wrong photo, expired vaccine, incorrect microchip number, wrong breed declaration, etc.). You must correct the issue and resubmit. There is no additional fee for resubmission, but the processing timeline resets. Dubai Pet Relocation reviews rejection reasons, fixes the problem, and resubmits within 24 hours to minimize delays.',
+      question: 'Why was my MOCCAE application sent back?',
+      answer:
+        'Typical causes: pet photo that is not a clear front face on a neutral background; rabies vaccination outside the 21-day / 12-month window on the planned arrival date; a microchip digit that does not match the certificate; breed spelling that does not match the vet record; a missing RNATT when the origin requires one. The Ministry tells you the reason — fix that reason, then resubmit. Confirm whether a fresh portal fee is charged when you resubmit.',
     },
     {
-      question: 'What happens if my permit expires before I travel?',
-      answer: 'MOCCAE import permits are valid for 30 days from issuance. If your permit expires before travel, you must submit a new application and pay the current portal fee again. Confirm the fee on the official MOCCAE portal — published amounts have differed. Dubai Pet Relocation tracks permit expiry dates and coordinates your travel timeline to ensure your permit is valid on arrival day.',
+      question: 'What if the 30-day permit expires before the pet lands?',
+      answer:
+        'You apply again and pay the live portal fee again. MOCCAE import permits are valid for 30 days from issuance — never 90. Time the application to a confirmed cargo date, not to the week you first thought about moving.',
     },
     {
-      question: 'Do cats and dogs need separate permits?',
-      answer: 'Yes, each pet requires a separate MOCCAE import permit. Confirm the current per-pet fee on the official MOCCAE portal when you apply — published amounts have differed. You cannot combine multiple pets on a single permit application.',
+      question: 'Is the permit fee AED 200 or AED 500?',
+      answer:
+        'Published amounts have differed. This page does not pick a number. Confirm the current per-pet fee on the official portal when you apply, and confirm the separate arrival-release / inspection amount at the cargo terminal.',
     },
     {
-      question: 'What documents do I need for the MOCCAE import permit?',
-      answer: 'You need: (1) Clear passport copy of the pet owner, (2) Recent pet photo (front face, neutral background), (3) Up-to-date vaccination records showing rabies and annual vaccines, (4) Microchip certificate with ISO 11784/11785 compliant chip number, (5) Health certificate from an accredited veterinarian (for some origins). All documents must be in English or Arabic.',
+      question: 'Can I put two pets on one MOCCAE import permit?',
+      answer:
+        'Treat each animal as its own application unless the live portal explicitly offers a combined personal-consignment path for your case. Personal import is typically limited to a maximum of 2 pets per person per permit / per year (2 cats, or 2 dogs, or 1 cat and 1 dog). Confirm the current portal rule before you pay.',
     },
     {
-      question: 'Is a MOCCAE export permit needed to leave Dubai?',
-      answer: 'Yes, if you are leaving Dubai with your pet, you need a MOCCAE export health certificate. The process is similar: apply online, submit passport copy, pet photo, vaccination records, and microchip certificate. Confirm the current fee on the official MOCCAE portal. Some destination countries also require additional health certificates endorsed by a UAE government vet.',
+      question: 'Should I DIY the portal or use permit assistance?',
+      answer:
+        'DIY if you already have UAE Pass, a consistent document pack and time to absorb a resubmission. Use MOCCAE permit assistance if a rejection would blow a cargo booking or you cannot complete UAE Pass yourself. The government fee is the same either way — you are buying file hygiene, not a Ministry stamp.',
     },
     {
-      question: 'What is the most common reason for MOCCAE permit rejection?',
-      answer: 'The most common rejection reason is an incorrect or low-quality pet photo. MOCCAE requires a clear, front-facing photo of the pet with a neutral background, no accessories, and good lighting. Other common reasons include: expired rabies vaccination, incorrect microchip number entry, breed name mismatch with passport, and missing or incomplete vaccination records.',
+      question: 'Does this permit replace the rabies titer test?',
+      answer:
+        'No. The permit is Ministry approval to enter. An RNATT is a laboratory result attached when your origin requires it. Sample must be taken within 90 days before travel and read at least 0.5 IU/ml. See the rabies titer test guide. Confirm whether your origin needs one on the portal — we do not publish an unverified country list here.',
+    },
+    {
+      question: 'Who do I contact if the portal is down?',
+      answer:
+        `Try again during UAE business hours and keep your application reference. For coordination help, message ${siteConfig.name} on WhatsApp or email ${siteConfig.email}. We cannot reopen a Ministry outage, but we can keep the file ready so you submit the moment the form is back.`,
     },
   ]
 
@@ -115,8 +131,6 @@ export default function MOCCAEPermitGuide() {
     '@type': 'HowTo',
     name: 'How to Apply for a MOCCAE Import Permit for Pets in the UAE',
     description: 'Step-by-step guide to applying for a MOCCAE import permit for dogs and cats entering Dubai and the UAE.',
-    totalTime: 'P2D',
-    estimatedCost: { '@type': 'MonetaryAmount', currency: 'AED', value: '200' },
     step: [
       {
         '@type': 'HowToStep',
@@ -127,8 +141,8 @@ export default function MOCCAEPermitGuide() {
       {
         '@type': 'HowToStep',
         position: 2,
-        name: 'Create MOCCAE Account',
-        text: 'Register on the MOCCAE online portal or download the MOCCAE UAE app.',
+        name: 'Sign in with UAE Pass',
+        text: 'Open the official MOCCAE portal with a UAE Pass login and choose Import Permit for Pets.',
       },
       {
         '@type': 'HowToStep',
@@ -140,7 +154,7 @@ export default function MOCCAEPermitGuide() {
         '@type': 'HowToStep',
         position: 4,
         name: 'Wait for Approval',
-        text: 'Processing takes 2–5 business days. Monitor your email and portal for updates.',
+        text: 'Processing is typically estimated at 2–5 working days for a complete file. Monitor email and the portal. This is an estimate, not a first-party SLA.',
       },
       {
         '@type': 'HowToStep',
@@ -151,7 +165,20 @@ export default function MOCCAEPermitGuide() {
     ],
   }
 
-  const schemas = [faqSchema, breadcrumbSchema, howToSchema]
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: siteConfig.name,
+    url: BASE_URL,
+    email: siteConfig.email,
+  }
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: siteConfig.name,
+    url: BASE_URL,
+  }
+  const schemas = [organizationSchema, websiteSchema, faqSchema, breadcrumbSchema, howToSchema]
 
   const meta = {
     title: 'MOCCAE Import Permit for Pets — Dubai & UAE Guide (2026)',
@@ -169,12 +196,15 @@ export default function MOCCAEPermitGuide() {
 
       {/* Hero */}
       <Hero
-        image="/images/guide-moccae.jpg"
-        imageAlt="MOCCAE import permit paperwork with a calm dog beside the documents"
-        eyebrow="Pet Relocation Guide"
+        image="/assets/w5/moccae-import-permit-guide-clipboard-illustration.png"
+        imageAlt="Illustration of a MOCCAE pet import permit application with a validity clock"
+        eyebrow="How-to guide — not the service page"
         title="MOCCAE Import Permit for Pets — Dubai & UAE Complete Guide (2026)"
-        subtitle="A mandatory government approval for every pet entering the UAE. The application process, documents, costs, and common mistakes — explained."
-        updated="Last verified 4 September 2026"
+        subtitle="UAE Pass login, form fields, 30-day validity, rejection reasons, and an honest DIY versus managed comparison. Confirm fees on the official portal."
+        updated={LAST_VERIFIED_LABEL}
+        whatsappMessage="Hi Dubai Pet Relocation, I am applying for a MOCCAE import permit and want the walkthrough checked before I submit."
+        primaryLabel="Get the file checked"
+        secondary={{ label: 'Permit assistance service', to: '/service/moccae-pet-permit/' }}
       />
 
       {/* What is MOCCAE */}
@@ -214,11 +244,13 @@ export default function MOCCAEPermitGuide() {
                 </div>
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
                   <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Processing Time</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">2–5 business days</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">Estimate: 2–5 working days</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">{PERMIT_PROCESSING_ESTIMATE}</p>
                 </div>
                 <div className="p-4 bg-[#C89F5A]/5 rounded-xl">
                   <p className="font-semibold text-[#C89F5A] text-sm mb-1">Validity</p>
                   <p className="text-lg font-bold text-[#2A2A2A]">30 days from issuance</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">{PERMIT_VALIDITY}</p>
                 </div>
                 <div className="p-4 bg-[#C9453A]/5 rounded-xl">
                   <p className="font-semibold text-[#C9453A] text-sm mb-1">Penalty Without Permit</p>
@@ -239,9 +271,19 @@ export default function MOCCAEPermitGuide() {
               Step-by-Step MOCCAE Import Permit Application
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed">
-              Follow these steps carefully to apply for your pet's MOCCAE import permit. Errors at any stage can cause delays or rejection.
+              This is the folded-in application walkthrough — there is no separate walkthrough URL. Follow the order. If you want someone on the thread, use{' '}
+              <Link to="/service/moccae-pet-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
+                MOCCAE permit assistance
+              </Link>
+              .
             </p>
           </div>
+
+          <ContentImage
+            src="/assets/w5/moccae-import-permit-application-steps-diagram.png"
+            alt="Step-by-step MOCCAE pet import permit application from account setup to permit issue"
+            caption="Generic UI blocks — not screenshots of the live portal. Fee and validity stay in the copy."
+          />
 
           <div className="space-y-6 mb-10">
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8 flex gap-5">
@@ -283,9 +325,9 @@ export default function MOCCAEPermitGuide() {
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8 flex gap-5">
               <div className="w-12 h-12 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-lg font-bold shrink-0">2</div>
               <div>
-                <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Create a MOCCAE Account</h3>
+                <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Sign in with UAE Pass</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
-                  Visit the MOCCAE online portal or download the <strong>MOCCAE UAE</strong> mobile app. Register using your email and UAE mobile number (or your sponsor's number if you don't have one yet). Complete your profile with accurate personal details matching your passport.
+                  Open the official MOCCAE digital services portal and authenticate with <strong>UAE Pass</strong>. Then choose Services → Export and Import Services → Import Permit for Pets. If you do not have UAE Pass yet, create it first — the form will not open without it. A sponsor or household member with UAE Pass can sometimes complete the application for a newcomer; the applicant details must still match the person who will collect the pet.
                 </p>
                 <div className="warning-box">
                   <div className="flex items-start gap-3">
@@ -304,7 +346,7 @@ export default function MOCCAEPermitGuide() {
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Submit the Application</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
-                  Log in to the portal, select "Import Permit for Pets," and fill out the application form. Upload all documents in the specified format (usually PDF or JPEG, under 2MB per file). Pay the current portal fee (confirm the amount on the official MOCCAE site).
+                  Fill pet details (species, breed spelling exactly as on the vet record, 15-digit microchip), origin country, and planned arrival. Upload scans in the format the portal asks for (typically PDF or JPEG, size-capped). Pay only the live portal fee — {PERMIT_FEE_VERIFY} Attach an RNATT result only when the origin requires one; the sample must be taken within 90 days before travel and read at least 0.5 IU/ml.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-2">
                   <div className="p-3 bg-[#F5F6FD] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
@@ -332,10 +374,14 @@ export default function MOCCAEPermitGuide() {
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Wait for Approval</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
-                  MOCCAE processes applications in 2–5 business days. Monitor your email and the portal for status updates. You will receive an approval notification with a downloadable permit PDF.
+                  {PERMIT_PROCESSING_ESTIMATE} Monitor email and the portal. Keep the application reference. If the estimate slips, contact MOCCAE with that reference — or ask{' '}
+                  <Link to="/service/moccae-pet-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
+                    permit assistance
+                  </Link>{' '}
+                  to stay on the status with you.
                 </p>
                 <div className="p-3 bg-[#E9ECFB] rounded-xl text-sm text-[#5A5A5A]">
-                  <strong className="text-[#4F5BD5]">Pro tip:</strong> If you don't hear back within 5 business days, contact MOCCAE customer service with your application reference number. Dubai Pet Relocation handles all follow-ups for our clients.
+                  <strong className="text-[#4F5BD5]">Timing tip:</strong> {PERMIT_VALIDITY} Applying the week you first research the move is how permits expire on the tarmac.
                 </div>
               </div>
             </div>
@@ -359,6 +405,11 @@ export default function MOCCAEPermitGuide() {
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-8 text-center">
             Common Rejection Reasons & How to Fix Them
           </h2>
+          <ContentImage
+            src="/assets/w5/moccae-permit-rejection-causes-and-fixes-diagram.png"
+            alt="MOCCAE pet permit rejection causes and how to fix each one"
+            caption="Cause and fix. Confirm any resubmission fee on the portal — we do not invent one."
+          />
           <div className="overflow-x-auto mb-10">
             <table className="data-table min-w-[600px]">
               <thead>
@@ -372,7 +423,7 @@ export default function MOCCAEPermitGuide() {
                 <tr>
                   <td className="font-medium">Wrong pet photo</td>
                   <td>Retake with neutral background, front face, no accessories</td>
-                  <td>Use Dubai Pet Relocation's photo guide before submission</td>
+                  <td>Shoot a front-face photo on a plain wall before you open the form</td>
                 </tr>
                 <tr>
                   <td className="font-medium">Expired rabies vaccine</td>
@@ -409,7 +460,11 @@ export default function MOCCAEPermitGuide() {
               <div>
                 <p className="font-semibold text-[#2A2A2A] mb-1">Resubmission Resets the Timeline</p>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  When you resubmit after a rejection, the 2–5 business day processing clock restarts. If your permit is rejected twice, you could lose 2+ weeks. Dubai Pet Relocation error-checks every application before submission to avoid this scenario.
+                  When you resubmit after a rejection, the processing estimate restarts. Two rejects can push a cargo date past the 30-day window. That is the practical reason to line-check the file — or to use{' '}
+                  <Link to="/service/moccae-pet-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
+                    MOCCAE permit assistance
+                  </Link>{' '}
+                  — before you pay the portal.
                 </p>
               </div>
             </div>
@@ -459,7 +514,10 @@ export default function MOCCAEPermitGuide() {
                 <h3 className="text-xl font-bold text-[#2A2A2A]">How Dubai Pet Relocation Handles Permits</h3>
               </div>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-5">
-                Dubai Pet Relocation's permit service handles the entire application process from document collection to final approval. Our team has processed hundreds of MOCCAE permits and knows exactly what triggers rejections.
+                <Link to="/service/moccae-pet-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  MOCCAE permit assistance
+                </Link>{' '}
+                is the commercial twin of this guide: document collection, a line-check against the current requirements, portal submission support, and status tracking until the Ministry issues the PDF. We do not issue permits and we do not claim a volume badge.
               </p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
@@ -487,7 +545,7 @@ export default function MOCCAEPermitGuide() {
                   <div className="w-6 h-6 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-xs font-bold shrink-0">4</div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] text-sm">Error Correction & Resubmission</p>
-                    <p className="text-xs text-[#5A5A5A]">If rejected, we fix the issue and resubmit within 24 hours at no extra service charge.</p>
+                    <p className="text-xs text-[#5A5A5A]">If rejected, we read the Ministry reason, fix the file, and you resubmit. Confirm any extra portal fee when you resubmit.</p>
                   </div>
                 </div>
               </div>
@@ -496,8 +554,62 @@ export default function MOCCAEPermitGuide() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="section-padding bg-[#F5F6FD]">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4 text-center">
+            DIY on the portal versus managed permit assistance
+          </h2>
+          <p className="text-[#5A5A5A] text-base leading-relaxed text-center max-w-3xl mx-auto mb-8">
+            The government fee does not change. You are choosing who watches the file. This comparison is honest, not a conversion trick.
+          </p>
+          <div className="overflow-x-auto">
+            <table className="data-table min-w-[640px]">
+              <thead>
+                <tr>
+                  <th>Question</th>
+                  <th>DIY with this guide</th>
+                  <th>Managed via the service page</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="font-medium">Who logs into UAE Pass?</td>
+                  <td>You</td>
+                  <td>You — we do not invent a government login</td>
+                </tr>
+                <tr>
+                  <td className="font-medium">Who line-checks chip numbers?</td>
+                  <td>You, against the list above</td>
+                  <td>We review, then you submit</td>
+                </tr>
+                <tr>
+                  <td className="font-medium">Who pays MOCCAE?</td>
+                  <td>You, live portal amount</td>
+                  <td>You, same live portal amount</td>
+                </tr>
+                <tr>
+                  <td className="font-medium">When a reject lands</td>
+                  <td>You read the reason and resubmit</td>
+                  <td>We interpret the reason and stay on the thread</td>
+                </tr>
+                <tr>
+                  <td className="font-medium">Best when</td>
+                  <td>Pack is already consistent and the date is flexible</td>
+                  <td>A cargo slot would die if the estimate restarts</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-center mt-6">
+            <Link to="/service/moccae-pet-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
+              Open the MOCCAE permit assistance service →
+            </Link>
+          </p>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-padding bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4 text-center">
@@ -521,7 +633,14 @@ export default function MOCCAEPermitGuide() {
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-8 text-center">
             Related Guides
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Link to="/service/moccae-pet-permit/" className="bg-[#E9ECFB] rounded-[20px] p-6 hover:shadow-md transition-shadow group ring-1 ring-[#4F5BD5]/20">
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4">
+                <Shield className="w-5 h-5 text-[#4F5BD5]" />
+              </div>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">MOCCAE permit assistance</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">Commercial twin — document review and tracking. We still do not issue the permit.</p>
+            </Link>
             <Link to="/guides/uae-pet-import-requirements/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
                 <FileCheck className="w-5 h-5 text-[#4F5BD5]" />
@@ -529,12 +648,19 @@ export default function MOCCAEPermitGuide() {
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">UAE Pet Import Requirements</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Complete step-by-step guide to all documentation needed for importing pets into the UAE.</p>
             </Link>
-            <Link to="/how-it-works/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
+            <Link to="/guides/rabies-titer-test-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
-                <Clock className="w-5 h-5 text-[#4F5BD5]" />
+                <Stethoscope className="w-5 h-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">How Dubai Pet Relocation Works</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Learn about our transparent coordination process from start to finish.</p>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">Rabies titer test (RNATT)</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">Sample within 90 days before travel — not a 90-day wait after the result.</p>
+            </Link>
+            <Link to="/service/pet-import-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
+                <Plane className="w-5 h-5 text-[#4F5BD5]" />
+              </div>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">Pet import service</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">When you need cargo and clearance as well as the permit.</p>
             </Link>
             <Link to="/dog-relocation-to-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#C89F5A]/10 flex items-center justify-center mb-4 group-hover:bg-[#C89F5A]/20 transition-colors">
@@ -561,7 +687,11 @@ export default function MOCCAEPermitGuide() {
             Let Dubai Pet Relocation Handle Your MOCCAE Permit
           </h2>
           <p className="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            Avoid rejection delays and paperwork stress. Dubai Pet Relocation's permit service includes document review, error-checking, application submission, and free resubmission if needed.
+            Send the chip number, rabies date and origin. We will tell you whether the file is ready for UAE Pass — then you choose DIY with this guide or{' '}
+            <Link to="/service/moccae-pet-permit/" className="underline font-semibold">
+              permit assistance
+            </Link>
+            . Email {siteConfig.email} if WhatsApp is not convenient.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <WhatsAppBtn
@@ -570,15 +700,16 @@ export default function MOCCAEPermitGuide() {
               className="whatsapp-pulse"
             />
             <Link
-              to="/how-it-works/"
+              to="/service/moccae-pet-permit/"
               className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 text-white rounded-2xl font-semibold text-sm hover:bg-white/20 transition-colors"
             >
               <HelpCircle className="w-4 h-4" />
-              Learn How It Works
+              Permit assistance service
             </Link>
           </div>
         </div>
       </section>
+      <OfficialSources />
     </>
   )
 }
