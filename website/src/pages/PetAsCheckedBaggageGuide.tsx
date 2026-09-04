@@ -26,7 +26,7 @@ const faqData = [
   },
   {
     q: 'What does Emirates charge for animals as baggage?',
-    a: 'Airline fees (source: Emirates) when the itinerary is eligible: USD 500 when pet + carrier is ≤23 kg and ≤150 cm; USD 650 for 24–32 kg and 150–300 cm; USD 800 above 32 kg up to 300 cm. Containers over 300 cm travel as cargo. Into Dubai this is often cargo — never assume every UAE route qualifies. Confirm live amounts on the Emirates animals page.',
+    a: 'When the itinerary is eligible, Emirates publishes animal-charge tiers on its animals page. The full USD 500 / 650 / 800 grid lives on the Emirates pet cargo guide — this page owns eligibility (accompanied hold, excess / AVIH, the under-17-hour outbound rule, and the DXB-ending cargo block), not that fee table.',
   },
   {
     q: 'Does flydubai offer checked-baggage pets?',
@@ -176,39 +176,15 @@ export default function PetAsCheckedBaggageGuide() {
 
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Emirates animal charges (source: Emirates)</h2>
+          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Fees sit on the cargo guide — this page owns eligibility</h2>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            These tiers are first-party Emirates animal charges. They are not a Dubai Pet Relocation price list. Dubai-ending itineraries often must travel as manifest cargo — these figures do not unlock checked-baggage arrival into DXB. Containers over 300 cm travel as cargo. We repeat them here so you can compare baggage vs SkyCargo; the cargo-owned keywords live on the{' '}
+            This URL owns pets as checked baggage in the UAE: accompanied hold, excess / AVIH, the Emirates under-17-hour outbound rule, and the DXB-ending cargo disclaimer. The full Emirates USD 500 / 650 / 800 animal-charge table is cargo-owned depth on the{' '}
             <Link to={FLIGHT_MODE_PATHS.cargo} className="font-semibold text-[#4F5BD5] hover:underline">
               Emirates pet cargo guide
             </Link>
-            .
+            . Those figures do not unlock checked-baggage arrival into DXB.
           </p>
           <LastVerified note="Confirm current Emirates animal charges on the official animals page before you pay." />
-          <div className="mb-6 overflow-x-auto">
-            <table className="w-full min-w-[520px] border-collapse text-sm">
-              <thead>
-                <tr className="bg-[#E9ECFB]">
-                  <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Tier (pet + carrier)</th>
-                  <th className="border border-[#E2E5F6] px-4 py-3 text-left font-semibold text-[#2A2A2A]">Airline fee (source: Emirates)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="bg-white">
-                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">≤23 kg and ≤150 cm</td>
-                  <td className="border border-[#E2E5F6] px-4 py-3 font-semibold text-[#2A2A2A]">USD 500</td>
-                </tr>
-                <tr className="bg-[#F5F6FD]">
-                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">24–32 kg and 150–300 cm</td>
-                  <td className="border border-[#E2E5F6] px-4 py-3 font-semibold text-[#2A2A2A]">USD 650</td>
-                </tr>
-                <tr className="bg-white">
-                  <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">&gt;32 kg, ≤300 cm</td>
-                  <td className="border border-[#E2E5F6] px-4 py-3 font-semibold text-[#2A2A2A]">USD 800</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
           <p className="leading-relaxed text-[#5A5A5A]">
             A valid import permit and government-endorsed health certificate for the destination are required before Emirates accepts the animal (source: Emirates). Leaving the UAE still needs the MOCCAE export health certificate — plan destination rules backwards. If you want one coordinator for the whole outbound file, use{' '}
             <Link to={FLIGHT_MODE_PATHS.doorToDoor} className="font-semibold text-[#4F5BD5] hover:underline">

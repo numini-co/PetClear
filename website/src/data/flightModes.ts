@@ -34,7 +34,7 @@ export const FLIGHT_MODE_CARDS: FlightModeCard[] = [
     id: 'baggage',
     title: 'Pet as checked baggage',
     blurb:
-      'Accompanied hold travel on the same ticket. Into Dubai this is often cargo — never assume every UAE route qualifies. Airline animal-charge tiers live on the checked-baggage guide.',
+      'Accompanied hold travel on the same ticket. Into Dubai this is often cargo — never assume every UAE route qualifies. Emirates airline-fee tiers USD 500 / 650 / 800 apply only when the itinerary is eligible.',
     to: FLIGHT_MODE_PATHS.baggage,
     kind: 'guide',
   },

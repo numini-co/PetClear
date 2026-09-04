@@ -512,7 +512,7 @@ export default function CatRelocationPage() {
               </div>
               <p className="text-sm text-[#5A5A5A] mb-4">Etihad is the most pet-friendly UAE airline, but with an important limitation: their in-cabin option is only for flights to Abu Dhabi (AUH), not Dubai.</p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">In-cabin (PETC):</strong> Small cats (pet + carrier ≤ 8 kg) can travel in the cabin on flights to Abu Dhabi. Carrier max size: 40 x 40 x 22 cm in Economy. Fee: USD 399 per flight segment.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">In-cabin (PETC):</strong> Small cats (pet + carrier ≤ 8 kg) can travel in the cabin on flights to Abu Dhabi. Carrier max size: 40 x 40 x 22 cm in Economy. Etihad publishes cabin pet fees that change; confirm at booking. A 2026 promo from USD 399 is expired; USD 1,500 is Estimated only until first-party current fee is confirmed.</li>
                 <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Cargo:</strong> Larger cats or those flying to Abu Dhabi via cargo.</li>
                 <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">!</span> <strong className="text-[#2A2A2A]">Important:</strong> If you fly into Abu Dhabi, you'll need to arrange ground transport to Dubai (about 90 minutes). We can coordinate this for you.</li>
               </ul>

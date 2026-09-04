@@ -80,12 +80,12 @@ const FLIGHT_MODE_SERVICE_CARDS = [
   {
     to: '/service/shared-pet-charter/',
     label: 'Shared / group pet charter',
-    desc: 'A dedicated lift shared with other pets. Market context ~EUR 7k–13k Europe↔Dubai; firm seat is Get a Quote.',
+    desc: 'A dedicated lift shared with other pets. Labelled competitor seats on that page; DPR firm seat is Get a Quote.',
   },
   {
     to: '/guides/etihad-pet-policy/',
     label: 'Etihad in-cabin guide',
-    desc: 'The UAE cabin exception — airline fees (Etihad from USD 399 Economy cited; confirm live), 8 kg limit, AUH arrival. Emirates/flydubai cabin N/A for cats and dogs.',
+    desc: 'The UAE cabin exception — eligibility, 8 kg limit, AUH arrival. Cabin fees change; confirm at booking. Emirates / flydubai / Air Arabia: no cats or dogs in cabin (falcons excepted).',
   },
   {
     to: '/guides/emirates-pet-cargo/',

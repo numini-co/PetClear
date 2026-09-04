@@ -1077,7 +1077,7 @@ export default function ImportRequirementsPage() {
                 Etihad is the most pet-friendly UAE airline — but only for Abu Dhabi.
               </p>
               <ul className="text-sm text-[#5A5A5A] space-y-1">
-                <li><strong>In-cabin (to Abu Dhabi only):</strong> Small dogs and cats allowed. Pet + carrier must weigh ≤8 kg. Carrier max: 40 x 40 x 22 cm. Fee: USD 399 per segment.</li>
+                <li><strong>In-cabin (to Abu Dhabi only):</strong> Small dogs and cats allowed. Pet + carrier must weigh ≤8 kg. Carrier max: 40 x 40 x 22 cm. Etihad publishes cabin pet fees that change; confirm at booking. A 2026 promo from USD 399 is expired; USD 1,500 is Estimated only.</li>
                 <li><strong>Checked baggage:</strong> Accepted on some routes.</li>
                 <li><strong>Cargo:</strong> Available for larger pets.</li>
                 <li><strong>Advance notice:</strong> Book via Contact Centre; submit form 7 days before, documents 72 hours before.</li>

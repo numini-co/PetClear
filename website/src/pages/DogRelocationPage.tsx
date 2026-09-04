@@ -601,7 +601,7 @@ export default function DogRelocationPage() {
               </div>
               <p className="text-sm text-[#5A5A5A] mb-4">Etihad is the only UAE airline that allows small dogs in the cabin — but only on flights to or from Abu Dhabi (AUH), not Dubai.</p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">In-cabin (PETC):</strong> Dog + carrier must weigh ≤8 kg. Carrier max: 40 × 40 × 22 cm (Economy). Fee: USD 399 per flight segment.</li>
+                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">In-cabin (PETC):</strong> Dog + carrier must weigh ≤8 kg. Carrier max: 40 × 40 × 22 cm (Economy). Etihad publishes cabin pet fees that change; confirm at booking. A 2026 promo from USD 399 is expired; USD 1,500 is Estimated only until first-party current fee is confirmed.</li>
                 <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Booking:</strong> Must be done via Etihad Contact Centre. Submit form 7 days before, documents 72 hours before.</li>
                 <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">!</span> <strong className="text-[#2A2A2A]">Abu Dhabi entry:</strong> Requires a Bill of Entry from MICCO Logistics (AED 365) at least 24 hours before departure.</li>
                 <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Cargo:</strong> Available for larger dogs or routes where cabin is not permitted.</li>

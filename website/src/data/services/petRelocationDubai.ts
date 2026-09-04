@@ -80,13 +80,13 @@ const petRelocationDubai: ServicePageData = {
             },
             {
               title: 'Private jet pet travel',
-              text: 'Dedicated aircraft when scheduled products will not accept the animal. Quote only.',
+              text: 'Open the capability page — quote only. This door-to-door URL does not own that keyword.',
               to: '/service/private-jet-pet-travel/',
               kind: 'Service',
             },
             {
               title: 'Shared / group pet charter',
-              text: 'A dedicated lift shared with other pets — midpoint vs a full jet. Quote only.',
+              text: 'Open the capability page — labelled market listings, firm seat is Get a Quote.',
               to: '/service/shared-pet-charter/',
               kind: 'Service',
             },
@@ -94,7 +94,7 @@ const petRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'We are not the airline. Cabin and cargo figures on the child guides are cited from Etihad (from USD 399) and Emirates (USD 500 / 650 / 800). Jet and charter stay Get a Quote — we do not invent aircraft prices.',
+          text: 'We are not the airline. Cabin-fee and Emirates animal-charge tables live on the child guides. Private-jet and shared-charter capability — including labelled market listings — live on [private jet pet travel](/service/private-jet-pet-travel/) and [shared pet charter](/service/shared-pet-charter/). Those pages stay Get a Quote.',
         },
       ],
     },
@@ -244,7 +244,7 @@ const petRelocationDubai: ServicePageData = {
     },
     {
       q: 'Which flight modes do you arrange?',
-      a: 'Cabin (Etihad into Abu Dhabi), accompanied checked baggage where the airline allows it, manifest cargo (the default for UAE import), private jet, shared charter, and this door-to-door umbrella. Compare them on the [pet flight options hub](/guides/pet-flight-options-dubai/).',
+      a: 'Cabin (Etihad into Abu Dhabi), accompanied checked baggage where the airline allows it, and manifest cargo (the default for UAE import). Private-jet and shared-charter capability live on [private jet pet travel](/service/private-jet-pet-travel/) and [shared pet charter](/service/shared-pet-charter/). Compare modes on the [pet flight options hub](/guides/pet-flight-options-dubai/).',
     },
   ],
   relatedLinks: [
