@@ -13,6 +13,7 @@ import { dubaiAreas } from '../data/areas/dubai/index.ts'
 import Testimonials from '../components/Testimonials.tsx'
 import Hero from '../components/Hero.tsx'
 import TeamSupport from '../components/TeamSupport.tsx'
+import LastVerified from '../components/LastVerified.tsx'
 
 const defaultMsg = `Hi Dubai Pet Relocation team,
 
@@ -1818,8 +1819,9 @@ export default function HomePage() {
             <Card>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Step 4: MOCCAE Import Permit</h3>
               <p className="text-body">
-                The import permit is applied for through the MOCCAE online portal or app. It costs approximately AED 200 per pet and is valid for a limited window. The permit must be issued before travel and presented at arrival. We prepare the application, upload the documents, and track approval.
+                The import permit is applied for through the MOCCAE online portal or app. Confirm the current fee on the official portal — published amounts have differed. The permit is valid for 30 days from issuance and must be presented at arrival. We prepare the application, upload the documents, and track approval.
               </p>
+              <LastVerified />
             </Card>
             <Card>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Step 5: Health Certificate & Travel</h3>
@@ -2636,7 +2638,7 @@ export default function HomePage() {
             question="What is the MOCCAE import permit?"
             answer={
               <>
-                <p>The MOCCAE import permit is a mandatory approval from the UAE Ministry of Climate Change and Environment for all pets entering the country. It costs approximately AED 200 per pet and is valid for a limited window. We prepare and submit the application for you.</p>
+                <p>The MOCCAE import permit is a mandatory approval from the UAE Ministry of Climate Change and Environment for all pets entering the country. It is valid for 30 days from issuance. Confirm the current portal fee when you apply — published amounts have differed. We prepare and submit the application for you.</p>
                 <p className="mt-3">
                   <Link to="/guides/moccae-import-permit/" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">
                     Learn about MOCCAE permits <ArrowRight className="w-3.5 h-3.5" />

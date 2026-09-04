@@ -267,6 +267,7 @@ export default function ImportChecklistGuide() {
                   <p className="text-lg font-bold text-[#2A2A2A]">Manifest cargo only</p>
                   <p className="text-sm text-[#5A5A5A] mt-1">No cabin or checked-baggage travel into Dubai.</p>
                 </div>
+                <LastVerified />
               </div>
             </div>
           </div>
