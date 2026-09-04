@@ -98,8 +98,9 @@ export default function DubaiToUK() {
 
       {/* HERO */}
       <Hero
-        image="/images/hero-dubai-to-uk.jpg"
+        image="/assets/route-heroes/route-dubai-to-uk-dog-flag-hero.jpg"
         imageAlt="Pet relocation from Dubai to UK"
+        fallbackSrc="/images/hero-dubai-to-uk.jpg"
         eyebrow="Dubai → United Kingdom"
         title="Dubai to UK Pet Relocation — Exporting Your Pet to Britain"
         subtitle="No titer test, no quarantine when paperwork is right. We handle DEFRA/APHA health certificates, MOCCAE endorsement, and UK customs."

@@ -96,7 +96,8 @@ export default function AustraliaToDubai() {
 
       {/* HERO */}
       <Hero
-        image="/images/hero-australia.jpg"
+        image="/assets/route-heroes/route-australia-to-dubai-dog-flag-hero.jpg"
+        fallbackSrc="/images/hero-australia.jpg"
         imageAlt="Pet relocation from Australia to Dubai"
         eyebrow="Australia → Dubai"
         title="Australia to Dubai Pet Relocation — Complete Guide"

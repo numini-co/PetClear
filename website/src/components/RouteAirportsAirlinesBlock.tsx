@@ -6,6 +6,8 @@ type Props = {
   countryAirports: RouteAirport[]
   uaeAirports: UaeAirport[]
   airlines: RouteAirline[]
+  airportsNarrative?: string
+  airlinesNarrative?: string
 }
 
 const MODE_LABEL: Record<RouteAirline['mode'], string> = {
@@ -22,6 +24,8 @@ export default function RouteAirportsAirlinesBlock({
   countryAirports,
   uaeAirports,
   airlines,
+  airportsNarrative,
+  airlinesNarrative,
 }: Props) {
   return (
     <section className="bg-white section-padding">
@@ -31,9 +35,8 @@ export default function RouteAirportsAirlinesBlock({
             Main airports — {countryName} {direction === 'inbound' ? '→ UAE' : '← from Dubai'}
           </h2>
           <p className="mt-3 max-w-3xl text-base leading-relaxed text-[#5A5A5A]">
-            Pets on this corridor typically move through the airports below. UAE clearance for most dogs and cats is
-            via cargo pathways at DXB and/or DWC; Abu Dhabi (AUH) appears when the itinerary uses Etihad cabin rules.
-            Airport names are routing facts — not a partnership claim.
+            {airportsNarrative ||
+              'Pets on this corridor typically move through the airports below. UAE clearance for most dogs and cats is via cargo pathways at DXB and/or DWC; Abu Dhabi (AUH) appears when the itinerary uses Etihad cabin rules. Airport names are routing facts — not a partnership claim.'}
           </p>
           <div className="mt-6 overflow-x-auto rounded-[20px] border border-[#E6E8F5]">
             <table className="min-w-full text-sm">
@@ -78,9 +81,8 @@ export default function RouteAirportsAirlinesBlock({
             Airlines that can move pets on this corridor
           </h2>
           <p className="mt-3 max-w-3xl text-base leading-relaxed text-[#5A5A5A]">
-            Modes below come from our corridor seed and must be confirmed against the airline’s current pet policy for
-            your exact itinerary. Dubai Pet Relocation is a coordinator — not an airline, and not an official partner of
-            any carrier listed.
+            {airlinesNarrative ||
+              'Modes below come from our corridor seed and must be confirmed against the airline’s current pet policy for your exact itinerary. Dubai Pet Relocation is a coordinator — not an airline, and not an official partner of any carrier listed.'}
           </p>
           <div className="mt-6 overflow-x-auto rounded-[20px] border border-[#E6E8F5]">
             <table className="min-w-full text-sm">

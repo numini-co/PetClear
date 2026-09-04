@@ -103,6 +103,35 @@ function twinHref(slug: string): string | null {
   return `/routes/${twin}/`
 }
 
+const CORRIDOR_FAMILIES: string[][] = [
+  ['australia', 'new-zealand'],
+  ['india', 'philippines', 'pakistan'],
+  ['saudi-arabia', 'qatar', 'oman', 'bahrain', 'kuwait'],
+  ['germany', 'france', 'spain', 'netherlands', 'italy', 'ireland', 'turkey'],
+  ['south-africa', 'egypt'],
+  ['singapore', 'japan', 'hong-kong', 'thailand', 'indonesia', 'malaysia', 'china', 'south-korea'],
+]
+
+function siblingLink(countryKey: string, direction: 'inbound' | 'outbound'): RouteRelatedLink | null {
+  if (countryKey === 'canada') {
+    return direction === 'outbound'
+      ? { label: 'Dubai to Australia (long-haul sibling)', href: '/routes/dubai-to-australia/' }
+      : { label: 'USA to Dubai (North America sibling)', href: '/routes/usa-to-dubai/' }
+  }
+  const family = CORRIDOR_FAMILIES.find((g) => g.includes(countryKey))
+  const peer = family?.find((k) => k !== countryKey)
+  if (!peer) return null
+  const slug = direction === 'inbound' ? `${peer}-to-dubai` : `dubai-to-${peer}`
+  const label = hubTitleForPeer(peer, direction)
+  return { label: `${label} (sibling corridor)`, href: `/routes/${slug}/` }
+}
+
+function hubTitleForPeer(countryKey: string, direction: 'inbound' | 'outbound'): string {
+  const meta = COUNTRY_META[countryKey]
+  const display = meta ? titleDisplay(meta.name) : countryKey
+  return direction === 'inbound' ? `${display} to Dubai` : `Dubai to ${display}`
+}
+
 function relatedLinks(copy: RouteUniqueCopy, direction: 'inbound' | 'outbound'): RouteRelatedLink[] {
   const links: RouteRelatedLink[] = [{ label: 'All pet relocation routes', href: '/routes/' }]
   const twin = twinHref(copy.slug)
@@ -118,17 +147,35 @@ function relatedLinks(copy: RouteUniqueCopy, direction: 'inbound' | 'outbound'):
       href: `/routes/${twinSlugOnly}/`,
     })
   }
+  const sibling = siblingLink(copy.countryKey, direction)
+  if (sibling && !links.some((l) => l.href === sibling.href)) {
+    links.push(sibling)
+  }
   if (direction === 'inbound') {
     links.push({ label: 'Pet relocation to Dubai', href: '/service/pet-relocation-to-dubai/' })
+    links.push({ label: 'UAE pet import requirements', href: '/guides/uae-pet-import-requirements/' })
+    links.push({ label: 'MOCCAE import permit (30-day validity)', href: '/guides/moccae-import-permit/' })
+    links.push({ label: 'Rabies titer sample window', href: '/guides/rabies-titer-test-dubai/' })
   } else {
     links.push({ label: 'Pet relocation from Dubai', href: '/service/pet-relocation-from-dubai/' })
+    links.push({ label: 'What drives pet relocation cost', href: '/guides/pet-relocation-cost-dubai/' })
+    links.push({ label: 'Pet flight options from Dubai', href: '/guides/pet-flight-options-dubai/' })
   }
+  links.push({ label: 'IATA crate requirements', href: '/guides/iata-pet-crate-requirements/' })
   links.push({ label: 'Pet relocation Dubai', href: '/service/pet-relocation-dubai/' })
   if (copy.countryKey === 'qatar') {
     links.push({ label: 'Etihad pet policy (UAE cabin exception)', href: '/guides/etihad-pet-policy/' })
     links.push({ label: 'Emirates pet cargo', href: '/guides/emirates-pet-cargo/' })
   }
   return links
+}
+
+function countWords(...parts: Array<string | undefined>): number {
+  return parts
+    .filter((p): p is string => Boolean(p && p.trim()))
+    .join(' ')
+    .split(/\s+/)
+    .filter(Boolean).length
 }
 
 function titleDisplay(name: string): string {
@@ -182,6 +229,21 @@ export function assembleRoute(copy: RouteUniqueCopy): RoutePageData {
   }
   const meta = COUNTRY_META[copy.countryKey]
   const countryName = meta?.name ?? copy.countryKey
+  const uaeRules = direction === 'inbound' ? inboundUaeRules(countryName) : outboundUaeRules()
+  const wordCountEstimate = countWords(
+    copy.intro,
+    copy.rulesSpecialties,
+    copy.difficulties,
+    copy.howItWorks,
+    copy.airportsNarrative,
+    copy.airlinesNarrative,
+    ...uaeRules.bullets,
+    uaeRules.disclaimer,
+    copy.destinationRules?.authorityHint,
+    ...(copy.destinationRules?.bullets ?? []),
+    copy.destinationRules?.verifyNote,
+    ...copy.faqs.map((f) => f.answer),
+  )
   return {
     slug: copy.slug,
     direction,
@@ -198,11 +260,18 @@ export function assembleRoute(copy: RouteUniqueCopy): RoutePageData {
     airports: mapAirports(copy.countryKey, direction),
     uaeAirports: direction === 'inbound' ? UAE_AIRPORTS_INBOUND : UAE_AIRPORTS_OUTBOUND,
     airlines: mapAirlines(copy.countryKey, direction),
-    uaeRules: direction === 'inbound' ? inboundUaeRules(countryName) : outboundUaeRules(),
+    uaeRules,
     destinationRules: copy.destinationRules,
     faqs: copy.faqs,
     relatedLinks: relatedLinks(copy, direction),
     extraSources: direction === 'outbound' ? DESTINATION_SOURCES[copy.countryKey] : undefined,
+    rulesSpecialties: copy.rulesSpecialties,
+    difficulties: copy.difficulties,
+    howItWorks: copy.howItWorks,
+    airportsNarrative: copy.airportsNarrative,
+    airlinesNarrative: copy.airlinesNarrative,
+    depthBar: 'OWNER ≥1000 unique',
+    wordCountEstimate,
     cta: {
       label: 'Get Route Checked',
       whatsapp: '+971504782999',

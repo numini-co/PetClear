@@ -14,5 +14,10 @@ export interface RouteUniqueCopy {
   hubCardDesc: string
   faqs: RouteFaq[]
   destinationRules?: DestinationRules
+  rulesSpecialties: string
+  difficulties: string
+  howItWorks: string
+  airportsNarrative: string
+  airlinesNarrative: string
   copyStatus?: 'exemplar' | 'draft' | 'final'
 }

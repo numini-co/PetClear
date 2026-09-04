@@ -32,6 +32,18 @@ const BAN = [
   /DataForSEO/i,
 ]
 const WAIT_AFTER = /90-day wait after/i
+const DEPTH_FIELDS = [
+  'rulesSpecialties',
+  'difficulties',
+  'howItWorks',
+  'airportsNarrative',
+  'airlinesNarrative',
+]
+const LOCK_TITLES = {
+  'dubai-to-australia': 'Dubai to Australia Pet Relocation | Export Guide 2026',
+  'dubai-to-philippines': 'Dubai to Philippines Pet Relocation | Export Guide 2026',
+  'dubai-to-india': 'Dubai to India Pet Relocation | Export Guide 2026',
+}
 
 for (const file of copyFiles) {
   const text = fs.readFileSync(path.join(copyDir, file), 'utf8')
@@ -44,7 +56,7 @@ for (const file of copyFiles) {
   for (const re of BAN) {
     if (re.test(text)) bannedHits.push(`${file} matched ${re}`)
   }
-  if (WAIT_AFTER.test(text) && !/not a 90-day wait after/i.test(text)) {
+  if (WAIT_AFTER.test(text) && !/never a 90-day wait after|not a 90-day wait after/i.test(text)) {
     bannedHits.push(`${file} matched ${WAIT_AFTER}`)
   }
 }
@@ -55,6 +67,18 @@ const longTitles = titles.filter((t) => t.length > 70)
 const longMetas = metas.filter((t) => t.length > 160)
 const longHubs = hubs.filter((t) => t.length > 120)
 const shortIntros = intros.filter((t) => t.replace(/\s+/g, ' ').trim().length < 80)
+
+const allCopyText = copyFiles.map((f) => fs.readFileSync(path.join(copyDir, f), 'utf8')).join('\n')
+const missingDepth = DEPTH_FIELDS.filter((field) => {
+  const count = [...allCopyText.matchAll(new RegExp(`${field}:`, 'g'))].length
+  return count < locked.length
+})
+const lockTitleMisses = Object.entries(LOCK_TITLES)
+  .filter(([slug, title]) => {
+    const block = allCopyText.includes(`slug: '${slug}'`) && allCopyText.includes(`title: '${title}'`)
+    return !block
+  })
+  .map(([slug]) => slug)
 
 const report = {
   locked: locked.length,
@@ -67,6 +91,8 @@ const report = {
   longHubs,
   shortIntroCount: shortIntros.length,
   bannedHits,
+  missingDepth,
+  lockTitleMisses,
 }
 
 console.log(JSON.stringify(report, null, 2))
@@ -75,7 +101,9 @@ if (
   extraCopy.length ||
   missingHeroes.length ||
   longTitles.length ||
-  bannedHits.length
+  bannedHits.length ||
+  missingDepth.length ||
+  lockTitleMisses.length
 ) {
   process.exit(1)
 }

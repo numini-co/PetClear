@@ -103,6 +103,15 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
         </div>
       </section>
 
+      <section className="bg-white section-padding pt-0">
+        <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
+          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
+            What is special about this corridor
+          </h2>
+          <p className="leading-relaxed text-[#5A5A5A]">{data.rulesSpecialties}</p>
+        </div>
+      </section>
+
       <section className="bg-[#F5F6FD] section-padding">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">{rulesHeading}</h2>
@@ -138,12 +147,65 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
         </div>
       </section>
 
+      <section className="bg-white section-padding">
+        <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
+          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
+            Where this corridor usually fails
+          </h2>
+          <p className="leading-relaxed text-[#5A5A5A]">{data.difficulties}</p>
+        </div>
+      </section>
+
+      <section className="bg-[#F5F6FD] section-padding">
+        <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
+          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
+            How a {countryLabel} move actually works
+          </h2>
+          <p className="leading-relaxed text-[#5A5A5A]">{data.howItWorks}</p>
+          <p className="mt-6 text-sm leading-relaxed text-[#5A5A5A]">
+            Deep-dive the documents on{' '}
+            {data.direction === 'inbound' ? (
+              <>
+                <Link className="font-semibold text-[#4F5BD5]" to="/guides/uae-pet-import-requirements/">
+                  UAE import requirements
+                </Link>
+                , the{' '}
+                <Link className="font-semibold text-[#4F5BD5]" to="/guides/moccae-import-permit/">
+                  MOCCAE 30-day import permit
+                </Link>
+                , and the{' '}
+                <Link className="font-semibold text-[#4F5BD5]" to="/guides/rabies-titer-test-dubai/">
+                  titer sample window
+                </Link>
+              </>
+            ) : (
+              <>
+                <Link className="font-semibold text-[#4F5BD5]" to="/guides/pet-relocation-cost-dubai/">
+                  cost drivers
+                </Link>
+                {' '}and{' '}
+                <Link className="font-semibold text-[#4F5BD5]" to="/guides/pet-flight-options-dubai/">
+                  pet flight options from Dubai
+                </Link>
+              </>
+            )}
+            . Crate sizing sits on the{' '}
+            <Link className="font-semibold text-[#4F5BD5]" to="/guides/iata-pet-crate-requirements/">
+              IATA crate guide
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+
       <RouteAirportsAirlinesBlock
         countryName={titleCaseCountry(data.countryKey)}
         direction={data.direction}
         countryAirports={data.airports}
         uaeAirports={data.uaeAirports}
         airlines={data.airlines}
+        airportsNarrative={data.airportsNarrative}
+        airlinesNarrative={data.airlinesNarrative}
       />
 
       <section className="bg-[#F5F6FD] section-padding">

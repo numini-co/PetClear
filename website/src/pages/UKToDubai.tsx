@@ -96,8 +96,9 @@ export default function UKToDubai() {
 
       {/* HERO */}
       <Hero
-        image="/images/hero-uk.jpg"
+        image="/assets/route-heroes/route-uk-to-dubai-dog-flag-hero.jpg"
         imageAlt="Pet relocation from UK to Dubai"
+        fallbackSrc="/images/hero-uk.jpg"
         eyebrow="United Kingdom → Dubai"
         title="UK to Dubai Pet Relocation — Complete Guide"
         subtitle="The UK is a low-risk, rabies-free country — no titer test required and a faster process. Costs, timelines and documents explained."

@@ -96,7 +96,8 @@ export default function NewZealandToDubai() {
 
       {/* HERO */}
       <Hero
-        image="/images/hero-new-zealand.jpg"
+        image="/assets/route-heroes/route-new-zealand-to-dubai-dog-flag-hero.jpg"
+        fallbackSrc="/images/hero-new-zealand.jpg"
         imageAlt="Pet relocation from New Zealand to Dubai"
         eyebrow="New Zealand → Dubai"
         title="New Zealand to Dubai Pet Relocation — Complete Guide"

@@ -83,6 +83,13 @@ export interface RoutePageData {
   faqs: RouteFaq[]
   relatedLinks: RouteRelatedLink[]
   extraSources?: OfficialSource[]
+  rulesSpecialties: string
+  difficulties: string
+  howItWorks: string
+  airportsNarrative: string
+  airlinesNarrative: string
+  depthBar: 'OWNER ≥1000 unique'
+  wordCountEstimate: number
   cta: RouteCta
   hubCardDesc: string
   lastVerified: string

@@ -10,20 +10,20 @@ import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { ROUTE50_INBOUND_CARDS, ROUTE50_OUTBOUND_CARDS } from '../data/routes/registry.ts'
 
 const INBOUND = [
-  { title: 'UK to Dubai', to: '/routes/uk-to-dubai/', image: '/images/hero-uk.jpg', desc: 'Low-risk origin: microchip, vaccinations, MOCCAE permit and a DEFRA health certificate.' },
-  { title: 'USA to Dubai', to: '/routes/usa-to-dubai/', image: '/images/hero-usa.jpg', desc: 'US origin rules, titer requirements where they apply, and DXB cargo arrival.' },
-  { title: 'India to Dubai', to: '/routes/india-to-dubai/', image: '/images/hero-india.jpg', desc: 'High-risk rabies origin: titer test, waiting period, and permit timing.' },
-  { title: 'Australia to Dubai', to: '/routes/australia-to-dubai/', image: '/images/hero-australia.jpg', desc: 'Strict export chain plus UAE import documents, timed to your flight.' },
-  { title: 'Philippines to Dubai', to: '/routes/philippines-to-dubai/', image: '/images/hero-philippines.jpg', desc: 'High-risk route: RNATT, waiting period, and cargo booking from Manila and beyond.' },
-  { title: 'Canada to Dubai', to: '/routes/canada-to-dubai/', image: '/images/hero-canada.jpg', desc: 'CFIA-endorsed health certificate, MOCCAE permit, and DXB clearance.' },
-  { title: 'New Zealand to Dubai', to: '/routes/new-zealand-to-dubai/', image: '/images/hero-new-zealand.jpg', desc: 'Rabies-free origin advantage, still with a full UAE import document chain.' },
-  { title: 'South Africa to Dubai', to: '/routes/south-africa-to-dubai/', image: '/images/hero-south-africa.jpg', desc: 'Titer-required origin with permit, crate and cargo steps mapped out.' },
+  { title: 'UK to Dubai', to: '/routes/uk-to-dubai/', image: '/assets/route-heroes/route-uk-to-dubai-dog-flag-hero.jpg', desc: 'Low-risk origin: microchip, vaccinations, MOCCAE permit and a DEFRA health certificate.' },
+  { title: 'USA to Dubai', to: '/routes/usa-to-dubai/', image: '/assets/route-heroes/route-usa-to-dubai-dog-flag-hero.jpg', desc: 'US origin rules, titer requirements where they apply, and DXB cargo arrival.' },
+  { title: 'India to Dubai', to: '/routes/india-to-dubai/', image: '/assets/route-heroes/route-india-to-dubai-dog-flag-hero.jpg', desc: 'High-risk rabies origin: titer test, waiting period, and permit timing.' },
+  { title: 'Australia to Dubai', to: '/routes/australia-to-dubai/', image: '/assets/route-heroes/route-australia-to-dubai-dog-flag-hero.jpg', desc: 'Strict export chain plus UAE import documents, timed to your flight.' },
+  { title: 'Philippines to Dubai', to: '/routes/philippines-to-dubai/', image: '/assets/route-heroes/route-philippines-to-dubai-dog-flag-hero.jpg', desc: 'High-risk route: RNATT, waiting period, and cargo booking from Manila and beyond.' },
+  { title: 'Canada to Dubai', to: '/routes/canada-to-dubai/', image: '/assets/route-heroes/route-canada-to-dubai-dog-flag-hero.jpg', desc: 'CFIA-endorsed health certificate, MOCCAE permit, and DXB clearance.' },
+  { title: 'New Zealand to Dubai', to: '/routes/new-zealand-to-dubai/', image: '/assets/route-heroes/route-new-zealand-to-dubai-dog-flag-hero.jpg', desc: 'Rabies-free origin advantage, still with a full UAE import document chain.' },
+  { title: 'South Africa to Dubai', to: '/routes/south-africa-to-dubai/', image: '/assets/route-heroes/route-south-africa-to-dubai-dog-flag-hero.jpg', desc: 'Titer-required origin with permit, crate and cargo steps mapped out.' },
   ...ROUTE50_INBOUND_CARDS,
 ]
 
 const OUTBOUND = [
-  { title: 'Dubai to UK', to: '/routes/dubai-to-uk/', image: '/images/hero-dubai-to-uk.jpg', desc: 'MOCCAE export certificate, GB pet health certificate and tapeworm timing.' },
-  { title: 'Dubai to USA', to: '/routes/dubai-to-usa/', image: '/images/hero-dubai-to-usa.jpg', desc: 'CDC dog import rules, health certificate and US arrival inspection.' },
+  { title: 'Dubai to UK', to: '/routes/dubai-to-uk/', image: '/assets/route-heroes/route-dubai-to-uk-dog-flag-hero.jpg', desc: 'MOCCAE export certificate, GB pet health certificate and tapeworm timing.' },
+  { title: 'Dubai to USA', to: '/routes/dubai-to-usa/', image: '/assets/route-heroes/route-dubai-to-usa-dog-flag-hero.jpg', desc: 'CDC dog import rules, health certificate and US arrival inspection.' },
   ...ROUTE50_OUTBOUND_CARDS,
 ]
 
@@ -81,7 +81,18 @@ export default function RoutesHub() {
                 to={r.to}
                 className="group overflow-hidden rounded-[20px] border border-[#E6E8F5] bg-white transition hover:-translate-y-0.5 hover:shadow-md"
               >
-                <img src={r.image} alt={r.title} width={1536} height={1024} loading="lazy" className="h-44 w-full object-cover" />
+                <img
+                  src={r.image}
+                  alt={r.title}
+                  width={1536}
+                  height={1024}
+                  loading="lazy"
+                  className="h-44 w-full object-cover"
+                  onError={(e) => {
+                    if (e.currentTarget.src.endsWith('/images/import-hero.jpg')) return
+                    e.currentTarget.src = '/images/import-hero.jpg'
+                  }}
+                />
                 <div className="p-5">
                   <h3 className="mb-2 text-lg font-bold text-[#2A2A2A] group-hover:text-[#4F5BD5]">{r.title}</h3>
                   <p className="text-sm leading-relaxed text-[#5A5A5A]">{r.desc}</p>
@@ -111,7 +122,18 @@ export default function RoutesHub() {
                 to={r.to}
                 className="group overflow-hidden rounded-[20px] border border-[#E6E8F5] bg-white transition hover:-translate-y-0.5 hover:shadow-md"
               >
-                <img src={r.image} alt={r.title} width={1536} height={1024} loading="lazy" className="h-44 w-full object-cover" />
+                <img
+                  src={r.image}
+                  alt={r.title}
+                  width={1536}
+                  height={1024}
+                  loading="lazy"
+                  className="h-44 w-full object-cover"
+                  onError={(e) => {
+                    if (e.currentTarget.src.endsWith('/images/import-hero.jpg')) return
+                    e.currentTarget.src = '/images/import-hero.jpg'
+                  }}
+                />
                 <div className="p-5">
                   <h3 className="mb-2 text-lg font-bold text-[#2A2A2A] group-hover:text-[#4F5BD5]">{r.title}</h3>
                   <p className="text-sm leading-relaxed text-[#5A5A5A]">{r.desc}</p>
