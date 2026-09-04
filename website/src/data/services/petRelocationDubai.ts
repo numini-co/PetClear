@@ -191,6 +191,10 @@ const petRelocationDubai: ServicePageData = {
           type: 'p',
           text: 'Government permit and release amounts must be confirmed on the official portal. Export-certificate figures circulating online also conflict with first-party notes, so they stay off this page. For a structured driver list, open the [cost guide](/guides/pet-relocation-cost-dubai/) and then [talk to our relocation team](/contact/).',
         },
+        {
+          type: 'p',
+          text: 'Competitor market (not a DPR package): Foufoufly publishes from-tiers of Essentials AED 4,000 / Managed AED 8,000 / White Glove AED 15,000. Those are a labelled competitor reference only. Dubai Pet Relocation door-to-door fees remain Get a Quote.',
+        },
       ],
     },
     {

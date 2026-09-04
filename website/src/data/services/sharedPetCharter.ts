@@ -5,13 +5,13 @@ const sharedPetCharter: ServicePageData = {
   slug: 'shared-pet-charter',
   seoTitle: 'Shared Pet Charter | Group Charter Coordination from Dubai',
   metaDescription:
-    'Offer page for shared / group pet charter — a dedicated lift shared with other pets, between scheduled cargo and a full private jet. Quote only — no published charter prices.',
+    'Offer page for shared / group pet charter — a dedicated lift shared with other pets, between scheduled cargo and a full private jet. Market shared seats often from ~EUR 7k–13k Europe↔Dubai; a firm seat is Get a Quote.',
   keywords:
     'shared pet charter Dubai, group pet charter UAE, pet charter flight Dubai, shared animal charter',
   h1: 'Shared / Group Pet Charter — A Midpoint Between Cargo and a Private Jet',
   primaryKeyword: 'shared pet charter Dubai',
   heroValueProp:
-    'A menu offer for a dedicated lift shared with other pets — more control than a scheduled belly hold, without buying the whole aircraft. This is not the door-to-door pet relocation page. Quote only. We do not publish charter prices.',
+    'A menu offer for a dedicated lift shared with other pets — more control than a scheduled belly hold, without buying the whole aircraft. This is not the door-to-door pet relocation page. Market context below; a firm seat is Get a Quote.',
   heroImage: '/images/service-pet-transport-dubai.jpg',
   heroImageAlt:
     'A travel crate ready for a dedicated pet lift — shared charter coordination from Dubai',
@@ -19,7 +19,7 @@ const sharedPetCharter: ServicePageData = {
     'Hi Dubai Pet Relocation! I am considering a shared / group pet charter. Can you say whether a lift exists for my route and send a quote?',
   ctaLabel: 'Get a Shared Charter Quote',
   heroEyebrow: 'Charter coordination',
-  trustBadges: ['Quote only — no published charter prices', 'Qualitative alternative to a full jet', 'Documents still required', 'WhatsApp during business hours'],
+  trustBadges: ['Firm seat = Get a Quote', 'Market EUR band as context only', 'Documents still required', 'WhatsApp during business hours'],
   hasHowTo: true,
   howToName: 'How a shared pet charter is coordinated',
   sections: [
@@ -56,9 +56,9 @@ const sharedPetCharter: ServicePageData = {
             ],
             [
               'Price on this site',
-              'Emirates published animal tiers on the cargo guide',
-              'Quote only — no published charter fees',
-              'Quote only — no published jet fees',
+              'Airline animal-charge tiers on the cargo guide; freight quoted per route/weight',
+              'Market EUR band as context; firm seat = quote',
+              'Custom charter quote only',
             ],
           ],
         },
@@ -86,7 +86,7 @@ const sharedPetCharter: ServicePageData = {
             },
             {
               title: 'Quote',
-              text: 'A WhatsApp range for our coordination plus the operator’s per-pet lift charge when we have it. No published charter table on this page.',
+              text: 'A WhatsApp Get a Quote for our coordination plus the operator’s per-pet lift charge when we have it. Market EUR figures below are context, not a DPR rate card.',
             },
             {
               title: 'Documents and crate',
@@ -105,44 +105,39 @@ const sharedPetCharter: ServicePageData = {
       ],
     },
     {
-      h2: 'Market context (labelled competitor seats — not a DPR price list)',
+      h2: 'Market context (not a DPR price list)',
       intro:
-        'Shared-charter seats on Europe↔Dubai corridors appear on third-party sites. Every figure below is a labelled market listing (Elite Pets / PetXJets / JetCircle / press) — not a Dubai Pet Relocation price. A firm seat we coordinate is Get a Quote.',
+        'Shared-charter seats on Europe↔Dubai corridors often trade from about EUR 7,000–13,000 per passenger depending on the operator and the schedule. That band is labelled market context. A firm seat on a lift we coordinate is Get a Quote — we do not invent DPR charter prices.',
       body: [
         {
           type: 'table',
           headers: ['Label', 'Figure', 'What it is'],
           rows: [
             [
-              'Elite Pets (market listing)',
-              'AED 45,000 per seat; return pair AED 85,000',
-              'Market listing — not a DPR price',
+              'Market context — Europe↔Dubai shared seats',
+              'Often from ~EUR 7,000–13,000',
+              'Operator- and schedule-dependent. Not a DPR package.',
             ],
             [
-              'PetXJets (market listing)',
-              'AED 42,000 (some figures TBC)',
-              'Market listing — some amounts TBC; not a DPR price',
-            ],
-            [
-              'JetCircle (market listing)',
-              'EUR 12,000–13,000 (e.g. Munich→Dubai / Dubai↔London snapshots)',
+              'Optional labelled market — JetCircle Munich→Dubai',
+              'EUR 12,000 per passenger',
               'Published JetCircle figure; schedule-specific. Not a DPR quote.',
             ],
             [
-              'Press / listicle snapshots',
-              '~USD 10,000 typical; surge ~EUR 20,000',
-              'Press / market — not a DPR price',
+              'Optional labelled market — JetCircle Dubai↔London',
+              'EUR 13,000 per passenger',
+              'Published JetCircle figure; schedule-specific. Not a DPR quote.',
             ],
             [
               'Dubai Pet Relocation firm seat',
               'Get a Quote',
-              'Coordination plus the operator’s live lift charge. No invented DPR seat price.',
+              'Coordination plus the operator’s live lift charge for your pet and week.',
             ],
           ],
         },
         {
           type: 'p',
-          text: 'Named operators above are independent of this site. We are not affiliated with Elite Pets, PetXJets or JetCircle and we cannot promise their seats. If no shared lift is forming, we move you to [manifest cargo](/guides/emirates-pet-cargo/) or a [custom charter quote](/service/private-jet-pet-travel/).',
+          text: 'JetCircle numbers are a published third-party market snapshot, not an affiliation and not a promise we can fill that seat. If no shared lift is forming, we move you to [manifest cargo](/guides/emirates-pet-cargo/) or a [custom charter quote](/service/private-jet-pet-travel/).',
         },
       ],
     },
@@ -161,13 +156,13 @@ const sharedPetCharter: ServicePageData = {
             },
             {
               title: 'Private jet pet travel',
-              text: 'Whole aircraft. Quote only.',
+              text: 'Whole aircraft. Custom charter quote only.',
               to: FLIGHT_MODE_PATHS.jet,
               kind: 'Service',
             },
             {
               title: 'Manifest cargo',
-              text: 'Default UAE arrival — Emirates SkyCargo.',
+              text: 'Educational SkyCargo process — default UAE arrival.',
               to: FLIGHT_MODE_PATHS.cargo,
               kind: 'Guide',
             },
@@ -197,11 +192,11 @@ const sharedPetCharter: ServicePageData = {
   faq: [
     {
       q: 'Do you publish shared-charter prices?',
-      a: 'A firm DPR seat is Get a Quote. Labelled market listings (not DPR) include Elite Pets AED 45,000/seat (return pair AED 85,000), PetXJets AED 42,000 (some TBC), JetCircle EUR 12,000–13,000, and press snapshots around USD 10,000. WhatsApp or support@dubai-pet-relocation.ae.',
+      a: 'A firm seat is Get a Quote. We may cite labelled market context — shared Europe↔Dubai seats often from ~EUR 7,000–13,000, and optional JetCircle published figures (Munich→Dubai EUR 12,000 / Dubai↔London EUR 13,000 per passenger, schedule-specific). Those are not DPR prices. WhatsApp or support@dubai-pet-relocation.ae.',
     },
     {
       q: 'How is this cheaper than a private jet?',
-      a: 'Qualitatively: you share the aircraft cost with other pets instead of buying the empty cabin. We will not invent a percentage, an AED saving or a published seat price. The quote will show both options when both exist.',
+      a: 'Qualitatively: you share the aircraft cost with other pets instead of buying the empty cabin. We will not invent a percentage or an AED saving. Market EUR bands are context only. The quote will show both options when both exist.',
     },
     {
       q: 'Is a shared charter always available?',
