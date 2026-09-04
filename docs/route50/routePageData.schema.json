@@ -1,0 +1,242 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://petclear.local/schemas/routePageData.json",
+  "title": "RoutePageData",
+  "description": "Typed content payload for PetClear corridor route pages (Route50). Volumes and fee numerals are forbidden on pages.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "slug",
+    "direction",
+    "title",
+    "meta",
+    "h1",
+    "heroImage",
+    "heroAlt",
+    "intro",
+    "airports",
+    "uaeAirports",
+    "airlines",
+    "uaeRules",
+    "faqs",
+    "relatedLinks",
+    "cta",
+    "lastVerified",
+    "hubCardDesc"
+  ],
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^(dubai-to-[a-z0-9-]+|[a-z0-9-]+-to-dubai)$",
+      "description": "URL slug matching LOCKED_50_URLS.txt"
+    },
+    "direction": {
+      "type": "string",
+      "enum": ["inbound", "outbound"]
+    },
+    "countryKey": {
+      "type": "string",
+      "description": "Key into airports_airlines_seed.json (e.g. germany)"
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 70
+    },
+    "meta": {
+      "type": "string",
+      "maxLength": 160
+    },
+    "h1": {
+      "type": "string"
+    },
+    "heroImage": {
+      "type": "string",
+      "pattern": "^/assets/routes/heroes/.+\\.jpg$",
+      "description": "Placeholder until Visual delivers binary"
+    },
+    "heroAlt": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "string",
+      "minLength": 80,
+      "description": "Unique corridor intro; outbound must not be reverse paste of inbound"
+    },
+    "airports": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["iata", "city"],
+        "properties": {
+          "iata": { "type": "string", "minLength": 3, "maxLength": 3 },
+          "city": { "type": "string" },
+          "role": {
+            "type": "string",
+            "description": "export | import_gateway | transit | note"
+          },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "uaeAirports": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["iata", "city", "notes"],
+        "properties": {
+          "iata": { "type": "string", "enum": ["DXB", "DWC", "AUH"] },
+          "city": { "type": "string" },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "airlines": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "mode", "notes", "verified", "verificationStatus"],
+        "properties": {
+          "name": { "type": "string" },
+          "mode": {
+            "type": "string",
+            "enum": ["cabin", "cargo", "cabin_or_cargo", "generally_not", "confirm"]
+          },
+          "notes": { "type": "string" },
+          "policyUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "verified": {
+            "type": "boolean",
+            "description": "true only after first-party policy check for this OD"
+          },
+          "verificationStatus": {
+            "type": "string",
+            "enum": ["unverified", "verified"]
+          }
+        }
+      }
+    },
+    "uaeRules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["permitValidityDays", "titerSampleWindowDays", "titerMinIUml", "manifestCargoDefault", "bullets"],
+      "properties": {
+        "permitValidityDays": {
+          "type": "integer",
+          "const": 30,
+          "description": "MOCCAE import permit validity — always 30"
+        },
+        "titerSampleWindowDays": {
+          "type": "integer",
+          "const": 90,
+          "description": "Blood sample within N days BEFORE travel — not a post-draw wait"
+        },
+        "titerMinIUml": {
+          "type": "number",
+          "const": 0.5
+        },
+        "manifestCargoDefault": {
+          "type": "boolean",
+          "description": "UAE entry default is manifest cargo (EY cabin→AUH exception noted in copy)"
+        },
+        "bullets": {
+          "type": "array",
+          "minItems": 3,
+          "items": { "type": "string" }
+        },
+        "disclaimer": { "type": "string" }
+      }
+    },
+    "destinationRules": {
+      "type": "object",
+      "description": "Required for outbound; omit or null-equivalent empty for inbound",
+      "additionalProperties": false,
+      "properties": {
+        "authorityHint": { "type": "string" },
+        "bullets": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "verifyNote": { "type": "string" }
+      }
+    },
+    "faqs": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["question", "answer"],
+        "properties": {
+          "question": { "type": "string" },
+          "answer": { "type": "string" }
+        }
+      }
+    },
+    "relatedLinks": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label", "href"],
+        "properties": {
+          "label": { "type": "string" },
+          "href": { "type": "string" }
+        }
+      }
+    },
+    "cta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "whatsapp"],
+      "properties": {
+        "label": {
+          "type": "string",
+          "const": "Get Route Checked"
+        },
+        "whatsapp": {
+          "type": "string",
+          "const": "+971504782999"
+        },
+        "note": {
+          "type": "string",
+          "description": "Quote-only; no package prices"
+        }
+      }
+    },
+    "hubCardDesc": {
+      "type": "string",
+      "maxLength": 120,
+      "description": "1-line unique RoutesHub card description"
+    },
+    "lastVerified": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO date of last regulatory/airline verify pass; seed-only pages stay provisional"
+    },
+    "copyStatus": {
+      "type": "string",
+      "enum": ["stub", "exemplar", "draft", "final"],
+      "description": "final only after airline verify + unique FAQ/intro complete"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "direction": { "const": "outbound" } }
+      },
+      "then": {
+        "required": ["destinationRules"]
+      }
+    }
+  ]
+}

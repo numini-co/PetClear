@@ -1,0 +1,168 @@
+{
+  "slug": "dubai-to-germany",
+  "direction": "outbound",
+  "countryKey": "germany",
+  "title": "Pet Relocation Dubai to Germany | PetClear",
+  "meta": "Move a dog or cat from Dubai to Germany: MOCCAE export health certificate, EU entry planning, FRA/MUC gateways, and airline mode checks.",
+  "h1": "Pet relocation from Dubai to Germany",
+  "heroImage": "/assets/routes/heroes/dubai-to-germany.jpg",
+  "heroAlt": "Dog ready for pet relocation from Dubai to Germany",
+  "intro": "Leaving Dubai for Germany is planned destination-backwards: EU entry documents and German gateway acceptance drive the timeline, then the MOCCAE export health certificate and airline booking lock to that date. Pets typically arrive via Frankfurt or Munich after departing UAE cargo or (where the airline allows from Dubai) hold-baggage products — never assume the same mode you used inbound. This outbound page is not a reverse of Germany→Dubai: the regulatory centre of gravity is EU non-commercial pet movement plus UAE exit paperwork, not a MOCCAE import permit. Airline modes below are seeded and still unverified; confirm each carrier's live pet policy for the exact Dubai→Germany itinerary.",
+  "airports": [
+    {
+      "iata": "FRA",
+      "city": "Frankfurt",
+      "role": "import_gateway",
+      "notes": "Primary German arrival gateway for long-haul pets"
+    },
+    {
+      "iata": "MUC",
+      "city": "Munich",
+      "role": "import_gateway",
+      "notes": "Common alternate arrival airport"
+    },
+    {
+      "iata": "BER",
+      "city": "Berlin",
+      "role": "import_gateway",
+      "notes": "Confirm live-animal arrival handling for your carrier"
+    },
+    {
+      "iata": "DUS",
+      "city": "Düsseldorf",
+      "role": "import_gateway",
+      "notes": "Regional option — confirm acceptance"
+    }
+  ],
+  "uaeAirports": [
+    {
+      "iata": "DXB",
+      "city": "Dubai International",
+      "notes": "Common departure side for passenger tickets; pets may still move as cargo or hold depending on airline product from Dubai"
+    },
+    {
+      "iata": "DWC",
+      "city": "Al Maktoum / Dubai World Central",
+      "notes": "Cargo departure pathway on many SkyCargo-style consignments"
+    },
+    {
+      "iata": "AUH",
+      "city": "Abu Dhabi",
+      "notes": "Alternate UAE departure when Etihad routing is used — confirm pet product"
+    }
+  ],
+  "airlines": [
+    {
+      "name": "Lufthansa",
+      "mode": "cabin_or_cargo",
+      "notes": "Seed: cabin/cargo for Germany-side products. From Dubai, confirm whether cabin, hold, or cargo applies to your OD.",
+      "verified": false,
+      "verificationStatus": "unverified"
+    },
+    {
+      "name": "Emirates",
+      "mode": "cargo",
+      "notes": "Seed: cargo. From Dubai, some journeys may allow checked-baggage pets under airline journey-time rules — confirm current Emirates policy for this OD (do not invent eligibility).",
+      "verified": false,
+      "verificationStatus": "unverified"
+    },
+    {
+      "name": "Etihad",
+      "mode": "cargo",
+      "notes": "Seed: cargo. Confirm cabin vs cargo availability on Dubai/AUH→Germany routings.",
+      "verified": false,
+      "verificationStatus": "unverified"
+    },
+    {
+      "name": "Qatar Airways",
+      "mode": "cargo",
+      "notes": "Seed: cargo via DOH connections often. Live-animal connection risk — confirm current policy.",
+      "verified": false,
+      "verificationStatus": "unverified"
+    },
+    {
+      "name": "Eurowings",
+      "mode": "confirm",
+      "notes": "Seed: confirm. Do not assume pet acceptance Dubai→Germany.",
+      "verified": false,
+      "verificationStatus": "unverified"
+    }
+  ],
+  "uaeRules": {
+    "permitValidityDays": 30,
+    "titerSampleWindowDays": 90,
+    "titerMinIUml": 0.5,
+    "manifestCargoDefault": true,
+    "bullets": [
+      "Outbound from the UAE still needs MOCCAE exit documentation (veterinary health certificate / export pathway via MOCCAE digital services) — plan this after destination rules are clear.",
+      "Export health certificate validity is commonly tied to a short window (SOT cites 30 days from issue for the export certificate pathway — verify on the MOCCAE portal before you book).",
+      "Do not reuse inbound MOCCAE import-permit logic for an outbound move.",
+      "Airline acceptance leaving Dubai can differ from the inbound Germany→Dubai product on the same brand — confirm current policy for the outbound OD.",
+      "No package or government fee numerals on this page — confirm fees on official portals; PetClear quotes on request."
+    ],
+    "disclaimer": "UAE exit rules summarised at high level from regulatory-source-of-truth.csv. Re-verify on MOCCAE portal. PetClear is not affiliated with MOCCAE or any airline."
+  },
+  "destinationRules": {
+    "authorityHint": "EU non-commercial pet movement (European Commission) + German border/veterinary controls as applied at the arrival airport",
+    "bullets": [
+      "Plan Germany/EU entry requirements before requesting UAE export paperwork — destination-backwards scheduling avoids expired certificates.",
+      "Typical EU third-country entry building blocks: ISO microchip before rabies vaccination, valid rabies vaccination with required wait after primary vaccination, and an EU animal health certificate issued by an official/authorised vet within the validity window for entry.",
+      "Per SOT, the UAE is on the EU list of third countries whose pet dogs/cats/ferrets are exempt from the rabies antibody titration test for non-commercial entry — still verify the current Commission listing before you skip a titer.",
+      "Non-commercial rules usually cap pets per traveller; commercial/Balai rules differ — confirm which pathway you are on.",
+      "Arrival gateway (FRA/MUC/BER/DUS) and carrier must accept the live animal — airport presence in the seed does not equal automatic acceptance."
+    ],
+    "verifyNote": "Re-check European Commission pet-movement pages and your airline before travel. Do not publish fee numerals. PetClear is not a government authority."
+  },
+  "faqs": [
+    {
+      "question": "Is Dubai→Germany just the reverse of Germany→Dubai?",
+      "answer": "No. Outbound planning starts with EU entry documents and German gateway acceptance, then UAE export paperwork and the airline product leaving Dubai. Inbound pages centre on MOCCAE import permits and UAE clearance — swapping country names is not enough."
+    },
+    {
+      "question": "Do I need a MOCCAE import permit to leave Dubai for Germany?",
+      "answer": "No. A MOCCAE import permit is for entering the UAE. Leaving Dubai requires UAE export/exit veterinary documentation aligned to your destination certificate timing — confirm the current MOCCAE digital-services pathway."
+    },
+    {
+      "question": "Which German airports do pets usually arrive at from Dubai?",
+      "answer": "Seed gateways are FRA and MUC, with BER and DUS as alternates when the carrier accepts live animals there. Confirm the arrival airport on the actual booking and with ground handling."
+    },
+    {
+      "question": "Does Germany require a rabies titer for pets coming from the UAE?",
+      "answer": "For non-commercial EU entry, SOT indicates the UAE is on the EU third-country list exempt from rabies antibody titration — but listings change. Verify the current European Commission list before you skip a titer, and follow microchip/vaccination/certificate rules either way."
+    },
+    {
+      "question": "Can my pet leave Dubai as cabin baggage on Emirates to Germany?",
+      "answer": "Do not assume cabin. Emirates seed mode on this corridor is cargo; from Dubai, hold-baggage eligibility (if any) is journey- and policy-specific. Confirm the live Emirates pet policy for your exact itinerary — airline rows here remain unverified."
+    },
+    {
+      "question": "How do I get a PetClear quote for Dubai to Germany?",
+      "answer": "Use Get Route Checked or WhatsApp +971504782999 with pet species/breed/weight, preferred dates, and target German city. We quote against live constraints — we do not publish package fee bands on this page."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "All pet relocation routes",
+      "href": "/routes/"
+    },
+    {
+      "label": "Germany to Dubai (inbound twin)",
+      "href": "/routes/germany-to-dubai/"
+    },
+    {
+      "label": "Pet relocation from Dubai",
+      "href": "/service/pet-relocation-from-dubai/"
+    },
+    {
+      "label": "Pet relocation Dubai",
+      "href": "/service/pet-relocation-dubai/"
+    }
+  ],
+  "cta": {
+    "label": "Get Route Checked",
+    "whatsapp": "+971504782999",
+    "note": "Quote-only. No published package prices. Confirm airline policy, MOCCAE portal, and EU listing before booking."
+  },
+  "hubCardDesc": "Leave Dubai for FRA/MUC/BER with destination-backwards EU entry planning.",
+  "lastVerified": "2026-09-05",
+  "copyStatus": "exemplar"
+}

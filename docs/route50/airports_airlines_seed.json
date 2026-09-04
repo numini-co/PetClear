@@ -1,0 +1,883 @@
+{
+  "india": {
+    "airports": [
+      [
+        "DEL",
+        "Delhi"
+      ],
+      [
+        "BOM",
+        "Mumbai"
+      ],
+      [
+        "BLR",
+        "Bengaluru"
+      ],
+      [
+        "HYD",
+        "Hyderabad"
+      ],
+      [
+        "MAA",
+        "Chennai"
+      ]
+    ],
+    "airlines": [
+      [
+        "Emirates",
+        "cargo",
+        "DXB hub"
+      ],
+      [
+        "Etihad",
+        "cargo",
+        "AUH"
+      ],
+      [
+        "Air India",
+        "cargo/cabin varies",
+        "confirm"
+      ],
+      [
+        "IndiGo",
+        "generally not pets",
+        "confirm"
+      ],
+      [
+        "Qatar Airways",
+        "cargo",
+        "DOH"
+      ]
+    ]
+  },
+  "philippines": {
+    "airports": [
+      [
+        "MNL",
+        "Manila"
+      ],
+      [
+        "CEB",
+        "Cebu"
+      ],
+      [
+        "CRK",
+        "Clark"
+      ]
+    ],
+    "airlines": [
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Philippine Airlines",
+        "cargo/cabin program"
+      ],
+      [
+        "Cebu Pacific",
+        "limited/confirm"
+      ],
+      [
+        "Qatar Airways",
+        "cargo"
+      ],
+      [
+        "Etihad",
+        "cargo"
+      ]
+    ]
+  },
+  "saudi-arabia": {
+    "airports": [
+      [
+        "RUH",
+        "Riyadh"
+      ],
+      [
+        "JED",
+        "Jeddah"
+      ],
+      [
+        "DMM",
+        "Dammam"
+      ],
+      [
+        "MED",
+        "Madinah"
+      ]
+    ],
+    "airlines": [
+      [
+        "Saudia",
+        "cargo/cabin rules"
+      ],
+      [
+        "flynas",
+        "confirm"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Etihad",
+        "cargo"
+      ],
+      [
+        "Qatar Airways",
+        "cargo"
+      ]
+    ]
+  },
+  "australia": {
+    "airports": [
+      [
+        "SYD",
+        "Sydney"
+      ],
+      [
+        "MEL",
+        "Melbourne"
+      ],
+      [
+        "BNE",
+        "Brisbane"
+      ],
+      [
+        "PER",
+        "Perth"
+      ]
+    ],
+    "airlines": [
+      [
+        "Qantas",
+        "cargo/cabin limited"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Etihad",
+        "cargo"
+      ],
+      [
+        "Singapore Airlines",
+        "cargo"
+      ],
+      [
+        "Virgin Australia",
+        "confirm"
+      ]
+    ]
+  },
+  "germany": {
+    "airports": [
+      [
+        "FRA",
+        "Frankfurt"
+      ],
+      [
+        "MUC",
+        "Munich"
+      ],
+      [
+        "BER",
+        "Berlin"
+      ],
+      [
+        "DUS",
+        "D\u00fcsseldorf"
+      ]
+    ],
+    "airlines": [
+      [
+        "Lufthansa",
+        "cabin/cargo"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Etihad",
+        "cargo"
+      ],
+      [
+        "Qatar Airways",
+        "cargo"
+      ],
+      [
+        "Eurowings",
+        "confirm"
+      ]
+    ]
+  },
+  "france": {
+    "airports": [
+      [
+        "CDG",
+        "Paris Charles de Gaulle"
+      ],
+      [
+        "ORY",
+        "Paris Orly"
+      ],
+      [
+        "LYS",
+        "Lyon"
+      ],
+      [
+        "NCE",
+        "Nice"
+      ]
+    ],
+    "airlines": [
+      [
+        "Air France",
+        "cabin/cargo"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Etihad",
+        "cargo"
+      ],
+      [
+        "Qatar Airways",
+        "cargo"
+      ]
+    ]
+  },
+  "canada": {
+    "airports": [
+      [
+        "YYZ",
+        "Toronto"
+      ],
+      [
+        "YVR",
+        "Vancouver"
+      ],
+      [
+        "YUL",
+        "Montreal"
+      ],
+      [
+        "YYC",
+        "Calgary"
+      ]
+    ],
+    "airlines": [
+      [
+        "Air Canada",
+        "cabin/cargo"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Etihad",
+        "cargo"
+      ],
+      [
+        "WestJet",
+        "confirm"
+      ]
+    ]
+  },
+  "south-africa": {
+    "airports": [
+      [
+        "JNB",
+        "Johannesburg"
+      ],
+      [
+        "CPT",
+        "Cape Town"
+      ],
+      [
+        "DUR",
+        "Durban"
+      ]
+    ],
+    "airlines": [
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Qatar Airways",
+        "cargo"
+      ],
+      [
+        "Ethiopian",
+        "cargo"
+      ],
+      [
+        "South African Airways",
+        "confirm"
+      ]
+    ]
+  },
+  "qatar": {
+    "airports": [
+      [
+        "DOH",
+        "Doha Hamad"
+      ]
+    ],
+    "airlines": [
+      [
+        "Qatar Airways",
+        "cabin/cargo"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Etihad",
+        "cargo"
+      ]
+    ]
+  },
+  "singapore": {
+    "airports": [
+      [
+        "SIN",
+        "Changi"
+      ]
+    ],
+    "airlines": [
+      [
+        "Singapore Airlines",
+        "cargo"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Scoot",
+        "confirm"
+      ],
+      [
+        "Qatar Airways",
+        "cargo"
+      ]
+    ]
+  },
+  "turkey": {
+    "airports": [
+      [
+        "IST",
+        "Istanbul"
+      ],
+      [
+        "SAW",
+        "Sabiha G\u00f6k\u00e7en"
+      ],
+      [
+        "AYT",
+        "Antalya"
+      ]
+    ],
+    "airlines": [
+      [
+        "Turkish Airlines",
+        "cabin/cargo"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Pegasus",
+        "confirm"
+      ]
+    ]
+  },
+  "spain": {
+    "airports": [
+      [
+        "MAD",
+        "Madrid"
+      ],
+      [
+        "BCN",
+        "Barcelona"
+      ],
+      [
+        "AGP",
+        "M\u00e1laga"
+      ]
+    ],
+    "airlines": [
+      [
+        "Iberia",
+        "cabin/cargo"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Vueling",
+        "confirm"
+      ],
+      [
+        "Qatar Airways",
+        "cargo"
+      ]
+    ]
+  },
+  "netherlands": {
+    "airports": [
+      [
+        "AMS",
+        "Amsterdam Schiphol"
+      ]
+    ],
+    "airlines": [
+      [
+        "KLM",
+        "cabin/cargo"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Etihad",
+        "cargo"
+      ]
+    ]
+  },
+  "oman": {
+    "airports": [
+      [
+        "MCT",
+        "Muscat"
+      ]
+    ],
+    "airlines": [
+      [
+        "Oman Air",
+        "cabin/cargo"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "flydubai",
+        "confirm"
+      ]
+    ]
+  },
+  "bahrain": {
+    "airports": [
+      [
+        "BAH",
+        "Bahrain"
+      ]
+    ],
+    "airlines": [
+      [
+        "Gulf Air",
+        "cabin/cargo"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "flydubai",
+        "confirm"
+      ]
+    ]
+  },
+  "kuwait": {
+    "airports": [
+      [
+        "KWI",
+        "Kuwait"
+      ]
+    ],
+    "airlines": [
+      [
+        "Kuwait Airways",
+        "cabin/cargo"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Jazeera",
+        "confirm"
+      ]
+    ]
+  },
+  "italy": {
+    "airports": [
+      [
+        "FCO",
+        "Rome Fiumicino"
+      ],
+      [
+        "MXP",
+        "Milan Malpensa"
+      ],
+      [
+        "LIN",
+        "Milan Linate"
+      ]
+    ],
+    "airlines": [
+      [
+        "ITA Airways",
+        "cabin/cargo"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Qatar Airways",
+        "cargo"
+      ]
+    ]
+  },
+  "ireland": {
+    "airports": [
+      [
+        "DUB",
+        "Dublin"
+      ],
+      [
+        "ORK",
+        "Cork"
+      ]
+    ],
+    "airlines": [
+      [
+        "Aer Lingus",
+        "cabin/cargo"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Ryanair",
+        "generally not pets"
+      ]
+    ]
+  },
+  "pakistan": {
+    "airports": [
+      [
+        "ISB",
+        "Islamabad"
+      ],
+      [
+        "KHI",
+        "Karachi"
+      ],
+      [
+        "LHE",
+        "Lahore"
+      ]
+    ],
+    "airlines": [
+      [
+        "PIA",
+        "cargo/cabin confirm"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Etihad",
+        "cargo"
+      ],
+      [
+        "Qatar Airways",
+        "cargo"
+      ]
+    ]
+  },
+  "egypt": {
+    "airports": [
+      [
+        "CAI",
+        "Cairo"
+      ],
+      [
+        "HBE",
+        "Alexandria"
+      ],
+      [
+        "SSH",
+        "Sharm el-Sheikh"
+      ]
+    ],
+    "airlines": [
+      [
+        "EgyptAir",
+        "cargo/cabin"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Etihad",
+        "cargo"
+      ]
+    ]
+  },
+  "new-zealand": {
+    "airports": [
+      [
+        "AKL",
+        "Auckland"
+      ],
+      [
+        "WLG",
+        "Wellington"
+      ],
+      [
+        "CHC",
+        "Christchurch"
+      ]
+    ],
+    "airlines": [
+      [
+        "Air New Zealand",
+        "cargo"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Qantas",
+        "cargo"
+      ]
+    ]
+  },
+  "japan": {
+    "airports": [
+      [
+        "NRT",
+        "Tokyo Narita"
+      ],
+      [
+        "HND",
+        "Tokyo Haneda"
+      ],
+      [
+        "KIX",
+        "Osaka Kansai"
+      ]
+    ],
+    "airlines": [
+      [
+        "ANA",
+        "cargo/cabin"
+      ],
+      [
+        "JAL",
+        "cargo/cabin"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Qatar Airways",
+        "cargo"
+      ]
+    ]
+  },
+  "hong-kong": {
+    "airports": [
+      [
+        "HKG",
+        "Hong Kong"
+      ]
+    ],
+    "airlines": [
+      [
+        "Cathay Pacific",
+        "cargo"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Qatar Airways",
+        "cargo"
+      ]
+    ]
+  },
+  "thailand": {
+    "airports": [
+      [
+        "BKK",
+        "Bangkok Suvarnabhumi"
+      ],
+      [
+        "DMK",
+        "Don Mueang"
+      ],
+      [
+        "HKT",
+        "Phuket"
+      ]
+    ],
+    "airlines": [
+      [
+        "Thai Airways",
+        "cargo/cabin"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Singapore Airlines",
+        "cargo"
+      ]
+    ]
+  },
+  "indonesia": {
+    "airports": [
+      [
+        "CGK",
+        "Jakarta"
+      ],
+      [
+        "DPS",
+        "Denpasar Bali"
+      ],
+      [
+        "SUB",
+        "Surabaya"
+      ]
+    ],
+    "airlines": [
+      [
+        "Garuda Indonesia",
+        "cargo/cabin"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Singapore Airlines",
+        "cargo"
+      ]
+    ]
+  },
+  "malaysia": {
+    "airports": [
+      [
+        "KUL",
+        "Kuala Lumpur"
+      ],
+      [
+        "PEN",
+        "Penang"
+      ]
+    ],
+    "airlines": [
+      [
+        "Malaysia Airlines",
+        "cargo/cabin"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Singapore Airlines",
+        "cargo"
+      ]
+    ]
+  },
+  "china": {
+    "airports": [
+      [
+        "PEK",
+        "Beijing Capital"
+      ],
+      [
+        "PVG",
+        "Shanghai Pudong"
+      ],
+      [
+        "CAN",
+        "Guangzhou"
+      ],
+      [
+        "HKG",
+        "via HK note"
+      ]
+    ],
+    "airlines": [
+      [
+        "Air China",
+        "cargo"
+      ],
+      [
+        "China Eastern",
+        "cargo"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ],
+      [
+        "Cathay Pacific",
+        "cargo"
+      ]
+    ]
+  },
+  "south-korea": {
+    "airports": [
+      [
+        "ICN",
+        "Seoul Incheon"
+      ],
+      [
+        "GMP",
+        "Gimpo"
+      ]
+    ],
+    "airlines": [
+      [
+        "Korean Air",
+        "cabin/cargo"
+      ],
+      [
+        "Asiana",
+        "cabin/cargo"
+      ],
+      [
+        "Emirates",
+        "cargo"
+      ]
+    ]
+  }
+}

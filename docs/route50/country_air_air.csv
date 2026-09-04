@@ -1,0 +1,178 @@
+country_slug,iata,city,airline,mode_normalized,seed_mode_raw,seed_notes,verificationStatus
+australia,,,Qantas,cabin_or_cargo,cargo/cabin limited,,unverified
+australia,,,Emirates,cargo,cargo,,unverified
+australia,,,Etihad,cargo,cargo,,unverified
+australia,,,Singapore Airlines,cargo,cargo,,unverified
+australia,,,Virgin Australia,confirm,confirm,,unverified
+australia,SYD,Sydney,,,,,
+australia,MEL,Melbourne,,,,,
+australia,BNE,Brisbane,,,,,
+australia,PER,Perth,,,,,
+bahrain,,,Gulf Air,cabin_or_cargo,cabin/cargo,,unverified
+bahrain,,,Emirates,cargo,cargo,,unverified
+bahrain,,,flydubai,confirm,confirm,,unverified
+bahrain,BAH,Bahrain,,,,,
+canada,,,Air Canada,cabin_or_cargo,cabin/cargo,,unverified
+canada,,,Emirates,cargo,cargo,,unverified
+canada,,,Etihad,cargo,cargo,,unverified
+canada,,,WestJet,confirm,confirm,,unverified
+canada,YYZ,Toronto,,,,,
+canada,YVR,Vancouver,,,,,
+canada,YUL,Montreal,,,,,
+canada,YYC,Calgary,,,,,
+china,,,Air China,cargo,cargo,,unverified
+china,,,China Eastern,cargo,cargo,,unverified
+china,,,Emirates,cargo,cargo,,unverified
+china,,,Cathay Pacific,cargo,cargo,,unverified
+china,PEK,Beijing Capital,,,,,
+china,PVG,Shanghai Pudong,,,,,
+china,CAN,Guangzhou,,,,,
+china,HKG,via HK note,,,,,
+egypt,,,EgyptAir,cabin_or_cargo,cargo/cabin,,unverified
+egypt,,,Emirates,cargo,cargo,,unverified
+egypt,,,Etihad,cargo,cargo,,unverified
+egypt,CAI,Cairo,,,,,
+egypt,HBE,Alexandria,,,,,
+egypt,SSH,Sharm el-Sheikh,,,,,
+france,,,Air France,cabin_or_cargo,cabin/cargo,,unverified
+france,,,Emirates,cargo,cargo,,unverified
+france,,,Etihad,cargo,cargo,,unverified
+france,,,Qatar Airways,cargo,cargo,,unverified
+france,CDG,Paris Charles de Gaulle,,,,,
+france,ORY,Paris Orly,,,,,
+france,LYS,Lyon,,,,,
+france,NCE,Nice,,,,,
+germany,,,Lufthansa,cabin_or_cargo,cabin/cargo,,unverified
+germany,,,Emirates,cargo,cargo,,unverified
+germany,,,Etihad,cargo,cargo,,unverified
+germany,,,Qatar Airways,cargo,cargo,,unverified
+germany,,,Eurowings,confirm,confirm,,unverified
+germany,FRA,Frankfurt,,,,,
+germany,MUC,Munich,,,,,
+germany,BER,Berlin,,,,,
+germany,DUS,Düsseldorf,,,,,
+hong-kong,,,Cathay Pacific,cargo,cargo,,unverified
+hong-kong,,,Emirates,cargo,cargo,,unverified
+hong-kong,,,Qatar Airways,cargo,cargo,,unverified
+hong-kong,HKG,Hong Kong,,,,,
+india,,,Emirates,cargo,cargo,DXB hub,unverified
+india,,,Etihad,cargo,cargo,AUH,unverified
+india,,,Air India,cabin_or_cargo,cargo/cabin varies,confirm,unverified
+india,,,IndiGo,generally_not,generally not pets,confirm,unverified
+india,,,Qatar Airways,cargo,cargo,DOH,unverified
+india,DEL,Delhi,,,,,
+india,BOM,Mumbai,,,,,
+india,BLR,Bengaluru,,,,,
+india,HYD,Hyderabad,,,,,
+india,MAA,Chennai,,,,,
+indonesia,,,Garuda Indonesia,cabin_or_cargo,cargo/cabin,,unverified
+indonesia,,,Emirates,cargo,cargo,,unverified
+indonesia,,,Singapore Airlines,cargo,cargo,,unverified
+indonesia,CGK,Jakarta,,,,,
+indonesia,DPS,Denpasar Bali,,,,,
+indonesia,SUB,Surabaya,,,,,
+ireland,,,Aer Lingus,cabin_or_cargo,cabin/cargo,,unverified
+ireland,,,Emirates,cargo,cargo,,unverified
+ireland,,,Ryanair,generally_not,generally not pets,,unverified
+ireland,DUB,Dublin,,,,,
+ireland,ORK,Cork,,,,,
+italy,,,ITA Airways,cabin_or_cargo,cabin/cargo,,unverified
+italy,,,Emirates,cargo,cargo,,unverified
+italy,,,Qatar Airways,cargo,cargo,,unverified
+italy,FCO,Rome Fiumicino,,,,,
+italy,MXP,Milan Malpensa,,,,,
+italy,LIN,Milan Linate,,,,,
+japan,,,ANA,cabin_or_cargo,cargo/cabin,,unverified
+japan,,,JAL,cabin_or_cargo,cargo/cabin,,unverified
+japan,,,Emirates,cargo,cargo,,unverified
+japan,,,Qatar Airways,cargo,cargo,,unverified
+japan,NRT,Tokyo Narita,,,,,
+japan,HND,Tokyo Haneda,,,,,
+japan,KIX,Osaka Kansai,,,,,
+kuwait,,,Kuwait Airways,cabin_or_cargo,cabin/cargo,,unverified
+kuwait,,,Emirates,cargo,cargo,,unverified
+kuwait,,,Jazeera,confirm,confirm,,unverified
+kuwait,KWI,Kuwait,,,,,
+malaysia,,,Malaysia Airlines,cabin_or_cargo,cargo/cabin,,unverified
+malaysia,,,Emirates,cargo,cargo,,unverified
+malaysia,,,Singapore Airlines,cargo,cargo,,unverified
+malaysia,KUL,Kuala Lumpur,,,,,
+malaysia,PEN,Penang,,,,,
+netherlands,,,KLM,cabin_or_cargo,cabin/cargo,,unverified
+netherlands,,,Emirates,cargo,cargo,,unverified
+netherlands,,,Etihad,cargo,cargo,,unverified
+netherlands,AMS,Amsterdam Schiphol,,,,,
+new-zealand,,,Air New Zealand,cargo,cargo,,unverified
+new-zealand,,,Emirates,cargo,cargo,,unverified
+new-zealand,,,Qantas,cargo,cargo,,unverified
+new-zealand,AKL,Auckland,,,,,
+new-zealand,WLG,Wellington,,,,,
+new-zealand,CHC,Christchurch,,,,,
+oman,,,Oman Air,cabin_or_cargo,cabin/cargo,,unverified
+oman,,,Emirates,cargo,cargo,,unverified
+oman,,,flydubai,confirm,confirm,,unverified
+oman,MCT,Muscat,,,,,
+pakistan,,,PIA,cabin_or_cargo,cargo/cabin confirm,,unverified
+pakistan,,,Emirates,cargo,cargo,,unverified
+pakistan,,,Etihad,cargo,cargo,,unverified
+pakistan,,,Qatar Airways,cargo,cargo,,unverified
+pakistan,ISB,Islamabad,,,,,
+pakistan,KHI,Karachi,,,,,
+pakistan,LHE,Lahore,,,,,
+philippines,,,Emirates,cargo,cargo,,unverified
+philippines,,,Philippine Airlines,cabin_or_cargo,cargo/cabin program,,unverified
+philippines,,,Cebu Pacific,confirm,limited/confirm,,unverified
+philippines,,,Qatar Airways,cargo,cargo,,unverified
+philippines,,,Etihad,cargo,cargo,,unverified
+philippines,MNL,Manila,,,,,
+philippines,CEB,Cebu,,,,,
+philippines,CRK,Clark,,,,,
+qatar,,,Qatar Airways,cabin_or_cargo,cabin/cargo,,unverified
+qatar,,,Emirates,cargo,cargo,,unverified
+qatar,,,Etihad,cargo,cargo,,unverified
+qatar,DOH,Doha Hamad,,,,,
+saudi-arabia,,,Saudia,cabin_or_cargo,cargo/cabin rules,,unverified
+saudi-arabia,,,flynas,confirm,confirm,,unverified
+saudi-arabia,,,Emirates,cargo,cargo,,unverified
+saudi-arabia,,,Etihad,cargo,cargo,,unverified
+saudi-arabia,,,Qatar Airways,cargo,cargo,,unverified
+saudi-arabia,RUH,Riyadh,,,,,
+saudi-arabia,JED,Jeddah,,,,,
+saudi-arabia,DMM,Dammam,,,,,
+saudi-arabia,MED,Madinah,,,,,
+singapore,,,Singapore Airlines,cargo,cargo,,unverified
+singapore,,,Emirates,cargo,cargo,,unverified
+singapore,,,Scoot,confirm,confirm,,unverified
+singapore,,,Qatar Airways,cargo,cargo,,unverified
+singapore,SIN,Changi,,,,,
+south-africa,,,Emirates,cargo,cargo,,unverified
+south-africa,,,Qatar Airways,cargo,cargo,,unverified
+south-africa,,,Ethiopian,cargo,cargo,,unverified
+south-africa,,,South African Airways,confirm,confirm,,unverified
+south-africa,JNB,Johannesburg,,,,,
+south-africa,CPT,Cape Town,,,,,
+south-africa,DUR,Durban,,,,,
+south-korea,,,Korean Air,cabin_or_cargo,cabin/cargo,,unverified
+south-korea,,,Asiana,cabin_or_cargo,cabin/cargo,,unverified
+south-korea,,,Emirates,cargo,cargo,,unverified
+south-korea,ICN,Seoul Incheon,,,,,
+south-korea,GMP,Gimpo,,,,,
+spain,,,Iberia,cabin_or_cargo,cabin/cargo,,unverified
+spain,,,Emirates,cargo,cargo,,unverified
+spain,,,Vueling,confirm,confirm,,unverified
+spain,,,Qatar Airways,cargo,cargo,,unverified
+spain,MAD,Madrid,,,,,
+spain,BCN,Barcelona,,,,,
+spain,AGP,Málaga,,,,,
+thailand,,,Thai Airways,cabin_or_cargo,cargo/cabin,,unverified
+thailand,,,Emirates,cargo,cargo,,unverified
+thailand,,,Singapore Airlines,cargo,cargo,,unverified
+thailand,BKK,Bangkok Suvarnabhumi,,,,,
+thailand,DMK,Don Mueang,,,,,
+thailand,HKT,Phuket,,,,,
+turkey,,,Turkish Airlines,cabin_or_cargo,cabin/cargo,,unverified
+turkey,,,Emirates,cargo,cargo,,unverified
+turkey,,,Pegasus,confirm,confirm,,unverified
+turkey,IST,Istanbul,,,,,
+turkey,SAW,Sabiha Gökçen,,,,,
+turkey,AYT,Antalya,,,,,
