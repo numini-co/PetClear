@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { PawPrint, MessageCircle, Phone, Mail, MapPin, Clock } from 'lucide-react'
-import { getWhatsAppUrl, PHONE_DISPLAY, PHONE_E164 } from '../lib/seo.ts'
+import { getWhatsAppUrl, PHONE_DISPLAY, PHONE_E164, siteConfig } from '../lib/seo.ts'
 import { SERVICE_LINKS, TOP_AREA_LINKS, GUIDE_LINKS, ROUTE_LINKS, COMPANY_LINKS } from '../data/nav.ts'
 import type { NavLink } from '../data/nav.ts'
 
@@ -47,9 +47,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@dubai-pet-relocation.ae" className="group flex items-center gap-3 hover:text-white transition-colors">
+                <a href={`mailto:${siteConfig.email}`} className="group flex items-center gap-3 hover:text-white transition-colors">
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/10 group-hover:bg-white/20 transition-colors"><Mail className="h-4 w-4" /></span>
-                  <span className="break-all">hello@dubai-pet-relocation.ae</span>
+                  <span className="break-all">{siteConfig.email}</span>
                 </a>
               </li>
               <li className="flex items-start gap-3">

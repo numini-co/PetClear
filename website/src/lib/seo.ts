@@ -50,7 +50,7 @@ export const siteConfig = {
   description: 'Transparent pet relocation coordination service for Dubai and the UAE. We help pet owners understand the process, check requirements, and connect with trusted relocation partners.',
   phone: PHONE_DISPLAY,
   phoneE164: PHONE_E164,
-  email: 'hello@dubai-pet-relocation.ae',
+  email: 'support@dubai-pet-relocation.ae',
   address: {
     street: '217 Zahra Townhouses, Town Square',
     city: 'Dubai',
