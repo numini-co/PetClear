@@ -13,6 +13,9 @@ export default function ContentImage({
   className?: string
 }) {
   const [failed, setFailed] = useState(false)
+  // Checklist ratios: PNG diagrams are 16:9; JPG stills are 4:3. Do not force a
+  // 3:2 box + object-cover — that cropped diagram labels on the first wire-up.
+  const isDiagram = src.endsWith('.png')
 
   return (
     <figure className={`mb-6 ${className}`}>
@@ -20,11 +23,11 @@ export default function ContentImage({
         <img
           src={src}
           alt={alt}
-          width={1536}
-          height={1024}
+          width={isDiagram ? 1920 : 1536}
+          height={isDiagram ? 1080 : 1152}
           loading="lazy"
           onError={() => setFailed(true)}
-          className="w-full rounded-[20px] object-cover"
+          className="h-auto w-full rounded-[20px]"
         />
       ) : (
         <div className="flex aspect-[16/9] w-full items-center justify-center rounded-[20px] border border-dashed border-[#C8CEE8] bg-[#F5F6FD] px-6 text-center text-sm text-[#8A8A8A]">

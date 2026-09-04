@@ -116,7 +116,7 @@ const petTransportDubai: ServicePageData = {
         {
           type: 'image',
           src: '/assets/w1-w3/pet-transport-rest-stop-water-border-collie.jpg',
-          alt: 'Handler giving water to a border collie during a shaded rest stop on a UAE pet transport journey',
+          alt: 'Border collie drinking water at a shaded rest stop on a UAE pet transport journey',
           caption: 'Longer inter-emirate runs get a shaded water stop. The pet travels as a passenger.',
         },
         {

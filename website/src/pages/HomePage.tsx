@@ -265,7 +265,7 @@ export default function HomePage() {
                   className="group overflow-hidden rounded-[20px] bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
                 >
                   {img ? (
-                    <img src={img.src} alt={img.alt} width={1200} height={900} loading="lazy" className="h-40 w-full object-cover" />
+                    <img src={img.src} alt={img.alt} width={1200} height={900} loading="lazy" className="aspect-[4/3] w-full object-cover" />
                   ) : null}
                   <div className="flex items-center justify-between gap-3 px-5 py-4">
                     <span className="text-sm font-semibold text-[#2A2A2A] group-hover:text-[#4F5BD5]">{s.label}</span>
