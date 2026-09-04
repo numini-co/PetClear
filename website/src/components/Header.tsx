@@ -22,6 +22,7 @@ const navLinks = [
       { label: 'All Guides', to: '/guides/' },
       { label: 'Pet Flight Options', to: '/guides/pet-flight-options-dubai/' },
       { label: 'Etihad Pet Policy', to: '/guides/etihad-pet-policy/' },
+      { label: 'Pet as Checked Baggage', to: '/guides/pet-as-checked-baggage/' },
       { label: 'Emirates Pet Cargo', to: '/guides/emirates-pet-cargo/' },
       { label: 'Cost Guide', to: '/guides/pet-relocation-cost-dubai/' },
       { label: 'Import Requirements', to: '/guides/uae-pet-import-requirements/' },

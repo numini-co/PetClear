@@ -209,7 +209,7 @@ export default function PetFlightOptionsHub() {
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">Coordinated per lift</td>
                   <td className="border border-[#E2E5F6] px-4 py-3 text-[#5A5A5A]">
-                    Market context ~EUR 7k–13k Europe↔Dubai; firm seat = Get a Quote
+                    Get a Quote — no published charter prices
                   </td>
                   <td className="border border-[#E2E5F6] px-4 py-3">
                     <Link to={FLIGHT_MODE_PATHS.charter} className="font-semibold text-[#4F5BD5] hover:underline">
