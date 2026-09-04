@@ -10,6 +10,8 @@ import Hero from '../components/Hero.tsx'
 import FAQItem from '../components/FAQItem.tsx'
 import ContentImage from '../components/ContentImage.tsx'
 import LastVerified from '../components/LastVerified.tsx'
+import LinkedText from '../components/LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { dubaiAreas } from '../data/areas/dubai/index.ts'
 
 const defaultMsg = `Hi Dubai Pet Relocation team,
@@ -84,6 +86,10 @@ const HOME_FAQS = [
     a: 'No. This homepage is the category entry. The decision-stage money term lives on the door-to-door service page. Use this page to orient; open the service, route or guide that matches your move.',
   },
   {
+    q: 'Where should I start if I’m not sure whether I need full relocation or just local transport?',
+    a: 'International documents or cargo belong on [pet relocation services in Dubai](/service/pet-relocation-dubai/), or the inbound-only [bringing pets to Dubai](/service/pet-relocation-to-dubai/) and outbound [moving pets out of Dubai](/service/pet-relocation-from-dubai/) pages. Ground taxi and clinic runs belong on [local pet transport and pet taxi](/service/pet-transport-dubai/). If you already know you want guidance versus full coordination, compare [service tiers](/services/) first.',
+  },
+  {
     q: 'Do pets need quarantine when arriving in Dubai?',
     a: 'There is no automatic quarantine when the inbound file is complete and consistent. Incomplete or mismatched documents can lead to delayed release or conditional holding at the owner’s expense. We review the file before you fly so that risk is visible early.',
   },
@@ -92,8 +98,8 @@ const HOME_FAQS = [
     a: 'Thirty days from issuance. The pet must arrive inside that window. A 90-day permit-validity claim is incorrect and is not used on this site. Confirm current portal fees on the official MOCCAE site — we do not publish contested AED figures here.',
   },
   {
-    q: 'When should the rabies titer blood sample be taken?',
-    a: 'When a titer is required for the route, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml. That is not a 90-day waiting period after the test.',
+    q: 'When does the homepage say a rabies titer sample must be taken?',
+    a: 'When a titer is required for the route, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml. That is not a 90-day waiting period after the test. Depth lives on the [rabies titer test](/guides/rabies-titer-test-dubai/) guide and the [door-to-door Dubai relocation](/service/pet-relocation-dubai/) page.',
   },
   {
     q: 'Can I move both a dog and a cat on the same timeline?',
@@ -192,7 +198,7 @@ export default function HomePage() {
     mainEntity: HOME_FAQS.map((f) => ({
       '@type': 'Question',
       name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
+      acceptedAnswer: { '@type': 'Answer', text: stripInternalMarkdownLinks(f.a) },
     })),
   }
 
@@ -587,7 +593,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 11. FAQ — 8 unique */}
+      {/* 11. FAQ — 9 unique */}
       <section className="section-padding bg-[#F5F6FD]">
         <div className="mx-auto max-w-[820px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-6 text-center text-[24px] font-bold text-[#2A2A2A] sm:text-[30px] lg:text-[34px]">
@@ -595,7 +601,7 @@ export default function HomePage() {
           </h2>
           <div className="space-y-3">
             {HOME_FAQS.map((f) => (
-              <FAQItem key={f.q} question={f.q} answer={f.a} />
+              <FAQItem key={f.q} question={f.q} answer={<LinkedText text={f.a} />} />
             ))}
           </div>
           <p className="mt-8 text-center">

@@ -68,7 +68,7 @@ const petRelocationFromDubai: ServicePageData = {
             },
             {
               title: 'MOCCAE export health certificate',
-              text: 'The UAE export health certificate is issued after a pre-export veterinary inspection and has a short validity. It is scheduled close to departure, not months ahead. Confirm current certificate fees on the official channel — contested ranges are not published here.',
+              text: 'The UAE export health certificate is issued after a pre-export veterinary inspection and is valid 30 days from issuance. Schedule it close to departure so the window still covers travel day — not months ahead. Confirm current certificate fees on the official channel — contested ranges are not published here.',
             },
             {
               title: 'Crate and cargo booking',
@@ -103,7 +103,7 @@ const petRelocationFromDubai: ServicePageData = {
             'ISO 15-digit microchip, consistent on every certificate',
             'Rabies and any destination-required vaccinations still valid on travel day',
             'Destination titer or lab reports where that country asks for them',
-            'MOCCAE export health certificate issued after the pre-export inspection, still inside its validity',
+            'MOCCAE export health certificate issued after the pre-export inspection, still inside its 30-day validity from issuance',
             'Destination import permit or advance notice where that country requires one',
             'Parasite or tapeworm treatments timed to the destination (for example UK dog tapeworm rules)',
             'Cargo booking confirmation and IATA crate labels',
@@ -157,7 +157,7 @@ const petRelocationFromDubai: ServicePageData = {
     },
     {
       q: 'What is the MOCCAE export health certificate path?',
-      a: 'A pre-export veterinary inspection, then a UAE export health certificate with a short validity, scheduled close to departure. Confirm current fees on the official channel. We do not publish contested certificate ranges.',
+      a: 'A pre-export veterinary inspection, then a UAE export health certificate valid 30 days from issuance, scheduled close to departure so the window still covers travel day. Confirm current fees on the official channel. We do not publish contested certificate ranges.',
     },
     {
       q: 'When should I start planning a move out of Dubai?',

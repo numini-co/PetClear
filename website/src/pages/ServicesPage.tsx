@@ -39,6 +39,29 @@ const Card = ({ children, className = '' }: { children: React.ReactNode; classNa
   </div>
 )
 
+const SERVICE_BLURBS: Record<string, string> = {
+  '/service/pet-relocation-dubai/':
+    'Door-to-door coordination through Dubai: documents, crate, cargo and the last mile on one WhatsApp thread — not a mystery quote.',
+  '/service/pet-import-dubai/':
+    'Arrival-side import filing when the route is already chosen and you need the inbound document chain named before cargo is booked.',
+  '/service/pet-export-dubai/':
+    'Departure-side export handling when the destination file — not the Dubai cargo slot — sets the clock.',
+  '/service/pet-transport-dubai/':
+    'Climate-controlled pet taxi and ground transfers inside Dubai and to Abu Dhabi. This is the road product, not international cargo.',
+  '/service/international-pet-relocation/':
+    'Multi-country corridor planning when Dubai is a hub in a longer journey, not the only origin or destination.',
+  '/service/pet-relocation-to-dubai/':
+    'Inbound-only: first vet visit through the 30-day MOCCAE permit to the first week in a new Dubai home.',
+  '/service/pet-relocation-from-dubai/':
+    'Outbound-only: destination rules first, then the 30-day UAE export health certificate and departure from DXB or DWC.',
+  '/service/dog-relocation-dubai/':
+    'Dog-specific crate sizing, breed eligibility and apartment notes on top of the shared federal permit chain.',
+  '/service/cat-relocation-dubai/':
+    'Cat-specific carrier acclimation and quiet-arrival notes — same MOCCAE steps, a different crate file.',
+  '/service/moccae-pet-permit/':
+    'Commercial help filing the import or export permit without turning this hub into a second rules table.',
+}
+
 const FEATURE_ROWS = [
   { label: 'Route & eligibility check', tiers: [true, true, true] },
   { label: 'Document checklist & review', tiers: [true, true, true] },
@@ -342,9 +365,14 @@ export default function ServicesPage() {
               <Link
                 key={l.to}
                 to={l.to}
-                className="flex items-center justify-between rounded-2xl bg-[#F5F6FD] px-5 py-4 text-sm font-semibold text-[#2A2A2A] hover:bg-[#E9ECFB]"
+                className="rounded-2xl bg-[#F5F6FD] px-5 py-4 hover:bg-[#E9ECFB]"
               >
-                {l.label} <ArrowRight className="h-4 w-4 text-[#4F5BD5]" />
+                <span className="flex items-center justify-between text-sm font-semibold text-[#2A2A2A]">
+                  {l.label} <ArrowRight className="h-4 w-4 shrink-0 text-[#4F5BD5]" />
+                </span>
+                {SERVICE_BLURBS[l.to] ? (
+                  <p className="mt-2 text-sm leading-relaxed text-[#5A5A5A]">{SERVICE_BLURBS[l.to]}</p>
+                ) : null}
               </Link>
             ))}
           </div>

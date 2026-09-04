@@ -80,9 +80,23 @@ function Block({ block }: { block: ServiceBlock }) {
   )
 }
 
+function defaultCtaLabel(slug: string): string {
+  if (slug === 'pet-relocation-from-dubai') return 'Check Your Timeline'
+  if (slug === 'pet-transport-dubai') return 'WhatsApp a Relocation Coordinator'
+  if (slug === 'pet-relocation-dubai' || slug === 'pet-relocation-to-dubai') return 'Get a Relocation Quote'
+  return 'Get a Relocation Quote'
+}
+
+function defaultEyebrow(slug: string): string {
+  if (slug === 'pet-transport-dubai') return 'Pet Taxi & Ground Transport'
+  return 'Pet Relocation Service'
+}
+
 export default function ServicePage({ data }: { data: ServicePageData }) {
   const url = `${BASE_URL}/service/${data.slug}/`
   const wa = getWhatsAppUrl(data.whatsappMessage)
+  const ctaLabel = data.ctaLabel || defaultCtaLabel(data.slug)
+  const heroEyebrow = data.heroEyebrow || defaultEyebrow(data.slug)
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org', '@type': 'BreadcrumbList',
@@ -146,10 +160,10 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
       <Hero
         image={data.heroImage}
         imageAlt={data.heroImageAlt}
-        eyebrow="Pet Relocation Service"
+        eyebrow={heroEyebrow}
         title={data.h1}
         subtitle={shortSubtitle(data.heroValueProp)}
-        updated="Updated June 2026"
+        updated="Updated September 2026"
       />
 
       {/* SECTIONS */}
@@ -217,7 +231,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
           <h2 className="text-[24px] sm:text-[32px] font-bold text-white mb-3">Ready to move your pet?</h2>
           <p className="text-white/90 mb-6">Message us on WhatsApp during business hours with your pet, route and timeline.</p>
           <a href={wa} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-all shadow-sm">
-            <MessageCircle className="w-5 h-5" /> Get Your Free Quote
+            <MessageCircle className="w-5 h-5" /> {ctaLabel}
           </a>
         </div>
       </section>

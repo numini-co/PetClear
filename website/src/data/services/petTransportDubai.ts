@@ -182,11 +182,17 @@ const petTransportDubai: ServicePageData = {
             ['DXB airport pet taxi', 'from 450–525', 'Typical market range — not a DPR quote'],
             ['AUH airport pet taxi', 'from 750–840', 'Typical market range — not a DPR quote'],
             ['Dubai–Abu Dhabi inter-emirate', 'from 400–700', 'Typical market range — not a DPR quote'],
+            ['Two-way / return pet taxi', 'from 140–790', 'Typical market range — not a DPR quote'],
+            ['Out-of-hours surcharge examples', '75–105', 'Examples only — not a flat add-on promise'],
           ],
         },
         {
           type: 'p',
-          text: 'Last verified: 4 September 2026. Confirm on quote. We do not publish contested MOCCAE or government fee numerals on this page. International cargo is a different product — see [pet relocation services in Dubai](/service/pet-relocation-dubai/) and [what pet relocation costs in 2026](/guides/pet-relocation-cost-dubai/).',
+          text: 'Blogs quoting DXB pet taxi at AED 250–400 are Estimated only. The verified typical market DXB band on this page remains 450–525 (dated 4 September 2026).',
+        },
+        {
+          type: 'p',
+          text: 'Last verified: 4 September 2026. Confirm on quote. We do not publish contested MOCCAE or government fee numerals on this page. International cargo is a different product — see [pet relocation services in Dubai](/service/pet-relocation-dubai/) and [what pet relocation costs in 2026](/guides/pet-relocation-cost-dubai/). Abu Dhabi ground context: [Abu Dhabi city guide](/cities/abu-dhabi/).',
         },
       ],
     },
@@ -222,12 +228,13 @@ const petTransportDubai: ServicePageData = {
     },
     {
       q: 'How is pet taxi pricing confirmed?',
-      a: 'Typical market ranges (dated 4 September 2026) are shown as a guide only — local short from AED 75–150, city-by-distance from 75–350, DXB from 450–525, AUH from 750–840, Dubai–Abu Dhabi from 400–700. Those are not DPR selling prices. WhatsApp the two addresses and pet size for the actual quote before you book.',
+      a: 'Typical market ranges (dated 4 September 2026) are a guide only — local short from AED 75–150, city-by-distance from 75–350, DXB from 450–525, AUH from 750–840, Dubai–Abu Dhabi from 400–700, two-way from 140–790. Out-of-hours surcharge examples of 75–105 are examples only, not a flat add-on promise. Blogs quoting DXB at 250–400 are Estimated only; the verified DXB band remains 450–525. Those figures are not DPR selling prices. WhatsApp the two addresses and pet size for the actual quote before you book.',
     },
   ],
   relatedLinks: [
     { label: 'Dubai communities we cover', to: '/dubai/' },
     { label: 'Pet relocation across the UAE', to: '/cities/' },
+    { label: 'Abu Dhabi city guide', to: '/cities/abu-dhabi/' },
     { label: 'Talk to our relocation team', to: '/contact/' },
     { label: 'Pet relocation services in Dubai', to: '/service/pet-relocation-dubai/' },
     { label: 'Compare our service tiers', to: '/services/' },

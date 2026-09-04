@@ -40,6 +40,10 @@ export interface ServicePageData {
   primaryKeyword: string
   /** pre-filled WhatsApp message for this page's CTAs */
   whatsappMessage: string
+  /** Final CTA button label. Defaults by slug when omitted. */
+  ctaLabel?: string
+  /** Hero eyebrow. Defaults to “Pet Relocation Service”. */
+  heroEyebrow?: string
   /** trust chips under the hero */
   trustBadges?: string[]
   /** AED range, drives Offer schema + the pricing line */
