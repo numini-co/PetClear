@@ -12,6 +12,7 @@ import SnippetAnswer from './SnippetAnswer.tsx'
 import ContentImage from './ContentImage.tsx'
 import LinkedText from './LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
+import { cardImageFor } from '../data/cardImages.ts'
 
 function Block({ block }: { block: ServiceBlock }) {
   if (block.type === 'p') {
@@ -58,23 +59,31 @@ function Block({ block }: { block: ServiceBlock }) {
   if (block.type === 'cards') {
     return (
       <div className="mb-4 grid gap-4 sm:grid-cols-2">
-        {block.cards.map((c) => (
-          <Link
-            key={c.to}
-            to={c.to}
-            className="flex flex-col rounded-[20px] border border-[#E2E5F6] bg-[#F5F6FD] p-5 transition hover:-translate-y-0.5 hover:bg-[#E9ECFB] hover:shadow-sm"
-          >
-            {c.kind ? (
-              <span className="mb-1 text-xs font-semibold uppercase tracking-wider text-[#4F5BD5]">{c.kind}</span>
-            ) : null}
-            <span className="mb-2 flex items-center justify-between gap-2 font-bold text-[#2A2A2A]">
-              {c.title} <ArrowRight className="h-4 w-4 shrink-0 text-[#4F5BD5]" />
-            </span>
-            <span className="text-sm leading-relaxed text-[#5A5A5A]">
-              <LinkedText text={c.text} />
-            </span>
-          </Link>
-        ))}
+        {block.cards.map((c) => {
+          const img = cardImageFor(c.to)
+          return (
+            <Link
+              key={c.to}
+              to={c.to}
+              className="flex flex-col overflow-hidden rounded-[20px] border border-[#E2E5F6] bg-[#F5F6FD] transition hover:-translate-y-0.5 hover:bg-[#E9ECFB] hover:shadow-sm"
+            >
+              {img ? (
+                <img src={img.src} alt={img.alt} width={1200} height={800} loading="lazy" className="aspect-[3/2] w-full object-cover" />
+              ) : null}
+              <div className="p-5">
+                {c.kind ? (
+                  <span className="mb-1 text-xs font-semibold uppercase tracking-wider text-[#4F5BD5]">{c.kind}</span>
+                ) : null}
+                <span className="mb-2 flex items-center justify-between gap-2 font-bold text-[#2A2A2A]">
+                  {c.title} <ArrowRight className="h-4 w-4 shrink-0 text-[#4F5BD5]" />
+                </span>
+                <span className="text-sm leading-relaxed text-[#5A5A5A]">
+                  <LinkedText text={c.text} />
+                </span>
+              </div>
+            </Link>
+          )
+        })}
       </div>
     )
   }

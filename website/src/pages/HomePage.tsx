@@ -6,6 +6,7 @@ import {
 import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, siteConfig, BASE_URL } from '../lib/seo.ts'
 import { SERVICE_LINKS, GUIDE_LINKS } from '../data/nav.ts'
+import { cardImageFor } from '../data/cardImages.ts'
 import Hero from '../components/Hero.tsx'
 import FAQItem from '../components/FAQItem.tsx'
 import ContentImage from '../components/ContentImage.tsx'
@@ -51,25 +52,6 @@ const Card = ({ children, className = '' }: { children: React.ReactNode; classNa
     {children}
   </div>
 )
-
-const SERVICE_CARD_IMAGES: Record<string, { src: string; alt: string }> = {
-  '/service/dog-relocation-dubai/': {
-    src: '/assets/w1-w3/german-shepherd-travel-crate-dog-relocation-dubai.jpg',
-    alt: 'German Shepherd standing in an open IATA travel crate before dog relocation from Dubai',
-  },
-  '/service/cat-relocation-dubai/': {
-    src: '/assets/w1-w3/british-shorthair-cat-carrier-cat-relocation-dubai.jpg',
-    alt: 'British Shorthair cat resting in a travel carrier inside a Dubai apartment',
-  },
-  '/service/moccae-pet-permit/': {
-    src: '/assets/w1-w3/moccae-permit-document-check-hands-dubai.jpg',
-    alt: 'Hands reviewing a pet travel checklist for a MOCCAE permit application',
-  },
-  '/service/pet-relocation-from-dubai/': {
-    src: '/assets/w1-w3/pet-relocation-from-dubai-husky-balcony-golden-hour.jpg',
-    alt: 'Husky sitting beside a packed travel crate on a Dubai balcony before relocating from Dubai',
-  },
-}
 
 const ROUTES = [
   { label: 'UK to Dubai', to: '/routes/uk-to-dubai/' },
@@ -267,7 +249,7 @@ export default function HomePage() {
           </div>
           <div className="grid items-start gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {SERVICE_LINKS.map((s) => {
-              const img = SERVICE_CARD_IMAGES[s.to]
+              const img = cardImageFor(s.to)
               return (
                 <Link
                   key={s.to}
@@ -578,16 +560,24 @@ export default function HomePage() {
               Four to six cards. The guides hub holds the rest. Use these when you need a rule, not a quote.
             </p>
           </div>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {GUIDE_LINKS.slice(0, 6).map((g) => (
-              <Link
-                key={g.to}
-                to={g.to}
-                className="flex items-center justify-between rounded-2xl bg-[#F5F6FD] px-5 py-4 text-sm font-semibold text-[#2A2A2A] hover:bg-[#E9ECFB]"
-              >
-                {g.label} <ArrowRight className="h-4 w-4 text-[#4F5BD5]" />
-              </Link>
-            ))}
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {GUIDE_LINKS.slice(0, 6).map((g) => {
+              const img = cardImageFor(g.to)
+              return (
+                <Link
+                  key={g.to}
+                  to={g.to}
+                  className="group overflow-hidden rounded-[20px] bg-[#F5F6FD] shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  {img ? (
+                    <img src={img.src} alt={img.alt} width={1200} height={800} loading="lazy" className="aspect-[3/2] w-full object-cover" />
+                  ) : null}
+                  <span className="flex items-center justify-between gap-3 px-5 py-4 text-sm font-semibold text-[#2A2A2A] group-hover:text-[#4F5BD5]">
+                    {g.label} <ArrowRight className="h-4 w-4 shrink-0 text-[#4F5BD5]" />
+                  </span>
+                </Link>
+              )
+            })}
           </div>
           <div className="mt-8 text-center">
             <Link to="/guides/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#4F5BD5] hover:underline">

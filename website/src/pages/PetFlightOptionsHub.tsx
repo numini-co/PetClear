@@ -123,8 +123,8 @@ export default function PetFlightOptionsHub() {
       <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Pet flight options' }]} />
 
       <Hero
-        image="/images/import-hero.jpg"
-        imageAlt="A dog and cat beside travel documents, representing the choice of how a pet flies to or from Dubai"
+        image="/assets/flight-modes/pet-flight-options-hub-hero.jpg"
+        imageAlt="A coordinator comparing cabin, cargo and charter options for flying a pet to or from Dubai"
         eyebrow="Flight options hub"
         title="Six Ways a Pet Can Fly to or from Dubai"
         subtitle="Chooser and airline comparison: Etihad cabin into AUH, Emirates / flydubai / Air Arabia no cabin cats or dogs, cargo the Dubai default. Fee grids live on the child guides."

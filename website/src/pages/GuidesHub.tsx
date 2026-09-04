@@ -8,10 +8,10 @@ import HubCrossLinks from '../components/HubCrossLinks.tsx'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 
 const GUIDES = [
-  { title: 'Pet Flight Options from Dubai', to: '/guides/pet-flight-options-dubai/', image: '/images/import-hero.jpg', desc: 'Cabin, checked baggage, manifest cargo, private jet, shared charter — which mode fits.' },
-  { title: 'Etihad Pet Policy (In-Cabin)', to: '/guides/etihad-pet-policy/', image: '/assets/w1-w3/british-shorthair-cat-carrier-cat-relocation-dubai.jpg', desc: 'The only UAE cabin option: fees change (confirm at booking; 2026 USD-399 promo expired). 8 kg limit, AUH arrival. Emirates/flydubai/Air Arabia cabin N/A for cats and dogs.' },
-  { title: 'Pet as Checked Baggage', to: '/guides/pet-as-checked-baggage/', image: '/images/dog-crate.jpg', desc: 'When accompanied hold travel is allowed — and why Dubai arrivals usually cannot use it.' },
-  { title: 'Emirates Pet Cargo & SkyCargo', to: '/guides/emirates-pet-cargo/', image: '/images/guide-iata-crate.jpg', desc: 'Educational cargo process: airline animal-charge tiers, booking window, and rates quoted per route/weight — not a cargo money page.' },
+  { title: 'Pet Flight Options from Dubai', to: '/guides/pet-flight-options-dubai/', image: '/assets/w-flight-modes/pet-flight-options-card.jpg', desc: 'Cabin, checked baggage, manifest cargo, private jet, shared charter — which mode fits.' },
+  { title: 'Etihad Pet Policy (In-Cabin)', to: '/guides/etihad-pet-policy/', image: '/assets/w-flight-modes/in-cabin-pet-travel-card.jpg', desc: 'The only UAE cabin option: fees change (confirm at booking; 2026 USD-399 promo expired). 8 kg limit, AUH arrival. Emirates/flydubai/Air Arabia cabin N/A for cats and dogs.' },
+  { title: 'Pet as Checked Baggage', to: '/guides/pet-as-checked-baggage/', image: '/assets/w-flight-modes/pet-excess-baggage-card.jpg', desc: 'When accompanied hold travel is allowed — and why Dubai arrivals usually cannot use it.' },
+  { title: 'Emirates Pet Cargo & SkyCargo', to: '/guides/emirates-pet-cargo/', image: '/assets/w-flight-modes/pet-cargo-hold-card.jpg', desc: 'Educational cargo process: airline animal-charge tiers, booking window, and rates quoted per route/weight — not a cargo money page.' },
   { title: 'Pet Relocation Cost Guide', to: '/guides/pet-relocation-cost-dubai/', image: '/images/cost-hero.jpg', desc: 'What it really costs to bring a pet to Dubai — every fee, line by line.' },
   { title: 'UAE Pet Import Requirements', to: '/guides/uae-pet-import-requirements/', image: '/images/import-hero.jpg', desc: 'The full MOCCAE-aligned checklist for bringing dogs and cats to Dubai.' },
   { title: 'Banned & Restricted Dog Breeds', to: '/guides/banned-dog-breeds-dubai/', image: '/images/guide-banned-breeds.jpg', desc: 'Which breeds are prohibited or restricted under UAE federal and Dubai rules.' },
