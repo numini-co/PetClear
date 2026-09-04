@@ -1,0 +1,2 @@
+enquiry_id,date,origin,destination,pet_type,breed,weight,urgency,quoted_range,verification_notes,outcome,notes
+# Header stub only. Add a row when a real enquiry is quoted. Do not invent quotes or outcomes.
