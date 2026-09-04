@@ -12,9 +12,9 @@ const privateJetPetTravel: ServicePageData = {
   primaryKeyword: 'private jet pet travel Dubai',
   heroValueProp:
     'A menu offer for a dedicated aircraft: tight calendars, animals scheduled carriers will not accept, or owners who need the whole cabin. This is not the door-to-door pet relocation page. Quote only — we do not publish jet prices.',
-  heroImage: '/images/service-international-pet-relocation.jpg',
+  heroImage: '/assets/w-flight-modes/private-jet-pet-travel-dog-cabin-hero.jpg',
   heroImageAlt:
-    'A calm dog beside a travel crate and an aircraft in the background — private jet pet travel coordinated from Dubai',
+    'A happy Golden Retriever sitting comfortably on a luxurious leather seat inside a private jet cabin',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I need a private-jet option for my pet. Can you review the route and send a quote? I understand this is quote-only.',
   ctaLabel: 'Get a Private Jet Quote',
