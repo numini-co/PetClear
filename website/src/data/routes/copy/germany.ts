@@ -38,7 +38,7 @@ export const GERMANY_COPY: RouteUniqueCopy[] = [
       {
         question: 'Can my dog fly in the cabin from Germany into Dubai?',
         answer:
-          'Do not assume cabin into Dubai. UAE entry for most dogs and cats is manifest cargo. Some carriers (for example products into Abu Dhabi) advertise cabin options — those are airline- and OD-specific. Every airline row on this page is still unverified; confirm the live pet policy for your exact itinerary.',
+          'Do not assume cabin into Dubai. UAE entry for most dogs and cats is manifest cargo. Some carriers (for example products into Abu Dhabi) advertise cabin options — those are airline- and OD-specific. Confirm current policy on the [Emirates pet cargo guide](/guides/emirates-pet-cargo/) and the [pet flight options hub](/guides/pet-flight-options-dubai/). Every airline row on this page is still unverified; confirm the live pet policy for your exact itinerary.',
       },
       {
         question: 'How long is the MOCCAE import permit valid for a Germany → Dubai move?',
@@ -128,7 +128,7 @@ export const GERMANY_COPY: RouteUniqueCopy[] = [
       {
         question: 'Can my pet leave Dubai as cabin baggage on Emirates to Germany?',
         answer:
-          'Do not assume cabin. Emirates seed mode on this corridor is cargo; from Dubai, hold-baggage eligibility (if any) is journey- and policy-specific. Confirm the live Emirates pet policy for your exact itinerary — airline rows here remain unverified.',
+          'Do not assume cabin. Emirates seed mode on this corridor is cargo; from Dubai, hold-baggage eligibility (if any) is journey- and policy-specific. Confirm current policy on the [Emirates pet cargo guide](/guides/emirates-pet-cargo/) and the [pet flight options hub](/guides/pet-flight-options-dubai/). Airline rows here remain unverified.',
       },
       {
         question: 'How do I get a PetClear quote for Dubai to Germany?',

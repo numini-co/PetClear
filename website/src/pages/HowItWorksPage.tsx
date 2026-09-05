@@ -333,6 +333,7 @@ export default function HowItWorksPage() {
               <Link to="/service/private-jet-pet-travel/" className="text-[#4F5BD5] hover:underline">Private jet</Link>
               <Link to="/service/shared-pet-charter/" className="text-[#4F5BD5] hover:underline">Shared charter</Link>
               <Link to="/service/pet-relocation-dubai/" className="text-[#4F5BD5] hover:underline">Door-to-door</Link>
+              <Link to="/for-pet-relocators/" className="text-[#4F5BD5] hover:underline">For pet relocators</Link>
             </div>
           </div>
         </div>

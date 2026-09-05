@@ -454,7 +454,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
       {
         question: 'Can KLM cabin the dog from Amsterdam into Dubai?',
         answer:
-          'Do not assume cabin into Dubai. KLM seeds as cabin-or-cargo; UAE entry default is still manifest cargo. Emirates and Etihad seed as cargo. Confirm the live origin-destination policy — rows remain unverified.',
+          'Do not assume cabin into Dubai. KLM seeds as cabin-or-cargo; UAE entry default is still manifest cargo. Emirates and Etihad seed as cargo. Confirm current policy on the [Emirates pet cargo guide](/guides/emirates-pet-cargo/) and the [pet flight options hub](/guides/pet-flight-options-dubai/). Rows remain unverified.',
       },
       {
         question: 'Will the pet clear at DXB passenger arrivals from AMS?',
@@ -546,7 +546,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
       {
         question: 'Can Emirates cabin the pet from Dubai to AMS?',
         answer:
-          'Emirates seed mode on this corridor is cargo. Do not invent cabin eligibility. Etihad also seeds as cargo. Confirm the live policy for the exact pair.',
+          'Emirates seed mode on this corridor is cargo. Do not invent cabin eligibility. Etihad also seeds as cargo. Confirm current policy on the [Emirates pet cargo guide](/guides/emirates-pet-cargo/) and the [pet flight options hub](/guides/pet-flight-options-dubai/). Confirm the live policy for the exact pair.',
       },
       {
         question: 'What drives the cost of a Dubai to Netherlands pet export?',

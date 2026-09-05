@@ -15,6 +15,8 @@ const CatRelocationPage = lazy(() => import('./pages/CatRelocationPage.tsx'))
 
 // Core pages (V2 - Month 1)
 const AboutPage = lazy(() => import('./pages/AboutPage.tsx'))
+const ForPetRelocatorsPage = lazy(() => import('./pages/ForPetRelocatorsPage.tsx'))
+const CorporateRelocationPage = lazy(() => import('./pages/CorporateRelocationPage.tsx'))
 const ContactPage = lazy(() => import('./pages/ContactPage.tsx'))
 const FAQPage = lazy(() => import('./pages/FAQPage.tsx'))
 const ServicesPage = lazy(() => import('./pages/ServicesPage.tsx'))
@@ -82,6 +84,10 @@ export default function App() {
 
           {/* Core V2 pages */}
           <Route path="/about/" element={<AboutPage />} />
+          <Route path="/for-pet-relocators/" element={<ForPetRelocatorsPage />} />
+          <Route path="/for-pet-relocators" element={<Navigate to="/for-pet-relocators/" replace />} />
+          <Route path="/service/corporate-pet-relocation/" element={<CorporateRelocationPage />} />
+          <Route path="/service/corporate-pet-relocation" element={<Navigate to="/service/corporate-pet-relocation/" replace />} />
           <Route path="/contact/" element={<ContactPage />} />
           <Route path="/faq/" element={<FAQPage />} />
           <Route path="/services/" element={<ServicesPage />} />

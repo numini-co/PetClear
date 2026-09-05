@@ -32,7 +32,7 @@ export default function AustraliaToDubai() {
     },
     {
       question: 'How much does it cost to relocate a pet from Australia to Dubai?',
-      answer: 'For a single pet, total costs typically range from AED 12,000 to AED 24,000 (AUD 5,000–10,000). This includes: veterinary prep (microchip + vaccines for UAE compliance ~AED 500–1,000), AQIS export permit and inspection (~AED 1,500–2,500), UAE import permit (AED 500), air cargo freight (AED 7,000–15,000 depending on city and crate size), customs clearance in Dubai (AED 1,000–2,000), and optional Dubai Pet Relocation door-to-door service (AED 2,000–4,000). Perth departures are cheaper than Sydney or Melbourne due to shorter distance.'
+      answer: 'For a single pet, total costs typically range from AED 12,000 to AED 24,000 (AUD 5,000–10,000). This includes: veterinary prep (microchip + vaccines for UAE compliance ~AED 500–1,000), AQIS export permit and inspection (~AED 1,500–2,500), MOCCAE import permit AED 200 plus dog port release AED 500 or cat port release AED 250 (confirm on official MOCCAE portal; fees may change), air cargo freight (AED 7,000–15,000 depending on city and crate size), customs clearance in Dubai (AED 1,000–2,000), and optional Dubai Pet Relocation door-to-door service (AED 2,000–4,000). Perth departures are cheaper than Sydney or Melbourne due to shorter distance.'
     },
     {
       question: 'What documents are required for an Australian pet to enter Dubai?',
@@ -306,10 +306,22 @@ export default function AustraliaToDubai() {
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 700–1,200</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">UAE Import Permit (MOCCAE)</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">MOCCAE import permit</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 200</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 200</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 200</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">MOCCAE dog port release</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">MOCCAE cat port release</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 250</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 250</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 250</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Air Cargo (East Coast → DXB)</td>
@@ -358,7 +370,7 @@ export default function AustraliaToDubai() {
             </div>
             <div className="px-6 py-4 bg-[#F5F6FD] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * Prices are estimates in AUD and converted to AED. East Coast flights (Sydney, Melbourne, Brisbane) are more expensive due to longer distance and connection requirements. Perth is the closest Australian city to Dubai and offers the most direct routing. Air cargo rates fluctuate with fuel surcharges and seasonal demand. Contact Dubai Pet Relocation for a precise quote based on your departure city and pet details.
+                * Prices are estimates in AUD and converted to AED. MOCCAE labels: import permit AED 200; dog port release AED 500; cat port release AED 250. Confirm on official MOCCAE portal; fees may change. East Coast flights (Sydney, Melbourne, Brisbane) are more expensive due to longer distance and connection requirements. Perth is the closest Australian city to Dubai and offers the most direct routing. Air cargo rates fluctuate with fuel surcharges and seasonal demand. Contact Dubai Pet Relocation for a precise quote based on your departure city and pet details.
               </p>
             </div>
           </div>

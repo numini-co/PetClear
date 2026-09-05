@@ -14,6 +14,8 @@ interface HeroProps {
   primaryLabel?: string
   secondary?: { label: string; to: string }
   updated?: string
+  /** Optional extra overlay classes (e.g. a lighter scrim on a dark hero). */
+  overlayClassName?: string
 }
 
 // Shared professional hero: a sharp full-bleed photo, a black gradient scrim for
@@ -30,6 +32,7 @@ export default function Hero({
   primaryLabel = 'Get a Free WhatsApp Quote',
   secondary,
   updated,
+  overlayClassName,
 }: HeroProps) {
   return (
     <section className="relative isolate overflow-hidden bg-[#0E1330]">
@@ -46,7 +49,7 @@ export default function Hero({
         loading="eager"
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-black/90 via-black/70 to-black/40" />
+      <div className={`absolute inset-0 -z-10 bg-gradient-to-r ${overlayClassName || 'from-black/90 via-black/70 to-black/40'}`} />
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/70 to-transparent" />
       <div className="mx-auto max-w-[1200px] px-5 py-20 sm:px-6 sm:py-28 lg:px-8 lg:py-32">
         <div className="max-w-2xl text-white">
