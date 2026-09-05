@@ -10,7 +10,7 @@ import Hero from '../components/Hero.tsx'
 export default function PhilippinesToDubai() {
   const pageUrl = `${BASE_URL}/routes/philippines-to-dubai/`
   const pageTitle = 'Philippines to Dubai Pet Relocation — Complete Guide 2026'
-  const pageDescription = 'Relocate your pet from the Philippines to Dubai. High-risk route: titer test (RNATT), 90-day wait, 3–4 months. PAL, Emirates, Cebu Pacific. Costs and documents.'
+  const pageDescription = 'Relocate your pet from the Philippines to Dubai. High-risk route: titer sample within 90 days before travel ≥0.5 IU/ml. PAL, Emirates, Cebu Pacific. Costs and documents.'
   const keywords = 'Philippines to Dubai pet relocation, pet transport Philippines to Dubai, Filipino pet relocation Dubai, titer test Philippines Dubai, PAL pet cargo Dubai, Philippine Airlines pet transport, Cebu Pacific pet cargo, dog relocation Philippines to Dubai, cat relocation Philippines to Dubai'
 
   const faqs = [
@@ -20,7 +20,7 @@ export default function PhilippinesToDubai() {
     },
     {
       question: 'What is the titer test (RNATT) and how long does it take for Philippine pets?',
-      answer: 'The RNATT is a blood test that measures your pet\'s rabies antibody levels. For Philippine pets, the blood sample must be drawn at least 30 days after the rabies vaccination and sent to an approved laboratory. The Philippines has limited accredited local labs, so samples are often sent to Singapore, Hong Kong, or international labs like IDEXX or Kansas State University. Results take 2–4 weeks. After a positive result (≥ 0.5 IU/ml), a mandatory 90-day waiting period from the blood draw date is required before travel. This makes the minimum timeline 3–4 months.'
+      answer: 'The RNATT is a blood test that measures your pet\'s rabies antibody levels. For Philippine pets, the blood sample must be drawn at least 30 days after the rabies vaccination and sent to an approved laboratory. The Philippines has limited accredited local labs, so samples are often sent to Singapore, Hong Kong, or international labs like IDEXX or Kansas State University. Results take 2–4 weeks. The sample used for travel must be taken within 90 days before travel and read at least 0.5 IU/ml — a pre-travel sample window, not a 90-day wait after the blood is drawn.'
     },
     {
       question: 'Which airlines fly pets from the Philippines to Dubai?',
@@ -28,11 +28,11 @@ export default function PhilippinesToDubai() {
     },
     {
       question: 'How long does the Philippines to Dubai pet relocation process take?',
-      answer: 'The minimum timeline is 3 to 4 months: Month 1 — microchip and rabies vaccination (30-day wait before titer test); Month 1–2 — titer test blood draw, lab processing (2–4 weeks), and 90-day waiting period from blood draw date; Month 3 — apply for UAE import permit, obtain Philippine Bureau of Animal Industry (BAI) export permit and health certificate; Month 4 — book flight, final health check, and travel. The 90-day titer wait is mandatory and cannot be shortened.'
+      answer: 'Plan the calendar around vaccination-to-sample interval, lab turnaround, and the 90-day-before-travel sample window: Month 1 — microchip and rabies vaccination (then wait at least 30 days before the titer draw); Month 1–2 — titer blood draw and lab processing (2–4 weeks) so the sample date will still fall within 90 days before the eventual travel date and read ≥ 0.5 IU/ml; Month 2–3 — apply for the UAE import permit (valid 30 days from issuance), obtain Philippine Bureau of Animal Industry (BAI) export permit and health certificate; then book flight, final health check, and travel. Do not sit 90 days after the draw — that is how a passing sample ages out of the window.'
     },
     {
       question: 'How much does it cost to relocate a pet from the Philippines to Dubai?',
-      answer: 'For a single pet, total costs typically range from AED 6,500 to AED 15,000 (PHP 100,000–230,000). This includes: veterinary prep (microchip + vaccines + titer test ~AED 1,500–2,500), Philippine BAI export permit and health certificate (~AED 800–1,500), UAE import permit (AED 500), air cargo freight (AED 3,000–7,000 depending on crate size), customs clearance in Dubai (AED 800–1,500), and optional Dubai Pet Relocation door-to-door service (AED 1,500–2,500). The titer test adds approximately AED 1,200–2,000 to the total compared to low-risk routes.'
+      answer: 'For a single pet, total costs typically range from AED 6,500 to AED 15,000 (PHP 100,000–230,000). This includes: veterinary prep (microchip + vaccines + titer test ~AED 1,500–2,500), Philippine BAI export permit and health certificate (~AED 800–1,500), MOCCAE import permit AED 200 plus dog port release AED 500 or cat port release AED 250 (confirm on official MOCCAE portal; fees may change), air cargo freight (AED 3,000–7,000 depending on crate size), customs clearance in Dubai (AED 800–1,500), and optional Dubai Pet Relocation door-to-door service (AED 1,500–2,500). The titer test adds approximately AED 1,200–2,000 to the total compared to low-risk routes.'
     },
     {
       question: 'What documents are required for a Philippine pet to enter Dubai?',
@@ -101,7 +101,7 @@ export default function PhilippinesToDubai() {
         imageAlt="Pet relocation from Philippines to Dubai"
         eyebrow="Philippines → Dubai"
         title="Philippines to Dubai Pet Relocation — Complete Guide"
-        subtitle="The Philippines is a high-risk country for rabies: a titer test (RNATT) and 90-day wait are mandatory. Your complete 3–4 month guide."
+        subtitle="The Philippines is a high-risk country for rabies: when a titer is required, the sample must be taken within 90 days before travel and read ≥0.5 IU/ml — not a wait-after-draw rule."
         updated="Updated June 2026"
       />
 
@@ -130,8 +130,8 @@ export default function PhilippinesToDubai() {
                 <Clock className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Timeline</p>
-              <p className="text-[#5A5A5A] text-sm">3–4 months</p>
-              <p className="text-[#5A5A5A] text-xs mt-2">Minimum (titer test + 90-day wait)</p>
+              <p className="text-[#5A5A5A] text-sm">Sample window</p>
+              <p className="text-[#5A5A5A] text-xs mt-2">Titer within 90 days before travel ≥0.5 IU/ml</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
               <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -191,7 +191,7 @@ export default function PhilippinesToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">3. Rabies Titer Test (RNATT) — CRITICAL</p>
-                    <p className="text-[#5A5A5A] text-sm">Blood sample drawn at least 30 days after rabies vaccination. Sent to an approved lab (Singapore, Hong Kong, or international). Result must be ≥ 0.5 IU/ml. A 90-day waiting period from the blood draw date is mandatory before travel. This is the longest step in the process.</p>
+                    <p className="text-[#5A5A5A] text-sm">Blood sample drawn at least 30 days after rabies vaccination. Sent to an approved lab (Singapore, Hong Kong, or international). Result must be ≥ 0.5 IU/ml. The sample must be taken within 90 days before travel — a pre-travel window, not a 90-day wait after the draw.</p>
                   </div>
                 </div>
 
@@ -235,7 +235,7 @@ export default function PhilippinesToDubai() {
               <ul className="space-y-4 text-[#5A5A5A] text-sm leading-relaxed">
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>The 90-day titer test waiting period is absolute — there are no exceptions. Start the process immediately when you know your travel date. Many Filipino families are surprised by how long this takes.</span>
+                  <span>The titer rule is a sample window: draw within 90 days before travel and obtain ≥ 0.5 IU/ml. Sitting 90 days after the draw is how a passing result ages out. Start the vaccination-to-sample sequence as soon as the move date is real.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
@@ -306,10 +306,22 @@ export default function PhilippinesToDubai() {
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 600–1,200</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">UAE Import Permit (MOCCAE)</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">MOCCAE import permit</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 200</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 200</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 200</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">MOCCAE dog port release</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">MOCCAE cat port release</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 250</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 250</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 250</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Air Cargo (MNL → DXB, one way)</td>
@@ -346,7 +358,7 @@ export default function PhilippinesToDubai() {
             </div>
             <div className="px-6 py-4 bg-[#F5F6FD] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * Prices are estimates in AED. Philippine Peso amounts will vary with exchange rates. The titer test is the single biggest additional cost compared to low-risk routes. Titer test costs are higher for Philippine pets because samples must be sent abroad (Singapore, Hong Kong, or international labs). Air cargo rates may be higher during peak seasons (December–January). Contact Dubai Pet Relocation for an exact quote based on your pet's details.
+                * Prices are estimates in AED. MOCCAE labels: import permit AED 200; dog port release AED 500; cat port release AED 250. Confirm on official MOCCAE portal; fees may change. Philippine Peso amounts will vary with exchange rates. The titer test is the single biggest additional cost compared to low-risk routes. Titer test costs are higher for Philippine pets because samples must be sent abroad (Singapore, Hong Kong, or international labs). Air cargo rates may be higher during peak seasons (December–January). Contact Dubai Pet Relocation for an exact quote based on your pet's details.
               </p>
             </div>
           </div>
@@ -360,7 +372,7 @@ export default function PhilippinesToDubai() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Philippines to Dubai Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              The high-risk route requires a minimum of 3–4 months. The titer test and 90-day wait are the longest steps. Here is the exact month-by-month process.
+              High-risk files take longer because of the vaccination-to-sample interval and lab turnaround — not because you must sit 90 days after the draw. Schedule the sample so it stays within 90 days before travel at ≥ 0.5 IU/ml.
             </p>
           </div>
 
@@ -376,8 +388,8 @@ export default function PhilippinesToDubai() {
                 },
                 {
                   week: 'Month 1–2',
-                  title: 'Titer Test Results & 90-Day Waiting Period',
-                  desc: 'Lab results arrive in 2–4 weeks. If the antibody level is ≥ 0.5 IU/ml, the 90-day mandatory waiting period begins from the date of the blood draw. This wait is non-negotiable. Dubai Pet Relocation begins preparing the UAE import permit application during this time.',
+                  title: 'Titer Test Results & Sample Window',
+                  desc: 'Lab results arrive in 2–4 weeks. A passing result is ≥ 0.5 IU/ml. Keep the sample date inside 90 days before the actual travel date — do not treat a pass as a 90-day sit after the draw. Dubai Pet Relocation begins preparing the UAE import permit application during lab turnaround.',
                   icon: Shield
                 },
                 {
@@ -389,7 +401,7 @@ export default function PhilippinesToDubai() {
                 {
                   week: 'Month 4',
                   title: 'Flight Booking & Final Health Check',
-                  desc: 'With the 90-day wait complete, Dubai Pet Relocation books cargo space with Philippine Airlines, Emirates, or Cebu Pacific. A final pre-flight health check is conducted. The IATA crate is delivered for acclimatisation. All documents are reviewed.',
+                  desc: 'When the titer sample is still inside the 90-day-before-travel window and the MOCCAE permit will cover the flight, Dubai Pet Relocation books cargo space with Philippine Airlines, Emirates, or Cebu Pacific. A final pre-flight health check is conducted. The IATA crate is delivered for acclimatisation. All documents are reviewed.',
                   icon: Plane
                 },
                 {
@@ -497,7 +509,7 @@ export default function PhilippinesToDubai() {
               Philippine summers (March–May) are extremely hot and humid, which can affect ground handling at NAIA and cargo hold conditions. Dubai Pet Relocation recommends booking early morning flights (6–9 AM) to avoid peak heat. During typhoon season (June–October), flight delays and cancellations are common — plan buffer days around your travel date.
             </p>
             <p className="text-[#5A5A5A] text-sm leading-relaxed">
-              Peak relocation season for Filipino pets is December–January, when many families travel during the Christmas and New Year holidays. PAL cargo space fills 3–4 weeks in advance during this period. Start your titer test process at least 4 months before your intended travel date to avoid disappointment.
+              Peak relocation season for Filipino pets is December–January, when many families travel during the Christmas and New Year holidays. PAL cargo space fills 3–4 weeks in advance during this period. Start the vaccination-to-sample sequence early enough that the titer draw will still fall within 90 days before the flight you actually book.
             </p>
           </div>
         </div>

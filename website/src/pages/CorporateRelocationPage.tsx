@@ -69,7 +69,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 /* ─── Page ─── */
 export default function CorporateRelocationPage() {
-  const canonical = `${BASE_URL}/corporate-pet-relocation-dubai/`
+  const canonical = `${BASE_URL}/service/corporate-pet-relocation/`
 
   const faqData = [
     {

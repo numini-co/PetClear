@@ -9,6 +9,8 @@ import OfficialSources from './OfficialSources.tsx'
 import RouteAirportsAirlinesBlock from './RouteAirportsAirlinesBlock.tsx'
 import UaeCargoRuleCallout from './UaeCargoRuleCallout.tsx'
 import LastVerified from './LastVerified.tsx'
+import LinkedText from './LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, getWhatsAppUrl, shortSubtitle, siteConfig } from '../lib/seo.ts'
 import { titleCaseCountry } from '../data/routes/countryMeta.ts'
 import type { RoutePageData } from '../types/routePage.ts'
@@ -40,7 +42,7 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
     mainEntity: data.faqs.map((f) => ({
       '@type': 'Question',
       name: f.question,
-      acceptedAnswer: { '@type': 'Answer', text: f.answer },
+      acceptedAnswer: { '@type': 'Answer', text: stripInternalMarkdownLinks(f.answer) },
     })),
   }
   const articleSchema = {
@@ -87,6 +89,7 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
         primaryLabel={data.cta.label}
         whatsappMessage={waMessage}
         secondary={{ label: 'All routes', to: '/routes/' }}
+        overlayClassName={data.slug === 'germany-to-dubai' ? 'from-black/70 via-black/50 to-black/25' : undefined}
       />
 
       <section className="bg-white section-padding">
@@ -215,7 +218,7 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
           </h2>
           <div className="space-y-3">
             {data.faqs.map((f) => (
-              <FAQItem key={f.question} question={f.question} answer={f.answer} />
+              <FAQItem key={f.question} question={f.question} answer={<LinkedText text={f.answer} />} />
             ))}
           </div>
         </div>

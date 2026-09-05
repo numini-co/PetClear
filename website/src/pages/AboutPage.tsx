@@ -7,6 +7,7 @@ import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
+import AirportNetworkRoles from '../components/AirportNetworkRoles.tsx'
 
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
   const [open, setOpen] = useState(false)
@@ -306,6 +307,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <AirportNetworkRoles />
 
       {/* ═══════════ CTA ═══════════ */}
       <section className="bg-[#4F5BD5] section-padding">
