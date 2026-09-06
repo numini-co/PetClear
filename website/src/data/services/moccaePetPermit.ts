@@ -8,7 +8,6 @@ import {
   PERMIT_PROCESSING_ESTIMATE,
   PERMIT_VALIDITY,
   RABIES_AGE_WAIT,
-  RELEASE_FEE_VERIFY,
   TITER_SAMPLE_RULE,
 } from '../../lib/regulatory.ts'
 
