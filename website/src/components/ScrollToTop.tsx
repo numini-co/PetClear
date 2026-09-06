@@ -2,7 +2,13 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 function scrollWindowToTop() {
+  const root = document.documentElement
+  const previous = root.style.scrollBehavior
+  // Site CSS sets `html { scroll-behavior: smooth }`; override so route
+  // changes jump instead of animating from the previous page's offset.
+  root.style.scrollBehavior = 'auto'
   window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+  root.style.scrollBehavior = previous
 }
 
 function scrollToHashTarget(hash: string) {
