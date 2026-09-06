@@ -191,7 +191,7 @@ export default function CanadaToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">3. UAE Import Permit</p>
-                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 30 days from issuance. Must be obtained before booking. Cost: confirm current permit and arrival-release fees on the official MOCCAE portal. Dubai Pet Relocation handles the application and Arabic translation.</p>
+                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 90 days from issuance. Must be obtained before booking. Cost: confirm current permit and arrival-release fees on the official MOCCAE portal. Dubai Pet Relocation handles the application and Arabic translation.</p>
                   </div>
                 </div>
 

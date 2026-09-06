@@ -53,7 +53,7 @@ const SERVICE_BLURBS: Record<string, string> = {
   '/service/international-pet-relocation/':
     'Multi-country corridor planning when Dubai is a hub in a longer journey, not the only origin or destination.',
   '/service/pet-relocation-to-dubai/':
-    'Inbound-only: first vet visit through the 30-day MOCCAE permit to the first week in a new Dubai home.',
+    'Inbound-only: first vet visit through the 90-day MOCCAE permit to the first week in a new Dubai home.',
   '/service/pet-relocation-from-dubai/':
     'Outbound-only: destination rules first, then the 30-day UAE export health certificate and departure from DXB or DWC.',
   '/service/dog-relocation-dubai/':
@@ -173,7 +173,7 @@ const SERVICES_FAQS = [
   },
   {
     q: 'Do the tiers change the regulatory steps?',
-    a: 'No. A 30-day import permit is still 30 days. A titer sample, when required, is still taken within 90 days before travel. Tiers change labour, not the law.',
+    a: 'No. A 90-day import permit is still 90 days from issuance. A titer sample, when required, is still taken within 90 days before travel. Tiers change labour, not the law.',
   },
   {
     q: 'Can I start on Essential and upgrade later?',

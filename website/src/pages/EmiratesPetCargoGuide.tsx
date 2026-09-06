@@ -62,7 +62,7 @@ const faqData = [
   },
   {
     q: 'How long is the MOCCAE import permit valid?',
-    a: '30 days from issuance. Book cargo inside that window. Do not plan around a 90-day permit.',
+    a: '90 days from issuance. Book cargo inside that window. Time arrival inside the 90-day permit.',
   },
   {
     q: 'Are you part of Emirates SkyCargo?',
@@ -246,8 +246,8 @@ export default function EmiratesPetCargoGuide() {
                 text: 'Aircraft type, season and breed matter. We check SkyCargo (or another pet-experienced carrier) before anyone pays a passenger ticket.',
               },
               {
-                title: 'Line up the 30-day permit window',
-                text: 'The MOCCAE import permit is valid 30 days from issuance. Cargo space and the permit have to overlap. See the MOCCAE import permit guide.',
+                title: 'Line up the 90-day permit window',
+                text: 'The MOCCAE import permit is valid for 90 days from issuance. Cargo space and the permit have to overlap. See the MOCCAE import permit guide.',
               },
               {
                 title: 'Submit the airline form and documents',
@@ -302,7 +302,7 @@ export default function EmiratesPetCargoGuide() {
               <Link to="/guides/moccae-import-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
                 MOCCAE import permit
               </Link>{' '}
-              — 30-day validity
+              — 90-day validity
             </li>
             <li>
               <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">

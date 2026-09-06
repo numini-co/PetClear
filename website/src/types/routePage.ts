@@ -26,7 +26,7 @@ export interface RouteAirline {
 }
 
 export interface UaeRules {
-  permitValidityDays: 30
+  permitValidityDays: 90
   titerSampleWindowDays: 90
   titerMinIUml: 0.5
   manifestCargoDefault: boolean

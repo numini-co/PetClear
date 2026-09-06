@@ -68,7 +68,7 @@ export default function CitiesHub() {
         <div className="mx-auto max-w-[1200px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Emirates with dedicated pages</h2>
           <p className="mb-2 max-w-2xl text-[#5A5A5A]">
-            A MOCCAE import permit is valid for 30 days from issuance, wherever you land. Confirm the current portal fee when you apply.
+            A MOCCAE import permit is valid for 90 days from issuance, wherever you land. Confirm the current portal fee when you apply.
           </p>
           <LastVerified className="mb-8 text-xs text-[#8A8A8A]" />
           <div className="grid gap-6 sm:grid-cols-2">

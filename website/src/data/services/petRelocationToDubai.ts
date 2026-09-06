@@ -4,13 +4,13 @@ const petRelocationToDubai: ServicePageData = {
   slug: 'pet-relocation-to-dubai',
   seoTitle: 'Pet Relocation to Dubai | Arrival-Side Import Guide',
   metaDescription:
-    'Pet relocation to Dubai: MOCCAE 30-day permit, titer timing, cargo arrival at DXB, and settling-in steps. Get a relocation quote.',
+    'Pet relocation to Dubai: MOCCAE 90-day permit, titer timing, cargo arrival at DXB, and settling-in steps. Get a relocation quote.',
   keywords:
     'pet relocation to dubai, moving to Dubai with pets, moving to Dubai with a dog, bringing pets to Dubai, import dog to dubai, import cat to dubai',
   h1: 'Pet Relocation to Dubai — Arrival-Side Coordination',
   primaryKeyword: 'pet relocation to dubai',
   heroValueProp:
-    'Inbound only: MOCCAE 30-day import permit, titer timing, cargo arrival at DXB or DWC, and the first week in a new Dubai home.',
+    'Inbound only: MOCCAE 90-day import permit, titer timing, cargo arrival at DXB or DWC, and the first week in a new Dubai home.',
   heroImage: '/assets/w1-w3/pet-relocation-to-dubai-cat-arrival-new-apartment.jpg',
   heroImageAlt:
     'Cat stepping out of its travel crate into a new Dubai apartment after relocating to Dubai',
@@ -18,7 +18,7 @@ const petRelocationToDubai: ServicePageData = {
     'Hi! I am moving to Dubai with my pet. Can you map the inbound permit, titer timing and arrival steps from my country?',
   trustBadges: [
     'Inbound / arrival-side only',
-    '30-day MOCCAE permit window',
+    '90-day MOCCAE permit window',
     'Titer sample timing checked',
     'WhatsApp through arrival',
   ],
@@ -67,8 +67,8 @@ const petRelocationToDubai: ServicePageData = {
               text: 'When a rabies antibody test is required, the blood sample must be drawn within 90 days before travel and read at least 0.5 IU/ml. We do not describe this as a 90-day wait after the titer. See [rabies titer test](/guides/rabies-titer-test-dubai/).',
             },
             {
-              title: 'MOCCAE import permit — 30 days',
-              text: 'The import permit is applied for on the official portal and is valid for 30 days from issuance. Your pet must arrive inside that window. Confirm the current portal fee when you apply; contested AED figures are not published here. Walkthrough: [MOCCAE import permit](/guides/moccae-import-permit/).',
+              title: 'MOCCAE import permit — 90 days',
+              text: 'The import permit is applied for on the official portal and is valid for 90 days from issuance. Your pet must arrive inside that window. Confirm the current portal fee when you apply; contested AED figures are not published here. Walkthrough: [MOCCAE import permit](/guides/moccae-import-permit/).',
             },
             {
               title: 'Health certificate and parasite treatments',
@@ -107,7 +107,7 @@ const petRelocationToDubai: ServicePageData = {
             'ISO 11784/11785 15-digit microchip, implanted before the recorded rabies vaccination',
             'Valid rabies vaccination and core species vaccinations',
             'Rabies titer result when the origin requires it — sample within 90 days before travel, ≥ 0.5 IU/ml',
-            'MOCCAE import permit still inside its 30-day validity on the arrival date',
+            'MOCCAE import permit still inside its 90-day validity on the arrival date',
             'Origin-country government health certificate inside its short validity window',
             'Parasite treatments recorded to the arrival window',
             'Owner identification and a recent photo of the pet where the portal asks for one',
@@ -167,7 +167,7 @@ const petRelocationToDubai: ServicePageData = {
     },
     {
       q: 'How long is the MOCCAE import permit valid?',
-      a: 'Thirty days from issuance. The pet must land inside that window. A 90-day permit validity claim is vetoed and is not used on this page.',
+      a: '90 days from issuance. The pet must land inside that window. First-party MOCCAE wording is 90 days from issuance.',
     },
     {
       q: 'When must the rabies titer blood sample be drawn for entry to Dubai?',

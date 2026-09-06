@@ -51,12 +51,12 @@ const UAE_AIRPORTS_OUTBOUND: UaeAirport[] = [
 
 function inboundUaeRules(countryName: string): UaeRules {
   return {
-    permitValidityDays: 30,
+    permitValidityDays: 90,
     titerSampleWindowDays: 90,
     titerMinIUml: 0.5,
     manifestCargoDefault: true,
     bullets: [
-      `Obtain a MOCCAE import permit before the pet leaves ${countryName}; the permit is valid for 30 days from issuance — the animal must enter the UAE within that window.`,
+      `Obtain a MOCCAE import permit before the pet leaves ${countryName}; the permit is valid for 90 days from issuance — the animal must enter the UAE within that window.`,
       'UAE entry for most dogs and cats is as manifest cargo under IATA live-animal conditions (cabin into Dubai is not the default). Etihad cabin into Abu Dhabi is a published exception for eligible small pets — confirm current policy.',
       'ISO 11784/11785 microchip must match the health certificate; implant the chip before the rabies vaccination used for UAE import.',
       'When a rabies antibody titer (RNATT) is required, the blood sample must be taken within 90 days before travel and result ≥ 0.5 IU/ml — this is a pre-travel sample window, not a 90-day waiting period after the draw.',
@@ -71,14 +71,14 @@ function inboundUaeRules(countryName: string): UaeRules {
 
 function outboundUaeRules(): UaeRules {
   return {
-    permitValidityDays: 30,
+    permitValidityDays: 90,
     titerSampleWindowDays: 90,
     titerMinIUml: 0.5,
     manifestCargoDefault: true,
     bullets: [
       'Leaving the UAE needs MOCCAE exit documentation (veterinary health certificate / export pathway via MOCCAE digital services) — plan this after destination rules are clear.',
       'Export health certificate validity is commonly a short window (SOT cites 30 days from issue for the export-certificate pathway — verify on the MOCCAE portal before you book).',
-      'Do not reuse inbound MOCCAE import-permit logic for an outbound move. A 30-day import permit is for entering the UAE, not for leaving it.',
+      'Do not reuse inbound MOCCAE import-permit logic for an outbound move. A 90-day import permit is for entering the UAE, not for leaving it.',
       'Airline acceptance leaving Dubai can differ from the inbound product on the same brand — confirm current policy for the outbound origin-destination pair.',
       'No package or government fee numerals on this page — confirm fees on official portals; Dubai Pet Relocation quotes on request.',
     ],
@@ -154,7 +154,7 @@ function relatedLinks(copy: RouteUniqueCopy, direction: 'inbound' | 'outbound'):
   if (direction === 'inbound') {
     links.push({ label: 'Pet relocation to Dubai', href: '/service/pet-relocation-to-dubai/' })
     links.push({ label: 'UAE pet import requirements', href: '/guides/uae-pet-import-requirements/' })
-    links.push({ label: 'MOCCAE import permit (30-day validity)', href: '/guides/moccae-import-permit/' })
+    links.push({ label: 'MOCCAE import permit (90-day validity)', href: '/guides/moccae-import-permit/' })
     links.push({ label: 'Rabies titer sample window', href: '/guides/rabies-titer-test-dubai/' })
   } else {
     links.push({ label: 'Pet relocation from Dubai', href: '/service/pet-relocation-from-dubai/' })

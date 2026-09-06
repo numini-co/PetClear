@@ -881,7 +881,7 @@ export const COUNTRY_AIR_AIR: Record<string, CountryAirAir> = {
 
 /** UAE import chrome for inbound route blocks */
 export const UAE_INBOUND_PERMIT_BLURB =
-  'MOCCAE import permit is valid 30 days from issuance. The pet must arrive inside that window. Confirm current portal fees on the official MOCCAE site — do not invent AED figures.'
+  'MOCCAE import permit is valid for 90 days from issuance. The pet must arrive inside that window. Confirm current portal fees on the official MOCCAE site — do not invent AED figures.'
 
 export const TITER_BLURB =
   'When a titer (RNATT) is required, the blood sample must be taken within 90 days before travel and read at least 0.5 IU/ml. That is not a 90-day waiting period after the blood draw.'

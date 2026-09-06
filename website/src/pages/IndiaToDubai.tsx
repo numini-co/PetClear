@@ -29,7 +29,7 @@ export default function IndiaToDubai() {
     },
     {
       question: 'How long does the India to Dubai pet relocation process take?',
-      answer: 'Plan the calendar around vaccination-to-sample interval, lab turnaround, and the 90-day-before-travel sample window: Month 1 — microchip and rabies vaccination (then wait at least 30 days before the titer draw); Month 1–2 — titer blood draw and lab processing so the sample date will still fall within 90 days before the eventual travel date and read ≥ 0.5 IU/ml; Month 2–3 — apply for the UAE import permit (valid 30 days from issuance) and obtain the Indian export health certificate (NOC from AQCS); then book flight, final health check, and travel. Do not sit 90 days after the draw — that is how a passing sample ages out of the window.'
+      answer: 'Plan the calendar around vaccination-to-sample interval, lab turnaround, and the 90-day-before-travel sample window: Month 1 — microchip and rabies vaccination (then wait at least 30 days before the titer draw); Month 1–2 — titer blood draw and lab processing so the sample date will still fall within 90 days before the eventual travel date and read ≥ 0.5 IU/ml; Month 2–3 — apply for the UAE import permit (valid 90 days from issuance) and obtain the Indian export health certificate (NOC from AQCS); then book flight, final health check, and travel. Do not sit 90 days after the draw — that is how a passing sample ages out of the window.'
     },
     {
       question: 'How much does it cost to relocate a pet from India to Dubai?',
@@ -202,7 +202,7 @@ export default function IndiaToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">4. UAE Import Permit</p>
-                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 30 days from issuance. Must include the titer test certificate. Cost: confirm current permit and arrival-release fees on the official MOCCAE portal. Dubai Pet Relocation handles the application and Arabic translation.</p>
+                    <p className="text-[#5A5A5A] text-sm">Applied for online via MOCCAE. Valid 90 days from issuance. Must include the titer test certificate. Cost: confirm current permit and arrival-release fees on the official MOCCAE portal. Dubai Pet Relocation handles the application and Arabic translation.</p>
                   </div>
                 </div>
 

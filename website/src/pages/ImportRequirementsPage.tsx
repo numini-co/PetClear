@@ -59,12 +59,12 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 const snippetQuestion = 'How long do pets stay in quarantine?'
 const snippetAnswer =
-  'The UAE typically has no long quarantine when documents are correct. Compliant dogs and cats are examined at the entry port and released to the owner. We do not invent a day-count for a paperwork hold. Dogs are legal; some breeds are banned. The MOCCAE import permit is valid 30 days.'
+  'The UAE typically has no long quarantine when documents are correct. Compliant dogs and cats are examined at the entry port and released to the owner. We do not invent a day-count for a paperwork hold. Dogs are legal; some breeds are banned. The MOCCAE import permit is valid for 90 days.'
 
 const IMPORT_PAA_FAQS: { q: string; a: string; link?: { to: string; label: string } }[] = [
   {
     q: 'How long do pets stay in quarantine?',
-    a: 'The UAE typically has no long quarantine when the file is correct. Compliant pets are examined by MOCCAE veterinary staff at the entry port and released to the owner. Incomplete papers can mean a hold, refusal or re-export at your expense — we do not invent a day-count for that hold. The import permit is valid 30 days.',
+    a: 'The UAE typically has no long quarantine when the file is correct. Compliant pets are examined by MOCCAE veterinary staff at the entry port and released to the owner. Incomplete papers can mean a hold, refusal or re-export at your expense — we do not invent a day-count for that hold. The import permit is valid for 90 days.',
   },
   {
     q: 'Is there quarantine for pets in Dubai?',
@@ -72,30 +72,30 @@ const IMPORT_PAA_FAQS: { q: string; a: string; link?: { to: string; label: strin
   },
   {
     q: 'What are the quarantine rules for pets entering the UAE?',
-    a: 'Compliant pets are not routinely quarantined. The rule is examination and release at the port when the microchip, rabies papers, health certificate and 30-day MOCCAE import permit match. We do not invent a hold duration. Depth stays on this page — we did not create a separate quarantine guide URL.',
+    a: 'Compliant pets are not routinely quarantined. The rule is examination and release at the port when the microchip, rabies papers, health certificate and 90-day MOCCAE import permit match. We do not invent a hold duration. Depth stays on this page — we did not create a separate quarantine guide URL.',
   },
   {
     q: 'What are the rules and regulations for pets in the UAE?',
-    a: 'UAE pet rules cover an ISO microchip, current rabies vaccination, a government health certificate, a MOCCAE import permit valid 30 days, cargo entry (except Etihad cabin into Abu Dhabi), municipality registration after arrival, and breed bans. Confirm contested government fees on the official portal. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.',
+    a: 'UAE pet rules cover an ISO microchip, current rabies vaccination, a government health certificate, a MOCCAE import permit valid 90 days, cargo entry (except Etihad cabin into Abu Dhabi), municipality registration after arrival, and breed bans. Confirm contested government fees on the official portal. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.',
     link: { to: '/guides/banned-dog-breeds-dubai/', label: 'Banned dog breeds in Dubai' },
   },
   {
     q: 'What are the requirements for traveling with my pet to the UAE?',
-    a: 'You need an ISO 15-digit microchip implanted before the rabies vaccine, a current rabies vaccination, core vaccines, a government-endorsed health certificate, antiparasitic timing, and a MOCCAE import permit valid 30 days. Pets enter Dubai as manifest cargo. High-risk origins add a titer pathway. Confirm live portal fees before you apply.',
+    a: 'You need an ISO 15-digit microchip implanted before the rabies vaccine, a current rabies vaccination, core vaccines, a government-endorsed health certificate, antiparasitic timing, and a MOCCAE import permit valid 90 days. Pets enter Dubai as manifest cargo. High-risk origins add a titer pathway. Confirm live portal fees before you apply.',
   },
   {
     q: 'Does Dubai allow pet dogs?',
-    a: 'Yes. Dubai allows pet dogs when the breed is permitted and the import documents are complete. Some types are federally banned or restricted in apartments. Check the banned-breed list before you book a crate or a flight. A MOCCAE import permit, valid 30 days, is still required.',
+    a: 'Yes. Dubai allows pet dogs when the breed is permitted and the import documents are complete. Some types are federally banned or restricted in apartments. Check the banned-breed list before you book a crate or a flight. A MOCCAE import permit, valid 90 days, is still required.',
     link: { to: '/guides/banned-dog-breeds-dubai/', label: 'Banned dog breeds in Dubai' },
   },
   {
     q: 'Is it legal to have a dog in Dubai?',
-    a: 'Yes. It is legal to keep a permitted dog in Dubai. You still need the 30-day MOCCAE import permit to bring one in, then municipality registration. Banned and restricted breeds cannot be treated as a loophole. We are a coordinator — confirm the current list on the official portal and our banned-breeds guide.',
+    a: 'Yes. It is legal to keep a permitted dog in Dubai. You still need the 90-day MOCCAE import permit to bring one in, then municipality registration. Banned and restricted breeds cannot be treated as a loophole. We are a coordinator — confirm the current list on the official portal and our banned-breeds guide.',
     link: { to: '/guides/banned-dog-breeds-dubai/', label: 'Banned dog breeds in Dubai' },
   },
   {
     q: 'Do I need a MOCCAE import permit for my dog?',
-    a: 'Yes — and every cat too. The permit is valid 30 days from issuance. Apply questions and the walkthrough live on the MOCCAE import permit guide. This page stays on the full import-rules checklist, including quarantine.',
+    a: 'Yes — and every cat too. The permit is valid 90 days from issuance. Apply questions and the walkthrough live on the MOCCAE import permit guide. This page stays on the full import-rules checklist, including quarantine.',
     link: { to: '/guides/moccae-import-permit/', label: 'MOCCAE import permit guide' },
   },
 ]
@@ -178,7 +178,7 @@ export default function ImportRequirementsPage() {
       days: 'Day 21–90',
       body: `Apply online via the MOCCAE portal with UAE Pass (see the dedicated permit guide). ${PERMIT_VALIDITY} ${PERMIT_PROCESSING_ESTIMATE} ${PERMIT_FEE_VERIFY} Required: owner passport, UAE visa or residency details, microchip number, vaccination records, and titer result if your origin requires one.`,
       icon: <FileText className="w-5 h-5" />,
-      warn: 'Apply as close to your travel date as safely possible (within the 30-day validity) while leaving time for flight booking.',
+      warn: 'Apply as close to your travel date as safely possible (within the 90-day validity) while leaving time for flight booking.',
     },
     {
       num: 7,
@@ -218,7 +218,7 @@ export default function ImportRequirementsPage() {
     <div className="bg-[#F5F6FD]">
       <SEOHead
         title="UAE Pet Import Requirements | Permits & Documents 2026"
-        description="UAE pet import requirements: 30-day MOCCAE permit, titer sample timing, microchip, cargo entry, and breed checks. Confirm fees on the portal."
+        description="UAE pet import requirements: 90-day MOCCAE permit, titer sample timing, microchip, cargo entry, and breed checks. Confirm fees on the portal."
         keywords="UAE pet import requirements, MOCCAE import permit, Dubai pet import rules, pet vaccination requirements UAE, dog import Dubai, cat import Dubai, banned dog breeds Dubai"
         canonical={`${BASE_URL}/guides/uae-pet-import-requirements/`}
         ogType="article"
@@ -245,7 +245,7 @@ export default function ImportRequirementsPage() {
                 name: 'What is the MOCCAE import permit for pets?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'The MOCCAE import permit is a mandatory approval from the UAE Ministry of Climate Change and Environment required for all pets entering the UAE. It is valid for 30 days from issuance. Confirm the current permit and arrival-release fees on the official portal before you apply — published amounts have differed. You must apply online via the MOCCAE portal or app before your pet travels.',
+                  text: 'The MOCCAE import permit is a mandatory approval from the UAE Ministry of Climate Change and Environment required for all pets entering the UAE. It is valid for 90 days from issuance. Confirm the current permit and arrival-release fees on the official portal before you apply; fees may change. You must apply online via the MOCCAE portal or app before your pet travels.',
                 },
               },
               {
@@ -269,7 +269,7 @@ export default function ImportRequirementsPage() {
                 name: 'How long does preparing a UAE import file take?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'When an RNATT is not required and vaccinations are already in place, owners often complete the pack in a matter of weeks (health-certificate window, 10-day parasite treatments, 30-day permit, cargo slot). When an RNATT is required, the floor is set by the 21-day post-vaccine wait, lab turnaround, and keeping the sample inside 90 days of travel — not by a 90-day sit after the result. Start as soon as the move is real.',
+                  text: 'When an RNATT is not required and vaccinations are already in place, owners often complete the pack in a matter of weeks (health-certificate window, 10-day parasite treatments, 90-day permit, cargo slot). When an RNATT is required, the floor is set by the 21-day post-vaccine wait, lab turnaround, and keeping the sample inside 90 days of travel — not by a 90-day sit after the result. Start as soon as the move is real.',
                 },
               },
               {
@@ -369,7 +369,7 @@ export default function ImportRequirementsPage() {
         imageAlt="Master checklist of UAE pet import requirements: microchip, vaccinations, titer test, permit and health certificate"
         eyebrow="Statutory checklist — not the import service"
         title="UAE Pet Import Requirements — Permits, Titer & Cargo"
-        subtitle="30-day MOCCAE permit, RNATT sample within 90 days before travel, microchip before rabies, manifested cargo. Confirm fees on the portal."
+        subtitle="90-day MOCCAE permit, RNATT sample within 90 days before travel, microchip before rabies, manifested cargo. Confirm fees on the portal."
         updated={LAST_VERIFIED_LABEL}
         whatsappMessage="Hi, I need the UAE pet import requirements checked for my pet from [country] to Dubai."
         primaryLabel="Check my document list"
@@ -382,7 +382,7 @@ export default function ImportRequirementsPage() {
           <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
           <p className="text-[#5A5A5A] leading-relaxed max-w-3xl">
             The UAE typically has no long quarantine when the file is correct. Rules cover microchip, rabies, health
-            certificate, a 30-day MOCCAE import permit, cargo entry, and breed bans. Dogs are legal; some types are not.{' '}
+            certificate, a 90-day MOCCAE import permit, cargo entry, and breed bans. Dogs are legal; some types are not.{' '}
             <Link to="/guides/banned-dog-breeds-dubai/" className="text-[#4F5BD5] font-medium hover:underline">
               Banned dog breeds in Dubai
             </Link>
@@ -463,7 +463,7 @@ export default function ImportRequirementsPage() {
                 <tr>
                   <td className="font-semibold text-[#2A2A2A]">MOCCAE Import Permit</td>
                   <td>Official approval from UAE Ministry of Climate Change and Environment</td>
-                  <td>30 days from issuance</td>
+                  <td>90 days from issuance</td>
                   <td>Verify on portal</td>
                 </tr>
                 <tr>
@@ -528,7 +528,7 @@ export default function ImportRequirementsPage() {
               How Long Does It Take?
             </h3>
             <ul className="space-y-2 text-[#5A5A5A]">
-              <li><strong className="text-[#2A2A2A]">RNATT not required</strong> and the pet is already vaccinated: usually a matter of weeks (health certificate, 10-day parasite treatments, 30-day permit, cargo slot)</li>
+              <li><strong className="text-[#2A2A2A]">RNATT not required</strong> and the pet is already vaccinated: usually a matter of weeks (health certificate, 10-day parasite treatments, 90-day permit, cargo slot)</li>
               <li><strong className="text-[#2A2A2A]">RNATT required</strong>: 21-day post-vaccine wait + lab time + the sample must still fall within 90 days before travel — not a 90-day sit after the result</li>
               <li>{EXEMPT_LIST_HOLD}</li>
             </ul>
@@ -558,7 +558,7 @@ export default function ImportRequirementsPage() {
           <ContentImage
             src="/assets/w5/uae-pet-import-step-by-step-timeline-diagram.png"
             alt="Step-by-step UAE pet import timeline from vaccinations to arrival clearance"
-            caption="Timed steps use the 30-day permit and the sample-within-90-days titer rule. Fees are not baked into the graphic."
+            caption="Timed steps use the 90-day permit and the sample-within-90-days titer rule. Fees are not baked into the graphic."
           />
 
           <div className="relative">
@@ -632,7 +632,7 @@ export default function ImportRequirementsPage() {
                 <li><strong>Apply:</strong> Online at moccae.gov.ae via UAE Pass — see the <Link to="/guides/moccae-import-permit/" className="font-semibold text-[#4F5BD5] hover:underline">MOCCAE import permit guide</Link></li>
                 <li><strong>Cost:</strong> confirm the current permit and arrival-release fees on the official MOCCAE portal</li>
                 <li><strong>Processing:</strong> typically estimated at 2–5 working days (not a first-party SLA)</li>
-                <li><strong>Validity:</strong> 30 days from issuance</li>
+                <li><strong>Validity:</strong> 90 days from issuance</li>
               </ul>
               <div className="warning-box">
                 <p className="text-sm text-[#2A2A2A]">
@@ -1008,7 +1008,7 @@ export default function ImportRequirementsPage() {
                   <tr><td className="font-semibold">Day 21+</td><td>Earliest useful blood sample for RNATT</td></tr>
                   <tr><td className="font-semibold">Lab window</td><td>Operational estimate — often 1–3 weeks</td></tr>
                   <tr><td className="font-semibold">Sample rule</td><td>Draw must fall within 90 days before arrival</td></tr>
-                  <tr><td className="font-semibold">Permit</td><td>Apply so the 30-day validity still covers landing</td></tr>
+                  <tr><td className="font-semibold">Permit</td><td>Apply so the 90-day validity still covers landing</td></tr>
                   <tr><td className="font-semibold">Last 10 days</td><td>Parasite treatments + origin health certificate</td></tr>
                   <tr><td className="font-semibold">Travel day</td><td>Manifest cargo; sample and permit both still in date</td></tr>
                 </tbody>
@@ -1069,7 +1069,7 @@ export default function ImportRequirementsPage() {
               <ul className="text-[#5A5A5A] space-y-1">
                 <li><strong>Fee:</strong> confirm the current permit and arrival-release amounts on the official MOCCAE portal</li>
                 <li><strong>Processing:</strong> typically estimated at 2–5 working days (not a first-party SLA)</li>
-                <li><strong>Validity:</strong> 30 days from issuance</li>
+                <li><strong>Validity:</strong> 90 days from issuance</li>
               </ul>
             </div>
 
@@ -1305,7 +1305,7 @@ export default function ImportRequirementsPage() {
               </p>
               <div className="warning-box">
                 <p className="text-sm text-[#2A2A2A]">
-                  Outdated blogs still describe a 90-day permit or a 90-day wait after the titer. This page uses the locked rules: 30-day permit validity and a sample taken within 90 days before travel.
+                  Outdated blogs still describe a 30-day permit or a 90-day wait after the titer. This page uses the locked first-party rules: import permit valid 90 days from issuance, and — when a titer is required — a sample taken within 90 days before travel.
                 </p>
               </div>
             </div>
@@ -1342,7 +1342,7 @@ export default function ImportRequirementsPage() {
             </Link>
             <Link to="/guides/moccae-import-permit/" className="bg-white rounded-[20px] p-6 hover:shadow-md transition-shadow">
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">MOCCAE import permit guide</h3>
-              <p className="text-sm text-[#5A5A5A]">UAE Pass walkthrough and rejection reasons for the 30-day permit.</p>
+              <p className="text-sm text-[#5A5A5A]">UAE Pass walkthrough and rejection reasons for the 90-day permit.</p>
             </Link>
             <Link to="/guides/rabies-titer-test-dubai/" className="bg-white rounded-[20px] p-6 hover:shadow-md transition-shadow">
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Rabies titer test (RNATT)</h3>
@@ -1393,7 +1393,7 @@ export default function ImportRequirementsPage() {
             />
             <FAQItem
               question="What is the MOCCAE import permit for pets?"
-              answer="The MOCCAE import permit is a mandatory approval from the UAE Ministry of Climate Change and Environment required for all pets entering the UAE. It is valid for 30 days from issuance. Confirm the current permit and arrival-release fees on the official portal before you apply. You must apply online via the MOCCAE portal or app before your pet travels."
+              answer="The MOCCAE import permit is a mandatory approval from the UAE Ministry of Climate Change and Environment required for all pets entering the UAE. It is valid for 90 days from issuance. Confirm the current permit and arrival-release fees on the official portal before you apply. You must apply online via the MOCCAE portal or app before your pet travels."
             />
             <FAQItem
               question="Is a rabies titer test required for Dubai?"
@@ -1401,7 +1401,7 @@ export default function ImportRequirementsPage() {
             />
             <FAQItem
               question="What documents are needed to bring a cat to the UAE?"
-              answer="A cat needs the same federal pack as a dog, with feline core vaccines (panleukopenia, rhinotracheitis, calicivirus) instead of the canine set: MOCCAE import permit (30-day validity), ISO microchip implanted before rabies, rabies certificate (12 weeks + 21 days), health certificate, parasite treatments within 10 days before shipping, and the owner's passport / UAE visa details."
+              answer="A cat needs the same federal pack as a dog, with feline core vaccines (panleukopenia, rhinotracheitis, calicivirus) instead of the canine set: MOCCAE import permit (90-day validity), ISO microchip implanted before rabies, rabies certificate (12 weeks + 21 days), health certificate, parasite treatments within 10 days before shipping, and the owner's passport / UAE visa details."
             />
             <FAQItem
               question="How long does preparing a UAE import file take?"

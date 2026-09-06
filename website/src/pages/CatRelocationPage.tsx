@@ -262,7 +262,7 @@ export default function CatRelocationPage() {
               <p>If your cat is already microchipped and vaccinated, great — we'll verify the dates. If not, we connect you with a vetted vet partner in your country who knows export requirements. Every certificate must show the same microchip number. We check this three times.</p>
             </Step>
             <Step number={3} title="MOCCAE Import Permit (Days 14–21)">
-              <p>We apply for your cat's MOCCAE import permit online. This is a mandatory approval from the UAE Ministry of Climate Change and Environment. The permit costs AED 200 per pet and is valid for 30 days from issuance (a release fee of AED 250/cat is also payable on arrival). We handle the submission, track the status, and confirm approval — so you don't have to navigate the portal yourself.</p>
+              <p>We apply for your cat's MOCCAE import permit online. This is a mandatory approval from the UAE Ministry of Climate Change and Environment. The permit costs AED 200 per pet and is valid for 90 days from issuance (a release fee of AED 250/cat is also payable on arrival). We handle the submission, track the status, and confirm approval — so you don't have to navigate the portal yourself.</p>
             </Step>
             <Step number={4} title="Flight Booking & Crate Fitting (Days 21–28)">
               <p>We book your cat's flight as manifest cargo — the only way cats can enter Dubai. We choose morning departures to avoid heat, and we confirm the airline's cat-specific policies in writing. We provide an IATA-approved travel crate sized to your cat, or we verify that yours meets standards. We label it correctly, attach feeding instructions, and include a familiar item from home if you provide one.</p>
@@ -298,7 +298,7 @@ export default function CatRelocationPage() {
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="w-10 h-10 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold mb-4">1</div>
               <h3 className="text-base font-semibold text-[#2A2A2A] mb-2">MOCCAE Import Permit</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">A mandatory approval from the UAE Ministry of Climate Change and Environment. Cost: confirm current permit and arrival-release fees on the official MOCCAE portal. Valid: 30 days from issuance. We apply for this on your behalf.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">A mandatory approval from the UAE Ministry of Climate Change and Environment. Cost: confirm current permit and arrival-release fees on the official MOCCAE portal. Valid: 90 days from issuance. We apply for this on your behalf.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div className="w-10 h-10 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold mb-4">2</div>

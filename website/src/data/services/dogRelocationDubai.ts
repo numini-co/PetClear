@@ -141,7 +141,7 @@ const dogRelocationDubai: ServicePageData = {
             'Core vaccinations (DHPPiL) recorded in the vaccination booklet',
             'Rabies antibody titer test for high-risk countries — drawn 21+ days post-vaccination, result greater than or equal to 0.5 IU/ml, valid 365 days',
             'Government veterinary health certificate from the origin country, issued close to travel',
-            'MOCCAE import permit (valid 30 days) for entering the UAE, or an export certificate for leaving',
+            'MOCCAE import permit (valid 90 days from issuance) for entering the UAE, or an export certificate for leaving',
           ],
         },
         {
