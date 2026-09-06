@@ -52,8 +52,9 @@ interface ChecklistStep {
 
 /* ─── Page ─── */
 export default function ImportChecklistGuide() {
-  const title = 'Pet Import Documents Checklist for Dubai — Step-by-Step (2026)'
-  const description = 'A checkable, ordered documents checklist to import a pet to Dubai: microchip, rabies vaccination, titer test, MOCCAE import permit, health certificate, IATA crate, cargo booking, and arrival clearance. Timing notes and a documents summary table.'
+  const title = 'Pet Import Documents Checklist Dubai | 2026 Steps'
+  const description =
+    'Pet import documents checklist for Dubai: microchip, rabies, titer, 30-day MOCCAE permit, health certificate, crate, and cargo clearance.'
   const canonical = `${BASE_URL}/guides/pet-import-documents-checklist/`
   const ogImage = `${BASE_URL}/assets/og-import-checklist.jpg`
 
@@ -195,7 +196,7 @@ export default function ImportChecklistGuide() {
   const schemas = [faqSchema, breadcrumbSchema, howToSchema]
 
   const meta = {
-    title: 'Pet Import Documents Checklist for Dubai (2026)',
+    title,
     description,
     canonical,
     ogImage,

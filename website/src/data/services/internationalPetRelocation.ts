@@ -2,12 +2,12 @@ import type { ServicePageData } from '../../types/servicePage.ts'
 
 const internationalPetRelocation: ServicePageData = {
   slug: 'international-pet-relocation',
-  seoTitle: 'International Pet Relocation Dubai | Global Service',
+  seoTitle: 'International Pet Relocation Dubai | 50+ Routes',
   metaDescription:
-    'Worldwide pet relocation to and from Dubai. Destination-by-destination requirement checks, full documentation, vetted partners, door-to-door coordination.',
+    'International pet relocation Dubai: export/import coordination across major corridors with clear document timelines.',
   keywords:
     'international pet relocation dubai, worldwide pet relocation, global pet transport, overseas pet relocation, pet cargo dubai, pet relocation international',
-  h1: 'Global Pet Relocation Services',
+  h1: 'International Pet Relocation from Dubai',
   primaryKeyword: 'international pet relocation dubai',
   heroValueProp:
     'Relocating a dog or cat across borders to or from Dubai? We coordinate documentation, permits, airline-approved crates and customs for your exact destination — connecting you with vetted partners and pet-experienced airlines, and keeping you updated on WhatsApp at every step.',

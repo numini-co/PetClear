@@ -9,7 +9,7 @@ import Hero from '../components/Hero.tsx'
 
 export default function UKToDubai() {
   const pageUrl = `${BASE_URL}/routes/uk-to-dubai/`
-  const pageTitle = 'UK to Dubai Pet Relocation — Complete Guide 2026'
+  const pageTitle = 'Pet Relocation UK to Dubai | Guide 2026'
   const pageDescription = 'Relocate your pet from the UK to Dubai. Low-risk route: no titer test, 21-day rabies wait, direct BA/EK flights from LHR. Costs, documents and timeline.'
   const keywords = 'UK to Dubai pet relocation, pet transport UK to Dubai, British pet relocation Dubai, BA pet cargo Dubai, Emirates pet transport UK, UK pet import Dubai, London to Dubai pet travel, dog relocation UK to Dubai, cat relocation UK to Dubai'
 

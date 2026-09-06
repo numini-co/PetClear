@@ -74,9 +74,9 @@ const faqData = [
 ]
 
 export default function TiterTestGuide() {
-  const title = 'Rabies Titer Test (RNATT) for Dubai Pet Travel'
+  const title = 'Rabies Titer Test Dubai | Sample Within 90 Days'
   const description =
-    'Rabies titer (RNATT) for UAE import: sample within 90 days before travel, result ≥0.5 IU/ml. Timing rule locked — not a 90-day wait after the test. Confirm your origin on the MOCCAE portal.'
+    'Rabies titer test Dubai (RNATT): sample within 90 days before travel, result ≥0.5 IU/ml. Not a 90-day wait after the test.'
   const canonical = `${BASE_URL}/guides/rabies-titer-test-dubai/`
   const ogImage = `${BASE_URL}/assets/og-titer-test.jpg`
 
@@ -195,7 +195,7 @@ export default function TiterTestGuide() {
         image="/assets/w5/rabies-titer-test-rnatt-explained-diagram.png"
         imageAlt="How the rabies titer test (RNATT) works: blood sample, accredited lab, 0.5 IU/ml pass threshold"
         eyebrow="Titer timing guide"
-        title="Rabies Titer Test (RNATT) for Dubai — Sample Within 90 Days Before Travel"
+        title="Rabies Titer Test Dubai — Sample Within 90 Days Before Travel"
         subtitle="The locked rule is the sample date, not a 90-day sit after the result. Threshold: ≥0.5 IU/ml. Confirm whether your origin requires the test on the MOCCAE portal."
         updated={LAST_VERIFIED_LABEL}
         whatsappMessage="Hi Dubai Pet Relocation, I need the correct rabies titer (RNATT) timing for importing my pet to Dubai. Origin country: [country]."

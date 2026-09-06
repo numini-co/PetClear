@@ -41,8 +41,9 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 /* ─── Page ─── */
 export default function ExportPermitGuide() {
-  const title = 'UAE Pet Export Permit — Leaving Dubai With Your Pet (2026 Guide)'
-  const description = 'How to get a UAE pet export permit (MOCCAE export health certificate) to leave Dubai with your dog or cat. Application, airport inspection, the export health certificate, destination rules, timeline, costs, and common mistakes.'
+  const title = 'UAE Pet Export Permit | Leaving Dubai With Your Pet'
+  const description =
+    'UAE pet export permit: MOCCAE export health certificate, airport inspection, and destination-first rules when leaving Dubai.'
   const canonical = `${BASE_URL}/guides/uae-pet-export-permit/`
   const ogImage = `${BASE_URL}/images/service-pet-export-dubai.jpg`
 

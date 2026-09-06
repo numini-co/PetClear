@@ -42,8 +42,9 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 /* ─── Page ─── */
 export default function PetVaccinationGuide() {
-  const title = 'Pet Vaccination Requirements for UAE Entry — Dubai Guide (2026)'
-  const description = 'Complete guide to pet vaccination requirements for UAE entry. Rabies timing vs microchip, vaccine validity and minimum age, core vaccines for dogs and cats, the rabies titer test for high-risk countries, common timing mistakes, and how Dubai Pet Relocation plans your vaccination timeline.'
+  const title = 'Pet Vaccination Requirements UAE | Dubai Entry Guide'
+  const description =
+    'Pet vaccination requirements for UAE entry: rabies after microchip, validity, core vaccines, and titer timing for high-risk origins.'
   const canonical = `${BASE_URL}/guides/pet-vaccination-requirements-uae/`
   const ogImage = `${BASE_URL}/assets/og-pet-vaccination.jpg`
 
@@ -112,7 +113,7 @@ export default function PetVaccinationGuide() {
   const schemas = [faqSchema, breadcrumbSchema, articleSchema]
 
   const meta = {
-    title: 'Pet Vaccination Requirements for UAE Entry (2026)',
+    title,
     description,
     canonical,
     ogImage,
@@ -130,7 +131,7 @@ export default function PetVaccinationGuide() {
         image="/images/guide-titer.jpg"
         imageAlt="A veterinarian preparing a vaccination for a calm dog before travel to Dubai"
         eyebrow="Pet Relocation Guide"
-        title="Pet Vaccination Requirements for UAE Entry"
+        title="Pet Vaccination Requirements UAE — Dubai Entry Guide"
         subtitle="Rabies timing, validity and minimum age, the core vaccines dogs and cats need, and where the titer test fits in — explained clearly so nothing invalidates your move."
         updated="Updated June 2026"
       />

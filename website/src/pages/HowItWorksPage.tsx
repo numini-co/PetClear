@@ -296,8 +296,8 @@ export default function HowItWorksPage() {
   return (
     <div className="bg-[#F5F6FD]">
       <SEOHead
-        title="How Pet Relocation Works in Dubai | 7-Step Process"
-        description="Our transparent 7-step pet relocation process for Dubai: free consultation, document check, partner matching, booking, pre-travel prep, travel day, and arrival."
+        title="How Pet Relocation Works in Dubai | 7 Clear Steps"
+        description="How does pet relocation work in Dubai? Seven steps from breed check to municipality registration."
         keywords="how pet relocation works, pet relocation process Dubai, dog relocation steps, cat relocation process, pet transport Dubai steps"
         canonical={`${BASE_URL}/how-it-works/`}
         ogType="article"
@@ -310,7 +310,7 @@ export default function HowItWorksPage() {
         image="/images/how-it-works-hero.jpg"
         imageAlt="A dog beside a travel crate and a checklist, representing the step-by-step relocation process"
         eyebrow="How It Works"
-        title="How Pet Relocation Works in Dubai: A Clear, Step-by-Step Guide"
+        title="How Pet Relocation Works in Dubai — Step-by-Step"
         subtitle="Your pet relocation coordination service — we coordinate a team of vetted specialists so you don't manage five companies from your phone at 2 AM."
         updated="Updated June 2026"
         whatsappMessage={heroWaText}

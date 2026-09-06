@@ -2,12 +2,12 @@ import type { ServicePageData } from '../../types/servicePage.ts'
 
 const petRelocationDubai: ServicePageData = {
   slug: 'pet-relocation-dubai',
-  seoTitle: 'Pet Relocation Dubai | Door-to-Door Dog & Cat Relocation',
+  seoTitle: 'Pet Relocation Dubai | Door-to-Door Dog & Cat Moves',
   metaDescription:
-    'Door-to-door pet relocation in Dubai: MOCCAE document checks, IATA-compliant crates, cargo booking coordination, and clear WhatsApp timelines. Get a relocation quote.',
+    'Pet relocation Dubai for dogs and cats: permits, crates, airline booking, and arrival support. WhatsApp +971504782999.',
   keywords:
     'pet relocation dubai, pet relocation services dubai, pet shipping dubai, pet movers dubai, door to door pet relocation dubai',
-  h1: 'Pet Relocation in Dubai — Door-to-Door, Transparently Coordinated',
+  h1: 'Pet Relocation Dubai — Door-to-Door Coordination',
   primaryKeyword: 'pet relocation dubai',
   heroValueProp:
     'Door-to-door pet relocation in Dubai is a coordinated sequence: document checks, MOCCAE permit timing, IATA crate sizing, cargo booking, and WhatsApp updates — not a mystery quote.',

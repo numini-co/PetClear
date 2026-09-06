@@ -80,7 +80,7 @@ export default function CatRelocationPage() {
     <div className="bg-[#F5F6FD]">
       <SEOHead
         canonical={`${BASE_URL}/cat-relocation-to-dubai/`}
-        title="Cat Relocation to Dubai | Complete Guide 2026 | Dubai Pet Relocation"
+        title="Cat Relocation to Dubai | Complete Guide 2026"
         description="Expert guide to relocating your cat to Dubai. Sedation guidance, crate comfort, airline policies, MOCCAE requirements, and everything you need for a safe, stress-free journey."
         keywords="cat relocation to Dubai, bring cat to Dubai, cat import Dubai, Dubai cat relocation, pet cat transport Dubai, moving cat to UAE"
         ogType="article"

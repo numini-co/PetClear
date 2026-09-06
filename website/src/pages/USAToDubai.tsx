@@ -9,7 +9,7 @@ import Hero from '../components/Hero.tsx'
 
 export default function USAToDubai() {
   const pageUrl = `${BASE_URL}/routes/usa-to-dubai/`
-  const pageTitle = 'USA to Dubai Pet Relocation — Complete Guide 2026'
+  const pageTitle = 'Pet Relocation USA to Dubai | Guide 2026'
   const pageDescription = 'Relocate your pet from the USA to Dubai. Low-risk route, rules vary by state. Emirates, Etihad, American Airlines. Costs, documents and timeline.'
   const keywords = 'USA to Dubai pet relocation, US pet transport Dubai, American pet relocation Dubai, Emirates pet cargo USA, Etihad pet transport, American Airlines pet cargo, dog relocation USA to Dubai, cat relocation USA to Dubai, pet shipping USA to UAE'
 

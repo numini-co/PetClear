@@ -22,10 +22,10 @@ import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 
 const PAGE_PATH = '/for-pet-relocators/'
 const PAGE_URL = `${BASE_URL}${PAGE_PATH}`
-const TITLE = 'Pet Relocation Partner Dubai | Network & Playbooks'
-const H1 = 'Pet relocation partner for Dubai & the UAE — playbooks and network access'
+const TITLE = 'Pet Relocation Partner Dubai | UAE Playbooks & Network'
+const H1 = 'Pet Relocation Partner Dubai — Playbooks & Network'
 const META =
-  'Become a Dubai/UAE pet relocation partner: MOCCAE, titer, crate and airline playbooks plus corridor network access. Peer education — WhatsApp to talk.'
+  'Pet relocation partner Dubai program: UAE playbooks for peers, corridor tips, and network access. Not for pet owners.'
 const WA_MESSAGE =
   "Hi Dubai Pet Relocation — I'm a pet relocator interested in your education / network access."
 

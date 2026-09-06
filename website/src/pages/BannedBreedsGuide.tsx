@@ -38,8 +38,9 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 /* ─── Page ─── */
 export default function BannedBreedsGuide() {
-  const title = 'Banned and Restricted Dog Breeds in Dubai — Complete 2026 Guide'
-  const description = 'Complete list of banned and restricted dog breeds in Dubai and the UAE. Learn about Dubai Municipality rules, fines, import restrictions, muzzle requirements, and how Dubai Pet Relocation can help with breed assessments.'
+  const title = 'Banned Dog Breeds UAE | Dubai Restricted List 2026'
+  const description =
+    'Banned dog breeds UAE: restricted and prohibited types for Dubai import, plus how to verify before you book.'
   const canonical = `${BASE_URL}/guides/banned-dog-breeds-dubai/`
   const ogImage = `${BASE_URL}/assets/og-banned-breeds.jpg`
 
@@ -134,7 +135,7 @@ export default function BannedBreedsGuide() {
         image="/images/guide-banned-breeds.jpg"
         imageAlt="A calm leashed dog with its owner in a Dubai park, representing responsible ownership of restricted breeds"
         eyebrow="Pet Relocation Guide"
-        title="Banned and Restricted Dog Breeds in Dubai — Complete 2026 Guide"
+        title="Banned Dog Breeds in the UAE (Dubai) — 2026 Guide"
         subtitle="Some breeds are completely prohibited; others face strict muzzle, insurance, and housing rules under Dubai Municipality and UAE federal law."
         updated="Updated June 2026"
       />

@@ -44,8 +44,9 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 /* ─── Page ─── */
 export default function CustomsClearanceGuide() {
-  const title = 'Pet Customs Clearance at Dubai Airport — Cargo Terminal Guide (2026)'
-  const description = 'How pet customs clearance works at Dubai airport. The DXB/DWC cargo terminal process, documents checked on arrival, the MOCCAE release fee, clearance timeline on the day, and how Dubai Pet Relocation handles clearance and handover.'
+  const title = 'Pet Customs Clearance Dubai | DXB & DWC Cargo'
+  const description =
+    'Pet customs clearance at Dubai airport: DXB/DWC cargo steps, documents checked, and typical release timing. Confirm official fees.'
   const canonical = `${BASE_URL}/guides/pet-customs-clearance-dubai/`
   const ogImage = `${BASE_URL}/images/service-pet-transport-dubai.jpg`
 
@@ -114,7 +115,7 @@ export default function CustomsClearanceGuide() {
   const schemas = [faqSchema, breadcrumbSchema, articleSchema]
 
   const meta = {
-    title: 'Pet Customs Clearance at Dubai Airport — Cargo Terminal Guide (2026)',
+    title,
     description,
     canonical,
     ogImage,
@@ -132,7 +133,7 @@ export default function CustomsClearanceGuide() {
         image="/images/service-pet-transport-dubai.jpg"
         imageAlt="Pet travel crate being handled at the Dubai airport cargo terminal during customs clearance"
         eyebrow="Pet Relocation Guide"
-        title="Pet Customs Clearance at Dubai Airport"
+        title="Pet Customs Clearance Dubai — DXB & DWC Cargo"
         subtitle="Your pet lands as cargo, not in the cabin. Here's exactly how clearance works at the DXB and DWC cargo terminals — the documents checked, the release fee, the timeline, and the handover."
         updated="Updated June 2026"
       />

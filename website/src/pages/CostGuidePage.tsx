@@ -214,8 +214,8 @@ export default function CostGuidePage() {
   return (
     <div>
       <SEOHead
-        title="Pet Relocation Cost Dubai 2026 | Transparent Price Guide"
-        description="Complete 2026 cost guide for pet relocation to Dubai. Transparent breakdown of government fees, vet costs, cargo shipping, and our service fee."
+        title="Pet Relocation Dubai Cost | 2026 AED Breakdown"
+        description="Pet relocation Dubai cost ranges by route and mode. Confirm MOCCAE/airline fees on official sources — no invented prices."
         keywords="pet relocation cost Dubai, dog relocation cost, cat relocation cost, pet transport price Dubai, how much to relocate pet to Dubai"
         canonical={`${BASE_URL}/guides/pet-relocation-cost-dubai/`}
         ogType="article"
@@ -226,7 +226,7 @@ export default function CostGuidePage() {
         image="/images/cost-hero.jpg"
         imageAlt="Pet owner reviewing transparent Dubai pet relocation costs"
         eyebrow="Pet Relocation Guide"
-        title="How Much Does It Cost to Bring a Dog or Cat to Dubai? 2026 Price Breakdown"
+        title="Pet Relocation Dubai Cost — Transparent 2026 Guide"
         subtitle="A Dubai pet move is government, veterinary, freight, crate, handling and coordination — not one ticket. Contested MOCCAE fees are confirmed on the portal. Our package is Get a Quote."
         updated="Updated September 2026"
       />

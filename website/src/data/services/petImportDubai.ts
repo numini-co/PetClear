@@ -16,13 +16,13 @@ import {
 
 const petImportDubai: ServicePageData = {
   slug: 'pet-import-dubai',
-  seoTitle: 'Pet Import Dubai | MOCCAE Permit & Customs Clearance (2026)',
+  seoTitle: 'Pet Import Services Dubai | MOCCAE & Customs Clearance',
   metaDescription:
-    'Commercial pet import to Dubai: MOCCAE 30-day permit, titer sample timing, cargo clearance at DXB and door delivery. Message us on WhatsApp for a relocation quote.',
+    'Pet import services Dubai: MOCCAE 30-day permit help, titer timing, and DXB/AUH clearance coordination.',
   keywords:
-    'pet import dubai, pet import UAE, how to import a pet to UAE, MOCCAE import permit application, import pet to dubai, pet customs dubai',
+    'pet import services Dubai, pet import dubai, pet import UAE, how to import a pet to UAE, MOCCAE import permit application, import pet to dubai, pet customs dubai',
   h1: 'Pet Import Services in Dubai',
-  primaryKeyword: 'pet import dubai',
+  primaryKeyword: 'pet import services Dubai',
   heroValueProp:
     'Commercial import into the UAE: we sequence the 30-day MOCCAE permit, titer sample window, manifested cargo and DXB clearance so your dog or cat is released to a Dubai door — not left in a cargo hall.',
   // Blocked original-photo placeholder — AI substitute not used for this hero.

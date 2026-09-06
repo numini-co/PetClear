@@ -2,12 +2,12 @@ import type { ServicePageData } from '../../types/servicePage.ts'
 
 const petTransportDubai: ServicePageData = {
   slug: 'pet-transport-dubai',
-  seoTitle: 'Pet Taxi & Pet Transport Dubai | DXB, DWC & UAE',
+  seoTitle: 'Pet Taxi Dubai | Airport & UAE Pet Transport',
   metaDescription:
-    'Pet taxi and pet transport across Dubai: climate-controlled transfers, DXB/DWC airport runs, and Dubai–Abu Dhabi inter-emirate trips. WhatsApp a relocation coordinator.',
+    'Pet taxi Dubai for airport runs and UAE pet transport. Climate-controlled vehicles; WhatsApp +971504782999.',
   keywords:
     'pet taxi dubai, pet transport dubai, pet transport UAE, pet transport Dubai to Abu Dhabi, airport pet pickup dubai, pet courier dubai',
-  h1: 'Pet Taxi & Pet Transport Services in Dubai and the UAE',
+  h1: 'Pet Taxi Dubai — DXB, DWC & Inter-Emirate Transport',
   primaryKeyword: 'pet taxi dubai',
   heroValueProp:
     'Pet taxi Dubai is the primary local job on this page: climate-controlled ground transfers, DXB and DWC airport runs, and Dubai–Abu Dhabi trips — not international cargo.',

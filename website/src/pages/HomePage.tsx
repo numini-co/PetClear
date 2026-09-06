@@ -192,9 +192,9 @@ export default function HomePage() {
     <div>
       <SEOHead
         meta={{
-          title: 'Pet Relocation Dubai — Clear Coordination for Dogs & Cats',
+          title: 'Pet Relocation Dubai | Transparent Dog & Cat Moves',
           description:
-            'Plan pet relocation to and from Dubai. MOCCAE-aware document checks, route guidance, and WhatsApp timelines — get a relocation quote.',
+            'Pet relocation Dubai with clear MOCCAE steps, flight options, and WhatsApp coordination. Get a relocation quote.',
           keywords: 'pet relocation Dubai, pet relocation UAE, dog relocation Dubai, cat relocation Dubai, MOCCAE import permit',
           canonical: `${BASE_URL}/`,
           ogType: 'website',
@@ -207,7 +207,7 @@ export default function HomePage() {
         image="/images/hero-dog.jpg"
         imageAlt="Calm golden retriever ready for relocation beside its travel crate in a bright Dubai home"
         eyebrow="Pet relocation coordination for Dubai and the UAE"
-        title="Pet Relocation Dubai, Made Clear and Safe"
+        title="Pet Relocation Dubai — Clear Coordination for Dogs & Cats"
         subtitle="Plan pet relocation to and from Dubai with MOCCAE-aware document checks, route guidance and WhatsApp timelines — then open the service page that owns your move."
         primaryLabel="Get a Relocation Quote"
         secondary={{ label: 'Check Your Route', to: '/routes/' }}

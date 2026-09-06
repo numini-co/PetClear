@@ -42,8 +42,9 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 /* ─── Page ─── */
 export default function QuarantineRulesGuide() {
-  const title = 'UAE Pet Quarantine Rules — Does Dubai Quarantine Pets? (2026)'
-  const description = 'Does the UAE quarantine pets? No — if your pet is fully compliant. Learn exactly what compliance means, what triggers detention or refusal at the airport, the high-risk-country titer pathway, and how Dubai Pet Relocation guarantees a no-quarantine arrival.'
+  const title = 'UAE Pet Quarantine Rules | Does Dubai Quarantine Pets?'
+  const description =
+    'UAE pet quarantine rules: no automatic quarantine when the file is complete. Detention risk if papers mismatch. Confirm current rules on official sources.'
   const canonical = `${BASE_URL}/guides/pet-quarantine-rules-uae/`
   const ogImage = `${BASE_URL}/assets/og-quarantine-rules.jpg`
 
@@ -173,7 +174,7 @@ export default function QuarantineRulesGuide() {
   const schemas = [faqSchema, breadcrumbSchema, articleSchema]
 
   const meta = {
-    title: 'UAE Pet Quarantine Rules — Does Dubai Quarantine Pets? (2026)',
+    title,
     description,
     canonical,
     ogImage,

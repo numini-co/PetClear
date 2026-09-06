@@ -9,8 +9,9 @@ import OfficialSources from '../components/OfficialSources.tsx'
 
 export default function SouthAfricaToDubai() {
   const pageUrl = `${BASE_URL}/routes/south-africa-to-dubai/`
-  const pageTitle = 'South Africa to Dubai Pet Relocation — Complete Guide 2026'
-  const pageDescription = 'Relocate your pet from South Africa to Dubai. High-risk route: titer test (RNATT), 90-day wait, wildlife regulations. SAA, Emirates. Full cost guide.'
+  const pageTitle = 'Pet Relocation South Africa to Dubai | Guide 2026'
+  const pageDescription =
+    'Relocate your pet from South Africa to Dubai. High-risk: titer sample within 90 days before travel ≥0.5 IU/ml. SAA, Emirates.'
   const keywords = 'South Africa to Dubai pet relocation, pet transport South Africa to Dubai, SA pet relocation Dubai, titer test South Africa Dubai, SAA pet cargo Dubai, Emirates pet transport South Africa, dog relocation South Africa to Dubai, cat relocation South Africa to Dubai, wildlife regulations SA Dubai'
 
   const faqs = [

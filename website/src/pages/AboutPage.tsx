@@ -79,8 +79,9 @@ export default function AboutPage() {
     <div>
       <SEOHead
         meta={{
-          title: 'About Dubai Pet Relocation | Pet Relocation Coordination Dubai',
-          description: 'Learn about Dubai Pet Relocation — a Dubai-based coordination built by pet owners who understand moving with animals. Transparent, partner-matched, animal-first.',
+          title: 'Dubai Pet Relocation Company | About Our Coordinators',
+          description:
+            'Dubai pet relocation company focused on clear MOCCAE timelines, airline options, and WhatsApp coordination (+971504782999).',
           keywords: 'about Dubai Pet Relocation, pet relocation company Dubai, pet coordination Dubai, who is Dubai Pet Relocation, pet relocation experts UAE',
           canonical: `${BASE_URL}/about/`,
           ogType: 'website',
@@ -95,7 +96,7 @@ export default function AboutPage() {
         image="/images/about-hero.jpg"
         imageAlt="A happy dog and cat relaxing at home in Dubai, well cared for during their relocation"
         eyebrow="About Us"
-        title="About Dubai Pet Relocation — Transparent Pet Relocation for Dubai"
+        title="About Dubai Pet Relocation — A Dubai Pet Relocation Company"
         subtitle="A small Dubai team of pet owners and logistics experts, making pet relocation clear instead of confusing, opaque, and stressful."
       />
 
