@@ -101,7 +101,7 @@ export default function DogRelocationPage() {
       <SEOHead
         canonical={`${BASE_URL}/dog-relocation-to-dubai/`}
         title="Dog Relocation to Dubai | Complete Guide 2026"
-        description="Expert guide to relocating your dog to Dubai. Breed checks, crate sizing, MOCCAE import permit, flight booking, banned breeds, and everything you need for a safe journey."
+        description="Dog relocation to Dubai: breed checks, crate sizing, MOCCAE permit, cargo booking and banned-breed rules. WhatsApp +971504782999."
         keywords="dog relocation to Dubai, bring dog to Dubai, dog import Dubai, Dubai dog relocation, pet dog transport Dubai, banned dog breeds Dubai"
         ogType="article"
         schemas={[
@@ -114,7 +114,7 @@ export default function DogRelocationPage() {
                 name: "How long does it take to relocate a dog to Dubai?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "From low-risk countries (UK, EU, USA, Canada, Australia, New Zealand), the minimum timeline is 4–6 weeks. This includes microchip implantation, rabies vaccination (21-day wait), MOCCAE import permit application, and international health certificate. From high-risk countries, the minimum timeline is 4 months due to the rabies titer test (RNATT) and mandatory 90-day waiting period from the date of blood sampling. We recommend starting the process 8–12 weeks before your planned move."
+                  text: "From low-risk countries (UK, EU, USA, Canada, Australia, New Zealand), the minimum timeline is 4–6 weeks. This includes microchip implantation, rabies vaccination (21-day wait), MOCCAE import permit application, and international health certificate. From high-risk countries that require a titer, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a wait after the draw. We recommend starting the process 8–12 weeks before your planned move."
                 }
               },
               {
@@ -163,7 +163,7 @@ export default function DogRelocationPage() {
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "Dog Relocation to Dubai | Complete Guide 2026 | Dubai Pet Relocation",
-            description: "Expert guide to relocating your dog to Dubai. Breed checks, crate sizing, MOCCAE import permit, flight booking, banned breeds, and everything you need for a safe journey.",
+            description: "Dog relocation to Dubai: breed checks, crate sizing, MOCCAE permit, cargo booking and banned-breed rules. WhatsApp +971504782999.",
             url: "https://dubai-pet-relocation.ae/dog-relocation-to-dubai/",
             author: { "@type": "Organization", name: "Dubai Pet Relocation" },
             publisher: { "@type": "Organization", name: "Dubai Pet Relocation" }

@@ -5,7 +5,7 @@ const privateJetPetTravel: ServicePageData = {
   slug: 'private-jet-pet-travel',
   seoTitle: 'Private Jet Pet Travel Dubai | Quote-Only Coordination',
   metaDescription:
-    'Private jet pet travel Dubai when cabin, baggage or cargo will not work. Eligibility, documents, last mile. Quote only — no published jet prices.',
+    'Private jet pet travel Dubai when cabin, baggage or cargo will not work. Quote only — no published jet prices. WhatsApp +971504782999.',
   keywords:
     'private jet pet travel Dubai, private jet with dog UAE, fly pet private aircraft Dubai, dedicated aircraft pet travel',
   h1: 'Private Jet Pet Travel Dubai — Quote-Only Coordination',

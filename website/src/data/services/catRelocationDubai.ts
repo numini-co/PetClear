@@ -7,7 +7,7 @@ const catRelocationDubai: ServicePageData = {
     'Relocate your cat to or from Dubai with less stress: carrier acclimation, why vets advise against sedation, documents, costs and a clear timeline.',
   keywords:
     'cat relocation dubai, cat transport dubai, import cat to dubai, cat export dubai, cat travel dubai',
-  h1: 'Cat Relocation Services in Dubai',
+  h1: 'Cat Relocation Dubai',
   primaryKeyword: 'cat relocation dubai',
   heroValueProp:
     'Moving a cat to or from Dubai? Cats travel differently from dogs — calmer routes, careful carrier acclimation and no sedation. We map your documents and timeline, coordinate vetted partners and stay with you on WhatsApp, so the journey is as low-stress as possible for a sensitive animal.',
@@ -195,7 +195,7 @@ const catRelocationDubai: ServicePageData = {
     },
     {
       q: 'How long does cat relocation to Dubai take?',
-      a: 'From a low-risk country, often two to six weeks once vaccinations and documents are in order. From a high-risk rabies country that requires a titer test, plan for about four months because of the mandatory waiting period after the blood is drawn. We map your exact timeline backwards from your travel date.',
+      a: 'From a low-risk country, often two to six weeks once vaccinations and documents are in order. From a high-risk rabies country that requires a titer, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a wait after the draw. We map your exact timeline backwards from your travel date.',
     },
     {
       q: 'How much does cat relocation in Dubai cost?',

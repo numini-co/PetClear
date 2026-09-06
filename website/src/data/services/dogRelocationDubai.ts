@@ -7,7 +7,7 @@ const dogRelocationDubai: ServicePageData = {
     'Relocate your dog to or from Dubai safely: breed eligibility, IATA crate sizing, vaccination timeline, costs and the snub-nosed/summer airline rules.',
   keywords:
     'dog relocation dubai, dog transport dubai, import dog to dubai, dog export dubai, dog crate dubai',
-  h1: 'Dog Relocation Services in Dubai',
+  h1: 'Dog Relocation Dubai',
   primaryKeyword: 'dog relocation dubai',
   heroValueProp:
     'Moving a dog to or from Dubai? We check breed eligibility against the official UAE rules, size an IATA-compliant crate, map your vaccination timeline and flag the snub-nosed and summer airline restrictions before you book. Transparent pricing, vetted partners, WhatsApp at every step.',
@@ -196,7 +196,7 @@ const dogRelocationDubai: ServicePageData = {
     },
     {
       q: 'How long does dog relocation to Dubai take?',
-      a: 'From a low-risk country, often two to six weeks once vaccinations and documents are in order. From a high-risk rabies country that requires a titer test, plan for about four months because of the mandatory waiting period after the blood is drawn. We map your exact timeline backwards from your travel date.',
+      a: 'From a low-risk country, often two to six weeks once vaccinations and documents are in order. From a high-risk rabies country that requires a titer, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a wait after the draw. We map your exact timeline backwards from your travel date.',
     },
     {
       q: 'How much does dog relocation in Dubai cost?',

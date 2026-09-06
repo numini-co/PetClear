@@ -7,7 +7,7 @@ const petExportDubai: ServicePageData = {
     'Pet export Dubai: MOCCAE export health certificates, Fit to Fly, and flight booking coordination. Get a relocation quote.',
   keywords:
     'pet export dubai, export pet from dubai, leaving dubai with pet, pet export permit dubai, take pet out of dubai, pet export requirements uae',
-  h1: 'Pet Export Services from Dubai',
+  h1: 'Pet Export Dubai — Leave the UAE With Your Pet',
   primaryKeyword: 'pet export dubai',
   heroValueProp:
     'Leaving Dubai with your dog or cat? We guide you through MOCCAE export health certificates, the Fit to Fly check, the airport inspection and your flight booking — and stay with you on WhatsApp at every step. Transparent pricing, vetted partners, no last-minute surprises.',

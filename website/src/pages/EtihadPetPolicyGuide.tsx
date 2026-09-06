@@ -71,7 +71,7 @@ const faqData = [
 
 export default function EtihadPetPolicyGuide() {
   const canonical = `${BASE_URL}${FLIGHT_MODE_PATHS.cabin}`
-  const title = 'Etihad Pets in Cabin | Policy & AUH Arrival'
+  const title = 'Etihad Pet Policy | Cabin Pets & AUH Arrival'
   const description =
     'Etihad pets in cabin: the only UAE dog-and-cat cabin product. Confirm live cabin fees at booking. ≤8 kg including carrier; AUH arrival.'
 

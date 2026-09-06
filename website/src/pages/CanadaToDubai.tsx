@@ -2,6 +2,9 @@ import SEOHead from '../components/SEOHead.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import Hero from '../components/Hero.tsx'
+import RouteCostTeaser, { ROUTE_PACKAGE_COST_FAQ } from '../components/RouteCostTeaser.tsx'
+import LinkedText from '../components/LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL } from '../lib/seo.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint } from 'lucide-react'
 import { Link } from 'react-router-dom'
@@ -9,7 +12,7 @@ import OfficialSources from '../components/OfficialSources.tsx'
 
 export default function CanadaToDubai() {
   const pageUrl = `${BASE_URL}/routes/canada-to-dubai/`
-  const pageTitle = 'Canada to Dubai Pet Relocation — Complete Guide 2026'
+  const pageTitle = 'Pet Relocation Canada to Dubai | Guide 2026'
   const pageDescription = 'Relocate your pet from Canada to Dubai. Low-risk route with Canadian-specific CFIA requirements. Air Canada, Emirates. Costs, documents and timeline.'
   const keywords = 'Canada to Dubai pet relocation, pet transport Canada to Dubai, Canadian pet relocation Dubai, Air Canada pet cargo Dubai, Emirates pet transport Canada, CFIA pet export, dog relocation Canada to Dubai, cat relocation Canada to Dubai, pet shipping Canada to UAE'
 
@@ -32,7 +35,7 @@ export default function CanadaToDubai() {
     },
     {
       question: 'How much does it cost to relocate a pet from Canada to Dubai?',
-      answer: 'For a single pet, total costs typically range from AED 10,000 to AED 22,000 (CAD 3,700–8,200). This includes: veterinary prep (microchip + vaccines ~AED 500–1,000), Canadian health certificate and CFIA endorsement (~AED 1,000–2,000), UAE import permit (AED 500), air cargo freight (AED 6,000–14,000 depending on city and crate size), customs clearance in Dubai (AED 1,000–2,000), and optional Dubai Pet Relocation door-to-door service (AED 2,000–4,000). Toronto departures are generally cheaper than Vancouver due to shorter distance.'
+      answer: ROUTE_PACKAGE_COST_FAQ
     },
     {
       question: 'What documents are required for a Canadian pet to enter Dubai?',
@@ -57,7 +60,7 @@ export default function CanadaToDubai() {
         "name": faq.question,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": faq.answer
+          "text": stripInternalMarkdownLinks(faq.answer)
         }
       }))
     },
@@ -241,7 +244,7 @@ export default function CanadaToDubai() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>Toronto (YYZ) departures are generally cheaper and more convenient than Vancouver (YVR) due to shorter flight distance and more cargo capacity. If you have flexibility, flying from Toronto can save AED 2,000–4,000 in freight costs.</span>
+                  <span>Toronto (YYZ) departures are usually shorter than Vancouver (YVR) and often have more cargo capacity. If you have flexibility, ask for a Toronto versus Vancouver quote — we do not publish a freight saving band here.</span>
                 </li>
               </ul>
               <div className="mt-6 p-4 bg-[#4F5BD5]/10 rounded-xl">
@@ -254,100 +257,10 @@ export default function CanadaToDubai() {
         </div>
       </section>
 
-      {/* COST BREAKDOWN */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Pricing</span>
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Canada to Dubai Cost Breakdown</h2>
-            <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              Costs vary significantly by departure city and pet size. Toronto flights are cheaper than Vancouver. Contact Dubai Pet Relocation for a precise quote based on your Canadian location and pet details.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-[20px] shadow-sm overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full min-w-[640px] text-left">
-                <thead className="bg-[#F5F5F5]">
-                  <tr>
-                    <th className="px-6 py-4 text-sm font-semibold text-[#2A2A2A]">Service Item</th>
-                    <th className="px-6 py-4 text-sm font-semibold text-[#2A2A2A]">Small Pet (Cat / Small Dog)</th>
-                    <th className="px-6 py-4 text-sm font-semibold text-[#2A2A2A]">Medium Dog</th>
-                    <th className="px-6 py-4 text-sm font-semibold text-[#2A2A2A]">Large Dog</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[#EBEBEB]">
-                  <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Microchip + Rabies Vaccine</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 400–700</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500–800</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 600–1,000</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Health Certificate + CFIA Endorsement</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 900–1,800</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 900–1,800</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 900–1,800</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">UAE Import Permit (MOCCAE)</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 200</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Air Cargo (Toronto → DXB)</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 5,500–8,500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 7,500–12,000</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 10,000–17,000</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Air Cargo (Vancouver → DXB)</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 7,000–10,500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 9,500–14,000</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 13,000–20,000</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">IATA-Approved Travel Crate</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 300–500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500–900</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 900–1,500</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Dubai Customs Clearance</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 800–1,500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,000–1,800</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,200–2,000</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: Dubai Pet Relocation Door-to-Door</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,000–3,000</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,500–3,500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 3,000–5,000</td>
-                  </tr>
-                  <tr className="bg-[#4F5BD5]/5">
-                    <td className="px-6 py-4 text-sm font-bold text-[#2A2A2A]">Total (Toronto)</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 10,000–15,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 13,000–20,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 18,000–28,000</td>
-                  </tr>
-                  <tr className="bg-[#4F5BD5]/5">
-                    <td className="px-6 py-4 text-sm font-bold text-[#2A2A2A]">Total (Vancouver)</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 12,000–17,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 15,000–22,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 21,000–31,000</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div className="px-6 py-4 bg-[#F5F6FD] border-t border-[#EBEBEB]">
-              <p className="text-xs text-[#5A5A5A]">
-                * Prices are estimates in CAD and converted to AED. Toronto (YYZ) flights are cheaper due to shorter distance and more cargo capacity. Vancouver (YVR) and Montreal (YUL) are more expensive. Air cargo rates fluctuate with fuel surcharges and seasonal demand. Winter weather (November–March) may cause delays. Contact Dubai Pet Relocation for a precise quote based on your exact departure city and pet details.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <RouteCostTeaser
+        corridor="Canada to Dubai"
+        whatsappMessage="Hi Dubai Pet Relocation! I need a quote for relocating my pet from Canada to Dubai."
+      />
 
       {/* TIMELINE */}
       <section className="py-16 lg:py-24 bg-white">
@@ -495,7 +408,7 @@ export default function CanadaToDubai() {
                   <MessageCircle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-[#2A2A2A] text-base mb-2">{faq.question}</h3>
-                    <p className="text-[#5A5A5A] text-sm leading-relaxed">{faq.answer}</p>
+                    <p className="text-[#5A5A5A] text-sm leading-relaxed"><LinkedText text={faq.answer} /></p>
                   </div>
                 </div>
               </div>
@@ -560,9 +473,9 @@ export default function CanadaToDubai() {
               <p className="font-bold text-[#2A2A2A] mb-1">UK to Dubai</p>
               <p className="text-[#5A5A5A] text-sm">Low-risk route guide for pets relocating from Britain.</p>
             </Link>
-            <Link to="/routes/dubai-to-usa/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
-              <p className="font-bold text-[#2A2A2A] mb-1">Dubai to USA</p>
-              <p className="text-[#5A5A5A] text-sm">Exporting a pet from Dubai to North America.</p>
+            <Link to="/routes/dubai-to-canada/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">Exporting from Dubai to Canada</p>
+              <p className="text-[#5A5A5A] text-sm">The outbound twin — CFIA arrival rules, not this inbound file.</p>
             </Link>
           </div>
         </div>

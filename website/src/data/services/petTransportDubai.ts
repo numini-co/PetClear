@@ -199,6 +199,14 @@ const petTransportDubai: ServicePageData = {
   ],
   faq: [
     {
+      q: 'Is there a pet friendly taxi in Dubai?',
+      a: 'Yes — this page is the pet taxi Dubai product: a booked climate-controlled vehicle and handler for clinic, home, boarding or airport runs. It is not a regular ride-hailing car. We coordinate vetted partners; we do not claim to own the vans. WhatsApp +971504782999 with both addresses and the window.',
+    },
+    {
+      q: 'Which taxi service is pet friendly?',
+      a: 'Use a dedicated pet taxi, not a standard taxi app. This URL owns pet taxi Dubai and inter-emirate ground transfers. International cargo is a different product on [pet relocation services in Dubai](/service/pet-relocation-dubai/). Send pickup, drop-off and pet size for a quote.',
+    },
+    {
       q: 'Is a pet taxi the same as flying a pet as air cargo?',
       a: 'No. Pet taxi is a climate-controlled ground transfer inside the UAE — clinic, home, boarding or airport run. Air cargo is the default flight mode into Dubai. Compare cabin, baggage, cargo, jet and charter on the [pet flight options hub](/guides/pet-flight-options-dubai/). This page stays on the van.',
     },
