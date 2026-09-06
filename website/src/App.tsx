@@ -3,6 +3,7 @@ import { Navigate, Routes, Route } from 'react-router-dom'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/react'
 import Layout from './components/Layout.tsx'
+import ScrollToTop from './components/ScrollToTop.tsx'
 import NotFoundPage from './pages/NotFoundPage.tsx'
 
 // Core pages (V1)
@@ -65,6 +66,7 @@ import { dubaiAreas } from './data/areas/dubai/index.ts'
 export default function App() {
   return (
     <>
+    <ScrollToTop />
     <Layout>
       <Routes>
           {/* Core V1 pages */}
