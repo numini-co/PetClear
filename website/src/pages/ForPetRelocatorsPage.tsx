@@ -170,11 +170,12 @@ export default function ForPetRelocatorsPage() {
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-[14px] bg-[#E9ECFB]">
                 <FileCheck className="h-5 w-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="mb-2 text-lg font-bold text-[#2A2A2A]">MOCCAE import permit — 30 days</h3>
+              <h3 className="mb-2 text-lg font-bold text-[#2A2A2A]">MOCCAE import permit — 90 days</h3>
               <p className="mb-4 text-base leading-relaxed text-[#5A5A5A]">
-                Inbound UAE files need a Ministry import permit. Validity is 30 days from issuance, not a
-                ninety-day myth. The animal must enter inside that window. We teach how the permit sits next to
-                origin health papers and cargo dates — we do not paste a fee schedule on this page.
+                Inbound UAE files need a Ministry import permit. Validity is 90 days from issuance. The
+                animal must enter inside that window. That clock is not the titer sample window. We teach how
+                the permit sits next to origin health papers and cargo dates — we do not paste a fee schedule
+                on this page.
               </p>
               <Link to="/guides/moccae-import-permit/" className="text-sm font-semibold text-[#4F5BD5] hover:underline">
                 MOCCAE import permit guide

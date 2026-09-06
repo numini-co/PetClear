@@ -52,7 +52,7 @@ const mudon: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Most Mudon relocations are international — families arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The exact requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 30 days.',
+          text: 'Most Mudon relocations are international — families arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The exact requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days.',
         },
         {
           type: 'p',
@@ -98,7 +98,7 @@ const mudon: AreaPageData = {
     },
     {
       q: 'Can you handle the MOCCAE permit for me?',
-      a: 'Yes. We guide you through the MOCCAE import or export permit — which costs AED 200 per pet and is valid for 30 days — or handle the application on your behalf depending on your service tier.',
+      a: 'Yes. We guide you through the MOCCAE import or export permit — which costs AED 200 per pet and is valid for 90 days from issuance — or handle the application on your behalf depending on your service tier.',
     },
   ],
   relatedAreas: [

@@ -174,7 +174,7 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
                 </Link>
                 , the{' '}
                 <Link className="font-semibold text-[#4F5BD5]" to="/guides/moccae-import-permit/">
-                  MOCCAE 30-day import permit
+                  MOCCAE 90-day import permit
                 </Link>
                 , and the{' '}
                 <Link className="font-semibold text-[#4F5BD5]" to="/guides/rabies-titer-test-dubai/">

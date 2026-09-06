@@ -39,7 +39,7 @@ const sportsCity: AreaPageData = {
     {
       h2: 'Moving To or From Dubai Sports City With a Pet',
       body: [
-        { type: 'p', text: 'Most Sports City relocations are international — residents arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 30 days.' },
+        { type: 'p', text: 'Most Sports City relocations are international — residents arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days.' },
         { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan for around four months because of the mandatory waiting period. We map your exact timeline before you commit so there are no surprises.' },
       ],
     },
@@ -61,7 +61,7 @@ const sportsCity: AreaPageData = {
     { q: 'How long does pet relocation from Dubai Sports City take?', a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan for about four months because of the mandatory waiting period.' },
     { q: 'Can you relocate both apartment cats and larger dogs?', a: 'Yes. Sports City is a mix of apartments and villas, so we handle everything from apartment cats and small dogs to larger breeds — sizing the right IATA-compliant crate and allowing extra acclimation time where needed.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 per pet depending on route, pet size and service level. Government charges include the MOCCAE permit at around AED 200 per pet plus a release fee of roughly AED 700 per dog or AED 450 per cat. We give you a clear range on WhatsApp before you commit.' },
-    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit — which is valid for 30 days — or handle the application on your behalf depending on your service tier.' },
+    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import permit (valid 90 days from issuance) or export certificate — or handle the application on your behalf depending on your service tier.' },
   ],
   relatedAreas: [
     { label: 'Victory Heights', to: '/dubai/victory-heights/' },

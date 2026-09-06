@@ -249,7 +249,7 @@ export default function CostGuidePage() {
             </div>
             <h3 className="font-bold text-[#2A2A2A] mb-2">Government</h3>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
-              MOCCAE import permit (valid 30 days) and arrival release. Published amounts have differed — confirm the live
+              MOCCAE import permit (valid 90 days) and arrival release. Published amounts have differed — confirm the live
               fee on the official portal. Municipality registration is a separate, small post-arrival step.
             </p>
           </Card>
@@ -386,7 +386,7 @@ export default function CostGuidePage() {
                 </tr>
               </thead>
               <tbody>
-                <tr><td>MOCCAE Import Permit</td><td>Verify on portal</td><td>Official approval to bring your pet into the UAE. Mandatory. Valid 30 days from issuance. Confirm the current fee on the official MOCCAE portal — published amounts have differed.</td><td>Before travel</td></tr>
+                <tr><td>MOCCAE Import Permit</td><td>Verify on portal</td><td>Official approval to bring your pet into the UAE. Mandatory. Valid 90 days from issuance. Confirm the current fee on the official MOCCAE portal; fees may change.</td><td>Before travel</td></tr>
                 <tr><td>MOCCAE Release Fee (on arrival)</td><td>Verify on portal</td><td>Veterinary release/inspection fee paid when your pet clears at the cargo terminal. Confirm the current amount on the official portal.</td><td>On arrival</td></tr>
                 <tr><td>Dubai Customs Clearance / Bill of Entry</td><td>500–1,000</td><td>Agent handling at DXB or DWC cargo terminal.</td><td>On arrival</td></tr>
                 <tr><td>Dubai Municipality Registration</td><td>~10</td><td>Annual pet registration via the Aleef app.</td><td>Within 30 days of arrival</td></tr>

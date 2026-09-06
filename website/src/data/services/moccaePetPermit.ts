@@ -8,7 +8,6 @@ import {
   PERMIT_PROCESSING_ESTIMATE,
   PERMIT_VALIDITY,
   RABIES_AGE_WAIT,
-  RELEASE_FEE_VERIFY,
   TITER_SAMPLE_RULE,
 } from '../../lib/regulatory.ts'
 
@@ -16,13 +15,13 @@ const moccaePetPermit: ServicePageData = {
   slug: 'moccae-pet-permit',
   seoTitle: 'MOCCAE Pet Permit Dubai | Import & Export Assistance',
   metaDescription:
-    'MOCCAE pet permit Dubai: document review, UAE Pass portal guidance, and 30-day import-permit tracking. WhatsApp to check your file.',
+    'MOCCAE pet permit Dubai: document review, UAE Pass portal guidance, and 90-day import-permit tracking. WhatsApp to check your file.',
   keywords:
     'MOCCAE pet permit, MOCCAE pet import permit, MOCCAE pet export permit, express MOCCAE permit, moccae pet permit dubai, pet import permit dubai online',
   h1: 'MOCCAE Pet Permit Dubai — Import & Export Assistance',
   primaryKeyword: 'moccae pet permit dubai',
   heroValueProp:
-    'Permit assistance only: we review the file, walk the official MOCCAE portal with you, and track the 30-day import window so the Ministry issues the permit correctly the first time.',
+    'Permit assistance only: we review the file, walk the official MOCCAE portal with you, and track the 90-day import window so the Ministry issues the permit correctly the first time.',
   // Blocked original-photo placeholder — AI substitute not used for this hero.
   heroImage: '/images/service-moccae-pet-permit.jpg',
   heroImageAlt:
@@ -33,9 +32,9 @@ const moccaePetPermit: ServicePageData = {
   heroEyebrow: 'MOCCAE Permit Assistance',
   snippetQuestion: 'Do I need a MOCCAE import permit?',
   snippetAnswer:
-    'Yes. Every pet entering the UAE needs a MOCCAE import permit, valid 30 days from issuance. This page is the commercial application-help service. The apply walkthrough lives on the MOCCAE import permit guide. Confirm current portal fees. WhatsApp +971 50 478 2999 or support@dubai-pet-relocation.ae.',
+    'Yes. Every pet entering the UAE needs a MOCCAE import permit, valid 90 days from issuance. This page is the commercial application-help service. The apply walkthrough lives on the MOCCAE import permit guide. Confirm current portal fees. WhatsApp +971 50 478 2999 or support@dubai-pet-relocation.ae.',
   trustBadges: [
-    '30-day import-permit window',
+    '90-day import-permit window',
     'Document review before submit',
     'Portal + UAE Pass guidance',
     'WhatsApp during business hours',
@@ -161,7 +160,7 @@ const moccaePetPermit: ServicePageData = {
       ],
     },
     {
-      h2: 'Processing time (estimate) and 30-day validity',
+      h2: 'Processing time (estimate) and 90-day validity',
       intro:
         'Two different clocks. Mixing them up is how people miss a cargo slot.',
       body: [
@@ -184,7 +183,7 @@ const moccaePetPermit: ServicePageData = {
             ],
             [
               'Import-permit validity',
-              '30 days from the date of issuance',
+              '90 days from the date of issuance',
               'Hard rule — pet must arrive inside the window',
             ],
             [
@@ -195,28 +194,29 @@ const moccaePetPermit: ServicePageData = {
             [
               'Best time to apply',
               'Travel date confirmed and documents already consistent',
-              'Early enough for the estimate, late enough for 30 days',
+              'Early enough for the estimate, late enough for 90 days',
             ],
           ],
         },
       ],
     },
     {
-      h2: 'What the permit costs — confirm on the portal',
+      h2: 'What the permit costs — labeled MOCCAE lines',
       intro:
-        'This is the regulatory-blocking commercial page. We do not publish contested government fee numerals as if they were settled.',
+        'Government charges are labeled separately from our coordination quote. Confirm on official MOCCAE portal; fees may change.',
       body: [
         {
           type: 'p',
-          text: `${PERMIT_FEE_VERIFY} ${RELEASE_FEE_VERIFY} Our coordination fee is quoted separately on WhatsApp and is not a government charge.`,
+          text: 'Labeled MOCCAE fees: import permit AED 200; dog port release AED 500; cat port release AED 250. Confirm on official MOCCAE portal; fees may change. Our coordination fee is quoted separately on WhatsApp and is not a government charge.',
         },
         {
           type: 'table',
-          headers: ['Charge', 'What to do'],
+          headers: ['Charge', 'Labeled amount'],
           rows: [
-            ['MOCCAE import permit (per pet)', 'Verify the current amount on the official portal'],
-            ['Veterinary release / inspection on arrival', 'Verify the current amount on the official portal'],
-            ['Import-permit validity', '30 days from issuance — not 90'],
+            ['Import permit', 'AED 200'],
+            ['Dog port release', 'AED 500'],
+            ['Cat port release', 'AED 250'],
+            ['Import-permit validity', '90 days from issuance'],
             ['Our document review and tracking', 'Quoted for your file; same government fee either way'],
           ],
         },
@@ -245,7 +245,7 @@ const moccaePetPermit: ServicePageData = {
             'Rabies vaccination outside the 21-day / 12-month window on the planned arrival date',
             'Missing RNATT when the origin requires one — or attaching a sample older than 90 days before travel',
             'Cargo booked before the permit is issued',
-            'Applying so early that the 30-day validity dies before landing',
+            'Applying so early that the 90-day validity dies before landing',
           ],
         },
       ],
@@ -254,7 +254,7 @@ const moccaePetPermit: ServicePageData = {
   faq: [
     {
       q: 'Do I need a MOCCAE import permit?',
-      a: 'Yes. Every dog or cat entering the UAE needs a MOCCAE import permit before travel. It is valid 30 days from issuance — not 90. This page is the commercial application-help service. The step-by-step apply walkthrough lives on the [MOCCAE import permit guide](/guides/moccae-import-permit/).',
+      a: 'Yes. Every dog or cat entering the UAE needs a MOCCAE import permit before travel. It is valid 90 days from issuance. This page is the commercial application-help service. The step-by-step apply walkthrough lives on the [MOCCAE import permit guide](/guides/moccae-import-permit/).',
     },
     {
       q: 'What is a MOCCAE pet permit?',
@@ -270,7 +270,7 @@ const moccaePetPermit: ServicePageData = {
     },
     {
       q: 'How long is a MOCCAE import permit valid?',
-      a: 'Thirty days from the date of issuance — never 90. The pet must arrive in the UAE inside that window. An expired permit means a new application and a new portal fee.',
+      a: '90 days from the date of issuance. The pet must arrive in the UAE inside that window. An expired permit means a new application and a new portal fee.',
     },
     {
       q: 'How long does MOCCAE take to approve an import permit?',
@@ -278,7 +278,7 @@ const moccaePetPermit: ServicePageData = {
     },
     {
       q: 'How much is the MOCCAE pet permit fee?',
-      a: 'Confirm the current import-permit fee and the arrival-release fee on the official portal when you apply. Published amounts have differed. Those government charges exclude veterinary work, crate, flights and our coordination.',
+      a: 'Labeled MOCCAE fees: import permit AED 200; dog port release AED 500; cat port release AED 250. Confirm on official MOCCAE portal; fees may change. Those government charges exclude veterinary work, crate, flights and our coordination.',
     },
     {
       q: 'Can you fast-track or “express” a MOCCAE permit?',

@@ -54,7 +54,7 @@ interface ChecklistStep {
 export default function ImportChecklistGuide() {
   const title = 'Pet Import Documents Checklist Dubai | 2026 Steps'
   const description =
-    'Pet import documents checklist for Dubai: microchip, rabies, titer, 30-day MOCCAE permit, health certificate, crate, and cargo clearance.'
+    'Pet import documents checklist for Dubai: microchip, rabies, titer, 90-day MOCCAE permit, health certificate, crate, and cargo clearance.'
   const canonical = `${BASE_URL}/guides/pet-import-documents-checklist/`
   const ogImage = `${BASE_URL}/assets/og-import-checklist.jpg`
 
@@ -91,7 +91,7 @@ export default function ImportChecklistGuide() {
       num: 5,
       title: 'Apply for the MOCCAE Import Permit',
       when: 'Within 30 days of travel',
-      body: 'Apply online via the MOCCAE portal or the MOCCAE mobile app. The import permit is valid for 30 days from issuance. Confirm the current permit and arrival-release fees on the official portal. Processing typically takes a few working days. You will need the owner’s passport, UAE visa, the pet’s microchip number, vaccination records, and the titer test result if applicable.',
+      body: 'Apply online via the MOCCAE portal or the MOCCAE mobile app. The import permit is valid for 90 days from issuance. Confirm the current permit and arrival-release fees on the official portal. Processing typically takes a few working days. You will need the owner’s passport, UAE visa, the pet’s microchip number, vaccination records, and the titer test result if applicable.',
       icon: <FileText className="w-5 h-5" />,
     },
     {
@@ -154,7 +154,7 @@ export default function ImportChecklistGuide() {
     },
     {
       question: 'How much is the MOCCAE import permit and when should I apply?',
-      answer: 'The MOCCAE import permit is valid for 30 days from issuance, with processing typically taking a few working days. Confirm the current permit and arrival-release fees on the official portal — published amounts have differed. Apply within the 30-day validity window so the permit is still valid on your arrival day, while leaving time to book your cargo flight.',
+      answer: 'The MOCCAE import permit is valid for 90 days from issuance, with processing typically taking a few working days. Confirm the current permit and arrival-release fees on the official portal; fees may change. Apply within the 90-day validity window so the permit is still valid on your arrival day, while leaving time to book your cargo flight.',
     },
   ]
 
@@ -251,8 +251,8 @@ export default function ImportChecklistGuide() {
               <div className="space-y-4">
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
                   <p className="font-semibold text-[#4F5BD5] text-sm mb-1">MOCCAE Import Permit</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">Valid 30 days from issuance</p>
-                  <p className="text-sm text-[#5A5A5A] mt-1">Confirm the current permit and arrival-release fees on the official MOCCAE portal — published amounts have differed.</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">Valid 90 days from issuance</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">Confirm the current permit and arrival-release fees on the official MOCCAE portal; fees may change.</p>
                 </div>
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
                   <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Timeline (Low-Risk Countries)</p>
@@ -380,7 +380,7 @@ export default function ImportChecklistGuide() {
                 <tr>
                   <td className="font-semibold text-[#2A2A2A]">MOCCAE Import Permit</td>
                   <td>Official approval from UAE Ministry of Climate Change and Environment</td>
-                  <td>30 days from issuance</td>
+                  <td>90 days from issuance</td>
                   <td>200</td>
                 </tr>
                 <tr>
@@ -442,7 +442,7 @@ export default function ImportChecklistGuide() {
                 </div>
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                   <FileText className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span><strong>Permit validity is 30 days.</strong> Apply too early and the permit may expire before travel; apply too late and you may miss the flight window.</span>
+                  <span><strong>Permit validity is 90 days from issuance.</strong> Apply so arrival still falls inside that window; an expired permit cannot be used.</span>
                 </div>
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                   <FileCheck className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />

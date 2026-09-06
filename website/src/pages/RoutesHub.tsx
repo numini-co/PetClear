@@ -70,7 +70,7 @@ export default function RoutesHub() {
             <Plane className="h-6 w-6 text-[#4F5BD5]" />
             <div>
               <h2 className="text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Inbound — to Dubai</h2>
-              <p className="mt-1 text-sm text-[#5A5A5A]">Pets arriving in the UAE. Every inbound move needs a MOCCAE import permit valid 30 days from issuance.</p>
+              <p className="mt-1 text-sm text-[#5A5A5A]">Pets arriving in the UAE. Every inbound move needs a MOCCAE import permit valid 90 days from issuance.</p>
             </div>
           </div>
           <LastVerified className="mb-6 text-xs text-[#8A8A8A]" />

@@ -47,7 +47,7 @@ const faqData = [
   },
   {
     q: 'Do I still need a MOCCAE import permit for baggage travel?',
-    a: 'If the pet is entering the UAE, yes. The permit is valid 30 days from issuance. Baggage status does not waive the permit. For most Dubai arrivals you should be on the cargo path anyway.',
+    a: 'If the pet is entering the UAE, yes. The permit is valid 90 days from issuance. Baggage status does not waive the permit. For most Dubai arrivals you should be on the cargo path anyway.',
   },
   {
     q: 'What if my outbound journey is longer than 17 hours?',

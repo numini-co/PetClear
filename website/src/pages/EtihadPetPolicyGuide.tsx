@@ -53,7 +53,7 @@ const faqData = [
   },
   {
     q: 'What documents are needed to fly into Abu Dhabi with a pet on Etihad?',
-    a: 'Etihad lists a pet release permit, a completed UAE health certificate, and an Abu Dhabi Customs Bill of Entry for arrivals into Abu Dhabi (source: Etihad). A valid MOCCAE import permit is still required — it is valid 30 days from issuance, not 90.',
+    a: 'Etihad lists a pet release permit, a completed UAE health certificate, and an Abu Dhabi Customs Bill of Entry for arrivals into Abu Dhabi (source: Etihad). A valid MOCCAE import permit is still required — it is valid 90 days from issuance.',
   },
   {
     q: 'Do you book the Etihad cabin ticket for me?',
@@ -139,7 +139,7 @@ export default function EtihadPetPolicyGuide() {
             Etihad is the only UAE airline that accepts small dogs and cats in the cabin (source: Etihad). Pets must be at least 16 weeks old and weigh up to 8 kg including the carrier. The accompanying passenger must be 18 or older. Emirates does not carry dogs or cats in the cabin except falcons and guide dogs (source: Emirates). flydubai does not allow cabin animals except falcons (source: flydubai). Air Arabia likewise does not carry cats or dogs — falcons only.
           </p>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            Cabin is not a shortcut around UAE import paperwork. A MOCCAE import permit is still required and is valid for 30 days from issuance. Pair this guide with{' '}
+            Cabin is not a shortcut around UAE import paperwork. A MOCCAE import permit is still required and is valid for 90 days from issuance. Pair this guide with{' '}
             <Link to="/guides/moccae-import-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
               the MOCCAE import permit guide
             </Link>{' '}

@@ -38,7 +38,7 @@ import {
 
 const snippetQuestion = 'Do I need a MOCCAE import permit?'
 const snippetAnswer =
-  'Yes. Every dog or cat entering the UAE needs a MOCCAE import permit before travel. Apply on the official portal with UAE Pass, or we review the file and submit with you. The permit is valid 30 days from issuance — not 90. Confirm current fees on the portal. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.'
+  'Yes. Every dog or cat entering the UAE needs a MOCCAE import permit before travel. Apply on the official portal with UAE Pass, or we review the file and submit with you. The permit is valid 90 days from issuance. Confirm current fees on the portal. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.'
 
 /* ─── FAQ accordion helper ─── */
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
@@ -58,7 +58,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 export default function MOCCAEPermitGuide() {
   const title = 'MOCCAE Pet Import Permit | Dubai & UAE Guide 2026'
   const description =
-    'MOCCAE pet import permit: 30-day UAE Pass application, documents, and rejection reasons. Confirm fees on the official portal.'
+    'MOCCAE pet import permit: 90-day validity, UAE Pass application, documents, and rejection reasons. Confirm fees on the official portal.'
   const canonical = `${BASE_URL}/guides/moccae-import-permit/`
   const ogImage = `${BASE_URL}/assets/og-moccae-permit.jpg`
 
@@ -66,12 +66,12 @@ export default function MOCCAEPermitGuide() {
     {
       question: 'Do I need a MOCCAE import permit?',
       answer:
-        'Yes. Every dog or cat entering the UAE needs a MOCCAE import permit before travel. Airlines will not board the pet without it, and customs will refuse entry. The permit is valid 30 days from issuance — not 90. Apply on the official MOCCAE portal with UAE Pass, or we review the file and submit with you. Confirm current fees on the portal. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.',
+        'Yes. Every dog or cat entering the UAE needs a MOCCAE import permit before travel. Airlines will not board the pet without it, and customs will refuse entry. The permit is valid 90 days from issuance. Apply on the official MOCCAE portal with UAE Pass, or we review the file and submit with you. Confirm current fees on the portal. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.',
     },
     {
       question: 'Do I need a MOCCAE import permit for my dog?',
       answer:
-        'Yes. Each dog needs its own permit. Cats too — one pet, one permit. Validity is 30 days from issuance. Apply online before you book cargo so the arrival sits inside that window. Confirm the live portal fee; published amounts have differed. This guide owns the apply questions; the commercial help page is the MOCCAE pet permit service.',
+        'Yes. Each dog needs its own permit. Cats too — one pet, one permit. Validity is 90 days from issuance. Apply online before you book cargo so the arrival sits inside that window. Confirm the live portal fee; fees may change. This guide owns the apply questions; the commercial help page is the MOCCAE pet permit service.',
     },
     {
       question: 'How do I apply for a MOCCAE import permit?',
@@ -81,7 +81,7 @@ export default function MOCCAEPermitGuide() {
     {
       question: 'How long does the MOCCAE import permit take?',
       answer:
-        'Complete applications are typically estimated at 2–5 working days. That figure is secondary-sourced, not a first-party SLA. Incomplete or inconsistent files are returned and the estimate restarts. Apply once the travel date is real enough to fit the 30-day validity window.',
+        'Complete applications are typically estimated at 2–5 working days. That figure is secondary-sourced, not a first-party SLA. Incomplete or inconsistent files are returned and the estimate restarts. Apply once the travel date is real enough to fit the 90-day validity window.',
     },
     {
       question: 'What is the UAE Pass path for a MOCCAE import permit?',
@@ -91,7 +91,7 @@ export default function MOCCAEPermitGuide() {
     {
       question: 'How long does MOCCAE take, and is that a guarantee?',
       answer:
-        'Complete applications are typically estimated at 2–5 working days. That figure is secondary-sourced, not a first-party SLA. Incomplete or inconsistent files are returned and the estimate restarts. Apply once the travel date is real enough to fit the 30-day validity window.',
+        'Complete applications are typically estimated at 2–5 working days. That figure is secondary-sourced, not a first-party SLA. Incomplete or inconsistent files are returned and the estimate restarts. Apply once the travel date is real enough to fit the 90-day validity window.',
     },
     {
       question: 'Why was my MOCCAE application sent back?',
@@ -99,14 +99,14 @@ export default function MOCCAEPermitGuide() {
         'Typical causes: pet photo that is not a clear front face on a neutral background; rabies vaccination outside the 21-day / 12-month window on the planned arrival date; a microchip digit that does not match the certificate; breed spelling that does not match the vet record; a missing RNATT when the origin requires one. The Ministry tells you the reason — fix that reason, then resubmit. Confirm whether a fresh portal fee is charged when you resubmit.',
     },
     {
-      question: 'What if the 30-day permit expires before the pet lands?',
+      question: 'What if the 90-day permit expires before the pet lands?',
       answer:
-        'You apply again and pay the live portal fee again. MOCCAE import permits are valid for 30 days from issuance — never 90. Time the application to a confirmed cargo date, not to the week you first thought about moving.',
+        'You apply again and pay the live portal fee again. MOCCAE import permits are valid for 90 days from issuance. Expired permits cannot be used. Time the application so arrival still falls inside that window.',
     },
     {
-      question: 'Is the permit fee AED 200 or AED 500?',
+      question: 'What are the labeled MOCCAE permit and release fees?',
       answer:
-        'Published amounts have differed. This page does not pick a number. Confirm the current per-pet fee on the official portal when you apply, and confirm the separate arrival-release / inspection amount at the cargo terminal.',
+        'Labeled MOCCAE lines: import permit AED 200; dog port release AED 500; cat port release AED 250. Confirm on official MOCCAE portal; fees may change. Those government charges exclude veterinary work, crate, cargo and coordination.',
     },
     {
       question: 'Can I put two pets on one MOCCAE import permit?',
@@ -226,7 +226,7 @@ export default function MOCCAEPermitGuide() {
         imageAlt="Illustration of a MOCCAE pet import permit application with a validity clock"
         eyebrow="How-to guide — not the service page"
         title="MOCCAE Pet Import Permit for Dubai & the UAE"
-        subtitle="UAE Pass login, form fields, 30-day validity, rejection reasons, and an honest DIY versus managed comparison. Confirm fees on the official portal."
+        subtitle="UAE Pass login, form fields, 90-day validity, rejection reasons, and an honest DIY versus managed comparison. Confirm fees on the official portal."
         updated={LAST_VERIFIED_LABEL}
         whatsappMessage="Hi Dubai Pet Relocation, I am applying for a MOCCAE import permit and want the walkthrough checked before I submit."
         primaryLabel="Get the file checked"
@@ -281,7 +281,7 @@ export default function MOCCAEPermitGuide() {
                 </div>
                 <div className="p-4 bg-[#C89F5A]/5 rounded-xl">
                   <p className="font-semibold text-[#C89F5A] text-sm mb-1">Validity</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">30 days from issuance</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">90 days from issuance</p>
                   <p className="text-sm text-[#5A5A5A] mt-1">{PERMIT_VALIDITY}</p>
                 </div>
                 <div className="p-4 bg-[#C9453A]/5 rounded-xl">

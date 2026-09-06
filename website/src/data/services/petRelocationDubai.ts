@@ -36,7 +36,7 @@ const petRelocationDubai: ServicePageData = {
           type: 'list',
           items: [
             'Document review — microchip, rabies vaccination, health certificate and titer result where the route requires one',
-            'MOCCAE import or export permit guidance, with the 30-day import-permit window called out before you book',
+            'MOCCAE import or export permit guidance, with the 90-day import-permit window called out before you book',
             'Breed eligibility against current UAE restricted-breed rules — before you commit to a flight',
             'IATA-compliant crate measurement and sourcing through partners, not a guess from a chart',
             'Cargo booking coordination with pet-experienced airlines — “pet cargo Dubai” is a secondary commercial term on [international pet relocation](/service/international-pet-relocation/), not a keyword this door-to-door URL owns',
@@ -61,7 +61,7 @@ const petRelocationDubai: ServicePageData = {
         {
           type: 'list',
           items: [
-            'Will they confirm contested MOCCAE and government fees on the official portal instead of inventing a 90-day permit?',
+            'Will they state the MOCCAE import permit as valid 90 days from issuance and confirm government fees on the official portal?',
             'Do they name a process — documents, crate, cargo or cabin, last mile — or only a from-price?',
             'Will they match the animal to a legal flight mode (Etihad cabin into AUH, cargo into DXB, jet or charter only when scheduled lift fails)?',
             'Are they a coordinator, not a fake airline or invented IPATA member?',
@@ -146,7 +146,7 @@ const petRelocationDubai: ServicePageData = {
             },
             {
               title: 'Document check',
-              text: 'We line-check microchip, vaccinations and certificates against the route. Import permits are valid 30 days from issuance. For inbound titer, the blood sample must be taken within 90 days before travel and read at least 0.5 IU/ml — not framed as a 90-day wait after the test.',
+              text: 'We line-check microchip, vaccinations and certificates against the route. Import permits are valid 90 days from issuance. For inbound titer, the blood sample must be taken within 90 days before travel and read at least 0.5 IU/ml — not framed as a 90-day wait after the test.',
             },
             {
               title: 'Crate and cargo booking',
@@ -260,7 +260,7 @@ const petRelocationDubai: ServicePageData = {
     },
     {
       q: 'How long is a MOCCAE import permit valid for a Dubai relocation?',
-      a: 'Thirty days from issuance. The pet must arrive inside that window. Older “90-day permit” wording is wrong and is not used on this site.',
+      a: '90 days from issuance. The pet must arrive inside that window. First-party MOCCAE wording is 90 days from issuance.',
     },
     {
       q: 'When should the rabies titer blood sample be taken?',

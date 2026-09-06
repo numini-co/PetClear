@@ -66,7 +66,7 @@ const faqData = [
   },
   {
     q: 'How long is a MOCCAE import permit valid?',
-    a: '30 days from issuance. The pet must enter the UAE inside that window. Older “90-day permit” wording is wrong.',
+    a: '90 days from issuance. The pet must enter the UAE inside that window. First-party MOCCAE wording is 90 days from issuance.',
   },
   {
     q: 'Which page should I open if I just want you to handle everything?',

@@ -21,7 +21,7 @@ const sharedPetCharter: ServicePageData = {
   heroEyebrow: 'Charter coordination',
   snippetQuestion: 'What is a shared pet charter?',
   snippetAnswer:
-    'A shared pet charter is a dedicated lift that several pets share — more control than scheduled cargo, without buying a whole private jet. Firm seats we coordinate are Get a Quote. Labelled third-party seats (Elite Pets, PetXJets, JetCircle, press) are market context, not our prices. Documents and the 30-day import permit still apply.',
+    'A shared pet charter is a dedicated lift that several pets share — more control than scheduled cargo, without buying a whole private jet. Firm seats we coordinate are Get a Quote. Labelled third-party seats (Elite Pets, PetXJets, JetCircle, press) are market context, not our prices. Documents and the 90-day import permit still apply.',
   trustBadges: ['Firm seat = Get a Quote', 'Labelled market listings only', 'Documents still required', 'WhatsApp during business hours'],
   hasHowTo: true,
   howToName: 'How a shared pet charter is coordinated',
@@ -74,7 +74,7 @@ const sharedPetCharter: ServicePageData = {
     {
       h2: 'Coordination scope',
       intro:
-        'A shared lift does not waive UAE rules. Import still means a 30-day MOCCAE permit and manifest-style veterinary clearance unless the Etihad AUH cabin exception applies — and a charter is not that exception.',
+        'A shared lift does not waive UAE rules. Import still means a 90-day MOCCAE permit and manifest-style veterinary clearance unless the Etihad AUH cabin exception applies — and a charter is not that exception.',
       body: [
         {
           type: 'steps',
@@ -212,7 +212,7 @@ const sharedPetCharter: ServicePageData = {
     },
     {
       q: 'Does a charter skip UAE import rules?',
-      a: 'No. The MOCCAE import permit is still valid 30 days from issuance. Pets still enter under veterinary and customs control.',
+      a: 'No. The MOCCAE import permit is still valid 90 days from issuance. Pets still enter under veterinary and customs control.',
     },
     {
       q: 'Are you affiliated with an airline?',

@@ -33,7 +33,7 @@ const privateJetPetTravel: ServicePageData = {
       body: [
         {
           type: 'p',
-          text: 'We do not own an aircraft and we are not affiliated with any charter operator. We coordinate eligibility, the document pouch, ground handoffs and the 30-day MOCCAE import-permit window when the UAE is the destination. The operator flies the aeroplane.',
+          text: 'We do not own an aircraft and we are not affiliated with any charter operator. We coordinate eligibility, the document pouch, ground handoffs and the 90-day MOCCAE import-permit window when the UAE is the destination. The operator flies the aeroplane.',
         },
         {
           type: 'list',
@@ -74,7 +74,7 @@ const privateJetPetTravel: ServicePageData = {
             },
             {
               title: 'Documents',
-              text: 'Same UAE import or export chain as any other mode. MOCCAE import permits are valid 30 days from issuance. A jet does not waive veterinary or customs rules.',
+              text: 'Same UAE import or export chain as any other mode. MOCCAE import permits are valid for 90 days from issuance. A jet does not waive veterinary or customs rules.',
             },
             {
               title: 'Quote',
@@ -148,7 +148,7 @@ const privateJetPetTravel: ServicePageData = {
     },
     {
       q: 'Does a private jet skip the MOCCAE import permit?',
-      a: 'No. Pets entering the UAE still need a valid import permit (30 days from issuance) and the rest of the veterinary file. Arrival is still a customs and veterinary event.',
+      a: 'No. Pets entering the UAE still need a valid import permit (90 days from issuance) and the rest of the veterinary file. Arrival is still a customs and veterinary event.',
     },
     {
       q: 'When should I use shared charter instead?',

@@ -81,7 +81,7 @@ const HOME_FAQS = [
   },
   {
     q: 'How long is a MOCCAE import permit valid?',
-    a: 'Thirty days from issuance. The pet must arrive inside that window. A 90-day permit-validity claim is incorrect and is not used on this site. Confirm current portal fees on the official MOCCAE site — we do not publish contested AED figures here.',
+    a: '90 days from issuance. The pet must arrive inside that window. First-party MOCCAE wording is 90 days from issuance. Confirm current portal fees on the official MOCCAE site — we do not publish contested AED figures here.',
   },
   {
     q: 'When does the homepage say a rabies titer sample must be taken?',
@@ -286,7 +286,7 @@ export default function HomePage() {
               <span className="text-sm font-semibold uppercase tracking-wider text-[#4F5BD5]">Popular Relocation Routes</span>
               <h2 className="text-section mt-3 mb-4">Corridors in both directions</h2>
               <p className="text-body mb-4">
-                UK, USA and India inbound each carry a different document spine. A UK origin is usually a low-friction vaccination and certificate file plus the 30-day MOCCAE permit. A US origin adds endorsement steps that have to match the cargo date. India and other titer-required origins add a blood sample that must still be in date on travel day. Those differences are why we refuse to paste one “international checklist” onto every card.
+                UK, USA and India inbound each carry a different document spine. A UK origin is usually a low-friction vaccination and certificate file plus the 90-day MOCCAE permit. A US origin adds endorsement steps that have to match the cargo date. India and other titer-required origins add a blood sample that must still be in date on travel day. Those differences are why we refuse to paste one “international checklist” onto every card.
               </p>
               <p className="text-body mb-4">
                 Dubai to UK and Dubai to USA are not reversed inbound checklists — destination rules drive the outbound clock. The UAE export certificate is comparatively quick and still useless if it is issued before the destination’s treatments or waiting periods are ready. Use the routes hub for the full inbound versus outbound list; this strip is only the corridors families ask about first.
@@ -347,7 +347,7 @@ export default function HomePage() {
                 step: '02',
                 icon: FileCheck,
                 title: 'We check the file',
-                body: 'Microchip, vaccinations, permit window and crate sizing. Import permits are valid 30 days. Titer, when required, is a blood sample within 90 days before travel.',
+                body: 'Microchip, vaccinations, permit window and crate sizing. Import permits are valid 90 days. Titer, when required, is a blood sample within 90 days before travel.',
               },
               {
                 step: '03',
@@ -411,7 +411,7 @@ export default function HomePage() {
                 Full checklists live on the guides. The homepage only carries the facts owners misuse most often — and the links out. Last-verified stamps sit next to regulatory lines. We will not paste the 3,000-word import guide onto this page; that is how the old homepage became a second site.
               </p>
               <p className="text-body mb-4">
-                Two timing errors cause most inbound delays. The first is treating the import permit as if it lasted a quarter; it lasts 30 days from issuance, and the pet must arrive inside that window. The second is treating a titer as a 90-day wait after the blood draw. When a titer is required, the sample is taken within 90 days before travel and must read at least 0.5 IU/ml. Those two sentences are the whole homepage rule. The walkthroughs live on the permit and titer guides.
+                Two timing errors cause most inbound delays. The first is treating the import permit as if it lasted 30 days; official MOCCAE wording is 90 days from issuance, and the pet must arrive inside that window. The second is treating a titer as a 90-day wait after the blood draw. When a titer is required, the sample is taken within 90 days before travel and must read at least 0.5 IU/ml. Those two sentences are the whole homepage rule. The walkthroughs live on the permit and titer guides.
               </p>
               <LastVerified />
             </div>
@@ -425,8 +425,8 @@ export default function HomePage() {
             {[
               {
                 icon: Shield,
-                title: '30-day import permit',
-                body: 'A MOCCAE import permit is valid for 30 days from issuance. Arrive inside that window. Confirm the current portal fee when you apply.',
+                title: '90-day import permit',
+                body: 'A MOCCAE import permit is valid for 90 days from issuance. Arrive inside that window. Confirm the current portal fee when you apply.',
                 to: '/guides/moccae-import-permit/',
                 label: 'MOCCAE permit guide',
               },
@@ -617,7 +617,7 @@ export default function HomePage() {
             What happens after you message us: we read the breed and corridor, we say which documents matter first, and we tell you if the month is realistic. No 15-minute SLA. No 24/7 claim.
           </p>
           <p className="mb-8 text-sm text-white/70">
-            Accuracy note: regulatory lines on this page follow the first-party source-of-truth (30-day permit; titer sample within 90 days before travel). Portal fees are confirmed on the official site, not invented here.
+            Accuracy note: regulatory lines on this page follow the first-party source-of-truth (90-day permit; titer sample within 90 days before travel). Portal fees are confirmed on the official site, not invented here.
           </p>
           <WhatsAppCta text="Get a Relocation Quote" />
         </div>

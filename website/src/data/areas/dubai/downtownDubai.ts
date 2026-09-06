@@ -44,11 +44,11 @@ const downtownDubai: AreaPageData = {
       intro:
         'Almost every Downtown relocation is international. Residents arrive from the UK, USA, India, Australia and across Europe for senior roles, or leave Dubai for a posting elsewhere. The exact requirements depend on your origin or destination country, but the backbone of the process is consistent everywhere.',
       body: [
-        { type: 'p', text: 'Your pet needs a valid microchip, current vaccinations, a government health certificate and — for moves into the UAE — a MOCCAE import permit that stays valid for 30 days (confirm the current fee on the official portal). On arrival there is a release fee of AED 500 per dog or AED 250 per cat, so government charges land at roughly AED 700 per dog and AED 450 per cat. A rabies titer test is only required for pets coming from countries the UAE classifies as high-risk; most low-risk origins skip it entirely.' },
+        { type: 'p', text: 'Your pet needs a valid microchip, current vaccinations, a government health certificate and — for moves into the UAE — a MOCCAE import permit that stays valid for 90 days from issuance (confirm the current fee on the official portal). On arrival there is a release fee of AED 500 per dog or AED 250 per cat, so government charges land at roughly AED 700 per dog and AED 450 per cat. A rabies titer test is only required for pets coming from countries the UAE classifies as high-risk; most low-risk origins skip it entirely.' },
         { type: 'steps', steps: [
           { title: 'Plan and quote', text: 'We confirm your route, pet details and any breed restrictions, then send a clear cost range and timeline on WhatsApp before you commit to anything.' },
           { title: 'Vet and documents', text: 'We coordinate the microchip check, vaccinations and the government health certificate with a clinic near Downtown, scheduling each step so the paperwork is valid on travel day.' },
-          { title: 'Permits', text: 'We guide or handle the MOCCAE permit — valid for 30 days — and prepare the import or export documentation your route requires.' },
+          { title: 'Permits', text: 'We guide or handle the MOCCAE permit — valid for 90 days from issuance — and prepare the import or export documentation your route requires.' },
           { title: 'Crate and flight', text: 'We size an IATA-compliant crate, acclimate your pet to it, and book the right flight and cargo path through DXB or DWC.' },
           { title: 'Travel and delivery', text: 'We manage check-in, customs clearance and the release fee, then deliver your pet door-to-door to the new home with live updates throughout.' },
         ] },
@@ -82,7 +82,7 @@ const downtownDubai: AreaPageData = {
     { q: 'Do you pick up from my building in Downtown Dubai?', a: 'Yes — we arrange door-to-door pickup from your Downtown tower, serviced residence or apartment, and coordinate the entire move from there.' },
     { q: 'How long does pet relocation from Downtown Dubai take?', a: 'From low-risk countries, usually two to six weeks. From high-risk rabies countries that need a titer test, plan for about four months because of the mandatory waiting period.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. Government fees are roughly AED 700 per dog and AED 450 per cat. We give you a clear range on WhatsApp before you commit.' },
-    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit — which costs AED 200 per pet and stays valid for 30 days — or handle the application on your behalf depending on your service tier.' },
+    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit — which costs AED 200 per pet and stays valid for 90 days from issuance — or handle the application on your behalf depending on your service tier.' },
     { q: 'My Downtown building has pet rules — can you help?', a: 'We focus on the relocation itself, but we can advise on crate acclimation and travel-day logistics for apartment pets in central high-rise towers like those in Downtown Dubai. Always check your tenancy terms for pet limits or deposits.' },
   ],
   relatedAreas: [

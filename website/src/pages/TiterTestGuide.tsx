@@ -64,12 +64,12 @@ const faqData = [
   {
     question: 'How much does a rabies titer test cost?',
     answer:
-      'Clinic draw, laboratory fee and international shipping are private-market charges that vary by country and lab. We do not publish a government fee table here and we do not invent a single AED total. Ask your origin vet for the current draw-and-shipping quote; we can help you sequence it against the 30-day MOCCAE permit.',
+      'Clinic draw, laboratory fee and international shipping are private-market charges that vary by country and lab. We do not publish a government fee table here and we do not invent a single AED total. Ask your origin vet for the current draw-and-shipping quote; we can help you sequence it against the 90-day MOCCAE permit.',
   },
   {
     question: 'Is a titer the same as a MOCCAE import permit?',
     answer:
-      'No. The RNATT is a laboratory result attached to the file when MOCCAE requires it. The import permit is a separate 30-day Ministry approval. You can have a passing titer and still be refused if the permit is missing or expired. Permit walkthrough: the MOCCAE import permit guide. Permit help: MOCCAE permit assistance.',
+      'No. The RNATT is a laboratory result attached to the file when MOCCAE requires it. The import permit is a separate 90-day Ministry approval. You can have a passing titer and still be refused if the permit is missing or expired. Permit walkthrough: the MOCCAE import permit guide. Permit help: MOCCAE permit assistance.',
   },
 ]
 
@@ -141,7 +141,7 @@ export default function TiterTestGuide() {
         '@type': 'HowToStep',
         position: 6,
         name: 'Travel inside the sample window',
-        text: 'Confirm the sample date is still within 90 days of arrival. Then apply for the 30-day MOCCAE import permit.',
+        text: 'Confirm the sample date is still within 90 days of arrival. Then apply for the 90-day MOCCAE import permit.',
       },
     ],
   }
@@ -309,7 +309,7 @@ export default function TiterTestGuide() {
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
                   Once you have {TITER_THRESHOLD}, count forward from the <strong>sample date</strong>. Arrival must fall inside 90 days of that draw. Then time the{' '}
                   <Link to="/guides/moccae-import-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
-                    30-day MOCCAE import permit
+                    90-day MOCCAE import permit
                   </Link>{' '}
                   so it is still valid on landing. Do not wait an extra 90 days after the PDF arrives.
                 </p>
@@ -345,7 +345,7 @@ export default function TiterTestGuide() {
                     <td>Not a wait after the result</td>
                   </tr>
                   <tr>
-                    <td className="font-medium">30-day permit</td>
+                    <td className="font-medium">90-day permit</td>
                     <td>MOCCAE import-permit validity after issuance</td>
                     <td>Not a titer rule</td>
                   </tr>
@@ -510,7 +510,7 @@ export default function TiterTestGuide() {
             <Link to="/guides/moccae-import-permit/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow">
               <Clock className="w-5 h-5 text-[#4F5BD5] mb-3" />
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">MOCCAE import permit guide</h3>
-              <p className="text-sm text-[#5A5A5A]">30-day permit walkthrough after the sample is in date.</p>
+              <p className="text-sm text-[#5A5A5A]">90-day permit walkthrough after the sample is in date.</p>
             </Link>
             <Link to="/service/pet-import-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow">
               <PawPrint className="w-5 h-5 text-[#4F5BD5] mb-3" />
@@ -530,7 +530,7 @@ export default function TiterTestGuide() {
             <Link to="/service/moccae-pet-permit/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow">
               <HelpCircle className="w-5 h-5 text-[#4F5BD5] mb-3" />
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">MOCCAE permit assistance</h3>
-              <p className="text-sm text-[#5A5A5A]">Attach a passing result to a clean 30-day permit file.</p>
+              <p className="text-sm text-[#5A5A5A]">Attach a passing result to a clean 90-day permit file.</p>
             </Link>
           </div>
         </div>

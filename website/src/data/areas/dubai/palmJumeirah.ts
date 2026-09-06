@@ -63,7 +63,7 @@ const palmJumeirah: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Whether you are arriving from the UK, Europe, the USA, Australia, Singapore or beyond, or heading the other way, the building blocks are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 30 days. For a small number of high-risk rabies countries a rabies titer (antibody) test is also required, which adds a mandatory waiting period before travel.',
+          text: 'Whether you are arriving from the UK, Europe, the USA, Australia, Singapore or beyond, or heading the other way, the building blocks are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days. For a small number of high-risk rabies countries a rabies titer (antibody) test is also required, which adds a mandatory waiting period before travel.',
         },
         {
           type: 'steps',
@@ -74,7 +74,7 @@ const palmJumeirah: AreaPageData = {
             },
             {
               title: 'Vet work and permits (Weeks 2–4)',
-              text: 'Your vet completes any outstanding vaccinations and the health certificate while we prepare the MOCCAE import or export permit, valid for 30 days from issue.',
+              text: 'Your vet completes any outstanding vaccinations and the health certificate while we prepare the MOCCAE import or export permit, valid for 90 days from issuance.',
             },
             {
               title: 'Crate and booking (Weeks 3–5)',
@@ -148,7 +148,7 @@ const palmJumeirah: AreaPageData = {
     },
     {
       q: 'Can you handle the MOCCAE permit for me?',
-      a: 'Yes. We guide you through the MOCCAE import or export permit — which costs AED 200 per pet and is valid for 30 days — or handle the application on your behalf, depending on your service tier.',
+      a: 'Yes. We guide you through the MOCCAE import or export permit — which costs AED 200 per pet and is valid for 90 days from issuance — or handle the application on your behalf, depending on your service tier.',
     },
     {
       q: 'My building on the Palm has pet rules — can you help?',
