@@ -544,14 +544,14 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
           'The MOCCAE export health certificate aligned to the EU certificate dates — not an import permit. Validity is commonly a short window; verify on the portal before you book.',
       },
       {
-        question: 'Can Emirates cabin the pet from Dubai to AMS?',
+        question: 'Can a pet fly cabin from Dubai to AMS on this corridor?',
         answer:
-          'Emirates seed mode on this corridor is cargo. Do not invent cabin eligibility. Etihad also seeds as cargo. Confirm current policy on the [Emirates pet cargo guide](/guides/emirates-pet-cargo/) and the [pet flight options hub](/guides/pet-flight-options-dubai/). Confirm the live policy for the exact pair.',
+          'Gulf-carrier seed mode on this corridor is cargo. Do not invent cabin eligibility. Confirm current policy on the [Emirates pet cargo guide](/guides/emirates-pet-cargo/) and the [pet flight options hub](/guides/pet-flight-options-dubai/). Confirm the live policy for the exact pair.',
       },
       {
         question: 'What drives the cost of a Dubai to Netherlands pet export?',
         answer:
-          'A Dubai–Amsterdam export quote is not printed here. Read /guides/pet-relocation-cost-dubai/ for drivers, then send pet details and the AMS date via Get Route Checked or WhatsApp +971504782999.',
+          'A Dubai–Amsterdam export quote is not printed here. Read [what drives pet relocation cost](/guides/pet-relocation-cost-dubai/) for drivers, then send pet details and the AMS date via Get Route Checked or WhatsApp +971504782999.',
       },
     ],
   },

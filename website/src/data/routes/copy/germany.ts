@@ -126,9 +126,9 @@ export const GERMANY_COPY: RouteUniqueCopy[] = [
           'For non-commercial EU entry, SOT indicates the UAE is on the EU third-country list exempt from rabies antibody titration — but listings change. Verify the current European Commission list before you skip a titer, and follow microchip/vaccination/certificate rules either way.',
       },
       {
-        question: 'Can my pet leave Dubai as cabin baggage on Emirates to Germany?',
+        question: 'Can my pet leave Dubai as cabin baggage on this corridor to Germany?',
         answer:
-          'Do not assume cabin. Emirates seed mode on this corridor is cargo; from Dubai, hold-baggage eligibility (if any) is journey- and policy-specific. Confirm current policy on the [Emirates pet cargo guide](/guides/emirates-pet-cargo/) and the [pet flight options hub](/guides/pet-flight-options-dubai/). Airline rows here remain unverified.',
+          'Do not assume cabin. Seed mode for Gulf carriers on this corridor is cargo; from Dubai, hold-baggage eligibility (if any) is journey- and policy-specific. Confirm current policy on the [Emirates pet cargo guide](/guides/emirates-pet-cargo/) and the [pet flight options hub](/guides/pet-flight-options-dubai/). Airline rows here remain unverified.',
       },
       {
         question: 'How do I get a PetClear quote for Dubai to Germany?',
@@ -138,7 +138,7 @@ export const GERMANY_COPY: RouteUniqueCopy[] = [
       {
         question: 'How much does it cost to fly my dog to Germany?',
         answer:
-          'Cost depends on crate size, cargo versus any accepted hold product, German gateway, and whether the move is non-commercial EU entry or a commercial pathway — we do not publish fee numerals or invented AED bands here. See /guides/pet-relocation-cost-dubai/ for the driver list, then request a quote via Get Route Checked or WhatsApp +971504782999.',
+          'Cost depends on crate size, cargo versus any accepted hold product, German gateway, and whether the move is non-commercial EU entry or a commercial pathway — we do not publish fee numerals or invented AED bands here. See [what drives pet relocation cost](/guides/pet-relocation-cost-dubai/) for the driver list, then request a quote via Get Route Checked or WhatsApp +971504782999.',
       },
       {
         question: 'When should I request the MOCCAE export health certificate for Dubai→Germany?',

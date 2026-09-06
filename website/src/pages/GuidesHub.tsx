@@ -25,7 +25,7 @@ export default function GuidesHub() {
   const itemListSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'Pet Relocation Guides for Dubai',
+    name: 'Pet Relocation Guides Dubai',
     itemListElement: GUIDES.map((g, i) => ({
       '@type': 'ListItem',
       position: i + 1,
@@ -38,9 +38,9 @@ export default function GuidesHub() {
     <div>
       <SEOHead
         meta={{
-          title: 'Pet Relocation Guides for Dubai | Rules, Costs & Permits',
+          title: 'Pet Relocation Guides Dubai | Costs, Permits & Rules',
           description:
-            'Free, up-to-date guides on relocating a pet to Dubai: costs, MOCCAE import permits, banned breeds, IATA crates, the rabies titer test and summer travel.',
+            'Pet relocation guides Dubai: costs, MOCCAE permits, banned breeds, IATA crates, titer timing and summer travel.',
           canonical: `${BASE_URL}/guides/`,
           ogType: 'website',
         }}
@@ -52,7 +52,7 @@ export default function GuidesHub() {
         image="/images/import-hero.jpg"
         imageAlt="A dog and cat ready for relocation beside travel documents in a bright Dubai home"
         eyebrow="Pet Relocation Guides"
-        title="Everything You Need to Move a Pet to Dubai"
+        title="Pet Relocation Guides Dubai — Costs, Permits & Rules"
         subtitle="Clear, current, owner-first guides — costs, permits, breed rules, crates and timelines, written from real Dubai relocations."
         updated="Updated June 2026"
       />

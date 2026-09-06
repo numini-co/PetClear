@@ -241,9 +241,9 @@ export default function ServicesPage() {
     <div>
       <SEOHead
         meta={{
-          title: 'Dubai Pet Relocation Services — From Essential to Coordination',
+          title: 'Pet Relocation Services Dubai | Compare Tiers',
           description:
-            'Compare Dubai pet relocation service tiers — from document guidance to full coordination. Choose a package, then open the service page for your move.',
+            'Compare pet relocation services Dubai — Essential guidance to full coordination. Choose a tier, then open the service page for your move.',
           keywords: 'pet relocation services Dubai, pet coordination Dubai, PawPilot, PawPartner, PawVIP',
           canonical: `${BASE_URL}/services/`,
           ogType: 'website',
@@ -257,7 +257,7 @@ export default function ServicesPage() {
         image="/images/services-hero.jpg"
         imageAlt="A happy dog and cat beside a travel crate in a welcoming Dubai pet relocation office"
         eyebrow="Our Services"
-        title="Dubai Pet Relocation Services — From Essential to Coordination"
+        title="Pet Relocation Services Dubai — Compare Tiers"
         subtitle="Choose how much of the file we hold, then open the service page for inbound, outbound, door-to-door or pet taxi. Quotes on WhatsApp — no invented package prices."
         updated="Updated September 2026"
         primaryLabel="Get a Relocation Quote"

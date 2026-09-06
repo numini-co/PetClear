@@ -533,7 +533,7 @@ export default function FAQPage() {
       <SEOHead
         meta={{
           title: 'Pet Relocation FAQ Dubai | Dubai Pet Relocation',
-          description: 'Pet relocation FAQ for Dubai: import, export, documents, costs, timelines, airlines, crates, banned breeds, cats, dogs, and emergencies. Ask us on WhatsApp if you need more help.',
+          description: 'Pet relocation FAQ Dubai: import, export, documents, costs, timelines, airlines, crates, banned breeds and emergencies. WhatsApp +971504782999.',
           keywords: 'pet relocation FAQ Dubai, dog import FAQ, cat import FAQ, MOCCAE permit questions, pet transport cost Dubai, banned dog breeds UAE, pet relocation timeline, IATA crate FAQ, summer pet travel embargo, pet export Dubai',
           canonical: `${BASE_URL}/faq/`,
           ogType: 'website',

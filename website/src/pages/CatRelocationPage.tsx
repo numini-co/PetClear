@@ -81,7 +81,7 @@ export default function CatRelocationPage() {
       <SEOHead
         canonical={`${BASE_URL}/cat-relocation-to-dubai/`}
         title="Cat Relocation to Dubai | Complete Guide 2026"
-        description="Expert guide to relocating your cat to Dubai. Sedation guidance, crate comfort, airline policies, MOCCAE requirements, and everything you need for a safe, stress-free journey."
+        description="Cat relocation to Dubai: crate comfort, no-sedation guidance, airline rules and MOCCAE documents. WhatsApp +971504782999."
         keywords="cat relocation to Dubai, bring cat to Dubai, cat import Dubai, Dubai cat relocation, pet cat transport Dubai, moving cat to UAE"
         ogType="article"
         schemas={[
@@ -110,7 +110,7 @@ export default function CatRelocationPage() {
                 name: "How long before my move should I start the cat relocation process?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "From low-risk countries (UK, EU, USA, Canada, Australia, New Zealand, India, Philippines): start 6–8 weeks before your move. From high-risk countries requiring a rabies titer test: start 4–5 months before. The titer test requires a 90-day waiting period after the blood sample is taken. We recommend messaging us as soon as you know your move date — we can tell you immediately if your timeline is realistic."
+                  text: "From low-risk countries (UK, EU, USA, Canada, Australia, New Zealand): start 6–8 weeks before your move. From high-risk countries that require a titer, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a wait after the draw. Message us as soon as you know your move date so we can say whether the calendar is realistic."
                 }
               },
               {
@@ -143,7 +143,7 @@ export default function CatRelocationPage() {
             "@context": "https://schema.org",
             "@type": "Article",
             headline: "Cat Relocation to Dubai: A Complete Guide for Cat Owners",
-            description: "Comprehensive guide to relocating your cat to Dubai. Covers documents, crate requirements, airline options, costs, sedation guidance, and seasonal considerations. Written by Dubai Pet Relocation, Dubai's transparent pet relocation coordination service.",
+            description: "Cat relocation to Dubai: crate comfort, no-sedation guidance, airline rules and MOCCAE documents. WhatsApp +971504782999.",
             image: `${BASE_URL}/assets/cat-relocation-hero.jpg`,
             author: { "@type": "Organization", name: "Dubai Pet Relocation", url: BASE_URL },
             publisher: {
@@ -335,7 +335,7 @@ export default function CatRelocationPage() {
 
           <div className="mt-8 p-6 bg-[#EEF0FC] rounded-[20px]">
             <p className="text-sm text-[#5A5A5A] leading-relaxed mb-3">
-              <strong className="text-[#2A2A2A]">Good news for UK, EU, USA, Canada, Australia, and New Zealand owners:</strong> Your country is classified as low-risk for rabies. This means <strong className="text-[#2A2A2A]">no rabies titer test (RNATT) is required</strong>, and the minimum timeline is just 4–6 weeks from start to finish. For high-risk countries, a titer test is required with a 90-day waiting period — so the timeline extends to 4 months minimum.
+              <strong className="text-[#2A2A2A]">Good news for UK, EU, USA, Canada, Australia, and New Zealand owners:</strong> Your country is classified as low-risk for rabies. This means <strong className="text-[#2A2A2A]">no rabies titer test (RNATT) is required</strong>, and the minimum timeline is just 4–6 weeks from start to finish. For high-risk countries that require a titer, the blood sample should be taken within 90 days before travel (≥0.5 IU/ml) — that is not a wait after the draw.
             </p>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
               <strong className="text-[#2A2A2A]">Important:</strong> Cats must be at least 4 months old to enter Dubai. If your kitten is younger, you'll need to wait or arrange temporary care until they reach the minimum age.
@@ -820,7 +820,7 @@ export default function CatRelocationPage() {
               question="How long before my move should I start the cat relocation process?"
               answer={
                 <>
-                  <p>From low-risk countries (UK, EU, USA, Canada, Australia, New Zealand, India, Philippines): start <strong>6–8 weeks</strong> before your move. From high-risk countries requiring a rabies titer test: start <strong>4–5 months</strong> before. The titer test requires a 90-day waiting period after the blood sample is taken. We recommend messaging us as soon as you know your move date — we can tell you immediately if your timeline is realistic.</p>
+                  <p>From low-risk countries (UK, EU, USA, Canada, Australia, New Zealand): start <strong>6–8 weeks</strong> before your move. From high-risk countries that require a titer, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a wait after the draw. Message us as soon as you know your move date so we can say whether the calendar is realistic.</p>
                 </>
               }
             />

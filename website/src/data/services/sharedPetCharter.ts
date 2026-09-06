@@ -3,13 +3,13 @@ import { FLIGHT_MODE_PATHS } from '../flightModes.ts'
 
 const sharedPetCharter: ServicePageData = {
   slug: 'shared-pet-charter',
-  seoTitle: 'Shared Pet Charter Dubai | Group Charter Coordination',
+  seoTitle: 'Shared Pet Charter Flight Dubai | Quote-Only',
   metaDescription:
-    'Shared pet charter Dubai: a dedicated lift shared with other pets, between cargo and a private jet. A firm seat is Get a Quote.',
+    'Shared pet charter flight Dubai: a dedicated lift shared with other pets. A firm seat is Get a Quote. WhatsApp +971504782999.',
   keywords:
     'shared pet charter Dubai, group pet charter UAE, pet charter flight Dubai, shared animal charter',
-  h1: 'Shared Pet Charter Dubai — Group Charter Coordination',
-  primaryKeyword: 'shared pet charter Dubai',
+  h1: 'Shared Pet Charter Flight Dubai — Quote-Only',
+  primaryKeyword: 'shared pet charter flight Dubai',
   heroValueProp:
     'A menu offer for a dedicated lift shared with other pets — more control than a scheduled belly hold, without buying the whole aircraft. This is not the door-to-door pet relocation page. Market listings below are labelled third-party context. A firm seat is Get a Quote.',
   heroImage: '/assets/w-flight-modes/shared-pet-charter-dogs-dedicated-lift-dubai.jpg',

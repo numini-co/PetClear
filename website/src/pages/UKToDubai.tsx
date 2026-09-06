@@ -6,6 +6,9 @@ import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope
 import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
 import Hero from '../components/Hero.tsx'
+import RouteCostTeaser, { ROUTE_PACKAGE_COST_FAQ } from '../components/RouteCostTeaser.tsx'
+import LinkedText from '../components/LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 
 export default function UKToDubai() {
   const pageUrl = `${BASE_URL}/routes/uk-to-dubai/`
@@ -28,7 +31,7 @@ export default function UKToDubai() {
     },
     {
       question: 'How much does it cost to relocate a pet from the UK to Dubai?',
-      answer: 'For a single pet, total costs typically range from AED 8,000 to AED 18,000 (GBP 1,700–3,800). This includes: veterinary prep (microchip + vaccines ~AED 500–1,000), UK export health certificate (~AED 800–1,500), UAE import permit (AED 500), air cargo freight (AED 4,000–10,000 depending on crate size/weight), customs clearance in Dubai (AED 1,000–2,000), and optional Dubai Pet Relocation door-to-door service (AED 1,500–3,000). Multiple pets may qualify for discounted rates.'
+      answer: ROUTE_PACKAGE_COST_FAQ
     },
     {
       question: 'What documents are required for a UK pet to enter Dubai?',
@@ -57,7 +60,7 @@ export default function UKToDubai() {
         "name": faq.question,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": faq.answer
+          "text": stripInternalMarkdownLinks(faq.answer)
         }
       }))
     },
@@ -225,7 +228,7 @@ export default function UKToDubai() {
               <ul className="space-y-4 text-[#5A5A5A] text-sm leading-relaxed">
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>The UK rabies-free status means no RNATT (titer test) is needed — saving 4–8 weeks and AED 1,500+ in lab fees.</span>
+                  <span>The UK rabies-free status means no RNATT (titer test) is needed — that removes a lab step and weeks of titer timing. We do not publish a package saving figure here.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
@@ -254,88 +257,10 @@ export default function UKToDubai() {
         </div>
       </section>
 
-      {/* COST BREAKDOWN */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Pricing</span>
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">UK to Dubai Cost Breakdown</h2>
-            <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              Transparent pricing for relocating a single pet from the UK to Dubai. Costs vary by pet size, crate dimensions, and departure city. Contact Dubai Pet Relocation for a precise quote.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-[20px] shadow-sm overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full min-w-[640px] text-left">
-                <thead className="bg-[#F5F5F5]">
-                  <tr>
-                    <th className="px-6 py-4 text-sm font-semibold text-[#2A2A2A]">Service Item</th>
-                    <th className="px-6 py-4 text-sm font-semibold text-[#2A2A2A]">Small Pet (Cat / Small Dog)</th>
-                    <th className="px-6 py-4 text-sm font-semibold text-[#2A2A2A]">Medium Dog</th>
-                    <th className="px-6 py-4 text-sm font-semibold text-[#2A2A2A]">Large Dog</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[#EBEBEB]">
-                  <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Microchip + Rabies Vaccine</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 400–700</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500–800</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 600–1,000</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">UK Export Health Certificate (DEFRA)</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 700–1,200</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 700–1,200</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 700–1,200</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">UAE Import Permit (MOCCAE)</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 200</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Air Cargo (LHR → DXB, one way)</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 3,500–5,500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 5,500–8,500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 8,500–14,000</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">IATA-Approved Travel Crate</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 300–500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 500–900</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 900–1,500</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Dubai Customs Clearance</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 800–1,500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,000–1,800</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,200–2,000</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Optional: Dubai Pet Relocation Door-to-Door</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,500–2,500</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 1,800–2,800</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">AED 2,000–3,500</td>
-                  </tr>
-                  <tr className="bg-[#4F5BD5]/5">
-                    <td className="px-6 py-4 text-sm font-bold text-[#2A2A2A]">Total Estimated Cost</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 8,000–12,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 10,000–16,000</td>
-                    <td className="px-6 py-4 text-sm font-bold text-[#4F5BD5]">AED 14,000–22,000</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div className="px-6 py-4 bg-[#F5F6FD] border-t border-[#EBEBEB]">
-              <p className="text-xs text-[#5A5A5A]">
-                * Prices are estimates in AED and include UK VAT where applicable. Exchange rates may affect final pricing. Air cargo rates fluctuate seasonally. Contact Dubai Pet Relocation for a fixed quote based on your pet's exact weight and crate dimensions. Multiple pets may qualify for a 10–15% discount on combined services.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <RouteCostTeaser
+        corridor="UK to Dubai"
+        whatsappMessage="Hi Dubai Pet Relocation! I need a quote for relocating my pet from the UK to Dubai."
+      />
 
       {/* TIMELINE */}
       <section className="py-16 lg:py-24 bg-white">
@@ -483,7 +408,7 @@ export default function UKToDubai() {
                   <MessageCircle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-[#2A2A2A] text-base mb-2">{faq.question}</h3>
-                    <p className="text-[#5A5A5A] text-sm leading-relaxed">{faq.answer}</p>
+                    <p className="text-[#5A5A5A] text-sm leading-relaxed"><LinkedText text={faq.answer} /></p>
                   </div>
                 </div>
               </div>

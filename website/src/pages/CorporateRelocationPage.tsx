@@ -75,7 +75,7 @@ export default function CorporateRelocationPage() {
     {
       question: 'How does corporate pet relocation pricing work per employee?',
       answer:
-        'Each employee\'s pet move is quoted individually, because the price depends on the pet, the route, and the season — not a flat company rate. The structure is the same as our standard service: government and veterinary costs, the IATA travel crate, air cargo, and a coordination fee. The coordination fee follows our three published tiers — PawPilot (AED 1,500–2,500), PawPartner (AED 3,000–5,000), and PawVIP (AED 5,000–8,000). For HR and mobility teams, we present each move as a clear, itemized per-employee quote so it can be approved, expensed, or built into a relocation package without guesswork.',
+        'Each employee\'s pet move is quoted individually — species, crate, route and season change the file. Official MOCCAE fees (confirm on the portal; fees may change) are import permit AED 200, dog port release AED 500 and cat port release AED 250. We do not publish package or coordination-tier totals here. WhatsApp +971504782999 for a per-employee quote that HR can approve or expense.',
     },
     {
       question: 'Who is the point of contact for a corporate account?',
@@ -100,7 +100,7 @@ export default function CorporateRelocationPage() {
     {
       question: 'How early should we engage you before an employee\'s start date?',
       answer:
-        'As early as possible. From low-risk countries such as the UK, EU, USA, Canada, Australia, and New Zealand, the pet import process typically takes 4–6 weeks. From high-risk countries that require a rabies titer test, the minimum timeline is around 4 months because of the mandatory 90-day waiting period after the blood sample is taken. To avoid a situation where an employee has started in Dubai but their pet is still grounded, we recommend starting the pet move alongside the visa and housing process, not after it.',
+        'As early as possible. From low-risk countries such as the UK, EU, USA, Canada, Australia, and New Zealand, the pet import process typically takes 4–6 weeks. From high-risk countries that require a titer, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a wait after the draw. Start the pet file alongside visa and housing so the employee is not in Dubai while the animal is still grounded.',
     },
   ]
 
@@ -129,7 +129,7 @@ export default function CorporateRelocationPage() {
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: 'Corporate Pet Relocation Services in Dubai',
+    name: 'Corporate Pet Relocation Dubai',
     serviceType: 'Corporate pet relocation coordination',
     description:
       'Pet relocation coordination for HR and mobility teams managing employee moves to and from Dubai. Single point of contact, document handling, transparent per-employee pricing, and multi-pet and family support.',
@@ -144,9 +144,9 @@ export default function CorporateRelocationPage() {
   const schemas = [faqSchema, breadcrumbSchema, serviceSchema]
 
   const meta = {
-    title: 'Corporate Pet Relocation Services in Dubai | For HR & Mobility Teams',
+    title: 'Corporate Pet Relocation Dubai | HR & Mobility Quotes',
     description:
-      'Corporate pet relocation for employees moving to or from Dubai. Single point of contact, document handling, transparent per-employee pricing, and multi-pet and family support for HR and mobility managers.',
+      'Corporate pet relocation Dubai for HR and mobility teams. Per-employee quotes, one coordinator, inbound and outbound. WhatsApp +971504782999.',
     canonical,
     ogType: 'website',
     keywords:
@@ -168,8 +168,8 @@ export default function CorporateRelocationPage() {
         image="/images/services-hero.jpg"
         imageAlt="Relocation manager reviewing an employee's pet relocation documents for a move to Dubai"
         eyebrow="For HR, Mobility & Relocation Teams"
-        title="Corporate Pet Relocation Services in Dubai"
-        subtitle="When your employees move, their pets move too. We coordinate the pet side of corporate relocations to and from Dubai — one point of contact, transparent per-employee pricing, and the paperwork handled."
+        title="Corporate Pet Relocation Dubai"
+        subtitle="When your employees move, their pets move too. We coordinate the pet side of corporate relocations to and from Dubai — one point of contact, quote-only per-employee pricing, and the paperwork handled."
         whatsappMessage={corporateMsg}
         secondary={{ label: 'Request a Corporate Quote', to: '/contact/' }}
       />
