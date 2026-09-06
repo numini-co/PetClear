@@ -217,8 +217,8 @@ export default function ImportRequirementsPage() {
   return (
     <div className="bg-[#F5F6FD]">
       <SEOHead
-        title="UAE Pet Import Requirements 2026 | Permits & Documents"
-        description="Complete guide to UAE pet import requirements for Dubai. MOCCAE permit, vaccination rules, banned breeds, health certificates, microchip, rabies titer test, and more."
+        title="UAE Pet Import Requirements | Permits & Documents 2026"
+        description="UAE pet import requirements: 30-day MOCCAE permit, titer sample timing, microchip, cargo entry, and breed checks. Confirm fees on the portal."
         keywords="UAE pet import requirements, MOCCAE import permit, Dubai pet import rules, pet vaccination requirements UAE, dog import Dubai, cat import Dubai, banned dog breeds Dubai"
         canonical={`${BASE_URL}/guides/uae-pet-import-requirements/`}
         ogType="article"
@@ -368,7 +368,7 @@ export default function ImportRequirementsPage() {
         image="/assets/w5/uae-pet-import-requirements-master-checklist-illustration.png"
         imageAlt="Master checklist of UAE pet import requirements: microchip, vaccinations, titer test, permit and health certificate"
         eyebrow="Statutory checklist — not the import service"
-        title="UAE Pet Import Requirements 2026: Complete Guide to Bringing Dogs & Cats to Dubai"
+        title="UAE Pet Import Requirements — Permits, Titer & Cargo"
         subtitle="30-day MOCCAE permit, RNATT sample within 90 days before travel, microchip before rabies, manifested cargo. Confirm fees on the portal."
         updated={LAST_VERIFIED_LABEL}
         whatsappMessage="Hi, I need the UAE pet import requirements checked for my pet from [country] to Dubai."

@@ -9,7 +9,7 @@ import Hero from '../components/Hero.tsx'
 
 export default function AustraliaToDubai() {
   const pageUrl = `${BASE_URL}/routes/australia-to-dubai/`
-  const pageTitle = 'Australia to Dubai Pet Relocation — Complete Guide 2026'
+  const pageTitle = 'Pet Relocation Australia to Dubai | Guide 2026'
   const pageDescription = 'Relocate your pet from Australia to Dubai. Low-risk but strict AQIS export rules. Emirates and Qantas. Costs, timeline and AQIS requirements explained.'
   const keywords = 'Australia to Dubai pet relocation, pet transport Australia to Dubai, Australian pet relocation Dubai, AQIS pet export Dubai, Emirates pet cargo Australia, Qantas pet transport, dog relocation Australia to Dubai, cat relocation Australia to Dubai, pet shipping Australia to UAE'
 

@@ -56,8 +56,9 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 /* ─── Page ─── */
 export default function MOCCAEPermitGuide() {
-  const title = 'MOCCAE Import Permit for Pets — Dubai & UAE Complete Guide (2026)'
-  const description = 'Step-by-step guide to obtaining a MOCCAE import permit for pets entering Dubai and the UAE. Learn required documents, processing times, costs, common rejection reasons, and how Dubai Pet Relocation handles applications.'
+  const title = 'MOCCAE Pet Import Permit | Dubai & UAE Guide 2026'
+  const description =
+    'MOCCAE pet import permit: 30-day UAE Pass application, documents, and rejection reasons. Confirm fees on the official portal.'
   const canonical = `${BASE_URL}/guides/moccae-import-permit/`
   const ogImage = `${BASE_URL}/assets/og-moccae-permit.jpg`
 
@@ -206,7 +207,7 @@ export default function MOCCAEPermitGuide() {
   const schemas = [organizationSchema, websiteSchema, faqSchema, breadcrumbSchema, howToSchema]
 
   const meta = {
-    title: 'MOCCAE Import Permit for Pets — Dubai & UAE Guide (2026)',
+    title,
     description,
     canonical,
     ogImage,
@@ -224,7 +225,7 @@ export default function MOCCAEPermitGuide() {
         image="/assets/w5/moccae-import-permit-guide-clipboard-illustration.png"
         imageAlt="Illustration of a MOCCAE pet import permit application with a validity clock"
         eyebrow="How-to guide — not the service page"
-        title="MOCCAE Import Permit for Pets — Dubai & UAE Complete Guide (2026)"
+        title="MOCCAE Pet Import Permit for Dubai & the UAE"
         subtitle="UAE Pass login, form fields, 30-day validity, rejection reasons, and an honest DIY versus managed comparison. Confirm fees on the official portal."
         updated={LAST_VERIFIED_LABEL}
         whatsappMessage="Hi Dubai Pet Relocation, I am applying for a MOCCAE import permit and want the walkthrough checked before I submit."

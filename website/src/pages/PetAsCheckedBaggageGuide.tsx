@@ -61,9 +61,9 @@ const faqData = [
 
 export default function PetAsCheckedBaggageGuide() {
   const canonical = `${BASE_URL}${FLIGHT_MODE_PATHS.baggage}`
-  const title = 'Pets as Checked Baggage UAE | Accompanied Hold Rules'
+  const title = 'Pet as Checked Baggage Dubai | UAE Accompanied Hold'
   const description =
-    'Pets as checked baggage in the UAE: when accompanied hold / excess / AVIH is allowed, the Emirates under-17-hour outbound rule, and why DXB-ending itineraries must use manifest cargo.'
+    'Pet as checked baggage Dubai: when accompanied hold is allowed, airline limits, and safer cargo alternatives.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -112,7 +112,7 @@ export default function PetAsCheckedBaggageGuide() {
         image="/images/dog-crate.jpg"
         imageAlt="A dog in a hard travel crate of the kind used when a pet travels as accompanied hold baggage"
         eyebrow="Flight-mode guide"
-        title="Flying a Pet as Accompanied Checked Baggage"
+        title="Pet as Checked Baggage from Dubai & the UAE"
         subtitle="Hold travel on the same ticket is allowed on some outbound Emirates journeys — and blocked for itineraries that end in Dubai. Read the rule before you book a passenger seat."
         updated="Updated September 2026"
         primaryLabel="Check if baggage is allowed"

@@ -42,8 +42,9 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 /* ─── Page ─── */
 export default function PetHealthCertificateGuide() {
-  const title = 'Pet Health Certificate for UAE Entry — Complete Guide (2026)'
-  const description = 'What the official veterinary health certificate is, who issues it, the 10-day validity window before travel, and how it connects to the MOCCAE import permit, microchip, and vaccinations. A clear guide for pet owners moving to Dubai and the UAE.'
+  const title = 'Pet Health Certificate UAE | 10-Day Validity Guide'
+  const description =
+    'Pet health certificate for UAE entry: who signs it, the 10-day validity window, and how it fits the MOCCAE permit and vaccines.'
   const canonical = `${BASE_URL}/guides/pet-health-certificate-uae/`
   const ogImage = `${BASE_URL}/assets/og-pet-health-certificate.jpg`
 
@@ -128,7 +129,7 @@ export default function PetHealthCertificateGuide() {
         image="/images/service-pet-import-dubai.jpg"
         imageAlt="Veterinarian examining a calm pet before signing an official health certificate for UAE entry"
         eyebrow="Pet Relocation Guide"
-        title="Pet Health Certificate for UAE Entry"
+        title="Pet Health Certificate UAE — 10-Day Validity"
         subtitle="The official veterinary certificate that lets your pet clear Dubai customs — what it is, who signs it, the 10-day validity window, and how it fits with the MOCCAE permit, microchip, and vaccines."
         updated="Updated June 2026"
       />

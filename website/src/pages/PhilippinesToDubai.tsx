@@ -9,8 +9,9 @@ import Hero from '../components/Hero.tsx'
 
 export default function PhilippinesToDubai() {
   const pageUrl = `${BASE_URL}/routes/philippines-to-dubai/`
-  const pageTitle = 'Philippines to Dubai Pet Relocation — Complete Guide 2026'
-  const pageDescription = 'Relocate your pet from the Philippines to Dubai. High-risk route: titer sample within 90 days before travel ≥0.5 IU/ml. PAL, Emirates, Cebu Pacific. Costs and documents.'
+  const pageTitle = 'Pet Relocation Philippines to Dubai | Guide 2026'
+  const pageDescription =
+    'Relocate your pet from the Philippines to Dubai. High-risk: titer sample within 90 days before travel ≥0.5 IU/ml. PAL, Emirates, Cebu Pacific.'
   const keywords = 'Philippines to Dubai pet relocation, pet transport Philippines to Dubai, Filipino pet relocation Dubai, titer test Philippines Dubai, PAL pet cargo Dubai, Philippine Airlines pet transport, Cebu Pacific pet cargo, dog relocation Philippines to Dubai, cat relocation Philippines to Dubai'
 
   const faqs = [

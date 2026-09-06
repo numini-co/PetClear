@@ -76,9 +76,9 @@ const faqData = [
 
 export default function EmiratesPetCargoGuide() {
   const canonical = `${BASE_URL}${FLIGHT_MODE_PATHS.cargo}`
-  const title = 'Emirates Pet Cargo & SkyCargo Pets — 2026 Guide'
+  const title = 'Emirates Pet Cargo | SkyCargo Rules 2026'
   const description =
-    'Educational guide to Emirates SkyCargo / manifest cargo into Dubai: USD 500 / 650 / 800 animal-charge tiers, booking steps and the UAE cargo rule. Coordination is quoted on the relocation service pages.'
+    'Emirates pet cargo: SkyCargo into Dubai, published animal-charge tiers, and booking steps. Confirm live fees with the airline.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -127,7 +127,7 @@ export default function EmiratesPetCargoGuide() {
         image="/images/guide-iata-crate.jpg"
         imageAlt="An IATA-approved pet crate of the kind used for Emirates SkyCargo and other manifest cargo bookings"
         eyebrow="Airline guide"
-        title="Emirates Pet Cargo: SkyCargo Rules, Manifest Cargo & Booking"
+        title="Emirates Pet Cargo — SkyCargo Rules & Booking"
         subtitle="An educational airline guide — not a cargo booking desk. Emirates animal-charge tiers, booking windows and unaccompanied cargo, cited from the airline. Commercial coordination lives on the relocation service pages."
         updated="Updated September 2026"
         primaryLabel="Get a Relocation Quote"

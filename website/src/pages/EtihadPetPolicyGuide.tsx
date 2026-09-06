@@ -71,9 +71,9 @@ const faqData = [
 
 export default function EtihadPetPolicyGuide() {
   const canonical = `${BASE_URL}${FLIGHT_MODE_PATHS.cabin}`
-  const title = 'Etihad Pets in Cabin 2026 — Policy, Fees & AUH Arrival'
+  const title = 'Etihad Pets in Cabin | Policy & AUH Arrival'
   const description =
-    'Etihad pets in cabin: the only UAE dog-and-cat cabin product. Cabin fees change — confirm at booking. A 2026 from-USD-399 Economy promo is expired (13 Apr–31 May) and is not the current standard. ≤8 kg including carrier, AUH arrival and Dubai transfer.'
+    'Etihad pets in cabin: the only UAE dog-and-cat cabin product. Confirm live cabin fees at booking. ≤8 kg including carrier; AUH arrival.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',

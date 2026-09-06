@@ -4,7 +4,7 @@ const petExportDubai: ServicePageData = {
   slug: 'pet-export-dubai',
   seoTitle: 'Pet Export Dubai | Leave the UAE With Your Pet',
   metaDescription:
-    'Leaving Dubai? We handle MOCCAE export permits, health certificates & flight booking. Stress-free pet export with transparent pricing.',
+    'Pet export Dubai: MOCCAE export health certificates, Fit to Fly, and flight booking coordination. Get a relocation quote.',
   keywords:
     'pet export dubai, export pet from dubai, leaving dubai with pet, pet export permit dubai, take pet out of dubai, pet export requirements uae',
   h1: 'Pet Export Services from Dubai',

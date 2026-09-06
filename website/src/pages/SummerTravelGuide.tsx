@@ -44,8 +44,9 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 /* ─── Page ─── */
 export default function SummerTravelGuide() {
-  const title = 'Pet Travel During Dubai Summer Heat — Embargo, Risks & Alternatives'
-  const description = 'Complete guide to pet travel during Dubai summer heat embargo. Learn which airlines have embargos, temperature restrictions, brachycephalic breed bans, alternatives, and how Dubai Pet Relocation handles summer moves safely.'
+  const title = 'Summer Pet Embargo Dubai | Heat & Airline Limits'
+  const description =
+    'Summer pet embargo Dubai: airline heat limits, brachycephalic restrictions, and safer timing or routing alternatives.'
   const canonical = `${BASE_URL}/guides/pet-travel-summer-dubai/`
   const ogImage = `${BASE_URL}/assets/og-summer-travel.jpg`
 
@@ -122,7 +123,7 @@ export default function SummerTravelGuide() {
   const schemas = [faqSchema, breadcrumbSchema, articleSchema]
 
   const meta = {
-    title: 'Pet Travel in Dubai Summer Heat | Embargo & Options',
+    title,
     description,
     canonical,
     ogImage,
@@ -140,7 +141,7 @@ export default function SummerTravelGuide() {
         image="/images/guide-summer.jpg"
         imageAlt="A dog staying cool with water in the shade on a hot Dubai summer day"
         eyebrow="Pet Relocation Guide"
-        title="Pet Travel During Dubai Summer Heat — Embargo, Risks & Alternatives"
+        title="Summer Pet Embargo Dubai — Heat, Airlines & Options"
         subtitle="Dubai summers exceed 45°C, making pet cargo dangerous. Airline embargos, breed bans, and the safe alternatives — explained."
         updated="Updated June 2026"
       />

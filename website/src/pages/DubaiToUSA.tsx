@@ -9,7 +9,7 @@ import OfficialSources from '../components/OfficialSources.tsx'
 
 export default function DubaiToUSA() {
   const pageUrl = `${BASE_URL}/routes/dubai-to-usa/`
-  const pageTitle = 'Dubai to USA Pet Relocation | Export Guide 2026'
+  const pageTitle = 'Pet Relocation Dubai to USA | Guide 2026'
   const pageDescription = 'Export your dog or cat from Dubai to the USA. Guide to CDC dog import rules, USDA APHIS health certificates, state rules, airlines, costs and timeline.'
   const keywords = 'Dubai to USA pet relocation, export pet Dubai to USA, pet transport Dubai to America, CDC dog import form, USDA APHIS health certificate, Emirates pet cargo USA, pet relocation to USA, Dubai to JFK pet cargo, Dubai to LAX pet transport, dog import USA CDC, cat import USA requirements, Hawaii pet quarantine, state pet import rules USA'
 

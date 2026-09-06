@@ -41,8 +41,9 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 /* ─── Page ─── */
 export default function IATACrateGuide() {
-  const title = 'IATA Pet Travel Crate Requirements for Dubai Flights — 2026 Guide'
-  const description = 'Complete guide to IATA-compliant pet travel crates for Dubai flights. Learn sizing formulas, construction rules, airline-specific requirements (Emirates, Etihad, flydubai), and how Dubai Pet Relocation sizes crates for safe travel.'
+  const title = 'IATA Approved Pet Crate Dubai | Flight Requirements 2026'
+  const description =
+    'IATA approved pet crate Dubai rules: sizing, ventilation, labels, and airline checks for DXB/AUH pet flights.'
   const canonical = `${BASE_URL}/guides/iata-pet-crate-requirements/`
   const ogImage = `${BASE_URL}/assets/og-crate-guide.jpg`
 
@@ -119,7 +120,7 @@ export default function IATACrateGuide() {
   const schemas = [faqSchema, breadcrumbSchema, articleSchema]
 
   const meta = {
-    title: 'IATA Pet Crate Requirements for Dubai Flights (2026)',
+    title,
     description,
     canonical,
     ogImage,
@@ -137,7 +138,7 @@ export default function IATACrateGuide() {
         image="/images/guide-iata-crate.jpg"
         imageAlt="An IATA-approved airline pet travel crate with a calm dog resting comfortably inside"
         eyebrow="Pet Relocation Guide"
-        title="IATA Pet Travel Crate Requirements for Dubai Flights — 2026 Guide"
+        title="IATA Approved Pet Crate Requirements for Dubai Flights"
         subtitle="The wrong crate can get your pet refused at the airport. IATA LAR sizing, construction rules, and airline-specific policies for safe travel to Dubai."
         updated="Updated June 2026"
       />
@@ -151,7 +152,7 @@ export default function IATACrateGuide() {
                 What Is IATA LAR and Why Does It Matter?
               </h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                IATA stands for the International Air Transport Association. The <strong>IATA Live Animal Regulations (LAR)</strong> is the global standard for transporting animals by air. These rules cover crate design, sizing, ventilation, labeling, and documentation.
+                IATA approved pet crate Dubai rules follow the <strong>IATA Live Animal Regulations (LAR)</strong> — the global standard for transporting animals by air. These rules cover crate design, sizing, ventilation, labeling, and documentation.
               </p>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
                 Airlines flying to Dubai — including Emirates, Etihad, and flydubai — require all pets in cargo to travel in IATA LAR-compliant crates. Failure to meet these standards means your pet will be refused at check-in, potentially causing missed flights, extra fees, and severe stress for your animal.

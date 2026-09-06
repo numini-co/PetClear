@@ -61,7 +61,7 @@ const URGENT_MSG =
 /* ─── Page ─── */
 export default function EmergencyRelocationPage() {
   const description =
-    'Need to relocate your pet to Dubai fast? Emergency and urgent pet relocation help for sudden job moves, visa deadlines, and family emergencies. From low-risk countries with documents in order, a fast move is possible. Message us on WhatsApp for a 15-minute reply.'
+    'Emergency pet relocation Dubai: sudden job moves, visa windows, and family deadlines. WhatsApp +971504782999 to check what is possible.'
   const canonical = `${BASE_URL}/emergency-pet-relocation-dubai/`
   const ogImage = `${BASE_URL}/images/hero-dog.jpg`
 
@@ -133,7 +133,7 @@ export default function EmergencyRelocationPage() {
   const schemas = [faqSchema, breadcrumbSchema, serviceSchema]
 
   const meta = {
-    title: 'Emergency & Urgent Pet Relocation in Dubai | Fast Help',
+    title: 'Emergency Pet Relocation Dubai | Urgent & Short-Notice',
     description,
     canonical,
     ogImage,
@@ -152,7 +152,7 @@ export default function EmergencyRelocationPage() {
         image="/images/hero-dog.jpg"
         imageAlt="A calm dog waiting beside a packed travel crate, ready for an urgent relocation to Dubai"
         eyebrow="Urgent Pet Relocation"
-        title="Emergency & Urgent Pet Relocation in Dubai"
+        title="Emergency Pet Relocation Dubai — Urgent Moves"
         subtitle="A sudden job move, a closing visa window, or a family emergency — take a breath. Message us on WhatsApp and we'll tell you honestly what's possible, fast. We aim to reply within 15 minutes."
         whatsappMessage={URGENT_MSG}
         updated="Updated June 2026"

@@ -84,9 +84,9 @@ const faqData = [
 
 export default function PetFlightOptionsHub() {
   const canonical = `${BASE_URL}${FLIGHT_MODE_PATHS.hub}`
-  const title = 'Pet Flight Options from Dubai | Cabin, Cargo, Jet & Charter'
+  const title = 'Pet Flight Options Dubai | Cabin, Cargo & Charter'
   const description =
-    'Which airlines fly pets to Dubai? Compare Etihad cabin into AUH with Emirates, flydubai and Air Arabia (no cabin cats or dogs) and the cargo default. Six flight modes; fee grids live on the child guides.'
+    'Pet flight options Dubai: in-cabin, manifested cargo, checked baggage limits, and when charter makes sense.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -126,7 +126,7 @@ export default function PetFlightOptionsHub() {
         image="/assets/flight-modes/pet-flight-options-hub-hero.jpg"
         imageAlt="A coordinator comparing cabin, cargo and charter options for flying a pet to or from Dubai"
         eyebrow="Flight options hub"
-        title="Six Ways a Pet Can Fly to or from Dubai"
+        title="Pet Flight Options from Dubai — Cabin, Cargo, Charter"
         subtitle="Chooser and airline comparison: Etihad cabin into AUH, Emirates / flydubai / Air Arabia no cabin cats or dogs, cargo the Dubai default. Fee grids live on the child guides."
         updated="Updated September 2026"
         primaryLabel="Ask which mode fits"

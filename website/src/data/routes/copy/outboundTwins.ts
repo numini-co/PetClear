@@ -5,7 +5,7 @@ export const OUTBOUND_TWIN_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-australia',
     countryKey: 'australia',
-    title: 'Dubai to Australia Pet Relocation | Export Guide 2026',
+    title: 'Pet Relocation Dubai to Australia | Guide 2026',
     meta: 'Export a dog or cat from Dubai to Australia: DAFF Group 3, BICON permit, Mickleham quarantine. Destination-first — confirm current rules.',
     h1: 'Dubai to Australia Pet Relocation — Exporting Your Pet to Australia',
     heroAlt: 'Dog with Australian flag cue ready for export from Dubai to Australia',

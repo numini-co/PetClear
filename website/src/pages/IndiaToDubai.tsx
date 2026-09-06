@@ -9,8 +9,9 @@ import Hero from '../components/Hero.tsx'
 
 export default function IndiaToDubai() {
   const pageUrl = `${BASE_URL}/routes/india-to-dubai/`
-  const pageTitle = 'India to Dubai Pet Relocation — Complete Guide 2026'
-  const pageDescription = 'Relocate your pet from India to Dubai. High-risk route: titer sample within 90 days before travel ≥0.5 IU/ml. IndiGo, Emirates, Air India. Costs and documents.'
+  const pageTitle = 'Pet Relocation India to Dubai | Guide 2026'
+  const pageDescription =
+    'Relocate your pet from India to Dubai. High-risk route: titer sample within 90 days before travel ≥0.5 IU/ml. IndiGo, Emirates, Air India. Documents.'
   const keywords = 'India to Dubai pet relocation, pet transport India to Dubai, Indian pet relocation Dubai, titer test India to Dubai, RNATT India Dubai, IndiGo pet cargo Dubai, Emirates pet transport India, Air India pet cargo, dog relocation India to Dubai, cat relocation India to Dubai'
 
   const faqs = [

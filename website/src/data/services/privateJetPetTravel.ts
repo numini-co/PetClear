@@ -3,12 +3,12 @@ import { FLIGHT_MODE_PATHS } from '../flightModes.ts'
 
 const privateJetPetTravel: ServicePageData = {
   slug: 'private-jet-pet-travel',
-  seoTitle: 'Private Jet Pet Travel from Dubai | Quote-Only Coordination',
+  seoTitle: 'Private Jet Pet Travel Dubai | Quote-Only Coordination',
   metaDescription:
-    'Offer page for private jet pet travel when scheduled cabin, baggage or cargo will not work. We coordinate eligibility, documents and the last mile. Quote only — no published jet prices.',
+    'Private jet pet travel Dubai when cabin, baggage or cargo will not work. Eligibility, documents, last mile. Quote only — no published jet prices.',
   keywords:
     'private jet pet travel Dubai, private jet with dog UAE, fly pet private aircraft Dubai, dedicated aircraft pet travel',
-  h1: 'Private Jet Pet Travel — When a Scheduled Flight Is Not the Right Fit',
+  h1: 'Private Jet Pet Travel Dubai — Quote-Only Coordination',
   primaryKeyword: 'private jet pet travel Dubai',
   heroValueProp:
     'A menu offer for a dedicated aircraft: tight calendars, animals scheduled carriers will not accept, or owners who need the whole cabin. This is not the door-to-door pet relocation page. Quote only — we do not publish jet prices.',

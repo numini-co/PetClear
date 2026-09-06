@@ -100,7 +100,7 @@ export default function DogRelocationPage() {
     <div className="bg-[#F5F6FD]">
       <SEOHead
         canonical={`${BASE_URL}/dog-relocation-to-dubai/`}
-        title="Dog Relocation to Dubai | Complete Guide 2026 | Dubai Pet Relocation"
+        title="Dog Relocation to Dubai | Complete Guide 2026"
         description="Expert guide to relocating your dog to Dubai. Breed checks, crate sizing, MOCCAE import permit, flight booking, banned breeds, and everything you need for a safe journey."
         keywords="dog relocation to Dubai, bring dog to Dubai, dog import Dubai, Dubai dog relocation, pet dog transport Dubai, banned dog breeds Dubai"
         ogType="article"

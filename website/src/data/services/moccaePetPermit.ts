@@ -14,12 +14,12 @@ import {
 
 const moccaePetPermit: ServicePageData = {
   slug: 'moccae-pet-permit',
-  seoTitle: 'MOCCAE Pet Permit Service | Import & Export Permits (2026)',
+  seoTitle: 'MOCCAE Pet Permit Dubai | Import & Export Assistance',
   metaDescription:
-    'MOCCAE pet permit assistance for Dubai: document review, UAE Pass portal guidance and 30-day import-permit tracking. Message us on WhatsApp to check your documents.',
+    'MOCCAE pet permit Dubai: document review, UAE Pass portal guidance, and 30-day import-permit tracking. WhatsApp to check your file.',
   keywords:
     'MOCCAE pet permit, MOCCAE pet import permit, MOCCAE pet export permit, express MOCCAE permit, moccae pet permit dubai, pet import permit dubai online',
-  h1: 'MOCCAE Import and Export Permit Assistance',
+  h1: 'MOCCAE Pet Permit Dubai — Import & Export Assistance',
   primaryKeyword: 'moccae pet permit dubai',
   heroValueProp:
     'Permit assistance only: we review the file, walk the official MOCCAE portal with you, and track the 30-day import window so the Ministry issues the permit correctly the first time.',
