@@ -426,7 +426,7 @@ export default function UKToDubai() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet from the UK to Dubai?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              Dubai Pet Relocation has relocated hundreds of British pets to Dubai. From London, Manchester, Edinburgh, or anywhere in the UK — we handle the paperwork, flights, and customs so you can focus on settling in.
+              We coordinate the UK-to-Dubai corridor: DEFRA/APHA export documents, the MOCCAE import permit (valid 90 days from issuance), cargo booking, and WhatsApp updates during business hours. From London, Manchester, Edinburgh, or anywhere in the UK — we handle the paperwork, flights, and customs so you can focus on settling in.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppBtn label="Get a UK to Dubai quote" message="Hi, I want to relocate my pet from the UK to Dubai. Can you help me understand the process and cost?" />

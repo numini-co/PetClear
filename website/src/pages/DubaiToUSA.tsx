@@ -655,7 +655,7 @@ export default function DubaiToUSA() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Export Your Pet from Dubai to the USA?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              Dubai Pet Relocation has relocated hundreds of pets from Dubai to New York, Los Angeles, Chicago, Washington DC, and cities across America. We handle the CDC forms, USDA health certificates, flight booking, and US customs so you can focus on your move.
+              We coordinate the Dubai-to-USA corridor: CDC forms, USDA health certificates, flight booking, and WhatsApp updates during business hours. From Dubai to New York, Los Angeles, Chicago, Washington DC, and cities across America — we handle the documents and US customs so you can focus on your move.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppBtn label="Get a Dubai to USA quote" message="Hi, I want to relocate my pet from Dubai to the USA. Can you help me understand the CDC requirements, timeline, and cost?" />

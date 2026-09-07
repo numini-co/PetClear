@@ -456,7 +456,7 @@ export default function IndiaToDubai() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet from India to Dubai?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              Dubai Pet Relocation has helped hundreds of Indian families move their pets to Dubai. From Delhi, Mumbai, Bengaluru, Chennai, Hyderabad, or any city in India — we manage the titer test, AQCS NOC, flight booking, and Dubai customs.
+              We coordinate the India-to-Dubai corridor: titer sample within 90 days before travel, AQCS NOC, the MOCCAE import permit (valid 90 days from issuance), cargo booking, and WhatsApp updates during business hours. From Delhi, Mumbai, Bengaluru, Chennai, Hyderabad, or any city in India — we manage the titer test, AQCS NOC, flight booking, and Dubai customs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppBtn label="Get an India to Dubai quote" message="Hi, I want to relocate my pet from India to Dubai. Can you help me understand the titer test process and cost?" />

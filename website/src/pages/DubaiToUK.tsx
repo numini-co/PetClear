@@ -662,7 +662,7 @@ export default function DubaiToUK() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Export Your Pet from Dubai to the UK?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              Dubai Pet Relocation has relocated hundreds of pets from Dubai to London, Manchester, Edinburgh, and beyond. We handle the DEFRA paperwork, MOCCAE endorsement, airline booking, and UK customs so you can focus on your move.
+              We coordinate the Dubai-to-UK corridor: DEFRA paperwork, MOCCAE endorsement, airline booking, and WhatsApp updates during business hours. From Dubai to London, Manchester, Edinburgh, and beyond — we handle the documents and UK customs so you can focus on your move.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppBtn label="Get a Dubai to UK quote" message="Hi, I want to relocate my pet from Dubai to the UK. Can you help me understand the DEFRA requirements, timeline, and cost?" />
