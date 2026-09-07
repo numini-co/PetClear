@@ -9,6 +9,8 @@ import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
 import FAQItem from '../components/FAQItem.tsx'
 import SnippetAnswer from '../components/SnippetAnswer.tsx'
+import LinkedText from '../components/LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import ContentImage from '../components/ContentImage.tsx'
 import { SERVICE_LINKS } from '../data/nav.ts'
 import { cardImageFor } from '../data/cardImages.ts'
@@ -157,7 +159,7 @@ const addOns = [
 const SERVICES_FAQS = [
   {
     q: 'What is the best pet relocation service in Dubai?',
-    a: 'There is no honest number-one ranking and we do not invent ratings. Judge a Dubai relocator by licensing and permit guidance, fee transparency, a named process, and cabin-versus-cargo fit. We are a provider — Dubai Pet Relocation. Compare tiers on this hub, then open door-to-door pet relocation and Get a Quote. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.',
+    a: '“Best” depends on origin, species, and documentation-only versus door-to-door — the full answer lives on [pet relocation in Dubai](/service/pet-relocation-dubai/). This hub compares our service tiers, not a companies listicle. WhatsApp +971504782999.',
   },
   {
     q: 'Best pet relocation services Dubai',
@@ -233,7 +235,7 @@ export default function ServicesPage() {
     mainEntity: SERVICES_FAQS.map((f) => ({
       '@type': 'Question',
       name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
+      acceptedAnswer: { '@type': 'Answer', text: stripInternalMarkdownLinks(f.a) },
     })),
   }
 
@@ -268,7 +270,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <SnippetAnswer
             question="What is the best pet relocation service in Dubai?"
-            answer="There is no honest number-one ranking. Judge a Dubai relocator by licensing and permit guidance, fee transparency, a named process, and whether cabin, cargo, jet or charter fits the animal. We are a provider — Dubai Pet Relocation — and we quote the file. Compare tiers here, then Get a Quote."
+            answer="“Best” depends on origin, species, and documentation-only versus door-to-door — the full answer lives on the Dubai pet relocation service page. This hub compares our service tiers, not a companies listicle. WhatsApp +971504782999."
           />
           <p className="text-body mb-4">
             This hub compares tiers. It does not own “pet relocation Dubai” — that money head is{' '}
@@ -474,7 +476,7 @@ export default function ServicesPage() {
           <h2 className="mb-6 text-center text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Frequently asked questions</h2>
           <div className="space-y-3">
             {SERVICES_FAQS.map((f) => (
-              <FAQItem key={f.q} question={f.q} answer={f.a} />
+              <FAQItem key={f.q} question={f.q} answer={<LinkedText text={f.a} />} />
             ))}
           </div>
         </div>

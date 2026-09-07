@@ -200,14 +200,19 @@ export const OUTBOUND_TWIN_COPY: RouteUniqueCopy[] = [
       'Seed airlines are Emirates (cargo, DXB hub), Etihad (cargo, AUH), Air India (cabin_or_cargo, seed: cargo/cabin varies), IndiGo (generally_not, seed: generally not pets) and Qatar Airways (cargo via DOH). Every row is unverified. IndiGo is the corridor-specific warning: do not build a Bengaluru or Mumbai passenger fare and assume the cat can ride. Air India’s varies flag means cabin on one aircraft and date can be cargo — or a refusal — on another; confirm the live OD, do not treat “Air India flies pets” as a rule. Emirates and Etihad seed as cargo from the UAE even on dense passenger banks. Qatar Airways is a cargo connection via Doha, with the usual live-animal connection risk, not a cabin story. This page is not an IndiGo or Air India policy guide; confirm current policy on the carrier site. We are not affiliated with any of these airlines and we do not publish cargo-rate numerals. Inbound India-to-Dubai mode notes do not transfer. If the only open human ticket is IndiGo and the NOC is real, the pet still needs a different product. Get Route Checked or WhatsApp +971504782999 with pathway, designated airport and whether anyone has already bought a no-pet fare.',
     faqs: [
       {
+        question: 'How much does it cost to relocate a pet from Dubai to India?',
+        answer:
+          'Outbound cost is UAE export paperwork, freight, crate, Indian entry pathway (AQCS / permissions), and coordination — different from inbound UAE import fees. We do not invent a Dubai→India package band. General cost types: [/guides/pet-relocation-cost-dubai/](/guides/pet-relocation-cost-dubai/). Export help: [/service/pet-export-dubai/](/service/pet-export-dubai/). Get Route Checked on WhatsApp +971504782999.',
+      },
+      {
+        question: 'How to take pets from the UAE to India?',
+        answer:
+          'Plan destination-side Indian permissions first, then UAE export certification and a confirmed live-animal flight — do not reverse-paste inbound MOCCAE import steps onto an outbound file. This page owns India arrival rules; import-to-Dubai stays on [/routes/india-to-dubai/](/routes/india-to-dubai/). Journey framing: [/service/pet-relocation-from-dubai/](/service/pet-relocation-from-dubai/). Get Route Checked via WhatsApp +971504782999.',
+      },
+      {
         question: 'How do I take pets from the UAE to India?',
         answer:
           'Decide the Indian pathway first — Transfer of Residence, re-import, or short stay — then apply for an AQCS Advance NOC at least seven working days before embarkation (verify current AQCS timing) for a designated airport (seed: DEL, BOM, BLR, HYD, MAA; DGFT also names Kolkata). Time the MOCCAE export health certificate and a live-animal product to that NOC. Do not start with an IndiGo passenger ticket. This is Indian import, not a UAE inbound permit file.',
-      },
-      {
-        question: 'How much does pet relocation from Dubai to India cost?',
-        answer:
-          'We do not publish AED, INR, AQCS or airline fee numerals on this page. Pathway (ToR vs re-import vs short stay), designated airport and the live-animal product drive the quote. Read /guides/pet-relocation-cost-dubai/ for the cost framework, then Get Route Checked or WhatsApp +971504782999 with pet details and the Indian city.',
       },
       {
         question: 'Why isn’t this page the reverse of India to Dubai?',

@@ -28,6 +28,8 @@ import LastVerified from '../components/LastVerified.tsx'
 import ContentImage from '../components/ContentImage.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import SnippetAnswer from '../components/SnippetAnswer.tsx'
+import LinkedText from '../components/LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, siteConfig } from '../lib/seo.ts'
 import {
   LAST_VERIFIED_LABEL,
@@ -64,14 +66,29 @@ export default function MOCCAEPermitGuide() {
 
   const faqData = [
     {
-      question: 'Do I need a MOCCAE import permit?',
-      answer:
-        'Yes. Every dog or cat entering the UAE needs a MOCCAE import permit before travel. Airlines will not board the pet without it, and customs will refuse entry. The permit is valid 90 days from issuance. Apply on the official MOCCAE portal with UAE Pass, or we review the file and submit with you. Confirm current fees on the portal. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.',
-    },
-    {
       question: 'Do I need a MOCCAE import permit for my dog?',
       answer:
-        'Yes. Each dog needs its own permit. Cats too — one pet, one permit. Validity is 90 days from issuance. Apply online before you book cargo so the arrival sits inside that window. Confirm the live portal fee; fees may change. This guide owns the apply questions; the commercial help page is the MOCCAE pet permit service.',
+        'Yes. Every dog entering the UAE needs its own MOCCAE import permit before travel — cats too (one pet, one permit). Airlines will not board without it, and the port will refuse entry. The permit is valid 90 days from issuance. Confirm live portal fees (commonly permit AED 200; dog release AED 500 — confirm-on-MOCCAE). Commercial assistance twin: [/service/moccae-pet-permit/](/service/moccae-pet-permit/).',
+    },
+    {
+      question: 'How do I get a pet import permit from MOCCAE?',
+      answer:
+        'Log in at moccae.gov.ae with UAE Pass, open Import Permit for Pets, upload owner ID/passport copy, pet photo, vaccination and microchip records, and health-certificate details, then pay the current portal fee. Processing is often estimated in a few working days — that is not a first-party SLA. We error-check the file first. Validity: 90 days from issuance. WhatsApp +971504782999.',
+    },
+    {
+      question: 'How to apply for a Moccae license?',
+      answer:
+        'For pet relocation, you almost always mean the MOCCAE pet import permit, not a MOCCAE business or trade license. Apply via UAE Pass → Import Permit for Pets on the official portal. The permit is valid 90 days from issuance. Confirm the portal fee (commonly AED 200 — confirm-on-MOCCAE). If you need a commercial trade license, that is a different MOCCAE product — do not mix the two applications.',
+    },
+    {
+      question: 'How to get a MOCCAE license?',
+      answer:
+        'Same disambiguation: pet owners need the import permit for pets, not a general “MOCCAE license.” Path: UAE Pass on moccae.gov.ae → Export and Import Services → Import Permit for Pets. Validity is 90 days from issuance. Service help: [/service/moccae-pet-permit/](/service/moccae-pet-permit/). Full import checklist: [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/).',
+    },
+    {
+      question: 'Do I need a MOCCAE import permit?',
+      answer:
+        'Yes. Every dog or cat entering the UAE needs a MOCCAE import permit before travel. Airlines will not board the pet without it, and customs will refuse entry. The permit is valid 90 days from issuance. Apply on the official MOCCAE portal with UAE Pass, or we review the file and submit with you. Confirm current fees on the portal. Email support@dubai-pet-relocation.ae or WhatsApp +971504782999.',
     },
     {
       question: 'How do I apply for a MOCCAE import permit?',
@@ -138,7 +155,7 @@ export default function MOCCAEPermitGuide() {
       name: faq.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: typeof faq.answer === 'string' ? faq.answer : faq.question,
+        text: typeof faq.answer === 'string' ? stripInternalMarkdownLinks(faq.answer) : faq.question,
       },
     })),
   }
@@ -492,7 +509,7 @@ export default function MOCCAEPermitGuide() {
               <div>
                 <p className="font-semibold text-[#2A2A2A] mb-1">Resubmission Resets the Timeline</p>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  When you resubmit after a rejection, the processing estimate restarts. Two rejects can push a cargo date past the 30-day window. That is the practical reason to line-check the file — or to use{' '}
+                  When you resubmit after a rejection, the processing estimate restarts. Two rejects can push a cargo date past the 90-day window. That is the practical reason to line-check the file — or to use{' '}
                   <Link to="/service/moccae-pet-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
                     MOCCAE permit assistance
                   </Link>{' '}
@@ -652,7 +669,7 @@ export default function MOCCAEPermitGuide() {
             </p>
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
               {faqData.map((faq, i) => (
-                <FAQItem key={i} question={faq.question} answer={faq.answer} />
+                <FAQItem key={i} question={faq.question} answer={<LinkedText text={faq.answer} />} />
               ))}
             </div>
           </div>

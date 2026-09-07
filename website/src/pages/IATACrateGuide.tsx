@@ -23,6 +23,8 @@ import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
+import LinkedText from '../components/LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL } from '../lib/seo.ts'
 
 /* ─── FAQ accordion helper ─── */
@@ -41,13 +43,33 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 /* ─── Page ─── */
 export default function IATACrateGuide() {
-  const title = 'IATA Approved Pet Crate Dubai | Flight Requirements 2026'
+  const title = 'IATA Approved Dog Crate | Airline Pet Crate Requirements'
   const description =
-    'IATA approved pet crate Dubai rules: sizing, ventilation, labels, and airline checks for DXB/AUH pet flights.'
+    'What is an IATA approved dog crate: Live Animals sizing, ventilation, hardware, and why airlines — not shopping-cart badges — do final acceptance.'
   const canonical = `${BASE_URL}/guides/iata-pet-crate-requirements/`
   const ogImage = `${BASE_URL}/assets/og-crate-guide.jpg`
 
   const faqData = [
+    {
+      question: 'What is an IATA approved dog crate?',
+      answer:
+        'An IATA-style travel crate meets Live Animals Regulations hardware and sizing so the dog can stand, turn, and lie down, with secure door, ventilation, and water provisions acceptance staff check. “IATA approved” in retail marketing still means built to the standard — the airline does the final acceptance. Measure the dog, not the brochure size chart.',
+    },
+    {
+      question: 'Are pet travel crates airline-approved?',
+      answer:
+        'Airlines approve the shipment, not a shopping-cart badge. A crate that matches IATA LAR dimensions and hardware is eligible for acceptance; snub-nosed breeds, heat embargoes, and bolt quality still fail at the desk. Buy rigid, escape-proof crates with metal hardware — then confirm your carrier’s live notes. This page owns the requirements; we are not a marketplace.',
+    },
+    {
+      question: 'Which dog crates are airline-approved?',
+      answer:
+        'Airlines approve the shipment, not a shopping-cart badge. A crate that matches IATA LAR dimensions and hardware is eligible for acceptance; snub-nosed breeds, heat embargoes, and bolt quality still fail at the desk. Buy rigid, escape-proof crates with metal hardware — then confirm your carrier’s live notes. This page owns the requirements; we are not a marketplace.',
+    },
+    {
+      question: 'Where can I buy IATA approved dog crates?',
+      answer:
+        'Buy from pet-travel suppliers or specialty retailers that sell rigid IATA-style crates in the size your dog actually measures. Prioritise correct length/height and hardware over brand claims. Dubai and origin-city pet stores and aviation suppliers often stock them — verify the model against airline notes before flight day. We can advise sizing; we do not run a crate storefront.',
+    },
     {
       question: 'Can I use a soft carrier for my pet\'s flight to Dubai?',
       answer: 'No. Soft carriers, fabric bags, and collapsible carriers are not permitted for cargo hold travel to Dubai. IATA Live Animal Regulations (LAR) require hard-shell plastic or wooden crates with metal doors and ventilation on all four sides. Soft carriers are only acceptable for in-cabin travel (small cats and dogs under 8kg), and even then, not all airlines allow them.',
@@ -90,7 +112,7 @@ export default function IATACrateGuide() {
       name: faq.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: typeof faq.answer === 'string' ? faq.answer : faq.question,
+        text: typeof faq.answer === 'string' ? stripInternalMarkdownLinks(faq.answer) : faq.question,
       },
     })),
   }
@@ -138,7 +160,7 @@ export default function IATACrateGuide() {
         image="/images/guide-iata-crate.jpg"
         imageAlt="An IATA-approved airline pet travel crate with a calm dog resting comfortably inside"
         eyebrow="Pet Relocation Guide"
-        title="IATA Approved Pet Crate Requirements for Dubai Flights"
+        title="What Is an IATA Approved Dog Crate?"
         subtitle="The wrong crate can get your pet refused at the airport. IATA LAR sizing, construction rules, and airline-specific policies for safe travel to Dubai."
         updated="Updated June 2026"
       />
@@ -561,7 +583,7 @@ export default function IATACrateGuide() {
             </p>
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
               {faqData.map((faq, i) => (
-                <FAQItem key={i} question={faq.question} answer={faq.answer} />
+                <FAQItem key={i} question={faq.question} answer={<LinkedText text={faq.answer} />} />
               ))}
             </div>
           </div>

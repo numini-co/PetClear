@@ -9,6 +9,8 @@ import FlightModeCards from '../components/FlightModeCards.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import LastVerified from '../components/LastVerified.tsx'
 import SnippetAnswer from '../components/SnippetAnswer.tsx'
+import LinkedText from '../components/LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { FLIGHT_MODE_PATHS, UAE_MANIFEST_CARGO_RULE } from '../data/flightModes.ts'
 
@@ -20,6 +22,26 @@ const snippetAnswer =
   'Etihad flies small dogs and cats in the cabin into Abu Dhabi. Emirates, flydubai and Air Arabia do not carry cats or dogs in the cabin — falcons only, plus Emirates guide dogs. The default into Dubai is manifest cargo, often Emirates SkyCargo. Cabin, baggage, cargo, jet and charter sit on this comparison hub, not on one airline page.'
 
 const faqData = [
+  {
+    q: 'Which UAE airlines allow pets in cabin?',
+    a: 'Cabin into the UAE is limited. Etihad is the usual cabin conversation (into Abu Dhabi when policy fits). Emirates pet relocation into Dubai is typically cargo, not cabin. Always confirm the live product for your date and breed. Details: [/guides/etihad-pet-policy/](/guides/etihad-pet-policy/) and [/guides/emirates-pet-cargo/](/guides/emirates-pet-cargo/).',
+  },
+  {
+    q: 'Which airline to Dubai allows pets?',
+    a: 'Several carriers move pets toward Dubai/Abu Dhabi, but the mode differs: Emirates SkyCargo into Dubai, Etihad cabin or cargo into Abu Dhabi, and other Gulf/Asian carriers on connecting products. Match origin, breed, and crate to a confirmed live-animal desk — do not buy a passenger ticket and hope. Species pages: [/dog-relocation-to-dubai/](/dog-relocation-to-dubai/), [/cat-relocation-to-dubai/](/cat-relocation-to-dubai/).',
+  },
+  {
+    q: 'How do I carry my pet in flight?',
+    a: 'Three modes exist industry-wide: cabin (under seat, when allowed), checked baggage / accompanied animal, and manifest cargo. Into Dubai, cargo is the common path; Etihad cabin is the main cabin alternative into Abu Dhabi. Crate must meet IATA Live Animals rules — see [/guides/iata-pet-crate-requirements/](/guides/iata-pet-crate-requirements/). We help you pick a mode that the airline will actually accept.',
+  },
+  {
+    q: 'Can I bring my dog on a flight to Dubai?',
+    a: 'Yes, when the breed is allowed, the MOCCAE import permit is valid (90 days from issuance), vaccines and health papers match, and the airline accepts the crate on a live-animal product — usually cargo into DXB/DWC. Living/import depth: [/dog-relocation-to-dubai/](/dog-relocation-to-dubai/). Banned breeds: [/guides/banned-dog-breeds-dubai/](/guides/banned-dog-breeds-dubai/).',
+  },
+  {
+    q: 'Can I bring my pet on a flydubai flight?',
+    a: 'Treat flydubai as confirm-current-policy — do not assume cabin or cargo acceptance from a blog. Check flydubai’s live pet rules for your route and date before you buy tickets or build a crate. If flydubai cannot take the animal, plan Emirates/Etihad or another confirmed carrier instead. WhatsApp +971504782999 to sanity-check the file.',
+  },
   {
     q: 'Which airlines fly pets to Dubai?',
     a: 'Etihad is the only UAE cabin path for cats and dogs, and those flights land at Abu Dhabi (AUH). Emirates, flydubai and Air Arabia do not carry cats or dogs in the cabin (falcons; Emirates also lists guide dogs). Most Dubai International arrivals are manifest cargo — Emirates SkyCargo is the common DXB product. This hub is the comparison. Emirates fees and booking steps live on the Emirates pet cargo guide; Etihad cabin rules live on the Etihad guide.',
@@ -103,7 +125,7 @@ export default function PetFlightOptionsHub() {
     mainEntity: faqData.map((f) => ({
       '@type': 'Question',
       name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
+      acceptedAnswer: { '@type': 'Answer', text: stripInternalMarkdownLinks(f.a) },
     })),
   }
 
@@ -328,7 +350,7 @@ export default function PetFlightOptionsHub() {
           <h2 className="mb-6 text-center text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Frequently asked questions</h2>
           <div className="space-y-3">
             {faqData.map((f) => (
-              <FAQItem key={f.q} question={f.q} answer={f.a} />
+              <FAQItem key={f.q} question={f.q} answer={<LinkedText text={f.a} />} />
             ))}
           </div>
         </div>

@@ -132,7 +132,7 @@ const petImportDubai: ServicePageData = {
             'Species core vaccines as listed on [UAE pet import requirements](/guides/uae-pet-import-requirements/)',
             'RNATT result ≥0.5 IU/ml when required — sample drawn within 90 days before travel',
             'Government-endorsed international veterinary health certificate from the origin country',
-            'MOCCAE import permit still inside its 30-day window on the arrival date',
+            'MOCCAE import permit still inside its 90-day window on the arrival date',
             'Internal and external parasite treatments within 10 days before shipping',
             'Owner passport copy and UAE visa / residency details used on the permit',
           ],
@@ -323,7 +323,7 @@ const petImportDubai: ServicePageData = {
     },
     {
       q: 'Do you issue the MOCCAE permit yourselves?',
-      a: 'No. Only MOCCAE issues permits. We review the file, time the 30-day window and, on higher tiers, coordinate portal submission through vetted partners. Standalone permit help: [MOCCAE permit assistance](/service/moccae-pet-permit/). DIY walkthrough: [MOCCAE import permit guide](/guides/moccae-import-permit/).',
+      a: 'No. Only MOCCAE issues permits. We review the file, time the 90-day window and, on higher tiers, coordinate portal submission through vetted partners. Standalone permit help: [MOCCAE permit assistance](/service/moccae-pet-permit/). DIY walkthrough: [MOCCAE import permit guide](/guides/moccae-import-permit/).',
     },
   ],
   relatedLinks: [

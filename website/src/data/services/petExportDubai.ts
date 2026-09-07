@@ -194,6 +194,14 @@ const petExportDubai: ServicePageData = {
   ],
   faq: [
     {
+      q: 'How do I get an export permit for my pet in the UAE?',
+      a: 'Leaving the UAE uses export documentation (MOCCAE export pathway / veterinary export certification as required for the destination) — not the import permit used to enter. Requirements depend on the destination country. Start with destination rules, then align UAE export timing so certificates do not expire before departure. Journey page: [/service/pet-relocation-from-dubai/](/service/pet-relocation-from-dubai/). WhatsApp +971504782999.',
+    },
+    {
+      q: 'What are the requirements for obtaining a pet export permit from the MOCCAE in Dubai, UAE?',
+      a: 'Export permission is destination-led: microchip and vaccine records, UAE veterinary exam, MOCCAE export steps as applicable, and airline acceptance. Do not apply an import permit (90-day inbound) to an outbound file. Confirm current export portal steps on moccae.gov.ae. We coordinate the export file once the destination checklist is clear.',
+    },
+    {
       q: 'How much does it cost to export a pet from Dubai?',
       a: 'Most exports fall between roughly AED 2,000 and AED 22,000 depending on the destination, your pet’s size and whether a titer test is needed. The biggest costs are flight or cargo and, for some countries, the titer test. Veterinary documentation, the Fit to Fly certificate and the MOCCAE export certificate make up the rest. Send us your destination for an itemised estimate.',
     },

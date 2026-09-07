@@ -18,6 +18,10 @@ export default function USAToDubai() {
 
   const faqs = [
     {
+      question: 'Can I bring a dog to Dubai from the USA?',
+      answer: 'Yes, with a complete UAE import file: microchip, rabies vaccine, health certificate, MOCCAE import permit (90 days from issuance), and a cargo product airlines will accept. US origin often needs careful CDC/export and titer planning — confirm live requirements. Cost teaser: [/guides/pet-relocation-cost-dubai/](/guides/pet-relocation-cost-dubai/). WhatsApp +971504782999 for a USA→Dubai route check.',
+    },
+    {
       question: 'Is the USA considered low-risk or high-risk for pet import to Dubai?',
       answer: 'The USA is classified as a low-risk country for rabies by the UAE. Most US states do not require a rabies titer test (RNATT). However, if your pet has ever been in a high-risk rabies country before entering the USA, or if the pet originated from a high-risk country, a titer test may be required. Dubai Pet Relocation verifies your pet\'s travel history before planning the route.'
     },

@@ -26,10 +26,47 @@ import {
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
+import LinkedText from '../components/LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
+
+const DOG_FAQS: { q: string; a: string }[] = [
+  {
+    q: 'Can I take my dog to live with me in Dubai?',
+    a: 'Yes — if the breed is permitted, you complete MOCCAE import (permit valid 90 days from issuance), vaccines, health certificate, and a confirmed airline product, then register locally after arrival. Some buildings restrict dogs; banned breeds cannot enter as a loophole. Requirements: [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/). Cost: [/guides/pet-relocation-cost-dubai/](/guides/pet-relocation-cost-dubai/). WhatsApp +971504782999.',
+  },
+  {
+    q: 'Can I bring a dog to Dubai?',
+    a: 'Dubai allows pet dogs when the breed is legal and the import file is complete. Check [/guides/banned-dog-breeds-dubai/](/guides/banned-dog-breeds-dubai/) before you book. You still need a MOCCAE import permit valid 90 days from issuance, vaccines, a health certificate, and usually cargo acceptance into DXB or DWC. Service coordination: [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/). WhatsApp +971504782999.',
+  },
+  {
+    q: 'Does Dubai allow pet dogs?',
+    a: 'Dubai allows pet dogs when the breed is legal and the import file is complete. Check [/guides/banned-dog-breeds-dubai/](/guides/banned-dog-breeds-dubai/) before you book. You still need a MOCCAE import permit valid 90 days from issuance, vaccines, a health certificate, and usually cargo acceptance into DXB or DWC. Service coordination: [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/). WhatsApp +971504782999.',
+  },
+  {
+    q: 'Can I travel with my dog to Dubai?',
+    a: 'Travel with a dog into Dubai means matching documents to a live-animal airline product — typically cargo — not assuming cabin on every carrier. Permit, vaccines, and crate rules still apply. Flight modes: [/guides/pet-flight-options-dubai/](/guides/pet-flight-options-dubai/). Living/import checklist stays linked from this species page.',
+  },
+  {
+    q: 'How long does it take to relocate a dog to Dubai?',
+    a: 'From low-risk countries (UK, EU, USA, Canada, Australia, New Zealand), the minimum timeline is 4–6 weeks. This includes microchip implantation, rabies vaccination (21-day wait), MOCCAE import permit application, and international health certificate. From high-risk countries that require a titer, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a wait after the draw. We recommend starting the process 8–12 weeks before your planned move.',
+  },
+  {
+    q: 'Can I fly with my dog in the cabin to Dubai?',
+    a: 'Regular dogs cannot travel in the cabin on flights to Dubai. All dogs must travel as manifest cargo (air freight). The only exception is Etihad Airways, which allows small dogs (dog plus carrier weighing 8 kg or less) in the cabin on flights to Abu Dhabi — not Dubai. If you choose this option, you will need to arrange ground transport from Abu Dhabi to Dubai after arrival.',
+  },
+  {
+    q: 'What if my dog is a banned breed but I have paperwork saying otherwise?',
+    a: 'Breed identification at UAE customs is done by visual inspection, and the inspector\'s decision is final. \'Pit Bull mix\' or \'unknown breed\' labels from shelters are not reliable for UAE import purposes. At Dubai Pet Relocation, we assess your dog\'s appearance, paperwork, and pedigree (if available) before submitting any MOCCAE permit application. If there is any doubt about your dog\'s breed classification, we will give you an honest answer. Importing a banned breed illegally can result in fines from AED 10,000 to AED 700,000, possible jail time, and confiscation of the animal.',
+  },
+  {
+    q: 'Do you handle the dog\'s arrival at Dubai Airport, or do I need to go to the cargo terminal myself?',
+    a: 'We handle both options. Most clients choose our door-to-door service: we collect your dog from the DXB or DWC cargo terminal, clear customs, and deliver to your home. If you prefer to collect your dog yourself, we prepare all customs paperwork and meet you at the terminal with everything ready. Either way, you receive WhatsApp updates and photos at every checkpoint — check-in, boarding, arrival, and customs clearance.',
+  },
+]
 
 /* ─── helpers ─── */
 const SectionHeading = ({ children, className = '' }: { children: React.ReactNode; className?: string }) => (
@@ -108,48 +145,14 @@ export default function DogRelocationPage() {
           {
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "How long does it take to relocate a dog to Dubai?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "From low-risk countries (UK, EU, USA, Canada, Australia, New Zealand), the minimum timeline is 4–6 weeks. This includes microchip implantation, rabies vaccination (21-day wait), MOCCAE import permit application, and international health certificate. From high-risk countries that require a titer, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a wait after the draw. We recommend starting the process 8–12 weeks before your planned move."
-                }
+            mainEntity: DOG_FAQS.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: stripInternalMarkdownLinks(f.a),
               },
-              {
-                "@type": "Question",
-                name: "Will my dog be quarantined in Dubai?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "No — if all documentation is complete and correct. The UAE does not have mandatory quarantine for dogs that meet all import requirements, including a valid MOCCAE import permit, ISO 11784/11785 microchip, current rabies vaccination, international health certificate, and antiparasitic treatment records. However, if documentation is incomplete, incorrect, or your dog is missing the required rabies titer test from a high-risk country, quarantine will be imposed at the owner's expense. Costs can exceed AED 8,500."
-                }
-              },
-              {
-                "@type": "Question",
-                name: "Can I fly with my dog in the cabin to Dubai?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "No. Regular dogs cannot travel in the cabin on flights to Dubai. All dogs must travel as manifest cargo (air freight). The only exception is Etihad Airways, which allows small dogs (dog plus carrier weighing 8 kg or less) in the cabin on flights to Abu Dhabi — not Dubai. If you choose this option, you will need to arrange ground transport from Abu Dhabi to Dubai after arrival."
-                }
-              },
-              {
-                "@type": "Question",
-                name: "What if my dog is a banned breed but I have paperwork saying otherwise?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Breed identification at UAE customs is done by visual inspection, and the inspector's decision is final. 'Pit Bull mix' or 'unknown breed' labels from shelters are not reliable for UAE import purposes. At Dubai Pet Relocation, we assess your dog's appearance, paperwork, and pedigree (if available) before submitting any MOCCAE permit application. If there is any doubt about your dog's breed classification, we will give you an honest answer. Importing a banned breed illegally can result in fines from AED 10,000 to AED 700,000, possible jail time, and confiscation of the animal."
-                }
-              },
-              {
-                "@type": "Question",
-                name: "Do you handle the dog's arrival at Dubai Airport, or do I need to go to the cargo terminal myself?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "We handle both options. Most clients choose our door-to-door service: we collect your dog from the DXB or DWC cargo terminal, clear customs, and deliver to your home. If you prefer to collect your dog yourself, we prepare all customs paperwork and meet you at the terminal with everything ready. Either way, you receive WhatsApp updates and photos at every checkpoint — check-in, boarding, arrival, and customs clearance."
-                }
-              }
-            ]
+            })),
           },
           {
             "@context": "https://schema.org",
@@ -868,47 +871,9 @@ export default function DogRelocationPage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <SectionHeading className="mb-4">Frequently Asked Questions About Dog Relocation to Dubai</SectionHeading>
           <div className="mt-8 max-w-3xl">
-            <FaqItem
-              question="How long does it take to relocate a dog to Dubai?"
-              answer={
-                <>
-                  <p>From low-risk countries (UK, EU, USA, Canada, Australia, New Zealand), the minimum timeline is <strong>4–6 weeks</strong>. This includes microchip, rabies vaccination (21-day wait), MOCCAE permit application, and health certificate.</p>
-                  <p className="mt-2">From high-risk countries, the minimum timeline is <strong>4 months</strong> due to the rabies titer test and 90-day waiting period. We recommend starting 8–12 weeks before your planned move.</p>
-                </>
-              }
-            />
-            <FaqItem
-              question="Will my dog be quarantined in Dubai?"
-              answer={
-                <>
-                  <p><strong>No — if all documentation is complete and correct.</strong> The UAE does not have routine pet quarantine for compliant dogs. However, if your documents are incomplete, incorrect, or your dog is missing the titer test from a high-risk country, the real risk is that your pet is refused entry, confiscated, or re-exported — at your expense (boarding/re-flight costs can run into the thousands). This is why we check every document three times.</p>
-                </>
-              }
-            />
-            <FaqItem
-              question="Can I fly with my dog in the cabin to Dubai?"
-              answer={
-                <>
-                  <p><strong>No.</strong> Regular dogs cannot travel in the cabin on flights <em>to</em> Dubai. All dogs must travel as manifest cargo. The only exception is Etihad Airways, which allows small dogs (≤8 kg) in the cabin on flights to <strong>Abu Dhabi</strong> (not Dubai). If you choose this option, you will need to drive from Abu Dhabi to Dubai after arrival.</p>
-                </>
-              }
-            />
-            <FaqItem
-              question="What if my dog is a banned breed but I have paperwork saying otherwise?"
-              answer={
-                <>
-                  <p>Breed identification at UAE customs is done by visual inspection. If your dog looks like a banned breed, the inspector's decision is final. &ldquo;Pit Bull mix&rdquo; or &ldquo;unknown breed&rdquo; labels from shelters are not reliable for UAE import. We assess your dog's appearance, paperwork, and pedigree (if available) before we submit any permit application. If there is any doubt, we will tell you honestly.</p>
-                </>
-              }
-            />
-            <FaqItem
-              question="Do you handle the dog's arrival at Dubai Airport, or do I need to go to the cargo terminal myself?"
-              answer={
-                <>
-                  <p>We handle both options. Most clients choose our <strong>door-to-door service</strong>: we collect your dog from the cargo terminal, clear customs, and deliver to your home. If you prefer to collect your dog yourself, we prepare all the customs paperwork and meet you at the terminal with everything ready. Either way, you get WhatsApp updates and photos at every checkpoint.</p>
-                </>
-              }
-            />
+            {DOG_FAQS.map((f) => (
+              <FaqItem key={f.q} question={f.q} answer={<p><LinkedText text={f.a} /></p>} />
+            ))}
           </div>
           <div className="mt-8">
             <WhatsAppBtn

@@ -9,6 +9,8 @@ import FlightModeCards from '../components/FlightModeCards.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import LastVerified from '../components/LastVerified.tsx'
 import SnippetAnswer from '../components/SnippetAnswer.tsx'
+import LinkedText from '../components/LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { FLIGHT_MODE_PATHS, UAE_MANIFEST_CARGO_RULE } from '../data/flightModes.ts'
 
@@ -21,16 +23,24 @@ const snippetAnswer =
 
 const faqData = [
   {
-    q: 'How much does Emirates pet cargo cost?',
-    a: 'There is no single Emirates pet-cargo freight price. Commercial cargo is quoted per route and weight. Emirates publishes labelled animal-charge tiers of USD 500, 650 and 800 by pet-plus-carrier weight and size (source: Emirates); those are airline fees, not a firm freight quote and not a Dubai Pet Relocation rate. We quote coordination on the international or door-to-door relocation pages.',
+    q: 'Does Emirates allow pets in cargo?',
+    a: 'Yes. Emirates moves pets as SkyCargo / manifest cargo on eligible routes when documents and the IATA crate pass acceptance. Cabin carriage into Dubai on Emirates is not the default product for pet relocation. Confirm the live route, breed, and seasonal heat rules with the airline before you pay. We coordinate the file; we are not Emirates.',
   },
   {
-    q: 'Does Emirates allow pets in cargo?',
-    a: 'Yes. Dogs and cats travel as Emirates SkyCargo / Emirates Pets manifest cargo under IATA Live Animals Regulations (source: Emirates). Itineraries ending in Dubai must use cargo. Emirates does not carry dogs or cats in the cabin except falcons on certain Pakistan routings and guide dogs. Submit the pet travel form at least one week before the flight (source: Emirates).',
+    q: 'Can I bring my pet on an Emirates flight?',
+    a: 'You can move a dog or cat on Emirates when the live-animal product, crate, and UAE import papers are accepted — typically as cargo, not as a passenger seat-mate into Dubai. You still need a MOCCAE import permit valid 90 days from issuance (for inbound UAE). Mode chooser: [/guides/pet-flight-options-dubai/](/guides/pet-flight-options-dubai/). WhatsApp +971504782999.',
+  },
+  {
+    q: 'How much does Emirates pet cargo cost?',
+    a: 'Emirates publishes animal-charge tiers by pet-plus-carrier size on its own channels — confirm the live figure on emirates.com before you budget. Those airline fees are not freight-only totals and not a Dubai Pet Relocation package price. Commercial cargo quotes also vary by route and weight. Get a Quote for coordination after you confirm the airline band.',
+  },
+  {
+    q: 'How much does it cost to bring a pet on Emirates Airlines?',
+    a: 'Emirates publishes animal-charge tiers by pet-plus-carrier size on its own channels — confirm the live figure on emirates.com before you budget. Those airline fees are not freight-only totals and not a Dubai Pet Relocation package price. Commercial cargo quotes also vary by route and weight. Get a Quote for coordination after you confirm the airline band.',
   },
   {
     q: 'How much does it cost to transport a pet on Emirates Airlines?',
-    a: 'Cost splits into the airline animal charge, cargo freight, and any coordinator. Emirates’ published animal-charge tiers are USD 500 / 650 / 800 (source: Emirates) when the itinerary is eligible; freight is quoted per route and weight. Dubai Pet Relocation does not publish a freight list — Get a Quote on the relocation service pages. Confirm live airline amounts on the Emirates animals page before you pay.',
+    a: 'Emirates publishes animal-charge tiers by pet-plus-carrier size on its own channels — confirm the live figure on emirates.com before you budget. Those airline fees are not freight-only totals and not a Dubai Pet Relocation package price. Commercial cargo quotes also vary by route and weight. Get a Quote for coordination after you confirm the airline band.',
   },
   {
     q: 'Emirates pet checked baggage / excess baggage',
@@ -104,7 +114,7 @@ export default function EmiratesPetCargoGuide() {
     mainEntity: faqData.map((f) => ({
       '@type': 'Question',
       name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
+      acceptedAnswer: { '@type': 'Answer', text: stripInternalMarkdownLinks(f.a) },
     })),
   }
 
@@ -331,7 +341,7 @@ export default function EmiratesPetCargoGuide() {
           <h2 className="mb-6 text-center text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Frequently asked questions</h2>
           <div className="space-y-3">
             {faqData.map((f) => (
-              <FAQItem key={f.q} question={f.q} answer={f.a} />
+              <FAQItem key={f.q} question={f.q} answer={<LinkedText text={f.a} />} />
             ))}
           </div>
         </div>

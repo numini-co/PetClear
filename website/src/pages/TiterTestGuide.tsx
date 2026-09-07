@@ -21,6 +21,8 @@ import FAQItem from '../components/FAQItem.tsx'
 import ContentImage from '../components/ContentImage.tsx'
 import LastVerified from '../components/LastVerified.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
+import LinkedText from '../components/LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, siteConfig } from '../lib/seo.ts'
 import {
   EXEMPT_LIST_HOLD,
@@ -31,6 +33,21 @@ import {
 } from '../lib/regulatory.ts'
 
 const faqData = [
+  {
+    question: 'How much does a rabies titer test cost in Dubai?',
+    answer:
+      'Lab fees are clinic- and lab-dependent — we do not invent a single AED titer price. Budget for the blood draw, shipping to an accredited laboratory when required, and the result wait. Confirm the quote with your vet. Timing lock: draw the sample within 90 days before travel; result ≥0.5 IU/ml when MOCCAE requires it — not a 90-day wait after the draw.',
+  },
+  {
+    question: 'Can you get a titer for rabies?',
+    answer:
+      'Yes. A rabies antibody titer (RNATT / FAVN-style pathway depending on lab) is available through veterinary clinics that send samples to accredited labs. When MOCCAE requires it for your origin, plan the draw so the sample date sits within 90 days before travel and the result meets ≥0.5 IU/ml. Import checklist: [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/).',
+  },
+  {
+    question: 'How much does the anti-rabies vaccine cost in the UAE?',
+    answer:
+      'Rabies vaccine prices are clinic-dependent; we do not publish an invented UAE vaccine tariff. The vaccine must be current relative to your travel date and usually precedes any required titer by the portal’s minimum interval. Confirm cost and schedule with your vet. Timing questions for titer stay on this page; full import rules on [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/).',
+  },
   {
     question: 'How does the UAE rabies titer timing actually work?',
     answer:
@@ -86,7 +103,7 @@ export default function TiterTestGuide() {
     mainEntity: faqData.map((faq) => ({
       '@type': 'Question',
       name: faq.question,
-      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+      acceptedAnswer: { '@type': 'Answer', text: stripInternalMarkdownLinks(faq.answer) },
     })),
   }
 
@@ -492,7 +509,7 @@ export default function TiterTestGuide() {
           </h2>
           <div className="space-y-3">
             {faqData.map((faq) => (
-              <FAQItem key={faq.question} question={faq.question} answer={<p>{faq.answer}</p>} />
+              <FAQItem key={faq.question} question={faq.question} answer={<p><LinkedText text={faq.answer} /></p>} />
             ))}
           </div>
         </div>
