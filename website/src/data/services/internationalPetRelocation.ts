@@ -2,7 +2,7 @@ import type { ServicePageData } from '../../types/servicePage.ts'
 
 const internationalPetRelocation: ServicePageData = {
   slug: 'international-pet-relocation',
-  seoTitle: 'International Pet Relocation Dubai | 50+ Routes',
+  seoTitle: 'International Pet Relocation Dubai | Corridor Checks',
   metaDescription:
     'International pet relocation Dubai: export/import coordination across major corridors with clear document timelines.',
   keywords:

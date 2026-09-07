@@ -87,8 +87,8 @@ const faqs: FAQEntry[] = [
   {
     category: 'general',
     question: 'What areas do you serve?',
-    answer: <p>We are based in Dubai and primarily help with relocations to and from the UAE. However, we have coordinated relocations from over 50 countries to Dubai and from Dubai to Europe, North America, Asia, and Australia. If your route is unusual, just ask — we will tell you honestly if we can help.</p>,
-    plain: 'We are based in Dubai and primarily help with relocations to and from the UAE. However, we have coordinated relocations from over 50 countries to Dubai and from Dubai to Europe, North America, Asia, and Australia. If your route is unusual, just ask — we will tell you honestly if we can help.',
+    answer: <p>We are based in Dubai and primarily help with relocations to and from the UAE. We check the current import or export spine for your corridor — inbound and outbound rules are not interchangeable. If your route is unusual, just ask — we will tell you honestly if we can help.</p>,
+    plain: 'We are based in Dubai and primarily help with relocations to and from the UAE. We check the current import or export spine for your corridor — inbound and outbound rules are not interchangeable. If your route is unusual, just ask — we will tell you honestly if we can help.',
   },
   {
     category: 'general',

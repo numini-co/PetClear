@@ -525,7 +525,7 @@ export default function DubaiCity() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet to Dubai?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              Dubai Pet Relocation has helped hundreds of families move their dogs and cats to Dubai from the UK, USA, India, Australia, the Philippines, and beyond. Get a transparent, itemised quote and a week-by-week timeline today.
+              We coordinate inbound pet moves to Dubai from the UK, USA, India, Australia, the Philippines, and other corridors: the document spine, cargo booking, and WhatsApp updates during business hours. Get a transparent, itemised quote and a week-by-week timeline today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppBtn label="Get a Dubai pet relocation quote" message="Hi, I want to relocate my pet to Dubai. Can you help me understand the process, timeline, and cost?" />
