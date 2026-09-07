@@ -152,6 +152,10 @@ const petRelocationFromDubai: ServicePageData = {
   ],
   faq: [
     {
+      q: 'How do I relocate my pet from Dubai?',
+      a: 'Outbound moves start with destination import rules, then UAE export paperwork, crate, and a confirmed live-animal flight — the reverse of bringing a pet in. Use [/service/pet-export-dubai/](/service/pet-export-dubai/) for export-permit depth and the matching [/routes/dubai-to-{country}/](/routes/) page for corridor detail. WhatsApp +971504782999 for a leaving-Dubai timeline.',
+    },
+    {
       q: 'Why do destination rules drive the outbound timeline from Dubai?',
       a: 'Because the UAE export certificate is relatively quick, while the destination sets titer windows, treatments and any quarantine. We always read the destination first and work backwards.',
     },

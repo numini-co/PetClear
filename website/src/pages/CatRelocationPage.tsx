@@ -30,10 +30,35 @@ import {
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
+import LinkedText from '../components/LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
+
+const CAT_FAQS: { q: string; a: string }[] = [
+  {
+    q: 'Can I bring a cat to Dubai?',
+    a: 'Yes. Cats follow the same MOCCAE import framework as dogs: microchip, rabies vaccine, health certificate, import permit valid 90 days from issuance, and an accepted airline product (usually cargo into Dubai). Cats often fit smaller crates, which can lower freight — still Get a Quote, no invented band. Import rules: [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/). WhatsApp +971504782999.',
+  },
+  {
+    q: 'Can my cat fly in the cabin with me to Dubai?',
+    a: 'No. All cats entering Dubai must travel as manifest cargo. The only exception is Etihad Airways, which allows small cats in the cabin on flights to Abu Dhabi (not Dubai). If you choose this option, ground transport from Abu Dhabi to Dubai can be arranged. For most cats, the cargo hold is actually calmer than the cabin — it\'s dark, quiet, and climate-controlled.',
+  },
+  {
+    q: 'How long before my move should I start the cat relocation process?',
+    a: 'From low-risk countries (UK, EU, USA, Canada, Australia, New Zealand): start 6–8 weeks before your move. From high-risk countries that require a titer, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a wait after the draw. Message us as soon as you know your move date so we can say whether the calendar is realistic.',
+  },
+  {
+    q: 'Will my cat be safe in the cargo hold?',
+    a: 'Yes. Pet cargo holds are pressurised, climate-controlled, and kept at the same temperature as the passenger cabin. We only book with airlines that have dedicated animal transport programs and proven safety records. We also book morning flights to avoid heat, and avoid routes with long ground stops. Your cat\'s crate is secured in a designated animal compartment, separate from luggage.',
+  },
+  {
+    q: 'What if my cat is elderly or has a medical condition?',
+    a: 'We handle this on a case-by-case basis. Many older cats travel safely — age alone is not a disqualifier. If a cat has a medical condition (diabetes, heart condition, etc.), we coordinate with veterinary partners to assess fitness to fly and make special arrangements. In some cases, a vet\'s \'fit to fly\' certificate may be required. We\'ll be honest if we think travel is not advisable for a cat\'s health. Their safety comes first, always.',
+  },
+]
 
 /* ─── helpers ─── */
 
@@ -88,48 +113,14 @@ export default function CatRelocationPage() {
           {
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "Can my cat fly in the cabin with me to Dubai?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "No. All cats entering Dubai must travel as manifest cargo. The only exception is Etihad Airways, which allows small cats in the cabin on flights to Abu Dhabi (not Dubai). If you choose this option, ground transport from Abu Dhabi to Dubai can be arranged. For most cats, the cargo hold is actually calmer than the cabin — it's dark, quiet, and climate-controlled."
-                }
+            mainEntity: CAT_FAQS.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: stripInternalMarkdownLinks(f.a),
               },
-              {
-                "@type": "Question",
-                name: "Does my cat need to be quarantined in Dubai?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "No — if all documentation is complete and correct. There is no mandatory quarantine for cats entering Dubai with a valid MOCCAE import permit, ISO microchip, current rabies vaccination, and health certificate. However, if documents are missing, incorrect, or non-sequential, a cat may be subject to conditional quarantine at the owner's expense. This is why we triple-check every document before travel."
-                }
-              },
-              {
-                "@type": "Question",
-                name: "How long before my move should I start the cat relocation process?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "From low-risk countries (UK, EU, USA, Canada, Australia, New Zealand): start 6–8 weeks before your move. From high-risk countries that require a titer, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a wait after the draw. Message us as soon as you know your move date so we can say whether the calendar is realistic."
-                }
-              },
-              {
-                "@type": "Question",
-                name: "Will my cat be safe in the cargo hold?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Yes. Pet cargo holds are pressurised, climate-controlled, and kept at the same temperature as the passenger cabin. We only book with airlines that have dedicated animal transport programs and proven safety records. We also book morning flights to avoid heat, and avoid routes with long ground stops. Your cat's crate is secured in a designated animal compartment, separate from luggage."
-                }
-              },
-              {
-                "@type": "Question",
-                name: "What if my cat is elderly or has a medical condition?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "We handle this on a case-by-case basis. Many older cats travel safely — age alone is not a disqualifier. If a cat has a medical condition (diabetes, heart condition, etc.), we coordinate with veterinary partners to assess fitness to fly and make special arrangements. In some cases, a vet's 'fit to fly' certificate may be required. We'll be honest if we think travel is not advisable for a cat's health. Their safety comes first, always."
-                }
-              }
-            ]
+            })),
           },
           {
             "@context": "https://schema.org",
@@ -800,46 +791,9 @@ export default function CatRelocationPage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <SectionHeading className="mb-4">Frequently Asked Questions About Cat Relocation to Dubai</SectionHeading>
           <div className="mt-8 max-w-3xl">
-            <FaqItem
-              question="Can my cat fly in the cabin with me to Dubai?"
-              answer={
-                <>
-                  <p>No. All cats entering Dubai must travel as manifest cargo. The only exception is Etihad Airways, which allows small cats in the cabin on flights to <strong>Abu Dhabi</strong> (not Dubai). If you choose this option, we can arrange ground transport from Abu Dhabi to Dubai. For most cats, the cargo hold is actually calmer than the cabin — it's dark, quiet, and climate-controlled.</p>
-                </>
-              }
-            />
-            <FaqItem
-              question="Does my cat need to be quarantined in Dubai?"
-              answer={
-                <>
-                  <p>No — if all your documentation is complete and correct. There is no mandatory quarantine for cats entering Dubai with a valid MOCCAE import permit, ISO microchip, current rabies vaccination, and health certificate. However, if documents are missing, incorrect, or non-sequential, your cat may be subject to conditional quarantine at your expense. This is why we triple-check every document before travel.</p>
-                </>
-              }
-            />
-            <FaqItem
-              question="How long before my move should I start the cat relocation process?"
-              answer={
-                <>
-                  <p>From low-risk countries (UK, EU, USA, Canada, Australia, New Zealand): start <strong>6–8 weeks</strong> before your move. From high-risk countries that require a titer, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a wait after the draw. Message us as soon as you know your move date so we can say whether the calendar is realistic.</p>
-                </>
-              }
-            />
-            <FaqItem
-              question="Will my cat be safe in the cargo hold?"
-              answer={
-                <>
-                  <p>Yes. Pet cargo holds are pressurised, climate-controlled, and kept at the same temperature as the passenger cabin. We only book with airlines that have dedicated animal transport programs and proven safety records. We also book morning flights to avoid heat, and avoid routes with long ground stops. Your cat's crate is secured in a designated animal compartment, separate from luggage.</p>
-                </>
-              }
-            />
-            <FaqItem
-              question="What if my cat is elderly or has a medical condition?"
-              answer={
-                <>
-                  <p>We handle this on a case-by-case basis. Many older cats travel safely — age alone is not a disqualifier. If your cat has a medical condition (diabetes, heart condition, etc.), we coordinate with our veterinary partners to assess fitness to fly and make special arrangements. In some cases, a vet's &ldquo;fit to fly&rdquo; certificate may be required. We'll be honest with you if we think travel is not advisable for your cat's health. Their safety comes first, always.</p>
-                </>
-              }
-            />
+            {CAT_FAQS.map((f) => (
+              <FaqItem key={f.q} question={f.q} answer={<p><LinkedText text={f.a} /></p>} />
+            ))}
           </div>
         </div>
       </section>

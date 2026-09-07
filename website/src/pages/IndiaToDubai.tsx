@@ -19,6 +19,10 @@ export default function IndiaToDubai() {
 
   const faqs = [
     {
+      question: 'Can I take my dog to Dubai from India?',
+      answer: 'Yes, when the breed is permitted and the file matches MOCCAE rules. India-origin files often need careful titer and AQCS/export timing before the UAE permit window. Permit validity is 90 days from issuance; titer sample within 90 days before travel when required. Corridor process — not volume claims. Export reverse twin: [/routes/dubai-to-india/](/routes/dubai-to-india/). WhatsApp +971504782999.',
+    },
+    {
       question: 'Why is India classified as a high-risk country for pet import to Dubai?',
       answer: 'India is classified as a high-risk country for rabies by the UAE Ministry of Climate Change and Environment (MOCCAE) and the World Organisation for Animal Health (WOAH). Rabies is endemic in India, which means the UAE requires additional verification that your pet has sufficient rabies antibody protection before entry. This is done via the Rabies Neutralising Antibody Titre Test (RNATT), commonly known as the titer test.'
     },

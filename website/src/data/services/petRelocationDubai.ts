@@ -244,7 +244,11 @@ const petRelocationDubai: ServicePageData = {
   faq: [
     {
       q: 'What is the best pet relocation service in Dubai?',
-      a: 'There is no honest #1 ranking and we do not invent ratings. The best fit is the coordinator that can show licensing and MOCCAE permit guidance, a named process, transparent quotes, and the right flight mode (cabin, cargo, jet or charter) for your animal. We are a provider — Dubai Pet Relocation — not a review site. [Get a Quote](/contact/) on WhatsApp or support@dubai-pet-relocation.ae.',
+      a: '“Best” depends on your origin, species, and whether you need documentation-only or door-to-door coordination — not a generic listicle. Dubai Pet Relocation coordinates MOCCAE permits, veterinary timing, airline live-animal booking, and arrival hand-off for dogs and cats. We do not invent volumes or star ratings. Get a Relocation Quote and we map your file. Cost types: [/guides/pet-relocation-cost-dubai/](/guides/pet-relocation-cost-dubai/). Dog-specific: [/dog-relocation-to-dubai/](/dog-relocation-to-dubai/). WhatsApp +971504782999.',
+    },
+    {
+      q: 'How much does pet relocation Dubai cost?',
+      a: 'Costs split across MOCCAE fees (confirm live portal amounts), veterinary work, freight, crate, handling, and coordination — see [/guides/pet-relocation-cost-dubai/](/guides/pet-relocation-cost-dubai/) for the full breakdown. This money page owns the service decision; that guide owns the cost PAA cluster. Packages are Get a Quote, not a published from-band. WhatsApp +971504782999.',
     },
     {
       q: 'Best pet relocation services Dubai',

@@ -19,6 +19,8 @@ import {
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
 import SnippetAnswer from '../components/SnippetAnswer.tsx'
+import LinkedText from '../components/LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import LastVerified from '../components/LastVerified.tsx'
@@ -61,42 +63,42 @@ const snippetQuestion = 'How long do pets stay in quarantine?'
 const snippetAnswer =
   'The UAE typically has no long quarantine when documents are correct. Compliant dogs and cats are examined at the entry port and released to the owner. We do not invent a day-count for a paperwork hold. Dogs are legal; some breeds are banned. The MOCCAE import permit is valid for 90 days.'
 
-const IMPORT_PAA_FAQS: { q: string; a: string; link?: { to: string; label: string } }[] = [
+const IMPORT_PAA_FAQS: { q: string; a: string }[] = [
   {
     q: 'How long do pets stay in quarantine?',
-    a: 'The UAE typically has no long quarantine when the file is correct. Compliant pets are examined by MOCCAE veterinary staff at the entry port and released to the owner. Incomplete papers can mean a hold, refusal or re-export at your expense — we do not invent a day-count for that hold. The import permit is valid for 90 days.',
+    a: 'The UAE typically has no long quarantine when the file is correct. Compliant dogs and cats are examined by veterinary staff at the entry port and released to the owner. Incomplete papers can mean a hold, refusal, or re-export at your expense — we do not invent a day-count for that hold. The MOCCAE import permit is valid 90 days from issuance. Titer, when required, uses a sample drawn within 90 days before travel.',
   },
   {
-    q: 'Is there quarantine for pets in Dubai?',
-    a: 'No routine quarantine for a compliant file. MOCCAE veterinary staff examine the pet at the entry port and release the owner. There is no new quarantine URL on this site — this import-requirements page owns the question. A paperwork problem can still mean a hold, refusal or re-export at your expense.',
+    q: 'Do pets need to be quarantined in the UAE?',
+    a: 'Not routinely, if microchip, rabies papers, health certificate, and MOCCAE import permit match and the breed is allowed. There is no separate quarantine guide on this site — this page owns the question. A paperwork problem can still mean a hold or re-export. Confirm contested fees on the MOCCAE portal. Deep permit help: [/guides/moccae-import-permit/](/guides/moccae-import-permit/).',
   },
   {
-    q: 'What are the quarantine rules for pets entering the UAE?',
-    a: 'Compliant pets are not routinely quarantined. The rule is examination and release at the port when the microchip, rabies papers, health certificate and 90-day MOCCAE import permit match. We do not invent a hold duration. Depth stays on this page — we did not create a separate quarantine guide URL.',
+    q: 'Which countries require quarantine for pets?',
+    a: 'Destinations and origins set their own quarantine rules. For entering the UAE, the usual path is examination and release when documents are complete — not a multi-week quarantine hotel. Outbound from Dubai (for example to Australia) can involve destination quarantine; that depth belongs on the matching [/routes/dubai-to-{country}/](/routes/) page, not here. Always confirm the live destination authority notice.',
   },
   {
     q: 'What are the rules and regulations for pets in the UAE?',
-    a: 'UAE pet rules cover an ISO microchip, current rabies vaccination, a government health certificate, a MOCCAE import permit valid 90 days, cargo entry (except Etihad cabin into Abu Dhabi), municipality registration after arrival, and breed bans. Confirm contested government fees on the official portal. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.',
-    link: { to: '/guides/banned-dog-breeds-dubai/', label: 'Banned dog breeds in Dubai' },
+    a: 'Core UAE pet rules cover an ISO microchip, current rabies vaccination, government-endorsed health certificate, MOCCAE import permit valid 90 days from issuance, cargo entry into Dubai (Etihad cabin is a separate Abu Dhabi product), municipality registration after arrival, and breed bans. Confirm portal fees (permit AED 200; dog release AED 500; cat AED 250 — confirm-on-MOCCAE). Banned-breed list: [/guides/banned-dog-breeds-dubai/](/guides/banned-dog-breeds-dubai/).',
+  },
+  {
+    q: 'What are the requirements for relocating my pet to Dubai?',
+    a: 'Plan microchip before rabies vaccine, current vaccines, health certificate timing, MOCCAE import permit (90 days from issuance), IATA crate, and a live-animal airline product into DXB/DWC cargo. High-risk origins add a rabies titer pathway — sample within 90 days before travel, ≥0.5 IU/ml when required. Cost types: [/guides/pet-relocation-cost-dubai/](/guides/pet-relocation-cost-dubai/). Door-to-door coordination: [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/).',
   },
   {
     q: 'What are the requirements for traveling with my pet to the UAE?',
-    a: 'You need an ISO 15-digit microchip implanted before the rabies vaccine, a current rabies vaccination, core vaccines, a government-endorsed health certificate, antiparasitic timing, and a MOCCAE import permit valid 90 days. Pets enter Dubai as manifest cargo. High-risk origins add a titer pathway. Confirm live portal fees before you apply.',
+    a: 'Same checklist as relocating: ISO microchip, rabies and core vaccines, endorsed health certificate, antiparasitic timing per current rules, and a MOCCAE import permit valid 90 days from issuance. Pets typically enter Dubai as manifest cargo. Confirm whether your origin needs a titer. Commercial help: [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/). WhatsApp +971504782999.',
   },
   {
-    q: 'Does Dubai allow pet dogs?',
-    a: 'Yes. Dubai allows pet dogs when the breed is permitted and the import documents are complete. Some types are federally banned or restricted in apartments. Check the banned-breed list before you book a crate or a flight. A MOCCAE import permit, valid 90 days, is still required.',
-    link: { to: '/guides/banned-dog-breeds-dubai/', label: 'Banned dog breeds in Dubai' },
+    q: 'How do I register my pet in the UAE?',
+    a: 'After arrival, register with the relevant municipality (Dubai commonly via Aleef / Smart Services) — typically within 30 days of arrival. That clock is municipal registration, not MOCCAE import-permit validity (permit = 90 days from issuance). You will need Emirates ID or residency details, microchip number, vaccines, and a pet photo. Confirm the live municipal fee on the official portal.',
   },
   {
-    q: 'Is it legal to have a dog in Dubai?',
-    a: 'Yes. It is legal to keep a permitted dog in Dubai. You still need the 90-day MOCCAE import permit to bring one in, then municipality registration. Banned and restricted breeds cannot be treated as a loophole. We are a coordinator — confirm the current list on the official portal and our banned-breeds guide.',
-    link: { to: '/guides/banned-dog-breeds-dubai/', label: 'Banned dog breeds in Dubai' },
+    q: 'Which animals are legal to pet in Dubai?',
+    a: 'Dogs and cats are legal when the breed is permitted and import documents are complete. Some dog types are federally banned or face residency limits — check [/guides/banned-dog-breeds-dubai/](/guides/banned-dog-breeds-dubai/) before you book a crate. Exotic species face separate rules; this guide stays on companion dogs and cats. A MOCCAE import permit is still required for entry.',
   },
   {
-    q: 'Do I need a MOCCAE import permit for my dog?',
-    a: 'Yes — and every cat too. The permit is valid 90 days from issuance. Apply questions and the walkthrough live on the MOCCAE import permit guide. This page stays on the full import-rules checklist, including quarantine.',
-    link: { to: '/guides/moccae-import-permit/', label: 'MOCCAE import permit guide' },
+    q: 'What are the requirements for pets to enter Abu Dhabi using the customs bill of entry?',
+    a: 'Abu Dhabi entry still sits under UAE MOCCAE import controls — a valid import permit (90 days from issuance), microchip, rabies papers, and health certificate. Customs bill-of-entry wording is a port/customs process detail, not a shortcut around MOCCAE. Etihad cabin products, when available, land in Abu Dhabi — confirm the live airline product. Permit walkthrough: [/guides/moccae-import-permit/](/guides/moccae-import-permit/). No separate Abu Dhabi-only URL in this tranche.',
   },
 ]
 
@@ -230,7 +232,7 @@ export default function ImportRequirementsPage() {
               ...IMPORT_PAA_FAQS.map((f) => ({
                 '@type': 'Question',
                 name: f.q,
-                acceptedAnswer: { '@type': 'Answer', text: f.a },
+                acceptedAnswer: { '@type': 'Answer', text: stripInternalMarkdownLinks(f.a) },
               })),
               {
                 '@type': 'Question',
@@ -1373,18 +1375,7 @@ export default function ImportRequirementsPage() {
               <FAQItem
                 key={f.q}
                 question={f.q}
-                answer={
-                  <>
-                    <p>{f.a}</p>
-                    {f.link ? (
-                      <p className="mt-3">
-                        <Link to={f.link.to} className="text-[#4F5BD5] font-medium hover:underline">
-                          {f.link.label}
-                        </Link>
-                      </p>
-                    ) : null}
-                  </>
-                }
+                answer={<p><LinkedText text={f.a} /></p>}
               />
             ))}
             <FAQItem

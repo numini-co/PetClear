@@ -18,6 +18,10 @@ export default function UKToDubai() {
 
   const faqs = [
     {
+      question: 'Can I move my dog from the UK to Dubai?',
+      answer: 'Yes. UK→Dubai is a common inbound corridor when the breed is allowed. You still need UK export/vet papers, a MOCCAE import permit valid 90 days from issuance, and a confirmed cargo product into Dubai. High-level requirements: [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/); titer timing if required: [/guides/rabies-titer-test-dubai/](/guides/rabies-titer-test-dubai/); permit: [/guides/moccae-import-permit/](/guides/moccae-import-permit/). Get Route Checked — WhatsApp +971504782999. No “hundreds of British pets” language.',
+    },
+    {
       question: 'Does my pet need a rabies titer test from the UK to Dubai?',
       answer: 'No. The UK is classified as a low-risk, rabies-free country by the UAE Ministry of Climate Change and Environment (MOCCAE). Pets travelling from the UK to Dubai do not require a rabies neutralising antibody titre test (RNATT). Only a valid rabies vaccination (administered at least 21 days before travel) and an official health certificate are required.'
     },

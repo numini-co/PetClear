@@ -10,6 +10,8 @@ import UaeCargoRuleCallout from '../components/UaeCargoRuleCallout.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import LastVerified from '../components/LastVerified.tsx'
 import SnippetAnswer from '../components/SnippetAnswer.tsx'
+import LinkedText from '../components/LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { FLIGHT_MODE_PATHS } from '../data/flightModes.ts'
 
@@ -24,16 +26,24 @@ const snippetAnswer =
 
 const faqData = [
   {
+    q: 'Are pets allowed in Etihad Airways?',
+    a: 'Etihad offers pet products on eligible routes — including cabin options into Abu Dhabi when size and policy fit — plus cargo pathways. Rules change by route, breed, and season; confirm on etihad.com before you book. Cabin into Abu Dhabi is not the same as Emirates cargo into Dubai. Mode comparison: [/guides/pet-flight-options-dubai/](/guides/pet-flight-options-dubai/).',
+  },
+  {
+    q: 'How much does Etihad charge for a pet in a cabin?',
+    a: 'Cabin pet fees are set by Etihad and vary by route and carrier size. Confirm the live cabin fee on etihad.com — we do not invent an AED cabin table. Budget separately for UAE import documents if you are entering the country. WhatsApp +971504782999 if you need the whole file coordinated.',
+  },
+  {
+    q: 'Can I buy my pet a seat on a plane?',
+    a: 'No mainstream Gulf carrier sells a paid passenger seat for a dog or cat the way some US carriers experiment. Pets travel in cabin (under seat, when allowed), as checked baggage (when the airline offers it), or as manifest cargo. Etihad’s cabin product is still a pet-in-cabin policy, not a ticketed seat. Confirm the live rule on the airline site.',
+  },
+  {
     q: 'How much does it cost to bring a cat in the cabin on an Etihad flight?',
     a: 'Confirm the live cabin-pet fee at booking on Etihad’s travelling-with-pets page — fees change. A timed Economy promo from USD 399 (Business needed an extra seat plus USD 399) ran roughly 13 April–31 May 2026; that window is over as of September 2026 and is not the current standard. Until Etihad’s first-party current fee is confirmed, treat USD 1,500 as Estimated only. We are not Etihad and we do not sell airline tickets.',
   },
   {
     q: 'Etihad pet in cabin business class',
     a: 'Etihad’s published Business cabin-pet path required an extra seat plus a pet fee; confirm the live combination at booking. An expired 2026 promo used extra seat plus USD 399 — that is not the current standard. Extra-seat carrier size is published at 50 × 43 × 50 cm (source: Etihad). We coordinate eligibility and AUH arrival; we do not sell the seat.',
-  },
-  {
-    q: 'Can I buy my pet a seat on a plane?',
-    a: 'On Etihad, you can purchase an extra passenger seat so a larger approved carrier (50 × 43 × 50 cm) can travel in the cabin with you (source: Etihad). That extra seat plus the cabin-pet fee is an airline product — confirm live prices at booking. It is not a Dubai Pet Relocation package and it is not available on Emirates, flydubai or Air Arabia for dogs and cats. Pets over 8 kg including carrier still cannot use cabin.',
   },
   {
     q: 'Can pets fly in the cabin into Dubai International (DXB)?',
@@ -99,7 +109,7 @@ export default function EtihadPetPolicyGuide() {
     mainEntity: faqData.map((f) => ({
       '@type': 'Question',
       name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
+      acceptedAnswer: { '@type': 'Answer', text: stripInternalMarkdownLinks(f.a) },
     })),
   }
 
@@ -254,7 +264,7 @@ export default function EtihadPetPolicyGuide() {
           <h2 className="mb-6 text-center text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Frequently asked questions</h2>
           <div className="space-y-3">
             {faqData.map((f) => (
-              <FAQItem key={f.q} question={f.q} answer={f.a} />
+              <FAQItem key={f.q} question={f.q} answer={<LinkedText text={f.a} />} />
             ))}
           </div>
         </div>

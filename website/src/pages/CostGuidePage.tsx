@@ -29,6 +29,8 @@ import {
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
 import SnippetAnswer from '../components/SnippetAnswer.tsx'
+import LinkedText from '../components/LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
 
 const costGuideMsg = 'Hi, I saw your cost guide and want a personalized quote for relocating my [dog/cat] from [country] to Dubai.'
@@ -40,27 +42,23 @@ const snippetAnswer =
 const COST_PAA_FAQS: { q: string; a: string }[] = [
   {
     q: 'How much does it cost to relocate a pet in Dubai?',
-    a: 'There is no single ticket price. A Dubai pet move splits into government permits (confirm contested MOCCAE amounts on the official portal), veterinary work, air freight, an IATA crate, airport handling, and coordination. Dubai Pet Relocation packages are Get a Quote — we do not publish a from-price. Email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.',
-  },
-  {
-    q: 'How much does it cost to relocate a cat?',
-    a: 'Cats usually sit at the lower end because the crate and volumetric freight are smaller, but they still pay the same government, veterinary, handling, and coordination types. Confirm MOCCAE permit fees on the portal. Our cat-relocation package is Get a Quote, not a published from-band. WhatsApp +971 50 478 2999 or support@dubai-pet-relocation.ae.',
-  },
-  {
-    q: 'How much does it cost to fly a dog to Dubai?',
-    a: 'Flying a dog is mostly freight plus crate size, plus government and vet steps. Larger dogs need larger IATA crates, so volumetric cargo is the main swing. Confirm MOCCAE fees on the portal. Emirates airline animal-charge tiers are on the Emirates pet cargo guide. Our coordination is Get a Quote.',
-  },
-  {
-    q: 'How much does it cost to move your dog to Dubai?',
-    a: 'A door-to-door dog move adds last-mile handling and coordination on top of government, veterinary, freight, and crate costs. Confirm contested government fees on the MOCCAE portal. Airline freight is quoted per route and weight. Dubai Pet Relocation’s package is Get a Quote — email support@dubai-pet-relocation.ae or WhatsApp +971 50 478 2999.',
+    a: 'There is no single ticket price. A Dubai pet move splits into government permits and port release (confirm live MOCCAE portal amounts — commonly discussed as permit AED 200, dog release AED 500, cat AED 250), veterinary prep, air freight, an IATA crate, airport handling, and coordination. Airline charges vary by route and size. Dubai Pet Relocation packages are quoted — we do not publish a from-price. See also [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/). WhatsApp +971504782999.',
   },
   {
     q: 'How much does it cost to import a pet into the UAE?',
-    a: 'UAE import cost is the same type split: government (confirm the live permit and release amounts on the MOCCAE portal), veterinary prep, freight, crate, airport handling, and coordination. There is no single published import tariff. Our import package is Get a Quote. Rules live on the UAE import-requirements guide.',
+    a: 'UAE import cost is the same type split: MOCCAE permit and release fees (portal/official — confirm-on-MOCCAE), veterinary work including titer when required, freight, crate, handling, and coordination. There is no single published import tariff. Rules live on [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/); permit walkthrough on [/guides/moccae-import-permit/](/guides/moccae-import-permit/). Our import coordination is Get a Quote. Email support@dubai-pet-relocation.ae or WhatsApp +971504782999.',
   },
   {
-    q: 'How much does it cost to transport a pet on Emirates Airlines?',
-    a: 'Emirates publishes labelled animal-charge tiers of USD 500, 650 and 800 by pet-plus-carrier weight and size (source: Emirates) — those are airline fees, not freight and not a Dubai Pet Relocation rate. Commercial cargo is quoted per route and weight. See the Emirates pet cargo guide, then Get a Quote for coordination.',
+    q: 'How much does it cost to get a dog imported?',
+    a: 'Dog imports usually cost more than cats because crate volume and cargo weight drive freight, but government and veterinary types still apply. Confirm MOCCAE permit and dog release amounts on the portal before you budget. Larger breeds need larger IATA crates. Species depth: [/dog-relocation-to-dubai/](/dog-relocation-to-dubai/). Coordination is quoted — no invented package band. WhatsApp +971504782999.',
+  },
+  {
+    q: 'How much does it cost to fly with a pet on an airline?',
+    a: 'Airline animal charges are separate from government fees and from a full relocation quote. Cabin, checked-baggage, and manifest cargo products price differently by carrier, route, and pet-plus-carrier size. Confirm live tiers on the airline — do not treat a blog table as a quote. For Emirates depth see [/guides/emirates-pet-cargo/](/guides/emirates-pet-cargo/); for Etihad cabin see [/guides/etihad-pet-policy/](/guides/etihad-pet-policy/). Then Get a Quote for coordination.',
+  },
+  {
+    q: 'How much does it cost to relocate a pet from Dubai to India?',
+    a: 'Dubai→India cost is destination-side (AQCS / Indian entry pathway) plus UAE export paperwork, freight, crate, and coordination — not the same stack as importing into the UAE. We do not invent corridor package bands. Corridor depth and FAQs belong on [/routes/dubai-to-india/](/routes/dubai-to-india/); general cost types stay on this guide; outbound journey framing on [/service/pet-relocation-from-dubai/](/service/pet-relocation-from-dubai/). WhatsApp +971504782999 for a route quote.',
   },
 ]
 
@@ -120,16 +118,8 @@ export default function CostGuidePage() {
       ...COST_PAA_FAQS.map((f) => ({
         '@type': 'Question',
         name: f.q,
-        acceptedAnswer: { '@type': 'Answer', text: f.a },
+        acceptedAnswer: { '@type': 'Answer', text: stripInternalMarkdownLinks(f.a) },
       })),
-      {
-        '@type': 'Question',
-        name: 'Do dogs need to be quarantined in Dubai?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'No. If all documentation is complete and correct — MOCCAE import permit, ISO microchip, rabies vaccination, and health certificate — pets do not require mandatory quarantine in Dubai. This is one of the UAE\'s main advantages. However, incomplete documentation can result in conditional quarantine at the owner\'s expense, costing AED 8,500 or more.',
-        },
-      },
       {
         '@type': 'Question',
         name: 'Why is cargo so expensive compared to my own flight ticket?',
@@ -959,43 +949,9 @@ export default function CostGuidePage() {
             <FAQItem
               key={f.q}
               question={f.q}
-              answer={
-                <>
-                  <p>{f.a}</p>
-                  {f.q.includes('Emirates') ? (
-                    <p className="mt-3">
-                      <Link to="/guides/emirates-pet-cargo/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
-                        Emirates pet cargo guide <ArrowRight className="w-3.5 h-3.5" />
-                      </Link>
-                    </p>
-                  ) : null}
-                  {f.q.includes('import a pet') ? (
-                    <p className="mt-3">
-                      <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
-                        UAE pet import requirements <ArrowRight className="w-3.5 h-3.5" />
-                      </Link>
-                    </p>
-                  ) : null}
-                </>
-              }
+              answer={<p><LinkedText text={f.a} /></p>}
             />
           ))}
-          <FAQItem
-            question="Do dogs need to be quarantined in Dubai?"
-            answer={
-              <>
-                <p>No. If all documentation is complete and correct — MOCCAE import permit, ISO microchip, rabies vaccination, and health certificate — pets do not require mandatory quarantine in Dubai. This is one of the UAE's main advantages.</p>
-                <p className="mt-3 text-[#5A5A5A]">
-                  However, with incomplete documentation the real risk is that your pet is refused entry, confiscated, or re-exported — at your expense (boarding/re-flight costs can run into the thousands). This is why we triple-check every document before your pet travels.
-                </p>
-                <p className="mt-3">
-                  <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
-                    Read our full UAE import requirements guide <ArrowRight className="w-3.5 h-3.5" />
-                  </Link>
-                </p>
-              </>
-            }
-          />
           <FAQItem
             question="Why is cargo so expensive compared to my own flight ticket?"
             answer={

@@ -10,6 +10,8 @@ import UaeCargoRuleCallout from '../components/UaeCargoRuleCallout.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import LastVerified from '../components/LastVerified.tsx'
 import SnippetAnswer from '../components/SnippetAnswer.tsx'
+import LinkedText from '../components/LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { FLIGHT_MODE_PATHS } from '../data/flightModes.ts'
 
@@ -21,6 +23,10 @@ const snippetAnswer =
   'Emirates does not accept pets as checked baggage on itineraries that end in Dubai — those animals must travel as SkyCargo. From Dubai, cats and dogs may travel as accompanied hold baggage if the total journey is under 17 hours (source: Emirates). UAE import still follows the manifest-cargo rule except Etihad cabin into Abu Dhabi.'
 
 const faqData = [
+  {
+    q: 'Which airlines allow pets as checked baggage?',
+    a: 'Checked-baggage / accompanied-pet products are airline- and route-specific — many long-haul Gulf itineraries into Dubai use manifest cargo instead. Emirates’ pet pathway is covered on [/guides/emirates-pet-cargo/](/guides/emirates-pet-cargo/); Etihad cabin/cargo on [/guides/etihad-pet-policy/](/guides/etihad-pet-policy/). Always confirm whether your ticketed airline offers checked pet baggage on that OD before you pack. Mode hub: [/guides/pet-flight-options-dubai/](/guides/pet-flight-options-dubai/).',
+  },
   {
     q: 'Emirates pet checked baggage vs cargo into Dubai',
     a: 'Into Dubai they are not interchangeable. Emirates requires every itinerary ending in Dubai to travel as SkyCargo, not as accompanied checked baggage (source: Emirates). Checked baggage may apply from Dubai when the total journey is under 17 hours. UAE import still uses manifest cargo except Etihad cabin into Abu Dhabi. If you are flying into DXB, plan cargo.',
@@ -61,9 +67,9 @@ const faqData = [
 
 export default function PetAsCheckedBaggageGuide() {
   const canonical = `${BASE_URL}${FLIGHT_MODE_PATHS.baggage}`
-  const title = 'Pet as Checked Baggage Dubai | UAE Accompanied Hold'
+  const title = 'Which Airlines Allow Pets as Checked Baggage? | UAE Guide'
   const description =
-    'Pet as checked baggage Dubai: when accompanied hold is allowed, airline limits, and safer cargo alternatives.'
+    'Which airlines allow pets as checked baggage into or from the UAE: accompanied-hold rules, Emirates vs cargo, and when to confirm the live product.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -89,7 +95,7 @@ export default function PetAsCheckedBaggageGuide() {
     mainEntity: faqData.map((f) => ({
       '@type': 'Question',
       name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
+      acceptedAnswer: { '@type': 'Answer', text: stripInternalMarkdownLinks(f.a) },
     })),
   }
 
@@ -112,8 +118,8 @@ export default function PetAsCheckedBaggageGuide() {
         image="/images/dog-crate.jpg"
         imageAlt="A dog in a hard travel crate of the kind used when a pet travels as accompanied hold baggage"
         eyebrow="Flight-mode guide"
-        title="Pet as Checked Baggage from Dubai & the UAE"
-        subtitle="Hold travel on the same ticket is allowed on some outbound Emirates journeys — and blocked for itineraries that end in Dubai. Read the rule before you book a passenger seat."
+        title="Which Airlines Allow Pets as Checked Baggage?"
+        subtitle="Accompanied-hold / AVIH products are airline- and route-specific. Many long-haul itineraries into Dubai use manifest cargo instead — confirm the live product before you pack."
         updated="Updated September 2026"
         primaryLabel="Check if baggage is allowed"
         whatsappMessage={WA}
@@ -220,7 +226,7 @@ export default function PetAsCheckedBaggageGuide() {
           <h2 className="mb-6 text-center text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Frequently asked questions</h2>
           <div className="space-y-3">
             {faqData.map((f) => (
-              <FAQItem key={f.q} question={f.q} answer={f.a} />
+              <FAQItem key={f.q} question={f.q} answer={<LinkedText text={f.a} />} />
             ))}
           </div>
         </div>

@@ -199,6 +199,22 @@ const petTransportDubai: ServicePageData = {
   ],
   faq: [
     {
+      q: 'Are pets allowed in taxis in Dubai?',
+      a: 'Ordinary street-hail taxis are unreliable for pets — many drivers refuse crates or unsecured animals. Use a dedicated pet taxi / pet transport partner that expects dogs and cats, securement, and airport timings. That is what this page sells: local, airport, and inter-emirate pet transport. WhatsApp a Relocation Coordinator on +971504782999 with pet size, crate, and pins.',
+    },
+    {
+      q: 'Are pets allowed in Careem taxi?',
+      a: 'Careem availability for pets depends on the product and the individual driver — it is not a guaranteed pet-taxi SLA. For cargo releases and timed airport hand-offs, book a dedicated pet transport partner instead of hoping a rideshare accepts the crate. Confirm on WhatsApp with your pet’s size and pickup window. We do not claim Careem affiliation.',
+    },
+    {
+      q: 'How much is a pet taxi in Dubai?',
+      a: 'Prices vary by distance, time of day, crate size, and airport vs city lane. Published competitor lists (market observation, not a DPR rate card) have shown short local hops and higher DXB/AUH transfer bands — treat blogs as estimates only. Dubai Pet Relocation quotes per trip; we do not invent a fixed AED table here. WhatsApp +971504782999 for a personalised quotation.',
+    },
+    {
+      q: 'How much does a pet taxi cost?',
+      a: 'Prices vary by distance, time of day, crate size, and airport vs city lane. Published competitor lists (market observation, not a DPR rate card) have shown short local hops and higher DXB/AUH transfer bands — treat blogs as estimates only. Dubai Pet Relocation quotes per trip; we do not invent a fixed AED table here. WhatsApp +971504782999 for a personalised quotation.',
+    },
+    {
       q: 'Is there a pet friendly taxi in Dubai?',
       a: 'Yes — this page is the pet taxi Dubai product: a booked climate-controlled vehicle and handler for clinic, home, boarding or airport runs. It is not a regular ride-hailing car. We coordinate vetted partners; we do not claim to own the vans. WhatsApp +971504782999 with both addresses and the window.',
     },

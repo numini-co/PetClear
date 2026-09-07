@@ -253,6 +253,18 @@ const moccaePetPermit: ServicePageData = {
   ],
   faq: [
     {
+      q: 'Do I need a MOCCAE import permit for my dog?',
+      a: 'Yes — one permit per dog or cat before the animal flies. Validity is 90 days from issuance. We review scans, catch photo/chip/vaccine mismatches, and submit with you on the MOCCAE portal. Portal fee commonly AED 200 (confirm-on-MOCCAE); dog/cat release fees are paid at arrival — confirm live amounts. Walkthrough: [/guides/moccae-import-permit/](/guides/moccae-import-permit/). WhatsApp +971504782999.',
+    },
+    {
+      q: 'How do I get a pet import permit from MOCCAE?',
+      a: 'You apply on the official MOCCAE portal with UAE Pass. Our service is file review + submission support so a rejection does not burn your travel window. Keep arrival inside the 90-day validity. Confirm current fees on the portal. For the step-by-step path without a coordinator, use [/guides/moccae-import-permit/](/guides/moccae-import-permit/). Email support@dubai-pet-relocation.ae.',
+    },
+    {
+      q: 'How to apply for a Moccae license?',
+      a: 'You apply on the official MOCCAE portal with UAE Pass. Our service is file review + submission support so a rejection does not burn your travel window. Keep arrival inside the 90-day validity. Confirm current fees on the portal. For the step-by-step path without a coordinator, use [/guides/moccae-import-permit/](/guides/moccae-import-permit/). Email support@dubai-pet-relocation.ae.',
+    },
+    {
       q: 'Do I need a MOCCAE import permit?',
       a: 'Yes. Every dog or cat entering the UAE needs a MOCCAE import permit before travel. It is valid 90 days from issuance. This page is the commercial application-help service. The step-by-step apply walkthrough lives on the [MOCCAE import permit guide](/guides/moccae-import-permit/).',
     },
