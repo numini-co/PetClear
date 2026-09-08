@@ -262,11 +262,11 @@ export default function DogRelocationPage() {
             </Step>
             <Step number={2} title="Veterinary preparation and documents">
               <p>Our partner vet implants (or verifies) an ISO 11784/11785 microchip and administers a rabies vaccination. The microchip must be implanted <em>before</em> the rabies vaccine, or the vaccine is invalid for import.</p>
-              <p>For dogs from high-risk rabies countries, we also coordinate the rabies titer test (RNATT). Blood is drawn at least 21 days after vaccination, sent to an accredited lab, and then you must wait 90 days from the date of sampling before your dog can enter the UAE.</p>
+              <p>For dogs from high-risk rabies countries, we also coordinate the rabies titer test (RNATT). Blood is drawn at least 21 days after vaccination and sent to an accredited lab. The sample used for travel must be taken within 90 days before travel and read at least 0.5 IU/ml — a pre-travel sample window, not a 90-day wait after the draw.</p>
               <p>We track every deadline. We remind you when the next step is due. We check every document three times before submission.</p>
             </Step>
             <Step number={3} title="MOCCAE import permit and flight booking">
-              <p>We apply for your dog's MOCCAE import permit online. The permit costs AED 200 per pet and is valid for 90 days from issuance (a release fee of AED 500/dog is also payable on arrival). We know which forms are current, which office to submit to, and the common reasons for rejection.</p>
+              <p>We apply for your dog's MOCCAE import permit online. The permit is valid for 90 days from issuance. Confirm the current permit and arrival-release fees on the official MOCCAE portal; fees may change. We know which forms are current, which office to submit to, and the common reasons for rejection.</p>
               <p>Once the permit is approved, we book your dog's manifest cargo flight with the airline's cargo department — not the passenger reservation desk. We confirm pet-specific rules in writing: crate dimensions, breed restrictions, temperature limits, and transit care.</p>
             </Step>
             <Step number={4} title="Travel day and arrival in Dubai">
@@ -331,7 +331,7 @@ export default function DogRelocationPage() {
                 </li>
               </ol>
               <div className="mt-4 p-3 bg-[#EEF0FC] rounded-lg text-sm text-[#5A5A5A]">
-                <strong className="text-[#2A2A2A]">High-risk countries only:</strong> Rabies titer test (RNATT) with result ≥0.5 IU/ml, plus 90-day wait from blood sampling date.
+                <strong className="text-[#2A2A2A]">High-risk countries only:</strong> Rabies titer test (RNATT) with result ≥0.5 IU/ml; sample taken within 90 days before travel — not a wait after the draw.
               </div>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
@@ -740,7 +740,7 @@ export default function DogRelocationPage() {
             <CostTable
               size="Small dogs (under 10 kg)"
               items={[
-                ['MOCCAE import permit', '~200'],
+                ['MOCCAE import permit', 'Verify on portal'],
                 ['Veterinary (microchip, vaccines, health cert)', '800–1,500'],
                 ['IATA crate (Series 200)', '500–700'],
                 ['Cargo shipping (origin → Dubai)', '3,000–5,000'],
@@ -751,7 +751,7 @@ export default function DogRelocationPage() {
             <CostTable
               size="Medium dogs (10–25 kg)"
               items={[
-                ['MOCCAE import permit', '~200'],
+                ['MOCCAE import permit', 'Verify on portal'],
                 ['Veterinary (microchip, vaccines, health cert)', '800–1,500'],
                 ['IATA crate (Series 300)', '700–1,000'],
                 ['Cargo shipping (origin → Dubai)', '4,000–7,000'],
@@ -762,7 +762,7 @@ export default function DogRelocationPage() {
             <CostTable
               size="Large dogs (25–40 kg)"
               items={[
-                ['MOCCAE import permit', '~200'],
+                ['MOCCAE import permit', 'Verify on portal'],
                 ['Veterinary (microchip, vaccines, health cert)', '800–1,500'],
                 ['IATA crate (Series 400)', '1,000–1,500'],
                 ['Cargo shipping (origin → Dubai)', '5,000–9,000'],
@@ -773,7 +773,7 @@ export default function DogRelocationPage() {
             <CostTable
               size="Extra-large dogs (over 40 kg)"
               items={[
-                ['MOCCAE import permit', '~200'],
+                ['MOCCAE import permit', 'Verify on portal'],
                 ['Veterinary (microchip, vaccines, health cert)', '800–1,500'],
                 ['IATA crate (Series 500/700)', '1,500–2,000'],
                 ['Cargo shipping (origin → Dubai)', '7,000–12,000'],

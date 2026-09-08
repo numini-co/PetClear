@@ -415,7 +415,7 @@ export default function CorporateRelocationPage() {
               <p className="text-sm text-[#5A5A5A] leading-relaxed mb-4">
                 For inbound assignments, the pet move centres on the MOCCAE import permit and the UAE entry rules —
                 microchip, rabies and core vaccinations, health certificate, and, for high-risk origin countries, a
-                rabies titer test with a 90-day wait. We sync the pet timeline with the employee&apos;s start date so
+                rabies titer test with the sample taken within 90 days before travel (≥0.5 IU/ml). We sync the pet timeline with the employee&apos;s start date so
                 the pet is not left grounded after the family has already arrived.
               </p>
               <Link to="/service/pet-relocation-to-dubai/" className="text-[#4F5BD5] text-sm font-medium hover:underline inline-flex items-center gap-1">

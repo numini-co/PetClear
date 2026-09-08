@@ -329,7 +329,7 @@ export default function CostGuidePage() {
             </div>
             <h4 className="font-bold text-[#2A2A2A] mb-2">2. Your origin country</h4>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
-              From the UK or EU? No rabies titer test needed. From India, Pakistan, or the Philippines? You'll need a titer test, a 90-day wait, and often more veterinary prep. That adds AED 1,500–2,500.
+              From the UK or EU? No rabies titer test needed. From India, Pakistan, or the Philippines? When a titer is required, the blood sample must be taken within 90 days before travel and read ≥0.5 IU/ml — a sample window, not a 90-day wait after the test. See the{' '}<Link to="/guides/rabies-titer-test-dubai/" className="text-[#4F5BD5] font-medium hover:underline">rabies titer test guide</Link>. Extra veterinary prep typically adds AED 1,500–2,500.
             </p>
           </Card>
           <Card>
@@ -548,7 +548,7 @@ export default function CostGuidePage() {
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           <Card>
             <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">UK to Dubai</h3>
-            <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">The easiest route. No quarantine. No titer test. No 90-day wait.</p>
+            <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">The easiest route. No quarantine. No titer test required — the UK is low-risk, so there is no RNATT sample window to plan.</p>
             <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
               <li><strong>Small cat:</strong> AED 8,000–11,000</li>
               <li><strong>Medium dog:</strong> AED 12,000–16,000</li>
@@ -581,15 +581,15 @@ export default function CostGuidePage() {
 
           <Card>
             <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">India to Dubai</h3>
-            <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">High-risk country. Titer test required. 90-day wait mandatory.</p>
+            <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">High-risk country. Titer required: sample within 90 days before travel, result ≥0.5 IU/ml.</p>
             <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
               <li><strong>Small cat:</strong> AED 12,000–16,000</li>
               <li><strong>Medium dog:</strong> AED 16,000–20,000</li>
               <li><strong>Large dog:</strong> AED 18,000–25,000</li>
-              <li><strong>Timeline:</strong> Minimum 4 months from scratch</li>
+              <li><strong>Timeline:</strong> Plan titer sample within 90 days before travel</li>
             </ul>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
-              The titer test (AED 500–1,200) and 90-day waiting period are non-negotiable. The blood sample must be processed at a WOAH/ISO 17025 accredited lab. We work with vets in Mumbai, Delhi, and Bangalore who understand the UAE export requirements. One wrong document and your pet gets quarantined at your expense.
+              The titer test (AED 500–1,200) is required when MOCCAE asks for it: blood sample taken within 90 days before travel, result ≥0.5 IU/ml — a pre-travel sample window, not a 90-day wait after the result. See the{' '}<Link to="/guides/rabies-titer-test-dubai/" className="text-[#4F5BD5] font-medium hover:underline">rabies titer test guide</Link>. The sample must be processed at a WOAH/ISO 17025 accredited lab. We work with vets in Mumbai, Delhi, and Bangalore who understand the UAE export requirements. One wrong document and your pet gets quarantined at your expense.
             </p>
           </Card>
 
@@ -610,12 +610,12 @@ export default function CostGuidePage() {
 
         <Card className="mb-8">
           <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">Philippines to Dubai</h3>
-          <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">High-risk. Titer test + 90-day wait required.</p>
+          <p className="text-sm text-[#5A5A5A] mb-4 leading-relaxed">High-risk. Titer required: sample within 90 days before travel ≥0.5 IU/ml.</p>
           <ul className="text-sm text-[#5A5A5A] space-y-1 mb-4">
             <li><strong>Small cat:</strong> AED 12,000–16,000</li>
             <li><strong>Medium dog:</strong> AED 15,000–20,000</li>
             <li><strong>Large dog:</strong> AED 18,000–24,000</li>
-            <li><strong>Timeline:</strong> Minimum 4 months from scratch</li>
+            <li><strong>Timeline:</strong> Plan titer sample within 90 days before travel</li>
           </ul>
           <p className="text-sm text-[#5A5A5A] leading-relaxed">
             The Philippines is a popular origin for Dubai's large Filipino expat community. We coordinate the Bureau of Animal Industry export permit, titer test, and Philippine health certificate — then handle the UAE-side import permit and customs clearance.
@@ -795,7 +795,7 @@ export default function CostGuidePage() {
                 </thead>
                 <tbody>
                   <tr><td>Find a vet who knows UAE export requirements</td><td>Research, call, verify</td><td>300–600</td><td>Many vets have never done a UAE export. One wrong vaccine date = rejected permit.</td></tr>
-                  <tr><td>Apply for MOCCAE import permit</td><td>Online portal, forms, follow-up</td><td>~200</td><td>One wrong field = 2-week delay or denial.</td></tr>
+                  <tr><td>Apply for MOCCAE import permit</td><td>Online portal, forms, follow-up</td><td>Verify on portal</td><td>Confirm the current permit fee on the official MOCCAE portal; fees may change. One wrong field = 2-week delay or denial.</td></tr>
                   <tr><td>Buy IATA crate</td><td>Research, measure, order</td><td>500–2,000</td><td>Non-compliant crate = refused at check-in. No refund on the flight.</td></tr>
                   <tr><td>Book cargo flight with airline</td><td>Call cargo department, submit documents</td><td>3,000–12,000</td><td>Reservation agents often get pet-specific rules wrong.</td></tr>
                   <tr><td>Prepare health certificate</td><td>Vet visit + government endorsement</td><td>400–1,500</td><td>Must be within 10 days of travel. Expired = invalid.</td></tr>

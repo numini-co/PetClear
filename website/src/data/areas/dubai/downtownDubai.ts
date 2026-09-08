@@ -52,7 +52,7 @@ const downtownDubai: AreaPageData = {
           { title: 'Crate and flight', text: 'We size an IATA-compliant crate, acclimate your pet to it, and book the right flight and cargo path through DXB or DWC.' },
           { title: 'Travel and delivery', text: 'We manage check-in, customs clearance and the release fee, then deliver your pet door-to-door to the new home with live updates throughout.' },
         ] },
-        { type: 'p', text: 'From low-risk countries the timeline is typically two to six weeks. From high-risk rabies countries that require a titer test, plan for around four months because of the mandatory waiting period. We map your exact timeline before you commit, so there are no surprises midway through the move.' },
+        { type: 'p', text: 'From low-risk countries the timeline is typically two to six weeks. From high-risk rabies countries that require a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We map your exact timeline before you commit, so there are no surprises midway through the move.' },
       ],
     },
     {
@@ -80,7 +80,7 @@ const downtownDubai: AreaPageData = {
   ],
   faq: [
     { q: 'Do you pick up from my building in Downtown Dubai?', a: 'Yes — we arrange door-to-door pickup from your Downtown tower, serviced residence or apartment, and coordinate the entire move from there.' },
-    { q: 'How long does pet relocation from Downtown Dubai take?', a: 'From low-risk countries, usually two to six weeks. From high-risk rabies countries that need a titer test, plan for about four months because of the mandatory waiting period.' },
+    { q: 'How long does pet relocation from Downtown Dubai take?', a: 'From low-risk countries, usually two to six weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. Government fees are roughly AED 700 per dog and AED 450 per cat. We give you a clear range on WhatsApp before you commit.' },
     { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit — which costs AED 200 per pet and stays valid for 90 days from issuance — or handle the application on your behalf depending on your service tier.' },
     { q: 'My Downtown building has pet rules — can you help?', a: 'We focus on the relocation itself, but we can advise on crate acclimation and travel-day logistics for apartment pets in central high-rise towers like those in Downtown Dubai. Always check your tenancy terms for pet limits or deposits.' },

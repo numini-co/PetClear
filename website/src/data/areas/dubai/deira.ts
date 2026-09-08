@@ -40,7 +40,7 @@ const deira: AreaPageData = {
       h2: 'Moving To or From Deira With a Pet',
       body: [
         { type: 'p', text: 'Most Deira relocations are international — long-time residents and families arriving from or leaving for India, the UK, the Philippines, across Europe and beyond. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days.' },
-        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan for around four months because of the mandatory waiting period. We map your exact timeline before you commit so nothing is left to chance.' },
+        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We map your exact timeline before you commit so nothing is left to chance.' },
       ],
     },
     {
@@ -58,7 +58,7 @@ const deira: AreaPageData = {
   ],
   faq: [
     { q: 'Do you pick up from my building in Deira?', a: 'Yes — we arrange door-to-door pickup from your Deira apartment or building and coordinate the entire move from there.' },
-    { q: 'How long does pet relocation from Deira take?', a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan for about four months because of the mandatory waiting period.' },
+    { q: 'How long does pet relocation from Deira take?', a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. We give you a clear range on WhatsApp before you commit.' },
     { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit — AED 200 per pet plus release fees — or handle the application on your behalf depending on your service tier.' },
     { q: 'My building has pet rules — can you help?', a: 'We focus on the relocation itself, but we can advise on crate acclimation and travel-day logistics for cats and smaller dogs in older apartment blocks like those across Deira.' },

@@ -83,8 +83,8 @@ export default function ImportChecklistGuide() {
     {
       num: 4,
       title: 'Rabies Titer Test — Only If From a High-Risk Country',
-      when: 'Day 21+ — then a 90-day wait',
-      body: 'If your pet is from a high-risk rabies country, a blood sample must be drawn at least 21 days after the rabies vaccination and processed at a WOAH/ISO 17025 accredited laboratory. The result must be at least 0.5 IU/ml. You then wait 90 days from the date of blood collection before the pet can enter the UAE. Pets from low-risk countries (UK, EU, USA, Canada, Australia, New Zealand, Japan, Singapore) do not need a titer test — but pets from Bahrain and Qatar do, despite being low-risk.',
+      when: 'Day 21+ — then sample within 90 days before travel',
+      body: 'If your pet is from a high-risk rabies country, a blood sample must be drawn at least 21 days after the rabies vaccination and processed at a WOAH/ISO 17025 accredited laboratory. The result must be at least 0.5 IU/ml. The sample used for travel must be taken within 90 days before travel — a pre-travel sample window, not a 90-day wait after the draw. Pets from low-risk countries (UK, EU, USA, Canada, Australia, New Zealand, Japan, Singapore) do not need a titer test — but pets from Bahrain and Qatar do, despite being low-risk.',
       icon: <Stethoscope className="w-5 h-5" />,
     },
     {
@@ -142,7 +142,7 @@ export default function ImportChecklistGuide() {
     },
     {
       question: 'How long does it take to import a pet to Dubai?',
-      answer: 'From low-risk countries such as the UK, EU, USA, Canada, Australia, or New Zealand, the process takes around 4–6 weeks. From high-risk countries that require a rabies titer test, the minimum timeline is about 4 months because of the mandatory 90-day waiting period after the blood sample is collected. Starting at least 8 weeks before your planned move is recommended.',
+      answer: 'From low-risk countries such as the UK, EU, USA, Canada, Australia, or New Zealand, the process takes around 4–6 weeks. From high-risk countries that require a titer, plan the blood sample within 90 days before travel (result ≥0.5 IU/ml) and allow time for the 21-day post-vaccine interval plus lab turnaround — that is not a 90-day wait after the draw. Starting at least 8 weeks before your planned move is recommended.',
     },
     {
       question: 'Do pets go into quarantine when arriving in Dubai?',
@@ -260,8 +260,8 @@ export default function ImportChecklistGuide() {
                 </div>
                 <div className="p-4 bg-[#C89F5A]/5 rounded-xl">
                   <p className="font-semibold text-[#C89F5A] text-sm mb-1">Timeline (High-Risk Countries)</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">Minimum ~4 months</p>
-                  <p className="text-sm text-[#5A5A5A] mt-1">Includes the 90-day wait after the rabies titer test.</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">Titer sample window</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">When required, sample within 90 days before travel ≥0.5 IU/ml — not a wait after the draw.</p>
                 </div>
                 <div className="p-4 bg-[#C9453A]/5 rounded-xl">
                   <p className="font-semibold text-[#C9453A] text-sm mb-1">Transport</p>
@@ -374,14 +374,14 @@ export default function ImportChecklistGuide() {
                 <tr>
                   <td className="font-semibold text-[#2A2A2A]">Rabies Titer Test (RNATT)</td>
                   <td>Blood test proving rabies immunity (high-risk countries only)</td>
-                  <td>90-day wait from sample</td>
+                  <td>Sample within 90 days before travel</td>
                   <td>500–1,200</td>
                 </tr>
                 <tr>
                   <td className="font-semibold text-[#2A2A2A]">MOCCAE Import Permit</td>
                   <td>Official approval from UAE Ministry of Climate Change and Environment</td>
                   <td>90 days from issuance</td>
-                  <td>200</td>
+                  <td>Verify on portal</td>
                 </tr>
                 <tr>
                   <td className="font-semibold text-[#2A2A2A]">International Health Certificate</td>
@@ -438,7 +438,7 @@ export default function ImportChecklistGuide() {
                 </div>
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                   <Stethoscope className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span><strong>90-day titer wait.</strong> From high-risk countries, the pet cannot enter for 90 days after the titer blood draw — non-negotiable.</span>
+                  <span><strong>Titer sample window.</strong> From high-risk countries, the blood sample must be taken within 90 days before travel and read ≥0.5 IU/ml — not a wait after the draw.</span>
                 </div>
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                   <FileText className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
@@ -468,7 +468,7 @@ export default function ImportChecklistGuide() {
                 </div>
                 <div className="p-4 bg-white rounded-xl">
                   <p className="font-semibold text-[#C89F5A] text-sm mb-1">High-risk — titer test required</p>
-                  <p className="text-xs text-[#5A5A5A]">Most of Africa, Latin America, Central Asia, and parts of Asia. Minimum timeline: ~4 months due to the 90-day wait.</p>
+                  <p className="text-xs text-[#5A5A5A]">Most of Africa, Latin America, Central Asia, and parts of Asia. When a titer is required, sample within 90 days before travel ≥0.5 IU/ml — not a wait after the draw.</p>
                 </div>
                 <div className="p-4 bg-white rounded-xl">
                   <p className="font-semibold text-[#C9453A] text-sm mb-1">Special exception</p>
