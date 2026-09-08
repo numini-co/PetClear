@@ -6,7 +6,7 @@ const sportsCity: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Dubai Sports City | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in Dubai Sports City — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates for apartments and villas. Free WhatsApp quote.',
+    'Pet relocation in Dubai Sports City — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
   keywords:
     'pet relocation dubai sports city, pet transport dubai sports city, dog relocation sports city, cat relocation sports city, pet movers sports city',
   h1: 'Pet Relocation in Dubai Sports City',
@@ -14,7 +14,7 @@ const sportsCity: AreaPageData = {
   heroValueProp:
     'Relocating a dog or cat to or from Dubai Sports City? We coordinate the whole move for this active mixed community — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your apartment or villa — with WhatsApp updates at every step.',
   heroImage: '/images/area-sports-city.jpg',
-  heroImageAlt: 'A dog mid-walk along a tree-lined path in Dubai Sports City with apartment towers behind — pet relocation in Dubai Sports City',
+  heroImageAlt: 'Dog walking a tree-lined path in Dubai Sports City with towers behind',
   whatsappMessage: 'Hi Dubai Pet Relocation! I live in Dubai Sports City and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.0380', lng: '55.2180' },
   landmarks: ['Dubai International Cricket Stadium', 'Sports academies', 'The Els Club (nearby)', 'Sports City dog-walking routes'],

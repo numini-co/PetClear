@@ -6,7 +6,7 @@ const jbr: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation JBR | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in JBR (Jumeirah Beach Residence) — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
+    'Pet relocation in JBR — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
   keywords:
     'pet relocation jbr, pet transport jbr, dog relocation jumeirah beach residence, cat relocation jbr, pet movers jbr dubai',
   h1: 'Pet Relocation in JBR',
@@ -14,7 +14,7 @@ const jbr: AreaPageData = {
   heroValueProp:
     'Relocating a dog or cat to or from JBR? We coordinate the whole move for Jumeirah Beach Residence residents — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your tower — with WhatsApp updates at every step.',
   heroImage: '/images/area-jbr.jpg',
-  heroImageAlt: 'A happy dog on the beachfront promenade with the JBR towers behind — pet relocation in Jumeirah Beach Residence',
+  heroImageAlt: 'Happy dog on the beachfront promenade with the JBR towers behind',
   whatsappMessage: 'Hi Dubai Pet Relocation! I live in JBR (Jumeirah Beach Residence) and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.0785', lng: '55.1340' },
   landmarks: ['The Walk at JBR', 'The Beach JBR', 'Bluewaters Island', 'Ain Dubai', 'Dubai Marina', 'Rimal towers', 'Murjan towers'],

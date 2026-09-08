@@ -422,6 +422,8 @@ export default function CatRelocationPage() {
               <img
                 src="/images/cat-crate.jpg"
                 alt="A calm cat inside an IATA-approved travel crate, ready for a safe journey to Dubai."
+                width={1536}
+                height={1024}
                 className="w-full h-64 lg:h-full object-cover"
                 loading="lazy"
               />

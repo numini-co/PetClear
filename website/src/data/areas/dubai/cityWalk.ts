@@ -14,7 +14,7 @@ const cityWalk: AreaPageData = {
   heroValueProp:
     'Relocating a dog or cat to or from City Walk? We coordinate the whole move for City Walk residents — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your low-rise residence — with WhatsApp updates at every step.',
   heroImage: '/images/area-city-walk.jpg',
-  heroImageAlt: 'A happy dog on a City Walk promenade with modern low-rise buildings behind — pet relocation in City Walk',
+  heroImageAlt: 'Happy dog on a City Walk promenade with modern low-rise buildings',
   whatsappMessage: 'Hi Dubai Pet Relocation! I live in City Walk and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.2080', lng: '55.2620' },
   landmarks: ['City Walk promenade', 'Coca-Cola Arena', 'The Green Planet', 'Al Wasl', 'Downtown Dubai', 'Jumeirah', 'Box Park'],

@@ -368,7 +368,7 @@ export default function ImportRequirementsPage() {
       {/* ═══════════ HERO ═══════════ */}
       <Hero
         image="/assets/w5/uae-pet-import-requirements-master-checklist-illustration.png"
-        imageAlt="Master checklist of UAE pet import requirements: microchip, vaccinations, titer test, permit and health certificate"
+        imageAlt="UAE pet import checklist: microchip, vaccinations, titer test, permit, health certificate"
         eyebrow="Statutory checklist — not the import service"
         title="UAE Pet Import Requirements — Permits, Titer & Cargo"
         subtitle="90-day MOCCAE permit, RNATT sample within 90 days before travel, microchip before rabies, manifested cargo. Confirm fees on the portal."

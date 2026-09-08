@@ -14,7 +14,7 @@ const damacHills: AreaPageData = {
   heroValueProp:
     'Relocating a dog or cat to or from DAMAC Hills? We coordinate the whole move for DAMAC Hills villa families — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your villa — including large-breed and multi-pet households, with WhatsApp updates at every step.',
   heroImage: '/images/area-damac-hills.jpg',
-  heroImageAlt: 'A large dog in a private villa garden in DAMAC Hills with the golf community behind — pet relocation in DAMAC Hills',
+  heroImageAlt: 'Large dog in a DAMAC Hills villa garden with the golf community behind',
   whatsappMessage: 'Hi Dubai Pet Relocation! I live in DAMAC Hills and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.0260', lng: '55.2540' },
   landmarks: ['Trump International Golf Club Dubai', 'Carrefour DAMAC Hills', 'DAMAC Hills parks and lakes', 'DAMAC Hills villa clusters'],

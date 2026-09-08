@@ -28,7 +28,7 @@ const petImportDubai: ServicePageData = {
   // Blocked original-photo placeholder — AI substitute not used for this hero.
   heroImage: '/images/service-pet-import-dubai.jpg',
   heroImageAlt:
-    'Pet travel crates being handled in a Dubai air-cargo warehouse during pet import clearance (placeholder until an original cargo-facility photo is shot)',
+    'Pet travel crates handled in a Dubai air-cargo warehouse during import clearance',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I want to import my pet to Dubai. Can you review origin, breed, documents and a commercial import quote?',
   ctaLabel: 'Get a Relocation Quote',
@@ -79,7 +79,7 @@ const petImportDubai: ServicePageData = {
         {
           type: 'image',
           src: '/assets/w5/pet-import-dubai-process-diagram.png',
-          alt: 'Pet import process for Dubai: MOCCAE permit, health certificate, flight, customs clearance, release, home delivery',
+          alt: 'Pet import process for Dubai: permit, health certificate, flight, customs, delivery',
           caption: 'Six commercial stages. Validity and fees are confirmed on the portal — they are not baked into this diagram.',
         },
         {

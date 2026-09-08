@@ -16,6 +16,9 @@ interface HeroProps {
   updated?: string
   /** Optional extra overlay classes (e.g. a lighter scrim on a dark hero). */
   overlayClassName?: string
+  /** Intrinsic pixel size of `image` when it is not the default 1536×1024 hero crop. */
+  imageWidth?: number
+  imageHeight?: number
 }
 
 // Shared professional hero: a sharp full-bleed photo, a black gradient scrim for
@@ -33,6 +36,8 @@ export default function Hero({
   secondary,
   updated,
   overlayClassName,
+  imageWidth = 1536,
+  imageHeight = 1024,
 }: HeroProps) {
   return (
     <section className="relative isolate overflow-hidden bg-[#0E1330]">
@@ -44,8 +49,8 @@ export default function Hero({
             e.currentTarget.src = fallbackSrc
           }
         }}
-        width={1536}
-        height={1024}
+        width={imageWidth}
+        height={imageHeight}
         loading="eager"
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />

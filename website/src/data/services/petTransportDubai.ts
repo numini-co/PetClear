@@ -13,7 +13,7 @@ const petTransportDubai: ServicePageData = {
     'Pet taxi Dubai is the primary local job on this page: climate-controlled ground transfers, DXB and DWC airport runs, and Dubai–Abu Dhabi trips — not international cargo.',
   heroImage: '/images/service-pet-transport-dubai.jpg',
   heroImageAlt:
-    'Interior of an unbranded climate-controlled van with a secured travel crate for pet taxi service in Dubai',
+    'Climate-controlled van interior with a secured pet travel crate in Dubai',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I need a pet taxi or pet transport in Dubai. Pickup, drop-off and preferred time: …',
   trustBadges: [

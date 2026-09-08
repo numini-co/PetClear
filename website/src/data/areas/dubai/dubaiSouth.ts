@@ -6,7 +6,7 @@ const dubaiSouth: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Dubai South | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in Dubai South — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates near DWC airport. Free WhatsApp quote in 15 minutes.',
+    'Pet relocation in Dubai South — door-to-door dog and cat transport near DWC, MOCCAE permits and IATA crates. Free WhatsApp quote.',
   keywords:
     'pet relocation dubai south, pet transport dubai south, dog relocation dubai south, cat relocation dubai south, pet movers dwc',
   h1: 'Pet Relocation in Dubai South',
@@ -14,7 +14,7 @@ const dubaiSouth: AreaPageData = {
   heroValueProp:
     'Relocating a dog or cat to or from Dubai South? We coordinate the whole move for Dubai South residents — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your home — with the added convenience of Al Maktoum International Airport (DWC) right on your doorstep and WhatsApp updates at every step.',
   heroImage: '/images/area-dubai-south.jpg',
-  heroImageAlt: 'A happy dog with new Dubai South community buildings and DWC airport in the distance — pet relocation in Dubai South',
+  heroImageAlt: 'Happy dog with Dubai South community buildings and DWC airport beyond',
   whatsappMessage: 'Hi Dubai Pet Relocation! I live in Dubai South and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '24.8960', lng: '55.1610' },
   landmarks: ['Al Maktoum International Airport (DWC)', 'Expo City Dubai', 'The Pulse', 'Emaar South', 'Dubai South'],

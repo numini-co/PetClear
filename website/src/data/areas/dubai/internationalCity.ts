@@ -4,7 +4,7 @@ const internationalCity: AreaPageData = {
   slug: 'international-city',
   areaName: 'International City',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation International City | Dog & Cat Transport Dubai',
+  seoTitle: 'Pet Relocation International City | Dog & Cat Transport',
   metaDescription:
     'Pet relocation in International City — door-to-door dog and cat transport, MOCCAE permit coordination and IATA crates. Free WhatsApp quote in 15 minutes.',
   keywords:
@@ -14,7 +14,7 @@ const internationalCity: AreaPageData = {
   heroValueProp:
     'Relocating a dog or cat to or from International City? We coordinate the whole move for this diverse, affordable community — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your cluster — with WhatsApp updates at every step.',
   heroImage: '/images/area-international-city.jpg',
-  heroImageAlt: 'A happy cat in an International City apartment cluster in Dubai — pet relocation in International City',
+  heroImageAlt: 'Happy cat in an International City apartment cluster in Dubai',
   whatsappMessage: 'Hi Dubai Pet Relocation! I live in International City and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.1620', lng: '55.4090' },
   landmarks: ['Dragon Mart', 'country-themed residential clusters', 'Warsan', 'International City Central District', 'Dragon Mart 2'],

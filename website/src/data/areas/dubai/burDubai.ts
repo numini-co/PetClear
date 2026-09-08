@@ -15,7 +15,7 @@ const burDubai: AreaPageData = {
     'Relocating a dog or cat to or from Bur Dubai? We coordinate the whole move for Bur Dubai residents — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your building — with WhatsApp updates at every step.',
   heroImage: '/images/area-bur-dubai.jpg',
   heroImageAlt:
-    'A happy dog along Dubai Creek with the historic Bur Dubai waterfront behind — pet relocation in Bur Dubai',
+    'Happy dog along Dubai Creek with the historic Bur Dubai waterfront',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I live in Bur Dubai and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.2580', lng: '55.2960' },

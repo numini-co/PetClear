@@ -14,7 +14,7 @@ const meydan: AreaPageData = {
   heroValueProp:
     'Relocating a dog or cat to or from Meydan? We coordinate the whole move for Meydan residents — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your villa or apartment — with WhatsApp updates at every step.',
   heroImage: '/images/area-meydan.jpg',
-  heroImageAlt: 'A happy dog on a manicured lawn with the Meydan racecourse grandstand behind — pet relocation in Meydan',
+  heroImageAlt: 'Happy dog on a manicured lawn with the Meydan racecourse grandstand',
   whatsappMessage: 'Hi Dubai Pet Relocation! I live in Meydan and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.1610', lng: '55.3010' },
   landmarks: ['Meydan Racecourse', 'Meydan One', 'Mohammed Bin Rashid City', 'The Track', 'Meydan Hotel', 'Meydan Grandstand'],

@@ -6,7 +6,7 @@ const mirdif: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Mirdif | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in Mirdif — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates for villa families. Free WhatsApp quote in 15 minutes.',
+    'Pet relocation in Mirdif — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
   keywords:
     'pet relocation mirdif, pet transport mirdif, dog relocation mirdif, cat relocation mirdif, pet movers mirdif',
   h1: 'Pet Relocation in Mirdif',

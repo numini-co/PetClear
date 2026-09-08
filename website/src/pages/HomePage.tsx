@@ -297,7 +297,7 @@ export default function HomePage() {
             </div>
             <ContentImage
               src="/assets/w1-w3/routes-strip-beagle-crate-doorway-dubai-skyline.jpg"
-              alt="Beagle in a travel crate at a home doorway with a Dubai skyline beyond, suggesting international pet relocation routes"
+              alt="Beagle in a travel crate at a doorway with a Dubai skyline beyond"
               caption="UK, USA, India, Australia and more — each corridor has its own rules."
             />
           </div>

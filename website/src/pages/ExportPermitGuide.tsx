@@ -161,7 +161,7 @@ export default function ExportPermitGuide() {
       {/* Hero */}
       <Hero
         image="/images/service-pet-export-dubai.jpg"
-        imageAlt="A calm dog and cat beside a travel crate at a bright Dubai airport departure terminal — pet export from Dubai"
+        imageAlt="Calm dog and cat beside a travel crate at a Dubai airport departure terminal"
         eyebrow="Pet Relocation Guide"
         title="UAE Pet Export Permit — Leaving Dubai With Your Pet"
         subtitle="Two sets of rules at once: MOCCAE controls how your pet leaves the UAE, and the destination country decides what it needs to enter. Here is how the export permit, the health certificate, and the airport inspection fit together."

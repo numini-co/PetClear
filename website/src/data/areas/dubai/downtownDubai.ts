@@ -14,7 +14,7 @@ const downtownDubai: AreaPageData = {
   heroValueProp:
     'Relocating a dog or cat to or from Downtown Dubai? We coordinate the whole move for residents around the Burj Khalifa — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your tower — with WhatsApp updates at every step.',
   heroImage: '/images/area-downtown-dubai.jpg',
-  heroImageAlt: 'A happy dog with the Burj Khalifa and Downtown Dubai skyline behind — pet relocation in Downtown Dubai',
+  heroImageAlt: 'Happy dog with the Burj Khalifa and Downtown Dubai skyline behind',
   whatsappMessage: 'Hi Dubai Pet Relocation! I live in Downtown Dubai and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.1972', lng: '55.2744' },
   landmarks: ['Burj Khalifa', 'The Dubai Mall', 'Dubai Fountain', 'Souk Al Bahar', 'Burj Park', 'DIFC nearby'],

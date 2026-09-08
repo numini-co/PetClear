@@ -13,7 +13,7 @@ const catRelocationDubai: ServicePageData = {
     'Moving a cat to or from Dubai? Cats travel differently from dogs — calmer routes, careful carrier acclimation and no sedation. We map your documents and timeline, coordinate vetted partners and stay with you on WhatsApp, so the journey is as low-stress as possible for a sensitive animal.',
   heroImage: '/images/service-cat-relocation-dubai.jpg',
   heroImageAlt:
-    'A relaxed cat resting inside a soft-lined travel carrier in a calm, bright room — cat relocation in Dubai',
+    'Relaxed cat resting inside a soft-lined travel carrier in a bright room',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I need to relocate my cat from ___ to ___. Can you guide me on documents, timeline and cost?',
   trustBadges: ['Low-stress handling', 'No sedation advised', 'Vetted partners', 'WhatsApp support'],

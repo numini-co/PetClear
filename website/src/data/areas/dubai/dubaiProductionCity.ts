@@ -6,7 +6,7 @@ const dubaiProductionCity: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Dubai Production City (IMPZ) | Pet Transport',
   metaDescription:
-    'Pet relocation in Dubai Production City (IMPZ) — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
+    'Pet relocation in Dubai Production City — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
   keywords:
     'pet relocation dubai production city, pet transport impz dubai, dog relocation dubai production city, cat relocation impz, pet movers impz',
   h1: 'Pet Relocation in Dubai Production City (IMPZ)',
@@ -14,7 +14,7 @@ const dubaiProductionCity: AreaPageData = {
   heroValueProp:
     'Relocating a dog or cat to or from Dubai Production City? We coordinate the whole move for IMPZ residents — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your tower — with WhatsApp updates at every step.',
   heroImage: '/images/area-dubai-production-city.jpg',
-  heroImageAlt: 'A happy dog beside the lakes of Dubai Production City apartment towers — pet relocation in IMPZ Dubai',
+  heroImageAlt: 'Happy dog beside the lakes of Dubai Production City apartment towers',
   whatsappMessage: 'Hi Dubai Pet Relocation! I live in Dubai Production City (IMPZ) and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.0290', lng: '55.1930' },
   landmarks: ['City Centre Me’aisem', 'IMPZ lakes', 'Dubai Production City apartment towers', 'Me’aisem City Centre Park', 'The Crescent towers', 'Jumeirah Village Circle (nearby)'],

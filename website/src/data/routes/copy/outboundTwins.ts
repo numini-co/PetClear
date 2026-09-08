@@ -87,7 +87,7 @@ export const OUTBOUND_TWIN_COPY: RouteUniqueCopy[] = [
     countryKey: 'philippines',
     title: 'Dubai to Philippines Pet Relocation | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to the Philippines: BAI SPSIC first, 10-day export health certificate, arrival at MNL, CEB or CRK.',
-    h1: 'Dubai to Philippines Pet Relocation — Exporting Your Pet to the Philippines',
+    h1: 'Dubai to Philippines Pet Relocation — Exporting Your Pet',
     heroAlt: 'Dog with Philippine flag cue ready for export from Dubai to the Philippines',
     intro:
       'Leaving Dubai for the Philippines is a Bureau of Animal Industry problem first: you need an approved SPSIC (Sanitary and Phytosanitary Import Clearance) before the pet travels, then a UAE export health certificate issued inside the short window BAI will accept, then a live-animal booking into Manila, Cebu or Clark. This is not a mirror of the live Philippines→Dubai page, which is about high-risk UAE entry, MOCCAE permits and inbound cargo clearance. Here the failure modes are a missing SPSIC, an expired origin health certificate, or an arrival without BAI documents — BAI states pets can be seized or refused. We do not re-own inbound titer-for-Dubai or “waiting period into the UAE” language on this URL.',
@@ -331,7 +331,7 @@ export const OUTBOUND_TWIN_COPY: RouteUniqueCopy[] = [
     countryKey: 'south-africa',
     title: 'Dubai to South Africa Pet Relocation | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to South Africa: DALRRD veterinary import permit, JNB or CPT arrival, dog quarantine risk. Confirm current rules.',
-    h1: 'Dubai to South Africa Pet Relocation — Exporting Your Pet to South Africa',
+    h1: 'Dubai to South Africa Pet Relocation — Exporting Your Pet',
     heroAlt: 'Dog with South African flag cue ready for export from Dubai to South Africa',
     intro:
       'Dubai to South Africa is built around a veterinary import permit from DALRRD (Directorate: Animal Health), not around UAE inbound rules. Dogs and cats need an ISO microchip (tattoos are not accepted on the mirrored infosheet), and dogs from countries that are not on South Africa’s exemption list — the UAE is not described as exempt — can face arrival quarantine. Published entry airports for this movement are Johannesburg (OR Tambo) and Cape Town; Durban appears in our airport seed as a city code but must be confirmed for live-animal import. Only after the South African permit and isolation plan exist do you time the MOCCAE export certificate and the cargo product leaving Dubai. This is not a reversed South Africa→Dubai titer-into-UAE guide.',
@@ -410,7 +410,7 @@ export const OUTBOUND_TWIN_COPY: RouteUniqueCopy[] = [
     countryKey: 'new-zealand',
     title: 'Dubai to New Zealand Pet Relocation | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to New Zealand: MPI import conditions, AKL/WLG/CHC arrival, long biosecurity lead. Confirm current MPI rules.',
-    h1: 'Dubai to New Zealand Pet Relocation — Exporting Your Pet to New Zealand',
+    h1: 'Dubai to New Zealand Pet Relocation — Exporting Your Pet',
     heroAlt: 'Dog with New Zealand flag cue ready for export from Dubai to New Zealand',
     intro:
       'Dubai to New Zealand is an MPI biosecurity timeline, often measured in months, not a swapped New Zealand→Dubai arrival story. New Zealand’s cat and dog import conditions are among the strictest in this tranche: approved-country status, veterinary checks, and post-arrival controls are set by the Ministry for Primary Industries, and some origins are simply not practical until the pet has completed time in an approved place. Seed arrival cities are Auckland, Wellington and Christchurch; the live-animal product leaving Dubai (Air New Zealand, Emirates or Qantas in our seed — all cargo-flagged) has to match a real MPI permit. We do not recast this page as UAE import, rabies-free-origin inbound, or a cost-band article.',

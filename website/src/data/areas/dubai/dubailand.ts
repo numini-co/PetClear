@@ -6,7 +6,7 @@ const dubailand: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Dubailand | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in Dubailand — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates for villa families. Free WhatsApp quote in 15 minutes.',
+    'Pet relocation in Dubailand — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
   keywords:
     'pet relocation dubailand, pet transport dubailand, dog relocation dubailand, cat relocation dubailand, pet movers dubailand',
   h1: 'Pet Relocation in Dubailand',

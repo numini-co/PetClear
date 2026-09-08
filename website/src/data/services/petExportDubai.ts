@@ -13,7 +13,7 @@ const petExportDubai: ServicePageData = {
     'Leaving Dubai with your dog or cat? We guide you through MOCCAE export health certificates, the Fit to Fly check, the airport inspection and your flight booking — and stay with you on WhatsApp at every step. Transparent pricing, vetted partners, no last-minute surprises.',
   heroImage: '/images/service-pet-export-dubai.jpg',
   heroImageAlt:
-    'A calm dog and cat beside a travel crate at a bright Dubai airport departure terminal — pet export from Dubai',
+    'Calm dog and cat beside a travel crate at a Dubai airport departure terminal',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I am leaving Dubai and need help exporting my pet. Can you guide me on the process and cost?',
   trustBadges: ['MOCCAE export guided', 'Vetted partners', 'Fit to Fly coordination', 'WhatsApp support'],

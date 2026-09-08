@@ -6,7 +6,7 @@ const palmJumeirah: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Palm Jumeirah | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation on Palm Jumeirah — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates for villa and apartment residents. Free WhatsApp quote.',
+    'Pet relocation on Palm Jumeirah — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
   keywords:
     'pet relocation palm jumeirah, pet transport palm jumeirah, dog relocation palm jumeirah, cat relocation palm jumeirah, pet movers palm jumeirah',
   h1: 'Pet Relocation in Palm Jumeirah',
@@ -15,7 +15,7 @@ const palmJumeirah: AreaPageData = {
     'Relocating a dog or cat to or from Palm Jumeirah? We coordinate the whole move for Palm residents — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your villa or apartment — with WhatsApp updates at every step.',
   heroImage: '/images/area-palm-jumeirah.jpg',
   heroImageAlt:
-    'A happy dog on a Palm Jumeirah beachfront with the Atlantis resort behind — pet relocation on Palm Jumeirah',
+    'Happy dog on a Palm Jumeirah beachfront with the Atlantis resort behind',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I live on Palm Jumeirah and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.1124', lng: '55.1390' },
