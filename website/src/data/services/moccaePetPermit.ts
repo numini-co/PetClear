@@ -25,7 +25,7 @@ const moccaePetPermit: ServicePageData = {
   // Blocked original-photo placeholder — AI substitute not used for this hero.
   heroImage: '/images/service-moccae-pet-permit.jpg',
   heroImageAlt:
-    'MOCCAE pet permit application folder being prepared on a coordinator desk in Dubai (placeholder until an original workspace photo is shot)',
+    'MOCCAE pet permit application folder prepared on a coordinator desk in Dubai',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I need MOCCAE import or export permit help. Can you review my documents before I submit?',
   ctaLabel: 'Check Documents',

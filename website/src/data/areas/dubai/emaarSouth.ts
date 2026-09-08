@@ -6,7 +6,7 @@ const emaarSouth: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Emaar South | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in Emaar South — door-to-door dog and cat transport near Al Maktoum (DWC) airport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
+    'Pet relocation in Emaar South — door-to-door dog and cat transport near DWC, MOCCAE permits and IATA crates. Free WhatsApp quote.',
   keywords:
     'pet relocation emaar south, pet transport emaar south, dog relocation emaar south, cat relocation emaar south, pet movers dwc al maktoum',
   h1: 'Pet Relocation in Emaar South',

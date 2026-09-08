@@ -8,7 +8,7 @@ export interface CardImage {
 export const CARD_IMAGES: Record<string, CardImage> = {
   '/service/pet-relocation-dubai/': {
     src: '/assets/homepage-cards/door-to-door-pet-relocation-card.jpg',
-    alt: 'A golden retriever sitting in an open travel crate on a Dubai villa driveway before door-to-door relocation',
+    alt: 'Golden retriever in an open travel crate on a Dubai villa driveway',
   },
   '/service/pet-import-dubai/': {
     src: '/assets/homepage-cards/pet-import-dubai-card.jpg',
@@ -24,7 +24,7 @@ export const CARD_IMAGES: Record<string, CardImage> = {
   },
   '/service/international-pet-relocation/': {
     src: '/assets/homepage-cards/international-pet-relocation-card.jpg',
-    alt: 'A travel crate with documents on a Dubai balcony overlooking the skyline before an international move',
+    alt: 'Travel crate with documents on a Dubai balcony overlooking the skyline',
   },
   '/service/pet-relocation-to-dubai/': {
     src: '/assets/homepage-cards/pet-relocation-to-dubai-card.jpg',

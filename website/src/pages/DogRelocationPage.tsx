@@ -508,7 +508,9 @@ export default function DogRelocationPage() {
             <div className="rounded-[20px] overflow-hidden shadow-sm">
               <img
                 src="/images/dog-crate.jpg"
-                alt="Measuring a dog for an IATA-certified travel crate — the correct crate size is essential for safe air travel to Dubai."
+                alt="Measuring a dog for an IATA-certified travel crate before flying to Dubai"
+                width={1200}
+                height={800}
                 className="w-full h-64 lg:h-full object-cover"
                 loading="lazy"
               />

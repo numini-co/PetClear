@@ -14,7 +14,7 @@ const sheikhZayedRoad: AreaPageData = {
   heroValueProp:
     'Relocating a dog or cat to or from Sheikh Zayed Road? We coordinate the whole move for residents of the high-rise corridor — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your tower — with WhatsApp updates at every step.',
   heroImage: '/images/area-sheikh-zayed-road.jpg',
-  heroImageAlt: 'A happy dog with the Sheikh Zayed Road high-rise skyline behind — pet relocation in Sheikh Zayed Road',
+  heroImageAlt: 'Happy dog with the Sheikh Zayed Road high-rise skyline behind',
   whatsappMessage: 'Hi Dubai Pet Relocation! I live on Sheikh Zayed Road and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.2180', lng: '55.2810' },
   landmarks: ['Emirates Towers', 'Dubai World Trade Centre', 'Museum of the Future', 'DIFC', 'Financial Centre Metro', 'The high-rise corridor', 'Trade Centre district'],

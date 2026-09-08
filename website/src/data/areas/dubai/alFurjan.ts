@@ -6,7 +6,7 @@ const alFurjan: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Al Furjan | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in Al Furjan — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates for villa and townhouse families. Free WhatsApp quote.',
+    'Pet relocation in Al Furjan — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
   keywords:
     'pet relocation al furjan, pet transport al furjan, dog relocation al furjan, cat relocation al furjan, pet movers al furjan',
   h1: 'Pet Relocation in Al Furjan',
@@ -14,7 +14,7 @@ const alFurjan: AreaPageData = {
   heroValueProp:
     'Relocating a dog or cat to or from Al Furjan? We coordinate the whole move for Al Furjan families — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your townhouse, villa or apartment — with WhatsApp updates at every step.',
   heroImage: '/images/area-al-furjan.jpg',
-  heroImageAlt: 'A dog in the garden of an Al Furjan townhouse with the community’s villas behind — pet relocation in Al Furjan',
+  heroImageAlt: 'Dog in an Al Furjan townhouse garden with community villas behind',
   whatsappMessage: 'Hi Dubai Pet Relocation! I live in Al Furjan and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.0270', lng: '55.1460' },
   landmarks: ['Al Furjan Pavilion', 'Discovery Gardens nearby', 'Al Furjan Metro Station', 'Al Furjan townhouse districts'],

@@ -29,7 +29,7 @@ export default function DubaiPillar() {
       <SEOHead
         meta={{
           title: 'Pet Relocation Dubai | Every Community, Door-to-Door',
-          description: 'Pet relocation across all of Dubai — Marina, Jumeirah, Downtown, Palm, Arabian Ranches and more. MOCCAE permits, IATA crates, door-to-door. Free WhatsApp quote.',
+          description: 'Pet relocation across Dubai — Marina, Jumeirah, Downtown, Palm and more. MOCCAE permits, IATA crates, door-to-door. Free WhatsApp quote.',
           keywords: 'pet relocation dubai, pet transport dubai, dubai pet relocation areas, pet movers dubai',
           canonical: url, ogType: 'website',
         }}

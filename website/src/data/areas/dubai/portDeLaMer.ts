@@ -14,7 +14,7 @@ const portDeLaMer: AreaPageData = {
   heroValueProp:
     'Relocating a dog or cat to or from Port de La Mer? We coordinate the whole move for Port de La Mer residents — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your beachfront apartment — with WhatsApp updates at every step.',
   heroImage: '/images/area-port-de-la-mer.jpg',
-  heroImageAlt: 'A happy dog on the beach promenade at Port de La Mer with Mediterranean-style marina apartments behind — pet relocation in Port de La Mer',
+  heroImageAlt: 'Happy dog on the Port de La Mer beach promenade with marina apartments',
   whatsappMessage: 'Hi Dubai Pet Relocation! I live in Port de La Mer and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.2330', lng: '55.2530' },
   landmarks: ['La Mer beach', 'Port de La Mer marina', 'Jumeirah 1', 'beach promenade', 'Jumeirah', 'La Mer boardwalk', 'Pearl Jumeirah'],

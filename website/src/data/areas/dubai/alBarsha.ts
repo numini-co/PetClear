@@ -6,7 +6,7 @@ const alBarsha: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Al Barsha | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in Al Barsha — door-to-door dog and cat transport, MOCCAE permit guidance and IATA travel crates. Get a free WhatsApp quote in 15 minutes today.',
+    'Pet relocation in Al Barsha — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
   keywords:
     'pet relocation al barsha, pet transport al barsha, dog relocation al barsha, cat relocation al barsha, pet movers al barsha dubai',
   h1: 'Pet Relocation in Al Barsha',

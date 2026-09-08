@@ -14,7 +14,7 @@ const internationalCity: AreaPageData = {
   heroValueProp:
     'Relocating a dog or cat to or from International City? We coordinate the whole move for this diverse, affordable community — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your cluster — with WhatsApp updates at every step.',
   heroImage: '/images/area-international-city.jpg',
-  heroImageAlt: 'A happy cat in an International City apartment cluster in Dubai — pet relocation in International City',
+  heroImageAlt: 'Happy cat in an International City apartment cluster in Dubai',
   whatsappMessage: 'Hi Dubai Pet Relocation! I live in International City and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.1620', lng: '55.4090' },
   landmarks: ['Dragon Mart', 'country-themed residential clusters', 'Warsan', 'International City Central District', 'Dragon Mart 2'],

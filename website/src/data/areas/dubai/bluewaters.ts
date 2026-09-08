@@ -14,7 +14,7 @@ const bluewaters: AreaPageData = {
   heroValueProp:
     'Relocating a dog or cat to or from Bluewaters Island? We coordinate the whole move for Bluewaters residents — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your apartment — with WhatsApp updates at every step.',
   heroImage: '/images/area-bluewaters.jpg',
-  heroImageAlt: 'A happy dog on the Bluewaters Island promenade with Ain Dubai behind — pet relocation on Bluewaters Island',
+  heroImageAlt: 'Happy dog on the Bluewaters Island promenade with Ain Dubai behind',
   whatsappMessage: 'Hi Dubai Pet Relocation! I live on Bluewaters Island and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.0790', lng: '55.1230' },
   landmarks: ['Ain Dubai', 'Caesars Palace Dubai', 'The Wharf', 'Jumeirah Beach Residence (JBR)', 'Dubai Marina', 'The Walk at JBR', 'Bluewaters promenade'],

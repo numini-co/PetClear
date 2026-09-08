@@ -13,7 +13,7 @@ const internationalPetRelocation: ServicePageData = {
     'Relocating a dog or cat across borders to or from Dubai? We coordinate documentation, permits, airline-approved crates and customs for your exact destination — connecting you with vetted partners and pet-experienced airlines, and keeping you updated on WhatsApp at every step.',
   heroImage: '/images/service-international-pet-relocation.jpg',
   heroImageAlt:
-    'A calm dog and cat beside a travel crate with a world map and aircraft in the background — international pet relocation in Dubai',
+    'Calm dog and cat beside a travel crate with a world map and aircraft',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I need international pet relocation to or from Dubai. Can you tell me the requirements and cost for my destination country?',
   snippetQuestion: 'Do you handle pet cargo from Dubai?',

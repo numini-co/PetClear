@@ -6,7 +6,7 @@ const businessBay: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Business Bay | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in Business Bay — door-to-door dog and cat transport, MOCCAE permit guidance and IATA travel crates. Get a free WhatsApp quote in 15 minutes.',
+    'Pet relocation in Business Bay — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
   keywords:
     'pet relocation business bay, pet transport business bay, dog relocation business bay, cat relocation business bay, pet movers business bay dubai',
   h1: 'Pet Relocation in Business Bay',
@@ -15,7 +15,7 @@ const businessBay: AreaPageData = {
     'Relocating a dog or cat to or from Business Bay? We coordinate the whole move for Business Bay residents — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your tower — with WhatsApp updates at every step.',
   heroImage: '/images/area-business-bay.jpg',
   heroImageAlt:
-    'A happy dog beside the Dubai Water Canal with Business Bay high-rise towers behind — pet relocation in Business Bay',
+    'Happy dog beside the Dubai Water Canal with Business Bay towers behind',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I live in Business Bay and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.1857', lng: '55.2647' },

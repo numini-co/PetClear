@@ -13,7 +13,7 @@ const dogRelocationDubai: ServicePageData = {
     'Moving a dog to or from Dubai? We check breed eligibility against the official UAE rules, size an IATA-compliant crate, map your vaccination timeline and flag the snub-nosed and summer airline restrictions before you book. Transparent pricing, vetted partners, WhatsApp at every step.',
   heroImage: '/images/service-dog-relocation-dubai.jpg',
   heroImageAlt:
-    'A calm dog sitting beside an IATA-approved travel crate at a bright Dubai airport — dog relocation in Dubai',
+    'Calm dog sitting beside an IATA travel crate at a Dubai airport',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I need to relocate my dog (breed and approx weight: ___) from ___ to ___. Can you check breed eligibility, crate size and cost?',
   trustBadges: ['Breed eligibility checked', 'IATA crate guidance', 'Vetted partners', 'WhatsApp support'],

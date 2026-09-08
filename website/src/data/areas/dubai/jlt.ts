@@ -4,9 +4,9 @@ const jlt: AreaPageData = {
   slug: 'jlt',
   areaName: 'Jumeirah Lakes Towers (JLT)',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Jumeirah Lakes Towers (JLT) | Dog & Cat Transport',
+  seoTitle: 'Pet Relocation JLT Dubai | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in JLT — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates for lakeside tower residents. Free WhatsApp quote in 15 minutes.',
+    'Pet relocation in JLT — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
   keywords:
     'pet relocation jlt, pet transport jlt, dog relocation jumeirah lakes towers, cat relocation jlt, pet movers jlt',
   h1: 'Pet Relocation in Jumeirah Lakes Towers (JLT)',

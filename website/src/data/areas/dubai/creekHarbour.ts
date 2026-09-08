@@ -15,7 +15,7 @@ const creekHarbour: AreaPageData = {
     'Relocating a dog or cat to or from Dubai Creek Harbour? We coordinate the whole move for Creek Harbour residents — MOCCAE permits, breed checks, travel crates, customs and door-to-door delivery from your tower — with WhatsApp updates at every step.',
   heroImage: '/images/area-creek-harbour.jpg',
   heroImageAlt:
-    'A happy dog on a waterfront promenade with Dubai Creek Harbour towers behind — pet relocation in Dubai Creek Harbour',
+    'Happy dog on a waterfront promenade with Dubai Creek Harbour towers',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I live in Dubai Creek Harbour and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.2030', lng: '55.3470' },

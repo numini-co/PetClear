@@ -46,7 +46,7 @@ export default function CitiesHub() {
         meta={{
           title: 'Pet Relocation in UAE Cities | Dubai & Abu Dhabi',
           description:
-            'Pet relocation across UAE emirates. Start with the Dubai community hub or the Abu Dhabi city guide — same federal MOCCAE rules, local arrival and registration steps.',
+            'Pet relocation across UAE emirates. Dubai communities or Abu Dhabi city guide — same federal MOCCAE rules, local arrival steps.',
           canonical: `${BASE_URL}/cities/`,
           ogType: 'website',
         }}

@@ -14,7 +14,7 @@ const arabianRanches: AreaPageData = {
   heroValueProp:
     'Relocating a dog or cat to or from Arabian Ranches? We coordinate the whole move for Ranches villa families — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your villa — including multi-pet households, with WhatsApp updates at every step.',
   heroImage: '/images/area-arabian-ranches.jpg',
-  heroImageAlt: 'A large dog relaxing in a private villa garden in Arabian Ranches — pet relocation in Arabian Ranches',
+  heroImageAlt: 'Large dog relaxing in a private villa garden in Arabian Ranches',
   whatsappMessage: 'Hi Dubai Pet Relocation! I live in Arabian Ranches and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.0510', lng: '55.2700' },
   landmarks: ['Arabian Ranches Souk', 'The Ranches Golf Club', 'Dubai Polo & Equestrian Club', 'Ranches villas & gardens'],

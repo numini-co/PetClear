@@ -15,7 +15,7 @@ const karama: AreaPageData = {
     'Relocating a dog or cat to or from Al Karama? We coordinate the whole move for Karama residents — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your building — with WhatsApp updates at every step.',
   heroImage: '/images/area-karama.jpg',
   heroImageAlt:
-    'A happy dog on a green lawn at Karama Park with low-rise residential blocks behind — pet relocation in Al Karama',
+    'Happy dog on a lawn at Karama Park with low-rise residential blocks',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I live in Al Karama and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.2470', lng: '55.3050' },

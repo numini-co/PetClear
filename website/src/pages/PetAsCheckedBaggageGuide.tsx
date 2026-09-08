@@ -117,6 +117,8 @@ export default function PetAsCheckedBaggageGuide() {
       <Hero
         image="/images/dog-crate.jpg"
         imageAlt="A dog in a hard travel crate of the kind used when a pet travels as accompanied hold baggage"
+        imageWidth={1200}
+        imageHeight={800}
         eyebrow="Flight-mode guide"
         title="Which Airlines Allow Pets as Checked Baggage?"
         subtitle="Accompanied-hold / AVIH products are airline- and route-specific. Many long-haul itineraries into Dubai use manifest cargo instead — confirm the live product before you pack."

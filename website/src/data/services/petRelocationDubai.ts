@@ -13,7 +13,7 @@ const petRelocationDubai: ServicePageData = {
     'Door-to-door pet relocation in Dubai is a coordinated sequence: document checks, MOCCAE permit timing, IATA crate sizing, cargo booking, and WhatsApp updates — not a mystery quote.',
   heroImage: '/images/service-pet-relocation-dubai.jpg',
   heroImageAlt:
-    'Handler carrying a small travel carrier with a cat inside toward a Dubai doorway for door-to-door pet relocation',
+    'Handler carrying a cat in a travel carrier toward a Dubai doorway',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I need door-to-door pet relocation in Dubai. Can you review my pet, route and timeline?',
   snippetQuestion: 'What is the best pet relocation service in Dubai?',

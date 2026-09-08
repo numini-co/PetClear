@@ -6,7 +6,7 @@ const victoryHeights: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Victory Heights | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in Victory Heights — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates for golf-course villa families. Free WhatsApp quote.',
+    'Pet relocation in Victory Heights — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
   keywords:
     'pet relocation victory heights, pet transport victory heights, dog relocation victory heights, cat relocation victory heights, pet movers victory heights',
   h1: 'Pet Relocation in Victory Heights',
@@ -14,7 +14,7 @@ const victoryHeights: AreaPageData = {
   heroValueProp:
     'Relocating a dog or cat to or from Victory Heights? We coordinate the whole move for this golf-course villa community — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your villa — including larger dogs and multi-pet households, with WhatsApp updates at every step.',
   heroImage: '/images/area-victory-heights.jpg',
-  heroImageAlt: 'A large dog resting on a green lawn beside a Victory Heights villa with the golf course behind — pet relocation in Victory Heights',
+  heroImageAlt: 'Large dog on a lawn beside a Victory Heights villa and golf course',
   whatsappMessage: 'Hi Dubai Pet Relocation! I live in Victory Heights and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.0410', lng: '55.2280' },
   landmarks: ['The Els Club golf course', 'Dubai Sports City (adjacent)', 'Victory Heights villas & gardens', 'Victory Heights community park'],

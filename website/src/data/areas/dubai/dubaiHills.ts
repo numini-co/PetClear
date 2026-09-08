@@ -14,7 +14,7 @@ const dubaiHills: AreaPageData = {
   heroValueProp:
     'Relocating a dog or cat to or from Dubai Hills Estate? We coordinate the whole move for Dubai Hills families — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your villa or apartment — with WhatsApp updates at every step.',
   heroImage: '/images/area-dubai-hills.jpg',
-  heroImageAlt: 'A happy dog on a green lawn with Dubai Hills Estate villas behind — pet relocation in Dubai Hills Estate',
+  heroImageAlt: 'Happy dog on a green lawn with Dubai Hills Estate villas behind',
   whatsappMessage: 'Hi Dubai Pet Relocation! I live in Dubai Hills Estate and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.1010', lng: '55.2480' },
   landmarks: ['Dubai Hills Mall', 'Dubai Hills Golf Club', 'Dubai Hills Park', 'Maple', 'Sidra Villas', 'Dubai Hills Estate'],
