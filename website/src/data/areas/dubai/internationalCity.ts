@@ -4,7 +4,7 @@ const internationalCity: AreaPageData = {
   slug: 'international-city',
   areaName: 'International City',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation International City | Dog & Cat Transport Dubai',
+  seoTitle: 'Pet Relocation International City | Dog & Cat Transport',
   metaDescription:
     'Pet relocation in International City — door-to-door dog and cat transport, MOCCAE permit coordination and IATA crates. Free WhatsApp quote in 15 minutes.',
   keywords:

@@ -178,7 +178,7 @@ export default function DogRelocationPage() {
       {/* ─── HERO ─── */}
       <Hero
         image="/images/hero-dog.jpg"
-        imageAlt="A Golden Retriever sitting comfortably in an IATA-certified travel crate, ready for a safe flight to Dubai."
+        imageAlt="Golden Retriever sitting in an IATA-certified travel crate before a flight to Dubai"
         eyebrow="Dog Relocation"
         title="Dog Relocation to Dubai — Bring Your Dog Home Safely"
         subtitle="Breed checks, crate sizing, MOCCAE permits, and cargo flights — handled end to end, with WhatsApp updates at every step."

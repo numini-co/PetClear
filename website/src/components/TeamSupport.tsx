@@ -47,7 +47,7 @@ export default function TeamSupport() {
           <div>
             <img
               src="/images/team-support.jpg"
-              alt="Pet relocation coordinators reviewing a client's travel paperwork together, with a calm dog resting nearby"
+              alt="Pet relocation coordinators reviewing travel paperwork with a calm dog nearby"
               width={1280}
               height={854}
               loading="lazy"

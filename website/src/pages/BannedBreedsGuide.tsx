@@ -133,7 +133,7 @@ export default function BannedBreedsGuide() {
       {/* Hero */}
       <Hero
         image="/images/guide-banned-breeds.jpg"
-        imageAlt="A calm leashed dog with its owner in a Dubai park, representing responsible ownership of restricted breeds"
+        imageAlt="Calm leashed dog with its owner in a Dubai park, showing responsible restricted-breed ownership"
         eyebrow="Pet Relocation Guide"
         title="Banned Dog Breeds in the UAE (Dubai) — 2026 Guide"
         subtitle="Some breeds are completely prohibited; others face strict muzzle, insurance, and housing rules under Dubai Municipality and UAE federal law."

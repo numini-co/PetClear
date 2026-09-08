@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 export default function DubaiCity() {
   const pageUrl = `${BASE_URL}/cities/dubai/`
   const pageTitle = 'Dubai Pet Relocation | Dog & Cat Transport to Dubai'
-  const pageDescription = 'Relocate your dog or cat to Dubai safely. Full-service pet relocation — documents, flights, customs, and delivery. Get a transparent Dubai pet transport quote.'
+  const pageDescription = 'Relocate your dog or cat to Dubai. Full-service pet relocation — documents, flights, customs and delivery. Get a Dubai pet transport quote.'
   const keywords = 'pet relocation Dubai, dog transport Dubai, cat transport Dubai, pet relocation UAE, Dubai pet import, pet shipping Dubai, move pet to Dubai, Dubai pet relocation cost, pet relocation services Dubai, bring dog to Dubai, bring cat to Dubai, Emirates pet cargo Dubai, Dubai pet quarantine, pet relocation JLT, pet relocation Dubai Hills'
 
   const faqs = [
