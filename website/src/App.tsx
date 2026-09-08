@@ -50,6 +50,7 @@ const EmiratesPetCargoGuide = lazy(() => import('./pages/EmiratesPetCargoGuide.t
 
 // City pages (V2 - Month 1)
 const AbuDhabiCity = lazy(() => import('./pages/AbuDhabiCity.tsx'))
+const DubaiCity = lazy(() => import('./pages/DubaiCity.tsx'))
 const RoutesHub = lazy(() => import('./pages/RoutesHub.tsx'))
 const RoutePageLoader = lazy(() => import('./pages/RoutePageLoader.tsx'))
 const CitiesHub = lazy(() => import('./pages/CitiesHub.tsx'))
@@ -102,24 +103,6 @@ export default function App() {
           <Route path="/cities" element={<CitiesHub />} />
           <Route path="/cities/" element={<CitiesHub />} />
 
-          {/* Merged URL redirects */}
-          <Route path="/cities/dubai" element={<Navigate to="/dubai/" replace />} />
-          <Route path="/cities/dubai/" element={<Navigate to="/dubai/" replace />} />
-          <Route path="/dubai/karama" element={<Navigate to="/dubai/bur-dubai/" replace />} />
-          <Route path="/dubai/karama/" element={<Navigate to="/dubai/bur-dubai/" replace />} />
-          <Route path="/dubai/bluewaters" element={<Navigate to="/dubai/jbr/" replace />} />
-          <Route path="/dubai/bluewaters/" element={<Navigate to="/dubai/jbr/" replace />} />
-          <Route path="/dubai/port-de-la-mer" element={<Navigate to="/dubai/jumeirah/" replace />} />
-          <Route path="/dubai/port-de-la-mer/" element={<Navigate to="/dubai/jumeirah/" replace />} />
-          <Route path="/dubai/city-walk" element={<Navigate to="/dubai/downtown-dubai/" replace />} />
-          <Route path="/dubai/city-walk/" element={<Navigate to="/dubai/downtown-dubai/" replace />} />
-          <Route path="/dubai/international-city" element={<Navigate to="/dubai/dubai-silicon-oasis/" replace />} />
-          <Route path="/dubai/international-city/" element={<Navigate to="/dubai/dubai-silicon-oasis/" replace />} />
-          <Route path="/dubai/al-wasl" element={<Navigate to="/dubai/umm-suqeim/" replace />} />
-          <Route path="/dubai/al-wasl/" element={<Navigate to="/dubai/umm-suqeim/" replace />} />
-          <Route path="/dubai/sheikh-zayed-road" element={<Navigate to="/dubai/" replace />} />
-          <Route path="/dubai/sheikh-zayed-road/" element={<Navigate to="/dubai/" replace />} />
-
           {/* Route pages */}
           <Route path="/routes/uk-to-dubai/" element={<UKToDubai />} />
           <Route path="/routes/usa-to-dubai/" element={<USAToDubai />} />
@@ -149,6 +132,8 @@ export default function App() {
 
           {/* City pages */}
           <Route path="/cities/abu-dhabi/" element={<AbuDhabiCity />} />
+          <Route path="/cities/dubai/" element={<DubaiCity />} />
+          <Route path="/cities/dubai" element={<DubaiCity />} />
 
           {/* Service pages (data-driven, Blue Book Phase 2) */}
           {servicePages.map((p) => (

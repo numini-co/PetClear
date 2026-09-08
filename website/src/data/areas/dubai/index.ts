@@ -35,14 +35,21 @@ import damacHills2 from './damacHills2.ts'
 import emaarSouth from './emaarSouth.ts'
 import dubailand from './dubailand.ts'
 import meydan from './meydan.ts'
+import karama from './karama.ts'
+import bluewaters from './bluewaters.ts'
+import portDeLaMer from './portDeLaMer.ts'
+import cityWalk from './cityWalk.ts'
+import internationalCity from './internationalCity.ts'
+import alWasl from './alWasl.ts'
+import sheikhZayedRoad from './sheikhZayedRoad.ts'
 
-// Live /dubai/<slug>/ area pages. Merged communities redirect (see App.tsx + vercel.json):
-// karama→bur-dubai, bluewaters→jbr, port-de-la-mer→jumeirah, city-walk→downtown-dubai,
-// international-city→dubai-silicon-oasis, al-wasl→umm-suqeim, sheikh-zayed-road→/dubai/.
+// Live /dubai/<slug>/ area pages. Owner cancelled the community merge redirects
+// (2026-09-08): karama, bluewaters, port-de-la-mer, city-walk, international-city,
+// al-wasl, and sheikh-zayed-road stay on their original URLs.
 export const dubaiAreas: AreaPageData[] = [
   dubaiMarina, jumeirah, jbr, downtownDubai, palmJumeirah, businessBay, alBarsha, arabianRanches, mirdif,
   dubaiSiliconOasis, jlt, jvc, jvt, dubaiHills, dubaiSouth, alQuoz, deira, burDubai,
-  alSatwa, ummSuqeim,
+  alSatwa, ummSuqeim, karama, bluewaters, portDeLaMer, cityWalk, internationalCity, alWasl, sheikhZayedRoad,
   creekHarbour, mudon, victoryHeights, sportsCity, motorCity,
   dubaiInvestmentPark, dubaiProductionCity, alFurjan, damacHills, damacHills2, emaarSouth, dubailand, meydan,
 ]
