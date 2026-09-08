@@ -60,7 +60,7 @@ const karama: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'From low-risk countries the timeline is typically 2–6 weeks. From high-risk rabies countries that require a titer test, plan for around four months because of the mandatory waiting period. We map your exact timeline before any money changes hands.',
+          text: 'From low-risk countries the timeline is typically 2–6 weeks. From high-risk rabies countries that require a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We map your exact timeline before any money changes hands.',
         },
       ],
     },
@@ -90,7 +90,7 @@ const karama: AreaPageData = {
     },
     {
       q: 'How long does pet relocation from Al Karama take?',
-      a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan for about four months because of the mandatory waiting period.',
+      a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.',
     },
     {
       q: 'How much does it cost?',

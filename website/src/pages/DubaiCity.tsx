@@ -36,7 +36,7 @@ export default function DubaiCity() {
     },
     {
       question: 'How long does pet relocation to Dubai take?',
-      answer: 'From low-risk countries (UK, EU, Australia, USA): 4–6 weeks total. This includes microchip and rabies vaccination (21-day wait), import permit application (3–5 days), health certificate (within 10 days of travel), and flight booking. From high-risk countries (India, Pakistan, Philippines, South Africa): 8–16 weeks due to the mandatory rabies titer test (RNATT), which takes 3–8 weeks at the lab plus a 90-day waiting period after the blood draw before travel is permitted.'
+      answer: 'From low-risk countries (UK, EU, Australia, USA): 4–6 weeks total. This includes microchip and rabies vaccination (21-day wait), import permit application (3–5 days), health certificate (within 10 days of travel), and flight booking. From high-risk countries (India, Pakistan, Philippines, South Africa): plan the RNATT so the blood sample is taken within 90 days before travel and reads at least 0.5 IU/ml — a sample window, not a 90-day wait after the blood draw. Lab turnaround is typically a few weeks after the 21-day post-vaccination interval.'
     },
     {
       question: 'Are there banned dog breeds in Dubai?',

@@ -67,7 +67,7 @@ const internationalPetRelocation: ServicePageData = {
             },
             {
               title: 'Map the timeline',
-              text: 'Because requirements vary by destination, we work backwards from your travel date. Some countries are straightforward; others (such as rabies-controlled or island nations) require titer tests and long mandatory waiting periods, so we plan the sequence carefully.',
+              text: 'Because requirements vary by destination, we work backwards from your travel date. Some countries are straightforward; others (such as rabies-controlled or island nations) require titer tests and destination-specific calendars, so we plan the sequence carefully. UAE inbound titer, when required, is a sample within 90 days before travel ≥0.5 IU/ml — not a wait after the draw.',
             },
             {
               title: 'Prepare documents and permits',

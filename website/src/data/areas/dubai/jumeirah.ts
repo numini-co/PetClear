@@ -63,7 +63,7 @@ const jumeirah: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Whether you are arriving from the UK, Europe, the USA, Australia, South Africa or India, or heading back the other way, the building blocks are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days. For a small number of high-risk rabies countries a rabies titer (antibody) test is also required, which adds a mandatory waiting period before travel.',
+          text: 'Whether you are arriving from the UK, Europe, the USA, Australia, South Africa or India, or heading back the other way, the building blocks are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days. For a small number of high-risk rabies countries a rabies titer (antibody) test is also required, which requires a blood sample taken within 90 days before travel (result ≥0.5 IU/ml).',
         },
         {
           type: 'steps',
@@ -88,7 +88,7 @@ const jumeirah: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'From low-risk countries the whole process typically runs 2–6 weeks. From high-risk countries that require a titer test, plan for around four months because of the mandatory waiting period. We map your exact timeline before you commit so there are no surprises.',
+          text: 'From low-risk countries the whole process typically runs 2–6 weeks. From high-risk countries that require a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We map your exact timeline before you commit so there are no surprises.',
         },
       ],
     },
@@ -140,7 +140,7 @@ const jumeirah: AreaPageData = {
     },
     {
       q: 'How long does pet relocation from Jumeirah take?',
-      a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan for about four months because of the mandatory waiting period. We confirm your exact timeline before you commit.',
+      a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We confirm your exact timeline before you commit.',
     },
     {
       q: 'How much does it cost?',

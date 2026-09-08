@@ -67,7 +67,7 @@ export default function PetVaccinationGuide() {
     },
     {
       question: 'When do I also need a rabies titer test?',
-      answer: 'A rabies titer test (RNATT) is required only for pets coming from high-risk rabies countries. It is not required for pets from low-risk countries such as the UK, EU, USA, Canada, Australia, New Zealand, Japan, and Singapore. However, pets from Bahrain and Qatar must have a titer test despite being classified as low-risk. For the test, blood is drawn at least 21 days after the rabies vaccination, the result must be at least 0.5 IU/ml, and you then wait 90 days from the blood draw before your pet can enter the UAE.',
+      answer: 'A rabies titer test (RNATT) is required only for pets coming from high-risk rabies countries. It is not required for pets from low-risk countries such as the UK, EU, USA, Canada, Australia, New Zealand, Japan, and Singapore. However, pets from Bahrain and Qatar must have a titer test despite being classified as low-risk. For the test, blood is drawn at least 21 days after the rabies vaccination, the result must be at least 0.5 IU/ml, and the sample used for travel must be taken within 90 days before travel — not a 90-day wait after the draw.',
     },
     {
       question: 'What happens if the vaccination order or timing is wrong?',
@@ -387,14 +387,14 @@ export default function PetVaccinationGuide() {
                 </div>
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                   <Clock className="w-4 h-4 text-[#C89F5A] shrink-0 mt-0.5" />
-                  <span><strong>90-day waiting period</strong> from the blood draw before entry</span>
+                  <span><strong>Sample within 90 days before travel</strong> — not a wait after the draw</span>
                 </div>
               </div>
               <div className="warning-box mt-5">
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-[#C89F5A] shrink-0 mt-0.5" />
                   <p className="text-[#5A5A5A] text-sm">
-                    From high-risk countries, the minimum timeline from vaccination to travel is about 4 months because of the 90-day waiting period.
+                    From high-risk countries, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) and allow time for the 21-day post-vaccine interval plus lab turnaround — that is not a 90-day wait after the draw.
                   </p>
                 </div>
               </div>
@@ -459,7 +459,7 @@ export default function PetVaccinationGuide() {
               <div>
                 <p className="font-semibold text-[#2A2A2A] mb-1">A Single Timing Error Restarts the Clock</p>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  If the rabies vaccine was given before the microchip, MOCCAE will reject your import permit and you will need to re-vaccinate after microchipping and restart the timeline. For high-risk countries, a vaccination error can also push back the titer test and its 90-day wait — adding months to your move.
+                  If the rabies vaccine was given before the microchip, MOCCAE will reject your import permit and you will need to re-vaccinate after microchipping and restart the timeline. For high-risk countries, a vaccination error can also push back the titer sample date so it no longer falls within 90 days before travel — adding weeks to your move.
                 </p>
               </div>
             </div>
@@ -564,7 +564,7 @@ export default function PetVaccinationGuide() {
                 <FlaskConical className="w-5 h-5 text-[#C89F5A]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#C89F5A] transition-colors">Rabies Titer Test Guide</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">When the titer test is required, accepted labs, the 0.5 IU/ml threshold, and the 90-day wait.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">When the titer test is required, accepted labs, the 0.5 IU/ml threshold, and the sample-within-90-days-before-travel rule.</p>
             </Link>
             <Link to="/service/pet-import-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">

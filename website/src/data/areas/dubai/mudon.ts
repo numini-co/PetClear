@@ -56,7 +56,7 @@ const mudon: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'The MOCCAE import permit costs AED 200 per pet, and we map every other step around it. From low-risk countries the timeline is typically two to six weeks. From high-risk rabies countries that require a rabies titer test, plan for around four months because of the mandatory waiting period after the blood draw. We build your exact timeline before you commit so there are no surprises.',
+          text: 'The MOCCAE import permit is mandatory — confirm the current fee on the official portal — and we map every other step around it. From low-risk countries the timeline is typically two to six weeks. From high-risk rabies countries that require a rabies titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We build your exact timeline before you commit so there are no surprises.',
         },
       ],
     },
@@ -86,7 +86,7 @@ const mudon: AreaPageData = {
     },
     {
       q: 'How long does pet relocation from Mudon take?',
-      a: 'From low-risk countries, usually two to six weeks. From high-risk rabies countries that need a titer test, plan for about four months because of the mandatory waiting period.',
+      a: 'From low-risk countries, usually two to six weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.',
     },
     {
       q: 'I have a large dog — can you handle that?',

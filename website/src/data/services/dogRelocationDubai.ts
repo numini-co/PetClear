@@ -146,7 +146,7 @@ const dogRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'As a rough guide, a dog moving between two low-risk countries can often be ready in two to six weeks, while a dog from a high-risk country that needs a titer test should plan for around four months because of the mandatory waiting period. We build your exact timeline against your origin, destination and travel date, and verify every requirement against the current MOCCAE rules before you commit money to flights.',
+          text: 'As a rough guide, a dog moving between two low-risk countries can often be ready in two to six weeks. When a titer is required, the blood sample must be taken within 90 days before travel and read at least 0.5 IU/ml — a sample window, not a wait after the draw. We build your exact timeline against your origin, destination and travel date, and verify every requirement against the current MOCCAE rules before you commit money to flights.',
         },
       ],
     },

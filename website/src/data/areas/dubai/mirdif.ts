@@ -40,7 +40,7 @@ const mirdif: AreaPageData = {
       h2: 'Moving To or From Mirdif With a Pet',
       body: [
         { type: 'p', text: 'Most Mirdif relocations are international — families arriving from the UK, USA, India, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days.' },
-        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan for around four months because of the mandatory waiting period. We map your exact timeline before you commit, and because Mirdif is a long-stay family suburb, we are happy to plan well ahead of your move date.' },
+        { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks; from high-risk rabies countries that require a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We map your exact timeline before you commit, and because Mirdif is a long-stay family suburb, we are happy to plan well ahead of your move date.' },
       ],
     },
     {
@@ -58,7 +58,7 @@ const mirdif: AreaPageData = {
   ],
   faq: [
     { q: 'Do you pick up from my home in Mirdif?', a: 'Yes — we arrange door-to-door pickup from your Mirdif villa or community home and coordinate the entire move from there.' },
-    { q: 'How long does pet relocation from Mirdif take?', a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan for about four months because of the mandatory waiting period.' },
+    { q: 'How long does pet relocation from Mirdif take?', a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. We give you a clear range on WhatsApp before you commit.' },
     { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit, or handle the application on your behalf depending on your service tier.' },
     { q: 'My dog is used to walks at Mushrif Park — will the move be stressful?', a: 'We focus on the relocation itself, but we advise on crate acclimation ahead of travel day so active dogs used to open spaces like Mushrif Park stay as calm as possible during the move.' },

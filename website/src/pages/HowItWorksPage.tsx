@@ -191,7 +191,7 @@ export default function HowItWorksPage() {
           name: 'How long does the whole process take?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'From low-risk countries like the UK, EU, or USA, the process takes 4 to 6 weeks from first consultation to reunion. From high-risk countries requiring a rabies titer test, the minimum timeline is 4 months including the 90-day waiting period after the titer test. We recommend starting 8 to 12 weeks before your move date.',
+            text: 'From low-risk countries like the UK, EU, or USA, the process takes 4 to 6 weeks from first consultation to reunion. From high-risk countries requiring a titer, the blood sample must be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a 90-day waiting period after the test. We recommend starting 8 to 12 weeks before your move date.',
           },
         },
         {
@@ -763,7 +763,7 @@ export default function HowItWorksPage() {
             />
             <FAQItem
               question="How long does the whole process take?"
-              answer="From low-risk countries like the UK, EU, or USA: 4 to 6 weeks from first consultation to reunion. From high-risk countries requiring a rabies titer test: minimum 4 months (including the 90-day waiting period after the titer test). We recommend starting 8 to 12 weeks before your move date. Starting earlier is always better. Starting later creates stress and may limit flight options."
+              answer="From low-risk countries like the UK, EU, or USA: 4 to 6 weeks from first consultation to reunion. From high-risk countries requiring a titer: sample within 90 days before travel, result ≥0.5 IU/ml — not a 90-day wait after the test. We recommend starting 8 to 12 weeks before your move date. Starting earlier is always better. Starting later creates stress and may limit flight options."
             />
             <FAQItem
               question="What if my pet's flight is cancelled or delayed?"

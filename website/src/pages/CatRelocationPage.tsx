@@ -696,7 +696,7 @@ export default function CatRelocationPage() {
                 <tr>
                   <td className="font-semibold text-[#2A2A2A]">High-Risk Countries</td>
                   <td>AED 11,000 – 20,000</td>
-                  <td>All of the above + rabies titer test + 90-day wait</td>
+                  <td>All of the above + rabies titer test (sample within 90 days before travel ≥0.5 IU/ml)</td>
                   <td>Includes titer test (AED 500–1,200) and extended timeline.</td>
                 </tr>
               </tbody>

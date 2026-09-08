@@ -24,7 +24,7 @@ export default function SouthAfricaToDubai() {
     },
     {
       question: 'What is the titer test (RNATT) and how long does it take for South African pets?',
-      answer: 'The RNATT (Rabies Neutralising Antibody Titre Test) is a blood test that measures your pet\'s rabies antibody levels. For South African pets, the blood sample must be drawn at least 30 days after the rabies vaccination. South Africa has several accredited local laboratories (such as Onderstepoort Veterinary Institute and IDEXX South Africa), so samples can often be processed locally rather than sent abroad. Results typically take 1–3 weeks. After a positive result (≥ 0.5 IU/ml), a mandatory 90-day waiting period from the blood draw date is required before travel. This makes the minimum timeline 3–4 months.'
+      answer: 'The RNATT (Rabies Neutralising Antibody Titre Test) is a blood test that measures your pet\'s rabies antibody levels. For South African pets, the blood sample must be drawn at least 30 days after the rabies vaccination. South Africa has several accredited local laboratories (such as Onderstepoort Veterinary Institute and IDEXX South Africa), so samples can often be processed locally rather than sent abroad. Results typically take 1–3 weeks. The sample used for travel must be taken within 90 days before travel and read at least 0.5 IU/ml — a pre-travel sample window, not a 90-day wait after the blood is drawn.'
     },
     {
       question: 'Which airlines fly pets from South Africa to Dubai?',
@@ -105,7 +105,7 @@ export default function SouthAfricaToDubai() {
         imageAlt="Pet relocation from South Africa to Dubai"
         eyebrow="South Africa → Dubai"
         title="South Africa to Dubai Pet Relocation — Complete Guide"
-        subtitle="High-risk route: titer test (RNATT), 90-day wait, and wildlife rules. We ensure full DALRRD and UAE compliance."
+        subtitle="High-risk route: titer sample within 90 days before travel ≥0.5 IU/ml, plus wildlife rules. We ensure full DALRRD and UAE compliance."
         updated="Updated June 2026"
       />
 
@@ -134,8 +134,8 @@ export default function SouthAfricaToDubai() {
                 <Clock className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Timeline</p>
-              <p className="text-[#5A5A5A] text-sm">3–4 months</p>
-              <p className="text-[#5A5A5A] text-xs mt-2">Minimum (titer test + 90-day wait)</p>
+              <p className="text-[#5A5A5A] text-sm">Sample window</p>
+              <p className="text-[#5A5A5A] text-xs mt-2">Titer sample within 90 days before travel ≥0.5 IU/ml</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
               <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -195,7 +195,7 @@ export default function SouthAfricaToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">3. Rabies Titer Test (RNATT) — CRITICAL</p>
-                    <p className="text-[#5A5A5A] text-sm">Blood sample drawn at least 30 days after rabies vaccination. Sent to an approved lab (Onderstepoort Veterinary Institute, IDEXX South Africa, or other WOAH-approved lab). Result must be ≥ 0.5 IU/ml. A 90-day waiting period from the blood draw date is mandatory before travel. This is the longest step in the process.</p>
+                    <p className="text-[#5A5A5A] text-sm">Blood sample drawn at least 30 days after rabies vaccination. Sent to an approved lab (Onderstepoort Veterinary Institute, IDEXX South Africa, or other WOAH-approved lab). Result must be ≥ 0.5 IU/ml. The sample must be taken within 90 days before travel — a pre-travel window, not a 90-day wait after the draw.</p>
                   </div>
                 </div>
 
@@ -249,7 +249,7 @@ export default function SouthAfricaToDubai() {
               <ul className="space-y-4 text-[#5A5A5A] text-sm leading-relaxed">
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>The 90-day titer test waiting period is absolute — there are no exceptions. Start the process as soon as you know you are moving. Many South African families are surprised by how long this takes.</span>
+                  <span>The titer rule is a sample window: draw within 90 days before travel and obtain ≥ 0.5 IU/ml. Sitting 90 days after the draw is how a passing result ages out. Start the vaccination-to-sample sequence as soon as the move date is real.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
@@ -290,7 +290,7 @@ export default function SouthAfricaToDubai() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">South Africa to Dubai Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              The high-risk route requires a minimum of 3–4 months. The titer test and 90-day wait are the longest steps. Here is the exact month-by-month process.
+              Plan the calendar around the vaccination-to-sample interval, lab turnaround, and the 90-day-before-travel sample window. Here is the month-by-month process.
             </p>
           </div>
 
@@ -307,7 +307,7 @@ export default function SouthAfricaToDubai() {
                 {
                   week: 'Month 1–2',
                   title: 'Titer Test Results & Sample Window',
-                  desc: 'Lab results arrive in 1–3 weeks. If the antibody level is ≥ 0.5 IU/ml, the 90-day mandatory waiting period begins from the date of the blood draw. This wait is non-negotiable. Dubai Pet Relocation begins preparing the UAE import permit application during this time.',
+                  desc: 'Lab results arrive in 1–3 weeks. If the antibody level is ≥ 0.5 IU/ml, keep the sample date inside the 90-day-before-travel window — that is not a wait after the draw. Dubai Pet Relocation begins preparing the UAE import permit application during this time.',
                   icon: Shield
                 },
                 {
@@ -319,7 +319,7 @@ export default function SouthAfricaToDubai() {
                 {
                   week: 'Month 4',
                   title: 'Flight Booking & Final Health Check',
-                  desc: 'With the 90-day wait complete, Dubai Pet Relocation books cargo space with SAA, Emirates, or Qatar Airways. A final pre-flight health check is conducted. The IATA crate is delivered for acclimatisation. All documents are reviewed one final time.',
+                  desc: 'When the titer sample is still inside the 90-day-before-travel window and the MOCCAE permit will cover the flight, Dubai Pet Relocation books cargo space with SAA, Emirates, or Qatar Airways. A final pre-flight health check is conducted. The IATA crate is delivered for acclimatisation. All documents are reviewed one final time.',
                   icon: Plane
                 },
                 {

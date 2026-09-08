@@ -69,17 +69,17 @@ export default function EmergencyRelocationPage() {
     {
       question: 'How fast can you relocate my pet to Dubai?',
       answer:
-        'It depends entirely on your country of origin and whether your documents are in order. From a low-risk country (UK, EU, USA, Canada, Australia, New Zealand, Japan, Singapore) with an ISO microchip, a valid rabies vaccination, and a recent health certificate already in place, the process can move quickly — typically in the 4–6 week range, and sometimes faster if everything is ready. From a high-risk country, the mandatory rabies titer test and its 90-day waiting period mean a truly last-minute move is not possible — the minimum timeline is around 4 months. The honest first step is to send us your details on WhatsApp so we can tell you exactly what is achievable for your situation.',
+        'It depends entirely on your country of origin and whether your documents are in order. From a low-risk country (UK, EU, USA, Canada, Australia, New Zealand, Japan, Singapore) with an ISO microchip, a valid rabies vaccination, and a recent health certificate already in place, the process can move quickly — typically in the 4–6 week range, and sometimes faster if everything is ready. From a high-risk country, a titer is required: the blood sample must be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a 90-day wait after the draw. A last-minute move still depends on vaccine timing, lab turnaround, and whether a valid sample window still fits your flight. The honest first step is to send us your details on WhatsApp so we can tell you exactly what is achievable for your situation.',
     },
     {
       question: 'Can I move my pet in a few days if it is a real emergency?',
       answer:
-        'If your pet is from a low-risk country and already has an ISO microchip, a valid rabies vaccination administered at least 21 days before travel, and the health certificate can be issued within 10 days of arrival, a very fast move can be possible. If your pet is from a high-risk country, the rabies titer test requires a blood draw at least 21 days after vaccination plus a mandatory 90-day wait from the blood draw date — this cannot be waived, expedited, or bypassed for any reason. We will never promise a timeline that the rules do not allow. Message us and we will give you a straight answer.',
+        'If your pet is from a low-risk country and already has an ISO microchip, a valid rabies vaccination administered at least 21 days before travel, and the health certificate can be issued within 10 days of arrival, a very fast move can be possible. If your pet is from a high-risk country, the rabies titer test requires a blood draw at least 21 days after vaccination; the sample used for travel must fall within 90 days before the flight and read ≥0.5 IU/ml. That sample window cannot be invented shorter, and a passing result that ages out of the window must be redrawn. We will never promise a timeline that the rules do not allow. Message us and we will give you a straight answer.',
     },
     {
       question: 'What can be expedited, and what cannot?',
       answer:
-        'We can move quickly on the things that are within our control: reviewing your documents, preparing and submitting the MOCCAE import permit (processing is typically 2–7 working days), booking manifest cargo, arranging the health certificate, and coordinating customs clearance on arrival. What cannot be sped up are the fixed biological and regulatory waiting periods: the 21-day wait after a rabies vaccination, and — for high-risk countries — the 90-day wait after the titer test blood draw. These are set by UAE regulations and are non-negotiable.',
+        'We can move quickly on the things that are within our control: reviewing your documents, preparing and submitting the MOCCAE import permit (processing is typically 2–7 working days), booking manifest cargo, arranging the health certificate, and coordinating customs clearance on arrival. What cannot be sped up is the 21-day wait after a rabies vaccination before a titer blood draw, and — when a titer is required — the rule that the sample must be taken within 90 days before travel and read ≥0.5 IU/ml. Those are set by UAE regulations and are not a 90-day sit after the result.',
     },
     {
       question: 'What should I send you right now to get started fast?',
@@ -271,7 +271,7 @@ export default function EmergencyRelocationPage() {
               <ul className="space-y-3 text-sm text-[#5A5A5A]">
                 <li className="flex items-start gap-2"><XCircle className="w-4 h-4 text-[#C9453A] shrink-0 mt-0.5" /><span>The 21-day wait after a rabies vaccination before travel — a fixed minimum</span></li>
                 <li className="flex items-start gap-2"><XCircle className="w-4 h-4 text-[#C9453A] shrink-0 mt-0.5" /><span>The rabies titer test for high-risk countries: blood drawn ≥21 days after vaccination</span></li>
-                <li className="flex items-start gap-2"><XCircle className="w-4 h-4 text-[#C9453A] shrink-0 mt-0.5" /><span>The 90-day waiting period from the titer test blood draw — non-negotiable, no exceptions</span></li>
+                <li className="flex items-start gap-2"><XCircle className="w-4 h-4 text-[#C9453A] shrink-0 mt-0.5" /><span>When a titer is required, the sample must be taken within 90 days before travel ≥0.5 IU/ml — not a wait after the draw</span></li>
                 <li className="flex items-start gap-2"><XCircle className="w-4 h-4 text-[#C9453A] shrink-0 mt-0.5" /><span>Re-doing a step that was done in the wrong order (e.g. vaccinated before microchipped)</span></li>
               </ul>
             </div>
@@ -283,11 +283,11 @@ export default function EmergencyRelocationPage() {
               <div>
                 <p className="font-semibold text-[#2A2A2A] mb-1">From a high-risk country, a truly last-minute move is not possible</p>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  If your pet is coming from a high-risk rabies country, the mandatory titer test plus the
-                  90-day waiting period make the absolute minimum timeline around 4 months from scratch. We
-                  say this plainly because the alternative — promising the impossible — only ends in a missed
-                  deadline and a stranded pet. If you're in this situation, message us anyway: the sooner we
-                  start the clock, the sooner your pet can fly.
+                  If your pet is coming from a high-risk rabies country, a titer is required: sample within 90 days before
+                  travel, result ≥0.5 IU/ml. That is not a 90-day wait after the draw, but the 21-day post-vaccine interval
+                  and lab turnaround still have to fit the flight you actually book. We say this plainly because promising
+                  a calendar the sample window cannot support only ends in a missed deadline. If you're in this situation,
+                  message us anyway so we can map the real dates.
                 </p>
               </div>
             </div>
@@ -304,7 +304,7 @@ export default function EmergencyRelocationPage() {
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed">
               From a low-risk country — the UK, EU, USA, Canada, Australia, New Zealand, Japan, or Singapore —
-              there is no titer test and no 90-day wait. With your pet's documents already in order, the
+              there is no titer test and no RNATT sample window to plan. With your pet's documents already in order, the
               path is short and we can move quickly. Here's the realistic sequence.
             </p>
           </div>
@@ -498,7 +498,7 @@ export default function EmergencyRelocationPage() {
                 <Stethoscope className="w-5 h-5 text-[#C89F5A]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#C89F5A] transition-colors">Rabies Titer Test</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Why high-risk countries can't move last-minute — the titer test and 90-day wait, explained.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">Why high-risk countries need a titer sample within 90 days before travel — explained.</p>
             </Link>
             <Link to="/contact/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">

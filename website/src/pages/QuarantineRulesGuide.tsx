@@ -99,13 +99,13 @@ export default function QuarantineRulesGuide() {
         <p>
           No. Pets from high-risk countries are not quarantined either — but they must complete the rabies titer test
           (RNATT) pathway before they can travel. The blood sample must be drawn at least 21 days after the rabies
-          vaccination, processed at a WOAH/ISO 17025 accredited laboratory, and return a result of at least 0.5 IU/ml. There
-          is then a mandatory 90-day waiting period from the date of the blood draw before the pet can enter the UAE. The
-          waiting happens before travel, in the home country — not as quarantine on arrival in Dubai.
+          vaccination, processed at a WOAH/ISO 17025 accredited laboratory, and return a result of at least 0.5 IU/ml. The
+          sample must be taken within 90 days before travel — a pre-travel sample window, not a 90-day wait after the draw.
+          The RNATT is completed in the home country — not as quarantine on arrival in Dubai.
         </p>
       ),
       plain:
-        'No. Pets from high-risk countries are not quarantined either — but they must complete the rabies titer test (RNATT) pathway before they can travel. The blood sample must be drawn at least 21 days after the rabies vaccination, processed at a WOAH/ISO 17025 accredited laboratory, and return a result of at least 0.5 IU/ml. There is then a mandatory 90-day waiting period from the date of the blood draw before the pet can enter the UAE. The waiting happens before travel, in the home country — not as quarantine on arrival in Dubai.',
+        'No. Pets from high-risk countries are not quarantined either — but they must complete the rabies titer test (RNATT) pathway before they can travel. The blood sample must be drawn at least 21 days after the rabies vaccination, processed at a WOAH/ISO 17025 accredited laboratory, and return a result of at least 0.5 IU/ml. The sample must be taken within 90 days before travel — a pre-travel sample window, not a 90-day wait after the draw. The RNATT is completed in the home country — not as quarantine on arrival in Dubai.',
     },
     {
       question: 'Is there a home or facility quarantine period I need to plan for?',
@@ -114,12 +114,12 @@ export default function QuarantineRulesGuide() {
           There is no standard home or facility quarantine period for compliant pets entering the UAE. Compliance — the
           permit, microchip, vaccination, titer test where required, and health certificate — replaces quarantine entirely.
           The main time investment is front-loaded into the pre-travel timeline: roughly 4 to 6 weeks from low-risk
-          countries and a minimum of around 4 months from high-risk countries because of the 90-day titer test wait. On
+          countries; from high-risk countries, plan the titer sample within 90 days before travel (≥0.5 IU/ml) and allow time for lab turnaround. On
           arrival, if documents are correct, your pet clears customs and goes straight home.
         </p>
       ),
       plain:
-        'There is no standard home or facility quarantine period for compliant pets entering the UAE. Compliance — the permit, microchip, vaccination, titer test where required, and health certificate — replaces quarantine entirely. The main time investment is front-loaded into the pre-travel timeline: roughly 4 to 6 weeks from low-risk countries and a minimum of around 4 months from high-risk countries because of the 90-day titer test wait. On arrival, if documents are correct, your pet clears customs and goes straight home.',
+        'There is no standard home or facility quarantine period for compliant pets entering the UAE. Compliance — the permit, microchip, vaccination, titer test where required, and health certificate — replaces quarantine entirely. The main time investment is front-loaded into the pre-travel timeline: roughly 4 to 6 weeks from low-risk countries; from high-risk countries, plan the titer sample within 90 days before travel (≥0.5 IU/ml) and allow time for lab turnaround. On arrival, if documents are correct, your pet clears customs and goes straight home.',
     },
     {
       question: 'How does Dubai Pet Relocation guarantee there is no quarantine surprise?',
@@ -127,14 +127,14 @@ export default function QuarantineRulesGuide() {
         <p>
           We treat compliance as the thing that keeps your pet out of detention, so we verify every document before travel.
           We confirm the breed is allowed, check that the microchip was implanted before the rabies vaccination, validate
-          the rabies and core vaccinations, manage the titer test and its 90-day wait for high-risk countries, time the
+          the rabies and core vaccinations, time the titer sample within 90 days before travel for high-risk countries, time the
           health certificate within its 10-day window, and make sure the same microchip number appears on every document.
           With our PawPartner and PawVIP tiers we handle the cargo terminal so the clearance is managed end to end and there
           is no surprise at the airport.
         </p>
       ),
       plain:
-        'We treat compliance as the thing that keeps your pet out of detention, so we verify every document before travel. We confirm the breed is allowed, check that the microchip was implanted before the rabies vaccination, validate the rabies and core vaccinations, manage the titer test and its 90-day wait for high-risk countries, time the health certificate within its 10-day window, and make sure the same microchip number appears on every document. With our PawPartner and PawVIP tiers we handle the cargo terminal so the clearance is managed end to end and there is no surprise at the airport.',
+        'We treat compliance as the thing that keeps your pet out of detention, so we verify every document before travel. We confirm the breed is allowed, check that the microchip was implanted before the rabies vaccination, validate the rabies and core vaccinations, time the titer sample within 90 days before travel for high-risk countries, time the health certificate within its 10-day window, and make sure the same microchip number appears on every document. With our PawPartner and PawVIP tiers we handle the cargo terminal so the clearance is managed end to end and there is no surprise at the airport.',
     },
   ]
 
@@ -248,13 +248,13 @@ export default function QuarantineRulesGuide() {
                 </div>
                 <div className="p-4 bg-[#C89F5A]/5 rounded-xl">
                   <p className="font-semibold text-[#C89F5A] text-sm mb-1">High-Risk Country</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">Titer test + 90-day wait</p>
-                  <p className="text-sm text-[#5A5A5A] mt-1">The waiting period happens before travel, in the home country — not as quarantine in Dubai.</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">Titer sample within 90 days before travel</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">The sample window is before travel, in the home country — not a wait after the draw, and not quarantine in Dubai.</p>
                 </div>
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
                   <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Where the Time Goes</p>
                   <p className="text-lg font-bold text-[#2A2A2A]">Front-loaded, not on arrival</p>
-                  <p className="text-sm text-[#5A5A5A] mt-1">~4–6 weeks from low-risk countries; ~4 months from high-risk countries.</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">~4–6 weeks from low-risk countries; high-risk routes add the titer sample window (within 90 days before travel).</p>
                 </div>
               </div>
             </div>
@@ -397,7 +397,7 @@ export default function QuarantineRulesGuide() {
                 <tr>
                   <td className="font-medium">Missing titer test (high-risk country)</td>
                   <td>Pet is not eligible to travel; entry refused</td>
-                  <td>Complete the RNATT (≥0.5 IU/ml) and the 90-day wait before travel</td>
+                  <td>Complete the RNATT (≥0.5 IU/ml); sample within 90 days before travel</td>
                 </tr>
                 <tr>
                   <td className="font-medium">Health certificate older than 10 days</td>
@@ -462,11 +462,11 @@ export default function QuarantineRulesGuide() {
               <div className="bg-[#F5F6FD] rounded-[20px] p-6">
                 <h3 className="text-lg font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
                   <Globe className="w-5 h-5 text-[#4F5BD5]" />
-                  The Wait Happens Before Travel
+                  The Sample Window Is Before Travel
                 </h3>
                 <p className="text-sm text-[#5A5A5A] leading-relaxed">
-                  The mandatory 90-day waiting period runs from the date the blood sample is collected — in the home country.
-                  By the time your pet boards a flight to Dubai, the wait is already complete. There is no on-arrival
+                  The blood sample must be taken within 90 days before travel and read ≥0.5 IU/ml — in the home country.
+                  That is a pre-travel sample window, not a 90-day wait after the draw. There is no on-arrival
                   quarantine to serve on top of it.
                 </p>
               </div>
@@ -477,15 +477,15 @@ export default function QuarantineRulesGuide() {
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Blood sample drawn <strong>≥21 days after</strong> the rabies vaccination</span></li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Minimum result: <strong>≥0.5 IU/ml</strong></span></li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Processed at a <strong>WOAH/ISO 17025 accredited laboratory</strong></span></li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span><strong>90-day waiting period</strong> from the blood draw date before entry</span></li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span><strong>Sample within 90 days before travel</strong> — not a wait after the draw</span></li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Result must be included in the MOCCAE permit application</span></li>
               </ul>
               <div className="warning-box mt-5">
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-[#C89F5A] shrink-0 mt-0.5" />
                   <p className="text-sm text-[#2A2A2A]">
-                    The 90-day waiting period cannot be waived, expedited, or bypassed. From a high-risk country, the minimum
-                    timeline from scratch is roughly 4 months. Read the full process in our{' '}
+                    There is no 90-day sit after a passing titer to skip. The locked rule is sample within 90 days before travel,
+                    result ≥0.5 IU/ml. Read the full process in our{' '}
                     <Link to="/guides/rabies-titer-test-dubai/" className="text-[#4F5BD5] font-semibold hover:underline">
                       rabies titer test guide
                     </Link>
@@ -612,7 +612,7 @@ export default function QuarantineRulesGuide() {
               <div className="bg-white rounded-xl p-4">
                 <div className="w-8 h-8 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold mb-2">3</div>
                 <p className="font-semibold text-[#2A2A2A] text-sm">Titer &amp; Timing</p>
-                <p className="text-xs text-[#5A5A5A] mt-1">Manage the titer test and 90-day wait for high-risk countries, and time the 10-day health certificate.</p>
+                <p className="text-xs text-[#5A5A5A] mt-1">Time the titer sample within 90 days before travel for high-risk countries, and time the 10-day health certificate.</p>
               </div>
               <div className="bg-white rounded-xl p-4">
                 <div className="w-8 h-8 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold mb-2">4</div>
@@ -671,7 +671,7 @@ export default function QuarantineRulesGuide() {
                 <Stethoscope className="w-5 h-5 text-[#C89F5A]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#C89F5A] transition-colors">Rabies Titer Test (RNATT)</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">The high-risk-country pathway that replaces on-arrival quarantine, including the 90-day wait.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">The high-risk-country pathway that replaces on-arrival quarantine, including the sample-within-90-days-before-travel rule.</p>
             </Link>
             <Link to="/service/pet-import-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">

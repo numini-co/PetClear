@@ -119,8 +119,8 @@ const faqs: FAQEntry[] = [
   {
     category: 'import',
     question: 'Which countries are low-risk versus high-risk for rabies?',
-    answer: <><p>Low-risk countries — which do not need a rabies titer test — include the UK, EU, USA, Canada, Australia, New Zealand, Japan, and Singapore. High-risk countries that require a titer test and a 90-day wait include most of Africa, Latin America, Central Asia, the Middle East, and parts of Asia such as India, Pakistan, and the Philippines. The list is maintained by MOCCAE and can change, so always verify your country's current status before skipping the titer test.</p><p className="mt-3"><Link to="/guides/rabies-titer-test-dubai/" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">See the rabies titer test guide <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
-    plain: 'Low-risk countries — which do not need a rabies titer test — include the UK, EU, USA, Canada, Australia, New Zealand, Japan, and Singapore. High-risk countries that require a titer test and a 90-day wait include most of Africa, Latin America, Central Asia, the Middle East, and parts of Asia such as India, Pakistan, and the Philippines. The list is maintained by MOCCAE and can change, so always verify your country\'s current status before skipping the titer test.',
+    answer: <><p>Low-risk countries — which do not need a rabies titer test — include the UK, EU, USA, Canada, Australia, New Zealand, Japan, and Singapore. High-risk countries that require a titer test (sample within 90 days before travel ≥0.5 IU/ml) include most of Africa, Latin America, Central Asia, the Middle East, and parts of Asia such as India, Pakistan, and the Philippines. The list is maintained by MOCCAE and can change, so always verify your country's current status before skipping the titer test.</p><p className="mt-3"><Link to="/guides/rabies-titer-test-dubai/" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">See the rabies titer test guide <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
+    plain: 'Low-risk countries — which do not need a rabies titer test — include the UK, EU, USA, Canada, Australia, New Zealand, Japan, and Singapore. High-risk countries that require a titer test (sample within 90 days before travel ≥0.5 IU/ml) include most of Africa, Latin America, Central Asia, the Middle East, and parts of Asia such as India, Pakistan, and the Philippines. The list is maintained by MOCCAE and can change, so always verify your country\'s current status before skipping the titer test.',
   },
   {
     category: 'import',
@@ -137,8 +137,8 @@ const faqs: FAQEntry[] = [
   {
     category: 'import',
     question: 'I am moving from Bahrain or Qatar — do I still need a titer test?',
-    answer: <p>Yes. Pets coming from Bahrain and Qatar must have a rabies titer test even though those countries are otherwise classified as low-risk. This is a specific exception that is frequently missed and causes delays. If you are relocating from either country, plan for the titer test and its 90-day waiting period from the date of the blood draw.</p>,
-    plain: 'Yes. Pets coming from Bahrain and Qatar must have a rabies titer test even though those countries are otherwise classified as low-risk. This is a specific exception that is frequently missed and causes delays. If you are relocating from either country, plan for the titer test and its 90-day waiting period from the date of the blood draw.',
+    answer: <p>Yes. Pets coming from Bahrain and Qatar must have a rabies titer test even though those countries are otherwise classified as low-risk. This is a specific exception that is frequently missed and causes delays. If you are relocating from either country, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — that is not a wait after the draw.</p>,
+    plain: 'Yes. Pets coming from Bahrain and Qatar must have a rabies titer test even though those countries are otherwise classified as low-risk. This is a specific exception that is frequently missed and causes delays. If you are relocating from either country, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — that is not a wait after the draw.',
   },
   {
     category: 'import',
@@ -295,8 +295,8 @@ const faqs: FAQEntry[] = [
   {
     category: 'timeline',
     question: 'How long does pet relocation to Dubai take?',
-    answer: <p>From low-risk countries like the UK or EU, the process takes 4–6 weeks. From high-risk countries requiring a rabies titer test, the minimum timeline is roughly 4 months, including the mandatory 90-day waiting period after the titer test blood draw. We recommend starting at least 8 weeks before your planned move. If you are on a tighter timeline, message us on WhatsApp — we may have options.</p>,
-    plain: 'From low-risk countries like the UK or EU, the process takes 4–6 weeks. From high-risk countries requiring a rabies titer test, the minimum timeline is roughly 4 months, including the mandatory 90-day waiting period after the titer test blood draw. We recommend starting at least 8 weeks before your planned move. If you are on a tighter timeline, message us on WhatsApp — we may have options.',
+    answer: <p>From low-risk countries like the UK or EU, the process takes 4–6 weeks. From high-risk countries requiring a titer, the blood sample must be taken within 90 days before travel and read at least 0.5 IU/ml — not a 90-day wait after the draw. We recommend starting at least 8 weeks before your planned move. If you are on a tighter timeline, message us on WhatsApp — we may have options.</p>,
+    plain: 'From low-risk countries like the UK or EU, the process takes 4–6 weeks. From high-risk countries requiring a titer, the blood sample must be taken within 90 days before travel and read at least 0.5 IU/ml — not a 90-day wait after the draw. We recommend starting at least 8 weeks before your planned move. If you are on a tighter timeline, message us on WhatsApp — we may have options.',
   },
   {
     category: 'timeline',
@@ -306,9 +306,9 @@ const faqs: FAQEntry[] = [
   },
   {
     category: 'timeline',
-    question: 'Why is the 90-day titer test wait non-negotiable?',
-    answer: <p>The 90-day waiting period runs from the date the titer test blood sample is collected, and under UAE rules it cannot be waived, expedited, or bypassed for any reason. You cannot apply for the import permit or book travel until it has passed. This is why high-risk relocations take a minimum of about four months from scratch, and why starting early is so important if you are moving from a high-risk country.</p>,
-    plain: 'The 90-day waiting period runs from the date the titer test blood sample is collected, and under UAE rules it cannot be waived, expedited, or bypassed for any reason. You cannot apply for the import permit or book travel until it has passed. This is why high-risk relocations take a minimum of about four months from scratch, and why starting early is so important if you are moving from a high-risk country.',
+    question: 'Is there a 90-day wait after the titer test?',
+    answer: <p>No. When an RNATT is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window before the flight — not a 90-day waiting period after the lab result. Sitting 90 days after the draw is how a passing sample ages out of the window. The MOCCAE import permit is a separate rule: it remains valid 90 days from issuance.</p>,
+    plain: 'No. When an RNATT is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window before the flight — not a 90-day waiting period after the lab result. Sitting 90 days after the draw is how a passing sample ages out of the window. The MOCCAE import permit is a separate rule: it remains valid 90 days from issuance.',
   },
   {
     category: 'timeline',
