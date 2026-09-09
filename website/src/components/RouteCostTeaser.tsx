@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { MessageCircle } from 'lucide-react'
 import { getWhatsAppUrl } from '../lib/seo.ts'
+import { GOV_FEE_TABLE_CELL } from '../lib/regulatory.ts'
 
 export const ROUTE_PACKAGE_COST_FAQ =
   'We do not publish total package AED bands on this corridor. Confirm current MOCCAE import-permit and arrival-release fees on the official portal; fees may change. See [what drives pet relocation cost](/guides/pet-relocation-cost-dubai/) for the driver list, then WhatsApp +971504782999 for a quote on your pet, crate and dates.'
@@ -38,15 +39,15 @@ export default function RouteCostTeaser({
               <tbody className="divide-y divide-[#EBEBEB]">
                 <tr>
                   <td className="px-6 py-4 text-sm text-[#5A5A5A]">Import permit</td>
-                  <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Confirm on official MOCCAE portal</td>
+                  <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">{GOV_FEE_TABLE_CELL}</td>
                 </tr>
                 <tr>
                   <td className="px-6 py-4 text-sm text-[#5A5A5A]">Dog port release</td>
-                  <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Confirm on official MOCCAE portal</td>
+                  <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">{GOV_FEE_TABLE_CELL}</td>
                 </tr>
                 <tr>
                   <td className="px-6 py-4 text-sm text-[#5A5A5A]">Cat port release</td>
-                  <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Confirm on official MOCCAE portal</td>
+                  <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">{GOV_FEE_TABLE_CELL}</td>
                 </tr>
               </tbody>
             </table>

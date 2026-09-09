@@ -32,6 +32,7 @@ import SnippetAnswer from '../components/SnippetAnswer.tsx'
 import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
+import { PERMIT_FEE_VERIFY, RELEASE_FEE_VERIFY } from '../lib/regulatory.ts'
 
 const costGuideMsg = 'Hi, I saw your cost guide and want a personalized quote for relocating my [dog/cat] from [country] to Dubai.'
 
@@ -42,7 +43,7 @@ const snippetAnswer =
 const COST_PAA_FAQS: { q: string; a: string }[] = [
   {
     q: 'How much does it cost to relocate a pet in Dubai?',
-    a: 'There is no single ticket price. A Dubai pet move splits into government permits and port release (confirm the current MOCCAE import-permit and arrival-release amounts on the official portal — fees may change), veterinary prep, air freight, an IATA crate, airport handling, and coordination. Airline charges vary by route and size. Dubai Pet Relocation packages are quoted — we do not publish a from-price. See also [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/). WhatsApp +971504782999.',
+    a: `There is no single ticket price. A Dubai pet move splits into government permits and port release. ${PERMIT_FEE_VERIFY} ${RELEASE_FEE_VERIFY} Veterinary prep, air freight, an IATA crate, airport handling, and coordination sit on top. Airline charges vary by route and size. Dubai Pet Relocation packages are quoted — we do not publish a from-price. See also [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/). WhatsApp +971504782999.`,
   },
   {
     q: 'How much does it cost to import a pet into the UAE?',
