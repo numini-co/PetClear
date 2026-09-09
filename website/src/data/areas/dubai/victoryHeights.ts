@@ -53,7 +53,7 @@ const victoryHeights: AreaPageData = {
     {
       h2: 'Cost of Pet Relocation in Victory Heights',
       body: [
-        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000 per pet. Government fees cover the MOCCAE permit (around AED 200 per pet) plus a release fee of roughly AED 700 per dog and AED 450 per cat; the rest covers veterinary work, crate, cargo and our coordination. For multi-pet villa households we give a combined quote so you can see the full family cost upfront.' },
+        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000 per pet. Government fees cover the MOCCAE import permit plus an arrival-release fee (confirm live portal amounts; fees may change); the rest covers veterinary work, crate, cargo and our coordination. For multi-pet villa households we give a combined quote so you can see the full family cost upfront.' },
       ],
     },
   ],
@@ -61,7 +61,7 @@ const victoryHeights: AreaPageData = {
     { q: 'Do you pick up from my villa in Victory Heights?', a: 'Yes — we arrange door-to-door pickup from your Victory Heights villa and coordinate the entire move from there.' },
     { q: 'Can you relocate large dogs from Victory Heights?', a: 'Absolutely. Many Victory Heights families own larger breeds that enjoy the gardens and golf-course green space, and we source IATA-compliant crates in the right size and allow extra acclimation time so big dogs travel comfortably.' },
     { q: 'We have several pets — can you move them all together?', a: 'Yes. Multi-pet households are common in Victory Heights. We map each animal’s permits and paperwork in parallel so the family can travel together where the routes allow, and give you one combined quote.' },
-    { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 per pet depending on route, pet size and service level. Government charges include the MOCCAE permit at around AED 200 per pet plus a release fee of roughly AED 700 per dog or AED 450 per cat. We give you a clear range on WhatsApp before you commit.' },
+    { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 per pet depending on route, pet size and service level. Government charges include the MOCCAE import permit plus an arrival-release fee — confirm live portal amounts; fees may change. We give you a clear range on WhatsApp before you commit.' },
     { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import permit (valid 90 days from issuance) or export certificate — or handle the application on your behalf depending on your service tier.' },
   ],
   relatedAreas: [

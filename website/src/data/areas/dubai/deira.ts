@@ -52,7 +52,7 @@ const deira: AreaPageData = {
     {
       h2: 'Cost of Pet Relocation in Deira',
       body: [
-        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. The MOCCAE permit itself is AED 200 per pet, with release and inspection fees bringing government costs to roughly AED 700 per dog and AED 450 per cat; the rest covers veterinary work, crate, cargo and coordination.' },
+        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. The MOCCAE permit itself is confirm the current portal fee, with release and inspection fees bringing government costs to confirm live government permit and release amounts on the official portal; the rest covers veterinary work, crate, cargo and coordination.' },
       ],
     },
   ],
@@ -60,7 +60,7 @@ const deira: AreaPageData = {
     { q: 'Do you pick up from my building in Deira?', a: 'Yes — we arrange door-to-door pickup from your Deira apartment or building and coordinate the entire move from there.' },
     { q: 'How long does pet relocation from Deira take?', a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. We give you a clear range on WhatsApp before you commit.' },
-    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit — AED 200 per pet plus release fees — or handle the application on your behalf depending on your service tier.' },
+    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit — confirm the current portal fee plus release fees — or handle the application on your behalf depending on your service tier.' },
     { q: 'My building has pet rules — can you help?', a: 'We focus on the relocation itself, but we can advise on crate acclimation and travel-day logistics for cats and smaller dogs in older apartment blocks like those across Deira.' },
   ],
   relatedAreas: [

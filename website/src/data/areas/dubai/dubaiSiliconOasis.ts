@@ -52,7 +52,7 @@ const dubaiSiliconOasis: AreaPageData = {
     {
       h2: 'Cost of Pet Relocation in Dubai Silicon Oasis',
       body: [
-        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government fees are roughly AED 700 per dog and AED 450 per cat, made up of the MOCCAE permit (AED 200 per pet) plus the release fee (AED 500 per dog or AED 250 per cat); the rest covers veterinary work, crate, cargo and coordination.' },
+        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government permit and arrival-release fees must be confirmed on the official MOCCAE portal; fees may change — the rest covers veterinary work, crate, cargo and coordination.' },
       ],
     },
   ],
@@ -60,7 +60,7 @@ const dubaiSiliconOasis: AreaPageData = {
     { q: 'Do you pick up from my villa or building in Dubai Silicon Oasis?', a: 'Yes — we arrange door-to-door pickup from your DSO villa or apartment building and coordinate the entire move from there.' },
     { q: 'How long does pet relocation from Dubai Silicon Oasis take?', a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. We give you a clear range on WhatsApp before you commit.' },
-    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit, or handle the application on your behalf depending on your service tier. The import permit is AED 200 per pet and is valid for 90 days from issuance.' },
+    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit, or handle the application on your behalf depending on your service tier. The import permit is valid for 90 days from issuance. Confirm the current portal fee; fees may change.' },
     { q: 'I have a villa with a garden — does that change anything?', a: 'Not for the relocation process itself, but it can make crate acclimation easier. We can advise on travel-day logistics for both villa and apartment pets in DSO.' },
   ],
   relatedAreas: [

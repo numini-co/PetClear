@@ -52,7 +52,7 @@ const sportsCity: AreaPageData = {
     {
       h2: 'Cost of Pet Relocation in Dubai Sports City',
       body: [
-        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000 per pet. Government fees cover the MOCCAE permit (around AED 200 per pet) plus a release fee of roughly AED 700 per dog and AED 450 per cat; the rest covers veterinary work, crate, cargo and our coordination. We give you a clear range upfront so you know what to expect.' },
+        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000 per pet. Government fees cover the MOCCAE import permit plus an arrival-release fee (confirm live portal amounts; fees may change); the rest covers veterinary work, crate, cargo and our coordination. We give you a clear range upfront so you know what to expect.' },
       ],
     },
   ],
@@ -60,7 +60,7 @@ const sportsCity: AreaPageData = {
     { q: 'Do you pick up from my building in Dubai Sports City?', a: 'Yes — we arrange door-to-door pickup from your Sports City apartment or villa and coordinate the entire move from there.' },
     { q: 'How long does pet relocation from Dubai Sports City take?', a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.' },
     { q: 'Can you relocate both apartment cats and larger dogs?', a: 'Yes. Sports City is a mix of apartments and villas, so we handle everything from apartment cats and small dogs to larger breeds — sizing the right IATA-compliant crate and allowing extra acclimation time where needed.' },
-    { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 per pet depending on route, pet size and service level. Government charges include the MOCCAE permit at around AED 200 per pet plus a release fee of roughly AED 700 per dog or AED 450 per cat. We give you a clear range on WhatsApp before you commit.' },
+    { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 per pet depending on route, pet size and service level. Government charges include the MOCCAE import permit plus an arrival-release fee — confirm live portal amounts; fees may change. We give you a clear range on WhatsApp before you commit.' },
     { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import permit (valid 90 days from issuance) or export certificate — or handle the application on your behalf depending on your service tier.' },
   ],
   relatedAreas: [

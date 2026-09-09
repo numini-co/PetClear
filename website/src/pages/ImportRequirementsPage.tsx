@@ -78,7 +78,7 @@ const IMPORT_PAA_FAQS: { q: string; a: string }[] = [
   },
   {
     q: 'What are the rules and regulations for pets in the UAE?',
-    a: 'Core UAE pet rules cover an ISO microchip, current rabies vaccination, government-endorsed health certificate, MOCCAE import permit valid 90 days from issuance, cargo entry into Dubai (Etihad cabin is a separate Abu Dhabi product), municipality registration after arrival, and breed bans. Confirm portal fees (permit AED 200; dog release AED 500; cat AED 250 — confirm-on-MOCCAE). Banned-breed list: [/guides/banned-dog-breeds-dubai/](/guides/banned-dog-breeds-dubai/).',
+    a: 'Core UAE pet rules cover an ISO microchip, current rabies vaccination, government-endorsed health certificate, MOCCAE import permit valid 90 days from issuance, cargo entry into Dubai (Etihad cabin is a separate Abu Dhabi product), municipality registration after arrival, and breed bans. Confirm current import-permit and arrival-release fees on the official MOCCAE portal; fees may change. Banned-breed list: [/guides/banned-dog-breeds-dubai/](/guides/banned-dog-breeds-dubai/).',
   },
   {
     q: 'What are the requirements for relocating my pet to Dubai?',

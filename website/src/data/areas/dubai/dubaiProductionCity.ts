@@ -52,7 +52,7 @@ const dubaiProductionCity: AreaPageData = {
     {
       h2: 'Cost of Pet Relocation in Dubai Production City',
       body: [
-        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government fees include the AED 200 MOCCAE permit per pet plus release and handling charges of roughly AED 700 per dog and AED 450 per cat; the rest covers veterinary work, crate, cargo and coordination.' },
+        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government permit, release and handling fees must be confirmed on the official MOCCAE portal; fees may change. The rest covers veterinary work, crate, cargo and coordination.' },
       ],
     },
   ],
@@ -60,7 +60,7 @@ const dubaiProductionCity: AreaPageData = {
     { q: 'Do you pick up from my building in Dubai Production City?', a: 'Yes — we arrange door-to-door pickup from your IMPZ tower or building and coordinate the entire move from there.' },
     { q: 'How long does pet relocation from Dubai Production City take?', a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. We give you a clear range on WhatsApp before you commit.' },
-    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit — AED 200 per pet, valid for 90 days from issuance — or handle the application on your behalf depending on your service tier.' },
+    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit — valid for 90 days from issuance; confirm the current portal fee — or handle the application on your behalf depending on your service tier.' },
     { q: 'My building has pet rules — can you help?', a: 'We focus on the relocation itself, but we can advise on crate acclimation and travel-day logistics for apartment pets in towers like those in IMPZ.' },
   ],
   relatedAreas: [

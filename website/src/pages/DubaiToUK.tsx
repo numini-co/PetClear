@@ -2,7 +2,7 @@ import SEOHead from '../components/SEOHead.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import Hero from '../components/Hero.tsx'
-import { BASE_URL } from '../lib/seo.ts'
+import { BASE_URL, LOGO_URL } from '../lib/seo.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Stethoscope, Home, AlertTriangle, Info, PawPrint, Heart, Dog, Cat, Calendar, Ban } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
@@ -76,7 +76,7 @@ export default function DubaiToUK() {
       "headline": pageTitle,
       "description": pageDescription,
       "author": { "@type": "Organization", "name": "Dubai Pet Relocation" },
-      "publisher": { "@type": "Organization", "name": "Dubai Pet Relocation", "logo": { "@type": "ImageObject", "url": `${BASE_URL}/images/logo.png` } },
+      "publisher": { "@type": "Organization", "name": "Dubai Pet Relocation", "logo": { "@type": "ImageObject", "url": LOGO_URL } },
       "datePublished": "2025-01-15",
       "dateModified": "2026-01-15"
     }

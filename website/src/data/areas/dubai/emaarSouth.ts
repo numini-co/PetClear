@@ -39,7 +39,7 @@ const emaarSouth: AreaPageData = {
     {
       h2: 'Moving To or From Emaar South With a Pet',
       body: [
-        { type: 'p', text: 'Most Emaar South relocations are international — families arriving from the UK, India, USA, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit. The MOCCAE permit costs AED 200 per pet and the import permit is valid for 90 days from issuance, so we time the application carefully against your travel date.' },
+        { type: 'p', text: 'Most Emaar South relocations are international — families arriving from the UK, India, USA, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit. The MOCCAE import permit is valid for 90 days from issuance — confirm the current portal fee — so we time the application carefully against your travel date.' },
         { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks. A rabies titer test is only required for pets travelling to or from certain high-risk rabies countries — where it applies, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We map your exact timeline before you commit.' },
       ],
     },
@@ -52,14 +52,14 @@ const emaarSouth: AreaPageData = {
     {
       h2: 'Cost of Pet Relocation in Emaar South',
       body: [
-        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government fees include the MOCCAE permit at AED 200 per pet, plus release and clearance costs of roughly AED 700 per dog and AED 450 per cat; the rest covers veterinary work, crate, cargo and coordination.' },
+        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government fees include the MOCCAE import permit plus arrival-release and clearance charges (confirm live portal amounts; fees may change); the rest covers veterinary work, crate, cargo and coordination.' },
       ],
     },
   ],
   faq: [
     { q: 'Do you collect from my villa in Emaar South?', a: 'Yes — we arrange door-to-door collection from your Emaar South villa or townhouse and coordinate the entire move from there.' },
     { q: 'Is Emaar South close to the airport for pet cargo?', a: 'Yes. Emaar South sits right beside Al Maktoum International Airport (DWC), a major cargo hub, which keeps travel-day collection short and is handy for southern-airport departures.' },
-    { q: 'How much does the MOCCAE permit cost?', a: 'The MOCCAE permit is AED 200 per pet and is valid for 90 days from issuance. We time the application against your travel date so it does not expire before you fly.' },
+    { q: 'How much does the MOCCAE permit cost?', a: 'The MOCCAE permit is valid for 90 days from issuance. Confirm the current portal fee; fees may change. We time the application against your travel date so it does not expire before you fly.' },
     { q: 'How much does relocation cost overall?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. We give you a clear range on WhatsApp before you commit.' },
     { q: 'Is a rabies titer test required?', a: 'Only for pets travelling to or from certain high-risk rabies countries. Where it applies, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We confirm whether it affects your route before you commit.' },
   ],

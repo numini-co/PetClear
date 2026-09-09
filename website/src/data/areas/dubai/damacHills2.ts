@@ -39,7 +39,7 @@ const damacHills2: AreaPageData = {
     {
       h2: 'Moving To or From DAMAC Hills 2 With a Pet',
       body: [
-        { type: 'p', text: 'Most DAMAC Hills 2 relocations are international — families arriving from the UK, India, South Africa, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit. The MOCCAE permit costs AED 200 per pet and the import permit is valid for 90 days from issuance, so we time the application carefully against your travel date.' },
+        { type: 'p', text: 'Most DAMAC Hills 2 relocations are international — families arriving from the UK, India, South Africa, Australia and across Europe, or leaving Dubai for a new posting. The requirements depend on your origin or destination country, but the core steps are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit. The MOCCAE import permit is valid for 90 days from issuance — confirm the current portal fee — so we time the application carefully against your travel date.' },
         { type: 'p', text: 'From low-risk countries the timeline is typically 2–6 weeks. A rabies titer test is only required for pets travelling to or from certain high-risk rabies countries — where it applies, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We map your exact timeline before you commit.' },
       ],
     },
@@ -52,14 +52,14 @@ const damacHills2: AreaPageData = {
     {
       h2: 'Cost of Pet Relocation in DAMAC Hills 2',
       body: [
-        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000, and larger dogs sit toward the upper end because of crate and cargo weight. Government fees include the MOCCAE permit at AED 200 per pet, plus release and clearance costs of roughly AED 700 per dog and AED 450 per cat; the rest covers veterinary work, crate, cargo and coordination.' },
+        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000, and larger dogs sit toward the upper end because of crate and cargo weight. Government fees include the MOCCAE import permit plus arrival-release and clearance charges (confirm live portal amounts; fees may change); the rest covers veterinary work, crate, cargo and coordination.' },
       ],
     },
   ],
   faq: [
     { q: 'Do you collect from my villa in DAMAC Hills 2?', a: 'Yes — we arrange door-to-door collection from your DAMAC Hills 2 villa or townhouse and coordinate the entire move from there, even though the community sits well out of the city.' },
     { q: 'Can you handle multiple or large dogs?', a: 'Yes. DAMAC Hills 2 is a space-rich villa community, so we regularly relocate households with several dogs or larger breeds — we size IATA-compliant crates for each pet and plan cargo accordingly.' },
-    { q: 'How much does the MOCCAE permit cost?', a: 'The MOCCAE permit is AED 200 per pet and is valid for 90 days from issuance. We time the application against your travel date so it does not expire before you fly.' },
+    { q: 'How much does the MOCCAE permit cost?', a: 'The MOCCAE permit is valid for 90 days from issuance. Confirm the current portal fee; fees may change. We time the application against your travel date so it does not expire before you fly.' },
     { q: 'How much does relocation cost overall?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. Larger dogs sit toward the upper end. We give you a clear range on WhatsApp before you commit.' },
     { q: 'Is a rabies titer test required?', a: 'Only for pets travelling to or from certain high-risk rabies countries. Where it applies, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We confirm whether it affects your route before you commit.' },
   ],

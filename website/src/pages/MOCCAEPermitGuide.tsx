@@ -68,7 +68,7 @@ export default function MOCCAEPermitGuide() {
     {
       question: 'Do I need a MOCCAE import permit for my dog?',
       answer:
-        'Yes. Every dog entering the UAE needs its own MOCCAE import permit before travel — cats too (one pet, one permit). Airlines will not board without it, and the port will refuse entry. The permit is valid 90 days from issuance. Confirm live portal fees (commonly permit AED 200; dog release AED 500 — confirm-on-MOCCAE). Commercial assistance twin: [/service/moccae-pet-permit/](/service/moccae-pet-permit/).',
+        'Yes. Every dog entering the UAE needs its own MOCCAE import permit before travel — cats too (one pet, one permit). Airlines will not board without it, and the port will refuse entry. The permit is valid 90 days from issuance. Confirm the current import-permit and arrival-release fees on the official MOCCAE portal; fees may change. Commercial assistance twin: [/service/moccae-pet-permit/](/service/moccae-pet-permit/).',
     },
     {
       question: 'How do I get a pet import permit from MOCCAE?',
@@ -78,7 +78,7 @@ export default function MOCCAEPermitGuide() {
     {
       question: 'How to apply for a Moccae license?',
       answer:
-        'For pet relocation, you almost always mean the MOCCAE pet import permit, not a MOCCAE business or trade license. Apply via UAE Pass → Import Permit for Pets on the official portal. The permit is valid 90 days from issuance. Confirm the portal fee (commonly AED 200 — confirm-on-MOCCAE). If you need a commercial trade license, that is a different MOCCAE product — do not mix the two applications.',
+        'For pet relocation, you almost always mean the MOCCAE pet import permit, not a MOCCAE business or trade license. Apply via UAE Pass → Import Permit for Pets on the official portal. The permit is valid 90 days from issuance. Confirm the current portal fee when you apply; fees may change. If you need a commercial trade license, that is a different MOCCAE product — do not mix the two applications.',
     },
     {
       question: 'How to get a MOCCAE license?',
@@ -123,7 +123,7 @@ export default function MOCCAEPermitGuide() {
     {
       question: 'What are the labeled MOCCAE permit and release fees?',
       answer:
-        'Labeled MOCCAE lines: import permit AED 200; dog port release AED 500; cat port release AED 250. Confirm on official MOCCAE portal; fees may change. Those government charges exclude veterinary work, crate, cargo and coordination.',
+        'MOCCAE charges an import-permit fee before travel and a veterinary release/inspection fee at the cargo terminal. Confirm both live amounts on the official portal; fees may change. Those government charges exclude veterinary work, crate, cargo and coordination.',
     },
     {
       question: 'Can I put two pets on one MOCCAE import permit?',

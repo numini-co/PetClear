@@ -287,7 +287,7 @@ const petImportDubai: ServicePageData = {
     },
     {
       q: 'How much does it cost to import a pet to Dubai?',
-      a: 'Most imports fall between AED 2,000 and AED 20,000 depending on origin country, pet size, airline and service level. Government charges (MOCCAE permit and arrival release) are a small, contested slice — confirm live portal amounts rather than treating published AED 200 / 500 figures as settled. The flight and veterinary work make up most of the cost.',
+      a: 'Most imports fall between AED 2,000 and AED 20,000 depending on origin country, pet size, airline and service level. Government charges (MOCCAE permit and arrival release) are a small slice — confirm live portal amounts; fees may change. The flight and veterinary work make up most of the cost.',
     },
     {
       q: 'What does a commercial pet import to Dubai actually include?',

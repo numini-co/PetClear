@@ -44,7 +44,7 @@ const jbr: AreaPageData = {
       intro:
         'Almost every JBR relocation is international. Families arrive from the UK, USA, India, Australia and across Europe, or leave Dubai for a new chapter elsewhere. The exact requirements depend on your origin or destination country, but the spine of the process is the same everywhere.',
       body: [
-        { type: 'p', text: 'Your pet needs a valid microchip, current vaccinations, a government health certificate and — for moves into the UAE — a MOCCAE import permit that stays valid for 90 days from issuance (confirm the current fee on the official portal). On arrival there is a release fee of AED 500 per dog or AED 250 per cat, so government charges land at roughly AED 700 per dog and AED 450 per cat. A rabies titer test is only required for pets coming from countries the UAE classifies as high-risk; most low-risk origins skip it entirely.' },
+        { type: 'p', text: 'Your pet needs a valid microchip, current vaccinations, a government health certificate and — for moves into the UAE — a MOCCAE import permit that stays valid for 90 days from issuance (confirm the current fee on the official portal). On arrival a veterinary release/inspection fee is also payable — confirm the current dog and cat amounts on the official MOCCAE portal; fees may change. A rabies titer test is only required for pets coming from countries the UAE classifies as high-risk; most low-risk origins skip it entirely.' },
         { type: 'steps', steps: [
           { title: 'Plan and quote', text: 'We confirm your route, pet details and any breed restrictions, then send a clear cost range and timeline on WhatsApp before you commit to anything.' },
           { title: 'Vet and documents', text: 'We coordinate the microchip check, vaccinations and the government health certificate with a clinic near JBR, scheduling each step so the paperwork is valid on travel day.' },
@@ -65,10 +65,10 @@ const jbr: AreaPageData = {
     {
       h2: 'Cost of Pet Relocation in JBR',
       body: [
-        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government fees are roughly AED 700 per dog and AED 450 per cat, made up of the AED 200 MOCCAE permit plus the release fee of AED 500 for a dog or AED 250 for a cat. The rest of your budget covers veterinary work, the crate, cargo or cabin charges and our coordination.' },
+        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government permit and arrival-release fees must be confirmed on the official MOCCAE portal; fees may change. The rest of your budget covers veterinary work, the crate, cargo or cabin charges and our coordination.' },
         { type: 'table', headers: ['Cost component', 'Typical range'], rows: [
-          ['MOCCAE permit', 'AED 200 per pet'],
-          ['Release fee on arrival', 'AED 500 dog / AED 250 cat'],
+          ['MOCCAE permit', 'Confirm on official MOCCAE portal'],
+          ['Release fee on arrival', 'Confirm on official MOCCAE portal'],
           ['Vet, vaccinations & health certificate', 'Varies by clinic'],
           ['IATA crate', 'Depends on pet size'],
           ['Flight, cargo & coordination', 'Route-dependent'],
@@ -81,8 +81,8 @@ const jbr: AreaPageData = {
   faq: [
     { q: 'Do you pick up from my building in JBR?', a: 'Yes — we arrange door-to-door pickup from your JBR tower, including the Rimal, Murjan, Sadaf and Bahar clusters, and coordinate the entire move from there.' },
     { q: 'How long does pet relocation from JBR take?', a: 'From low-risk countries, usually two to six weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.' },
-    { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. Government fees are roughly AED 700 per dog and AED 450 per cat. We give you a clear range on WhatsApp before you commit.' },
-    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit — which costs AED 200 per pet and stays valid for 90 days from issuance — or handle the application on your behalf depending on your service tier.' },
+    { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. Government permit and arrival-release fees must be confirmed on the official MOCCAE portal; fees may change. We give you a clear range on WhatsApp before you commit.' },
+    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit — valid for 90 days from issuance (confirm the current portal fee) — or handle the application on your behalf depending on your service tier.' },
     { q: 'My JBR building has pet rules — can you help?', a: 'We focus on the relocation itself, but we can advise on crate acclimation and travel-day logistics for apartment pets in busy beachfront towers like those at JBR. Always check your tenancy terms for pet limits or deposits.' },
   ],
   relatedAreas: [

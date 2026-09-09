@@ -11,6 +11,11 @@ export const PERMIT_FEE_VERIFY =
 export const RELEASE_FEE_VERIFY =
   'An arrival veterinary release/inspection fee is also payable at the cargo terminal. Confirm the current dog and cat amounts on the official MOCCAE portal before travel; fees may change.'
 
+export const GOV_FEE_CONFIRM =
+  'Confirm the current MOCCAE import-permit and arrival-release fees on the official portal. Fees may change.'
+
+export const GOV_FEE_TABLE_CELL = 'Confirm on official MOCCAE portal'
+
 /** RNATT timing — sample window before travel, not a post-test wait. */
 export const TITER_SAMPLE_RULE =
   'When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. This is a sample-timing window, not a 90-day waiting period after the test.'

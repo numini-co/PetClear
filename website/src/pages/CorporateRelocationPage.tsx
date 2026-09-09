@@ -75,7 +75,7 @@ export default function CorporateRelocationPage() {
     {
       question: 'How does corporate pet relocation pricing work per employee?',
       answer:
-        'Each employee\'s pet move is quoted individually — species, crate, route and season change the file. Official MOCCAE fees (confirm on the portal; fees may change) are import permit AED 200, dog port release AED 500 and cat port release AED 250. We do not publish package or coordination-tier totals here. WhatsApp +971504782999 for a per-employee quote that HR can approve or expense.',
+        'Each employee\'s pet move is quoted individually — species, crate, route and season change the file. Official MOCCAE import-permit and arrival-release fees must be confirmed on the portal when you apply — fees may change. We do not publish package or coordination-tier totals here. WhatsApp +971504782999 for a per-employee quote that HR can approve or expense.',
     },
     {
       question: 'Who is the point of contact for a corporate account?',
@@ -85,7 +85,7 @@ export default function CorporateRelocationPage() {
     {
       question: 'Can you handle multiple employees and multi-pet families at the same time?',
       answer:
-        'Yes. We coordinate several employee moves in parallel and handle families relocating with more than one pet. Note that the MOCCAE import permit is issued per animal (AED 200 per pet), and the UAE limits imports to a maximum of two pets per person per year — so a multi-pet household may need permits split across family members. We map this out per family at the quoting stage so there are no surprises at customs.',
+        'Yes. We coordinate several employee moves in parallel and handle families relocating with more than one pet. Note that the MOCCAE import permit is issued per animal (confirm the live portal fee per pet), and the UAE limits imports to a maximum of two pets per person per year — so a multi-pet household may need permits split across family members. We map this out per family at the quoting stage so there are no surprises at customs.',
     },
     {
       question: 'Do you support relocations both to and from Dubai?',
@@ -278,8 +278,8 @@ export default function CorporateRelocationPage() {
                 <h3 className="text-lg font-bold text-[#2A2A2A]">Document handling, checked before travel</h3>
               </div>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                We prepare and error-check the documents each pet needs: the MOCCAE import permit (AED 200 per
-                animal), the ISO microchip certificate, rabies and core vaccination records, and the international
+                We prepare and error-check the documents each pet needs: the MOCCAE import permit (confirm the
+                current portal fee per animal), the ISO microchip certificate, rabies and core vaccination records, and the international
                 health certificate. Every document must carry the same microchip number — a mismatch is an
                 automatic rejection at customs, so we verify it before your employee&apos;s pet ever boards.
               </p>

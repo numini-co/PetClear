@@ -42,7 +42,7 @@ const snippetAnswer =
 const COST_PAA_FAQS: { q: string; a: string }[] = [
   {
     q: 'How much does it cost to relocate a pet in Dubai?',
-    a: 'There is no single ticket price. A Dubai pet move splits into government permits and port release (confirm live MOCCAE portal amounts — commonly discussed as permit AED 200, dog release AED 500, cat AED 250), veterinary prep, air freight, an IATA crate, airport handling, and coordination. Airline charges vary by route and size. Dubai Pet Relocation packages are quoted — we do not publish a from-price. See also [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/). WhatsApp +971504782999.',
+    a: 'There is no single ticket price. A Dubai pet move splits into government permits and port release (confirm the current MOCCAE import-permit and arrival-release amounts on the official portal — fees may change), veterinary prep, air freight, an IATA crate, airport handling, and coordination. Airline charges vary by route and size. Dubai Pet Relocation packages are quoted — we do not publish a from-price. See also [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/). WhatsApp +971504782999.',
   },
   {
     q: 'How much does it cost to import a pet into the UAE?',

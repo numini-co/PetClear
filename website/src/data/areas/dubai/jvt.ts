@@ -53,7 +53,7 @@ const jvt: AreaPageData = {
     {
       h2: 'Cost of Pet Relocation in JVT',
       body: [
-        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000 per pet. Government charges include the MOCCAE permit at AED 200 per pet plus release fees, which work out to roughly AED 700 per dog and AED 450 per cat; the rest covers veterinary work, crate, cargo and coordination. For multi-pet townhouse households we give a combined quote so you can see the full family cost upfront.' },
+        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000 per pet. Government charges include the MOCCAE import permit plus arrival-release fees (confirm live portal amounts; fees may change); the rest covers veterinary work, crate, cargo and coordination. For multi-pet townhouse households we give a combined quote so you can see the full family cost upfront.' },
       ],
     },
   ],
@@ -61,7 +61,7 @@ const jvt: AreaPageData = {
     { q: 'Do you pick up from my home in JVT?', a: 'Yes — we arrange door-to-door pickup from your JVT villa or townhouse and coordinate the entire move from there.' },
     { q: 'Can you relocate large dogs from JVT?', a: 'Absolutely. Many JVT families own larger breeds, and we source IATA-compliant crates in the right size and allow extra acclimation time so big dogs travel comfortably.' },
     { q: 'We have several pets — can you move them all together?', a: 'Yes. Multi-pet households are common in JVT. We map each animal’s permits and paperwork in parallel so the family can travel together where the routes allow, and give you one combined quote.' },
-    { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 per pet depending on route, pet size and service level. The MOCCAE permit is AED 200 per pet plus release fees. We give you a clear range on WhatsApp before you commit.' },
+    { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 per pet depending on route, pet size and service level. Confirm current MOCCAE import-permit and arrival-release fees on the official portal; fees may change. We give you a clear range on WhatsApp before you commit.' },
     { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import permit (valid 90 days from issuance) or export certificate, or handle the application on your behalf depending on your service tier.' },
   ],
   relatedAreas: [

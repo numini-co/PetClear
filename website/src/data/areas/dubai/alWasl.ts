@@ -52,7 +52,7 @@ const alWasl: AreaPageData = {
     {
       h2: 'Cost of Pet Relocation in Al Wasl',
       body: [
-        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. The MOCCAE permit is AED 200 per pet plus a release fee, working out to roughly AED 700 per dog and AED 450 per cat in government charges; the rest covers veterinary work, crate, cargo and coordination.' },
+        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. The MOCCAE permit is confirm the current portal fee plus a release fee, working out to confirm live government permit and release amounts on the official portal in government charges; the rest covers veterinary work, crate, cargo and coordination.' },
       ],
     },
   ],
@@ -60,7 +60,7 @@ const alWasl: AreaPageData = {
     { q: 'Do you pick up from my villa in Al Wasl?', a: 'Yes — we arrange door-to-door pickup from your Al Wasl villa or building and coordinate the entire move from there.' },
     { q: 'How long does pet relocation from Al Wasl take?', a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.' },
     { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. We give you a clear range on WhatsApp before you commit.' },
-    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit, or handle the application on your behalf depending on your service tier. The permit is AED 200 per pet plus a release fee and is valid for 90 days from issuance.' },
+    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit, or handle the application on your behalf depending on your service tier. The permit is confirm the current portal fee plus a release fee and is valid for 90 days from issuance.' },
     { q: 'Is a titer test always required?', a: 'No — a titer (blood antibody) test is only needed when travelling between certain high-risk rabies countries. We confirm whether your specific route needs one before you start.' },
   ],
   relatedAreas: [
