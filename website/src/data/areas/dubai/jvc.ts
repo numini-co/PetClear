@@ -52,14 +52,14 @@ const jvc: AreaPageData = {
     {
       h2: 'Cost of Pet Relocation in JVC',
       body: [
-        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000 per pet. Government charges include the MOCCAE permit at AED 200 per pet plus release fees, which work out to roughly AED 700 per dog and AED 450 per cat; the rest covers veterinary work, crate, cargo and coordination. We give you a clear range on WhatsApp before you commit.' },
+        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000 per pet. Government charges include the MOCCAE import permit plus arrival-release fees (confirm live portal amounts; fees may change); the rest covers veterinary work, crate, cargo and coordination. We give you a clear range on WhatsApp before you commit.' },
       ],
     },
   ],
   faq: [
     { q: 'Do you pick up from my home in JVC?', a: 'Yes — we arrange door-to-door pickup from your JVC villa, townhouse or apartment and coordinate the entire move from there.' },
     { q: 'How long does pet relocation from JVC take?', a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.' },
-    { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 per pet depending on route, pet size and service level. The MOCCAE permit is AED 200 per pet plus release fees. We give you a clear range on WhatsApp before you commit.' },
+    { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 per pet depending on route, pet size and service level. Confirm current MOCCAE import-permit and arrival-release fees on the official portal; fees may change. We give you a clear range on WhatsApp before you commit.' },
     { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import permit (valid 90 days from issuance) or export certificate, or handle the application on your behalf depending on your service tier.' },
     { q: 'My JVC building has pet rules — can you help?', a: 'We focus on the relocation itself, but we can advise on crate acclimation and travel-day logistics for pets in apartments and townhouses across JVC.' },
   ],

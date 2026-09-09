@@ -61,7 +61,7 @@ export default function CustomsClearanceGuide() {
     },
     {
       question: 'What is the MOCCAE release fee on arrival?',
-      answer: 'In addition to the MOCCAE import permit (AED 200 per pet, paid before travel), a government release fee is collected when your pet clears at the cargo terminal: AED 500 per dog or AED 250 per cat. This brings the core MOCCAE government total to roughly AED 700 per dog and AED 450 per cat. The release fee is paid on arrival, not at the permit stage.',
+      answer: 'In addition to the MOCCAE import permit (paid before travel; confirm the current portal fee), a government veterinary release/inspection fee is collected when your pet clears at the cargo terminal. Confirm the current dog and cat amounts on the official MOCCAE portal before travel; fees may change. The release fee is paid on arrival, not at the permit stage.',
     },
     {
       question: 'What documents are checked when my pet clears customs in Dubai?',
@@ -175,8 +175,8 @@ export default function CustomsClearanceGuide() {
                 </div>
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
                   <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Release Fee (on arrival)</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">AED 500/dog · AED 250/cat</p>
-                  <p className="text-sm text-[#5A5A5A] mt-1">On top of the AED 200 import permit. Government total ~AED 700/dog, ~AED 450/cat.</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">Confirm on official MOCCAE portal</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">Paid on arrival, on top of the import-permit fee. Fees may change — do not treat blog numerals as the live amount.</p>
                 </div>
                 <div className="p-4 bg-[#C89F5A]/5 rounded-xl">
                   <p className="font-semibold text-[#C89F5A] text-sm mb-1">Typical Clearance Time</p>
@@ -256,7 +256,7 @@ export default function CustomsClearanceGuide() {
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">The release fee is paid</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
-                  Once the paperwork checks out, the government release fee is collected at the terminal: <strong>AED 500 per dog or AED 250 per cat</strong>. This is separate from, and on top of, the AED 200 import permit you already paid before travel. Together these make up the core MOCCAE government total of roughly AED 700 per dog and AED 450 per cat.
+                  Once the paperwork checks out, the government veterinary release/inspection fee is collected at the terminal. Confirm the current dog and cat amounts on the official MOCCAE portal; fees may change. This is separate from, and on top of, the import-permit fee paid before travel.
                 </p>
                 <div className="p-3 bg-[#E9ECFB] rounded-xl text-sm text-[#5A5A5A]">
                   <strong className="text-[#4F5BD5]">Note:</strong> A customs clearing / bill-of-entry charge for the cargo agent handling at DXB or DWC is also typical — your personalized quote sets this out so there are no surprises at the terminal.
@@ -378,7 +378,7 @@ export default function CustomsClearanceGuide() {
                 </div>
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                   <DollarSign className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span><strong>Release fee:</strong> AED 500/dog or AED 250/cat, paid on arrival at the terminal</span>
+                  <span><strong>Release fee:</strong> paid on arrival at the terminal — confirm the current dog and cat amounts on the official MOCCAE portal</span>
                 </div>
               </div>
             </div>

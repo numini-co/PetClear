@@ -74,7 +74,7 @@ const mudon: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Larger dogs, common in Mudon, sit toward the upper end because crate size and cargo weight drive the price. Government fees include the MOCCAE permit at AED 200 per pet plus an export or release fee of roughly AED 700 per dog and AED 450 per cat; the rest covers veterinary work, the travel crate, cargo and our coordination. We give you a clear, itemised range on WhatsApp before anything is booked.',
+          text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Larger dogs, common in Mudon, sit toward the upper end because crate size and cargo weight drive the price. Government fees include the MOCCAE permit plus an export or release fee (confirm live portal amounts; fees may change); the rest covers veterinary work, the travel crate, cargo and our coordination. We give you a clear, itemised range on WhatsApp before anything is booked.',
         },
       ],
     },
@@ -94,11 +94,11 @@ const mudon: AreaPageData = {
     },
     {
       q: 'How much does it cost?',
-      a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level — larger dogs sit toward the higher end. Government fees include the MOCCAE permit at AED 200 per pet plus a release fee of around AED 700 per dog or AED 450 per cat. We give you a clear range on WhatsApp before you commit.',
+      a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level — larger dogs sit toward the higher end. Government fees include the MOCCAE import permit plus an arrival-release fee — confirm live portal amounts; fees may change. We give you a clear range on WhatsApp before you commit.',
     },
     {
       q: 'Can you handle the MOCCAE permit for me?',
-      a: 'Yes. We guide you through the MOCCAE import or export permit — which costs AED 200 per pet and is valid for 90 days from issuance — or handle the application on your behalf depending on your service tier.',
+      a: 'Yes. We guide you through the MOCCAE import or export permit — valid for 90 days from issuance (confirm the current portal fee) — or handle the application on your behalf depending on your service tier.',
     },
   ],
   relatedAreas: [

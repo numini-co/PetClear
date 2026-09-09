@@ -120,9 +120,9 @@ const palmJumeirah: AreaPageData = {
           type: 'table',
           headers: ['Cost component', 'Typical range'],
           rows: [
-            ['MOCCAE import permit', 'AED 200 per pet'],
-            ['MOCCAE release fee', 'AED 500 per dog / AED 250 per cat'],
-            ['Government total (guide)', '~AED 700 per dog / ~AED 450 per cat'],
+            ['MOCCAE import permit', 'Confirm on official MOCCAE portal'],
+            ['MOCCAE release fee', 'Confirm on official MOCCAE portal'],
+            ['Government total (guide)', 'Confirm on official MOCCAE portal'],
             ['Vet work, crate, cargo & coordination', 'Balance of the AED 2,000–25,000 range'],
           ],
         },
@@ -144,11 +144,11 @@ const palmJumeirah: AreaPageData = {
     },
     {
       q: 'How much does it cost?',
-      a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size, the number of pets and service level. Government fees are around AED 700 per dog and AED 450 per cat; we give you a clear range on WhatsApp first.',
+      a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size, the number of pets and service level. Government permit and arrival-release fees must be confirmed on the official MOCCAE portal; fees may change. We give you a clear range on WhatsApp first.',
     },
     {
       q: 'Can you handle the MOCCAE permit for me?',
-      a: 'Yes. We guide you through the MOCCAE import or export permit — which costs AED 200 per pet and is valid for 90 days from issuance — or handle the application on your behalf, depending on your service tier.',
+      a: 'Yes. We guide you through the MOCCAE import or export permit — valid for 90 days from issuance (confirm the current portal fee) — or handle the application on your behalf, depending on your service tier.',
     },
     {
       q: 'My building on the Palm has pet rules — can you help?',

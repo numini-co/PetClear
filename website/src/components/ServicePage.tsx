@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { MessageCircle, ArrowRight, CheckCircle } from 'lucide-react'
 import SEOHead from './SEOHead.tsx'
 import Breadcrumb from './Breadcrumb.tsx'
-import { getWhatsAppUrl, BASE_URL, siteConfig, shortSubtitle } from '../lib/seo.ts'
+import { getWhatsAppUrl, BASE_URL, siteConfig, shortSubtitle, localBusinessProvider } from '../lib/seo.ts'
 import type { ServicePageData, ServiceBlock } from '../types/servicePage.ts'
 import { SERVICE_LINKS } from '../data/nav.ts'
 import OfficialSources from './OfficialSources.tsx'
@@ -146,7 +146,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
   const serviceSchema: Record<string, unknown> = {
     '@context': 'https://schema.org', '@type': 'Service',
     serviceType: data.primaryKeyword, name: data.h1, url,
-    provider: { '@type': 'LocalBusiness', name: siteConfig.name, areaServed: 'Dubai, UAE', url: BASE_URL },
+    provider: localBusinessProvider(),
     areaServed: 'AE',
   }
   if (data.costRange) {

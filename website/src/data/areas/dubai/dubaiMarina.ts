@@ -52,7 +52,7 @@ const dubaiMarina: AreaPageData = {
     {
       h2: 'Cost of Pet Relocation in Dubai Marina',
       body: [
-        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government fees are roughly AED 700 per dog and AED 450 per cat; the rest covers veterinary work, crate, cargo and coordination.' },
+        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government permit and arrival-release fees must be confirmed on the official MOCCAE portal; fees may change. the rest covers veterinary work, crate, cargo and coordination.' },
       ],
     },
   ],

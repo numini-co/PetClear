@@ -44,6 +44,10 @@ export function getWhatsAppUrl(message: string, campaign = 'pet-relocation'): st
 
 export const defaultOGImage = `${BASE_URL}/assets/og-default.jpg`
 
+/** Live 200 publisher/Organization logo — do not use /images/logo.png (404). */
+export const LOGO_PATH = '/assets/logo.png'
+export const LOGO_URL = `${BASE_URL}${LOGO_PATH}`
+
 export const siteConfig = {
   name: 'Dubai Pet Relocation',
   tagline: 'Your pet\'s journey, made clear.',
@@ -63,4 +67,23 @@ export const siteConfig = {
     lat: '25.2048',
     lng: '55.2708',
   },
+}
+
+/** Shared Service.provider NAP — values only from siteConfig, no invented address/phone. */
+export function localBusinessProvider() {
+  return {
+    '@type': 'LocalBusiness' as const,
+    name: siteConfig.name,
+    areaServed: 'Dubai, UAE',
+    url: BASE_URL,
+    telephone: siteConfig.phoneE164,
+    address: {
+      '@type': 'PostalAddress' as const,
+      streetAddress: siteConfig.address.street,
+      addressLocality: siteConfig.address.city,
+      addressRegion: siteConfig.address.region,
+      postalCode: siteConfig.address.postalCode,
+      addressCountry: siteConfig.address.country,
+    },
+  }
 }

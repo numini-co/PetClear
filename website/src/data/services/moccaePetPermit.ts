@@ -207,15 +207,15 @@ const moccaePetPermit: ServicePageData = {
       body: [
         {
           type: 'p',
-          text: 'Labeled MOCCAE fees: import permit AED 200; dog port release AED 500; cat port release AED 250. Confirm on official MOCCAE portal; fees may change. Our coordination fee is quoted separately on WhatsApp and is not a government charge.',
+          text: 'MOCCAE charges an import-permit fee before travel and a veterinary release/inspection fee at the cargo terminal. Confirm both live amounts on the official portal; fees may change. Our coordination fee is quoted separately on WhatsApp and is not a government charge.',
         },
         {
           type: 'table',
           headers: ['Charge', 'Labeled amount'],
           rows: [
-            ['Import permit', 'AED 200'],
-            ['Dog port release', 'AED 500'],
-            ['Cat port release', 'AED 250'],
+            ['Import permit', 'Confirm on official MOCCAE portal'],
+            ['Dog port release', 'Confirm on official MOCCAE portal'],
+            ['Cat port release', 'Confirm on official MOCCAE portal'],
             ['Import-permit validity', '90 days from issuance'],
             ['Our document review and tracking', 'Quoted for your file; same government fee either way'],
           ],
@@ -254,7 +254,7 @@ const moccaePetPermit: ServicePageData = {
   faq: [
     {
       q: 'Do I need a MOCCAE import permit for my dog?',
-      a: 'Yes — one permit per dog or cat before the animal flies. Validity is 90 days from issuance. We review scans, catch photo/chip/vaccine mismatches, and submit with you on the MOCCAE portal. Portal fee commonly AED 200 (confirm-on-MOCCAE); dog/cat release fees are paid at arrival — confirm live amounts. Walkthrough: [/guides/moccae-import-permit/](/guides/moccae-import-permit/). WhatsApp +971504782999.',
+      a: 'Yes — one permit per dog or cat before the animal flies. Validity is 90 days from issuance. We review scans, catch photo/chip/vaccine mismatches, and submit with you on the MOCCAE portal. Confirm the current import-permit fee on the official portal; dog/cat release fees are paid at arrival — confirm live amounts. Walkthrough: [/guides/moccae-import-permit/](/guides/moccae-import-permit/). WhatsApp +971504782999.',
     },
     {
       q: 'How do I get a pet import permit from MOCCAE?',
@@ -290,7 +290,7 @@ const moccaePetPermit: ServicePageData = {
     },
     {
       q: 'How much is the MOCCAE pet permit fee?',
-      a: 'Labeled MOCCAE fees: import permit AED 200; dog port release AED 500; cat port release AED 250. Confirm on official MOCCAE portal; fees may change. Those government charges exclude veterinary work, crate, flights and our coordination.',
+      a: 'MOCCAE charges an import-permit fee before travel and a veterinary release/inspection fee at the cargo terminal. Confirm both live amounts on the official portal; fees may change. Those government charges exclude veterinary work, crate, flights and our coordination.',
     },
     {
       q: 'Can you fast-track or “express” a MOCCAE permit?',

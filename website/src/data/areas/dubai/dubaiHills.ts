@@ -52,7 +52,7 @@ const dubaiHills: AreaPageData = {
     {
       h2: 'Cost of Pet Relocation in Dubai Hills Estate',
       body: [
-        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government fees include a MOCCAE permit of AED 200 per pet plus the release fee, working out to roughly AED 700 per dog and AED 450 per cat; the rest covers veterinary work, crate, cargo and coordination.' },
+        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government fees include the MOCCAE import permit plus the arrival-release fee (confirm live portal amounts; fees may change); the rest covers veterinary work, crate, cargo and coordination.' },
       ],
     },
   ],

@@ -11,7 +11,7 @@ import UaeCargoRuleCallout from './UaeCargoRuleCallout.tsx'
 import LastVerified from './LastVerified.tsx'
 import LinkedText from './LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
-import { BASE_URL, getWhatsAppUrl, shortSubtitle, siteConfig } from '../lib/seo.ts'
+import { BASE_URL, LOGO_URL, getWhatsAppUrl, shortSubtitle, siteConfig } from '../lib/seo.ts'
 import { titleCaseCountry } from '../data/routes/countryMeta.ts'
 import type { RoutePageData } from '../types/routePage.ts'
 
@@ -54,7 +54,7 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
     publisher: {
       '@type': 'Organization',
       name: siteConfig.name,
-      logo: { '@type': 'ImageObject', url: `${BASE_URL}/images/logo.png` },
+      logo: { '@type': 'ImageObject', url: LOGO_URL },
     },
     dateModified: data.lastVerified,
   }

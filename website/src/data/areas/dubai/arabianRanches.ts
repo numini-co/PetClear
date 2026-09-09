@@ -53,7 +53,7 @@ const arabianRanches: AreaPageData = {
     {
       h2: 'Cost of Pet Relocation in Arabian Ranches',
       body: [
-        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000 per pet. Government fees are roughly AED 700 per dog and AED 450 per cat; the rest covers veterinary work, crate, cargo and coordination. For multi-pet villa households we give a combined quote so you can see the full family cost upfront.' },
+        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000 per pet. Government permit and arrival-release fees must be confirmed on the official MOCCAE portal; fees may change. the rest covers veterinary work, crate, cargo and coordination. For multi-pet villa households we give a combined quote so you can see the full family cost upfront.' },
       ],
     },
   ],

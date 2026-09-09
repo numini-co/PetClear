@@ -56,7 +56,7 @@ const karama: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'The MOCCAE side is straightforward once you know the numbers: an import permit costs around AED 200 per pet, and the airport release fee is roughly AED 500 per dog or AED 250 per cat — so plan for about AED 700 per dog and AED 450 per cat in government fees. A titer (blood antibody) test is only required when travelling from a high-risk rabies country. We confirm whether yours applies before you commit to a date.',
+          text: 'The MOCCAE side is a permit plus an arrival-release fee: confirm both current amounts on the official portal; fees may change. A titer (blood antibody) test is only required when travelling from a high-risk rabies country. We confirm whether yours applies before you commit to a date.',
         },
         {
           type: 'p',
@@ -78,7 +78,7 @@ const karama: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government fees are roughly AED 700 per dog and AED 450 per cat (a MOCCAE permit of around AED 200 plus the airport release fee); the rest covers veterinary work, the IATA crate, cargo and our coordination. We give you a clear, itemised range on WhatsApp before you commit to anything.',
+          text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government permit and arrival-release fees must be confirmed on the official MOCCAE portal; fees may change — the rest covers veterinary work, the IATA crate, cargo and our coordination. We give you a clear, itemised range on WhatsApp before you commit to anything.',
         },
       ],
     },
@@ -94,11 +94,11 @@ const karama: AreaPageData = {
     },
     {
       q: 'How much does it cost?',
-      a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. Government fees are roughly AED 700 per dog and AED 450 per cat. We give you a clear range on WhatsApp before you commit.',
+      a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. Government permit and arrival-release fees must be confirmed on the official MOCCAE portal; fees may change. We give you a clear range on WhatsApp before you commit.',
     },
     {
       q: 'Can you handle the MOCCAE permit for me?',
-      a: 'Yes. We guide you through the MOCCAE import or export permit — about AED 200 per pet, valid for 90 days from issuance — or handle the application on your behalf depending on your service tier.',
+      a: 'Yes. We guide you through the MOCCAE import or export permit — valid for 90 days from issuance; confirm the current portal fee — or handle the application on your behalf depending on your service tier.',
     },
     {
       q: 'My building has pet rules — can you help?',
