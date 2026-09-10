@@ -331,7 +331,7 @@ export default function MOCCAEPermitGuide() {
           <ContentImage
             src="/assets/w5/moccae-import-permit-application-steps-diagram.png"
             alt="Step-by-step MOCCAE pet import permit application from account setup to permit issue"
-            caption="Generic UI blocks — not screenshots of the live portal. Fee and validity stay in the copy."
+            caption="Generic UI blocks — not screenshots of the live portal. Confirm the live fee on the MOCCAE portal. Permit validity is 90 days from issuance."
           />
 
           <div className="space-y-6 mb-10">
