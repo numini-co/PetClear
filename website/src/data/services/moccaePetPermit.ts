@@ -77,7 +77,7 @@ const moccaePetPermit: ServicePageData = {
           type: 'image',
           src: '/assets/w5/moccae-import-permit-application-flowchart.png',
           alt: 'MOCCAE pet import permit application flow from document collection to approval tracking',
-          caption: 'Documents complete? If no, fix before you pay the portal. Validity overlays stay in the copy, not in the graphic.',
+          caption: 'Documents complete? If no, fix before you pay the portal. Issued permits are valid 90 days from issuance.',
         },
         {
           type: 'steps',
