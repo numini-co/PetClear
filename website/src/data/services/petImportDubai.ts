@@ -243,11 +243,11 @@ const petImportDubai: ServicePageData = {
     {
       h2: 'Airport clearance we coordinate — DXB, DWC and AUH',
       intro:
-        'Pets enter as manifested cargo, so they arrive at a cargo terminal, not the passenger hall. A dedicated arrival walkthrough (Cargo Village, municipality registration) is scheduled as a later guide; until that URL is live, this section is the commercial summary.',
+        'Pets enter as manifested cargo, so they arrive at a cargo terminal, not the passenger hall. This section stays a short commercial summary. The full post-arrival journey — DXB arrival, clearance and registration — lives on the [Dubai pet arrival guide](/guides/dubai-pet-arrival-guide/).',
       body: [
         {
           type: 'p',
-          text: `At Dubai International the typical path is the cargo village: MOCCAE veterinary inspection, microchip scan against the permit, document review, customs release, then handover. ${RELEASE_FEE_VERIFY} When the pack is complete, compliant pets are released to the owner or nominated agent — there is no routine quarantine.`,
+          text: `At Dubai International the typical path is the cargo village: MOCCAE veterinary inspection, microchip scan against the permit, document review, customs release, then handover. ${RELEASE_FEE_VERIFY} When the pack is complete, compliant pets are released to the owner or nominated agent — there is no routine quarantine. Step-by-step [DXB arrival, clearance and registration](/guides/dubai-pet-arrival-guide/) is on the arrival guide.`,
         },
         {
           type: 'p',
@@ -327,6 +327,7 @@ const petImportDubai: ServicePageData = {
     },
   ],
   relatedLinks: [
+    { label: 'Dubai pet arrival guide', to: '/guides/dubai-pet-arrival-guide/' },
     { label: 'UAE Pet Import Requirements', to: '/guides/uae-pet-import-requirements/' },
     { label: 'MOCCAE Permit Assistance', to: '/service/moccae-pet-permit/' },
     { label: 'MOCCAE Import Permit Guide', to: '/guides/moccae-import-permit/' },

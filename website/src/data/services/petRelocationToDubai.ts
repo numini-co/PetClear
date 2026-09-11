@@ -140,7 +140,7 @@ const petRelocationToDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Register with a local clinic in the first week so you have a contact for routine care and any municipality registration your community expects. Keep the import file — you will need it for boarding, future travel or an eventual outbound move.',
+          text: 'Register with a local clinic in the first week so you have a contact for routine care and any municipality registration your community expects. Keep the import file — you will need it for boarding, future travel or an eventual outbound move. The longer post-arrival walkthrough — cargo clearance, collection, settling and Aleef registration — is [the post-arrival guide for pets](/guides/dubai-pet-arrival-guide/).',
         },
       ],
     },
@@ -179,7 +179,7 @@ const petRelocationToDubai: ServicePageData = {
     },
     {
       q: 'What happens after cargo arrival at DXB?',
-      a: 'A MOCCAE inspector reviews the file and scans the microchip at the cargo terminal. When documents match, release is typically the same day. We coordinate collection; we are not the inspector.',
+      a: 'A MOCCAE inspector reviews the file and scans the microchip at the cargo terminal. When documents match, release is typically the same day. We coordinate collection; we are not the inspector. Full post-arrival steps: [the post-arrival guide for pets](/guides/dubai-pet-arrival-guide/).',
     },
     {
       q: 'How should I settle a pet into a new Dubai apartment?',
@@ -195,6 +195,7 @@ const petRelocationToDubai: ServicePageData = {
     },
   ],
   relatedLinks: [
+    { label: 'The post-arrival guide for pets', to: '/guides/dubai-pet-arrival-guide/' },
     { label: 'Pet relocation services in Dubai', to: '/service/pet-relocation-dubai/' },
     { label: 'Pet import service for Dubai', to: '/service/pet-import-dubai/' },
     { label: 'UAE pet import requirements', to: '/guides/uae-pet-import-requirements/' },
