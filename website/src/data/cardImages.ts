@@ -66,6 +66,10 @@ export const CARD_IMAGES: Record<string, CardImage> = {
     src: '/assets/w-flight-modes/pet-cargo-hold-card.jpg',
     alt: 'An IATA travel crate in an aircraft cargo hold for manifest pet cargo',
   },
+  '/guides/dubai-pet-arrival-guide/': {
+    src: '/assets/w11/dubai-pet-arrival-cat-first-steps-new-home.jpg',
+    alt: 'Cat taking its first steps into a new Dubai home after airport arrival and clearance',
+  },
   '/guides/pet-as-checked-baggage/': {
     src: '/assets/w-flight-modes/pet-excess-baggage-card.jpg',
     alt: 'A hard-sided pet crate travelling as accompanied checked baggage',
