@@ -55,6 +55,7 @@ const navLinks = [
       { label: 'All Emirates', to: '/cities/' },
       { label: 'Dubai Communities', to: '/dubai/' },
       { label: 'Abu Dhabi', to: '/cities/abu-dhabi/' },
+      { label: 'Sharjah', to: '/cities/sharjah/' },
     ],
   },
   { label: 'About', to: '/about/' },

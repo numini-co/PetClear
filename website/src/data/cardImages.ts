@@ -86,6 +86,10 @@ export const CARD_IMAGES: Record<string, CardImage> = {
     src: '/images/import-hero.jpg',
     alt: 'Pet import documents beside a travel crate',
   },
+  '/cities/sharjah/': {
+    src: '/assets/w-sharjah/pet-relocation-sharjah-dog-lagoon-promenade-dusk.jpg',
+    alt: 'Owner walking their dog along a Sharjah waterfront promenade, illustrating pet relocation in Sharjah',
+  },
 }
 
 export function cardImageFor(to: string): CardImage | undefined {
