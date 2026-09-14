@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import {
   AlertTriangle,
   Building,
+  CheckCircle,
   Home,
   MapPin,
   MessageCircle,
