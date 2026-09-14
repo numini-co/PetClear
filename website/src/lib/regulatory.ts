@@ -16,6 +16,13 @@ export const GOV_FEE_CONFIRM =
 
 export const GOV_FEE_TABLE_CELL = 'Confirm on official MOCCAE portal'
 
+/** MOCCAE export health-certificate fee / timing — secondary-source only (SOT 2026-09-09; portal WAF). */
+export const EXPORT_CERT_FEE_VERIFY =
+  'A government fee applies for the MOCCAE export health certificate. Confirm the current personal-consignment amount on the official portal when you apply — do not treat secondary blog numerals as first-party official fees.'
+
+export const EXPORT_CERT_TIMING_VERIFY =
+  'Secondary sources describe a short export-certificate window (commonly discussed as about 30 days from issuance) and a one-working-day service time. Confirm current validity and processing on the official MOCCAE portal. Do not treat those figures as first-party official facts.'
+
 /** RNATT timing — sample window before travel, not a post-test wait. */
 export const TITER_SAMPLE_RULE =
   'When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. This is a sample-timing window, not a 90-day waiting period after the test.'
