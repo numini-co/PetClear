@@ -639,7 +639,11 @@ export default function CatRelocationPage() {
                 <li><strong className="text-[#2A2A2A]">Seasonal timing</strong> (if possible, we recommend October–April for these breeds)</li>
               </ul>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">
-                If your cat is a Persian, Exotic Shorthair, or similar breed, we'll discuss these considerations with you before booking anything.
+                If your cat is a Persian, Exotic Shorthair, or similar breed, we'll discuss these considerations with you before booking anything. Confirm-live carrier notes and the IATA +10% crate rule:{' '}
+                <Link to="/guides/snub-nosed-dogs-flying-uae/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  snub-nosed dogs flying to the UAE
+                </Link>
+                .
               </p>
             </div>
           </div>

@@ -504,7 +504,11 @@ export default function BannedBreedsGuide() {
                 <h3 className="text-xl font-bold text-[#2A2A2A]">Brachycephalic Breed Restrictions</h3>
               </div>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-                Brachycephalic (flat-faced) dogs are not banned from Dubai, but airlines impose severe restrictions due to heat and respiratory risks. This is an airline policy, not a UAE law.
+                Brachycephalic (flat-faced) dogs are not banned from Dubai, but airlines impose severe restrictions due to heat and respiratory risks. This is an airline policy, not a UAE law. Flight physiology and confirm-live airline acceptance live on{' '}
+                <Link to="/guides/snub-nosed-dogs-flying-uae/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  snub-nosed dogs flying to the UAE
+                </Link>
+                — this page stays the legal-entry list.
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
                 <li className="flex items-start gap-2">

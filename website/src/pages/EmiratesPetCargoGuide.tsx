@@ -241,6 +241,10 @@ export default function EmiratesPetCargoGuide() {
             <Link to="/guides/pet-travel-summer-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               summer travel guide
             </Link>
+            . Snub-nosed / brachycephalic acceptance is confirm-live — see{' '}
+            <Link to="/guides/snub-nosed-dogs-flying-uae/" className="font-semibold text-[#4F5BD5] hover:underline">
+              snub-nosed dogs flying to the UAE
+            </Link>
             .
           </p>
         </div>

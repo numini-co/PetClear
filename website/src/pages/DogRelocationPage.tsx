@@ -719,6 +719,13 @@ export default function DogRelocationPage() {
                   ⚠️ Dubai Pet Relocation Warning: We will not book a brachycephalic dog during summer months. The risk is too high, and no airline will accept them. If your move is urgent, we will discuss ground transport or alternative routing. Your dog's safety comes before our revenue.
                 </p>
               </div>
+              <p className="text-sm text-[#5A5A5A] mt-4">
+                Airline acceptance, IATA +10% crate sizing, and confirm-live carrier notes:{' '}
+                <Link to="/guides/snub-nosed-dogs-flying-uae/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  snub-nosed dogs flying to the UAE
+                </Link>
+                .
+              </p>
               <div className="mt-4">
                 <WhatsAppBtn
                   label="WhatsApp us about your dog"
