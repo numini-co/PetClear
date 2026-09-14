@@ -190,7 +190,13 @@ export default function SummerTravelGuide() {
                 </div>
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl border-l-4 border-[#4F5BD5]">
                   <p className="font-bold text-[#4F5BD5] text-lg mb-1">Brachycephalic Add-On</p>
-                  <p className="text-sm text-[#5A5A5A]">Many airlines extend brachycephalic breed embargos to include spring and autumn months, or ban them year-round.</p>
+                  <p className="text-sm text-[#5A5A5A]">
+                    Many airlines extend brachycephalic breed embargos to include spring and autumn months, or ban them year-round. Airline acceptance and the IATA +10% crate rule:{' '}
+                    <Link to="/guides/snub-nosed-dogs-flying-uae/" className="font-semibold text-[#4F5BD5] hover:underline">
+                      snub-nosed dogs flying to the UAE
+                    </Link>
+                    .
+                  </p>
                 </div>
               </div>
             </div>

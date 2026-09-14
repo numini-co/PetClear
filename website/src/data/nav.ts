@@ -42,6 +42,8 @@ export const GUIDE_LINKS: NavLink[] = [
   { label: 'Pet as Checked Baggage', to: '/guides/pet-as-checked-baggage/' },
   { label: 'Emirates Pet Cargo', to: '/guides/emirates-pet-cargo/' },
   { label: 'Dubai Pet Arrival', to: '/guides/dubai-pet-arrival-guide/' },
+  { label: 'Pet Export from Dubai', to: '/guides/pet-export-from-dubai/' },
+  { label: 'Snub-Nosed Dogs Flying UAE', to: '/guides/snub-nosed-dogs-flying-uae/' },
   { label: 'Cost Guide', to: '/guides/pet-relocation-cost-dubai/' },
   { label: 'Import Requirements', to: '/guides/uae-pet-import-requirements/' },
   { label: 'Banned Dog Breeds', to: '/guides/banned-dog-breeds-dubai/' },

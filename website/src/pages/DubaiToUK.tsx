@@ -733,6 +733,8 @@ export default function DubaiToUK() {
             <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] hover:underline">Import Requirements</Link>
             <span className="text-[#EBEBEB]">|</span>
             <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#4F5BD5] hover:underline">Cost Guide</Link>
+            <span className="text-[#EBEBEB]">|</span>
+            <Link to="/guides/pet-export-from-dubai/" className="text-[#4F5BD5] hover:underline">How to export your pet from Dubai</Link>
           </div>
         </div>
       </section>

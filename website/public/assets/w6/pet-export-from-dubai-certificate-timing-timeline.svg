@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Six-step pet export timeline with portal validity clocks">
+  <rect width="1920" height="1080" fill="#F7F3EA"/>
+  <text x="960" y="80" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="40" fill="#2A6B6B" font-weight="700">Export certificate timing from Dubai</text>
+  <text x="960" y="120" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#5A5A5A">Confirm certificate validity and fees on the official portal</text>
+  <line x1="180" y1="520" x2="1740" y2="520" stroke="#C4A574" stroke-width="10"/>
+  <g font-family="DejaVu Sans, sans-serif" text-anchor="middle">
+    <circle cx="180" cy="520" r="46" fill="#2A6B6B"/><circle cx="180" cy="520" r="34" fill="#fff"/><text x="180" y="530" font-size="28" fill="#2A6B6B" font-weight="700">1</text>
+    <text x="180" y="600" font-size="20" font-weight="700" fill="#2A2A2A">Destination</text><text x="180" y="626" font-size="20" font-weight="700" fill="#2A2A2A">rules research</text>
+    <circle cx="460" cy="520" r="46" fill="#2A6B6B"/><circle cx="460" cy="520" r="34" fill="#fff"/><text x="460" y="530" font-size="28" fill="#2A6B6B" font-weight="700">2</text>
+    <text x="460" y="600" font-size="20" font-weight="700" fill="#2A2A2A">Vet health</text><text x="460" y="626" font-size="20" font-weight="700" fill="#2A2A2A">check</text>
+    <circle cx="740" cy="520" r="46" fill="#2A6B6B"/><circle cx="740" cy="520" r="34" fill="#fff"/><text x="740" y="530" font-size="28" fill="#2A6B6B" font-weight="700">3</text>
+    <text x="740" y="600" font-size="20" font-weight="700" fill="#2A2A2A">Export health</text><text x="740" y="626" font-size="20" font-weight="700" fill="#2A2A2A">certificate</text>
+    <circle cx="740" cy="280" r="42" fill="none" stroke="#2A6B6B" stroke-width="4"/><text x="740" y="370" font-size="16" fill="#2A6B6B">Confirm validity</text>
+    <circle cx="1020" cy="520" r="46" fill="#2A6B6B"/><circle cx="1020" cy="520" r="34" fill="#fff"/><text x="1020" y="530" font-size="28" fill="#2A6B6B" font-weight="700">4</text>
+    <text x="1020" y="600" font-size="20" font-weight="700" fill="#2A2A2A">MOCCAE export</text><text x="1020" y="626" font-size="20" font-weight="700" fill="#2A2A2A">certificate</text>
+    <circle cx="1020" cy="280" r="42" fill="none" stroke="#2A6B6B" stroke-width="4"/><text x="1020" y="370" font-size="16" fill="#2A6B6B">Confirm validity</text>
+    <circle cx="1300" cy="520" r="46" fill="#C4A574"/><circle cx="1300" cy="520" r="34" fill="#fff"/><text x="1300" y="530" font-size="28" fill="#2A6B6B" font-weight="700">5</text>
+    <text x="1300" y="600" font-size="20" font-weight="700" fill="#2A2A2A">Flight</text><text x="1300" y="626" font-size="20" font-weight="700" fill="#2A2A2A">booking</text>
+    <circle cx="1580" cy="520" r="46" fill="#C4A574"/><circle cx="1580" cy="520" r="34" fill="#fff"/><text x="1580" y="530" font-size="28" fill="#2A6B6B" font-weight="700">6</text>
+    <text x="1580" y="600" font-size="20" font-weight="700" fill="#2A2A2A">Departure</text><text x="1580" y="626" font-size="20" font-weight="700" fill="#2A2A2A">day</text>
+  </g>
+</svg>
