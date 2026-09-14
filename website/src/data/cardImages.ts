@@ -70,6 +70,10 @@ export const CARD_IMAGES: Record<string, CardImage> = {
     src: '/assets/w11/dubai-pet-arrival-cat-first-steps-new-home.jpg',
     alt: 'Cat taking its first steps into a new Dubai home after airport arrival and clearance',
   },
+  '/guides/snub-nosed-dogs-flying-uae/': {
+    src: '/assets/w9/snub-nosed-dogs-flying-uae-french-bulldog-roomy-crate.jpg',
+    alt: 'Calm French bulldog sitting in a roomy open travel crate with visible ventilation',
+  },
   '/guides/pet-as-checked-baggage/': {
     src: '/assets/w-flight-modes/pet-excess-baggage-card.jpg',
     alt: 'A hard-sided pet crate travelling as accompanied checked baggage',

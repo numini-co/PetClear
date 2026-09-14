@@ -301,7 +301,11 @@ export default function IATACrateGuide() {
               <div>
                 <p className="font-semibold text-[#2A2A2A] mb-1">No Margin for Error</p>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  Airlines and ground handlers will measure your crate at check-in. If it is too small — even by 1 cm — your pet will be refused. Always add a 2–3 cm safety margin to all measurements. For brachycephalic breeds, use one crate size larger than the standard formula suggests.
+                  Airlines and ground handlers will measure your crate at check-in. If it is too small — even by 1 cm — your pet will be refused. Always add a 2–3 cm safety margin to all measurements. For brachycephalic breeds, IATA requires a container 10% larger than the standard calculation — see{' '}
+                  <Link to="/guides/snub-nosed-dogs-flying-uae/" className="font-semibold text-[#4F5BD5] hover:underline">
+                    snub-nosed dog flying rules for the UAE
+                  </Link>
+                  .
                 </p>
               </div>
             </div>

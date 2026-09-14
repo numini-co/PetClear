@@ -242,6 +242,13 @@ export default function PetFlightOptionsHub() {
               </tbody>
             </table>
           </div>
+          <p className="mt-4 text-sm leading-relaxed text-[#5A5A5A]">
+            Breed and season still sit outside this chooser. Snub-nosed / brachycephalic acceptance is confirm-live —{' '}
+            <Link to="/guides/snub-nosed-dogs-flying-uae/" className="font-semibold text-[#4F5BD5] hover:underline">
+              snub-nosed dogs flying to the UAE
+            </Link>
+            .
+          </p>
         </div>
       </section>
 
