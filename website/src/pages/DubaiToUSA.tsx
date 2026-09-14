@@ -726,6 +726,8 @@ export default function DubaiToUSA() {
             <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] hover:underline">Import Requirements</Link>
             <span className="text-[#EBEBEB]">|</span>
             <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#4F5BD5] hover:underline">Cost Guide</Link>
+            <span className="text-[#EBEBEB]">|</span>
+            <Link to="/guides/pet-export-from-dubai/" className="text-[#4F5BD5] hover:underline">the pet export process, step by step</Link>
           </div>
         </div>
       </section>

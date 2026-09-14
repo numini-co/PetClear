@@ -48,6 +48,7 @@ const EtihadPetPolicyGuide = lazy(() => import('./pages/EtihadPetPolicyGuide.tsx
 const PetAsCheckedBaggageGuide = lazy(() => import('./pages/PetAsCheckedBaggageGuide.tsx'))
 const EmiratesPetCargoGuide = lazy(() => import('./pages/EmiratesPetCargoGuide.tsx'))
 const DubaiPetArrivalGuide = lazy(() => import('./pages/DubaiPetArrivalGuide.tsx'))
+const PetExportFromDubaiGuide = lazy(() => import('./pages/PetExportFromDubaiGuide.tsx'))
 const SnubNosedDogsFlyingUaeGuide = lazy(() => import('./pages/SnubNosedDogsFlyingUaeGuide.tsx'))
 
 // City pages (V2 - Month 1)
@@ -132,6 +133,8 @@ export default function App() {
           <Route path="/guides/pet-as-checked-baggage/" element={<PetAsCheckedBaggageGuide />} />
           <Route path="/guides/emirates-pet-cargo/" element={<EmiratesPetCargoGuide />} />
           <Route path="/guides/dubai-pet-arrival-guide/" element={<DubaiPetArrivalGuide />} />
+          <Route path="/guides/pet-export-from-dubai/" element={<PetExportFromDubaiGuide />} />
+          <Route path="/guides/pet-export-from-dubai" element={<Navigate to="/guides/pet-export-from-dubai/" replace />} />
           <Route path="/guides/snub-nosed-dogs-flying-uae/" element={<SnubNosedDogsFlyingUaeGuide />} />
 
           {/* City pages */}

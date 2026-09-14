@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Dubai departure branching to UK EU USA Canada Australia India">
+  <rect width="1920" height="1080" fill="#F7F3EA"/>
+  <text x="960" y="56" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="38" fill="#2A6B6B" font-weight="700">One Dubai departure — many destination rules</text>
+  <circle cx="280" cy="540" r="110" fill="#2A6B6B"/>
+  <text x="280" y="535" text-anchor="middle" fill="#fff" font-size="28" font-family="DejaVu Sans, sans-serif" font-weight="700">Dubai</text>
+  <text x="280" y="568" text-anchor="middle" fill="#fff" font-size="20" font-family="DejaVu Sans, sans-serif">departure</text>
+  <g stroke="#C4A574" stroke-width="4">
+    <line x1="390" y1="540" x2="640" y2="150"/>
+    <line x1="390" y1="540" x2="640" y2="300"/>
+    <line x1="390" y1="540" x2="640" y2="450"/>
+    <line x1="390" y1="540" x2="640" y2="600"/>
+    <line x1="390" y1="540" x2="640" y2="750"/>
+    <line x1="390" y1="540" x2="640" y2="900"/>
+  </g>
+  <g font-family="DejaVu Sans, sans-serif">
+    <rect x="640" y="92" width="1140" height="116" rx="22" fill="#fff" stroke="#2A6B6B" stroke-width="3"/>
+    <rect x="660" y="112" width="200" height="76" rx="14" fill="#E8D5B0"/>
+    <text x="760" y="160" text-anchor="middle" font-size="22" font-weight="700" fill="#2A6B6B">UK</text>
+    <text x="900" y="148" font-size="16" fill="#2A2A2A">No titer (listed). Tapeworm rule for dogs.</text>
+    <rect x="640" y="242" width="1140" height="116" rx="22" fill="#fff" stroke="#2A6B6B" stroke-width="3"/>
+    <rect x="660" y="262" width="200" height="76" rx="14" fill="#E8D5B0"/>
+    <text x="760" y="310" text-anchor="middle" font-size="22" font-weight="700" fill="#2A6B6B">EU</text>
+    <text x="900" y="298" font-size="16" fill="#2A2A2A">Confirm listing. Often no titer if listed.</text>
+    <rect x="640" y="392" width="1140" height="116" rx="22" fill="#fff" stroke="#2A6B6B" stroke-width="3"/>
+    <rect x="660" y="412" width="200" height="76" rx="14" fill="#E8D5B0"/>
+    <text x="760" y="460" text-anchor="middle" font-size="22" font-weight="700" fill="#2A6B6B">USA</text>
+    <text x="900" y="448" font-size="16" fill="#2A2A2A">CDC high-risk rules for dogs.</text>
+    <rect x="640" y="542" width="1140" height="116" rx="22" fill="#fff" stroke="#2A6B6B" stroke-width="3"/>
+    <rect x="660" y="562" width="200" height="76" rx="14" fill="#E8D5B0"/>
+    <text x="760" y="610" text-anchor="middle" font-size="22" font-weight="700" fill="#2A6B6B">Canada</text>
+    <text x="900" y="598" font-size="16" fill="#2A2A2A">CFIA personal-pet rules — verify.</text>
+    <rect x="640" y="692" width="1140" height="116" rx="22" fill="#fff" stroke="#2A6B6B" stroke-width="3"/>
+    <rect x="660" y="712" width="200" height="76" rx="14" fill="#E8D5B0"/>
+    <text x="760" y="760" text-anchor="middle" font-size="22" font-weight="700" fill="#2A6B6B">Australia</text>
+    <text x="900" y="748" font-size="16" fill="#2A2A2A">Group 3. Long RNATT timeline.</text>
+    <rect x="640" y="842" width="1140" height="116" rx="22" fill="#fff" stroke="#2A6B6B" stroke-width="3"/>
+    <rect x="660" y="862" width="200" height="76" rx="14" fill="#E8D5B0"/>
+    <text x="760" y="910" text-anchor="middle" font-size="22" font-weight="700" fill="#2A6B6B">India</text>
+    <text x="900" y="898" font-size="16" fill="#2A2A2A">AQCS NOC. ToR / pathway check.</text>
+  </g>
+</svg>

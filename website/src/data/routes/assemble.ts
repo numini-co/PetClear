@@ -158,6 +158,7 @@ function relatedLinks(copy: RouteUniqueCopy, direction: 'inbound' | 'outbound'):
     links.push({ label: 'Rabies titer sample window', href: '/guides/rabies-titer-test-dubai/' })
   } else {
     links.push({ label: 'Pet relocation from Dubai', href: '/service/pet-relocation-from-dubai/' })
+    links.push({ label: 'How to export your pet from Dubai', href: '/guides/pet-export-from-dubai/' })
     links.push({ label: 'What drives pet relocation cost', href: '/guides/pet-relocation-cost-dubai/' })
     links.push({ label: 'Pet flight options from Dubai', href: '/guides/pet-flight-options-dubai/' })
   }

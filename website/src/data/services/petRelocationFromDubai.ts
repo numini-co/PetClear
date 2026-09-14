@@ -32,7 +32,7 @@ const petRelocationFromDubai: ServicePageData = {
       body: [
         {
           type: 'p',
-          text: 'Leaving the UAE is destination-first. The United Kingdom, the United States, Australia and a GCC hop do not share an entry file. Dubai’s export certificate is comparatively quick — and useless if it is issued before the destination’s waiting periods, treatments or endorsements are ready.',
+          text: 'Leaving the UAE is destination-first. The United Kingdom, the United States, Australia and a GCC hop do not share an entry file. Dubai’s export certificate is comparatively quick — and useless if it is issued before the destination’s waiting periods, treatments or endorsements are ready. For the document-by-document how-to, read [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
         },
         {
           type: 'p',
@@ -68,7 +68,7 @@ const petRelocationFromDubai: ServicePageData = {
             },
             {
               title: 'MOCCAE export health certificate',
-              text: 'The UAE export health certificate is issued after a pre-export veterinary inspection and is valid 30 days from issuance. Schedule it close to departure so the window still covers travel day — not months ahead. Confirm current certificate fees on the official channel — contested ranges are not published here.',
+              text: 'The UAE export health certificate is issued after a pre-export veterinary inspection. Schedule it close to departure so the window still covers travel day — not months ahead. A government fee applies; confirm current fees and validity on the official portal — contested ranges are not published here. Process guide: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
             },
             {
               title: 'Crate and cargo booking',
@@ -103,7 +103,7 @@ const petRelocationFromDubai: ServicePageData = {
             'ISO 15-digit microchip, consistent on every certificate',
             'Rabies and any destination-required vaccinations still valid on travel day',
             'Destination titer or lab reports where that country asks for them',
-            'MOCCAE export health certificate issued after the pre-export inspection, still inside its 30-day validity from issuance',
+            'MOCCAE export health certificate issued after the pre-export inspection, still inside the validity window shown on the official portal',
             'Destination import permit or advance notice where that country requires one',
             'Parasite or tapeworm treatments timed to the destination (for example UK dog tapeworm rules)',
             'Cargo booking confirmation and IATA crate labels',
@@ -161,7 +161,7 @@ const petRelocationFromDubai: ServicePageData = {
     },
     {
       q: 'What is the MOCCAE export health certificate path?',
-      a: 'A pre-export veterinary inspection, then a UAE export health certificate valid 30 days from issuance, scheduled close to departure so the window still covers travel day. Confirm current fees on the official channel. We do not publish contested certificate ranges.',
+      a: 'A pre-export veterinary inspection, then a UAE export health certificate scheduled close to departure so the window still covers travel day. Confirm current fees and validity on the official portal. We do not publish contested certificate ranges. How-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
     },
     {
       q: 'When should I start planning a move out of Dubai?',
@@ -189,6 +189,7 @@ const petRelocationFromDubai: ServicePageData = {
     },
   ],
   relatedLinks: [
+    { label: 'How to export your pet from Dubai', to: '/guides/pet-export-from-dubai/' },
     { label: 'Exporting your pet from the UAE', to: '/service/pet-export-dubai/' },
     { label: 'Pet relocation services in Dubai', to: '/service/pet-relocation-dubai/' },
     { label: 'Leaving Dubai with your pet — UK', to: '/routes/dubai-to-uk/' },
