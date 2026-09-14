@@ -51,6 +51,7 @@ const DubaiPetArrivalGuide = lazy(() => import('./pages/DubaiPetArrivalGuide.tsx
 
 // City pages (V2 - Month 1)
 const AbuDhabiCity = lazy(() => import('./pages/AbuDhabiCity.tsx'))
+const SharjahCity = lazy(() => import('./pages/SharjahCity.tsx'))
 const DubaiCity = lazy(() => import('./pages/DubaiCity.tsx'))
 const RoutesHub = lazy(() => import('./pages/RoutesHub.tsx'))
 const RoutePageLoader = lazy(() => import('./pages/RoutePageLoader.tsx'))
@@ -134,6 +135,7 @@ export default function App() {
 
           {/* City pages */}
           <Route path="/cities/abu-dhabi/" element={<AbuDhabiCity />} />
+          <Route path="/cities/sharjah/" element={<SharjahCity />} />
           <Route path="/cities/dubai/" element={<DubaiCity />} />
           <Route path="/cities/dubai" element={<DubaiCity />} />
 

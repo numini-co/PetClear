@@ -562,6 +562,8 @@ export default function AbuDhabiCity() {
             <span>Related:</span>
             <Link to="/cities/dubai/" className="text-[#4F5BD5] hover:underline">Dubai Guide</Link>
             <span className="text-[#EBEBEB]">|</span>
+            <Link to="/cities/sharjah/" className="text-[#4F5BD5] hover:underline">Sharjah Guide</Link>
+            <span className="text-[#EBEBEB]">|</span>
             <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#4F5BD5] hover:underline">Cost Guide</Link>
             <span className="text-[#EBEBEB]">|</span>
             <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] hover:underline">Import Requirements</Link>

@@ -121,7 +121,7 @@ const petTransportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Dubai–Abu Dhabi is typically a one-and-a-half to two-hour road job before traffic, plus building access at both ends. We do not sell a “90-minute guarantee”. We sell a planned window, air-conditioning and a handler who will stop in shade. Sharjah, Ajman and the northern emirates are booked the same way — start at [pet relocation across the UAE](/cities/) for emirate context, then message the two addresses.',
+          text: 'Dubai–Abu Dhabi is typically a one-and-a-half to two-hour road job before traffic, plus building access at both ends. We do not sell a “90-minute guarantee”. We sell a planned window, air-conditioning and a handler who will stop in shade. Sharjah↔Dubai and SHJ/DXB crate runs are booked the same way — start at [pet relocation in Sharjah](/cities/sharjah/) for emirate context, then [pet relocation across the UAE](/cities/) for other emirates, then message the two addresses.',
         },
         {
           type: 'p',
@@ -192,7 +192,7 @@ const petTransportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Last verified: 4 September 2026. Confirm on quote. We do not publish contested MOCCAE or government fee numerals on this page. International cargo is a different product — see [pet relocation services in Dubai](/service/pet-relocation-dubai/) and [what pet relocation costs in 2026](/guides/pet-relocation-cost-dubai/). Abu Dhabi ground context: [Abu Dhabi city guide](/cities/abu-dhabi/).',
+          text: 'Last verified: 4 September 2026. Confirm on quote. We do not publish contested MOCCAE or government fee numerals on this page. International cargo is a different product — see [pet relocation services in Dubai](/service/pet-relocation-dubai/) and [what pet relocation costs in 2026](/guides/pet-relocation-cost-dubai/). Abu Dhabi ground context: [Abu Dhabi city guide](/cities/abu-dhabi/). Sharjah homes and SHJ vs DXB habits: [pet relocation in Sharjah](/cities/sharjah/).',
         },
       ],
     },
@@ -263,6 +263,7 @@ const petTransportDubai: ServicePageData = {
     { label: 'Dubai communities we cover', to: '/dubai/' },
     { label: 'Pet relocation across the UAE', to: '/cities/' },
     { label: 'Abu Dhabi city guide', to: '/cities/abu-dhabi/' },
+    { label: 'Sharjah city guide', to: '/cities/sharjah/' },
     { label: 'Talk to our relocation team', to: '/contact/' },
     { label: 'Pet flight options hub', to: '/guides/pet-flight-options-dubai/' },
     { label: 'Pet relocation services in Dubai', to: '/service/pet-relocation-dubai/' },

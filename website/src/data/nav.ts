@@ -25,6 +25,7 @@ export const TOP_AREA_LINKS: NavLink[] = [
   { label: 'All Emirates', to: '/cities/' },
   { label: 'Dubai Communities', to: '/dubai/' },
   { label: 'Abu Dhabi City Guide', to: '/cities/abu-dhabi/' },
+  { label: 'Sharjah City Guide', to: '/cities/sharjah/' },
   { label: 'Dubai Marina', to: '/dubai/dubai-marina/' },
   { label: 'Jumeirah', to: '/dubai/jumeirah/' },
   { label: 'Downtown Dubai', to: '/dubai/downtown-dubai/' },

@@ -23,9 +23,16 @@ const CITIES = [
     desc: 'Capital-emirate overview: AUH arrival, ADCM registration, Etihad in-cabin options and MICCO clearance.',
     badge: 'Emirate guide',
   },
+  {
+    title: 'Sharjah',
+    to: '/cities/sharjah/',
+    image: '/assets/w-sharjah/pet-relocation-sharjah-dog-lagoon-promenade-dusk.jpg',
+    desc: 'Sharjah homes, municipality registration, and SHJ vs DXB cargo habits — coordinated with Dubai when the flight lands there.',
+    badge: 'Emirate guide',
+  },
 ]
 
-const OTHER_EMIRATES = ['Sharjah', 'Ajman', 'Ras Al Khaimah', 'Fujairah', 'Umm Al Quwain']
+const OTHER_EMIRATES = ['Ajman', 'Ras Al Khaimah', 'Fujairah', 'Umm Al Quwain']
 
 export default function CitiesHub() {
   const itemListSchema = {
@@ -59,7 +66,7 @@ export default function CitiesHub() {
         imageAlt="Dubai skyline — pet relocation across UAE cities and emirates"
         eyebrow="UAE Cities & Emirates"
         title="Pet Relocation Across UAE Cities"
-        subtitle="Federal import rules are the same nationwide. Arrival airport, municipality registration and ground delivery change by emirate — start with Dubai communities or Abu Dhabi."
+        subtitle="Federal import rules are the same nationwide. Arrival airport, municipality registration and ground delivery change by emirate — start with Dubai communities, Abu Dhabi or Sharjah."
         updated="Last verified 4 September 2026"
         secondary={{ label: 'Dubai communities', to: '/dubai/' }}
       />
@@ -71,7 +78,7 @@ export default function CitiesHub() {
             A MOCCAE import permit is valid for 90 days from issuance, wherever you land. Confirm the current portal fee when you apply.
           </p>
           <LastVerified className="mb-8 text-xs text-[#8A8A8A]" />
-          <div className="grid gap-6 sm:grid-cols-2">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {CITIES.map((c) => (
               <Link
                 key={c.to}
@@ -99,7 +106,7 @@ export default function CitiesHub() {
         <div className="mx-auto max-w-[1200px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Other emirates</h2>
           <p className="mb-6 max-w-2xl text-[#5A5A5A]">
-            We coordinate moves in every emirate. Dedicated pages for Sharjah and the northern emirates are not live yet — WhatsApp us with your community and we will map pickup, airport and municipality steps.
+            We coordinate moves in every emirate. Dedicated pages for the northern emirates are not live yet — WhatsApp us with your community and we will map pickup, airport and municipality steps.
           </p>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
             {OTHER_EMIRATES.map((name) => (
