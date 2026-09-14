@@ -146,7 +146,11 @@ export default function EtihadPetPolicyGuide() {
           <UaeCargoRuleCallout extra="This page is the exception path: Etihad in-cabin into Abu Dhabi. It is not a cabin product into DXB." />
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Who can fly in the cabin</h2>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            Etihad is the only UAE airline that accepts small dogs and cats in the cabin (source: Etihad). Pets must be at least 16 weeks old and weigh up to 8 kg including the carrier. The accompanying passenger must be 18 or older. Emirates does not carry dogs or cats in the cabin except falcons and guide dogs (source: Emirates). flydubai does not allow cabin animals except falcons (source: flydubai). Air Arabia likewise does not carry cats or dogs — falcons only.
+            Etihad is the only UAE airline that accepts small dogs and cats in the cabin (source: Etihad). Pets must be at least 16 weeks old and weigh up to 8 kg including the carrier. The accompanying passenger must be 18 or older. Emirates does not carry dogs or cats in the cabin except falcons and guide dogs (source: Emirates). flydubai does not allow cabin animals except falcons (source: flydubai). Air Arabia likewise does not carry cats or dogs — falcons only. Size fit is not a breed waiver — confirm snub-nosed / brachycephalic notes on the live Etihad page; physiology depth is on{' '}
+            <Link to="/guides/snub-nosed-dogs-flying-uae/" className="font-semibold text-[#4F5BD5] hover:underline">
+              snub-nosed dogs flying to the UAE
+            </Link>
+            .
           </p>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             Cabin is not a shortcut around UAE import paperwork. A MOCCAE import permit is still required and is valid for 90 days from issuance. Pair this guide with{' '}
