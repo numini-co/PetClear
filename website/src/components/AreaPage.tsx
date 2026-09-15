@@ -11,6 +11,8 @@ import { dubaiAreas } from '../data/areas/dubai/index.ts'
 import OfficialSources from './OfficialSources.tsx'
 import Hero from './Hero.tsx'
 import ContentImage from './ContentImage.tsx'
+import LinkedText from './LinkedText.tsx'
+import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 
 function Faq({ q, a }: ServiceFAQ) {
   const [open, setOpen] = useState(false)
@@ -20,19 +22,31 @@ function Faq({ q, a }: ServiceFAQ) {
         <span className="pr-4">{q}</span>
         {open ? <ChevronUp className="w-5 h-5 text-[#4F5BD5] shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#8A8A8A] shrink-0" />}
       </button>
-      {open && <div className="faq-answer">{a}</div>}
+      {open && (
+        <div className="faq-answer">
+          <LinkedText text={a} />
+        </div>
+      )}
     </div>
   )
 }
 
 function Block({ block }: { block: ServiceBlock }) {
-  if (block.type === 'p') return <p className="text-[#5A5A5A] leading-relaxed mb-4">{block.text}</p>
+  if (block.type === 'p')
+    return (
+      <p className="text-[#5A5A5A] leading-relaxed mb-4">
+        <LinkedText text={block.text} />
+      </p>
+    )
   if (block.type === 'list')
     return (
       <ul className="space-y-2 mb-4">
         {block.items.map((it, i) => (
           <li key={i} className="flex items-start gap-2 text-[#5A5A5A]">
-            <CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" /><span>{it}</span>
+            <CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
+            <span>
+              <LinkedText text={it} />
+            </span>
           </li>
         ))}
       </ul>
@@ -43,7 +57,12 @@ function Block({ block }: { block: ServiceBlock }) {
         {block.steps.map((s, i) => (
           <div key={i} className="flex gap-4">
             <div className="w-9 h-9 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center font-bold text-sm shrink-0">{i + 1}</div>
-            <div><p className="font-bold text-[#2A2A2A] mb-1">{s.title}</p><p className="text-[#5A5A5A] leading-relaxed">{s.text}</p></div>
+            <div>
+              <p className="font-bold text-[#2A2A2A] mb-1">{s.title}</p>
+              <p className="text-[#5A5A5A] leading-relaxed">
+                <LinkedText text={s.text} />
+              </p>
+            </div>
           </div>
         ))}
       </div>
@@ -102,7 +121,11 @@ export default function AreaPage({ data }: { data: AreaPageData }) {
   if (data.geo) localBusiness.geo = { '@type': 'GeoCoordinates', latitude: data.geo.lat, longitude: data.geo.lng }
   const faqSchema = {
     '@context': 'https://schema.org', '@type': 'FAQPage',
-    mainEntity: data.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+    mainEntity: data.faq.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: stripInternalMarkdownLinks(f.a) },
+    })),
   }
 
   return (
@@ -126,7 +149,9 @@ export default function AreaPage({ data }: { data: AreaPageData }) {
       {/* INTRO */}
       <section className="bg-white pb-2">
         <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
-          <p className="text-[#5A5A5A] leading-relaxed text-lg">{data.intro}</p>
+          <p className="text-[#5A5A5A] leading-relaxed text-lg">
+            <LinkedText text={data.intro} />
+          </p>
         </div>
       </section>
 
@@ -150,7 +175,11 @@ export default function AreaPage({ data }: { data: AreaPageData }) {
         <section key={i} className={`section-padding ${i % 2 ? 'bg-[#F5F6FD]' : 'bg-white'}`}>
           <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[34px] font-bold text-[#2A2A2A] mb-4">{sec.h2}</h2>
-            {sec.intro && <p className="text-[#5A5A5A] leading-relaxed mb-4">{sec.intro}</p>}
+            {sec.intro && (
+              <p className="text-[#5A5A5A] leading-relaxed mb-4">
+                <LinkedText text={sec.intro} />
+              </p>
+            )}
             {sec.body.map((b, j) => <Block key={j} block={b} />)}
           </div>
         </section>
@@ -160,7 +189,9 @@ export default function AreaPage({ data }: { data: AreaPageData }) {
         <section className="bg-white section-padding">
           <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
             <h2 className="text-[22px] sm:text-[28px] font-bold text-[#2A2A2A] mb-3">Local Veterinary Support in {data.areaName}</h2>
-            <p className="text-[#5A5A5A] leading-relaxed">{data.vetsNote}</p>
+            <p className="text-[#5A5A5A] leading-relaxed">
+              <LinkedText text={data.vetsNote} />
+            </p>
           </div>
         </section>
       )}
