@@ -4,15 +4,15 @@ const jumeirah: AreaPageData = {
   slug: 'jumeirah',
   areaName: 'Jumeirah',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Jumeirah | Dog & Cat Transport',
+  seoTitle: 'Pet Relocation Jumeirah | Dog & Cat Relocation (2026)',
   metaDescription:
-    'Pet relocation in Jumeirah — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates for beachfront villa families. Free WhatsApp quote.',
+    'Pet relocation in Jumeirah: beachfront villas in Jumeirah 1–3, Port de La Mer–adjacent last mile and MOCCAE permit coordination. WhatsApp +971 50 478 2999.',
   keywords:
     'pet relocation jumeirah, pet transport jumeirah, dog relocation jumeirah, cat relocation jumeirah, pet movers jumeirah dubai',
   h1: 'Pet Relocation in Jumeirah',
   primaryKeyword: 'pet relocation jumeirah',
   heroValueProp:
-    'Relocating a dog or cat to or from Jumeirah? We coordinate the whole move for Jumeirah families — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your villa — with WhatsApp updates at every step.',
+    'Relocating a dog or cat to or from Jumeirah? We plan villa-compound access, crates and the DXB run — WhatsApp +971 50 478 2999 during business hours.',
   heroImage: '/images/area-jumeirah.jpg',
   heroImageAlt:
     'A happy dog on a Jumeirah beachfront with low-rise villas behind — pet relocation in Jumeirah',
@@ -29,138 +29,227 @@ const jumeirah: AreaPageData = {
     'Kite Beach',
   ],
   vetsNote:
-    'Jumeirah and the surrounding coastal neighbourhoods are well served by veterinary clinics for the microchip, vaccination and health-certificate steps your pet needs before travel. We coordinate timing with your vet so every document is valid on travel day — and if you prefer, we can recommend a vetted clinic nearby.',
+    'Jumeirah and the coastal strip toward Umm Suqeim have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not invent partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
   intro:
-    'Jumeirah is one of Dubai’s most established and most pet-friendly neighbourhoods — a low-rise stretch of beachfront villas, leafy streets and family compounds running along the coast from the Jumeirah Mosque down past Kite Beach. It is exactly the kind of community where dogs and cats are part of daily life, and that makes it one of the areas we relocate pets to and from most often. Whether you are arriving into a Jumeirah villa from overseas or leaving the UAE for a new posting, we handle the permits, paperwork and transport so you can keep your attention on your family and your move.',
+    'Jumeirah is a low-rise coastal villa corridor — Jumeirah 1, 2 and 3 — of garden compounds, quiet residential streets and beach access, not a JBR tower stack. Dogs here use private yards and early Kite Beach loops; cats live in villas and in the newer low-rise apartments toward La Mer. That is why [every Dubai neighbourhood we serve](/dubai/) keeps Jumeirah as its own spoke: pickup is a compound gate or a villa driveway, not a promenade pin. We coordinate international files into or out of these homes and the ground run to DXB or DWC. Neighbouring [relocating pets in Umm Suqeim](/dubai/umm-suqeim/) continues the same coast; [Downtown Dubai pet relocation services](/dubai/downtown-dubai/) is boulevard towers. WhatsApp +971504782999 with your Jumeirah 1–3 street and route.',
   sections: [
     {
-      h2: 'Pet Relocation Services for Jumeirah Residents',
+      h2: 'Beachfront villas in Jumeirah 1, 2 and 3',
       intro:
-        'We act as your relocation coordinator — not a carrier. That means we plan every step, line up the right people, and keep you updated, while specialist vets, airlines and customs handle their parts of the move.',
+        'A Jumeirah move fails at the compound gate more often than it fails at cargo. J1, J2 and J3 look like one neighbourhood on a map. Driveways, inner gates and beach-access lanes are not the same job.',
       body: [
         {
-          type: 'list',
-          items: [
-            'Door-to-door pickup from your Jumeirah villa or compound',
-            'MOCCAE import or export permit guidance (or handled for you)',
-            'Microchip, vaccination and health-certificate coordination with your vet',
-            'IATA-compliant crate sizing and sourcing for dogs and cats',
-            'Flight booking, cargo and customs clearance at DXB or DWC',
-            'Breed and route checks before you commit to a date',
-            'WhatsApp updates at every checkpoint, right through to delivery',
-          ],
+          type: 'p',
+          text: 'Most Jumeirah homes are villas or townhouses inside compounds or on named streets. Give us the sub-area (Jumeirah 1, 2 or 3) and the compound or street, not only “Jumeirah.” Some inner gates want a resident at the boom; some allow a driveway stop if the plate is listed. A large IATA crate still has to turn in a hallway or a garden side door. We plan around the rule you actually have. We do not claim staff inside your compound.',
         },
         {
           type: 'p',
-          text: 'Because Jumeirah is a villa neighbourhood, most of our clients here are moving multiple pets, larger dogs, or a mix of cats and dogs — and often coordinating the relocation alongside furniture shippers and school moves. We slot the pet timeline into the rest of your relocation so nothing clashes on the day.',
+          text: 'Burj Al Arab, Madinat Jumeirah, Mercato and Jumeirah Mosque are landmarks for orientation, not holding kennels. Do not ask us to stage a crate at a hotel rank or a mosque drop-off. If your villa uses a rear service lane rather than the ceremonial gate, say so — beach-road GPS pins waste the first attempt.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Name Jumeirah 1, 2 or 3 plus the compound or street',
+            'Pre-clear the visitor list if the compound uses a boom gate',
+            'Flag a second inner gate or a garden-side door for the crate',
+            'Measure hallway turns before you source a crate for a large dog',
+            'Keep the pet inside until the van is on the driveway — beach lanes are not a waiting room',
+          ],
         },
       ],
     },
     {
-      h2: 'Moving To or From Jumeirah With a Pet',
+      h2: 'Villa and compound pickup logistics',
       intro:
-        'Almost every Jumeirah relocation is international, so the exact requirements depend on your origin or destination country — but the core sequence rarely changes.',
+        'The ten minutes between the front door and the van are usually a driveway, not a lift. Furniture shippers and school runs still clash with a crate if nobody booked the gate.',
       body: [
         {
           type: 'p',
-          text: 'Whether you are arriving from the UK, Europe, the USA, Australia, South Africa or India, or heading back the other way, the building blocks are the same: a valid microchip, current vaccinations, a government health certificate, and a MOCCAE permit valid for 90 days. For a small number of high-risk rabies countries a rabies titer (antibody) test is also required, which requires a blood sample taken within 90 days before travel (result ≥0.5 IU/ml).',
+          text: 'Tell us whether the van can sit on the driveway or must wait on the street. Multi-pet villa households are common here — we map each animal’s crate path so two dogs are not walked loose past a gate at once. Cats stay in a carrier until the IATA crate is at the door. For local-only clinic or airport crate transfers that are not the international file, use [climate-controlled pet transport in Dubai](/service/pet-transport-dubai/).',
+        },
+        {
+          type: 'p',
+          text: '[Pet transport in Al Satwa](/dubai/al-satwa/) is the denser inland grid if that is the real address — different street widths, not a Jumeirah compound. We will not invent a Satwa meetup because a J1 gate is closed.',
         },
         {
           type: 'steps',
           steps: [
             {
-              title: 'Plan and pre-check (Weeks 1–2)',
-              text: 'We confirm your route, check your pet’s microchip and vaccination history, flag any breed restrictions, and map a timeline against your moving date.',
+              title: 'Share compound rules',
+              text: 'Sub-area, gate type, visitor list and whether a resident must meet the van.',
             },
             {
-              title: 'Vet work and permits (Weeks 2–4)',
-              text: 'Your vet completes any outstanding vaccinations and the health certificate while we prepare the MOCCAE import or export permit, valid for 90 days from issuance.',
+              title: 'Agree a driveway window',
+              text: 'We message on WhatsApp when we are at the gate. No branded garden staging.',
             },
             {
-              title: 'Crate and booking (Weeks 3–5)',
-              text: 'We size and source an IATA-compliant crate, acclimate timing with you, and book the right flight and cargo route for your pet.',
+              title: 'Crate, then van',
+              text: 'Secure each pet inside, then move to the vehicle — not a last off-leash in the compound.',
             },
             {
-              title: 'Travel and delivery (Travel week)',
-              text: 'We coordinate pickup from your Jumeirah villa, airport handling, customs clearance and door-to-door delivery — keeping you updated on WhatsApp throughout.',
+              title: 'Airport or home',
+              text: 'Inbound deliveries reverse the same gate script. Outbound files continue to DXB or DWC cargo.',
             },
           ],
         },
+      ],
+    },
+    {
+      h2: 'Kite Beach walks and Port de La Mer–adjacent angles',
+      intro:
+        'Daily dog life in Jumeirah is a garden plus an early beach loop. Travel day is not a Kite Beach outing — and the marina apartments at La Mer are a different last mile if that is the real home.',
+      body: [
         {
           type: 'p',
-          text: 'From low-risk countries the whole process typically runs 2–6 weeks. From high-risk countries that require a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We map your exact timeline before you commit so there are no surprises.',
+          text: 'Kite Beach and the open stretches along the Jumeirah strip are popular cooler-hour walks. Building and public-space rules still expect dogs under control. Confirm Dubai Municipality / Aleef leash and licensing after an inbound arrival; we do not print a fine table. On collection day, keep the walk short and close to the villa. Midday sand is a poor crate-acclimation plan.',
+        },
+        {
+          type: 'p',
+          text: 'Port de La Mer and the La Mer boardwalk sit on the Jumeirah 1 beach edge — low-rise marina apartments, a Mediterranean-style harbour and pedestrian promenades rather than a villa driveway. If the pet lives in that beach-apartment fabric, the last mile is a building podium or a harbour drop-off, not a compound boom. We absorb those access angles here so the file is planned correctly; the Port de La Mer URL stays live and we are not firing a merge redirect. From May through early autumn, acclimate the crate indoors. On inbound delivery, the first hour is shade and water, not a victory lap to the boardwalk.',
         },
       ],
     },
     {
-      h2: 'Pet-Friendly Living in Jumeirah',
+      h2: 'DXB and DWC routing from Jumeirah',
+      intro:
+        'Jumeirah sits on the coastal road between Downtown and the marina corridor. DXB is often a mid-length run — shorter than the Palm, longer than a Deira hop — if Al Wasl and Jumeirah Beach Road are moving.',
       body: [
         {
           type: 'p',
-          text: 'Jumeirah is one of the easiest parts of Dubai to own a pet. The low-rise villa layout means most homes have a private garden or yard, which suits larger dogs and multi-pet households far better than high-rise apartment living. Garden walls, gated compounds and quiet residential streets make day-to-day life with a dog straightforward.',
+          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a Jumeirah villa the usual outbound run is inland toward the airport corridors. Beach-road school peaks and Friday congestion are real. We do not invent minute-by-minute ETAs or airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the gate. Al Maktoum / DWC is a longer southbound option when the booked product requires it.',
         },
         {
           type: 'p',
-          text: 'The coast is the real draw for dog owners here. The beachfront and open promenades along the Jumeirah strip — including the stretches near Kite Beach and La Mer — are popular early-morning and evening walking spots, and the area has a long-standing, dog-friendly culture compared with denser parts of the city. Cooler months are ideal for outdoor time; in peak summer we always advise early-morning or late-evening walks and plenty of shade and water.',
-        },
-        {
-          type: 'p',
-          text: 'For pets arriving from abroad, the transition into a Jumeirah villa is usually gentle — space, a garden and a settled routine help an anxious traveller decompress quickly. We can advise on crate acclimation ahead of travel day so the journey itself is as calm as possible.',
-        },
-      ],
-    },
-    {
-      h2: 'Cost of Pet Relocation in Jumeirah',
-      body: [
-        {
-          type: 'p',
-          text: 'Total cost depends on your route, the number and size of your pets, and your service level — typically AED 2,000 to AED 25,000 for a full international relocation. Villa households in Jumeirah often move more than one pet, so we always quote per the specific mix rather than a flat figure.',
+          text: 'Inbound is cargo release, then a climate-controlled run that still has to clear the compound. Read the [Dubai pet arrival guide](/guides/dubai-pet-arrival-guide/) for the airport walkthrough. [Moving pets to or from Palm Jumeirah](/dubai/palm-jumeirah/) adds island gates if that is the real home.',
         },
         {
           type: 'table',
-          headers: ['Cost component', 'Typical range'],
+          headers: ['Leg', 'What to plan', 'What we do not promise'],
           rows: [
-            ['MOCCAE import permit', 'Confirm on official MOCCAE portal'],
-            ['MOCCAE release fee', 'Confirm on official MOCCAE portal'],
-            ['Government total (guide)', 'Confirm on official MOCCAE portal'],
-            ['Vet work, crate, cargo & coordination', 'Balance of the AED 2,000–25,000 range'],
+            ['Jumeirah villa → DXB cargo', 'Inland from J1–J3; mid-length vs Palm or Deira', 'A locked minute count or a Kite Beach meetup'],
+            ['Jumeirah villa → DWC', 'Longer southbound cargo run when the booking requires it', 'A default “always DWC” Jumeirah product'],
+            ['Cargo release → villa or La Mer apartment', 'Same gate or podium script as outbound', 'An unescorted crate left at Mercato'],
           ],
+        },
+      ],
+    },
+    {
+      h2: 'Moving a pet into or out of Jumeirah',
+      intro:
+        'The federal file does not change because the villa has a garden. The last mile does. Keep the clocks straight and confirm government amounts on the portal.',
+      body: [
+        {
+          type: 'p',
+          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For the how-to spine see [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
         },
         {
           type: 'p',
-          text: 'The government fees above are the fixed, official portion. The rest of your quote covers veterinary work, the IATA crate, flight and cargo, customs clearance and our coordination. We give you a clear, itemised range on WhatsApp before you commit to anything.',
+          text: 'Outbound from a Jumeirah villa is planned destination-backwards: destination entry rules first, then the UAE export health certificate and airline acceptance. Do not paste inbound permit language onto an export. Confirm export-certificate fees and validity on the official MOCCAE portal — secondary blog numerals are not first-party official fees.',
+        },
+        {
+          type: 'p',
+          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the sample date has to remain inside the 90-day-before-travel window on the day you actually fly. Villa households moving more than one pet need parallel paperwork so the family is not split by one expired sample.',
+        },
+      ],
+    },
+    {
+      h2: 'What we coordinate for Jumeirah residents',
+      body: [
+        {
+          type: 'list',
+          items: [
+            'Door-to-door pickup or delivery at your Jumeirah villa or compound, including gate planning',
+            'MOCCAE import or export permit guidance — or application handling on a service tier that includes it',
+            'Microchip, vaccination and health-certificate timing with your vet',
+            'IATA-compliant crate sizing for garden dogs and multi-pet households',
+            'Cargo acceptance and customs coordination at DXB or DWC',
+            'WhatsApp updates during business hours — not a claimed 15-minute SLA',
+          ],
+        },
+        {
+          type: 'cards',
+          cards: [
+            {
+              kind: 'Dubai hub',
+              title: 'All Dubai communities',
+              text: 'Jumeirah is one coastal villa spoke. Compare towers and inland suburbs on the hub.',
+              to: '/dubai/',
+            },
+            {
+              kind: 'Local ground',
+              title: 'Pet taxi and local transport',
+              text: 'Clinic runs and airport crate transfers that are not the international file.',
+              to: '/service/pet-transport-dubai/',
+            },
+            {
+              kind: 'Inbound file',
+              title: 'Import requirements',
+              text: 'Permit clocks, vaccines and the inbound document spine.',
+              to: '/guides/uae-pet-import-requirements/',
+            },
+            {
+              kind: 'Sibling last mile',
+              title: 'Umm Suqeim',
+              text: 'The next coastal villa stretch — different streets, same coast.',
+              to: '/dubai/umm-suqeim/',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      h2: 'Quotes for Jumeirah relocations',
+      body: [
+        {
+          type: 'p',
+          text: 'A Jumeirah quote stacks veterinary work, documents, air freight, cargo release, the IATA crate, and a gated villa last mile. Quoted international files we discuss often fall in a broad AED 2,000 to AED 25,000 conversation range by route, size, number of pets and tier — orientation for WhatsApp, not a published package and not a government tariff. Confirm official permit and release amounts on the MOCCAE portal; fees may change. No search-volume claims on this page. WhatsApp +971504782999 with Jumeirah 1–3, species and route.',
         },
       ],
     },
   ],
   faq: [
     {
-      q: 'Do you pick up from my villa in Jumeirah?',
-      a: 'Yes — we arrange door-to-door pickup from your Jumeirah villa or compound and coordinate the entire move from there, including any other pets travelling at the same time.',
+      q: 'Do you pick up from villas in Jumeirah 1, 2 and 3?',
+      a: 'Yes, when the compound allows the visit. Share the sub-area, gate rules and visitor list first. We do not collect from Kite Beach or a hotel rank. [Relocating pets in Umm Suqeim](/dubai/umm-suqeim/) is a separate last mile if that is the real home.',
     },
     {
-      q: 'How long does pet relocation from Jumeirah take?',
-      a: 'From low-risk countries, usually 2–6 weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We confirm your exact timeline before you commit.',
+      q: 'We are moving two dogs and a cat from a Jumeirah villa. Can they travel together?',
+      a: 'Often, if each animal’s papers and crate fit the same flight product. We map the files in parallel. Airline and destination rules still decide the hold — we do not invent a multi-pet AED.',
     },
     {
-      q: 'How much does it cost?',
-      a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size, the number of pets and service level. Government permit and arrival-release fees must be confirmed on the official MOCCAE portal; fees may change. We give you a clear range on WhatsApp first.',
+      q: 'If I live in Port de La Mer, is the villa pickup the same?',
+      a: 'No. Port de La Mer is low-rise marina apartments and a harbour drop-off, not a J1 compound driveway. We plan those angles here so the file is honest; we are not merging or redirecting that page.',
     },
     {
-      q: 'Can you handle the MOCCAE permit for me?',
-      a: 'Yes. We guide you through the MOCCAE import or export permit — valid for 90 days from issuance (confirm the current portal fee) — or handle the application on your behalf, depending on your service tier.',
+      q: 'Can you meet me at La Mer or Mercato if my gate is closed?',
+      a: 'Only if that is the real residence and the property allows vehicle access. Those sites are landmarks, not substitute kennels. We will book a later gate window rather than invent a mall meetup.',
     },
     {
-      q: 'Is Jumeirah a good area for dogs?',
-      a: 'Very much so. The low-rise villas usually come with private gardens, the beachfront promenades are popular dog-walking spots, and the neighbourhood has a long, pet-friendly culture — which is why so many dog-owning families choose it.',
+      q: 'How long from Jumeirah to DXB with a crated pet?',
+      a: 'Treat it as a mid-length coastal-to-airport run — usually shorter than the Palm, longer than Deira — if Beach Road and Al Wasl are moving. We back-plan from the cargo desk. DWC is used when the booking requires it.',
+    },
+    {
+      q: 'How long is the MOCCAE import permit valid if I am moving into a Jumeirah villa?',
+      a: '90 days from issuance. Confirm the current portal fee; we do not publish contested permit AED as official. [MOCCAE import permit](/guides/moccae-import-permit/) walks the application.',
+    },
+    {
+      q: 'If my origin needs a rabies titer, do I wait 90 days after the blood draw?',
+      a: 'No. When RNATT is required, take the blood sample within 90 days before travel and keep a result of at least 0.5 IU/ml. Waiting after the draw can push the sample outside the window. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
+    },
+    {
+      q: 'How much does pet relocation from Jumeirah cost?',
+      a: 'International quotes we discuss often sit in a broad AED 2,000–25,000 conversation range. Government fees are confirm-on-portal. WhatsApp +971504782999 for a scoped range — no website tariff.',
+    },
+    {
+      q: 'Is Jumeirah the same last mile as JBR?',
+      a: 'No. JBR is beachfront towers and The Walk. Jumeirah is villa compounds and J1–J3 streets. See [moving pets to or from JBR](/dubai/jbr/) if that is the real address.',
     },
   ],
   relatedAreas: [
-    { label: 'Dubai Marina', to: '/dubai/dubai-marina/' },
-    { label: 'JBR', to: '/dubai/jbr/' },
-    { label: 'Palm Jumeirah', to: '/dubai/palm-jumeirah/' },
+    { label: 'Umm Suqeim', to: '/dubai/umm-suqeim/' },
     { label: 'Downtown Dubai', to: '/dubai/downtown-dubai/' },
-    { label: 'Al Barsha', to: '/dubai/al-barsha/' },
+    { label: 'Palm Jumeirah', to: '/dubai/palm-jumeirah/' },
+    { label: 'JBR', to: '/dubai/jbr/' },
   ],
 }
 

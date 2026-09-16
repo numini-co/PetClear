@@ -4,93 +4,243 @@ const downtownDubai: AreaPageData = {
   slug: 'downtown-dubai',
   areaName: 'Downtown Dubai',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Downtown Dubai | Dog & Cat Transport',
+  seoTitle: 'Pet Relocation Downtown Dubai | Dog & Cat Relocation (2026)',
   metaDescription:
-    'Pet relocation in Downtown Dubai — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
+    'Pet relocation in Downtown Dubai: boulevard towers, Burj-area building access, City Walk–adjacent last mile and MOCCAE permits. WhatsApp +971 50 478 2999.',
   keywords:
     'pet relocation downtown dubai, pet transport downtown dubai, dog relocation downtown dubai, cat relocation downtown dubai, pet movers burj khalifa',
   h1: 'Pet Relocation in Downtown Dubai',
   primaryKeyword: 'pet relocation downtown dubai',
   heroValueProp:
-    'Relocating a dog or cat to or from Downtown Dubai? We coordinate the whole move for residents around the Burj Khalifa — MOCCAE permits, breed checks, IATA crates, customs and door-to-door delivery from your tower — with WhatsApp updates at every step.',
+    'Relocating a dog or cat to or from Downtown Dubai? We plan boulevard-tower docks, crates and the DXB run — WhatsApp +971 50 478 2999 during business hours.',
   heroImage: '/images/area-downtown-dubai.jpg',
   heroImageAlt: 'Happy dog with the Burj Khalifa and Downtown Dubai skyline behind',
-  whatsappMessage: 'Hi Dubai Pet Relocation! I live in Downtown Dubai and need help relocating my pet. Can you guide me on the process and cost?',
+  whatsappMessage:
+    'Hi Dubai Pet Relocation! I live in Downtown Dubai and need help relocating my pet. Can you guide me on the process and cost?',
   geo: { lat: '25.1972', lng: '55.2744' },
-  landmarks: ['Burj Khalifa', 'The Dubai Mall', 'Dubai Fountain', 'Souk Al Bahar', 'Burj Park', 'DIFC nearby'],
+  landmarks: ['Burj Khalifa', 'The Dubai Mall', 'Dubai Fountain', 'Souk Al Bahar', 'Burj Park', 'City Walk', 'DIFC nearby'],
   vetsNote:
-    'Downtown Dubai and the neighbouring Business Bay and DIFC areas are well served by veterinary clinics for the microchip, vaccination and health-certificate steps your pet needs before travel. We coordinate timing with your vet so every document is valid on travel day — and if you prefer, we can recommend a vetted clinic nearby.',
+    'Downtown, Business Bay and the Al Wasl clinic corridor have plenty of practices for scans and certificates — we do not name them here and we do not invent partnerships. Keep your current vet if the file is already in order. Ask on WhatsApp for the document type (ISO scan, export certificate), not a sponsored clinic. We time appointments to travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
   intro:
-    'Downtown Dubai is the city in its most polished form — premium high-rise apartments and serviced residences clustered around the Burj Khalifa, The Dubai Mall and the Dubai Fountain. It draws professional expats, executives and families who want to live at the centre of everything, and many of them arrive or leave with a dog or cat in tow. That makes Downtown one of the communities we relocate pets to and from most often. Whether you are moving into a tower beside Burj Park from overseas or leaving the UAE for a new posting, we handle the permits, paperwork and transport from start to finish so you can focus on settling your family in.',
+    'Downtown Dubai is a boulevard of residential and serviced towers around the Burj Khalifa, The Dubai Mall and the Fountain — not a beach promenade and not a villa compound. Dogs take short, curated loops through Burj Park; cats live in high apartments that still have to clear a crate past valet and a loading dock. That is why [pet relocation across Dubai communities](/dubai/) keeps Downtown as its own spoke. We coordinate international files into or out of these towers and the ground run to DXB or DWC. Neighbouring [pet transport in Business Bay](/dubai/business-bay/) uses canal docks; [pet transport in Jumeirah](/dubai/jumeirah/) is villa gates. WhatsApp +971504782999 with your tower, dock rule and route.',
   sections: [
     {
-      h2: 'Pet Relocation Services for Downtown Dubai Residents',
+      h2: 'Boulevard towers and Burj-area building pet rules',
       intro:
-        'We act as your relocation coordinator — managing every moving part of the journey so a busy professional schedule is never derailed by paperwork. We plan the move around your building access and your calendar, not the other way round.',
+        'A Downtown move fails at the dock more often than it fails at cargo. Valet bays, resident-only podiums and mall-overflow traffic all sit between the apartment and Sheikh Mohammed bin Rashid Boulevard.',
       body: [
-        { type: 'list', items: [
-          'Door-to-door pickup from your Downtown tower, serviced residence or apartment',
-          'MOCCAE import or export permit guidance, or handled on your behalf',
-          'Microchip, vaccination and health-certificate coordination with a clinic near you',
-          'IATA-compliant crate sizing and sourcing for the cabin or cargo hold',
-          'Flight booking, cargo handling and customs clearance at DXB or DWC',
-          'WhatsApp updates at every checkpoint, from collection to delivery',
-        ] },
-        { type: 'p', text: 'Downtown towers route deliveries through valet bays, loading docks and reception desks, and the streets around The Dubai Mall and the Dubai Fountain can be congested at peak times. We coordinate with building management and time collection so the experience stays calm and orderly for a crated pet.' },
+        {
+          type: 'p',
+          text: 'Most Downtown homes are high-rise apartments or serviced residences. Building pet policies vary by tower and landlord — some cap size or number, some want a deposit, some keep crates off resident lifts. Ask facilities whether an IATA crate must use a goods lift and which dock is legal after 18:00 when Fountain shows fill the boulevard. We plan around the rule you actually have. We do not claim staff inside your tower.',
+        },
+        {
+          type: 'p',
+          text: 'Concierge desks usually need a visitor name, plate and a window that matches a loading bay, not a pin on Burj Park. Share those constraints before travel week. If a resident must escort the crate through valet, say so. We do not photograph lobbies and we do not use The Dubai Mall or Souk Al Bahar as unofficial kennels — landmarks for orientation only.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Name the tower and the dock (valet, basement, or boulevard service road)',
+            'Confirm whether crates are banned from resident lifts at show times',
+            'Add the driver to the visitor list with a window that avoids Fountain-crowd peaks when you can',
+            'Measure the lift door and the corridor turn before you source a crate',
+            'Keep the pet upstairs until the van is on the dock — boulevard pavements are not a holding area',
+          ],
+        },
       ],
     },
     {
-      h2: 'Moving To or From Downtown Dubai With a Pet',
+      h2: 'Pickup logistics from a Downtown tower',
       intro:
-        'Almost every Downtown relocation is international. Residents arrive from the UK, USA, India, Australia and across Europe for senior roles, or leave Dubai for a posting elsewhere. The exact requirements depend on your origin or destination country, but the backbone of the process is consistent everywhere.',
+        'The awkward ten minutes in Downtown are usually underground or in a valet queue: height barriers, one-way decks and a goods lift already booked for a furniture move.',
       body: [
-        { type: 'p', text: 'Your pet needs a valid microchip, current vaccinations, a government health certificate and — for moves into the UAE — a MOCCAE import permit that stays valid for 90 days from issuance (confirm the current fee on the official portal). On arrival a veterinary release/inspection fee is also payable — confirm the current dog and cat amounts on the official MOCCAE portal; fees may change. A rabies titer test is only required for pets coming from countries the UAE classifies as high-risk; most low-risk origins skip it entirely.' },
-        { type: 'steps', steps: [
-          { title: 'Plan and quote', text: 'We confirm your route, pet details and any breed restrictions, then send a clear cost range and timeline on WhatsApp before you commit to anything.' },
-          { title: 'Vet and documents', text: 'We coordinate the microchip check, vaccinations and the government health certificate with a clinic near Downtown, scheduling each step so the paperwork is valid on travel day.' },
-          { title: 'Permits', text: 'We guide or handle the MOCCAE permit — valid for 90 days from issuance — and prepare the import or export documentation your route requires.' },
-          { title: 'Crate and flight', text: 'We size an IATA-compliant crate, acclimate your pet to it, and book the right flight and cargo path through DXB or DWC.' },
-          { title: 'Travel and delivery', text: 'We manage check-in, customs clearance and the release fee, then deliver your pet door-to-door to the new home with live updates throughout.' },
-        ] },
-        { type: 'p', text: 'From low-risk countries the timeline is typically two to six weeks. From high-risk rabies countries that require a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw. We map your exact timeline before you commit, so there are no surprises midway through the move.' },
+        {
+          type: 'p',
+          text: 'Tell us the tower, the nearest legal dock and whether the van can wait. If facilities only allow residential loading after office hours, that is the honest window. We arrive as a visitor, not as a mall contractor. Cats stay in a carrier until the crate is at the door. Dogs that know Burj Park still need a short, leashed transfer — not a last loop around the Fountain in July midday.',
+        },
+        {
+          type: 'p',
+          text: 'For local-only clinic or airport crate transfers that are not the international file, book [local pet transport and pet taxi service](/service/pet-transport-dubai/). [Al Satwa pet relocation services](/dubai/al-satwa/) is a different last mile if that is the real address — denser streets, not boulevard docks.',
+        },
+        {
+          type: 'steps',
+          steps: [
+            {
+              title: 'Share dock and lift rules',
+              text: 'Valet versus basement, goods-lift booking, and whether a resident must ride with the crate.',
+            },
+            {
+              title: 'Pick a window away from Fountain shows when you can',
+              text: 'We message on WhatsApp when we are on the dock. No branded lobby staging.',
+            },
+            {
+              title: 'Crate, then van',
+              text: 'Secure the pet in the apartment or service lift, then move to the vehicle — not across Burj Park.',
+            },
+            {
+              title: 'Airport or home',
+              text: 'Inbound deliveries reverse the same dock script. Outbound files continue to DXB or DWC cargo.',
+            },
+          ],
+        },
       ],
     },
     {
-      h2: 'Pet-Friendly Living in Downtown Dubai',
+      h2: 'Burj Park walks and City Walk–adjacent angles',
+      intro:
+        'Daily dog life Downtown is a short park loop. Travel day is not a boulevard outing — and the low-rise streets toward City Walk are a different last mile if that is the real home.',
       body: [
-        { type: 'p', text: 'Downtown is premium high-rise living, so almost every resident pet is a dog or cat kept in an apartment. Green space is more curated here than at the beach communities, but Burj Park and the landscaped promenades around the Dubai Fountain and Souk Al Bahar give dogs a pleasant route for a daily walk, and the wide, shaded boulevards suit early-morning and evening outings well. Cats settle quickly into the spacious, light-filled apartments these towers are known for.' },
-        { type: 'p', text: 'Many Downtown buildings and serviced residences are pet-friendly, but policies vary by tower and by landlord — some cap the number or size of pets, and a few require a pet deposit, so it is worth confirming your tenancy terms. For arriving pets, the shift from a quiet home abroad to a busy central tower can take a few days of adjustment, so we advise on crate acclimation and a calm settling-in routine ahead of travel day.' },
+        {
+          type: 'p',
+          text: 'Burj Park and the landscaped edges around the Fountain and Souk Al Bahar are orientation landmarks and ordinary walking routes. They are not crate staging. Confirm Dubai Municipality / Aleef leash and licensing after an inbound arrival; we do not print a fine table here. On collection day, keep the walk short and close to the tower. Midday paving around the mall is a poor acclimation plan.',
+        },
+        {
+          type: 'p',
+          text: 'City Walk sits west of Downtown toward Al Wasl — low-rise promenades, ground-level residences and a walkable retail grid rather than a Burj dock. If the pet lives in that urban-village fabric, the last mile is a street-level entrance and promenade drop-off, not a valet bay under a boulevard tower. We absorb those access angles here so the file is planned correctly; the City Walk URL stays live and we are not firing a merge redirect. From May through early autumn, acclimate the crate indoors. On inbound delivery, the first hour is cooling down, not a photo at the Fountain.',
+        },
       ],
     },
     {
-      h2: 'Cost of Pet Relocation in Downtown Dubai',
+      h2: 'DXB and DWC routing from Downtown Dubai',
+      intro:
+        'On a quiet map Downtown is closer to Dubai International than the marina corridor. Live traffic around the mall, Financial Centre Road and Al Khail can erase that advantage.',
       body: [
-        { type: 'p', text: 'Total cost depends on your route, pet size and service level — typically AED 2,000 to AED 25,000. Government permit and arrival-release fees must be confirmed on the official MOCCAE portal; fees may change. The rest of your budget covers veterinary work, the crate, cargo or cabin charges and our coordination.' },
-        { type: 'table', headers: ['Cost component', 'Typical range'], rows: [
-          ['MOCCAE permit', 'Confirm on official MOCCAE portal'],
-          ['Release fee on arrival', 'Confirm on official MOCCAE portal'],
-          ['Vet, vaccinations & health certificate', 'Varies by clinic'],
-          ['IATA crate', 'Depends on pet size'],
-          ['Flight, cargo & coordination', 'Route-dependent'],
-          ['Typical all-in total', 'AED 2,000 – 25,000'],
-        ] },
-        { type: 'p', text: 'A short regional move with a small cat sits at the lower end; a long-haul relocation of a large dog needing a bespoke crate and cargo space sits toward the top. We give you a clear, itemised range on WhatsApp before any work starts.' },
+        {
+          type: 'p',
+          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a Downtown tower the usual outbound run is toward DXB cargo via the airport corridors — often shorter than a Marina or Palm run when the boulevard is moving. We still refuse a locked minute count. Al Maktoum / DWC is a longer southbound option when the booked product requires it. We do not invent airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the dock.',
+        },
+        {
+          type: 'p',
+          text: 'Inbound is cargo release, then a climate-controlled run that still has to clear valet. Read the [Dubai pet arrival guide](/guides/dubai-pet-arrival-guide/) for the airport walkthrough. Community delivery uses the same dock rules as an outbound pickup.',
+        },
+        {
+          type: 'table',
+          headers: ['Leg', 'What to plan', 'What we do not promise'],
+          rows: [
+            ['Downtown tower → DXB cargo', 'Boulevard → airport corridors; often shorter than Marina in light traffic', 'A locked minute count or a mall meeting point'],
+            ['Downtown tower → DWC', 'Longer southbound cargo run when the booking requires it', 'A default “always DWC” Downtown product'],
+            ['Cargo release → Downtown tower', 'Same valet or basement dock as outbound', 'An unescorted crate left in Burj Park'],
+          ],
+        },
+      ],
+    },
+    {
+      h2: 'Moving a pet into or out of Downtown Dubai',
+      intro:
+        'The federal file does not change because the balcony faces the Burj. The last mile does. Keep the clocks straight and confirm government amounts on the portal.',
+      body: [
+        {
+          type: 'p',
+          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/).',
+        },
+        {
+          type: 'p',
+          text: 'Outbound from a Downtown tower is planned destination-backwards: destination entry rules first, then the UAE export health certificate and airline acceptance. Do not paste inbound permit language onto an export. Confirm export-certificate fees and validity on the official MOCCAE portal — secondary blog numerals are not first-party official fees.',
+        },
+        {
+          type: 'p',
+          text: 'From low-risk origins the planning window is often a few weeks once vaccinations are current. From origins that need a titer, the sample date has to remain inside the 90-day-before-travel window on the day you actually fly. We map that before you commit to a crate or a ticket.',
+        },
+      ],
+    },
+    {
+      h2: 'What we coordinate for Downtown residents',
+      body: [
+        {
+          type: 'list',
+          items: [
+            'Door-to-door pickup or delivery at your Downtown tower, including dock and visitor-list planning',
+            'MOCCAE import or export permit guidance — or application handling on a service tier that includes it',
+            'Microchip, vaccination and health-certificate timing with your vet',
+            'IATA-compliant crate sizing that also fits your lift and corridor',
+            'Cargo acceptance and customs coordination at DXB or DWC',
+            'WhatsApp updates during business hours — not a claimed 15-minute SLA',
+          ],
+        },
+        {
+          type: 'cards',
+          cards: [
+            {
+              kind: 'Dubai hub',
+              title: 'All Dubai communities',
+              text: 'Downtown is one central spoke. Compare canal towers and coastal villas on the hub.',
+              to: '/dubai/',
+            },
+            {
+              kind: 'Local ground',
+              title: 'Pet taxi and local transport',
+              text: 'Clinic runs, airport crate transfers and inter-community vans.',
+              to: '/service/pet-transport-dubai/',
+            },
+            {
+              kind: 'Sibling last mile',
+              title: 'Business Bay',
+              text: 'Adjacent canal towers — different docks, same airport corridors.',
+              to: '/dubai/business-bay/',
+            },
+            {
+              kind: 'Guide',
+              title: 'DXB arrival walkthrough',
+              text: 'Cargo village, documents and the first hours after release.',
+              to: '/guides/dubai-pet-arrival-guide/',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      h2: 'Quotes for Downtown relocations',
+      body: [
+        {
+          type: 'p',
+          text: 'A Downtown quote stacks veterinary work, documents, air freight, cargo release, the IATA crate, and a timed dock last mile. Quoted international files we discuss often fall in a broad AED 2,000 to AED 25,000 conversation range by route, size and tier — orientation for WhatsApp, not a published package and not a government tariff. Confirm official permit and release amounts on the MOCCAE portal; fees may change. No search-volume claims on this page. WhatsApp +971504782999 with tower, species and route.',
+        },
       ],
     },
   ],
   faq: [
-    { q: 'Do you pick up from my building in Downtown Dubai?', a: 'Yes — we arrange door-to-door pickup from your Downtown tower, serviced residence or apartment, and coordinate the entire move from there.' },
-    { q: 'How long does pet relocation from Downtown Dubai take?', a: 'From low-risk countries, usually two to six weeks. From high-risk rabies countries that need a titer test, plan the titer sample within 90 days before travel (result ≥0.5 IU/ml) — a sample window, not a wait after the draw.' },
-    { q: 'How much does it cost?', a: 'Most relocations fall between AED 2,000 and AED 25,000 depending on route, pet size and service level. Government permit and arrival-release fees must be confirmed on the official MOCCAE portal; fees may change. We give you a clear range on WhatsApp before you commit.' },
-    { q: 'Can you handle the MOCCAE permit for me?', a: 'Yes. We guide you through the MOCCAE import or export permit — valid for 90 days from issuance (confirm the current portal fee) — or handle the application on your behalf depending on your service tier.' },
-    { q: 'My Downtown building has pet rules — can you help?', a: 'We focus on the relocation itself, but we can advise on crate acclimation and travel-day logistics for apartment pets in central high-rise towers like those in Downtown Dubai. Always check your tenancy terms for pet limits or deposits.' },
+    {
+      q: 'Do you pick up from Downtown towers near the Burj Khalifa?',
+      a: 'Yes, from the residential or service dock the building allows — not from a Burj Park pin. Share valet hours and lift rules. [Pet transport in Business Bay](/dubai/business-bay/) is a separate last mile if that is the real address.',
+    },
+    {
+      q: 'Can you collect during a Fountain show?',
+      a: 'We try not to. Boulevard congestion and valet queues make crate walks unreliable. If facilities only allow a later residential window, that is the honest plan. We do not claim 24/7 Downtown coverage.',
+    },
+    {
+      q: 'My serviced residence has a different pet policy than the tower next door. Does that matter?',
+      a: 'Yes. Serviced residences and freehold towers often split lift and dock rules. Send the building’s written constraint. We will not override it.',
+    },
+    {
+      q: 'If I live in City Walk, is Downtown still the pickup?',
+      a: 'Only if that is the real address. City Walk is street-level promenade access, not a Burj dock. We plan those angles here so the file is honest; we are not merging or redirecting the City Walk page.',
+    },
+    {
+      q: 'Is Downtown closer to DXB than Dubai Marina?',
+      a: 'On a quiet map, yes. Mall overflow and Financial Centre Road can erase the difference. We back-plan from the cargo desk. DWC is used when the booking requires it.',
+    },
+    {
+      q: 'How long is the MOCCAE import permit valid for a Downtown arrival?',
+      a: '90 days from issuance. Confirm the current portal fee; we do not publish contested permit AED as official. [MOCCAE import permit](/guides/moccae-import-permit/) walks the application.',
+    },
+    {
+      q: 'Do I wait 90 days after a titer test before flying into Downtown?',
+      a: 'No. When a titer is required, sample within 90 days before travel, result ≥0.5 IU/ml. Waiting after the draw is the wrong clock. [Rabies titer test Dubai](/guides/rabies-titer-test-dubai/).',
+    },
+    {
+      q: 'How much does Downtown Dubai pet relocation cost?',
+      a: 'International quotes we discuss often sit in a broad AED 2,000–25,000 conversation range. Government fees are confirm-on-portal. WhatsApp +971504782999 for a scoped range — no website tariff.',
+    },
+    {
+      q: 'Can the same van do Downtown and Business Bay in one afternoon?',
+      a: 'Only as two planned ground stops, not as one muddled last mile. Each tower has its own dock. International files still need one residence address.',
+    },
   ],
   relatedAreas: [
     { label: 'Business Bay', to: '/dubai/business-bay/' },
-    { label: 'Dubai Marina', to: '/dubai/dubai-marina/' },
     { label: 'Jumeirah', to: '/dubai/jumeirah/' },
-    { label: 'Palm Jumeirah', to: '/dubai/palm-jumeirah/' },
-    { label: 'JBR', to: '/dubai/jbr/' },
+    { label: 'Dubai Marina', to: '/dubai/dubai-marina/' },
+    { label: 'Al Satwa', to: '/dubai/al-satwa/' },
   ],
 }
 
