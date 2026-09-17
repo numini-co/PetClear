@@ -26,6 +26,7 @@ import Breadcrumb from '../components/Breadcrumb.tsx'
 import LastVerified from '../components/LastVerified.tsx'
 import ContentImage from '../components/ContentImage.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
+import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import {
   EXEMPT_LIST_HOLD,
   LAST_VERIFIED_LABEL,
@@ -611,6 +612,13 @@ export default function ImportRequirementsPage() {
           </div>
         </div>
       </section>
+
+      <GuideFunnelCta
+        variant="mid"
+        title="Checklist clear — ready for commercial import?"
+        subtitle="This page owns the statutory UAE import checklist. Door-to-door and import services handle crate, cargo and clearance. Check eligibility on WhatsApp. Confirm portal fees on the official site — we do not invent amounts."
+        eligibilityMessage="Hi Dubai Pet Relocation, I am reading the UAE pet import requirements and want to check eligibility. Pet type, breed, origin, target month:"
+      />
 
       {/* ═══════════ REQUIRED DOCUMENTS (DETAILED) ═══════════ */}
       <section className="py-20 lg:py-28 bg-white">
@@ -1418,43 +1426,12 @@ export default function ImportRequirementsPage() {
         </div>
       </section>
 
-      {/* ═══════════ FINAL CTA ═══════════ */}
-      <section className="py-20 lg:py-28 bg-[#4F5BD5]">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
-            Ready to bring your pet home to Dubai?
-          </h2>
-          <p className="text-white/80 max-w-2xl mx-auto mb-8">
-            Send origin, breed and what you already have. We will tell you which items on this checklist are still open — or point you to the{' '}
-            <Link to="/service/pet-import-dubai/" className="underline font-semibold">
-              commercial import service
-            </Link>
-            . Email {siteConfig.email} if WhatsApp is not convenient.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href={getWhatsAppUrl('Hi, I need help understanding the import requirements for my [dog/cat] from [country] to Dubai.')}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
-            >
-              <MessageCircle className="w-5 h-5" />
-              📱 Get help with your documents
-            </a>
-            <a
-              href={getWhatsAppUrl('Hi, I want to check if my pet is eligible for import to Dubai.')}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3.5 border-2 border-white/20 text-white rounded-2xl font-semibold hover:bg-white/10 transition-colors"
-            >
-              ✅ Check my pet&apos;s eligibility
-            </a>
-          </div>
-          <p className="text-white/60 text-sm mt-6">
-            Pre-filled WhatsApp message: &quot;Hi, I need help understanding the import requirements for my [dog/cat] from [country] to Dubai.&quot;
-          </p>
-        </div>
-      </section>
+      <GuideFunnelCta
+        variant="end"
+        title="Ready to bring your pet home to Dubai?"
+        subtitle="Send origin, breed and what you already have. Check eligibility on WhatsApp, or open the door-to-door / import money pages. MOCCAE permits are valid 90 days from issuance; titer samples (when required) within 90 days before travel."
+        eligibilityMessage="Hi Dubai Pet Relocation, I want to check if my pet is eligible for import to Dubai. Pet type, breed, origin country, target month:"
+      />
 
       <OfficialSources />
     </div>

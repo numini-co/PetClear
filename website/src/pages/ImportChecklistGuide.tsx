@@ -8,7 +8,6 @@ import {
   ChevronUp,
   Clock,
   CheckCircle,
-  HelpCircle,
   Globe,
   MessageCircle,
   PawPrint,
@@ -22,7 +21,7 @@ import {
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
-import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
+import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import LastVerified from '../components/LastVerified.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
@@ -502,6 +501,13 @@ export default function ImportChecklistGuide() {
       {/* Official Sources */}
       <OfficialSources />
 
+      <GuideFunnelCta
+        variant="mid"
+        title="Documents lined up — need the import service?"
+        subtitle="Use the checklist here, then open pet import or door-to-door relocation when you want coordination. Check eligibility on WhatsApp. Confirm MOCCAE fees on the portal."
+        eligibilityMessage="Hi Dubai Pet Relocation, I am using the import checklist and want to check eligibility for bringing my pet to Dubai."
+      />
+
       {/* Related Links */}
       <section className="py-16 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
@@ -541,31 +547,12 @@ export default function ImportChecklistGuide() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 lg:py-20 bg-[#4F5BD5]">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
-            Let Us Handle Your Pet Import Checklist
-          </h2>
-          <p className="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            Avoid sequencing mistakes and rejected permits. Dubai Pet Relocation manages the full document chain — microchip checks, vaccination timing, titer coordination, the MOCCAE permit, health certificate, crate, and cargo — from start to arrival.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <WhatsAppBtn
-              label="Check My Import Documents"
-              message="Hi Dubai Pet Relocation, I’m importing my pet to Dubai and want help working through the documents checklist. Can you guide me?"
-              className="whatsapp-pulse"
-            />
-            <Link
-              to="/how-it-works/"
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 text-white rounded-2xl font-semibold text-sm hover:bg-white/20 transition-colors"
-            >
-              <HelpCircle className="w-4 h-4" />
-              Learn How It Works
-            </Link>
-          </div>
-        </div>
-      </section>
+      <GuideFunnelCta
+        variant="end"
+        title="Let us handle your pet import checklist"
+        subtitle="Avoid sequencing mistakes and rejected permits. Check eligibility on WhatsApp, or open the door-to-door / import money pages. Permit validity: 90 days from issuance."
+        eligibilityMessage="Hi Dubai Pet Relocation, I am importing my pet to Dubai and want to check eligibility and document sequencing."
+      />
     </>
   )
 }

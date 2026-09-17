@@ -9,10 +9,8 @@ import {
   Clock,
   DollarSign,
   CheckCircle,
-  HelpCircle,
   Dog,
   Cat,
-  MessageCircle,
   PawPrint,
   FileText,
   Stethoscope,
@@ -23,7 +21,7 @@ import {
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
-import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
+import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import LastVerified from '../components/LastVerified.tsx'
 import ContentImage from '../components/ContentImage.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
@@ -448,6 +446,13 @@ export default function MOCCAEPermitGuide() {
         </div>
       </section>
 
+      <GuideFunnelCta
+        variant="mid"
+        title="Permit ready — need the full relocation?"
+        subtitle="This guide covers the MOCCAE import permit (valid 90 days from issuance). When you also need crate, cargo and door delivery, open a money service or check eligibility on WhatsApp. Confirm portal fees on the official site."
+        eligibilityMessage="Hi Dubai Pet Relocation, I am working through the MOCCAE import permit and want to check eligibility for pet relocation to Dubai. Pet type, breed, origin, target month:"
+      />
+
       {/* Common Rejection Reasons */}
       <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
@@ -729,35 +734,12 @@ export default function MOCCAEPermitGuide() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 lg:py-20 bg-[#4F5BD5]">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
-            Let Dubai Pet Relocation Handle Your MOCCAE Permit
-          </h2>
-          <p className="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            Send the chip number, rabies date and origin. We will tell you whether the file is ready for UAE Pass — then you choose DIY with this guide or{' '}
-            <Link to="/service/moccae-pet-permit/" className="underline font-semibold">
-              permit assistance
-            </Link>
-            . Email {siteConfig.email} if WhatsApp is not convenient.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <WhatsAppBtn
-              label="Apply for Permit Help"
-              message="Hi Dubai Pet Relocation, I need help with my MOCCAE import permit application for my pet. Can you handle the entire process for me?"
-              className="whatsapp-pulse"
-            />
-            <Link
-              to="/service/moccae-pet-permit/"
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 text-white rounded-2xl font-semibold text-sm hover:bg-white/20 transition-colors"
-            >
-              <HelpCircle className="w-4 h-4" />
-              Permit assistance service
-            </Link>
-          </div>
-        </div>
-      </section>
+      <GuideFunnelCta
+        variant="end"
+        title="Let Dubai Pet Relocation take the next commercial step"
+        subtitle="Send chip number, rabies date and origin on WhatsApp to check eligibility — or open door-to-door / import services. MOCCAE permits are valid 90 days from issuance; titer samples (when required) within 90 days before travel. Confirm fees on the portal."
+        eligibilityMessage="Hi Dubai Pet Relocation, I need help with my MOCCAE import permit and want to check eligibility for relocating my pet to Dubai."
+      />
       <OfficialSources />
     </>
   )
