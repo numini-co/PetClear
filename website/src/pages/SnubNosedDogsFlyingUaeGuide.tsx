@@ -15,6 +15,7 @@ import { MANIFEST_CARGO, PERMIT_FEE_VERIFY, PERMIT_VALIDITY, TITER_SAMPLE_RULE }
 
 const PATH = '/guides/snub-nosed-dogs-flying-uae/'
 const HERO_IMG = '/assets/w9/snub-nosed-dogs-flying-uae-french-bulldog-roomy-crate.jpg'
+const HERO_IMG_640 = '/assets/w9/snub-nosed-dogs-flying-uae-french-bulldog-roomy-crate-640.jpg'
 const WA_ELIG =
   'Hi Dubai Pet Relocation! I want to Check Pet Eligibility for a snub-nosed / brachycephalic pet flying to Dubai. Breed, weight, origin, and target month:'
 
@@ -116,8 +117,11 @@ export default function SnubNosedDogsFlyingUaeGuide() {
         primaryLabel="Check Pet Eligibility"
         whatsappMessage={WA_ELIG}
         secondary={{ label: 'IATA crate rules', to: '/guides/iata-pet-crate-requirements/' }}
-        imageWidth={1920}
-        imageHeight={1080}
+        imageWidth={1280}
+        imageHeight={720}
+        imageLoading="eager"
+        sizes="(max-width: 640px) 640px, 1280px"
+        srcSet={`${HERO_IMG_640} 640w, ${HERO_IMG} 1280w`}
       />
 
       <section className="section-padding bg-white">
@@ -201,7 +205,7 @@ export default function SnubNosedDogsFlyingUaeGuide() {
             Measure the dog standing naturally, then apply the IATA container formula, then add 10%. Replace these
             figures with your animal — they are a walkthrough, not a guaranteed commercial crate SKU.
           </p>
-          <div className="-mx-5 mb-6 overflow-x-auto px-5 sm:mx-0 sm:px-0">
+          <div className="-mx-5 mb-6 overflow-x-auto px-5 pb-16 sm:mx-0 sm:px-0 sm:pb-0">
             <table className="w-full min-w-[640px] border-collapse text-sm">
               <thead>
                 <tr className="bg-[#E9ECFB]">
@@ -269,7 +273,7 @@ export default function SnubNosedDogsFlyingUaeGuide() {
             tables as fact. We do not invent airline AED. Fees stay confirm-on-portal / confirm-at-booking. Open the
             child airline guides for mode depth; come back here for the snub-nosed question.
           </p>
-          <div className="-mx-5 mb-6 overflow-x-auto px-5 sm:mx-0 sm:px-0">
+          <div className="-mx-5 mb-6 overflow-x-auto px-5 pb-16 sm:mx-0 sm:px-0 sm:pb-0">
             <table className="w-full min-w-[760px] border-collapse text-sm">
               <thead>
                 <tr className="bg-[#E9ECFB]">
@@ -480,6 +484,12 @@ export default function SnubNosedDogsFlyingUaeGuide() {
               <Link to="/guides/" className="font-semibold text-[#4F5BD5] hover:underline">
                 all Dubai pet relocation guides
               </Link>
+            </li>
+            <li>
+              <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+                pet relocation Dubai
+              </Link>{' '}
+              — door-to-door if the breed is accepted
             </li>
           </ul>
         </div>

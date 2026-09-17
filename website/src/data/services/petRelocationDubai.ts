@@ -240,6 +240,27 @@ const petRelocationDubai: ServicePageData = {
         },
       ],
     },
+    {
+      h2: 'What we coordinate — and the trust signals we will actually stand behind',
+      intro:
+        'This money page owns the decision for pet relocation Dubai. We are a coordinator, not the airline and not MOCCAE. The process, the WhatsApp thread and the document pouch are what we hold.',
+      body: [
+        {
+          type: 'list',
+          items: [
+            'Eligibility first — breed, season and flight mode before anyone pays cargo',
+            'Document sequence — ISO microchip before rabies, titer sample window when required, MOCCAE import permit valid 90 days from issuance',
+            'Crate measurement and cargo booking with pet-experienced airlines — we do not operate the aircraft',
+            'Arrival or departure handover at DXB or DWC, then last-mile into a named Dubai community',
+            'A human on WhatsApp +971504782999 during business hours, or email support@dubai-pet-relocation.ae',
+          ],
+        },
+        {
+          type: 'p',
+          text: 'We do not invent volumes, star ratings or a 24/7 desk. Government permit and release amounts are confirmed on the official MOCCAE portal. Use the [import checklist](/guides/import-checklist/) if you want a tick-list, the [cost guide](/guides/pet-relocation-cost-dubai/) if you want drivers, and this page when you want one coordinator to hold the file. Message WhatsApp with species, breed, origin or destination and a target month.',
+        },
+      ],
+    },
   ],
   faq: [
     {
@@ -290,6 +311,14 @@ const petRelocationDubai: ServicePageData = {
       q: 'Which flight modes do you arrange?',
       a: 'Cabin (Etihad into Abu Dhabi), accompanied checked baggage where the airline allows it, and manifest cargo (the default for UAE import). Private-jet and shared-charter capability live on [private jet pet travel](/service/private-jet-pet-travel/) and [shared pet charter](/service/shared-pet-charter/). Compare modes on the [pet flight options hub](/guides/pet-flight-options-dubai/).',
     },
+    {
+      q: 'How do I start a pet relocation to Dubai?',
+      a: 'Send species, breed, weight, origin and a target month on WhatsApp +971504782999. We confirm breed rules, the 90-day MOCCAE permit window and whether cargo, cabin, jet or charter fits. Tick-list: [/guides/import-checklist/](/guides/import-checklist/). We reply during business hours — no invented 15-minute SLA.',
+    },
+    {
+      q: 'Who actually handles my pet on travel day?',
+      a: 'Vetted veterinary and transport partners handle the animal. We hold the sequence, the pouch and the WhatsApp thread. We are not the airline and not a MOCCAE-licensed issuer. That split is the honest E-E-A-T claim on this page.',
+    },
   ],
   relatedLinks: [
     { label: 'Pet flight options hub', to: '/guides/pet-flight-options-dubai/' },
@@ -298,6 +327,9 @@ const petRelocationDubai: ServicePageData = {
     { label: 'Private jet pet travel', to: '/service/private-jet-pet-travel/' },
     { label: 'Shared pet charter', to: '/service/shared-pet-charter/' },
     { label: 'What pet relocation costs in 2026', to: '/guides/pet-relocation-cost-dubai/' },
+    { label: 'Pet import checklist', to: '/guides/import-checklist/' },
+    { label: 'Pet import services Dubai', to: '/service/pet-import-dubai/' },
+    { label: 'Pet export Dubai', to: '/service/pet-export-dubai/' },
     { label: 'Talk to our relocation team', to: '/contact/' },
     { label: 'Compare our service tiers', to: '/services/' },
     { label: 'Pet relocation to Dubai, step by step', to: '/service/pet-relocation-to-dubai/' },

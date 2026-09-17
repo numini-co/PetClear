@@ -140,7 +140,7 @@ const jumeirah: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For the how-to spine see [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For the how-to spine see [UAE pet import requirements](/guides/uae-pet-import-requirements/). Door-to-door is [pet relocation Dubai](/service/pet-relocation-dubai/). Commercial inbound is [pet import to Dubai](/service/pet-import-dubai/). Leaving a Jumeirah villa uses [pet export from Dubai](/service/pet-export-dubai/).',
         },
         {
           type: 'p',
@@ -186,6 +186,24 @@ const jumeirah: AreaPageData = {
               title: 'Import requirements',
               text: 'Permit clocks, vaccines and the inbound document spine.',
               to: '/guides/uae-pet-import-requirements/',
+            },
+            {
+              kind: 'Service',
+              title: 'Pet relocation Dubai',
+              text: 'Door-to-door coordination for a Jumeirah villa last mile.',
+              to: '/service/pet-relocation-dubai/',
+            },
+            {
+              kind: 'Service',
+              title: 'Pet import to Dubai',
+              text: 'Inbound clearance when the villa is the arrival door.',
+              to: '/service/pet-import-dubai/',
+            },
+            {
+              kind: 'Service',
+              title: 'Pet export from Dubai',
+              text: 'Commercial outbound job when you leave J1–J3.',
+              to: '/service/pet-export-dubai/',
             },
             {
               kind: 'Sibling last mile',

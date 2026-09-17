@@ -140,7 +140,7 @@ const palmJumeirah: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/).',
+          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/). Full door-to-door is [pet relocation Dubai](/service/pet-relocation-dubai/). Commercial inbound is [pet import to Dubai](/service/pet-import-dubai/).',
         },
         {
           type: 'p',
@@ -186,6 +186,24 @@ const palmJumeirah: AreaPageData = {
               title: 'Export from Dubai',
               text: 'Destination-backwards planning when you leave a Palm villa.',
               to: '/guides/pet-export-from-dubai/',
+            },
+            {
+              kind: 'Service',
+              title: 'Pet relocation Dubai',
+              text: 'Door-to-door coordination — documents, crate, cargo and last mile.',
+              to: '/service/pet-relocation-dubai/',
+            },
+            {
+              kind: 'Service',
+              title: 'Pet import to Dubai',
+              text: 'Inbound clearance when the Palm address is the arrival door.',
+              to: '/service/pet-import-dubai/',
+            },
+            {
+              kind: 'Service',
+              title: 'Pet export from Dubai',
+              text: 'Commercial outbound job when you leave a frond or trunk home.',
+              to: '/service/pet-export-dubai/',
             },
             {
               kind: 'Guide',

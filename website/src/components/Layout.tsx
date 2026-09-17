@@ -17,7 +17,7 @@ export default function Layout({ children }: LayoutProps) {
         Skip to main content
       </a>
       <Header />
-      <main id="main-content" className="flex-1">
+      <main id="main-content" className="flex-1 pb-24 sm:pb-0">
         {children || <Outlet />}
       </main>
       <Footer />

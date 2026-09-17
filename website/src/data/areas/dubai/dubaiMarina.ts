@@ -4,9 +4,9 @@ const dubaiMarina: AreaPageData = {
   slug: 'dubai-marina',
   areaName: 'Dubai Marina',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Dubai Marina | Dog & Cat Relocation (2026)',
+  seoTitle: 'Pet Relocation Dubai Marina | Tower Pickup',
   metaDescription:
-    'Pet relocation in Dubai Marina: tower lift access, promenade logistics, DXB routing and MOCCAE permit coordination. WhatsApp +971 50 478 2999.',
+    'Pet relocation Dubai Marina: tower lifts, promenade logistics, DXB run and MOCCAE timing. WhatsApp +971504782999.',
   keywords:
     'pet relocation dubai marina, pet transport dubai marina, dog relocation dubai marina, cat relocation dubai marina, pet movers marina',
   h1: 'Pet Relocation in Dubai Marina',
@@ -130,7 +130,7 @@ const dubaiMarina: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/).',
+          text: 'Inbound: a MOCCAE import permit is valid for 90 days from the date of issuance. The pet must enter the UAE inside that window. When a rabies antibody titre test (RNATT) is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Sequence the ISO microchip before the rabies vaccination used for the file. For arrival-side coordination see [pet relocation to Dubai](/service/pet-relocation-to-dubai/). Full door-to-door is [pet relocation Dubai](/service/pet-relocation-dubai/). Commercial inbound is [pet import to Dubai](/service/pet-import-dubai/). Leaving the tower uses [pet export from Dubai](/service/pet-export-dubai/).',
         },
         {
           type: 'p',
@@ -182,6 +182,24 @@ const dubaiMarina: AreaPageData = {
               title: 'DXB arrival walkthrough',
               text: 'Cargo village, documents and the first hours after release.',
               to: '/guides/dubai-pet-arrival-guide/',
+            },
+            {
+              kind: 'Service',
+              title: 'Pet relocation Dubai',
+              text: 'Door-to-door coordination after the tower last mile is understood.',
+              to: '/service/pet-relocation-dubai/',
+            },
+            {
+              kind: 'Service',
+              title: 'Pet import to Dubai',
+              text: 'Inbound clearance when the Marina tower is the arrival door.',
+              to: '/service/pet-import-dubai/',
+            },
+            {
+              kind: 'Service',
+              title: 'Pet export from Dubai',
+              text: 'Commercial outbound job when you leave a Marina apartment.',
+              to: '/service/pet-export-dubai/',
             },
           ],
         },

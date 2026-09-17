@@ -47,7 +47,7 @@ const COST_PAA_FAQS: { q: string; a: string }[] = [
   },
   {
     q: 'How much does it cost to import a pet into the UAE?',
-    a: 'UAE import cost is the same type split: MOCCAE permit and release fees (portal/official — confirm-on-MOCCAE), veterinary work including titer when required, freight, crate, handling, and coordination. There is no single published import tariff. Rules live on [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/); permit walkthrough on [/guides/moccae-import-permit/](/guides/moccae-import-permit/). Our import coordination is Get a Quote. Email support@dubai-pet-relocation.ae or WhatsApp +971504782999.',
+    a: 'UAE import cost is the same type split: MOCCAE permit and release fees (portal/official — confirm-on-MOCCAE), veterinary work including titer when required, freight, crate, handling, and coordination. There is no single published import tariff. Rules live on [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/); permit walkthrough on [/guides/moccae-import-permit/](/guides/moccae-import-permit/). Commercial import: [/service/pet-import-dubai/](/service/pet-import-dubai/). Our import coordination is Get a Quote. Email support@dubai-pet-relocation.ae or WhatsApp +971504782999.',
   },
   {
     q: 'How much does it cost to get a dog imported?',
@@ -60,6 +60,10 @@ const COST_PAA_FAQS: { q: string; a: string }[] = [
   {
     q: 'How much does it cost to relocate a pet from Dubai to India?',
     a: 'Dubai→India cost is destination-side (AQCS / Indian entry pathway) plus UAE export paperwork, freight, crate, and coordination — not the same stack as importing into the UAE. We do not invent corridor package bands. Corridor depth and FAQs belong on [/routes/dubai-to-india/](/routes/dubai-to-india/); general cost types stay on this guide; outbound journey framing on [/service/pet-relocation-from-dubai/](/service/pet-relocation-from-dubai/). WhatsApp +971504782999 for a route quote.',
+  },
+  {
+    q: 'Is the cost guide the same as booking a relocation service?',
+    a: 'This guide owns cost types. The commercial jobs sit on [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/), inbound [/service/pet-import-dubai/](/service/pet-import-dubai/), and outbound [/service/pet-export-dubai/](/service/pet-export-dubai/). Packages stay Get a Quote. Confirm MOCCAE fees on the portal. WhatsApp +971504782999.',
   },
 ]
 
@@ -231,7 +235,19 @@ export default function CostGuidePage() {
         <p className="text-[#5A5A5A] max-w-3xl mb-8 leading-relaxed">
           How much it costs to relocate a pet in Dubai depends on six types, not a single airline ticket. Government and
           veterinary amounts are paid to the portal or clinic. Freight and crate follow the animal&apos;s size. Handling is
-          the airport side. Coordination — the Dubai Pet Relocation package — is Get a Quote.
+          the airport side. Coordination — the Dubai Pet Relocation package — is Get a Quote on{' '}
+          <Link to="/service/pet-relocation-dubai/" className="text-[#4F5BD5] font-medium hover:underline">
+            pet relocation Dubai
+          </Link>
+          , inbound{' '}
+          <Link to="/service/pet-import-dubai/" className="text-[#4F5BD5] font-medium hover:underline">
+            pet import
+          </Link>
+          , or outbound{' '}
+          <Link to="/service/pet-export-dubai/" className="text-[#4F5BD5] font-medium hover:underline">
+            pet export
+          </Link>
+          .
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <Card>

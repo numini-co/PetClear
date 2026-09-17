@@ -46,6 +46,7 @@ export const GUIDE_LINKS: NavLink[] = [
   { label: 'Snub-Nosed Dogs Flying UAE', to: '/guides/snub-nosed-dogs-flying-uae/' },
   { label: 'Cost Guide', to: '/guides/pet-relocation-cost-dubai/' },
   { label: 'Import Requirements', to: '/guides/uae-pet-import-requirements/' },
+  { label: 'Import Checklist', to: '/guides/import-checklist/' },
   { label: 'Banned Dog Breeds', to: '/guides/banned-dog-breeds-dubai/' },
   { label: 'IATA Crate Rules', to: '/guides/iata-pet-crate-requirements/' },
   { label: 'MOCCAE Permit', to: '/guides/moccae-import-permit/' },

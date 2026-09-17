@@ -43,7 +43,7 @@ const petExportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'We are a coordination service: we do not physically fly the animals ourselves. We connect you with vetted veterinary and transport partners and make sure your paperwork, timeline and inspection are correct so your pet leaves Dubai without a hitch. For the step-by-step informational walkthrough — documents, certificate timing and destination branches — read [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
+          text: 'We are a coordination service: we do not physically fly the animals ourselves. We connect you with vetted veterinary and transport partners and make sure your paperwork, timeline and inspection are correct so your pet leaves Dubai without a hitch. For the step-by-step informational walkthrough — documents, certificate timing and destination branches — read [how to export your pet from Dubai](/guides/pet-export-from-dubai/). Door-to-door umbrella: [pet relocation Dubai](/service/pet-relocation-dubai/). The inbound twin is [pet import to Dubai](/service/pet-import-dubai/).',
         },
       ],
     },
@@ -233,6 +233,10 @@ const petExportDubai: ServicePageData = {
       q: 'How do I get started with exporting my pet from Dubai?',
       a: 'Message us on WhatsApp with destination, species and the month you want to fly. We reply during business hours with a destination-first checklist. Process how-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
     },
+    {
+      q: 'Is pet export the same as door-to-door relocation?',
+      a: 'Export owns the leaving-UAE commercial job. [Pet relocation Dubai](/service/pet-relocation-dubai/) is the umbrella if you still need a mode chosen. The inbound twin is [pet import to Dubai](/service/pet-import-dubai/). WhatsApp +971504782999.',
+    },
   ],
   relatedLinks: [
     { label: 'How to export your pet from Dubai', to: '/guides/pet-export-from-dubai/' },
@@ -242,6 +246,7 @@ const petExportDubai: ServicePageData = {
     { label: 'Dubai to USA Pet Transport', to: '/routes/dubai-to-usa/' },
     { label: 'How It Works', to: '/how-it-works/' },
     { label: 'Pet Relocation Dubai', to: '/service/pet-relocation-dubai/' },
+    { label: 'Pet import to Dubai', to: '/service/pet-import-dubai/' },
   ],
 }
 

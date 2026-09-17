@@ -323,7 +323,11 @@ const petImportDubai: ServicePageData = {
     },
     {
       q: 'Do you issue the MOCCAE permit yourselves?',
-      a: 'No. Only MOCCAE issues permits. We review the file, time the 90-day window and, on higher tiers, coordinate portal submission through vetted partners. Standalone permit help: [MOCCAE permit assistance](/service/moccae-pet-permit/). DIY walkthrough: [MOCCAE import permit guide](/guides/moccae-import-permit/).',
+      a: 'Only MOCCAE issues permits. We review the file, time the 90-day window and, on higher tiers, coordinate portal submission through vetted partners. Standalone permit help: [MOCCAE permit assistance](/service/moccae-pet-permit/). DIY walkthrough: [MOCCAE import permit guide](/guides/moccae-import-permit/). Tick-list: [pet import checklist](/guides/import-checklist/).',
+    },
+    {
+      q: 'When should I use import versus door-to-door relocation?',
+      a: 'Use this page when the job is inbound clearance — permit, cargo and a Dubai door. Use [pet relocation Dubai](/service/pet-relocation-dubai/) when you want one coordinator to pick the mode and hold the last mile. Leaving the UAE is [pet export from Dubai](/service/pet-export-dubai/). WhatsApp +971504782999.',
     },
   ],
   relatedLinks: [
@@ -337,6 +341,9 @@ const petImportDubai: ServicePageData = {
     { label: 'Routes Hub', to: '/routes/' },
     { label: 'Pet Relocation Cost Dubai', to: '/guides/pet-relocation-cost-dubai/' },
     { label: 'How It Works', to: '/how-it-works/' },
+    { label: 'Pet import checklist', to: '/guides/import-checklist/' },
+    { label: 'Pet relocation Dubai', to: '/service/pet-relocation-dubai/' },
+    { label: 'Pet export from Dubai', to: '/service/pet-export-dubai/' },
   ],
 }
 

@@ -50,6 +50,7 @@ const EmiratesPetCargoGuide = lazy(() => import('./pages/EmiratesPetCargoGuide.t
 const DubaiPetArrivalGuide = lazy(() => import('./pages/DubaiPetArrivalGuide.tsx'))
 const PetExportFromDubaiGuide = lazy(() => import('./pages/PetExportFromDubaiGuide.tsx'))
 const SnubNosedDogsFlyingUaeGuide = lazy(() => import('./pages/SnubNosedDogsFlyingUaeGuide.tsx'))
+const ImportChecklistGuide = lazy(() => import('./pages/ImportChecklistGuide.tsx'))
 
 // City pages (V2 - Month 1)
 const AbuDhabiCity = lazy(() => import('./pages/AbuDhabiCity.tsx'))
@@ -137,6 +138,7 @@ export default function App() {
           <Route path="/guides/pet-export-from-dubai/" element={<PetExportFromDubaiGuide />} />
           <Route path="/guides/pet-export-from-dubai" element={<Navigate to="/guides/pet-export-from-dubai/" replace />} />
           <Route path="/guides/snub-nosed-dogs-flying-uae/" element={<SnubNosedDogsFlyingUaeGuide />} />
+          <Route path="/guides/import-checklist/" element={<ImportChecklistGuide />} />
 
           {/* City pages */}
           <Route path="/cities/abu-dhabi/" element={<AbuDhabiCity />} />

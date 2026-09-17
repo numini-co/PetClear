@@ -72,6 +72,25 @@ const sharedPetCharter: ServicePageData = {
       ],
     },
     {
+      h2: 'Empty-leg, pet charter Dubai, and manifest cargo versus charter',
+      intro:
+        'Searchers mix three phrases. We keep them distinct so a quote matches the aircraft, not the blog label.',
+      body: [
+        {
+          type: 'p',
+          text: 'Empty-leg is a positioning flight that already has to move — an operator may sell leftover capacity. A shared pet charter Dubai lift can use an empty-leg slot when one exists; it can also be a purpose-built animal lift that only goes when enough pets fill it. We do not advertise empty-leg seats we do not have. If none is forming, we say so and move you to cargo or a full jet.',
+        },
+        {
+          type: 'p',
+          text: 'Pet charter Dubai is the commercial phrase for a dedicated or part-chartered aircraft arranged for live animals. It is not scheduled belly freight. Manifest cargo is the default UAE arrival product: the pet travels as a booked consignment on a commercial airline (often Emirates SkyCargo into DXB). Charter buys control of when the lift flies and who else is on board. Cargo buys an airline schedule. Documents and the 90-day MOCCAE import permit still apply on both.',
+        },
+        {
+          type: 'p',
+          text: 'Country corridors still start on the route page — for example [UK to Dubai](/routes/uk-to-dubai/) or [USA to Dubai](/routes/usa-to-dubai/) — then come back here only if scheduled cargo will not accept the animal. Compare modes on the [pet flight options hub](/guides/pet-flight-options-dubai/).',
+        },
+      ],
+    },
+    {
       h2: 'Coordination scope',
       intro:
         'A shared lift does not waive UAE rules. Import still means a 90-day MOCCAE permit and manifest-style veterinary clearance unless the Etihad AUH cabin exception applies — and a charter is not that exception.',
@@ -220,7 +239,19 @@ const sharedPetCharter: ServicePageData = {
     },
     {
       q: 'Should I start on door-to-door instead?',
-      a: 'Yes, if you want us to pick the mode. [Door-to-door pet relocation](/service/pet-relocation-dubai/) is the umbrella.',
+      a: 'Start on [door-to-door pet relocation](/service/pet-relocation-dubai/) if you want us to pick the mode. This page is only the shared-lift offer.',
+    },
+    {
+      q: 'What is an empty-leg pet charter?',
+      a: 'An empty-leg is a positioning flight with leftover capacity. A shared pet charter Dubai seat can sit on one when an operator is already moving the aircraft. We confirm whether a lift exists for your week — we do not invent empty-leg departures. WhatsApp +971504782999.',
+    },
+    {
+      q: 'How is a pet charter Dubai different from manifest cargo?',
+      a: 'Manifest cargo is a booked consignment on a scheduled airline hold. A pet charter Dubai lift is a dedicated or part-chartered aircraft. Charter trades schedule for control; cargo trades control for an airline timetable. Both still need the 90-day MOCCAE import permit. Compare modes on [pet flight options](/guides/pet-flight-options-dubai/).',
+    },
+    {
+      q: 'Can a UK or USA file use a shared charter instead of SkyCargo?',
+      a: 'Only if an operator is filling a lift on that corridor and the animal is accepted. Most UK and USA arrivals still use manifest cargo. Start on [UK to Dubai](/routes/uk-to-dubai/) or [USA to Dubai](/routes/usa-to-dubai/), then ask us if cargo is blocked. Educational cargo process: [Emirates pet cargo](/guides/emirates-pet-cargo/).',
     },
   ],
   relatedLinks: [
@@ -230,6 +261,8 @@ const sharedPetCharter: ServicePageData = {
     { label: 'Emirates pet cargo', to: FLIGHT_MODE_PATHS.cargo },
     { label: 'Etihad pet policy', to: FLIGHT_MODE_PATHS.cabin },
     { label: 'International pet relocation', to: '/service/international-pet-relocation/' },
+    { label: 'UK to Dubai', to: '/routes/uk-to-dubai/' },
+    { label: 'USA to Dubai', to: '/routes/usa-to-dubai/' },
   ],
 }
 

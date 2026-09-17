@@ -464,10 +464,22 @@ export default function UKToDubai() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Related Routes</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Related Routes & Next Steps</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link to="/service/pet-import-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
               <p className="font-bold text-[#2A2A2A] mb-1">Pet Import to Dubai</p>
               <p className="text-[#5A5A5A] text-sm">Our full import service: permits, customs and door-to-door delivery.</p>
+            </Link>
+            <Link to="/service/pet-relocation-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">Pet Relocation Dubai</p>
+              <p className="text-[#5A5A5A] text-sm">Door-to-door coordination when you want one file for the UK corridor.</p>
+            </Link>
+            <Link to="/service/shared-pet-charter/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">Shared Pet Charter</p>
+              <p className="text-[#5A5A5A] text-sm">Quote-only lift if scheduled cargo will not accept the animal.</p>
+            </Link>
+            <Link to="/service/pet-export-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">Pet Export from Dubai</p>
+              <p className="text-[#5A5A5A] text-sm">The reverse commercial job when you leave the UAE for Britain.</p>
             </Link>
             <Link to="/routes/dubai-to-uk/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
               <p className="font-bold text-[#2A2A2A] mb-1">Dubai to UK</p>

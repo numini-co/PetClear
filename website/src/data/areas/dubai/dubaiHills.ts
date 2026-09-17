@@ -4,9 +4,9 @@ const dubaiHills: AreaPageData = {
   slug: 'dubai-hills',
   areaName: 'Dubai Hills Estate',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Dubai Hills Estate | Dog & Cat Relocation (2026)',
+  seoTitle: 'Pet Relocation Dubai Hills | Park Community',
   metaDescription:
-    'Pet relocation in Dubai Hills Estate: park-community access, villa and apartment mix, Meydan-adjacent routing and MOCCAE permits. WhatsApp +971 50 478 2999.',
+    'Pet relocation Dubai Hills: park-community access, villa vs apartment last mile, MOCCAE timing. WhatsApp +971504782999.',
   keywords:
     'pet relocation dubai hills, pet transport dubai hills estate, dog relocation dubai hills, cat relocation dubai hills, pet movers dubai hills',
   h1: 'Pet Relocation in Dubai Hills Estate',
