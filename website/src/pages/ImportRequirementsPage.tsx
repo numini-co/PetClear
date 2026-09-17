@@ -556,6 +556,18 @@ export default function ImportRequirementsPage() {
             <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               pet import to Dubai
             </Link>
+            . Door-to-door coordination is{' '}
+            <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet relocation Dubai
+            </Link>
+            . The tick-list twin is the{' '}
+            <Link to="/guides/import-checklist/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet import checklist
+            </Link>
+            . If you are leaving the UAE instead, use{' '}
+            <Link to="/service/pet-export-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet export from Dubai
+            </Link>
             .
           </p>
           <ContentImage
@@ -1369,6 +1381,18 @@ export default function ImportRequirementsPage() {
             <Link to="/service/pet-relocation-to-dubai/" className="bg-white rounded-[20px] p-6 hover:shadow-md transition-shadow">
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Relocation to Dubai</h3>
               <p className="text-sm text-[#5A5A5A]">Arrival-side settling after the statutory pack is complete.</p>
+            </Link>
+            <Link to="/service/pet-relocation-dubai/" className="bg-white rounded-[20px] p-6 hover:shadow-md transition-shadow">
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Pet relocation Dubai</h3>
+              <p className="text-sm text-[#5A5A5A]">Door-to-door money page when you want one coordinator on the file.</p>
+            </Link>
+            <Link to="/service/pet-export-dubai/" className="bg-white rounded-[20px] p-6 hover:shadow-md transition-shadow">
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Pet export from Dubai</h3>
+              <p className="text-sm text-[#5A5A5A]">Outbound commercial twin — destination rules first, then UAE exit papers.</p>
+            </Link>
+            <Link to="/guides/import-checklist/" className="bg-white rounded-[20px] p-6 hover:shadow-md transition-shadow">
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Pet import checklist</h3>
+              <p className="text-sm text-[#5A5A5A]">Ordered tick-list that sits under this statutory guide.</p>
             </Link>
           </div>
         </div>

@@ -16,7 +16,6 @@ import {
   Microscope,
   Syringe,
   Plane,
-  Ban,
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
@@ -51,10 +50,10 @@ interface ChecklistStep {
 
 /* ─── Page ─── */
 export default function ImportChecklistGuide() {
-  const title = 'Pet Import Documents Checklist Dubai | 2026 Steps'
+  const title = 'Pet Import Checklist Dubai | Documents in Order'
   const description =
-    'Pet import documents checklist for Dubai: microchip, rabies, titer, 90-day MOCCAE permit, health certificate, crate, and cargo clearance.'
-  const canonical = `${BASE_URL}/guides/pet-import-documents-checklist/`
+    'Pet import checklist Dubai: microchip, rabies, titer window, 90-day MOCCAE permit via UAE Pass, health certificate, crate, and cargo clearance.'
+  const canonical = `${BASE_URL}/guides/import-checklist/`
   const ogImage = `${BASE_URL}/assets/og-import-checklist.jpg`
 
   const checklistSteps: ChecklistStep[] = [
@@ -89,8 +88,8 @@ export default function ImportChecklistGuide() {
     {
       num: 5,
       title: 'Apply for the MOCCAE Import Permit',
-      when: 'Within 30 days of travel',
-      body: 'Apply online via the MOCCAE portal or the MOCCAE mobile app. The import permit is valid for 90 days from issuance. Confirm the current permit and arrival-release fees on the official portal. Processing typically takes a few working days. You will need the owner’s passport, UAE visa, the pet’s microchip number, vaccination records, and the titer test result if applicable.',
+      when: 'Time arrival inside the 90-day window',
+      body: 'Sign in on the official MOCCAE portal (or the MOCCAE app) with UAE Pass and choose Import Permit for Pets. The import permit is valid for 90 days from issuance — not a 30-day stamp. Confirm the current permit and arrival-release fees on the official portal; we do not publish a fee table. Processing is typically estimated at a few working days. You will need the owner’s passport, UAE visa, the pet’s microchip number, vaccination records, and the titer test result if applicable.',
       icon: <FileText className="w-5 h-5" />,
     },
     {
@@ -175,7 +174,8 @@ export default function ImportChecklistGuide() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
-      { '@type': 'ListItem', position: 2, name: 'Pet Import Documents Checklist for Dubai', item: canonical },
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: `${BASE_URL}/guides/` },
+      { '@type': 'ListItem', position: 3, name: 'Pet Import Documents Checklist for Dubai', item: canonical },
     ],
   }
 
@@ -183,7 +183,7 @@ export default function ImportChecklistGuide() {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
     name: 'How to Import a Pet to Dubai — Documents Checklist',
-    description: 'Step-by-step documents checklist to import a dog or cat to Dubai, from microchip to arrival clearance.',
+    description: 'Step-by-step documents checklist to import a dog or cat to Dubai, from microchip to arrival clearance. MOCCAE import permit is valid 90 days from issuance; confirm portal fees.',
     step: checklistSteps.map((s) => ({
       '@type': 'HowToStep',
       position: s.num,
@@ -227,10 +227,30 @@ export default function ImportChecklistGuide() {
                 Everything You Need, In Order
               </h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                Bringing a pet into the UAE is a documents process. Every item on this checklist is mandatory, and the steps must happen in the right order. The microchip comes before the rabies vaccination, the rabies vaccination comes before the titer test, and the MOCCAE import permit comes before you fly.
+                Bringing a pet into the UAE is a documents process. Every item on this checklist is mandatory, and the steps must happen in the right order. The microchip comes before the rabies vaccination, the rabies vaccination comes before the titer test, and the MOCCAE import permit — applied with UAE Pass — comes before you fly.
               </p>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                Skip a step or get the sequence wrong and your pet can be refused entry, confiscated, or re-exported at your expense. Use the ordered checklist below, tick off each item, then confirm everything against the documents summary table.
+                Skip a step or get the sequence wrong and your pet can be refused entry, confiscated, or re-exported at your expense. Use the ordered checklist below, tick off each item, then confirm everything against the documents summary table. For the statutory rules behind each box, open the{' '}
+                <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  UAE pet import requirements
+                </Link>{' '}
+                guide. For the UAE Pass path and 90-day validity, open the{' '}
+                <Link to="/guides/moccae-import-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  MOCCAE import permit
+                </Link>{' '}
+                walkthrough. When you want the work coordinated, use{' '}
+                <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  pet import services in Dubai
+                </Link>{' '}
+                or door-to-door{' '}
+                <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  pet relocation Dubai
+                </Link>
+                . Commercial permit filing sits on{' '}
+                <Link to="/service/moccae-pet-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  MOCCAE permit assistance
+                </Link>
+                .
               </p>
               <div className="bg-white rounded-[20px] shadow-sm p-6">
                 <h3 className="text-lg font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
@@ -514,7 +534,7 @@ export default function ImportChecklistGuide() {
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-8 text-center">
             Related Guides &amp; Services
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link to="/guides/uae-pet-import-requirements/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
                 <FileCheck className="w-5 h-5 text-[#4F5BD5]" />
@@ -535,6 +555,20 @@ export default function ImportChecklistGuide() {
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#C89F5A] transition-colors">Pet Import to Dubai Service</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">Our full import service: permit, documents, crate, cargo, and arrival clearance.</p>
+            </Link>
+            <Link to="/service/pet-relocation-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
+                <PawPrint className="w-5 h-5 text-[#4F5BD5]" />
+              </div>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">Pet Relocation Dubai</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">Door-to-door coordination when the checklist is only the first half of the job.</p>
+            </Link>
+            <Link to="/service/moccae-pet-permit/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
+              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
+                <FileText className="w-5 h-5 text-[#4F5BD5]" />
+              </div>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">MOCCAE Permit Assistance</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">File review and UAE Pass submission support. The Ministry still issues the PDF.</p>
             </Link>
             <Link to="/contact/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">

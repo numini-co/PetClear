@@ -303,6 +303,12 @@ export default function EmiratesPetCargoGuide() {
               </Link>{' '}
               — umbrella service; we pick the mode and hold documents, crate and last mile
             </li>
+            <li>
+              <Link to="/service/shared-pet-charter/" className="font-semibold text-[#4F5BD5] hover:underline">
+                Shared pet charter
+              </Link>{' '}
+              — empty-leg or group lift only when scheduled manifest cargo will not accept the animal
+            </li>
           </ul>
           <p className="mb-3 leading-relaxed text-[#5A5A5A]">Related import pages:</p>
           <ul className="space-y-2">

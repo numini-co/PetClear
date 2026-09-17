@@ -19,6 +19,10 @@ interface HeroProps {
   /** Intrinsic pixel size of `image` when it is not the default 1536×1024 hero crop. */
   imageWidth?: number
   imageHeight?: number
+  /** Override eager LCP default — use lazy only for below-fold or heavy assets. */
+  imageLoading?: 'eager' | 'lazy'
+  sizes?: string
+  srcSet?: string
 }
 
 // Shared professional hero: a sharp full-bleed photo, a black gradient scrim for
@@ -38,6 +42,9 @@ export default function Hero({
   overlayClassName,
   imageWidth = 1536,
   imageHeight = 1024,
+  imageLoading = 'eager',
+  sizes,
+  srcSet,
 }: HeroProps) {
   return (
     <section className="relative isolate overflow-hidden bg-[#0E1330]">
@@ -51,7 +58,10 @@ export default function Hero({
         }}
         width={imageWidth}
         height={imageHeight}
-        loading="eager"
+        loading={imageLoading}
+        decoding="async"
+        sizes={sizes}
+        srcSet={srcSet}
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
       <div className={`absolute inset-0 -z-10 bg-gradient-to-r ${overlayClassName || 'from-black/90 via-black/70 to-black/40'}`} />

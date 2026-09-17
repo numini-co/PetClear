@@ -245,7 +245,15 @@ export default function HomePage() {
               The homepage is a category entry, not the money result for “pet relocation Dubai”. That decision-stage term lives on the door-to-door service. Inbound arrivals, outbound departures, pet taxi and permits each have their own URL so we do not compete with ourselves. Cards below go only to service pages and the tiers hub.
             </p>
             <p className="text-body mx-auto mt-4 max-w-3xl">
-              Use the money page when you want one coordinator to hold documents, crate, cargo and the last mile. Use the to-Dubai page when you are only arriving. Use the from-Dubai page when you are only leaving. Use pet taxi when the animal never leaves the road. Species pages exist for dog- and cat-specific crate and apartment rules; the federal permit chain is shared. If you already know you want document guidance versus full coordination, compare tiers first, then open the service URL — do not treat this grid as a second copy of those bodies.
+              Use the money page when you want one coordinator to hold documents, crate, cargo and the last mile. Use{' '}
+              <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+                pet import to Dubai
+              </Link>{' '}
+              when the job is inbound clearance. Use{' '}
+              <Link to="/service/pet-export-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+                pet export from Dubai
+              </Link>{' '}
+              when you are leaving the UAE. Use the to-Dubai page when you are only arriving. Use the from-Dubai page when you are only leaving. Use pet taxi when the animal never leaves the road. Species pages exist for dog- and cat-specific crate and apartment rules; the federal permit chain is shared. If you already know you want document guidance versus full coordination, compare tiers first, then open the service URL — do not treat this grid as a second copy of those bodies.
             </p>
           </div>
           <div className="grid items-start gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -292,7 +300,7 @@ export default function HomePage() {
               Door-to-door relocation or inbound import — not guide browsing alone
             </h2>
             <p className="mt-2 text-sm leading-relaxed text-[#5A5A5A]">
-              Guides explain the rules. Money pages own the job. Check eligibility on WhatsApp ({siteConfig.phone}), then open the service that matches your move. Confirm MOCCAE portal fees on the official site.
+              Guides explain the rules. Money pages own the job. Check eligibility on WhatsApp ({siteConfig.phone}), then open door-to-door relocation, inbound import or outbound export. Confirm MOCCAE portal fees on the official site.
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-3 md:justify-end">
@@ -307,6 +315,12 @@ export default function HomePage() {
               className="inline-flex items-center gap-2 rounded-2xl border-2 border-[#4F5BD5] px-5 py-3.5 text-sm font-semibold text-[#4F5BD5] hover:bg-[#4F5BD5]/5"
             >
               Pet import to Dubai <ArrowRight className="h-4 w-4" />
+            </Link>
+            <Link
+              to="/service/pet-export-dubai/"
+              className="inline-flex items-center gap-2 rounded-2xl border-2 border-[#4F5BD5] px-5 py-3.5 text-sm font-semibold text-[#4F5BD5] hover:bg-[#4F5BD5]/5"
+            >
+              Pet export from Dubai <ArrowRight className="h-4 w-4" />
             </Link>
             <WhatsAppCta text="Check Eligibility" message={`Hi Dubai Pet Relocation, I want to check eligibility for relocating my pet to/from Dubai. Pet type, breed, route, month:`} />
           </div>
@@ -667,6 +681,12 @@ export default function HomePage() {
               className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white/10 px-7 py-4 text-sm font-semibold text-white ring-1 ring-white/30 hover:bg-white/20"
             >
               Pet import to Dubai
+            </Link>
+            <Link
+              to="/service/pet-export-dubai/"
+              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white/10 px-7 py-4 text-sm font-semibold text-white ring-1 ring-white/30 hover:bg-white/20"
+            >
+              Pet export from Dubai
             </Link>
           </div>
         </div>

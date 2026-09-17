@@ -4,9 +4,9 @@ const downtownDubai: AreaPageData = {
   slug: 'downtown-dubai',
   areaName: 'Downtown Dubai',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Downtown Dubai | Dog & Cat Relocation (2026)',
+  seoTitle: 'Pet Relocation Downtown Dubai | Tower Access',
   metaDescription:
-    'Pet relocation in Downtown Dubai: boulevard towers, Burj-area building access, City Walk–adjacent last mile and MOCCAE permits. WhatsApp +971 50 478 2999.',
+    'Pet relocation Downtown Dubai: boulevard towers, dock access and MOCCAE timing. WhatsApp +971504782999.',
   keywords:
     'pet relocation downtown dubai, pet transport downtown dubai, dog relocation downtown dubai, cat relocation downtown dubai, pet movers burj khalifa',
   h1: 'Pet Relocation in Downtown Dubai',
@@ -135,7 +135,7 @@ const downtownDubai: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'Outbound from a Downtown tower is planned destination-backwards: destination entry rules first, then the UAE export health certificate and airline acceptance. Do not paste inbound permit language onto an export. Confirm export-certificate fees and validity on the official MOCCAE portal — secondary blog numerals are not first-party official fees.',
+          text: 'Outbound from a Downtown tower is planned destination-backwards: destination entry rules first, then the UAE export health certificate and airline acceptance. Do not paste inbound permit language onto an export. Commercial outbound is [pet export from Dubai](/service/pet-export-dubai/). Door-to-door is [pet relocation Dubai](/service/pet-relocation-dubai/). Confirm export-certificate fees and validity on the official MOCCAE portal — secondary blog numerals are not first-party official fees.',
         },
         {
           type: 'p',
@@ -177,6 +177,24 @@ const downtownDubai: AreaPageData = {
               title: 'Business Bay',
               text: 'Adjacent canal towers — different docks, same airport corridors.',
               to: '/dubai/business-bay/',
+            },
+            {
+              kind: 'Service',
+              title: 'Pet relocation Dubai',
+              text: 'Door-to-door coordination for a Downtown dock last mile.',
+              to: '/service/pet-relocation-dubai/',
+            },
+            {
+              kind: 'Service',
+              title: 'Pet import to Dubai',
+              text: 'Inbound clearance when the boulevard tower is the arrival door.',
+              to: '/service/pet-import-dubai/',
+            },
+            {
+              kind: 'Service',
+              title: 'Pet export from Dubai',
+              text: 'Commercial outbound job when you leave Downtown.',
+              to: '/service/pet-export-dubai/',
             },
             {
               kind: 'Guide',
