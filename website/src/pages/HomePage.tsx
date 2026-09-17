@@ -209,7 +209,8 @@ export default function HomePage() {
         eyebrow="Pet relocation coordination for Dubai and the UAE"
         title="Dubai Pet Relocation — Guides, Routes & WhatsApp Quotes"
         subtitle="Plan a move with MOCCAE-aware document checks, route guidance and WhatsApp timelines — then open the service page that owns your move."
-        primaryLabel="Get a Relocation Quote"
+        primaryLabel="Check Eligibility on WhatsApp"
+        whatsappMessage="Hi Dubai Pet Relocation, I want to check eligibility for relocating my pet. Pet type: [Dog/Cat], breed, origin/destination, target month:"
         secondary={{ label: 'Pet relocation Dubai service', to: '/service/pet-relocation-dubai/' }}
         updated="Updated September 2026"
       />
@@ -254,7 +255,11 @@ export default function HomePage() {
                 <Link
                   key={s.to}
                   to={s.to}
-                  className="group w-full overflow-hidden rounded-[20px] bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                  className={`group w-full overflow-hidden rounded-[20px] bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md ${
+                    s.to === '/service/pet-relocation-dubai/' || s.to === '/service/pet-import-dubai/'
+                      ? 'ring-2 ring-[#4F5BD5]/30'
+                      : ''
+                  }`}
                 >
                   {img ? (
                     <img src={img.src} alt={img.alt} width={1200} height={900} loading="lazy" className="aspect-[4/3] w-full object-cover" />
@@ -274,6 +279,36 @@ export default function HomePage() {
             >
               Compare our service tiers <ArrowRight className="h-4 w-4" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 3b. Money-page funnel — commercial services + WhatsApp above the fold continuation */}
+      <section className="border-y border-[#E6E8F5] bg-white">
+        <div className="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-6 px-5 py-10 sm:px-6 md:flex-row lg:px-8">
+          <div className="max-w-xl text-center md:text-left">
+            <p className="text-sm font-semibold uppercase tracking-wider text-[#4F5BD5]">Book a commercial path</p>
+            <h2 className="mt-2 text-[22px] font-bold text-[#2A2A2A] sm:text-[26px]">
+              Door-to-door relocation or inbound import — not guide browsing alone
+            </h2>
+            <p className="mt-2 text-sm leading-relaxed text-[#5A5A5A]">
+              Guides explain the rules. Money pages own the job. Check eligibility on WhatsApp ({siteConfig.phone}), then open the service that matches your move. Confirm MOCCAE portal fees on the official site.
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3 md:justify-end">
+            <Link
+              to="/service/pet-relocation-dubai/"
+              className="inline-flex items-center gap-2 rounded-2xl bg-[#4F5BD5] px-5 py-3.5 text-sm font-semibold text-white hover:bg-[#3d48b0]"
+            >
+              Pet relocation Dubai <ArrowRight className="h-4 w-4" />
+            </Link>
+            <Link
+              to="/service/pet-import-dubai/"
+              className="inline-flex items-center gap-2 rounded-2xl border-2 border-[#4F5BD5] px-5 py-3.5 text-sm font-semibold text-[#4F5BD5] hover:bg-[#4F5BD5]/5"
+            >
+              Pet import to Dubai <ArrowRight className="h-4 w-4" />
+            </Link>
+            <WhatsAppCta text="Check Eligibility" message={`Hi Dubai Pet Relocation, I want to check eligibility for relocating my pet to/from Dubai. Pet type, breed, route, month:`} />
           </div>
         </div>
       </section>
@@ -606,12 +641,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 12. Final CTA */}
+      {/* 12. Final CTA — commercial services + WhatsApp eligibility */}
       <section className="section-padding bg-[#4F5BD5]">
         <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[32px]">Ready to get a relocation quote?</h2>
+          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[32px]">Ready to check eligibility or book a service?</h2>
           <p className="mb-3 text-white/90">
-            Message the pet, the route and the month. A coordinator replies during business hours with the inbound, outbound or pet-taxi path that actually applies.
+            Message the pet, the route and the month — or open the door-to-door / import money pages. A coordinator replies during business hours with the path that actually applies.
           </p>
           <p className="mb-3 text-sm text-white/70">
             What happens after you message us: we read the breed and corridor, we say which documents matter first, and we tell you if the month is realistic. No 15-minute SLA. No 24/7 claim.
@@ -619,7 +654,21 @@ export default function HomePage() {
           <p className="mb-8 text-sm text-white/70">
             Accuracy note: regulatory lines on this page follow the first-party source-of-truth (90-day permit; titer sample within 90 days before travel). Portal fees are confirmed on the official site, not invented here.
           </p>
-          <WhatsAppCta text="Get a Relocation Quote" />
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <WhatsAppCta text="Check Eligibility" message={`Hi Dubai Pet Relocation, I want to check eligibility for relocating my pet. Pet type, breed, route, month:`} />
+            <Link
+              to="/service/pet-relocation-dubai/"
+              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-7 py-4 text-sm font-semibold text-[#4F5BD5] shadow-sm hover:bg-white/90"
+            >
+              Pet relocation Dubai
+            </Link>
+            <Link
+              to="/service/pet-import-dubai/"
+              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white/10 px-7 py-4 text-sm font-semibold text-white ring-1 ring-white/30 hover:bg-white/20"
+            >
+              Pet import to Dubai
+            </Link>
+          </div>
         </div>
       </section>
     </div>
