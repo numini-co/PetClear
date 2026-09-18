@@ -21,6 +21,7 @@ const CorporateRelocationPage = lazy(() => import('./pages/CorporateRelocationPa
 const ContactPage = lazy(() => import('./pages/ContactPage.tsx'))
 const FAQPage = lazy(() => import('./pages/FAQPage.tsx'))
 const ServicesPage = lazy(() => import('./pages/ServicesPage.tsx'))
+const PricesPage = lazy(() => import('./pages/PricesPage.tsx'))
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy.tsx'))
 const TermsOfService = lazy(() => import('./pages/TermsOfService.tsx'))
 
@@ -99,6 +100,8 @@ export default function App() {
           <Route path="/contact/" element={<ContactPage />} />
           <Route path="/faq/" element={<FAQPage />} />
           <Route path="/services/" element={<ServicesPage />} />
+          <Route path="/prices/" element={<PricesPage />} />
+          <Route path="/prices" element={<Navigate to="/prices/" replace />} />
           <Route path="/privacy-policy/" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service/" element={<TermsOfService />} />
 

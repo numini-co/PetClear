@@ -5,6 +5,7 @@ import {
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
+import { CTA_SCOPED_QUOTE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
 
@@ -263,14 +264,14 @@ const faqs: FAQEntry[] = [
   {
     category: 'costs',
     question: 'What are your service tiers and what do they include?',
-    answer: <><p>We offer three coordination tiers. PawPilot (AED 1,500–2,500) covers documentation, the MOCCAE permit application, flight booking, and basic WhatsApp support. PawPartner (AED 3,000–5,000) adds door-to-door pickup and delivery, the IATA crate, vet coordination, WhatsApp updates during the move, and photo updates. PawVIP (AED 5,000–8,000) adds a personal handler, real-time tracking, video updates at every checkpoint, comprehensive travel insurance, and priority rebooking.</p><p className="mt-3"><Link to="/services/" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">Compare our packages <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
-    plain: 'We offer three coordination tiers. PawPilot (AED 1,500–2,500) covers documentation, the MOCCAE permit application, flight booking, and basic WhatsApp support. PawPartner (AED 3,000–5,000) adds door-to-door pickup and delivery, the IATA crate, vet coordination, WhatsApp updates during the move, and photo updates. PawVIP (AED 5,000–8,000) adds a personal handler, real-time tracking, video updates at every checkpoint, comprehensive travel insurance, and priority rebooking.',
+    answer: <><p>We offer three coordination scopes. PawPilot is a document / eligibility plan. PawPartner is managed booking and travel-day hold. PawVIP is a dedicated coordinator. Dubai Pet Relocation coordination is quote-only after eligibility. We do not publish package from-prices. WhatsApp a scoped quote. Government MOCCAE fees are confirmed on the official portal.</p><p className="mt-3"><Link to="/prices/" className="text-[#4F5BD5] font-semibold hover:underline inline-flex items-center gap-1">See quoted packages <ArrowRight className="w-3.5 h-3.5" /></Link></p></>,
+    plain: 'We offer three coordination scopes. PawPilot is a document / eligibility plan. PawPartner is managed booking and travel-day hold. PawVIP is a dedicated coordinator. Dubai Pet Relocation coordination is quote-only after eligibility. We do not publish package from-prices. WhatsApp a scoped quote. Government MOCCAE fees are confirmed on the official portal.',
   },
   {
     category: 'costs',
     question: 'What is the cheapest way to relocate a pet to Dubai?',
-    answer: <p>The absolute cheapest route is DIY from a low-risk country like the UK or EU, with a small pet, in off-peak season, with all documentation already complete — which can cost as little as AED 5,400. But the savings are often wiped out by a single missed document (refusal or re-export at your expense), a wrong crate (rebooking from AED 2,000), 20-plus hours of your time, and the stress of managing five providers. Our PawPilot tier (AED 1,500–2,500) keeps costs reasonable while removing the biggest error risks.</p>,
-    plain: 'The absolute cheapest route is DIY from a low-risk country like the UK or EU, with a small pet, in off-peak season, with all documentation already complete — which can cost as little as AED 5,400. But the savings are often wiped out by a single missed document (refusal or re-export at your expense), a wrong crate (rebooking from AED 2,000), 20-plus hours of your time, and the stress of managing five providers. Our PawPilot tier (AED 1,500–2,500) keeps costs reasonable while removing the biggest error risks.',
+    answer: <p>The cheapest path is usually DIY from a low-risk country with a small pet, in off-peak season, with documents already complete. Third-party vet, freight and crate invoices still apply. A missed document or a rejected crate can wipe the savings. Our document / eligibility plan is quote-only after we know the pet and corridor. We do not publish a PawPilot from-price. WhatsApp a scoped quote if you want us to hold the file.</p>,
+    plain: 'The cheapest path is usually DIY from a low-risk country with a small pet, in off-peak season, with documents already complete. Third-party vet, freight and crate invoices still apply. A missed document or a rejected crate can wipe the savings. Our document / eligibility plan is quote-only after we know the pet and corridor. We do not publish a PawPilot from-price. WhatsApp a scoped quote if you want us to hold the file.',
   },
   {
     category: 'costs',
@@ -593,8 +594,8 @@ export default function FAQPage() {
               <div className="text-center py-12">
                 <p className="text-[#8A8A8A] text-base mb-4">No questions found matching your search.</p>
                 <WhatsAppCta
-                  text="Ask Us on WhatsApp"
-                  message={`Hi Dubai Pet Relocation! I have a question about pet relocation: ${searchQuery}`}
+                  text={CTA_SCOPED_QUOTE}
+                  message={WA_ELIGIBILITY_DEFAULT}
                 />
               </div>
             )}
@@ -645,11 +646,11 @@ export default function FAQPage() {
             Didn't Find Your Answer?
           </h2>
           <p className="text-white/70 text-base leading-relaxed mb-8">
-            Every relocation is unique. Message us on WhatsApp with your specific question and we will give you a clear, personalized answer — usually within 15 minutes.
+            Guides stay free to read. WhatsApp is for a paid eligibility check and a scoped quote after we know the pet and corridor.
           </p>
           <WhatsAppCta
-            text="Ask a Question on WhatsApp"
-            message="Hi Dubai Pet Relocation! I have a specific question about pet relocation that I couldn't find in the FAQ. Can you help?"
+            text={CTA_SCOPED_QUOTE}
+            message={WA_ELIGIBILITY_DEFAULT}
           />
         </div>
       </section>

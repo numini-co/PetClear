@@ -9,6 +9,9 @@ import Hero from '../components/Hero.tsx'
 import RouteCostTeaser, { ROUTE_PACKAGE_COST_FAQ } from '../components/RouteCostTeaser.tsx'
 import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
+import { waEligibility } from '../lib/conversionCopy.ts'
+
+const waIndia = waEligibility({ origin: 'India', need: 'managed move' })
 
 export default function IndiaToDubai() {
   const pageUrl = `${BASE_URL}/routes/india-to-dubai/`
@@ -112,7 +115,7 @@ export default function IndiaToDubai() {
         subtitle="India is a high-risk country for rabies: when a titer is required, the sample must be taken within 90 days before travel and read ≥0.5 IU/ml — not a wait-after-draw rule."
         updated="Updated June 2026"
         primaryLabel="Check India-to-Dubai eligibility"
-        whatsappMessage="Hi Dubai Pet Relocation, I want to check eligibility for relocating my pet from India to Dubai. Pet type, breed, Indian city, and target month:"
+        whatsappMessage={waIndia}
         secondary={{ label: 'Pet import to Dubai', to: '/service/pet-import-dubai/' }}
       />
 
@@ -168,7 +171,7 @@ export default function IndiaToDubai() {
         variant="mid"
         title="DIY this corridor — or hand the import file over"
         subtitle="This page explains the India-to-Dubai titer window and documents. DIY the sequence here, or open pet import / MOCCAE permit assistance when you want the file managed. Permit validity: 90 days from issuance. Titer sample within 90 days before travel when required. Confirm portal fees on the official site."
-        eligibilityMessage="Hi Dubai Pet Relocation, I want to check eligibility for relocating my pet from India to Dubai. Pet type, breed, Indian city, and target month:"
+        eligibilityMessage={waIndia}
         waLabel="Check India-to-Dubai eligibility"
         links={[
           { to: '/service/pet-import-dubai/', label: 'Pet import to Dubai', icon: 'plane' },
@@ -289,7 +292,7 @@ export default function IndiaToDubai() {
 
       <RouteCostTeaser
         corridor="India to Dubai"
-        whatsappMessage="Hi Dubai Pet Relocation! I need a quote for relocating my pet from India to Dubai."
+        whatsappMessage={waIndia}
       />
 
       {/* TIMELINE */}
@@ -472,7 +475,7 @@ export default function IndiaToDubai() {
         variant="end"
         title="Ready to relocate your pet from India to Dubai?"
         subtitle="DIY this corridor guide, or hand the file to pet import / permit assistance. We coordinate titer sample timing (within 90 days before travel), AQCS NOC, and the MOCCAE permit (valid 90 days from issuance). Confirm government fees on the official portal — we do not invent amounts."
-        eligibilityMessage="Hi Dubai Pet Relocation, I want to relocate my pet from India to Dubai and check eligibility. Pet type, breed, Indian city, and target month:"
+        eligibilityMessage={waIndia}
         waLabel="Check India-to-Dubai eligibility"
         links={[
           { to: '/service/pet-import-dubai/', label: 'Pet import to Dubai', icon: 'plane' },

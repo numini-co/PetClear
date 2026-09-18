@@ -15,7 +15,7 @@ const petExportDubai: ServicePageData = {
   heroImageAlt:
     'Calm dog and cat beside a travel crate at a Dubai airport departure terminal',
   whatsappMessage:
-    'Hi Dubai Pet Relocation! I am leaving Dubai and need help exporting my pet. Can you guide me on the process and cost?',
+    'I want a paid Dubai pet relocation eligibility check. Origin: Dubai. Pet: __. Target date: __. Need: managed move.',
   trustBadges: ['MOCCAE export guided', 'Vetted partners', 'Fit to Fly coordination', 'WhatsApp support'],
   costRange: { low: '2000', high: '22000' },
   hasHowTo: true,

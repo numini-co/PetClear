@@ -15,7 +15,7 @@ const catRelocationDubai: ServicePageData = {
   heroImageAlt:
     'Relaxed cat resting inside a soft-lined travel carrier in a bright room',
   whatsappMessage:
-    'Hi Dubai Pet Relocation! I need to relocate my cat from ___ to ___. Can you guide me on documents, timeline and cost?',
+    'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: cat. Target date: __. Need: managed move.',
   trustBadges: ['Low-stress handling', 'No sedation advised', 'Vetted partners', 'WhatsApp support'],
   costRange: { low: '2000', high: '18000' },
   hasHowTo: false,

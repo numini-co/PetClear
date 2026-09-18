@@ -30,8 +30,8 @@ const petImportDubai: ServicePageData = {
   heroImageAlt:
     'Pet travel crates handled in a Dubai air-cargo warehouse during import clearance',
   whatsappMessage:
-    'Hi Dubai Pet Relocation! I want to import my pet to Dubai. Can you review origin, breed, documents and a commercial import quote?',
-  ctaLabel: 'Get a Relocation Quote',
+    'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: __. Target date: __. Need: managed move.',
+  ctaLabel: 'Get a managed-move quote',
   heroEyebrow: 'Pet Import Service',
   snippetQuestion: 'What are the requirements for traveling with my pet to the UAE?',
   snippetAnswer:

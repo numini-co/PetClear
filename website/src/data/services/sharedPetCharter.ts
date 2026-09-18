@@ -17,7 +17,7 @@ const sharedPetCharter: ServicePageData = {
     'Two calm dogs in travel crates inside a dedicated animal-lift cabin',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I am considering a shared / group pet charter. Can you say whether a lift exists for my route and send a quote?',
-  ctaLabel: 'Get a Shared Charter Quote',
+  ctaLabel: 'Request a managed charter quote',
   heroEyebrow: 'Charter coordination',
   snippetQuestion: 'What is a shared pet charter?',
   snippetAnswer:

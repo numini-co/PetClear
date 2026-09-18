@@ -14,6 +14,13 @@ export const RELEASE_FEE_VERIFY =
 export const GOV_FEE_CONFIRM =
   'Confirm the current MOCCAE import-permit and arrival-release fees on the official portal. Fees may change.'
 
+/** Federal MOCCAE framing only. Always labeled government + confirm-on-portal. Not DPR prices. */
+export const MOCCAE_PERMIT_FEE_FRAMING = 'AED 200'
+export const MOCCAE_RELEASE_DOG_FRAMING = 'AED 500'
+export const MOCCAE_RELEASE_CAT_FRAMING = 'AED 250'
+export const MOCCAE_FEE_FRAMING_NOTE =
+  'These are government fees on the official MOCCAE portal, not Dubai Pet Relocation package prices. Confirm the live amounts when you apply. Fees may change.'
+
 export const GOV_FEE_TABLE_CELL = 'Confirm on official MOCCAE portal'
 
 /** MOCCAE export health-certificate fee / timing — secondary-source only (SOT 2026-09-09; portal WAF). */

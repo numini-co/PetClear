@@ -17,7 +17,7 @@ const privateJetPetTravel: ServicePageData = {
     'Calm dog lying on a leather seat inside a private aircraft cabin',
   whatsappMessage:
     'Hi Dubai Pet Relocation! I need a private-jet option for my pet. Can you review the route and send a quote? I understand this is quote-only.',
-  ctaLabel: 'Get a Private Jet Quote',
+  ctaLabel: 'Request a managed jet quote',
   heroEyebrow: 'Charter coordination',
   snippetQuestion: 'Can I fly my pet on a private jet from Dubai?',
   snippetAnswer:

@@ -15,7 +15,7 @@ const petTransportDubai: ServicePageData = {
   heroImageAlt:
     'Climate-controlled van interior with a secured pet travel crate in Dubai',
   whatsappMessage:
-    'Hi Dubai Pet Relocation! I need a pet taxi or pet transport in Dubai. Pickup, drop-off and preferred time: …',
+    'Hi Dubai Pet Relocation, I want to book a pet taxi or ground transfer in Dubai. Pickup, drop-off and preferred time:',
   trustBadges: [
     'Pet taxi & ground only',
     'Climate-controlled partners',

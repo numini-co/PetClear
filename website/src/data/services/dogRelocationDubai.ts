@@ -15,7 +15,7 @@ const dogRelocationDubai: ServicePageData = {
   heroImageAlt:
     'Calm dog sitting beside an IATA travel crate at a Dubai airport',
   whatsappMessage:
-    'Hi Dubai Pet Relocation! I need to relocate my dog (breed and approx weight: ___) from ___ to ___. Can you check breed eligibility, crate size and cost?',
+    'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: dog (breed __). Target date: __. Need: managed move.',
   trustBadges: ['Breed eligibility checked', 'IATA crate guidance', 'Vetted partners', 'WhatsApp support'],
   costRange: { low: '2500', high: '22000' },
   hasHowTo: false,
@@ -61,7 +61,7 @@ const dogRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'A third group is the snub-nosed (brachycephalic) breeds, covered in their own section below. These are not banned or restricted by the government, but airlines apply their own health-based rules to them. For the full, current breed lists and the practical detail behind each group, read our banned dog breeds in Dubai guide — and message us with your breed so we can confirm eligibility against the official UAE rules before you plan further.',
+          text: 'A third group is the snub-nosed (brachycephalic) breeds, covered in their own section below. These are not banned or restricted by the government, but airlines apply their own health-based rules to them. For the full, current breed lists and the practical detail behind each group, read our banned dog breeds in Dubai guide. WhatsApp the breed only if you are ready to book a managed dog relocation and need eligibility confirmed against the official UAE rules.',
         },
         {
           type: 'list',

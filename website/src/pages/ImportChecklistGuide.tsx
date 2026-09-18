@@ -24,6 +24,10 @@ import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import LastVerified from '../components/LastVerified.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
+import GuideDualPath from '../components/GuideDualPath.tsx'
+import { waEligibility } from '../lib/conversionCopy.ts'
+
+const waChecklist = waEligibility({ need: 'managed move' })
 
 /* ─── FAQ accordion helper ─── */
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
@@ -216,6 +220,9 @@ export default function ImportChecklistGuide() {
         title="Pet Import Documents Checklist for Dubai"
         subtitle="An ordered, checkable list of every document and step to import your pet to Dubai — microchip to arrival clearance — with timing notes and a summary table."
         updated="Updated June 2026"
+        primaryLabel="Check if we can move your pet"
+        whatsappMessage={waChecklist}
+        secondary={{ label: 'Pet import service', to: '/service/pet-import-dubai/' }}
       />
 
       {/* Intro + at-a-glance */}
@@ -229,6 +236,14 @@ export default function ImportChecklistGuide() {
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
                 Bringing a pet into the UAE is a documents process. Every item on this checklist is mandatory, and the steps must happen in the right order. The microchip comes before the rabies vaccination, the rabies vaccination comes before the titer test, and the MOCCAE import permit — applied with UAE Pass — comes before you fly.
               </p>
+              <div className="mb-6">
+                <GuideDualPath
+                  diyNote="Keep ticking the list below if you are lining up the file yourself."
+                  moneyTo="/service/pet-import-dubai/"
+                  moneyLabel="Pet import to Dubai"
+                  waMessage={waChecklist}
+                />
+              </div>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
                 Skip a step or get the sequence wrong and your pet can be refused entry, confiscated, or re-exported at your expense. Use the ordered checklist below, tick off each item, then confirm everything against the documents summary table. For the statutory rules behind each box, open the{' '}
                 <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
@@ -523,9 +538,9 @@ export default function ImportChecklistGuide() {
 
       <GuideFunnelCta
         variant="mid"
-        title="Documents lined up — need the import service?"
-        subtitle="Use the checklist here, then open pet import or door-to-door relocation when you want coordination. Check eligibility on WhatsApp. Confirm MOCCAE fees on the portal."
-        eligibilityMessage="Hi Dubai Pet Relocation, I am using the import checklist and want to check eligibility for bringing my pet to Dubai."
+        title="Documents lined up — book the import?"
+        subtitle="Use the checklist here if you are filing yourself. Open pet import or door-to-door relocation when you want us to run the file. WhatsApp eligibility only if you are ready to book. Confirm MOCCAE fees on the portal."
+        eligibilityMessage={waChecklist}
       />
 
       {/* Related Links */}
@@ -575,7 +590,7 @@ export default function ImportChecklistGuide() {
                 <MessageCircle className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">Contact Us</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Send us your pet’s details and we’ll confirm exactly which documents you need.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">The document list is on this page. WhatsApp if you are ready to book a managed import, not for a free recap of the checklist.</p>
             </Link>
           </div>
         </div>
@@ -583,9 +598,9 @@ export default function ImportChecklistGuide() {
 
       <GuideFunnelCta
         variant="end"
-        title="Let us handle your pet import checklist"
-        subtitle="Avoid sequencing mistakes and rejected permits. Check eligibility on WhatsApp, or open the door-to-door / import money pages. Permit validity: 90 days from issuance."
-        eligibilityMessage="Hi Dubai Pet Relocation, I am importing my pet to Dubai and want to check eligibility and document sequencing."
+        title="Ready to book a managed import?"
+        subtitle="Avoid sequencing mistakes and rejected permits when you want the file held. WhatsApp eligibility if you are ready to book, or open the door-to-door / import money pages. Permit validity: 90 days from issuance."
+        eligibilityMessage={waChecklist}
       />
     </>
   )

@@ -33,8 +33,11 @@ import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
 import { PERMIT_FEE_VERIFY, RELEASE_FEE_VERIFY } from '../lib/regulatory.ts'
+import GuideDualPath from '../components/GuideDualPath.tsx'
+import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
+import { CTA_MANAGED_QUOTE, waEligibility } from '../lib/conversionCopy.ts'
 
-const costGuideMsg = 'Hi, I saw your cost guide and want a personalized quote for relocating my [dog/cat] from [country] to Dubai.'
+const costGuideMsg = waEligibility({ need: 'managed move' })
 
 const snippetQuestion = 'How much does it cost to relocate a pet in Dubai?'
 const snippetAnswer =
@@ -43,7 +46,7 @@ const snippetAnswer =
 const COST_PAA_FAQS: { q: string; a: string }[] = [
   {
     q: 'How much does it cost to relocate a pet in Dubai?',
-    a: `There is no single ticket price. A Dubai pet move splits into government permits and port release. ${PERMIT_FEE_VERIFY} ${RELEASE_FEE_VERIFY} Veterinary prep, air freight, an IATA crate, airport handling, and coordination sit on top. Airline charges vary by route and size. Dubai Pet Relocation packages are quoted — we do not publish a from-price. See also [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/). WhatsApp +971504782999.`,
+    a: `There is no single ticket price. A Dubai pet move splits into government permits and port release. ${PERMIT_FEE_VERIFY} ${RELEASE_FEE_VERIFY} Veterinary prep, air freight, an IATA crate, airport handling, and coordination sit on top. Airline charges vary by route and size. Cost types are listed on this page. Dubai Pet Relocation packages are quoted on [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/). WhatsApp +971504782999 when you are ready to book a managed move.`,
   },
   {
     q: 'How much does it cost to import a pet into the UAE?',
@@ -63,7 +66,7 @@ const COST_PAA_FAQS: { q: string; a: string }[] = [
   },
   {
     q: 'Is the cost guide the same as booking a relocation service?',
-    a: 'This guide owns cost types. The commercial jobs sit on [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/), inbound [/service/pet-import-dubai/](/service/pet-import-dubai/), and outbound [/service/pet-export-dubai/](/service/pet-export-dubai/). Packages stay Get a Quote. Confirm MOCCAE fees on the portal. WhatsApp +971504782999.',
+    a: 'This guide owns cost types. Read the tables here if you are budgeting yourself. The commercial jobs sit on [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/), inbound [/service/pet-import-dubai/](/service/pet-import-dubai/), and outbound [/service/pet-export-dubai/](/service/pet-export-dubai/). Packages stay quoted. Confirm MOCCAE fees on the portal. WhatsApp +971504782999 when you are ready to book.',
   },
 ]
 
@@ -222,13 +225,25 @@ export default function CostGuidePage() {
         imageAlt="Pet owner reviewing transparent Dubai pet relocation costs"
         eyebrow="Pet Relocation Guide"
         title="Pet Relocation Dubai Cost — Transparent 2026 Guide"
-        subtitle="A Dubai pet move is government, veterinary, freight, crate, handling and coordination — not one ticket. Contested MOCCAE fees are confirmed on the portal. Our package is Get a Quote."
+        subtitle="A Dubai pet move is government, veterinary, freight, crate, handling and coordination — not one ticket. Contested MOCCAE fees are confirmed on the portal. Our package is quoted after eligibility."
         updated="Updated September 2026"
+        primaryLabel="Get a managed-move quote"
+        whatsappMessage={costGuideMsg}
+        secondary={{ label: 'Pet relocation Dubai service', to: '/service/pet-relocation-dubai/' }}
       />
 
       {/* ===== SNIPPET + COST TYPES ===== */}
       <Section className="bg-white">
         <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
+        <div className="mb-8">
+          <GuideDualPath
+            diyNote="Keep reading the cost types and tables if you are budgeting the file yourself."
+            moneyTo="/service/pet-relocation-dubai/"
+            moneyLabel="Pet relocation Dubai"
+            waMessage={costGuideMsg}
+            waLabel="Get a managed-move quote"
+          />
+        </div>
         <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
           What you actually pay — by cost type
         </h2>
@@ -526,8 +541,8 @@ export default function CostGuidePage() {
             <strong>What's different about us:</strong> We tell you exactly who our partners are — the vet clinics, the cargo handlers, the ground transport teams. We don't pretend we own an airline. We just know which ones to trust, and we manage every interaction so you don't have to chase five different phone numbers.
           </p>
           <p className="mt-2 text-sm">
-            <Link to="/services/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
-              See our pet relocation packages <ArrowRight className="w-3.5 h-3.5" />
+            <Link to="/prices/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
+              See quoted packages on Prices <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </p>
         </div>
@@ -535,15 +550,19 @@ export default function CostGuidePage() {
         {/* Total Estimated Cost Range */}
         <div className="mb-4">
           <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">Total Estimated Cost Range (All-In)</h3>
+          <p className="text-sm text-[#5A5A5A] mb-4">
+            Illustrative third-party stacks (government, clinic, freight, crate, handling) plus quoted coordination. Not
+            Dubai Pet Relocation package from-prices. Our coordination stays Get a Quote after eligibility.
+          </p>
           <div className="overflow-x-auto">
             <table className="data-table">
               <thead>
                 <tr><th>Scenario</th><th>Total (AED)</th></tr>
               </thead>
               <tbody>
-                <tr><td><strong>Small cat from UK/EU</strong> (low-risk, PawPilot)</td><td>8,000–11,000</td></tr>
-                <tr><td><strong>Medium dog from UK/EU</strong> (low-risk, PawPartner)</td><td>12,000–16,000</td></tr>
-                <tr><td><strong>Large dog from USA</strong> (low-risk, PawPartner)</td><td>15,000–20,000</td></tr>
+                <tr><td><strong>Small cat from UK/EU</strong> (low-risk, document-plan scope)</td><td>8,000–11,000</td></tr>
+                <tr><td><strong>Medium dog from UK/EU</strong> (low-risk, managed-move scope)</td><td>12,000–16,000</td></tr>
+                <tr><td><strong>Large dog from USA</strong> (low-risk, managed-move scope)</td><td>15,000–20,000</td></tr>
                 <tr><td><strong>Any pet from high-risk country</strong> (India, Pakistan, Philippines) with titer test</td><td>14,000–22,000</td></tr>
                 <tr><td><strong>Brachycephalic breed with summer rerouting</strong></td><td>18,000–25,000+</td></tr>
                 <tr><td><strong>DIY from UK/EU</strong> (no service fee)</td><td>5,400–8,500</td></tr>
@@ -554,7 +573,7 @@ export default function CostGuidePage() {
         </div>
 
         <div className="mt-8 text-center">
-          <WhatsAppCta text="Not Sure Which Tier Fits Your Move? WhatsApp Us — We'll Match You in 2 Minutes" fullWidth className="sm:w-auto sm:inline-flex" />
+          <WhatsAppCta text="Get a managed-move quote for your corridor" fullWidth className="sm:w-auto sm:inline-flex" />
         </div>
       </Section>
 
@@ -640,7 +659,7 @@ export default function CostGuidePage() {
         </Card>
 
         <div className="text-center">
-          <WhatsAppCta text="Get an Exact Quote for Your Route — WhatsApp Us Your Pet's Details" fullWidth className="sm:w-auto sm:inline-flex" />
+          <WhatsAppCta text="Get a managed-move quote for your route" fullWidth className="sm:w-auto sm:inline-flex" />
         </div>
       </Section>
 
@@ -791,7 +810,7 @@ export default function CostGuidePage() {
         </p>
 
         <div className="mt-8 text-center">
-          <WhatsAppCta text="Worried About Hidden Fees? WhatsApp Us for a Fully Itemized Quote" fullWidth className="sm:w-auto sm:inline-flex" />
+          <WhatsAppCta text="Request an itemized managed-move quote" fullWidth className="sm:w-auto sm:inline-flex" />
         </div>
       </Section>
 
@@ -950,10 +969,10 @@ export default function CostGuidePage() {
         </div>
 
         <div id="whatsapp-cta" className="text-center">
-          <WhatsAppCta text="Get Your Exact Quote — WhatsApp Us Now" fullWidth className="sm:w-auto sm:inline-flex" />
+          <WhatsAppCta text="Get a managed-move quote" fullWidth className="sm:w-auto sm:inline-flex" />
           <div className="flex flex-col sm:flex-row gap-3 justify-center mt-4">
-            <WhatsAppCta text="Chat With Our Pet Relocation Team — No Obligation" fullWidth className="sm:w-auto sm:inline-flex bg-[#4F5BD5] hover:bg-[#3A45B0]" />
-            <WhatsAppCta text="Questions About Your Pet's Move? We're on WhatsApp" fullWidth className="sm:w-auto sm:inline-flex bg-[#4F5BD5] hover:bg-[#4a7a5e]" />
+            <WhatsAppCta text="Check eligibility for a scoped quote" fullWidth className="sm:w-auto sm:inline-flex bg-[#4F5BD5] hover:bg-[#3A45B0]" />
+            <WhatsAppCta text={CTA_MANAGED_QUOTE} fullWidth className="sm:w-auto sm:inline-flex bg-[#4F5BD5] hover:bg-[#3A45B0]" />
           </div>
         </div>
       </Section>
@@ -1030,23 +1049,12 @@ export default function CostGuidePage() {
         </div>
       </Section>
 
-      {/* ===== FINAL CTA ===== */}
-      <section className="relative overflow-hidden bg-[#4F5BD5] text-white section-padding">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Know Your Exact Cost?</h2>
-          <p className="text-white/90 max-w-2xl mx-auto mb-4 leading-relaxed">
-            You've read the breakdown. You know the ranges. You know what drives the price. Now let's get specific.
-          </p>
-          <p className="text-white font-semibold mb-2">One WhatsApp message. One 15-minute conversation. One firm, itemized quote.</p>
-          <p className="text-white/80 mb-2">No forms. No phone calls. No "we'll get back to you in 24–48 hours."</p>
-          <p className="text-white/80 mb-8">Just a real human on WhatsApp, looking at your pet's details, and telling you exactly what you'll pay — and why.</p>
-          <p className="text-white font-medium mb-8">Trusted relocation guidance — get your quote first, then decide.</p>
-
-          <div id="whatsapp-cta-final">
-            <WhatsAppCta text="Get Your Exact Quote — WhatsApp Us Now" fullWidth className="sm:w-auto sm:inline-flex" />
-          </div>
-        </div>
-      </section>
+      <GuideFunnelCta
+        variant="end"
+        title="Ready to book a managed move?"
+        eligibilityMessage={costGuideMsg}
+        waLabel={CTA_MANAGED_QUOTE}
+      />
 
       {/* ===== DISCLAIMER ===== */}
       <Section className="bg-[#F5F6FD]">
