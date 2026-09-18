@@ -6,6 +6,7 @@ Dubai Pet Relocation is a transparent concierge service that helps pet owners mo
 
 - [Homepage](https://dubai-pet-relocation.ae/): Overview of pet relocation services in Dubai, process, cost ranges, and links to every service, guide, route, and area page.
 - [Services](https://dubai-pet-relocation.ae/services/): Full list of pet relocation services including import, export, transport, dog relocation, cat relocation, and MOCCAE permit support.
+- [Prices](https://dubai-pet-relocation.ae/prices/): Quoted packages by scope (document plan, managed import, door-to-door). Confirm MOCCAE fees on the official portal. No invented government AED tables.
 - [How It Works](https://dubai-pet-relocation.ae/how-it-works/): Step-by-step explanation of the pet relocation process from consultation to reunion.
 - [About Us](https://dubai-pet-relocation.ae/about/): Our story, values, partner vetting process, and commitment to transparent pricing.
 - [Contact](https://dubai-pet-relocation.ae/contact/): WhatsApp, phone, email, and office details for Dubai Pet Relocation.

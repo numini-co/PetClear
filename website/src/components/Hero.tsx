@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import { MessageCircle, Phone } from 'lucide-react'
 import { getWhatsAppUrl, PHONE_DISPLAY, PHONE_E164 } from '../lib/seo.ts'
+import { CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import PaidIncludes from './PaidIncludes.tsx'
+import WhatsAppGate from './WhatsAppGate.tsx'
 
 interface HeroProps {
   image: string
@@ -23,6 +26,8 @@ interface HeroProps {
   imageLoading?: 'eager' | 'lazy'
   sizes?: string
   srcSet?: string
+  /** Show paid-includes + WhatsApp gate under the primary CTA (home + money pages). */
+  showBuyerQualify?: boolean
 }
 
 // Shared professional hero: a sharp full-bleed photo, a black gradient scrim for
@@ -36,9 +41,10 @@ export default function Hero({
   title,
   subtitle,
   whatsappMessage,
-  primaryLabel = 'Get a Free WhatsApp Quote',
+  primaryLabel = CTA_CHECK_MOVE,
   secondary,
   updated,
+  showBuyerQualify = false,
   overlayClassName,
   imageWidth = 1536,
   imageHeight = 1024,
@@ -84,12 +90,12 @@ export default function Hero({
           ) : null}
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
-              href={getWhatsAppUrl(whatsappMessage || 'Hi Dubai Pet Relocation! I need help relocating my pet and would like a quote.')}
+              href={getWhatsAppUrl(whatsappMessage || WA_ELIGIBILITY_DEFAULT)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white shadow-lg transition hover:bg-[#1DA851]"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-white/20 transition hover:bg-[#1DA851]"
             >
-              <MessageCircle className="h-4 w-4" />
+              <MessageCircle className="h-4 w-4" aria-hidden="true" />
               {primaryLabel}
             </a>
             {secondary ? (
@@ -109,6 +115,14 @@ export default function Hero({
               </a>
             )}
           </div>
+          {showBuyerQualify ? (
+            <div className="mt-6 max-w-xl space-y-3">
+              <WhatsAppGate tone="hero" />
+              <PaidIncludes tone="hero" compact />
+            </div>
+          ) : (
+            <WhatsAppGate tone="hero" className="mt-4 max-w-xl" />
+          )}
         </div>
       </div>
     </section>

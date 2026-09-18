@@ -15,7 +15,7 @@ const petRelocationToDubai: ServicePageData = {
   heroImageAlt:
     'Cat stepping out of its travel crate into a new Dubai apartment after relocating to Dubai',
   whatsappMessage:
-    'Hi! I am moving to Dubai with my pet. Can you map the inbound permit, titer timing and arrival steps from my country?',
+    'Hi Dubai Pet Relocation, I am moving to Dubai and want to check if you can run a managed inbound move. Origin, pet, breed and month:',
   trustBadges: [
     'Inbound / arrival-side only',
     '90-day MOCCAE permit window',

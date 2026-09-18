@@ -14,10 +14,11 @@ import LastVerified from '../components/LastVerified.tsx'
 import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { dubaiAreas } from '../data/areas/dubai/index.ts'
+import PaidIncludes from '../components/PaidIncludes.tsx'
 
 const defaultMsg = `Hi Dubai Pet Relocation team,
 
-I need help relocating my pet and would love to understand the process and get a quote.
+I want to check if you can move my pet. I am ready to book a managed relocation.
 
 Pet type: [Dog / Cat]
 Breed:
@@ -93,7 +94,7 @@ const HOME_FAQS = [
   },
   {
     q: 'What should I send on WhatsApp to start?',
-    a: 'Pet type, breed, approximate weight, origin or destination, and a target month. We reply during published hours with the inbound or outbound spine that applies — not a 15-minute or 24/7 staffing claim.',
+    a: 'WhatsApp is for people ready to book a managed relocation. Send pet type, breed, approximate weight, origin or destination, and a target month. Guides stay free to read. We reply during published hours with the inbound or outbound spine that applies — not a 15-minute or 24/7 staffing claim.',
   },
   {
     q: 'Do you operate the airline or the pet taxi yourselves?',
@@ -207,12 +208,13 @@ export default function HomePage() {
         image="/images/hero-dog.jpg"
         imageAlt="Calm golden retriever ready for relocation beside its travel crate in a bright Dubai home"
         eyebrow="Pet relocation coordination for Dubai and the UAE"
-        title="Dubai Pet Relocation — Guides, Routes & WhatsApp Quotes"
-        subtitle="Plan a move with MOCCAE-aware document checks, route guidance and WhatsApp timelines — then open the service page that owns your move."
-        primaryLabel="Check Eligibility on WhatsApp"
-        whatsappMessage="Hi Dubai Pet Relocation, I want to check eligibility for relocating my pet. Pet type: [Dog/Cat], breed, origin/destination, target month:"
+        title="Dubai Pet Relocation — Guides, Routes & Managed-Move Quotes"
+        subtitle="Read the rules here. Book a managed move when you want one coordinator to hold MOCCAE permit timing, airline booking, crate rules and the airport handoff."
+        primaryLabel="Check if we can move your pet"
+        whatsappMessage="Hi Dubai Pet Relocation, I want to check if you can move my pet. I am ready to book a managed relocation. Pet type: [Dog/Cat], breed, origin/destination, target month:"
         secondary={{ label: 'Pet relocation Dubai service', to: '/service/pet-relocation-dubai/' }}
         updated="Updated September 2026"
+        showBuyerQualify
       />
 
       {/* 2. Trust bar — process chips only; no metrics, no trust-bar photo */}
@@ -300,8 +302,12 @@ export default function HomePage() {
               Door-to-door relocation or inbound import — not guide browsing alone
             </h2>
             <p className="mt-2 text-sm leading-relaxed text-[#5A5A5A]">
-              Guides explain the rules. Money pages own the job. Check eligibility on WhatsApp ({siteConfig.phone}), then open door-to-door relocation, inbound import or outbound export. Confirm MOCCAE portal fees on the official site.
+              Guides explain the rules. Money pages own the job. Check eligibility on WhatsApp ({siteConfig.phone}) when you are ready to book a managed relocation, then open door-to-door, inbound import or outbound export. Confirm MOCCAE portal fees on the official site.
             </p>
+            <p className="mt-2 text-xs leading-relaxed text-[#8A8A8A]">
+              Guides are free to read. WhatsApp is for people ready to book a managed relocation.
+            </p>
+            <PaidIncludes compact className="mt-4 text-left" />
           </div>
           <div className="flex flex-wrap justify-center gap-3 md:justify-end">
             <Link
@@ -322,7 +328,13 @@ export default function HomePage() {
             >
               Pet export from Dubai <ArrowRight className="h-4 w-4" />
             </Link>
-            <WhatsAppCta text="Check Eligibility" message={`Hi Dubai Pet Relocation, I want to check eligibility for relocating my pet to/from Dubai. Pet type, breed, route, month:`} />
+            <Link
+              to="/prices/"
+              className="inline-flex items-center gap-2 rounded-2xl border-2 border-[#3A45B0] px-5 py-3.5 text-sm font-semibold text-[#3A45B0] hover:bg-[#3A45B0]/5"
+            >
+              Prices and packages <ArrowRight className="h-4 w-4" />
+            </Link>
+            <WhatsAppCta text="Check if we can move your pet" message={`Hi Dubai Pet Relocation, I want to check if you can move my pet. I am ready to book a managed relocation. Pet type, breed, route, month:`} />
           </div>
         </div>
       </section>
@@ -389,8 +401,8 @@ export default function HomePage() {
               {
                 step: '01',
                 icon: Phone,
-                title: 'Tell us about your pet',
-                body: 'Send species, breed, route and month. We check breed eligibility, whether the job is inbound, outbound or local pet taxi, and which page you should actually use.',
+                title: 'Check if we can move your pet',
+                body: 'Send species, breed, route and month when you are ready to book. We check breed eligibility, whether the job is inbound, outbound or local pet taxi, and which paid page you should use.',
               },
               {
                 step: '02',
@@ -441,11 +453,16 @@ export default function HomePage() {
             Local pet taxi is a separate ground product. Typical market ranges for short city runs, DXB, AUH and Dubai–Abu Dhabi sit on the transport page, labelled as market bands and dated — not as Dubai Pet Relocation selling prices. A van to the cargo desk is not an international ticket, and we will not let a taxi quote pretend to be a relocation quote.
           </p>
           <p className="text-body mb-6">
-            Read the qualitative driver list on the cost guide, then message WhatsApp for a range that matches your pet and corridor. Until portal figures are verified, “how much does it cost?” is answered as a conversation, not a screenshot of invented cells. Bring species, breed, weight, origin or destination, and a month. That is enough to say which drivers apply.
+            Read the qualitative driver list on the cost guide. WhatsApp a managed-move quote when you already know the corridor and want a package scoped to your pet. Until portal figures are verified, “how much does it cost?” is answered as a conversation, not a screenshot of invented cells. Bring species, breed, weight, origin or destination, and a month.
           </p>
-          <Link to="/guides/pet-relocation-cost-dubai/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#4F5BD5] hover:underline">
-            Open the cost guide <ArrowRight className="h-4 w-4" />
-          </Link>
+          <div className="flex flex-wrap gap-4">
+            <Link to="/guides/pet-relocation-cost-dubai/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#4F5BD5] hover:underline">
+              Open the cost guide <ArrowRight className="h-4 w-4" />
+            </Link>
+            <Link to="/prices/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#3A45B0] hover:underline">
+              Open quoted packages <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -591,7 +608,7 @@ export default function HomePage() {
             Transparency also means saying what we will not do. We will not invent a fee to look complete. We will not tell you a banned breed can “probably enter”. We will not book cargo before the permit window is understood. We will not treat a nervous cat as a small dog in a smaller box.
           </p>
           <p className="text-body mb-6">
-            Animal welfare sits in the sequence — heat, crate, no casual sedation talk, and a quiet first week after arrival. The longer story belongs on About. The conversion question belongs on WhatsApp: send the pet, the route and the month, and we will tell you which page and which next document actually apply.
+            Animal welfare sits in the sequence: heat, crate, no casual sedation talk, and a quiet first week after arrival. The longer story belongs on About. WhatsApp is for a managed-move eligibility check: send the pet, the route and the month when you are ready to book.
           </p>
           <Link to="/about/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#4F5BD5] hover:underline">
             About the coordination model <ArrowRight className="h-4 w-4" />
@@ -658,9 +675,9 @@ export default function HomePage() {
       {/* 12. Final CTA — commercial services + WhatsApp eligibility */}
       <section className="section-padding bg-[#4F5BD5]">
         <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[32px]">Ready to check eligibility or book a service?</h2>
+          <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[32px]">Ready to book a managed move?</h2>
           <p className="mb-3 text-white/90">
-            Message the pet, the route and the month — or open the door-to-door / import money pages. A coordinator replies during business hours with the path that actually applies.
+            Message the pet, the route and the month if you want us to run the file, or open the door-to-door / import money pages. Guides stay free to read. A coordinator replies during business hours with the path that actually applies.
           </p>
           <p className="mb-3 text-sm text-white/70">
             What happens after you message us: we read the breed and corridor, we say which documents matter first, and we tell you if the month is realistic. No 15-minute SLA. No 24/7 claim.
@@ -669,7 +686,7 @@ export default function HomePage() {
             Accuracy note: regulatory lines on this page follow the first-party source-of-truth (90-day permit; titer sample within 90 days before travel). Portal fees are confirmed on the official site, not invented here.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <WhatsAppCta text="Check Eligibility" message={`Hi Dubai Pet Relocation, I want to check eligibility for relocating my pet. Pet type, breed, route, month:`} />
+            <WhatsAppCta text="Check if we can move your pet" message={`Hi Dubai Pet Relocation, I want to check if you can move my pet. I am ready to book a managed relocation. Pet type, breed, route, month:`} />
             <Link
               to="/service/pet-relocation-dubai/"
               className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-7 py-4 text-sm font-semibold text-[#4F5BD5] shadow-sm hover:bg-white/90"
@@ -687,6 +704,12 @@ export default function HomePage() {
               className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white/10 px-7 py-4 text-sm font-semibold text-white ring-1 ring-white/30 hover:bg-white/20"
             >
               Pet export from Dubai
+            </Link>
+            <Link
+              to="/prices/"
+              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white/10 px-7 py-4 text-sm font-semibold text-white ring-1 ring-white/30 hover:bg-white/20"
+            >
+              Prices and packages
             </Link>
           </div>
         </div>

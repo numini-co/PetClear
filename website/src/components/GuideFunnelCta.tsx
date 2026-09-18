@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import { Dog, FileText, MessageCircle, Package, Plane, type LucideIcon } from 'lucide-react'
 import { getWhatsAppUrl, PHONE_DISPLAY } from '../lib/seo.ts'
+import { CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import PaidIncludes from './PaidIncludes.tsx'
+import WhatsAppGate from './WhatsAppGate.tsx'
 
 type Variant = 'mid' | 'end'
 type FunnelIcon = 'package' | 'plane' | 'dog' | 'file'
@@ -26,8 +29,7 @@ interface GuideFunnelCtaProps {
   links?: FunnelLink[]
 }
 
-const DEFAULT_ELIGIBILITY =
-  'Hi Dubai Pet Relocation, I want to check eligibility for bringing my pet to Dubai. Pet type: [Dog/Cat], breed, origin country, and target month:'
+const DEFAULT_ELIGIBILITY = WA_ELIGIBILITY_DEFAULT
 
 const DEFAULT_LINKS: FunnelLink[] = [
   { to: '/service/pet-relocation-dubai/', label: 'Pet relocation Dubai', icon: 'package' },
@@ -50,18 +52,18 @@ export default function GuideFunnelCta({
   title,
   subtitle,
   eligibilityMessage = DEFAULT_ELIGIBILITY,
-  waLabel = 'Check Eligibility',
+  waLabel = CTA_CHECK_MOVE,
   links = DEFAULT_LINKS,
 }: GuideFunnelCtaProps) {
   const isEnd = variant === 'end'
   const heading =
     title ||
     (isEnd
-      ? 'Ready for the commercial next step?'
-      : 'Need help beyond the guide?')
+      ? 'Ready to book a managed move?'
+      : 'Check if we can move your pet')
   const body =
     subtitle ||
-    'Open the door-to-door or import service page, or message WhatsApp to check eligibility. We confirm MOCCAE portal fees on the live site — we do not invent amounts here.'
+    'Guides stay free to read. WhatsApp and the money pages are for people ready to book a managed relocation: permit timing, airline booking, crate or cabin rules, and the airport handoff. We confirm MOCCAE portal fees on the live site. We do not invent amounts here.'
 
   const shell = isEnd
     ? 'py-16 lg:py-20 bg-[#4F5BD5]'
@@ -112,8 +114,10 @@ export default function GuideFunnelCta({
           <div className="rounded-[20px] bg-white p-6 sm:p-8 shadow-sm ring-1 ring-[#4F5BD5]/10">
             <h2 className={headingClass}>{heading}</h2>
             <p className={bodyClass}>{body}</p>
+            <PaidIncludes compact className="mb-6 text-left" />
             {buttons}
-            <p className="mt-4 text-center text-xs text-[#8A8A8A]">
+            <WhatsAppGate className="mt-4 text-center" />
+            <p className="mt-2 text-center text-xs text-[#8A8A8A]">
               WhatsApp {PHONE_DISPLAY} · Permit validity 90 days from issuance · Titer sample within 90 days before travel when required
             </p>
           </div>
@@ -121,8 +125,10 @@ export default function GuideFunnelCta({
           <>
             <h2 className={headingClass}>{heading}</h2>
             <p className={bodyClass}>{body}</p>
+            <PaidIncludes tone="dark" compact className="mx-auto mb-6 max-w-2xl text-left" />
             {buttons}
-            <p className="mt-6 text-sm text-white/60">
+            <WhatsAppGate tone="dark" className="mt-4" />
+            <p className="mt-2 text-sm text-white/60">
               WhatsApp {PHONE_DISPLAY} · We confirm government fees on the official portal
             </p>
           </>

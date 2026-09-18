@@ -75,8 +75,8 @@ export default function Footer() {
           {COMPANY_LINKS.map((l) => (
             <Link key={l.to} to={l.to} className="text-sm text-white/70 hover:text-white transition-colors">{l.label}</Link>
           ))}
-          <a href={getWhatsAppUrl('Hi, I have a question about pet relocation to Dubai.')} target="_blank" rel="noopener noreferrer" className="ml-auto inline-flex items-center gap-2 px-4 py-2 bg-[#25D366] text-white rounded-xl text-sm font-semibold hover:bg-[#1DA851] transition-colors">
-            <MessageCircle className="w-4 h-4" /> WhatsApp Us
+          <a href={getWhatsAppUrl('Hi Dubai Pet Relocation, I want to check if you can move my pet. I am ready to book a managed relocation. Pet type, breed, route, month:')} target="_blank" rel="noopener noreferrer" className="ml-auto inline-flex items-center gap-2 px-4 py-2 bg-[#25D366] text-white rounded-xl text-sm font-semibold hover:bg-[#1DA851] transition-colors">
+            <MessageCircle className="w-4 h-4" aria-hidden="true" /> Check eligibility
           </a>
         </nav>
 

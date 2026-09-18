@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { MessageCircle } from 'lucide-react'
 import { getWhatsAppUrl } from '../lib/seo.ts'
+import { CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import WhatsAppGate from './WhatsAppGate.tsx'
 
 interface WhatsAppButtonProps {
   message?: string
@@ -9,7 +11,7 @@ interface WhatsAppButtonProps {
 }
 
 export default function WhatsAppButton({
-  message = "Hi Dubai Pet Relocation team, I'm planning to relocate my pet and need some guidance. Could you help me understand the process?",
+  message = WA_ELIGIBILITY_DEFAULT,
   variant = 'floating',
   className = '',
 }: WhatsAppButtonProps) {
@@ -28,15 +30,18 @@ export default function WhatsAppButton({
 
   if (variant === 'inline') {
     return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-colors shadow-sm ${className}`}
-      >
-        <MessageCircle className="w-4 h-4" />
-        Get Help on WhatsApp
-      </a>
+      <span className={`inline-flex flex-col items-start gap-1.5 ${className}`}>
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 rounded-2xl bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#1DA851]"
+        >
+          <MessageCircle className="h-4 w-4" aria-hidden="true" />
+          {CTA_CHECK_MOVE}
+        </a>
+        <WhatsAppGate />
+      </span>
     )
   }
 
@@ -47,31 +52,31 @@ export default function WhatsAppButton({
           showSticky ? 'translate-y-0' : 'translate-y-full'
         }`}
       >
-        <div className="bg-white border-t border-[#E2E5F6] shadow-lg p-3 sm:hidden">
+        <div className="border-t border-[#E2E5F6] bg-white p-3 shadow-lg sm:hidden">
           <a
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 px-4 py-3.5 bg-[#25D366] text-white rounded-2xl font-semibold text-sm w-full"
+            className="flex w-full items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-4 py-3.5 text-sm font-semibold text-white"
           >
-            <MessageCircle className="w-5 h-5" />
-            Get Your Free Quote on WhatsApp
+            <MessageCircle className="h-5 h-5" aria-hidden="true" />
+            {CTA_CHECK_MOVE}
           </a>
+          <WhatsAppGate tone="sticky" className="mt-1.5 text-center" />
         </div>
       </div>
     )
   }
 
-  // Floating desktop
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform whatsapp-pulse ${className}`}
-      aria-label="Chat on WhatsApp"
+      className={`whatsapp-pulse fixed right-6 bottom-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110 ${className}`}
+      aria-label={CTA_CHECK_MOVE}
     >
-      <MessageCircle className="w-6 h-6" />
+      <MessageCircle className="h-6 w-6" aria-hidden="true" />
     </a>
   )
 }

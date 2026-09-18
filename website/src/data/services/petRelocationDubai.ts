@@ -15,7 +15,7 @@ const petRelocationDubai: ServicePageData = {
   heroImageAlt:
     'Handler carrying a cat in a travel carrier toward a Dubai doorway',
   whatsappMessage:
-    'Hi Dubai Pet Relocation! I need door-to-door pet relocation in Dubai. Can you review my pet, route and timeline?',
+    'Hi Dubai Pet Relocation, I want to check if you can move my pet door-to-door. I am ready to book a managed relocation. Pet, route and month:',
   snippetQuestion: 'What is the best pet relocation service in Dubai?',
   snippetAnswer:
     'There is no honest number-one pet relocator in Dubai. Judge providers by licensing and permit guidance, published process, fee transparency, and whether cabin, cargo, jet or charter actually fits the animal. We are a provider — Dubai Pet Relocation — and we quote the file rather than sell a ranking. Get a Quote on WhatsApp or support@dubai-pet-relocation.ae.',

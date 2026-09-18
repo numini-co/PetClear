@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X, MessageCircle, ChevronDown, Phone, PawPrint } from 'lucide-react'
 import { getWhatsAppUrl, PHONE_DISPLAY, PHONE_E164 } from '../lib/seo.ts'
+import { CTA_CHECK_ELIGIBILITY, CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
 
 const navLinks = [
   { label: 'Home', to: '/' },
@@ -12,6 +13,7 @@ const navLinks = [
       { label: 'Dog Relocation', to: '/dog-relocation-to-dubai/' },
       { label: 'Cat Relocation', to: '/cat-relocation-to-dubai/' },
       { label: 'Our Services', to: '/services/' },
+      { label: 'Prices', to: '/prices/' },
       { label: 'Private Jet Pet Travel', to: '/service/private-jet-pet-travel/' },
       { label: 'Shared Pet Charter', to: '/service/shared-pet-charter/' },
     ],
@@ -59,6 +61,7 @@ const navLinks = [
       { label: 'Sharjah', to: '/cities/sharjah/' },
     ],
   },
+  { label: 'Prices', to: '/prices/' },
   { label: 'About', to: '/about/' },
   { label: 'Contact', to: '/contact/' },
   { label: 'FAQ', to: '/faq/' },
@@ -163,13 +166,13 @@ export default function Header() {
           {/* Desktop CTA */}
           <div className="hidden items-center gap-3 lg:flex">
             <a
-              href={getWhatsAppUrl('Hi, I need help with pet relocation to Dubai.')}
+              href={getWhatsAppUrl(WA_ELIGIBILITY_DEFAULT)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#1DA851]"
+              className="inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-4 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-[#1DA851]/30 transition-colors hover:bg-[#1DA851]"
             >
-              <MessageCircle className="h-4 w-4" />
-              WhatsApp
+              <MessageCircle className="h-4 w-4" aria-hidden="true" />
+              {CTA_CHECK_ELIGIBILITY}
             </a>
           </div>
 
@@ -238,14 +241,17 @@ export default function Header() {
             )}
             <div className="space-y-2 border-t border-gray-100 pt-3">
               <a
-                href={getWhatsAppUrl('Hi, I need help with pet relocation to Dubai.')}
+                href={getWhatsAppUrl(WA_ELIGIBILITY_DEFAULT)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-4 py-3 text-sm font-semibold text-white"
+                className="flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-4 py-3 text-sm font-semibold text-white shadow-sm"
               >
-                <MessageCircle className="h-4 w-4" />
-                Message on WhatsApp
+                <MessageCircle className="h-4 w-4" aria-hidden="true" />
+                {CTA_CHECK_MOVE}
               </a>
+              <p className="text-center text-[11px] leading-relaxed text-[#5A5A5A]">
+                Guides are free to read. WhatsApp is for people ready to book a managed relocation.
+              </p>
               <a
                 href={`tel:${PHONE_E164}`}
                 className="flex items-center justify-center gap-2 rounded-xl border border-gray-200 px-4 py-3 text-sm font-medium text-gray-700"

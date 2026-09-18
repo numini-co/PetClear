@@ -70,6 +70,7 @@ export const ROUTE_LINKS: NavLink[] = [
 
 export const COMPANY_LINKS: NavLink[] = [
   { label: 'How It Works', to: '/how-it-works/' },
+  { label: 'Prices', to: '/prices/' },
   { label: 'About Us', to: '/about/' },
   { label: 'For Pet Relocators', to: '/for-pet-relocators/' },
   { label: 'Contact', to: '/contact/' },

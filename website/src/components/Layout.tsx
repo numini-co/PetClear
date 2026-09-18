@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
 import WhatsAppButton from './WhatsAppButton'
+import WhatsAppLeadGate from './WhatsAppLeadGate'
 
 interface LayoutProps {
   children?: React.ReactNode
@@ -17,12 +18,13 @@ export default function Layout({ children }: LayoutProps) {
         Skip to main content
       </a>
       <Header />
-      <main id="main-content" className="flex-1 pb-24 sm:pb-0">
+      <main id="main-content" className="flex-1 pb-36 sm:pb-0">
         {children || <Outlet />}
       </main>
       <Footer />
       <WhatsAppButton variant="sticky" />
       <WhatsAppButton variant="floating" />
+      <WhatsAppLeadGate />
     </div>
   )
 }

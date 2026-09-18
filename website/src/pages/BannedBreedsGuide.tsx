@@ -18,6 +18,7 @@ import Hero from '../components/Hero.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import { BASE_URL } from '../lib/seo.ts'
+import GuideDualPath from '../components/GuideDualPath.tsx'
 
 /* ─── FAQ accordion helper ─── */
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
@@ -44,7 +45,7 @@ export default function BannedBreedsGuide() {
   const faqData = [
     {
       question: 'Can I bring a Staffordshire Bull Terrier mix to Dubai?',
-      answer: 'Staffordshire Bull Terrier mixes are assessed on a case-by-case basis. Dubai Municipality and UAE customs reserve the right to ban any dog that visually resembles a banned breed. If your Staffy mix has physical characteristics similar to a Pit Bull type, there is a significant risk of refusal at entry. Dubai Pet Relocation strongly recommends a pre-travel breed assessment with photos and documentation to reduce this risk.',
+      answer: 'Staffordshire Bull Terrier mixes are assessed on a case-by-case basis. Dubai Municipality and UAE customs reserve the right to ban any dog that visually resembles a banned breed. If your Staffy mix has physical characteristics similar to a Pit Bull type, there is a significant risk of refusal at entry. Compare the dog against the Pit Bull-type list on this page first. WhatsApp a breed check only if you are ready to book a managed dog relocation.',
     },
     {
       question: 'What happens if my dog looks like a banned breed but is not?',
@@ -68,11 +69,11 @@ export default function BannedBreedsGuide() {
     },
     {
       question: 'What should I do if I have a mixed breed and am unsure about the rules?',
-      answer: 'Contact Dubai Pet Relocation for a free breed assessment before starting your relocation process. We review photos, veterinary records, and any pedigree documentation to evaluate your dog\'s risk profile. If there is uncertainty, we may arrange a veterinary breed confirmation letter or suggest alternative documentation strategies to present to UAE authorities.',
+      answer: 'Use the banned and restricted lists on this page first, including the visual-resemblance note. A mix can still be refused if it looks like a banned type. WhatsApp photos only if you are ready to book a managed dog relocation and need breed eligibility as part of that file. We do not run free photo reviews for people who are only browsing the guide.',
     },
     {
       question: 'Do restricted breeds need special insurance in Dubai?',
-      answer: 'Yes, many Dubai residential communities and landlords require liability insurance for restricted breeds. Some buildings mandate proof of insurance covering third-party injury or property damage caused by the dog. Dubai Pet Relocation can advise on pet insurance providers in the UAE that cover restricted breeds and help you prepare the documentation needed for your building\'s approval.',
+      answer: 'Many Dubai residential communities and landlords require liability insurance for restricted breeds. Some buildings mandate proof of insurance covering third-party injury or property damage caused by the dog. Confirm your building policy before you book cargo. We do not publish an insurer list here. WhatsApp if you are booking a managed move and the file has to match those housing rules.',
     },
   ]
 
@@ -136,9 +137,21 @@ export default function BannedBreedsGuide() {
         subtitle="Some breeds are completely prohibited; others face strict muzzle, insurance, and housing rules under Dubai Municipality and UAE federal law."
         updated="Updated June 2026"
         primaryLabel="Check breed eligibility"
-        whatsappMessage="Hi Dubai Pet Relocation, I need a breed eligibility check before relocating my dog to Dubai. Breed, mix details, origin country, and target month:"
-        secondary={{ label: 'Dog relocation to Dubai', to: '/dog-relocation-to-dubai/' }}
+        whatsappMessage="Hi Dubai Pet Relocation, I want a breed eligibility check as part of a managed dog relocation. Breed, mix details, origin country, and target month:"
+        secondary={{ label: 'Dog relocation service', to: '/service/dog-relocation-dubai/' }}
       />
+
+      <section className="section-padding bg-white">
+        <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
+          <GuideDualPath
+            diyNote="Keep reading the banned and restricted lists if you are checking the rule yourself."
+            moneyTo="/service/dog-relocation-dubai/"
+            moneyLabel="Dog relocation service"
+            waMessage="Hi Dubai Pet Relocation, I want a breed eligibility check as part of a managed dog relocation. Breed, mix details, origin, month:"
+            waLabel="Check breed eligibility"
+          />
+        </div>
+      </section>
 
       {/* Complete Banned Breeds List */}
       <section id="banned-list" className="section-padding bg-[#F5F6FD]">
@@ -535,8 +548,8 @@ export default function BannedBreedsGuide() {
 
       <GuideFunnelCta
         variant="mid"
-        title="Breed allowed — next commercial step?"
-        subtitle="Use this list as the legal-entry check. DIY the banned/restricted rules here. If the breed is allowed, open dog relocation or MOCCAE permit assistance — confirm eligibility before you apply. We confirm portal fees on the official site; we do not invent amounts."
+        title="Breed allowed — book the managed move?"
+        subtitle="Use this list as the legal-entry check. DIY the banned/restricted rules here. If the breed is allowed and you want the file managed, open dog relocation or MOCCAE permit assistance. WhatsApp a breed check only when you are ready to book. We confirm portal fees on the official site; we do not invent amounts."
         eligibilityMessage="Hi Dubai Pet Relocation, I need a breed eligibility check before relocating my dog to Dubai. Breed, mix details, origin country, and target month:"
         waLabel="Check breed eligibility"
         links={[
@@ -563,7 +576,7 @@ export default function BannedBreedsGuide() {
                 <PawPrint className="w-6 h-6 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Photo Review</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Send us clear side-profile, front-face, and standing photos of your dog. Our team assesses physical characteristics against UAE banned breed profiles.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">Compare the dog against the banned-type profiles on this page first. Photos go on WhatsApp only when you are booking a managed dog relocation and need the file checked.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
               <div className="w-12 h-12 rounded-full bg-[#4F5BD5]/10 flex items-center justify-center mx-auto mb-4">
@@ -649,9 +662,9 @@ export default function BannedBreedsGuide() {
 
       <GuideFunnelCta
         variant="end"
-        title="Unsure about your dog's breed status?"
-        subtitle="Send photos on WhatsApp for a breed check, or open dog relocation / permit assistance when you want the file managed. Breed eligibility comes before the MOCCAE permit (valid 90 days from issuance). Confirm government fees on the official portal."
-        eligibilityMessage="Hi Dubai Pet Relocation, I need a breed assessment for my dog before relocating to Dubai. Can you help me understand if my dog is allowed?"
+        title="Ready to book if the breed is allowed?"
+        subtitle="The lists on this page are the first check. WhatsApp photos only if you are ready to book a managed dog relocation. Open dog relocation / permit assistance when you want the file managed. Breed eligibility comes before the MOCCAE permit (valid 90 days from issuance). Confirm government fees on the official portal."
+        eligibilityMessage="Hi Dubai Pet Relocation, I want a breed eligibility check as part of a managed dog relocation. Breed, mix details, origin, month:"
         waLabel="Check breed eligibility"
         links={[
           { to: '/dog-relocation-to-dubai/', label: 'Dog relocation to Dubai', icon: 'dog' },

@@ -171,7 +171,9 @@ export default function CorporateRelocationPage() {
         title="Corporate Pet Relocation Dubai"
         subtitle="When your employees move, their pets move too. We coordinate the pet side of corporate relocations to and from Dubai — one point of contact, quote-only per-employee pricing, and the paperwork handled."
         whatsappMessage={corporateMsg}
+        primaryLabel="Request a managed corporate quote"
         secondary={{ label: 'Request a Corporate Quote', to: '/contact/' }}
+        showBuyerQualify
       />
 
       {/* ═══════════ WHY PETS BELONG IN THE MOBILITY PACKAGE ═══════════ */}
@@ -572,7 +574,7 @@ export default function CorporateRelocationPage() {
             less thing to manage.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <WhatsAppCta label="Request a Corporate Quote on WhatsApp" />
+            <WhatsAppCta label="Request a managed corporate quote" />
             <Link
               to="/contact/"
               className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 text-white rounded-2xl font-semibold text-sm hover:bg-white/20 transition-colors"

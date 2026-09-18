@@ -35,6 +35,7 @@ import {
   PERMIT_PROCESSING_ESTIMATE,
   PERMIT_VALIDITY,
 } from '../lib/regulatory.ts'
+import GuideDualPath from '../components/GuideDualPath.tsx'
 
 const snippetQuestion = 'Do I need a MOCCAE import permit?'
 const snippetAnswer =
@@ -71,7 +72,7 @@ export default function MOCCAEPermitGuide() {
     {
       question: 'How do I get a pet import permit from MOCCAE?',
       answer:
-        'Log in at moccae.gov.ae with UAE Pass, open Import Permit for Pets, upload owner ID/passport copy, pet photo, vaccination and microchip records, and health-certificate details, then pay the current portal fee. Processing is often estimated in a few working days — that is not a first-party SLA. We error-check the file first. Validity: 90 days from issuance. WhatsApp +971504782999.',
+        'Log in at moccae.gov.ae with UAE Pass, open Import Permit for Pets, upload owner ID/passport copy, pet photo, vaccination and microchip records, and health-certificate details, then pay the current portal fee. Processing is often estimated in a few working days — that is not a first-party SLA. Validity: 90 days from issuance. DIY the steps on this page. WhatsApp +971504782999 only if you want paid permit assistance on a managed file.',
     },
     {
       question: 'How to apply for a Moccae license?',
@@ -86,7 +87,7 @@ export default function MOCCAEPermitGuide() {
     {
       question: 'Do I need a MOCCAE import permit?',
       answer:
-        'Every dog or cat entering the UAE needs a MOCCAE import permit before travel. Airlines will not board the pet without it, and customs will refuse entry. The permit is valid 90 days from issuance. Apply on the official MOCCAE portal with UAE Pass, or we review the file and submit with you. Confirm current fees on the portal. Email support@dubai-pet-relocation.ae or WhatsApp +971504782999.',
+        'Every dog or cat entering the UAE needs a MOCCAE import permit before travel. Airlines will not board the pet without it, and customs will refuse entry. The permit is valid 90 days from issuance. Apply on the official MOCCAE portal with UAE Pass using the steps on this page. Confirm current fees on the portal. Paid permit assistance: [/service/moccae-pet-permit/](/service/moccae-pet-permit/). Email support@dubai-pet-relocation.ae or WhatsApp +971504782999 when you are ready to book that file.',
     },
     {
       question: 'How do I apply for a MOCCAE import permit?',
@@ -141,7 +142,7 @@ export default function MOCCAEPermitGuide() {
     {
       question: 'Who do I contact if the portal is down?',
       answer:
-        `Try again during UAE business hours and keep your application reference. For coordination help, message ${siteConfig.name} on WhatsApp or email ${siteConfig.email}. We cannot reopen a Ministry outage, but we can keep the file ready so you submit the moment the form is back.`,
+        `Try again during UAE business hours and keep your application reference. This guide cannot reopen a Ministry outage. If you already booked a managed file, message ${siteConfig.name} on WhatsApp or email ${siteConfig.email} so the pack is ready when the form is back.`,
     },
   ]
 
@@ -243,14 +244,21 @@ export default function MOCCAEPermitGuide() {
         title="MOCCAE Pet Import Permit for Dubai & the UAE"
         subtitle="UAE Pass login, form fields, 90-day validity, rejection reasons, and an honest DIY versus managed comparison. Confirm fees on the official portal."
         updated={LAST_VERIFIED_LABEL}
-        whatsappMessage="Hi Dubai Pet Relocation, I am applying for a MOCCAE import permit and want the walkthrough checked before I submit."
-        primaryLabel="Get the file checked"
+        whatsappMessage="Hi Dubai Pet Relocation, I want paid MOCCAE permit assistance as part of a managed relocation. Pet, origin and what I already have:"
+        primaryLabel="Check permit eligibility"
         secondary={{ label: 'Permit assistance service', to: '/service/moccae-pet-permit/' }}
       />
 
       <section className="section-padding bg-white">
-        <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8 space-y-6">
           <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
+          <GuideDualPath
+            diyNote="Keep reading for the UAE Pass path, 90-day validity and rejection fixes if you are filing yourself."
+            moneyTo="/service/moccae-pet-permit/"
+            moneyLabel="MOCCAE permit assistance"
+            waMessage="Hi Dubai Pet Relocation, I want paid MOCCAE permit assistance as part of a managed relocation. Pet, origin and what I already have:"
+            waLabel="Check permit eligibility"
+          />
         </div>
       </section>
 
@@ -468,8 +476,8 @@ export default function MOCCAEPermitGuide() {
 
       <GuideFunnelCta
         variant="mid"
-        title="Permit ready — need the full relocation?"
-        subtitle="This guide covers the MOCCAE import permit (valid 90 days from issuance). When you also need crate, cargo and door delivery, open a money service or check eligibility on WhatsApp. Confirm portal fees on the official site."
+        title="Permit ready — book the managed move?"
+        subtitle="This guide covers the MOCCAE import permit (valid 90 days from issuance). DIY the portal steps above. When you also need crate, cargo and door delivery, open a money service or WhatsApp eligibility if you are ready to book. Confirm portal fees on the official site."
         eligibilityMessage="Hi Dubai Pet Relocation, I am working through the MOCCAE import permit and want to check eligibility for pet relocation to Dubai. Pet type, breed, origin, target month:"
       />
 
@@ -770,9 +778,9 @@ export default function MOCCAEPermitGuide() {
 
       <GuideFunnelCta
         variant="end"
-        title="Let Dubai Pet Relocation take the next commercial step"
-        subtitle="Send chip number, rabies date and origin on WhatsApp to check eligibility — or open door-to-door / import services. MOCCAE permits are valid 90 days from issuance; titer samples (when required) within 90 days before travel. Confirm fees on the portal."
-        eligibilityMessage="Hi Dubai Pet Relocation, I need help with my MOCCAE import permit and want to check eligibility for relocating my pet to Dubai."
+        title="Ready to book a managed relocation?"
+        subtitle="Send chip number, rabies date and origin on WhatsApp only if you want us to run the file — or open door-to-door / import services. MOCCAE permits are valid 90 days from issuance; titer samples (when required) within 90 days before travel. Confirm fees on the portal."
+        eligibilityMessage="Hi Dubai Pet Relocation, I want paid MOCCAE permit assistance as part of a managed relocation. Pet type, breed, origin, target month:"
       />
       <OfficialSources />
     </>

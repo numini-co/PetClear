@@ -191,7 +191,7 @@ const SERVICES_FAQS = [
   },
   {
     q: 'Do you publish package prices on this page?',
-    a: 'No. Coordination fees are quoted on WhatsApp after we know the pet and the corridor. We do not invent AED package tables here. Government portal fees are confirmed on the official site.',
+    a: 'Coordination fees are quoted on WhatsApp after we know the pet and the corridor. Package scopes live on [prices](/prices/). We do not invent AED package tables here. Government portal fees are confirmed on the official site.',
   },
   {
     q: 'What happens after I message about a tier?',
@@ -262,8 +262,8 @@ export default function ServicesPage() {
         title="Pet Relocation Services Dubai — Compare Tiers"
         subtitle="Choose how much of the file we hold, then open the service page for inbound, outbound, door-to-door or pet taxi. Quotes on WhatsApp — no invented package prices."
         updated="Updated September 2026"
-        primaryLabel="Get a Relocation Quote"
-        secondary={{ label: 'Back to homepage overview', to: '/' }}
+        primaryLabel="Check if we can move your pet"
+        secondary={{ label: 'Prices and packages', to: '/prices/' }}
       />
 
       <section className="section-padding bg-white">
@@ -273,7 +273,11 @@ export default function ServicesPage() {
             answer="“Best” depends on origin, species, and documentation-only versus door-to-door — the full answer lives on the Dubai pet relocation service page. This hub compares our service tiers, not a companies listicle. WhatsApp +971504782999."
           />
           <p className="text-body mb-4">
-            This hub compares tiers. It does not own “pet relocation Dubai” — that money head is{' '}
+            Quoted package scopes live on{' '}
+            <Link to="/prices/" className="font-semibold text-[#4F5BD5] hover:underline">
+              prices
+            </Link>
+            . This hub compares tiers. It does not own “pet relocation Dubai” — that money head is{' '}
             <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               our Dubai pet relocation service
             </Link>

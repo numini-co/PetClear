@@ -13,6 +13,9 @@ import ContentImage from './ContentImage.tsx'
 import LinkedText from './LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { cardImageFor } from '../data/cardImages.ts'
+import { CTA_CHECK_MOVE, CTA_MANAGED_QUOTE } from '../lib/conversionCopy.ts'
+import PaidIncludes from './PaidIncludes.tsx'
+import WhatsAppGate from './WhatsAppGate.tsx'
 
 function Block({ block }: { block: ServiceBlock }) {
   if (block.type === 'p') {
@@ -114,12 +117,14 @@ function Block({ block }: { block: ServiceBlock }) {
 }
 
 function defaultCtaLabel(slug: string): string {
-  if (slug === 'pet-relocation-from-dubai') return 'Check Your Timeline'
-  if (slug === 'pet-transport-dubai') return 'WhatsApp a Relocation Coordinator'
-  if (slug === 'moccae-pet-permit') return 'Check Documents'
-  if (slug === 'pet-import-dubai') return 'Get a Relocation Quote'
-  if (slug === 'pet-relocation-dubai' || slug === 'pet-relocation-to-dubai') return 'Get a Relocation Quote'
-  return 'Get a Relocation Quote'
+  if (slug === 'pet-relocation-from-dubai') return 'Check your outbound timeline'
+  if (slug === 'pet-transport-dubai') return 'Book a pet taxi slot'
+  if (slug === 'moccae-pet-permit') return 'Check permit eligibility'
+  if (slug === 'private-jet-pet-travel') return 'Request a managed jet quote'
+  if (slug === 'shared-pet-charter') return 'Request a managed charter quote'
+  if (slug === 'pet-import-dubai') return CTA_MANAGED_QUOTE
+  if (slug === 'pet-relocation-dubai' || slug === 'pet-relocation-to-dubai') return CTA_CHECK_MOVE
+  return CTA_CHECK_MOVE
 }
 
 function defaultEyebrow(slug: string): string {
@@ -201,8 +206,9 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         title={data.h1}
         subtitle={shortSubtitle(data.heroValueProp)}
         updated="Updated September 2026"
-        primaryLabel={data.ctaLabel}
+        primaryLabel={ctaLabel}
         whatsappMessage={data.whatsappMessage}
+        showBuyerQualify
       />
 
       {/* SECTIONS */}
@@ -270,11 +276,16 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
       {/* FINAL CTA */}
       <section className="bg-[#4F5BD5] section-padding">
         <div className="max-w-[820px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-[24px] sm:text-[32px] font-bold text-white mb-3">Ready to move your pet?</h2>
-          <p className="text-white/90 mb-6">Message us on WhatsApp during business hours with your pet, route and timeline.</p>
-          <a href={wa} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-all shadow-sm">
-            <MessageCircle className="w-5 h-5" /> {ctaLabel}
+          <h2 className="text-[24px] sm:text-[32px] font-bold text-white mb-3">Ready to book a managed move?</h2>
+          <p className="text-white/90 mb-4">
+            WhatsApp during business hours with pet type, breed, route and month if you want us to run the file.
+            Guides stay free to read.
+          </p>
+          <PaidIncludes tone="dark" compact className="mx-auto mb-6 max-w-2xl text-left" />
+          <a href={wa} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-all shadow-sm ring-1 ring-white/20">
+            <MessageCircle className="w-5 h-5" aria-hidden="true" /> {ctaLabel}
           </a>
+          <WhatsAppGate tone="dark" className="mt-4" />
         </div>
       </section>
     </div>
