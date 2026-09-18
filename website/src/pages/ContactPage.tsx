@@ -5,6 +5,7 @@ import {
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
+import { CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
 import { track } from '../lib/analytics.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
@@ -123,7 +124,7 @@ export default function ContactPage() {
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">WhatsApp / Phone</h3>
               <p className="text-sm text-[#5A5A5A] mb-3">Fastest response during business hours</p>
               <a
-                href={getWhatsAppUrl('Hi Dubai Pet Relocation, I have a question about pet relocation.')}
+                href={getWhatsAppUrl(WA_ELIGIBILITY_DEFAULT)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#4F5BD5] font-semibold text-sm hover:underline"
@@ -269,11 +270,11 @@ export default function ContactPage() {
               <Card>
                 <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">Why WhatsApp Is Fastest</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-                  Our team checks WhatsApp continuously during business hours. Most questions get answered in under 15 minutes. You can also send photos of documents for quick checks.
+                  Our team checks WhatsApp during business hours for people ready to book a paid eligibility check. General process questions belong in the guides. Bespoke document review and coordination are paid.
                 </p>
                 <WhatsAppCta
-                  text="Chat on WhatsApp Now"
-                  message="Hi Dubai Pet Relocation! I have a question about relocating my pet and would love to chat."
+                  text={CTA_CHECK_MOVE}
+                  message={WA_ELIGIBILITY_DEFAULT}
                   fullWidth
                 />
               </Card>
@@ -290,7 +291,7 @@ export default function ContactPage() {
               Quick Questions
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed">
-              Common things people ask before reaching out. Still have questions? Just WhatsApp us.
+              Common things people ask before reaching out. Guides stay free to read. WhatsApp is for a paid eligibility check.
             </p>
           </div>
           <FAQItem
@@ -298,12 +299,12 @@ export default function ContactPage() {
             answer={<p>During business hours (every day, 9 AM–8 PM GST), we typically respond within 15 minutes. Outside those hours, we check messages periodically and aim to reply within a few hours. Urgent travel-day issues are prioritized.</p>}
           />
           <FAQItem
-            question="Do you offer a free consultation?"
-            answer={<p>Yes. Every initial conversation is free. We will ask about your pet, route, and timeline, then give you a realistic overview of requirements, timeline, and cost range. There is no obligation to book.</p>}
+            question="What does a first WhatsApp message buy?"
+            answer={<p>WhatsApp is for a paid eligibility check and scoped quote: origin, pet, dates, and whether you want a managed move or a document plan. General guidance is free in the guides. Bespoke document review and coordination are paid. No free human consultation is promised.</p>}
           />
           <FAQItem
-            question="Can I send you documents to check before booking?"
-            answer={<p>Absolutely. Many clients send us vaccination records, microchip certificates, or previous health certificates for a quick compliance check before they commit to a full relocation. We are happy to do this at no charge.</p>}
+            question="Where do I send documents if I am not hiring yet?"
+            answer={<p>Use the self-serve import checklist and UAE import requirements guides. We do not review files for free. If you want Dubai Pet Relocation to review your route, pet, dates, and documents and coordinate the move, send those details on WhatsApp for eligibility and scope.</p>}
           />
         </div>
       </section>
@@ -315,11 +316,11 @@ export default function ContactPage() {
             Let's Make Your Pet's Journey Clear
           </h2>
           <p className="text-white/70 text-base leading-relaxed mb-8">
-            No matter where you are in the process — just thinking about it, or leaving next week — we can help. Message us now and get clear, honest guidance.
+            Guides stay free to read. WhatsApp is for people who want a paid eligibility check and a scoped coordination quote.
           </p>
           <WhatsAppCta
-            text="Get Help on WhatsApp"
-            message="Hi Dubai Pet Relocation! I need help with pet relocation and would love to chat."
+            text={CTA_CHECK_MOVE}
+            message={WA_ELIGIBILITY_DEFAULT}
           />
         </div>
       </section>

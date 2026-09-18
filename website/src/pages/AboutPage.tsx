@@ -5,6 +5,7 @@ import {
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
+import { CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
 import AirportNetworkRoles from '../components/AirportNetworkRoles.tsx'
@@ -318,11 +319,11 @@ export default function AboutPage() {
             Ready to Meet the Team Behind Your Pet's Journey?
           </h2>
           <p className="text-white/70 text-base leading-relaxed mb-8">
-            Send us a WhatsApp message. We will introduce ourselves, answer your questions, and give you a clear picture of what your pet's relocation will look like — no pressure, no obligation.
+            WhatsApp is for a paid eligibility check and scoped quote if you want us to coordinate the move. Guides stay free to read. No free human consultation is promised.
           </p>
           <WhatsAppCta
-            text="Get a Free Consultation"
-            message="Hi Dubai Pet Relocation team! I would love to get a free consultation about relocating my pet. Can we chat?"
+            text={CTA_CHECK_MOVE}
+            message={WA_ELIGIBILITY_DEFAULT}
           />
           <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
             <span className="flex items-center gap-1.5 text-sm text-white/60">

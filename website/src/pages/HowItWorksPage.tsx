@@ -23,6 +23,7 @@ import {
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
+import { CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 
@@ -68,7 +69,7 @@ export default function HowItWorksPage() {
     {
       num: 1,
       id: 'step1',
-      title: 'Free Consultation & Quote',
+      title: 'Eligibility check & quote',
       duration: 'WhatsApp, 15 minutes',
       body: 'You message us on WhatsApp. We reply within 15 minutes during business hours (or by 8 AM if you message overnight). We ask five things: what type of pet, breed and weight, where are you moving from and to, when do you need to move, and do you have any existing documents? Within 24 hours, we send you an itemized quote. Not a vague range. A line-by-line breakdown of what you\'ll pay, when you\'ll pay it, and what each charge covers.',
       icon: <MessageCircle className="w-5 h-5" />,
@@ -163,7 +164,7 @@ export default function HowItWorksPage() {
     { task: 'Driving & ground transport', us: false, them: true, themLabel: 'Transport partner' },
   ]
 
-  const heroWaText = 'Hi, I want to understand how the relocation process works for my [dog/cat] from [country] to Dubai. Can you walk me through it?'
+  const heroWaText = WA_ELIGIBILITY_DEFAULT
 
   const schemas = [
     {
@@ -388,8 +389,8 @@ export default function HowItWorksPage() {
           </p>
 
           <WhatsAppLink
-            text="Hi, I want to understand how the relocation process works for my [dog/cat] from [country] to Dubai. Can you walk me through it?"
-            label="Ask us anything on WhatsApp"
+            text={WA_ELIGIBILITY_DEFAULT}
+            label={CTA_CHECK_MOVE}
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
           />
         </div>
@@ -399,7 +400,7 @@ export default function HowItWorksPage() {
       <section className="section-padding bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-            Your Pet&apos;s Journey: 7 Steps From Consultation to Reunion
+            Your Pet&apos;s Journey: 7 Steps From Eligibility to Reunion
           </h2>
           <p className="text-[#5A5A5A] mb-10">
             Below is the exact process we follow for every relocation. If you book with us, you&apos;ll receive a personalized timeline with dates, deadlines, and your dedicated contact at each step.
@@ -739,8 +740,8 @@ export default function HowItWorksPage() {
           </div>
 
           <WhatsAppLink
-            text="Hi, I want to get a free consultation for pet relocation to Dubai."
-            label="Get a free consultation"
+            text={WA_ELIGIBILITY_DEFAULT}
+            label={CTA_CHECK_MOVE}
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
           />
         </div>
@@ -789,7 +790,7 @@ export default function HowItWorksPage() {
             You&apos;ve read the process. You know what we do, what our partners do, and how we make money. You know we&apos;re not a middleman — we&apos;re your pet relocation coordination service.
           </p>
           <p className="text-white/80 max-w-2xl mx-auto mb-8">
-            The next step is a 15-minute WhatsApp conversation. No forms. No phone calls. No obligation. Tell us about your pet. We&apos;ll tell you what&apos;s needed, what it costs, and how long it takes. Then you decide.
+            The next step is a paid eligibility check on WhatsApp if you want us to run the file. Guides stay free to read. No free human consultation is promised.
           </p>
           <a
             href={getWhatsAppUrl(heroWaText)}
@@ -798,7 +799,7 @@ export default function HowItWorksPage() {
             className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
           >
             <MessageCircle className="w-5 h-5" />
-            Start your pet&apos;s journey
+            Check if we can move your pet
           </a>
         </div>
       </section>

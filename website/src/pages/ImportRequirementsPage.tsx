@@ -28,6 +28,9 @@ import ContentImage from '../components/ContentImage.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import GuideDualPath from '../components/GuideDualPath.tsx'
+import { waEligibility } from '../lib/conversionCopy.ts'
+
+const waImport = waEligibility({ need: 'managed move' })
 import {
   EXEMPT_LIST_HOLD,
   LAST_VERIFIED_LABEL,
@@ -375,7 +378,7 @@ export default function ImportRequirementsPage() {
         title="UAE Pet Import Requirements — Permits, Titer & Cargo"
         subtitle="90-day MOCCAE permit, RNATT sample within 90 days before travel, microchip before rabies, manifested cargo. Confirm fees on the portal."
         updated={LAST_VERIFIED_LABEL}
-        whatsappMessage="Hi, I want to check if you can import my pet from [country] to Dubai. I am ready to book a managed import."
+        whatsappMessage={waImport}
         primaryLabel="Check if we can move your pet"
         secondary={{ label: 'Commercial import service', to: '/service/pet-import-dubai/' }}
       />
@@ -398,7 +401,7 @@ export default function ImportRequirementsPage() {
               diyNote="Keep reading the statutory checklist if you are building the file yourself."
               moneyTo="/service/pet-import-dubai/"
               moneyLabel="Pet import to Dubai"
-              waMessage="Hi, I want to check if you can import my pet from [country] to Dubai. I am ready to book a managed import."
+              waMessage={waImport}
             />
           </div>
         </div>
@@ -442,7 +445,7 @@ export default function ImportRequirementsPage() {
             </div>
             <div className="mt-8 pt-6 border-t border-gray-100 flex flex-wrap gap-4">
               <WhatsAppLink
-                text="Hi, I want to check if you can import my pet from [country] to Dubai. I am ready to book a managed import."
+                text={waImport}
                 label="Check if we can move your pet"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
               />
@@ -547,7 +550,7 @@ export default function ImportRequirementsPage() {
           </div>
 
           <WhatsAppLink
-            text="Hi, I want a managed import quote. Can you check eligibility and timeline for my pet into Dubai?"
+            text={waImport}
             label="Check if we can move your pet"
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
           />
@@ -626,7 +629,7 @@ export default function ImportRequirementsPage() {
 
           <div className="mt-10">
             <WhatsAppLink
-              text="Hi, I want to check eligibility for a managed import to Dubai. Pet, origin and target month:"
+              text={waImport}
               label="Check eligibility for a managed import"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
             />
@@ -638,7 +641,7 @@ export default function ImportRequirementsPage() {
         variant="mid"
         title="Checklist clear — book the managed import?"
         subtitle="This page owns the statutory UAE import checklist. DIY the rules above. Door-to-door and import services handle crate, cargo and clearance when you want the file held. WhatsApp eligibility if you are ready to book. Confirm portal fees on the official site — we do not invent amounts."
-        eligibilityMessage="Hi Dubai Pet Relocation, I am reading the UAE pet import requirements and want to check eligibility. Pet type, breed, origin, target month:"
+        eligibilityMessage={waImport}
       />
 
       {/* ═══════════ REQUIRED DOCUMENTS (DETAILED) ═══════════ */}
@@ -774,7 +777,7 @@ export default function ImportRequirementsPage() {
 
           <div className="mt-10">
             <WhatsAppLink
-              text="Hi, I want documents checked as part of a managed import to Dubai. Here is what I already have:"
+              text={waImport}
               label="Check documents as part of a managed import"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
             />
@@ -900,7 +903,7 @@ export default function ImportRequirementsPage() {
           </div>
 
           <WhatsAppLink
-            text="Hi, I want to check if my pet's breed is eligible for import to Dubai."
+            text={waEligibility({ pet: '__', need: 'managed move' })}
             label="Check breed eligibility for a managed move"
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
           />
@@ -1122,7 +1125,7 @@ export default function ImportRequirementsPage() {
           </div>
 
           <WhatsAppLink
-            text="Hi, I want paid MOCCAE permit assistance as part of a managed import. Pet and origin:"
+            text={waEligibility({ need: 'document plan' })}
             label="Check permit eligibility"
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
           />
@@ -1243,7 +1246,7 @@ export default function ImportRequirementsPage() {
           </div>
 
           <WhatsAppLink
-            text="Hi, I want airline product checked as part of a managed import to Dubai. Origin, pet and month:"
+            text={waImport}
             label="Check airline product for a managed import"
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
           />
@@ -1282,7 +1285,7 @@ export default function ImportRequirementsPage() {
           </div>
 
           <WhatsAppLink
-            text="Hi, I want vet timing held as part of a managed relocation to Dubai. Pet, origin and month:"
+            text={waImport}
             label="Book vet timing as part of a managed move"
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
           />
@@ -1355,7 +1358,7 @@ export default function ImportRequirementsPage() {
 
           <div className="mt-8">
             <WhatsAppLink
-              text="Hi, I want documents checked as part of a managed import to Dubai. I am ready to book."
+              text={waImport}
               label="Check if we can move your pet"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
             />
@@ -1463,7 +1466,7 @@ export default function ImportRequirementsPage() {
         variant="end"
         title="Ready to book a managed import?"
         subtitle="The rules are on this page. Send origin, breed and what you already have on WhatsApp only if you want us to run the file, or open the door-to-door / import money pages. MOCCAE permits are valid 90 days from issuance; titer samples (when required) within 90 days before travel."
-        eligibilityMessage="Hi Dubai Pet Relocation, I want to check if my pet is eligible for import to Dubai. Pet type, breed, origin country, target month:"
+        eligibilityMessage={waImport}
       />
 
       <OfficialSources />

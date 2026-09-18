@@ -34,8 +34,10 @@ import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
 import { PERMIT_FEE_VERIFY, RELEASE_FEE_VERIFY } from '../lib/regulatory.ts'
 import GuideDualPath from '../components/GuideDualPath.tsx'
+import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
+import { CTA_MANAGED_QUOTE, waEligibility } from '../lib/conversionCopy.ts'
 
-const costGuideMsg = 'Hi, I read the cost guide and want a managed-move quote for relocating my [dog/cat] from [country] to Dubai. I am ready to book.'
+const costGuideMsg = waEligibility({ need: 'managed move' })
 
 const snippetQuestion = 'How much does it cost to relocate a pet in Dubai?'
 const snippetAnswer =
@@ -965,8 +967,8 @@ export default function CostGuidePage() {
         <div id="whatsapp-cta" className="text-center">
           <WhatsAppCta text="Get a managed-move quote" fullWidth className="sm:w-auto sm:inline-flex" />
           <div className="flex flex-col sm:flex-row gap-3 justify-center mt-4">
-            <WhatsAppCta text="Chat With Our Pet Relocation Team — No Obligation" fullWidth className="sm:w-auto sm:inline-flex bg-[#4F5BD5] hover:bg-[#3A45B0]" />
-            <WhatsAppCta text="Questions About Your Pet's Move? We're on WhatsApp" fullWidth className="sm:w-auto sm:inline-flex bg-[#4F5BD5] hover:bg-[#4a7a5e]" />
+            <WhatsAppCta text="Check eligibility for a scoped quote" fullWidth className="sm:w-auto sm:inline-flex bg-[#4F5BD5] hover:bg-[#3A45B0]" />
+            <WhatsAppCta text={CTA_MANAGED_QUOTE} fullWidth className="sm:w-auto sm:inline-flex bg-[#4F5BD5] hover:bg-[#3A45B0]" />
           </div>
         </div>
       </Section>
@@ -1043,23 +1045,12 @@ export default function CostGuidePage() {
         </div>
       </Section>
 
-      {/* ===== FINAL CTA ===== */}
-      <section className="relative overflow-hidden bg-[#4F5BD5] text-white section-padding">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Know Your Exact Cost?</h2>
-          <p className="text-white/90 max-w-2xl mx-auto mb-4 leading-relaxed">
-            You've read the breakdown. You know the ranges. You know what drives the price. Now let's get specific.
-          </p>
-          <p className="text-white font-semibold mb-2">One WhatsApp message. One 15-minute conversation. One firm, itemized quote.</p>
-          <p className="text-white/80 mb-2">No forms. No phone calls. No "we'll get back to you in 24–48 hours."</p>
-          <p className="text-white/80 mb-8">Just a real human on WhatsApp, looking at your pet's details, and telling you exactly what you'll pay — and why.</p>
-          <p className="text-white font-medium mb-8">Trusted relocation guidance — get your quote first, then decide.</p>
-
-          <div id="whatsapp-cta-final">
-            <WhatsAppCta text="Get a managed-move quote" fullWidth className="sm:w-auto sm:inline-flex" />
-          </div>
-        </div>
-      </section>
+      <GuideFunnelCta
+        variant="end"
+        title="Ready to book a managed move?"
+        eligibilityMessage={costGuideMsg}
+        waLabel={CTA_MANAGED_QUOTE}
+      />
 
       {/* ===== DISCLAIMER ===== */}
       <Section className="bg-[#F5F6FD]">

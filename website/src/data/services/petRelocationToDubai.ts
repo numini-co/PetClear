@@ -15,7 +15,7 @@ const petRelocationToDubai: ServicePageData = {
   heroImageAlt:
     'Cat stepping out of its travel crate into a new Dubai apartment after relocating to Dubai',
   whatsappMessage:
-    'Hi Dubai Pet Relocation, I am moving to Dubai and want to check if you can run a managed inbound move. Origin, pet, breed and month:',
+    'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: __. Target date: __. Need: managed move.',
   trustBadges: [
     'Inbound / arrival-side only',
     '90-day MOCCAE permit window',

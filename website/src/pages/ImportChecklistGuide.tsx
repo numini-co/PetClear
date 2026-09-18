@@ -25,6 +25,9 @@ import OfficialSources from '../components/OfficialSources.tsx'
 import LastVerified from '../components/LastVerified.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import GuideDualPath from '../components/GuideDualPath.tsx'
+import { waEligibility } from '../lib/conversionCopy.ts'
+
+const waChecklist = waEligibility({ need: 'managed move' })
 
 /* ─── FAQ accordion helper ─── */
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
@@ -218,7 +221,7 @@ export default function ImportChecklistGuide() {
         subtitle="An ordered, checkable list of every document and step to import your pet to Dubai — microchip to arrival clearance — with timing notes and a summary table."
         updated="Updated June 2026"
         primaryLabel="Check if we can move your pet"
-        whatsappMessage="Hi Dubai Pet Relocation, I am using the import checklist and want to book a managed import. Pet type, breed, origin, target month:"
+        whatsappMessage={waChecklist}
         secondary={{ label: 'Pet import service', to: '/service/pet-import-dubai/' }}
       />
 
@@ -238,7 +241,7 @@ export default function ImportChecklistGuide() {
                   diyNote="Keep ticking the list below if you are lining up the file yourself."
                   moneyTo="/service/pet-import-dubai/"
                   moneyLabel="Pet import to Dubai"
-                  waMessage="Hi Dubai Pet Relocation, I am using the import checklist and want to book a managed import. Pet type, breed, origin, target month:"
+                  waMessage={waChecklist}
                 />
               </div>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
@@ -537,7 +540,7 @@ export default function ImportChecklistGuide() {
         variant="mid"
         title="Documents lined up — book the import?"
         subtitle="Use the checklist here if you are filing yourself. Open pet import or door-to-door relocation when you want us to run the file. WhatsApp eligibility only if you are ready to book. Confirm MOCCAE fees on the portal."
-        eligibilityMessage="Hi Dubai Pet Relocation, I am using the import checklist and want to check eligibility for bringing my pet to Dubai."
+        eligibilityMessage={waChecklist}
       />
 
       {/* Related Links */}
@@ -597,7 +600,7 @@ export default function ImportChecklistGuide() {
         variant="end"
         title="Ready to book a managed import?"
         subtitle="Avoid sequencing mistakes and rejected permits when you want the file held. WhatsApp eligibility if you are ready to book, or open the door-to-door / import money pages. Permit validity: 90 days from issuance."
-        eligibilityMessage="Hi Dubai Pet Relocation, I am importing my pet to Dubai and want to check eligibility and document sequencing."
+        eligibilityMessage={waChecklist}
       />
     </>
   )

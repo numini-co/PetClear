@@ -28,7 +28,7 @@ import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 
 /* ─── Corporate WhatsApp message ─── */
 const corporateMsg =
-  'Hi Dubai Pet Relocation, I manage employee relocations and would like a corporate pet relocation quote. We have [number] employees relocating to/from Dubai with pets.'
+  'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: __. Target date: __. Need: other (corporate / employee move).'
 
 /* ─── WhatsApp CTA button ─── */
 function WhatsAppCta({

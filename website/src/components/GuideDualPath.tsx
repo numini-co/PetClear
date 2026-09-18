@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { MessageCircle } from 'lucide-react'
 import { getWhatsAppUrl } from '../lib/seo.ts'
 import { CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import GuideBridge from './GuideBridge.tsx'
 import WhatsAppGate from './WhatsAppGate.tsx'
 
 interface GuideDualPathProps {
@@ -29,6 +30,7 @@ export default function GuideDualPath({
       aria-label="DIY or managed move"
     >
       <p className="text-sm font-semibold text-[#3A45B0]">Two paths from here</p>
+      <GuideBridge className="mt-2" />
       <p className="mt-2 text-sm leading-relaxed text-[#5A5A5A]">
         {diyNote} Open the paid service when you want one coordinator to hold permits, airline booking, crate
         rules and the airport handoff.
@@ -50,7 +52,7 @@ export default function GuideDualPath({
           {waLabel}
         </a>
       </div>
-      <WhatsAppGate className="mt-3" />
+      <WhatsAppGate showDiyNote className="mt-3" />
     </aside>
   )
 }

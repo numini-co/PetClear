@@ -12,9 +12,9 @@ import WhatsAppGate from '../components/WhatsAppGate.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, getWhatsAppUrl, siteConfig } from '../lib/seo.ts'
 import { GOV_FEE_CONFIRM, PERMIT_VALIDITY, TITER_SAMPLE_RULE } from '../lib/regulatory.ts'
+import { waEligibility } from '../lib/conversionCopy.ts'
 
-const WA =
-  'Hi Dubai Pet Relocation, I read /prices/ and want a scoped quote after eligibility. I am ready to book a managed relocation. Pet type, breed, route, month:'
+const WA = waEligibility({ need: 'managed move' })
 
 const snippetQuestion = 'How much does Dubai Pet Relocation charge?'
 const snippetAnswer =

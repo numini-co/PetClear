@@ -27,7 +27,7 @@ const moccaePetPermit: ServicePageData = {
   heroImageAlt:
     'MOCCAE pet permit application folder prepared on a coordinator desk in Dubai',
   whatsappMessage:
-    'Hi Dubai Pet Relocation, I want paid MOCCAE permit assistance as part of a managed file. Pet, origin/destination and what I already have:',
+    'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: __. Target date: __. Need: document plan.',
   ctaLabel: 'Check permit eligibility',
   heroEyebrow: 'MOCCAE Permit Assistance',
   snippetQuestion: 'Do I need a MOCCAE import permit?',

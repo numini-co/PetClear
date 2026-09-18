@@ -6,11 +6,27 @@ export const CTA_MANAGED_QUOTE = 'Get a managed-move quote'
 export const CTA_BREED_ELIGIBILITY = 'Check breed eligibility'
 export const CTA_PERMIT_ELIGIBILITY = 'Check permit eligibility'
 
+/** Exact playbook bridge. Place after the first useful guide answer and at the end. */
+export const GUIDE_BRIDGE =
+  'This guide covers the general process. If you want Dubai Pet Relocation to review your route, pet, dates, and documents and coordinate the move, that is a paid relocation service. Send the details on WhatsApp for eligibility and scope.'
+
 export const WA_ELIGIBILITY_DEFAULT =
-  'Hi Dubai Pet Relocation, I want to check if you can move my pet. I am ready to book a managed relocation. Pet type: [Dog/Cat], breed, origin/destination, target month:'
+  'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: __. Target date: __. Need: managed move / document plan / other.'
+
+export function waEligibility(fields?: {
+  origin?: string
+  pet?: string
+  date?: string
+  need?: string
+}) {
+  return `I want a paid Dubai pet relocation eligibility check. Origin: ${fields?.origin ?? '__'}. Pet: ${fields?.pet ?? '__'}. Target date: ${fields?.date ?? '__'}. Need: ${fields?.need ?? 'managed move / document plan / other'}.`
+}
 
 export const WA_GATE =
-  'Guides are free to read. WhatsApp is for people ready to book a managed relocation.'
+  'General guidance is free in the guides. Bespoke document review and coordination are paid.'
+
+export const WA_GATE_DIY =
+  'Not ready to hire? Use the self-serve checklist below — no free human consultation is promised.'
 
 export const PAID_INCLUDES_TITLE = 'What paid coordination includes'
 export const PAID_INCLUDES_ITEMS = [

@@ -15,7 +15,7 @@ const dogRelocationDubai: ServicePageData = {
   heroImageAlt:
     'Calm dog sitting beside an IATA travel crate at a Dubai airport',
   whatsappMessage:
-    'Hi Dubai Pet Relocation, I want to check if you can move my dog. I am ready to book a managed relocation. Breed, weight, origin and destination:',
+    'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: dog (breed __). Target date: __. Need: managed move.',
   trustBadges: ['Breed eligibility checked', 'IATA crate guidance', 'Vetted partners', 'WhatsApp support'],
   costRange: { low: '2500', high: '22000' },
   hasHowTo: false,

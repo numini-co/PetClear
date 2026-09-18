@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Dog, FileText, MessageCircle, Package, Plane, type LucideIcon } from 'lucide-react'
 import { getWhatsAppUrl, PHONE_DISPLAY } from '../lib/seo.ts'
 import { CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import GuideBridge from './GuideBridge.tsx'
 import PaidIncludes from './PaidIncludes.tsx'
 import WhatsAppGate from './WhatsAppGate.tsx'
 
@@ -61,9 +62,7 @@ export default function GuideFunnelCta({
     (isEnd
       ? 'Ready to book a managed move?'
       : 'Check if we can move your pet')
-  const body =
-    subtitle ||
-    'Guides stay free to read. WhatsApp and the money pages are for people ready to book a managed relocation: permit timing, airline booking, crate or cabin rules, and the airport handoff. We confirm MOCCAE portal fees on the live site. We do not invent amounts here.'
+  const extra = subtitle
 
   const shell = isEnd
     ? 'py-16 lg:py-20 bg-[#4F5BD5]'
@@ -113,10 +112,11 @@ export default function GuideFunnelCta({
         {!isEnd ? (
           <div className="rounded-[20px] bg-white p-6 sm:p-8 shadow-sm ring-1 ring-[#4F5BD5]/10">
             <h2 className={headingClass}>{heading}</h2>
-            <p className={bodyClass}>{body}</p>
+            <GuideBridge className={`${bodyClass} mb-4`} />
+            {extra ? <p className={bodyClass}>{extra}</p> : null}
             <PaidIncludes compact className="mb-6 text-left" />
             {buttons}
-            <WhatsAppGate className="mt-4 text-center" />
+            <WhatsAppGate showDiyNote className="mt-4 text-center" />
             <p className="mt-2 text-center text-xs text-[#8A8A8A]">
               WhatsApp {PHONE_DISPLAY} · Permit validity 90 days from issuance · Titer sample within 90 days before travel when required
             </p>
@@ -124,10 +124,11 @@ export default function GuideFunnelCta({
         ) : (
           <>
             <h2 className={headingClass}>{heading}</h2>
-            <p className={bodyClass}>{body}</p>
+            <GuideBridge tone="dark" className={`${bodyClass} mb-4`} />
+            {extra ? <p className={bodyClass}>{extra}</p> : null}
             <PaidIncludes tone="dark" compact className="mx-auto mb-6 max-w-2xl text-left" />
             {buttons}
-            <WhatsAppGate tone="dark" className="mt-4" />
+            <WhatsAppGate showDiyNote tone="dark" className="mt-4" />
             <p className="mt-2 text-sm text-white/60">
               WhatsApp {PHONE_DISPLAY} · We confirm government fees on the official portal
             </p>

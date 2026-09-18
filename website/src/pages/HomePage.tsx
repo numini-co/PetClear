@@ -15,18 +15,9 @@ import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { dubaiAreas } from '../data/areas/dubai/index.ts'
 import PaidIncludes from '../components/PaidIncludes.tsx'
+import { WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
 
-const defaultMsg = `Hi Dubai Pet Relocation team,
-
-I want to check if you can move my pet. I am ready to book a managed relocation.
-
-Pet type: [Dog / Cat]
-Breed:
-Current location:
-Destination:
-Planned move date:
-
-Thank you!`
+const defaultMsg = WA_ELIGIBILITY_DEFAULT
 
 const WhatsAppCta = ({
   text,
@@ -211,7 +202,7 @@ export default function HomePage() {
         title="Dubai Pet Relocation — Guides, Routes & Managed-Move Quotes"
         subtitle="Read the rules here. Book a managed move when you want one coordinator to hold MOCCAE permit timing, airline booking, crate rules and the airport handoff."
         primaryLabel="Check if we can move your pet"
-        whatsappMessage="Hi Dubai Pet Relocation, I want to check if you can move my pet. I am ready to book a managed relocation. Pet type: [Dog/Cat], breed, origin/destination, target month:"
+        whatsappMessage={WA_ELIGIBILITY_DEFAULT}
         secondary={{ label: 'Pet relocation Dubai service', to: '/service/pet-relocation-dubai/' }}
         updated="Updated September 2026"
         showBuyerQualify
@@ -334,7 +325,7 @@ export default function HomePage() {
             >
               Prices and packages <ArrowRight className="h-4 w-4" />
             </Link>
-            <WhatsAppCta text="Check if we can move your pet" message={`Hi Dubai Pet Relocation, I want to check if you can move my pet. I am ready to book a managed relocation. Pet type, breed, route, month:`} />
+            <WhatsAppCta text="Check if we can move your pet" message={WA_ELIGIBILITY_DEFAULT} />
           </div>
         </div>
       </section>
@@ -393,7 +384,7 @@ export default function HomePage() {
           </div>
           <ContentImage
             src="/assets/w1-w3/how-pet-relocation-works-7-step-process-dubai.png"
-            alt="Diagram of the 7-step Dubai pet relocation process from free consultation to home reunion"
+            alt="Diagram of the 7-step Dubai pet relocation process from eligibility check to home reunion"
             caption="Seven clear steps on the process page. The homepage keeps three."
           />
           <div className="grid gap-6 md:grid-cols-3">
@@ -686,7 +677,7 @@ export default function HomePage() {
             Accuracy note: regulatory lines on this page follow the first-party source-of-truth (90-day permit; titer sample within 90 days before travel). Portal fees are confirmed on the official site, not invented here.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <WhatsAppCta text="Check if we can move your pet" message={`Hi Dubai Pet Relocation, I want to check if you can move my pet. I am ready to book a managed relocation. Pet type, breed, route, month:`} />
+            <WhatsAppCta text="Check if we can move your pet" message={WA_ELIGIBILITY_DEFAULT} />
             <Link
               to="/service/pet-relocation-dubai/"
               className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-7 py-4 text-sm font-semibold text-[#4F5BD5] shadow-sm hover:bg-white/90"

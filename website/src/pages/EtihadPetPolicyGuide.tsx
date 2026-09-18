@@ -19,7 +19,7 @@ import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 const ETIHAD_PETS_URL = 'https://www.etihad.com/en-ae/plan/travel-companion/travelling-with-pets'
 
 const WA =
-  'Hi Dubai Pet Relocation! I want to check Etihad in-cabin eligibility for my pet and coordinate AUH arrival plus transfer to Dubai if needed.'
+  'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: __. Target date: __. Need: managed move.'
 
 const snippetQuestion = 'Can I bring my pet in the cabin on Etihad?'
 const snippetAnswer =
@@ -176,7 +176,7 @@ export default function EtihadPetPolicyGuide() {
         variant="mid"
         title="Cabin booked — still need the import file?"
         subtitle="This guide is the Etihad cabin exception into Abu Dhabi. DIY the airline rules here. When you also need crate, cargo, or the MOCCAE permit (valid 90 days from issuance), open a money service or check eligibility on WhatsApp. Confirm portal fees on the official site."
-        eligibilityMessage="Hi Dubai Pet Relocation, I want to check Etihad in-cabin eligibility and the import file for my pet. Breed, weight, origin, and target month:"
+        eligibilityMessage={WA}
         waLabel="Check cabin eligibility"
         links={[
           { to: '/service/pet-import-dubai/', label: 'Pet import to Dubai', icon: 'plane' },

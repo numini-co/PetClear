@@ -1,4 +1,4 @@
-import { WA_GATE } from '../lib/conversionCopy.ts'
+import { WA_GATE, WA_GATE_DIY } from '../lib/conversionCopy.ts'
 
 type Tone = 'light' | 'dark' | 'hero' | 'sticky'
 
@@ -12,13 +12,17 @@ const TONE: Record<Tone, string> = {
 export default function WhatsAppGate({
   tone = 'light',
   className = '',
+  showDiyNote = false,
 }: {
   tone?: Tone
   className?: string
+  /** Guide pages: point DIY readers at the on-page checklist, not a free consult. */
+  showDiyNote?: boolean
 }) {
   return (
-    <p className={`text-xs leading-relaxed ${TONE[tone]} ${className}`.trim()}>
-      {WA_GATE}
-    </p>
+    <div className={`space-y-1 ${className}`.trim()}>
+      <p className={`text-xs leading-relaxed ${TONE[tone]}`}>{WA_GATE}</p>
+      {showDiyNote ? <p className={`text-xs leading-relaxed ${TONE[tone]}`}>{WA_GATE_DIY}</p> : null}
+    </div>
   )
 }

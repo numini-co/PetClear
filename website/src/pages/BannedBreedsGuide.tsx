@@ -19,6 +19,9 @@ import Breadcrumb from '../components/Breadcrumb.tsx'
 import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import { BASE_URL } from '../lib/seo.ts'
 import GuideDualPath from '../components/GuideDualPath.tsx'
+import { waEligibility } from '../lib/conversionCopy.ts'
+
+const waBreed = waEligibility({ pet: 'dog (breed __)', need: 'managed move' })
 
 /* ─── FAQ accordion helper ─── */
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
@@ -137,7 +140,7 @@ export default function BannedBreedsGuide() {
         subtitle="Some breeds are completely prohibited; others face strict muzzle, insurance, and housing rules under Dubai Municipality and UAE federal law."
         updated="Updated June 2026"
         primaryLabel="Check breed eligibility"
-        whatsappMessage="Hi Dubai Pet Relocation, I want a breed eligibility check as part of a managed dog relocation. Breed, mix details, origin country, and target month:"
+        whatsappMessage={waBreed}
         secondary={{ label: 'Dog relocation service', to: '/service/dog-relocation-dubai/' }}
       />
 
@@ -147,7 +150,7 @@ export default function BannedBreedsGuide() {
             diyNote="Keep reading the banned and restricted lists if you are checking the rule yourself."
             moneyTo="/service/dog-relocation-dubai/"
             moneyLabel="Dog relocation service"
-            waMessage="Hi Dubai Pet Relocation, I want a breed eligibility check as part of a managed dog relocation. Breed, mix details, origin, month:"
+            waMessage={waBreed}
             waLabel="Check breed eligibility"
           />
         </div>
@@ -550,7 +553,7 @@ export default function BannedBreedsGuide() {
         variant="mid"
         title="Breed allowed — book the managed move?"
         subtitle="Use this list as the legal-entry check. DIY the banned/restricted rules here. If the breed is allowed and you want the file managed, open dog relocation or MOCCAE permit assistance. WhatsApp a breed check only when you are ready to book. We confirm portal fees on the official site; we do not invent amounts."
-        eligibilityMessage="Hi Dubai Pet Relocation, I need a breed eligibility check before relocating my dog to Dubai. Breed, mix details, origin country, and target month:"
+        eligibilityMessage={waBreed}
         waLabel="Check breed eligibility"
         links={[
           { to: '/service/dog-relocation-dubai/', label: 'Dog relocation service', icon: 'dog' },
@@ -664,7 +667,7 @@ export default function BannedBreedsGuide() {
         variant="end"
         title="Ready to book if the breed is allowed?"
         subtitle="The lists on this page are the first check. WhatsApp photos only if you are ready to book a managed dog relocation. Open dog relocation / permit assistance when you want the file managed. Breed eligibility comes before the MOCCAE permit (valid 90 days from issuance). Confirm government fees on the official portal."
-        eligibilityMessage="Hi Dubai Pet Relocation, I want a breed eligibility check as part of a managed dog relocation. Breed, mix details, origin, month:"
+        eligibilityMessage={waBreed}
         waLabel="Check breed eligibility"
         links={[
           { to: '/dog-relocation-to-dubai/', label: 'Dog relocation to Dubai', icon: 'dog' },

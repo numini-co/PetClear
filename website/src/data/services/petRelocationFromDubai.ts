@@ -15,7 +15,7 @@ const petRelocationFromDubai: ServicePageData = {
   heroImageAlt:
     'Husky sitting beside a packed travel crate on a Dubai balcony before relocating from Dubai',
   whatsappMessage:
-    'Hi Dubai Pet Relocation, I am leaving Dubai and want to check if you can run a managed outbound move. Destination, pet and month:',
+    'I want a paid Dubai pet relocation eligibility check. Origin: Dubai. Pet: __. Target date: __. Need: managed move.',
   trustBadges: [
     'Outbound / departure-side only',
     'Destination rules first',

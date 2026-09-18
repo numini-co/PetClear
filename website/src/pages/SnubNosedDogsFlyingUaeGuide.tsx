@@ -18,7 +18,7 @@ const PATH = '/guides/snub-nosed-dogs-flying-uae/'
 const HERO_IMG = '/assets/w9/snub-nosed-dogs-flying-uae-french-bulldog-roomy-crate.jpg'
 const HERO_IMG_640 = '/assets/w9/snub-nosed-dogs-flying-uae-french-bulldog-roomy-crate-640.jpg'
 const WA_ELIG =
-  'Hi Dubai Pet Relocation! I want to Check Pet Eligibility for a snub-nosed / brachycephalic pet flying to Dubai. Breed, weight, origin, and target month:'
+  'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: dog (snub-nosed / breed __). Target date: __. Need: managed move.'
 
 const snippetQuestion = 'Can French bulldogs, pugs and other flat-faced pets fly to Dubai?'
 const snippetAnswer =
