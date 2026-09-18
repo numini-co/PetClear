@@ -118,7 +118,7 @@ export default function AbuDhabiCity() {
         eyebrow="Abu Dhabi"
         title="Pet Relocation Abu Dhabi — Bringing Your Pet to the UAE Capital"
         subtitle="Etihad in-cabin pet travel, the Abu Dhabi Falcon Hospital, and pet-friendly communities — we handle every step of your move."
-        updated="Updated June 2026"
+        updated="Last verified 18 September 2026"
       />
 
       {/* KEY DIFFERENTIATOR */}
@@ -155,6 +155,9 @@ export default function AbuDhabiCity() {
                   <span className="text-[#4F5BD5] font-semibold">Best for:</span> Small cats, toy dog breeds (Chihuahua, Pomeranian, Yorkshire Terrier), anxious pets, and owners who prefer to keep their pet close during the journey.
                 </p>
               </div>
+              <p className="mt-4 text-sm leading-relaxed text-[#5A5A5A]">
+                Cabin fees change — confirm the live amount on Etihad’s travelling-with-pets page at booking. A timed 2026 Economy promo <strong className="text-[#2A2A2A]">from USD 399</strong> (roughly 13 April–31 May 2026) is expired and is not the current standard. Until Etihad’s first-party current fee is confirmed, treat circulating USD 1,500 figures as Estimated only. We are not Etihad and we do not sell tickets. Full booking windows and carrier sizes: <Link to="/guides/etihad-pet-policy/" className="font-semibold text-[#4F5BD5] hover:underline">Etihad pet policy guide</Link>.
+              </p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
@@ -212,7 +215,7 @@ export default function AbuDhabiCity() {
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">MICCO Logistics Bill of Entry</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                All pets arriving at Zayed International Airport (AUH) are cleared by MICCO Logistics, Abu Dhabi's ground handling and cargo partner. The Bill of Entry is a customs declaration that must be filed before release. Dubai Pet Relocation works directly with MICCO to pre-file documentation, ensuring your pet is cleared within 2–4 hours. This is different from Dubai's dnata/Dubai Cargo Village process.
+                All pets arriving at Zayed International Airport (AUH) are cleared by MICCO Logistics, Abu Dhabi's ground handling and cargo partner. The Bill of Entry is a customs declaration that must be filed before release. Dubai Pet Relocation works directly with MICCO to pre-file documentation, aiming for same-day release when the file is complete. Release, inspection and Bill of Entry amounts are confirm-on-portal / verify-on-portal — we do not treat blog AED bands as first-party MICCO tariffs. This is different from Dubai's dnata/Dubai Cargo Village process.
               </p>
             </div>
 
@@ -223,6 +226,36 @@ export default function AbuDhabiCity() {
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Zayed International Airport (AUH)</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
                 Abu Dhabi's airport is modern, efficient, and less congested than DXB for pet cargo. The animal handling facilities at AUH are well-equipped and managed by MICCO. Etihad's home base means direct connections to London, New York, Paris, Sydney, Mumbai, and Manila — all with dedicated live animal services.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* INTER-EMIRATE + ADCM WALKTHROUGH */}
+      <section className="py-16 lg:py-24">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
+              <h2 className="text-[22px] font-bold text-[#2A2A2A] mb-3">Dubai ↔ Abu Dhabi ground transfer</h2>
+              <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
+                If cargo clears at DXB or DWC and the home is in Abu Dhabi — or the pet lands at AUH and the villa is in Dubai — that last mile is a climate-controlled ground run, not a second international file. Book it on{' '}
+                <Link to="/service/pet-transport-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  pet transport and pet taxi
+                </Link>
+                . We do not publish inter-emirate AED bands on this city page; government release fees stay verify-on-portal.
+              </p>
+              <p className="text-[#5A5A5A] text-sm leading-relaxed">
+                Share both addresses and the cargo airport on WhatsApp +971504782999. This URL owns the Abu Dhabi arrival and ADCM story; the transport URL owns the van.
+              </p>
+            </div>
+            <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
+              <h2 className="text-[22px] font-bold text-[#2A2A2A] mb-3">ADCM registration walkthrough</h2>
+              <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
+                After AUH release, Abu Dhabi City Municipality (ADCM) licensing typically runs through TAMM or an ADCM service centre. Plan to register within 30 days of arrival. Owners usually need identification, proof of an Abu Dhabi address, rabies records and the microchip certificate. Confirm the current fee and form names on TAMM / ADCM — we do not treat blog AED 100–250 bands as a first-party tariff.
+              </p>
+              <p className="text-[#5A5A5A] text-sm leading-relaxed">
+                This is not Dubai Aleef. A Dubai Municipality registration does not transfer automatically. We remind you of the ADCM clock after delivery; we do not invent a named partnership with TAMM.
               </p>
             </div>
           </div>
@@ -464,7 +497,7 @@ export default function AbuDhabiCity() {
             </div>
             <div className="px-6 py-4 bg-[#F5F6FD] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                * All prices are estimates in UAE Dirhams (AED). Actual costs depend on pet size, origin country, airline, and season. In-cabin travel is only available for pets under 8kg (including carrier) on Etihad Airways. Contact Dubai Pet Relocation for a detailed, itemised quote for your specific situation.
+                * Coordination and freight figures above are estimates, not a DPR quote. Municipality registration, customs/Bill of Entry and AUH release amounts are confirm-on-portal / verify-on-portal — do not treat the AED bands in this table as first-party ADCM or MICCO tariffs. Etihad cabin: confirm the live fee at booking (2026 USD 399 Economy promo expired). In-cabin travel is only available for pets under 8kg (including carrier) on Etihad-operated flights. Contact Dubai Pet Relocation for a detailed, itemised quote.
               </p>
             </div>
           </div>
