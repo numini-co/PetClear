@@ -3,6 +3,7 @@
 export const CTA_CHECK_MOVE = 'Check if we can move your pet'
 export const CTA_CHECK_ELIGIBILITY = 'Check eligibility'
 export const CTA_MANAGED_QUOTE = 'Get a managed-move quote'
+export const CTA_SCOPED_QUOTE = 'WhatsApp for a scoped quote after eligibility'
 export const CTA_BREED_ELIGIBILITY = 'Check breed eligibility'
 export const CTA_PERMIT_ELIGIBILITY = 'Check permit eligibility'
 

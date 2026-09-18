@@ -11,8 +11,16 @@ import PaidIncludes from '../components/PaidIncludes.tsx'
 import WhatsAppGate from '../components/WhatsAppGate.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, getWhatsAppUrl, siteConfig } from '../lib/seo.ts'
-import { GOV_FEE_CONFIRM, PERMIT_VALIDITY, TITER_SAMPLE_RULE } from '../lib/regulatory.ts'
-import { waEligibility } from '../lib/conversionCopy.ts'
+import {
+  GOV_FEE_CONFIRM,
+  MOCCAE_FEE_FRAMING_NOTE,
+  MOCCAE_PERMIT_FEE_FRAMING,
+  MOCCAE_RELEASE_CAT_FRAMING,
+  MOCCAE_RELEASE_DOG_FRAMING,
+  PERMIT_VALIDITY,
+  TITER_SAMPLE_RULE,
+} from '../lib/regulatory.ts'
+import { CTA_SCOPED_QUOTE, waEligibility } from '../lib/conversionCopy.ts'
 
 const WA = waEligibility({ need: 'managed move' })
 
@@ -243,7 +251,8 @@ export default function PricesPage() {
               services hub
             </Link>{' '}
             are the same labour split. Every package is WhatsApp for a scoped quote after eligibility. We do not publish
-            a from-price and we do not invent government AED cells.
+            a from-price for our coordination. Optional MOCCAE numerals below are government framing only, labeled
+            confirm-on-portal.
           </p>
           <div className="grid gap-6 lg:grid-cols-3">
             {PACKAGES.map((pkg) => (
@@ -253,7 +262,9 @@ export default function PricesPage() {
               >
                 <p className="text-xs font-semibold uppercase tracking-wider text-[#3A45B0]">{pkg.alias}</p>
                 <h3 className="mt-2 text-xl font-bold text-[#2A2A2A]">{pkg.name}</h3>
-                <p className="mt-3 text-sm font-semibold text-[#2A2A2A]">Quoted after eligibility. No AED menu.</p>
+                <p className="mt-3 text-sm font-semibold text-[#2A2A2A]">
+                  WhatsApp for a scoped quote after eligibility. Quote-only. No AED starting price.
+                </p>
                 <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-[#8A8A8A]">Includes</p>
                 <ul className="mt-2 space-y-2">
                   {pkg.includes.map((item) => (
@@ -272,9 +283,18 @@ export default function PricesPage() {
                     </li>
                   ))}
                 </ul>
+                <a
+                  href={getWhatsAppUrl(WA, 'prices-package')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-4 py-3 text-sm font-semibold text-white hover:bg-[#1DA851]"
+                >
+                  <MessageCircle className="h-4 w-4" aria-hidden="true" />
+                  {CTA_SCOPED_QUOTE}
+                </a>
                 <Link
                   to={pkg.to}
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#3A45B0] hover:underline"
+                  className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#3A45B0] hover:underline"
                 >
                   {pkg.money} <ArrowRight className="h-4 w-4" />
                 </Link>
@@ -307,13 +327,23 @@ export default function PricesPage() {
               </li>
             ))}
           </ul>
+          <div className="mt-6 rounded-[20px] bg-white p-5 ring-1 ring-[#3A45B0]/15">
+            <p className="text-xs font-semibold uppercase tracking-wider text-[#3A45B0]">
+              Government fees only (MOCCAE / official portal)
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-[#5A5A5A]">{MOCCAE_FEE_FRAMING_NOTE}</p>
+            <ul className="mt-3 space-y-2 text-sm text-[#5A5A5A]">
+              <li>Import permit framing: {MOCCAE_PERMIT_FEE_FRAMING}. Confirm on the official portal.</li>
+              <li>
+                Arrival release framing: {MOCCAE_RELEASE_DOG_FRAMING} (dog) / {MOCCAE_RELEASE_CAT_FRAMING} (cat). Confirm
+                on the official portal.
+              </li>
+            </ul>
+            <p className="mt-3 text-sm leading-relaxed text-[#5A5A5A]">{GOV_FEE_CONFIRM}</p>
+          </div>
           <p className="mt-6 text-sm leading-relaxed text-[#5A5A5A]">
-            Jet and shared-charter seats stay quote-only on their own service pages. Local pet taxi is a ground product
-            with labelled market bands on{' '}
-            <Link to="/service/pet-transport-dubai/" className="font-semibold text-[#3A45B0] hover:underline">
-              pet transport Dubai
-            </Link>
-            , not an international ticket.
+            Airline animal charges stay on the carrier. Jet and shared-charter seats stay quote-only on their own service
+            pages. Local pet taxi is a separate ground product, also quote-only for our coordination.
           </p>
         </div>
       </section>
@@ -380,7 +410,7 @@ export default function PricesPage() {
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-7 py-4 text-sm font-semibold text-white shadow-sm hover:bg-[#1DA851]"
             >
               <MessageCircle className="h-4 w-4" aria-hidden="true" />
-              Check if we can move your pet
+              {CTA_SCOPED_QUOTE}
             </a>
             <Link
               to="/service/pet-relocation-dubai/"

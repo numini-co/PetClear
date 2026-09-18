@@ -550,15 +550,19 @@ export default function CostGuidePage() {
         {/* Total Estimated Cost Range */}
         <div className="mb-4">
           <h3 className="text-lg font-bold text-[#2A2A2A] mb-4">Total Estimated Cost Range (All-In)</h3>
+          <p className="text-sm text-[#5A5A5A] mb-4">
+            Illustrative third-party stacks (government, clinic, freight, crate, handling) plus quoted coordination. Not
+            Dubai Pet Relocation package from-prices. Our coordination stays Get a Quote after eligibility.
+          </p>
           <div className="overflow-x-auto">
             <table className="data-table">
               <thead>
                 <tr><th>Scenario</th><th>Total (AED)</th></tr>
               </thead>
               <tbody>
-                <tr><td><strong>Small cat from UK/EU</strong> (low-risk, PawPilot)</td><td>8,000–11,000</td></tr>
-                <tr><td><strong>Medium dog from UK/EU</strong> (low-risk, PawPartner)</td><td>12,000–16,000</td></tr>
-                <tr><td><strong>Large dog from USA</strong> (low-risk, PawPartner)</td><td>15,000–20,000</td></tr>
+                <tr><td><strong>Small cat from UK/EU</strong> (low-risk, document-plan scope)</td><td>8,000–11,000</td></tr>
+                <tr><td><strong>Medium dog from UK/EU</strong> (low-risk, managed-move scope)</td><td>12,000–16,000</td></tr>
+                <tr><td><strong>Large dog from USA</strong> (low-risk, managed-move scope)</td><td>15,000–20,000</td></tr>
                 <tr><td><strong>Any pet from high-risk country</strong> (India, Pakistan, Philippines) with titer test</td><td>14,000–22,000</td></tr>
                 <tr><td><strong>Brachycephalic breed with summer rerouting</strong></td><td>18,000–25,000+</td></tr>
                 <tr><td><strong>DIY from UK/EU</strong> (no service fee)</td><td>5,400–8,500</td></tr>
