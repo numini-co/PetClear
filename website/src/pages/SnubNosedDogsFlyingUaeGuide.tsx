@@ -11,6 +11,7 @@ import SnippetAnswer from '../components/SnippetAnswer.tsx'
 import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, LOGO_URL, getWhatsAppUrl } from '../lib/seo.ts'
+import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import { MANIFEST_CARGO, PERMIT_FEE_VERIFY, PERMIT_VALIDITY, TITER_SAMPLE_RULE } from '../lib/regulatory.ts'
 
 const PATH = '/guides/snub-nosed-dogs-flying-uae/'
@@ -143,6 +144,18 @@ export default function SnubNosedDogsFlyingUaeGuide() {
           </p>
         </div>
       </section>
+
+      <GuideFunnelCta
+        variant="mid"
+        title="Airline may accept — need the dog relocation file?"
+        subtitle="This page owns flight physiology and carrier acceptance, not the federal breed list. DIY the airline check here. If the breed is legal and the carrier will fly, open dog relocation or permit assistance. Confirm portal fees on the official site — we do not invent amounts."
+        eligibilityMessage={WA_ELIG}
+        waLabel="Check Pet Eligibility"
+        links={[
+          { to: '/service/dog-relocation-dubai/', label: 'Dog relocation service', icon: 'dog' },
+          { to: '/dog-relocation-to-dubai/', label: 'Dog relocation to Dubai', icon: 'package' },
+        ]}
+      />
 
       <section className="section-padding bg-[#F5F6FD]">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">

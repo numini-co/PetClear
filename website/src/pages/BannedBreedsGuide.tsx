@@ -11,15 +11,12 @@ import {
   Clock,
   Heart,
   ThermometerSun,
-  HelpCircle,
-  MessageCircle,
   Dog,
-  ExternalLink,
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
-import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
+import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import { BASE_URL } from '../lib/seo.ts'
 
 /* ─── FAQ accordion helper ─── */
@@ -138,6 +135,9 @@ export default function BannedBreedsGuide() {
         title="Banned Dog Breeds in the UAE (Dubai) — 2026 Guide"
         subtitle="Some breeds are completely prohibited; others face strict muzzle, insurance, and housing rules under Dubai Municipality and UAE federal law."
         updated="Updated June 2026"
+        primaryLabel="Check breed eligibility"
+        whatsappMessage="Hi Dubai Pet Relocation, I need a breed eligibility check before relocating my dog to Dubai. Breed, mix details, origin country, and target month:"
+        secondary={{ label: 'Dog relocation to Dubai', to: '/dog-relocation-to-dubai/' }}
       />
 
       {/* Complete Banned Breeds List */}
@@ -533,6 +533,18 @@ export default function BannedBreedsGuide() {
         </div>
       </section>
 
+      <GuideFunnelCta
+        variant="mid"
+        title="Breed allowed — next commercial step?"
+        subtitle="Use this list as the legal-entry check. DIY the banned/restricted rules here. If the breed is allowed, open dog relocation or MOCCAE permit assistance — confirm eligibility before you apply. We confirm portal fees on the official site; we do not invent amounts."
+        eligibilityMessage="Hi Dubai Pet Relocation, I need a breed eligibility check before relocating my dog to Dubai. Breed, mix details, origin country, and target month:"
+        waLabel="Check breed eligibility"
+        links={[
+          { to: '/service/dog-relocation-dubai/', label: 'Dog relocation service', icon: 'dog' },
+          { to: '/service/moccae-pet-permit/', label: 'MOCCAE permit assistance', icon: 'file' },
+        ]}
+      />
+
       {/* Mixed Breeds & Dubai Pet Relocation Assessment */}
       <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
@@ -635,31 +647,17 @@ export default function BannedBreedsGuide() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 lg:py-20 bg-[#4F5BD5]">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
-            Unsure About Your Dog's Breed Status?
-          </h2>
-          <p className="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            Dubai Pet Relocation offers free breed assessments for dogs heading to Dubai. Send us photos and we'll tell you exactly where your dog stands under UAE regulations.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <WhatsAppBtn
-              label="Get Free Breed Assessment"
-              message="Hi Dubai Pet Relocation, I need a breed assessment for my dog before relocating to Dubai. Can you help me understand if my dog is allowed?"
-              className="whatsapp-pulse"
-            />
-            <Link
-              to="/how-it-works/"
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 text-white rounded-2xl font-semibold text-sm hover:bg-white/20 transition-colors"
-            >
-              <HelpCircle className="w-4 h-4" />
-              Learn How It Works
-            </Link>
-          </div>
-        </div>
-      </section>
+      <GuideFunnelCta
+        variant="end"
+        title="Unsure about your dog's breed status?"
+        subtitle="Send photos on WhatsApp for a breed check, or open dog relocation / permit assistance when you want the file managed. Breed eligibility comes before the MOCCAE permit (valid 90 days from issuance). Confirm government fees on the official portal."
+        eligibilityMessage="Hi Dubai Pet Relocation, I need a breed assessment for my dog before relocating to Dubai. Can you help me understand if my dog is allowed?"
+        waLabel="Check breed eligibility"
+        links={[
+          { to: '/dog-relocation-to-dubai/', label: 'Dog relocation to Dubai', icon: 'dog' },
+          { to: '/service/moccae-pet-permit/', label: 'MOCCAE permit assistance', icon: 'file' },
+        ]}
+      />
     </>
   )
 }
