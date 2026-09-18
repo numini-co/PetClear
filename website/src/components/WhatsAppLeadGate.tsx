@@ -179,15 +179,15 @@ export default function WhatsAppLeadGate() {
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
-        className="relative z-[81] max-h-[min(92dvh,720px)] w-full max-w-[440px] overflow-y-auto rounded-t-3xl bg-white p-5 shadow-xl sm:rounded-[20px] sm:p-6"
+        className="relative z-[81] flex max-h-[min(92dvh,720px)] w-full max-w-[440px] flex-col rounded-t-3xl bg-white shadow-xl sm:rounded-[20px]"
       >
-        <div className="mb-4 flex items-start justify-between gap-3">
+        <div className="flex shrink-0 items-start justify-between gap-3 px-5 pt-4 sm:px-6 sm:pt-5">
           <div>
             <p className="text-xs font-semibold uppercase tracking-wider text-[#3A45B0]">Managed-move check</p>
             <h2 id={titleId} className="mt-1 text-lg font-bold text-[#2A2A2A]">
               Check if we can move your pet
             </h2>
-            <p className="mt-1 text-sm leading-relaxed text-[#5A5A5A]">
+            <p className="mt-1 text-sm leading-snug text-[#5A5A5A]">
               Guides stay free to read. WhatsApp is for people ready to book a managed relocation.
             </p>
           </div>
@@ -202,128 +202,129 @@ export default function WhatsAppLeadGate() {
         </div>
 
         <form
-          className="space-y-4"
+          className="flex min-h-0 flex-1 flex-col"
           onSubmit={(event) => {
             event.preventDefault()
             continueToWhatsApp()
           }}
         >
-          <div>
-            <label htmlFor={nameId} className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
-              Name <span aria-hidden="true">*</span>
-            </label>
-            <input
-              ref={nameRef}
-              id={nameId}
-              name="name"
-              type="text"
-              autoComplete="name"
-              required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="min-h-12 w-full rounded-xl border border-[#E2E5F6] bg-[#F5F6FD] px-4 text-base text-[#2A2A2A] outline-none ring-[#3A45B0] focus:bg-white focus:ring-2"
-            />
-          </div>
-
-          <div>
-            <label htmlFor={petId} className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
-              Dog or Cat <span aria-hidden="true">*</span>
-            </label>
-            <select
-              id={petId}
-              name="pet"
-              required
-              value={pet}
-              onChange={(e) => setPet(e.target.value as PetType | '')}
-              className="min-h-12 w-full rounded-xl border border-[#E2E5F6] bg-[#F5F6FD] px-4 text-base text-[#2A2A2A] outline-none ring-[#3A45B0] focus:bg-white focus:ring-2"
-            >
-              <option value="" disabled>
-                Select pet type
-              </option>
-              {PET_OPTIONS.map((option) => (
-                <option key={option} value={option}>
-                  {option}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <fieldset>
-            <legend className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
-              Looking to transfer or relocate this pet with a managed move?{' '}
-              <span aria-hidden="true">*</span>
-            </legend>
-            <div className="space-y-2" id={intentId}>
-              {INTENT_OPTIONS.map((option) => (
-                <label
-                  key={option.value}
-                  className="flex min-h-12 items-center gap-3 rounded-xl border border-[#E2E5F6] bg-[#F5F6FD] px-3 text-sm text-[#2A2A2A]"
-                >
-                  <input
-                    type="radio"
-                    name="intent"
-                    value={option.value}
-                    checked={intent === option.value}
-                    onChange={() => setIntent(option.value)}
-                    required
-                    className="h-5 w-5 accent-[#3A45B0]"
-                  />
-                  {option.label}
-                </label>
-              ))}
+          <div className="min-h-0 flex-1 space-y-3 overflow-y-auto px-5 py-3 sm:space-y-4 sm:px-6">
+            <div>
+              <label htmlFor={nameId} className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
+                Name <span aria-hidden="true">*</span>
+              </label>
+              <input
+                ref={nameRef}
+                id={nameId}
+                name="name"
+                type="text"
+                autoComplete="name"
+                required
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="min-h-12 w-full rounded-xl border border-[#E2E5F6] bg-[#F5F6FD] px-4 text-base text-[#2A2A2A] outline-none ring-[#3A45B0] focus:bg-white focus:ring-2"
+              />
             </div>
-          </fieldset>
 
-          <div>
-            <label htmlFor={descId} className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
-              Short description <span aria-hidden="true">*</span>
-            </label>
-            <textarea
-              id={descId}
-              name="description"
-              required
-              rows={3}
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
-              placeholder="Breed, origin or destination, and target month"
-              className="w-full rounded-xl border border-[#E2E5F6] bg-[#F5F6FD] px-4 py-3 text-base text-[#2A2A2A] outline-none ring-[#3A45B0] focus:bg-white focus:ring-2"
-            />
+            <div>
+              <label htmlFor={petId} className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
+                Dog or Cat <span aria-hidden="true">*</span>
+              </label>
+              <select
+                id={petId}
+                name="pet"
+                required
+                value={pet}
+                onChange={(e) => setPet(e.target.value as PetType | '')}
+                className="min-h-12 w-full rounded-xl border border-[#E2E5F6] bg-[#F5F6FD] px-4 text-base text-[#2A2A2A] outline-none ring-[#3A45B0] focus:bg-white focus:ring-2"
+              >
+                <option value="" disabled>
+                  Select pet type
+                </option>
+                {PET_OPTIONS.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <fieldset>
+              <legend className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
+                Looking to transfer or relocate this pet with a managed move?{' '}
+                <span aria-hidden="true">*</span>
+              </legend>
+              <div className="space-y-2" id={intentId}>
+                {INTENT_OPTIONS.map((option) => (
+                  <label
+                    key={option.value}
+                    className="flex min-h-12 items-center gap-3 rounded-xl border border-[#E2E5F6] bg-[#F5F6FD] px-3 text-sm text-[#2A2A2A]"
+                  >
+                    <input
+                      type="radio"
+                      name="intent"
+                      value={option.value}
+                      checked={intent === option.value}
+                      onChange={() => setIntent(option.value)}
+                      required
+                      className="h-5 w-5 accent-[#3A45B0]"
+                    />
+                    {option.label}
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+
+            <div>
+              <label htmlFor={descId} className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
+                Short description <span aria-hidden="true">*</span>
+              </label>
+              <textarea
+                id={descId}
+                name="description"
+                required
+                rows={2}
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+                placeholder="Breed, origin or destination, and target month"
+                className="w-full rounded-xl border border-[#E2E5F6] bg-[#F5F6FD] px-4 py-3 text-base text-[#2A2A2A] outline-none ring-[#3A45B0] focus:bg-white focus:ring-2"
+              />
+            </div>
+
+            {errors ? (
+              <p className="text-sm font-medium text-[#C9453A]" role="alert">
+                {errors}
+              </p>
+            ) : null}
           </div>
 
-          {errors ? (
-            <p className="text-sm font-medium text-[#C9453A]" role="alert">
-              {errors}
-            </p>
-          ) : null}
-
-          <button
-            type="submit"
-            className="flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-4 text-sm font-semibold text-white hover:bg-[#1DA851]"
-          >
-            <MessageCircle className="h-5 w-5" aria-hidden="true" />
-            Continue to WhatsApp
-          </button>
+          <div className="shrink-0 border-t border-[#E2E5F6] bg-white px-5 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 sm:px-6">
+            <button
+              type="submit"
+              className="flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-4 text-sm font-semibold text-white hover:bg-[#1DA851]"
+            >
+              <MessageCircle className="h-5 w-5" aria-hidden="true" />
+              Continue to WhatsApp
+            </button>
+            <button
+              type="button"
+              onClick={goDirect}
+              className="mt-2 min-h-11 w-full text-center text-sm font-medium text-[#3A45B0] underline-offset-2 hover:underline"
+            >
+              Go directly to WhatsApp
+            </button>
+            <label htmlFor={skipId} className="mt-2 flex items-start gap-2 text-xs leading-relaxed text-[#5A5A5A]">
+              <input
+                id={skipId}
+                type="checkbox"
+                checked={skipNext}
+                onChange={(e) => setSkipNext(e.target.checked)}
+                className="mt-0.5 h-4 w-4 accent-[#3A45B0]"
+              />
+              Don&apos;t ask again this session (Direct path only)
+            </label>
+          </div>
         </form>
-
-        <div className="mt-4 border-t border-[#E2E5F6] pt-3">
-          <button
-            type="button"
-            onClick={goDirect}
-            className="min-h-11 w-full text-center text-sm font-medium text-[#3A45B0] underline-offset-2 hover:underline"
-          >
-            Go directly to WhatsApp
-          </button>
-          <label htmlFor={skipId} className="mt-2 flex items-start gap-2 text-xs leading-relaxed text-[#5A5A5A]">
-            <input
-              id={skipId}
-              type="checkbox"
-              checked={skipNext}
-              onChange={(e) => setSkipNext(e.target.checked)}
-              className="mt-0.5 h-4 w-4 accent-[#3A45B0]"
-            />
-            Don&apos;t ask again this session (Direct path only)
-          </label>
-        </div>
       </div>
     </div>
   )
