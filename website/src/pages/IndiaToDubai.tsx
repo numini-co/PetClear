@@ -1,8 +1,8 @@
 import SEOHead from '../components/SEOHead.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
-import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
+import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import { BASE_URL, LOGO_URL } from '../lib/seo.ts'
-import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint } from 'lucide-react'
+import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
 import Hero from '../components/Hero.tsx'
@@ -111,6 +111,9 @@ export default function IndiaToDubai() {
         title="India to Dubai Pet Relocation — Complete Guide"
         subtitle="India is a high-risk country for rabies: when a titer is required, the sample must be taken within 90 days before travel and read ≥0.5 IU/ml — not a wait-after-draw rule."
         updated="Updated June 2026"
+        primaryLabel="Check India-to-Dubai eligibility"
+        whatsappMessage="Hi Dubai Pet Relocation, I want to check eligibility for relocating my pet from India to Dubai. Pet type, breed, Indian city, and target month:"
+        secondary={{ label: 'Pet import to Dubai', to: '/service/pet-import-dubai/' }}
       />
 
       {/* ROUTE OVERVIEW */}
@@ -160,6 +163,18 @@ export default function IndiaToDubai() {
           </div>
         </div>
       </section>
+
+      <GuideFunnelCta
+        variant="mid"
+        title="DIY this corridor — or hand the import file over"
+        subtitle="This page explains the India-to-Dubai titer window and documents. DIY the sequence here, or open pet import / MOCCAE permit assistance when you want the file managed. Permit validity: 90 days from issuance. Titer sample within 90 days before travel when required. Confirm portal fees on the official site."
+        eligibilityMessage="Hi Dubai Pet Relocation, I want to check eligibility for relocating my pet from India to Dubai. Pet type, breed, Indian city, and target month:"
+        waLabel="Check India-to-Dubai eligibility"
+        links={[
+          { to: '/service/pet-import-dubai/', label: 'Pet import to Dubai', icon: 'plane' },
+          { to: '/service/moccae-pet-permit/', label: 'MOCCAE permit assistance', icon: 'file' },
+        ]}
+      />
 
       {/* DOCUMENTS NEEDED */}
       <section className="py-16 lg:py-24 bg-white">
@@ -453,39 +468,17 @@ export default function IndiaToDubai() {
 
       <OfficialSources />
 
-      {/* CTA */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="bg-[#3A45B0] rounded-[20px] p-8 lg:p-12 text-center text-white">
-            <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet from India to Dubai?</h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              We coordinate the India-to-Dubai corridor: titer sample within 90 days before travel, AQCS NOC, the MOCCAE import permit (valid 90 days from issuance), cargo booking, and WhatsApp updates during business hours. From Delhi, Mumbai, Bengaluru, Chennai, Hyderabad, or any city in India — we manage the titer test, AQCS NOC, flight booking, and Dubai customs.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <WhatsAppBtn label="Get an India to Dubai quote" message="Hi, I want to relocate my pet from India to Dubai. Can you help me understand the titer test process and cost?" />
-              <a href={`${BASE_URL}/how-it-works/`} className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-semibold text-[#2A2A2A] bg-white hover:bg-[#F5F5F5] transition-colors">
-                <Info className="w-5 h-5" />
-                How It Works
-              </a>
-            </div>
-            <div className="mt-8 grid sm:grid-cols-3 gap-4 text-left">
-              <a href={`${BASE_URL}/guides/pet-relocation-cost-dubai/`} className="block p-4 bg-white/10 rounded-xl hover:bg-white/15 transition-colors">
-                <p className="font-semibold text-white mb-1">Cost Guide</p>
-                <p className="text-sm text-white/70">Full breakdown of pet relocation costs in Dubai</p>
-              </a>
-              <a href={`${BASE_URL}/guides/uae-pet-import-requirements/`} className="block p-4 bg-white/10 rounded-xl hover:bg-white/15 transition-colors">
-                <p className="font-semibold text-white mb-1">Import Requirements</p>
-                <p className="text-sm text-white/70">UAE rules for bringing pets into the country</p>
-              </a>
-              <a href={`${BASE_URL}/dog-relocation-to-dubai/`} className="block p-4 bg-white/10 rounded-xl hover:bg-white/15 transition-colors">
-                <p className="font-semibold text-white mb-1">Dog Relocation</p>
-                <p className="text-sm text-white/70">Specific guidance for relocating dogs to Dubai</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <GuideFunnelCta
+        variant="end"
+        title="Ready to relocate your pet from India to Dubai?"
+        subtitle="DIY this corridor guide, or hand the file to pet import / permit assistance. We coordinate titer sample timing (within 90 days before travel), AQCS NOC, and the MOCCAE permit (valid 90 days from issuance). Confirm government fees on the official portal — we do not invent amounts."
+        eligibilityMessage="Hi Dubai Pet Relocation, I want to relocate my pet from India to Dubai and check eligibility. Pet type, breed, Indian city, and target month:"
+        waLabel="Check India-to-Dubai eligibility"
+        links={[
+          { to: '/service/pet-import-dubai/', label: 'Pet import to Dubai', icon: 'plane' },
+          { to: '/guides/moccae-import-permit/', label: 'MOCCAE import permit guide', icon: 'file' },
+        ]}
+      />
 
       {/* Related Routes & Next Steps */}
       <section className="py-16 lg:py-24 bg-white">

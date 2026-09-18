@@ -14,6 +14,7 @@ import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { FLIGHT_MODE_PATHS } from '../data/flightModes.ts'
+import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 
 const ETIHAD_PETS_URL = 'https://www.etihad.com/en-ae/plan/travel-companion/travelling-with-pets'
 
@@ -170,6 +171,18 @@ export default function EtihadPetPolicyGuide() {
           />
         </div>
       </section>
+
+      <GuideFunnelCta
+        variant="mid"
+        title="Cabin booked — still need the import file?"
+        subtitle="This guide is the Etihad cabin exception into Abu Dhabi. DIY the airline rules here. When you also need crate, cargo, or the MOCCAE permit (valid 90 days from issuance), open a money service or check eligibility on WhatsApp. Confirm portal fees on the official site."
+        eligibilityMessage="Hi Dubai Pet Relocation, I want to check Etihad in-cabin eligibility and the import file for my pet. Breed, weight, origin, and target month:"
+        waLabel="Check cabin eligibility"
+        links={[
+          { to: '/service/pet-import-dubai/', label: 'Pet import to Dubai', icon: 'plane' },
+          { to: '/service/moccae-pet-permit/', label: 'MOCCAE permit assistance', icon: 'file' },
+        ]}
+      />
 
       <section className="section-padding bg-[#F5F6FD]">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
