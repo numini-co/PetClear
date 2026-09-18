@@ -179,7 +179,7 @@ export default function WhatsAppLeadGate() {
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
-        className="relative z-[81] w-full max-w-[440px] rounded-t-3xl bg-white p-5 shadow-xl sm:rounded-[20px] sm:p-6"
+        className="relative z-[81] max-h-[min(92dvh,720px)] w-full max-w-[440px] overflow-y-auto rounded-t-3xl bg-white p-5 shadow-xl sm:rounded-[20px] sm:p-6"
       >
         <div className="mb-4 flex items-start justify-between gap-3">
           <div>
@@ -210,7 +210,7 @@ export default function WhatsAppLeadGate() {
         >
           <div>
             <label htmlFor={nameId} className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
-              Name
+              Name <span aria-hidden="true">*</span>
             </label>
             <input
               ref={nameRef}
@@ -227,7 +227,7 @@ export default function WhatsAppLeadGate() {
 
           <div>
             <label htmlFor={petId} className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
-              Dog or Cat
+              Dog or Cat <span aria-hidden="true">*</span>
             </label>
             <select
               id={petId}
@@ -250,7 +250,8 @@ export default function WhatsAppLeadGate() {
 
           <fieldset>
             <legend className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
-              Looking to transfer or relocate this pet with a managed move?
+              Looking to transfer or relocate this pet with a managed move?{' '}
+              <span aria-hidden="true">*</span>
             </legend>
             <div className="space-y-2" id={intentId}>
               {INTENT_OPTIONS.map((option) => (
@@ -275,7 +276,7 @@ export default function WhatsAppLeadGate() {
 
           <div>
             <label htmlFor={descId} className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
-              Short description
+              Short description <span aria-hidden="true">*</span>
             </label>
             <textarea
               id={descId}
@@ -289,7 +290,11 @@ export default function WhatsAppLeadGate() {
             />
           </div>
 
-          {errors ? <p className="text-sm font-medium text-[#C9453A]">{errors}</p> : null}
+          {errors ? (
+            <p className="text-sm font-medium text-[#C9453A]" role="alert">
+              {errors}
+            </p>
+          ) : null}
 
           <button
             type="submit"

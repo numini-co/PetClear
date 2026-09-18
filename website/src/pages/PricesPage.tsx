@@ -34,16 +34,16 @@ const FAQS = [
     a: 'The document / eligibility plan (PawPilot) reviews the file and names the next deadline. You still book the clinic and the airline. Managed import holds the inbound MOCCAE window, cargo booking and DXB or AUH clearance. Door-to-door adds pickup, crate rules and the last-mile handoff. The law does not change between packages. Who holds each task does.',
   },
   {
-    q: 'Are MOCCAE permit fees included in your quote?',
-    a: 'No. Those are government charges paid on the official portal. Confirm the live import-permit and arrival-release amounts when you apply. Fees may change. The walkthrough is on [the MOCCAE import permit guide](/guides/moccae-import-permit/). We do not invent AED figures here.',
+    q: 'How do MOCCAE permit fees sit next to a coordination quote?',
+    a: 'Those are government charges paid on the official portal, not a line we invent or bundle as a first-party AED figure. Confirm the live import-permit and arrival-release amounts when you apply. Fees may change. The walkthrough is on [the MOCCAE import permit guide](/guides/moccae-import-permit/).',
   },
   {
     q: 'What never sits inside a Dubai Pet Relocation package?',
     a: 'Portal fees, airline freight, clinic invoices, a crate you buy yourself unless we quote one, destination quarantine, and municipality registration after arrival. Those are third-party or government. We name them so a quote does not pretend to be an all-in ticket.',
   },
   {
-    q: 'Can I keep reading the guides and only pay if I want the file held?',
-    a: 'Yes. Guides stay free to read. WhatsApp is for people ready to book a managed relocation. If you are lining up documents yourself, stay on the [import checklist](/guides/import-checklist/) and the [UAE import requirements](/guides/uae-pet-import-requirements/) pages.',
+    q: 'What stays free to read versus what WhatsApp is for?',
+    a: 'Guides stay free to read. WhatsApp is for people ready to book a managed relocation. If you are lining up documents yourself, stay on the [import checklist](/guides/import-checklist/) and the [UAE import requirements](/guides/uae-pet-import-requirements/) pages. We will not recap those lists on chat for free.',
   },
   {
     q: 'How long is the MOCCAE import permit valid when I budget a quote?',
@@ -175,7 +175,16 @@ export default function PricesPage() {
               pet relocation cost Dubai
             </Link>
             , which owns cost types. We do not reprint contested government numerals here.{' '}
-            {GOV_FEE_CONFIRM} The how-to lives on the{' '}
+            {GOV_FEE_CONFIRM} Confirm them on the{' '}
+            <a
+              href="https://www.moccae.gov.ae/en/services/export-import-services/import-permit-pets.aspx"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[#3A45B0] hover:underline"
+            >
+              official MOCCAE pet import permit page
+            </a>
+            . The how-to lives on the{' '}
             <Link to="/guides/moccae-import-permit/" className="font-semibold text-[#3A45B0] hover:underline">
               MOCCAE import permit guide
             </Link>
@@ -346,7 +355,14 @@ export default function PricesPage() {
         </div>
       </section>
 
-      <OfficialSources />
+      <OfficialSources
+        extra={[
+          {
+            label: 'MOCCAE — pet import permit (official)',
+            href: 'https://www.moccae.gov.ae/en/services/export-import-services/import-permit-pets.aspx',
+          },
+        ]}
+      />
 
       <section className="section-padding bg-[#4F5BD5]">
         <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
