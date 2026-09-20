@@ -258,10 +258,6 @@ export default function IATACrateGuide() {
         subtitle="This guide stays educational. Eligibility and crate-led booking sit on the money pages and WhatsApp. We do not invent crate or airline fee amounts."
         eligibilityMessage={waEligibility({ need: 'crate sizing / managed move' })}
         waLabel={CTA_CHECK_MOVE}
-        links={[
-          { to: '/service/pet-relocation-dubai/', label: 'Pet relocation Dubai', icon: 'package' },
-          { to: '/service/dog-relocation-dubai/', label: 'Dog relocation service', icon: 'dog' },
-        ]}
       />
 
       {/* Sizing Formula */}
@@ -620,10 +616,6 @@ export default function IATACrateGuide() {
         subtitle="Eligibility and crate-led booking sit on the money pages and WhatsApp. This guide stays free to read. We do not invent crate or airline fee amounts."
         eligibilityMessage={waEligibility({ need: 'crate sizing / managed move' })}
         waLabel={CTA_CHECK_MOVE}
-        links={[
-          { to: '/service/pet-relocation-dubai/', label: 'Pet relocation Dubai', icon: 'package' },
-          { to: '/service/dog-relocation-dubai/', label: 'Dog relocation service', icon: 'dog' },
-        ]}
       />
     </>
   )
