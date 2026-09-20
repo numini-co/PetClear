@@ -34,9 +34,10 @@ export default function SEOHead(props: SEOHeadProps) {
   const canonical = meta.canonical || buildCanonical(location.pathname)
   const ogImage = meta.ogImage || defaultOGImage
   const ogType = meta.ogType || 'website'
-  const robots = meta.noindex
-    ? 'noindex, nofollow'
-    : 'index, follow, max-image-preview:large, max-snippet:-1'
+  const robots = meta.robots
+    || (meta.noindex
+      ? 'noindex, nofollow'
+      : 'index, follow, max-image-preview:large, max-snippet:-1')
 
   return (
     <>

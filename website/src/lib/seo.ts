@@ -9,6 +9,8 @@ export interface SEOMeta {
   ogImage?: string
   ogType?: string
   noindex?: boolean
+  /** Override robots when set. Privacy/Terms use `noindex, follow` so footer links can pass PageRank. */
+  robots?: string
   keywords?: string
 }
 

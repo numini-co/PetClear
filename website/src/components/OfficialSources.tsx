@@ -7,7 +7,7 @@ const SOURCES: { label: string; href: string }[] = [
   { label: 'UAE MOCCAE — import permits & rules', href: 'https://www.moccae.gov.ae' },
   { label: 'IATA Live Animals Regulations — travel crates', href: 'https://www.iata.org/en/programs/cargo/live-animals/' },
   { label: 'Etihad — travelling with pets', href: 'https://www.etihad.com/en-ae/plan/travel-companion/travelling-with-pets' },
-  { label: 'Emirates — travelling with pets / animals', href: 'https://www.emirates.com/ae/english/before-you-fly/travel/travelling-with-pets/' },
+  { label: 'Emirates — pets and unusual baggage allowances', href: 'https://www.emirates.com/english/before-you-fly/baggage/unusual-baggage-and-special-allowances/' },
   { label: 'USDA APHIS — Pet Travel (US health certificates)', href: 'https://www.aphis.usda.gov/pet-travel' },
 ]
 
