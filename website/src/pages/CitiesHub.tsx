@@ -97,7 +97,7 @@ export default function CitiesHub() {
         meta={{
           title: 'Pet Relocation in UAE Cities | Dubai, Abu Dhabi & Sharjah',
           description:
-            'Pet relocation across UAE emirates — Dubai communities, Abu Dhabi and Sharjah. Federal MOCCAE rules are nationwide; municipality registration and airport last-mile change by emirate.',
+            'Pet relocation across UAE cities: Dubai, Abu Dhabi and Sharjah. MOCCAE is federal; registration and last-mile change by emirate.',
           canonical,
           ogType: 'website',
         }}

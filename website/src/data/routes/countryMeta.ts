@@ -43,7 +43,7 @@ export const DESTINATION_SOURCES: Record<string, OfficialSource[]> = {
     { label: 'Australia DAFF — cats and dogs import', href: 'https://www.agriculture.gov.au/biosecurity-trade/cats-dogs' },
   ],
   canada: [
-    { label: 'CFIA — bringing pets to Canada', href: 'https://inspection.canada.ca/en/animal-health/terrestrial-animals/pet-imports' },
+    { label: 'CFIA - bringing pets to Canada', href: 'https://inspection.canada.ca/en/importing-food-plants-animals/pets' },
   ],
   china: [
     { label: 'China Customs — travellers with animals', href: 'http://english.customs.gov.cn' },
@@ -91,19 +91,19 @@ export const DESTINATION_SOURCES: Record<string, OfficialSource[]> = {
     { label: 'Oman MAFWR — veterinary quarantine', href: 'https://www.maf.gov.om' },
   ],
   pakistan: [
-    { label: 'Pakistan Ministry of National Food Security — animal quarantine', href: 'https://www.mnfsr.gov.pk' },
+    { label: 'Pakistan Single Window - Animal Quarantine Department', href: 'https://psw.gov.pk/public/aqd' },
   ],
   philippines: [
     { label: 'Philippines BAI — pet import (SPSIC)', href: 'https://www.bai.gov.ph/Stakeholders/PetImport' },
   ],
   qatar: [
-    { label: 'Qatar MoECC — environment and climate change', href: 'https://www.mecc.gov.qa' },
+    { label: 'Qatar Ministry of Municipality - animal health certificates', href: 'https://animalcert.mme.gov.qa/ANIMAL_SYSTEM/' },
   ],
   'saudi-arabia': [
     { label: 'Saudi MEWA — pet import mechanism', href: 'https://www.mewa.gov.sa' },
   ],
   singapore: [
-    { label: 'Singapore NParks / AVS — bringing pets into Singapore', href: 'https://www.nparks.gov.sg/avs/pets/bringing-animals-into-singapore/bringing-pets-into-singapore' },
+    { label: 'Singapore AVS / NParks - importing dogs and cats', href: 'https://avs.nparks.gov.sg/pets/importing-exporting-a-pet/import/dogs-and-cats/' },
   ],
   'south-africa': [
     { label: 'South Africa DALRRD — animal health', href: 'https://www.dalrrd.gov.za' },

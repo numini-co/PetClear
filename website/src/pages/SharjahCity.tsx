@@ -26,7 +26,7 @@ const PATH = '/cities/sharjah/'
 const HERO_SRC = '/assets/w-sharjah/pet-relocation-sharjah-dog-lagoon-promenade-dusk.jpg'
 const HERO_ALT =
   'Owner walking their dog along a Sharjah waterfront promenade, illustrating pet relocation in Sharjah'
-const MAP_SRC = '/assets/w-sharjah/sharjah-dubai-pet-transport-airport-routing-map.png'
+const MAP_SRC = '/assets/w-sharjah/sharjah-dubai-pet-transport-airport-routing-map.webp'
 const MAP_ALT = 'Pet transport routing between Sharjah, DXB and Sharjah International Airport'
 
 const WA_QUOTE =
@@ -156,8 +156,8 @@ export default function SharjahCity() {
         primaryLabel="Get a Relocation Quote"
         whatsappMessage={WA_QUOTE}
         secondary={{ label: 'All UAE cities', to: '/cities/' }}
-        imageWidth={1920}
-        imageHeight={1080}
+        imageWidth={1280}
+        imageHeight={720}
       />
 
       <section className="section-padding bg-white">
@@ -341,6 +341,8 @@ export default function SharjahCity() {
             src={MAP_SRC}
             alt={MAP_ALT}
             caption="Illustrative routing between Sharjah homes, SHJ and DXB — not a taxi rate card and not a timed service-level agreement. Ground bookings live on the pet transport page."
+            width={1280}
+            height={720}
           />
         </div>
       </section>

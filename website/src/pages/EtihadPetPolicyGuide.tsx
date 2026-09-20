@@ -165,9 +165,11 @@ export default function EtihadPetPolicyGuide() {
             .
           </p>
           <ContentImage
-            src="/assets/w1-w3/pet-airline-options-cabin-baggage-cargo-diagram.png"
+            src="/assets/w1-w3/pet-airline-options-cabin-baggage-cargo-diagram.webp"
             alt="Cabin versus baggage versus cargo decision diagram for flying a pet to the UAE"
             caption="Cabin is the exception. Most UAE arrivals still use manifest cargo."
+            width={1100}
+            height={733}
           />
         </div>
       </section>

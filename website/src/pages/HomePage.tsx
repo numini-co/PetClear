@@ -383,8 +383,10 @@ export default function HomePage() {
             </p>
           </div>
           <ContentImage
-            src="/assets/w1-w3/how-pet-relocation-works-7-step-process-dubai.png"
+            src="/assets/w1-w3/how-pet-relocation-works-7-step-process-dubai.webp"
             alt="Diagram of the 7-step Dubai pet relocation process from eligibility check to home reunion"
+            width={1100}
+            height={733}
             caption="Seven clear steps on the process page. The homepage keeps three."
           />
           <div className="grid gap-6 md:grid-cols-3">
@@ -556,8 +558,10 @@ export default function HomePage() {
               </p>
             </div>
             <ContentImage
-              src="/assets/w1-w3/dubai-pet-relocation-community-coverage-map.png"
+              src="/assets/w1-w3/dubai-pet-relocation-community-coverage-map.webp"
               alt="Map of Dubai communities covered for pet relocation, from Dubai Marina to Mirdif and Dubai South"
+              width={1100}
+              height={733}
               caption="Illustrative coverage map — open the Dubai hub for the live community list."
             />
           </div>

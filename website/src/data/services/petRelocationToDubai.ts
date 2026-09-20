@@ -47,8 +47,10 @@ const petRelocationToDubai: ServicePageData = {
       body: [
         {
           type: 'image',
-          src: '/assets/w1-w3/pet-relocation-to-dubai-inbound-journey-diagram.png',
+          src: '/assets/w1-w3/pet-relocation-to-dubai-inbound-journey-diagram.webp',
           alt: 'Inbound pet relocation journey to Dubai from first vet visit to home delivery',
+          width: 1280,
+          height: 853,
           caption: 'Eight inbound stages. “Titer if required” is conditional — not a universal 90-day wait.',
         },
         {

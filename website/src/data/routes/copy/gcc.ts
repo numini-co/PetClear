@@ -235,7 +235,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
         'No fee numerals. Confirm MoECC and airline charges officially.',
       ],
       verifyNote:
-        'Re-check MoECC and the chosen airline. For UAE cabin/cargo products see /guides/etihad-pet-policy/ and /guides/emirates-pet-cargo/.',
+        'Re-check the Qatar Ministry of Municipality animal-certificate portal (animalcert.mme.gov.qa) and the chosen airline. For UAE cabin/cargo products see /guides/etihad-pet-policy/ and /guides/emirates-pet-cargo/.',
     },
     rulesSpecialties:
       'Dubai→Qatar specialises in a single destination airport and a destination ministry that is easy to confuse with UAE import. MoECC issues the Qatari import permit; Doha Hamad (DOH) is the only seed arrival gateway; the permit, air waybill and collection plan must all say Hamad. Typical building blocks are an ISO microchip, current rabies vaccination, and a government-endorsed health certificate inside a short validity window — secondary synthesis often cites about 10 days of travel, which you verify on the current MoECC instruction rather than inventing a number. Only after that Qatari date is real do you request UAE exit papers. A MOCCAE export health certificate is commonly cited at 30 days from issue — verify on the portal — and it is not a MOCCAE import permit. Specialty versus the inbound twin: inbound owns 90-day UAE permit language and cargo-default DXB/DWC release; outbound owns MoECC plus Hamad arrival. Specialty versus Saudi outbound: there is no four-city port choice and no Anaam/Iqama applicant story. This URL will not own airline-policy SERP. Confirm carriers on official pages; for UAE cabin-versus-cargo chooser language use /guides/pet-flight-options-dubai/ and /guides/etihad-pet-policy/.',

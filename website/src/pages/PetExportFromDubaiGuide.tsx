@@ -70,7 +70,7 @@ export default function PetExportFromDubaiGuide() {
   const canonical = `${BASE_URL}${PATH}`
   const title = 'How to Export Your Pet from Dubai — Complete 2026 Guide'
   const description =
-    'Pet export from Dubai: destination-first documents, MOCCAE export health certificate timing, and outbound checklists. Confirm government fees on the official portal.'
+    'Export a pet from Dubai: destination-first documents, MOCCAE export certificate timing, and checklists. Confirm portal fees.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',

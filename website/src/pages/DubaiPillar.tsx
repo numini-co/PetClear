@@ -193,7 +193,7 @@ export default function DubaiPillar() {
         meta={{
           title: 'Pet Relocation Dubai Communities | Marina to Old Dubai',
           description:
-            'Dubai community directory for pet pickup and delivery — Marina, JLT, Palm, Downtown, villa suburbs and old Dubai. MOCCAE 90-day permit. WhatsApp a Relocation Coordinator.',
+            'Dubai community directory for pet pickup and delivery: Marina, JLT, Palm, Downtown and more. MOCCAE 90-day permit. WhatsApp +971504782999.',
           keywords: 'pet relocation dubai communities, dubai pet relocation areas, pet transport dubai marina, pet movers dubai',
           canonical: url,
           ogType: 'website',

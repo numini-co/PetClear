@@ -6,7 +6,7 @@ const alBarsha: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Al Barsha | Dog & Cat Relocation (2026)',
   metaDescription:
-    'Pet relocation in Al Barsha: Barsha 1, 2 and 3 villas and apartments, Mall of the Emirates corridor last mile and MOCCAE permits. WhatsApp +971 50 478 2999.',
+    'Pet relocation in Al Barsha: Barsha 1-3 villas and apartments, Mall of the Emirates last mile, MOCCAE permits. WhatsApp +971504782999.',
   keywords:
     'pet relocation al barsha, pet transport al barsha, dog relocation al barsha, cat relocation al barsha, pet movers al barsha dubai',
   h1: 'Pet Relocation in Al Barsha',

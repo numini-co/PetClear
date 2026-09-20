@@ -57,7 +57,7 @@ function Block({ block }: { block: ServiceBlock }) {
     )
   }
   if (block.type === 'image') {
-    return <ContentImage src={block.src} alt={block.alt} caption={block.caption} />
+    return <ContentImage src={block.src} alt={block.alt} caption={block.caption} width={block.width} height={block.height} />
   }
   if (block.type === 'cards') {
     return (
@@ -132,6 +132,30 @@ function defaultEyebrow(slug: string): string {
   if (slug === 'pet-import-dubai') return 'Pet Import Service'
   if (slug === 'moccae-pet-permit') return 'MOCCAE Permit Assistance'
   return 'Pet Relocation Service'
+}
+
+function relatedHeading(slug: string): string {
+  if (slug === 'moccae-pet-permit') return 'Related permit and import pages'
+  if (slug === 'pet-relocation-dubai') return 'Related relocation pages and guides'
+  return 'Related Services & Guides'
+}
+
+function faqHeading(slug: string): string {
+  if (slug === 'moccae-pet-permit') return 'MOCCAE permit assistance questions'
+  if (slug === 'pet-relocation-dubai') return 'Dubai pet relocation questions'
+  return 'Frequently Asked Questions'
+}
+
+function exploreHeading(slug: string): string {
+  if (slug === 'moccae-pet-permit') return 'Other Dubai pet services'
+  if (slug === 'pet-relocation-dubai') return 'Browse every relocation service'
+  return 'Explore All Our Services'
+}
+
+function ctaHeading(slug: string): string {
+  if (slug === 'moccae-pet-permit') return 'Ready to start permit assistance?'
+  if (slug === 'pet-relocation-dubai') return 'Ready to check a Dubai relocation?'
+  return 'Ready to book a managed move?'
 }
 
 export default function ServicePage({ data }: { data: ServicePageData }) {
@@ -233,7 +257,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
       {data.relatedLinks.length > 0 && (
         <section className="bg-white section-padding">
           <div className="max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-8">
-            <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-6">Related Services & Guides</h2>
+            <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-6">{relatedHeading(data.slug)}</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {data.relatedLinks.map((l, i) => (
                 <Link key={i} to={l.to} className="flex items-center justify-between gap-2 bg-[#F5F6FD] hover:bg-[#E9ECFB] rounded-2xl px-5 py-4 text-[#2A2A2A] font-semibold text-sm transition-colors">
@@ -249,7 +273,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
       {data.faq.length > 0 && (
         <section className="bg-[#F5F6FD] section-padding">
           <div className="max-w-[820px] mx-auto px-5 sm:px-6 lg:px-8">
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[34px] font-bold text-[#2A2A2A] mb-6 text-center">Frequently Asked Questions</h2>
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[34px] font-bold text-[#2A2A2A] mb-6 text-center">{faqHeading(data.slug)}</h2>
             <div className="space-y-3">
               {data.faq.map((f) => (
                 <FAQItem key={f.q} question={f.q} answer={<LinkedText text={f.a} />} />
@@ -262,7 +286,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
       {/* ALL SERVICES */}
       <section className="bg-white section-padding">
         <div className="max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-8">
-          <h2 className="text-[22px] sm:text-[28px] font-bold text-[#2A2A2A] mb-5">Explore All Our Services</h2>
+          <h2 className="text-[22px] sm:text-[28px] font-bold text-[#2A2A2A] mb-5">{exploreHeading(data.slug)}</h2>
           <div className="flex flex-wrap gap-2.5">
             {SERVICE_LINKS.filter((l) => l.to !== `/service/${data.slug}/`).map((l) => (
               <Link key={l.to} to={l.to} className="text-sm font-medium text-[#4F5BD5] bg-[#F5F6FD] hover:bg-[#E9ECFB] border border-[#E2E5F6] rounded-full px-4 py-2 transition-colors">{l.label}</Link>
@@ -276,7 +300,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
       {/* FINAL CTA */}
       <section className="bg-[#4F5BD5] section-padding">
         <div className="max-w-[820px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-[24px] sm:text-[32px] font-bold text-white mb-3">Ready to book a managed move?</h2>
+          <h2 className="text-[24px] sm:text-[32px] font-bold text-white mb-3">{ctaHeading(data.slug)}</h2>
           <p className="text-white/90 mb-4">
             WhatsApp during business hours with pet type, breed, route and month if you want us to run the file.
             Guides stay free to read.

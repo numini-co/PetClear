@@ -269,8 +269,8 @@ export default function ServicesPage() {
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <SnippetAnswer
-            question="What is the best pet relocation service in Dubai?"
-            answer="“Best” depends on origin, species, and documentation-only versus door-to-door — the full answer lives on the Dubai pet relocation service page. This hub compares our service tiers, not a companies listicle. WhatsApp +971504782999."
+            question="How do Dubai pet relocation service tiers differ?"
+            answer="Tiers change who holds each task, not the law. PawPilot is document guidance. PawPartner adds booking and travel-day. PawVIP adds a dedicated manager. Compare the table below, then open the matching service page. WhatsApp +971504782999."
           />
           <p className="text-body mb-4">
             Quoted package scopes live on{' '}
@@ -477,7 +477,7 @@ export default function ServicesPage() {
 
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[820px] px-5 sm:px-6 lg:px-8">
-          <h2 className="mb-6 text-center text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Frequently asked questions</h2>
+          <h2 className="mb-6 text-center text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Service tier questions</h2>
           <div className="space-y-3">
             {SERVICES_FAQS.map((f) => (
               <FAQItem key={f.q} question={f.q} answer={<LinkedText text={f.a} />} />

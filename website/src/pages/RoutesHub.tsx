@@ -173,7 +173,7 @@ export default function RoutesHub() {
         meta={{
           title: 'Pet Relocation Routes to and from Dubai | Country Guides',
           description:
-            'Inbound and outbound pet relocation routes for Dubai — UK, USA, India, Germany, France, Singapore, Saudi, Netherlands, Canada, Australia and more. Timelines, not invented government fees.',
+            'Pet relocation routes to and from Dubai: UK, USA, India, Germany, Singapore and more. Timelines and documents, not invented fees.',
           canonical,
           ogType: 'website',
         }}

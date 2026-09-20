@@ -182,9 +182,11 @@ export default function SnubNosedDogsFlyingUaeGuide() {
             . This URL stays on flight physiology and acceptance.
           </p>
           <ContentImage
-            src="/assets/w9/brachycephalic-airway-comparison-diagram.png"
+            src="/assets/w9/brachycephalic-airway-comparison-diagram.webp"
             alt="Why snub-nosed breeds overheat: airway comparison between flat-faced and standard-muzzle dogs"
             caption="Educational comparison only — not a veterinary diagnosis. Shorter airway, less efficient cooling, higher heat and stress sensitivity."
+            width={1280}
+            height={720}
           />
         </div>
       </section>
@@ -265,9 +267,11 @@ export default function SnubNosedDogsFlyingUaeGuide() {
             offloaded. Hardware, ventilation and water bowls still follow CR1 — see the crate guide for that checklist.
           </p>
           <ContentImage
-            src="/assets/w9/snub-nosed-larger-crate-rule-comparison-diagram.png"
+            src="/assets/w9/snub-nosed-larger-crate-rule-comparison-diagram.webp"
             alt="The larger-crate rule for snub-nosed dogs flying to or from the UAE: standard IATA fit versus +10%"
             caption="IATA: snub-nosed container 10% larger than the standard calculation. Confirm the live airline measurement at acceptance."
+            width={1280}
+            height={720}
           />
           <LastVerified
             date="14 September 2026"
