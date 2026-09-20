@@ -12,6 +12,7 @@ export default function TermsOfService() {
           description: 'Terms of Service for Dubai Pet Relocation pet relocation coordination services. Please read these terms carefully before using our services.',
           canonical: `${BASE_URL}/terms-of-service/`,
           noindex: true,
+          robots: 'noindex, follow',
         }}
       />
 

@@ -12,6 +12,7 @@ export default function PrivacyPolicy() {
           description: 'Privacy policy for Dubai Pet Relocation pet relocation coordination services. Learn how we collect, use, and protect your personal data.',
           canonical: `${BASE_URL}/privacy-policy/`,
           noindex: true,
+          robots: 'noindex, follow',
         }}
       />
 

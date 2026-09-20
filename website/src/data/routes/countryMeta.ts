@@ -49,7 +49,7 @@ export const DESTINATION_SOURCES: Record<string, OfficialSource[]> = {
     { label: 'China Customs — travellers with animals', href: 'http://english.customs.gov.cn' },
   ],
   egypt: [
-    { label: 'Egypt GOVS — veterinary services', href: 'https://www.lrid.gov.eg' },
+    { label: 'Egypt GOVS — veterinary services', href: 'https://www.govs.gov.eg/' },
   ],
   france: [
     { label: 'EU — non-commercial pet movement from non-EU countries', href: 'https://food.ec.europa.eu/animals/movement-pets/eu-legislation/non-commercial-movement-non-eu-countries_en' },
@@ -64,7 +64,7 @@ export const DESTINATION_SOURCES: Record<string, OfficialSource[]> = {
     { label: 'India DAHD / AQCS pet import guidance', href: 'https://dahd.gov.in' },
   ],
   indonesia: [
-    { label: 'Indonesia agricultural quarantine (Barantan)', href: 'https://karantina.pertanian.go.id' },
+    { label: 'Indonesia Badan Karantina (Barantin)', href: 'https://karantinaindonesia.go.id/' },
   ],
   ireland: [
     { label: 'EU — non-commercial pet movement from non-EU countries', href: 'https://food.ec.europa.eu/animals/movement-pets/eu-legislation/non-commercial-movement-non-eu-countries_en' },
@@ -76,7 +76,7 @@ export const DESTINATION_SOURCES: Record<string, OfficialSource[]> = {
     { label: 'Japan AQS — importing dogs and cats', href: 'https://www.maff.go.jp/aqs/english/animal/dog/import-other.html' },
   ],
   kuwait: [
-    { label: 'Kuwait PAAFR — livestock and veterinary', href: 'https://www.paaf.gov.kw' },
+    { label: 'Kuwait Government Online — PAAF services', href: 'https://e.gov.kw/sites/kgoenglish/Pages/eServices/PAAF/FishServices.aspx' },
   ],
   malaysia: [
     { label: 'Malaysia DVS — animal import', href: 'https://www.dvs.gov.my' },
@@ -88,7 +88,7 @@ export const DESTINATION_SOURCES: Record<string, OfficialSource[]> = {
     { label: 'New Zealand MPI — importing cats and dogs', href: 'https://www.mpi.govt.nz/import/animals-animal-products-and-live-animals/cats-and-dogs/' },
   ],
   oman: [
-    { label: 'Oman MAFWR — veterinary quarantine', href: 'https://www.maf.gov.om' },
+    { label: 'Oman MAFWR — veterinary quarantine', href: 'https://www.mafwr.gov.om/' },
   ],
   pakistan: [
     { label: 'Pakistan Single Window - Animal Quarantine Department', href: 'https://psw.gov.pk/public/aqd' },
@@ -106,7 +106,7 @@ export const DESTINATION_SOURCES: Record<string, OfficialSource[]> = {
     { label: 'Singapore AVS / NParks - importing dogs and cats', href: 'https://avs.nparks.gov.sg/pets/importing-exporting-a-pet/import/dogs-and-cats/' },
   ],
   'south-africa': [
-    { label: 'South Africa DALRRD — animal health', href: 'https://www.dalrrd.gov.za' },
+    { label: 'South Africa — import animals and animal products', href: 'https://www.gov.za/services/import/import-animals-and-animal-products' },
   ],
   'south-korea': [
     { label: 'Korea APQA — animal quarantine', href: 'https://www.qia.go.kr/english/html/index.jsp' },
