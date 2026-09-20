@@ -116,6 +116,9 @@ export default function ContactPage() {
       {/* ═══════════ CONTACT INFO CARDS ═══════════ */}
       <section className="bg-[#F5F6FD] section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <h2 className="mb-8 text-center text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
+            Ways to reach us
+          </h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="text-center">
               <div className="w-12 h-12 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mx-auto mb-4">

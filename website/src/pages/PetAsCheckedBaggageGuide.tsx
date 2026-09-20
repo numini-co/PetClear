@@ -148,9 +148,11 @@ export default function PetAsCheckedBaggageGuide() {
             .
           </p>
           <ContentImage
-            src="/assets/w-flight-modes/pet-airline-options-cabin-baggage-cargo-diagram.png"
+            src="/assets/w-flight-modes/pet-airline-options-cabin-baggage-cargo-diagram.webp"
             alt="Cabin, checked-baggage and cargo options for pet travel to or from Dubai"
             caption="Accompanied hold travel is the middle column — and the one UAE arrivals usually cannot use."
+            width={1100}
+            height={733}
           />
         </div>
       </section>

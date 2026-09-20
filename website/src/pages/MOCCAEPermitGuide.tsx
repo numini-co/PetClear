@@ -359,9 +359,11 @@ export default function MOCCAEPermitGuide() {
           </div>
 
           <ContentImage
-            src="/assets/w5/moccae-import-permit-application-steps-diagram.png"
+            src="/assets/w5/moccae-import-permit-application-steps-diagram.webp"
             alt="Step-by-step MOCCAE pet import permit application from account setup to permit issue"
             caption="Generic UI blocks — not screenshots of the live portal. Confirm the live fee on the MOCCAE portal. Permit validity is 90 days from issuance."
+            width={1024}
+            height={1536}
           />
 
           <div className="space-y-6 mb-10">
@@ -480,7 +482,7 @@ export default function MOCCAEPermitGuide() {
 
       <GuideFunnelCta
         variant="mid"
-        title="Permit ready — book the managed move?"
+        title="Permit ready - book the managed move?"
         subtitle="This guide covers the MOCCAE import permit (valid 90 days from issuance). DIY the portal steps above. When you also need crate, cargo and door delivery, open a money service or WhatsApp eligibility if you are ready to book. Confirm portal fees on the official site."
         eligibilityMessage={waManaged}
       />
@@ -492,9 +494,11 @@ export default function MOCCAEPermitGuide() {
             Common Rejection Reasons & How to Fix Them
           </h2>
           <ContentImage
-            src="/assets/w5/moccae-permit-rejection-causes-and-fixes-diagram.png"
+            src="/assets/w5/moccae-permit-rejection-causes-and-fixes-diagram.webp"
             alt="MOCCAE pet permit rejection causes and how to fix each one"
             caption="Cause and fix. Confirm any resubmission fee on the portal — we do not invent one."
+            width={1536}
+            height={1024}
           />
           <div className="overflow-x-auto mb-10">
             <table className="data-table min-w-[600px]">
@@ -699,7 +703,7 @@ export default function MOCCAEPermitGuide() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4 text-center">
-              Frequently Asked Questions
+              MOCCAE import permit questions
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed text-center mb-10">
               Common questions about MOCCAE import and export permits for pets.

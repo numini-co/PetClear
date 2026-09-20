@@ -6,16 +6,22 @@ export default function ContentImage({
   alt,
   caption,
   className = '',
+  width,
+  height,
 }: {
   src: string
   alt: string
   caption?: string
   className?: string
+  width?: number
+  height?: number
 }) {
   const [failed, setFailed] = useState(false)
-  // Checklist ratios: PNG diagrams are 16:9; JPG stills are 4:3. Do not force a
-  // 3:2 box + object-cover — that cropped diagram labels on the first wire-up.
-  const isDiagram = src.endsWith('.png')
+  // Diagrams (PNG/WebP) default 16:9; JPG stills default 4:3. Prefer explicit
+  // width/height when the file's intrinsic size is known.
+  const isDiagram = src.endsWith('.png') || src.endsWith('.webp')
+  const imgWidth = width ?? (isDiagram ? 1920 : 1536)
+  const imgHeight = height ?? (isDiagram ? 1080 : 1152)
 
   return (
     <figure className={`mb-6 ${className}`}>
@@ -23,8 +29,8 @@ export default function ContentImage({
         <img
           src={src}
           alt={alt}
-          width={isDiagram ? 1920 : 1536}
-          height={isDiagram ? 1080 : 1152}
+          width={imgWidth}
+          height={imgHeight}
           loading="lazy"
           onError={() => setFailed(true)}
           className="h-auto w-full rounded-[20px]"

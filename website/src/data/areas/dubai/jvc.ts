@@ -6,7 +6,7 @@ const jvc: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation JVC | Dog & Cat Relocation (2026)',
   metaDescription:
-    'Pet relocation in JVC: circle-layout villas, townhouses and mid-rise towers, Circle Mall / District 10 last mile and MOCCAE permits. WhatsApp +971 50 478 2999.',
+    'Pet relocation in JVC: villas, townhouses and mid-rise towers, Circle Mall last mile, MOCCAE permits. WhatsApp +971504782999.',
   keywords:
     'pet relocation jvc, pet transport jvc, dog relocation jvc, cat relocation jvc, pet movers jumeirah village circle',
   h1: 'Pet Relocation in Jumeirah Village Circle (JVC)',

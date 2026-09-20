@@ -6,7 +6,7 @@ const businessBay: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Business Bay | Dog & Cat Relocation (2026)',
   metaDescription:
-    'Pet relocation in Business Bay: canal-side towers, Downtown-adjacent pickups, weekday loading windows and MOCCAE coordination. WhatsApp +971 50 478 2999.',
+    'Pet relocation in Business Bay: canal towers, Downtown-adjacent pickups, weekday loading windows. WhatsApp +971504782999.',
   keywords:
     'pet relocation business bay, pet transport business bay, dog relocation business bay, cat relocation business bay, pet movers business bay dubai',
   h1: 'Pet Relocation in Business Bay',

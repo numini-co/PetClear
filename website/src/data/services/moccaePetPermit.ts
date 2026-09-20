@@ -30,9 +30,9 @@ const moccaePetPermit: ServicePageData = {
     'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: __. Target date: __. Need: document plan.',
   ctaLabel: 'Check permit eligibility',
   heroEyebrow: 'MOCCAE Permit Assistance',
-  snippetQuestion: 'Do I need a MOCCAE import permit?',
+  snippetQuestion: 'What does MOCCAE pet permit assistance include?',
   snippetAnswer:
-    'Yes. Every pet entering the UAE needs a MOCCAE import permit, valid 90 days from issuance. This page is the commercial application-help service. The apply walkthrough lives on the MOCCAE import permit guide. Confirm current portal fees. WhatsApp +971 50 478 2999 or support@dubai-pet-relocation.ae.',
+    'Permit assistance is file review, UAE Pass portal guidance, and tracking until MOCCAE issues the import permit (valid 90 days from issuance). We do not issue permits. The DIY walkthrough lives on the import permit guide. Confirm portal fees. WhatsApp +971504782999.',
   trustBadges: [
     '90-day import-permit window',
     'Document review before submit',
@@ -75,8 +75,10 @@ const moccaePetPermit: ServicePageData = {
       body: [
         {
           type: 'image',
-          src: '/assets/w5/moccae-import-permit-application-flowchart.png',
+          src: '/assets/w5/moccae-import-permit-application-flowchart.webp',
           alt: 'MOCCAE pet import permit application flow from document collection to approval tracking',
+          width: 1100,
+          height: 733,
           caption: 'Documents complete? If no, fix before you pay the portal. Issued permits are valid 90 days from issuance.',
         },
         {
@@ -233,8 +235,10 @@ const moccaePetPermit: ServicePageData = {
       body: [
         {
           type: 'image',
-          src: '/assets/w5/moccae-permit-common-rejection-reasons-diagram.png',
+          src: '/assets/w5/moccae-permit-common-rejection-reasons-diagram.webp',
           alt: 'Common MOCCAE pet permit rejection reasons: expired vaccines, microchip mismatches and timing errors',
+          width: 1280,
+          height: 853,
           caption: 'The four rejects that reset the processing estimate. Exact wording stays in the copy.',
         },
         {

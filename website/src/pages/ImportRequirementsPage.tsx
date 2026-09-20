@@ -583,9 +583,11 @@ export default function ImportRequirementsPage() {
             .
           </p>
           <ContentImage
-            src="/assets/w5/uae-pet-import-step-by-step-timeline-diagram.png"
+            src="/assets/w5/uae-pet-import-step-by-step-timeline-diagram.webp"
             alt="Step-by-step UAE pet import timeline from vaccinations to arrival clearance"
             caption="Timed steps use the 90-day permit and the sample-within-90-days titer rule. Fees are not baked into the graphic."
+            width={1280}
+            height={853}
           />
 
           <div className="relative">

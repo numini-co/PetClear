@@ -74,7 +74,7 @@ const faqData = [
 
 export default function DubaiPetArrivalGuide() {
   const canonical = `${BASE_URL}${PATH}`
-  const title = 'Arriving in Dubai with a Pet — Airport Clearance to Municipality Registration (2026)'
+  const title = 'Dubai Pet Arrival Guide | Clearance to Registration'
   const description =
     'Pet arrival at Dubai airport: DXB cargo clearance, collection, home settling, and Dubai Municipality / Aleef dog registration within 30 days.'
 
@@ -139,8 +139,8 @@ export default function DubaiPetArrivalGuide() {
         primaryLabel="Check Documents"
         whatsappMessage={WA_DOCS}
         secondary={{ label: 'Import requirements', to: '/guides/uae-pet-import-requirements/' }}
-        imageWidth={1920}
-        imageHeight={1080}
+        imageWidth={1600}
+        imageHeight={900}
       />
 
       <section className="section-padding bg-white">
@@ -171,8 +171,10 @@ export default function DubaiPetArrivalGuide() {
           </p>
           <ContentImage
             src="/assets/w11/dubai-pet-arrival-flow-clearance-collection-registration.png"
-            alt="What happens after your pet lands in Dubai: customs clearance, collection, home and municipality registration"
+            alt="After landing in Dubai: cargo clearance, collection, home settling, then dog registration"
             caption="Five steps after landing: cargo clearance, collection, a quiet home, then dog registration. No invented airport signs."
+            width={1920}
+            height={1080}
           />
         </div>
       </section>
@@ -348,6 +350,8 @@ export default function DubaiPetArrivalGuide() {
             src="/assets/w11/dubai-municipality-dog-registration-tag-collar.jpg"
             alt="Dog collar with a Dubai municipality registration tag after arrival registration"
             caption="A generic collar tag only — never a replica of an official Dubai Municipality emblem or number."
+            width={1536}
+            height={1152}
           />
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             Pet registration with Dubai Municipality is mandatory. A dog licence is required under Federal Law 22/2016

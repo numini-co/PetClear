@@ -167,9 +167,11 @@ export default function PetFlightOptionsHub() {
             . Air Arabia cabin is falcons-only (source: Air Arabia) — not a dog or cat product. Open a child page when you already know the carrier or mode; message us when you want us to choose and coordinate.
           </p>
           <ContentImage
-            src="/assets/w-flight-modes/pet-airline-options-cabin-baggage-cargo-diagram.png"
+            src="/assets/w-flight-modes/pet-airline-options-cabin-baggage-cargo-diagram.webp"
             alt="Diagram comparing cabin, checked-baggage and cargo options for flying a pet to or from Dubai"
             caption="Cabin, hold baggage and cargo are different products. UAE arrivals almost always use manifest cargo."
+            width={1100}
+            height={733}
           />
           <div className="rounded-[20px] border border-[#E8D48B] bg-[#FFF8E7] p-6">
             <h2 className="mb-2 flex items-center gap-2 text-xl font-bold text-[#2A2A2A]">
