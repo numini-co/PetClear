@@ -36,6 +36,7 @@ import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
+import RelatedLinks from '../components/RelatedLinks.tsx'
 
 const CAT_FAQS: { q: string; a: string }[] = [
   {
@@ -172,7 +173,11 @@ export default function CatRelocationPage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <SectionHeading className="mb-4">What Every Cat Owner Worries About (And Why You Don't Have To)</SectionHeading>
           <SectionIntro>
-            We understand the fears that keep cat owners up at night. Here is what we do about each one.
+            We understand the fears that keep cat owners up at night. Here is what we do about each one. The commercial cat file sits on{' '}
+            <Link to="/service/cat-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              cat relocation in Dubai
+            </Link>
+            . This page stays the inbound journey guide.
           </SectionIntro>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {/* Card 1 */}
@@ -803,6 +808,12 @@ export default function CatRelocationPage() {
           </div>
         </div>
       </section>
+
+      <RelatedLinks
+        heading="Related cat relocation pages"
+        intro="This URL is the inbound cat journey. The commercial cat file and door-to-door money page sit one click away."
+        path="/cat-relocation-to-dubai/"
+      />
 
       <OfficialSources />
 

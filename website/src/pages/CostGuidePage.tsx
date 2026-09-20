@@ -262,7 +262,11 @@ export default function CostGuidePage() {
           <Link to="/service/pet-export-dubai/" className="text-[#4F5BD5] font-medium hover:underline">
             pet export
           </Link>
-          .
+          . Pair the stack with the{' '}
+          <Link to="/guides/import-checklist/" className="text-[#4F5BD5] font-medium hover:underline">
+            pet import documents checklist
+          </Link>
+          {' '}before you budget the permit clock.
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <Card>
@@ -338,6 +342,14 @@ export default function CostGuidePage() {
           Questions: {siteConfig.email} or WhatsApp {siteConfig.phone}.
         </p>
       </Section>
+
+      <GuideFunnelCta
+        variant="mid"
+        title="Cost types clear — check a managed move?"
+        subtitle="This guide stays educational. Eligibility and a scoped quote sit on the money pages and WhatsApp. We do not invent package or government fee amounts here."
+        eligibilityMessage={costGuideMsg}
+        waLabel={CTA_MANAGED_QUOTE}
+      />
 
       {/* ===== WHY COSTS VARY ===== */}
       <Section className="bg-white">

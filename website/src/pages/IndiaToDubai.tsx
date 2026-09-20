@@ -5,6 +5,7 @@ import { BASE_URL, LOGO_URL } from '../lib/seo.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
+import RouteMoneyBodyLink from '../components/RouteMoneyBodyLink.tsx'
 import Hero from '../components/Hero.tsx'
 import RouteCostTeaser, { ROUTE_PACKAGE_COST_FAQ } from '../components/RouteCostTeaser.tsx'
 import LinkedText from '../components/LinkedText.tsx'
@@ -189,6 +190,7 @@ export default function IndiaToDubai() {
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
                 Because India is a high-risk country, the documentation is more extensive than low-risk routes. The titer test and AQCS NOC are the two most critical steps that Indian pet owners must complete.
               </p>
+              <RouteMoneyBodyLink path="/routes/india-to-dubai/" />
 
               <div className="space-y-4">
                 <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">

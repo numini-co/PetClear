@@ -298,6 +298,10 @@ export default function MOCCAEPermitGuide() {
                 <Link to="/guides/import-checklist/" className="font-semibold text-[#4F5BD5] hover:underline">
                   pet import checklist
                 </Link>
+                . Quoted packages (no invented government fees) sit on{' '}
+                <Link to="/prices/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  Prices
+                </Link>
                 .
               </p>
               <div className="bg-white rounded-[20px] shadow-sm p-6">

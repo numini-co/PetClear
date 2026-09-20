@@ -32,6 +32,7 @@ import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
+import RelatedLinks from '../components/RelatedLinks.tsx'
 
 const DOG_FAQS: { q: string; a: string }[] = [
   {
@@ -192,7 +193,11 @@ export default function DogRelocationPage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <SectionHeading className="mb-4">What Every Dog Owner Worries About (And How We Handle It)</SectionHeading>
           <SectionIntro>
-            Every dog owner we speak to has the same fears. They are valid. We name them, then we solve them.
+            Every dog owner we speak to has the same fears. They are valid. We name them, then we solve them. The commercial dog file — breed check, crate and cargo — sits on{' '}
+            <Link to="/service/dog-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              dog relocation in Dubai
+            </Link>
+            . This page stays the inbound journey guide.
           </SectionIntro>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {/* Card 1 */}
@@ -892,6 +897,12 @@ export default function DogRelocationPage() {
           </div>
         </div>
       </section>
+
+      <RelatedLinks
+        heading="Related dog relocation pages"
+        intro="This URL is the inbound dog journey. The commercial dog file and door-to-door money page sit one click away."
+        path="/dog-relocation-to-dubai/"
+      />
 
       <OfficialSources />
 

@@ -6,9 +6,9 @@ import Breadcrumb from './Breadcrumb.tsx'
 import { getWhatsAppUrl, BASE_URL, siteConfig, shortSubtitle } from '../lib/seo.ts'
 import type { ServiceBlock, ServiceFAQ } from '../types/servicePage.ts'
 import type { AreaPageData } from '../types/areaPage.ts'
-import { SERVICE_LINKS } from '../data/nav.ts'
-import { dubaiAreas } from '../data/areas/dubai/index.ts'
 import OfficialSources from './OfficialSources.tsx'
+import RelatedLinks from './RelatedLinks.tsx'
+import { AREA_SERVICE_CHIPS, getRelatedLinks } from '../data/internalLinks.ts'
 import Hero from './Hero.tsx'
 import ContentImage from './ContentImage.tsx'
 import LinkedText from './LinkedText.tsx'
@@ -206,41 +206,21 @@ export default function AreaPage({ data }: { data: AreaPageData }) {
         </section>
       )}
 
-      {/* RELATED AREAS */}
-      <section className="bg-white section-padding">
-        <div className="max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-8">
-          <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-6">Other Dubai Areas We Serve</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            <Link to="/dubai/" className="flex items-center justify-between gap-2 bg-[#E9ECFB] hover:bg-[#dfe3fb] rounded-2xl px-5 py-4 text-[#2A2A2A] font-bold text-sm transition-colors">All Dubai areas <ArrowRight className="w-4 h-4 text-[#4F5BD5] shrink-0" /></Link>
-            {data.relatedAreas.map((l, i) => (
-              <Link key={i} to={l.to} className="flex items-center justify-between gap-2 bg-[#F5F6FD] hover:bg-[#E9ECFB] rounded-2xl px-5 py-4 text-[#2A2A2A] font-semibold text-sm transition-colors">{l.label} <ArrowRight className="w-4 h-4 text-[#4F5BD5] shrink-0" /></Link>
-            ))}
-          </div>
+      {/* RELATED AREAS — hub + ≤5 neighbors + money sink (no full ~39 mesh) */}
+      <div data-related-links="area">
+        <RelatedLinks
+          heading="Nearby Dubai areas we serve"
+          intro="Community hub plus a short neighbour set — not every Dubai URL. The international file lives on the money page."
+          links={getRelatedLinks(`/dubai/${data.slug}/`)}
+        />
+      </div>
 
-          <h3 className="text-[18px] sm:text-[22px] font-bold text-[#2A2A2A] mt-10 mb-4">All Dubai communities we cover</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
-            {dubaiAreas
-              .filter((a) => a.slug !== data.slug)
-              .sort((a, b) => a.areaName.localeCompare(b.areaName))
-              .map((a) => (
-                <Link
-                  key={a.slug}
-                  to={`/dubai/${a.slug}/`}
-                  className="text-sm text-[#4F5BD5] hover:text-[#3A45B0] hover:underline truncate"
-                >
-                  {a.areaName}
-                </Link>
-              ))}
-          </div>
-        </div>
-      </section>
-
-      {/* OUR SERVICES */}
+      {/* OUR SERVICES — flagship, import, export, transport only */}
       <section className="bg-[#F5F6FD] section-padding">
         <div className="max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[22px] sm:text-[28px] font-bold text-[#2A2A2A] mb-5">Our Pet Relocation Services</h2>
           <div className="flex flex-wrap gap-2.5">
-            {SERVICE_LINKS.map((l) => (
+            {AREA_SERVICE_CHIPS.map((l) => (
               <Link key={l.to} to={l.to} className="text-sm font-medium text-[#4F5BD5] bg-white hover:bg-[#E9ECFB] border border-[#E2E5F6] rounded-full px-4 py-2 transition-colors">{l.label}</Link>
             ))}
           </div>

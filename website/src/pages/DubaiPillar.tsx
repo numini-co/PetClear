@@ -438,14 +438,7 @@ export default function DubaiPillar() {
       <HubCrossLinks
         heading="After you pick the community"
         intro="This hub owns geography. The job still has a home URL — money service, ground van, arrival walkthrough, or another emirate."
-        links={[
-          { to: '/service/pet-relocation-dubai/', label: 'Door-to-door pet relocation in Dubai', note: 'Money-head international file — not this directory' },
-          { to: '/service/pet-transport-dubai/', label: 'Pet transport and pet taxi', note: 'Local and inter-emirate ground runs' },
-          { to: '/guides/dubai-pet-arrival-guide/', label: 'Dubai pet arrival guide', note: 'Cargo collection, first week, Aleef clock' },
-          { to: '/cities/', label: 'UAE cities and emirates', note: 'Abu Dhabi, Sharjah and coverage notes' },
-          { to: '/cities/dubai/', label: 'Dubai emirate overview', note: 'Separate live URL — not redirected here' },
-          { to: '/routes/', label: 'Country route guides', note: 'Inbound and outbound corridors' },
-        ]}
+        path="/dubai/"
       />
 
       <OfficialSources

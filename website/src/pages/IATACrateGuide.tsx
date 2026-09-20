@@ -12,20 +12,18 @@ import {
   DollarSign,
   Clock,
   Wind,
-  Dog,
-  Cat,
-  HelpCircle,
   PawPrint,
-  MessageCircle,
   ExternalLink,
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
-import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import LinkedText from '../components/LinkedText.tsx'
+import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
+import RelatedLinks from '../components/RelatedLinks.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL } from '../lib/seo.ts'
+import { CTA_CHECK_MOVE, waEligibility } from '../lib/conversionCopy.ts'
 
 /* ─── FAQ accordion helper ─── */
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
@@ -177,7 +175,11 @@ export default function IATACrateGuide() {
                 IATA approved pet crate Dubai rules follow the <strong>IATA Live Animal Regulations (LAR)</strong> — the global standard for transporting animals by air. These rules cover crate design, sizing, ventilation, labeling, and documentation.
               </p>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                Airlines flying to Dubai — including Emirates, Etihad, and flydubai — require all pets in cargo to travel in IATA LAR-compliant crates. Failure to meet these standards means your pet will be refused at check-in, potentially causing missed flights, extra fees, and severe stress for your animal.
+                Airlines flying to Dubai — including Emirates, Etihad, and flydubai — require all pets in cargo to travel in IATA LAR-compliant crates. Failure to meet these standards means your pet will be refused at check-in, potentially causing missed flights, extra fees, and severe stress for your animal. Dog files that need crate sizing inside a managed move sit on the{' '}
+                <Link to="/service/dog-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  dog relocation service
+                </Link>
+                .
               </p>
               <div className="bg-white rounded-[20px] shadow-sm p-6">
                 <h3 className="text-lg font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
@@ -249,6 +251,18 @@ export default function IATACrateGuide() {
           </div>
         </div>
       </section>
+
+      <GuideFunnelCta
+        variant="mid"
+        title="Crate rules clear — check a managed move?"
+        subtitle="This guide stays educational. Eligibility and crate-led booking sit on the money pages and WhatsApp. We do not invent crate or airline fee amounts."
+        eligibilityMessage={waEligibility({ need: 'crate sizing / managed move' })}
+        waLabel={CTA_CHECK_MOVE}
+        links={[
+          { to: '/service/pet-relocation-dubai/', label: 'Pet relocation Dubai', icon: 'package' },
+          { to: '/service/dog-relocation-dubai/', label: 'Dog relocation service', icon: 'dog' },
+        ]}
+      />
 
       {/* Sizing Formula */}
       <section id="sizing-formula" className="section-padding bg-white">
@@ -594,63 +608,23 @@ export default function IATACrateGuide() {
         </div>
       </section>
 
-      {/* Related Links */}
-      <section className="py-16 bg-white">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-8 text-center">
-            Related Guides
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Link to="/dog-relocation-to-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
-                <Dog className="w-5 h-5 text-[#4F5BD5]" />
-              </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">Dog Relocation to Dubai</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Complete guide to relocating dogs to Dubai, including documentation, breed rules, and airline options.</p>
-            </Link>
-            <Link to="/cat-relocation-to-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
-                <Cat className="w-5 h-5 text-[#4F5BD5]" />
-              </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">Cat Relocation to Dubai</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Everything you need to know about bringing cats to Dubai, including crate sizing for felines.</p>
-            </Link>
-            <Link to="/how-it-works/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#C89F5A]/10 flex items-center justify-center mb-4 group-hover:bg-[#C89F5A]/20 transition-colors">
-                <Clock className="w-5 h-5 text-[#C89F5A]" />
-              </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#C89F5A] transition-colors">How Dubai Pet Relocation Works</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Learn about our transparent coordination process, from crate sizing to arrival in Dubai.</p>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <RelatedLinks
+        heading="Related guides and services"
+        intro="Crate rules stay educational. Eligibility and a managed dog or door-to-door file live on the money pages."
+        path="/guides/iata-pet-crate-requirements/"
+      />
 
-      {/* CTA */}
-      <section className="py-16 lg:py-20 bg-[#4F5BD5]">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
-            Need Help Choosing the Right Crate?
-          </h2>
-          <p className="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            Dubai Pet Relocation's crate sizing service includes a free video call to measure your pet correctly. We source, deliver, and verify IATA-compliant crates for every airline flying to Dubai.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <WhatsAppBtn
-              label="Get Free Crate Sizing Help"
-              message="Hi Dubai Pet Relocation, I need help measuring my pet and choosing the right IATA-compliant crate for a flight to Dubai. Can we schedule a video call?"
-              className="whatsapp-pulse"
-            />
-            <Link
-              to="/how-it-works/"
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 text-white rounded-2xl font-semibold text-sm hover:bg-white/20 transition-colors"
-            >
-              <HelpCircle className="w-4 h-4" />
-              Learn How It Works
-            </Link>
-          </div>
-        </div>
-      </section>
+      <GuideFunnelCta
+        variant="end"
+        title="Need help choosing the right crate?"
+        subtitle="Eligibility and crate-led booking sit on the money pages and WhatsApp. This guide stays free to read. We do not invent crate or airline fee amounts."
+        eligibilityMessage={waEligibility({ need: 'crate sizing / managed move' })}
+        waLabel={CTA_CHECK_MOVE}
+        links={[
+          { to: '/service/pet-relocation-dubai/', label: 'Pet relocation Dubai', icon: 'package' },
+          { to: '/service/dog-relocation-dubai/', label: 'Dog relocation service', icon: 'dog' },
+        ]}
+      />
     </>
   )
 }
