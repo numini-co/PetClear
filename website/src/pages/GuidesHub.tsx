@@ -87,17 +87,7 @@ export default function GuidesHub() {
       <HubCrossLinks
         heading="From a guide to the service that matches"
         intro="Guides explain the rule. Service pages take the booking. The homepage remains the category entry."
-        links={[
-          { to: '/', label: 'Homepage overview', note: 'Category entry — not the money-head service page' },
-          { to: '/services/', label: 'Compare our service tiers', note: 'How much of the file we hold' },
-          { to: '/service/pet-relocation-dubai/', label: 'Our Dubai pet relocation service', note: 'Door-to-door money page after you have read the rule' },
-          { to: '/guides/pet-flight-options-dubai/', label: 'Pet flight options hub', note: 'Cabin, cargo, jet and charter compared' },
-          { to: '/service/private-jet-pet-travel/', label: 'Private jet pet travel', note: 'Quote-only dedicated aircraft' },
-          { to: '/service/shared-pet-charter/', label: 'Shared pet charter', note: 'Quote-only group lift' },
-          { to: '/service/pet-transport-dubai/', label: 'Local pet transport and pet taxi service', note: 'Ground transfers and airport pet taxi' },
-          { to: '/routes/', label: 'Routes hub', note: 'Country corridors inbound and outbound' },
-          { to: '/dubai/', label: 'Dubai communities we cover', note: 'Last-mile pickup and delivery by community' },
-        ]}
+        path="/guides/"
       />
 
       <OfficialSources />

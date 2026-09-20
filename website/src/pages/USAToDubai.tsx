@@ -5,6 +5,7 @@ import { BASE_URL, LOGO_URL } from '../lib/seo.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
+import RouteMoneyBodyLink from '../components/RouteMoneyBodyLink.tsx'
 import Hero from '../components/Hero.tsx'
 import RouteCostTeaser, { ROUTE_PACKAGE_COST_FAQ } from '../components/RouteCostTeaser.tsx'
 import LinkedText from '../components/LinkedText.tsx'
@@ -170,6 +171,7 @@ export default function USAToDubai() {
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
                 US pet relocation to Dubai requires a USDA-endorsed health certificate — a critical step that many owners miss. Dubai Pet Relocation ensures your paperwork is flawless before departure.
               </p>
+              <RouteMoneyBodyLink path="/routes/usa-to-dubai/" />
 
               <div className="space-y-4">
                 <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">

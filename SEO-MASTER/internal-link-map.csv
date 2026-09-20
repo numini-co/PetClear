@@ -418,3 +418,21 @@ https://dubai-pet-relocation.ae/cities/,https://dubai-pet-relocation.ae/service/
 https://dubai-pet-relocation.ae/service/pet-export-dubai/,https://dubai-pet-relocation.ae/guides/pet-export-from-dubai/,how to export your pet from Dubai,commercial export twin → informational guide | implemented 2026-09-14,body context,P1
 https://dubai-pet-relocation.ae/service/pet-relocation-from-dubai/,https://dubai-pet-relocation.ae/guides/pet-export-from-dubai/,how to export your pet from Dubai,outbound journey twin → export process guide | implemented 2026-09-14,body context,P1
 https://dubai-pet-relocation.ae/guides/pet-export-from-dubai/,https://dubai-pet-relocation.ae/service/pet-relocation-from-dubai/,pet relocation from Dubai,export guide → outbound journey twin | implemented 2026-09-14,body context,P2
+https://dubai-pet-relocation.ae/guides/,https://dubai-pet-relocation.ae/guides/import-checklist/,pet import documents checklist,B04 engine: checklist inbound from guides hub (map had 0),hub,P1
+https://dubai-pet-relocation.ae/guides/pet-relocation-cost-dubai/,https://dubai-pet-relocation.ae/guides/import-checklist/,pet import documents checklist,B04 engine: cost guide body → checklist,body context,P1
+https://dubai-pet-relocation.ae/guides/moccae-import-permit/,https://dubai-pet-relocation.ae/guides/import-checklist/,import documents checklist,B04 engine: MOCCAE body → checklist (shipped),body context,P1
+https://dubai-pet-relocation.ae/guides/rabies-titer-test-dubai/,https://dubai-pet-relocation.ae/guides/import-checklist/,pet import documents checklist,B04 engine: titer body → checklist,body context,P1
+https://dubai-pet-relocation.ae/routes/,https://dubai-pet-relocation.ae/guides/import-checklist/,pet import documents checklist,B04 engine: routes hub → checklist,hub,P1
+https://dubai-pet-relocation.ae/dubai/,https://dubai-pet-relocation.ae/guides/import-checklist/,pet import documents checklist,B04 engine: Dubai community hub → checklist,hub,P1
+https://dubai-pet-relocation.ae/guides/,https://dubai-pet-relocation.ae/prices/,quoted packages and eligibility,B04 engine: prices inbound from guides hub (map had 0),hub,P1
+https://dubai-pet-relocation.ae/guides/pet-relocation-cost-dubai/,https://dubai-pet-relocation.ae/prices/,quoted packages on Prices,B04 engine: cost guide body → prices (already live; map row appended),body context,P1
+https://dubai-pet-relocation.ae/guides/moccae-import-permit/,https://dubai-pet-relocation.ae/prices/,quoted packages on Prices,B04 engine: MOCCAE body → prices,body context,P1
+https://dubai-pet-relocation.ae/routes/,https://dubai-pet-relocation.ae/prices/,quoted packages and eligibility,B04 engine: routes hub → prices,hub,P1
+https://dubai-pet-relocation.ae/cities/,https://dubai-pet-relocation.ae/prices/,quoted packages and eligibility,B04 engine: cities hub → prices,hub,P1
+https://dubai-pet-relocation.ae/dubai/,https://dubai-pet-relocation.ae/prices/,quoted packages and eligibility,B04 engine: Dubai community hub → prices,hub,P2
+https://dubai-pet-relocation.ae/cities/dubai/,https://dubai-pet-relocation.ae/service/pet-relocation-dubai/,door-to-door pet relocation in Dubai,B04 engine: /cities/dubai/ P1 body → flagship,body context,P1
+https://dubai-pet-relocation.ae/routes/uk-to-dubai/,https://dubai-pet-relocation.ae/service/pet-relocation-to-dubai/,pet relocation to Dubai,B04 engine: inbound route body → directional money (all inbound corridors via RoutePage),body context,P1
+https://dubai-pet-relocation.ae/dog-relocation-to-dubai/,https://dubai-pet-relocation.ae/service/dog-relocation-dubai/,dog relocation in Dubai,B04 engine: species inbound → dog money,body context,P1
+https://dubai-pet-relocation.ae/cat-relocation-to-dubai/,https://dubai-pet-relocation.ae/service/cat-relocation-dubai/,cat relocation in Dubai,B04 engine: species inbound → cat money,body context,P1
+https://dubai-pet-relocation.ae/guides/iata-pet-crate-requirements/,https://dubai-pet-relocation.ae/service/dog-relocation-dubai/,dog relocation service,B04 engine: IATA body → dog money,body context,P1
+https://dubai-pet-relocation.ae/dubai/dubai-marina/,https://dubai-pet-relocation.ae/service/pet-relocation-dubai/,pet relocation Dubai,B04 engine: area related cap (hub + ≤5 neighbours + flagship; full ~39 mesh removed),related,P1

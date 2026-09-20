@@ -4,24 +4,24 @@ import {
   AlertTriangle,
   Clock,
   CheckCircle,
-  HelpCircle,
   FileCheck,
   Stethoscope,
   Syringe,
   FlaskConical,
   PawPrint,
   RefreshCw,
-  MapPin,
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
-import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import FAQItem from '../components/FAQItem.tsx'
 import ContentImage from '../components/ContentImage.tsx'
 import LastVerified from '../components/LastVerified.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
+import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
+import RelatedLinks from '../components/RelatedLinks.tsx'
 import LinkedText from '../components/LinkedText.tsx'
+import { CTA_CHECK_MOVE, waEligibility } from '../lib/conversionCopy.ts'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, siteConfig } from '../lib/seo.ts'
 import {
@@ -231,6 +231,13 @@ export default function TiterTestGuide() {
                 A rabies titer test, usually called an <strong>RNATT</strong> (rabies neutralising antibody titre test) or FAVN, is a blood test that measures rabies antibodies. For UAE import it is required only for pets arriving from countries that are <strong>not</strong> on MOCCAE&apos;s rabies-controlled / exempt list.
               </p>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-4">{TITER_SAMPLE_RULE}</p>
+              <p className="text-[#5A5A5A] text-base leading-relaxed mb-4">
+                See where the sample sits in the ordered{' '}
+                <Link to="/guides/import-checklist/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  pet import documents checklist
+                </Link>
+                .
+              </p>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-4">{EXEMPT_LIST_HOLD}</p>
               <div className="bg-white rounded-[20px] shadow-sm p-6">
                 <h3 className="text-lg font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
@@ -268,6 +275,14 @@ export default function TiterTestGuide() {
           </div>
         </div>
       </section>
+
+      <GuideFunnelCta
+        variant="mid"
+        title="Sample window mapped — check a managed import?"
+        subtitle="This guide stays educational. Eligibility and the inbound file sit on the money pages and WhatsApp. We do not invent lab or government fee amounts."
+        eligibilityMessage={waEligibility({ need: 'titer timing / managed import' })}
+        waLabel={CTA_CHECK_MOVE}
+      />
 
       <section id="timeline" className="section-padding bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
@@ -515,59 +530,21 @@ export default function TiterTestGuide() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-8 text-center">Related guides and services</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Link to="/guides/uae-pet-import-requirements/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow">
-              <FileCheck className="w-5 h-5 text-[#4F5BD5] mb-3" />
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">UAE pet import requirements</h3>
-              <p className="text-sm text-[#5A5A5A]">The statutory checklist this titer rule sits inside.</p>
-            </Link>
-            <Link to="/guides/moccae-import-permit/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow">
-              <Clock className="w-5 h-5 text-[#4F5BD5] mb-3" />
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">MOCCAE import permit guide</h3>
-              <p className="text-sm text-[#5A5A5A]">90-day permit walkthrough after the sample is in date.</p>
-            </Link>
-            <Link to="/service/pet-import-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow">
-              <PawPrint className="w-5 h-5 text-[#4F5BD5] mb-3" />
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Pet import service</h3>
-              <p className="text-sm text-[#5A5A5A]">Commercial coordination from titer timing through DXB clearance.</p>
-            </Link>
-            <Link to="/routes/india-to-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow">
-              <MapPin className="w-5 h-5 text-[#C89F5A] mb-3" />
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">India to Dubai route</h3>
-              <p className="text-sm text-[#5A5A5A]">Origin logistics for a corridor that often needs an RNATT.</p>
-            </Link>
-            <Link to="/routes/south-africa-to-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow">
-              <MapPin className="w-5 h-5 text-[#4F5BD5] mb-3" />
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">South Africa to Dubai</h3>
-              <p className="text-sm text-[#5A5A5A]">Another inbound file where sample dating has to be planned.</p>
-            </Link>
-            <Link to="/service/moccae-pet-permit/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow">
-              <HelpCircle className="w-5 h-5 text-[#4F5BD5] mb-3" />
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">MOCCAE permit assistance</h3>
-              <p className="text-sm text-[#5A5A5A]">Attach a passing result to a clean 90-day permit file.</p>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <RelatedLinks
+        heading="Related guides and services"
+        intro="Titer timing sits inside the import file. Eligibility and a managed import live on the money pages."
+        path="/guides/rabies-titer-test-dubai/"
+      />
 
       <OfficialSources />
 
-      <section className="py-16 lg:py-20 bg-[#4F5BD5]">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">Need the sample date mapped to a flight?</h2>
-          <p className="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            Send origin, vaccination date and a target month. We will tell you whether an RNATT is even in play — after a portal check — and whether the sample window still fits. Email {siteConfig.email} if WhatsApp is not convenient.
-          </p>
-          <WhatsAppBtn
-            label="Check titer timing"
-            message="Hi Dubai Pet Relocation, I need the correct rabies titer (RNATT) timing for importing my pet to Dubai. Origin country: [country]. Vaccination date: [date]."
-            className="whatsapp-pulse"
-          />
-        </div>
-      </section>
+      <GuideFunnelCta
+        variant="end"
+        title="Need the sample date mapped to a flight?"
+        subtitle="Send origin, vaccination date and a target month. We confirm whether an RNATT is in play after a portal check. Guides stay free to read — no invented lab fees."
+        eligibilityMessage={waEligibility({ need: 'titer timing / managed import' })}
+        waLabel={CTA_CHECK_MOVE}
+      />
     </>
   )
 }

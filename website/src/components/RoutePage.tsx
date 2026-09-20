@@ -14,6 +14,7 @@ import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, LOGO_URL, getWhatsAppUrl, shortSubtitle, siteConfig } from '../lib/seo.ts'
 import { titleCaseCountry } from '../data/routes/countryMeta.ts'
 import type { RoutePageData } from '../types/routePage.ts'
+import RouteMoneyBodyLink from './RouteMoneyBodyLink.tsx'
 
 function displayCountry(name: string): string {
   return name.startsWith('the ') ? name.slice(4, 5).toUpperCase() + name.slice(5) : name
@@ -102,6 +103,7 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
               : `Exporting a pet from Dubai ${COUNTRY_TO(data.countryName)}`}
           </h2>
           <p className="leading-relaxed text-[#5A5A5A]">{data.intro}</p>
+          {data.direction === 'inbound' ? <RouteMoneyBodyLink path={`/routes/${data.slug}/`} /> : null}
           <LastVerified className="mt-4 text-xs text-[#8A8A8A]" />
         </div>
       </section>

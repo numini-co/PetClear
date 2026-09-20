@@ -9,6 +9,7 @@ import { BASE_URL, LOGO_URL } from '../lib/seo.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
+import RouteMoneyBodyLink from '../components/RouteMoneyBodyLink.tsx'
 
 export default function NewZealandToDubai() {
   const pageUrl = `${BASE_URL}/routes/new-zealand-to-dubai/`
@@ -166,6 +167,7 @@ export default function NewZealandToDubai() {
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
                 New Zealand export documentation is among the strictest globally. MPI ensures no biosecurity risks are exported alongside your pet. The MPI certificate must be completed by an MPI-approved veterinarian.
               </p>
+              <RouteMoneyBodyLink path="/routes/new-zealand-to-dubai/" />
 
               <div className="space-y-4">
                 <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">

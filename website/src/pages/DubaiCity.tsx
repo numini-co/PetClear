@@ -6,6 +6,7 @@ import Hero from '../components/Hero.tsx'
 import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint, Heart, MapPin, Building, Phone, Dog, Cat, DollarSign, Briefcase, Globe } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import RelatedLinks from '../components/RelatedLinks.tsx'
 
 export default function DubaiCity() {
   const pageUrl = `${BASE_URL}/cities/dubai/`
@@ -193,7 +194,11 @@ export default function DubaiCity() {
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">To Dubai</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-                Importing a pet to Dubai from the UK, USA, Europe, Australia, India, the Philippines, or anywhere in the world. We handle import permits, health certificates, flight booking, customs clearance, and home delivery.
+                Importing a pet to Dubai from the UK, USA, Europe, Australia, India, the Philippines, or anywhere in the world. The commercial file — permits, crate, cargo and clearance — is{' '}
+                <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  door-to-door pet relocation in Dubai
+                </Link>
+                . We handle import permits, health certificates, flight booking, customs clearance, and home delivery.
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> MOCCAE import permit application</li>
@@ -515,6 +520,12 @@ export default function DubaiCity() {
           </div>
         </div>
       </section>
+
+      <RelatedLinks
+        heading="Related relocation pages"
+        intro="Emirate overview, then the money file, checklist and community directory — each URL keeps its own intent."
+        path="/cities/dubai/"
+      />
 
       <OfficialSources />
 

@@ -9,6 +9,7 @@ import { BASE_URL, LOGO_URL } from '../lib/seo.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
+import RouteMoneyBodyLink from '../components/RouteMoneyBodyLink.tsx'
 
 export default function CanadaToDubai() {
   const pageUrl = `${BASE_URL}/routes/canada-to-dubai/`
@@ -166,6 +167,7 @@ export default function CanadaToDubai() {
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
                 Canadian pet relocation to Dubai requires a CFIA-endorsed health certificate — a critical step that many Canadian owners miss. The CFIA endorsement is similar to the USDA endorsement in the US but follows Canadian-specific procedures.
               </p>
+              <RouteMoneyBodyLink path="/routes/canada-to-dubai/" />
 
               <div className="space-y-4">
                 <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">

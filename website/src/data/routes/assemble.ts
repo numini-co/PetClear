@@ -9,6 +9,7 @@ import type {
 import { COUNTRY_AIR_AIR } from './seed/airportsAirlines.ts'
 import { COUNTRY_META, DESTINATION_SOURCES, heroPathForSlug } from './countryMeta.ts'
 import type { RouteUniqueCopy } from './copy/types.ts'
+import { mergeRelatedLinks } from '../internalLinks.ts'
 
 const UAE_AIRPORTS_INBOUND: UaeAirport[] = [
   {
@@ -264,7 +265,10 @@ export function assembleRoute(copy: RouteUniqueCopy): RoutePageData {
     uaeRules,
     destinationRules: copy.destinationRules,
     faqs: copy.faqs,
-    relatedLinks: relatedLinks(copy, direction),
+    relatedLinks: mergeRelatedLinks(
+      `/routes/${copy.slug}/`,
+      relatedLinks(copy, direction).map((l) => ({ to: l.href, label: l.label })),
+    ).map((l) => ({ href: l.to, label: l.label })),
     extraSources: direction === 'outbound' ? DESTINATION_SOURCES[copy.countryKey] : undefined,
     rulesSpecialties: copy.rulesSpecialties,
     difficulties: copy.difficulties,

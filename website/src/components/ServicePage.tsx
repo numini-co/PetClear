@@ -5,6 +5,7 @@ import Breadcrumb from './Breadcrumb.tsx'
 import { getWhatsAppUrl, BASE_URL, siteConfig, shortSubtitle, localBusinessProvider } from '../lib/seo.ts'
 import type { ServicePageData, ServiceBlock } from '../types/servicePage.ts'
 import { SERVICE_LINKS } from '../data/nav.ts'
+import { mergeRelatedLinks } from '../data/internalLinks.ts'
 import OfficialSources from './OfficialSources.tsx'
 import Hero from './Hero.tsx'
 import FAQItem from './FAQItem.tsx'
@@ -159,6 +160,7 @@ function ctaHeading(slug: string): string {
 }
 
 export default function ServicePage({ data }: { data: ServicePageData }) {
+  const related = mergeRelatedLinks(`/service/${data.slug}/`, data.relatedLinks)
   const url = `${BASE_URL}/service/${data.slug}/`
   const wa = getWhatsAppUrl(data.whatsappMessage)
   const ctaLabel = data.ctaLabel || defaultCtaLabel(data.slug)
@@ -254,13 +256,13 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
       ))}
 
       {/* RELATED SERVICES */}
-      {data.relatedLinks.length > 0 && (
+      {related.length > 0 && (
         <section className="bg-white section-padding">
           <div className="max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-8">
             <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-6">{relatedHeading(data.slug)}</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {data.relatedLinks.map((l, i) => (
-                <Link key={i} to={l.to} className="flex items-center justify-between gap-2 bg-[#F5F6FD] hover:bg-[#E9ECFB] rounded-2xl px-5 py-4 text-[#2A2A2A] font-semibold text-sm transition-colors">
+              {related.map((l) => (
+                <Link key={l.to} to={l.to} className="flex items-center justify-between gap-2 bg-[#F5F6FD] hover:bg-[#E9ECFB] rounded-2xl px-5 py-4 text-[#2A2A2A] font-semibold text-sm transition-colors">
                   {l.label} <ArrowRight className="w-4 h-4 text-[#4F5BD5] shrink-0" />
                 </Link>
               ))}
