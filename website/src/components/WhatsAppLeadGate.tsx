@@ -32,7 +32,7 @@ const fieldClass =
   'min-h-12 w-full rounded-xl border border-[#E2E5F6] bg-[#F5F6FD] px-4 text-base text-[#2A2A2A] outline-none ring-[#3A45B0] focus:bg-white focus:ring-2'
 
 const radioLabelClass =
-  'flex min-h-12 items-center gap-3 rounded-xl border border-[#E2E5F6] bg-[#F5F6FD] px-3 text-sm text-[#2A2A2A]'
+  'flex min-h-11 items-center gap-3 rounded-xl border border-[#E2E5F6] bg-[#F5F6FD] px-3 text-sm text-[#2A2A2A]'
 
 function extractText(href: string): string {
   try {
@@ -277,9 +277,11 @@ export default function WhatsAppLeadGate() {
             <h2 id={titleId} className="mt-1 text-lg font-bold text-[#2A2A2A]">
               Check if we can move your pet
             </h2>
-            <p className="mt-1 text-sm leading-snug text-[#5A5A5A]">
-              Guides stay free to read. WhatsApp is for people ready to book a managed relocation.
-            </p>
+            {step === 1 ? (
+              <p className="mt-1 text-sm leading-snug text-[#5A5A5A]">
+                Guides stay free to read. WhatsApp is for people ready to book a managed relocation.
+              </p>
+            ) : null}
             <div className="mt-3">
               <p id={stepStatusId} className="text-sm font-semibold text-[#2A2A2A]" aria-live="polite" aria-atomic="true">
                 Step {step} of {TOTAL_STEPS} — {STEP_TITLES[step]}
