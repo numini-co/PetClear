@@ -277,7 +277,7 @@ export default function TiterTestGuide() {
       <GuideFunnelCta
         variant="mid"
         title="Sample window mapped — check a managed import?"
-        subtitle="This guide stays educational. Eligibility and the inbound file sit on the money pages and WhatsApp. We do not invent lab or government fee amounts."
+        subtitle="This guide stays educational. Eligibility and the inbound file sit on the service pages and WhatsApp. We do not invent lab or government fee amounts."
         eligibilityMessage={waEligibility({ need: 'titer timing / managed import' })}
         waLabel={CTA_CHECK_MOVE}
       />
@@ -530,7 +530,7 @@ export default function TiterTestGuide() {
 
       <RelatedLinks
         heading="Related guides and services"
-        intro="Titer timing sits inside the import file. Eligibility and a managed import live on the money pages."
+        intro="Titer timing sits inside the import file. Eligibility and a managed import live on the service pages."
         path="/guides/rabies-titer-test-dubai/"
       />
 

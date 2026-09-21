@@ -254,7 +254,7 @@ export default function IATACrateGuide() {
       <GuideFunnelCta
         variant="mid"
         title="Crate rules clear — check a managed move?"
-        subtitle="This guide stays educational. Eligibility and crate-led booking sit on the money pages and WhatsApp. We do not invent crate or airline fee amounts."
+        subtitle="This guide stays educational. Eligibility and crate-led booking sit on the service pages and WhatsApp. We do not invent crate or airline fee amounts."
         eligibilityMessage={waEligibility({ need: 'crate sizing / managed move' })}
         waLabel={CTA_CHECK_MOVE}
       />
@@ -605,14 +605,14 @@ export default function IATACrateGuide() {
 
       <RelatedLinks
         heading="Related guides and services"
-        intro="Crate rules stay educational. Eligibility and a managed dog or door-to-door file live on the money pages."
+        intro="Crate rules stay educational. Eligibility and a managed dog or door-to-door file live on the service pages."
         path="/guides/iata-pet-crate-requirements/"
       />
 
       <GuideFunnelCta
         variant="end"
         title="Need help choosing the right crate?"
-        subtitle="Eligibility and crate-led booking sit on the money pages and WhatsApp. This guide stays free to read. We do not invent crate or airline fee amounts."
+        subtitle="Eligibility and crate-led booking sit on the service pages and WhatsApp. This guide stays free to read. We do not invent crate or airline fee amounts."
         eligibilityMessage={waEligibility({ need: 'crate sizing / managed move' })}
         waLabel={CTA_CHECK_MOVE}
       />

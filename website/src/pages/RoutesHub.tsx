@@ -282,7 +282,7 @@ export default function RoutesHub() {
 
       <HubCrossLinks
         heading="Start here if you are still choosing the job"
-        intro="Country guides sit on this hub. Category entry, tiers and the directional service pages live one click away — use the anchors below so each URL keeps its own intent."
+        intro="Country guides sit on this hub. The homepage, service tiers and inbound or outbound booking pages live one click away."
         path="/routes/"
       />
 

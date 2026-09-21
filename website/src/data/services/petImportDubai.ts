@@ -47,7 +47,7 @@ const petImportDubai: ServicePageData = {
     {
       h2: 'This page is the commercial import job — not the rules encyclopaedia',
       intro:
-        'Ruling 5: this URL owns importing a pet as a paid coordination job. The full statutory checklist lives on [UAE pet import requirements](/guides/uae-pet-import-requirements/). Arrival-side settling (first week, municipality registration) lives on [pet relocation to Dubai](/service/pet-relocation-to-dubai/). Permit filing as a standalone product lives on [MOCCAE permit assistance](/service/moccae-pet-permit/).',
+        'This page is the paid import job: we hold the file. The full statutory checklist lives on [UAE pet import requirements](/guides/uae-pet-import-requirements/). Arrival-side settling (first week, municipality registration) lives on [pet relocation to Dubai](/service/pet-relocation-to-dubai/). Permit filing as a standalone product lives on [MOCCAE permit assistance](/service/moccae-pet-permit/).',
       body: [
         {
           type: 'p',
@@ -293,7 +293,7 @@ const petImportDubai: ServicePageData = {
     },
     {
       q: 'How is this different from the UAE import-requirements guide?',
-      a: 'The guide owns the statutory checklist. This page owns the paid import job — sequencing, partners and clearance. Read the rules on [UAE pet import requirements](/guides/uae-pet-import-requirements/), then use this page when you want the work done.',
+      a: 'The guide is the statutory checklist. This page is the paid import job — sequencing, partners and clearance. Read the rules on [UAE pet import requirements](/guides/uae-pet-import-requirements/), then use this page when you want the work done.',
     },
     {
       q: 'How long is the MOCCAE import permit valid?',

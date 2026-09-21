@@ -26,11 +26,11 @@ const petTransportDubai: ServicePageData = {
     {
       h2: 'Pet taxi Dubai — the local commercial opportunity',
       intro:
-        'Ruling 7: this URL owns pet transport and the pet-taxi crossover. It does not own international “pet relocation Dubai”. Door-to-door cargo lives on [pet relocation services in Dubai](/service/pet-relocation-dubai/). This page is ground: a booked vehicle, a crate or carrier, and a handler who treats the animal as a passenger.',
+        'This page is pet taxi and local ground transport. International “pet relocation Dubai” lives on [pet relocation services in Dubai](/service/pet-relocation-dubai/). This page is ground: a booked vehicle, a crate or carrier, and a handler who treats the animal as a passenger.',
       body: [
         {
           type: 'p',
-          text: 'Pet taxi Dubai is a same-city or inter-emirate transfer: home to vet, home to boarding, community to community, or a timed run to DXB or DWC. People search “pet taxi” when they need a climate-controlled vehicle and a calm handover — not a MOCCAE import file. We keep that intent here so the money head page is not diluted.',
+          text: 'Pet taxi Dubai is a same-city or inter-emirate transfer: home to vet, home to boarding, community to community, or a timed run to DXB or DWC. People search “pet taxi” when they need a climate-controlled vehicle and a calm handover, not a MOCCAE import file. Book the van here; book a cargo file on the door-to-door page.',
         },
         {
           type: 'list',

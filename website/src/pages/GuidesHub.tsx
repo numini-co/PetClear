@@ -11,7 +11,7 @@ const GUIDES = [
   { title: 'Pet Flight Options from Dubai', to: '/guides/pet-flight-options-dubai/', image: '/assets/w-flight-modes/pet-flight-options-card.jpg', desc: 'Cabin, checked baggage, manifest cargo, private jet, shared charter — which mode fits.' },
   { title: 'Etihad Pet Policy (In-Cabin)', to: '/guides/etihad-pet-policy/', image: '/assets/w-flight-modes/in-cabin-pet-travel-card.jpg', desc: 'The only UAE cabin option: fees change (confirm at booking; 2026 USD-399 promo expired). 8 kg limit, AUH arrival. Emirates/flydubai/Air Arabia cabin N/A for cats and dogs.' },
   { title: 'Pet as Checked Baggage', to: '/guides/pet-as-checked-baggage/', image: '/assets/w-flight-modes/pet-excess-baggage-card.jpg', desc: 'When accompanied hold travel is allowed — and why Dubai arrivals usually cannot use it.' },
-  { title: 'Emirates Pet Cargo & SkyCargo', to: '/guides/emirates-pet-cargo/', image: '/assets/w-flight-modes/pet-cargo-hold-card.jpg', desc: 'Educational cargo process: airline animal-charge tiers, booking window, and rates quoted per route/weight — not a cargo money page.' },
+  { title: 'Emirates Pet Cargo & SkyCargo', to: '/guides/emirates-pet-cargo/', image: '/assets/w-flight-modes/pet-cargo-hold-card.jpg', desc: 'Educational cargo process: airline animal-charge tiers, booking window, and rates quoted per route/weight. Book cargo as part of a managed move on the door-to-door or international service pages.' },
   { title: 'Dubai Pet Arrival Guide', to: '/guides/dubai-pet-arrival-guide/', image: '/assets/w11/dubai-pet-arrival-cat-first-steps-new-home.jpg', desc: 'The Dubai pet arrival guide: cargo-terminal clearance, collection, first-week settling, and Dubai Municipality / Aleef dog registration.' },
   { title: 'How to Export Your Pet from Dubai', to: '/guides/pet-export-from-dubai/', image: '/assets/w6/pet-export-from-dubai-guide-suitcase-checklist.png', desc: 'Destination-first export how-to: documents, MOCCAE export health-certificate timing, and outbound route links. Confirm government fees on the portal.' },
   { title: 'Snub-Nosed Dogs Flying to the UAE', to: '/guides/snub-nosed-dogs-flying-uae/', image: '/assets/w9/snub-nosed-dogs-flying-uae-french-bulldog-roomy-crate.jpg', desc: 'Airline acceptance, IATA +10% crate rule, and summer risk for French bulldogs, pugs, English bulldogs and Persians — confirm eligibility before you book.' },
@@ -86,7 +86,7 @@ export default function GuidesHub() {
 
       <HubCrossLinks
         heading="From a guide to the service that matches"
-        intro="Guides explain the rule. Service pages take the booking. The homepage remains the category entry."
+        intro="Guides explain the rule. Service pages take the booking. Start on the homepage if you are still choosing a path."
         path="/guides/"
       />
 
@@ -96,15 +96,15 @@ export default function GuidesHub() {
         <div className="mx-auto max-w-[1200px] px-5 text-center sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[28px] font-bold text-white sm:text-[34px]">Not sure which guide you need?</h2>
           <p className="mx-auto mb-7 max-w-2xl text-white/80">
-            Tell us your pet, route and timeline on WhatsApp and we will point you to exactly what applies — and handle the rest.
+            Guides stay free to read. WhatsApp is for people ready to book a managed move. Send pet, route and month for an eligibility check.
           </p>
           <a
-            href={getWhatsAppUrl('Hi Dubai Pet Relocation! I have a question about the pet relocation process.')}
+            href={getWhatsAppUrl('Hi Dubai Pet Relocation! I want a paid eligibility check for a managed pet relocation. Pet, origin, destination and target month:')}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-7 py-4 text-sm font-semibold text-white shadow-lg transition hover:bg-[#1DA851]"
           >
-            <MessageCircle className="h-4 w-4" /> Ask on WhatsApp
+            <MessageCircle className="h-4 w-4" /> Check if we can move your pet
           </a>
         </div>
       </section>

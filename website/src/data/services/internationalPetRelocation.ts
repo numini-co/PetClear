@@ -173,7 +173,7 @@ const internationalPetRelocation: ServicePageData = {
       body: [
         {
           type: 'p',
-          text: 'Airline fee grids live on the child guides, not here: Etihad cabin fees on the [Etihad pets-in-cabin guide](/guides/etihad-pet-policy/), Emirates animal-charge tiers on the [Emirates pet cargo](/guides/emirates-pet-cargo/) guide. Private-jet and shared-charter capability — including labelled market listings — live on [private jet pet travel](/service/private-jet-pet-travel/) and [shared pet charter](/service/shared-pet-charter/). Freight and coordination on this page stay Get a Quote. “Pet cargo Dubai” is a secondary commercial term on this URL, not a new /service/pet-cargo money page.',
+          text: 'Airline fee grids live on the child guides, not here: Etihad cabin fees on the [Etihad pets-in-cabin guide](/guides/etihad-pet-policy/), Emirates animal-charge tiers on the [Emirates pet cargo](/guides/emirates-pet-cargo/) guide. Private-jet and shared-charter capability — including labelled market listings — live on [private jet pet travel](/service/private-jet-pet-travel/) and [shared pet charter](/service/shared-pet-charter/). Freight and coordination on this page stay Get a Quote. “Pet cargo Dubai” is explained here; book a full file on the door-to-door page.',
         },
         {
           type: 'table',
@@ -188,7 +188,7 @@ const internationalPetRelocation: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Commercial cargo handoff on this page and the door-to-door umbrella both stay quote-only. The Dubai money page is [door-to-door pet relocation](/service/pet-relocation-dubai/). Government portal fees are confirmed on the official site. Message WhatsApp or write to support@dubai-pet-relocation.ae for a route-specific quote.',
+          text: 'Commercial cargo handoff on this page and the door-to-door umbrella both stay quote-only. The Dubai booking page is [door-to-door pet relocation](/service/pet-relocation-dubai/). Government portal fees are confirmed on the official site. Message WhatsApp or write to support@dubai-pet-relocation.ae for a route-specific quote.',
         },
       ],
     },

@@ -113,7 +113,7 @@ export default function ForPetRelocatorsPage() {
             <p>
               If you already move dogs and cats for a living, this page is the pet relocation partner Dubai
               track: corridor playbooks and a working airport-role map so your UAE file matches how pets actually
-              clear. It is not a second homepage for households, and it is not a corporate HR landing page.
+              clear. Households book on the door-to-door page. Mobility teams use the corporate page.
             </p>
             <p>
               Dubai Pet Relocation is a coordinator. We line-check documents and timelines and brief the right
@@ -259,7 +259,7 @@ export default function ForPetRelocatorsPage() {
               Playbooks, corridor checks, and pathways — quote-only
             </h2>
             <p className="text-base leading-relaxed text-[#5A5A5A]">
-              Access is process language. There are no partner logos, no invented network counts, and no fee
+              Access is a working playbook, not a trophy wall. There are no partner logos, no invented network counts, and no fee
               numerals on this page. If a live file needs a number, that is a WhatsApp quote after we see
               species, weight, and dates.
             </p>

@@ -276,7 +276,7 @@ export default function ServicesPage() {
             <Link to="/prices/" className="font-semibold text-[#4F5BD5] hover:underline">
               prices
             </Link>
-            . This hub compares tiers. It does not own “pet relocation Dubai” — that money head is{' '}
+            . This hub compares tiers. The door-to-door booking page for pet relocation in Dubai is{' '}
             <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               our Dubai pet relocation service
             </Link>
@@ -414,7 +414,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Open the service page for your move</h2>
           <p className="mb-6 max-w-3xl text-[#5A5A5A]">
-            After you pick a tier, open the URL that owns the search. Children use /service/ singular. The homepage and this hub are the parents.
+            After you pick a tier, open the service page that matches the job. Import, export, transport and species pages each have their own URL.
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
             {SERVICE_LINKS.map((l) => {
@@ -447,7 +447,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Flight modes and airline guides</h2>
           <p className="mb-6 max-w-3xl text-[#5A5A5A]">
-            Door-to-door stays the money page. These cards are how the pet actually flies — plus the two quote-only charter products.
+            Door-to-door is the booking page for a full file. These cards are how the pet actually flies, plus the two quote-only charter products.
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
             {FLIGHT_MODE_SERVICE_CARDS.map((l) => {

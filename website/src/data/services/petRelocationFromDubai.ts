@@ -26,7 +26,7 @@ const petRelocationFromDubai: ServicePageData = {
     {
       h2: 'This page is outbound only — leaving Dubai',
       intro:
-        'Ruling 3: this URL owns pet relocation from Dubai. It is not a reversed inbound checklist and it is not the generic money page. Arrivals use [bringing pets to Dubai](/service/pet-relocation-to-dubai/). Door-to-door commercial coordination uses [pet relocation services in Dubai](/service/pet-relocation-dubai/). Commercial export filing uses [exporting your pet from the UAE](/service/pet-export-dubai/).',
+        'This page is for leaving Dubai with a pet. It is not a reversed inbound checklist and it is not the full door-to-door booking page. Arrivals use [bringing pets to Dubai](/service/pet-relocation-to-dubai/). Door-to-door commercial coordination uses [pet relocation services in Dubai](/service/pet-relocation-dubai/). Commercial export filing uses [exporting your pet from the UAE](/service/pet-export-dubai/).',
       body: [
         {
           type: 'p',
