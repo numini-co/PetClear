@@ -144,6 +144,7 @@ function relatedHeading(slug: string): string {
 function faqHeading(slug: string): string {
   if (slug === 'moccae-pet-permit') return 'MOCCAE permit assistance questions'
   if (slug === 'pet-relocation-dubai') return 'Dubai pet relocation questions'
+  if (slug === 'shared-pet-charter') return 'Shared pet charter questions'
   return 'Frequently Asked Questions'
 }
 
@@ -156,6 +157,7 @@ function exploreHeading(slug: string): string {
 function ctaHeading(slug: string): string {
   if (slug === 'moccae-pet-permit') return 'Ready to start permit assistance?'
   if (slug === 'pet-relocation-dubai') return 'Ready to check a Dubai relocation?'
+  if (slug === 'shared-pet-charter') return 'Ready to check charter eligibility?'
   return 'Ready to book a managed move?'
 }
 

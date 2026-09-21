@@ -45,7 +45,7 @@ const petRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Compare how much of that sequence we hold versus how much you hold on [compare our service tiers](/services/). Then message us for a relocation quote — we do not publish fee tables on this page until Pricing verifies them.',
+          text: 'Compare how much of that sequence we hold versus how much you hold on [compare our service tiers](/services/). Then send origin, pet and month on WhatsApp for a paid eligibility check and a managed-move quote. Coordination packages live on [Prices](/prices/) — we do not publish fee tables on this page until Pricing verifies them.',
         },
         {
           type: 'p',

@@ -118,14 +118,14 @@ const petRelocationFromDubai: ServicePageData = {
     {
       h2: 'Outbound corridors we already publish',
       intro:
-        'We do not invent destination pages in this PR. Use the live outbound guides, then WhatsApp us for corridors that are not listed yet.',
+        'We do not invent destination pages in this PR. Use the live outbound guides, then send a paid eligibility check on WhatsApp for corridors that are not listed yet.',
       body: [
         {
           type: 'list',
           items: [
             '[Leaving Dubai with your pet — Dubai to UK](/routes/dubai-to-uk/) — destination-driven timeline, GB paperwork and tapeworm timing for dogs',
             '[Moving pets out of Dubai — Dubai to USA](/routes/dubai-to-usa/) — CDC-facing dog rules and US arrival inspection',
-            'Other destinations: open the [routes hub](/routes/) and message the country name. We map current entry rules before you commit',
+            'Other destinations: open the [routes hub](/routes/) and send the country name for a leaving-Dubai eligibility check. We map current entry rules before you commit',
           ],
         },
         {
@@ -165,7 +165,7 @@ const petRelocationFromDubai: ServicePageData = {
     },
     {
       q: 'When should I start planning a move out of Dubai?',
-      a: 'As soon as you know the destination. A nearby, low-rule country can be short. A titer- or quarantine-destination can need many months. Message the country name and we will say whether your month is realistic.',
+      a: 'As soon as you know the destination. A nearby, low-rule country can be short. A titer- or quarantine-destination can need many months. Send the country name on WhatsApp for a paid eligibility check if you want us to say whether your month is realistic.',
     },
     {
       q: 'Is a titer always required to take a pet from the UAE to the UK?',

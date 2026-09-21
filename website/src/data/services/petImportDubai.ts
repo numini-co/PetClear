@@ -221,7 +221,7 @@ const petImportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Compare how much of the sequence we hold versus how much you hold on [compare our service tiers](/services/). Then message us for a relocation quote — we do not publish a fake AED total on this page.',
+          text: 'Compare how much of the sequence we hold versus how much you hold on [compare our service tiers](/services/). Then send origin, pet and month on WhatsApp for a paid eligibility check and a managed-import quote — we do not publish a fake AED total on this page. Packages: [Prices](/prices/).',
         },
       ],
     },
@@ -315,7 +315,7 @@ const petImportDubai: ServicePageData = {
     },
     {
       q: 'How many pets can I import on a personal permit?',
-      a: 'Personal (non-commercial) import is typically limited to a maximum of 2 pets per person (2 cats, or 2 dogs, or 1 cat and 1 dog) per permit / per year. Confirm the current portal rule for your household. Larger groups need a different conversation — message us before you book crates.',
+      a: 'Personal (non-commercial) import is typically limited to a maximum of 2 pets per person (2 cats, or 2 dogs, or 1 cat and 1 dog) per permit / per year. Confirm the current portal rule for your household. Larger groups need a different conversation — send household details on WhatsApp for a paid eligibility check before you book crates.',
     },
     {
       q: 'What happens if the paperwork is wrong on arrival?',

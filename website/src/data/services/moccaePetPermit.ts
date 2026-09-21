@@ -310,7 +310,7 @@ const moccaePetPermit: ServicePageData = {
     },
     {
       q: 'What do you need from me to start permit assistance?',
-      a: 'Pet type, microchip number, rabies vaccination date, origin or destination, and whether you are importing or exporting. Message us on WhatsApp during business hours — we reply with the missing pieces and a coordination quote. Government fees stay on the portal.',
+      a: 'Pet type, microchip number, rabies vaccination date, origin or destination, and whether you are importing or exporting. WhatsApp +971504782999 during business hours if you want a paid permit-assistance eligibility check — we reply with the missing pieces and a coordination quote. Government fees stay on the portal. Packages: [Prices](/prices/).',
     },
   ],
   relatedLinks: [
