@@ -20,7 +20,7 @@ export default function TermsOfService() {
 
       <div className="max-w-[800px] mx-auto px-5 sm:px-6 lg:px-8 py-16">
         <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-bold leading-tight text-[#2A2A2A] mb-8">
-          Terms of Service
+          Terms of Service — Dubai Pet Relocation
         </h1>
         <div className="text-sm text-[#8A8A8A] mb-12">
           Last updated: June 2026

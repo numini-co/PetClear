@@ -6,8 +6,6 @@ const petRelocationToDubai: ServicePageData = {
   seoTitle: 'Pet Relocation to Dubai | Arrival-Side Import Guide',
   metaDescription:
     'Pet relocation to Dubai: MOCCAE 90-day permit, titer timing, cargo arrival at DXB, and settling-in steps. Get a relocation quote.',
-  keywords:
-    'pet relocation to dubai, moving to Dubai with pets, moving to Dubai with a dog, bringing pets to Dubai, import dog to dubai, import cat to dubai',
   h1: 'Pet Relocation to Dubai — Arrival-Side Coordination',
   primaryKeyword: 'pet relocation to dubai',
   heroValueProp:

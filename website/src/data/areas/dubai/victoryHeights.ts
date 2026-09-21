@@ -7,8 +7,6 @@ const victoryHeights: AreaPageData = {
   seoTitle: 'Pet Relocation Victory Heights | Dog & Cat Transport',
   metaDescription:
     'Pet relocation in Victory Heights — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
-  keywords:
-    'pet relocation victory heights, pet transport victory heights, dog relocation victory heights, cat relocation victory heights, pet movers victory heights',
   h1: 'Pet Relocation in Victory Heights',
   primaryKeyword: 'pet relocation victory heights',
   heroValueProp:

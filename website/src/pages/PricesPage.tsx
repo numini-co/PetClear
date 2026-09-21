@@ -150,10 +150,9 @@ export default function PricesPage() {
     <div>
       <SEOHead
         meta={{
-          title: 'Pet Relocation Prices Dubai | Quoted Packages',
+          title: 'Pet Relocation Prices Dubai | Quote After Eligibility',
           description:
             'What drives a Dubai pet relocation quote: document plan, managed import, door-to-door. Confirm MOCCAE fees on the portal. WhatsApp after eligibility.',
-          keywords: 'pet relocation prices Dubai, pet relocation Dubai cost, managed pet import quote Dubai',
           canonical: url,
           ogType: 'website',
         }}

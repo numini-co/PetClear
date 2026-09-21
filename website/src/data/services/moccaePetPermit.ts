@@ -17,8 +17,6 @@ const moccaePetPermit: ServicePageData = {
   seoTitle: 'MOCCAE Pet Permit Dubai | Import & Export Assistance',
   metaDescription:
     'MOCCAE pet permit Dubai: document review, UAE Pass portal guidance, and 90-day import-permit tracking. WhatsApp to check your file.',
-  keywords:
-    'MOCCAE pet permit, MOCCAE pet import permit, MOCCAE pet export permit, express MOCCAE permit, moccae pet permit dubai, pet import permit dubai online',
   h1: 'MOCCAE Pet Permit Dubai — Import & Export Assistance',
   primaryKeyword: 'moccae pet permit dubai',
   heroValueProp:

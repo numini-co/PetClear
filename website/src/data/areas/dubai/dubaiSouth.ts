@@ -7,8 +7,6 @@ const dubaiSouth: AreaPageData = {
   seoTitle: 'Pet Relocation Dubai South | Dog & Cat Relocation (2026)',
   metaDescription:
     'Pet relocation in Dubai South: DWC cargo last mile, The Pulse townhouses, longer DXB runs, MOCCAE permits. WhatsApp +971504782999.',
-  keywords:
-    'pet relocation dubai south, pet transport dubai south, dog relocation dubai south, cat relocation dubai south, pet movers dwc',
   h1: 'Pet Relocation in Dubai South',
   primaryKeyword: 'pet relocation dubai south',
   heroValueProp:

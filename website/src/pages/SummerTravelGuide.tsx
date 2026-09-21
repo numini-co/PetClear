@@ -128,7 +128,6 @@ export default function SummerTravelGuide() {
     canonical,
     ogImage,
     ogType: 'article',
-    keywords: 'Dubai summer pet travel embargo, pet travel summer heat Dubai, airline pet embargo UAE, brachycephalic dog summer ban, pet cargo temperature restrictions, summer pet relocation Dubai, heat stroke pet travel, early morning pet flights Dubai, pet nanny service Dubai, private pet charter Dubai',
   }
 
   return (

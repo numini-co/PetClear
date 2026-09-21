@@ -4,11 +4,9 @@ const jbr: AreaPageData = {
   slug: 'jbr',
   areaName: 'JBR',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation JBR | Dog & Cat Relocation (2026)',
+  seoTitle: 'Pet Relocation JBR Dubai | Beachfront Tower Last Mile',
   metaDescription:
     'Pet relocation in JBR: beachfront towers, The Walk drop-offs, Bluewaters-adjacent last mile and MOCCAE permit coordination. WhatsApp +971 50 478 2999.',
-  keywords:
-    'pet relocation jbr, pet transport jbr, dog relocation jumeirah beach residence, cat relocation jbr, pet movers jbr dubai',
   h1: 'Pet Relocation in JBR',
   primaryKeyword: 'pet relocation jbr',
   heroValueProp:

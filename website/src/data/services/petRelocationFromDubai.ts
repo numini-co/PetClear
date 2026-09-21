@@ -6,8 +6,6 @@ const petRelocationFromDubai: ServicePageData = {
   seoTitle: 'Pet Relocation from Dubai | Departure-Side Export Guide',
   metaDescription:
     'Pet relocation from Dubai: destination-first timelines, MOCCAE export health certificate, cargo booking, and outbound guidance.',
-  keywords:
-    'pet relocation from dubai, leaving Dubai with pets, moving pets out of Dubai, relocate pet from dubai, pet export from dubai',
   h1: 'Pet Relocation from Dubai — Moving Pets Out',
   primaryKeyword: 'pet relocation from dubai',
   heroValueProp:

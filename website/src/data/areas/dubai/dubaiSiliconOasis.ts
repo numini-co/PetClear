@@ -7,8 +7,6 @@ const dubaiSiliconOasis: AreaPageData = {
   seoTitle: 'Pet Relocation Dubai Silicon Oasis | Dog & Cat Transport',
   metaDescription:
     'Pet relocation in Dubai Silicon Oasis — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
-  keywords:
-    'pet relocation dubai silicon oasis, pet transport dubai silicon oasis, dog relocation dso, cat relocation dubai silicon oasis, pet movers dso',
   h1: 'Pet Relocation in Dubai Silicon Oasis',
   primaryKeyword: 'pet relocation dubai silicon oasis',
   heroValueProp:

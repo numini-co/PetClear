@@ -221,7 +221,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
   return (
     <div>
       <SEOHead
-        meta={{ title: data.seoTitle, description: data.metaDescription, keywords: data.keywords, canonical: url, ogType: 'website' }}
+        meta={{ title: data.seoTitle, description: data.metaDescription, canonical: url, ogType: 'website' }}
         schemas={schemas}
       />
       <Breadcrumb items={[{ label: 'Services', path: '/services/' }, { label: data.h1 }]} />

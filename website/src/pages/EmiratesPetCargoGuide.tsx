@@ -124,8 +124,6 @@ export default function EmiratesPetCargoGuide() {
         meta={{
           title,
           description,
-          keywords:
-            'Emirates pet cargo, Emirates SkyCargo pets, Emirates pet policy, Emirates pet cargo price, Emirates pet cargo booking, manifest cargo pet Dubai',
           canonical,
           ogType: 'article',
         }}

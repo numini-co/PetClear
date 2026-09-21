@@ -134,7 +134,6 @@ export default function PetMicrochipGuide() {
     canonical,
     ogImage,
     ogType: 'article',
-    keywords: 'pet microchip requirements UAE, ISO 11784 11785 microchip, 15-digit microchip Dubai, microchip before rabies vaccination, UAE pet import microchip, microchip number match documents, non-compliant microchip UAE, universal microchip scanner Dubai, dog microchip Dubai, cat microchip UAE',
   }
 
   return (

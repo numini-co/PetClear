@@ -138,8 +138,6 @@ export default function EmergencyRelocationPage() {
     canonical,
     ogImage,
     ogType: 'website',
-    keywords:
-      'emergency pet relocation Dubai, urgent pet relocation UAE, fast pet import Dubai, last minute pet move Dubai, expedited pet relocation Dubai, quick pet relocation UAE, pet relocation deadline Dubai, rush pet shipping Dubai',
   }
 
   return (

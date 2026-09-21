@@ -118,7 +118,6 @@ export default function PetVaccinationGuide() {
     canonical,
     ogImage,
     ogType: 'article',
-    keywords: 'pet vaccination requirements UAE, rabies vaccine Dubai pets, rabies after microchip UAE, pet vaccine validity UAE entry, minimum age rabies vaccine pet, DHPPIL dog vaccine UAE, FVRCP cat vaccine UAE, rabies titer test Dubai, pet vaccination timeline Dubai, UAE pet import vaccinations',
   }
 
   return (

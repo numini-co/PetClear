@@ -13,10 +13,8 @@ import RouteMoneyBodyLink from '../components/RouteMoneyBodyLink.tsx'
 
 export default function CanadaToDubai() {
   const pageUrl = `${BASE_URL}/routes/canada-to-dubai/`
-  const pageTitle = 'Pet Relocation Canada to Dubai | Guide 2026'
+  const pageTitle = 'Pet Relocation Canada to Dubai | Import Guide 2026'
   const pageDescription = 'Relocate your pet from Canada to Dubai. Low-risk route with Canadian-specific CFIA requirements. Air Canada, Emirates. Costs, documents and timeline.'
-  const keywords = 'Canada to Dubai pet relocation, pet transport Canada to Dubai, Canadian pet relocation Dubai, Air Canada pet cargo Dubai, Emirates pet transport Canada, CFIA pet export, dog relocation Canada to Dubai, cat relocation Canada to Dubai, pet shipping Canada to UAE'
-
   const faqs = [
     {
       question: 'Is Canada a low-risk or high-risk country for pet import to Dubai?',
@@ -91,7 +89,6 @@ export default function CanadaToDubai() {
       <SEOHead
         title={pageTitle}
         description={pageDescription}
-        keywords={keywords}
         canonical={pageUrl}
         ogType="article"
         schemas={schemas}

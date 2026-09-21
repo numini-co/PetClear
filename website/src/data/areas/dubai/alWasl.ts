@@ -4,11 +4,9 @@ const alWasl: AreaPageData = {
   slug: 'al-wasl',
   areaName: 'Al Wasl',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Al Wasl | Dog & Cat Transport',
+  seoTitle: 'Pet Relocation Al Wasl | Coastal Villa Last-Mile Pickup',
   metaDescription:
     'Pet relocation in Al Wasl — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
-  keywords:
-    'pet relocation al wasl, pet transport al wasl, dog relocation al wasl, cat relocation al wasl, pet movers al wasl',
   h1: 'Pet Relocation in Al Wasl',
   primaryKeyword: 'pet relocation al wasl',
   heroValueProp:

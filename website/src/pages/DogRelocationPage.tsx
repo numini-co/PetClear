@@ -140,7 +140,6 @@ export default function DogRelocationPage() {
         canonical={`${BASE_URL}/dog-relocation-to-dubai/`}
         title="Dog Relocation to Dubai | Complete Guide 2026"
         description="Dog relocation to Dubai: breed checks, crate sizing, MOCCAE permit, cargo booking and banned-breed rules. WhatsApp +971504782999."
-        keywords="dog relocation to Dubai, bring dog to Dubai, dog import Dubai, Dubai dog relocation, pet dog transport Dubai, banned dog breeds Dubai"
         ogType="article"
         schemas={[
           {

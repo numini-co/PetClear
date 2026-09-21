@@ -5,7 +5,7 @@ export const OUTBOUND_TWIN_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-australia',
     countryKey: 'australia',
-    title: 'Pet Relocation Dubai to Australia | Guide 2026',
+    title: 'Pet Relocation Dubai to Australia | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to Australia: DAFF Group 3, BICON permit, Mickleham quarantine. Destination-first — confirm current rules.',
     h1: 'Dubai to Australia Pet Relocation — Exporting Your Pet to Australia',
     heroAlt: 'Dog with Australian flag cue ready for export from Dubai to Australia',
@@ -85,7 +85,7 @@ export const OUTBOUND_TWIN_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-philippines',
     countryKey: 'philippines',
-    title: 'Dubai to Philippines Pet Relocation | Export Guide 2026',
+    title: 'Pet Relocation Dubai to Philippines | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to the Philippines: BAI SPSIC first, 10-day export health certificate, arrival at MNL, CEB or CRK.',
     h1: 'Dubai to Philippines Pet Relocation — Exporting Your Pet',
     heroAlt: 'Dog with Philippine flag cue ready for export from Dubai to the Philippines',
@@ -165,7 +165,7 @@ export const OUTBOUND_TWIN_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-india',
     countryKey: 'india',
-    title: 'Dubai to India Pet Relocation | Export Guide 2026',
+    title: 'Pet Relocation Dubai to India | Export Corridor Guide 2026',
     meta: 'Export a dog or cat from Dubai to India: AQCS Advance NOC, Transfer of Residence vs short stay, designated airports DEL/BOM/BLR/HYD/MAA.',
     h1: 'Dubai to India Pet Relocation — Exporting Your Pet to India',
     heroAlt: 'Dog with Indian flag cue ready for export from Dubai to India',
@@ -250,7 +250,7 @@ export const OUTBOUND_TWIN_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-canada',
     countryKey: 'canada',
-    title: 'Dubai to Canada Pet Relocation | Export Guide 2026',
+    title: 'Pet Relocation Dubai to Canada | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to Canada: CFIA rabies identification, YYZ/YVR/YUL/YYC arrival, UAE export timing. Confirm current CFIA rules.',
     h1: 'Dubai to Canada Pet Relocation — Exporting Your Pet to Canada',
     heroAlt: 'Dog with Canadian flag cue ready for export from Dubai to Canada',
@@ -329,7 +329,7 @@ export const OUTBOUND_TWIN_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-south-africa',
     countryKey: 'south-africa',
-    title: 'Dubai to South Africa Pet Relocation | Export Guide 2026',
+    title: 'Pet Relocation Dubai to South Africa | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to South Africa: DALRRD veterinary import permit, JNB or CPT arrival, dog quarantine risk. Confirm current rules.',
     h1: 'Dubai to South Africa Pet Relocation — Exporting Your Pet',
     heroAlt: 'Dog with South African flag cue ready for export from Dubai to South Africa',
@@ -408,7 +408,7 @@ export const OUTBOUND_TWIN_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-new-zealand',
     countryKey: 'new-zealand',
-    title: 'Dubai to New Zealand Pet Relocation | Export Guide 2026',
+    title: 'Pet Relocation Dubai to New Zealand | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to New Zealand: MPI import conditions, AKL/WLG/CHC arrival, long biosecurity lead. Confirm current MPI rules.',
     h1: 'Dubai to New Zealand Pet Relocation — Exporting Your Pet',
     heroAlt: 'Dog with New Zealand flag cue ready for export from Dubai to New Zealand',

@@ -243,7 +243,6 @@ export default function MOCCAEPermitGuide() {
     canonical,
     ogImage,
     ogType: 'article',
-    keywords: 'do I need a MOCCAE import permit, MOCCAE import permit UAE, MOCCAE pet permit Dubai, UAE pet import permit, how to apply MOCCAE permit, MOCCAE permit cost, MOCCAE permit processing time, Dubai pet import documents, MOCCAE export permit, pet relocation permit UAE, MOCCAE online portal',
   }
 
   return (

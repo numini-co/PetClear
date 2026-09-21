@@ -4,11 +4,9 @@ const arabianRanches: AreaPageData = {
   slug: 'arabian-ranches',
   areaName: 'Arabian Ranches',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Arabian Ranches | Villa Last Mile',
+  seoTitle: 'Pet Relocation Arabian Ranches | Gated Villa Last Mile',
   metaDescription:
     'Pet relocation Arabian Ranches: gated villa access, crates and MOCCAE timing. WhatsApp +971504782999.',
-  keywords:
-    'pet relocation arabian ranches, pet transport arabian ranches, dog relocation arabian ranches, cat relocation arabian ranches, pet movers arabian ranches',
   h1: 'Pet Relocation in Arabian Ranches',
   primaryKeyword: 'pet relocation arabian ranches',
   heroValueProp:

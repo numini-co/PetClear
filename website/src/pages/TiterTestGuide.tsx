@@ -182,8 +182,6 @@ export default function TiterTestGuide() {
           canonical,
           ogImage,
           ogType: 'article',
-          keywords:
-            'rabies titer test Dubai, rabies titre test UAE pet import, FAVN test Dubai, does my pet need a rabies titer test for Dubai, RNATT UAE, 0.5 IU/ml titer requirement UAE',
         }}
         schemas={[
           faqSchema,

@@ -214,7 +214,6 @@ export default function CostGuidePage() {
       <SEOHead
         title="Pet Relocation Dubai Cost | 2026 AED Breakdown"
         description="Pet relocation Dubai cost ranges by route and mode. Confirm MOCCAE/airline fees on official sources — no invented prices."
-        keywords="pet relocation cost Dubai, dog relocation cost, cat relocation cost, pet transport price Dubai, how much to relocate pet to Dubai"
         canonical={`${BASE_URL}/guides/pet-relocation-cost-dubai/`}
         ogType="article"
         jsonLd={[faqSchema, articleSchema, breadcrumbSchema]}

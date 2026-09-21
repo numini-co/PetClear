@@ -7,8 +7,6 @@ const cityWalk: AreaPageData = {
   seoTitle: 'Pet Relocation City Walk | Dog & Cat Transport Dubai',
   metaDescription:
     'Pet relocation in City Walk — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
-  keywords:
-    'pet relocation city walk, pet transport city walk, dog relocation city walk, cat relocation city walk, pet movers city walk dubai',
   h1: 'Pet Relocation in City Walk',
   primaryKeyword: 'pet relocation city walk',
   heroValueProp:

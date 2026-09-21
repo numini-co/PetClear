@@ -6,8 +6,6 @@ const dogRelocationDubai: ServicePageData = {
   seoTitle: 'Dog Relocation Dubai | Breed, Crate & Airline Rules',
   metaDescription:
     'Relocate your dog to or from Dubai safely: breed eligibility, IATA crate sizing, vaccination timeline, costs and the snub-nosed/summer airline rules.',
-  keywords:
-    'dog relocation dubai, dog transport dubai, import dog to dubai, dog export dubai, dog crate dubai',
   h1: 'Dog Relocation Dubai',
   primaryKeyword: 'dog relocation dubai',
   heroValueProp:

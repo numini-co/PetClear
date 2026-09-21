@@ -8,7 +8,6 @@ export interface AreaPageData {
   emirate: string
   seoTitle: string
   metaDescription: string
-  keywords: string
   h1: string
   heroValueProp: string
   /** /images/area-<slug>.jpg */

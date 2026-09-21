@@ -246,7 +246,6 @@ export default function ServicesPage() {
           title: 'Pet Relocation Services Dubai | Compare Tiers',
           description:
             'Compare pet relocation services Dubai — Essential guidance to full coordination. Choose a tier, then open the service page for your move.',
-          keywords: 'pet relocation services Dubai, pet coordination Dubai, PawPilot, PawPartner, PawVIP',
           canonical: `${BASE_URL}/services/`,
           ogType: 'website',
         }}

@@ -9,10 +9,8 @@ import OfficialSources from '../components/OfficialSources.tsx'
 
 export default function DubaiToUK() {
   const pageUrl = `${BASE_URL}/routes/dubai-to-uk/`
-  const pageTitle = 'Pet Relocation Dubai to UK | Guide 2026'
+  const pageTitle = 'Pet Relocation Dubai to UK | Export Corridor Guide 2026'
   const pageDescription = 'Export your dog or cat from Dubai to the UK. Guide to DEFRA/APHA rules, post-Brexit health certificates, tapeworm treatment, airlines, costs and timeline.'
-  const keywords = 'Dubai to UK pet relocation, export pet Dubai to UK, pet transport Dubai to London, DEFRA pet import UK, APHA health certificate, UK pet passport post-Brexit, tapeworm treatment UK dogs, Emirates pet cargo UK, British Airways pet transport Dubai, pet relocation to Britain, Dubai to UK dog transport, Dubai to UK cat transport, UK rabies high risk, UK pet quarantine rules'
-
   const faqs = [
     {
       question: 'What are the UK import rules for pets coming from Dubai?',
@@ -88,7 +86,6 @@ export default function DubaiToUK() {
         meta={{
           title: pageTitle,
           description: pageDescription,
-          keywords: keywords,
           canonical: pageUrl,
           ogType: 'article'
         }}

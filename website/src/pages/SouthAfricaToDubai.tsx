@@ -13,11 +13,9 @@ import RouteMoneyBodyLink from '../components/RouteMoneyBodyLink.tsx'
 
 export default function SouthAfricaToDubai() {
   const pageUrl = `${BASE_URL}/routes/south-africa-to-dubai/`
-  const pageTitle = 'Pet Relocation South Africa to Dubai | Guide 2026'
+  const pageTitle = 'Pet Relocation South Africa to Dubai | Import Guide 2026'
   const pageDescription =
     'Relocate your pet from South Africa to Dubai. High-risk: titer sample within 90 days before travel ≥0.5 IU/ml. SAA, Emirates.'
-  const keywords = 'South Africa to Dubai pet relocation, pet transport South Africa to Dubai, SA pet relocation Dubai, titer test South Africa Dubai, SAA pet cargo Dubai, Emirates pet transport South Africa, dog relocation South Africa to Dubai, cat relocation South Africa to Dubai, wildlife regulations SA Dubai'
-
   const faqs = [
     {
       question: 'Why is South Africa classified as a high-risk country for pet import to Dubai?',
@@ -92,7 +90,6 @@ export default function SouthAfricaToDubai() {
       <SEOHead
         title={pageTitle}
         description={pageDescription}
-        keywords={keywords}
         canonical={pageUrl}
         ogType="article"
         schemas={schemas}

@@ -149,8 +149,6 @@ export default function CorporateRelocationPage() {
       'Corporate pet relocation Dubai for HR and mobility teams. Per-employee quotes, one coordinator, inbound and outbound. WhatsApp +971504782999.',
     canonical,
     ogType: 'website',
-    keywords:
-      'corporate pet relocation Dubai, employee pet relocation UAE, mobility pet relocation Dubai, HR pet relocation, business pet relocation Dubai, relocation package pet, employee pet move Dubai',
   }
 
   return (

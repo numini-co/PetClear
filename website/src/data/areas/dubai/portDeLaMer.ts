@@ -7,8 +7,6 @@ const portDeLaMer: AreaPageData = {
   seoTitle: 'Pet Relocation Port de La Mer | Dog & Cat Transport',
   metaDescription:
     'Pet relocation in Port de La Mer — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
-  keywords:
-    'pet relocation port de la mer, pet transport port de la mer, dog relocation port de la mer, cat relocation port de la mer, pet movers jumeirah',
   h1: 'Pet Relocation in Port de La Mer',
   primaryKeyword: 'pet relocation port de la mer',
   heroValueProp:

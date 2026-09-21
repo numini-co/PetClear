@@ -7,8 +7,6 @@ const bluewaters: AreaPageData = {
   seoTitle: 'Pet Relocation Bluewaters Island | Dog & Cat Transport',
   metaDescription:
     'Pet relocation on Bluewaters Island — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
-  keywords:
-    'pet relocation bluewaters, pet transport bluewaters island, dog relocation bluewaters, cat relocation bluewaters, pet movers bluewaters dubai',
   h1: 'Pet Relocation on Bluewaters Island',
   primaryKeyword: 'pet relocation bluewaters',
   heroValueProp:

@@ -226,7 +226,6 @@ export default function ImportRequirementsPage() {
       <SEOHead
         title="UAE Pet Import Requirements | Permits & Documents 2026"
         description="UAE pet import requirements: 90-day MOCCAE permit, titer sample timing, microchip, cargo entry, and breed checks. Confirm fees on the portal."
-        keywords="UAE pet import requirements, MOCCAE import permit, Dubai pet import rules, pet vaccination requirements UAE, dog import Dubai, cat import Dubai, banned dog breeds Dubai"
         canonical={`${BASE_URL}/guides/uae-pet-import-requirements/`}
         ogType="article"
         schemas={[

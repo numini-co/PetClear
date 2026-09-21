@@ -7,8 +7,6 @@ const burDubai: AreaPageData = {
   seoTitle: 'Pet Relocation Bur Dubai | Dog & Cat Relocation (2026)',
   metaDescription:
     'Pet relocation in Bur Dubai: creek-side walk-ups, consulate-district access, dense-street parking and short DXB runs. WhatsApp +971 50 478 2999.',
-  keywords:
-    'pet relocation bur dubai, pet transport bur dubai, dog relocation bur dubai, cat relocation bur dubai, pet movers bur dubai',
   h1: 'Pet Relocation in Bur Dubai',
   primaryKeyword: 'pet relocation bur dubai',
   heroValueProp:

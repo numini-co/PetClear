@@ -7,8 +7,6 @@ const dubaiInvestmentPark: AreaPageData = {
   seoTitle: 'Pet Relocation Dubai Investment Park (DIP) | Pet Transport',
   metaDescription:
     'Pet relocation in Dubai Investment Park — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
-  keywords:
-    'pet relocation dubai investment park, pet transport dip dubai, dog relocation dubai investment park, cat relocation dip, pet movers green community',
   h1: 'Pet Relocation in Dubai Investment Park (DIP)',
   primaryKeyword: 'pet relocation dubai investment park',
   heroValueProp:

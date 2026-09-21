@@ -60,7 +60,6 @@ export default function AbuDhabiPillar() {
         meta={{
           title: 'Pet Relocation Abu Dhabi | To & From the UAE Capital',
           description: 'Pet relocation to and from Abu Dhabi — MOCCAE import permits, AUH customs clearance, IATA crates and door-to-door delivery. Same nationwide UAE rules. Free WhatsApp quote.',
-          keywords: 'pet relocation abu dhabi, pet transport abu dhabi, dog relocation abu dhabi, cat relocation abu dhabi, abu dhabi pet import',
           canonical: url, ogType: 'website',
         }}
         schemas={[breadcrumbSchema, localBusiness, faqSchema]}

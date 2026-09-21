@@ -11,8 +11,6 @@ export default function AbuDhabiCity() {
   const pageUrl = `${BASE_URL}/cities/abu-dhabi/`
   const pageTitle = 'Pet Relocation Abu Dhabi | Dubai Pet Relocation'
   const pageDescription = 'Relocate your dog or cat to Abu Dhabi. Etihad in-cabin, ADCM registration, MICCO clearance. Get an Abu Dhabi pet transport quote.'
-  const keywords = 'pet relocation Abu Dhabi, dog transport Abu Dhabi, cat transport Abu Dhabi, pet relocation UAE capital, Etihad pet in cabin, Abu Dhabi pet import, Etihad pet cargo, MICCO Logistics, Abu Dhabi pet registration, bring pet to Abu Dhabi, pet relocation Yas Island, pet relocation Saadiyat, pet relocation Al Reem Island, Abu Dhabi vs Dubai pet relocation'
-
   const faqs = [
     {
       question: 'Can my pet fly in the cabin to Abu Dhabi?',
@@ -103,7 +101,6 @@ export default function AbuDhabiCity() {
         meta={{
           title: pageTitle,
           description: pageDescription,
-          keywords: keywords,
           canonical: pageUrl,
           ogType: 'website'
         }}

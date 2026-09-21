@@ -6,8 +6,6 @@ const internationalPetRelocation: ServicePageData = {
   seoTitle: 'International Pet Relocation Dubai | Corridor Checks',
   metaDescription:
     'International pet relocation Dubai: export/import coordination across major corridors with clear document timelines.',
-  keywords:
-    'international pet relocation dubai, worldwide pet relocation, global pet transport, overseas pet relocation, pet cargo dubai, pet relocation international',
   h1: 'International Pet Relocation from Dubai',
   primaryKeyword: 'international pet relocation dubai',
   heroValueProp:
