@@ -143,7 +143,7 @@ export default function PetExportFromDubaiGuide() {
             regulatory-source-of-truth.csv · Last updated 14 September 2026
           </p>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            This guide answers the informational question <strong>pet export from Dubai</strong>: how the documents
+            This URL owns the informational question <strong>pet export from Dubai</strong>: how the documents
             sequence, who inspects the animal, and why the destination — not the airport code on your ticket —
             sets the clock. It is not the commercial export product and it is not the outbound journey page.
             Paid filing and cargo coordination live on{' '}

@@ -38,7 +38,7 @@ const GROUPS: { id: string; title: string; intro: string; slugs: GradeASlug[] }[
     id: 'marina-coastal',
     title: 'Marina and coastal communities',
     intro:
-      'Waterfront towers and beach villas share one last-mile problem: podium parking, visitor lists, and a crate that has to turn in a lobby or a villa gate before anyone talks about cargo cut-off. These pages are about that last mile, not the full door-to-door booking.',
+      'Waterfront towers and beach villas share one last-mile problem: podium parking, visitor lists, and a crate that has to turn in a lobby or a villa gate before anyone talks about cargo cut-off. These pages are about that last mile — not a second money page.',
     slugs: ['dubai-marina', 'jlt', 'jbr', 'palm-jumeirah', 'jumeirah', 'umm-suqeim'],
   },
   {
@@ -99,7 +99,7 @@ const GRADE_A_BLURBS: Record<GradeASlug, string> = {
 const faqs = [
   {
     q: 'Is this the same page as door-to-door pet relocation in Dubai?',
-    a: 'No. This URL is the community directory for pickup and delivery geography. The door-to-door booking page for a full international file is [door-to-door pet relocation in Dubai](/service/pet-relocation-dubai/). Use this hub to find your community page, then open the service URL for the job.',
+    a: 'No. This URL is the community directory for pickup and delivery geography. The commercial money page for a full international file is [door-to-door pet relocation in Dubai](/service/pet-relocation-dubai/). Use this hub to find your community page, then open the service URL for the job.',
   },
   {
     q: 'Do I still need a MOCCAE import permit if I already have a Dubai home?',
@@ -206,13 +206,13 @@ export default function DubaiPillar() {
         imageAlt="The Dubai skyline — pet relocation across all Dubai communities"
         eyebrow="Dubai communities"
         title="Pet Relocation Across Every Community in Dubai"
-        subtitle="A directory for last-mile pickup and delivery: marina towers, villa gates, new developments and old Dubai. Book a full international file on the door-to-door service page."
+        subtitle="A directory for last-mile pickup and delivery — marina towers, villa gates, new developments and old Dubai — not the money page for a full international file."
         updated="Last verified 18 September 2026"
       />
 
       <section className="bg-white section-padding">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Find your community, then book the move</h2>
+          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">A community hub, not a second money page</h2>
           <LastVerified className="mb-4 text-xs text-[#8A8A8A]" date="18 September 2026" />
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             Dubai is many last miles, not one city-shaped crate run. A Marina tower wants a goods-lift booking and a visitor
@@ -239,11 +239,11 @@ export default function DubaiPillar() {
             guide. What does change by community is the van, the lift, the gate and which cargo airport is the shorter run.
           </p>
           <p className="leading-relaxed text-[#5A5A5A]">
-            Start with the{' '}
+            Category entry stays on the{' '}
             <Link to="/" className="font-semibold text-[#4F5BD5] hover:underline">
               homepage overview
-            </Link>{' '}
-            if you are still choosing a service. Compare tiers on{' '}
+            </Link>
+            . Compare tiers on{' '}
             <Link to="/services/" className="font-semibold text-[#4F5BD5] hover:underline">
               our service tiers
             </Link>
