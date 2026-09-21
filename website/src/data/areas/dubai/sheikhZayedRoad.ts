@@ -7,8 +7,6 @@ const sheikhZayedRoad: AreaPageData = {
   seoTitle: 'Pet Relocation Sheikh Zayed Road | Dog & Cat Transport',
   metaDescription:
     'Pet relocation along Sheikh Zayed Road — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
-  keywords:
-    'pet relocation sheikh zayed road, pet transport sheikh zayed road, dog relocation sheikh zayed road, cat relocation sheikh zayed road, pet movers SZR',
   h1: 'Pet Relocation in Sheikh Zayed Road',
   primaryKeyword: 'pet relocation sheikh zayed road',
   heroValueProp:

@@ -119,8 +119,6 @@ export default function DubaiPetArrivalGuide() {
         meta={{
           title,
           description,
-          keywords:
-            'pet arrival Dubai airport, DXB pet arrival, Dubai airport pet collection cargo village, Dubai Municipality pet registration, dog license Dubai, what happens when my pet arrives at Dubai airport',
           canonical,
           ogType: 'article',
           ogImage: `${BASE_URL}/assets/w11/dubai-pet-arrival-cat-first-steps-new-home.jpg`,

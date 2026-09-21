@@ -3,11 +3,9 @@ import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const catRelocationDubai: ServicePageData = {
   slug: 'cat-relocation-dubai',
-  seoTitle: 'Cat Relocation Dubai | Calm, Safe Cat Travel',
+  seoTitle: 'Cat Relocation Dubai | Calm Cabin & Cargo Cat Moves',
   metaDescription:
     'Relocate your cat to or from Dubai with less stress: carrier acclimation, why vets advise against sedation, documents, costs and a clear timeline.',
-  keywords:
-    'cat relocation dubai, cat transport dubai, import cat to dubai, cat export dubai, cat travel dubai',
   h1: 'Cat Relocation Dubai',
   primaryKeyword: 'cat relocation dubai',
   heroValueProp:

@@ -7,8 +7,6 @@ const motorCity: AreaPageData = {
   seoTitle: 'Pet Relocation Motor City | Dog & Cat Transport Dubai',
   metaDescription:
     'Pet relocation in Motor City — door-to-door dog and cat transport, MOCCAE permit coordination and IATA crates. Free WhatsApp quote in 15 minutes.',
-  keywords:
-    'pet relocation motor city, pet transport motor city, dog relocation motor city, cat relocation motor city, pet movers motor city dubai',
   h1: 'Pet Relocation in Motor City',
   primaryKeyword: 'pet relocation motor city',
   heroValueProp:

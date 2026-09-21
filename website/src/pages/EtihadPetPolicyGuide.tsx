@@ -120,8 +120,6 @@ export default function EtihadPetPolicyGuide() {
         meta={{
           title,
           description,
-          keywords:
-            'Etihad pet policy, Etihad pets in cabin, Etihad pet fee, can pets fly in cabin to UAE, in cabin pet Abu Dhabi',
           canonical,
           ogType: 'article',
         }}

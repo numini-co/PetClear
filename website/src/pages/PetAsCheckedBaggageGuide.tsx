@@ -105,8 +105,6 @@ export default function PetAsCheckedBaggageGuide() {
         meta={{
           title,
           description,
-          keywords:
-            'pets as checked baggage UAE, pet as checked baggage, accompanied pet baggage UAE, excess baggage pets UAE, AVIH pet Dubai',
           canonical,
           ogType: 'article',
         }}

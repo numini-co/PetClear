@@ -204,7 +204,6 @@ export default function ImportChecklistGuide() {
     canonical,
     ogImage,
     ogType: 'article',
-    keywords: 'pet import documents checklist Dubai, Dubai pet import checklist, documents to import pet to Dubai, UAE pet import documents, MOCCAE import permit checklist, pet import requirements Dubai, dog import documents Dubai, cat import documents Dubai',
   }
 
   return (

@@ -131,7 +131,7 @@ export default function AreaPage({ data }: { data: AreaPageData }) {
   return (
     <div>
       <SEOHead
-        meta={{ title: data.seoTitle, description: data.metaDescription, keywords: data.keywords, canonical: url, ogType: 'website' }}
+        meta={{ title: data.seoTitle, description: data.metaDescription, canonical: url, ogType: 'website' }}
         schemas={[breadcrumbSchema, localBusiness, faqSchema]}
       />
       <Breadcrumb items={[{ label: 'Dubai', path: '/dubai/' }, { label: data.areaName }]} />

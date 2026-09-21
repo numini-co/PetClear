@@ -4,11 +4,9 @@ import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const sharedPetCharter: ServicePageData = {
   slug: 'shared-pet-charter',
-  seoTitle: 'Shared Pet Charter Flight Dubai | Quote-Only',
+  seoTitle: 'Shared Pet Charter Flight Dubai | Quote-Only Seats',
   metaDescription:
     'Shared pet charter flight Dubai: a dedicated lift shared with other pets. A firm seat is Get a Quote. WhatsApp +971504782999.',
-  keywords:
-    'shared pet charter Dubai, group pet charter UAE, pet charter flight Dubai, empty-leg pet charter, manifest cargo vs charter Dubai, shared animal charter',
   h1: 'Shared Pet Charter Flight Dubai — Quote-Only',
   primaryKeyword: 'shared pet charter flight Dubai',
   heroValueProp:

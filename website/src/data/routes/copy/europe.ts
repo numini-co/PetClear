@@ -17,7 +17,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
   {
     slug: 'france-to-dubai',
     countryKey: 'france',
-    title: 'Pet Relocation France to Dubai | PetClear',
+    title: 'Pet Relocation France to Dubai | Import Guide 2026',
     meta: 'Move a dog or cat from France to Dubai: CDG/ORY/LYS/NCE export, MOCCAE 90-day permit, titer window and cargo clearance.',
     h1: 'Pet relocation from France to Dubai',
     heroAlt: 'Dog with French flag cue ready for pet relocation from France to Dubai',
@@ -83,7 +83,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-france',
     countryKey: 'france',
-    title: 'Pet Relocation Dubai to France | PetClear',
+    title: 'Pet Relocation Dubai to France | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to France: EU entry certificate, CDG/ORY gateways and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to France',
     heroAlt: 'Dog with French flag cue ready for export from Dubai to France',
@@ -150,7 +150,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
   {
     slug: 'turkey-to-dubai',
     countryKey: 'turkey',
-    title: 'Pet Relocation Turkey to Dubai | PetClear',
+    title: 'Pet Relocation Turkey to Dubai | Import Guide 2026',
     meta: 'Move a dog or cat from Turkey to Dubai: IST/SAW/AYT export, MOCCAE 90-day permit, titer window and cargo clearance.',
     h1: 'Pet relocation from Turkey to Dubai',
     heroAlt: 'Dog with Turkish flag cue ready for pet relocation from Turkey to Dubai',
@@ -216,7 +216,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-turkey',
     countryKey: 'turkey',
-    title: 'Pet Relocation Dubai to Turkey | PetClear',
+    title: 'Pet Relocation Dubai to Turkey | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to Turkey: Turkish veterinary import, IST arrival and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to Turkey',
     heroAlt: 'Dog with Turkish flag cue ready for export from Dubai to Turkey',
@@ -292,7 +292,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
   {
     slug: 'spain-to-dubai',
     countryKey: 'spain',
-    title: 'Pet Relocation Spain to Dubai | PetClear',
+    title: 'Pet Relocation Spain to Dubai | Import Corridor Guide 2026',
     meta: 'Move a dog or cat from Spain to Dubai: MAD/BCN/AGP export, MOCCAE 90-day permit, titer window and cargo clearance.',
     h1: 'Pet relocation from Spain to Dubai',
     heroAlt: 'Dog with Spanish flag cue ready for pet relocation from Spain to Dubai',
@@ -358,7 +358,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-spain',
     countryKey: 'spain',
-    title: 'Pet Relocation Dubai to Spain | PetClear',
+    title: 'Pet Relocation Dubai to Spain | Export Corridor Guide 2026',
     meta: 'Export a dog or cat from Dubai to Spain: EU entry certificate, MAD/BCN gateways and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to Spain',
     heroAlt: 'Dog with Spanish flag cue ready for export from Dubai to Spain',
@@ -425,7 +425,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
   {
     slug: 'netherlands-to-dubai',
     countryKey: 'netherlands',
-    title: 'Pet Relocation Netherlands to Dubai | PetClear',
+    title: 'Pet Relocation Netherlands to Dubai | Import Guide 2026',
     meta: 'Move a dog or cat from the Netherlands to Dubai: AMS export, MOCCAE 90-day permit, titer window and cargo clearance.',
     h1: 'Pet relocation from the Netherlands to Dubai',
     heroAlt: 'Dog with Dutch flag cue ready for pet relocation from Amsterdam to Dubai',
@@ -491,7 +491,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-netherlands',
     countryKey: 'netherlands',
-    title: 'Pet Relocation Dubai to Netherlands | PetClear',
+    title: 'Pet Relocation Dubai to Netherlands | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to the Netherlands: EU entry certificate, AMS arrival and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to the Netherlands',
     heroAlt: 'Dog with Dutch flag cue ready for export from Dubai to Amsterdam',
@@ -558,7 +558,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
   {
     slug: 'italy-to-dubai',
     countryKey: 'italy',
-    title: 'Pet Relocation Italy to Dubai | PetClear',
+    title: 'Pet Relocation Italy to Dubai | Import Corridor Guide 2026',
     meta: 'Move a dog or cat from Italy to Dubai: FCO/MXP/LIN export, MOCCAE 90-day permit, titer window and cargo clearance.',
     h1: 'Pet relocation from Italy to Dubai',
     heroAlt: 'Dog with Italian flag cue ready for pet relocation from Italy to Dubai',
@@ -624,7 +624,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-italy',
     countryKey: 'italy',
-    title: 'Pet Relocation Dubai to Italy | PetClear',
+    title: 'Pet Relocation Dubai to Italy | Export Corridor Guide 2026',
     meta: 'Export a dog or cat from Dubai to Italy: EU entry certificate, FCO/MXP gateways and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to Italy',
     heroAlt: 'Dog with Italian flag cue ready for export from Dubai to Italy',
@@ -691,7 +691,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
   {
     slug: 'ireland-to-dubai',
     countryKey: 'ireland',
-    title: 'Pet Relocation Ireland to Dubai | PetClear',
+    title: 'Pet Relocation Ireland to Dubai | Import Guide 2026',
     meta: 'Move a dog or cat from Ireland to Dubai: DUB/ORK export, MOCCAE 90-day permit, titer window and cargo clearance.',
     h1: 'Pet relocation from Ireland to Dubai',
     heroAlt: 'Dog with Irish flag cue ready for pet relocation from Ireland to Dubai',
@@ -757,7 +757,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-ireland',
     countryKey: 'ireland',
-    title: 'Pet Relocation Dubai to Ireland | PetClear',
+    title: 'Pet Relocation Dubai to Ireland | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to Ireland: EU entry certificate, DUB arrival and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to Ireland',
     heroAlt: 'Dog with Irish flag cue ready for export from Dubai to Ireland',

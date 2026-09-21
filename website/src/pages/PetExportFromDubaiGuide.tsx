@@ -68,7 +68,7 @@ const faqData = [
 
 export default function PetExportFromDubaiGuide() {
   const canonical = `${BASE_URL}${PATH}`
-  const title = 'How to Export Your Pet from Dubai — Complete 2026 Guide'
+  const title = 'How to Export Your Pet from Dubai | Complete 2026 Guide'
   const description =
     'Export a pet from Dubai: destination-first documents, MOCCAE export certificate timing, and checklists. Confirm portal fees.'
 
@@ -113,8 +113,6 @@ export default function PetExportFromDubaiGuide() {
         meta={{
           title,
           description,
-          keywords:
-            'pet export from Dubai, how to export pet from UAE, documents to take pet out of UAE, MOCCAE pet export permit, export health certificate UAE pets, cost to export pet from Dubai',
           canonical,
           ogType: 'article',
           ogImage: `${BASE_URL}/assets/w6/pet-export-from-dubai-guide-suitcase-checklist.png`,

@@ -4,11 +4,9 @@ const meydan: AreaPageData = {
   slug: 'meydan',
   areaName: 'Meydan',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Meydan | Dog & Cat Transport',
+  seoTitle: 'Pet Relocation Meydan | Racing Community Last Mile',
   metaDescription:
     'Pet relocation in Meydan — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
-  keywords:
-    'pet relocation meydan, pet transport meydan, dog relocation meydan, cat relocation meydan, pet movers meydan',
   h1: 'Pet Relocation in Meydan',
   primaryKeyword: 'pet relocation meydan',
   heroValueProp:

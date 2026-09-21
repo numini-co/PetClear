@@ -4,11 +4,9 @@ const mudon: AreaPageData = {
   slug: 'mudon',
   areaName: 'Mudon',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Mudon | Dog & Cat Transport',
+  seoTitle: 'Pet Relocation Mudon Dubai | Family Villa Last Mile',
   metaDescription:
     'Pet relocation in Mudon — door-to-door dog and cat transport, MOCCAE permit guidance and travel crates. Free WhatsApp quote in 15 minutes.',
-  keywords:
-    'pet relocation mudon, pet transport mudon, dog relocation mudon, cat relocation mudon, pet movers mudon dubailand',
   h1: 'Pet Relocation in Mudon',
   primaryKeyword: 'pet relocation mudon',
   heroValueProp:

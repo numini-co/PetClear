@@ -4,11 +4,9 @@ const dubaiMarina: AreaPageData = {
   slug: 'dubai-marina',
   areaName: 'Dubai Marina',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Dubai Marina | Tower Pickup',
+  seoTitle: 'Pet Relocation Dubai Marina | Tower Pickup Last Mile',
   metaDescription:
     'Pet relocation Dubai Marina: tower lifts, promenade logistics, DXB run and MOCCAE timing. WhatsApp +971504782999.',
-  keywords:
-    'pet relocation dubai marina, pet transport dubai marina, dog relocation dubai marina, cat relocation dubai marina, pet movers marina',
   h1: 'Pet Relocation in Dubai Marina',
   primaryKeyword: 'pet relocation dubai marina',
   heroValueProp:

@@ -4,7 +4,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'singapore-to-dubai',
     countryKey: 'singapore',
-    title: 'Pet Relocation Singapore to Dubai | PetClear',
+    title: 'Pet Relocation Singapore to Dubai | Import Guide 2026',
     meta: 'Move a dog or cat from Singapore to Dubai: SIN export, MOCCAE 90-day permit, titer window and DXB/DWC cargo clearance.',
     h1: 'Pet relocation from Singapore to Dubai',
     heroAlt: 'Dog with Singapore flag cue ready for pet relocation from Singapore to Dubai',
@@ -70,7 +70,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-singapore',
     countryKey: 'singapore',
-    title: 'Pet Relocation Dubai to Singapore | PetClear',
+    title: 'Pet Relocation Dubai to Singapore | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to Singapore: NParks/AVS import, SIN arrival and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to Singapore',
     heroAlt: 'Dog with Singapore flag cue ready for export from Dubai to Singapore',
@@ -147,7 +147,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'pakistan-to-dubai',
     countryKey: 'pakistan',
-    title: 'Pet Relocation Pakistan to Dubai | PetClear',
+    title: 'Pet Relocation Pakistan to Dubai | Import Guide 2026',
     meta: 'Move a dog or cat from Pakistan to Dubai: ISB/KHI/LHE export, MOCCAE 90-day permit, titer window and cargo clearance.',
     h1: 'Pet relocation from Pakistan to Dubai',
     heroAlt: 'Dog with Pakistani flag cue ready for pet relocation from Pakistan to Dubai',
@@ -213,7 +213,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-pakistan',
     countryKey: 'pakistan',
-    title: 'Pet Relocation Dubai to Pakistan | PetClear',
+    title: 'Pet Relocation Dubai to Pakistan | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to Pakistan: destination veterinary import, ISB/KHI/LHE arrival and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to Pakistan',
     heroAlt: 'Dog with Pakistani flag cue ready for export from Dubai to Pakistan',
@@ -289,7 +289,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'japan-to-dubai',
     countryKey: 'japan',
-    title: 'Pet Relocation Japan to Dubai | PetClear',
+    title: 'Pet Relocation Japan to Dubai | Import Corridor Guide 2026',
     meta: 'Move a dog or cat from Japan to Dubai: NRT/HND/KIX export, MOCCAE 90-day permit, titer window and cargo clearance.',
     h1: 'Pet relocation from Japan to Dubai',
     heroAlt: 'Dog with Japanese flag cue ready for pet relocation from Japan to Dubai',
@@ -355,7 +355,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-japan',
     countryKey: 'japan',
-    title: 'Pet Relocation Dubai to Japan | PetClear',
+    title: 'Pet Relocation Dubai to Japan | Export Corridor Guide 2026',
     meta: 'Export a dog or cat from Dubai to Japan: AQS import, NRT/HND arrival, advance notice and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to Japan',
     heroAlt: 'Dog with Japanese flag cue ready for export from Dubai to Japan',
@@ -432,7 +432,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'hong-kong-to-dubai',
     countryKey: 'hong-kong',
-    title: 'Pet Relocation Hong Kong to Dubai | PetClear',
+    title: 'Pet Relocation Hong Kong to Dubai | Import Guide 2026',
     meta: 'Move a dog or cat from Hong Kong to Dubai: HKG export, MOCCAE 90-day permit, titer window and cargo clearance.',
     h1: 'Pet relocation from Hong Kong to Dubai',
     heroAlt: 'Dog with Hong Kong flag cue ready for pet relocation from Hong Kong to Dubai',
@@ -498,7 +498,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-hong-kong',
     countryKey: 'hong-kong',
-    title: 'Pet Relocation Dubai to Hong Kong | PetClear',
+    title: 'Pet Relocation Dubai to Hong Kong | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to Hong Kong: AFCD import, HKG arrival and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to Hong Kong',
     heroAlt: 'Dog with Hong Kong flag cue ready for export from Dubai to Hong Kong',
@@ -575,7 +575,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'thailand-to-dubai',
     countryKey: 'thailand',
-    title: 'Pet Relocation Thailand to Dubai | PetClear',
+    title: 'Pet Relocation Thailand to Dubai | Import Guide 2026',
     meta: 'Move a dog or cat from Thailand to Dubai: BKK/DMK/HKT export, MOCCAE 90-day permit, titer window and cargo clearance.',
     h1: 'Pet relocation from Thailand to Dubai',
     heroAlt: 'Dog with Thai flag cue ready for pet relocation from Thailand to Dubai',
@@ -641,7 +641,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-thailand',
     countryKey: 'thailand',
-    title: 'Pet Relocation Dubai to Thailand | PetClear',
+    title: 'Pet Relocation Dubai to Thailand | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to Thailand: DLD import, BKK arrival and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to Thailand',
     heroAlt: 'Dog with Thai flag cue ready for export from Dubai to Thailand',
@@ -717,7 +717,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'indonesia-to-dubai',
     countryKey: 'indonesia',
-    title: 'Pet Relocation Indonesia to Dubai | PetClear',
+    title: 'Pet Relocation Indonesia to Dubai | Import Guide 2026',
     meta: 'Move a dog or cat from Indonesia to Dubai: CGK/DPS/SUB export, MOCCAE 90-day permit, titer window and cargo clearance.',
     h1: 'Pet relocation from Indonesia to Dubai',
     heroAlt: 'Dog with Indonesian flag cue ready for pet relocation from Indonesia to Dubai',
@@ -783,7 +783,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-indonesia',
     countryKey: 'indonesia',
-    title: 'Pet Relocation Dubai to Indonesia | PetClear',
+    title: 'Pet Relocation Dubai to Indonesia | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to Indonesia: Barantan import, CGK arrival and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to Indonesia',
     heroAlt: 'Dog with Indonesian flag cue ready for export from Dubai to Indonesia',
@@ -859,7 +859,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'malaysia-to-dubai',
     countryKey: 'malaysia',
-    title: 'Pet Relocation Malaysia to Dubai | PetClear',
+    title: 'Pet Relocation Malaysia to Dubai | Import Guide 2026',
     meta: 'Move a dog or cat from Malaysia to Dubai: KUL/PEN export, MOCCAE 90-day permit, titer window and cargo clearance.',
     h1: 'Pet relocation from Malaysia to Dubai',
     heroAlt: 'Dog with Malaysian flag cue ready for pet relocation from Malaysia to Dubai',
@@ -925,7 +925,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-malaysia',
     countryKey: 'malaysia',
-    title: 'Pet Relocation Dubai to Malaysia | PetClear',
+    title: 'Pet Relocation Dubai to Malaysia | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to Malaysia: DVS import, KUL arrival and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to Malaysia',
     heroAlt: 'Dog with Malaysian flag cue ready for export from Dubai to Malaysia',
@@ -1001,7 +1001,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'china-to-dubai',
     countryKey: 'china',
-    title: 'Pet Relocation China to Dubai | PetClear',
+    title: 'Pet Relocation China to Dubai | Import Corridor Guide 2026',
     meta: 'Move a dog or cat from China to Dubai: PEK/PVG/CAN export, MOCCAE 90-day permit, titer window and cargo clearance.',
     h1: 'Pet relocation from China to Dubai',
     heroAlt: 'Dog with Chinese flag cue ready for pet relocation from China to Dubai',
@@ -1067,7 +1067,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-china',
     countryKey: 'china',
-    title: 'Pet Relocation Dubai to China | PetClear',
+    title: 'Pet Relocation Dubai to China | Export Corridor Guide 2026',
     meta: 'Export a dog or cat from Dubai to China: GACC/customs import, PEK/PVG/CAN arrival and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to China',
     heroAlt: 'Dog with Chinese flag cue ready for export from Dubai to China',
@@ -1144,7 +1144,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'south-korea-to-dubai',
     countryKey: 'south-korea',
-    title: 'Pet Relocation South Korea to Dubai | PetClear',
+    title: 'Pet Relocation South Korea to Dubai | Import Guide 2026',
     meta: 'Move a dog or cat from South Korea to Dubai: ICN/GMP export, MOCCAE 90-day permit, titer window and cargo clearance.',
     h1: 'Pet relocation from South Korea to Dubai',
     heroAlt: 'Dog with Korean flag cue ready for pet relocation from South Korea to Dubai',
@@ -1210,7 +1210,7 @@ export const ASIA_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-south-korea',
     countryKey: 'south-korea',
-    title: 'Pet Relocation Dubai to South Korea | PetClear',
+    title: 'Pet Relocation Dubai to South Korea | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to South Korea: APQA import, ICN arrival and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to South Korea',
     heroAlt: 'Dog with Korean flag cue ready for export from Dubai to South Korea',

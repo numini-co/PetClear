@@ -108,7 +108,6 @@ export default function CatRelocationPage() {
         canonical={`${BASE_URL}/cat-relocation-to-dubai/`}
         title="Cat Relocation to Dubai | Complete Guide 2026"
         description="Cat relocation to Dubai: crate comfort, no-sedation guidance, airline rules and MOCCAE documents. WhatsApp +971504782999."
-        keywords="cat relocation to Dubai, bring cat to Dubai, cat import Dubai, Dubai cat relocation, pet cat transport Dubai, moving cat to UAE"
         ogType="article"
         schemas={[
           {

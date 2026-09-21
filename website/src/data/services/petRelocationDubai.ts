@@ -6,8 +6,6 @@ const petRelocationDubai: ServicePageData = {
   seoTitle: 'Pet Relocation Dubai | Door-to-Door Dog & Cat Moves',
   metaDescription:
     'Pet relocation Dubai for dogs and cats: permits, crates, airline booking, and arrival support. WhatsApp +971504782999.',
-  keywords:
-    'pet relocation dubai, pet relocation services dubai, pet shipping dubai, pet movers dubai, door to door pet relocation dubai',
   h1: 'Pet Relocation Dubai — Door-to-Door Coordination',
   primaryKeyword: 'pet relocation dubai',
   heroValueProp:

@@ -83,7 +83,6 @@ export default function AboutPage() {
           title: 'Dubai Pet Relocation Company | About Our Coordinators',
           description:
             'Dubai pet relocation company focused on clear MOCCAE timelines, airline options, and WhatsApp coordination (+971504782999).',
-          keywords: 'about Dubai Pet Relocation, pet relocation company Dubai, pet coordination Dubai, who is Dubai Pet Relocation, pet relocation experts UAE',
           canonical: `${BASE_URL}/about/`,
           ogType: 'website',
         }}

@@ -121,7 +121,6 @@ export default function ContactPage() {
         meta={{
           title: 'Contact Dubai Pet Relocation | Pet Relocation Dubai',
           description: 'Contact Dubai Pet Relocation for pet relocation help in Dubai via WhatsApp, email, or form. We reply within 15 minutes during business hours.',
-          keywords: 'contact Dubai Pet Relocation, pet relocation help Dubai, pet transport contact, WhatsApp pet relocation Dubai',
           canonical: `${BASE_URL}/contact/`,
           ogType: 'website',
         }}

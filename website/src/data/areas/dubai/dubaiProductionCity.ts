@@ -7,8 +7,6 @@ const dubaiProductionCity: AreaPageData = {
   seoTitle: 'Pet Relocation Dubai Production City (IMPZ) | Pet Transport',
   metaDescription:
     'Pet relocation in Dubai Production City — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
-  keywords:
-    'pet relocation dubai production city, pet transport impz dubai, dog relocation dubai production city, cat relocation impz, pet movers impz',
   h1: 'Pet Relocation in Dubai Production City (IMPZ)',
   primaryKeyword: 'pet relocation dubai production city',
   heroValueProp:

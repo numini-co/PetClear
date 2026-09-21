@@ -31,7 +31,6 @@ export interface ServicePageData {
   slug: string
   seoTitle: string
   metaDescription: string
-  keywords: string
   h1: string
   /** <= 80 words, shown in the hero */
   heroValueProp: string

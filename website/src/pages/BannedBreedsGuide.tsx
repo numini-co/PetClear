@@ -123,7 +123,6 @@ export default function BannedBreedsGuide() {
     canonical,
     ogImage,
     ogType: 'article',
-    keywords: 'banned dog breeds Dubai, restricted dog breeds UAE, Pit Bull ban Dubai, Dubai Municipality dog rules, UAE pet import banned breeds, dog breed restrictions Dubai, prohibited dogs UAE, Dubai dog muzzle law, brachycephalic dog travel ban, service dog exemption Dubai',
   }
 
   return (

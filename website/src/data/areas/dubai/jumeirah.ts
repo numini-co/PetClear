@@ -7,8 +7,6 @@ const jumeirah: AreaPageData = {
   seoTitle: 'Pet Relocation Jumeirah | Dog & Cat Relocation (2026)',
   metaDescription:
     'Pet relocation in Jumeirah: beachfront villas in Jumeirah 1-3 and nearby last mile. WhatsApp +971504782999.',
-  keywords:
-    'pet relocation jumeirah, pet transport jumeirah, dog relocation jumeirah, cat relocation jumeirah, pet movers jumeirah dubai',
   h1: 'Pet Relocation in Jumeirah',
   primaryKeyword: 'pet relocation jumeirah',
   heroValueProp:

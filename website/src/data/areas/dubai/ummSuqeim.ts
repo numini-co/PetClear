@@ -7,8 +7,6 @@ const ummSuqeim: AreaPageData = {
   seoTitle: 'Pet Relocation Umm Suqeim | Dog & Cat Relocation (2026)',
   metaDescription:
     'Pet relocation in Umm Suqeim: coastal villas on the Jumeirah Beach corridor, Kite Beach last mile. WhatsApp +971504782999.',
-  keywords:
-    'pet relocation umm suqeim, pet transport umm suqeim, dog relocation umm suqeim, cat relocation umm suqeim, pet movers umm suqeim',
   h1: 'Pet Relocation in Umm Suqeim',
   primaryKeyword: 'pet relocation umm suqeim',
   heroValueProp:

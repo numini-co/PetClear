@@ -13,7 +13,7 @@ export const GUIDE_BRIDGE =
 
 /** Sticky / skip-path prompt. Never include blank Origin/Pet/Date underscores. */
 export const WA_ELIGIBILITY_DEFAULT =
-  'I want a paid Dubai pet relocation eligibility check. Please share name, pet, origin, destination, and target date in English.'
+  'I want a paid Dubai pet relocation eligibility check. Please share name, pet, origin, destination, and target date in English. Need: managed move / document plan / other.'
 
 /** Direct WhatsApp skip — short English ask, no empty templates. */
 export const WA_DIRECT_PROMPT =

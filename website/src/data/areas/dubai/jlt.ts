@@ -4,11 +4,9 @@ const jlt: AreaPageData = {
   slug: 'jlt',
   areaName: 'Jumeirah Lakes Towers (JLT)',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation JLT Dubai | Dog & Cat Last Mile',
+  seoTitle: 'Pet Relocation JLT Dubai | Cluster Tower Last Mile',
   metaDescription:
     'Pet relocation in JLT: cluster-tower pickups, lakeside logistics, DXB and DWC routing, MOCCAE permit coordination. WhatsApp +971 50 478 2999.',
-  keywords:
-    'pet relocation jlt, pet transport jlt, dog relocation jumeirah lakes towers, cat relocation jlt, pet movers jlt',
   h1: 'Pet Relocation in Jumeirah Lakes Towers (JLT)',
   primaryKeyword: 'pet relocation jlt',
   heroValueProp:

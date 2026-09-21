@@ -135,8 +135,6 @@ export default function PetFlightOptionsHub() {
         meta={{
           title,
           description,
-          keywords:
-            'which airlines fly pets to Dubai, pet friendly airlines Dubai, pet flight options Dubai, fly pet to or from Dubai, cabin vs cargo vs charter UAE, pet travel modes Dubai',
           canonical,
           ogType: 'article',
         }}

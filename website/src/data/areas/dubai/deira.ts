@@ -4,11 +4,9 @@ const deira: AreaPageData = {
   slug: 'deira',
   areaName: 'Deira',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Deira | Dog & Cat Relocation (2026)',
+  seoTitle: 'Pet Relocation Deira Dubai | Creek District Last Mile',
   metaDescription:
     'Pet relocation in Deira: creek-side apartments, walk-up access, short DXB runs and MOCCAE permit coordination. WhatsApp +971 50 478 2999.',
-  keywords:
-    'pet relocation deira, pet transport deira, dog relocation deira, cat relocation deira, pet movers deira',
   h1: 'Pet Relocation in Deira',
   primaryKeyword: 'pet relocation deira',
   heroValueProp:

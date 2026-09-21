@@ -4,7 +4,7 @@ export const GERMANY_COPY: RouteUniqueCopy[] = [
   {
     slug: 'germany-to-dubai',
     countryKey: 'germany',
-    title: 'Pet Relocation Germany to Dubai | PetClear',
+    title: 'Pet Relocation Germany to Dubai | Import Guide 2026',
     meta: 'Move a dog or cat from Germany to Dubai: FRA/MUC export airports, UAE MOCCAE permit timing, titer sample window, and cargo vs cabin checks.',
     h1: 'Pet relocation from Germany to Dubai',
     heroAlt: 'Dog with German flag cue ready for pet relocation from Germany to Dubai',
@@ -71,7 +71,7 @@ export const GERMANY_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-germany',
     countryKey: 'germany',
-    title: 'Pet Relocation Dubai to Germany | PetClear',
+    title: 'Pet Relocation Dubai to Germany | Export Guide 2026',
     meta: 'Move a dog or cat from Dubai to Germany: MOCCAE export health certificate, EU entry planning, FRA/MUC gateways, and airline mode checks.',
     h1: 'Pet relocation from Dubai to Germany',
     heroAlt: 'Dog with German flag cue ready for pet relocation from Dubai to Germany',

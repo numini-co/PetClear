@@ -98,8 +98,6 @@ export default function SnubNosedDogsFlyingUaeGuide() {
         meta={{
           title,
           description,
-          keywords:
-            'snub-nosed dog flying to Dubai, brachycephalic breeds flying UAE, French bulldog fly to Dubai, can pugs fly to Dubai, English bulldog relocation Dubai, flying Persian cat to Dubai',
           canonical,
           ogType: 'article',
           ogImage: `${BASE_URL}${HERO_IMG}`,

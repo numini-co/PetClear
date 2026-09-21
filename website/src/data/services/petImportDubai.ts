@@ -20,8 +20,6 @@ const petImportDubai: ServicePageData = {
   seoTitle: 'Pet Import Services Dubai | MOCCAE & Customs Clearance',
   metaDescription:
     'Pet import services Dubai: MOCCAE 90-day permit help, titer timing, and DXB/AUH clearance coordination.',
-  keywords:
-    'pet import services Dubai, pet import dubai, pet import UAE, how to import a pet to UAE, MOCCAE import permit application, import pet to dubai, pet customs dubai',
   h1: 'Pet Import Services in Dubai',
   primaryKeyword: 'pet import services Dubai',
   heroValueProp:

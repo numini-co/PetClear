@@ -6,7 +6,6 @@ interface SEOHeadProps {
   meta?: SEOMeta
   title?: string
   description?: string
-  keywords?: string
   canonical?: string
   ogImage?: string
   ogType?: string
@@ -22,7 +21,6 @@ export default function SEOHead(props: SEOHeadProps) {
   const meta: SEOMeta = props.meta || {
     title: props.title || '',
     description: props.description || '',
-    keywords: props.keywords,
     canonical: props.canonical,
     ogImage: props.ogImage,
     ogType: props.ogType,
@@ -43,7 +41,6 @@ export default function SEOHead(props: SEOHeadProps) {
     <>
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
-      {meta.keywords ? <meta name="keywords" content={meta.keywords} /> : null}
       <meta name="robots" content={robots} />
       <link rel="canonical" href={canonical} />
 

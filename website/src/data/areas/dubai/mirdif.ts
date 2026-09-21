@@ -7,8 +7,6 @@ const mirdif: AreaPageData = {
   seoTitle: 'Pet Relocation Mirdif | Dog & Cat Relocation (2026)',
   metaDescription:
     'Pet relocation in Mirdif: villa streets near DXB cargo, Mushrif Park last mile, MOCCAE permit help. WhatsApp +971504782999.',
-  keywords:
-    'pet relocation mirdif, pet transport mirdif, dog relocation mirdif, cat relocation mirdif, pet movers mirdif',
   h1: 'Pet Relocation in Mirdif',
   primaryKeyword: 'pet relocation mirdif',
   heroValueProp:

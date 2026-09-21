@@ -145,7 +145,6 @@ export default function IATACrateGuide() {
     canonical,
     ogImage,
     ogType: 'article',
-    keywords: 'IATA pet crate requirements, IATA LAR crate rules, pet travel crate Dubai, airline approved dog crate, IATA compliant pet carrier, Emirates SkyCargo crate requirements, Etihad pet crate size, flydubai pet carrier, how to measure dog for travel crate, pet crate familiarization',
   }
 
   return (

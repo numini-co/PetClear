@@ -3,11 +3,9 @@ import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const petExportDubai: ServicePageData = {
   slug: 'pet-export-dubai',
-  seoTitle: 'Pet Export Dubai | Leave the UAE With Your Pet',
+  seoTitle: 'Pet Export Dubai | UAE Exit Docs, Cargo & Certificates',
   metaDescription:
     'Pet export Dubai: MOCCAE export health certificates, Fit to Fly, and flight booking coordination. Get a relocation quote.',
-  keywords:
-    'pet export dubai, export pet from dubai, leaving dubai with pet, pet export permit dubai, take pet out of dubai, pet export requirements uae',
   h1: 'Pet Export Dubai — Leave the UAE With Your Pet',
   primaryKeyword: 'pet export dubai',
   heroValueProp:

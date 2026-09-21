@@ -4,11 +4,9 @@ const emaarSouth: AreaPageData = {
   slug: 'emaar-south',
   areaName: 'Emaar South',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Emaar South | Dog & Cat Transport',
+  seoTitle: 'Pet Relocation Emaar South | New Villa Community Last Mile',
   metaDescription:
     'Pet relocation in Emaar South — door-to-door dog and cat transport near DWC, MOCCAE permits and IATA crates. Free WhatsApp quote.',
-  keywords:
-    'pet relocation emaar south, pet transport emaar south, dog relocation emaar south, cat relocation emaar south, pet movers dwc al maktoum',
   h1: 'Pet Relocation in Emaar South',
   primaryKeyword: 'pet relocation emaar south',
   heroValueProp:

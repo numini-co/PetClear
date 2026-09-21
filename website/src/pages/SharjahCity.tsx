@@ -136,8 +136,6 @@ export default function SharjahCity() {
         meta={{
           title,
           description,
-          keywords:
-            'pet movers Sharjah, Sharjah pet import, Sharjah pet export, SHJ airport pet cargo, relocating a dog to Sharjah, moving a cat from Sharjah',
           canonical,
           ogType: 'article',
           ogImage: `${BASE_URL}${HERO_SRC}`,

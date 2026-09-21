@@ -13,10 +13,8 @@ import RouteMoneyBodyLink from '../components/RouteMoneyBodyLink.tsx'
 
 export default function NewZealandToDubai() {
   const pageUrl = `${BASE_URL}/routes/new-zealand-to-dubai/`
-  const pageTitle = 'Pet Relocation New Zealand to Dubai | Guide 2026'
+  const pageTitle = 'Pet Relocation New Zealand to Dubai | Import Guide 2026'
   const pageDescription = 'Relocate your pet from New Zealand to Dubai. Low-risk but strict MPI export rules. Air New Zealand, Emirates. NZ biosecurity, costs and timeline.'
-  const keywords = 'New Zealand to Dubai pet relocation, pet transport NZ to Dubai, New Zealand pet relocation Dubai, MPI pet export Dubai, Air New Zealand pet cargo, Emirates pet transport NZ, dog relocation NZ to Dubai, cat relocation NZ to Dubai, pet shipping New Zealand to UAE'
-
   const faqs = [
     {
       question: 'Is New Zealand a low-risk or high-risk country for pet import to Dubai?',
@@ -91,7 +89,6 @@ export default function NewZealandToDubai() {
       <SEOHead
         title={pageTitle}
         description={pageDescription}
-        keywords={keywords}
         canonical={pageUrl}
         ogType="article"
         schemas={schemas}

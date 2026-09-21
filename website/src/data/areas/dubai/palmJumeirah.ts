@@ -7,8 +7,6 @@ const palmJumeirah: AreaPageData = {
   seoTitle: 'Pet Relocation Palm Jumeirah | Dog & Cat Relocation (2026)',
   metaDescription:
     'Pet relocation on Palm Jumeirah: frond villa gates, Nakheel access, longer DXB routing and MOCCAE permit coordination. WhatsApp +971 50 478 2999.',
-  keywords:
-    'pet relocation palm jumeirah, pet transport palm jumeirah, dog relocation palm jumeirah, cat relocation palm jumeirah, pet movers palm jumeirah',
   h1: 'Pet Relocation in Palm Jumeirah',
   primaryKeyword: 'pet relocation palm jumeirah',
   heroValueProp:

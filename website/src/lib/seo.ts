@@ -11,7 +11,6 @@ export interface SEOMeta {
   noindex?: boolean
   /** Override robots when set. Privacy/Terms use `noindex, follow` so footer links can pass PageRank. */
   robots?: string
-  keywords?: string
 }
 
 export function buildCanonical(path: string): string {

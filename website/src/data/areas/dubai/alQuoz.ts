@@ -4,11 +4,9 @@ const alQuoz: AreaPageData = {
   slug: 'al-quoz',
   areaName: 'Al Quoz',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Al Quoz | Dog & Cat Transport',
+  seoTitle: 'Pet Relocation Al Quoz | Warehouse District Last Mile',
   metaDescription:
     'Pet relocation in Al Quoz — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
-  keywords:
-    'pet relocation al quoz, pet transport al quoz, dog relocation al quoz, cat relocation al quoz, pet movers al quoz',
   h1: 'Pet Relocation in Al Quoz',
   primaryKeyword: 'pet relocation al quoz',
   heroValueProp:

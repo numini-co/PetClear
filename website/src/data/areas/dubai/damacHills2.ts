@@ -7,8 +7,6 @@ const damacHills2: AreaPageData = {
   seoTitle: 'Pet Relocation DAMAC Hills 2 | Dog & Cat Transport',
   metaDescription:
     'Pet relocation in DAMAC Hills 2 (Akoya) — door-to-door dog and cat transport, MOCCAE permit guidance and IATA travel crates for villa families. Free quote.',
-  keywords:
-    'pet relocation damac hills 2, pet transport damac hills 2, dog relocation akoya, cat relocation damac hills 2, pet movers damac hills 2',
   h1: 'Pet Relocation in DAMAC Hills 2',
   primaryKeyword: 'pet relocation damac hills 2',
   heroValueProp:

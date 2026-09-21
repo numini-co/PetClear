@@ -120,7 +120,6 @@ export default function CustomsClearanceGuide() {
     canonical,
     ogImage,
     ogType: 'article',
-    keywords: 'pet customs clearance Dubai, Dubai airport pet clearance, DXB cargo terminal pet, DWC pet arrival, MOCCAE release fee, pet arrival Dubai airport, clear pet customs Dubai, pet cargo clearance UAE, collect pet Dubai airport, Dubai pet import clearance',
   }
 
   return (

@@ -4,7 +4,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
   {
     slug: 'saudi-arabia-to-dubai',
     countryKey: 'saudi-arabia',
-    title: 'Pet Relocation Saudi Arabia to Dubai | PetClear',
+    title: 'Pet Relocation Saudi Arabia to Dubai | Import Guide 2026',
     meta: 'Move a dog or cat from Saudi Arabia to Dubai: RUH/JED/DMM export, MOCCAE 90-day permit, titer sample window and cargo checks.',
     h1: 'Pet relocation from Saudi Arabia to Dubai',
     heroAlt: 'Dog with Saudi flag cue ready for pet relocation from Saudi Arabia to Dubai',
@@ -70,7 +70,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-saudi-arabia',
     countryKey: 'saudi-arabia',
-    title: 'Pet Relocation Dubai to Saudi Arabia | PetClear',
+    title: 'Pet Relocation Dubai to Saudi Arabia | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to Saudi Arabia: MEWA/Anaam import permit, RUH/JED/DMM arrival and airline checks.',
     h1: 'Pet relocation from Dubai to Saudi Arabia',
     heroAlt: 'Dog with Saudi flag cue ready for export from Dubai to Saudi Arabia',
@@ -149,7 +149,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
   {
     slug: 'qatar-to-dubai',
     countryKey: 'qatar',
-    title: 'Pet Relocation Qatar to Dubai | PetClear',
+    title: 'Pet Relocation Qatar to Dubai | Import Corridor Guide 2026',
     meta: 'Move a dog or cat from Doha to Dubai: DOH export, MOCCAE 90-day permit, UAE cargo clearance — not a Qatar Airways policy guide.',
     h1: 'Pet relocation from Qatar to Dubai',
     heroAlt: 'Dog with Qatari flag cue ready for pet relocation from Doha to Dubai',
@@ -215,7 +215,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-qatar',
     countryKey: 'qatar',
-    title: 'Pet Relocation Dubai to Qatar | PetClear',
+    title: 'Pet Relocation Dubai to Qatar | Export Corridor Guide 2026',
     meta: 'Export a dog or cat from Dubai to Qatar: MoECC import permit, DOH arrival and UAE export timing — not a Qatar Airways policy guide.',
     h1: 'Pet relocation from Dubai to Qatar',
     heroAlt: 'Dog with Qatari flag cue ready for export from Dubai to Doha',
@@ -293,7 +293,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
   {
     slug: 'oman-to-dubai',
     countryKey: 'oman',
-    title: 'Pet Relocation Oman to Dubai | PetClear',
+    title: 'Pet Relocation Oman to Dubai | Import Corridor Guide 2026',
     meta: 'Move a dog or cat from Muscat to Dubai: MCT export, MOCCAE 90-day permit, titer sample window and DXB/DWC clearance.',
     h1: 'Pet relocation from Oman to Dubai',
     heroAlt: 'Dog with Omani flag cue ready for pet relocation from Muscat to Dubai',
@@ -359,7 +359,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-oman',
     countryKey: 'oman',
-    title: 'Pet Relocation Dubai to Oman | PetClear',
+    title: 'Pet Relocation Dubai to Oman | Export Corridor Guide 2026',
     meta: 'Export a dog or cat from Dubai to Oman: MAFWR-side import checks, MCT arrival and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to Oman',
     heroAlt: 'Dog with Omani flag cue ready for export from Dubai to Muscat',
@@ -436,7 +436,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
   {
     slug: 'bahrain-to-dubai',
     countryKey: 'bahrain',
-    title: 'Pet Relocation Bahrain to Dubai | PetClear',
+    title: 'Pet Relocation Bahrain to Dubai | Import Guide 2026',
     meta: 'Move a dog or cat from Bahrain to Dubai: BAH export, MOCCAE 90-day permit, titer sample window and UAE cargo clearance.',
     h1: 'Pet relocation from Bahrain to Dubai',
     heroAlt: 'Dog with Bahraini flag cue ready for pet relocation from Bahrain to Dubai',
@@ -502,7 +502,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-bahrain',
     countryKey: 'bahrain',
-    title: 'Pet Relocation Dubai to Bahrain | PetClear',
+    title: 'Pet Relocation Dubai to Bahrain | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to Bahrain: destination import permission, BAH arrival and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to Bahrain',
     heroAlt: 'Dog with Bahraini flag cue ready for export from Dubai to Bahrain',
@@ -578,7 +578,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
   {
     slug: 'kuwait-to-dubai',
     countryKey: 'kuwait',
-    title: 'Pet Relocation Kuwait to Dubai | PetClear',
+    title: 'Pet Relocation Kuwait to Dubai | Import Guide 2026',
     meta: 'Move a dog or cat from Kuwait to Dubai: KWI export, MOCCAE 90-day permit, titer sample window and DXB/DWC clearance.',
     h1: 'Pet relocation from Kuwait to Dubai',
     heroAlt: 'Dog with Kuwaiti flag cue ready for pet relocation from Kuwait to Dubai',
@@ -644,7 +644,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-kuwait',
     countryKey: 'kuwait',
-    title: 'Pet Relocation Dubai to Kuwait | PetClear',
+    title: 'Pet Relocation Dubai to Kuwait | Export Guide 2026',
     meta: 'Export a dog or cat from Dubai to Kuwait: PAAFR-side import checks, KWI arrival and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to Kuwait',
     heroAlt: 'Dog with Kuwaiti flag cue ready for export from Dubai to Kuwait',
@@ -720,7 +720,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
   {
     slug: 'egypt-to-dubai',
     countryKey: 'egypt',
-    title: 'Pet Relocation Egypt to Dubai | PetClear',
+    title: 'Pet Relocation Egypt to Dubai | Import Corridor Guide 2026',
     meta: 'Move a dog or cat from Egypt to Dubai: CAI/HBE/SSH export, MOCCAE 90-day permit, titer sample window and cargo clearance.',
     h1: 'Pet relocation from Egypt to Dubai',
     heroAlt: 'Dog with Egyptian flag cue ready for pet relocation from Egypt to Dubai',
@@ -786,7 +786,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
   {
     slug: 'dubai-to-egypt',
     countryKey: 'egypt',
-    title: 'Pet Relocation Dubai to Egypt | PetClear',
+    title: 'Pet Relocation Dubai to Egypt | Export Corridor Guide 2026',
     meta: 'Export a dog or cat from Dubai to Egypt: GOVS-side import checks, CAI arrival and MOCCAE export timing.',
     h1: 'Pet relocation from Dubai to Egypt',
     heroAlt: 'Dog with Egyptian flag cue ready for export from Dubai to Egypt',

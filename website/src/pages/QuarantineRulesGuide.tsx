@@ -179,8 +179,6 @@ export default function QuarantineRulesGuide() {
     canonical,
     ogImage,
     ogType: 'article',
-    keywords:
-      'UAE pet quarantine rules, does Dubai quarantine pets, pet quarantine Dubai, no quarantine UAE pets, pet detention Dubai airport, compliant pet import UAE, MOCCAE quarantine, rabies titer quarantine Dubai, pet refused entry Dubai, Dubai pet customs clearance',
   }
 
   return (

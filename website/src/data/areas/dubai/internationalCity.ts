@@ -7,8 +7,6 @@ const internationalCity: AreaPageData = {
   seoTitle: 'Pet Relocation International City | Dog & Cat Transport',
   metaDescription:
     'Pet relocation in International City — door-to-door dog and cat transport, MOCCAE permit coordination and IATA crates. Free WhatsApp quote in 15 minutes.',
-  keywords:
-    'pet relocation international city, pet transport international city, dog relocation international city, cat relocation international city, pet movers international city dubai',
   h1: 'Pet Relocation in International City',
   primaryKeyword: 'pet relocation international city',
   heroValueProp:

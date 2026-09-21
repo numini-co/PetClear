@@ -116,7 +116,6 @@ export default function PetHealthCertificateGuide() {
     canonical,
     ogImage,
     ogType: 'article',
-    keywords: 'pet health certificate UAE, pet health certificate Dubai, international health certificate pet, UAE pet entry health certificate, government vet health certificate, 10 day health certificate Dubai, pet import health certificate UAE, official veterinarian pet certificate',
   }
 
   return (

@@ -4,11 +4,9 @@ const alSatwa: AreaPageData = {
   slug: 'al-satwa',
   areaName: 'Al Satwa',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Al Satwa | Dog & Cat Transport',
+  seoTitle: 'Pet Relocation Al Satwa Dubai | Villa Street Last Mile',
   metaDescription:
     'Pet relocation in Al Satwa — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
-  keywords:
-    'pet relocation al satwa, pet transport al satwa, dog relocation al satwa, cat relocation al satwa, pet movers satwa',
   h1: 'Pet Relocation in Al Satwa',
   primaryKeyword: 'pet relocation al satwa',
   heroValueProp:

@@ -4,11 +4,9 @@ const downtownDubai: AreaPageData = {
   slug: 'downtown-dubai',
   areaName: 'Downtown Dubai',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Downtown Dubai | Tower Access',
+  seoTitle: 'Pet Relocation Downtown Dubai | Tower Access Last Mile',
   metaDescription:
     'Pet relocation Downtown Dubai: boulevard towers, dock access and MOCCAE timing. WhatsApp +971504782999.',
-  keywords:
-    'pet relocation downtown dubai, pet transport downtown dubai, dog relocation downtown dubai, cat relocation downtown dubai, pet movers burj khalifa',
   h1: 'Pet Relocation in Downtown Dubai',
   primaryKeyword: 'pet relocation downtown dubai',
   heroValueProp:

@@ -184,10 +184,9 @@ export default function HomePage() {
     <div>
       <SEOHead
         meta={{
-          title: 'Dubai Pet Relocation | Guides, Routes & Quotes',
+          title: 'Dubai Pet Relocation | Guides, Routes & Managed Quotes',
           description:
             'Dubai Pet Relocation guides, routes and WhatsApp quotes. Open the door-to-door service when you are ready to book.',
-          keywords: 'pet relocation Dubai, pet relocation UAE, dog relocation Dubai, cat relocation Dubai, MOCCAE import permit',
           canonical: `${BASE_URL}/`,
           ogType: 'website',
         }}

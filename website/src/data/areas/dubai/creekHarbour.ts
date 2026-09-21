@@ -7,8 +7,6 @@ const creekHarbour: AreaPageData = {
   seoTitle: 'Pet Relocation Dubai Creek Harbour | Dog & Cat Transport',
   metaDescription:
     'Pet relocation in Dubai Creek Harbour — door-to-door dog and cat transport, MOCCAE permit guidance and travel crates. Free WhatsApp quote in 15 minutes.',
-  keywords:
-    'pet relocation dubai creek harbour, pet transport creek harbour, dog relocation creek harbour, cat relocation creek harbour, pet movers creek harbour',
   h1: 'Pet Relocation in Dubai Creek Harbour',
   primaryKeyword: 'pet relocation dubai creek harbour',
   heroValueProp:

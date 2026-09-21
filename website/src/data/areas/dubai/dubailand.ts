@@ -4,11 +4,9 @@ const dubailand: AreaPageData = {
   slug: 'dubailand',
   areaName: 'Dubailand',
   emirate: 'Dubai',
-  seoTitle: 'Pet Relocation Dubailand | Dog & Cat Transport',
+  seoTitle: 'Pet Relocation Dubailand | District Villa Last Mile',
   metaDescription:
     'Pet relocation in Dubailand — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
-  keywords:
-    'pet relocation dubailand, pet transport dubailand, dog relocation dubailand, cat relocation dubailand, pet movers dubailand',
   h1: 'Pet Relocation in Dubailand',
   primaryKeyword: 'pet relocation dubailand',
   heroValueProp:

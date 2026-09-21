@@ -299,7 +299,6 @@ export default function HowItWorksPage() {
       <SEOHead
         title="How Pet Relocation Works in Dubai | 7 Clear Steps"
         description="How does pet relocation work in Dubai? Seven steps from breed check to municipality registration."
-        keywords="how pet relocation works, pet relocation process Dubai, dog relocation steps, cat relocation process, pet transport Dubai steps"
         canonical={`${BASE_URL}/how-it-works/`}
         ogType="article"
         schemas={schemas}
