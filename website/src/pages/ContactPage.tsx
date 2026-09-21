@@ -1,14 +1,33 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import {
-  MessageCircle, Phone, Mail, MapPin, Clock, Send, ChevronRight, ChevronDown, ChevronUp
+  MessageCircle, Phone, Mail, MapPin, Clock, Send, ChevronDown, ChevronUp
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
-import { CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import { composeEligibilityLead, CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
 import { track } from '../lib/analytics.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
+
+const emptyForm = {
+  name: '',
+  email: '',
+  petType: '',
+  origin: '',
+  destination: '',
+  targetDate: '',
+  message: '',
+}
+
+const petLabels: Record<string, string> = {
+  dog: 'Dog',
+  cat: 'Cat',
+  other: 'Other',
+  'not-sure': 'Not sure yet',
+}
+
+const inputClass =
+  'w-full px-4 py-3 rounded-[12px] border border-[#E2E5F6] bg-[#F0F2FB] text-sm text-[#2A2A2A] focus:outline-none focus:ring-2 focus:ring-[#4F5BD5]/30 focus:border-[#4F5BD5]'
 
 const Card = ({ children, className = '' }: { children: React.ReactNode; className?: string }) => (
   <div className={`bg-white rounded-[20px] shadow-sm p-7 lg:p-8 ${className}`}>
@@ -52,18 +71,25 @@ const WhatsAppCta = ({
 )
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({ name: '', email: '', petType: '', message: '' })
+  const [formData, setFormData] = useState(emptyForm)
   const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     track('form_submit', { page_path: '/contact/' })
-    // This static site has no form backend — deliver the enquiry to our WhatsApp
-    // so the lead is actually captured instead of lost.
-    const lead = `New website enquiry:\nName: ${formData.name}\nEmail: ${formData.email}\nPet type: ${formData.petType}\nMessage: ${formData.message}`
+    const lead = composeEligibilityLead({
+      name: formData.name,
+      email: formData.email,
+      pet: petLabels[formData.petType] || formData.petType,
+      origin: formData.origin,
+      destination: formData.destination,
+      date: formData.targetDate,
+      notes: formData.message,
+      page: '/contact/',
+    })
     window.open(getWhatsAppUrl(lead, 'contact-form'), '_blank', 'noopener,noreferrer')
     setSubmitted(true)
-    setFormData({ name: '', email: '', petType: '', message: '' })
+    setFormData(emptyForm)
   }
 
   const breadcrumbSchema = {
@@ -217,7 +243,7 @@ export default function ContactPage() {
                       required
                       value={formData.petType}
                       onChange={(e) => setFormData({ ...formData, petType: e.target.value })}
-                      className="w-full px-4 py-3 rounded-[12px] border border-[#E2E5F6] bg-[#F0F2FB] text-sm text-[#2A2A2A] focus:outline-none focus:ring-2 focus:ring-[#4F5BD5]/30 focus:border-[#4F5BD5]"
+                      className={inputClass}
                     >
                       <option value="">Select pet type</option>
                       <option value="dog">Dog</option>
@@ -227,15 +253,52 @@ export default function ContactPage() {
                     </select>
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-semibold text-[#2A2A2A] mb-2">Your Message</label>
+                    <label htmlFor="origin" className="block text-sm font-semibold text-[#2A2A2A] mb-2">Origin city / country</label>
+                    <input
+                      id="origin"
+                      type="text"
+                      required
+                      value={formData.origin}
+                      onChange={(e) => setFormData({ ...formData, origin: e.target.value })}
+                      className={inputClass}
+                      placeholder="Lahore, Pakistan"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="destination" className="block text-sm font-semibold text-[#2A2A2A] mb-2">Destination city / country</label>
+                    <input
+                      id="destination"
+                      type="text"
+                      required
+                      value={formData.destination}
+                      onChange={(e) => setFormData({ ...formData, destination: e.target.value })}
+                      className={inputClass}
+                      placeholder="Dubai, UAE"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="targetDate" className="block text-sm font-semibold text-[#2A2A2A] mb-2">Target month / date</label>
+                    <input
+                      id="targetDate"
+                      type="text"
+                      required
+                      value={formData.targetDate}
+                      onChange={(e) => setFormData({ ...formData, targetDate: e.target.value })}
+                      className={inputClass}
+                      placeholder="December 2026"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-semibold text-[#2A2A2A] mb-2">Notes</label>
+                    <p id="message-help" className="text-xs text-[#5A5A5A] mb-2">Please write in English</p>
                     <textarea
                       id="message"
-                      required
                       rows={5}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-4 py-3 rounded-[12px] border border-[#E2E5F6] bg-[#F0F2FB] text-sm text-[#2A2A2A] focus:outline-none focus:ring-2 focus:ring-[#4F5BD5]/30 focus:border-[#4F5BD5] resize-none"
-                      placeholder="Tell us about your pet, your route, and any questions you have..."
+                      aria-describedby="message-help"
+                      className={`${inputClass} resize-none`}
+                      placeholder="Breed, crate size, or anything else we should know"
                     />
                   </div>
                   <button

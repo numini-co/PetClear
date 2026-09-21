@@ -21,7 +21,7 @@ import { BASE_URL } from '../lib/seo.ts'
 import GuideDualPath from '../components/GuideDualPath.tsx'
 import { waEligibility } from '../lib/conversionCopy.ts'
 
-const waBreed = waEligibility({ pet: 'dog (breed __)', need: 'managed move' })
+const waBreed = waEligibility({ pet: 'dog', need: 'managed move' })
 
 /* ─── FAQ accordion helper ─── */
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {

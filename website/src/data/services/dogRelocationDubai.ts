@@ -1,4 +1,5 @@
 import type { ServicePageData } from '../../types/servicePage.ts'
+import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const dogRelocationDubai: ServicePageData = {
   slug: 'dog-relocation-dubai',
@@ -14,8 +15,7 @@ const dogRelocationDubai: ServicePageData = {
   heroImage: '/images/service-dog-relocation-dubai.jpg',
   heroImageAlt:
     'Calm dog sitting beside an IATA travel crate at a Dubai airport',
-  whatsappMessage:
-    'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: dog (breed __). Target date: __. Need: managed move.',
+  whatsappMessage: waEligibility({ pet: 'dog', need: 'managed move' }),
   trustBadges: ['Breed eligibility checked', 'IATA crate guidance', 'Vetted partners', 'WhatsApp support'],
   costRange: { low: '2500', high: '22000' },
   hasHowTo: false,

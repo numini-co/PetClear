@@ -1,4 +1,5 @@
 import type { ServicePageData } from '../../types/servicePage.ts'
+import { waEligibility } from '../../lib/conversionCopy.ts'
 import {
   EXEMPT_LIST_HOLD,
   MANIFEST_CARGO,
@@ -29,8 +30,7 @@ const petImportDubai: ServicePageData = {
   heroImage: '/images/service-pet-import-dubai.jpg',
   heroImageAlt:
     'Pet travel crates handled in a Dubai air-cargo warehouse during import clearance',
-  whatsappMessage:
-    'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: __. Target date: __. Need: managed move.',
+  whatsappMessage: waEligibility({ need: 'managed move' }),
   ctaLabel: 'Get a managed-move quote',
   heroEyebrow: 'Pet Import Service',
   snippetQuestion: 'What are the requirements for traveling with my pet to the UAE?',

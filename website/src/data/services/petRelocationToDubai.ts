@@ -1,4 +1,5 @@
 import type { ServicePageData } from '../../types/servicePage.ts'
+import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const petRelocationToDubai: ServicePageData = {
   slug: 'pet-relocation-to-dubai',
@@ -14,8 +15,7 @@ const petRelocationToDubai: ServicePageData = {
   heroImage: '/assets/w1-w3/pet-relocation-to-dubai-cat-arrival-new-apartment.jpg',
   heroImageAlt:
     'Cat stepping out of its travel crate into a new Dubai apartment after relocating to Dubai',
-  whatsappMessage:
-    'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: __. Target date: __. Need: managed move.',
+  whatsappMessage: waEligibility({ need: 'managed move' }),
   trustBadges: [
     'Inbound / arrival-side only',
     '90-day MOCCAE permit window',
