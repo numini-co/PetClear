@@ -598,7 +598,7 @@ export default function ImportChecklistGuide() {
       <GuideFunnelCta
         variant="end"
         title="Ready to book a managed import?"
-        subtitle="Avoid sequencing mistakes and rejected permits when you want the file held. WhatsApp eligibility if you are ready to book, or open the door-to-door / import service pages. Permit validity: 90 days from issuance."
+        subtitle="Avoid sequencing mistakes and rejected permits when you want the file held. WhatsApp eligibility if you are ready to book, or open the door-to-door / import money pages. Permit validity: 90 days from issuance."
         eligibilityMessage={waChecklist}
       />
     </>

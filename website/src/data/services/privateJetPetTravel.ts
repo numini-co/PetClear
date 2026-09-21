@@ -27,7 +27,7 @@ const privateJetPetTravel: ServicePageData = {
     {
       h2: 'When a private jet is the right flight mode',
       intro:
-        'This is an offer / menu page for dedicated-aircraft coordination, not an airline and not the [door-to-door pet relocation](/service/pet-relocation-dubai/) booking page. Most Dubai pet moves use [manifest air cargo](/guides/emirates-pet-cargo/). Cabin is the [Etihad AUH exception](/guides/etihad-pet-policy/). A jet is for the cases those products cannot cover.',
+        'This is an offer / menu page for dedicated-aircraft coordination, not an airline and not the [door-to-door pet relocation](/service/pet-relocation-dubai/) money page. Most Dubai pet moves use [manifest air cargo](/guides/emirates-pet-cargo/). Cabin is the [Etihad AUH exception](/guides/etihad-pet-policy/). A jet is for the cases those products cannot cover.',
       body: [
         {
           type: 'p',

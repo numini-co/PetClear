@@ -75,7 +75,7 @@ const IMPORT_PAA_FAQS: { q: string; a: string }[] = [
   },
   {
     q: 'Do pets need to be quarantined in the UAE?',
-    a: 'Not routinely, if microchip, rabies papers, health certificate, and MOCCAE import permit match and the breed is allowed. There is no separate quarantine guide on this site; the answer lives here. A paperwork problem can still mean a hold or re-export. Confirm contested fees on the MOCCAE portal. Deep permit help: [/guides/moccae-import-permit/](/guides/moccae-import-permit/).',
+    a: 'Not routinely, if microchip, rabies papers, health certificate, and MOCCAE import permit match and the breed is allowed. There is no separate quarantine guide on this site — this page owns the question. A paperwork problem can still mean a hold or re-export. Confirm contested fees on the MOCCAE portal. Deep permit help: [/guides/moccae-import-permit/](/guides/moccae-import-permit/).',
   },
   {
     q: 'Which countries require quarantine for pets?',
@@ -283,7 +283,7 @@ export default function ImportRequirementsPage() {
                 name: 'How is this guide different from the pet-import service page?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'This page is the statutory checklist. The paid import job — crate, cargo, clearance, door delivery — lives on /service/pet-import-dubai/. The permit walkthrough lives on /guides/moccae-import-permit/. We cross-link; we do not clone the tables.',
+                  text: 'This URL owns the statutory checklist. The commercial import job — crate, cargo, clearance, door delivery — lives on /service/pet-import-dubai/. The permit walkthrough lives on /guides/moccae-import-permit/. We cross-link; we do not clone the tables.',
                 },
               },
               {
@@ -641,7 +641,7 @@ export default function ImportRequirementsPage() {
       <GuideFunnelCta
         variant="mid"
         title="Checklist clear — book the managed import?"
-        subtitle="This page is the statutory UAE import checklist. DIY the rules above. Door-to-door and import services handle crate, cargo and clearance when you want the file held. WhatsApp eligibility if you are ready to book. Confirm portal fees on the official site — we do not invent amounts."
+        subtitle="This page owns the statutory UAE import checklist. DIY the rules above. Door-to-door and import services handle crate, cargo and clearance when you want the file held. WhatsApp eligibility if you are ready to book. Confirm portal fees on the official site — we do not invent amounts."
         eligibilityMessage={waImport}
       />
 
@@ -1397,7 +1397,7 @@ export default function ImportRequirementsPage() {
             </Link>
             <Link to="/service/pet-relocation-dubai/" className="bg-white rounded-[20px] p-6 hover:shadow-md transition-shadow">
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Pet relocation Dubai</h3>
-              <p className="text-sm text-[#5A5A5A]">Door-to-door service page when you want one coordinator on the file.</p>
+              <p className="text-sm text-[#5A5A5A]">Door-to-door money page when you want one coordinator on the file.</p>
             </Link>
             <Link to="/service/pet-export-dubai/" className="bg-white rounded-[20px] p-6 hover:shadow-md transition-shadow">
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Pet export from Dubai</h3>
@@ -1445,7 +1445,7 @@ export default function ImportRequirementsPage() {
             />
             <FAQItem
               question="How is this guide different from the pet-import service page?"
-              answer="This page is the statutory checklist. The paid import job — crate, cargo, clearance, door delivery — lives on /service/pet-import-dubai/. The permit walkthrough lives on /guides/moccae-import-permit/. We cross-link; we do not clone the tables."
+              answer="This URL owns the statutory checklist. The commercial import job — crate, cargo, clearance, door delivery — lives on /service/pet-import-dubai/. The permit walkthrough lives on /guides/moccae-import-permit/. We cross-link; we do not clone the tables."
             />
             <FAQItem
               question="What is the non-compliance fine for a wrong import file?"
@@ -1466,7 +1466,7 @@ export default function ImportRequirementsPage() {
       <GuideFunnelCta
         variant="end"
         title="Ready to book a managed import?"
-        subtitle="The rules are on this page. Send origin, breed and what you already have on WhatsApp only if you want us to run the file, or open the door-to-door / import service pages. MOCCAE permits are valid 90 days from issuance; titer samples (when required) within 90 days before travel."
+        subtitle="The rules are on this page. Send origin, breed and what you already have on WhatsApp only if you want us to run the file, or open the door-to-door / import money pages. MOCCAE permits are valid 90 days from issuance; titer samples (when required) within 90 days before travel."
         eligibilityMessage={waImport}
       />
 

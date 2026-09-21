@@ -26,7 +26,7 @@ const petRelocationToDubai: ServicePageData = {
     {
       h2: 'This page is inbound only — arrival into Dubai',
       intro:
-        'This page is for bringing a pet to Dubai. It is not the full door-to-door booking page and it is not the outbound export journey. Door-to-door commercial coordination lives on [pet relocation services in Dubai](/service/pet-relocation-dubai/). Leaving the UAE lives on [moving pets out of Dubai](/service/pet-relocation-from-dubai/). Commercial import filing is [pet import service for Dubai](/service/pet-import-dubai/).',
+        'Ruling 2: this URL owns bringing a pet to Dubai. It is not the generic money page and it is not the outbound export journey. Door-to-door commercial coordination lives on [pet relocation services in Dubai](/service/pet-relocation-dubai/). Leaving the UAE lives on [moving pets out of Dubai](/service/pet-relocation-from-dubai/). Commercial import filing is [pet import service for Dubai](/service/pet-import-dubai/).',
       body: [
         {
           type: 'p',
@@ -191,7 +191,7 @@ const petRelocationToDubai: ServicePageData = {
     },
     {
       q: 'How is this different from the generic pet relocation Dubai page?',
-      a: 'This URL is inbound only — permit, arrival and settling in. [Pet relocation services in Dubai](/service/pet-relocation-dubai/) covers door-to-door coordination in both directions. Use this page when you are arriving; use that page when you want the full managed file.',
+      a: 'This URL is inbound only — permit, arrival and settling in. The money head [pet relocation services in Dubai](/service/pet-relocation-dubai/) covers door-to-door coordination in both directions. Do not treat the two pages as duplicates.',
     },
   ],
   relatedLinks: [

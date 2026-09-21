@@ -345,7 +345,7 @@ export default function CostGuidePage() {
       <GuideFunnelCta
         variant="mid"
         title="Cost types clear — check a managed move?"
-        subtitle="This guide stays educational. Eligibility and a scoped quote sit on the service pages and WhatsApp. We do not invent package or government fee amounts here."
+        subtitle="This guide stays educational. Eligibility and a scoped quote sit on the money pages and WhatsApp. We do not invent package or government fee amounts here."
         eligibilityMessage={costGuideMsg}
         waLabel={CTA_MANAGED_QUOTE}
       />
