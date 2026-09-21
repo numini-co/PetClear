@@ -218,7 +218,7 @@ const internationalPetRelocation: ServicePageData = {
     },
     {
       q: 'How do I get started?',
-      a: 'Message us on WhatsApp with your pet type, breed, origin and destination country. We confirm the destination’s exact requirements, map the timeline and send a Get a Quote reply — we do not publish unverified AED package tables. Email support@dubai-pet-relocation.ae if you prefer mail.',
+      a: 'WhatsApp +971504782999 with pet type, breed, origin and destination country if you want a paid eligibility check. We confirm the destination’s exact requirements, map the timeline and send a Get a Quote reply — we do not publish unverified AED package tables. Email support@dubai-pet-relocation.ae if you prefer mail. Packages: [Prices](/prices/).',
     },
   ],
   relatedLinks: [

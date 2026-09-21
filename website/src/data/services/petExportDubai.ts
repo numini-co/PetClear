@@ -144,7 +144,7 @@ const petExportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'These are typical ranges, not a fixed quote. Send us your destination and your pet’s breed and weight on WhatsApp and we will give you a clear, itemised cost estimate before you commit to anything.',
+          text: 'These are typical ranges, not a fixed quote. Send destination, breed and weight on WhatsApp for a paid eligibility check and a scoped export quote. Coordination packages: [Prices](/prices/).',
         },
       ],
     },
@@ -187,7 +187,7 @@ const petExportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Message us with your destination and travel date and we will tell you, realistically, the soonest your pet can safely and legally leave Dubai.',
+          text: 'Send destination, species and travel month on WhatsApp for a paid eligibility check if you want us to run the export file. We will say, realistically, the soonest your pet can legally leave Dubai. Coordination is quoted after eligibility on [Prices](/prices/).',
         },
       ],
     },
@@ -203,7 +203,7 @@ const petExportDubai: ServicePageData = {
     },
     {
       q: 'How much does it cost to export a pet from Dubai?',
-      a: 'Most exports fall between roughly AED 2,000 and AED 22,000 depending on the destination, your pet’s size and whether a titer test is needed. The biggest costs are flight or cargo and, for some countries, the titer test. Veterinary documentation, the Fit to Fly certificate and the MOCCAE export certificate make up the rest. Send us your destination for an itemised estimate.',
+      a: 'Most exports fall between roughly AED 2,000 and AED 22,000 depending on the destination, your pet’s size and whether a titer test is needed. The biggest costs are flight or cargo and, for some countries, the titer test. Veterinary documentation, the Fit to Fly certificate and the MOCCAE export certificate make up the rest. Send destination and pet details on WhatsApp for a paid eligibility check and a scoped export quote. Packages: [Prices](/prices/).',
     },
     {
       q: 'How long does pet export from Dubai take?',
@@ -231,7 +231,7 @@ const petExportDubai: ServicePageData = {
     },
     {
       q: 'How do I get started with exporting my pet from Dubai?',
-      a: 'Message us on WhatsApp with destination, species and the month you want to fly. We reply during business hours with a destination-first checklist. Process how-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
+      a: 'WhatsApp +971504782999 with destination, species and the month you want to fly if you want a paid eligibility check and a managed export quote. We reply during business hours with a destination-first checklist. Process how-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/). Packages: [Prices](/prices/).',
     },
     {
       q: 'Is pet export the same as door-to-door relocation?',
@@ -247,6 +247,7 @@ const petExportDubai: ServicePageData = {
     { label: 'How It Works', to: '/how-it-works/' },
     { label: 'Pet Relocation Dubai', to: '/service/pet-relocation-dubai/' },
     { label: 'Pet import to Dubai', to: '/service/pet-import-dubai/' },
+    { label: 'Prices after eligibility', to: '/prices/' },
   ],
 }
 

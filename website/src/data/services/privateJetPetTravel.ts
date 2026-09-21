@@ -140,7 +140,7 @@ const privateJetPetTravel: ServicePageData = {
   faq: [
     {
       q: 'Do you publish private-jet prices?',
-      a: 'No. Aircraft, routing and handling vary too widely. This page is a custom charter quote only — no all-in jet numbers. Message us on WhatsApp or write to support@dubai-pet-relocation.ae.',
+      a: 'No. Aircraft, routing and handling vary too widely. This page is a custom charter quote only — no all-in jet numbers. WhatsApp +971504782999 for a paid eligibility check if you want a managed jet quote, or write to support@dubai-pet-relocation.ae.',
     },
     {
       q: 'Are you an airline or a jet operator?',
