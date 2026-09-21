@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     q: 'Where do I start if I am still choosing a service?',
-    a: 'Category entry is the [homepage](/). The money file is [door-to-door pet relocation in Dubai](/service/pet-relocation-dubai/). Then pick the emirate or community page that matches the address.',
+    a: 'Start on the [homepage](/) if you are still choosing. Book a managed international file on [door-to-door pet relocation in Dubai](/service/pet-relocation-dubai/). Then pick the emirate or community page that matches the address.',
   },
 ]
 
@@ -237,7 +237,7 @@ export default function CitiesHub() {
 
       <HubCrossLinks
         heading="Emirates hub — then the service URL"
-        intro="Federal rules are shared. The job still has a home: category entry, tiers, door-to-door or pet taxi."
+        intro="Federal rules are shared. Next, pick the homepage overview, service tiers, door-to-door booking or pet taxi."
         path="/cities/"
       />
 
@@ -247,16 +247,15 @@ export default function CitiesHub() {
         <div className="mx-auto max-w-[1200px] px-5 text-center sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[28px] font-bold text-white sm:text-[34px]">Relocating a pet in the UAE?</h2>
           <p className="mx-auto mb-7 max-w-2xl text-white/80">
-            Tell us your emirate, community and route on WhatsApp. We will outline documents, timing and what we
-            coordinate.
+            Guides stay free to read. WhatsApp is for people ready to book a managed move. Send emirate, community, pet and month for an eligibility check.
           </p>
           <a
-            href={getWhatsAppUrl('Hi Dubai Pet Relocation! I need help relocating my pet in the UAE. Can you guide me on the process and cost?')}
+            href={getWhatsAppUrl('Hi Dubai Pet Relocation! I want a paid eligibility check for a UAE pet relocation. Emirate, community, pet and target month:')}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-7 py-4 text-sm font-semibold text-white shadow-lg transition hover:bg-[#1DA851]"
           >
-            <MessageCircle className="h-4 w-4" /> Ask on WhatsApp
+            <MessageCircle className="h-4 w-4" /> Check if we can move your pet
           </a>
         </div>
       </section>

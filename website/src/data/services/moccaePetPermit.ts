@@ -44,7 +44,7 @@ const moccaePetPermit: ServicePageData = {
     {
       h2: 'This page is permit assistance — the how-to lives on the guide',
       intro:
-        'Ruling 10: this URL is the commercial twin. The linkable walkthrough, UAE Pass path and rejection table live on [the MOCCAE import permit guide](/guides/moccae-import-permit/). Full import rules live on [UAE pet import requirements](/guides/uae-pet-import-requirements/). End-to-end cargo and clearance live on [pet import to Dubai](/service/pet-import-dubai/).',
+        'This page is paid permit assistance. The walkthrough, UAE Pass path and rejection table live on [the MOCCAE import permit guide](/guides/moccae-import-permit/). Full import rules live on [UAE pet import requirements](/guides/uae-pet-import-requirements/). End-to-end cargo and clearance live on [pet import to Dubai](/service/pet-import-dubai/).',
       body: [
         {
           type: 'p',

@@ -810,7 +810,7 @@ export default function CatRelocationPage() {
 
       <RelatedLinks
         heading="Related cat relocation pages"
-        intro="This URL is the inbound cat journey. The commercial cat file and door-to-door money page sit one click away."
+        intro="This URL is the inbound cat journey. The cat service page and door-to-door booking sit one click away."
         path="/cat-relocation-to-dubai/"
       />
 

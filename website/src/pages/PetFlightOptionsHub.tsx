@@ -158,7 +158,7 @@ export default function PetFlightOptionsHub() {
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            This page owns the comparison queries — which airlines fly pets to Dubai, and which carriers are “pet friendly” here. It does not own Etihad cabin-fee tables, Emirates animal-charge tiers, or the “pet relocation Dubai” money head. Those live on the child guides and on{' '}
+            Use this page to compare how pets fly to Dubai, and which carriers are realistic here. Etihad cabin-fee tables and Emirates animal-charge tiers live on the child guides. Book a managed file on{' '}
             <Link to={FLIGHT_MODE_PATHS.doorToDoor} className="font-semibold text-[#4F5BD5] hover:underline">
               door-to-door pet relocation in Dubai
             </Link>

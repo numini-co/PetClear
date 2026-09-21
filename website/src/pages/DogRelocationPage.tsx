@@ -899,7 +899,7 @@ export default function DogRelocationPage() {
 
       <RelatedLinks
         heading="Related dog relocation pages"
-        intro="This URL is the inbound dog journey. The commercial dog file and door-to-door money page sit one click away."
+        intro="This URL is the inbound dog journey. The dog service page and door-to-door booking sit one click away."
         path="/dog-relocation-to-dubai/"
       />
 

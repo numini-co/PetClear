@@ -520,7 +520,7 @@ export default function DubaiCity() {
 
       <RelatedLinks
         heading="Related relocation pages"
-        intro="Emirate overview, then the money file, checklist and community directory — each URL keeps its own intent."
+        intro="Emirate overview, then the door-to-door booking page, checklist and community directory."
         path="/cities/dubai/"
       />
 
