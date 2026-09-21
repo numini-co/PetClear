@@ -905,7 +905,7 @@ export default function ImportRequirementsPage() {
           </div>
 
           <WhatsAppLink
-            text={waEligibility({ pet: '__', need: 'managed move' })}
+            text={waEligibility({ need: 'managed move' })}
             label="Check breed eligibility for a managed move"
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
           />

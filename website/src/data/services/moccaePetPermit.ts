@@ -1,4 +1,5 @@
 import type { ServicePageData } from '../../types/servicePage.ts'
+import { waEligibility } from '../../lib/conversionCopy.ts'
 import {
   EXEMPT_LIST_HOLD,
   LAST_VERIFIED_LABEL,
@@ -26,8 +27,7 @@ const moccaePetPermit: ServicePageData = {
   heroImage: '/images/service-moccae-pet-permit.jpg',
   heroImageAlt:
     'MOCCAE pet permit application folder prepared on a coordinator desk in Dubai',
-  whatsappMessage:
-    'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: __. Target date: __. Need: document plan.',
+  whatsappMessage: waEligibility({ need: 'document plan' }),
   ctaLabel: 'Check permit eligibility',
   heroEyebrow: 'MOCCAE Permit Assistance',
   snippetQuestion: 'What does MOCCAE pet permit assistance include?',

@@ -1,6 +1,11 @@
 import { useEffect, useId, useRef, useState } from 'react'
 import { MessageCircle, X } from 'lucide-react'
 import { getWhatsAppUrl } from '../lib/seo.ts'
+import {
+  composeEligibilityLead,
+  usefulClickedNote,
+  WA_DIRECT_PROMPT,
+} from '../lib/conversionCopy.ts'
 
 const SKIP_KEY = 'dpr-wa-skip-gate'
 const PET_OPTIONS = ['Dog', 'Cat'] as const
@@ -12,6 +17,9 @@ const INTENT_OPTIONS = [
 
 type PetType = (typeof PET_OPTIONS)[number]
 type Intent = (typeof INTENT_OPTIONS)[number]['value']
+
+const fieldClass =
+  'min-h-12 w-full rounded-xl border border-[#E2E5F6] bg-[#F5F6FD] px-4 text-base text-[#2A2A2A] outline-none ring-[#3A45B0] focus:bg-white focus:ring-2'
 
 function extractText(href: string): string {
   try {
@@ -28,6 +36,14 @@ function extractCampaign(href: string): string {
     return url.searchParams.get('utm_campaign') || 'pet-relocation'
   } catch {
     return 'pet-relocation'
+  }
+}
+
+function currentPagePath(): string {
+  try {
+    return window.location.pathname || ''
+  } catch {
+    return ''
   }
 }
 
@@ -55,8 +71,12 @@ export default function WhatsAppLeadGate() {
   const titleId = useId()
   const nameId = useId()
   const petId = useId()
+  const originId = useId()
+  const destId = useId()
+  const dateId = useId()
   const intentId = useId()
-  const descId = useId()
+  const notesId = useId()
+  const notesHelpId = useId()
   const skipId = useId()
   const nameRef = useRef<HTMLInputElement>(null)
   const dialogRef = useRef<HTMLDivElement>(null)
@@ -64,10 +84,13 @@ export default function WhatsAppLeadGate() {
   const [sourceHref, setSourceHref] = useState('')
   const [name, setName] = useState('')
   const [pet, setPet] = useState<PetType | ''>('')
+  const [origin, setOrigin] = useState('')
+  const [destination, setDestination] = useState('')
+  const [targetDate, setTargetDate] = useState('')
   const [intent, setIntent] = useState<Intent | ''>('')
-  const [description, setDescription] = useState('')
+  const [notes, setNotes] = useState('')
   const [skipNext, setSkipNext] = useState(false)
-  const [errors, setErrors] = useState<string>('')
+  const [errors, setErrors] = useState('')
 
   useEffect(() => {
     const onClick = (event: MouseEvent) => {
@@ -128,7 +151,6 @@ export default function WhatsAppLeadGate() {
   if (!open) return null
 
   const campaign = extractCampaign(sourceHref)
-  const original = extractText(sourceHref)
 
   const resetAndClose = () => {
     setOpen(false)
@@ -136,32 +158,38 @@ export default function WhatsAppLeadGate() {
   }
 
   const continueToWhatsApp = () => {
-    if (!name.trim() || !pet || !intent || !description.trim()) {
-      setErrors('Fill name, pet type, intent and a short description.')
+    if (
+      !name.trim() ||
+      !pet ||
+      !origin.trim() ||
+      !destination.trim() ||
+      !targetDate.trim() ||
+      !intent
+    ) {
+      setErrors('Fill name, pet, origin, destination, target date and intent.')
       return
     }
     const intentLabel = INTENT_OPTIONS.find((o) => o.value === intent)?.label || intent
-    const composed = [
-      `Name: ${name.trim()}`,
-      `Pet: ${pet}`,
-      `Intent: ${intentLabel}`,
-      `Description: ${description.trim()}`,
-      original ? `Page note: ${original}` : '',
-    ]
-      .filter(Boolean)
-      .join('\n')
+    const composed = composeEligibilityLead({
+      name,
+      pet,
+      origin,
+      destination,
+      date: targetDate,
+      intent: intentLabel,
+      notes,
+      page: currentPagePath() || usefulClickedNote(extractText(sourceHref)),
+    })
     openWhatsApp(composed, campaign)
     resetAndClose()
   }
 
   const goDirect = () => {
     if (skipNext) setSkip()
-    const composed = [
-      'Direct WhatsApp — please share name, pet type, route.',
-      original ? `Page note: ${original}` : '',
-    ]
-      .filter(Boolean)
-      .join('\n')
+    const composed = composeEligibilityLead({
+      notes: WA_DIRECT_PROMPT,
+      page: currentPagePath(),
+    })
     openWhatsApp(composed, campaign)
     resetAndClose()
   }
@@ -179,7 +207,7 @@ export default function WhatsAppLeadGate() {
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
-        className="relative z-[81] flex max-h-[min(92dvh,720px)] w-full max-w-[440px] flex-col rounded-t-3xl bg-white shadow-xl sm:rounded-[20px]"
+        className="relative z-[81] flex max-h-[min(94dvh,820px)] w-full max-w-[440px] flex-col rounded-t-3xl bg-white shadow-xl sm:rounded-[20px]"
       >
         <div className="flex shrink-0 items-start justify-between gap-3 px-5 pt-4 sm:px-6 sm:pt-5">
           <div>
@@ -222,13 +250,13 @@ export default function WhatsAppLeadGate() {
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="min-h-12 w-full rounded-xl border border-[#E2E5F6] bg-[#F5F6FD] px-4 text-base text-[#2A2A2A] outline-none ring-[#3A45B0] focus:bg-white focus:ring-2"
+                className={fieldClass}
               />
             </div>
 
             <div>
               <label htmlFor={petId} className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
-                Dog or Cat <span aria-hidden="true">*</span>
+                Pet <span aria-hidden="true">*</span>
               </label>
               <select
                 id={petId}
@@ -236,7 +264,7 @@ export default function WhatsAppLeadGate() {
                 required
                 value={pet}
                 onChange={(e) => setPet(e.target.value as PetType | '')}
-                className="min-h-12 w-full rounded-xl border border-[#E2E5F6] bg-[#F5F6FD] px-4 text-base text-[#2A2A2A] outline-none ring-[#3A45B0] focus:bg-white focus:ring-2"
+                className={fieldClass}
               >
                 <option value="" disabled>
                   Select pet type
@@ -247,6 +275,56 @@ export default function WhatsAppLeadGate() {
                   </option>
                 ))}
               </select>
+            </div>
+
+            <div>
+              <label htmlFor={originId} className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
+                Origin city / country <span aria-hidden="true">*</span>
+              </label>
+              <input
+                id={originId}
+                name="origin"
+                type="text"
+                autoComplete="address-level2"
+                required
+                value={origin}
+                onChange={(e) => setOrigin(e.target.value)}
+                placeholder="Lahore, Pakistan"
+                className={fieldClass}
+              />
+            </div>
+
+            <div>
+              <label htmlFor={destId} className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
+                Destination city / country <span aria-hidden="true">*</span>
+              </label>
+              <input
+                id={destId}
+                name="destination"
+                type="text"
+                autoComplete="address-level2"
+                required
+                value={destination}
+                onChange={(e) => setDestination(e.target.value)}
+                placeholder="Dubai, UAE"
+                className={fieldClass}
+              />
+            </div>
+
+            <div>
+              <label htmlFor={dateId} className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
+                Target month / date <span aria-hidden="true">*</span>
+              </label>
+              <input
+                id={dateId}
+                name="targetDate"
+                type="text"
+                required
+                value={targetDate}
+                onChange={(e) => setTargetDate(e.target.value)}
+                placeholder="December 2026"
+                className={fieldClass}
+              />
             </div>
 
             <fieldset>
@@ -276,17 +354,20 @@ export default function WhatsAppLeadGate() {
             </fieldset>
 
             <div>
-              <label htmlFor={descId} className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
-                Short description <span aria-hidden="true">*</span>
+              <label htmlFor={notesId} className="mb-1.5 block text-sm font-semibold text-[#2A2A2A]">
+                Notes
               </label>
+              <p id={notesHelpId} className="mb-1.5 text-xs text-[#5A5A5A]">
+                Please write in English
+              </p>
               <textarea
-                id={descId}
-                name="description"
-                required
+                id={notesId}
+                name="notes"
                 rows={2}
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
-                placeholder="Breed, origin or destination, and target month"
+                value={notes}
+                onChange={(e) => setNotes(e.target.value)}
+                placeholder="Breed, crate size, or anything else we should know"
+                aria-describedby={notesHelpId}
                 className="w-full rounded-xl border border-[#E2E5F6] bg-[#F5F6FD] px-4 py-3 text-base text-[#2A2A2A] outline-none ring-[#3A45B0] focus:bg-white focus:ring-2"
               />
             </div>

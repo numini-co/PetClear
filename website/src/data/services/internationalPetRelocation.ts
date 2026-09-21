@@ -1,4 +1,5 @@
 import type { ServicePageData } from '../../types/servicePage.ts'
+import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const internationalPetRelocation: ServicePageData = {
   slug: 'international-pet-relocation',
@@ -14,8 +15,7 @@ const internationalPetRelocation: ServicePageData = {
   heroImage: '/images/service-international-pet-relocation.jpg',
   heroImageAlt:
     'Calm dog and cat beside a travel crate with a world map and aircraft',
-  whatsappMessage:
-    'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: __. Target date: __. Need: managed move.',
+  whatsappMessage: waEligibility({ need: 'managed move' }),
   snippetQuestion: 'Do you handle pet cargo from Dubai?',
   snippetAnswer:
     'Yes. “Pet cargo Dubai” is a secondary commercial term on this international relocation page — not a separate /service/pet-cargo money URL. We coordinate manifested live-animal cargo on pet-experienced airlines. Emirates SkyCargo rules and the 500 / 650 / 800 animal-charge table live on the educational cargo guide. Private jet and shared charter have their own quote-only offer pages.',

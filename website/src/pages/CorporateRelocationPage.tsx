@@ -25,10 +25,10 @@ import Hero from '../components/Hero.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
+import { waEligibility } from '../lib/conversionCopy.ts'
 
 /* ─── Corporate WhatsApp message ─── */
-const corporateMsg =
-  'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: __. Target date: __. Need: other (corporate / employee move).'
+const corporateMsg = waEligibility({ need: 'corporate / employee move' })
 
 /* ─── WhatsApp CTA button ─── */
 function WhatsAppCta({

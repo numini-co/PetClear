@@ -15,11 +15,11 @@ import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { FLIGHT_MODE_PATHS } from '../data/flightModes.ts'
 import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
+import { waEligibility } from '../lib/conversionCopy.ts'
 
 const ETIHAD_PETS_URL = 'https://www.etihad.com/en-ae/plan/travel-companion/travelling-with-pets'
 
-const WA =
-  'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: __. Target date: __. Need: managed move.'
+const WA = waEligibility({ need: 'managed move' })
 
 const snippetQuestion = 'Can I bring my pet in the cabin on Etihad?'
 const snippetAnswer =

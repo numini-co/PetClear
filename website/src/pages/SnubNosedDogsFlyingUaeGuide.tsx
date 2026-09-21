@@ -13,12 +13,12 @@ import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, LOGO_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import { MANIFEST_CARGO, PERMIT_FEE_VERIFY, PERMIT_VALIDITY, TITER_SAMPLE_RULE } from '../lib/regulatory.ts'
+import { waEligibility } from '../lib/conversionCopy.ts'
 
 const PATH = '/guides/snub-nosed-dogs-flying-uae/'
 const HERO_IMG = '/assets/w9/snub-nosed-dogs-flying-uae-french-bulldog-roomy-crate.jpg'
 const HERO_IMG_640 = '/assets/w9/snub-nosed-dogs-flying-uae-french-bulldog-roomy-crate-640.jpg'
-const WA_ELIG =
-  'I want a paid Dubai pet relocation eligibility check. Origin: __. Pet: dog (snub-nosed / breed __). Target date: __. Need: managed move.'
+const WA_ELIG = waEligibility({ pet: 'dog (snub-nosed)', need: 'managed move' })
 
 const snippetQuestion = 'Can French bulldogs, pugs and other flat-faced pets fly to Dubai?'
 const snippetAnswer =
