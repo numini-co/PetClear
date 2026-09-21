@@ -4,7 +4,12 @@ import {
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
-import { composeEligibilityLead, CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import {
+  composeEligibilityLead,
+  CTA_CHECK_MOVE,
+  SERVICE_OPTIONS,
+  WA_ELIGIBILITY_DEFAULT,
+} from '../lib/conversionCopy.ts'
 import { track } from '../lib/analytics.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
@@ -16,6 +21,7 @@ const emptyForm = {
   origin: '',
   destination: '',
   targetDate: '',
+  service: '',
   message: '',
 }
 
@@ -81,6 +87,7 @@ export default function ContactPage() {
       name: formData.name,
       email: formData.email,
       pet: petLabels[formData.petType] || formData.petType,
+      service: formData.service,
       origin: formData.origin,
       destination: formData.destination,
       date: formData.targetDate,
@@ -286,6 +293,25 @@ export default function ContactPage() {
                       className={inputClass}
                       placeholder="December 2026"
                     />
+                  </div>
+                  <div>
+                    <label htmlFor="service" className="block text-sm font-semibold text-[#2A2A2A] mb-2">
+                      Service needed?
+                    </label>
+                    <select
+                      id="service"
+                      required
+                      value={formData.service}
+                      onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                      className={inputClass}
+                    >
+                      <option value="">Select service</option>
+                      {SERVICE_OPTIONS.map((option) => (
+                        <option key={option} value={option}>
+                          {option}
+                        </option>
+                      ))}
+                    </select>
                   </div>
                   <div>
                     <label htmlFor="message" className="block text-sm font-semibold text-[#2A2A2A] mb-2">Notes</label>

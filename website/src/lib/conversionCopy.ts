@@ -19,10 +19,21 @@ export const WA_ELIGIBILITY_DEFAULT =
 export const WA_DIRECT_PROMPT =
   'Please share your name, pet (dog or cat), origin, destination, and target date in English. WhatsApp is for a paid eligibility check, not free consulting.'
 
+/** Foufou questionnaire labels — keep wording exact for handlers. */
+export const SERVICE_OPTIONS = [
+  'Door-to-door service',
+  'Import service',
+  'Export service',
+  'Import and export service',
+] as const
+
+export type ServiceNeeded = (typeof SERVICE_OPTIONS)[number]
+
 export type EligibilityLeadFields = {
   name?: string
   email?: string
   pet?: string
+  service?: string
   origin?: string
   destination?: string
   date?: string
@@ -80,6 +91,7 @@ export function composeEligibilityLead(fields: EligibilityLeadFields): string {
   pushFilled(lines, 'Name', fields.name)
   pushFilled(lines, 'Email', fields.email)
   pushFilled(lines, 'Pet', fields.pet)
+  pushFilled(lines, 'Service', fields.service)
   pushFilled(lines, 'Origin', fields.origin)
   pushFilled(lines, 'Destination', fields.destination)
   pushFilled(lines, 'Target date', fields.date)
