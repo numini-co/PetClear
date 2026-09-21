@@ -155,6 +155,14 @@ export default function WhatsAppLeadGate() {
   const resetAndClose = () => {
     setOpen(false)
     setSkipNext(false)
+    setName('')
+    setPet('')
+    setOrigin('')
+    setDestination('')
+    setTargetDate('')
+    setIntent('')
+    setNotes('')
+    setErrors('')
   }
 
   const continueToWhatsApp = () => {
