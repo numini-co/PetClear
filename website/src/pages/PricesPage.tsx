@@ -26,7 +26,7 @@ const WA = waEligibility({ need: 'managed move' })
 
 const snippetQuestion = 'How much does Dubai Pet Relocation charge?'
 const snippetAnswer =
-  'Coordination is quoted after we know the pet, corridor and how much of the file you want us to hold. This page lists packages by scope, not an AED menu. Government permit and release fees are confirmed on the official MOCCAE portal. Airline freight and clinic invoices are third-party. Email support@dubai-pet-relocation.ae or WhatsApp +971504782999 when you are ready to book.'
+  'Coordination is quoted after we know the pet, the route and which tier you want: PawPilot, PawPartner or PawVIP. This page lists what each tier includes and leaves out. Government permit and release fees are confirmed on the official MOCCAE portal. Airline freight and clinic invoices are third-party. Email support@dubai-pet-relocation.ae or WhatsApp +971504782999 when you are ready to book.'
 
 const FAQS = [
   {
@@ -34,12 +34,12 @@ const FAQS = [
     a: 'There is no single ticket. A move splits into government steps, veterinary work, freight, crate, airport handling and our coordination. We quote the coordination after eligibility. Confirm current MOCCAE amounts on the official portal. Cost types in more depth live on [the cost guide](/guides/pet-relocation-cost-dubai/).',
   },
   {
-    q: 'Why do you not publish an AED package table?',
-    a: 'Route, crate volume, season and how much of the sequence you hand over change the file. Publishing a from-price would either invent a band or hide third-party invoices. WhatsApp a scoped quote after we know pet type, breed, origin or destination, and month.',
+    q: 'How do you prepare a quote?',
+    a: 'We quote after eligibility, once we know the pet, the route, the month and whether you want PawPilot, PawPartner or PawVIP. Government fees, airline freight and clinic invoices stay on their own invoices. Send pet type, breed, origin or destination, and month on WhatsApp.',
   },
   {
-    q: 'What is the difference between the document plan, managed import and door-to-door?',
-    a: 'The document / eligibility plan (PawPilot) reviews the file and names the next deadline. You still book the clinic and the airline. Managed import holds the inbound MOCCAE window, cargo booking and DXB or AUH clearance. Door-to-door adds pickup, crate rules and the last-mile handoff. The law does not change between packages. Who holds each task does.',
+    q: 'What is the difference between PawPilot, PawPartner and PawVIP?',
+    a: 'PawPilot (Essential) reviews the file and names the next deadline. You still book the clinic and the airline. PawPartner (Premium) adds booking coordination, travel-day updates and document submission. PawVIP (Coordination) adds a dedicated manager and contingency planning. The law does not change between tiers. Who holds each task does. Inbound clearance and door-to-door delivery are service pages, not extra price bands.',
   },
   {
     q: 'How do MOCCAE permit fees sit next to a coordination quote?',
@@ -65,15 +65,15 @@ const FAQS = [
 
 const PACKAGES = [
   {
-    name: 'Document / eligibility plan',
-    alias: 'PawPilot',
+    name: 'PawPilot',
+    alias: 'Essential',
     to: '/service/moccae-pet-permit/',
-    money: 'Permit and file review',
+    linkLabel: 'Permit and file review',
     includes: [
-      'Breed and corridor eligibility check before you commit to cargo',
-      'Document list against the current UAE import or destination export spine',
-      'MOCCAE import-permit window called out: 90 days from issuance',
-      'WhatsApp during published business hours on the file, not a 24/7 desk',
+      'Breed and route eligibility check before you commit to cargo',
+      'Document list for the current UAE import or destination export requirements',
+      'MOCCAE import-permit window: 90 days from issuance',
+      'WhatsApp during published business hours',
     ],
     excludes: [
       'Airline or cargo booking',
@@ -82,32 +82,32 @@ const PACKAGES = [
     ],
   },
   {
-    name: 'Managed import',
-    alias: 'Inbound coordination',
-    to: '/service/pet-import-dubai/',
-    money: 'Pet import to Dubai',
+    name: 'PawPartner',
+    alias: 'Premium',
+    to: '/service/pet-relocation-dubai/',
+    linkLabel: 'Door-to-door coordination',
     includes: [
-      'Inbound document sequence and titer sample window when the origin requires one',
-      'MOCCAE permit timing so arrival still sits inside the 90-day validity',
-      'Airline / cargo booking against the accepted crate product',
-      'DXB or AUH cargo-terminal clearance coordination',
+      'Everything in PawPilot',
+      'Booking coordination for the clinic, crate and cargo',
+      'Travel-day support and WhatsApp updates during published hours',
+      'Document submission handling and a post-arrival check-in',
     ],
     excludes: [
-      'Origin-to-airport pickup unless you upgrade to door-to-door',
+      'A dedicated manager and contingency planning (those sit in PawVIP)',
       'Government permit and release fees (confirm on the portal)',
-      'Airline freight as a Dubai Pet Relocation markup',
+      'Airline freight and clinic invoices',
     ],
   },
   {
-    name: 'Door-to-door',
-    alias: 'PawPartner / full hold',
-    to: '/service/pet-relocation-dubai/',
-    money: 'Pet relocation Dubai',
+    name: 'PawVIP',
+    alias: 'Coordination',
+    to: '/services/',
+    linkLabel: 'Compare all three tiers',
     includes: [
-      'Everything in managed import or the matching outbound export spine',
-      'IATA crate or cabin-carrier rules checked before the ticket is held',
-      'Pickup and last-mile partner handoff',
-      'Airport handoff on one WhatsApp thread during business hours',
+      'Everything in PawPartner',
+      'A dedicated relocation manager on the file',
+      'Emergency contingency planning',
+      'Boarding and nanny arrangements when the route needs them',
     ],
     excludes: [
       'We do not operate the airline or claim to own the vans',
@@ -163,7 +163,7 @@ export default function PricesPage() {
       <Hero
         image="/images/cost-hero.jpg"
         imageAlt="Pet owner reviewing a Dubai pet relocation quote with travel documents beside a crate"
-        eyebrow="Quoted packages — not a government fee table"
+        eyebrow="Quoted packages, not a government fee table"
         title="Pet Relocation Prices Dubai"
         subtitle="Your quote depends on the route, your pet's size, travel arrangements and the support you choose. Review what each service includes, then send your details for a personalised proposal."
         updated="Updated September 2026"
@@ -177,11 +177,11 @@ export default function PricesPage() {
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            This page is the commercial price URL. The educational twin remains{' '}
+            Package scopes are listed here. The types of cost, without a coordination price, are explained on{' '}
             <Link to="/guides/pet-relocation-cost-dubai/" className="font-semibold text-[#3A45B0] hover:underline">
               pet relocation cost Dubai
             </Link>
-            , which explains the cost types. Government numerals are confirmed on the official portal.{' '}
+            . Government fees are confirmed on the official portal.{' '}
             {GOV_FEE_CONFIRM} Confirm them on the{' '}
             <a
               href="https://www.moccae.gov.ae/en/services/export-import-services/import-permit-pets.aspx"
@@ -216,8 +216,8 @@ export default function PricesPage() {
           <div className="grid gap-4 md:grid-cols-2">
             {[
               {
-                t: 'Corridor and direction',
-                b: 'UK-style low-friction papers are a different job from an India titer file or a Dubai-to-Australia export. We refuse one pasted international checklist.',
+                t: 'Route and direction',
+                b: 'A UK file is a different job from an India titer file or a Dubai-to-Australia export. Each route keeps its own document list.',
               },
               {
                 t: 'Crate and airline product',
@@ -229,7 +229,7 @@ export default function PricesPage() {
               },
               {
                 t: 'How much we hold',
-                b: 'Document-only leaves bookings with you. Managed import holds inbound clearance. Door-to-door adds pickup and the last mile. Same laws. Different labour.',
+                b: 'PawPilot leaves bookings with you. PawPartner coordinates booking and travel day. PawVIP adds a dedicated manager. Same laws. Different labour.',
               },
             ].map((card) => (
               <div key={card.t} className="rounded-[20px] bg-white p-6 shadow-sm ring-1 ring-[#3A45B0]/10">
@@ -245,13 +245,13 @@ export default function PricesPage() {
         <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
           <h2 className="text-section mb-3">Service packages</h2>
           <p className="text-body mb-8 max-w-3xl">
-            Names match the scopes families actually buy. PawPilot / PawPartner / PawVIP on the{' '}
+            The names match the{' '}
             <Link to="/services/" className="font-semibold text-[#3A45B0] hover:underline">
               services hub
-            </Link>{' '}
-            are the same labour split. Every package is WhatsApp for a scoped quote after eligibility. We do not publish
-            a from-price for our coordination. Optional MOCCAE numerals below are government framing only, labeled
-            confirm-on-portal.
+            </Link>
+            : PawPilot, PawPartner and PawVIP. Each card shows what the tier includes, what it leaves out, and that the
+            proposal is prepared on WhatsApp after eligibility. Government fee notes further down are labelled
+            confirm-on-portal. They are not package prices.
           </p>
           <div className="grid gap-6 lg:grid-cols-3">
             {PACKAGES.map((pkg) => (
@@ -262,7 +262,7 @@ export default function PricesPage() {
                 <p className="text-xs font-semibold uppercase tracking-wider text-[#3A45B0]">{pkg.alias}</p>
                 <h3 className="mt-2 text-xl font-bold text-[#2A2A2A]">{pkg.name}</h3>
                 <p className="mt-3 text-sm font-semibold text-[#2A2A2A]">
-                  WhatsApp for a scoped quote after eligibility. Quote-only. No AED starting price.
+                  Quoted on WhatsApp after eligibility. The figure follows the pet, the route and this tier.
                 </p>
                 <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-[#8A8A8A]">Includes</p>
                 <ul className="mt-2 space-y-2">
@@ -295,7 +295,7 @@ export default function PricesPage() {
                   to={pkg.to}
                   className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#3A45B0] hover:underline"
                 >
-                  {pkg.money} <ArrowRight className="h-4 w-4" />
+                  {pkg.linkLabel} <ArrowRight className="h-4 w-4" />
                 </Link>
               </article>
             ))}
@@ -365,7 +365,7 @@ export default function PricesPage() {
           <p className="text-body mb-6">
             Pay when a missed sequence would blow a cargo date, when you cannot complete UAE Pass yourself, or when you
             want one coordinator to hold permit timing, airline booking, crate rules and the airport handoff. That is
-            the commercial path this URL exists for.
+            when a coordinator is worth hiring.
           </p>
           <PaidIncludes />
         </div>

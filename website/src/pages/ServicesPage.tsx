@@ -14,6 +14,7 @@ import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import ContentImage from '../components/ContentImage.tsx'
 import { SERVICE_LINKS } from '../data/nav.ts'
 import { cardImageFor } from '../data/cardImages.ts'
+import { CTA_CHECK_ELIGIBILITY, CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
 
 const WhatsAppCta = ({
   text,
@@ -45,7 +46,7 @@ const Card = ({ children, className = '' }: { children: React.ReactNode; classNa
 
 const SERVICE_BLURBS: Record<string, string> = {
   '/service/pet-relocation-dubai/':
-    'Door-to-door coordination through Dubai: documents, crate, cargo and the last mile on one WhatsApp thread — not a mystery quote.',
+    'Door-to-door coordination through Dubai: documents, crate, cargo and the last mile on one WhatsApp thread.',
   '/service/pet-import-dubai/':
     'Arrival-side import filing when the route is already chosen and you need the inbound document chain named before cargo is booked.',
   '/service/pet-export-dubai/':
@@ -63,9 +64,9 @@ const SERVICE_BLURBS: Record<string, string> = {
   '/service/cat-relocation-dubai/':
     'Cat-specific carrier acclimation and quiet-arrival notes — same MOCCAE steps, a different crate file.',
   '/service/moccae-pet-permit/':
-    'Commercial help filing the import or export permit without turning this hub into a second rules table.',
+    'Help with the import or export permit filing. The step-by-step rules stay on the permit guide.',
   '/service/private-jet-pet-travel/':
-    'Dedicated aircraft when scheduled cabin, baggage or cargo will not accept the animal. Quote only — no invented jet prices.',
+    'Dedicated aircraft when scheduled cabin, baggage or cargo will not accept the animal. Quoted after we know the route.',
   '/service/shared-pet-charter/':
     'A dedicated lift shared with other pets — midpoint between scheduled cargo and a full jet. Market EUR band as context; firm seat is Get a Quote.',
 }
@@ -140,7 +141,7 @@ const tiers = [
   {
     name: 'PawVIP',
     subtitle: 'Coordination',
-    description: 'A named coordinator holds the complex file — multi-pet, tight months, or owners who want every handoff named.',
+    description: 'A dedicated coordinator holds the complex file: multi-pet moves, tight months, or owners who want every handoff named.',
     icon: Heart,
     iconBg: 'bg-[#C89F5A]',
     highlights: ['Everything in PawPartner', 'Dedicated relocation manager', 'Emergency contingency planning', 'Boarding & nanny arrangements', 'Home-to-home logistics'],
@@ -191,7 +192,7 @@ const SERVICES_FAQS = [
   },
   {
     q: 'Do you publish package prices on this page?',
-    a: 'Coordination fees are quoted on WhatsApp after we know the pet and the corridor. Package scopes live on [prices](/prices/). We do not assume AED package tables here. Government portal fees are confirmed on the official site.',
+    a: 'Coordination fees are quoted on WhatsApp after we know the pet, the route and the tier. What each tier includes and leaves out is on [prices](/prices/). Government portal fees are confirmed on the official site.',
   },
   {
     q: 'What happens after I message about a tier?',
@@ -222,7 +223,7 @@ export default function ServicesPage() {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: `${tier.name} — ${tier.subtitle}`,
+          name: `${tier.name} (${tier.subtitle})`,
           description: tier.description,
         },
       })),
@@ -245,7 +246,7 @@ export default function ServicesPage() {
         meta={{
           title: 'Pet Relocation Services Dubai | Compare Tiers',
           description:
-            'Compare pet relocation services Dubai — Essential guidance to full coordination. Choose a tier, then open the service page for your move.',
+            'Compare PawPilot, PawPartner and PawVIP. Choose a tier, then open the service page for your move. Inclusions are on the prices page.',
           canonical: `${BASE_URL}/services/`,
           ogType: 'website',
         }}
@@ -258,10 +259,11 @@ export default function ServicesPage() {
         image="/images/services-hero.jpg"
         imageAlt="A happy dog and cat beside a travel crate in a welcoming Dubai pet relocation office"
         eyebrow="Our Services"
-        title="Pet Relocation Services Dubai — Compare Tiers"
-        subtitle="Choose how much of the file we hold, then open the service page for inbound, outbound, door-to-door or pet taxi. Quotes on WhatsApp — no invented package prices."
+        title="Pet Relocation Services Dubai: compare the tiers"
+        subtitle="Choose how much of the move we coordinate, then open the page for inbound, outbound, door-to-door or pet taxi. What each tier includes is on the prices page. A proposal follows once we know the pet and the route."
         updated="Updated September 2026"
-        primaryLabel="Tell us about your move"
+        primaryLabel={CTA_CHECK_MOVE}
+        whatsappMessage={WA_ELIGIBILITY_DEFAULT}
         secondary={{ label: 'Prices and packages', to: '/prices/' }}
       />
 
@@ -272,11 +274,11 @@ export default function ServicesPage() {
             answer="Tiers change who holds each task, not the law. PawPilot is document guidance. PawPartner adds booking and travel-day. PawVIP adds a dedicated manager. Compare the table below, then open the matching service page. WhatsApp +971504782999."
           />
           <p className="text-body mb-4">
-            Quoted package scopes live on{' '}
+            Inclusions and exclusions for PawPilot, PawPartner and PawVIP are on{' '}
             <Link to="/prices/" className="font-semibold text-[#4F5BD5] hover:underline">
               prices
             </Link>
-            . This hub compares tiers. Door-to-door coordination for pet relocation in Dubai is{' '}
+            . This page compares the tiers. Door-to-door coordination for pet relocation in Dubai is{' '}
             <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               our Dubai pet relocation service
             </Link>
@@ -313,7 +315,7 @@ export default function ServicesPage() {
           <ContentImage
             src="/assets/w1-w3/pet-relocation-service-tiers-comparison-dubai.png"
             alt="Comparison of PawPilot, PawPartner and PawVIP pet relocation service tiers in Dubai"
-            caption="Three tiers, one process. No prices in the diagram — they are quoted, not printed."
+            caption="Three tiers, one process. The proposal is prepared after we know the pet and the route."
           />
           <div className="grid gap-6 md:grid-cols-3">
             {tiers.map((tier) => (
@@ -339,8 +341,8 @@ export default function ServicesPage() {
                   ))}
                 </ul>
                 <WhatsAppCta
-                  text={`Ask about ${tier.name}`}
-                  message={`Hi Dubai Pet Relocation! I am interested in the ${tier.name} tier (${tier.subtitle}) for my pet relocation. Can you quote the scope?`}
+                  text={CTA_CHECK_MOVE}
+                  message={`I want a paid Dubai pet relocation eligibility check for the ${tier.name} tier (${tier.subtitle}). Please share name, pet, origin, destination, and target date in English.`}
                   fullWidth
                   className="!py-3"
                 />
@@ -393,7 +395,7 @@ export default function ServicesPage() {
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Add-on services</h2>
             <p className="mx-auto max-w-2xl text-base leading-relaxed text-[#5A5A5A]">
-              Optional pieces. Quoted when the route needs them — not bundled as fake discounts.
+              Optional pieces, quoted only when the route needs them.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -447,7 +449,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Flight modes and airline guides</h2>
           <p className="mb-6 max-w-3xl text-[#5A5A5A]">
-            Door-to-door stays the service page. These cards are how the pet actually flies — plus the two quote-only charter products.
+            Door-to-door is the coordination service. These cards show how the pet can fly, including two charter options that are quoted separately.
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
             {FLIGHT_MODE_SERVICE_CARDS.map((l) => {
@@ -489,12 +491,18 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">Not sure which tier fits?</h2>
           <p className="mb-8 text-base leading-relaxed text-white/80">
-            Tell us the pet, the route and the month. We recommend a tier and quote the scope — no package price list, no 15-minute SLA.
+            Tell us the pet, the route and the month. We recommend a tier and prepare a proposal for that scope. We reply during published hours.
           </p>
-          <WhatsAppCta
-            text="Get a Personalized Quote"
-            message="Hi Dubai Pet Relocation! I am not sure which service tier is right for me. Can you help me choose based on my pet and route?"
-          />
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <WhatsAppCta
+              text={CTA_CHECK_MOVE}
+              message={WA_ELIGIBILITY_DEFAULT}
+            />
+            <WhatsAppCta
+              text={CTA_CHECK_ELIGIBILITY}
+              message={WA_ELIGIBILITY_DEFAULT}
+            />
+          </div>
         </div>
       </section>
     </div>
