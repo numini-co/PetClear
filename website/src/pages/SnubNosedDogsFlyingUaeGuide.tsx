@@ -130,7 +130,7 @@ export default function SnubNosedDogsFlyingUaeGuide() {
             Snub-nosed (brachycephalic) dogs and some cats face extra airline scrutiny when you plan a UAE flight. The
             shortened muzzle makes heat and stress harder to manage. Acceptance staff look at the live breed list, the
             crate, and the season — not at a relocator’s homepage. This guide is the flight-physiology and airline-acceptance
-            page. It does not own the federal banned-breed list, the summer embargo calendar, or airline fee tables.
+            page. It does not cover the federal banned-breed list, the summer embargo calendar, or airline fee tables.
           </p>
           <p className="mb-6 leading-relaxed text-[#5A5A5A]">
             If the breed is legal to enter and the carrier will take the animal on your date, we can hold the file. If
@@ -146,7 +146,7 @@ export default function SnubNosedDogsFlyingUaeGuide() {
       <GuideFunnelCta
         variant="mid"
         title="Airline may accept — need the dog relocation file?"
-        subtitle="This page owns flight physiology and carrier acceptance, not the federal breed list. DIY the airline check here. If the breed is legal and the carrier will fly, open dog relocation or permit assistance. Confirm portal fees on the official site — we do not invent amounts."
+        subtitle="This page covers flight physiology and carrier acceptance, not the federal breed list. DIY the airline check here. If the breed is legal and the carrier will fly, open dog relocation or permit assistance. Confirm portal fees on the official site — we do not assume amounts."
         eligibilityMessage={WA_ELIG}
         waLabel="Check Pet Eligibility"
         links={[
@@ -285,7 +285,7 @@ export default function SnubNosedDogsFlyingUaeGuide() {
           </h2>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             Rows below are a planner, not a first-party breed list. We do not publish contested Emirates named-breed
-            tables as fact. We do not invent airline AED. Fees stay confirm-on-portal / confirm-at-booking. Open the
+            tables as fact. We do not assume airline AED. Fees stay confirm-on-portal / confirm-at-booking. Open the
             child airline guides for mode depth; come back here for the snub-nosed question.
           </p>
           <div className="-mx-5 mb-6 overflow-x-auto px-5 pb-16 sm:mx-0 sm:px-0 sm:pb-0">
@@ -393,8 +393,8 @@ export default function SnubNosedDogsFlyingUaeGuide() {
           </h2>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             IATA’s hot-season advisory is the first-party heat rule this page will state: do not plan listed snub-nose
-            types through the hottest window if you can move the date. Ground handling is the stress point. We do not
-            invent Celsius thresholds here. Any ground-temperature numbers you see on other pages are secondary unless
+            types through the hottest window if you can move the date. Ground handling is the stress point. Celsius
+            thresholds stay with the carrier. Any ground-temperature numbers you see on other pages are secondary unless
             the carrier publishes them — label them that way and confirm-live.
           </p>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
@@ -529,8 +529,8 @@ export default function SnubNosedDogsFlyingUaeGuide() {
         <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">Check Pet Eligibility before you book</h2>
           <p className="mb-6 text-base leading-relaxed text-white/80">
-            Send breed, weight, origin and a target month. We confirm airline acceptance and the +10% crate path — we do
-            not invent fees. Email{' '}
+            Send breed, weight, origin and a target month. We confirm airline acceptance and the +10% crate path. Fees
+            are confirmed with the airline. Email{' '}
             <a href="mailto:support@dubai-pet-relocation.ae" className="underline">
               support@dubai-pet-relocation.ae
             </a>

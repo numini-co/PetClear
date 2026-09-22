@@ -1,4 +1,4 @@
-/** Shared regulatory display helpers. Do not invent unverified fees. */
+/** Shared regulatory display helpers. Do not publish unverified fees. */
 export const LAST_VERIFIED_DATE = '6 September 2026'
 export const LAST_VERIFIED_LABEL = `Last verified: ${LAST_VERIFIED_DATE}`
 

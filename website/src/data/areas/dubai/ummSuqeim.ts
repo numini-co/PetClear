@@ -27,7 +27,7 @@ const ummSuqeim: AreaPageData = {
     'Madinat Jumeirah nearby',
   ],
   vetsNote:
-    'Umm Suqeim and the Jumeirah coast have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not invent partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments so the certificate is still valid on travel day. When you are leaving the UAE, start with [pet export from Dubai](/guides/pet-export-from-dubai/).',
+    'Umm Suqeim and the Jumeirah coast have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments so the certificate is still valid on travel day. When you are leaving the UAE, start with [pet export from Dubai](/guides/pet-export-from-dubai/).',
   intro:
     'Umm Suqeim is a coastal villa corridor — Umm Suqeim 1, 2 and 3 — of garden streets between Jumeirah Beach Road and the sand, looking toward Burj Al Arab and Kite Beach. It is not Palm Jumeirah’s frond gates and it is not Jumeirah 1–3’s compound grid further up the coast. Dogs here use private yards and early beach loops; cats live in the same villas. That is why [every Dubai neighbourhood we serve](/dubai/) keeps Umm Suqeim as its own spoke. Neighbouring [pet transport in Jumeirah](/dubai/jumeirah/) continues the coast north. [Pet transport in Al Wasl](/dubai/al-wasl/) stays on its own inland URL — we link it as a sibling; we do not redirect that page. WhatsApp +971504782999 with Umm Suqeim 1, 2 or 3, street and route.',
   sections: [
@@ -114,7 +114,7 @@ const ummSuqeim: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From an Umm Suqeim villa the usual outbound run is inland toward the airport corridors — often shorter than a Palm frond file, longer than a Deira hop. Beach-road school peaks and Friday congestion are real. We do not invent minute-by-minute ETAs or airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the driveway. Al Maktoum / DWC is a longer southbound run when the booked product requires it.',
+          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From an Umm Suqeim villa the usual outbound run is inland toward the airport corridors — often shorter than a Palm frond file, longer than a Deira hop. Beach-road school peaks and Friday congestion are real. We do not assume minute-by-minute ETAs or airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the driveway. Al Maktoum / DWC is a longer southbound run when the booked product requires it.',
         },
         {
           type: 'p',

@@ -84,7 +84,7 @@ const sharedPetCharter: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Country corridors still start on the route page — for example [UK to Dubai](/routes/uk-to-dubai/) or [USA to Dubai](/routes/usa-to-dubai/) — then come back here only if scheduled cargo will not accept the animal. Compare modes on the [pet flight options hub](/guides/pet-flight-options-dubai/). Door-to-door coordination sits on [pet relocation Dubai](/service/pet-relocation-dubai/). Coordination is quoted after eligibility on [Prices](/prices/) — we do not invent a DPR charter AED.',
+          text: 'Country corridors still start on the route page — for example [UK to Dubai](/routes/uk-to-dubai/) or [USA to Dubai](/routes/usa-to-dubai/) — then come back here only if scheduled cargo will not accept the animal. Compare modes on the [pet flight options hub](/guides/pet-flight-options-dubai/). Door-to-door coordination sits on [pet relocation Dubai](/service/pet-relocation-dubai/). Coordination is quoted after eligibility on [Prices](/prices/) — we do not assume a DPR charter AED.',
         },
       ],
     },
@@ -99,7 +99,7 @@ const sharedPetCharter: ServicePageData = {
             'Scheduled belly or SkyCargo will not accept the breed, snub-nose type, crate size or summer heat window',
             'The itinerary needs a dedicated lift date that an airline timetable cannot hold',
             'Several pets in one household would otherwise split across cargo bookings',
-            'An empty-leg or part-chartered animal lift is actually forming — we do not invent one',
+            'An empty-leg or part-chartered animal lift is actually forming — we do not assume one',
           ],
         },
         {
@@ -265,7 +265,7 @@ const sharedPetCharter: ServicePageData = {
     },
     {
       q: 'What is an empty-leg pet charter?',
-      a: 'An empty-leg is a positioning flight with leftover capacity. A shared pet charter Dubai seat can sit on one when an operator is already moving the aircraft. We confirm whether a lift exists for your week — we do not invent empty-leg departures. WhatsApp +971504782999.',
+      a: 'An empty-leg is a positioning flight with leftover capacity. A shared pet charter Dubai seat can sit on one when an operator is already moving the aircraft. We confirm whether a lift exists for your week — we do not assume empty-leg departures. WhatsApp +971504782999.',
     },
     {
       q: 'How is a pet charter Dubai different from manifest cargo?',
@@ -277,7 +277,7 @@ const sharedPetCharter: ServicePageData = {
     },
     {
       q: 'When does a shared pet charter beat manifest cargo?',
-      a: 'A shared pet charter Dubai lift beats cargo when the airline will not accept the animal, the heat window, or the crate plan, or when several pets need one dedicated lift. Cargo still wins when a scheduled SkyCargo booking exists. Compare modes on [pet flight options](/guides/pet-flight-options-dubai/). We do not invent a departure or a DPR charter AED. WhatsApp +971504782999 for a paid eligibility check if you want us to test whether a lift is forming.',
+      a: 'A shared pet charter Dubai lift beats cargo when the airline will not accept the animal, the heat window, or the crate plan, or when several pets need one dedicated lift. Cargo still wins when a scheduled SkyCargo booking exists. Compare modes on [pet flight options](/guides/pet-flight-options-dubai/). We do not assume a departure or a DPR charter AED. WhatsApp +971504782999 for a paid eligibility check if you want us to test whether a lift is forming.',
     },
     {
       q: 'Who is a shared pet charter for?',

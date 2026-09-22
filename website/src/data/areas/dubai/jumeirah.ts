@@ -27,7 +27,7 @@ const jumeirah: AreaPageData = {
     'Kite Beach',
   ],
   vetsNote:
-    'Jumeirah and the coastal strip toward Umm Suqeim have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not invent partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    'Jumeirah and the coastal strip toward Umm Suqeim have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
   intro:
     'Jumeirah is a low-rise coastal villa corridor — Jumeirah 1, 2 and 3 — of garden compounds, quiet residential streets and beach access, not a JBR tower stack. Dogs here use private yards and early Kite Beach loops; cats live in villas and in the newer low-rise apartments toward La Mer. That is why [every Dubai neighbourhood we serve](/dubai/) keeps Jumeirah as its own spoke: pickup is a compound gate or a villa driveway, not a promenade pin. We coordinate international files into or out of these homes and the ground run to DXB or DWC. Neighbouring [relocating pets in Umm Suqeim](/dubai/umm-suqeim/) continues the same coast; [Downtown Dubai pet relocation services](/dubai/downtown-dubai/) is boulevard towers. WhatsApp +971504782999 with your Jumeirah 1–3 street and route.',
   sections: [
@@ -114,7 +114,7 @@ const jumeirah: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a Jumeirah villa the usual outbound run is inland toward the airport corridors. Beach-road school peaks and Friday congestion are real. We do not invent minute-by-minute ETAs or airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the gate. Al Maktoum / DWC is a longer southbound option when the booked product requires it.',
+          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a Jumeirah villa the usual outbound run is inland toward the airport corridors. Beach-road school peaks and Friday congestion are real. We do not assume minute-by-minute ETAs or airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the gate. Al Maktoum / DWC is a longer southbound option when the booked product requires it.',
         },
         {
           type: 'p',
@@ -230,7 +230,7 @@ const jumeirah: AreaPageData = {
     },
     {
       q: 'We are moving two dogs and a cat from a Jumeirah villa. Can they travel together?',
-      a: 'Often, if each animal’s papers and crate fit the same flight product. We map the files in parallel. Airline and destination rules still decide the hold — we do not invent a multi-pet AED.',
+      a: 'Often, if each animal’s papers and crate fit the same flight product. We map the files in parallel. Airline and destination rules still decide the hold — we do not assume a multi-pet AED.',
     },
     {
       q: 'If I live in Port de La Mer, is the villa pickup the same?',

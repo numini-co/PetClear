@@ -18,7 +18,7 @@ const downtownDubai: AreaPageData = {
   geo: { lat: '25.1972', lng: '55.2744' },
   landmarks: ['Burj Khalifa', 'The Dubai Mall', 'Dubai Fountain', 'Souk Al Bahar', 'Burj Park', 'City Walk', 'DIFC nearby'],
   vetsNote:
-    'Downtown, Business Bay and the Al Wasl clinic corridor have plenty of practices for scans and certificates — we do not name them here and we do not invent partnerships. Keep your current vet if the file is already in order. Ask on WhatsApp for the document type (ISO scan, export certificate), not a sponsored clinic. We time appointments to travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    'Downtown, Business Bay and the Al Wasl clinic corridor have plenty of practices for scans and certificates — we do not name them here and we do not assume partnerships. Keep your current vet if the file is already in order. Ask on WhatsApp for the document type (ISO scan, export certificate), not a sponsored clinic. We time appointments to travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
   intro:
     'Downtown Dubai is a boulevard of residential and serviced towers around the Burj Khalifa, The Dubai Mall and the Fountain — not a beach promenade and not a villa compound. Dogs take short, curated loops through Burj Park; cats live in high apartments that still have to clear a crate past valet and a loading dock. That is why [pet relocation across Dubai communities](/dubai/) keeps Downtown as its own spoke. We coordinate international files into or out of these towers and the ground run to DXB or DWC. Neighbouring [pet transport in Business Bay](/dubai/business-bay/) uses canal docks; [pet transport in Jumeirah](/dubai/jumeirah/) is villa gates. WhatsApp +971504782999 with your tower, dock rule and route.',
   sections: [
@@ -105,7 +105,7 @@ const downtownDubai: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a Downtown tower the usual outbound run is toward DXB cargo via the airport corridors — often shorter than a Marina or Palm run when the boulevard is moving. We still refuse a locked minute count. Al Maktoum / DWC is a longer southbound option when the booked product requires it. We do not invent airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the dock.',
+          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a Downtown tower the usual outbound run is toward DXB cargo via the airport corridors — often shorter than a Marina or Palm run when the boulevard is moving. We still refuse a locked minute count. Al Maktoum / DWC is a longer southbound option when the booked product requires it. We do not assume airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the dock.',
         },
         {
           type: 'p',

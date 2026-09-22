@@ -551,7 +551,7 @@ export default function BannedBreedsGuide() {
       <GuideFunnelCta
         variant="mid"
         title="Breed allowed — book the managed move?"
-        subtitle="Use this list as the legal-entry check. DIY the banned/restricted rules here. If the breed is allowed and you want the file managed, open dog relocation or MOCCAE permit assistance. WhatsApp a breed check only when you are ready to book. We confirm portal fees on the official site; we do not invent amounts."
+        subtitle="Use this list as the legal-entry check. DIY the banned/restricted rules here. If the breed is allowed and you want the file managed, open dog relocation or MOCCAE permit assistance. WhatsApp a breed check only when you are ready to book. We confirm portal fees on the official site; we do not assume amounts."
         eligibilityMessage={waBreed}
         waLabel="Check breed eligibility"
         links={[

@@ -31,7 +31,7 @@ export default function SouthAfricaToDubai() {
     },
     {
       question: 'How long does the South Africa to Dubai pet relocation process take?',
-      answer: 'Plan the file backwards from the flight. Month 1 — microchip and rabies vaccination (the vaccine must be current before a titer, if one is required). Month 1–2 — when a titer is required, draw the blood so the sample remains within 90 days before travel and reads at least 0.5 IU/ml — that is not a wait after the draw. Month 3 — apply for the UAE import permit (valid 90 days from issuance), obtain the South African veterinary health certificate and Department of Agriculture export clearance. Month 4 — book the cargo flight, final health check, and travel. Dubai Pet Relocation manages steps in parallel; we do not invent a shortened titer clock.'
+      answer: 'Plan the file backwards from the flight. Month 1 — microchip and rabies vaccination (the vaccine must be current before a titer, if one is required). Month 1–2 — when a titer is required, draw the blood so the sample remains within 90 days before travel and reads at least 0.5 IU/ml — that is not a wait after the draw. Month 3 — apply for the UAE import permit (valid 90 days from issuance), obtain the South African veterinary health certificate and Department of Agriculture export clearance. Month 4 — book the cargo flight, final health check, and travel. Dubai Pet Relocation manages steps in parallel; we do not assume a shortened titer clock.'
     },
     {
       question: 'How much does it cost to relocate a pet from South Africa to Dubai?',

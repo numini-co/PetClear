@@ -76,7 +76,7 @@ const businessBay: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Weekday mornings on Al Khail Road, Sheikh Zayed Road and the canal bridges are a poor time to discover your building’s dock is already full of office fit-out. Mid-evening or a weekend window is often calmer — if facilities allow it. We do not invent a 24/7 Bay crew. WhatsApp during business hours and we propose windows that match both the cargo cut-off and the dock.',
+          text: 'Weekday mornings on Al Khail Road, Sheikh Zayed Road and the canal bridges are a poor time to discover your building’s dock is already full of office fit-out. Mid-evening or a weekend window is often calmer — if facilities allow it. We do not assume a 24/7 Bay crew. WhatsApp during business hours and we propose windows that match both the cargo cut-off and the dock.',
         },
         {
           type: 'p',

@@ -28,7 +28,7 @@ const alBarsha: AreaPageData = {
     'Al Khail Road',
   ],
   vetsNote:
-    'Al Barsha sits on one of Dubai’s denser clinic corridors along the Mall of the Emirates and Al Barsha 1–3 grid — we still do not name practices here and we do not invent partnerships. Use your current vet if the microchip and vaccines are already documented. If you need an ISO scan or an export-style health certificate, ask on WhatsApp for the document type, not a sponsored clinic. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    'Al Barsha sits on one of Dubai’s denser clinic corridors along the Mall of the Emirates and Al Barsha 1–3 grid — we still do not name practices here and we do not assume partnerships. Use your current vet if the microchip and vaccines are already documented. If you need an ISO scan or an export-style health certificate, ask on WhatsApp for the document type, not a sponsored clinic. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
   intro:
     'Al Barsha is three residential belts — Barsha 1, 2 and 3 — of garden villas and mid-rise apartments sitting on the Mall of the Emirates corridor, not a single tower podium and not a JVC circle. Dogs here use Pond Park and villa streets; cats live in both villa rooms and apartment cores that still have to clear a crate past a concierge. That is why [every Dubai neighbourhood we serve](/dubai/) keeps Al Barsha as its own spoke: pickup is a Barsha number plus a driveway or a podium, then Al Khail or Sheikh Zayed toward cargo. Neighbouring [relocating pets in Umm Suqeim](/dubai/umm-suqeim/) is the coastal villa stretch. [Moving pets to or from JVC](/dubai/jvc/) is the denser circle south of Al Khail. WhatsApp +971504782999 with Barsha 1, 2 or 3, home type and route.',
   sections: [
@@ -115,7 +115,7 @@ const alBarsha: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a Barsha 1 villa the usual outbound run is onto SZR or inland onto Al Khail, then toward DXB cargo. Mall overflow, Al Barsha school peaks and Friday congestion are real. We do not invent minute-by-minute ETAs or airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the driveway or podium. Al Maktoum / DWC is a longer southbound run when the booking requires it — closer than from Deira, still not a default Barsha product.',
+          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a Barsha 1 villa the usual outbound run is onto SZR or inland onto Al Khail, then toward DXB cargo. Mall overflow, Al Barsha school peaks and Friday congestion are real. We do not assume minute-by-minute ETAs or airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the driveway or podium. Al Maktoum / DWC is a longer southbound run when the booking requires it — closer than from Deira, still not a default Barsha product.',
         },
         {
           type: 'p',
@@ -217,7 +217,7 @@ const alBarsha: AreaPageData = {
     },
     {
       q: 'Can you recommend a clinic on the Al Barsha corridor?',
-      a: 'We do not publish a named list and we do not invent partnerships. Keep your current vet if the file is complete. Ask on WhatsApp for the document type — ISO scan or export-style certificate — and we time the appointment to travel day.',
+      a: 'We do not publish a named list and we do not assume partnerships. Keep your current vet if the file is complete. Ask on WhatsApp for the document type — ISO scan or export-style certificate — and we time the appointment to travel day.',
     },
     {
       q: 'Should we use Sheikh Zayed Road or Al Khail to DXB?',

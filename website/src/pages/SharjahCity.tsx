@@ -45,7 +45,7 @@ const faqData = [
   },
   {
     q: 'Is pet registration in Sharjah the same as Dubai?',
-    a: 'No. Dubai dog licensing typically runs through Dubai Municipality / Aleef channels. Sharjah uses Sharjah Municipality and its current local portal — verify step names, documents and any fee on the first-party site before you treat a blog as the tariff. Federal MOCCAE import still applies for UAE entry. We remind you of the registration clock after delivery; we do not invent Sharjah fee numerals.',
+    a: 'No. Dubai dog licensing typically runs through Dubai Municipality / Aleef channels. Sharjah uses Sharjah Municipality and its current local portal — verify step names, documents and any fee on the first-party site before you treat a blog as the tariff. Federal MOCCAE import still applies for UAE entry. We remind you of the registration clock after delivery; we do not assume Sharjah fee numerals.',
   },
   {
     q: 'Do pets arrive at Sharjah Airport (SHJ) or Dubai (DXB)?',
@@ -53,7 +53,7 @@ const faqData = [
   },
   {
     q: 'Do you offer pet transport from Sharjah to Dubai?',
-    a: 'Yes — as a ground product on [pet taxi and inter-emirate transport](/service/pet-transport-dubai/), not as a taxi rate card on this city page. Sharjah↔Dubai, SHJ or DXB crate runs, and clinic transfers are booked there. This URL owns emirate relocation and settling. We do not publish Careem FAQs or inter-emirate AED bands here. WhatsApp both addresses and the window.',
+    a: 'Yes — as a ground product on [pet taxi and inter-emirate transport](/service/pet-transport-dubai/), not as a taxi rate card on this city page. Sharjah↔Dubai, SHJ or DXB crate runs, and clinic transfers are booked there. This page covers emirate relocation and settling. We do not publish Careem FAQs or inter-emirate AED bands here. WhatsApp both addresses and the window.',
   },
   {
     q: 'How much does pet relocation to Sharjah cost?',
@@ -574,7 +574,7 @@ export default function SharjahCity() {
                   <li className="flex items-start gap-2">
                     <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-[#D4A017]" />
                     <span>
-                      <strong>SHJ / Air Arabia</strong> — confirm-live. We do not invent live-animal acceptance.
+                      <strong>SHJ / Air Arabia</strong> — confirm-live. We do not assume live-animal acceptance.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

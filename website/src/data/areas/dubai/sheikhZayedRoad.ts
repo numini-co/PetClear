@@ -6,7 +6,7 @@ const sheikhZayedRoad: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Sheikh Zayed Road | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation along Sheikh Zayed Road — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
+    'Pet relocation along Sheikh Zayed Road — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. WhatsApp quote in 15 minutes.',
   h1: 'Pet Relocation in Sheikh Zayed Road',
   primaryKeyword: 'pet relocation sheikh zayed road',
   heroValueProp:

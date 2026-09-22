@@ -38,7 +38,7 @@ const GROUPS: { id: string; title: string; intro: string; slugs: GradeASlug[] }[
     id: 'marina-coastal',
     title: 'Marina and coastal communities',
     intro:
-      'Waterfront towers and beach villas share one last-mile problem: podium parking, visitor lists, and a crate that has to turn in a lobby or a villa gate before anyone talks about cargo cut-off. These pages are about that last mile — not a second money page.',
+      'Waterfront towers and beach villas share one last-mile problem: podium parking, visitor lists, and a crate that has to turn in a lobby or a villa gate before anyone talks about cargo cut-off. These pages are about that last mile. The international booking sits on the door-to-door service.',
     slugs: ['dubai-marina', 'jlt', 'jbr', 'palm-jumeirah', 'jumeirah', 'umm-suqeim'],
   },
   {
@@ -99,7 +99,7 @@ const GRADE_A_BLURBS: Record<GradeASlug, string> = {
 const faqs = [
   {
     q: 'Is this the same page as door-to-door pet relocation in Dubai?',
-    a: 'No. This URL is the community directory for pickup and delivery geography. The commercial money page for a full international file is [door-to-door pet relocation in Dubai](/service/pet-relocation-dubai/). Use this hub to find your community page, then open the service URL for the job.',
+    a: 'No. This URL is the community directory for pickup and delivery geography. The commercial service page for a full international file is [door-to-door pet relocation in Dubai](/service/pet-relocation-dubai/). Use this hub to find your community page, then open the service URL for the job.',
   },
   {
     q: 'Do I still need a MOCCAE import permit if I already have a Dubai home?',
@@ -111,7 +111,7 @@ const faqs = [
   },
   {
     q: 'Should my pet land at DXB or DWC?',
-    a: 'The airline product decides the cargo airport. DXB (Cargo Village / dnata-style handling) is the default for many long-haul files. DWC (Al Maktoum / Dubai South) is often closer for Dubai South and some JVC addresses. We match the community page to the booking — we do not invent a faster airport.',
+    a: 'The airline product decides the cargo airport. DXB (Cargo Village / dnata-style handling) is the default for many long-haul files. DWC (Al Maktoum / Dubai South) is often closer for Dubai South and some JVC addresses. We match the community page to the booking — we do not assume a faster airport.',
   },
   {
     q: 'How do I register a dog or cat with Dubai Municipality after arrival?',
@@ -206,13 +206,13 @@ export default function DubaiPillar() {
         imageAlt="The Dubai skyline — pet relocation across all Dubai communities"
         eyebrow="Dubai communities"
         title="Pet Relocation Across Every Community in Dubai"
-        subtitle="A directory for last-mile pickup and delivery — marina towers, villa gates, new developments and old Dubai — not the money page for a full international file."
+        subtitle="A directory for last-mile pickup and delivery: marina towers, villa gates, new developments and old Dubai. The full international file is the door-to-door service."
         updated="Last verified 18 September 2026"
       />
 
       <section className="bg-white section-padding">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">A community hub, not a second money page</h2>
+          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Communities for pickup and delivery</h2>
           <LastVerified className="mb-4 text-xs text-[#8A8A8A]" date="18 September 2026" />
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             Dubai is many last miles, not one city-shaped crate run. A Marina tower wants a goods-lift booking and a visitor
@@ -239,7 +239,7 @@ export default function DubaiPillar() {
             guide. What does change by community is the van, the lift, the gate and which cargo airport is the shorter run.
           </p>
           <p className="leading-relaxed text-[#5A5A5A]">
-            Category entry stays on the{' '}
+            Homepage stays on the{' '}
             <Link to="/" className="font-semibold text-[#4F5BD5] hover:underline">
               homepage overview
             </Link>
@@ -356,7 +356,7 @@ export default function DubaiPillar() {
           <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Dubai community directory</h2>
           <p className="mb-10 max-w-3xl leading-relaxed text-[#5A5A5A]">
             Grade A communities have unique local pages. Each blurb below is only a teaser — open the community URL for
-            lifts, gates, DXB/DWC notes and FAQs. Remaining live areas are listed as siblings so we do not invent doorway
+            lifts, gates, DXB/DWC notes and FAQs. Remaining live areas are listed as siblings so we do not assume doorway
             essays.
           </p>
 
@@ -436,7 +436,7 @@ export default function DubaiPillar() {
 
       <HubCrossLinks
         heading="After you pick the community"
-        intro="This hub owns geography. The job still has a home URL — money service, ground van, arrival walkthrough, or another emirate."
+        intro="After the community, open door-to-door relocation, pet taxi, the arrival guide, or another emirate."
         path="/dubai/"
       />
 

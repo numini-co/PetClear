@@ -26,8 +26,10 @@ interface HeroProps {
   imageLoading?: 'eager' | 'lazy'
   sizes?: string
   srcSet?: string
-  /** Show paid-includes + WhatsApp gate under the primary CTA (home + money pages). */
+  /** Show paid-includes + WhatsApp gate under the primary CTA (home and service pages). */
   showBuyerQualify?: boolean
+  /** Short line under the buttons explaining what the enquiry needs. */
+  ctaSupport?: string
 }
 
 // Shared professional hero: a sharp full-bleed photo, a black gradient scrim for
@@ -45,6 +47,7 @@ export default function Hero({
   secondary,
   updated,
   showBuyerQualify = false,
+  ctaSupport,
   overlayClassName,
   imageWidth = 1536,
   imageHeight = 1024,
@@ -115,6 +118,9 @@ export default function Hero({
               </a>
             )}
           </div>
+          {ctaSupport ? (
+            <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/75">{ctaSupport}</p>
+          ) : null}
           {showBuyerQualify ? (
             <div className="mt-6 max-w-xl space-y-3">
               <WhatsAppGate tone="hero" />

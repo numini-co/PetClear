@@ -77,7 +77,7 @@ export default function MOCCAEPermitGuide() {
         {
       question: 'How do I get a pet import permit from MOCCAE?',
       answer:
-        'Log in at moccae.gov.ae with UAE Pass, open Import Permit for Pets, upload owner ID/passport copy, pet photo, vaccination and microchip records, and health-certificate details, then pay the current portal fee. Confirm that fee on the portal; we do not invent an official AED amount. Processing is often estimated in a few working days — that is not a first-party SLA. Validity: 90 days from issuance. DIY the steps on this page. WhatsApp +971504782999 only if you want a paid eligibility check for permit assistance on a managed file. Service twin: [/service/moccae-pet-permit/](/service/moccae-pet-permit/). Packages: [/prices/](/prices/).',
+        'Log in at moccae.gov.ae with UAE Pass, open Import Permit for Pets, upload owner ID/passport copy, pet photo, vaccination and microchip records, and health-certificate details, then pay the current portal fee. Confirm that fee on the portal; we do not assume an official AED amount. Processing is often estimated in a few working days — that is not a first-party SLA. Validity: 90 days from issuance. DIY the steps on this page. WhatsApp +971504782999 only if you want a paid eligibility check for permit assistance on a managed file. Service twin: [/service/moccae-pet-permit/](/service/moccae-pet-permit/). Packages: [/prices/](/prices/).',
     },
     {
       question: 'How to apply for a Moccae license?',
@@ -97,7 +97,7 @@ export default function MOCCAEPermitGuide() {
         {
       question: 'How do I apply for a MOCCAE import permit?',
       answer:
-        'Log in to the official MOCCAE portal (moccae.gov.ae) with UAE Pass, choose Export and Import Services → Import Permit for Pets, upload the owner passport copy, pet photo, vaccination records, microchip certificate and health-certificate details, then pay the current portal fee. Confirm that fee on the portal; we do not invent an official AED amount. Processing is typically a few business days — an estimate, not a first-party SLA. DIY those steps in the walkthrough on this page. Buyers who want the file held use [/service/moccae-pet-permit/](/service/moccae-pet-permit/). Tick-list: [/guides/import-checklist/](/guides/import-checklist/). Packages: [/prices/](/prices/).',
+        'Log in to the official MOCCAE portal (moccae.gov.ae) with UAE Pass, choose Export and Import Services → Import Permit for Pets, upload the owner passport copy, pet photo, vaccination records, microchip certificate and health-certificate details, then pay the current portal fee. Confirm that fee on the portal; we do not assume an official AED amount. Processing is typically a few business days — an estimate, not a first-party SLA. DIY those steps in the walkthrough on this page. Buyers who want the file held use [/service/moccae-pet-permit/](/service/moccae-pet-permit/). Tick-list: [/guides/import-checklist/](/guides/import-checklist/). Packages: [/prices/](/prices/).',
     },
     {
       question: 'How long does the MOCCAE import permit take?',
@@ -147,7 +147,7 @@ export default function MOCCAEPermitGuide() {
     {
       question: 'How much does a MOCCAE pet import permit cost?',
       answer:
-        'Confirm the current import-permit fee on the official MOCCAE portal when you apply with UAE Pass. Published amounts have differed across secondary write-ups, so we do not invent an official AED figure here. The government fee is separate from veterinary work, crate, cargo and coordination. Our coordination is quoted after eligibility on [/prices/](/prices/). Paid filing help: [/service/moccae-pet-permit/](/service/moccae-pet-permit/). Flagship inbound job: [/service/pet-import-dubai/](/service/pet-import-dubai/).',
+        'Confirm the current import-permit fee on the official MOCCAE portal when you apply with UAE Pass. Published amounts have differed across secondary write-ups, so we do not assume an official AED figure here. The government fee is separate from veterinary work, crate, cargo and coordination. Our coordination is quoted after eligibility on [/prices/](/prices/). Paid filing help: [/service/moccae-pet-permit/](/service/moccae-pet-permit/). Flagship inbound job: [/service/pet-import-dubai/](/service/pet-import-dubai/).',
     },
     {
       question: 'What happens after the MOCCAE import permit is issued?',
@@ -327,7 +327,7 @@ export default function MOCCAEPermitGuide() {
                 MOCCAE is the UAE Ministry of Climate Change and Environment. It is the federal office that decides whether a dog or cat may enter any of the seven emirates — Dubai included. If you are planning a move, this is the permit that sits between a booked crate and a refused cargo desk.
               </p>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                You apply on the official portal with UAE Pass. The import permit is valid for 90 days from issuance. Confirm the current permit and arrival-release fees on that portal; amounts change and we do not invent a table here. Airlines will not board without the PDF, and the cargo village will not release the animal without it. This page is the how-to. The paid filing twin is{' '}
+                You apply on the official portal with UAE Pass. The import permit is valid for 90 days from issuance. Confirm the current permit and arrival-release fees on that portal; amounts change and we do not assume a table here. Airlines will not board without the PDF, and the cargo village will not release the animal without it. This page is the how-to. The paid filing twin is{' '}
                 <Link to="/service/moccae-pet-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
                   MOCCAE permit assistance
                 </Link>
@@ -568,7 +568,7 @@ export default function MOCCAEPermitGuide() {
           <ContentImage
             src="/assets/w5/moccae-permit-rejection-causes-and-fixes-diagram.webp"
             alt="MOCCAE pet permit rejection causes and how to fix each one"
-            caption="Cause and fix. Confirm any resubmission fee on the portal — we do not invent one."
+            caption="Cause and fix. Confirm any resubmission fee on the portal — we do not assume one."
             width={1536}
             height={1024}
           />
@@ -737,7 +737,7 @@ export default function MOCCAEPermitGuide() {
                 <tr>
                   <td className="font-medium">Who logs into UAE Pass?</td>
                   <td>You</td>
-                  <td>You — we do not invent a government login</td>
+                  <td>You — we do not assume a government login</td>
                 </tr>
                 <tr>
                   <td className="font-medium">Who line-checks chip numbers?</td>

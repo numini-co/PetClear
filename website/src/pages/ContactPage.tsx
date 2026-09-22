@@ -11,6 +11,12 @@ import {
   WA_ELIGIBILITY_DEFAULT,
 } from '../lib/conversionCopy.ts'
 import { track } from '../lib/analytics.ts'
+import {
+  HOURS_WEEKDAY_DAYS,
+  HOURS_WEEKDAY_TIME,
+  HOURS_WEEKEND_DAYS,
+  HOURS_WEEKEND_TIME,
+} from '../lib/openingHours.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import Hero from '../components/Hero.tsx'
 
@@ -141,8 +147,9 @@ export default function ContactPage() {
         image="/images/contact-hero.jpg"
         imageAlt="A friendly dog beside a welcoming Dubai office desk, ready to help with your pet relocation"
         eyebrow="Contact"
-        title="Contact Dubai Pet Relocation — We're Here to Help"
-        subtitle="A quick breed-ban question or a full relocation quote — fastest response is on WhatsApp, but we read every form and email too."
+        title="Contact Dubai Pet Relocation"
+        subtitle="Tell us where your pet is travelling from, where you are moving and when you hope to travel. Add your pet's species, breed and approximate weight so we can understand the service you need."
+        primaryLabel={CTA_CHECK_MOVE}
       />
 
       {/* ═══════════ CONTACT INFO CARDS ═══════════ */}
@@ -345,13 +352,13 @@ export default function ContactPage() {
                   <h3 className="text-lg font-bold text-[#2A2A2A]">Office Hours</h3>
                 </div>
                 <div className="space-y-3 text-sm text-[#5A5A5A]">
-                  <div className="flex justify-between">
-                    <span>Sunday – Thursday</span>
-                    <span className="font-semibold text-[#2A2A2A]">9:00 AM – 6:00 PM GST</span>
+                  <div className="flex justify-between gap-4">
+                    <span>{HOURS_WEEKDAY_DAYS}</span>
+                    <span className="font-semibold text-[#2A2A2A]">{HOURS_WEEKDAY_TIME}</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span>Friday – Saturday</span>
-                    <span className="font-semibold text-[#2A2A2A]">Limited / By Appointment</span>
+                  <div className="flex justify-between gap-4">
+                    <span>{HOURS_WEEKEND_DAYS}</span>
+                    <span className="font-semibold text-[#2A2A2A]">{HOURS_WEEKEND_TIME}</span>
                   </div>
                 </div>
                 <p className="text-xs text-[#8A8A8A] mt-4">
@@ -387,7 +394,7 @@ export default function ContactPage() {
           </div>
           <FAQItem
             question="How quickly do you respond on WhatsApp?"
-            answer={<p>During business hours (every day, 9 AM–8 PM GST), we typically respond within 15 minutes. Outside those hours, we check messages periodically and aim to reply within a few hours. Urgent travel-day issues are prioritized.</p>}
+            answer={<p>During {HOURS_WEEKDAY_DAYS}, {HOURS_WEEKDAY_TIME}, we typically respond within 15 minutes. {HOURS_WEEKEND_DAYS} are limited, by appointment. Outside those hours we check messages periodically and aim to reply within a few hours. Urgent travel-day issues are prioritized.</p>}
           />
           <FAQItem
             question="What does a first WhatsApp message buy?"

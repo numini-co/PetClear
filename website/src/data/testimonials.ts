@@ -12,7 +12,7 @@ export interface Testimonial {
 //
 // Minimum per entry: a real quote + a real first name + a real area/pet detail.
 // (Sourcing from your WhatsApp threads or Google reviews is ideal.) Up to ~50.
-// Do NOT invent reviews — fabricated testimonials are deceptive and unlawful
+// Do not fabricate reviews — fabricated testimonials are deceptive and unlawful
 // (FTC fake-review rule, 2024) and get the site demoted by the audit's truth check.
 // ─────────────────────────────────────────────────────────────────────────────
 export const TESTIMONIALS: Testimonial[] = []

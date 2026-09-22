@@ -26,7 +26,7 @@ const petRelocationToDubai: ServicePageData = {
     {
       h2: 'This page is inbound only — arrival into Dubai',
       intro:
-        'Ruling 2: this URL owns bringing a pet to Dubai. It is not the generic money page and it is not the outbound export journey. Door-to-door commercial coordination lives on [pet relocation services in Dubai](/service/pet-relocation-dubai/). Leaving the UAE lives on [moving pets out of Dubai](/service/pet-relocation-from-dubai/). Commercial import filing is [pet import service for Dubai](/service/pet-import-dubai/).',
+        'Arriving in Dubai covers the permit, the landing and the first days after. It is not the journey out of the UAE. Full coordination lives on [pet relocation services in Dubai](/service/pet-relocation-dubai/). Leaving the UAE lives on [moving pets out of Dubai](/service/pet-relocation-from-dubai/). Commercial import filing is [pet import service for Dubai](/service/pet-import-dubai/).',
       body: [
         {
           type: 'p',
@@ -151,7 +151,7 @@ const petRelocationToDubai: ServicePageData = {
       body: [
         {
           type: 'p',
-          text: 'What moves an inbound quote: origin country (titer or not), pet size and crate, season, whether you want document guidance only or arrival-day coordination, and whether last-mile delivery is a tower or a villa. Read [what pet relocation costs in 2026](/guides/pet-relocation-cost-dubai/) for the driver list, then [request your free WhatsApp quote](/contact/).',
+          text: 'What moves an inbound quote: origin country (titer or not), pet size and crate, season, whether you want document guidance only or arrival-day coordination, and whether last-mile delivery is a tower or a villa. Read [what pet relocation costs in 2026](/guides/pet-relocation-cost-dubai/) for the driver list, then [request your WhatsApp quote](/contact/).',
         },
         {
           type: 'p',
@@ -191,7 +191,7 @@ const petRelocationToDubai: ServicePageData = {
     },
     {
       q: 'How is this different from the generic pet relocation Dubai page?',
-      a: 'This URL is inbound only — permit, arrival and settling in. The money head [pet relocation services in Dubai](/service/pet-relocation-dubai/) covers door-to-door coordination in both directions. Do not treat the two pages as duplicates.',
+      a: 'This URL is inbound only — permit, arrival and settling in. The door-to-door service [pet relocation services in Dubai](/service/pet-relocation-dubai/) covers door-to-door coordination in both directions. Do not treat the two pages as duplicates.',
     },
   ],
   relatedLinks: [
@@ -201,7 +201,7 @@ const petRelocationToDubai: ServicePageData = {
     { label: 'UAE pet import requirements', to: '/guides/uae-pet-import-requirements/' },
     { label: 'MOCCAE import permit', to: '/guides/moccae-import-permit/' },
     { label: 'Routes hub — inbound corridors', to: '/routes/' },
-    { label: 'Request your free WhatsApp quote', to: '/contact/' },
+    { label: 'Request your WhatsApp quote', to: '/contact/' },
     { label: 'Dubai communities we cover', to: '/dubai/' },
     { label: 'How it works', to: '/how-it-works/' },
   ],

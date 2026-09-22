@@ -6,7 +6,7 @@ const sportsCity: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Dubai Sports City | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in Dubai Sports City — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
+    'Pet relocation in Dubai Sports City — door-to-door dog and cat transport, MOCCAE permits and IATA crates. WhatsApp quote.',
   h1: 'Pet Relocation in Dubai Sports City',
   primaryKeyword: 'pet relocation dubai sports city',
   heroValueProp:

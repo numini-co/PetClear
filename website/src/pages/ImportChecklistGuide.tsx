@@ -219,7 +219,7 @@ export default function ImportChecklistGuide() {
         title="Pet Import Documents Checklist for Dubai"
         subtitle="An ordered, checkable list of every document and step to import your pet to Dubai — microchip to arrival clearance — with timing notes and a summary table."
         updated="Updated June 2026"
-        primaryLabel="Check if we can move your pet"
+        primaryLabel="Tell us about your move"
         whatsappMessage={waChecklist}
         secondary={{ label: 'Pet import service', to: '/service/pet-import-dubai/' }}
       />
@@ -598,7 +598,7 @@ export default function ImportChecklistGuide() {
       <GuideFunnelCta
         variant="end"
         title="Ready to book a managed import?"
-        subtitle="Avoid sequencing mistakes and rejected permits when you want the file held. WhatsApp eligibility if you are ready to book, or open the door-to-door / import money pages. Permit validity: 90 days from issuance."
+        subtitle="Avoid sequencing mistakes and rejected permits when you want the file held. WhatsApp eligibility if you are ready to book, or open the door-to-door / import service pages. Permit validity: 90 days from issuance."
         eligibilityMessage={waChecklist}
       />
     </>

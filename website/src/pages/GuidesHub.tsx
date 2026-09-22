@@ -11,7 +11,7 @@ const GUIDES = [
   { title: 'Pet Flight Options from Dubai', to: '/guides/pet-flight-options-dubai/', image: '/assets/w-flight-modes/pet-flight-options-card.jpg', desc: 'Cabin, checked baggage, manifest cargo, private jet, shared charter — which mode fits.' },
   { title: 'Etihad Pet Policy (In-Cabin)', to: '/guides/etihad-pet-policy/', image: '/assets/w-flight-modes/in-cabin-pet-travel-card.jpg', desc: 'The only UAE cabin option: fees change (confirm at booking; 2026 USD-399 promo expired). 8 kg limit, AUH arrival. Emirates/flydubai/Air Arabia cabin N/A for cats and dogs.' },
   { title: 'Pet as Checked Baggage', to: '/guides/pet-as-checked-baggage/', image: '/assets/w-flight-modes/pet-excess-baggage-card.jpg', desc: 'When accompanied hold travel is allowed — and why Dubai arrivals usually cannot use it.' },
-  { title: 'Emirates Pet Cargo & SkyCargo', to: '/guides/emirates-pet-cargo/', image: '/assets/w-flight-modes/pet-cargo-hold-card.jpg', desc: 'Educational cargo process: airline animal-charge tiers, booking window, and rates quoted per route/weight — not a cargo money page.' },
+  { title: 'Emirates Pet Cargo & SkyCargo', to: '/guides/emirates-pet-cargo/', image: '/assets/w-flight-modes/pet-cargo-hold-card.jpg', desc: 'Educational cargo process: airline animal-charge tiers, booking window, and rates quoted per route/weight — not a cargo service page.' },
   { title: 'Dubai Pet Arrival Guide', to: '/guides/dubai-pet-arrival-guide/', image: '/assets/w11/dubai-pet-arrival-cat-first-steps-new-home.jpg', desc: 'The Dubai pet arrival guide: cargo-terminal clearance, collection, first-week settling, and Dubai Municipality / Aleef dog registration.' },
   { title: 'How to Export Your Pet from Dubai', to: '/guides/pet-export-from-dubai/', image: '/assets/w6/pet-export-from-dubai-guide-suitcase-checklist.png', desc: 'Destination-first export how-to: documents, MOCCAE export health-certificate timing, and outbound route links. Confirm government fees on the portal.' },
   { title: 'Snub-Nosed Dogs Flying to the UAE', to: '/guides/snub-nosed-dogs-flying-uae/', image: '/assets/w9/snub-nosed-dogs-flying-uae-french-bulldog-roomy-crate.jpg', desc: 'Airline acceptance, IATA +10% crate rule, and summer risk for French bulldogs, pugs, English bulldogs and Persians — confirm eligibility before you book.' },
@@ -86,7 +86,7 @@ export default function GuidesHub() {
 
       <HubCrossLinks
         heading="From a guide to the service that matches"
-        intro="Guides explain the rule. Service pages take the booking. The homepage remains the category entry."
+        intro="Guides explain the rule. Service pages take the booking. Use the homepage when you want the wider set of services."
         path="/guides/"
       />
 

@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import { PawPrint, MessageCircle, Phone, Mail, MapPin, Clock } from 'lucide-react'
 import { getWhatsAppUrl, PHONE_DISPLAY, PHONE_E164, siteConfig } from '../lib/seo.ts'
-import { CTA_CHECK_ELIGIBILITY, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import { CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import { HOURS_SUMMARY } from '../lib/openingHours.ts'
 import { SERVICE_LINKS, TOP_AREA_LINKS, GUIDE_LINKS, ROUTE_LINKS, COMPANY_LINKS } from '../data/nav.ts'
 import type { NavLink } from '../data/nav.ts'
 
@@ -59,7 +60,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/10"><Clock className="h-4 w-4" /></span>
-                Open daily · 9:00 AM – 8:00 PM
+                {HOURS_SUMMARY}
               </li>
             </ul>
           </div>
@@ -77,7 +78,7 @@ export default function Footer() {
             <Link key={l.to} to={l.to} className="text-sm text-white/70 hover:text-white transition-colors">{l.label}</Link>
           ))}
           <a href={getWhatsAppUrl(WA_ELIGIBILITY_DEFAULT)} target="_blank" rel="noopener noreferrer" className="ml-auto inline-flex items-center gap-2 px-4 py-2 bg-[#25D366] text-white rounded-xl text-sm font-semibold hover:bg-[#1DA851] transition-colors">
-            <MessageCircle className="w-4 h-4" aria-hidden="true" /> {CTA_CHECK_ELIGIBILITY}
+            <MessageCircle className="w-4 h-4" aria-hidden="true" /> {CTA_CHECK_MOVE}
           </a>
         </nav>
 

@@ -6,7 +6,7 @@ const victoryHeights: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Victory Heights | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in Victory Heights — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
+    'Pet relocation in Victory Heights — door-to-door dog and cat transport, MOCCAE permits and IATA crates. WhatsApp quote.',
   h1: 'Pet Relocation in Victory Heights',
   primaryKeyword: 'pet relocation victory heights',
   heroValueProp:

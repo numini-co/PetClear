@@ -1,6 +1,9 @@
 /** Shared buyer-qualification copy. No invented fees, volumes, or testimonials. */
 
-export const CTA_CHECK_MOVE = 'Check if we can move your pet'
+/** Primary enquiry action. Requests move details for a proposal. Not a free consult. */
+export const CTA_CHECK_MOVE = 'Tell us about your move'
+export const CTA_SUPPORT =
+  'Share your departure city, destination, pet details and preferred travel date so we can understand your requirements.'
 export const CTA_CHECK_ELIGIBILITY = 'Check eligibility'
 export const CTA_MANAGED_QUOTE = 'Get a managed-move quote'
 export const CTA_SCOPED_QUOTE = 'WhatsApp for a scoped quote after eligibility'
@@ -140,4 +143,4 @@ export const PAID_INCLUDES_ITEMS = [
 ] as const
 
 export const PAID_INCLUDES_FOOT =
-  'Government permit and release fees are confirmed on the official MOCCAE portal. We do not invent amounts here.'
+  'Government permit and release fees are confirmed on the official MOCCAE portal. Amounts are the figures on that portal.'

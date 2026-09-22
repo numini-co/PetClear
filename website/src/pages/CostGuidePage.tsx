@@ -62,11 +62,11 @@ const COST_PAA_FAQS: { q: string; a: string }[] = [
   },
   {
     q: 'How much does it cost to relocate a pet from Dubai to India?',
-    a: 'Dubai→India cost is destination-side (AQCS / Indian entry pathway) plus UAE export paperwork, freight, crate, and coordination — not the same stack as importing into the UAE. We do not invent corridor package bands. Corridor depth and FAQs belong on [/routes/dubai-to-india/](/routes/dubai-to-india/); general cost types stay on this guide; outbound journey framing on [/service/pet-relocation-from-dubai/](/service/pet-relocation-from-dubai/). WhatsApp +971504782999 for a route quote.',
+    a: 'Dubai→India cost is destination-side (AQCS / Indian entry pathway) plus UAE export paperwork, freight, crate, and coordination — not the same stack as importing into the UAE. We do not assume corridor package bands. Corridor depth and FAQs belong on [/routes/dubai-to-india/](/routes/dubai-to-india/); general cost types stay on this guide; outbound journey framing on [/service/pet-relocation-from-dubai/](/service/pet-relocation-from-dubai/). WhatsApp +971504782999 for a route quote.',
   },
   {
     q: 'Is the cost guide the same as booking a relocation service?',
-    a: 'This guide owns cost types. Read the tables here if you are budgeting yourself. The commercial jobs sit on [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/), inbound [/service/pet-import-dubai/](/service/pet-import-dubai/), and outbound [/service/pet-export-dubai/](/service/pet-export-dubai/). Packages stay quoted. Confirm MOCCAE fees on the portal. WhatsApp +971504782999 when you are ready to book.',
+    a: 'This guide explains cost types. Read the tables here if you are budgeting yourself. The commercial jobs sit on [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/), inbound [/service/pet-import-dubai/](/service/pet-import-dubai/), and outbound [/service/pet-export-dubai/](/service/pet-export-dubai/). Packages stay quoted. Confirm MOCCAE fees on the portal. WhatsApp +971504782999 when you are ready to book.',
   },
 ]
 
@@ -285,7 +285,7 @@ export default function CostGuidePage() {
             <h3 className="font-bold text-[#2A2A2A] mb-2">Veterinary</h3>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
               ISO microchip, rabies and core vaccines, health certificate, parasite treatment, and a titer test only when
-              the origin country requires one. Clinic prices vary by country — we do not invent a UAE clinic tariff.
+              the origin country requires one. Clinic prices vary by country — we do not assume a UAE clinic tariff.
             </p>
           </Card>
           <Card>
@@ -345,7 +345,7 @@ export default function CostGuidePage() {
       <GuideFunnelCta
         variant="mid"
         title="Cost types clear — check a managed move?"
-        subtitle="This guide stays educational. Eligibility and a scoped quote sit on the money pages and WhatsApp. We do not invent package or government fee amounts here."
+        subtitle="This guide stays educational. Eligibility and a scoped quote sit on the service pages and WhatsApp. We do not assume package or government fee amounts here."
         eligibilityMessage={costGuideMsg}
         waLabel={CTA_MANAGED_QUOTE}
       />

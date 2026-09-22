@@ -16,7 +16,7 @@ const internationalPetRelocation: ServicePageData = {
   whatsappMessage: waEligibility({ need: 'managed move' }),
   snippetQuestion: 'Do you handle pet cargo from Dubai?',
   snippetAnswer:
-    'Yes. “Pet cargo Dubai” is a secondary commercial term on this international relocation page — not a separate /service/pet-cargo money URL. We coordinate manifested live-animal cargo on pet-experienced airlines. Emirates SkyCargo rules and the 500 / 650 / 800 animal-charge table live on the educational cargo guide. Private jet and shared charter have their own quote-only offer pages.',
+    'Yes. Pet cargo from Dubai is coordinated on this international relocation page, not on a separate pet-cargo address. We coordinate manifested live-animal cargo on pet-experienced airlines. Emirates SkyCargo rules and the 500 / 650 / 800 animal-charge table live on the educational cargo guide. Private jet and shared charter have their own quote-only offer pages.',
   trustBadges: ['Route-by-route requirement checks', 'Vetted partners worldwide', 'Pet-experienced airlines', 'WhatsApp support'],
   hasHowTo: false,
   sections: [
@@ -123,7 +123,7 @@ const internationalPetRelocation: ServicePageData = {
     {
       h2: 'How we choose a flight mode (not an airline affiliation)',
       intro:
-        'We are independent of every carrier. Cabin, accompanied baggage and manifest cargo are chosen first. Private-jet and shared-charter capability live on their own offer pages — this URL does not own those keywords.',
+        'We are independent of every carrier. Cabin, accompanied baggage and manifest cargo are chosen first. Private-jet and shared-charter bookings stay on their own offer pages.',
       body: [
         {
           type: 'cards',
@@ -148,7 +148,7 @@ const internationalPetRelocation: ServicePageData = {
             },
             {
               title: 'Private jet pet travel',
-              text: 'Open the capability page — quote only. This international URL does not own that keyword.',
+              text: 'Open the capability page. Jet travel is quoted there.',
               to: '/service/private-jet-pet-travel/',
               kind: 'Service',
             },
@@ -173,7 +173,7 @@ const internationalPetRelocation: ServicePageData = {
       body: [
         {
           type: 'p',
-          text: 'Airline fee grids live on the child guides, not here: Etihad cabin fees on the [Etihad pets-in-cabin guide](/guides/etihad-pet-policy/), Emirates animal-charge tiers on the [Emirates pet cargo](/guides/emirates-pet-cargo/) guide. Private-jet and shared-charter capability — including labelled market listings — live on [private jet pet travel](/service/private-jet-pet-travel/) and [shared pet charter](/service/shared-pet-charter/). Freight and coordination on this page stay Get a Quote. “Pet cargo Dubai” is a secondary commercial term on this URL, not a new /service/pet-cargo money page.',
+          text: 'Airline fee grids live on the child guides, not here: Etihad cabin fees on the [Etihad pets-in-cabin guide](/guides/etihad-pet-policy/), Emirates animal-charge tiers on the [Emirates pet cargo](/guides/emirates-pet-cargo/) guide. Private-jet and shared-charter capability — including labelled market listings — live on [private jet pet travel](/service/private-jet-pet-travel/) and [shared pet charter](/service/shared-pet-charter/). Freight and coordination on this page stay Get a Quote. “Pet cargo Dubai” is a secondary commercial term on this URL, not a new /service/pet-cargo service page.',
         },
         {
           type: 'table',
@@ -188,7 +188,7 @@ const internationalPetRelocation: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Commercial cargo handoff on this page and the door-to-door umbrella both stay quote-only. The Dubai money page is [door-to-door pet relocation](/service/pet-relocation-dubai/). Government portal fees are confirmed on the official site. Message WhatsApp or write to support@dubai-pet-relocation.ae for a route-specific quote.',
+          text: 'Commercial cargo handoff on this page and the door-to-door umbrella both stay quote-only. The Dubai service page is [door-to-door pet relocation](/service/pet-relocation-dubai/). Government portal fees are confirmed on the official site. Message WhatsApp or write to support@dubai-pet-relocation.ae for a route-specific quote.',
         },
       ],
     },

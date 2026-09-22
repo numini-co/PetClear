@@ -6,7 +6,7 @@ const mudon: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Mudon Dubai | Family Villa Last Mile',
   metaDescription:
-    'Pet relocation in Mudon — door-to-door dog and cat transport, MOCCAE permit guidance and travel crates. Free WhatsApp quote in 15 minutes.',
+    'Pet relocation in Mudon — door-to-door dog and cat transport, MOCCAE permit guidance and travel crates. WhatsApp quote in 15 minutes.',
   h1: 'Pet Relocation in Mudon',
   primaryKeyword: 'pet relocation mudon',
   heroValueProp:

@@ -37,7 +37,7 @@ const burDubai: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'If your building has no service lift, say so on the first WhatsApp. A full-size IATA crate for a medium dog may not turn on a Bur Dubai stair landing. Sometimes the honest plan is a carrier to street level and crate assembly at the van — only if the animal is safe and the street is legal to stop on. We will not drag an assembled crate up a narrow stair against the building’s wishes, and we do not invent a “team” to pose in the corridor.',
+          text: 'If your building has no service lift, say so on the first WhatsApp. A full-size IATA crate for a medium dog may not turn on a Bur Dubai stair landing. Sometimes the honest plan is a carrier to street level and crate assembly at the van — only if the animal is safe and the street is legal to stop on. We will not drag an assembled crate up a narrow stair against the building’s wishes, and we do not assume a “team” to pose in the corridor.',
         },
         {
           type: 'p',
@@ -113,7 +113,7 @@ const burDubai: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a Bur Dubai walk-up the usual outbound run is toward DXB cargo — often a short hop compared with Sheikh Zayed tower communities. Dense-street pickup can still add the minutes the airport road does not. We do not invent minute-by-minute ETAs or airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the legal kerb. Al Maktoum / DWC is a long southbound option when the booked product requires it.',
+          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a Bur Dubai walk-up the usual outbound run is toward DXB cargo — often a short hop compared with Sheikh Zayed tower communities. Dense-street pickup can still add the minutes the airport road does not. We do not assume minute-by-minute ETAs or airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the legal kerb. Al Maktoum / DWC is a long southbound option when the booked product requires it.',
         },
         {
           type: 'p',

@@ -41,7 +41,7 @@ const faqData = [
   },
   {
     q: 'What does Emirates charge for animals as baggage?',
-    a: 'When the itinerary is eligible, Emirates publishes animal-charge tiers on its animals page. The full USD 500 / 650 / 800 grid lives on the Emirates pet cargo guide — this page owns eligibility (accompanied hold, excess / AVIH, the under-17-hour outbound rule, and the DXB-ending cargo block), not that fee table.',
+    a: 'When the itinerary is eligible, Emirates publishes animal-charge tiers on its animals page. The full USD 500 / 650 / 800 grid lives on the Emirates pet cargo guide — this page covers eligibility (accompanied hold, excess / AVIH, the under-17-hour outbound rule, and the DXB-ending cargo block), not that fee table.',
   },
   {
     q: 'Does flydubai offer checked-baggage pets?',
@@ -194,9 +194,9 @@ export default function PetAsCheckedBaggageGuide() {
 
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Fees sit on the cargo guide — this page owns eligibility</h2>
+          <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Fees sit on the cargo guide — this page covers eligibility</h2>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            This URL owns pets as checked baggage in the UAE: accompanied hold, excess / AVIH, the Emirates under-17-hour outbound rule, and the DXB-ending cargo disclaimer. The full Emirates USD 500 / 650 / 800 animal-charge table is cargo-owned depth on the{' '}
+            This page covers pets as checked baggage in the UAE: accompanied hold, excess / AVIH, the Emirates under-17-hour outbound rule, and the DXB-ending cargo disclaimer. The full Emirates USD 500 / 650 / 800 animal-charge table is cargo-owned depth on the{' '}
             <Link to={FLIGHT_MODE_PATHS.cargo} className="font-semibold text-[#4F5BD5] hover:underline">
               Emirates pet cargo guide
             </Link>

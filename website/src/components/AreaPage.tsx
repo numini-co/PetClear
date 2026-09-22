@@ -210,7 +210,7 @@ export default function AreaPage({ data }: { data: AreaPageData }) {
       <div data-related-links="area">
         <RelatedLinks
           heading="Nearby Dubai areas we serve"
-          intro="Community hub plus a short neighbour set — not every Dubai URL. The international file lives on the money page."
+          intro="Nearby communities, plus the door-to-door service when the move is international."
           links={getRelatedLinks(`/dubai/${data.slug}/`)}
         />
       </div>

@@ -6,7 +6,7 @@ const meydan: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Meydan | Racing Community Last Mile',
   metaDescription:
-    'Pet relocation in Meydan — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
+    'Pet relocation in Meydan — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. WhatsApp quote in 15 minutes.',
   h1: 'Pet Relocation in Meydan',
   primaryKeyword: 'pet relocation meydan',
   heroValueProp:

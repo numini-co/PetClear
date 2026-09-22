@@ -3,13 +3,13 @@ import { waEligibility } from '../../lib/conversionCopy.ts'
 
 const petRelocationDubai: ServicePageData = {
   slug: 'pet-relocation-dubai',
-  seoTitle: 'Pet Relocation Dubai | Door-to-Door Dog & Cat Moves',
+  seoTitle: 'Pet Relocation Dubai | Dog & Cat Moving Services',
   metaDescription:
-    'Pet relocation Dubai for dogs and cats: permits, crates, airline booking, and arrival support. WhatsApp +971504782999.',
-  h1: 'Pet Relocation Dubai — Door-to-Door Coordination',
+    'Planning a dog or cat move to or from Dubai? Explore our relocation support, understand the process and send your details for a personalised quote.',
+  h1: 'Pet relocation in Dubai, planned around your move',
   primaryKeyword: 'pet relocation dubai',
   heroValueProp:
-    'Door-to-door pet relocation in Dubai is a coordinated sequence: document checks, MOCCAE permit timing, IATA crate sizing, cargo booking, and WhatsApp updates — not a mystery quote.',
+    'Planning a dog or cat move to or from Dubai? Explore our relocation support, understand the process and send your details for a personalised quote.',
   heroImage: '/images/service-pet-relocation-dubai.jpg',
   heroImageAlt:
     'Handler carrying a cat in a travel carrier toward a Dubai doorway',
@@ -24,7 +24,7 @@ const petRelocationDubai: ServicePageData = {
     {
       h2: 'What door-to-door pet relocation in Dubai actually includes',
       intro:
-        'This page owns the decision-stage search for pet relocation in Dubai. If you are only arriving, start with [pet relocation to Dubai, step by step](/service/pet-relocation-to-dubai/). If you are only leaving, start with [pet relocation from Dubai](/service/pet-relocation-from-dubai/). Local ground moves and pet taxi sit on [local pet transport and pet taxi service](/service/pet-transport-dubai/).',
+        'This is the door-to-door service for a dog or cat move to or from Dubai. If you are only arriving, start with [pet relocation to Dubai, step by step](/service/pet-relocation-to-dubai/). If you are only leaving, start with [pet relocation from Dubai](/service/pet-relocation-from-dubai/). Local ground moves and pet taxi sit on [local pet transport and pet taxi service](/service/pet-transport-dubai/).',
       body: [
         {
           type: 'p',
@@ -34,16 +34,16 @@ const petRelocationDubai: ServicePageData = {
           type: 'list',
           items: [
             'Document review — microchip, rabies vaccination, health certificate and titer result where the route requires one',
-            'MOCCAE import or export permit guidance, with the 90-day import-permit window called out before you book',
+            'MOCCAE import or export permit guidance. The import permit is valid for 90 days from issuance, and that window is confirmed before you book',
             'Breed eligibility against current UAE restricted-breed rules — before you commit to a flight',
             'IATA-compliant crate measurement and sourcing through partners, not a guess from a chart',
-            'Cargo booking coordination with pet-experienced airlines — “pet cargo Dubai” is a secondary commercial term on [international pet relocation](/service/international-pet-relocation/), not a keyword this door-to-door URL owns',
+            'Cargo booking coordination with pet-experienced airlines. Longer cargo detail sits on [international pet relocation](/service/international-pet-relocation/)',
             'Customs and last-mile handover at DXB or DWC, then delivery into a Dubai community or collection for departure',
           ],
         },
         {
           type: 'p',
-          text: 'Compare how much of that sequence we hold versus how much you hold on [compare our service tiers](/services/). Then send origin, pet and month on WhatsApp for a paid eligibility check and a managed-move quote. Coordination packages live on [Prices](/prices/) — we do not publish fee tables on this page until Pricing verifies them.',
+          text: 'Compare how much of that sequence we hold versus how much you hold on [compare our service tiers](/services/). Then send your departure city, destination, pet details and preferred travel date on WhatsApp for a proposed service. Coordination packages live on [Prices](/prices/). Government fees are confirmed on the official portal.',
         },
         {
           type: 'p',
@@ -75,7 +75,7 @@ const petRelocationDubai: ServicePageData = {
     {
       h2: 'Flight modes we arrange',
       intro:
-        'Door-to-door is the umbrella: we pick the air product, then hold documents, crate and the last mile. These six cards are the modes — not a second money page. The comparison hub is navigational; this page stays the commercial head for pet relocation Dubai.',
+        'Door-to-door is the umbrella: we pick the air product, then hold documents, crate and the last mile. These six cards are the flight modes. Compare them on the hub, then ask for a proposal here.',
       body: [
         {
           type: 'cards',
@@ -106,7 +106,7 @@ const petRelocationDubai: ServicePageData = {
             },
             {
               title: 'Private jet pet travel',
-              text: 'Open the capability page — quote only. This door-to-door URL does not own that keyword.',
+              text: 'Open the capability page. Jet travel is quoted there.',
               to: '/service/private-jet-pet-travel/',
               kind: 'Service',
             },
@@ -183,7 +183,7 @@ const petRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Pet shipping Dubai is folded into this door-to-door money page. “Pet cargo Dubai” is parked as a secondary commercial term on [international pet relocation](/service/international-pet-relocation/) — not a new /service/pet-cargo URL and not a keyword this page owns. Educational SkyCargo rules live on the [Emirates pet cargo](/guides/emirates-pet-cargo/) guide. We coordinate the booking; we do not operate the aircraft. Compare modes on the [pet flight options hub](/guides/pet-flight-options-dubai/). For country-level rules, use the [routes hub](/routes/).',
+          text: 'Pet shipping is part of this door-to-door service. Cargo detail sits on [international pet relocation](/service/international-pet-relocation/). Educational SkyCargo rules live on the [Emirates pet cargo](/guides/emirates-pet-cargo/) guide. We coordinate the booking. We do not operate the aircraft. Compare modes on the [pet flight options hub](/guides/pet-flight-options-dubai/). For country-level rules, use the [routes hub](/routes/).',
         },
         {
           type: 'list',
@@ -200,7 +200,7 @@ const petRelocationDubai: ServicePageData = {
     {
       h2: 'What drives the quote (no fee table on this page)',
       intro:
-        'A relocation quote is a bundle of government steps, veterinary work, crate, cargo and coordination. Until Pricing verifies numerals, we describe drivers and send a WhatsApp range — we do not invent AED tables.',
+        'Your quote depends on the route, your pet\'s size, travel arrangements and the support you choose. We describe those drivers here and send a proposal on WhatsApp. Government fees are confirmed on the official portal.',
       body: [
         {
           type: 'table',
@@ -241,7 +241,7 @@ const petRelocationDubai: ServicePageData = {
     {
       h2: 'What we coordinate — and the trust signals we will actually stand behind',
       intro:
-        'This money page owns the decision for pet relocation Dubai. We are a coordinator, not the airline and not MOCCAE. The process, the WhatsApp thread and the document pouch are what we hold.',
+        'We coordinate the move. We are not the airline and not MOCCAE. The process, the WhatsApp thread and the document pouch are what we hold.',
       body: [
         {
           type: 'list',
@@ -255,7 +255,7 @@ const petRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'We do not invent volumes, star ratings or a 24/7 desk. Government permit and release amounts are confirmed on the official MOCCAE portal. Use the [import checklist](/guides/import-checklist/) if you want a tick-list, the [cost guide](/guides/pet-relocation-cost-dubai/) if you want drivers, and this page when you want one coordinator to hold the file. Message WhatsApp with species, breed, origin or destination and a target month.',
+          text: 'We do not publish move counts, star ratings or a 24/7 desk. Government permit and release amounts are confirmed on the official MOCCAE portal. Use the [import checklist](/guides/import-checklist/) if you want a tick-list, the [cost guide](/guides/pet-relocation-cost-dubai/) if you want drivers, and this page when you want one coordinator to hold the file. Message WhatsApp with species, breed, origin or destination and a target month.',
         },
       ],
     },
@@ -263,11 +263,11 @@ const petRelocationDubai: ServicePageData = {
   faq: [
     {
       q: 'What is the best pet relocation service in Dubai?',
-      a: '“Best” depends on your origin, species, and whether you need documentation-only or door-to-door coordination — not a generic listicle. Dubai Pet Relocation coordinates MOCCAE permits, veterinary timing, airline live-animal booking, and arrival hand-off for dogs and cats. We do not invent volumes or star ratings. Get a Relocation Quote and we map your file. Cost types: [/guides/pet-relocation-cost-dubai/](/guides/pet-relocation-cost-dubai/). Dog-specific: [/dog-relocation-to-dubai/](/dog-relocation-to-dubai/). WhatsApp +971504782999.',
+      a: '“Best” depends on your origin, species, and whether you need documentation-only or door-to-door coordination. Dubai Pet Relocation coordinates MOCCAE permits, veterinary timing, airline live-animal booking, and arrival hand-off for dogs and cats. We do not publish move counts or star ratings. Send your move details and we map the file. Cost types: [/guides/pet-relocation-cost-dubai/](/guides/pet-relocation-cost-dubai/). Dog-specific: [/dog-relocation-to-dubai/](/dog-relocation-to-dubai/). WhatsApp +971504782999.',
     },
     {
       q: 'How much does pet relocation Dubai cost?',
-      a: 'Costs split across MOCCAE fees (confirm live portal amounts), veterinary work, freight, crate, handling, and coordination — see [/guides/pet-relocation-cost-dubai/](/guides/pet-relocation-cost-dubai/) for the full breakdown. This money page owns the service decision; that guide owns the cost PAA cluster. Packages are Get a Quote, not a published from-band. WhatsApp +971504782999.',
+      a: 'Costs split across MOCCAE fees (confirm live portal amounts), veterinary work, freight, crate, handling, and coordination. See [/guides/pet-relocation-cost-dubai/](/guides/pet-relocation-cost-dubai/) for the driver list. Packages are quoted for your pet, not published as a from-price. WhatsApp +971504782999.',
     },
     {
       q: 'Best pet relocation services Dubai',

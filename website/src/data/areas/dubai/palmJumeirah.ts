@@ -26,7 +26,7 @@ const palmJumeirah: AreaPageData = {
     'The crescent',
   ],
   vetsNote:
-    'Palm Jumeirah and the nearby coastal corridor have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not invent “island partners.” Use your current vet if the file is already in order. If you need an ISO scanner or export paperwork, ask on WhatsApp for the document type. We align appointment dates to travel day. Federal steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/) for inbound files and [pet export from Dubai](/guides/pet-export-from-dubai/) when you are leaving.',
+    'Palm Jumeirah and the nearby coastal corridor have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume “island partners.” Use your current vet if the file is already in order. If you need an ISO scanner or export paperwork, ask on WhatsApp for the document type. We align appointment dates to travel day. Federal steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/) for inbound files and [pet export from Dubai](/guides/pet-export-from-dubai/) when you are leaving.',
   intro:
     'Palm Jumeirah is a man-made island with two last miles, not one postcard. Frond villas sit behind Nakheel community gates; trunk apartments share podiums with hotel traffic on the spine. Dogs here use private gardens or West Beach loops; cats live in both villa compounds and high-rise cores. That is why [pet relocation across Dubai communities](/dubai/) keeps the Palm as its own spoke — the van has to clear a gate or a trunk ramp before anyone talks about cargo. We coordinate international files into or out of frond villas and trunk towers, then the longer ground run to DXB. Neighbouring [moving pets to or from JBR](/dubai/jbr/) and [relocating pets in Dubai Marina](/dubai/dubai-marina/) do not share those gates. WhatsApp +971504782999 with your frond or trunk address and route.',
   sections: [
@@ -113,7 +113,7 @@ const palmJumeirah: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a frond villa the outbound run is gate → trunk → Al Sufouh / SZR, then north-east toward DXB cargo. That extra island and trunk segment is why we refuse a locked minute count. Al Maktoum / DWC is a longer southbound option when the booked product requires it. We do not invent airline AED on this page. Share the flight date; we map the cut-off backwards from the cargo desk, then the gate.',
+          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a frond villa the outbound run is gate → trunk → Al Sufouh / SZR, then north-east toward DXB cargo. That extra island and trunk segment is why we refuse a locked minute count. Al Maktoum / DWC is a longer southbound option when the booked product requires it. We do not assume airline AED on this page. Share the flight date; we map the cut-off backwards from the cargo desk, then the gate.',
         },
         {
           type: 'p',
@@ -258,7 +258,7 @@ const palmJumeirah: AreaPageData = {
     },
     {
       q: 'We have two large dogs in a frond villa. Can they travel together?',
-      a: 'Often, if each animal’s papers and crate fit the same flight product. We map both files in parallel. Airline and destination rules still decide whether they share a hold — we do not invent a multi-pet AED.',
+      a: 'Often, if each animal’s papers and crate fit the same flight product. We map both files in parallel. Airline and destination rules still decide whether they share a hold — we do not assume a multi-pet AED.',
     },
   ],
   relatedAreas: [

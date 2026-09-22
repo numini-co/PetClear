@@ -59,7 +59,7 @@ const FAQS = [
   },
   {
     q: 'Where do I go after I pick a package?',
-    a: 'Document plan and door-to-door sit on [pet relocation Dubai](/service/pet-relocation-dubai/). Inbound clearance sits on [pet import to Dubai](/service/pet-import-dubai/). Outbound sits on [pet export from Dubai](/service/pet-export-dubai/). This URL owns how we price the work, not the job pages.',
+    a: 'Document plan and door-to-door sit on [pet relocation Dubai](/service/pet-relocation-dubai/). Inbound clearance sits on [pet import to Dubai](/service/pet-import-dubai/). Outbound sits on [pet export from Dubai](/service/pet-export-dubai/). This page covers how we price the work, not the job pages.',
   },
 ]
 
@@ -165,7 +165,7 @@ export default function PricesPage() {
         imageAlt="Pet owner reviewing a Dubai pet relocation quote with travel documents beside a crate"
         eyebrow="Quoted packages — not a government fee table"
         title="Pet Relocation Prices Dubai"
-        subtitle="Three commercial scopes. No invented MOCCAE amounts. WhatsApp a quote after we know the pet and the corridor."
+        subtitle="Your quote depends on the route, your pet's size, travel arrangements and the support you choose. Review what each service includes, then send your details for a personalised proposal."
         updated="Updated September 2026"
         primaryLabel="Get a scoped quote"
         whatsappMessage={WA}
@@ -181,7 +181,7 @@ export default function PricesPage() {
             <Link to="/guides/pet-relocation-cost-dubai/" className="font-semibold text-[#3A45B0] hover:underline">
               pet relocation cost Dubai
             </Link>
-            , which owns cost types. We do not reprint contested government numerals here.{' '}
+            , which explains the cost types. Government numerals are confirmed on the official portal.{' '}
             {GOV_FEE_CONFIRM} Confirm them on the{' '}
             <a
               href="https://www.moccae.gov.ae/en/services/export-import-services/import-permit-pets.aspx"

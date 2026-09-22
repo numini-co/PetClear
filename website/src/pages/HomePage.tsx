@@ -15,7 +15,8 @@ import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { dubaiAreas } from '../data/areas/dubai/index.ts'
 import PaidIncludes from '../components/PaidIncludes.tsx'
-import { WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import { CTA_CHECK_MOVE, CTA_SUPPORT, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import { openingHoursSpecification } from '../lib/openingHours.ts'
 
 const defaultMsg = WA_ELIGIBILITY_DEFAULT
 
@@ -61,7 +62,7 @@ const HOME_FAQS = [
   },
   {
     q: 'Is this homepage the same as the pet relocation Dubai service page?',
-    a: 'No. This homepage is the category entry. The decision-stage money term lives on the door-to-door service page. Use this page to orient; open the service, route or guide that matches your move.',
+    a: 'No. This page helps you choose a path. The managed door-to-door service, covering documents, crate, flight and the last mile, is on [pet relocation services in Dubai](/service/pet-relocation-dubai/). Open the service, route or guide that matches your move.',
   },
   {
     q: 'Where should I start if I’m not sure whether I need full relocation or just local transport?',
@@ -116,6 +117,7 @@ export default function HomePage() {
       areaServed: 'AE',
       telephone: siteConfig.phoneE164,
     },
+    openingHoursSpecification,
   }
 
   const websiteSchema = {
@@ -143,12 +145,7 @@ export default function HomePage() {
       addressCountry: siteConfig.address.country,
     },
     geo: { '@type': 'GeoCoordinates', latitude: siteConfig.geo.lat, longitude: siteConfig.geo.lng },
-    openingHoursSpecification: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-      opens: '09:00',
-      closes: '20:00',
-    },
+    openingHoursSpecification,
     areaServed: { '@type': 'City', name: 'Dubai' },
   }
 
@@ -198,11 +195,12 @@ export default function HomePage() {
         image="/images/hero-dog.jpg"
         imageAlt="Calm golden retriever ready for relocation beside its travel crate in a bright Dubai home"
         eyebrow="Pet relocation coordination for Dubai and the UAE"
-        title="Dubai Pet Relocation — Guides, Routes & Managed-Move Quotes"
-        subtitle="Read the rules here. Book a managed move when you want one coordinator to hold MOCCAE permit timing, airline booking, crate rules and the airport handoff."
-        primaryLabel="Check if we can move your pet"
+        title="Move your pet to or from Dubai with a clear plan"
+        subtitle="Moving with a dog or cat means coordinating documents, travel arrangements and collection or delivery. We help you understand the steps and organise the support your move needs, with clear responsibilities from the start."
+        primaryLabel={CTA_CHECK_MOVE}
+        ctaSupport={CTA_SUPPORT}
         whatsappMessage={WA_ELIGIBILITY_DEFAULT}
-        secondary={{ label: 'Pet relocation Dubai service', to: '/service/pet-relocation-dubai/' }}
+        secondary={{ label: 'Explore our services', to: '/services/' }}
         updated="Updated September 2026"
         showBuyerQualify
       />
@@ -232,12 +230,12 @@ export default function HomePage() {
         <div className="mx-auto max-w-[1200px] px-5 sm:px-6 lg:px-8">
           <div className="mb-10 text-center">
             <span className="text-sm font-semibold uppercase tracking-wider text-[#4F5BD5]">Our Pet Relocation Services</span>
-            <h2 className="text-section mt-3 mb-4">Choose the page that owns your search</h2>
+            <h2 className="text-section mt-3 mb-4">Choose the support you need</h2>
             <p className="text-body-large mx-auto max-w-3xl">
-              The homepage is a category entry, not the money result for “pet relocation Dubai”. That decision-stage term lives on the door-to-door service. Inbound arrivals, outbound departures, pet taxi and permits each have their own URL so we do not compete with ourselves. Cards below go only to service pages and the tiers hub.
+              Whether your pet is arriving in Dubai, leaving the UAE or travelling locally, start with the service that matches your move.
             </p>
             <p className="text-body mx-auto mt-4 max-w-3xl">
-              Use the money page when you want one coordinator to hold documents, crate, cargo and the last mile. Use{' '}
+              Open door-to-door relocation when you want one coordinator for documents, crate, cargo and the last mile. Use{' '}
               <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
                 pet import to Dubai
               </Link>{' '}
@@ -292,7 +290,7 @@ export default function HomePage() {
               Door-to-door relocation or inbound import — not guide browsing alone
             </h2>
             <p className="mt-2 text-sm leading-relaxed text-[#5A5A5A]">
-              Guides explain the rules. Money pages own the job. Check eligibility on WhatsApp ({siteConfig.phone}) when you are ready to book a managed relocation, then open door-to-door, inbound import or outbound export. Confirm MOCCAE portal fees on the official site.
+              Guides explain the rules. Service pages are where you request a managed move. Tell us about the move on WhatsApp ({siteConfig.phone}) when you want a proposal, then open door-to-door, inbound import or outbound export. Confirm MOCCAE portal fees on the official site.
             </p>
             <p className="mt-2 text-xs leading-relaxed text-[#8A8A8A]">
               Guides are free to read. WhatsApp is for people ready to book a managed relocation.
@@ -324,7 +322,7 @@ export default function HomePage() {
             >
               Prices and packages <ArrowRight className="h-4 w-4" />
             </Link>
-            <WhatsAppCta text="Check if we can move your pet" message={WA_ELIGIBILITY_DEFAULT} />
+            <WhatsAppCta text="Tell us about your move" message={WA_ELIGIBILITY_DEFAULT} />
           </div>
         </div>
       </section>
@@ -343,7 +341,7 @@ export default function HomePage() {
                 Dubai to UK and Dubai to USA are not reversed inbound checklists — destination rules drive the outbound clock. The UAE export certificate is comparatively quick and still useless if it is issued before the destination’s treatments or waiting periods are ready. Use the routes hub for the full inbound versus outbound list; this strip is only the corridors families ask about first.
               </p>
               <p className="text-body">
-                If your country is not listed, WhatsApp the origin and destination. We map current rules before anyone books cargo. We do not invent extra country pages on this homepage, and we do not claim a country-count we cannot evidence.
+                If your country is not listed, send the origin and destination on WhatsApp. We map current rules before anyone books cargo. This page only links corridors we publish.
               </p>
             </div>
             <ContentImage
@@ -393,20 +391,20 @@ export default function HomePage() {
               {
                 step: '01',
                 icon: Phone,
-                title: 'Check if we can move your pet',
-                body: 'Send species, breed, route and month when you are ready to book. We check breed eligibility, whether the job is inbound, outbound or local pet taxi, and which paid page you should use.',
+                title: "Share your pet's travel details.",
+                body: 'Send your departure city, destination, pet details and preferred travel date. We use those details to see whether the move is inbound, outbound or local, and which service applies.',
               },
               {
                 step: '02',
                 icon: FileCheck,
-                title: 'We check the file',
-                body: 'Microchip, vaccinations, permit window and crate sizing. Import permits are valid 90 days. Titer, when required, is a blood sample within 90 days before travel.',
+                title: 'Review the requirements and proposed service.',
+                body: 'We review microchip, vaccinations, crate sizing and the permit window with you. A MOCCAE import permit is valid for 90 days from issuance. When a titer is required, the blood sample is taken within 90 days before travel.',
               },
               {
                 step: '03',
                 icon: Heart,
-                title: 'Partners move; we stay on the thread',
-                body: 'Vetted veterinary and transport partners handle the animal. We coordinate cargo or pet taxi and update you on WhatsApp during business hours.',
+                title: 'Prepare for the journey with the agreed support.',
+                body: 'Vetted veterinary and transport partners handle the animal. We coordinate cargo or pet taxi and update you on WhatsApp during published hours.',
               },
             ].map((s) => (
               <Card key={s.step} className="relative">
@@ -434,9 +432,9 @@ export default function HomePage() {
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <span className="text-sm font-semibold uppercase tracking-wider text-[#4F5BD5]">What Drives Pet Relocation Costs</span>
-          <h2 className="text-section mt-3 mb-4">Drivers first — fee tables wait for Pricing</h2>
+          <h2 className="text-section mt-3 mb-4">What a quote is built from</h2>
           <p className="text-body mb-4">
-            A relocation quote is a bundle: government steps, veterinary work, an IATA crate, live-animal cargo, and how much coordination you hand over. We do not publish AED fee tables, permit amounts or release fees on the homepage. Those figures are contested or route-specific and stay with the Pricing Specialist and the official portals. Circulating MOCCAE permit amounts have disagreed with each other; export-certificate ranges have disagreed with first-party notes. Printing either here would be a guess dressed as a table.
+            A relocation quote depends on the route, your pet's size, travel arrangements and how much coordination you hand over. Government steps, veterinary work, an IATA crate and live-animal cargo all sit in that proposal. Permit amounts and release fees are confirmed on the official portals. This page does not print those figures.
           </p>
           <p className="text-body mb-4">
             What actually moves a quote: direction (inbound permit window versus outbound destination rules), pet size and crate, season (heat embargoes and snub-nosed limits), and whether you want document guidance only or travel-day held for you. A small cat on a short inbound hop is a different job from a large dog leaving for a quarantine destination. Two pets can share a coordinator thread and still need two crates and two portal filings.
@@ -464,7 +462,7 @@ export default function HomePage() {
           <div className="mb-8 grid items-start gap-8 lg:grid-cols-2">
             <div>
               <span className="text-sm font-semibold uppercase tracking-wider text-[#4F5BD5]">UAE Pet Import Essentials</span>
-              <h2 className="text-section mt-3 mb-4">Five facts the homepage is allowed to state</h2>
+              <h2 className="text-section mt-3 mb-4">Import facts owners mix up most often</h2>
               <p className="text-body mb-4">
                 Full checklists live on the guides. The homepage only carries the facts owners misuse most often — and the links out. Last-verified stamps sit next to regulatory lines. We will not paste the 3,000-word import guide onto this page; that is how the old homepage became a second site.
               </p>
@@ -591,7 +589,7 @@ export default function HomePage() {
       <section className="section-padding bg-[#F5F6FD]">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <span className="text-sm font-semibold uppercase tracking-wider text-[#4F5BD5]">Why Pet Owners Work With Us</span>
-          <h2 className="text-section mt-3 mb-4">Process language — not invented proof</h2>
+          <h2 className="text-section mt-3 mb-4">What you can expect from us</h2>
           <p className="text-body mb-4">
             You are never handing a pet to a faceless ticket number. A coordinator reviews the file, names the next deadline, and stays on WhatsApp during published hours. We vet partners against handling and climate-control criteria; that is a process description, not a licence, IPATA card or government endorsement. We do not operate the aircraft. We do not claim to own the vans. We do not sell “approval” we cannot show.
           </p>
@@ -599,7 +597,7 @@ export default function HomePage() {
             We do not claim hundreds of pets moved, star ratings, zero paperwork errors, 24/7 cover or a country-count. Those lines stay off the site until they can be evidenced. What we will say: every document is line-checked before it is submitted, crate size is measured on the animal, and inbound versus outbound is never copy-pasted. A 15-minute reply is not an SLA we print. A same-day pet taxi is a slot when a partner is free, not a night desk.
           </p>
           <p className="text-body mb-4">
-            Transparency also means saying what we will not do. We will not invent a fee to look complete. We will not tell you a banned breed can “probably enter”. We will not book cargo before the permit window is understood. We will not treat a nervous cat as a small dog in a smaller box.
+            Transparency also means saying what we will not do. We will not publish an unverified fee to look complete. We will not tell you a banned breed can “probably enter”. We will not book cargo before the permit window is understood. We will not treat a nervous cat as a small dog in a smaller box.
           </p>
           <p className="text-body mb-6">
             Animal welfare sits in the sequence: heat, crate, no casual sedation talk, and a quiet first week after arrival. The longer story belongs on About. WhatsApp is for a managed-move eligibility check: send the pet, the route and the month when you are ready to book.
@@ -615,7 +613,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-[1200px] px-5 sm:px-6 lg:px-8">
           <div className="mb-8 text-center">
             <span className="text-sm font-semibold uppercase tracking-wider text-[#4F5BD5]">Guides</span>
-            <h2 className="text-section mt-3 mb-3">Decision guides, not a second homepage</h2>
+            <h2 className="text-section mt-3 mb-3">Guides for one rule at a time</h2>
             <p className="text-body-large mx-auto max-w-2xl">
               Four to six cards. The guides hub holds the rest. Use these when you need a rule, not a quote.
             </p>
@@ -671,7 +669,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[32px]">Ready to book a managed move?</h2>
           <p className="mb-3 text-white/90">
-            Message the pet, the route and the month if you want us to run the file, or open the door-to-door / import money pages. Guides stay free to read. A coordinator replies during business hours with the path that actually applies.
+            Message the pet, the route and the month if you want us to run the file, or open the door-to-door / import service pages. Guides stay free to read. A coordinator replies during business hours with the path that actually applies.
           </p>
           <p className="mb-3 text-sm text-white/70">
             What happens after you message us: we read the breed and corridor, we say which documents matter first, and we tell you if the month is realistic. No 15-minute SLA. No 24/7 claim.
@@ -680,7 +678,7 @@ export default function HomePage() {
             Accuracy note: regulatory lines on this page follow the first-party source-of-truth (90-day permit; titer sample within 90 days before travel). Portal fees are confirmed on the official site, not invented here.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <WhatsAppCta text="Check if we can move your pet" message={WA_ELIGIBILITY_DEFAULT} />
+            <WhatsAppCta text="Tell us about your move" message={WA_ELIGIBILITY_DEFAULT} />
             <Link
               to="/service/pet-relocation-dubai/"
               className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-7 py-4 text-sm font-semibold text-[#4F5BD5] shadow-sm hover:bg-white/90"

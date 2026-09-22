@@ -243,7 +243,7 @@ export default function AbuDhabiCity() {
                 . We do not publish inter-emirate AED bands on this city page; government release fees stay verify-on-portal.
               </p>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                Share both addresses and the cargo airport on WhatsApp +971504782999. This URL owns the Abu Dhabi arrival and ADCM story; the transport URL owns the van.
+                Share both addresses and the cargo airport on WhatsApp +971504782999. This page covers the Abu Dhabi arrival and ADCM story. The pet transport page is the van booking.
               </p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
@@ -252,7 +252,7 @@ export default function AbuDhabiCity() {
                 After AUH release, Abu Dhabi City Municipality (ADCM) licensing typically runs through TAMM or an ADCM service centre. Plan to register within 30 days of arrival. Owners usually need identification, proof of an Abu Dhabi address, rabies records and the microchip certificate. Confirm the current fee and form names on TAMM / ADCM — we do not treat blog AED 100–250 bands as a first-party tariff.
               </p>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                This is not Dubai Aleef. A Dubai Municipality registration does not transfer automatically. We remind you of the ADCM clock after delivery; we do not invent a named partnership with TAMM.
+                This is not Dubai Aleef. A Dubai Municipality registration does not transfer automatically. We remind you of the ADCM clock after delivery; we do not assume a named partnership with TAMM.
               </p>
             </div>
           </div>
