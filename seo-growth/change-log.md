@@ -29,7 +29,9 @@ Out of scope: remaining URL batch, robots cleanup, new tools, GBP, GSC, GA4.
 
 Purpose: align the titre guide, the banned-breed guide, the permit and checklist guides, four money/service pages, USA to Dubai, Dubai to UK, and residual workshop language on /dubai/ with the Release 3 register. No new routes. No URL changes. Shared regulatory.ts constants were left in place so out-of-scope pages are not rewritten by a constant change.
 
-Branch: cursor/release4-batch1-claim-hygiene-ed98. Base: main after pull request 66 (e4183bdbe740ae8a01b3557897dd53de5fde4216).
+Branch: cursor/release4-batch1-claim-hygiene-ed98. Base: main after pull request 66 (e4183bdbe740ae8a01b3557897dd53de5fde4216). Content commit: e34e48223e99364090a8e624f16a0d7940599e87. Pull request: https://github.com/numini-co/PetClear/pull/67.
+
+Verification on this branch: `npm run lint` in website/ exited 0 (existing warnings on unrelated pages only; Batch 1 files were clean). `npm run build` completed with prerender 0 failed. seo-growth is not imported by the website. Browser walkthrough was not run; verification was lint, typecheck, and prerender.
 
 Affected URLs:
 
