@@ -13,8 +13,11 @@ const SOURCES: { label: string; href: string }[] = [
 
 export default function OfficialSources({
   extra,
+  checkedLabel,
 }: {
   extra?: { label: string; href: string }[]
+  /** Page-level check date. Omit to keep the shared Last verified line. */
+  checkedLabel?: string
 }) {
   const sources = extra?.length
     ? [...SOURCES, ...extra.filter((s) => !SOURCES.some((b) => b.href === s.href))]
@@ -30,7 +33,11 @@ export default function OfficialSources({
           We coordinate the paperwork, but the rules are set by government and industry
           authorities. Always confirm the current requirements directly with the official sources.
         </p>
-        <LastVerified className="mb-6 text-sm text-[#5A5A5A]" />
+        {checkedLabel ? (
+          <p className="mb-6 text-sm text-[#5A5A5A]">{checkedLabel}</p>
+        ) : (
+          <LastVerified className="mb-6 text-sm text-[#5A5A5A]" />
+        )}
         <ul className="flex flex-wrap gap-3">
           {sources.map((s) => (
             <li key={s.href}>

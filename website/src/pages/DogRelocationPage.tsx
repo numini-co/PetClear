@@ -1,86 +1,54 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
-  MessageCircle,
   CheckCircle,
-  Shield,
-  Award,
-  Globe,
   ChevronDown,
   ChevronUp,
   AlertTriangle,
-  Heart,
-  Thermometer,
   Plane,
-  FileText,
   Ruler,
-  Calendar,
-  Clock,
-  Home,
-  Phone,
-  Pencil,
-  Stethoscope,
   PawPrint,
-  ArrowRight,
-  Info,
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
 import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
+import { waEligibility } from '../lib/conversionCopy.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import RelatedLinks from '../components/RelatedLinks.tsx'
 
+const WA = waEligibility({ pet: 'Dog', destination: 'Dubai', need: 'managed move' })
+
 const DOG_FAQS: { q: string; a: string }[] = [
   {
-    q: 'Can I take my dog to live with me in Dubai?',
-    a: 'Yes — if the breed is permitted, you complete MOCCAE import (permit valid 90 days from issuance), vaccines, health certificate, and a confirmed airline product, then register locally after arrival. Some buildings restrict dogs; banned breeds cannot enter as a loophole. Requirements: [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/). Cost: [/guides/pet-relocation-cost-dubai/](/guides/pet-relocation-cost-dubai/). WhatsApp +971504782999.',
+    q: 'Can I bring my dog to live in Dubai?',
+    a: 'Yes, when the breed is not on the published ban list and the import file matches. You need a MOCCAE import permit valid 90 days from issuance, the vaccines named for dogs, a health certificate from the origin authority, and an airline product that accepts the dog into Dubai, usually as cargo. Buildings may set their own pet rules after arrival. Checklist: [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/). Breed names: [/guides/banned-dog-breeds-dubai/](/guides/banned-dog-breeds-dubai/).',
   },
   {
-    q: 'Can I bring a dog to Dubai?',
-    a: 'Dubai allows pet dogs when the breed is legal and the import file is complete. Check [/guides/banned-dog-breeds-dubai/](/guides/banned-dog-breeds-dubai/) before you book. You still need a MOCCAE import permit valid 90 days from issuance, vaccines, a health certificate, and usually cargo acceptance into DXB or DWC. Service coordination: [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/). WhatsApp +971504782999.',
+    q: 'How is a dog move different from a cat move?',
+    a: 'Dogs have a federal ban list. Cats do not use that list; Bengal and Serval cats have a pedigree condition instead. Dogs need larger rigid crates, and many towers treat a dog crate as a goods-lift booking. Dog vaccines on the MOCCAE page are rabies, distemper, parvovirus, infectious canine hepatitis and leptospirosis. Do not use the cat vaccine list for a dog. Cat preparation: [/cat-relocation-to-dubai/](/cat-relocation-to-dubai/).',
   },
   {
-    q: 'Does Dubai allow pet dogs?',
-    a: 'Dubai allows pet dogs when the breed is legal and the import file is complete. Check [/guides/banned-dog-breeds-dubai/](/guides/banned-dog-breeds-dubai/) before you book. You still need a MOCCAE import permit valid 90 days from issuance, vaccines, a health certificate, and usually cargo acceptance into DXB or DWC. Service coordination: [/service/pet-relocation-dubai/](/service/pet-relocation-dubai/). WhatsApp +971504782999.',
+    q: 'How long does dog relocation to Dubai take?',
+    a: 'It depends on the vaccine already in the dog and on whether the origin is high-risk. A first rabies vaccine has a wait on the UK export certificate of more than 21 days, and the dog must be at least 15 weeks old at UK export. High-risk origins add a rabies antibody test. The permit itself is valid 90 days from issuance. There is no single 4 to 6 week promise. Route example: [/routes/uk-to-dubai/](/routes/uk-to-dubai/).',
   },
   {
-    q: 'Can I travel with my dog to Dubai?',
-    a: 'Travel with a dog into Dubai means matching documents to a live-animal airline product — typically cargo — not assuming cabin on every carrier. Permit, vaccines, and crate rules still apply. Flight modes: [/guides/pet-flight-options-dubai/](/guides/pet-flight-options-dubai/). Living/import checklist stays linked from this species page.',
+    q: 'Can my dog fly in the cabin to Dubai?',
+    a: 'Do not assume a cabin seat. Emirates says animals on itineraries ending in Dubai travel as cargo, and ordinary pets are not in the Emirates cabin. British Airways says pets travel in the hold, not the cabin. An Etihad cabin product is a separate Abu Dhabi booking. Confirm the live product. Modes: [/guides/pet-flight-options-dubai/](/guides/pet-flight-options-dubai/). Etihad: [/guides/etihad-pet-policy/](/guides/etihad-pet-policy/).',
   },
   {
-    q: 'How long does it take to relocate a dog to Dubai?',
-    a: 'From low-risk countries (UK, EU, USA, Canada, Australia, New Zealand), the minimum timeline is 4–6 weeks. This includes microchip implantation, rabies vaccination (21-day wait), MOCCAE import permit application, and international health certificate. From high-risk countries that require a titer, the blood sample should be taken within 90 days before travel and read at least 0.5 IU/ml — that is not a wait after the draw. We recommend starting the process 8–12 weeks before your planned move.',
+    q: 'What if I am not sure of the breed?',
+    a: 'Send the name used by your vet and clear photos before a permit is filed. Shelter labels such as "mix" are not a decision. The MOCCAE page lists banned types, and the UK export certificate also refuses crosses of a similar list. We will not file a permit for a dog that matches that list. Fines are not invented here: the live page says a non-compliant import may be rejected at your expense or confiscated.',
   },
   {
-    q: 'Can I fly with my dog in the cabin to Dubai?',
-    a: 'Regular dogs cannot travel in the cabin on flights to Dubai. All dogs must travel as manifest cargo (air freight). The only exception is Etihad Airways, which allows small dogs (dog plus carrier weighing 8 kg or less) in the cabin on flights to Abu Dhabi — not Dubai. If you choose this option, you will need to arrange ground transport from Abu Dhabi to Dubai after arrival.',
-  },
-  {
-    q: 'What if my dog is a banned breed but I have paperwork saying otherwise?',
-    a: 'Breed identification at UAE customs is done by visual inspection, and the inspector\'s decision is final. \'Pit Bull mix\' or \'unknown breed\' labels from shelters are not reliable for UAE import purposes. At Dubai Pet Relocation, we assess your dog\'s appearance, paperwork, and pedigree (if available) before submitting any MOCCAE permit application. If there is any doubt about your dog\'s breed classification, we will give you an honest answer. Importing a banned breed illegally can result in fines from AED 10,000 to AED 700,000, possible jail time, and confiscation of the animal.',
-  },
-  {
-    q: 'Do you handle the dog\'s arrival at Dubai Airport, or do I need to go to the cargo terminal myself?',
-    a: 'We handle both options. Most clients choose our door-to-door service: we collect your dog from the DXB or DWC cargo terminal, clear customs, and deliver to your home. If you prefer to collect your dog yourself, we prepare all customs paperwork and meet you at the terminal with everything ready. Either way, you receive WhatsApp updates and photos at every checkpoint — check-in, boarding, arrival, and customs clearance.',
+    q: 'Who meets the dog at Dubai airport?',
+    a: 'MOCCAE inspects at the entry port and releases a matching file. If you book door-to-door, collection is from cargo after that release, then to the address. If you collect yourself, the same papers still have to match. We do not promise a clearance time or a photo at every step. Arrival notes: [/guides/dubai-pet-arrival-guide/](/guides/dubai-pet-arrival-guide/).',
   },
 ]
 
-/* ─── helpers ─── */
-const SectionHeading = ({ children, className = '' }: { children: React.ReactNode; className?: string }) => (
-  <h2 className={`text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] tracking-tight ${className}`}>
-    {children}
-  </h2>
-)
-
-const SectionIntro = ({ children }: { children: React.ReactNode }) => (
-  <p className="text-base sm:text-lg text-[#5A5A5A] leading-relaxed max-w-3xl">{children}</p>
-)
-
-/* ─── FAQ accordion ─── */
 function FaqItem({ question, answer }: { question: string; answer: React.ReactNode }) {
   const [open, setOpen] = useState(false)
   return (
@@ -94,853 +62,220 @@ function FaqItem({ question, answer }: { question: string; answer: React.ReactNo
   )
 }
 
-/* ─── timeline step ─── */
-function Step({ number, title, children }: { number: number; title: string; children: React.ReactNode }) {
-  return (
-    <div className="relative pl-10 pb-10 last:pb-0">
-      <div className="absolute left-0 top-0 w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold">
-        {number}
-      </div>
-      <div className="absolute left-3.5 top-7 bottom-0 w-px bg-[#4F5BD5]/20" />
-      <h3 className="text-lg font-semibold text-[#2A2A2A] mb-3">{title}</h3>
-      <div className="text-[#5A5A5A] leading-relaxed space-y-2">{children}</div>
-    </div>
-  )
-}
-
-/* ─── cost table ─── */
-function CostTable({ size, items, total }: { size: string; items: [string, string][]; total: string }) {
-  return (
-    <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8">
-      <h3 className="text-lg font-semibold text-[#2A2A2A] mb-4">{size}</h3>
-      <div className="overflow-x-auto">
-        <table className="data-table">
-          <tbody>
-            {items.map(([label, value]) => (
-              <tr key={label}>
-                <td className="font-medium text-[#2A2A2A]">{label}</td>
-                <td className="text-right text-[#5A5A5A]">{value}</td>
-              </tr>
-            ))}
-            <tr className="border-t-2 border-[#4F5BD5]">
-              <td className="font-bold text-[#2A2A2A]">Total estimated range</td>
-              <td className="text-right font-bold text-[#4F5BD5]">{total}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  )
-}
-
 export default function DogRelocationPage() {
   return (
     <div className="bg-[#F5F6FD]">
       <SEOHead
         canonical={`${BASE_URL}/dog-relocation-to-dubai/`}
-        title="Dog Relocation to Dubai | Complete Guide 2026"
-        description="Dog relocation to Dubai: breed checks, crate sizing, MOCCAE permit, cargo booking and banned-breed rules. WhatsApp +971504782999."
+        title="Dog Relocation to Dubai | Breed, Crate and Permit"
+        description="Dog relocation to Dubai: check the breed ban, size the crate, and follow the MOCCAE permit valid 90 days from issuance. WhatsApp +971504782999."
         ogType="article"
         schemas={[
           {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
             mainEntity: DOG_FAQS.map((f) => ({
-              "@type": "Question",
+              '@type': 'Question',
               name: f.q,
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: stripInternalMarkdownLinks(f.a),
-              },
+              acceptedAnswer: { '@type': 'Answer', text: stripInternalMarkdownLinks(f.a) },
             })),
           },
           {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://dubai-pet-relocation.ae/" },
-              { "@type": "ListItem", position: 2, name: "Dog Relocation to Dubai", item: "https://dubai-pet-relocation.ae/dog-relocation-to-dubai/" }
-            ]
+              { '@type': 'ListItem', position: 1, name: 'Home', item: `${BASE_URL}/` },
+              { '@type': 'ListItem', position: 2, name: 'Dog Relocation to Dubai', item: `${BASE_URL}/dog-relocation-to-dubai/` },
+            ],
           },
           {
-            "@context": "https://schema.org",
-            "@type": "Article",
-            headline: "Dog Relocation to Dubai | Complete Guide 2026 | Dubai Pet Relocation",
-            description: "Dog relocation to Dubai: breed checks, crate sizing, MOCCAE permit, cargo booking and banned-breed rules. WhatsApp +971504782999.",
-            url: "https://dubai-pet-relocation.ae/dog-relocation-to-dubai/",
-            author: { "@type": "Organization", name: "Dubai Pet Relocation" },
-            publisher: { "@type": "Organization", name: "Dubai Pet Relocation" }
-          }
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Dog Relocation to Dubai | Breed, Crate and Permit',
+            description: 'Dog relocation to Dubai: check the breed ban, size the crate, and follow the MOCCAE permit valid 90 days from issuance.',
+            url: `${BASE_URL}/dog-relocation-to-dubai/`,
+            dateModified: '2026-09-22',
+            author: { '@type': 'Organization', name: 'Dubai Pet Relocation' },
+            publisher: { '@type': 'Organization', name: 'Dubai Pet Relocation' },
+          },
         ]}
       />
-      <Breadcrumb items={[{label: 'Dog Relocation to Dubai'}]} />
+      <Breadcrumb items={[{ label: 'Dog Relocation to Dubai' }]} />
 
-      {/* ─── HERO ─── */}
       <Hero
         image="/images/hero-dog.jpg"
-        imageAlt="Golden Retriever sitting in an IATA-certified travel crate before a flight to Dubai"
-        eyebrow="Dog Relocation"
-        title="Dog Relocation to Dubai — Bring Your Dog Home Safely"
-        subtitle="Breed checks, crate sizing, MOCCAE permits, and cargo flights — handled end to end, with WhatsApp updates at every step."
-        updated="Updated June 2026"
-        whatsappMessage="Hi, I want to relocate my dog to Dubai. Can you help me understand the process and cost?"
+        imageAlt="Dog sitting beside a travel crate before a flight to Dubai"
+        eyebrow="Dogs"
+        title="Bring your dog to Dubai"
+        subtitle="Start with the breed, then the crate, then the permit. The legal checklist lives on the import guide. This page is the practical dog preparation."
+        updated="Checked 22 September 2026"
+        whatsappMessage={WA}
+        primaryLabel="Check this dog's move"
         secondary={{ label: 'How it works', to: '/how-it-works/' }}
       />
 
-      {/* ─── WORRIES ─── */}
       <section className="py-20 lg:py-28">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <SectionHeading className="mb-4">What Every Dog Owner Worries About (And How We Handle It)</SectionHeading>
-          <SectionIntro>
-            Every dog owner we speak to has the same fears. They are valid. We name them, then we solve them. The commercial dog file — breed check, crate and cargo — sits on{' '}
-            <Link to="/service/dog-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-              dog relocation in Dubai
-            </Link>
-            . This page stays the inbound journey guide.
-          </SectionIntro>
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
+            What to sort out before you book a flight
+          </h2>
+          <p className="text-base sm:text-lg text-[#5A5A5A] leading-relaxed max-w-3xl">
+            A dog move fails the file when the breed is banned, the crate does not fit the dog, or the airline will not accept that shape of head in that season. The{' '}
+            <Link to="/service/dog-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">dog relocation service</Link>
+            {' '}is the paid coordination. This page answers the preparation questions first.
+          </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-            {/* Card 1 */}
-            <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
-                <PawPrint className="w-5 h-5 text-[#4F5BD5]" />
-              </div>
-              <h3 className="text-lg font-semibold text-[#2A2A2A] mb-3">&ldquo;Will my dog be scared in the crate?&rdquo;</h3>
+            <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8">
+              <PawPrint className="w-5 h-5 text-[#4F5BD5] mb-4" />
+              <h3 className="text-lg font-semibold text-[#2A2A2A] mb-3">Will the dog cope with the crate?</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">
-                Most dogs adjust well to an IATA-certified crate if they meet it before travel day. We send you a crate-training guide as soon as you book. We also use crates with ventilation on all four sides, so your dog can see light and smell airflow — not just darkness.
-              </p>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed mt-2">
-                Our partner vets check your dog's health and temperament before travel. If your dog has severe anxiety, we discuss options: calming aids (vet-approved only), direct routing to minimise transit time, or a pet nanny service for certain routes.
+                Let the dog sleep and eat in the crate for several days before travel, at home. The crate needs ventilation and enough room to stand, turn and lie down. We do not claim a temperature inside the hold, and we do not offer sedation or calming-drug advice. If the dog is unwell or severely distressed, ask your own vet whether the dog should fly. That is a veterinary decision, not a page instruction.
               </p>
             </div>
-            {/* Card 2 */}
-            <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
-                <AlertTriangle className="w-5 h-5 text-[#4F5BD5]" />
-              </div>
-              <h3 className="text-lg font-semibold text-[#2A2A2A] mb-3">&ldquo;Is my breed allowed in Dubai?&rdquo;</h3>
+            <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8">
+              <AlertTriangle className="w-5 h-5 text-[#4F5BD5] mb-4" />
+              <h3 className="text-lg font-semibold text-[#2A2A2A] mb-3">Is this breed allowed?</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">
-                The UAE bans certain dog breeds at the federal level. Others are restricted, which means extra rules about where you can live and how you walk your dog. We run a breed check in your first WhatsApp conversation — before you pay anything. If your breed is restricted, we tell you exactly what that means for daily life in Dubai, not just for import.
+                MOCCAE publishes a ban list for dogs. Check it before you pay for a crate. The full names are on the{' '}
+                <Link to="/guides/banned-dog-breeds-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">banned dog breeds</Link>
+                {' '}page and on the{' '}
+                <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">import requirements</Link>
+                {' '}guide. A restricted-breed story about muzzles and apartments is not restated here, because that residency rule was not on the import page checked on 22 September 2026.
               </p>
-              <div className="mt-4">
-                <WhatsAppBtn
-                  label="Ask about your dog's breed"
-                  message="Hi, I want to relocate my dog to Dubai and I'm not sure if my breed is allowed. Can you check for me?"
-                  className="!px-4 !py-2.5 !text-xs"
-                />
-              </div>
             </div>
-            {/* Card 3 */}
-            <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 sm:col-span-2 lg:col-span-1">
-              <div className="w-11 h-11 rounded-[14px] bg-[#E9ECFB] flex items-center justify-center mb-4">
-                <Plane className="w-5 h-5 text-[#4F5BD5]" />
-              </div>
-              <h3 className="text-lg font-semibold text-[#2A2A2A] mb-3">&ldquo;What if something goes wrong during the flight?&rdquo;</h3>
+            <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 sm:col-span-2 lg:col-span-1">
+              <Plane className="w-5 h-5 text-[#4F5BD5] mb-4" />
+              <h3 className="text-lg font-semibold text-[#2A2A2A] mb-3">What if the flight changes?</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">
-                Pets travel in the same climate-controlled, pressurised cargo hold as temperature-sensitive pharmaceuticals. The temperature is maintained between 18°C and 24°C. We book morning flights wherever possible to avoid ground heat during loading and unloading.
-              </p>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed mt-2">
-                If a flight is delayed or cancelled, we know before the airline announces it. We rebook your dog's boarding, arrange extended care with our vet partner, and tell you immediately. You are never left wondering.
+                Cargo bookings can move. A managed file is rebooked against the permit window, which is 90 days from issuance, and against the health certificate's own validity. We do not promise to know about a delay before the airline does. You get WhatsApp updates during business hours on a booked move.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ─── STEP BY STEP ─── */}
       <section className="bg-white py-20 lg:py-28">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <SectionHeading className="mb-4">How Dog Relocation Works — Step by Step</SectionHeading>
-          <SectionIntro>
-            We do not believe in vague promises. Here is exactly what happens, and who does what.
-          </SectionIntro>
-          <div className="mt-12 max-w-3xl">
-            <Step number={1} title="Breed check and route planning">
-              <p>You send us your dog's breed, weight, and origin country on WhatsApp. Within 15 minutes, we confirm:</p>
-              <ul className="list-disc pl-5 space-y-1 text-sm">
-                <li>Is your breed banned or restricted in the UAE?</li>
-                <li>Is your origin country low-risk or high-risk for rabies?</li>
-                <li>Does your route have a direct flight, or will your dog transit through another airport?</li>
-                <li>Is your planned travel date inside the summer heat embargo?</li>
-              </ul>
-              <p>If everything checks out, we send you an itemised quote. If there is a problem, we tell you straight away and explain your alternatives.</p>
-            </Step>
-            <Step number={2} title="Veterinary preparation and documents">
-              <p>Our partner vet implants (or verifies) an ISO 11784/11785 microchip and administers a rabies vaccination. The microchip must be implanted <em>before</em> the rabies vaccine, or the vaccine is invalid for import.</p>
-              <p>For dogs from high-risk rabies countries, we also coordinate the rabies titer test (RNATT). Blood is drawn at least 21 days after vaccination and sent to an accredited lab. The sample used for travel must be taken within 90 days before travel and read at least 0.5 IU/ml — a pre-travel sample window, not a 90-day wait after the draw.</p>
-              <p>We track every deadline. We remind you when the next step is due. We check every document three times before submission.</p>
-            </Step>
-            <Step number={3} title="MOCCAE import permit and flight booking">
-              <p>We apply for your dog's MOCCAE import permit online. The permit is valid for 90 days from issuance. Confirm the current permit and arrival-release fees on the official MOCCAE portal; fees may change. We know which forms are current, which office to submit to, and the common reasons for rejection.</p>
-              <p>Once the permit is approved, we book your dog's manifest cargo flight with the airline's cargo department — not the passenger reservation desk. We confirm pet-specific rules in writing: crate dimensions, breed restrictions, temperature limits, and transit care.</p>
-            </Step>
-            <Step number={4} title="Travel day and arrival in Dubai">
-              <p>Within 10 days of travel, our vet partner issues your dog's international health certificate and administers internal and external antiparasitic treatment. We label the crate with correct IATA markings, attach a water bowl, and attach a small food bag to the top (required for flights over 12 hours).</p>
-              <p>At Dubai arrival, we handle customs clearance at DXB or DWC cargo terminal. Your dog is cleared and delivered to your door — or you collect from the terminal, whichever you prefer. We send photos at check-in, at boarding, and at arrival.</p>
-            </Step>
-          </div>
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">How a dog file is put together</h2>
+          <ol className="mt-8 max-w-3xl space-y-6 text-[#5A5A5A]">
+            <li>
+              <h3 className="text-lg font-semibold text-[#2A2A2A]">1. Breed, weight and origin</h3>
+              <p className="mt-2 leading-relaxed">Send the breed, weight and country on WhatsApp if you want a managed move. We compare the breed with the published ban list. Origin decides whether a rabies antibody test is required. There is no 15-minute reply promise.</p>
+            </li>
+            <li>
+              <h3 className="text-lg font-semibold text-[#2A2A2A]">2. Your vet, not a drug plan from us</h3>
+              <p className="mt-2 leading-relaxed">Your vet implants or scans the microchip and gives the dog vaccines. MOCCAE names rabies, distemper, parvovirus, infectious canine hepatitis and leptospirosis for dogs. Leptospirosis can be replaced by a lab test when the exporting country does not vaccinate against it. Parasite products and doses stay with that vet. The legal sequence is on the import guide.</p>
+            </li>
+            <li>
+              <h3 className="text-lg font-semibold text-[#2A2A2A]">3. Permit and a cargo product</h3>
+              <p className="mt-2 leading-relaxed">The MOCCAE import permit is valid for 90 days from issuance. Book the airline only after you know that product accepts this dog. Emirates requires cargo for itineraries ending in Dubai. We confirm crate size and breed limits in writing with the carrier. We do not guarantee acceptance.</p>
+            </li>
+            <li>
+              <h3 className="text-lg font-semibold text-[#2A2A2A]">4. Travel day and release</h3>
+              <p className="mt-2 leading-relaxed">The health certificate is issued by the origin authority inside its own validity. At Dubai the animal is inspected and released if the file matches. Delivery to the home is available when that service is booked. See <Link to="/service/pet-relocation-to-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">pet relocation to Dubai</Link>.</p>
+            </li>
+          </ol>
           <div className="mt-8">
-            <WhatsAppBtn
-              label="Get a dog relocation quote"
-              message="Hi, I want to relocate my dog to Dubai. Can you help me understand the process and cost?"
+            <WhatsAppBtn label="Check this dog's move" message={WA} />
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 lg:py-28">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">Crate size for a dog</h2>
+          <p className="text-[#5A5A5A] max-w-3xl leading-relaxed">
+            Measure the dog standing: nose to the base of the tail, floor to the top of the head or ears, and the widest point of the body. The crate must let the dog stand, turn and lie down. Rigid plastic or wood with a metal door is the usual cargo crate. Wire crates are commonly refused. Bowls should be reachable without opening the door. Exact internal centimetres are an IATA and airline check, not a price list. See the{' '}
+            <Link to="/guides/iata-pet-crate-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">IATA crate guide</Link>.
+            We do not publish crate prices in AED.
+          </p>
+          <div className="grid lg:grid-cols-2 gap-8 mt-10 items-center">
+            <ul className="space-y-3 text-sm text-[#5A5A5A]">
+              <li className="flex gap-2"><Ruler className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Length: the dog can lie with legs extended.</li>
+              <li className="flex gap-2"><Ruler className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Height: ears do not touch the roof when standing.</li>
+              <li className="flex gap-2"><Ruler className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Width: the dog can turn.</li>
+              <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Flat-faced breeds: airline limits are extra. Read <Link to="/guides/snub-nosed-dogs-flying-uae/" className="font-semibold text-[#4F5BD5] hover:underline">snub-nosed dogs flying to the UAE</Link> and still confirm the booking. We will not promise a summer flight.</li>
+            </ul>
+            <img
+              src="/images/dog-crate.jpg"
+              alt="Measuring a dog for a travel crate before flying to Dubai"
+              width={1200}
+              height={800}
+              className="w-full h-64 object-cover rounded-[20px]"
+              loading="lazy"
             />
           </div>
         </div>
       </section>
 
-      {/* ─── DOCUMENTS ─── */}
-      <section className="py-20 lg:py-28">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <SectionHeading className="mb-4">What Your Dog Needs to Enter Dubai</SectionHeading>
-          <SectionIntro>
-            These are not optional. Missing one document can mean your pet is refused entry, confiscated, or re-exported — at your expense (boarding/re-flight costs can run into the thousands). We do not say this to frighten you. We say it because we have seen what happens when owners use outdated checklists from the internet.
-          </SectionIntro>
-          <div className="grid lg:grid-cols-2 gap-8 mt-12">
-            <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <h3 className="text-lg font-semibold text-[#2A2A2A] mb-5">The five documents every dog needs</h3>
-              <ol className="space-y-4">
-                <li className="flex gap-4">
-                  <span className="w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold shrink-0">1</span>
-                  <div>
-                    <p className="font-semibold text-[#2A2A2A] text-sm">MOCCAE Import Permit</p>
-                    <p className="text-sm text-[#5A5A5A]">Applied online via the MOCCAE portal. Valid 90 days from issuance. Cost: confirm current permit and arrival-release fees on the official MOCCAE portal.</p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold shrink-0">2</span>
-                  <div>
-                    <p className="font-semibold text-[#2A2A2A] text-sm">ISO Microchip Certificate</p>
-                    <p className="text-sm text-[#5A5A5A]">15-digit ISO 11784/11785 compliant. Must be implanted before rabies vaccination.</p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold shrink-0">3</span>
-                  <div>
-                    <p className="font-semibold text-[#2A2A2A] text-sm">Rabies Vaccination Certificate</p>
-                    <p className="text-sm text-[#5A5A5A]">Administered at or after 12 weeks of age. Must be at least 21 days old at time of travel, and within 12 months.</p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold shrink-0">4</span>
-                  <div>
-                    <p className="font-semibold text-[#2A2A2A] text-sm">International Health Certificate</p>
-                    <p className="text-sm text-[#5A5A5A]">Issued by an accredited government veterinarian within 10 days of arrival. Must include antiparasitic treatment records.</p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="w-7 h-7 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold shrink-0">5</span>
-                  <div>
-                    <p className="font-semibold text-[#2A2A2A] text-sm">Antiparasitic Treatment Record</p>
-                    <p className="text-sm text-[#5A5A5A]">Internal deworming and external flea/tick treatment within 14 days of arrival.</p>
-                  </div>
-                </li>
-              </ol>
-              <div className="mt-4 p-3 bg-[#EEF0FC] rounded-lg text-sm text-[#5A5A5A]">
-                <strong className="text-[#2A2A2A]">High-risk countries only:</strong> Rabies titer test (RNATT) with result ≥0.5 IU/ml; sample taken within 90 days before travel — not a wait after the draw.
-              </div>
-            </div>
-            <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <h3 className="text-lg font-semibold text-[#2A2A2A] mb-5">Vaccination timeline for dogs</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-3 text-sm text-[#5A5A5A]">
-                  <CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0" />
-                  <span><strong className="text-[#2A2A2A]">Canine Distemper (CDV)</strong> — Required</span>
-                </li>
-                <li className="flex items-center gap-3 text-sm text-[#5A5A5A]">
-                  <CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0" />
-                  <span><strong className="text-[#2A2A2A]">Canine Parvovirus (CPV)</strong> — Required</span>
-                </li>
-                <li className="flex items-center gap-3 text-sm text-[#5A5A5A]">
-                  <CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0" />
-                  <span><strong className="text-[#2A2A2A]">Infectious Canine Hepatitis (Adenovirus)</strong> — Required</span>
-                </li>
-                <li className="flex items-center gap-3 text-sm text-[#5A5A5A]">
-                  <CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0" />
-                  <span><strong className="text-[#2A2A2A]">Leptospirosis</strong> — Required</span>
-                </li>
-                <li className="flex items-center gap-3 text-sm text-[#5A5A5A]">
-                  <CheckCircle className="w-5 h-5 text-[#4F5BD5] shrink-0" />
-                  <span><strong className="text-[#2A2A2A]">Rabies</strong> — Required (inactivated or recombinant only; live attenuated vaccines are not accepted by MOCCAE)</span>
-                </li>
-              </ul>
-              <div className="mt-6 pt-6 border-t border-gray-100">
-                <Link to="/guides/uae-pet-import-requirements/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#4F5BD5] hover:underline">
-                  <FileText className="w-4 h-4" />
-                  Read our full guide to UAE pet import requirements
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── BANNED BREEDS ─── */}
       <section className="bg-white py-20 lg:py-28">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <SectionHeading className="mb-4">Banned and Restricted Dog Breeds in Dubai</SectionHeading>
-          <SectionIntro>
-            This is the section dog owners read first. We do not hide it at the bottom of the page.
-          </SectionIntro>
-
-          <div className="grid lg:grid-cols-2 gap-8 mt-12">
-            {/* Banned */}
-            <div className="bg-[#FEF2F2] border border-[#FECACA] rounded-[20px] p-6 sm:p-8">
-              <div className="flex items-center gap-3 mb-5">
-                <AlertTriangle className="w-6 h-6 text-[#4F5BD5]" />
-                <h3 className="text-lg font-semibold text-[#C0392B]">Completely banned breeds</h3>
-              </div>
-              <p className="text-sm text-[#5A5A5A] mb-4">
-                The following breeds and their mixes cannot be imported into the UAE under any circumstances (unless certified as a service animal by an ADI or IGDF accredited organisation):
-              </p>
-              <div className="space-y-4">
-                <div>
-                  <p className="text-sm font-semibold text-[#2A2A2A] mb-1">Pit Bull Types:</p>
-                  <ul className="list-disc pl-5 text-sm text-[#5A5A5A] space-y-0.5">
-                    <li>American Pit Bull Terrier</li>
-                    <li>Staffordshire Bull Terrier</li>
-                    <li>American Staffordshire Terrier</li>
-                    <li>American Bully</li>
-                    <li>Any Bull Terrier or Pit Bull cross</li>
-                  </ul>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-[#2A2A2A] mb-1">Mastiff Types:</p>
-                  <ul className="list-disc pl-5 text-sm text-[#5A5A5A] space-y-0.5">
-                    <li>Brazilian Mastiff (Fila Brasileiro)</li>
-                    <li>Argentinian Mastiff (Dogo Argentino)</li>
-                    <li>Tibetan Mastiff</li>
-                    <li>Neapolitan Mastiff</li>
-                    <li>French Mastiff (Dogue de Bordeaux)</li>
-                    <li>Boerboel</li>
-                    <li>Bullmastiff</li>
-                    <li>Cane Corso (Italian Mastiff)</li>
-                    <li>Bully Kutta (Alangu / Indian Mastiff)</li>
-                    <li>Perro de Presa Canario (Canary Mastiff)</li>
-                    <li>Any Mastiff or hybrid</li>
-                  </ul>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-[#2A2A2A] mb-1">Other:</p>
-                  <ul className="list-disc pl-5 text-sm text-[#5A5A5A] space-y-0.5">
-                    <li>Japanese Tosa (Tosa Inu)</li>
-                    <li>Presa Canario</li>
-                    <li>Wolf-dog hybrids (any dog mixed with a wolf)</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="mt-4 p-3 bg-white rounded-lg text-sm text-[#5A5A5A]">
-                <Info className="w-4 h-4 inline mr-1 text-[#4F5BD5]" />
-                Some sources list Rottweiler, Doberman Pinscher, and Boxer as banned. Current Dubai Municipality guidance classifies these as <em>restricted</em>, not fully banned. We verify with MOCCAE before every import.
-              </div>
-            </div>
-
-            {/* Restricted */}
-            <div className="space-y-8">
-              <div className="bg-white border border-[#4F5BD5]/30 rounded-[20px] p-6 sm:p-8">
-                <div className="flex items-center gap-3 mb-5">
-                  <Shield className="w-6 h-6 text-[#4F5BD5]" />
-                  <h3 className="text-lg font-semibold text-[#2A2A2A]">Restricted breeds — what &ldquo;restricted&rdquo; actually means</h3>
-                </div>
-                <p className="text-sm text-[#5A5A5A] mb-4">In Dubai, the following breeds face additional rules even if they are permitted to enter:</p>
-                <ul className="list-disc pl-5 text-sm text-[#5A5A5A] space-y-1 mb-4">
-                  <li>Bull Terrier (including Miniature)</li>
-                  <li>Husky</li>
-                  <li>English Bulldog / Old English Bulldog</li>
-                  <li>Perro de Presa Mallorquin</li>
-                  <li>Shar Pei</li>
-                  <li>Rottweiler (in some community contexts)</li>
-                  <li>Doberman Pinscher (in some community contexts)</li>
-                </ul>
-                <p className="text-sm font-semibold text-[#2A2A2A] mb-2">If you own one of these breeds, you must:</p>
-                <ul className="list-disc pl-5 text-sm text-[#5A5A5A] space-y-1">
-                  <li>Register with the Dubai Municipality Veterinary Services Division</li>
-                  <li>Keep your dog leashed and muzzled in public</li>
-                  <li>Not live in an apartment (villa or townhouse only in most communities)</li>
-                  <li>Display the municipality ID tag on your dog's collar at all times</li>
-                </ul>
-              </div>
-
-              <div className="warning-box">
-                <h3 className="text-lg font-semibold text-[#2A2A2A] mb-3">What to do if your breed is on the list</h3>
-                <p className="text-sm text-[#5A5A5A] mb-2"><strong className="text-[#2A2A2A]">Service animal exception:</strong> If your dog is a certified service animal (not emotional support) trained by an ADI or IGDF accredited organisation, you may apply for an exemption. You need full training records and medical justification.</p>
-                <p className="text-sm text-[#5A5A5A] mb-2"><strong className="text-[#2A2A2A]">Reconsider the move:</strong> We know this is hard to hear. But importing a banned breed illegally can result in fines from AED 10,000 to AED 700,000, jail time, and confiscation of your dog. We would rather tell you the truth now than hide it.</p>
-                <p className="text-sm text-[#5A5A5A] mb-4"><strong className="text-[#2A2A2A]">Contact us anyway:</strong> Breed identification is not always straightforward. A &ldquo;Pit Bull mix&rdquo; label from a shelter may not match the UAE's legal definition. Send us photos and paperwork. We will give you an honest answer.</p>
-                <WhatsAppBtn
-                  label="Ask about your dog's breed"
-                  message="Hi, I want to relocate my dog to Dubai and I'm not sure if my breed is allowed. Can you check for me?"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── CRATES ─── */}
-      <section className="py-20 lg:py-28">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <SectionHeading className="mb-4">IATA Travel Crates for Dogs</SectionHeading>
-          <SectionIntro>
-            Your dog's crate is their home for the flight. It must be the right size, the right material, and the right ventilation. A non-compliant crate will be refused at cargo check-in — and you will miss your flight.
-          </SectionIntro>
-
-          <div className="grid lg:grid-cols-2 gap-8 mt-12">
-            <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <h3 className="text-lg font-semibold text-[#2A2A2A] mb-4">How to measure your dog for the right crate</h3>
-              <p className="text-sm text-[#5A5A5A] mb-4">Use these three measurements:</p>
-              <ol className="space-y-3 mb-6">
-                <li className="flex gap-3 text-sm text-[#5A5A5A]">
-                  <span className="font-bold text-[#4F5BD5]">1.</span>
-                  <span><strong className="text-[#2A2A2A]">Length (A):</strong> From tip of nose to base of tail, while standing</span>
-                </li>
-                <li className="flex gap-3 text-sm text-[#5A5A5A]">
-                  <span className="font-bold text-[#4F5BD5]">2.</span>
-                  <span><strong className="text-[#2A2A2A]">Height (B):</strong> From ground to top of head or ears (whichever is higher), while standing</span>
-                </li>
-                <li className="flex gap-3 text-sm text-[#5A5A5A]">
-                  <span className="font-bold text-[#4F5BD5]">3.</span>
-                  <span><strong className="text-[#2A2A2A]">Width (C):</strong> At the widest point of the body</span>
-                </li>
-              </ol>
-              <div className="p-4 bg-[#EEF0FC] rounded-2xl">
-                <p className="text-sm font-semibold text-[#2A2A2A] mb-2">Crate minimum internal dimensions:</p>
-                <ul className="text-sm text-[#5A5A5A] space-y-1">
-                  <li>• Length = A + ½B (your dog must be able to lie down with legs extended)</li>
-                  <li>• Height = B + 5 cm (your dog must be able to stand without ears touching the roof)</li>
-                  <li>• Width = C × 2 (your dog must be able to turn around comfortably)</li>
-                </ul>
-              </div>
-            </div>
-            <div className="rounded-[20px] overflow-hidden shadow-sm">
-              <img
-                src="/images/dog-crate.jpg"
-                alt="Measuring a dog for an IATA-certified travel crate before flying to Dubai"
-                width={1200}
-                height={800}
-                className="w-full h-64 lg:h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <div className="mt-12 overflow-x-auto">
-            <h3 className="text-lg font-semibold text-[#2A2A2A] mb-4">Crate sizes by dog weight and breed</h3>
-            <table className="data-table">
-              <thead>
-                <tr>
-                  <th>Dog Size</th>
-                  <th>Weight Range</th>
-                  <th>Typical Crate Size</th>
-                  <th>Example Breeds</th>
-                  <th>Est. Cost (AED)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="font-semibold text-[#2A2A2A]">Small</td>
-                  <td>Under 10 kg</td>
-                  <td>48 × 32 × 32 cm (Series 200)</td>
-                  <td>Dachshund, French Bulldog, Shih Tzu</td>
-                  <td>500–700</td>
-                </tr>
-                <tr>
-                  <td className="font-semibold text-[#2A2A2A]">Medium</td>
-                  <td>10–25 kg</td>
-                  <td>68 × 53 × 51 cm (Series 300)</td>
-                  <td>Beagle, Border Collie, Cocker Spaniel</td>
-                  <td>700–1,000</td>
-                </tr>
-                <tr>
-                  <td className="font-semibold text-[#2A2A2A]">Large</td>
-                  <td>25–40 kg</td>
-                  <td>81 × 61 × 61 cm (Series 400)</td>
-                  <td>Labrador, Golden Retriever, German Shepherd</td>
-                  <td>1,000–1,500</td>
-                </tr>
-                <tr>
-                  <td className="font-semibold text-[#2A2A2A]">Extra-Large</td>
-                  <td>Over 40 kg</td>
-                  <td>102 × 70 × 76 cm (Series 500/700)</td>
-                  <td>Great Dane, Mastiff, Rottweiler</td>
-                  <td>1,500–2,000</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="mt-6 warning-box">
-            <p className="text-sm text-[#5A5A5A]">
-              <strong className="text-[#2A2A2A]">Important:</strong> The crate must be rigid plastic or wood with a solid metal door. Wire crates are not accepted. Ventilation must be present on all four sides (for international flights). Food and water bowls must be attached to the inside of the door, accessible from outside without opening the door. The crate must have &ldquo;Live Animal&rdquo; and &ldquo;This Way Up&rdquo; labels on all sides.
-            </p>
-          </div>
-          <p className="mt-4 text-sm text-[#5A5A5A]">
-            We provide IATA-certified crates sized to your dog. We do not sell crates separately — they are included in our service coordination so we know they are correct.
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">Airline acceptance is conditional</h2>
+          <p className="text-[#5A5A5A] max-w-3xl leading-relaxed">
+            Emirates: ordinary pets are not in the cabin, and itineraries ending in Dubai must travel as cargo. British Airways: pets travel in the hold, not the cabin. IAG Cargo says some dangerous dog breeds and snub-nosed dogs may not be accepted. None of those pages gave a Dubai hold temperature or a month-by-month embargo we can repeat as fact. Confirm the product. Flight options are on the{' '}
+            <Link to="/guides/pet-flight-options-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">pet flight options</Link> hub.
+          </p>
+          <p className="text-[#5A5A5A] max-w-3xl leading-relaxed mt-4">
+            Heat is a real planning problem in the Gulf, but a sentence such as "most airlines refuse all dogs from June to August" was not on the official pages checked on 22 September 2026. Ask the carrier for that date and that breed.
           </p>
         </div>
       </section>
 
-      {/* ─── AIRLINES ─── */}
-      <section className="bg-white py-20 lg:py-28">
+      <section className="py-20 lg:py-28">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <SectionHeading className="mb-4">Airline Options for Flying Dogs to Dubai</SectionHeading>
-          <SectionIntro>
-            All dogs entering the UAE must travel as manifest cargo. They cannot travel as checked baggage or in the cabin on flights <em>to</em> Dubai, with one exception.
-          </SectionIntro>
-
-          <div className="grid lg:grid-cols-2 gap-8 mt-12">
-            <div className="bg-white rounded-[20px] shadow-sm border border-gray-100 p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="flex items-center gap-3 mb-4">
-                <Plane className="w-6 h-6 text-[#4F5BD5]" />
-                <h3 className="text-lg font-semibold text-[#2A2A2A]">Emirates SkyCargo — the standard for DXB arrivals</h3>
-              </div>
-              <p className="text-sm text-[#5A5A5A] mb-4">Emirates SkyCargo is the most common choice for dogs arriving at Dubai International Airport (DXB).</p>
-              <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><span className="text-[#C0392B] font-bold">✕</span> <strong className="text-[#2A2A2A]">In-cabin:</strong> No regular dogs allowed. Only trained service dogs.</li>
-                <li className="flex items-start gap-2"><span className="text-[#C0392B] font-bold">✕</span> <strong className="text-[#2A2A2A]">Checked baggage:</strong> Not accepted for flights to Dubai.</li>
-                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Cargo:</strong> Mandatory. We book directly with the Emirates SkyCargo team, not the passenger reservation desk.</li>
-                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Booking notice:</strong> Minimum 72 hours advance.</li>
-                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Requirements:</strong> Photos of your dog in the crate, health certificates, and an Owner Acknowledgement Form.</li>
-                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Transit care:</strong> Dogs in transit for more than 6 hours at DXB are cared for at the Emirates Pet Lounge.</li>
-                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">!</span> <strong className="text-[#2A2A2A]">Breed restrictions:</strong> Emirates is stricter than UAE law. Snub-nose breeds are restricted to November–April only.</li>
-              </ul>
-            </div>
-
-            <div className="bg-white rounded-[20px] shadow-sm border border-gray-100 p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="flex items-center gap-3 mb-4">
-                <Plane className="w-6 h-6 text-[#4F5BD5]" />
-                <h3 className="text-lg font-semibold text-[#2A2A2A]">Etihad Airways — in-cabin option to Abu Dhabi</h3>
-              </div>
-              <p className="text-sm text-[#5A5A5A] mb-4">Etihad is the only UAE airline that allows small dogs in the cabin — but only on flights to or from Abu Dhabi (AUH), not Dubai.</p>
-              <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">In-cabin (PETC):</strong> Dog + carrier must weigh ≤8 kg. Carrier max: 40 × 40 × 22 cm (Economy). Etihad publishes cabin pet fees that change; confirm at booking. A 2026 promo from USD 399 is expired; USD 1,500 is Estimated only until first-party current fee is confirmed.</li>
-                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Booking:</strong> Must be done via Etihad Contact Centre. Submit form 7 days before, documents 72 hours before.</li>
-                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">!</span> <strong className="text-[#2A2A2A]">Abu Dhabi entry:</strong> Requires a Bill of Entry from MICCO Logistics (AED 365) at least 24 hours before departure.</li>
-                <li className="flex items-start gap-2"><span className="text-[#4F5BD5] font-bold">✓</span> <strong className="text-[#2A2A2A]">Cargo:</strong> Available for larger dogs or routes where cabin is not permitted.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-12 overflow-x-auto">
-            <h3 className="text-lg font-semibold text-[#2A2A2A] mb-4">Which airline for which dog size?</h3>
-            <table className="data-table">
-              <thead>
-                <tr>
-                  <th>Dog Size</th>
-                  <th>Best Option</th>
-                  <th>Notes</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="font-semibold text-[#2A2A2A]">Small (≤8 kg)</td>
-                  <td>Etihad in-cabin to AUH</td>
-                  <td>Only if your final destination is Abu Dhabi or you can drive to Dubai</td>
-                </tr>
-                <tr>
-                  <td className="font-semibold text-[#2A2A2A]">Small–Medium (any weight)</td>
-                  <td>Emirates SkyCargo to DXB</td>
-                  <td>Most common; direct flights from UK, EU, US, India, Australia</td>
-                </tr>
-                <tr>
-                  <td className="font-semibold text-[#2A2A2A]">Large / XL</td>
-                  <td>Emirates SkyCargo to DXB</td>
-                  <td>Crate must be 10% larger than standard for restricted breeds</td>
-                </tr>
-                <tr>
-                  <td className="font-semibold text-[#2A2A2A]">Snub-nose (any size)</td>
-                  <td>Emirates SkyCargo (Nov–Apr only)</td>
-                  <td>Summer embargo applies to all brachycephalic breeds</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <p className="mt-6 text-sm text-[#5A5A5A]">
-            We do not book flights for you and leave you to figure out the rest. We coordinate the cargo booking, confirm the rules in writing, and handle any changes if the airline updates its policy.
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">What a dog quote is made of</h2>
+          <p className="text-[#5A5A5A] max-w-3xl leading-relaxed">
+            We do not publish a package total or a crate price. The drivers are origin veterinary work, the government permit and release fees (listed on the import guide), the crate size, the cargo rate, and whether you want door-to-door delivery. Read{' '}
+            <Link to="/guides/pet-relocation-cost-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">pet relocation cost</Link>
+            {' '}for the driver list, then ask for a quote on this dog.
           </p>
-          <div className="mt-6">
-            <WhatsAppBtn
-              label="Get a dog relocation quote"
-              message="Hi, I want to relocate my dog to Dubai. Can you help me understand the process and cost?"
-            />
+          <div className="mt-8">
+            <WhatsAppBtn label="Ask for a dog quote" message={WA} />
           </div>
         </div>
       </section>
 
-      {/* ─── SUMMER HEAT / BRACHYCEPHALIC ─── */}
-      <section className="py-20 lg:py-28">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <SectionHeading className="mb-4">Summer Heat Embargoes and Brachycephalic Dogs</SectionHeading>
-
-          <div className="grid lg:grid-cols-2 gap-8 mt-12">
-            <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="flex items-center gap-3 mb-4">
-                <Thermometer className="w-6 h-6 text-[#4F5BD5]" />
-                <h3 className="text-lg font-semibold text-[#2A2A2A]">When dogs cannot fly (June–September)</h3>
-              </div>
-              <p className="text-sm text-[#5A5A5A] mb-4">
-                Most airlines suspend or restrict live animal cargo when ground temperatures exceed 29.5°C (85°F). In Dubai, this means:
-              </p>
-              <ul className="list-disc pl-5 text-sm text-[#5A5A5A] space-y-2 mb-4">
-                <li><strong className="text-[#2A2A2A]">Standard embargo:</strong> May to September (varies by airline and route)</li>
-                <li><strong className="text-[#2A2A2A]">Peak restriction:</strong> June–August — most airlines will not accept dogs at all</li>
-                <li><strong className="text-[#2A2A2A]">Morning flights:</strong> Even outside embargo, we book morning departures and arrivals to avoid midday heat</li>
-              </ul>
-              <p className="text-sm font-semibold text-[#2A2A2A] mb-2">If your move falls during summer, your options are:</p>
-              <ul className="list-disc pl-5 text-sm text-[#5A5A5A] space-y-1">
-                <li>Delay the dog's travel until October (most common)</li>
-                <li>Ground transport to a cooler departure city, then fly</li>
-                <li>Private pet charter (expensive, but available)</li>
-                <li>Pet nanny escort service (limited routes)</li>
-              </ul>
-              <p className="text-sm text-[#5A5A5A] mt-4">We tell you this in your first conversation. We do not take bookings we cannot fulfil.</p>
-            </div>
-
-            <div className="bg-[#FEF2F2] border border-[#FECACA] rounded-[20px] p-6 sm:p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <Heart className="w-6 h-6 text-[#4F5BD5]" />
-                <h3 className="text-lg font-semibold text-[#C0392B]">Special warning for snub-nose breeds</h3>
-              </div>
-              <p className="text-sm font-semibold text-[#2A2A2A] mb-3">
-                Brachycephalic (snub-nose) dogs are at higher risk during air travel. Their shortened airways make breathing harder in heat, stress, and low humidity.
-              </p>
-              <p className="text-sm font-semibold text-[#2A2A2A] mb-2">Breeds in this category:</p>
-              <ul className="list-disc pl-5 text-sm text-[#5A5A5A] space-y-0.5 mb-4">
-                <li>English Bulldog, French Bulldog, American Bulldog</li>
-                <li>Pug, Pekingese, Shih Tzu, Lhasa Apso</li>
-                <li>Boston Terrier, Boxer (some airlines)</li>
-                <li>Chow Chow, Shar Pei</li>
-                <li>King Charles Spaniel (some airlines)</li>
-                <li>Japanese Chin, Brussels Griffon</li>
-              </ul>
-              <p className="text-sm font-semibold text-[#2A2A2A] mb-2">What this means for your dog:</p>
-              <ul className="list-disc pl-5 text-sm text-[#5A5A5A] space-y-1 mb-4">
-                <li>Emirates restricts these breeds to <strong className="text-[#2A2A2A]">November–April only</strong></li>
-                <li>Some airlines require a larger crate (10% bigger than standard)</li>
-                <li>A veterinary fitness certificate may be required in addition to standard documents</li>
-                <li>We strongly recommend direct flights with no transit for brachycephalic dogs</li>
-              </ul>
-              <div className="warning-box !border-l-[#C0392B] !bg-[#FEF2F2]">
-                <p className="text-sm font-semibold text-[#C0392B]">
-                  ⚠️ Dubai Pet Relocation Warning: We will not book a brachycephalic dog during summer months. The risk is too high, and no airline will accept them. If your move is urgent, we will discuss ground transport or alternative routing. Your dog's safety comes before our revenue.
-                </p>
-              </div>
-              <p className="text-sm text-[#5A5A5A] mt-4">
-                Airline acceptance, IATA +10% crate sizing, and confirm-live carrier notes:{' '}
-                <Link to="/guides/snub-nosed-dogs-flying-uae/" className="font-semibold text-[#4F5BD5] hover:underline">
-                  snub-nosed dogs flying to the UAE
-                </Link>
-                .
-              </p>
-              <div className="mt-4">
-                <WhatsAppBtn
-                  label="WhatsApp us about your dog"
-                  message="Hi, I want to relocate my dog to Dubai. Can you help me understand the process and cost?"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── COSTS ─── */}
       <section className="bg-white py-20 lg:py-28">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <SectionHeading className="mb-4">What It Costs to Relocate a Dog to Dubai</SectionHeading>
-          <SectionIntro>
-            Most relocation companies hide their prices. We do not. Here is what you can expect to pay, broken down by dog size. These are ranges — your exact quote depends on your origin country, route, and service level.
-          </SectionIntro>
-
-          <div className="grid sm:grid-cols-2 gap-6 mt-12">
-            <CostTable
-              size="Small dogs (under 10 kg)"
-              items={[
-                ['MOCCAE import permit', 'Verify on portal'],
-                ['Veterinary (microchip, vaccines, health cert)', '800–1,500'],
-                ['IATA crate (Series 200)', '500–700'],
-                ['Cargo shipping (origin → Dubai)', '3,000–5,000'],
-                ['Dubai Pet Relocation coordination fee', '1,500–3,500'],
-              ]}
-              total="6,000–11,000"
-            />
-            <CostTable
-              size="Medium dogs (10–25 kg)"
-              items={[
-                ['MOCCAE import permit', 'Verify on portal'],
-                ['Veterinary (microchip, vaccines, health cert)', '800–1,500'],
-                ['IATA crate (Series 300)', '700–1,000'],
-                ['Cargo shipping (origin → Dubai)', '4,000–7,000'],
-                ['Dubai Pet Relocation coordination fee', '1,500–3,500'],
-              ]}
-              total="7,200–13,200"
-            />
-            <CostTable
-              size="Large dogs (25–40 kg)"
-              items={[
-                ['MOCCAE import permit', 'Verify on portal'],
-                ['Veterinary (microchip, vaccines, health cert)', '800–1,500'],
-                ['IATA crate (Series 400)', '1,000–1,500'],
-                ['Cargo shipping (origin → Dubai)', '5,000–9,000'],
-                ['Dubai Pet Relocation coordination fee', '2,000–4,000'],
-              ]}
-              total="9,000–16,200"
-            />
-            <CostTable
-              size="Extra-large dogs (over 40 kg)"
-              items={[
-                ['MOCCAE import permit', 'Verify on portal'],
-                ['Veterinary (microchip, vaccines, health cert)', '800–1,500'],
-                ['IATA crate (Series 500/700)', '1,500–2,000'],
-                ['Cargo shipping (origin → Dubai)', '7,000–12,000'],
-                ['Dubai Pet Relocation coordination fee', '2,500–5,000'],
-              ]}
-              total="12,000–21,700"
-            />
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 mt-12">
-            <div className="bg-[#EEF0FC] rounded-[20px] p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <h3 className="text-lg font-semibold text-[#2A2A2A] mb-4">What is included in the Dubai Pet Relocation coordination fee</h3>
-              <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Breed and route check</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> MOCCAE import permit application</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Veterinary partner coordination</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> IATA crate supply and sizing</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Cargo flight booking with the airline</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Pre-travel document audit (we check every document three times)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Customs clearance at Dubai arrival</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Door-to-door transport or terminal pickup</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> WhatsApp updates at every stage</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Rebooking at no extra coordination fee if the airline cancels or delays</li>
-              </ul>
-            </div>
-            <div className="bg-white rounded-[20px] shadow-sm border border-gray-100 p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <h3 className="text-lg font-semibold text-[#2A2A2A] mb-4">What is NOT included</h3>
-              <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><span className="text-[#C0392B] font-bold shrink-0">–</span> Rabies titer test (if required from high-risk countries): AED 500–1,200</li>
-                <li className="flex items-start gap-2"><span className="text-[#C0392B] font-bold shrink-0">–</span> Quarantine costs (only if your documentation is incomplete): AED 8,500+</li>
-                <li className="flex items-start gap-2"><span className="text-[#C0392B] font-bold shrink-0">–</span> Dubai Municipality registration after arrival: ~AED 10–60</li>
-                <li className="flex items-start gap-2"><span className="text-[#C0392B] font-bold shrink-0">–</span> Travel insurance (optional but recommended): AED 300–800</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <WhatsAppBtn
-              label="Get a dog relocation quote"
-              message="Hi, I read your dog relocation cost guide. I'd like an itemised quote for my dog."
-            />
-            <Link to="/guides/pet-relocation-cost-dubai/" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-[#4F5BD5] text-[#4F5BD5] rounded-2xl font-semibold text-sm hover:bg-[#4F5BD5]/5 transition-colors">
-              <FileText className="w-4 h-4" />
-              Read our full guide to pet relocation costs in Dubai
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── TESTIMONIALS ─── */}
-      <section className="py-20 lg:py-28">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <SectionHeading className="mb-4 text-center">What Dog Owners Say About Dubai Pet Relocation</SectionHeading>
-          <div className="grid md:grid-cols-2 gap-8 mt-12">
-            <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-4 h-4 text-[#4F5BD5] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.26.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.55-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                ))}
-              </div>
-              <blockquote className="text-[#2A2A2A] text-base leading-relaxed mb-6">
-                &ldquo;I was terrified about putting Max on a plane. He's not just a dog — he's been with me through two job changes and a divorce. Dubai Pet Relocation sent me photos of him at every step: at the vet, in the crate, at check-in, on the tarmac, and the moment he came through customs. The quote was itemised. I knew exactly what I was paying for. When he arrived, he was calm, hydrated, and happy. I cannot recommend them enough.&rdquo;
-              </blockquote>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#E9ECFB] flex items-center justify-center text-[#4F5BD5] font-bold text-sm">SJ</div>
-                <div>
-                  <p className="text-sm font-semibold text-[#2A2A2A]">Sarah J.</p>
-                  <p className="text-xs text-[#8A8A8A]">Relocated from London to Dubai, March 2026</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white rounded-[20px] shadow-sm p-6 sm:p-8 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-4 h-4 text-[#4F5BD5] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.26.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.55-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                ))}
-              </div>
-              <blockquote className="text-[#2A2A2A] text-base leading-relaxed mb-6">
-                &ldquo;Luna is a French Bulldog, so I knew summer travel was impossible. Dubai Pet Relocation told me this in the first WhatsApp message — no sugar-coating. We planned for a November flight. They arranged a crate 10% larger than standard for her breed, booked a direct flight with no transit, and sent me a video of her boarding. When she arrived at DXB, they had already cleared customs. She was in my arms 45 minutes after landing.&rdquo;
-              </blockquote>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#E9ECFB] flex items-center justify-center text-[#4F5BD5] font-bold text-sm">DR</div>
-                <div>
-                  <p className="text-sm font-semibold text-[#2A2A2A]">David R.</p>
-                  <p className="text-xs text-[#8A8A8A]">Relocated from Paris to Dubai, November 2025</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── FAQ ─── */}
-      <section className="bg-white py-20 lg:py-28">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <SectionHeading className="mb-4">Frequently Asked Questions About Dog Relocation to Dubai</SectionHeading>
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">Questions about dogs</h2>
           <div className="mt-8 max-w-3xl">
             {DOG_FAQS.map((f) => (
               <FaqItem key={f.q} question={f.q} answer={<p><LinkedText text={f.a} /></p>} />
             ))}
           </div>
-          <div className="mt-8">
-            <WhatsAppBtn
-              label="Still have questions? WhatsApp us"
-              message="Hi, I have a few questions about relocating my dog to Dubai. Can you help?"
-            />
-          </div>
         </div>
       </section>
 
       <RelatedLinks
-        heading="Related dog relocation pages"
-        intro="This URL is the inbound dog journey. The commercial dog file and door-to-door service page sit one click away."
+        heading="Related dog pages"
+        intro="Import rules, the paid dog service, and the cat page if you are moving both."
         path="/dog-relocation-to-dubai/"
       />
 
-      <OfficialSources />
+      <OfficialSources
+        extra={[
+          { label: 'MOCCAE: import of pets', href: 'https://moccae.gov.ae/en/services/import-permit-pets' },
+          { label: 'Emirates: travelling with animals', href: 'https://www.emirates.com/ae/english/help/faq-topics/baggage-and-lost-property/faq/what-are-the-rules-and-charges-for-travelling-with-animals/' },
+        ]}
+        checkedLabel="Checked 22 September 2026 against the MOCCAE pet import page and the Emirates animals FAQ. This is not a veterinary certificate."
+      />
 
-      {/* ─── FINAL CTA ─── */}
       <section className="py-20 lg:py-28">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="bg-[#4F5BD5] rounded-3xl p-8 sm:p-12 lg:p-16 text-center">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">Ready to Bring Your Dog to Dubai?</h2>
-            <p className="text-white/80 text-base sm:text-lg max-w-2xl mx-auto mb-6">
-              Your dog has been there for you. Now it's your turn to be there for them — even across continents.
-            </p>
-            <p className="text-white/80 text-base max-w-2xl mx-auto mb-8">
-              At Dubai Pet Relocation, we make dog relocation clear, calm, and certain. We do not overpromise. We do not hide fees. We do not leave you guessing.
-            </p>
-            <p className="text-white/80 text-base max-w-2xl mx-auto mb-8">
-              Send us a WhatsApp message with your dog's breed, weight, and origin country. We will check your breed against UAE regulations, confirm your route, and send you an itemised quote — usually within 15 minutes.
+          <div className="bg-[#4F5BD5] rounded-3xl p-8 sm:p-12 text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">Ready for a managed dog move?</h2>
+            <p className="text-white/80 max-w-2xl mx-auto mb-8">
+              Use the import guide if you are preparing the file yourself. WhatsApp +971504782999 is for eligibility and a quote. Email support@dubai-pet-relocation.ae.
             </p>
             <a
-              href={getWhatsAppUrl('Hi, I want to relocate my dog to Dubai. Can you help me understand the process and cost?')}
+              href={getWhatsAppUrl(WA)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-base hover:bg-[#1ebe57] transition-colors shadow-lg"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
             >
-              <MessageCircle className="w-5 h-5" />
-              Get a dog relocation quote
+              Check this dog&apos;s move
             </a>
-            <p className="text-white/60 text-sm mt-4">
-              Or if you are not ready for a quote yet, just send us a photo of your dog. We will tell you what they need.
-            </p>
           </div>
-        </div>
-      </section>
-
-      {/* ─── TRUST FOOTER ─── */}
-      <section className="bg-white border-t border-gray-100 py-8">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm text-[#8A8A8A]">
-            Dubai Pet Relocation — Your dog's journey, made clear. Vetted relocation partners · MOCCAE import guidance · IATA-compliant · WhatsApp support
-          </p>
         </div>
       </section>
     </div>
