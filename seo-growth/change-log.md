@@ -4,7 +4,7 @@
 
 Purpose: prove the page standard on five existing URLs before any wider rewrite. No new routes. No URL changes. No redesign.
 
-Commit / PR: filled when the pull request is opened.
+Commit / PR: 6f290bbc6569b35b5996b36a235304952f4fc447 on branch cursor/release3-template-proof-ea81. Pull request https://github.com/numini-co/PetClear/pull/66.
 
 Affected URLs:
 
