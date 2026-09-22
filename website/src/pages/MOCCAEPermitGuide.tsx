@@ -29,13 +29,15 @@ import SnippetAnswer from '../components/SnippetAnswer.tsx'
 import LinkedText from '../components/LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, siteConfig } from '../lib/seo.ts'
-import {
-  LAST_VERIFIED_LABEL,
-  PERMIT_FEE_VERIFY,
-  PERMIT_PROCESSING_ESTIMATE,
-  PERMIT_VALIDITY,
-  TITER_SAMPLE_RULE,
-} from '../lib/regulatory.ts'
+import { PERMIT_VALIDITY } from '../lib/regulatory.ts'
+
+const CHECKED = '22 September 2026'
+const TITRE_ON_PERMIT =
+  'High-risk origins need a rabies antibody result of at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. A first vaccine, or a gap in vaccination, needs at least 21 days before the test. A valid booster does not. The permit is a separate document, valid 90 days from issuance.'
+const PERMIT_TIME =
+  'The published estimate is 1 working day, or 5 working days for a service, emotional support or medical dog. That is an estimate on the page, not a promise.'
+const PERMIT_FEES =
+  'On 22 September 2026 the MOCCAE page listed AED 200 to issue an import permit for one animal, AED 500 to release one dog, and AED 250 to release one cat. These are government charges, not a relocation package. Pay the amount shown when you apply.'
 import GuideDualPath from '../components/GuideDualPath.tsx'
 import { waEligibility } from '../lib/conversionCopy.ts'
 
@@ -77,7 +79,7 @@ export default function MOCCAEPermitGuide() {
         {
       question: 'How do I get a pet import permit from MOCCAE?',
       answer:
-        'Log in at moccae.gov.ae with UAE Pass, open Import Permit for Pets, upload owner ID/passport copy, pet photo, vaccination and microchip records, and health-certificate details, then pay the current portal fee. Confirm that fee on the portal; we do not assume an official AED amount. Processing is often estimated in a few working days — that is not a first-party SLA. Validity: 90 days from issuance. DIY the steps on this page. WhatsApp +971504782999 only if you want a paid eligibility check for permit assistance on a managed file. Service twin: [/service/moccae-pet-permit/](/service/moccae-pet-permit/). Packages: [/prices/](/prices/).',
+        'Log in at moccae.gov.ae with UAE Pass and open Import Permit for Pets. The import application itself lists no documents for ordinary dogs and cats. The permit is valid 90 days from issuance. On 22 September 2026 the page listed AED 200 per animal, AED 500 to release a dog, and AED 250 to release a cat. The published estimate is 1 working day, or 5 working days for a service, emotional support or medical dog. DIY the steps on this page. WhatsApp +971504782999 only if you want a paid eligibility check. Service: [/service/moccae-pet-permit/](/service/moccae-pet-permit/).',
     },
     {
       question: 'How to apply for a Moccae license?',
@@ -97,7 +99,7 @@ export default function MOCCAEPermitGuide() {
         {
       question: 'How do I apply for a MOCCAE import permit?',
       answer:
-        'Log in to the official MOCCAE portal (moccae.gov.ae) with UAE Pass, choose Export and Import Services → Import Permit for Pets, upload the owner passport copy, pet photo, vaccination records, microchip certificate and health-certificate details, then pay the current portal fee. Confirm that fee on the portal; we do not assume an official AED amount. Processing is typically a few business days — an estimate, not a first-party SLA. DIY those steps in the walkthrough on this page. Buyers who want the file held use [/service/moccae-pet-permit/](/service/moccae-pet-permit/). Tick-list: [/guides/import-checklist/](/guides/import-checklist/). Packages: [/prices/](/prices/).',
+        'Log in to moccae.gov.ae with UAE Pass, then open Export and Import Services and Import Permit for Pets. Ordinary dogs and cats do not have an upload list on the import step. Release later needs the customs paper or bill of lading, the vaccine record, the health certificate, and the antibody certificate if the origin is high-risk. Validity is 90 days from issuance. Government fees checked on 22 September 2026 were AED 200, AED 500 and AED 250. DIY those steps on this page. Buyers who want the file held use [/service/moccae-pet-permit/](/service/moccae-pet-permit/). Tick-list: [/guides/import-checklist/](/guides/import-checklist/).',
     },
     {
       question: 'How long does the MOCCAE import permit take?',
@@ -142,12 +144,12 @@ export default function MOCCAEPermitGuide() {
         {
       question: 'Does this permit replace the rabies titer test?',
       answer:
-        'The MOCCAE import permit is Ministry approval to enter. An RNATT is a separate laboratory result attached only when your origin requires it. The blood sample must be taken within 90 days before travel and read at least 0.5 IU/ml — that is a sample-timing window, not a 90-day wait after the draw. See the [rabies titer test guide](/guides/rabies-titer-test-dubai/). Confirm whether your origin needs one on the MOCCAE portal; we do not publish an unverified country list here. If you want titer timing held inside a managed import, open [/service/pet-import-dubai/](/service/pet-import-dubai/).',
+        'The MOCCAE import permit is Ministry approval to enter, valid 90 days from issuance. An antibody test is a separate laboratory result for a high-risk origin: at least 0.5 IU/ml, with a certificate valid 365 days if the vaccine stays valid and no booster is given. An older 90-day sample window is not on the live page. See the [rabies titre guide](/guides/rabies-titer-test-dubai/). This page does not reprint the low-risk list. On 22 September 2026 the United Kingdom was on it and the United States was not named on it.',
     },
     {
       question: 'How much does a MOCCAE pet import permit cost?',
       answer:
-        'Confirm the current import-permit fee on the official MOCCAE portal when you apply with UAE Pass. Published amounts have differed across secondary write-ups, so we do not assume an official AED figure here. The government fee is separate from veterinary work, crate, cargo and coordination. Our coordination is quoted after eligibility on [/prices/](/prices/). Paid filing help: [/service/moccae-pet-permit/](/service/moccae-pet-permit/). Flagship inbound job: [/service/pet-import-dubai/](/service/pet-import-dubai/).',
+        'On 22 September 2026 the MOCCAE page listed AED 200 to issue an import permit for one animal, AED 500 to release one dog, and AED 250 to release one cat. Pay the amount on the screen when you apply. Those government charges are separate from veterinary work, the crate, cargo and coordination. Paid filing help: [/service/moccae-pet-permit/](/service/moccae-pet-permit/). Full inbound job: [/service/pet-import-dubai/](/service/pet-import-dubai/).',
     },
     {
       question: 'What happens after the MOCCAE import permit is issued?',
@@ -257,7 +259,7 @@ export default function MOCCAEPermitGuide() {
         eyebrow="How-to guide — not the service page"
         title="MOCCAE Pet Import Permit for Dubai & the UAE"
         subtitle="UAE Pass login, form fields, 90-day validity, rejection reasons, and an honest DIY versus managed comparison. Confirm fees on the official portal."
-        updated={LAST_VERIFIED_LABEL}
+        updated={`Last verified: ${CHECKED}`}
         whatsappMessage={waPermit}
         primaryLabel="Check permit eligibility"
         secondary={{ label: 'Permit assistance service', to: '/service/moccae-pet-permit/' }}
@@ -297,11 +299,11 @@ export default function MOCCAEPermitGuide() {
               </div>
               <div className="rounded-xl bg-white p-4 shadow-sm">
                 <dt className="text-xs font-semibold uppercase tracking-wider text-[#4F5BD5]">RNATT (when required)</dt>
-                <dd className="mt-1 text-sm leading-relaxed text-[#5A5A5A]">{TITER_SAMPLE_RULE}</dd>
+                <dd className="mt-1 text-sm leading-relaxed text-[#5A5A5A]">{TITRE_ON_PERMIT}</dd>
               </div>
             </dl>
             <p className="mt-4 text-sm leading-relaxed text-[#5A5A5A]">
-              {PERMIT_FEE_VERIFY} After clearance, the{' '}
+              {PERMIT_FEES} After clearance, the{' '}
               <Link to="/guides/dubai-pet-arrival-guide/" className="font-semibold text-[#4F5BD5] hover:underline">
                 Dubai pet arrival guide
               </Link>{' '}
@@ -375,13 +377,13 @@ export default function MOCCAEPermitGuide() {
               <div className="space-y-4">
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
                   <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Cost</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">Verify on the MOCCAE portal</p>
-                  <p className="text-sm text-[#5A5A5A] mt-1">Permit and arrival-release fees are paid to the government. Published amounts have differed — confirm the current figures on the official portal before you apply.</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">AED 200 / 500 / 250</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">{PERMIT_FEES}</p>
                 </div>
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
                   <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Processing Time</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">Estimate: 2–5 working days</p>
-                  <p className="text-sm text-[#5A5A5A] mt-1">{PERMIT_PROCESSING_ESTIMATE}</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">1 working day</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">{PERMIT_TIME}</p>
                 </div>
                 <div className="p-4 bg-[#C89F5A]/5 rounded-xl">
                   <p className="font-semibold text-[#C89F5A] text-sm mb-1">Validity</p>
@@ -395,14 +397,15 @@ export default function MOCCAEPermitGuide() {
                 </div>
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
                   <p className="font-semibold text-[#4F5BD5] text-sm mb-1">RNATT (when required)</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">Sample within 90 days before travel</p>
-                  <p className="text-sm text-[#5A5A5A] mt-1">{TITER_SAMPLE_RULE}</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">0.5 IU/ml, 365-day certificate</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">{TITRE_ON_PERMIT}</p>
                 </div>
                 <div className="p-4 bg-[#C9453A]/5 rounded-xl">
                   <p className="font-semibold text-[#C9453A] text-sm mb-1">Penalty Without Permit</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">Refused entry, fines, re-export</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">Rejection or confiscation</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">At the owner&apos;s expense if rejected. The page checked on {CHECKED} does not publish a fine amount.</p>
                 </div>
-                <LastVerified />
+                <LastVerified date={CHECKED} />
               </div>
             </div>
           </div>
@@ -456,15 +459,15 @@ export default function MOCCAEPermitGuide() {
                   </div>
                   <div className="p-3 bg-[#F5F6FD] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                     <Microscope className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                    <span>Microchip certificate (ISO 11784/11785 compliant, 15-digit number)</span>
+                    <span>Microchip number that matches the health certificate. ISO 11784/11785 was not restated as a current rule.</span>
                   </div>
                   <div className="p-3 bg-[#F5F6FD] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                     <FileText className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                    <span>Health certificate (from accredited vet, within required timeframe)</span>
+                    <span>Authorised health certificate. The live page does not state a universal 10-day validity.</span>
                   </div>
                   <div className="p-3 bg-[#F5F6FD] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                     <Ban className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                    <span>Breed confirmation (if mixed breed or restricted breed)</span>
+                    <span>Breed name against the published ban list. Rottweiler, Doberman and Boxer were not on it.</span>
                   </div>
                 </div>
               </div>
@@ -494,7 +497,7 @@ export default function MOCCAEPermitGuide() {
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Submit the Application</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
-                  Fill pet details (species, breed spelling exactly as on the vet record, 15-digit microchip), origin country, and planned arrival. Upload scans in the format the portal asks for (typically PDF or JPEG, size-capped). Pay only the live portal fee — {PERMIT_FEE_VERIFY} Attach an RNATT result only when the origin requires one; the sample must be taken within 90 days before travel and read at least 0.5 IU/ml.
+                  Fill pet details (species, breed spelling exactly as on the vet record, microchip number), origin country, and planned arrival. The import application itself lists no documents for ordinary dogs and cats. Service, emotional support and medical dogs are the exception and need the three certified papers named on the page. {PERMIT_FEES} A high-risk origin still needs the antibody certificate at release: at least 0.5 IU/ml, under the 365-day conditions.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-2">
                   <div className="p-3 bg-[#F5F6FD] rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
@@ -522,7 +525,7 @@ export default function MOCCAEPermitGuide() {
               <div>
                 <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Wait for Approval</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
-                  {PERMIT_PROCESSING_ESTIMATE} Monitor email and the portal. Keep the application reference. If the estimate slips, contact MOCCAE with that reference — or ask{' '}
+                  {PERMIT_TIME} Monitor email and the portal. Keep the application reference. If the estimate slips, contact MOCCAE with that reference, or ask{' '}
                   <Link to="/service/moccae-pet-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
                     permit assistance
                   </Link>{' '}
@@ -550,7 +553,7 @@ export default function MOCCAEPermitGuide() {
       <GuideFunnelCta
         variant="mid"
         title="Permit ready - book the managed move?"
-        subtitle="This guide covers the MOCCAE import permit (valid 90 days from issuance). DIY the portal steps above. When you also need crate, cargo and door delivery, open a money service or WhatsApp eligibility if you are ready to book. Confirm portal fees on the official site. Tick-list: import checklist."
+        subtitle="This guide covers the MOCCAE import permit, valid 90 days from issuance. Stay here if you are filing yourself. When you also need crate, cargo and door delivery, open pet import to Dubai or WhatsApp if you are ready to book. Government fees checked on 22 September 2026 were AED 200, AED 500 and AED 250."
         eligibilityMessage={waManaged}
         links={[
           { to: '/service/pet-import-dubai/', label: 'Pet import to Dubai', icon: 'plane' },
@@ -813,7 +816,7 @@ export default function MOCCAEPermitGuide() {
                 <Shield className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">MOCCAE permit assistance</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Commercial twin — document review and tracking. We still do not issue the permit.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">Paid document review and tracking. We still do not issue the permit.</p>
             </Link>
             <Link to="/guides/uae-pet-import-requirements/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
@@ -827,7 +830,7 @@ export default function MOCCAEPermitGuide() {
                 <Stethoscope className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">Rabies titer test (RNATT)</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Sample within 90 days before travel — not a 90-day wait after the result.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">At least 0.5 IU/ml. Certificate valid 365 days if the vaccine stays valid and no booster is given.</p>
             </Link>
             <Link to="/service/pet-import-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
@@ -885,7 +888,7 @@ export default function MOCCAEPermitGuide() {
       <GuideFunnelCta
         variant="end"
         title="Ready to book a managed relocation?"
-        subtitle="Send chip number, rabies date and origin on WhatsApp only if you want us to run the file — or open door-to-door / import services. MOCCAE permits are valid 90 days from issuance; titer samples (when required) within 90 days before travel. Confirm fees on the portal."
+        subtitle="Send chip number, rabies date and origin on WhatsApp only if you want a managed file. The permit is valid 90 days from issuance. A high-risk titre is at least 0.5 IU/ml under the 365-day certificate conditions. Government fees checked on 22 September 2026 were AED 200, AED 500 and AED 250."
         eligibilityMessage={waPermit}
         links={[
           { to: '/service/pet-import-dubai/', label: 'Pet import to Dubai', icon: 'plane' },

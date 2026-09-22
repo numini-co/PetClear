@@ -66,7 +66,7 @@ const GROUPS: { id: string; title: string; intro: string; slugs: GradeASlug[] }[
 
 const GRADE_A_BLURBS: Record<GradeASlug, string> = {
   'dubai-marina':
-    'Marina is a dense waterfront of residential towers. Pickup means service lifts, concierge visitor lists and a crate that can turn in a podium lobby — then a typical ~30-minute run toward DXB on a clear Sheikh Zayed Road. Neighbouring JBR and JLT have their own access rules.',
+    'Marina is a dense waterfront of residential towers. Pickup means the building\'s own lift booking, a visitor list and a crate that fits that lobby. This page does not publish a drive time to DXB. Neighbouring JBR and JLT have their own access rules.',
   jlt: 'JLT is cluster towers around the lakes, not a villa suburb. Lakeside paths help daily walks; the move itself is a cluster drop-off, a goods lift, and a DXB or DWC booking that depends on the airline product — not a generic “Marina adjacent” script.',
   jbr: 'JBR is beachfront towers and The Walk, with Bluewaters sitting next door as its own live URL. Loading bays and pedestrian decks decide whether the crate rides a trolley or waits in the apartment. We do not merge Bluewaters into this page.',
   'palm-jumeirah':
@@ -106,8 +106,8 @@ const faqs = [
     a: 'If the pet is entering the UAE, yes — a MOCCAE import permit is a federal entry document, valid for 90 days from issuance. A Dubai tenancy does not replace it. Confirm current fees on the official portal. Start with [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
   },
   {
-    q: 'When is the rabies titer (RNATT) sample taken?',
-    a: 'When a titer is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window, not a 90-day wait after the draw. Details sit on the [rabies titer test guide](/guides/rabies-titer-test-dubai/).',
+    q: 'When is the rabies titre needed?',
+    a: 'Only when the origin is high-risk. The result must be at least 0.5 IU/ml. The certificate stays valid for 365 days if the vaccine stays valid and continuous and no booster is given. A first or lapsed vaccine needs at least 21 days before the test. The live MOCCAE page checked on 22 September 2026 does not require the blood sample inside 90 days before travel. The import permit is a separate 90 days from issuance. Details: [rabies titre test](/guides/rabies-titer-test-dubai/).',
   },
   {
     q: 'Should my pet land at DXB or DWC?',
@@ -115,7 +115,7 @@ const faqs = [
   },
   {
     q: 'How do I register a dog or cat with Dubai Municipality after arrival?',
-    a: 'Dubai Municipality dog licensing typically runs through the Aleef channel. Plan to register within 30 days of arrival with ID or passport, tenancy (Ejari), rabies records and the microchip. Confirm the current fee and steps on the municipality portal. The post-landing walkthrough is on the [Dubai pet arrival guide](/guides/dubai-pet-arrival-guide/).',
+    a: 'Dubai Municipality licensing is separate from the MOCCAE import permit. The permit is valid 90 days from issuance. This page does not state a municipal deadline or a municipal fee. Confirm the current Aleef steps on the municipality portal. The post-landing walkthrough is on the [Dubai pet arrival guide](/guides/dubai-pet-arrival-guide/).',
   },
   {
     q: 'Can you move a pet between Dubai communities or to Abu Dhabi without a flight?',
@@ -123,7 +123,7 @@ const faqs = [
   },
   {
     q: 'Why does /cities/dubai/ still exist if this is the Dubai hub?',
-    a: 'Owner rule: existing URLs stay live. [/cities/dubai/](/cities/dubai/) is the emirate overview; this page is the community directory. We salvage municipality pointers here without a 301. Compare emirates on the [UAE cities hub](/cities/).',
+    a: '[/cities/dubai/](/cities/dubai/) is the emirate overview. This page is the community directory. Both URLs stay live. Compare emirates on the [UAE cities hub](/cities/).',
   },
   {
     q: 'Do you cover Sheikh Zayed Road as its own community?',
@@ -207,13 +207,13 @@ export default function DubaiPillar() {
         eyebrow="Dubai communities"
         title="Pet Relocation Across Every Community in Dubai"
         subtitle="A directory for last-mile pickup and delivery: marina towers, villa gates, new developments and old Dubai. The full international file is the door-to-door service."
-        updated="Last verified 18 September 2026"
+        updated="Rules checked 22 September 2026"
       />
 
       <section className="bg-white section-padding">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Communities for pickup and delivery</h2>
-          <LastVerified className="mb-4 text-xs text-[#8A8A8A]" date="18 September 2026" />
+          <LastVerified className="mb-4 text-xs text-[#8A8A8A]" date="22 September 2026" />
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             Dubai is many last miles, not one city-shaped crate run. A Marina tower wants a goods-lift booking and a visitor
             plate. An Arabian Ranches villa wants a security-gate window. A Deira walk-up wants a crate that fits a tight
@@ -230,8 +230,10 @@ export default function DubaiPillar() {
           </p>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             Federal entry rules do not change by neighbourhood. A MOCCAE import permit is valid for 90 days from issuance.
-            When a rabies titer is required, the RNATT sample is taken within 90 days before travel and must read at least
-            0.5 IU/ml — a sample window, not a wait after the blood draw. Government fees are confirm-on-portal only. The
+            When the origin is high-risk, the antibody result must be at least 0.5 IU/ml and the certificate follows the
+            365-day conditions on the live MOCCAE page. A 90-day pre-travel sample window is not that rule. Government
+            fees checked on 22 September 2026 were AED 200 for the permit, AED 500 to release a dog and AED 250 to release
+            a cat. The
             checklist sits on the{' '}
             <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
               UAE pet import requirements
@@ -255,7 +257,7 @@ export default function DubaiPillar() {
             <Link to="/cities/dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               /cities/dubai/
             </Link>{' '}
-            stays a live, indexed URL. We salvage municipality pointers below; we do not 301 that page into this hub.
+            stays a live URL. Municipality steps are a pointer below. That emirate page is not replaced by this hub.
           </p>
         </div>
       </section>
@@ -284,7 +286,7 @@ export default function DubaiPillar() {
             <Link to="/service/pet-transport-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               pet transport and pet taxi
             </Link>
-            . After cargo release, the first-week walkthrough — collection, home set-up, Aleef clock — is the{' '}
+            . After cargo release, collection and home set-up are on the{' '}
             <Link to="/guides/dubai-pet-arrival-guide/" className="font-semibold text-[#4F5BD5] hover:underline">
               Dubai pet arrival guide
             </Link>
@@ -327,11 +329,9 @@ export default function DubaiPillar() {
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             Federal import and emirate licensing are different jobs. MOCCAE decides whether the pet may enter the UAE.
             Dubai Municipality decides how a dog (and, where required, a cat) is licensed once it lives here. Typical
-            Dubai dog licensing runs through the Aleef channel. Plan to complete registration within 30 days of arrival.
-            Owners usually need identification (Emirates ID or passport), proof of residence such as a tenancy/Ejari,
-            rabies vaccination records and the microchip certificate. Annual renewal is the municipality’s rule — confirm
-            the current steps and any fee on the official Dubai Municipality / Aleef portal. We do not treat blog AED
-            bands as first-party tariffs.
+            Dubai dog licensing is a municipality job, separate from the 90-day MOCCAE permit. This page does not state
+            a registration deadline or a municipal fee. Confirm the current Aleef steps on the official Dubai Municipality
+            portal. A municipal registration window is not the life of the import permit.
           </p>
           <p className="leading-relaxed text-[#5A5A5A]">
             This is a pointer, not a second{' '}
@@ -355,9 +355,8 @@ export default function DubaiPillar() {
         <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Dubai community directory</h2>
           <p className="mb-10 max-w-3xl leading-relaxed text-[#5A5A5A]">
-            Grade A communities have unique local pages. Each blurb below is only a teaser — open the community URL for
-            lifts, gates, DXB/DWC notes and FAQs. Remaining live areas are listed as siblings so we do not assume doorway
-            essays.
+            Each community below has its own URL. The short note is only a pointer. Open that page for lifts, gates and
+            which cargo airport the booking uses. Other live areas are listed further down, each on its existing URL.
           </p>
 
           {GROUPS.map((group) => (
@@ -393,7 +392,7 @@ export default function DubaiPillar() {
               <Link to="/dubai/sheikh-zayed-road/" className="font-semibold text-[#4F5BD5] hover:underline">
                 /dubai/sheikh-zayed-road/
               </Link>{' '}
-              page stays live. We will not create or redirect a second SZR URL.
+              page stays live at that address.
             </p>
           </div>
         </div>
@@ -403,8 +402,7 @@ export default function DubaiPillar() {
         <div className="mx-auto max-w-[1100px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-3 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">Other live Dubai areas</h2>
           <p className="mb-6 max-w-3xl text-sm leading-relaxed text-[#5A5A5A]">
-            These URLs stay indexed. They are siblings, not merge targets. Open a card if that is your address — we do not
-            rewrite them as thin doorway clones of the Grade A set.
+            These URLs stay live. Open a card if that is your address. Each area keeps its own page.
           </p>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {siblingAreas.map((a) => (

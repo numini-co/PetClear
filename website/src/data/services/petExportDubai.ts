@@ -15,7 +15,6 @@ const petExportDubai: ServicePageData = {
     'Calm dog and cat beside a travel crate at a Dubai airport departure terminal',
   whatsappMessage: waEligibility({ origin: 'Dubai', need: 'managed move' }),
   trustBadges: ['MOCCAE export guided', 'Vetted partners', 'Fit to Fly coordination', 'WhatsApp support'],
-  costRange: { low: '2000', high: '22000' },
   hasHowTo: true,
   howToName: 'Step-by-Step Pet Export Process from Dubai',
   sections: [
@@ -55,7 +54,7 @@ const petExportDubai: ServicePageData = {
           steps: [
             {
               title: 'Prepare vet documents',
-              text: 'We confirm your pet has an ISO-compliant 15-digit microchip and a current rabies vaccination (administered between 30 days and 12 months before export), then make sure the pet passport or vaccination book reflects the same microchip number and full history.',
+              text: 'We confirm the microchip number matches every certificate and that the rabies vaccination is still valid for the destination. A 30-day figure is not used here as a MOCCAE permit life. The UAE import permit of 90 days from issuance is an inbound document and does not authorise export.',
             },
             {
               title: 'Fit to Fly certificate',
@@ -126,18 +125,18 @@ const petExportDubai: ServicePageData = {
       body: [
         {
           type: 'p',
-          text: 'Pet export from Dubai typically ranges from around AED 2,000 for a simple, fully vaccinated move to a nearby region up to AED 22,000 for long-haul destinations, larger dogs, multi-pet families or full door-to-door service. The biggest variables are the destination, your pet’s size and whether a titer test is needed.',
+          text: 'This page does not publish a package total in AED. The quote depends on the destination, the animal, the crate and whether that country asks for an antibody test. Government export fees are confirmed on the MOCCAE portal when you apply. We do not treat secondary blog numerals as official fees.',
         },
         {
           type: 'table',
-          headers: ['Cost component', 'Typical range (AED)'],
+          headers: ['Cost component', 'How this page treats it'],
           rows: [
-            ['Veterinary documentation', '200 – 1,000+'],
-            ['Fit to Fly certificate', '100 – 300'],
-            ['MOCCAE export certificate', 'Government fee applies — verify on portal'],
-            ['Rabies titer test (if destination requires)', '500 – 1,200'],
-            ['Flight / cargo', '2,000 – 8,000+'],
-            ['Coordination & handling', '1,000 – 5,000'],
+            ['Veterinary documentation', 'Quoted by the clinic. Not a package price.'],
+            ['Fit to fly certificate', 'Quoted by the clinic. Not a package price.'],
+            ['MOCCAE export certificate', 'Government fee. Confirm the live amount. Not invented here.'],
+            ['Rabies antibody test, if the destination requires one', 'Laboratory fee. Not a published AED band.'],
+            ['Flight or cargo', 'Airline quote for that crate and date.'],
+            ['Coordination', 'Quoted after eligibility. No package total on this page.'],
           ],
         },
         {
@@ -154,7 +153,7 @@ const petExportDubai: ServicePageData = {
         {
           type: 'list',
           items: [
-            'United Kingdom — strict entry protocol, EU/UK-format travel certificate endorsed by MOCCAE; see our Dubai to UK route guide',
+            'United Kingdom: Great Britain pet health certificate for a listed country. See the Dubai to UK route guide. Not Model A or Model B.',
             'United States — destination rules vary by state and airline; see our Dubai to USA route guide',
             'Australia — among the strictest entry regimes worldwide, often requiring a titer test and advance planning',
             'European Union — EU-format travel certificate issued by your vet and endorsed by MOCCAE',
@@ -201,7 +200,7 @@ const petExportDubai: ServicePageData = {
     },
     {
       q: 'How much does it cost to export a pet from Dubai?',
-      a: 'Most exports fall between roughly AED 2,000 and AED 22,000 depending on the destination, your pet’s size and whether a titer test is needed. The biggest costs are flight or cargo and, for some countries, the titer test. Veterinary documentation, the Fit to Fly certificate and the MOCCAE export certificate make up the rest. Send destination and pet details on WhatsApp for a paid eligibility check and a scoped export quote. Packages: [Prices](/prices/).',
+      a: 'This page does not publish a package total. Send destination and pet details on WhatsApp +971504782999 for a paid eligibility check and a scoped export quote. Government export fees are confirmed on the portal. Packages are not printed as AED bands here.',
     },
     {
       q: 'How long does pet export from Dubai take?',
@@ -221,7 +220,7 @@ const petExportDubai: ServicePageData = {
     },
     {
       q: 'Which documents do I need to take my pet out of Dubai?',
-      a: 'Typically an ISO 15-digit microchip, a current rabies vaccination, an updated pet passport or vaccination book, a Fit to Fly certificate, the MOCCAE export health certificate, and — depending on the destination — a titer test and a country-specific travel certificate (EU/UK format is endorsed by MOCCAE). We review everything before you travel so the microchip number matches across all documents.',
+      a: 'A microchip number that matches every certificate, a current rabies vaccination, a fit-to-fly note from the vet, the MOCCAE export steps the destination requires, and that country\'s own travel document. For Great Britain the document is a Great Britain pet health certificate, not Model A or Model B. We review the file so the chip number matches.',
     },
     {
       q: 'Do you physically transport the pet yourselves?',

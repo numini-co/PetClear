@@ -299,7 +299,7 @@ export default function ImportRequirementsPage() {
           <p className="mt-6 text-sm text-[#5A5A5A]">
             Permit clicks: <Link to="/guides/moccae-import-permit/" className="font-semibold text-[#4F5BD5] hover:underline">MOCCAE import permit</Link>.
             {' '}A shorter tick list: <Link to="/guides/import-checklist/" className="font-semibold text-[#4F5BD5] hover:underline">import checklist</Link>.
-            {' '}The titre guide may still describe an older sample window. Until it is updated, this page follows the live service text.
+            {' '}The titre guide now follows the same 365-day certificate condition. A 90-day sample window is not the live rule.
           </p>
         </div>
       </section>
@@ -308,8 +308,8 @@ export default function ImportRequirementsPage() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-4">Banned dogs, and the cat exception</h2>
           <p className="text-[#5A5A5A] mb-6 max-w-3xl">
-            Names below are the ban list on the MOCCAE pet import page on {CHECKED}. Crosses are explicit on the UK export certificate 3926EHC. They are not spelled out as "any cross" on the MOCCAE English page, so this guide does not add that phrase to the UAE list. Rottweiler, Doberman and Boxer were not on the service-page list we checked. Older annex commentary lives on the{' '}
-            <Link to="/guides/banned-dog-breeds-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">banned dog breeds</Link> page and was not re-verified as statute in this pass.
+            Names below are the ban list on the MOCCAE pet import page on {CHECKED}. Crosses are explicit on the UK export certificate 3926EHC. They are not spelled out as "any cross" on the MOCCAE English page, so this guide does not add that phrase to the UAE list. Rottweiler, Doberman and Boxer were not on the service-page list we checked. The{' '}
+            <Link to="/guides/banned-dog-breeds-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">banned dog breeds</Link> guide uses this same list.
           </p>
           <ul className="grid sm:grid-cols-2 gap-2 text-sm text-[#5A5A5A] mb-8">
             {BANNED_DOGS.map((breed) => (

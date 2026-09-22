@@ -58,7 +58,7 @@ const petRelocationFromDubai: ServicePageData = {
             },
             {
               title: 'Build the timeline backwards',
-              text: 'Destination waiting periods and treatment windows sit on the destination, not on Dubai. Some outbound titer rules are destination-imposed; they are not the UAE inbound “sample within 90 days before travel” rule restated.',
+              text: 'Destination waiting periods sit on the destination, not on Dubai. They are not the UAE inbound rule. For a high-risk import into the UAE the antibody certificate is valid 365 days if the vaccine stays valid and no booster is given. The 90-day clock on that inbound file is the MOCCAE import permit, counted from issuance.',
             },
             {
               title: 'Veterinary preparation in the UAE',
@@ -98,12 +98,12 @@ const petRelocationFromDubai: ServicePageData = {
         {
           type: 'list',
           items: [
-            'ISO 15-digit microchip, consistent on every certificate',
+            'Microchip number consistent on every certificate. An ISO label is a destination rule only when that country states it.',
             'Rabies and any destination-required vaccinations still valid on travel day',
             'Destination titer or lab reports where that country asks for them',
             'MOCCAE export health certificate issued after the pre-export inspection, still inside the validity window shown on the official portal',
             'Destination import permit or advance notice where that country requires one',
-            'Parasite or tapeworm treatments timed to the destination (for example UK dog tapeworm rules)',
+            'Parasite or tapeworm treatments timed to the destination. For a dog entering Great Britain, treatment is no less than 24 hours and no more than 5 days before arrival.',
             'Cargo booking confirmation and IATA crate labels',
           ],
         },

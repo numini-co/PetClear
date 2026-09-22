@@ -56,79 +56,79 @@ interface ChecklistStep {
 export default function ImportChecklistGuide() {
   const title = 'Pet Import Checklist Dubai | Documents in Order'
   const description =
-    'Pet import checklist Dubai: microchip, rabies, titer window, 90-day MOCCAE permit via UAE Pass, health certificate, crate, and cargo clearance.'
+    'Pet import checklist for Dubai, checked 22 September 2026: matching microchip, species vaccines, 365-day titre conditions when required, and a MOCCAE permit valid 90 days from issuance.'
   const canonical = `${BASE_URL}/guides/import-checklist/`
   const ogImage = `${BASE_URL}/assets/og-import-checklist.jpg`
 
   const checklistSteps: ChecklistStep[] = [
     {
       num: 1,
-      title: 'Implant an ISO Microchip',
-      when: 'Day 0 — before vaccination',
-      body: 'Your pet needs a 15-digit ISO 11784/11785 compliant microchip. It must be implanted before the rabies vaccination. If your pet was vaccinated before being microchipped, the vaccination is invalid for UAE entry and must be repeated. The same microchip number must appear on every subsequent document.',
+      title: 'Fit a permanent microchip',
+      when: 'Before the health certificate is written',
+      body: 'The animal needs a permanent microchip. The number on the health certificate must match the chip in the animal. The live MOCCAE page checked on 22 September 2026 does not restate ISO 11784/11785, and it does not say the chip must be implanted before the rabies vaccine. Do not treat either line as a current rejection rule.',
       icon: <Microscope className="w-5 h-5" />,
     },
     {
       num: 2,
-      title: 'Administer the Rabies Vaccination',
-      when: 'Day 0 — at least 21 days before travel',
-      body: 'Your pet must be at least 12 weeks old at vaccination. The vaccine must be inactivated or recombinant (not attenuated live virus), administered at least 21 days before travel and within 12 months of arrival. The certificate must show the microchip number, vaccine batch number, manufacturer, date, and the vet’s signature and stamp.',
+      title: 'Give the rabies vaccine',
+      when: 'Not before 12 weeks of age',
+      body: 'Rabies vaccination is not given before 12 weeks of age. Validity follows the manufacturer. The certificate must show the microchip number, vaccine name, manufacturer, batch number and date. A 21-day wait before arrival is not the sentence on the MOCCAE page. That 21-day wait applies to the antibody test after a first or lapsed vaccine.',
       icon: <Syringe className="w-5 h-5" />,
     },
     {
       num: 3,
-      title: 'Complete Core Vaccinations',
-      when: 'Day 0–14',
-      body: 'Dogs need DHPPIL (Distemper, Hepatitis, Parvovirus, Parainfluenza, Leptospirosis). Cats need FVRCP (Feline Viral Rhinotracheitis, Calicivirus, Panleukopenia). These are usually given alongside the rabies vaccine or shortly after.',
+      title: 'Give the other vaccines for that species',
+      when: 'With the vaccine record',
+      body: 'Dogs: distemper, parvovirus, infectious canine hepatitis, and leptospirosis. Leptospirosis can be replaced by a lab test if the exporting country does not vaccinate against it. Cats: panleukopenia, rhinotracheitis and calicivirus. Feline leukaemia was not on the required list. Do not copy the dog list onto a cat.',
       icon: <Shield className="w-5 h-5" />,
     },
     {
       num: 4,
-      title: 'Rabies Titer Test — Only If From a High-Risk Country',
-      when: 'Day 21+ — then sample within 90 days before travel',
-      body: 'If your pet is from a high-risk rabies country, a blood sample must be drawn at least 21 days after the rabies vaccination and processed at a WOAH/ISO 17025 accredited laboratory. The result must be at least 0.5 IU/ml. The sample used for travel must be taken within 90 days before travel — a pre-travel sample window, not a 90-day wait after the draw. Pets from low-risk countries (UK, EU, USA, Canada, Australia, New Zealand, Japan, Singapore) do not need a titer test — but pets from Bahrain and Qatar do, despite being low-risk.',
+      title: 'Rabies antibody test, only for a high-risk origin',
+      when: '365-day certificate conditions',
+      body: 'High-risk origins need a result of at least 0.5 IU/ml from a laboratory approved by the export authority. The certificate is valid for 365 days if the rabies vaccine stays valid and continuous and no booster is given. Otherwise repeat the test. A first vaccine, or a gap in vaccination, needs at least 21 days before the test. A valid booster does not. This page does not reprint the low-risk country list. On 22 September 2026 the United Kingdom was on it. The United States was not named on it.',
       icon: <Stethoscope className="w-5 h-5" />,
     },
     {
       num: 5,
-      title: 'Apply for the MOCCAE Import Permit',
-      when: 'Time arrival inside the 90-day window',
-      body: 'Sign in on the official MOCCAE portal (or the MOCCAE app) with UAE Pass and choose Import Permit for Pets. The import permit is valid for 90 days from issuance — not a 30-day stamp. Confirm the current permit and arrival-release fees on the official portal; we do not publish a fee table. Processing is typically estimated at a few working days. You will need the owner’s passport, UAE visa, the pet’s microchip number, vaccination records, and the titer test result if applicable.',
+      title: 'Apply for the MOCCAE import permit',
+      when: 'Valid 90 days from issuance',
+      body: 'Apply before travel. The permit is valid for 90 days from issuance. An expired permit cannot be used. That clock is not a 30-day stamp and it is not the antibody certificate. On 22 September 2026 the page listed AED 200 to issue a permit for one animal, AED 500 to release one dog, and AED 250 to release one cat. Published service time: 1 working day, or 5 working days for a service, emotional support or medical dog. The import application itself lists no documents for ordinary dogs and cats.',
       icon: <FileText className="w-5 h-5" />,
     },
     {
       num: 6,
-      title: 'Obtain the International Health Certificate',
-      when: 'Within 10 days of travel',
-      body: 'A government-accredited veterinarian issues the International Health Certificate within 10 days of arrival. It must include the owner’s details, the microchip number, vaccination records, and antiparasitic treatment details. Antiparasitic treatment — internal deworming (Praziquantel) and external (Fipronil or Permethrin) — must be given within 14 days of arrival and recorded on the certificate.',
+      title: 'Carry an authorised health certificate',
+      when: 'Validity depends on the origin form',
+      body: 'The live MOCCAE page asks for an authorised health certificate from the competent veterinary authority. It does not state a universal 5-day or 10-day validity. For a UK export, certificate 3926EHC is valid for 10 days after an exam within 24 hours of export. Parasite treatment is internal and external, in the 14 days before shipment, recorded on the certificate or passport. Your vet chooses a product that is safe for that species. No dose is given here.',
       icon: <FileCheck className="w-5 h-5" />,
     },
     {
       num: 7,
-      title: 'Prepare an IATA-Compliant Travel Crate',
-      when: '2–3 weeks before travel',
-      body: 'Pets must travel in a hard-shell IATA Live Animal Regulations (LAR) compliant crate — not a soft carrier — with metal doors, ventilation on all four sides, and water and food bowls attached to the door. The crate must be large enough for your pet to stand, turn around, and lie down naturally. Start crate familiarisation 2–3 weeks before travel (longer for anxious pets).',
+      title: 'Size an IATA crate',
+      when: 'Before the airline accepts the booking',
+      body: 'Cats and dogs are shipped to IATA live-animal conditions. The crate has to let the animal stand, turn and lie down. This checklist does not publish a crate price.',
       icon: <PawPrint className="w-5 h-5" />,
     },
     {
       num: 8,
-      title: 'Book the Manifest Cargo Flight',
-      when: '2–4 weeks before travel',
-      body: 'All pets entering Dubai must travel as manifest cargo — they cannot fly in the cabin or as checked baggage on flights to Dubai. Emirates SkyCargo is most common for DXB arrivals (72 hours advance notice); Etihad Cargo is an alternative for Abu Dhabi arrivals. Cargo costs typically range from AED 3,000–12,000 depending on route, airline, and pet size.',
+      title: 'Book an airline product that accepts the animal',
+      when: 'After the permit window is understood',
+      body: 'Emirates says ordinary pets are not in the cabin, and itineraries ending in Dubai must travel as cargo. Other airlines are separate products. This page does not publish a cargo tariff.',
       icon: <Plane className="w-5 h-5" />,
     },
     {
       num: 9,
-      title: 'Clear Customs on Arrival',
-      when: 'Day of arrival',
-      body: 'Your pet arrives at the DXB or DWC cargo terminal. You (or your agent) present the MOCCAE import permit, original health certificate, vaccination records, microchip certificate, titer test result (if applicable), antiparasitic treatment record, and the owner’s passport and UAE visa. If every document is correct, customs clearance takes 2–4 hours and your pet does not enter quarantine.',
+      title: 'Inspection and release',
+      when: 'At the entry port',
+      body: 'A matching animal is examined at the entry port and released. The page does not describe a routine quarantine length and it does not give a clearance time. Release needs the customs paper or bill of lading, the vaccine record, the health certificate, and the antibody certificate if the origin is high-risk. If the file does not match, the pet may be rejected at your expense or confiscated. No fine amount is published.',
       icon: <CheckCircle className="w-5 h-5" />,
     },
     {
       num: 10,
-      title: 'Register With Dubai Municipality',
-      when: 'Within 30 days of arrival',
-      body: 'Register your pet via the Aleef app or the Dubai Smart Services portal within 30 days of arrival. You need your Emirates ID, the pet’s microchip number, current vaccination records, a pet photo, and your residence address (Makani number). The fee is around AED 10, annual renewal is required, and a physical municipality ID tag must be worn on the collar at all times.',
+      title: 'Local registration, after entry',
+      when: 'Separate from the import permit',
+      body: 'Municipality registration is a different step. No municipal deadline or fee was re-checked on an official municipality page on 22 September 2026, so this checklist does not state one. The only 90-day figure here is the MOCCAE import permit, counted from issuance.',
       icon: <FileText className="w-5 h-5" />,
     },
   ]
@@ -136,27 +136,27 @@ export default function ImportChecklistGuide() {
   const faqData = [
     {
       question: 'What documents do I need to import a pet to Dubai?',
-      answer: 'You need: (1) an ISO 11784/11785 microchip certificate, (2) a rabies vaccination certificate administered at least 21 days before travel, (3) core vaccination records (DHPPIL for dogs, FVRCP for cats), (4) a rabies titer test result if your pet is from a high-risk country, (5) a MOCCAE import permit, (6) an International Health Certificate issued within 10 days of arrival, (7) an antiparasitic treatment record, and (8) a copy of the owner’s passport and UAE visa. Every document must show the same microchip number.',
+      answer: 'A MOCCAE import permit valid for 90 days from issuance, a permanent microchip whose number matches the health certificate, the vaccines named for that species, parasite treatment in the 14 days before shipment, and an authorised health certificate. High-risk origins also need a rabies antibody test of at least 0.5 IU/ml. The import application itself lists no documents for ordinary dogs and cats. Release later needs the customs paper, the vaccine record, the health certificate, and the antibody certificate if the origin is high-risk.',
     },
     {
-      question: 'Does my pet need a rabies titer test to enter Dubai?',
-      answer: 'Only if your pet is coming from a high-risk rabies country. Pets from low-risk countries — including the UK, EU, USA, Canada, Australia, New Zealand, Japan, and Singapore — do not need a titer test. The exception is Bahrain and Qatar: pets from these two countries must have a titer test even though they are classified as low-risk. Always verify your country’s current status on the MOCCAE portal before skipping the test.',
+      question: 'Does my pet need a rabies titre test to enter Dubai?',
+      answer: 'Only if the origin is high-risk. This checklist does not reprint the low-risk list. On 22 September 2026 the United Kingdom was on the list printed on the MOCCAE page, and the United States was not named on it. When a test is required, the result must be at least 0.5 IU/ml and the certificate follows the 365-day conditions on the titre guide.',
     },
     {
       question: 'How long does it take to import a pet to Dubai?',
-      answer: 'From low-risk countries such as the UK, EU, USA, Canada, Australia, or New Zealand, the process takes around 4–6 weeks. From high-risk countries that require a titer, plan the blood sample within 90 days before travel (result ≥0.5 IU/ml) and allow time for the 21-day post-vaccine interval plus lab turnaround — that is not a 90-day wait after the draw. Starting at least 8 weeks before your planned move is recommended.',
+      answer: 'There is no single week count. The permit estimate on the page is 1 working day, or 5 working days for a service, emotional support or medical dog. A first or lapsed rabies vaccine needs at least 21 days before an antibody test. Airline space can add time. We do not promise a 4 to 6 week file.',
     },
     {
       question: 'Do pets go into quarantine when arriving in Dubai?',
-      answer: 'No. If all documentation is complete and correct — including the MOCCAE import permit, ISO microchip, valid rabies vaccination, and the health certificate — pets do not require mandatory quarantine in Dubai. Customs clearance typically takes 2–4 hours at the cargo terminal. Incomplete or incorrect documentation, however, can result in conditional quarantine at the owner’s expense.',
+      answer: 'The MOCCAE service is an inspection at the entry port and release when the animal matches the permit. The page does not describe a routine quarantine stay, and it does not give a number of hours. If the import does not comply, the pet may be rejected at the owner\'s expense or confiscated.',
     },
     {
       question: 'Can my pet fly in the cabin into Dubai?',
-      answer: 'No. All pets entering Dubai must travel as manifest cargo. They cannot fly in the cabin or as checked baggage on flights to Dubai. Pets travel in an IATA Live Animal Regulations compliant hard-shell crate in the temperature-controlled hold. Emirates SkyCargo is the most common carrier for DXB arrivals, and Etihad Cargo is an alternative for Abu Dhabi.',
+      answer: 'Emirates says ordinary animals are not allowed in the cabin, and every itinerary ending in Dubai must travel as cargo. Other airlines are separate products. Cabin weights and fares are not copied here.',
     },
     {
       question: 'How much is the MOCCAE import permit and when should I apply?',
-      answer: 'The MOCCAE import permit is valid for 90 days from issuance, with processing typically taking a few working days. Confirm the current permit and arrival-release fees on the official portal; fees may change. Apply within the 90-day validity window so the permit is still valid on your arrival day, while leaving time to book your cargo flight.',
+      answer: 'Apply before travel. The permit is valid for 90 days from issuance. On 22 September 2026 the page listed AED 200 for one animal, AED 500 to release one dog, and AED 250 to release one cat. Those are government charges, not a relocation package. Pay the amount shown when you apply.',
     },
   ]
 
@@ -186,8 +186,8 @@ export default function ImportChecklistGuide() {
   const howToSchema = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: 'How to Import a Pet to Dubai — Documents Checklist',
-    description: 'Step-by-step documents checklist to import a dog or cat to Dubai, from microchip to arrival clearance. MOCCAE import permit is valid 90 days from issuance; confirm portal fees.',
+    name: 'How to import a pet to Dubai: documents checklist',
+    description: 'Documents checklist to import a dog or cat to Dubai. MOCCAE import permit is valid 90 days from issuance. Government fees are the amounts on the official page.',
     step: checklistSteps.map((s) => ({
       '@type': 'HowToStep',
       position: s.num,
@@ -217,8 +217,8 @@ export default function ImportChecklistGuide() {
         imageAlt="Pet import documents and a calm dog beside an IATA travel crate at Dubai cargo terminal"
         eyebrow="Pet Relocation Checklist"
         title="Pet Import Documents Checklist for Dubai"
-        subtitle="An ordered, checkable list of every document and step to import your pet to Dubai — microchip to arrival clearance — with timing notes and a summary table."
-        updated="Updated June 2026"
+        subtitle="An ordered list for a dog or cat entering the UAE: matching microchip, species vaccines, titre only when the origin is high-risk, and a permit valid 90 days from issuance."
+        updated="Last verified: 22 September 2026"
         primaryLabel="Tell us about your move"
         whatsappMessage={waChecklist}
         secondary={{ label: 'Pet import service', to: '/service/pet-import-dubai/' }}
@@ -233,7 +233,7 @@ export default function ImportChecklistGuide() {
                 Everything You Need, In Order
               </h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                Bringing a pet into the UAE is a documents process. Every item on this checklist is mandatory, and the steps must happen in the right order. The microchip comes before the rabies vaccination, the rabies vaccination comes before the titer test, and the MOCCAE import permit — applied with UAE Pass — comes before you fly.
+                Bringing a pet into the UAE is a documents process. Check the breed, the origin, the chip number, the vaccines for that species, and the permit window before you fly. The import permit is valid for 90 days from issuance.
               </p>
               <div className="mb-6">
                 <GuideDualPath
@@ -244,7 +244,7 @@ export default function ImportChecklistGuide() {
                 />
               </div>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                Skip a step or get the sequence wrong and your pet can be refused entry, confiscated, or re-exported at your expense. Use the ordered checklist below, tick off each item, then confirm everything against the documents summary table. For the statutory rules behind each box, open the{' '}
+                A missing item can mean the animal is rejected at your expense or confiscated. The live page does not publish a fine amount. Use the ordered checklist below. For the statutory rules behind each box, open the{' '}
                 <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
                   UAE pet import requirements
                 </Link>{' '}
@@ -272,10 +272,10 @@ export default function ImportChecklistGuide() {
                   The One Rule That Causes Most Rejections
                 </h3>
                 <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Every document must show the same microchip number</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Microchip must be implanted before the rabies vaccination</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>The rabies vaccine must be valid on your travel date</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>The health certificate must be issued within 10 days of arrival</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>The chip number on the health certificate must match the animal</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>High-risk origins need at least 0.5 IU/ml under the 365-day certificate conditions</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>The permit lasts 90 days from issuance</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Parasite treatment sits in the 14 days before shipment</span></li>
                 </ul>
               </div>
             </div>
@@ -285,23 +285,24 @@ export default function ImportChecklistGuide() {
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
                   <p className="font-semibold text-[#4F5BD5] text-sm mb-1">MOCCAE Import Permit</p>
                   <p className="text-lg font-bold text-[#2A2A2A]">Valid 90 days from issuance</p>
-                  <p className="text-sm text-[#5A5A5A] mt-1">Confirm the current permit and arrival-release fees on the official MOCCAE portal; fees may change.</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">Government fees checked 22 September 2026: AED 200 permit, AED 500 dog release, AED 250 cat release.</p>
                 </div>
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
-                  <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Timeline (Low-Risk Countries)</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">4–6 weeks</p>
+                  <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Permit service time</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">1 working day</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">5 working days for a service, emotional support or medical dog. An estimate, not a promise.</p>
                 </div>
                 <div className="p-4 bg-[#C89F5A]/5 rounded-xl">
-                  <p className="font-semibold text-[#C89F5A] text-sm mb-1">Timeline (High-Risk Countries)</p>
-                  <p className="text-lg font-bold text-[#2A2A2A]">Titer sample window</p>
-                  <p className="text-sm text-[#5A5A5A] mt-1">When required, sample within 90 days before travel ≥0.5 IU/ml — not a wait after the draw.</p>
+                  <p className="font-semibold text-[#C89F5A] text-sm mb-1">High-risk titre</p>
+                  <p className="text-lg font-bold text-[#2A2A2A]">0.5 IU/ml</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">Certificate valid 365 days if the vaccine stays valid and no booster is given.</p>
                 </div>
                 <div className="p-4 bg-[#C9453A]/5 rounded-xl">
                   <p className="font-semibold text-[#C9453A] text-sm mb-1">Transport</p>
                   <p className="text-lg font-bold text-[#2A2A2A]">Manifest cargo only</p>
                   <p className="text-sm text-[#5A5A5A] mt-1">No cabin or checked-baggage travel into Dubai.</p>
                 </div>
-                <LastVerified />
+                <LastVerified date="22 September 2026" />
               </div>
             </div>
           </div>
@@ -346,7 +347,7 @@ export default function ImportChecklistGuide() {
               <div>
                 <p className="font-semibold text-[#2A2A2A] mb-1">Order Matters More Than Speed</p>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  If the rabies vaccine was given before the microchip, MOCCAE will reject the import permit and you will need to re-vaccinate and wait another 21 days. Confirm the sequence on your records before you start the permit application.
+                  The chip number has to match every certificate. An implant-before-vaccine order was not restated on the live page, so this checklist does not treat it as a current rejection rule. Confirm the origin and the breed before you spend the permit&apos;s 90 days.
                 </p>
               </div>
             </div>
@@ -354,13 +355,13 @@ export default function ImportChecklistGuide() {
 
           <div className="mt-8 text-center">
             <a
-              href={getWhatsAppUrl('Hi, I’m importing my pet to Dubai. Can you check my documents checklist and timeline?')}
+              href={getWhatsAppUrl(waChecklist)}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
             >
               <MessageCircle className="w-5 h-5" />
-              Send us your documents and we’ll check them
+              Check if we can move your pet
             </a>
           </div>
         </div>
@@ -373,7 +374,7 @@ export default function ImportChecklistGuide() {
             Documents Summary Table
           </h2>
           <p className="text-[#5A5A5A] text-base leading-relaxed text-center max-w-2xl mx-auto mb-8">
-            One-glance reference for every document, what it is, how long it stays valid, and the typical government or vet cost in AED.
+            What the MOCCAE page says, and who issues it. Private vet prices are not listed. Government fees are the three amounts checked on 22 September 2026.
           </p>
           <div className="overflow-x-auto rounded-[20px] shadow-sm border border-gray-100 mb-8">
             <table className="data-table min-w-[640px]">
@@ -382,57 +383,57 @@ export default function ImportChecklistGuide() {
                   <th>Document</th>
                   <th>What It Is</th>
                   <th>Validity</th>
-                  <th>Cost (AED)</th>
+                  <th>Fee on the checked page</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="font-semibold text-[#2A2A2A]">ISO Microchip Certificate</td>
-                  <td>15-digit ISO 11784/11785 compliant microchip</td>
+                  <td className="font-semibold text-[#2A2A2A]">Microchip</td>
+                  <td>Permanent chip. The certificate number must match the animal. ISO was not restated.</td>
                   <td>Permanent</td>
-                  <td>300–600 (at vet)</td>
+                  <td>Not a government fee on this page</td>
                 </tr>
                 <tr>
-                  <td className="font-semibold text-[#2A2A2A]">Rabies Vaccination Certificate</td>
-                  <td>Inactivated or recombinant rabies vaccine</td>
-                  <td>1 year (annual booster)</td>
-                  <td>Included in vet fee</td>
+                  <td className="font-semibold text-[#2A2A2A]">Rabies vaccination</td>
+                  <td>Not before 12 weeks. Validity follows the manufacturer.</td>
+                  <td>Manufacturer</td>
+                  <td>Not a government fee on this page</td>
                 </tr>
                 <tr>
-                  <td className="font-semibold text-[#2A2A2A]">Core Vaccination Records</td>
-                  <td>DHPPIL (dogs) or FVRCP (cats)</td>
-                  <td>Per vaccine schedule</td>
-                  <td>100–200</td>
+                  <td className="font-semibold text-[#2A2A2A]">Other vaccines</td>
+                  <td>Dogs and cats have different lists. See step 3.</td>
+                  <td>Manufacturer</td>
+                  <td>Not a government fee on this page</td>
                 </tr>
                 <tr>
-                  <td className="font-semibold text-[#2A2A2A]">Rabies Titer Test (RNATT)</td>
-                  <td>Blood test proving rabies immunity (high-risk countries only)</td>
-                  <td>Sample within 90 days before travel</td>
-                  <td>500–1,200</td>
+                  <td className="font-semibold text-[#2A2A2A]">Rabies antibody test</td>
+                  <td>High-risk origins. At least 0.5 IU/ml.</td>
+                  <td>365 days if the vaccine stays valid and no booster is given</td>
+                  <td>Not a government fee on this page</td>
                 </tr>
                 <tr>
-                  <td className="font-semibold text-[#2A2A2A]">MOCCAE Import Permit</td>
-                  <td>Official approval from UAE Ministry of Climate Change and Environment</td>
+                  <td className="font-semibold text-[#2A2A2A]">MOCCAE import permit</td>
+                  <td>Apply before travel. An expired permit cannot be used.</td>
                   <td>90 days from issuance</td>
-                  <td>Verify on portal</td>
+                  <td>AED 200 per animal</td>
                 </tr>
                 <tr>
-                  <td className="font-semibold text-[#2A2A2A]">International Health Certificate</td>
-                  <td>Government-accredited vet certificate with parasite treatments</td>
-                  <td><strong>10 days</strong> from issuance</td>
-                  <td>400–1,500</td>
+                  <td className="font-semibold text-[#2A2A2A]">Health certificate</td>
+                  <td>Authorised certificate from the origin authority. No universal 10-day rule.</td>
+                  <td>The origin form&apos;s own validity</td>
+                  <td>Not a MOCCAE fee</td>
                 </tr>
                 <tr>
-                  <td className="font-semibold text-[#2A2A2A]">Antiparasitic Treatment Record</td>
-                  <td>Internal deworming + external flea/tick treatment</td>
-                  <td>Within 14 days of arrival</td>
-                  <td>50–150</td>
+                  <td className="font-semibold text-[#2A2A2A]">Parasite treatment</td>
+                  <td>Internal and external, in the 14 days before shipment.</td>
+                  <td>14 days before shipment</td>
+                  <td>Not a government fee on this page</td>
                 </tr>
                 <tr>
-                  <td className="font-semibold text-[#2A2A2A]">Owner&apos;s Passport &amp; UAE Visa</td>
-                  <td>Required for permit application and customs clearance</td>
-                  <td>&mdash;</td>
-                  <td>&mdash;</td>
+                  <td className="font-semibold text-[#2A2A2A]">Dog or cat release</td>
+                  <td>Inspection at the entry port, then release if the animal matches.</td>
+                  <td>At arrival</td>
+                  <td>AED 500 per dog, AED 250 per cat</td>
                 </tr>
               </tbody>
             </table>
@@ -442,7 +443,7 @@ export default function ImportChecklistGuide() {
             <div className="flex items-start gap-3">
               <AlertTriangle className="w-5 h-5 text-[#C89F5A] shrink-0 mt-0.5" />
               <p className="text-sm text-[#2A2A2A]">
-                <strong>Critical:</strong> Every document above must show the <strong>same microchip number</strong>. A mismatch between the microchip certificate and the vaccination certificate is an automatic rejection at customs.
+                <strong>Match the chip number.</strong> The health certificate number has to match the animal. The page we checked does not publish a fine for a mismatch. The outcome it does publish is rejection at your expense or confiscation.
               </p>
             </div>
           </div>
@@ -463,23 +464,23 @@ export default function ImportChecklistGuide() {
               <div className="space-y-3">
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                   <Microscope className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span><strong>Microchip before vaccination.</strong> Vaccinations given before the microchip are invalid and must be repeated, adding 21 days.</span>
+                  <span><strong>Chip number.</strong> It must match the health certificate. An implant-before-vaccine rule was not restated.</span>
                 </div>
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                   <Syringe className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span><strong>21-day rabies wait.</strong> The pet cannot travel until at least 21 days after the first rabies vaccination.</span>
+                  <span><strong>21 days before the test.</strong> After a first or lapsed rabies vaccine. A valid booster does not need that wait. This is not a rule that every pet waits 21 days before arrival.</span>
                 </div>
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                   <Stethoscope className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span><strong>Titer sample window.</strong> From high-risk countries, the blood sample must be taken within 90 days before travel and read ≥0.5 IU/ml — not a wait after the draw.</span>
+                  <span><strong>Titre certificate.</strong> At least 0.5 IU/ml. Valid 365 days if the vaccine stays valid and continuous and no booster is given. An older 90-day sample window is not on the live page.</span>
                 </div>
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                   <FileText className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span><strong>Permit validity is 90 days from issuance.</strong> Apply so arrival still falls inside that window; an expired permit cannot be used.</span>
+                  <span><strong>Permit validity is 90 days from issuance.</strong> An expired permit cannot be used. That clock is not a municipal deadline.</span>
                 </div>
                 <div className="p-3 bg-white rounded-xl text-sm text-[#5A5A5A] flex items-start gap-2">
                   <FileCheck className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span><strong>10-day health certificate.</strong> Issued within 10 days of arrival, so it is one of the last steps before travel.</span>
+                  <span><strong>Health certificate.</strong> Authorised by the origin authority. A 10-day life is a UK export certificate rule (3926EHC), not a universal MOCCAE number.</span>
                 </div>
               </div>
             </div>
@@ -492,20 +493,20 @@ export default function ImportChecklistGuide() {
                 <h3 className="text-xl font-bold text-[#2A2A2A]">Low-Risk vs High-Risk Origin</h3>
               </div>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-5">
-                Your origin country decides whether you need a titer test and how long the whole process takes.
+                The live page keeps a low-risk list and it can change. This checklist does not reprint it.
               </p>
               <div className="space-y-3">
                 <div className="p-4 bg-white rounded-xl">
-                  <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Low-risk — no titer test</p>
-                  <p className="text-xs text-[#5A5A5A]">UK, EU, USA, Canada, Australia, New Zealand, Japan, Singapore. Typical timeline: 4–6 weeks.</p>
+                  <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Checked on 22 September 2026</p>
+                  <p className="text-xs text-[#5A5A5A]">The United Kingdom was on the low-risk list. The United States was not named on it. Confirm any other origin on the live page before you skip the test.</p>
                 </div>
                 <div className="p-4 bg-white rounded-xl">
-                  <p className="font-semibold text-[#C89F5A] text-sm mb-1">High-risk — titer test required</p>
-                  <p className="text-xs text-[#5A5A5A]">Most of Africa, Latin America, Central Asia, and parts of Asia. When a titer is required, sample within 90 days before travel ≥0.5 IU/ml — not a wait after the draw.</p>
+                  <p className="font-semibold text-[#C89F5A] text-sm mb-1">High-risk origin</p>
+                  <p className="text-xs text-[#5A5A5A]">Antibody test of at least 0.5 IU/ml. Certificate valid 365 days if the vaccine stays valid and no booster is given. Minimum import age not less than 15 weeks.</p>
                 </div>
                 <div className="p-4 bg-white rounded-xl">
-                  <p className="font-semibold text-[#C9453A] text-sm mb-1">Special exception</p>
-                  <p className="text-xs text-[#5A5A5A]">Bahrain and Qatar require a titer test despite being low-risk. Always verify your country on the MOCCAE portal.</p>
+                  <p className="font-semibold text-[#C9453A] text-sm mb-1">Age wording</p>
+                  <p className="text-xs text-[#5A5A5A]">Vaccination is not before 12 weeks. The English page says the low-risk minimum age &quot;will be 12&quot; without a unit, so that figure is not treated as confirmed weeks.</p>
                 </div>
               </div>
             </div>
