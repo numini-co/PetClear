@@ -5,11 +5,11 @@ const petRelocationToDubai: ServicePageData = {
   slug: 'pet-relocation-to-dubai',
   seoTitle: 'Pet Relocation to Dubai | Arrival-Side Import Guide',
   metaDescription:
-    'Pet relocation to Dubai: MOCCAE 90-day permit, titer timing, cargo arrival at DXB, and settling-in steps. Get a relocation quote.',
+    'Pet relocation to Dubai: MOCCAE permit valid 90 days from issuance, titre conditions for high-risk origins, and cargo arrival. No package price on this page.',
   h1: 'Pet Relocation to Dubai — Arrival-Side Coordination',
   primaryKeyword: 'pet relocation to dubai',
   heroValueProp:
-    'Inbound only: MOCCAE 90-day import permit, titer timing, cargo arrival at DXB or DWC, and the first week in a new Dubai home.',
+    'Inbound only: MOCCAE import permit valid 90 days from issuance, a titre certificate when the origin is high-risk, and cargo arrival at DXB or DWC.',
   heroImage: '/assets/w1-w3/pet-relocation-to-dubai-cat-arrival-new-apartment.jpg',
   heroImageAlt:
     'Cat stepping out of its travel crate into a new Dubai apartment after relocating to Dubai',
@@ -60,11 +60,11 @@ const petRelocationToDubai: ServicePageData = {
             },
             {
               title: 'Microchip, then vaccinate',
-              text: 'The ISO 15-digit microchip must be in place before the rabies vaccination that will be recorded on the import file. Vaccinations given before the chip are a common refusal reason.',
+              text: 'Fit a permanent microchip. The number on the health certificate must match the animal. The live MOCCAE page does not restate an ISO label or a rule that the chip must be implanted before the vaccine.',
             },
             {
               title: 'Titer timing — if your origin requires it',
-              text: 'When a rabies antibody test is required, the blood sample must be drawn within 90 days before travel and read at least 0.5 IU/ml. We do not describe this as a 90-day wait after the titer. See [rabies titer test](/guides/rabies-titer-test-dubai/).',
+              text: 'High-risk origins need at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. A first or lapsed vaccine needs at least 21 days before the test. A valid booster does not. See [rabies titre test](/guides/rabies-titer-test-dubai/).',
             },
             {
               title: 'MOCCAE import permit — 90 days',
@@ -104,9 +104,9 @@ const petRelocationToDubai: ServicePageData = {
         {
           type: 'list',
           items: [
-            'ISO 11784/11785 15-digit microchip, implanted before the recorded rabies vaccination',
+            'Permanent microchip. The health-certificate number must match the animal. ISO was not restated as a current rule.',
             'Valid rabies vaccination and core species vaccinations',
-            'Rabies titer result when the origin requires it — sample within 90 days before travel, ≥ 0.5 IU/ml',
+            'Antibody result of at least 0.5 IU/ml when the origin is high-risk, under the 365-day certificate conditions',
             'MOCCAE import permit still inside its 90-day validity on the arrival date',
             'Origin-country government health certificate inside its short validity window',
             'Parasite treatments recorded to the arrival window',
@@ -136,7 +136,7 @@ const petRelocationToDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'From late spring through early autumn, pavement and balcony surfaces can burn paws. Walk early or after dusk, carry water, and never leave a pet in a parked car. Some breeds cannot live in certain apartment types — we flag that before you fly, using the [banned dog breeds](/guides/banned-dog-breeds-dubai/) list.',
+          text: 'From late spring through early autumn, pavement can burn paws. Walk early or after dusk, carry water, and never leave a pet in a parked car. Import bans are the names on the [banned dog breeds](/guides/banned-dog-breeds-dubai/) page. A building may still set its own pet rule. Ask the building. This page does not publish a muzzle or insurance rule.',
         },
         {
           type: 'p',
@@ -171,7 +171,7 @@ const petRelocationToDubai: ServicePageData = {
     },
     {
       q: 'When must the rabies titer blood sample be drawn for entry to Dubai?',
-      a: 'When a titer is required, draw the sample within 90 days before travel. The result must be at least 0.5 IU/ml. This is not a 90-day waiting period after the test. Details: [rabies titer test](/guides/rabies-titer-test-dubai/).',
+      a: 'When the origin is high-risk, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and no booster is given. The 90-day clock is the import permit, counted from issuance, not a sample window. Details: [rabies titre test](/guides/rabies-titer-test-dubai/).',
     },
     {
       q: 'Can my dog or cat fly in the cabin into Dubai?',

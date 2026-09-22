@@ -24,78 +24,73 @@ import LinkedText from '../components/LinkedText.tsx'
 import { CTA_CHECK_MOVE, waEligibility } from '../lib/conversionCopy.ts'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, siteConfig } from '../lib/seo.ts'
-import {
-  EXEMPT_LIST_HOLD,
-  LAST_VERIFIED_LABEL,
-  MICROCHIP_BEFORE_RABIES,
-  TITER_SAMPLE_RULE,
-  TITER_THRESHOLD,
-} from '../lib/regulatory.ts'
+
+const CHECKED = '22 September 2026'
+const MOCCAE_IMPORT = 'https://moccae.gov.ae/en/services/import-permit-pets'
+
+const TITRE_RULE =
+  'High-risk origins need a rabies antibody test of at least 0.5 IU/ml from a laboratory approved by the export country. The certificate is valid for 365 days if the rabies vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. A first vaccine, or a gap in vaccination, needs at least 21 days before the test. A valid booster does not need that 21-day wait. An older 90-day sample window is not on the live MOCCAE page.'
 
 const faqData = [
   {
-    question: 'How much does a rabies titer test cost in Dubai?',
+    question: 'How much does a rabies titre test cost in Dubai?',
     answer:
-      'Lab fees are clinic- and lab-dependent — we do not assume a single AED titer price. Budget for the blood draw, shipping to an accredited laboratory when required, and the result wait. Confirm the quote with your vet. Timing lock: draw the sample within 90 days before travel; result ≥0.5 IU/ml when MOCCAE requires it — not a 90-day wait after the draw.',
+      'Lab fees are set by the clinic and the laboratory. This page does not publish an AED titre price. Ask the vet who will draw the blood. The Ministry rule, when the origin is high-risk, is a result of at least 0.5 IU/ml under the 365-day certificate conditions on the live MOCCAE page.',
   },
   {
-    question: 'Can you get a titer for rabies?',
+    question: 'Can you get a titre for rabies?',
     answer:
-      'Yes. A rabies antibody titer (RNATT / FAVN-style pathway depending on lab) is available through veterinary clinics that send samples to accredited labs. When MOCCAE requires it for your origin, plan the draw so the sample date sits within 90 days before travel and the result meets ≥0.5 IU/ml. Import checklist: [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/).',
+      'Yes. A veterinary clinic can draw blood for a rabies antibody test and send it to a laboratory approved by the export authority. Import checklist: [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/).',
   },
   {
     question: 'How much does the anti-rabies vaccine cost in the UAE?',
     answer:
-      'Rabies vaccine prices are clinic-dependent; we do not publish an invented UAE vaccine tariff. The vaccine must be current relative to your travel date and usually precedes any required titer by the portal’s minimum interval. Confirm cost and schedule with your vet. Timing questions for titer stay on this page; full import rules on [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/).',
+      'Vaccine prices are clinic-dependent. This page does not publish a vaccine tariff. Rabies vaccination for import is not given before 12 weeks of age, and validity follows the manufacturer. Full import rules: [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/).',
   },
   {
-    question: 'How does the UAE rabies titer timing actually work?',
+    question: 'How does the UAE rabies titre rule work?',
     answer:
-      'When an RNATT is required, the blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is a sample-timing window before the flight — not a 90-day waiting period after the lab result arrives. Draw the sample too early and it can age out of the 90-day window; draw it too soon after vaccination and antibody levels may still be low.',
+      'When the origin is high-risk, the result must be at least 0.5 IU/ml. The certificate stays valid for 365 days if the rabies vaccine stays valid and continuous and no booster is given. If a booster is given, or the vaccine lapses, the test is repeated. A first vaccine, or a gap in vaccination, needs at least 21 days before the test. A valid booster does not. The live page checked on 22 September 2026 does not require the blood sample to fall inside 90 days before travel.',
   },
   {
-    question: 'Can I skip or shorten a 90-day wait after the titer test?',
+    question: 'Is there a 90-day wait after the titre test?',
     answer:
-      'There is no 90-day wait after the test to skip. The locked rule is that the sample used for the RNATT must fall within 90 days before travel. Confusing that window with a post-test sit is how people delay a move by months they did not need to delay. Confirm current wording on the official MOCCAE page before you lock a cargo date.',
+      'No. The 90-day clock on the MOCCAE import page is the import permit, counted from issuance. It is not a wait after the laboratory result, and it is not a sample window. Confirm the live page before you lock a cargo date: [/guides/moccae-import-permit/](/guides/moccae-import-permit/).',
   },
   {
-    question: 'Does my country need a titer test for Dubai?',
+    question: 'Does my country need a titre test for Dubai?',
     answer:
-      'MOCCAE maintains a rabies-controlled / exempt-country list that decides whether an RNATT is required. We do not publish an unverified country list on this page. Confirm your origin on the official portal, or message us with the origin country and we will check it with you against the live list.',
+      'High-risk origins do. The live page keeps a low-risk country list and it can change, so this guide does not reprint it. On 22 September 2026 the United Kingdom was on that list. The United States was not named on it. Confirm your origin on the official page before you skip the test.',
   },
   {
     question: 'What result does the UAE accept?',
     answer:
-      'The minimum acceptable result is 0.5 IU/ml. The sample should be drawn at least 21 days after a valid rabies vaccination (pet at least 12 weeks old at vaccination, microchip already implanted). Use a laboratory MOCCAE will accept — typically a WOAH / ISO 17025 accredited lab. We do not publish a closed list of lab names as if it were first-party.',
+      'At least 0.5 IU/ml. The laboratory must be approved by the competent authority in the country of export. The result can be written on the health certificate instead of a separate sheet. This page does not publish a closed list of laboratory names.',
   },
   {
     question: 'What if the result is below 0.5 IU/ml?',
     answer:
-      'The animal is not eligible to travel on that result. Your origin vet will usually revaccinate with an inactivated or recombinant rabies vaccine, wait at least 21 days, redraw, and ship a new sample. The new sample must still fall within 90 days before the eventual travel date. That redo is what stretches a file — not a mandatory 90-day sit after a passing result.',
+      'That certificate does not meet the import test. Your vet will usually give another rabies vaccine and repeat the test. If that vaccine is a first dose, or it follows a gap, wait at least 21 days before the new test. A valid booster does not need that wait. The new certificate then follows the same 365-day conditions.',
   },
   {
     question: 'How long does the lab take?',
     answer:
-      'Blood draw is a clinic visit. Shipping and lab processing commonly take one to three weeks depending on where the sample has to travel. Treat those as operational estimates, not a MOCCAE SLA. Build them into the calendar so the sample is still inside the 90-day pre-travel window on the day you fly.',
+      'The blood draw is a clinic visit. Shipping and laboratory time vary by country. Treat any week count you hear from a clinic as an operational estimate, not a MOCCAE service time. The published permit estimate is 1 working day, or 5 working days for a service, emotional support or medical dog.',
   },
   {
-    question: 'How much does a rabies titer test cost?',
+    question: 'Is a titre the same as a MOCCAE import permit?',
     answer:
-      'Clinic draw, laboratory fee and international shipping are private-market charges that vary by country and lab. We do not publish a government fee table here and we do not assume a single AED total. Ask your origin vet for the current draw-and-shipping quote; we can help you sequence it against the 90-day MOCCAE permit.',
-  },
-  {
-    question: 'Is a titer the same as a MOCCAE import permit?',
-    answer:
-      'No. The RNATT is a laboratory result attached to the file when MOCCAE requires it. The import permit is a separate 90-day Ministry approval. You can have a passing titer and still be refused if the permit is missing or expired. Permit walkthrough: the MOCCAE import permit guide. Permit help: MOCCAE permit assistance.',
+      'No. The antibody test is a laboratory result for a high-risk origin. The import permit is a separate approval, valid for 90 days from issuance. A passing test does not replace an expired permit. Permit steps: [/guides/moccae-import-permit/](/guides/moccae-import-permit/). Paid filing: [/service/moccae-pet-permit/](/service/moccae-pet-permit/).',
   },
 ]
 
 export default function TiterTestGuide() {
-  const title = 'Rabies Titer Test Dubai | Sample Within 90 Days'
+  const title = 'Rabies Titre Test Dubai | 0.5 IU/ml, 365-Day Certificate'
   const description =
-    'Rabies titer test Dubai (RNATT): sample within 90 days before travel, result ≥0.5 IU/ml. Not a 90-day wait after the test.'
+    'Rabies titre test for Dubai: high-risk origins need at least 0.5 IU/ml. The certificate lasts 365 days if the vaccine stays valid and no booster is given. Permit is 90 days from issuance.'
   const canonical = `${BASE_URL}/guides/rabies-titer-test-dubai/`
   const ogImage = `${BASE_URL}/assets/og-titer-test.jpg`
+  const waTitre = waEligibility({ need: 'managed move' })
 
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -113,52 +108,52 @@ export default function TiterTestGuide() {
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
       { '@type': 'ListItem', position: 2, name: 'Guides', item: `${BASE_URL}/guides/` },
-      { '@type': 'ListItem', position: 3, name: 'Rabies Titer Test for Dubai', item: canonical },
+      { '@type': 'ListItem', position: 3, name: 'Rabies Titre Test for Dubai', item: canonical },
     ],
   }
 
   const howToSchema = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: 'How to time a rabies titer test (RNATT) for Dubai pet travel',
+    name: 'How to prepare a rabies antibody test for Dubai pet import',
     description:
-      'Correct UAE RNATT sequence: microchip, rabies vaccination, 21-day wait, blood sample within 90 days before travel, result at least 0.5 IU/ml.',
+      'High-risk origin sequence: permanent microchip, rabies vaccination not before 12 weeks, antibody test of at least 0.5 IU/ml, 365-day certificate conditions, then a MOCCAE import permit valid 90 days from issuance.',
     step: [
       {
         '@type': 'HowToStep',
         position: 1,
-        name: 'Implant the microchip first',
-        text: 'ISO 11784/11785 15-digit microchip must be in place before the rabies vaccination used for import.',
+        name: 'Fit a permanent microchip',
+        text: 'The number on the health certificate must match the chip in the animal. The live MOCCAE page does not restate an ISO label or an implant-before-vaccine order.',
       },
       {
         '@type': 'HowToStep',
         position: 2,
         name: 'Rabies vaccination',
-        text: 'Inactivated or recombinant vaccine; pet at least 12 weeks old.',
+        text: 'Not before 12 weeks of age. Validity follows the manufacturer.',
       },
       {
         '@type': 'HowToStep',
         position: 3,
-        name: 'Wait at least 21 days',
-        text: 'Do not draw the titer sample before 21 days have elapsed after vaccination.',
+        name: 'Wait 21 days only when that rule applies',
+        text: 'A first vaccine, or a gap in vaccination, needs at least 21 days before the antibody test. A valid booster does not.',
       },
       {
         '@type': 'HowToStep',
         position: 4,
         name: 'Draw the blood sample',
-        text: 'A veterinarian prepares serum for an accredited laboratory. The sample must be taken within 90 days before travel.',
+        text: 'A veterinarian sends the sample to a laboratory approved by the export authority.',
       },
       {
         '@type': 'HowToStep',
         position: 5,
         name: 'Receive a passing result',
-        text: 'Minimum acceptable result is 0.5 IU/ml.',
+        text: 'The result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given.',
       },
       {
         '@type': 'HowToStep',
         position: 6,
-        name: 'Travel inside the sample window',
-        text: 'Confirm the sample date is still within 90 days of arrival. Then apply for the 90-day MOCCAE import permit.',
+        name: 'Apply for the import permit',
+        text: 'The MOCCAE import permit is valid for 90 days from issuance. It is a separate document from the antibody certificate.',
       },
     ],
   }
@@ -168,7 +163,7 @@ export default function TiterTestGuide() {
     '@type': 'Article',
     headline: title,
     description,
-    dateModified: '2026-09-04',
+    dateModified: '2026-09-22',
     author: { '@type': 'Organization', name: 'Dubai Pet Relocation' },
     publisher: { '@type': 'Organization', name: 'Dubai Pet Relocation' },
   }
@@ -204,17 +199,17 @@ export default function TiterTestGuide() {
           },
         ]}
       />
-      <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Rabies Titer Test Guide' }]} />
+      <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Rabies Titre Test Guide' }]} />
 
       <Hero
         image="/assets/w5/rabies-titer-test-rnatt-explained-diagram.png"
-        imageAlt="How the rabies titer test (RNATT) works: blood sample, accredited lab, 0.5 IU/ml pass threshold"
-        eyebrow="Titer timing guide"
-        title="Rabies Titer Test Dubai — Sample Within 90 Days Before Travel"
-        subtitle="The locked rule is the sample date, not a 90-day sit after the result. Threshold: ≥0.5 IU/ml. Confirm whether your origin requires the test on the MOCCAE portal."
-        updated={LAST_VERIFIED_LABEL}
-        whatsappMessage="Hi Dubai Pet Relocation, I need the correct rabies titer (RNATT) timing for importing my pet to Dubai. Origin country: [country]."
-        primaryLabel="Check titer timing on WhatsApp"
+        imageAlt="Diagram of a rabies antibody test: blood sample, laboratory, and a 0.5 IU/ml threshold"
+        eyebrow="Titre guide"
+        title="Rabies Titre Test for Dubai"
+        subtitle="High-risk origins need at least 0.5 IU/ml. The certificate lasts 365 days while the vaccine stays valid and no booster is given. The import permit is a separate 90 days from issuance."
+        updated={`Last verified: ${CHECKED}`}
+        whatsappMessage={waTitre}
+        primaryLabel="Check titre timing on WhatsApp"
         secondary={{ label: 'Full import requirements', to: '/guides/uae-pet-import-requirements/' }}
       />
 
@@ -223,51 +218,61 @@ export default function TiterTestGuide() {
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-                What a rabies titer test is — and what it is not
+                What a rabies titre test is
               </h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-4">
-                A rabies titer test, usually called an <strong>RNATT</strong> (rabies neutralising antibody titre test) or FAVN, is a blood test that measures rabies antibodies. For UAE import it is required only for pets arriving from countries that are <strong>not</strong> on MOCCAE&apos;s rabies-controlled / exempt list.
+                A rabies antibody test measures whether the animal has at least 0.5 IU/ml. MOCCAE asks for it when the origin is high-risk. It is not the import permit, and it is not a quarantine clock.
               </p>
-              <p className="text-[#5A5A5A] text-base leading-relaxed mb-4">{TITER_SAMPLE_RULE}</p>
+              <p className="text-[#5A5A5A] text-base leading-relaxed mb-4">{TITRE_RULE}</p>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-4">
-                See where the sample sits in the ordered{' '}
+                The ordered tick list is the{' '}
                 <Link to="/guides/import-checklist/" className="font-semibold text-[#4F5BD5] hover:underline">
-                  pet import documents checklist
+                  pet import checklist
+                </Link>
+                . The statutory page is{' '}
+                <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  UAE pet import requirements
                 </Link>
                 .
               </p>
-              <p className="text-[#5A5A5A] text-base leading-relaxed mb-4">{EXEMPT_LIST_HOLD}</p>
               <div className="bg-white rounded-[20px] shadow-sm p-6">
                 <h3 className="text-lg font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
                   <FlaskConical className="w-5 h-5 text-[#4F5BD5]" />
-                  Locked facts
+                  What the live page says
                 </h3>
                 <ul className="space-y-2 text-sm text-[#5A5A5A]">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                    <span>Pass threshold: {TITER_THRESHOLD}</span>
+                    <span>Pass mark: at least 0.5 IU/ml</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                    <span>Sample taken within 90 days <em>before</em> travel</span>
+                    <span>Certificate valid 365 days if the vaccine stays valid and continuous and no booster is given</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                    <span>Not a 90-day waiting period after the test</span>
+                    <span>21 days before the test after a first or lapsed vaccine, not after a valid booster</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                    <span>Microchip before the rabies vaccination that the sample follows</span>
+                    <span>Permit validity is 90 days from issuance, and it is a different document</span>
                   </li>
                 </ul>
-                <LastVerified className="mt-4 text-xs text-[#8A8A8A]" />
+                <LastVerified className="mt-4 text-xs text-[#8A8A8A]" date={CHECKED} />
+                <p className="mt-3 text-xs text-[#8A8A8A]">
+                  Source:{' '}
+                  <a href={MOCCAE_IMPORT} className="underline" target="_blank" rel="noopener noreferrer">
+                    MOCCAE import of pets
+                  </a>
+                  , checked {CHECKED}.
+                </p>
               </div>
             </div>
             <div>
               <ContentImage
                 src="/assets/w5/rabies-titer-test-rnatt-explained-diagram.png"
-                alt="How the rabies titer test (RNATT) works: blood sample, accredited lab, 0.5 IU/ml pass threshold"
-                caption="Concept only. The exempt-country list is confirmed on the portal, not on this graphic."
+                alt="Illustration of a rabies antibody test pathway"
+                caption="Illustration only. Use the text on this page. The live rule is the 365-day certificate, not an older sample-window caption."
               />
             </div>
           </div>
@@ -276,9 +281,9 @@ export default function TiterTestGuide() {
 
       <GuideFunnelCta
         variant="mid"
-        title="Sample window mapped — check a managed import?"
-        subtitle="This guide stays educational. Eligibility and the inbound file sit on the service pages and WhatsApp. We do not assume lab or government fee amounts."
-        eligibilityMessage={waEligibility({ need: 'titer timing / managed import' })}
+        title="Want the test dated against a real flight?"
+        subtitle="This guide is free to read. WhatsApp is for a managed import after you are ready to book. We do not quote a laboratory fee on this page."
+        eligibilityMessage={waTitre}
         waLabel={CTA_CHECK_MOVE}
       />
 
@@ -286,62 +291,62 @@ export default function TiterTestGuide() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-              Timeline from vaccination to travel — the sample window
+              Order of work for a high-risk origin
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed">
-              The calendar is a sequence, not a punishment clock. Lab shipping can take weeks; the thing you must not miss is that the <strong>sample date</strong> still sits inside 90 days of arrival.
+              Do the antibody test before you spend the permit&apos;s 90 days. The diagram is an illustration. If it still shows an older sample window, use the text here.
             </p>
           </div>
 
           <ContentImage
             src="/assets/w5/rabies-titer-test-timeline-vaccination-to-travel.png"
-            alt="Rabies titer test timeline for Dubai pet travel from vaccination to the travel window"
-            caption="Sample-within-90-days-before-travel. This diagram does not show a post-test 90-day wait."
+            alt="Illustration of vaccination, an antibody test, and travel"
+            caption="Illustration only. Certificate validity is 365 days under the conditions above. Permit validity is 90 days from issuance."
           />
 
-          <div className="space-y-6 mb-10">
+          <div className="space-y-6 mb-10 mt-8">
             <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8 flex gap-5">
               <div className="w-12 h-12 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-lg font-bold shrink-0">1</div>
               <div>
-                <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Microchip, then rabies vaccination</h3>
+                <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Microchip and rabies vaccination</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  {MICROCHIP_BEFORE_RABIES} Use an inactivated or recombinant vaccine. The pet must be at least 12 weeks old.
+                  Fit a permanent microchip. The number on the health certificate must match the animal. Vaccination is not given before 12 weeks of age. The live page does not restate an ISO standard or a rule that the chip must be implanted before the vaccine.
                 </p>
               </div>
             </div>
             <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8 flex gap-5">
               <div className="w-12 h-12 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-lg font-bold shrink-0">2</div>
               <div>
-                <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Wait at least 21 days before the blood draw</h3>
+                <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">21 days, only after a first or lapsed vaccine</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  Antibody levels need time. Drawing too early is a common reason a first result falls below 0.5 IU/ml. This 21-day wait is after vaccination — it is not the 90-day travel window.
+                  If this is the first rabies vaccine, or vaccination was not continuous, wait at least 21 days before the test. If the animal already has a valid booster, the page says the test can be done without that 21-day gap.
                 </p>
               </div>
             </div>
             <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8 flex gap-5">
               <div className="w-12 h-12 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-lg font-bold shrink-0">3</div>
               <div>
-                <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Blood draw and lab</h3>
+                <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Blood draw and laboratory</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
-                  A veterinarian draws serum and ships it to an accredited laboratory. Cold-chain handling matters. Results commonly take one to three weeks — an operational estimate, not a Ministry SLA.
+                  A veterinarian sends the sample to a laboratory approved by the export authority. The result can sit on the health certificate. Clinic turnaround is not a Ministry service time.
                 </p>
                 <ContentImage
                   src="/assets/w5/rabies-titer-test-blood-draw-calm-whippet-vet.jpg"
-                  alt="Calm whippet having a blood sample taken for a rabies titer test at a vet clinic"
-                  caption="The draw is ordinary veterinary work. The date on the sample is the date that must sit inside 90 days of travel."
+                  alt="A dog having a blood sample taken at a veterinary clinic"
+                  caption="The draw is ordinary veterinary work. The certificate conditions on this page are the rule, not a caption on the photograph."
                 />
               </div>
             </div>
             <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8 flex gap-5">
               <div className="w-12 h-12 rounded-full bg-[#C89F5A] text-white flex items-center justify-center text-lg font-bold shrink-0">4</div>
               <div>
-                <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Travel while the sample is still in date</h3>
+                <h3 className="text-xl font-bold text-[#2A2A2A] mb-2">Keep the certificate in date, then apply for the permit</h3>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  Once you have {TITER_THRESHOLD}, count forward from the <strong>sample date</strong>. Arrival must fall inside 90 days of that draw. Then time the{' '}
+                  A result of at least 0.5 IU/ml can be used for 365 days while the vaccine stays valid and continuous and no booster is given. Then apply for the{' '}
                   <Link to="/guides/moccae-import-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
-                    90-day MOCCAE import permit
-                  </Link>{' '}
-                  so it is still valid on landing. Do not wait an extra 90 days after the PDF arrives.
+                    MOCCAE import permit
+                  </Link>
+                  , which is valid for 90 days from issuance. Do not add a 90-day wait after the laboratory PDF arrives.
                 </p>
               </div>
             </div>
@@ -354,35 +359,35 @@ export default function TiterTestGuide() {
                 <thead>
                   <tr>
                     <th>Interval</th>
-                    <th>What it is</th>
+                    <th>What the checked page says</th>
                     <th>What it is not</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="font-medium">21 days after vaccination</td>
-                    <td>Minimum wait before a useful blood draw</td>
-                    <td>Not the travel ban</td>
+                    <td className="font-medium">21 days</td>
+                    <td>Before the test, after a first or lapsed rabies vaccine</td>
+                    <td>Not required after a valid booster</td>
                   </tr>
                   <tr>
-                    <td className="font-medium">Lab processing</td>
-                    <td>Operational estimate (often 1–3 weeks)</td>
-                    <td>Not a MOCCAE SLA</td>
+                    <td className="font-medium">365 days</td>
+                    <td>Certificate life if the vaccine stays valid and no booster is given</td>
+                    <td>Not a sample window before travel</td>
                   </tr>
                   <tr>
-                    <td className="font-medium">90 days before travel</td>
-                    <td>Sample must be drawn inside this window</td>
-                    <td>Not a wait after the result</td>
+                    <td className="font-medium">90 days</td>
+                    <td>Import permit, counted from issuance</td>
+                    <td>Not a titre rule and not a municipal deadline</td>
                   </tr>
                   <tr>
-                    <td className="font-medium">90-day permit</td>
-                    <td>MOCCAE import-permit validity after issuance</td>
-                    <td>Not a titer rule</td>
+                    <td className="font-medium">1 or 5 working days</td>
+                    <td>Published permit estimate; 5 days for a service, emotional support or medical dog</td>
+                    <td>Not a promise that cargo will be released in that time</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <LastVerified className="mt-4 text-xs text-[#8A8A8A]" />
+            <LastVerified className="mt-4 text-xs text-[#8A8A8A]" date={CHECKED} />
           </div>
         </div>
       </section>
@@ -398,25 +403,20 @@ export default function TiterTestGuide() {
                 <h3 className="text-xl font-bold text-[#2A2A2A]">Who needs the test</h3>
               </div>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-                Pets from countries <strong>not</strong> on MOCCAE&apos;s low-risk / exempt list need an RNATT. Pets from listed rabies-controlled countries are described as exempt — but the current first-party list could not be captured cleanly for this page.
+                High-risk origins. This guide does not reprint the low-risk list, because the list can change. On {CHECKED} the United Kingdom was on the list printed on the MOCCAE import page. The United States was not named on that list, so a US origin is treated here as high-risk until the live page says otherwise.
               </p>
               <div className="warning-box">
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-[#C89F5A] shrink-0 mt-0.5" />
-                  <p className="text-sm text-[#2A2A2A]">{EXEMPT_LIST_HOLD}</p>
+                  <p className="text-sm text-[#2A2A2A]">
+                    Confirm the origin on the live page before you skip the test. Route notes such as{' '}
+                    <Link to="/routes/uk-to-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">UK to Dubai</Link>
+                    {' '}and{' '}
+                    <Link to="/routes/usa-to-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">USA to Dubai</Link>
+                    {' '}follow the same check.
+                  </p>
                 </div>
               </div>
-              <p className="text-[#5A5A5A] text-sm leading-relaxed mt-4">
-                Route pages such as{' '}
-                <Link to="/routes/india-to-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-                  India to Dubai
-                </Link>{' '}
-                and{' '}
-                <Link to="/routes/philippines-to-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-                  Philippines to Dubai
-                </Link>{' '}
-                discuss origin logistics. They do not replace a portal check.
-              </p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
@@ -427,20 +427,20 @@ export default function TiterTestGuide() {
                 <h3 className="text-xl font-bold text-[#2A2A2A]">If the result is low</h3>
               </div>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-5">
-                Below 0.5 IU/ml means you do not travel on that certificate. Restart the antibody clock; do not assume a waiver.
+                Below 0.5 IU/ml does not meet the test. There is no fine amount on the import page for that result. The published outcome for a non-compliant import is rejection at the owner&apos;s expense or confiscation.
               </p>
               <div className="space-y-3">
                 <div className="p-3 bg-[#C9453A]/5 rounded-xl">
-                  <p className="font-semibold text-[#C9453A] text-sm">Revaccinate</p>
-                  <p className="text-xs text-[#5A5A5A]">Inactivated or recombinant rabies vaccine, chip already in place.</p>
+                  <p className="font-semibold text-[#C9453A] text-sm">Revaccinate if the vet advises it</p>
+                  <p className="text-xs text-[#5A5A5A]">Not before 12 weeks of age for a first dose. Validity follows the manufacturer.</p>
                 </div>
                 <div className="p-3 bg-[#C9453A]/5 rounded-xl">
-                  <p className="font-semibold text-[#C9453A] text-sm">Wait ≥21 days</p>
-                  <p className="text-xs text-[#5A5A5A]">Then redraw. Do not rush the sample.</p>
+                  <p className="font-semibold text-[#C9453A] text-sm">Wait 21 days only when required</p>
+                  <p className="text-xs text-[#5A5A5A]">After a first vaccine or a gap. Not after a valid booster.</p>
                 </div>
                 <div className="p-3 bg-[#C9453A]/5 rounded-xl">
-                  <p className="font-semibold text-[#C9453A] text-sm">Retest and re-time travel</p>
-                  <p className="text-xs text-[#5A5A5A]">The new sample must still fall within 90 days before the new arrival date.</p>
+                  <p className="font-semibold text-[#C9453A] text-sm">Repeat the test</p>
+                  <p className="text-xs text-[#5A5A5A]">The new certificate follows the same 365-day conditions. It does not create a 90-day sample window.</p>
                 </div>
               </div>
             </div>
@@ -452,64 +452,60 @@ export default function TiterTestGuide() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-              How to avoid a failed first sample
+              How a file fails the test
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed">
-              A failed titer is a calendar problem, not a character problem. These are the operational habits that keep the first draw useful.
+              These are the conditions on the page we checked. They are not a laboratory price list.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             <div className="bg-[#F5F6FD] rounded-[20px] p-6">
               <Syringe className="w-5 h-5 text-[#4F5BD5] mb-3" />
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Correct vaccine type</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Inactivated or recombinant only. Live attenuated rabies vaccines are not accepted for UAE import.</p>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Vaccine too early</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">Rabies vaccination is not given before 12 weeks of age. High-risk imports are not accepted under 15 weeks.</p>
             </div>
             <div className="bg-[#F5F6FD] rounded-[20px] p-6">
               <Clock className="w-5 h-5 text-[#4F5BD5] mb-3" />
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Full 21 days before the draw</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Do not treat day 14 as close enough. Antibody levels are still climbing.</p>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Test drawn too soon</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">After a first or lapsed vaccine, fewer than 21 days is too soon. A valid booster is the exception.</p>
             </div>
             <div className="bg-[#F5F6FD] rounded-[20px] p-6">
               <Stethoscope className="w-5 h-5 text-[#C89F5A] mb-3" />
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">A vet who ships titer samples</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Labelling, serum quality and cold chain decide whether the lab can even read the tube.</p>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Wrong laboratory status</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">The laboratory must be approved by the export authority. This page does not name a private lab as if it were official.</p>
             </div>
             <div className="bg-[#F5F6FD] rounded-[20px] p-6">
               <Shield className="w-5 h-5 text-[#4F5BD5] mb-3" />
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Healthy animal</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Illness, stress or immunosuppressive medication can suppress the reading. Ask the vet before you book the draw.</p>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Booster after the test</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">If a booster is given, the 365-day certificate condition ends and the test is repeated.</p>
             </div>
             <div className="bg-[#F5F6FD] rounded-[20px] p-6">
               <FlaskConical className="w-5 h-5 text-[#4F5BD5] mb-3" />
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Accredited lab</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">A local lab that is not accepted for import purposes wastes the sample date. Confirm acceptance before you ship.</p>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Result under 0.5 IU/ml</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">The page does not describe a waiver or a fine amount for a low result.</p>
             </div>
             <div className="bg-[#F5F6FD] rounded-[20px] p-6">
               <FileCheck className="w-5 h-5 text-[#C89F5A] mb-3" />
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Same chip on every page</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">The number on the titer certificate must match the vaccination record and the MOCCAE form exactly.</p>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Chip number mismatch</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">The number on the health certificate must match the chip in the animal.</p>
             </div>
           </div>
 
           <div className="bg-[#E9ECFB] rounded-[20px] p-6 lg:p-8">
             <div className="flex items-center gap-3 mb-4">
               <PawPrint className="w-5 h-5 text-[#4F5BD5]" />
-              <h3 className="text-xl font-bold text-[#2A2A2A]">Where this guide stops — and the commercial pages start</h3>
+              <h3 className="text-xl font-bold text-[#2A2A2A]">Read this guide, or book the import</h3>
             </div>
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-              This page covers titer timing. It does not sell cargo clearance and it does not replace the permit walkthrough. If you want the import job run as a file, start with{' '}
+              Stay on this page if you are timing the test yourself. If you want the import handled, open{' '}
               <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
                 pet import to Dubai
               </Link>
-              . If you only need the permit submitted, use{' '}
+              . Permit filing on its own is{' '}
               <Link to="/service/moccae-pet-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
                 MOCCAE permit assistance
               </Link>
-              . The statutory pack is on{' '}
-              <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
-                UAE pet import requirements
-              </Link>
-              .
+              . WhatsApp +971504782999 and support@dubai-pet-relocation.ae are for a managed file, not a free rewrite of the Ministry page.
             </p>
           </div>
         </div>
@@ -530,17 +526,20 @@ export default function TiterTestGuide() {
 
       <RelatedLinks
         heading="Related guides and services"
-        intro="Titer timing sits inside the import file. Eligibility and a managed import live on the service pages."
+        intro="The titre sits inside the import file. A managed import is a separate service."
         path="/guides/rabies-titer-test-dubai/"
       />
 
-      <OfficialSources />
+      <OfficialSources
+        checkedLabel={`Checked ${CHECKED} against the MOCCAE import of pets page. Veterinary review was not supplied.`}
+        extra={[{ label: 'MOCCAE import of pets', href: MOCCAE_IMPORT }]}
+      />
 
       <GuideFunnelCta
         variant="end"
-        title="Need the sample date mapped to a flight?"
-        subtitle="Send origin, vaccination date and a target month. We confirm whether an RNATT is in play after a portal check. Guides stay free to read — no invented lab fees."
-        eligibilityMessage={waEligibility({ need: 'titer timing / managed import' })}
+        title="Need the test mapped to a flight?"
+        subtitle="Send origin, vaccination date and a target month on WhatsApp if you want a managed import. This guide stays free. We do not invent a laboratory fee."
+        eligibilityMessage={waTitre}
         waLabel={CTA_CHECK_MOVE}
       />
     </>

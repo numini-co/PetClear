@@ -3,15 +3,13 @@ import { Link } from 'react-router-dom'
 import {
   AlertTriangle,
   Ban,
-  PawPrint,
   ChevronDown,
   ChevronUp,
   FileCheck,
-  Scale,
   Clock,
   Heart,
-  ThermometerSun,
   Dog,
+  CheckCircle,
 } from 'lucide-react'
 import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
@@ -21,9 +19,29 @@ import { BASE_URL } from '../lib/seo.ts'
 import GuideDualPath from '../components/GuideDualPath.tsx'
 import { waEligibility } from '../lib/conversionCopy.ts'
 
+const CHECKED = '22 September 2026'
+const MOCCAE_IMPORT = 'https://moccae.gov.ae/en/services/import-permit-pets'
 const waBreed = waEligibility({ pet: 'dog', need: 'managed move' })
 
-/* ─── FAQ accordion helper ─── */
+const BANNED_DOGS = [
+  'Staffordshire Bull Terrier',
+  'American Pit Bull Terrier',
+  'American Staffordshire Terrier',
+  'American Bully',
+  'Brazilian Mastiff (Fila Brasileiro)',
+  'Argentinian Mastiff (Dogo Argentino)',
+  'Tibetan Mastiff',
+  'Neapolitan Mastiff',
+  'French Mastiff (Dogue de Bordeaux)',
+  'Boerboel',
+  'Bullmastiff',
+  'Cane Corso (Italian Mastiff)',
+  'Bully Kutta (Alangu Mastiff, Indian Mastiff)',
+  'Perro de Presa Canario (Canary Mastiff)',
+  'Japanese Tosa',
+  'Presa Canario',
+]
+
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
   const [open, setOpen] = useState(false)
   return (
@@ -37,46 +55,53 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
   )
 }
 
-/* ─── Page ─── */
 export default function BannedBreedsGuide() {
-  const title = 'Banned Dog Breeds UAE | Dubai Restricted List 2026'
+  const title = 'Banned Dog Breeds UAE | MOCCAE Import List'
   const description =
-    'Banned dog breeds UAE: restricted and prohibited types for Dubai import, plus how to verify before you book.'
+    'Banned dog breeds for UAE import, as printed on the MOCCAE pet import page on 22 September 2026. No fine amount is published on that page. Permit valid 90 days from issuance.'
   const canonical = `${BASE_URL}/guides/banned-dog-breeds-dubai/`
   const ogImage = `${BASE_URL}/assets/og-banned-breeds.jpg`
 
   const faqData = [
     {
-      question: 'Can I bring a Staffordshire Bull Terrier mix to Dubai?',
-      answer: 'Staffordshire Bull Terrier mixes are assessed on a case-by-case basis. Dubai Municipality and UAE customs reserve the right to ban any dog that visually resembles a banned breed. If your Staffy mix has physical characteristics similar to a Pit Bull type, there is a significant risk of refusal at entry. Compare the dog against the Pit Bull-type list on this page first. WhatsApp a breed check only if you are ready to book a managed dog relocation.',
+      question: 'Are crosses of these breeds banned?',
+      answer:
+        'The MOCCAE English page checked on 22 September 2026 lists named breeds. It does not add the phrase "any cross". This guide does not add it either. The UK export certificate 3926EHC does require the Official Veterinarian to exclude a similar list, including crosses, for a dog leaving the United Kingdom. That is a UK certificate rule, not an extra sentence on the UAE list.',
     },
     {
-      question: 'What happens if my dog looks like a banned breed but is not?',
-      answer: 'Breed identification at UAE customs is primarily based on visual inspection. Even if your dog is not genetically a banned breed, customs officers may refuse entry if the dog resembles a banned type. This decision is final and non-negotiable at the port of entry. Dubai Pet Relocation advises submitting clear photos, pedigree papers, and a veterinary breed confirmation letter before travel to support your case.',
+      question: 'What happens if the dog is on the list?',
+      answer:
+        'The published outcome for a non-compliant import is rejection at the owner\'s expense or confiscation. The page checked on 22 September 2026 does not publish a fine amount, a jail term, or a euthanasia tariff. An exception exists for service, emotional support and medical dogs when the required documents are supplied.',
     },
     {
-      question: 'Are Rottweilers and Dobermans allowed in Dubai?',
-      answer: 'Yes, Rottweilers and Dobermans are allowed but classified as restricted breeds. They must be muzzled in public at all times, kept on a short leash, and may be subject to additional community or building restrictions. Some residential communities and landlords explicitly prohibit these breeds. Always check your building\'s pet policy before relocating.',
+      question: 'Are Rottweilers, Dobermans and Boxers banned?',
+      answer:
+        'They were not on the MOCCAE pet import list checked on 22 September 2026. This page does not call them banned, and it does not publish muzzle, leash or insurance rules for them. A building can still set its own pet policy. Ask that building before you book cargo.',
     },
     {
-      question: 'Can I bring a service dog to Dubai if it is a banned breed?',
-      answer: 'Service dogs are generally exempt from breed bans, but only if they are accredited by internationally recognized organizations such as ADI (Assistance Dogs International) or IGDF (International Guide Dog Federation). You must carry the accreditation certificate, service dog ID, and documentation confirming the dog is trained for a specific disability-related task. Emotional support animals do not qualify for this exemption.',
+      question: 'Can a banned breed enter as a service or emotional support dog?',
+      answer:
+        'The same MOCCAE page allows an exception for dogs used as service animals, emotional support animals or for medical purposes. You need a training-centre document certified by the origin authority, a medical report on the owner certified the same way, and a signed pledge about ownership and breeding. A casual letter is not those documents. Processing for that category is listed as 5 working days. The ordinary permit estimate is 1 working day.',
     },
     {
-      question: 'What are the fines for importing a banned breed into Dubai?',
-      answer: 'Importing a banned breed into the UAE can result in severe penalties under UAE Federal Law No. 22 of 2016 and Dubai Municipality regulations. Fines range from AED 10,000 to AED 700,000 depending on the severity, and may include jail time, confiscation of the animal, and deportation of the owner. The pet will be refused entry and may be held at the owner\'s expense or euthanized in extreme cases.',
+      question: 'What is the fine for importing a banned breed?',
+      answer:
+        'The live import page does not publish a fine amount. It says a non-compliant pet will be rejected at the owner\'s expense or confiscated. Older fine ranges are not repeated here.',
     },
     {
-      question: 'Are brachycephalic (flat-faced) dogs banned from flying to Dubai?',
-      answer: 'Brachycephalic breeds are not banned from entering Dubai, but many airlines ban or severely restrict them during hot months due to respiratory risks. During the summer heat embargo (May 1 – September 30), most airlines refuse to transport brachycephalic dogs. Some airlines, such as Emirates SkyCargo and Etihad Cargo, have year-round restrictions or require veterinary fitness certificates. Always check with your specific airline before booking.',
+      question: 'Are flat-faced dogs banned from Dubai?',
+      answer:
+        'They are not on the MOCCAE ban list. An airline can still refuse them. IAG Cargo says some dangerous dog breeds and snub-nosed cats and dogs may not be accepted. This page does not copy a month-by-month embargo. Airline notes: the snub-nosed dogs guide.',
     },
     {
-      question: 'What should I do if I have a mixed breed and am unsure about the rules?',
-      answer: 'Use the banned and restricted lists on this page first, including the visual-resemblance note. A mix can still be refused if it looks like a banned type. WhatsApp photos only if you are ready to book a managed dog relocation and need breed eligibility as part of that file. We do not run free photo reviews for people who are only browsing the guide.',
+      question: 'What if I am unsure of the breed name?',
+      answer:
+        'Compare the name on the veterinary record with the list on this page. WhatsApp photos only if you are ready to book a managed dog relocation. This guide does not offer a free photo review.',
     },
     {
-      question: 'Do restricted breeds need special insurance in Dubai?',
-      answer: 'Many Dubai residential communities and landlords require liability insurance for restricted breeds. Some buildings mandate proof of insurance covering third-party injury or property damage caused by the dog. Confirm your building policy before you book cargo. We do not publish an insurer list here. WhatsApp if you are booking a managed move and the file has to match those housing rules.',
+      question: 'Do I still need an import permit if the breed is allowed?',
+      answer:
+        'Yes. A permitted breed still needs a MOCCAE import permit valid for 90 days from issuance, plus the vaccines and health certificate for that origin. Breed names are the first check, not the whole file.',
     },
   ]
 
@@ -86,10 +111,7 @@ export default function BannedBreedsGuide() {
     mainEntity: faqData.map((faq) => ({
       '@type': 'Question',
       name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: typeof faq.answer === 'string' ? faq.answer : faq.question,
-      },
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
     })),
   }
 
@@ -98,7 +120,8 @@ export default function BannedBreedsGuide() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
-      { '@type': 'ListItem', position: 2, name: 'Banned and Restricted Dog Breeds in Dubai', item: canonical },
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: `${BASE_URL}/guides/` },
+      { '@type': 'ListItem', position: 3, name: 'Banned dog breeds in Dubai', item: canonical },
     ],
   }
 
@@ -111,33 +134,25 @@ export default function BannedBreedsGuide() {
     author: { '@type': 'Organization', name: 'Dubai Pet Relocation', url: BASE_URL },
     publisher: { '@type': 'Organization', name: 'Dubai Pet Relocation', logo: { '@type': 'ImageObject', url: `${BASE_URL}/assets/logo.png` } },
     datePublished: '2025-01-15',
-    dateModified: '2026-01-10',
+    dateModified: '2026-09-22',
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
-  }
-
-  const schemas = [faqSchema, breadcrumbSchema, articleSchema]
-
-  const meta = {
-    title,
-    description,
-    canonical,
-    ogImage,
-    ogType: 'article',
   }
 
   return (
     <>
-      <SEOHead meta={meta} schemas={schemas} />
-      <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Banned & Restricted Dog Breeds' }]} />
+      <SEOHead
+        meta={{ title, description, canonical, ogImage, ogType: 'article' }}
+        schemas={[faqSchema, breadcrumbSchema, articleSchema]}
+      />
+      <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'Banned dog breeds' }]} />
 
-      {/* Hero */}
       <Hero
         image="/images/guide-banned-breeds.jpg"
-        imageAlt="Calm leashed dog with its owner in a Dubai park, showing responsible restricted-breed ownership"
-        eyebrow="Pet Relocation Guide"
-        title="Banned Dog Breeds in the UAE (Dubai) — 2026 Guide"
-        subtitle="Some breeds are completely prohibited; others face strict muzzle, insurance, and housing rules under Dubai Municipality and UAE federal law."
-        updated="Updated June 2026"
+        imageAlt="A leashed dog with its owner in a Dubai park"
+        eyebrow="Pet relocation guide"
+        title="Banned dog breeds for UAE import"
+        subtitle="Names below are the ban list on the MOCCAE pet import page. The page does not publish a fine amount. A permitted breed still needs a permit valid 90 days from issuance."
+        updated={`Last verified: ${CHECKED}`}
         primaryLabel="Check breed eligibility"
         whatsappMessage={waBreed}
         secondary={{ label: 'Dog relocation service', to: '/service/dog-relocation-dubai/' }}
@@ -146,7 +161,7 @@ export default function BannedBreedsGuide() {
       <section className="section-padding bg-white">
         <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
           <GuideDualPath
-            diyNote="Keep reading the banned and restricted lists if you are checking the rule yourself."
+            diyNote="Stay on this page if you are checking the breed name yourself."
             moneyTo="/service/dog-relocation-dubai/"
             moneyLabel="Dog relocation service"
             waMessage={waBreed}
@@ -155,403 +170,107 @@ export default function BannedBreedsGuide() {
         </div>
       </section>
 
-      {/* Complete Banned Breeds List */}
       <section id="banned-list" className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mb-12">
+          <div className="max-w-3xl mb-8">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-              Complete List of Banned Dog Breeds in Dubai & the UAE
+              Breeds named on the import page
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed">
-              The following breeds are prohibited from import, sale, breeding, and ownership in Dubai and across the UAE under Dubai Municipality and federal regulations. Any dog that visually resembles these breeds may also be refused entry.
-            </p>
-            <p className="text-[#5A5A5A] text-sm leading-relaxed mt-4">
-              <strong>Note:</strong> Rottweilers and Dobermans are NOT banned from import — they are subject to local muzzle/leash (restricted) rules. See the restricted-breeds section below.
+              These are the names on the MOCCAE pet import page on {CHECKED}. Rottweiler, Doberman and Boxer were not on that list. Wolf-dog hybrids, Bandog and a blanket "any cross" line were not on it either, so they are not added here.
             </p>
             <p className="text-[#8A8A8A] text-xs leading-relaxed mt-3">
-              Source: MOCCAE; Federal Law No. 22 of 2016 — verified June 2026.
+              Source:{' '}
+              <a href={MOCCAE_IMPORT} className="underline" target="_blank" rel="noopener noreferrer">
+                MOCCAE import of pets
+              </a>
+              . Checked {CHECKED}. Veterinary review was not supplied.
             </p>
           </div>
-
-          <div className="grid lg:grid-cols-2 gap-6 mb-10">
-            {/* Pit Bull Types */}
-            <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-[#C9453A]/10 flex items-center justify-center">
-                  <Ban className="w-5 h-5 text-[#C9453A]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#2A2A2A]">Pit Bull Types</h3>
-              </div>
-              <ul className="space-y-2 text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Staffordshire Bull Terrier</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> American Pit Bull Terrier</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> American Staffordshire Terrier</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> American Bully</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Any Pit Bull mix or crossbreed</li>
-              </ul>
-            </div>
-
-            {/* Mastiff Types */}
-            <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-[#C9453A]/10 flex items-center justify-center">
-                  <Ban className="w-5 h-5 text-[#C9453A]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#2A2A2A]">Mastiff Types</h3>
-              </div>
-              <ul className="space-y-2 text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Brazilian Mastiff (Fila Brasileiro)</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Argentinian Mastiff (Dogo Argentino)</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Tibetan Mastiff</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Neapolitan Mastiff</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> French Mastiff (Dogue de Bordeaux)</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Boerboel</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Bullmastiff</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Cane Corso (Italian Mastiff)</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Bully Kutta (Alangu / Indian Mastiff)</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Perro de Presa Canario (Canary Mastiff)</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Japanese Tosa</li>
-              </ul>
-            </div>
-
-            {/* Wolf-Dog Hybrids */}
-            <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-[#C9453A]/10 flex items-center justify-center">
-                  <Ban className="w-5 h-5 text-[#C9453A]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#2A2A2A]">Wolf & Hybrid Types</h3>
-              </div>
-              <ul className="space-y-2 text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Wolf-dog hybrids (any percentage)</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Czechoslovakian Wolfdog</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Saarloos Wolfdog</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Any dog with documented wolf ancestry</li>
-              </ul>
-            </div>
-
-            {/* Other Banned */}
-            <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-[#C9453A]/10 flex items-center justify-center">
-                  <Ban className="w-5 h-5 text-[#C9453A]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#2A2A2A]">Other Prohibited Breeds</h3>
-              </div>
-              <ul className="space-y-2 text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Bandog (Bandogge)</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Any dog bred or trained for fighting</li>
-                <li className="flex items-start gap-2"><span className="text-[#C9453A] mt-1">•</span> Any crossbreed of a banned breed above</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="warning-box mb-10">
+          <ul className="grid sm:grid-cols-2 gap-3 text-sm text-[#5A5A5A] mb-8">
+            {BANNED_DOGS.map((breed) => (
+              <li key={breed} className="flex gap-2 bg-white rounded-2xl px-4 py-3">
+                <Ban className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
+                {breed}
+              </li>
+            ))}
+          </ul>
+          <div className="warning-box">
             <div className="flex items-start gap-3">
               <AlertTriangle className="w-5 h-5 text-[#C89F5A] shrink-0 mt-0.5" />
-              <div>
-                <p className="font-semibold text-[#2A2A2A] mb-1">Important: Visual Inspection Is Final</p>
-                <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  UAE customs officers make breed determinations based on visual inspection at the port of entry. Even if your dog is not genetically a banned breed, if it resembles a banned type, it may be refused. This decision is final and not subject to appeal at the airport. Always get a pre-travel assessment.
-                </p>
-              </div>
+              <p className="text-[#5A5A5A] text-sm leading-relaxed">
+                If the import does not comply, the pet may be rejected at the owner&apos;s expense or confiscated. The page does not publish a fine, a quarantine length, or a boarding tariff.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Restricted Breeds */}
       <section className="section-padding bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mb-12">
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-              Restricted Dog Breeds in Dubai — Rules & Requirements
-            </h2>
-            <p className="text-[#5A5A5A] text-base leading-relaxed">
-              Restricted breeds are allowed in Dubai but must follow strict rules set by Dubai Municipality and individual residential communities. Failure to comply can result in fines, eviction from your building, or confiscation of the dog.
-            </p>
-          </div>
-
-          <div className="overflow-x-auto mb-10">
-            <table className="data-table min-w-[680px]">
-              <thead>
-                <tr>
-                  <th>Breed / Type</th>
-                  <th>Muzzle Required</th>
-                  <th>Leash Rule</th>
-                  <th>Community Restrictions</th>
-                  <th>Insurance</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="font-medium">Rottweiler</td>
-                  <td>Yes — public spaces</td>
-                  <td>Short, strong leash</td>
-                  <td>Many buildings ban</td>
-                  <td>Often required</td>
-                </tr>
-                <tr>
-                  <td className="font-medium">Doberman Pinscher</td>
-                  <td>Yes — public spaces</td>
-                  <td>Short, strong leash</td>
-                  <td>Some buildings ban</td>
-                  <td>Often required</td>
-                </tr>
-                <tr>
-                  <td className="font-medium">German Shepherd</td>
-                  <td>Yes — public spaces</td>
-                  <td>Short, strong leash</td>
-                  <td>Some buildings restrict</td>
-                  <td>Sometimes required</td>
-                </tr>
-                <tr>
-                  <td className="font-medium">Husky (all types)</td>
-                  <td>Yes — public spaces</td>
-                  <td>Short, strong leash</td>
-                  <td>Generally allowed</td>
-                  <td>Rarely required</td>
-                </tr>
-                <tr>
-                  <td className="font-medium">Alaskan Malamute</td>
-                  <td>Yes — public spaces</td>
-                  <td>Short, strong leash</td>
-                  <td>Generally allowed</td>
-                  <td>Rarely required</td>
-                </tr>
-                <tr>
-                  <td className="font-medium">Shar Pei</td>
-                  <td>Yes — public spaces</td>
-                  <td>Short, strong leash</td>
-                  <td>Generally allowed</td>
-                  <td>Rarely required</td>
-                </tr>
-                <tr>
-                  <td className="font-medium">Bulldog (English / French)</td>
-                  <td>Yes — public spaces</td>
-                  <td>Short, strong leash</td>
-                  <td>Generally allowed</td>
-                  <td>Rarely required</td>
-                </tr>
-                <tr>
-                  <td className="font-medium">Boxer</td>
-                  <td>Yes — public spaces</td>
-                  <td>Short, strong leash</td>
-                  <td>Generally allowed</td>
-                  <td>Rarely required</td>
-                </tr>
-                <tr>
-                  <td className="font-medium">Akita</td>
-                  <td>Yes — public spaces</td>
-                  <td>Short, strong leash</td>
-                  <td>Generally allowed</td>
-                  <td>Rarely required</td>
-                </tr>
-                <tr>
-                  <td className="font-medium">Chow Chow</td>
-                  <td>Yes — public spaces</td>
-                  <td>Short, strong leash</td>
-                  <td>Generally allowed</td>
-                  <td>Rarely required</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
-                <FileCheck className="w-5 h-5 text-[#4F5BD5]" />
-                What "Restricted" Means in Practice
-              </h3>
-              <ul className="space-y-3 text-[#5A5A5A] text-sm leading-relaxed">
-                <li className="flex items-start gap-2">
-                  <span className="text-[#4F5BD5] mt-0.5">✓</span>
-                  <span><strong>Muzzle in public:</strong> Your dog must wear a properly fitted muzzle at all times in public spaces, including parks, elevators, lobbies, and sidewalks.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#4F5BD5] mt-0.5">✓</span>
-                  <span><strong>Short leash rule:</strong> A strong, non-extendable leash no longer than 1.5 meters is required.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#4F5BD5] mt-0.5">✓</span>
-                  <span><strong>Community approval:</strong> Many residential buildings and villa communities have their own breed blacklists. Always check with your landlord or building management before moving.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#4F5BD5] mt-0.5">✓</span>
-                  <span><strong>Liability insurance:</strong> Some communities require proof of third-party liability insurance covering dog-related incidents.</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-3 flex items-center gap-2">
-                <Scale className="w-5 h-5 text-[#4F5BD5]" />
-                Dubai Municipality Rules for Restricted Breeds
-              </h3>
-              <ul className="space-y-3 text-[#5A5A5A] text-sm leading-relaxed">
-                <li className="flex items-start gap-2">
-                  <span className="text-[#4F5BD5] mt-0.5">•</span>
-                  <span>All dogs must be registered with Dubai Municipality and microchipped with an ISO 11784/11785 compliant chip.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#4F5BD5] mt-0.5">•</span>
-                  <span>Vaccination records must be kept up to date, including rabies and annual boosters.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#4F5BD5] mt-0.5">•</span>
-                  <span>Dogs are not allowed in public beaches, parks (unless designated), or food service areas.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#4F5BD5] mt-0.5">•</span>
-                  <span>Fines for non-compliance range from AED 500 to AED 10,000 per violation depending on severity.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
+            Breeds this page does not restrict
+          </h2>
+          <p className="text-[#5A5A5A] max-w-3xl leading-relaxed mb-6">
+            Rottweiler, Doberman and Boxer are not on the service-page list we checked. This URL does not publish a muzzle rule, a leash length, an insurance requirement, or an apartment ban for them. Ask the building you are moving into. Residency rules were not on the MOCCAE page.
+          </p>
+          <p className="text-[#5A5A5A] max-w-3xl leading-relaxed">
+            Savannah cats were not named on that page, so this guide does not call them banned. Bengal and Serval cats need a fifth-generation pedigree certificate. Cat preparation:{' '}
+            <Link to="/cat-relocation-to-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">cat relocation</Link>.
+          </p>
         </div>
       </section>
 
-      {/* Breed Identification & Fines */}
       <section className="section-padding bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-10 items-start">
-            <div>
-              <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-                How Breed Identification Works at UAE Customs
-              </h2>
-              <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                When your dog arrives in Dubai, UAE customs and Dubai Municipality veterinary inspectors conduct a visual breed assessment. This is not a DNA test — it is a physical examination based on the dog's appearance, body structure, head shape, and size.
-              </p>
-
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold shrink-0">1</div>
-                  <div>
-                    <p className="font-semibold text-[#2A2A2A]">Visual Inspection</p>
-                    <p className="text-sm text-[#5A5A5A] leading-relaxed">A veterinary inspector examines your dog at the cargo terminal or airport animal reception center. They compare physical characteristics against banned breed profiles.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold shrink-0">2</div>
-                  <div>
-                    <p className="font-semibold text-[#2A2A2A]">Documentation Review</p>
-                    <p className="text-sm text-[#5A5A5A] leading-relaxed">The inspector reviews your pet's passport, vaccination records, microchip certificate, and any breed pedigree papers you provide.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 rounded-full bg-[#4F5BD5] text-white flex items-center justify-center text-sm font-bold shrink-0">3</div>
-                  <div>
-                    <p className="font-semibold text-[#2A2A2A]">Final Decision</p>
-                    <p className="text-sm text-[#5A5A5A] leading-relaxed">The inspector makes a final determination. If the dog is deemed a banned breed or close resemblance, entry is refused. This decision is final and binding.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+          <div className="grid lg:grid-cols-2 gap-10">
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
-              <h3 className="text-xl font-bold text-[#2A2A2A] mb-5 flex items-center gap-2">
-                <AlertTriangle className="w-5 h-5 text-[#C9453A]" />
-                Penalties for Illegal Import
-              </h3>
-              <div className="space-y-4">
-                <div className="p-4 bg-[#C9453A]/5 rounded-xl">
-                  <p className="font-bold text-[#C9453A] text-lg mb-1">AED 10,000 – 700,000</p>
-                  <p className="text-sm text-[#5A5A5A]">Fines under UAE Federal Law No. 22 of 2016 for importing, breeding, or selling banned breeds.</p>
-                </div>
-                <div className="p-4 bg-[#C9453A]/5 rounded-xl">
-                  <p className="font-bold text-[#C9453A] text-lg mb-1">Jail Time</p>
-                  <p className="text-sm text-[#5A5A5A]">Possible imprisonment for serious violations, especially if the dog causes injury or is involved in illegal trade.</p>
-                </div>
-                <div className="p-4 bg-[#C9453A]/5 rounded-xl">
-                  <p className="font-bold text-[#C9453A] text-lg mb-1">Confiscation & Deportation</p>
-                  <p className="text-sm text-[#5A5A5A]">The animal will be confiscated. In some cases, the owner may face deportation or travel bans.</p>
-                </div>
-                <div className="p-4 bg-[#C9453A]/5 rounded-xl">
-                  <p className="font-bold text-[#C9453A] text-lg mb-1">Animal Euthanasia</p>
-                  <p className="text-sm text-[#5A5A5A]">In extreme cases where the animal cannot be returned and poses a perceived risk, euthanasia may be ordered by authorities.</p>
-                </div>
+              <h2 className="text-xl font-bold text-[#2A2A2A] mb-4">If the name is on the list</h2>
+              <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
+                Do not book cargo for a named breed unless the service, emotional support or medical documents below are actually in the file. A matching animal that is not on the list is examined at the entry port and released. This page does not promise a release time.
+              </p>
+              <ul className="space-y-2 text-sm text-[#5A5A5A]">
+                <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Rejection at the owner&apos;s expense, or confiscation.</li>
+                <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> No AED fine is printed on the page we checked.</li>
+                <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> The import permit, if you still need one for an allowed breed, is valid for 90 days from issuance.</li>
+              </ul>
+            </div>
+            <div className="bg-[#E9ECFB] rounded-[20px] p-6 lg:p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <Heart className="w-5 h-5 text-[#4F5BD5]" />
+                <h2 className="text-xl font-bold text-[#2A2A2A]">Service, emotional support and medical dogs</h2>
               </div>
+              <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
+                The ban list has this exception. Emotional support is named on the page. It is not excluded.
+              </p>
+              <ul className="space-y-2 text-sm text-[#5A5A5A]">
+                <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Training-centre document, certified by the origin authority, stating the dog is trained as a service, emotional support or medical dog.</li>
+                <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Medical report on the owner, certified the same way.</li>
+                <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Signed pledge about ownership, not abandoning the dog, and not breeding it.</li>
+                <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Published service time for this category: 5 working days. That is an estimate on the page, not a promise.</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Service Animals & Brachycephalic */}
       <section className="section-padding bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-10">
-            <div className="bg-[#E9ECFB] rounded-[20px] p-6 lg:p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center">
-                  <Heart className="w-5 h-5 text-[#4F5BD5]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#2A2A2A]">Service Animals Exception</h3>
-              </div>
-              <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-                Service dogs are exempt from breed bans, but only if they meet strict accreditation requirements. The exemption does not apply to emotional support animals or therapy dogs.
-              </p>
-              <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>Must be accredited by <strong>ADI</strong> (Assistance Dogs International) or <strong>IGDF</strong> (International Guide Dog Federation)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>Handler must carry accreditation certificate and service dog ID at all times</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>Dog must be trained for a specific disability-related task (not just emotional support)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>All standard import documents (microchip, rabies vaccine, health certificate) still apply</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-[#FDF6E8] rounded-[20px] p-6 lg:p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-[#C89F5A]/10 flex items-center justify-center">
-                  <ThermometerSun className="w-5 h-5 text-[#C89F5A]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#2A2A2A]">Brachycephalic Breed Restrictions</h3>
-              </div>
-              <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-                Brachycephalic (flat-faced) dogs are not banned from Dubai, but airlines impose severe restrictions due to heat and respiratory risks. This is an airline policy, not a UAE law. Flight physiology and confirm-live airline acceptance live on{' '}
-                <Link to="/guides/snub-nosed-dogs-flying-uae/" className="font-semibold text-[#4F5BD5] hover:underline">
-                  snub-nosed dogs flying to the UAE
-                </Link>
-                — this page stays the legal-entry list.
-              </p>
-              <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-[#C89F5A] shrink-0 mt-0.5" />
-                  <span><strong>Summer embargo:</strong> Most airlines ban brachycephalic breeds from May 1 – September 30</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-[#C89F5A] shrink-0 mt-0.5" />
-                  <span><strong>Year-round bans:</strong> Some carriers (Emirates SkyCargo) restrict certain snub-nosed breeds regardless of season</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-[#C89F5A] shrink-0 mt-0.5" />
-                  <span><strong>Affected breeds:</strong> Pugs, Bulldogs, Boston Terriers, Boxers, Shih Tzus, Persian cats, and similar</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-[#C89F5A] shrink-0 mt-0.5" />
-                  <span><strong>Vet certificate:</strong> Some airlines require a veterinary fitness-to-fly certificate within 48 hours of departure</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-4">Airlines can still refuse a permitted breed</h2>
+          <p className="text-[#5A5A5A] max-w-3xl leading-relaxed">
+            IAG Cargo says some dangerous dog breeds and snub-nosed cats and dogs may not be accepted, and it points to the IATA live-animal rules. Emirates itineraries ending in Dubai travel as cargo. This page does not copy cabin weights, fares, or a summer calendar. See{' '}
+            <Link to="/guides/snub-nosed-dogs-flying-uae/" className="font-semibold text-[#4F5BD5] hover:underline">snub-nosed dogs</Link>
+            {' '}and{' '}
+            <Link to="/dog-relocation-to-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">dog relocation</Link>
+            {' '}for crate fit. Confirm the carrier in writing.
+          </p>
         </div>
       </section>
 
       <GuideFunnelCta
         variant="mid"
-        title="Breed allowed — book the managed move?"
-        subtitle="Use this list as the legal-entry check. DIY the banned/restricted rules here. If the breed is allowed and you want the file managed, open dog relocation or MOCCAE permit assistance. WhatsApp a breed check only when you are ready to book. We confirm portal fees on the official site; we do not assume amounts."
+        title="Breed allowed, and you want the move booked?"
+        subtitle="Use this list as the name check. If the breed is allowed and you want the file managed, open dog relocation or permit assistance. WhatsApp only when you are ready to book. Government fees on the page we checked were AED 200 for the permit, AED 500 to release a dog, and AED 250 to release a cat."
         eligibilityMessage={waBreed}
         waLabel="Check breed eligibility"
         links={[
@@ -560,103 +279,37 @@ export default function BannedBreedsGuide() {
         ]}
       />
 
-      {/* Mixed Breeds & Dubai Pet Relocation Assessment */}
-      <section className="section-padding bg-[#F5F6FD]">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-10">
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-              What If You Have a Mixed Breed?
-            </h2>
-            <p className="text-[#5A5A5A] text-base leading-relaxed">
-              Mixed breeds are one of the biggest sources of confusion for pet owners. A dog that is 50% Labrador and 50% Pit Bull may still be refused entry based on visual appearance. Here's how Dubai Pet Relocation handles mixed breed assessments.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 mb-10">
-            <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-12 h-12 rounded-full bg-[#4F5BD5]/10 flex items-center justify-center mx-auto mb-4">
-                <PawPrint className="w-6 h-6 text-[#4F5BD5]" />
-              </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Photo Review</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Compare the dog against the banned-type profiles on this page first. Photos go on WhatsApp only when you are booking a managed dog relocation and need the file checked.</p>
-            </div>
-            <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-12 h-12 rounded-full bg-[#4F5BD5]/10 flex items-center justify-center mx-auto mb-4">
-                <FileCheck className="w-6 h-6 text-[#4F5BD5]" />
-              </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Documentation Check</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">We review any pedigree papers, adoption records, veterinary breed notes, or DNA test results you have to build a stronger case.</p>
-            </div>
-            <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
-              <div className="w-12 h-12 rounded-full bg-[#C89F5A]/10 flex items-center justify-center mx-auto mb-4">
-                <Dog className="w-6 h-6 text-[#C89F5A]" />
-              </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Vet Confirmation</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">If needed, we arrange a breed confirmation letter from a partner veterinarian that describes your dog's physical traits and non-banned characteristics.</p>
-            </div>
-          </div>
-
-          <div className="warning-box max-w-3xl mx-auto">
-            <div className="flex items-start gap-3">
-              <AlertTriangle className="w-5 h-5 text-[#C89F5A] shrink-0 mt-0.5" />
-              <div>
-                <p className="font-semibold text-[#2A2A2A] mb-1">No Guarantee for Mixed Breeds</p>
-                <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  Even with thorough documentation, the final decision rests with UAE customs inspectors. Dubai Pet Relocation cannot guarantee entry for dogs that resemble banned breeds. We recommend starting the assessment process at least 8–12 weeks before your planned travel date to explore all options.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
       <section className="section-padding bg-white">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4 text-center">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-[#5A5A5A] text-base leading-relaxed text-center mb-10">
-              Common questions about banned and restricted dog breeds in Dubai.
-            </p>
-
-            <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
-              {faqData.map((faq, i) => (
-                <FAQItem key={i} question={faq.question} answer={faq.answer} />
-              ))}
-            </div>
+        <div className="max-w-[820px] mx-auto px-5 sm:px-6 lg:px-8">
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-8 text-center">
+            Frequently asked questions
+          </h2>
+          <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
+            {faqData.map((faq) => (
+              <FAQItem key={faq.question} question={faq.question} answer={<p>{faq.answer}</p>} />
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Internal Links */}
       <section className="py-16 bg-[#F5F6FD]">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-8 text-center">
-            Related Guides
-          </h2>
+          <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-8 text-center">Related pages</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link to="/dog-relocation-to-dubai/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
-                <Dog className="w-5 h-5 text-[#4F5BD5]" />
-              </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">Dog Relocation to Dubai</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Complete guide to relocating dogs to Dubai, including documentation, crate requirements, and airline options.</p>
+            <Link to="/dog-relocation-to-dubai/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow">
+              <Dog className="w-5 h-5 text-[#4F5BD5] mb-3" />
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Dog relocation to Dubai</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">Crate fit and the breed check before cargo.</p>
             </Link>
-            <Link to="/guides/uae-pet-import-requirements/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
-                <FileCheck className="w-5 h-5 text-[#4F5BD5]" />
-              </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">UAE Pet Import Requirements</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Step-by-step guide to all documentation required for importing pets into the UAE.</p>
+            <Link to="/guides/uae-pet-import-requirements/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow">
+              <FileCheck className="w-5 h-5 text-[#4F5BD5] mb-3" />
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">UAE pet import requirements</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">Permit, vaccines and the same ban list in the full file.</p>
             </Link>
-            <Link to="/how-it-works/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow group">
-              <div className="w-10 h-10 rounded-xl bg-[#C89F5A]/10 flex items-center justify-center mb-4 group-hover:bg-[#C89F5A]/20 transition-colors">
-                <Clock className="w-5 h-5 text-[#C89F5A]" />
-              </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#C89F5A] transition-colors">How Dubai Pet Relocation Works</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Learn about our transparent coordination process, from breed check to arrival in Dubai.</p>
+            <Link to="/how-it-works/" className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md transition-shadow">
+              <Clock className="w-5 h-5 text-[#C89F5A] mb-3" />
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">How the service works</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">What a managed file covers after the breed is allowed.</p>
             </Link>
           </div>
         </div>
@@ -665,7 +318,7 @@ export default function BannedBreedsGuide() {
       <GuideFunnelCta
         variant="end"
         title="Ready to book if the breed is allowed?"
-        subtitle="The lists on this page are the first check. WhatsApp photos only if you are ready to book a managed dog relocation. Open dog relocation / permit assistance when you want the file managed. Breed eligibility comes before the MOCCAE permit (valid 90 days from issuance). Confirm government fees on the official portal."
+        subtitle="The names on this page are the first check. WhatsApp only if you are ready to book a managed dog relocation. The MOCCAE permit is valid for 90 days from issuance."
         eligibilityMessage={waBreed}
         waLabel="Check breed eligibility"
         links={[
@@ -674,15 +327,5 @@ export default function BannedBreedsGuide() {
         ]}
       />
     </>
-  )
-}
-
-/* Extra icon used inline */
-function CheckCircle(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-      <polyline points="22 4 12 14.01 9 11.01" />
-    </svg>
   )
 }

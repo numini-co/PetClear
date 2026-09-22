@@ -24,3 +24,51 @@ Verification:
 - Veterinary review was not supplied.
 
 Out of scope: remaining URL batch, robots cleanup, new tools, GBP, GSC, GA4.
+
+## Release 4 Batch 1: claim hygiene on the next URLs
+
+Purpose: align the titre guide, the banned-breed guide, the permit and checklist guides, four money/service pages, USA to Dubai, Dubai to UK, and residual workshop language on /dubai/ with the Release 3 register. No new routes. No URL changes. Shared regulatory.ts constants were left in place so out-of-scope pages are not rewritten by a constant change.
+
+Branch: cursor/release4-batch1-claim-hygiene-ed98. Base: main after pull request 66 (e4183bdbe740ae8a01b3557897dd53de5fde4216).
+
+Affected URLs:
+
+- https://dubai-pet-relocation.ae/guides/rabies-titer-test-dubai/
+- https://dubai-pet-relocation.ae/guides/banned-dog-breeds-dubai/
+- https://dubai-pet-relocation.ae/guides/moccae-import-permit/
+- https://dubai-pet-relocation.ae/guides/import-checklist/
+- https://dubai-pet-relocation.ae/service/pet-import-dubai/
+- https://dubai-pet-relocation.ae/service/pet-export-dubai/
+- https://dubai-pet-relocation.ae/service/pet-relocation-to-dubai/
+- https://dubai-pet-relocation.ae/service/pet-relocation-from-dubai/
+- https://dubai-pet-relocation.ae/routes/usa-to-dubai/
+- https://dubai-pet-relocation.ae/routes/dubai-to-uk/
+- https://dubai-pet-relocation.ae/dubai/
+
+Sources checked on 2026-09-22:
+
+- https://moccae.gov.ae/en/services/import-permit-pets
+- https://www.gov.uk/bring-pet-to-great-britain
+- https://www.gov.uk/bring-pet-to-great-britain/which-pet-travel-document
+- https://www.gov.uk/bring-pet-to-great-britain/great-britain-pet-health-certificate
+- https://www.gov.uk/bring-pet-to-great-britain/microchip
+- https://www.gov.uk/bring-pet-to-great-britain/tapeworm-treatment-dogs
+- Existing seo-growth/claims-register.csv from Release 3
+
+Blocked or still unverified (not reintroduced):
+
+- Blood sample within 90 days before travel.
+- Non-compliance fine of AED 5,000.
+- ISO 11784/11785 and microchip-before-vaccine as current MOCCAE rejection rules. ISO and chip-before-vaccine are stated only as Great Britain entry rules, with the GOV.UK source.
+- Rottweiler, Doberman and Boxer as banned or muzzle-restricted. AED 10,000 to 700,000 fines, jail, euthanasia, wolf hybrids, Bandog, and "any cross" as a UAE ban.
+- Full low-risk country list. The United States was not named on the list checked this date. The United Kingdom was.
+- Municipal registration within 30 days and a fee near AED 10.
+- A universal 5-day or 10-day MOCCAE health certificate. The 10-day window on Dubai to UK is the Great Britain pet health certificate only.
+- Package or crate totals in AED. Etihad cabin weights, fares, and an AED 365 bill of entry.
+- Flight times, hold temperatures, daily frequencies, 2 to 4 hour or 1 to 2 hour clearance, and a May to September embargo calendar.
+- Model A or Model B as the document for entering Great Britain from the UAE.
+- Low-risk age "12" stated as 12 weeks.
+- A MOCCAE export certificate life of 30 days, or an invented export endorsement fee.
+- Veterinary review was not supplied.
+
+Out of scope: remaining communities and routes, robots.txt, GSC, new pages, veterinary certification.
