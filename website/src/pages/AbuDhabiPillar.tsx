@@ -59,7 +59,7 @@ export default function AbuDhabiPillar() {
       <SEOHead
         meta={{
           title: 'Pet Relocation Abu Dhabi | To & From the UAE Capital',
-          description: 'Pet relocation to and from Abu Dhabi — MOCCAE import permits, AUH customs clearance, IATA crates and door-to-door delivery. Same nationwide UAE rules. Free WhatsApp quote.',
+          description: 'Pet relocation to and from Abu Dhabi — MOCCAE import permits, AUH customs clearance, IATA crates and door-to-door delivery. Same nationwide UAE rules. WhatsApp quote.',
           canonical: url, ogType: 'website',
         }}
         schemas={[breadcrumbSchema, localBusiness, faqSchema]}

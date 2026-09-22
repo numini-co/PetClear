@@ -6,7 +6,7 @@ const portDeLaMer: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Port de La Mer | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in Port de La Mer — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
+    'Pet relocation in Port de La Mer — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. WhatsApp quote in 15 minutes.',
   h1: 'Pet Relocation in Port de La Mer',
   primaryKeyword: 'pet relocation port de la mer',
   heroValueProp:

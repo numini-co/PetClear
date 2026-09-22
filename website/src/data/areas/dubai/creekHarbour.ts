@@ -6,7 +6,7 @@ const creekHarbour: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Dubai Creek Harbour | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in Dubai Creek Harbour — door-to-door dog and cat transport, MOCCAE permit guidance and travel crates. Free WhatsApp quote in 15 minutes.',
+    'Pet relocation in Dubai Creek Harbour — door-to-door dog and cat transport, MOCCAE permit guidance and travel crates. WhatsApp quote in 15 minutes.',
   h1: 'Pet Relocation in Dubai Creek Harbour',
   primaryKeyword: 'pet relocation dubai creek harbour',
   heroValueProp:

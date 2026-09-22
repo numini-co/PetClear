@@ -18,7 +18,7 @@ const dubaiHills: AreaPageData = {
   geo: { lat: '25.1010', lng: '55.2480' },
   landmarks: ['Dubai Hills Mall', 'Dubai Hills Golf Club', 'Dubai Hills Park', 'Maple', 'Sidra Villas', 'Dubai Hills Estate'],
   vetsNote:
-    'Dubai Hills Estate and the Mohammed Bin Rashid City belt have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not invent partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments to travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    'Dubai Hills Estate and the Mohammed Bin Rashid City belt have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments to travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
   intro:
     'Dubai Hills Estate is a park-and-golf master community with a villa-and-apartment mix — Maple townhouses, Sidra villas, park-edge apartments — not a racecourse address and not a single tower podium. Dogs here use Dubai Hills Park and garden loops; cats live in both villas and mid-rise cores. That is why [every Dubai neighbourhood we serve](/dubai/) keeps Dubai Hills as its own spoke. [Meydan pet relocation services](/dubai/meydan/) is the racing-and-MBR-City neighbour; this page is park access and mixed housing. We coordinate international files into or out of these homes and the ground run to DXB or DWC. WhatsApp +971504782999 with your cluster (villa or apartment) and route.',
   sections: [
@@ -105,7 +105,7 @@ const dubaiHills: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a Hills villa or apartment the outbound run is out of the community, then Al Khail or Hessa toward DXB cargo, or south toward Al Maktoum when the booked product requires DWC. School-run and mall peaks at the estate gates add time before the highway starts. We do not invent minute-by-minute ETAs or airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the gate or podium.',
+          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a Hills villa or apartment the outbound run is out of the community, then Al Khail or Hessa toward DXB cargo, or south toward Al Maktoum when the booked product requires DWC. School-run and mall peaks at the estate gates add time before the highway starts. We do not assume minute-by-minute ETAs or airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the gate or podium.',
         },
         {
           type: 'p',

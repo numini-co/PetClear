@@ -6,7 +6,7 @@ const bluewaters: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Bluewaters Island | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation on Bluewaters Island — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
+    'Pet relocation on Bluewaters Island — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. WhatsApp quote in 15 minutes.',
   h1: 'Pet Relocation on Bluewaters Island',
   primaryKeyword: 'pet relocation bluewaters',
   heroValueProp:

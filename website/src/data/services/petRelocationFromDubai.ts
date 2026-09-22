@@ -26,7 +26,7 @@ const petRelocationFromDubai: ServicePageData = {
     {
       h2: 'This page is outbound only — leaving Dubai',
       intro:
-        'Ruling 3: this URL owns pet relocation from Dubai. It is not a reversed inbound checklist and it is not the generic money page. Arrivals use [bringing pets to Dubai](/service/pet-relocation-to-dubai/). Door-to-door commercial coordination uses [pet relocation services in Dubai](/service/pet-relocation-dubai/). Commercial export filing uses [exporting your pet from the UAE](/service/pet-export-dubai/).',
+        'Leaving Dubai with a pet follows the destination rules, not a reversed arrival checklist. Arrivals use [bringing pets to Dubai](/service/pet-relocation-to-dubai/). Full coordination uses [pet relocation services in Dubai](/service/pet-relocation-dubai/). Export filing uses [exporting your pet from the UAE](/service/pet-export-dubai/).',
       body: [
         {
           type: 'p',
@@ -116,7 +116,7 @@ const petRelocationFromDubai: ServicePageData = {
     {
       h2: 'Outbound corridors we already publish',
       intro:
-        'We do not invent destination pages in this PR. Use the live outbound guides, then send a paid eligibility check on WhatsApp for corridors that are not listed yet.',
+        'We do not assume destination pages in this PR. Use the live outbound guides, then send a paid eligibility check on WhatsApp for corridors that are not listed yet.',
       body: [
         {
           type: 'list',

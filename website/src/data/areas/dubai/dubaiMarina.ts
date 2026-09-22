@@ -17,7 +17,7 @@ const dubaiMarina: AreaPageData = {
   geo: { lat: '25.0805', lng: '55.1403' },
   landmarks: ['Marina Walk', 'Jumeirah Beach Residence (JBR)', 'Marina Mall', 'Bluewaters Island', 'Dubai Marina Yacht Club', 'Marina Promenade', 'Pier 7'],
   vetsNote:
-    'Marina and neighbouring JBR have plenty of clinics for microchip scans, boosters and health certificates — we do not publish a named clinic list here, because rosters change and we do not invent partnerships. Use your current vet if the file is already in order, or ask us on WhatsApp for a type of clinic (ISO scanner, export paperwork) rather than a brand. We time appointments so the certificate is still valid on travel day. For the federal import sequence, start with [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    'Marina and neighbouring JBR have plenty of clinics for microchip scans, boosters and health certificates — we do not publish a named clinic list here, because rosters change and we do not assume partnerships. Use your current vet if the file is already in order, or ask us on WhatsApp for a type of clinic (ISO scanner, export paperwork) rather than a brand. We time appointments so the certificate is still valid on travel day. For the federal import sequence, start with [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
   intro:
     'Dubai Marina is a dense waterfront of residential towers, not a villa suburb. Dogs and cats here live in apartments, ride service lifts, and walk the Marina promenade before the heat builds. That is why [pet relocation across Dubai communities](/dubai/) still needs a Marina-specific last mile: visitor lists, loading-bay bookings, and a crate that can turn in a tower lobby. We coordinate international files into or out of these buildings and the ground run to DXB or DWC. This page is only about Marina tower logistics — neighbouring [JBR dog & cat relocation](/dubai/jbr/) and [moving pets to or from JLT](/dubai/jlt/) have their own access rules. WhatsApp +971504782999 with your tower, pet and route.',
   sections: [
@@ -53,7 +53,7 @@ const dubaiMarina: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Tell us the cluster or tower name, the nearest drop-off (Al Sufouh Road, Marina Walk service road, or a podium bay), and whether the van can wait. We do not use Pier 7, the yacht club or Marina Mall as unofficial kennels. Those are landmarks for orientation, not holding areas. If your building only allows loading at a basement ramp, we treat that as the pickup point and walk the crate from the lift — we do not invent a “team photo” at the water’s edge.',
+          text: 'Tell us the cluster or tower name, the nearest drop-off (Al Sufouh Road, Marina Walk service road, or a podium bay), and whether the van can wait. We do not use Pier 7, the yacht club or Marina Mall as unofficial kennels. Those are landmarks for orientation, not holding areas. If your building only allows loading at a basement ramp, we treat that as the pickup point and walk the crate from the lift — we do not assume a “team photo” at the water’s edge.',
         },
         {
           type: 'p',
@@ -104,7 +104,7 @@ const dubaiMarina: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger baggage hall. From a Marina tower the usual outbound run is north-east on SZR toward DXB cargo. Al Maktoum / DWC is a longer southbound run and is used when the booked product is a DWC cargo acceptance. We do not invent minute-by-minute ETAs or airline AED on this page. Share your flight date and we map the cut-off backwards from the cargo desk, then the podium.',
+          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger baggage hall. From a Marina tower the usual outbound run is north-east on SZR toward DXB cargo. Al Maktoum / DWC is a longer southbound run and is used when the booked product is a DWC cargo acceptance. We do not assume minute-by-minute ETAs or airline AED on this page. Share your flight date and we map the cut-off backwards from the cargo desk, then the podium.',
         },
         {
           type: 'p',

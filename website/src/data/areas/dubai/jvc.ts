@@ -26,7 +26,7 @@ const jvc: AreaPageData = {
     'Al Khail Road',
   ],
   vetsNote:
-    'JVC and the Jumeirah Village belt have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not invent partnerships. Keep your current vet if the file is already in order. If you need an ISO scan or an export-style health certificate, ask on WhatsApp for the document type — not a brand. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    'JVC and the Jumeirah Village belt have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume partnerships. Keep your current vet if the file is already in order. If you need an ISO scan or an export-style health certificate, ask on WhatsApp for the document type — not a brand. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
   intro:
     'Jumeirah Village Circle is a high-density mid-market ring of villas, townhouses and apartment towers around a park-and-mall core — not a single podium and not a gated golf estate. Dogs here walk Circle Mall parks and the Saheel / District 10 loops; cats live in mid-rise flats that still have to clear a crate past a visitor desk. That is why [every Dubai neighbourhood we serve](/dubai/) keeps JVC as its own spoke: the last mile is a district number and a home type, not a “Jumeirah Village” pin. Neighbouring [pet transport in JVT](/dubai/jvt/) is a different triangle grid. [Dubai Hills Estate pet relocation services](/dubai/dubai-hills/) is a park-and-golf mix further north. WhatsApp +971504782999 with your district, home type and route.',
   sections: [
@@ -113,7 +113,7 @@ const jvc: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. JVC sits south of Al Barsha and west of the Al Khail belt. From Saheel or District 10 the southbound run toward DWC is often the shorter crate time in light traffic. From pockets closer to Al Khail, DXB via Al Khail or Sheikh Zayed can still win depending on the hour. We do not invent minute-by-minute ETAs or airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the district drop-off.',
+          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. JVC sits south of Al Barsha and west of the Al Khail belt. From Saheel or District 10 the southbound run toward DWC is often the shorter crate time in light traffic. From pockets closer to Al Khail, DXB via Al Khail or Sheikh Zayed can still win depending on the hour. We do not assume minute-by-minute ETAs or airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the district drop-off.',
         },
         {
           type: 'p',

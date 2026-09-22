@@ -44,7 +44,7 @@ const moccaePetPermit: ServicePageData = {
     {
       h2: 'This page is permit assistance — the how-to lives on the guide',
       intro:
-        'Ruling 10: this URL is the commercial twin. The linkable walkthrough, UAE Pass path and rejection table live on [the MOCCAE import permit guide](/guides/moccae-import-permit/). Full import rules live on [UAE pet import requirements](/guides/uae-pet-import-requirements/). End-to-end cargo and clearance live on [pet import to Dubai](/service/pet-import-dubai/).',
+        'Buyers who want the permit filed use this service. The walkthrough, UAE Pass path and rejection table live on [the MOCCAE import permit guide](/guides/moccae-import-permit/). Full import rules live on [UAE pet import requirements](/guides/uae-pet-import-requirements/). End-to-end cargo and clearance live on [pet import to Dubai](/service/pet-import-dubai/).',
       body: [
         {
           type: 'p',
@@ -88,7 +88,7 @@ const moccaePetPermit: ServicePageData = {
             },
             {
               title: 'UAE Pass and the correct service path',
-              text: 'The import permit is requested on moccae.gov.ae under Services → Export and Import Services → Import Permit for Pets. You need UAE Pass. If you do not have it yet, we talk you through setup — we do not invent a login for you.',
+              text: 'The import permit is requested on moccae.gov.ae under Services → Export and Import Services → Import Permit for Pets. You need UAE Pass. If you do not have it yet, we talk you through setup — we do not assume a login for you.',
             },
             {
               title: 'Form fields we refuse to guess',

@@ -6,7 +6,7 @@ const jvt: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation JVT Dubai | Townhouse Villa Last Mile',
   metaDescription:
-    'Pet relocation in Jumeirah Village Triangle (JVT) — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote today.',
+    'Pet relocation in Jumeirah Village Triangle (JVT) — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. WhatsApp quote today.',
   h1: 'Pet Relocation in Jumeirah Village Triangle (JVT)',
   primaryKeyword: 'pet relocation jvt',
   heroValueProp:

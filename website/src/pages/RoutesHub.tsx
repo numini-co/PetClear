@@ -200,7 +200,7 @@ export default function RoutesHub() {
             microchip, vaccinations, a MOCCAE import permit valid 90 days from issuance, and — where required — an RNATT
             sample taken within 90 days before travel at ≥0.5 IU/ml. Outbound pages start from the destination authority
             and work backwards through a UAE export health certificate. Card teasers give a typical lead time and a cost
-            type (freight, crate, coordination). They do not invent AED government fees.
+            type (freight, crate, coordination). They do not assume AED government fees.
           </p>
           <p className="leading-relaxed text-[#5A5A5A]">
             Germany, France, Singapore, Saudi Arabia and the Netherlands are live inbound corridors. Outbound twins
@@ -282,7 +282,7 @@ export default function RoutesHub() {
 
       <HubCrossLinks
         heading="Start here if you are still choosing the job"
-        intro="Country guides sit on this hub. Category entry, tiers and the directional service pages live one click away — use the anchors below so each URL keeps its own intent."
+        intro="Country guides sit on this hub. Homepage, tiers and the directional service pages live one click away — use the anchors below so each URL keeps its own intent."
         path="/routes/"
       />
 

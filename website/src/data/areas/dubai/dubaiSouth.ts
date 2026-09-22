@@ -26,7 +26,7 @@ const dubaiSouth: AreaPageData = {
     'Jebel Ali',
   ],
   vetsNote:
-    'Dubai South, Expo City and the Jebel Ali corridor have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not invent airport or community partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments so the certificate is still valid on travel day. When you are leaving the UAE, start with [pet export from Dubai](/guides/pet-export-from-dubai/).',
+    'Dubai South, Expo City and the Jebel Ali corridor have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume airport or community partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments so the certificate is still valid on travel day. When you are leaving the UAE, start with [pet export from Dubai](/guides/pet-export-from-dubai/).',
   intro:
     'Dubai South is a master-planned mix of residential pockets and logistics land built around Al Maktoum International Airport (DWC) and the Expo City site — not a Marina tower and not a Mirdif villa street next to DXB. Dogs here live in The Pulse townhouses and neighbouring community homes; cats live in the same low-rise fabric, not in a creek walk-up. That is why [every Dubai neighbourhood we serve](/dubai/) keeps Dubai South as its own spoke: the last mile is a community gate beside cargo geography, and DXB is the longer run. Neighbouring [pet transport in Emaar South](/dubai/emaar-south/) is a named villa pocket we keep on its own URL. [Pet transport in Dubai Investment Park](/dubai/dubai-investment-park/) is the industrial-and-residential neighbour. WhatsApp +971504782999 with your community, home type and route.',
   sections: [
@@ -102,7 +102,7 @@ const dubaiSouth: AreaPageData = {
         },
         {
           type: 'p',
-          text: 'Inbound, the last mile is cargo release at the booked airport, then a climate-controlled run to your gate. A DWC release is the short hop. A DXB release is the long northbound run across the city — the reverse of what Marina or Mirdif residents plan. Read the [Dubai pet arrival guide](/guides/dubai-pet-arrival-guide/) for the airport walkthrough. We do not invent airline AED, and we do not claim a partnership with the airport or a handler brand.',
+          text: 'Inbound, the last mile is cargo release at the booked airport, then a climate-controlled run to your gate. A DWC release is the short hop. A DXB release is the long northbound run across the city — the reverse of what Marina or Mirdif residents plan. Read the [Dubai pet arrival guide](/guides/dubai-pet-arrival-guide/) for the airport walkthrough. We do not assume airline AED, and we do not claim a partnership with the airport or a handler brand.',
         },
       ],
     },
@@ -113,7 +113,7 @@ const dubaiSouth: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. Share the flight date; we map the cut-off backwards from the cargo desk, then the community boom. We do not invent minute-by-minute ETAs. A short DWC run can still miss acceptance if the visitor list is late or if the crate is assembled in the wrong place.',
+          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. Share the flight date; we map the cut-off backwards from the cargo desk, then the community boom. We do not assume minute-by-minute ETAs. A short DWC run can still miss acceptance if the visitor list is late or if the crate is assembled in the wrong place.',
         },
         {
           type: 'p',
@@ -219,7 +219,7 @@ const dubaiSouth: AreaPageData = {
     },
     {
       q: 'How long from Dubai South to DXB with a crated pet?',
-      a: 'Treat it as a long cross-city northbound job, the opposite of a Mirdif hop. We back-plan from the DXB cargo desk when that is the booking. We do not invent a locked minute count.',
+      a: 'Treat it as a long cross-city northbound job, the opposite of a Mirdif hop. We back-plan from the DXB cargo desk when that is the booking. We do not assume a locked minute count.',
     },
     {
       q: 'How long is the MOCCAE import permit valid if I am moving into Dubai South?',

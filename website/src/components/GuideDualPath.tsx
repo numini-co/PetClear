@@ -14,7 +14,7 @@ interface GuideDualPathProps {
 }
 
 /**
- * Early educational split: keep reading (DIY) vs managed-move money page + WhatsApp.
+ * Early educational split: keep reading (DIY) vs a managed-move enquiry on WhatsApp.
  * Does not invent fees. Does not rename URLs.
  */
 export default function GuideDualPath({

@@ -18,7 +18,7 @@ const arabianRanches: AreaPageData = {
   geo: { lat: '25.0510', lng: '55.2700' },
   landmarks: ['Arabian Ranches Souk', 'The Ranches Golf Club', 'Dubai Polo & Equestrian Club', 'Ranches 1', 'Ranches 2', 'Ranches 3'],
   vetsNote:
-    'Arabian Ranches and the surrounding villa belt have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not invent community partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments to travel day. When you are leaving the UAE, start with [pet export from Dubai](/guides/pet-export-from-dubai/).',
+    'Arabian Ranches and the surrounding villa belt have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume community partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments to travel day. When you are leaving the UAE, start with [pet export from Dubai](/guides/pet-export-from-dubai/).',
   intro:
     'Arabian Ranches is a named gated villa community — Ranches 1, 2 and 3 — wrapped around a golf course, not a district label on a motorway. Dogs here live in private gardens behind community booms; cats live in the same villas, not in a Downtown lift core. That is why [every Dubai neighbourhood we serve](/dubai/) keeps the Ranches as a community page: pickup is a security pass and a cul-de-sac driveway. [Relocating pets in Dubailand](/dubai/dubailand/) is the wider district hub for neighbouring developments; this page is only the Ranches gates. We coordinate international files into or out of these villas and the ground run to DXB or DWC. WhatsApp +971504782999 with your Ranches phase, cluster and route.',
   sections: [
@@ -105,7 +105,7 @@ const arabianRanches: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a Ranches villa the outbound run is out of the community gates, then the highway belt toward DXB cargo or south toward Al Maktoum when the booked product requires DWC. Gate time plus highway incidents are why we refuse a locked minute count. We do not invent airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the boom.',
+          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a Ranches villa the outbound run is out of the community gates, then the highway belt toward DXB cargo or south toward Al Maktoum when the booked product requires DWC. Gate time plus highway incidents are why we refuse a locked minute count. We do not assume airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the boom.',
         },
         {
           type: 'p',
@@ -207,7 +207,7 @@ const arabianRanches: AreaPageData = {
     },
     {
       q: 'Can you relocate large dogs from a Ranches garden villa?',
-      a: 'Yes, with honest crate sizing and hallway measurements. Garden dogs still need crate acclimation indoors before travel week. We do not invent a large-breed AED on this page.',
+      a: 'Yes, with honest crate sizing and hallway measurements. Garden dogs still need crate acclimation indoors before travel week. We do not assume a large-breed AED on this page.',
     },
     {
       q: 'We have several pets. Can they travel together?',

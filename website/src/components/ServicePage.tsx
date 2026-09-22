@@ -14,7 +14,8 @@ import ContentImage from './ContentImage.tsx'
 import LinkedText from './LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { cardImageFor } from '../data/cardImages.ts'
-import { CTA_CHECK_MOVE, CTA_MANAGED_QUOTE } from '../lib/conversionCopy.ts'
+import { CTA_CHECK_MOVE, CTA_MANAGED_QUOTE, CTA_SUPPORT } from '../lib/conversionCopy.ts'
+import { openingHoursSpecification } from '../lib/openingHours.ts'
 import PaidIncludes from './PaidIncludes.tsx'
 import WhatsAppGate from './WhatsAppGate.tsx'
 
@@ -191,6 +192,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
     name: siteConfig.name,
     url: BASE_URL,
     description: siteConfig.description,
+    openingHoursSpecification,
   }
   const websiteSchema = {
     '@context': 'https://schema.org',
@@ -235,6 +237,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         subtitle={shortSubtitle(data.heroValueProp)}
         updated="Updated September 2026"
         primaryLabel={ctaLabel}
+        ctaSupport={data.slug === 'pet-relocation-dubai' ? CTA_SUPPORT : undefined}
         whatsappMessage={data.whatsappMessage}
         showBuyerQualify
       />

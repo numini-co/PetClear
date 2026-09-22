@@ -26,11 +26,11 @@ const petTransportDubai: ServicePageData = {
     {
       h2: 'Pet taxi Dubai — the local commercial opportunity',
       intro:
-        'Ruling 7: this URL owns pet transport and the pet-taxi crossover. It does not own international “pet relocation Dubai”. Door-to-door cargo lives on [pet relocation services in Dubai](/service/pet-relocation-dubai/). This page is ground: a booked vehicle, a crate or carrier, and a handler who treats the animal as a passenger.',
+        'Local pet transport and pet taxi are booked here: a vehicle, a crate or carrier, and a handler who treats the animal as a passenger. International door-to-door cargo is a different job on [pet relocation services in Dubai](/service/pet-relocation-dubai/).',
       body: [
         {
           type: 'p',
-          text: 'Pet taxi Dubai is a same-city or inter-emirate transfer: home to vet, home to boarding, community to community, or a timed run to DXB or DWC. People search “pet taxi” when they need a climate-controlled vehicle and a calm handover — not a MOCCAE import file. We keep that intent here so the money head page is not diluted.',
+          text: 'Pet taxi Dubai is a same-city or inter-emirate transfer: home to vet, home to boarding, community to community, or a timed run to DXB or DWC. People ask for a pet taxi when they need a climate-controlled vehicle and a calm handover, not a MOCCAE import file. The van is booked on this page. A cargo file is booked on the door-to-door page.',
         },
         {
           type: 'list',
@@ -206,11 +206,11 @@ const petTransportDubai: ServicePageData = {
     },
     {
       q: 'How much is a pet taxi in Dubai?',
-      a: 'Prices vary by distance, time of day, crate size, and airport vs city lane. Published competitor lists (market observation, not a DPR rate card) have shown short local hops and higher DXB/AUH transfer bands — treat blogs as estimates only. Dubai Pet Relocation quotes per trip; we do not invent a fixed AED table here. WhatsApp +971504782999 for a personalised quotation.',
+      a: 'Prices vary by distance, time of day, crate size, and airport vs city lane. Published competitor lists (market observation, not a DPR rate card) have shown short local hops and higher DXB/AUH transfer bands — treat blogs as estimates only. Dubai Pet Relocation quotes per trip; we do not assume a fixed AED table here. WhatsApp +971504782999 for a personalised quotation.',
     },
     {
       q: 'How much does a pet taxi cost?',
-      a: 'Prices vary by distance, time of day, crate size, and airport vs city lane. Published competitor lists (market observation, not a DPR rate card) have shown short local hops and higher DXB/AUH transfer bands — treat blogs as estimates only. Dubai Pet Relocation quotes per trip; we do not invent a fixed AED table here. WhatsApp +971504782999 for a personalised quotation.',
+      a: 'Prices vary by distance, time of day, crate size, and airport vs city lane. Published competitor lists (market observation, not a DPR rate card) have shown short local hops and higher DXB/AUH transfer bands — treat blogs as estimates only. Dubai Pet Relocation quotes per trip; we do not assume a fixed AED table here. WhatsApp +971504782999 for a personalised quotation.',
     },
     {
       q: 'Is there a pet friendly taxi in Dubai?',
@@ -218,7 +218,7 @@ const petTransportDubai: ServicePageData = {
     },
     {
       q: 'Which taxi service is pet friendly?',
-      a: 'Use a dedicated pet taxi, not a standard taxi app. This URL owns pet taxi Dubai and inter-emirate ground transfers. International cargo is a different product on [pet relocation services in Dubai](/service/pet-relocation-dubai/). Send pickup, drop-off and pet size for a quote.',
+      a: 'Use a dedicated pet taxi, not a standard taxi app. This page covers pet taxi Dubai and inter-emirate ground transfers. International cargo is a different product on [pet relocation services in Dubai](/service/pet-relocation-dubai/). Send pickup, drop-off and pet size for a quote.',
     },
     {
       q: 'Is a pet taxi the same as flying a pet as air cargo?',

@@ -473,7 +473,7 @@ export default function IndiaToDubai() {
       <GuideFunnelCta
         variant="end"
         title="Ready to relocate your pet from India to Dubai?"
-        subtitle="DIY this corridor guide, or hand the file to pet import / permit assistance. We coordinate titer sample timing (within 90 days before travel), AQCS NOC, and the MOCCAE permit (valid 90 days from issuance). Confirm government fees on the official portal — we do not invent amounts."
+        subtitle="DIY this corridor guide, or hand the file to pet import / permit assistance. We coordinate titer sample timing (within 90 days before travel), AQCS NOC, and the MOCCAE permit (valid 90 days from issuance). Confirm government fees on the official portal — we do not assume amounts."
         eligibilityMessage={waIndia}
         waLabel="Check India-to-Dubai eligibility"
         links={[

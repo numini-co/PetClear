@@ -32,7 +32,7 @@ const faqData = [
   },
   {
     q: 'How much does Etihad charge for a pet in a cabin?',
-    a: 'Cabin pet fees are set by Etihad and vary by route and carrier size. Confirm the live cabin fee on etihad.com — we do not invent an AED cabin table. Budget separately for UAE import documents if you are entering the country. WhatsApp +971504782999 if you need the whole file coordinated.',
+    a: 'Cabin pet fees are set by Etihad and vary by route and carrier size. Confirm the live cabin fee on etihad.com — we do not assume an AED cabin table. Budget separately for UAE import documents if you are entering the country. WhatsApp +971504782999 if you need the whole file coordinated.',
   },
   {
     q: 'Can I buy my pet a seat on a plane?',
@@ -76,7 +76,7 @@ const faqData = [
   },
   {
     q: 'Is this the same as door-to-door relocation?',
-    a: 'No. This page owns Etihad cabin rules. Door-to-door pet relocation is the umbrella orchestration when you want documents, crate, flight mode and last mile on one thread.',
+    a: 'No. This page covers Etihad cabin rules. Door-to-door pet relocation is the umbrella orchestration when you want documents, crate, flight mode and last mile on one thread.',
   },
 ]
 

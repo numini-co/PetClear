@@ -21,7 +21,7 @@ export default function RelatedLinks({
   return (
     <HubCrossLinks
       heading={heading}
-      intro={intro ?? 'Nearby pages in this cluster — capped so equity stays on the money file.'}
+      intro={intro ?? 'Nearby pages for the same part of the move.'}
       links={resolved.map((l) => ({ to: l.to, label: l.label, note: l.note ?? '' }))}
     />
   )

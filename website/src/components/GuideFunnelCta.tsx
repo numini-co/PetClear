@@ -61,7 +61,7 @@ export default function GuideFunnelCta({
     title ||
     (isEnd
       ? 'Ready to book a managed move?'
-      : 'Check if we can move your pet')
+      : CTA_CHECK_MOVE)
   const extra = subtitle
 
   const shell = isEnd

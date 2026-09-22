@@ -47,7 +47,7 @@ const petImportDubai: ServicePageData = {
     {
       h2: 'This page is the commercial import job — not the rules encyclopaedia',
       intro:
-        'Ruling 5: this URL owns importing a pet as a paid coordination job. The full statutory checklist lives on [UAE pet import requirements](/guides/uae-pet-import-requirements/). Arrival-side settling (first week, municipality registration) lives on [pet relocation to Dubai](/service/pet-relocation-to-dubai/). Permit filing as a standalone product lives on [MOCCAE permit assistance](/service/moccae-pet-permit/).',
+        'Import coordination means we sequence the paid file: partners, paperwork and clearance. The full statutory checklist lives on [UAE pet import requirements](/guides/uae-pet-import-requirements/). Arrival-side settling (first week, municipality registration) lives on [pet relocation to Dubai](/service/pet-relocation-to-dubai/). Permit filing as a standalone product lives on [MOCCAE permit assistance](/service/moccae-pet-permit/).',
       body: [
         {
           type: 'p',
@@ -253,7 +253,7 @@ const petImportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: `${NONCOMPLIANCE_FINE} Incomplete titer or permit files are exactly where coordinated clearance earns its keep. We do not invent 1–2 hour guarantees; we stay on the thread until the animal is in the van.`,
+          text: `${NONCOMPLIANCE_FINE} Incomplete titer or permit files are exactly where coordinated clearance earns its keep. We do not assume 1–2 hour guarantees; we stay on the thread until the animal is in the van.`,
         },
       ],
     },
@@ -261,7 +261,7 @@ const petImportDubai: ServicePageData = {
   faq: [
     {
       q: 'How long do pets stay in quarantine?',
-      a: 'The UAE typically has no long quarantine when documents are correct — compliant pets are examined at the entry port and released. We do not invent a day-count for a paperwork hold. Depth lives on the [UAE pet import requirements](/guides/uae-pet-import-requirements/) guide.',
+      a: 'The UAE typically has no long quarantine when documents are correct — compliant pets are examined at the entry port and released. We do not assume a day-count for a paperwork hold. Depth lives on the [UAE pet import requirements](/guides/uae-pet-import-requirements/) guide.',
     },
     {
       q: 'What are the rules and regulations for pets in the UAE?',
@@ -293,7 +293,7 @@ const petImportDubai: ServicePageData = {
     },
     {
       q: 'How is this different from the UAE import-requirements guide?',
-      a: 'The guide owns the statutory checklist. This page owns the paid import job — sequencing, partners and clearance. Read the rules on [UAE pet import requirements](/guides/uae-pet-import-requirements/), then use this page when you want the work done.',
+      a: 'Read the statutory checklist on the guide. Use this page when you want the import sequenced, with partners and clearance. Rules: [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
     },
     {
       q: 'How long is the MOCCAE import permit valid?',

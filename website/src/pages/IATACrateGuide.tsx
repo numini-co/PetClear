@@ -56,12 +56,12 @@ export default function IATACrateGuide() {
     {
       question: 'Are pet travel crates airline-approved?',
       answer:
-        'Airlines approve the shipment, not a shopping-cart badge. A crate that matches IATA LAR dimensions and hardware is eligible for acceptance; snub-nosed breeds, heat embargoes, and bolt quality still fail at the desk. Buy rigid, escape-proof crates with metal hardware — then confirm your carrier’s live notes. This page owns the requirements; we are not a marketplace.',
+        'Airlines approve the shipment, not a shopping-cart badge. A crate that matches IATA LAR dimensions and hardware is eligible for acceptance; snub-nosed breeds, heat embargoes, and bolt quality still fail at the desk. Buy rigid, escape-proof crates with metal hardware — then confirm your carrier’s live notes. This page covers the requirements; we are not a marketplace.',
     },
     {
       question: 'Which dog crates are airline-approved?',
       answer:
-        'Airlines approve the shipment, not a shopping-cart badge. A crate that matches IATA LAR dimensions and hardware is eligible for acceptance; snub-nosed breeds, heat embargoes, and bolt quality still fail at the desk. Buy rigid, escape-proof crates with metal hardware — then confirm your carrier’s live notes. This page owns the requirements; we are not a marketplace.',
+        'Airlines approve the shipment, not a shopping-cart badge. A crate that matches IATA LAR dimensions and hardware is eligible for acceptance; snub-nosed breeds, heat embargoes, and bolt quality still fail at the desk. Buy rigid, escape-proof crates with metal hardware — then confirm your carrier’s live notes. This page covers the requirements; we are not a marketplace.',
     },
     {
       question: 'Where can I buy IATA approved dog crates?',
@@ -254,7 +254,7 @@ export default function IATACrateGuide() {
       <GuideFunnelCta
         variant="mid"
         title="Crate rules clear — check a managed move?"
-        subtitle="This guide stays educational. Eligibility and crate-led booking sit on the money pages and WhatsApp. We do not invent crate or airline fee amounts."
+        subtitle="This guide stays educational. Eligibility and crate-led booking sit on the service pages and WhatsApp. We do not assume crate or airline fee amounts."
         eligibilityMessage={waEligibility({ need: 'crate sizing / managed move' })}
         waLabel={CTA_CHECK_MOVE}
       />
@@ -605,14 +605,14 @@ export default function IATACrateGuide() {
 
       <RelatedLinks
         heading="Related guides and services"
-        intro="Crate rules stay educational. Eligibility and a managed dog or door-to-door file live on the money pages."
+        intro="Crate rules stay educational. Eligibility and a managed dog or door-to-door file live on the service pages."
         path="/guides/iata-pet-crate-requirements/"
       />
 
       <GuideFunnelCta
         variant="end"
         title="Need help choosing the right crate?"
-        subtitle="Eligibility and crate-led booking sit on the money pages and WhatsApp. This guide stays free to read. We do not invent crate or airline fee amounts."
+        subtitle="Eligibility and crate-led booking sit on the service pages and WhatsApp. This guide stays free to read. We do not assume crate or airline fee amounts."
         eligibilityMessage={waEligibility({ need: 'crate sizing / managed move' })}
         waLabel={CTA_CHECK_MOVE}
       />

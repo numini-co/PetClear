@@ -210,7 +210,7 @@ const deira: AreaPageData = {
     },
     {
       q: 'Are Deira buildings more likely to allow cats than dogs?',
-      a: 'Many older blocks are used to indoor cats; dog clauses vary by landlord. We do not invent a district-wide pet policy. Read your contract. Breed bans are federal — see [banned dog breeds Dubai](/guides/banned-dog-breeds-dubai/) if eligibility is the question.',
+      a: 'Many older blocks are used to indoor cats; dog clauses vary by landlord. We do not assume a district-wide pet policy. Read your contract. Breed bans are federal — see [banned dog breeds Dubai](/guides/banned-dog-breeds-dubai/) if eligibility is the question.',
     },
     {
       q: 'Does living near DXB change MOCCAE import permit validity?',

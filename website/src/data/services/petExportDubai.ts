@@ -233,7 +233,7 @@ const petExportDubai: ServicePageData = {
     },
     {
       q: 'Is pet export the same as door-to-door relocation?',
-      a: 'Export owns the leaving-UAE commercial job. [Pet relocation Dubai](/service/pet-relocation-dubai/) is the umbrella if you still need a mode chosen. The inbound twin is [pet import to Dubai](/service/pet-import-dubai/). WhatsApp +971504782999.',
+      a: 'Use this page when the pet is leaving the UAE and you want the export file coordinated. [Pet relocation Dubai](/service/pet-relocation-dubai/) covers the wider move if the flight mode is still open. Arrivals use [pet import to Dubai](/service/pet-import-dubai/). WhatsApp +971504782999.',
     },
   ],
   relatedLinks: [

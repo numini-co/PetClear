@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     q: 'Where do I start if I am still choosing a service?',
-    a: 'Category entry is the [homepage](/). The money file is [door-to-door pet relocation in Dubai](/service/pet-relocation-dubai/). Then pick the emirate or community page that matches the address.',
+    a: 'If you are still choosing, begin on the [homepage](/). A managed international file is [door-to-door pet relocation in Dubai](/service/pet-relocation-dubai/). Then open the emirate or community page for the address.',
   },
 ]
 
@@ -130,7 +130,7 @@ export default function CitiesHub() {
             The municipality layer starts after the pet lives at an address. Dubai dog licensing typically runs through
             Dubai Municipality / Aleef. Abu Dhabi uses Abu Dhabi City Municipality (ADCM) and the TAMM channel. Sharjah
             uses Sharjah Municipality — it is not Aleef by default. Document names, portals and fees differ. Verify each
-            emirate’s current steps on its first-party site. We coordinate reminders after delivery; we do not invent
+            emirate’s current steps on its first-party site. We coordinate reminders after delivery; we do not assume
             municipal AED tables on this hub.
           </p>
           <p className="leading-relaxed text-[#5A5A5A]">
@@ -237,7 +237,7 @@ export default function CitiesHub() {
 
       <HubCrossLinks
         heading="Emirates hub — then the service URL"
-        intro="Federal rules are shared. The job still has a home: category entry, tiers, door-to-door or pet taxi."
+        intro="Federal rules are shared. The job still has a home: homepage, tiers, door-to-door or pet taxi."
         path="/cities/"
       />
 

@@ -145,7 +145,7 @@ export default function DubaiPetArrivalGuide() {
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            This URL owns the hours and days after the wheels touch down. It is not a commercial import product page and it
+            This page covers the hours and days after the wheels touch down. It is not a commercial import product page and it
             is not a local taxi booking page. Pre-travel rules stay on{' '}
             <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
               import rules for bringing pets to Dubai
@@ -187,7 +187,7 @@ export default function DubaiPetArrivalGuide() {
             on a UAE inbound itinerary travel as manifested cargo. The crate is accepted at the cargo village — at DXB that
             is the cargo-side complex often described as Cargo Village — and processed through the airport animal facility.
             Ground handling at DXB is typically a cargo handler such as dnata working the air waybill, not a passenger
-            service desk. We describe the pattern; we do not invent wayfinding, door numbers or branded signage.
+            service desk. We describe the pattern; we do not assume wayfinding, door numbers or branded signage.
           </p>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             DWC arrivals use the same federal inspection logic on the Al Maktoum cargo side. Etihad in-cabin pets are a

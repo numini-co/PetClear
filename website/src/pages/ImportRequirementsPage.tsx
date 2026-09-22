@@ -66,16 +66,16 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 const snippetQuestion = 'How long do pets stay in quarantine?'
 const snippetAnswer =
-  'The UAE typically has no long quarantine when documents are correct. Compliant dogs and cats are examined at the entry port and released to the owner. We do not invent a day-count for a paperwork hold. Dogs are legal; some breeds are banned. The MOCCAE import permit is valid for 90 days.'
+  'The UAE typically has no long quarantine when documents are correct. Compliant dogs and cats are examined at the entry port and released to the owner. We do not assume a day-count for a paperwork hold. Dogs are legal; some breeds are banned. The MOCCAE import permit is valid for 90 days.'
 
 const IMPORT_PAA_FAQS: { q: string; a: string }[] = [
   {
     q: 'How long do pets stay in quarantine?',
-    a: 'The UAE typically has no long quarantine when the file is correct. Compliant dogs and cats are examined by veterinary staff at the entry port and released to the owner. Incomplete papers can mean a hold, refusal, or re-export at your expense — we do not invent a day-count for that hold. The MOCCAE import permit is valid 90 days from issuance. Titer, when required, uses a sample drawn within 90 days before travel.',
+    a: 'The UAE typically has no long quarantine when the file is correct. Compliant dogs and cats are examined by veterinary staff at the entry port and released to the owner. Incomplete papers can mean a hold, refusal, or re-export at your expense — we do not assume a day-count for that hold. The MOCCAE import permit is valid 90 days from issuance. Titer, when required, uses a sample drawn within 90 days before travel.',
   },
   {
     q: 'Do pets need to be quarantined in the UAE?',
-    a: 'Not routinely, if microchip, rabies papers, health certificate, and MOCCAE import permit match and the breed is allowed. There is no separate quarantine guide on this site — this page owns the question. A paperwork problem can still mean a hold or re-export. Confirm contested fees on the MOCCAE portal. Deep permit help: [/guides/moccae-import-permit/](/guides/moccae-import-permit/).',
+    a: 'Not routinely, if microchip, rabies papers, health certificate, and MOCCAE import permit match and the breed is allowed. There is no separate quarantine guide on this site — this page covers the question. A paperwork problem can still mean a hold or re-export. Confirm contested fees on the MOCCAE portal. Deep permit help: [/guides/moccae-import-permit/](/guides/moccae-import-permit/).',
   },
   {
     q: 'Which countries require quarantine for pets?',
@@ -191,7 +191,7 @@ export default function ImportRequirementsPage() {
       num: 7,
       title: 'Book Manifest Cargo Flight',
       days: '2–4 weeks before travel',
-      body: `${MANIFEST_CARGO} Emirates arrivals into Dubai travel as SkyCargo. Cargo pricing is airline- and route-specific — we do not invent a total here.`,
+      body: `${MANIFEST_CARGO} Emirates arrivals into Dubai travel as SkyCargo. Cargo pricing is airline- and route-specific — we do not assume a total here.`,
       icon: <Plane className="w-5 h-5" />,
       warn: null,
     },
@@ -283,7 +283,7 @@ export default function ImportRequirementsPage() {
                 name: 'How is this guide different from the pet-import service page?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'This URL owns the statutory checklist. The commercial import job — crate, cargo, clearance, door delivery — lives on /service/pet-import-dubai/. The permit walkthrough lives on /guides/moccae-import-permit/. We cross-link; we do not clone the tables.',
+                  text: 'This page covers the statutory checklist. The commercial import job — crate, cargo, clearance, door delivery — lives on /service/pet-import-dubai/. The permit walkthrough lives on /guides/moccae-import-permit/. We cross-link; we do not clone the tables.',
                 },
               },
               {
@@ -378,7 +378,7 @@ export default function ImportRequirementsPage() {
         subtitle="90-day MOCCAE permit, RNATT sample within 90 days before travel, microchip before rabies, manifested cargo. Confirm fees on the portal."
         updated={LAST_VERIFIED_LABEL}
         whatsappMessage={waImport}
-        primaryLabel="Check if we can move your pet"
+        primaryLabel="Tell us about your move"
         secondary={{ label: 'Commercial import service', to: '/service/pet-import-dubai/' }}
       />
 
@@ -445,7 +445,7 @@ export default function ImportRequirementsPage() {
             <div className="mt-8 pt-6 border-t border-gray-100 flex flex-wrap gap-4">
               <WhatsAppLink
                 text={waImport}
-                label="Check if we can move your pet"
+                label="Tell us about your move"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
               />
             </div>
@@ -550,7 +550,7 @@ export default function ImportRequirementsPage() {
 
           <WhatsAppLink
             text={waImport}
-            label="Check if we can move your pet"
+            label="Tell us about your move"
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
           />
         </div>
@@ -641,7 +641,7 @@ export default function ImportRequirementsPage() {
       <GuideFunnelCta
         variant="mid"
         title="Checklist clear — book the managed import?"
-        subtitle="This page owns the statutory UAE import checklist. DIY the rules above. Door-to-door and import services handle crate, cargo and clearance when you want the file held. WhatsApp eligibility if you are ready to book. Confirm portal fees on the official site — we do not invent amounts."
+        subtitle="This page covers the statutory UAE import checklist. DIY the rules above. Door-to-door and import services handle crate, cargo and clearance when you want the file held. WhatsApp eligibility if you are ready to book. Confirm portal fees on the official site — we do not assume amounts."
         eligibilityMessage={waImport}
       />
 
@@ -1056,7 +1056,7 @@ export default function ImportRequirementsPage() {
 
           <div className="warning-box mb-8">
             <p className="text-sm text-[#2A2A2A]">
-              <strong>Warning:</strong> The sample-within-90-days rule is <strong>not negotiable</strong>. A passing result whose draw date is older than 90 days on arrival is the wrong certificate. Do not invent a 90-day sit after the PDF arrives.
+              <strong>Warning:</strong> The sample-within-90-days rule is <strong>not negotiable</strong>. A passing result whose draw date is older than 90 days on arrival is the wrong certificate. Do not assume a 90-day sit after the PDF arrives.
             </p>
           </div>
 
@@ -1178,7 +1178,7 @@ export default function ImportRequirementsPage() {
                 <li><strong>Cargo:</strong> Available for larger pets.</li>
                 <li><strong>Advance notice:</strong> Book via Contact Centre; submit form 7 days before, documents 72 hours before.</li>
                 <li><strong>Banned breeds:</strong> Same as UAE federal list, plus Boxer.</li>
-                <li><strong>Abu Dhabi entry:</strong> Etihad publishes a pet release permit, a completed UAE health certificate and an Abu Dhabi Customs Bill of Entry. Confirm current handling charges with the airline / customs broker — we do not invent an AED figure here.</li>
+                <li><strong>Abu Dhabi entry:</strong> Etihad publishes a pet release permit, a completed UAE health certificate and an Abu Dhabi Customs Bill of Entry. Confirm current handling charges with the airline / customs broker — we do not assume an AED figure here.</li>
                 <li><strong>Pet age:</strong> Must be ≥16 weeks old for in-cabin.</li>
               </ul>
             </div>
@@ -1360,7 +1360,7 @@ export default function ImportRequirementsPage() {
           <div className="mt-8">
             <WhatsAppLink
               text={waImport}
-              label="Check if we can move your pet"
+              label="Tell us about your move"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
             />
           </div>
@@ -1397,7 +1397,7 @@ export default function ImportRequirementsPage() {
             </Link>
             <Link to="/service/pet-relocation-dubai/" className="bg-white rounded-[20px] p-6 hover:shadow-md transition-shadow">
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Pet relocation Dubai</h3>
-              <p className="text-sm text-[#5A5A5A]">Door-to-door money page when you want one coordinator on the file.</p>
+              <p className="text-sm text-[#5A5A5A]">Door-to-door service page when you want one coordinator on the file.</p>
             </Link>
             <Link to="/service/pet-export-dubai/" className="bg-white rounded-[20px] p-6 hover:shadow-md transition-shadow">
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Pet export from Dubai</h3>
@@ -1445,7 +1445,7 @@ export default function ImportRequirementsPage() {
             />
             <FAQItem
               question="How is this guide different from the pet-import service page?"
-              answer="This URL owns the statutory checklist. The commercial import job — crate, cargo, clearance, door delivery — lives on /service/pet-import-dubai/. The permit walkthrough lives on /guides/moccae-import-permit/. We cross-link; we do not clone the tables."
+              answer="This page covers the statutory checklist. The commercial import job — crate, cargo, clearance, door delivery — lives on /service/pet-import-dubai/. The permit walkthrough lives on /guides/moccae-import-permit/. We cross-link; we do not clone the tables."
             />
             <FAQItem
               question="What is the non-compliance fine for a wrong import file?"
@@ -1466,7 +1466,7 @@ export default function ImportRequirementsPage() {
       <GuideFunnelCta
         variant="end"
         title="Ready to book a managed import?"
-        subtitle="The rules are on this page. Send origin, breed and what you already have on WhatsApp only if you want us to run the file, or open the door-to-door / import money pages. MOCCAE permits are valid 90 days from issuance; titer samples (when required) within 90 days before travel."
+        subtitle="The rules are on this page. Send origin, breed and what you already have on WhatsApp only if you want us to run the file, or open the door-to-door / import service pages. MOCCAE permits are valid 90 days from issuance; titer samples (when required) within 90 days before travel."
         eligibilityMessage={waImport}
       />
 

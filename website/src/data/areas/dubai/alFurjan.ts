@@ -6,7 +6,7 @@ const alFurjan: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Al Furjan | Gated Townhouse Last Mile',
   metaDescription:
-    'Pet relocation in Al Furjan — door-to-door dog and cat transport, MOCCAE permits and IATA crates. Free WhatsApp quote.',
+    'Pet relocation in Al Furjan — door-to-door dog and cat transport, MOCCAE permits and IATA crates. WhatsApp quote.',
   h1: 'Pet Relocation in Al Furjan',
   primaryKeyword: 'pet relocation al furjan',
   heroValueProp:

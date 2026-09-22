@@ -6,7 +6,7 @@ const karama: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Al Karama | Creek Walk-Up Last Mile',
   metaDescription:
-    'Pet relocation in Al Karama — door-to-door dog and cat transport, MOCCAE permit guidance and IATA travel crates. Get a free WhatsApp quote in 15 minutes.',
+    'Pet relocation in Al Karama — door-to-door dog and cat transport, MOCCAE permit guidance and IATA travel crates. Get a WhatsApp quote in 15 minutes.',
   h1: 'Pet Relocation in Al Karama',
   primaryKeyword: 'pet relocation karama',
   heroValueProp:

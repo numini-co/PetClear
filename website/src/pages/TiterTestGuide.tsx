@@ -36,7 +36,7 @@ const faqData = [
   {
     question: 'How much does a rabies titer test cost in Dubai?',
     answer:
-      'Lab fees are clinic- and lab-dependent — we do not invent a single AED titer price. Budget for the blood draw, shipping to an accredited laboratory when required, and the result wait. Confirm the quote with your vet. Timing lock: draw the sample within 90 days before travel; result ≥0.5 IU/ml when MOCCAE requires it — not a 90-day wait after the draw.',
+      'Lab fees are clinic- and lab-dependent — we do not assume a single AED titer price. Budget for the blood draw, shipping to an accredited laboratory when required, and the result wait. Confirm the quote with your vet. Timing lock: draw the sample within 90 days before travel; result ≥0.5 IU/ml when MOCCAE requires it — not a 90-day wait after the draw.',
   },
   {
     question: 'Can you get a titer for rabies?',
@@ -81,7 +81,7 @@ const faqData = [
   {
     question: 'How much does a rabies titer test cost?',
     answer:
-      'Clinic draw, laboratory fee and international shipping are private-market charges that vary by country and lab. We do not publish a government fee table here and we do not invent a single AED total. Ask your origin vet for the current draw-and-shipping quote; we can help you sequence it against the 90-day MOCCAE permit.',
+      'Clinic draw, laboratory fee and international shipping are private-market charges that vary by country and lab. We do not publish a government fee table here and we do not assume a single AED total. Ask your origin vet for the current draw-and-shipping quote; we can help you sequence it against the 90-day MOCCAE permit.',
   },
   {
     question: 'Is a titer the same as a MOCCAE import permit?',
@@ -277,7 +277,7 @@ export default function TiterTestGuide() {
       <GuideFunnelCta
         variant="mid"
         title="Sample window mapped — check a managed import?"
-        subtitle="This guide stays educational. Eligibility and the inbound file sit on the money pages and WhatsApp. We do not invent lab or government fee amounts."
+        subtitle="This guide stays educational. Eligibility and the inbound file sit on the service pages and WhatsApp. We do not assume lab or government fee amounts."
         eligibilityMessage={waEligibility({ need: 'titer timing / managed import' })}
         waLabel={CTA_CHECK_MOVE}
       />
@@ -427,7 +427,7 @@ export default function TiterTestGuide() {
                 <h3 className="text-xl font-bold text-[#2A2A2A]">If the result is low</h3>
               </div>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-5">
-                Below 0.5 IU/ml means you do not travel on that certificate. Restart the antibody clock; do not invent a waiver.
+                Below 0.5 IU/ml means you do not travel on that certificate. Restart the antibody clock; do not assume a waiver.
               </p>
               <div className="space-y-3">
                 <div className="p-3 bg-[#C9453A]/5 rounded-xl">
@@ -497,7 +497,7 @@ export default function TiterTestGuide() {
               <h3 className="text-xl font-bold text-[#2A2A2A]">Where this guide stops — and the commercial pages start</h3>
             </div>
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-              This URL owns titer timing. It does not sell cargo clearance and it does not replace the permit walkthrough. If you want the import job run as a file, start with{' '}
+              This page covers titer timing. It does not sell cargo clearance and it does not replace the permit walkthrough. If you want the import job run as a file, start with{' '}
               <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
                 pet import to Dubai
               </Link>
@@ -530,7 +530,7 @@ export default function TiterTestGuide() {
 
       <RelatedLinks
         heading="Related guides and services"
-        intro="Titer timing sits inside the import file. Eligibility and a managed import live on the money pages."
+        intro="Titer timing sits inside the import file. Eligibility and a managed import live on the service pages."
         path="/guides/rabies-titer-test-dubai/"
       />
 

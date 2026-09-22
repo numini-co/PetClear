@@ -113,7 +113,7 @@ export default function ForPetRelocatorsPage() {
             <p>
               If you already move dogs and cats for a living, this page is the pet relocation partner Dubai
               track: corridor playbooks and a working airport-role map so your UAE file matches how pets actually
-              clear. It is not a second homepage for households, and it is not a corporate HR landing page.
+              clear. It is written for relocators, and it is not a corporate HR landing page.
             </p>
             <p>
               Dubai Pet Relocation is a coordinator. We line-check documents and timelines and brief the right
@@ -259,7 +259,7 @@ export default function ForPetRelocatorsPage() {
               Playbooks, corridor checks, and pathways — quote-only
             </h2>
             <p className="text-base leading-relaxed text-[#5A5A5A]">
-              Access is process language. There are no partner logos, no invented network counts, and no fee
+              Access is a working process. There are no partner logos, no invented network counts, and no fee
               numerals on this page. If a live file needs a number, that is a WhatsApp quote after we see
               species, weight, and dates.
             </p>
@@ -369,7 +369,7 @@ export default function ForPetRelocatorsPage() {
               {
                 n: '2',
                 t: 'Map the airport roles',
-                d: 'Name the origin IATA and the UAE clearance IATA. Brief export vetting, cargo acceptance, arrival clearance, or an inter-airport transfer only when the itinerary actually uses two UAE airports. Do not invent a second gateway because a cousin lives nearer.',
+                d: 'Name the origin IATA and the UAE clearance IATA. Brief export vetting, cargo acceptance, arrival clearance, or an inter-airport transfer only when the itinerary actually uses two UAE airports. Do not assume a second gateway because a cousin lives nearer.',
               },
               {
                 n: '3',

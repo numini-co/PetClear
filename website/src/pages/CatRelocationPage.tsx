@@ -243,7 +243,7 @@ export default function CatRelocationPage() {
             Every cat's journey is different, but the process follows a clear timeline. Here's what happens when you work with Dubai Pet Relocation.
           </SectionIntro>
           <div className="mt-12 max-w-3xl">
-            <Step number={1} title="Free WhatsApp Consultation (Day 0)">
+            <Step number={1} title="Tell us about your move (Day 0)">
               <p>You message us. We ask about your cat's breed, weight, age, current location, and planned move date. We check for any route-specific restrictions or seasonal issues (like summer heat embargoes). Within 15 minutes, you'll know if your timeline is realistic and what the next steps are. No forms. No pressure.</p>
             </Step>
             <Step number={2} title="Document Review & Veterinary Prep (Days 1–21)">
@@ -810,7 +810,7 @@ export default function CatRelocationPage() {
 
       <RelatedLinks
         heading="Related cat relocation pages"
-        intro="This URL is the inbound cat journey. The commercial cat file and door-to-door money page sit one click away."
+        intro="This URL is the inbound cat journey. The commercial cat file and door-to-door service page sit one click away."
         path="/cat-relocation-to-dubai/"
       />
 

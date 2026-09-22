@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X, MessageCircle, ChevronDown, Phone, PawPrint } from 'lucide-react'
 import { getWhatsAppUrl, PHONE_DISPLAY, PHONE_E164 } from '../lib/seo.ts'
-import { CTA_CHECK_ELIGIBILITY, CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import { CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
 
 const navLinks = [
   { label: 'Home', to: '/' },
@@ -172,7 +172,7 @@ export default function Header() {
               className="inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-4 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-[#1DA851]/30 transition-colors hover:bg-[#1DA851]"
             >
               <MessageCircle className="h-4 w-4" aria-hidden="true" />
-              {CTA_CHECK_ELIGIBILITY}
+              {CTA_CHECK_MOVE}
             </a>
           </div>
 

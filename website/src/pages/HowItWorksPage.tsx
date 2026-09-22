@@ -24,6 +24,7 @@ import SEOHead from '../components/SEOHead.tsx'
 import Hero from '../components/Hero.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import { CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import { HOURS_SUMMARY } from '../lib/openingHours.ts'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 
@@ -643,7 +644,7 @@ export default function HowItWorksPage() {
                 <Clock className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="font-bold text-[#2A2A2A] mb-2">WhatsApp during business hours</h3>
-              <p className="text-sm text-[#5A5A5A]">Message us on WhatsApp during opening hours (9:00 AM – 8:00 PM GST). For travel-day issues we prioritise replies on the active thread.</p>
+              <p className="text-sm text-[#5A5A5A]">Message us on WhatsApp during published hours ({HOURS_SUMMARY}). For travel-day issues we prioritise replies on the active thread.</p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
@@ -672,7 +673,7 @@ export default function HowItWorksPage() {
             How We Make Money (And Why We Do Not Print a Package Price)
           </h2>
           <p className="text-[#5A5A5A] mb-8">
-            Dubai Pet Relocation fees are Get a Quote. We make money from a coordination fee (and, where a partner pays one, a disclosed commission). We do not invent AED package tables, mark up government portal fees, or treat airline animal-charge tiers as our freight quote.
+            Dubai Pet Relocation fees are Get a Quote. We make money from a coordination fee (and, where a partner pays one, a disclosed commission). We do not assume AED package tables, mark up government portal fees, or treat airline animal-charge tiers as our freight quote.
           </p>
 
           <div className="overflow-x-auto rounded-2xl shadow-sm border border-gray-100 mb-8">
@@ -798,7 +799,7 @@ export default function HowItWorksPage() {
             className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
           >
             <MessageCircle className="w-5 h-5" />
-            Check if we can move your pet
+            Tell us about your move
           </a>
         </div>
       </section>

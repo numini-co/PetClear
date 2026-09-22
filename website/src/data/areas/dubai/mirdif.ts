@@ -26,7 +26,7 @@ const mirdif: AreaPageData = {
     'Airport Road',
   ],
   vetsNote:
-    'Mirdif and the north-eastern villa suburbs have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not invent partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    'Mirdif and the north-eastern villa suburbs have clinics for microchip scans, boosters and health certificates — we do not name practices here and we do not assume partnerships. Use your current vet if the file is already in order. If you need an ISO scan or export paperwork, ask on WhatsApp for the document type. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
   intro:
     'Mirdif is a long-stay villa suburb of garden streets, Ghoroob and Uptown pockets, sitting beside Mushrif Park and close to Dubai International — not a creek walk-up and not a Marina tower. Dogs here use quiet villa lanes; cats live in the same houses, not in a high-rise lift core. That is why [every Dubai neighbourhood we serve](/dubai/) keeps Mirdif as its own spoke: pickup is a house number on a residential street, then a short run to DXB cargo. Neighbouring [relocating pets in Deira](/dubai/deira/) is denser and older. [Moving pets to or from Dubai Silicon Oasis](/dubai/dubai-silicon-oasis/) is a different master-community grid further south. WhatsApp +971504782999 with your community pocket, street and route.',
   sections: [
@@ -113,7 +113,7 @@ const mirdif: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a Mirdif villa the usual outbound run is toward DXB cargo via Airport Road corridors — often shorter than a Marina or Palm file when those roads are moving. We still refuse a locked minute count. Friday mall traffic around Mirdif City Centre and incidents on the airport roads can erase the advantage. Al Maktoum / DWC is a much longer southbound option. We do not invent airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the driveway.',
+          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger hall. From a Mirdif villa the usual outbound run is toward DXB cargo via Airport Road corridors — often shorter than a Marina or Palm file when those roads are moving. We still refuse a locked minute count. Friday mall traffic around Mirdif City Centre and incidents on the airport roads can erase the advantage. Al Maktoum / DWC is a much longer southbound option. We do not assume airline AED. Share the flight date; we map the cut-off backwards from the cargo desk, then the driveway.',
         },
         {
           type: 'p',
@@ -219,7 +219,7 @@ const mirdif: AreaPageData = {
     },
     {
       q: 'How long is the run from Mirdif to DWC with a crated pet?',
-      a: 'Treat it as a long cross-city southbound job, not a Mirdif hop. We use DWC when the booking requires it. We do not invent a locked minute count.',
+      a: 'Treat it as a long cross-city southbound job, not a Mirdif hop. We use DWC when the booking requires it. We do not assume a locked minute count.',
     },
     {
       q: 'How long is the MOCCAE import permit valid if I am moving into a Mirdif villa?',

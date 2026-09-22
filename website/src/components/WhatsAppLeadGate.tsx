@@ -2,6 +2,7 @@ import { useCallback, useEffect, useId, useRef, useState } from 'react'
 import { MessageCircle, X } from 'lucide-react'
 import { getWhatsAppUrl } from '../lib/seo.ts'
 import {
+  CTA_CHECK_MOVE,
   composeEligibilityLead,
   SERVICE_OPTIONS,
   usefulClickedNote,
@@ -275,7 +276,7 @@ export default function WhatsAppLeadGate() {
           <div>
             <p className="text-xs font-semibold uppercase tracking-wider text-[#3A45B0]">Managed-move check</p>
             <h2 id={titleId} className="mt-1 text-lg font-bold text-[#2A2A2A]">
-              Check if we can move your pet
+              {CTA_CHECK_MOVE}
             </h2>
             {step === 1 ? (
               <p className="mt-1 text-sm leading-snug text-[#5A5A5A]">

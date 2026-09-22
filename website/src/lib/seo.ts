@@ -1,3 +1,5 @@
+import { HOURS_SUMMARY, openingHoursSpecification } from './openingHours.ts'
+
 // SEO utilities for Dubai Pet Relocation website
 // Replace BASE_URL with actual domain when decided
 export const BASE_URL = 'https://dubai-pet-relocation.ae'
@@ -63,7 +65,7 @@ export const siteConfig = {
     postalCode: '00000',
     country: 'AE',
   },
-  hours: 'Open daily · 9:00 AM – 8:00 PM',
+  hours: HOURS_SUMMARY,
   geo: {
     lat: '25.2048',
     lng: '55.2708',
@@ -78,6 +80,7 @@ export function localBusinessProvider() {
     areaServed: 'Dubai, UAE',
     url: BASE_URL,
     telephone: siteConfig.phoneE164,
+    openingHoursSpecification,
     address: {
       '@type': 'PostalAddress' as const,
       streetAddress: siteConfig.address.street,

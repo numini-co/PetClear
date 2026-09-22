@@ -6,7 +6,7 @@ const dubaiSiliconOasis: AreaPageData = {
   emirate: 'Dubai',
   seoTitle: 'Pet Relocation Dubai Silicon Oasis | Dog & Cat Transport',
   metaDescription:
-    'Pet relocation in Dubai Silicon Oasis — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. Free WhatsApp quote in 15 minutes.',
+    'Pet relocation in Dubai Silicon Oasis — door-to-door dog and cat transport, MOCCAE permit guidance and IATA crates. WhatsApp quote in 15 minutes.',
   h1: 'Pet Relocation in Dubai Silicon Oasis',
   primaryKeyword: 'pet relocation dubai silicon oasis',
   heroValueProp:

@@ -18,7 +18,7 @@ const jbr: AreaPageData = {
   geo: { lat: '25.0785', lng: '55.1340' },
   landmarks: ['The Walk at JBR', 'The Beach JBR', 'Bluewaters Island', 'Ain Dubai', 'Dubai Marina', 'Rimal towers', 'Murjan towers'],
   vetsNote:
-    'JBR sits next to the same clinic corridor as Marina, but we do not publish a named list and we do not invent partnerships. Keep your current vet if the microchip and vaccines are already documented. If you need an ISO scan or an export-style health certificate, ask on WhatsApp for the document type — not a brand. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    'JBR sits next to the same clinic corridor as Marina, but we do not publish a named list and we do not assume partnerships. Keep your current vet if the microchip and vaccines are already documented. If you need an ISO scan or an export-style health certificate, ask on WhatsApp for the document type — not a brand. We time appointments so the certificate is still valid on travel day. Federal inbound steps stay on [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
   intro:
     'Jumeirah Beach Residence is a beachfront stack of residential towers — Rimal, Murjan, Sadaf, Bahar — sitting on a pedestrian promenade, not a villa suburb. Dogs walk The Walk and The Beach before the heat builds; cats live in sea-facing apartments that still have to clear a crate through a tower lobby. That is why [every Dubai neighbourhood we serve](/dubai/) lists JBR as its own spoke: the last mile is beach-side drop-offs and evening footfall, not a Marina podium copy-paste. We coordinate international files into or out of these towers and the ground run to DXB or DWC. Neighbouring [relocating pets in Dubai Marina](/dubai/dubai-marina/) and [moving pets to or from Palm Jumeirah](/dubai/palm-jumeirah/) have different access rules. WhatsApp +971504782999 with your cluster, tower and route.',
   sections: [
@@ -105,7 +105,7 @@ const jbr: AreaPageData = {
       body: [
         {
           type: 'p',
-          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger baggage hall. From a JBR tower the usual outbound run is out of the beach service roads, then north-east on SZR toward DXB cargo. Al Maktoum / DWC is a longer southbound run when the booked product requires it. We do not invent minute-by-minute ETAs or airline AED on this page. Share your flight date and we map the cut-off backwards from the cargo desk, then the cluster drop-off.',
+          text: 'Most international cargo files still clear through DXB or DWC cargo pathways, not the passenger baggage hall. From a JBR tower the usual outbound run is out of the beach service roads, then north-east on SZR toward DXB cargo. Al Maktoum / DWC is a longer southbound run when the booked product requires it. We do not assume minute-by-minute ETAs or airline AED on this page. Share your flight date and we map the cut-off backwards from the cargo desk, then the cluster drop-off.',
         },
         {
           type: 'p',
