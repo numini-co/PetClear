@@ -133,7 +133,7 @@ export default function ContactPage() {
       <SEOHead
         meta={{
           title: 'Contact Dubai Pet Relocation | Pet Relocation Dubai',
-          description: 'Contact Dubai Pet Relocation for pet relocation help in Dubai via WhatsApp, email, or form. We reply within 15 minutes during business hours.',
+          description: 'Contact Dubai Pet Relocation about a pet move by WhatsApp, email or the form. We reply during published hours.',
           canonical: `${BASE_URL}/contact/`,
           ogType: 'website',
         }}
@@ -209,7 +209,7 @@ export default function ContactPage() {
                 Contact Form
               </h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-8">
-                Fill out the form below and we will get back to you within 24 hours. For urgent questions, WhatsApp is fastest.
+                Send the form and we will reply during published hours. If a move is already in progress, WhatsApp is the faster path. This is an enquiry about your move, not a free consulting session.
               </p>
               {submitted ? (
                 <div className="bg-[#E9ECFB] rounded-[16px] p-6">
@@ -218,8 +218,8 @@ export default function ContactPage() {
                       <Send className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <p className="font-bold text-[#2A2A2A]">Almost done — finish in WhatsApp</p>
-                      <p className="text-sm text-[#5A5A5A}">We opened WhatsApp with your enquiry — just tap send and we will reply fast. Or message us at {siteConfig.phone}.</p>
+                      <p className="font-bold text-[#2A2A2A]">Almost done. Finish in WhatsApp</p>
+                      <p className="text-sm text-[#5A5A5A}">We opened WhatsApp with your enquiry. Tap send and we will reply during published hours. Or message us at {siteConfig.phone}.</p>
                     </div>
                   </div>
                 </div>
@@ -394,15 +394,15 @@ export default function ContactPage() {
           </div>
           <FAQItem
             question="How quickly do you respond on WhatsApp?"
-            answer={<p>During {HOURS_WEEKDAY_DAYS}, {HOURS_WEEKDAY_TIME}, we typically respond within 15 minutes. {HOURS_WEEKEND_DAYS} are limited, by appointment. Outside those hours we check messages periodically and aim to reply within a few hours. Urgent travel-day issues are prioritized.</p>}
+            answer={<p>We reply during published hours: {HOURS_WEEKDAY_DAYS}, {HOURS_WEEKDAY_TIME}. {HOURS_WEEKEND_DAYS}: {HOURS_WEEKEND_TIME}. Outside those hours we read messages when the desk is next open. Travel-day issues on an active booking are prioritised.</p>}
           />
           <FAQItem
-            question="What does a first WhatsApp message buy?"
-            answer={<p>WhatsApp is for a paid eligibility check and scoped quote: origin, pet, dates, and whether you want a managed move or a document plan. General guidance is free in the guides. Bespoke document review and coordination are paid. No free human consultation is promised.</p>}
+            question="What should I include in an enquiry?"
+            answer={<p>Send the origin, destination, pet and the month you hope to travel. Guides stay free to read. An enquiry asks us to look at your move and, if it fits, prepare a proposal. It is not a free consulting session, and nothing is booked until you accept that proposal.</p>}
           />
           <FAQItem
-            question="Where do I send documents if I am not hiring yet?"
-            answer={<p>Use the self-serve import checklist and UAE import requirements guides. We do not review files for free. If you want Dubai Pet Relocation to review your route, pet, dates, and documents and coordinate the move, send those details on WhatsApp for eligibility and scope.</p>}
+            question="Where do I send documents if I am organising the papers myself?"
+            answer={<p>Use the import checklist and the UAE import requirements guides. If you want Dubai Pet Relocation to review the route, pet, dates and documents and coordinate the move, send those details on WhatsApp.</p>}
           />
         </div>
       </section>
@@ -414,7 +414,7 @@ export default function ContactPage() {
             Let's Make Your Pet's Journey Clear
           </h2>
           <p className="text-white/70 text-base leading-relaxed mb-8">
-            Guides stay free to read. WhatsApp is for people who want a paid eligibility check and a scoped coordination quote.
+            Guides stay free to read. WhatsApp and the form are for an enquiry about your move. We reply during published hours.
           </p>
           <WhatsAppCta
             text={CTA_CHECK_MOVE}

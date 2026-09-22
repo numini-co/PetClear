@@ -70,13 +70,13 @@ export default function HowItWorksPage() {
     {
       num: 1,
       id: 'step1',
-      title: 'Eligibility check & quote',
-      duration: 'WhatsApp, 15 minutes',
-      body: 'You message us on WhatsApp. We reply within 15 minutes during business hours (or by 8 AM if you message overnight). We ask five things: what type of pet, breed and weight, where are you moving from and to, when do you need to move, and do you have any existing documents? Within 24 hours, we send you an itemized quote. Not a vague range. A line-by-line breakdown of what you\'ll pay, when you\'ll pay it, and what each charge covers.',
+      title: "Share your pet's travel details",
+      duration: 'During published hours',
+      body: 'Send your departure city, destination, pet details and preferred travel date on WhatsApp. We use those details to see whether the move is inbound, outbound or local, and which service applies. We reply during published hours. A proposal follows once the route and the pet are clear. It is an enquiry about your move, not a free consulting session.',
       icon: <MessageCircle className="w-5 h-5" />,
-      youDo: 'Send pet details and photos on WhatsApp',
-      weDo: 'Assess route, check breed restrictions, review timeline, send itemized quote',
-      timeline: 'Same day to 24 hours',
+      youDo: 'Send departure city, destination, pet details and a preferred travel date',
+      weDo: 'Read the route, check breed limits, and outline the service that fits',
+      timeline: 'A reply during published hours, then a proposal once the file is clear',
     },
     {
       num: 2,
@@ -177,7 +177,7 @@ export default function HowItWorksPage() {
           name: 'Are you a middleman?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'No. A middleman takes a cut and adds no value. We are a coordination and quality controller. We handle your permit, book your flight, provide your crate, coordinate your vet, arrange your transport, and update you every step of the way. If anything goes wrong, we fix it. You pay one fee for one point of contact and a network of experts. That\'s not a markup — that\'s a service.',
+            text: 'We are a coordination service. We handle your permit timing, book the flight with partners, arrange the crate, coordinate the vet and the transport, and update you on WhatsApp during published hours. You pay a coordination fee for one point of contact and a network of specialists.',
           },
         },
         {
@@ -233,8 +233,8 @@ export default function HowItWorksPage() {
       step: [
         {
           '@type': 'HowToStep',
-          name: 'Free consultation and quote',
-          text: 'Contact Dubai Pet Relocation via WhatsApp with your pet\'s type, breed, weight, origin, destination, and planned move date. Receive an itemized quote within 24 hours.',
+          name: "Share your pet's travel details",
+          text: 'Contact Dubai Pet Relocation via WhatsApp with your departure city, destination, pet details and preferred travel date. We reply during published hours and prepare a proposal once the route is clear.',
           url: `${BASE_URL}/how-it-works/#step1`,
         },
         {
@@ -311,8 +311,8 @@ export default function HowItWorksPage() {
         image="/images/how-it-works-hero.jpg"
         imageAlt="A dog beside a travel crate and a checklist, representing the step-by-step relocation process"
         eyebrow="How It Works"
-        title="How Pet Relocation Works in Dubai — Step-by-Step"
-        subtitle="Your pet relocation coordination service — we coordinate a team of vetted specialists so you don't manage five companies from your phone at 2 AM."
+        title="How pet relocation works in Dubai, step by step"
+        subtitle="Share your pet's travel details, review the requirements and the proposed service, then prepare for the journey with the agreed support."
         updated="Updated June 2026"
         whatsappMessage={heroWaText}
       />
@@ -322,7 +322,7 @@ export default function HowItWorksPage() {
           <div className="rounded-[20px] border border-[#E2E5F6] bg-[#F5F6FD] p-6 sm:p-8">
             <h2 className="mb-2 text-xl font-bold text-[#2A2A2A] sm:text-2xl">First: how will the pet fly?</h2>
             <p className="mb-4 text-sm leading-relaxed text-[#5A5A5A] sm:text-base">
-              The seven steps below assume we already know the air product. Pets entering the UAE travel as manifest cargo, except Etihad in-cabin into Abu Dhabi. Compare all six modes on the flight-options hub — airline fees are labelled on the child guides; DPR packages stay Get a Quote — then come back here for the coordination sequence.
+              The seven steps below assume we already know how the pet will fly. Pets entering the UAE travel as manifest cargo, except Etihad in-cabin into Abu Dhabi. Compare the modes on the flight-options hub. Airline fees are labelled on those guides. Our packages are quoted after eligibility. Then come back here for the coordination sequence.
             </p>
             <div className="flex flex-wrap gap-3 text-sm font-semibold">
               <Link to="/guides/pet-flight-options-dubai/" className="inline-flex items-center gap-1 text-[#4F5BD5] hover:underline">
@@ -344,10 +344,10 @@ export default function HowItWorksPage() {
       <section className="section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-            What We Actually Do (And Why It&apos;s Not &quot;Middlemanning&quot;)
+            What we coordinate, and what partners do
           </h2>
           <p className="text-[#5A5A5A] mb-8">
-            Think of us like a wedding planner. We don&apos;t bake the cake. We don&apos;t play the music. We don&apos;t make the flowers. But we taste the cake, check the sound system, and make sure the bouquet arrives on time. If the florist is late, we fix it — and you blame us, not them. That&apos;s the value.
+            We do not fly the aircraft or sign the health certificate. We keep one timeline, check the documents, and brief the vet, cargo and ground partners so you are not managing each of them yourself.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -400,10 +400,21 @@ export default function HowItWorksPage() {
       <section className="section-padding bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-            Your Pet&apos;s Journey: 7 Steps From Eligibility to Reunion
+            The same three steps, then the full sequence
           </h2>
+          <p className="text-[#5A5A5A] mb-6">
+            The homepage uses three steps. This page keeps those three, then sets out the longer sequence.
+          </p>
+          <ol className="mb-10 space-y-3 text-[#2A2A2A]">
+            <li className="flex gap-3"><span className="font-bold text-[#4F5BD5]">1.</span> Share your pet&apos;s travel details</li>
+            <li className="flex gap-3"><span className="font-bold text-[#4F5BD5]">2.</span> Review the requirements and proposed service</li>
+            <li className="flex gap-3"><span className="font-bold text-[#4F5BD5]">3.</span> Prepare for the journey with the agreed support</li>
+          </ol>
+          <h3 className="text-[22px] sm:text-[28px] font-bold text-[#2A2A2A] mb-4">
+            Seven steps from the first message to the handover
+          </h3>
           <p className="text-[#5A5A5A] mb-10">
-            Below is the exact process we follow for every relocation. If you book with us, you&apos;ll receive a personalized timeline with dates, deadlines, and your dedicated contact at each step.
+            This is the sequence we follow when you ask us to coordinate the move. After you accept a proposal, you receive a timeline with dates, deadlines and the contact for each step.
           </p>
 
           <div className="relative">
@@ -455,7 +466,7 @@ export default function HowItWorksPage() {
           <div className="mt-10">
             <WhatsAppLink
               text="Hi, I want to understand how the relocation process works for my [dog/cat] from [country] to Dubai. Can you walk me through it?"
-              label="Start your pet's journey — WhatsApp us"
+              label="Tell us about your move"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
             />
           </div>
@@ -670,10 +681,11 @@ export default function HowItWorksPage() {
       <section className="section-padding bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-            How We Make Money (And Why We Do Not Print a Package Price)
+            How a quote is put together
           </h2>
           <p className="text-[#5A5A5A] mb-8">
-            Dubai Pet Relocation fees are Get a Quote. We make money from a coordination fee (and, where a partner pays one, a disclosed commission). We do not assume AED package tables, mark up government portal fees, or treat airline animal-charge tiers as our freight quote.
+            Dubai Pet Relocation charges a coordination fee, quoted after we know the pet, the route and the support you want. Government portal fees and airline charges stay on their own invoices. Inclusions and exclusions for PawPilot, PawPartner and PawVIP are on the{' '}
+            <Link to="/prices/" className="font-semibold text-[#4F5BD5] hover:underline">prices page</Link>.
           </p>
 
           <div className="overflow-x-auto rounded-2xl shadow-sm border border-gray-100 mb-8">
@@ -695,7 +707,7 @@ export default function HowItWorksPage() {
                 <tr><td>Cargo freight</td><td>Quoted per route and weight</td><td>You</td><td>Not a published DPR freight list. The Emirates 500/650/800 bands are airline fees, not our cargo quote.</td></tr>
                 <tr><td>Shared charter seat</td><td>Get a Quote (DPR)</td><td>You</td><td>Labelled market listings (Elite Pets / PetXJets / JetCircle / press) live on the shared-charter page — not DPR prices.</td></tr>
                 <tr><td>Private jet</td><td>Custom charter quote only</td><td>You</td><td>No all-in jet numbers on this site.</td></tr>
-                <tr className="bg-[#4F5BD5]/5"><td className="font-bold text-[#2A2A2A]">Dubai Pet Relocation coordination</td><td className="font-bold text-[#2A2A2A]">Get a Quote</td><td className="font-bold text-[#2A2A2A]">You</td><td className="font-bold text-[#2A2A2A]">No invented package prices.</td></tr>
+                <tr className="bg-[#4F5BD5]/5"><td className="font-bold text-[#2A2A2A]">Dubai Pet Relocation coordination</td><td className="font-bold text-[#2A2A2A]">Quoted after eligibility</td><td className="font-bold text-[#2A2A2A]">You</td><td className="font-bold text-[#2A2A2A]">The figure follows the pet, the route and the tier.</td></tr>
               </tbody>
             </table>
           </div>
@@ -756,7 +768,7 @@ export default function HowItWorksPage() {
           <div className="bg-white rounded-[20px] shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 sm:p-8">
             <FAQItem
               question="Are you a middleman?"
-              answer="No. A middleman takes a cut and adds no value. We are a coordination and quality controller. Think of it this way: if you planned your own wedding, you'd still pay the caterer, the band, and the venue. But you'd spend 100 hours coordinating them, and if the flowers were late, you'd be the one making phone calls while wearing a tuxedo. A wedding planner charges a fee, but they save you time, prevent problems, and handle crises. That's what we do for your pet's move. Specifically: we handle your permit, book your flight, provide your crate, coordinate your vet, arrange your transport, and update you every step of the way. If anything goes wrong, we fix it. You pay one fee for one point of contact and a network of experts. That's not a markup — that's a service."
+              answer="We are a coordination service. We handle permit timing, book the flight with partners, arrange the crate, coordinate the vet and the transport, and update you on WhatsApp during published hours. You pay a coordination fee for one point of contact and a network of specialists."
             />
             <FAQItem
               question="Why not just go direct to the airline or vet?"
@@ -787,10 +799,10 @@ export default function HowItWorksPage() {
             Ready to See How Simple Pet Relocation Can Be?
           </h2>
           <p className="text-white/80 max-w-2xl mx-auto mb-4">
-            You&apos;ve read the process. You know what we do, what our partners do, and how we make money. You know we&apos;re not a middleman — we&apos;re your pet relocation coordination service.
+            You have the sequence: share the travel details, review the proposed service, then prepare with the support you agree.
           </p>
           <p className="text-white/80 max-w-2xl mx-auto mb-8">
-            The next step is a paid eligibility check on WhatsApp if you want us to run the file. Guides stay free to read. No free human consultation is promised.
+            If you want us to coordinate the move, send the pet, the route and the month. We reply during published hours. Guides stay free to read. An enquiry is not a free consulting session.
           </p>
           <a
             href={getWhatsAppUrl(heroWaText)}

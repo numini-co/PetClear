@@ -159,9 +159,9 @@ export default function AboutPage() {
       <section className="bg-white section-padding">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">Why We Know What We Are Talking About</span>
+            <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">What sits behind the advice</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-3 mb-4">
-              Experience, Expertise, Authority, and Trust
+              What we check before a pet travels
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -249,7 +249,7 @@ export default function AboutPage() {
             <div>
               <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wider">How We Work</span>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-3 mb-4">
-                We Are Not a Middleman. We Are a Coordination.
+                A coordination team, working with specialist partners
               </h2>
               <div className="space-y-4 text-[#5A5A5A] text-base leading-relaxed">
                 <p>
@@ -318,7 +318,7 @@ export default function AboutPage() {
             Ready to Meet the Team Behind Your Pet's Journey?
           </h2>
           <p className="text-white/70 text-base leading-relaxed mb-8">
-            WhatsApp is for a paid eligibility check and scoped quote if you want us to coordinate the move. Guides stay free to read. No free human consultation is promised.
+            Message us with the pet, the route and the month if you want a proposal. We reply during published hours. Guides stay free to read. An enquiry is not a free consulting session.
           </p>
           <WhatsAppCta
             text={CTA_CHECK_MOVE}
