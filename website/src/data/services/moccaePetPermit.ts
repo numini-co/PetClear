@@ -14,19 +14,24 @@ import {
 
 const moccaePetPermit: ServicePageData = {
  slug: 'moccae-pet-permit',
- seoTitle: 'MOCCAE Pet Permit Assistance | Document Review',
+ seoTitle: 'MOCCAE Pet Permit Assistance | Managed Applications',
  metaDescription:
- 'Get help reviewing your pet travel documents and preparing a MOCCAE permit application. See what assistance includes and request a scoped quote.',
+ 'Managed MOCCAE pet permit applications inside a relocation. Check eligibility and request a quote. Confirm fees on the MOCCAE portal.',
  h1: 'MOCCAE pet permit application assistance',
  primaryKeyword: 'moccae pet permit dubai',
  heroValueProp:
- 'Permit assistance only: we review the file, walk the official MOCCAE portal with you, and track the 90-day import window so the Ministry issues the permit correctly the first time.',
+ 'A managed MOCCAE permit application inside a relocation. We prepare the portal file with you and track the 90-day import window. Check eligibility, then request a quote. We do not issue permits.',
  // Blocked original-photo placeholder — AI substitute not used for this hero.
  heroImage: '/images/service-moccae-pet-permit.jpg',
  heroImageAlt:
  'MOCCAE pet permit application folder prepared on a coordinator desk in Dubai',
- whatsappMessage: waEligibility({ need: 'document plan' }),
+ whatsappMessage: waEligibility({ need: 'managed permit application' }),
  ctaLabel: 'Check permit eligibility',
+ ctaHeading: 'Ready to check permit eligibility?',
+ ctaBody:
+ 'Send the pet, the route and whether this file is an import or an export. We check eligibility and reply with a quote before paid work starts. Government fees: confirm on the MOCCAE portal.',
+ gateLine:
+ 'The free how-to is the permit guide. WhatsApp is for a managed permit application and a quote.',
  heroEyebrow: 'MOCCAE Permit Assistance',
  snippetQuestion: 'What does MOCCAE pet permit assistance include?',
  snippetAnswer:
@@ -43,13 +48,13 @@ const moccaePetPermit: ServicePageData = {
  sections: [
  {
  id: 'assistance',
- h2: 'This page is permit assistance — the how-to lives on the guide',
+ h2: 'Prefer to apply yourself? Use the free guide',
  intro:
- 'Buyers who want the permit filed use this service. The walkthrough, UAE Pass path and rejection table live on [the MOCCAE import permit guide](/guides/moccae-import-permit/). Full import rules live on [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/). End-to-end cargo and clearance live on [pet import to Dubai](/service/pet-import-dubai/).',
+ 'Prefer to file it yourself? Use the free [MOCCAE import permit guide](/guides/moccae-import-permit/). Buyers who want the permit filed inside a relocation use this service. Full import rules live on [UAE pet import requirements for dogs and cats](/guides/uae-pet-import-requirements/). End-to-end cargo and clearance live on [pet import to Dubai](/service/pet-import-dubai/).',
  body: [
  {
  type: 'p',
- text: 'MOCCAE — the UAE Ministry of Climate Change and Environment — is the federal authority that issues pet import permits and veterinary travel documents. Every dog or cat entering the UAE needs an import permit issued before arrival. Every pet leaving needs a MOCCAE export health certificate. Both are applied for on the official portal with a UAE Pass login.',
+ text: 'MOCCAE, the UAE Ministry of Climate Change and Environment, is the federal authority that issues pet import permits and veterinary travel documents. Every dog or cat entering the UAE needs an import permit issued before arrival. Every pet leaving needs a MOCCAE export health certificate. Both are applied for on the official portal with a UAE Pass login.',
  },
  {
  type: 'p',
@@ -112,7 +117,7 @@ const moccaePetPermit: ServicePageData = {
  ],
  },
  {
- h2: 'Export health certificate — different product, same portal',
+ h2: 'Export health certificate: a different product on the same portal',
  intro:
  'Leaving Dubai is not a reversed import form. Destination rules decide titer, tapeworm and certificate format. Plan from the destination backwards, then book the MOCCAE exam.',
  body: [
@@ -202,7 +207,7 @@ const moccaePetPermit: ServicePageData = {
  ],
  },
  {
- h2: 'What the permit costs — labeled MOCCAE lines',
+ h2: 'What the permit costs: labelled MOCCAE lines',
  intro:
  'Government charges are labeled separately from our coordination quote. Confirm on official MOCCAE portal; fees may change.',
  body: [

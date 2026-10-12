@@ -140,6 +140,9 @@ export default function WhatsAppLeadGate() {
       if (shouldSkip()) return
       event.preventDefault()
       event.stopPropagation()
+      const presetRaw = anchor.dataset.waService || ''
+      const preset = SERVICE_OPTIONS.find((option) => option === presetRaw) ?? ''
+      setService(preset)
       setSourceHref(href)
       setErrors('')
       setStep(1)
