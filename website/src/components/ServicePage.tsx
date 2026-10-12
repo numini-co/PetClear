@@ -152,7 +152,8 @@ function faqHeading(slug: string): string {
 }
 
 function exploreHeading(slug: string): string {
-  if (slug === 'moccae-pet-permit') return 'Other Dubai pet services'
+  if (slug === 'moccae-pet-permit') return 'Import, export and relocation services'
+  if (slug === 'pet-export-dubai') return 'Import, relocation and permit services'
   if (slug === 'pet-relocation-dubai') return 'Browse every relocation service'
   if (slug === 'shared-pet-charter') return 'Other relocation services if a charter is not the fit'
   if (slug === 'international-pet-relocation') return 'Related services and guides'
@@ -174,6 +175,8 @@ function strongCtaPage(slug: string): boolean {
     slug === 'pet-relocation-from-dubai' ||
     slug === 'pet-transport-dubai' ||
     slug === 'pet-relocation-dubai' ||
+    slug === 'pet-export-dubai' ||
+    slug === 'moccae-pet-permit' ||
     slug === 'shared-pet-charter' ||
     slug === 'international-pet-relocation'
   )
@@ -268,6 +271,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         whatsappMessage={data.whatsappMessage}
         paidIncludes={data.paidIncludes}
         gateLine={data.gateLine}
+        waService={data.servicePreset}
         showBuyerQualify
       />
 
@@ -288,6 +292,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
               href={wa}
               target="_blank"
               rel="noopener noreferrer"
+              data-wa-service={data.servicePreset}
               className={STRONG_CTA}
             >
               <MessageCircle className="h-5 w-5" aria-hidden="true" /> {data.bookingCta.label}
@@ -383,7 +388,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
             linkClass="font-semibold text-white underline"
           />
           <PaidIncludes tone="dark" compact items={data.paidIncludes} className="mx-auto mb-6 max-w-2xl text-left" />
-          <a href={wa} target="_blank" rel="noopener noreferrer" className={strongCta ? `${STRONG_CTA} rounded-2xl px-8 py-4` : 'inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-all shadow-sm ring-1 ring-white/20'}>
+          <a href={wa} target="_blank" rel="noopener noreferrer" data-wa-service={data.servicePreset} className={strongCta ? `${STRONG_CTA} rounded-2xl px-8 py-4` : 'inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1DA851] transition-all shadow-sm ring-1 ring-white/20'}>
             <MessageCircle className="w-5 h-5" aria-hidden="true" /> {ctaLabel}
           </a>
           <WhatsAppGate tone="dark" line={data.gateLine} className="mt-4" />
