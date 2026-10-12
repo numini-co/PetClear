@@ -1,5 +1,6 @@
 import type { ServicePageData } from '../../types/servicePage.ts'
 import { waEligibility } from '../../lib/conversionCopy.ts'
+import { EXPORT_CERT_FEE_VERIFY } from '../../lib/regulatory.ts'
 
 const petRelocationFromDubai: ServicePageData = {
   slug: 'pet-relocation-from-dubai',
@@ -79,7 +80,7 @@ const petRelocationFromDubai: ServicePageData = {
             },
             {
               title: 'MOCCAE export health certificate',
-              text: 'The UAE export health certificate is issued after a pre-export veterinary inspection. Schedule it close to departure so the window still covers travel day. Figures on file for a personal consignment are AED 100, a stated service time of one working day, and validity of 30 days from issue. That 30-day life is the export certificate, not the MOCCAE import permit (90 days from issuance for animals entering the UAE). Confirm the current fee, service time and 30-day export validity on the official portal. Process guide: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
+              text: `The UAE export health certificate is issued after a pre-export veterinary inspection. Schedule it close to departure so the window still covers travel day. ${EXPORT_CERT_FEE_VERIFY} The export certificate is commonly valid for 30 days from issue. Verify that 30-day validity on the official portal. That 30-day life is the export certificate, not the MOCCAE import permit (90 days from issuance for animals entering the UAE). Process guide: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).`,
             },
             {
               title: 'Crate and cargo booking',
@@ -178,7 +179,7 @@ const petRelocationFromDubai: ServicePageData = {
     },
     {
       q: 'What is the MOCCAE export health certificate path?',
-      a: 'A pre-export veterinary inspection, then a UAE export health certificate scheduled close to departure. Figures on file for a personal consignment are AED 100, one working day, and 30 days validity from issue. That 30-day life is the export certificate, not the 90-day import permit. Confirm the current fee, service time and 30-day export validity on the official portal. How-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
+      a: `A pre-export veterinary inspection, then a UAE export health certificate scheduled close to departure. ${EXPORT_CERT_FEE_VERIFY} The export certificate is commonly valid for 30 days from issue. Verify that 30-day validity on the official portal. That 30-day life is the export certificate, not the 90-day import permit. How-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).`,
     },
     {
       q: 'When should I start planning a move out of Dubai?',
