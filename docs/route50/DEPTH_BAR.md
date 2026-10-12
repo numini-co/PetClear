@@ -16,7 +16,7 @@ Every `/routes/{slug}/` page must be **≥1000 words of UNIQUE detailed copy** �
 - [ ] `howItWorks` — scenario timeline (not generic 5-step clone)
 - [ ] Airports (IATA + city) — seed + UAE DXB/DWC/AUH + `airportsNarrative`
 - [ ] Airlines — cabin / cargo / generally not; confirm current policy; no affiliation + `airlinesNarrative`
-- [ ] UAE import: MOCCAE permit **30 days** (inbound); outbound: destination rules high-level + verify
+- [ ] UAE import: MOCCAE permit **90 days from issuance** (inbound); outbound: destination rules high-level + verify
 - [ ] FAQ 4–6 unique — prefer DataForSEO **PAA** when provided; **no invented fees**
 - [ ] Internal links ≥3 meaningful (hub + reverse twin + guides)
 - [ ] Quote-only packages; WhatsApp **+971504782999**; CTA **Get Route Checked**
@@ -41,7 +41,7 @@ Every `/routes/{slug}/` page must be **≥1000 words of UNIQUE detailed copy** �
 ## Regulatory locks (unchanged)
 
 - Titer = sample within 90 days **before travel** (≥0.5 IU/ml) — NEVER “90-day wait after draw”
-- MOCCAE import permit = **30 days** from issuance (inbound)
+- MOCCAE import permit = **90 days** from issuance (inbound)
 - Outbound export cert = commonly **30 days** from issuance (high-level; verify on portal) — no invented fees
 - No invented MOCCAE/airline fee numerals
 
