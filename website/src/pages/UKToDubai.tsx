@@ -285,7 +285,7 @@ export default function UKToDubai() {
             What drives the cost, without a fake package total
           </h2>
           <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-3xl">
-            Government charges on file from the MOCCAE service page on {CHECKED}, for one animal: AED 200 to issue the import permit, AED 500 to request release of one dog, AED 250 to request release of one cat. Confirm on the official portal. Fees may change. They are not a door-to-door price.
+            Government charges published on the MOCCAE service page on {CHECKED}, for one animal: AED 200 to issue the import permit, AED 500 to request release of one dog, AED 250 to request release of one cat. Confirm on the official portal. Fees may change. They are not a door-to-door price.
           </p>
           <div className="grid md:grid-cols-2 gap-6 mt-8">
             {[

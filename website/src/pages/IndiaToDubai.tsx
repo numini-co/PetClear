@@ -216,7 +216,7 @@ export default function IndiaToDubai() {
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p className="font-semibold text-[#2A2A2A] mb-1">3. Rabies Titer Test (RNATT): CRITICAL</p>
+                    <p className="font-semibold text-[#2A2A2A] mb-1">3. Rabies Titre Test (RNATT): CRITICAL</p>
                     <p className="text-[#5A5A5A] text-sm">Result at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. This is not a 90-day sample window. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. The lab is whichever your official vet authority accepts. This page does not name laboratories.</p>
                   </div>
                 </div>

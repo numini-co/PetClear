@@ -141,7 +141,7 @@ export default function PhilippinesToDubai() {
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Risk Level</p>
               <p className="text-[#5A5A5A] text-sm">High-Risk</p>
-              <p className="text-[#D4A017] text-xs mt-2 font-medium">Rabies endemic: titer required</p>
+              <p className="text-[#D4A017] text-xs mt-2 font-medium">Rabies endemic: titre required</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
               <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -193,7 +193,7 @@ export default function PhilippinesToDubai() {
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p className="font-semibold text-[#2A2A2A] mb-1">3. Rabies Titer Test (RNATT): CRITICAL</p>
+                    <p className="font-semibold text-[#2A2A2A] mb-1">3. Rabies Titre Test (RNATT): CRITICAL</p>
                     <p className="text-[#5A5A5A] text-sm">Result at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. This is not a 90-day sample window. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. Your official vet authority confirms the laboratory. This page does not name labs.</p>
                   </div>
                 </div>
