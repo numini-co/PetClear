@@ -5,7 +5,7 @@ Checked live 2026-10-12.
 ## /service/pet-export-dubai/ (~2,400 rendered words)
 - Links /guides/pet-export-from-dubai/ and all 30 /routes/dubai-to-*/ pages: DONE.
 - No "300-700" export cert figure left live: DONE.
-- Remaining: export health certificate fee. Calendar wants "AED 100 per personal consignment, 1 working day, 30-day validity" published. Only publish as a labelled government fee, "confirm on the MOCCAE portal". Note: the 30-day figure here is the EXPORT certificate, not the import permit; keep wording explicit so it is never read as the import permit.
+- Remaining: export health certificate fee. Do not publish a fee amount or a one-day service time. Use confirm-on-portal wording. The 30-day figure, if mentioned, is the EXPORT certificate, not the import permit, and must be labelled verify on the official portal.
 - Verdict: effectively complete; one optional labelled-fee line.
 
 ## /service/pet-relocation-from-dubai/ (~1,830 rendered words)
