@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, CheckCircle, MessageCircle } from 'lucide-react'
+import { ArrowRight, CheckCircle } from 'lucide-react'
 import SEOHead from './SEOHead.tsx'
 import Breadcrumb from './Breadcrumb.tsx'
 import Hero from './Hero.tsx'
@@ -11,11 +11,28 @@ import UaeCargoRuleCallout from './UaeCargoRuleCallout.tsx'
 import LastVerified from './LastVerified.tsx'
 import LinkedText from './LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
-import { BASE_URL, LOGO_URL, getWhatsAppUrl, shortSubtitle, siteConfig } from '../lib/seo.ts'
+import { BASE_URL, LOGO_URL, shortSubtitle, siteConfig } from '../lib/seo.ts'
 import { titleCaseCountry } from '../data/routes/countryMeta.ts'
 import type { RoutePageData } from '../types/routePage.ts'
 import RouteMoneyBodyLink from './RouteMoneyBodyLink.tsx'
 import LinkPlanSlot from './LinkPlanSlot.tsx'
+import RouteBuyerFreeHelp from './RouteBuyerFreeHelp.tsx'
+
+function Prose({ text }: { text: string }) {
+  const blocks = text
+    .split(/\n\n+/)
+    .map((part) => part.trim())
+    .filter(Boolean)
+  return (
+    <>
+      {blocks.map((block, index) => (
+        <p key={index} className="mt-4 leading-relaxed text-[#5A5A5A] first:mt-0">
+          <LinkedText text={block} />
+        </p>
+      ))}
+    </>
+  )
+}
 
 function displayCountry(name: string): string {
   return name.startsWith('the ') ? name.slice(4, 5).toUpperCase() + name.slice(5) : name
@@ -26,8 +43,7 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
   const countryLabel = displayCountry(data.countryName)
   const eyebrow =
     data.direction === 'inbound' ? `${countryLabel} → Dubai` : `Dubai → ${countryLabel}`
-  const waMessage = `Hi Dubai Pet Relocation! I need a route check for ${data.slug.replace(/-/g, ' ')} (${data.direction}). Pet details and preferred dates follow.`
-  const wa = getWhatsAppUrl(waMessage)
+  const waMessage = `Hi Dubai Pet Relocation. I want Get Route Checked for ${data.slug.replace(/-/g, ' ')} (${data.direction}). Pet details and preferred dates follow.`
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -103,7 +119,7 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
               ? `Relocating a pet ${COUNTRY_FROM(data.countryName)} to Dubai`
               : `Exporting a pet from Dubai ${COUNTRY_TO(data.countryName)}`}
           </h2>
-          <p className="leading-relaxed text-[#5A5A5A]">{data.intro}</p>
+          <Prose text={data.intro} />
           <LinkPlanSlot path={`/routes/${data.slug}/`} slot="route-summary" />
           {data.direction === 'inbound' ? <RouteMoneyBodyLink path={`/routes/${data.slug}/`} /> : null}
           <LastVerified className="mt-4 text-xs text-[#8A8A8A]" />
@@ -115,7 +131,7 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
             What changes on this route
           </h2>
-          <p className="leading-relaxed text-[#5A5A5A]">{data.rulesSpecialties}</p>
+          <Prose text={data.rulesSpecialties} />
         </div>
       </section>
 
@@ -162,7 +178,7 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
             What to settle before you book
           </h2>
-          <p className="leading-relaxed text-[#5A5A5A]">{data.difficulties}</p>
+          <Prose text={data.difficulties} />
         </div>
       </section>
 
@@ -171,7 +187,7 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
             How a {countryLabel} move is planned
           </h2>
-          <p className="leading-relaxed text-[#5A5A5A]">{data.howItWorks}</p>
+          <Prose text={data.howItWorks} />
           <p className="mt-6 text-sm leading-relaxed text-[#5A5A5A]">
             Deep-dive the documents on{' '}
             {data.direction === 'inbound' ? (
@@ -252,27 +268,22 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
 
       <OfficialSources extra={data.extraSources} />
 
-      <section className="bg-[#4F5BD5] section-padding">
+      <RouteBuyerFreeHelp
+        tone="band"
+        buyerMessage={waMessage}
+        freeMessage={`Hello Dubai Pet Relocation. I would like a free eligibility check for ${data.slug.replace(/-/g, ' ')}, not a paid quote yet. I will send the pet and the target month.`}
+      />
+      <section className="bg-white pb-10">
         <div className="mx-auto max-w-[820px] px-5 text-center sm:px-6 lg:px-8">
-          <h2 className="mb-3 text-[24px] font-bold text-white sm:text-[32px]">Tell us about this route</h2>
-          <p className="mb-6 text-white/90">
-            {data.cta.note || 'Share the pet, the route and the dates. We explain the next step and any assessment fee before paid work starts.'}{' '}
-            WhatsApp {data.cta.whatsapp}. Email support@dubai-pet-relocation.ae.
-          </p>
           <LinkPlanSlot
             path={`/routes/${data.slug}/`}
             slot="route-cost"
-            className="mb-6 text-sm leading-relaxed text-white/90"
-            linkClass="font-semibold text-white underline"
+            className="text-sm leading-relaxed text-[#5A5A5A]"
+            linkClass="font-semibold text-[#4F5BD5] underline"
           />
-          <a
-            href={wa}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-8 py-4 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#1DA851]"
-          >
-            <MessageCircle className="h-5 w-5" /> {data.cta.label}
-          </a>
+          <p className="mt-3 text-sm text-[#5A5A5A]">
+            Buyer WhatsApp {data.cta.whatsapp}. Email support@dubai-pet-relocation.ae.
+          </p>
         </div>
       </section>
     </div>

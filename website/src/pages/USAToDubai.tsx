@@ -1,48 +1,48 @@
 import SEOHead from '../components/SEOHead.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
-import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import { BASE_URL, LOGO_URL } from '../lib/seo.ts'
-import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint } from 'lucide-react'
+import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
 import RouteMoneyBodyLink from '../components/RouteMoneyBodyLink.tsx'
 import Hero from '../components/Hero.tsx'
 import RouteCostTeaser from '../components/RouteCostTeaser.tsx'
 import LinkedText from '../components/LinkedText.tsx'
+import RouteBuyerFreeHelp from '../components/RouteBuyerFreeHelp.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 
 export default function USAToDubai() {
   const pageUrl = `${BASE_URL}/routes/usa-to-dubai/`
-  const pageTitle = 'Pet Relocation USA to Dubai | Planning & Quote'
-  const pageDescription = 'Moving a dog or cat from USA to Dubai? Review documents, travel options and arrival planning, then request a quote for your pet and dates.'
+  const pageTitle = 'Pet Relocation USA to Dubai: USDA Certificate, Timeline and Quote'
+  const pageDescription = 'Bringing a dog or cat from the USA to Dubai? Health certificate steps, MOCCAE permit valid 90 days, airline cargo options and timeline. Get your route checked.'
   const faqs = [
     {
       question: 'Can I bring a dog to Dubai from the USA?',
-      answer: 'Yes, when the breed is not on the published ban list and the import file matches. You need a permanent microchip whose number matches the health certificate, the vaccines named for dogs, an authorised health certificate, a rabies antibody test because the United States was not on the low-risk list checked on 22 September 2026, and a MOCCAE import permit valid 90 days from issuance. Emirates itineraries ending in Dubai are cargo. Rules: [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/). WhatsApp +971504782999.',
+      answer: 'Yes. US-origin dogs and cats can enter the UAE with an ISO microchip, a valid rabies vaccination, a MOCCAE import permit issued no more than 90 days before arrival, and a health certificate from an accredited vet that has been government endorsed. Confirm the endorsement path with your official vet authority. Pets land as manifest cargo. Some breeds are restricted, so start with a free eligibility check before booking anything. Rules: [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/).',
     },
     {
       question: 'Is the USA low-risk for pet import to Dubai?',
-      answer: 'Not on the list we checked. On 22 September 2026 the MOCCAE import page printed a low-risk country list and the United States was not named on it. The United Kingdom was. This page does not reprint the whole list. Treat a US origin as high-risk until the live page says otherwise: antibody test of at least 0.5 IU/ml, certificate valid 365 days if the vaccine stays valid and no booster is given.'
+      answer: 'Confirm on the official MOCCAE portal before you skip a titre. This page does not publish an exempt-country list. If a titre is required, the blood sample is taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is the sample date, not a wait after the draw.'
     },
     {
       question: 'Which airlines fly pets from the USA to Dubai?',
-      answer: 'Confirm the product with the carrier. Emirates says ordinary pets are not in the cabin, and itineraries ending in Dubai must travel as cargo. This page does not publish flight times, hold temperatures, or a cargo tariff. Ask for the booking in writing.'
+      answer: 'Emirates carries pets to Dubai as cargo through SkyCargo, and does not take pets in the cabin on itineraries ending in Dubai. Etihad and other carriers may route through their hubs, often with seasonal heat limits from southern US airports. United and other US carriers via a connection are confirm current policy. Policies change, so confirm current rules with the airline. We compare live options once your pet\'s size and month are known.'
     },
     {
-      question: 'How long does the Pet relocation from USA to Dubai process take?',
-      answer: 'There is no single week count. A first or lapsed rabies vaccine needs at least 21 days before the antibody test. A valid booster does not. The permit estimate is 1 working day, or 5 working days for a service, emotional support or medical dog, and the permit then lasts 90 days from issuance. Airline space can add time. We do not promise a 4 to 6 week file.'
+      question: 'How long does it take to move a pet from the USA to Dubai?',
+      answer: 'Allow about 4 to 8 weeks for a typical healthy adult pet with current vaccinations. The main steps are the MOCCAE permit, the accredited vet exam, government endorsement and a cargo booking that fits heat rules. Puppies, new vaccinations or restricted breeds take longer. An East Coast direct routing is not the same clock as a West Coast summer connection. Use the free eligibility check to see which timeline applies to you.'
     },
     {
       question: 'How much does it cost to relocate a pet from the USA to Dubai?',
-      answer: 'This page does not publish a package total. Government charges checked on 22 September 2026 were AED 200 for the import permit, AED 500 to release a dog, and AED 250 to release a cat. Cargo, crate and coordination are quoted for your animal. WhatsApp +971504782999.'
+      answer: 'This page does not publish a package total. Government permit and release charges are confirmed on the official portal. Cargo, crate and coordination are quoted for your animal after the eligibility check. WhatsApp +971504782999.'
     },
     {
       question: 'What documents are required for a US pet to enter Dubai?',
       answer: 'A permanent microchip whose number matches the health certificate, rabies and the other dog or cat vaccines, a rabies antibody result of at least 0.5 IU/ml under the 365-day conditions, an authorised health certificate, parasite treatment in the 14 days before shipment, and a MOCCAE import permit valid 90 days from issuance. The live MOCCAE page does not name a US form number or a universal 10-day certificate. ISO 11784/11785 was not restated as a current UAE rule.'
     },
     {
-      question: 'Does the USDA need to endorse my pet\'s health certificate?',
-      answer: 'The MOCCAE page asks for an authorised health certificate from the competent veterinary authority. It does not name a USDA form or a 10-day validity. Confirm the US endorsement step with USDA before you treat a form number as the UAE rule. We do not publish a processing-day promise for that office.'
+      question: 'Does the USDA need to endorse my pet\'s health certificate for Dubai?',
+      answer: 'Plan on a government-endorsed origin certificate. In the United States that endorsement comes through the federal animal health authority after your accredited vet signs. Your official vet authority will confirm the path, including any digital system. Book the vet visit so endorsement lands close to the flight while the MOCCAE permit is still inside its 90-day window. We check timing as part of route coordination. We do not name a form number on this page.'
     },
     {
       question: 'Are there breed restrictions for dogs travelling from the USA to Dubai?',
@@ -105,8 +105,8 @@ export default function USAToDubai() {
         imageAlt="Pet relocation from USA to Dubai"
         fallbackSrc="/images/hero-usa.jpg"
         eyebrow="United States → Dubai"
-        title="Pet relocation from USA to Dubai"
-        subtitle="On 22 September 2026 the United States was not on the MOCCAE low-risk list, so plan an antibody test of at least 0.5 IU/ml. The import permit is valid 90 days from issuance."
+        title="Pet Relocation from the USA to Dubai"
+        subtitle="Confirm the titre rule on the official MOCCAE portal. The import permit is valid 90 days from issuance. Pets on itineraries ending in Dubai travel as cargo."
         updated="Last verified: 22 September 2026"
       />
 
@@ -335,7 +335,23 @@ export default function USAToDubai() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Airlines</span>
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Airlines Flying Pets from the USA to Dubai</h2>
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">USDA endorsed health certificate for the UAE</h2>
+            <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-3xl">
+              The UAE expects a government-endorsed origin certificate. In the United States an accredited vet signs first, and the federal animal health authority endorses after that. Your official vet authority will confirm how endorsement works, including any digital system versus paper. Time it so the endorsement is still valid for the flight and the MOCCAE permit is still inside its 90 days from issuance. This page does not name a form number or a processing-day promise for that office.
+            </p>
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-10">Hub scenarios, labelled typical</h2>
+            <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-3xl">
+              East Coast direct, from JFK, IAD or BOS: a healthy adult pet with current vaccines is often the shorter file, about 4 to 8 weeks, because the crate can leave a long-haul gateway without a domestic animal connection. Mid-West connections via ORD, IAH, DFW or ATL add a live-animal transfer. Confirm the connection accepts the crate, not only the passenger. West Coast heat season from LAX, SFO or SEA, and southern hubs such as MCO, is the file most likely to slip: airline temperature limits change, so confirm current policy for the month. These ranges are typical, not promised. Puppies and new vaccinations take longer.
+            </p>
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-10">Bringing a cat from the USA to Dubai</h2>
+            <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-3xl">
+              Cats use the same microchip, rabies vaccine, endorsed health certificate and 90-day MOCCAE permit as dogs. They are not on the dog breed ban list. A cat does not travel in the cabin on an itinerary ending in Dubai. Emirates carries those animals as cargo. If a titre is required, the blood sample is taken within 90 days before travel and must show at least 0.5 IU/ml.
+            </p>
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-10">If you may return to the United States</h2>
+            <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-3xl">
+              CDC dog rules for a later return are a different file from this import. The Certification of U.S.-Issued Rabies Vaccination is the form CDC publishes for that direction. Read <Link to="/routes/dubai-to-usa/" className="font-semibold text-[#4F5BD5] hover:underline">Dubai to USA</Link> before you assume this arrival paperwork works in reverse. Quarantine content for UAE entry stays on the <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">import requirements guide</Link>. Arrival handoff notes are on the <Link to="/guides/dubai-pet-arrival-guide/" className="font-semibold text-[#4F5BD5] hover:underline">Dubai pet arrival guide</Link>.
+            </p>
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-10">Airlines Flying Pets from the USA to Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
               Confirm the cargo product in writing. This page does not publish flight frequency, hold temperature, a freight tariff, or a preferred US airport.
             </p>
@@ -421,38 +437,11 @@ export default function USAToDubai() {
       <OfficialSources />
 
       {/* CTA */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="bg-[#3A45B0] rounded-[20px] p-8 lg:p-12 text-center text-white">
-            <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet from the USA to Dubai?</h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              We coordinate the file from the origin clinic to cargo into Dubai. We do not claim a move from every US state, and we do not issue the MOCCAE permit.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <WhatsAppBtn label="Get a USA to Dubai quote" message="Hi, I want to relocate my pet from the USA to Dubai. Can you help me understand the process and cost?" />
-              <a href={`${BASE_URL}/how-it-works/`} className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-semibold text-[#2A2A2A] bg-white hover:bg-[#F5F5F5] transition-colors">
-                <Info className="w-5 h-5" />
-                How It Works
-              </a>
-            </div>
-            <div className="mt-8 grid sm:grid-cols-3 gap-4 text-left">
-              <a href={`${BASE_URL}/guides/pet-relocation-cost-dubai/`} className="block p-4 bg-white/10 rounded-xl hover:bg-white/15 transition-colors">
-                <p className="font-semibold text-white mb-1">Cost Guide</p>
-                <p className="text-sm text-white/70">Full breakdown of pet relocation costs in Dubai</p>
-              </a>
-              <a href={`${BASE_URL}/guides/uae-pet-import-requirements/`} className="block p-4 bg-white/10 rounded-xl hover:bg-white/15 transition-colors">
-                <p className="font-semibold text-white mb-1">Import Requirements</p>
-                <p className="text-sm text-white/70">UAE rules for bringing pets into the country</p>
-              </a>
-              <a href={`${BASE_URL}/dog-relocation-to-dubai/`} className="block p-4 bg-white/10 rounded-xl hover:bg-white/15 transition-colors">
-                <p className="font-semibold text-white mb-1">Dog Relocation</p>
-                <p className="text-sm text-white/70">Specific guidance for relocating dogs to Dubai</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <RouteBuyerFreeHelp
+        tone="band"
+        buyerMessage="Hello Dubai Pet Relocation. I want Get Route Checked for USA to Dubai. I will send the pet, the US airport and the target month."
+        freeMessage="Hello Dubai Pet Relocation. I would like a free eligibility check for USA to Dubai, not a paid quote yet. I will send the pet and the target month."
+      />
 
       {/* Related Routes & Next Steps */}
       <section className="py-16 lg:py-24 bg-white">
@@ -468,7 +457,7 @@ export default function USAToDubai() {
             </Link>
             <Link to="/routes/dubai-to-usa/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
               <p className="font-bold text-[#2A2A2A] mb-1">Dubai to USA</p>
-              <p className="text-[#5A5A5A] text-sm">The reverse route — exporting your pet from Dubai back to America.</p>
+              <p className="text-[#5A5A5A] text-sm">The reverse route: exporting your pet from Dubai back to America.</p>
             </Link>
             <Link to="/routes/uk-to-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
               <p className="font-bold text-[#2A2A2A] mb-1">UK to Dubai</p>
@@ -477,6 +466,22 @@ export default function USAToDubai() {
             <Link to="/routes/canada-to-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
               <p className="font-bold text-[#2A2A2A] mb-1">Canada to Dubai</p>
               <p className="text-[#5A5A5A] text-sm">Requirements and timeline for Canadian pet relocations.</p>
+            </Link>
+            <Link to="/service/pet-relocation-to-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">Pet relocation to Dubai</p>
+              <p className="text-[#5A5A5A] text-sm">Inbound service page for moves into the UAE.</p>
+            </Link>
+            <Link to="/service/moccae-pet-permit/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">MOCCAE permit</p>
+              <p className="text-[#5A5A5A] text-sm">Permit explainer. Validity is 90 days from issuance.</p>
+            </Link>
+            <Link to="/routes/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">All routes</p>
+              <p className="text-[#5A5A5A] text-sm">Corridor index.</p>
+            </Link>
+            <Link to="/guides/dubai-pet-arrival-guide/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">Dubai arrival guide</p>
+              <p className="text-[#5A5A5A] text-sm">What happens after cargo release.</p>
             </Link>
           </div>
         </div>

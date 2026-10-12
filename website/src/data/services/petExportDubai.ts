@@ -87,7 +87,7 @@ const petExportDubai: ServicePageData = {
           type: 'list',
           items: [
             'Applied for online via the MOCCAE portal (UAE Pass access required)',
-            'Government fee applies — confirm the current amount and validity window on the official MOCCAE portal (do not treat secondary blog numerals as official fees)',
+            'Government fee: figures on file for a personal consignment are AED 100, a stated service time of one working day, and validity of 30 days from issue. That 30-day life is the export certificate, not the import permit. Confirm the current fee, service time and 30-day export validity on the official portal',
             'Requires an in-person inspection at the airport with a MOCCAE government vet before the export is approved',
             'For EU and UK destinations, the travel certificate is issued by your vet first, then endorsed by MOCCAE',
             'The microchip number must match across the passport, vaccination records, Fit to Fly certificate and export certificate',
@@ -125,7 +125,7 @@ const petExportDubai: ServicePageData = {
       body: [
         {
           type: 'p',
-          text: 'This page does not publish a package total in AED. The quote depends on the destination, the animal, the crate and whether that country asks for an antibody test. Government export fees are confirmed on the MOCCAE portal when you apply. We do not treat secondary blog numerals as official fees.',
+          text: 'This page does not publish a package total. The quote depends on the destination, the animal, the crate and whether that country asks for an antibody test. For the export health certificate, figures on file for a personal consignment are AED 100, one working day, and 30 days validity from issue. That 30-day life is the export certificate, not the import permit. Confirm the current fee, service time and 30-day export validity on the official portal.',
         },
         {
           type: 'table',
@@ -133,7 +133,7 @@ const petExportDubai: ServicePageData = {
           rows: [
             ['Veterinary documentation', 'Quoted by the clinic. Not a package price.'],
             ['Fit to fly certificate', 'Quoted by the clinic. Not a package price.'],
-            ['MOCCAE export certificate', 'Government fee. Confirm the live amount. Not invented here.'],
+            ['MOCCAE export certificate', 'Government fee on file: AED 100 for a personal consignment, one working day, valid 30 days from issue. Confirm on the official portal. This is the export certificate, not the 90-day import permit.'],
             ['Rabies antibody test, if the destination requires one', 'Laboratory fee. Not a published AED band.'],
             ['Flight or cargo', 'Airline quote for that crate and date.'],
             ['Coordination', 'Quoted after eligibility. No package total on this page.'],
@@ -200,7 +200,7 @@ const petExportDubai: ServicePageData = {
     },
     {
       q: 'How much does it cost to export a pet from Dubai?',
-      a: 'This page does not publish a package total. Send destination and pet details on WhatsApp +971504782999 for a quote and a scoped export quote. Government export fees are confirmed on the portal. Packages are not printed as AED bands here.',
+      a: 'This page does not publish a package total. Send destination and pet details on WhatsApp +971504782999 for a quote. For the export health certificate, figures on file for a personal consignment are AED 100, one working day, and 30 days validity from issue. Confirm that government fee on the official portal. Packages are not printed as AED bands here.',
     },
     {
       q: 'How long does pet export from Dubai take?',
@@ -208,7 +208,7 @@ const petExportDubai: ServicePageData = {
     },
     {
       q: 'What is the MOCCAE export health certificate?',
-      a: 'It is the document that authorises your pet to leave the UAE. You apply online through the MOCCAE portal, and it becomes final only after a government veterinarian inspects your pet in person at the airport, scanning the microchip and reviewing your documents. Confirm current validity and the government fee on the official portal — secondary write-ups discuss a short window, but we do not publish those numerals as first-party facts. How-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
+      a: 'It is the document that authorises your pet to leave the UAE. You apply online through the MOCCAE portal, and it becomes final only after a government veterinarian inspects your pet in person at the airport, scanning the microchip and reviewing your documents. Figures on file for a personal consignment are AED 100, one working day, and 30 days validity from issue. That 30-day life is the export certificate, not the 90-day import permit. Confirm the current fee, service time and 30-day export validity on the official portal. How-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
     },
     {
       q: 'Does my pet need to be quarantined to leave the UAE?',

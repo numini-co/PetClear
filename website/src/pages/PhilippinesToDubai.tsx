@@ -1,21 +1,21 @@
 import SEOHead from '../components/SEOHead.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
-import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import { BASE_URL, LOGO_URL } from '../lib/seo.ts'
-import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint } from 'lucide-react'
+import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
 import RouteMoneyBodyLink from '../components/RouteMoneyBodyLink.tsx'
 import Hero from '../components/Hero.tsx'
 import RouteCostTeaser, { ROUTE_PACKAGE_COST_FAQ } from '../components/RouteCostTeaser.tsx'
 import LinkedText from '../components/LinkedText.tsx'
+import RouteBuyerFreeHelp from '../components/RouteBuyerFreeHelp.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 
 export default function PhilippinesToDubai() {
   const pageUrl = `${BASE_URL}/routes/philippines-to-dubai/`
-  const pageTitle = 'Pet Relocation Philippines to Dubai | Planning & Quote'
+  const pageTitle = 'Pet Relocation Philippines to Dubai: Titer, BAI Permit and Timeline'
   const pageDescription =
-    'Moving a dog or cat from Philippines to Dubai? Review documents, travel options and arrival planning, then request a quote for your pet and dates.'
+    'Moving a dog or cat from the Philippines to Dubai? Titre timing, export permit to confirm, MOCCAE permit valid 90 days and Manila cargo options. Get your route checked.'
   const faqs = [
     {
       question: 'Why is the Philippines classified as a high-risk country for pet import to Dubai?',
@@ -23,15 +23,15 @@ export default function PhilippinesToDubai() {
     },
     {
       question: 'What is the titer test (RNATT) and how long does it take for Philippine pets?',
-      answer: 'The RNATT is a blood test that measures your pet\'s rabies antibody levels. For Philippine pets, the blood sample must be drawn at least 21 days after a first rabies vaccination, or after a gap in vaccination. A valid booster does not need that wait and sent to an approved laboratory. The Philippines has limited accredited local labs, so samples are often sent to Singapore, Hong Kong, or international labs like IDEXX or Kansas State University. Results take 2–4 weeks. The rule is a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.'
+      answer: 'The titre test measures rabies antibodies. The blood sample is taken within 90 days before travel and must show at least 0.5 IU/ml. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. Your official vet authority confirms which laboratory can test the sample. This page does not name laboratories.'
     },
     {
       question: 'Which airlines fly pets from the Philippines to Dubai?',
-      answer: 'Philippine Airlines (PR/PAL), Emirates (EK), and Cebu Pacific (5J) operate pet cargo services from Manila (MNL) to Dubai (DXB). Philippine Airlines is the most common choice, with direct flights 9–10 hours. Emirates also offers connections from Manila via their hub. Cebu Pacific has limited pet cargo capacity and is generally suitable only for small pets. Dubai Pet Relocation books the optimal airline based on your pet\'s size, breed, and travel date.'
+      answer: 'Philippine Airlines and Emirates are the usual options people ask about on the Manila to Dubai corridor, with pets carried as cargo rather than in the cabin. Confirm current policy with the airline. Cebu Pacific pet cargo is not stated as available on this route until the airline confirms it. Space is limited and heat rules apply in the hottest months, so book early. We check live acceptance once your pet\'s documents are on track.'
     },
     {
-      question: 'How long does the Philippines to Dubai pet relocation process take?',
-      answer: 'Plan the calendar around the vaccination-to-test interval, lab turnaround, and the 365-day certificate: Month 1 — microchip and rabies vaccination (then wait at least 21 days after a first vaccine or a gap before the titer draw. A valid booster does not need that wait); Month 1–2 — titer blood draw and lab processing (2–4 weeks) so the certificate can stay valid for 365 days if the vaccine stays valid and no booster is given, ahead of the eventual travel date and read ≥ 0.5 IU/ml; Month 2–3 — apply for the UAE import permit (valid 90 days from issuance), obtain Philippine Bureau of Animal Industry (BAI) export permit and health certificate; then book flight, final health check, and travel. Do not sit 90 days after the draw. That wait is not the rule.'
+      question: 'How can I bring a pet from the Philippines to Dubai?',
+      answer: 'Plan for three to five months. Your vet implants an ISO microchip, vaccinates against rabies, then draws blood for a titre test that must show at least 0.5 IU/ml, taken within 90 days before travel. Apply for the MOCCAE import permit, valid 90 days from issuance, get the Philippine export health certificate and book cargo into Dubai. A Manila departure is simpler than a Cebu or Davao pet that first needs a domestic leg. Your official vet authority confirms the export certificate.'
     },
     {
       question: 'How much does it cost to relocate a pet from the Philippines to Dubai?',
@@ -39,11 +39,11 @@ export default function PhilippinesToDubai() {
     },
     {
       question: 'What documents are required for a Philippine pet to enter Dubai?',
-      answer: 'Required documents: (1) ISO-compliant microchip implanted before rabies vaccination; (2) valid rabies vaccination certificate (30+ days old before titer test); (3) Rabies Neutralising Antibody Titre Test (RNATT) certificate with result ≥ 0.5 IU/ml; (4) UAE import permit via MOCCAE; (5) Philippine Bureau of Animal Industry (BAI) export permit and health certificate issued within 10 days of travel; (6) copy of pet owner\'s passport and UAE visa. The titer test is the critical additional document required for high-risk countries like the Philippines.'
+      answer: 'Plan for an ISO microchip before the rabies vaccine, a rabies certificate, a titre of at least 0.5 IU/ml from a sample taken within 90 days before travel, a MOCCAE import permit valid 90 days from issuance, and a Philippine export health certificate. Your official vet authority confirms that export step. This page does not state a day-count for the certificate.'
     },
     {
-      question: 'Where can I get the titer test done in the Philippines?',
-      answer: 'The Philippines has a limited number of laboratories approved for the RNATT. The primary options are: (1) Sending blood samples to the Animal Health Laboratory in Singapore or Hong Kong; (2) Using international courier services to send samples to IDEXX (Germany/USA), Kansas State University (USA), or other WOAH-approved labs; (3) Some private veterinary clinics in Metro Manila have partnerships with accredited labs. Dubai Pet Relocation can coordinate the entire titer test process — from blood draw to courier to lab result — ensuring your sample reaches an approved facility on time.'
+      question: 'Does my pet need a titre test from the Philippines to Dubai?',
+      answer: 'In most cases yes, because the Philippines is treated as a higher-risk rabies origin for UAE import. The blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. If the result is low, a booster and a new sample are needed, so build in spare weeks. Confirm the current rule on the official MOCCAE portal. This page does not name laboratories. Your official vet authority confirms where the sample can be tested.'
     },
     {
       question: 'What happens when my pet arrives in Dubai from the Philippines?',
@@ -102,8 +102,8 @@ export default function PhilippinesToDubai() {
         fallbackSrc="/images/hero-philippines.jpg"
         imageAlt="Pet relocation from Philippines to Dubai"
         eyebrow="Philippines → Dubai"
-        title="Pet relocation from Philippines to Dubai"
-        subtitle="The Philippines is a high-risk country for rabies: when a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — not a wait-after-draw rule."
+        title="Pet Relocation from the Philippines to Dubai"
+        subtitle="The blood sample for a titre is taken within 90 days before travel and must read at least 0.5 IU/ml. The MOCCAE permit is valid 90 days from issuance."
         updated="Updated June 2026"
       />
 
@@ -114,7 +114,7 @@ export default function PhilippinesToDubai() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Route Overview</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Flying Your Pet from the Philippines to Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              The Philippines is a popular origin for Dubai-bound pets due to the large Filipino expat community. The flight is relatively short, but the high-risk status means extra documentation is required.
+              The bottleneck on this corridor is titre logistics, not the flight time. Manila (MNL) is the usual cargo airport. Cebu (CEB), Davao (DVO) and Clark (CRK) usually need a domestic leg into Manila before the international crate, and that domestic leg has to accept the animal. Confirm the current titre rule on the official MOCCAE portal.
             </p>
           </div>
 
@@ -141,7 +141,7 @@ export default function PhilippinesToDubai() {
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Risk Level</p>
               <p className="text-[#5A5A5A] text-sm">High-Risk</p>
-              <p className="text-[#D4A017] text-xs mt-2 font-medium">Rabies endemic — titer required</p>
+              <p className="text-[#D4A017] text-xs mt-2 font-medium">Rabies endemic: titer required</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
               <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -163,7 +163,7 @@ export default function PhilippinesToDubai() {
               <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Documentation</span>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2 mb-6">Documents Required for Philippines to Dubai</h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                Because the Philippines is a high-risk country, the documentation is more extensive than low-risk routes. The titer test and BAI export permit are the two most critical steps for Philippine pet owners.
+                Because the Philippines is a high-risk country, the documentation is more extensive than low-risk routes. Plan the titre sample within 90 days before travel, the MOCCAE import permit, and a Philippine export health certificate. Your official vet authority confirms the export step.
               </p>
               <RouteMoneyBodyLink path="/routes/philippines-to-dubai/" />
 
@@ -174,7 +174,7 @@ export default function PhilippinesToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">1. ISO-Compliant Microchip</p>
-                    <p className="text-[#5A5A5A] text-sm">15-digit ISO 11784/11785 microchip implanted before the rabies vaccination. Many Philippine vets use non-ISO chips (AVID/FISO) — a second ISO chip may be required. The chip number must be recorded on all subsequent documents.</p>
+                    <p className="text-[#5A5A5A] text-sm">15-digit ISO 11784/11785 microchip implanted before the rabies vaccination. Many Philippine vets use non-ISO chips (AVID/FISO): a second ISO chip may be required. The chip number must be recorded on all subsequent documents.</p>
                   </div>
                 </div>
 
@@ -184,7 +184,7 @@ export default function PhilippinesToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">2. Rabies Vaccination Certificate</p>
-                    <p className="text-[#5A5A5A] text-sm">Inactivated rabies vaccine administered at least 30 days before the titer test blood draw. The certificate must include the microchip number, vaccine batch, and date. Must be issued by a licensed Philippine veterinarian.</p>
+                    <p className="text-[#5A5A5A] text-sm">A first rabies vaccine, or a gap, needs at least 21 days before the blood sample. A valid booster does not. The certificate must include the microchip number, vaccine batch, and date.</p>
                   </div>
                 </div>
 
@@ -193,8 +193,8 @@ export default function PhilippinesToDubai() {
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p className="font-semibold text-[#2A2A2A] mb-1">3. Rabies Titer Test (RNATT) — CRITICAL</p>
-                    <p className="text-[#5A5A5A] text-sm">Blood sample drawn at least 21 days after a first rabies vaccination, or after a gap. A valid booster does not need that wait. Sent to an approved lab (Singapore, Hong Kong, or international). Result must be ≥ 0.5 IU/ml. The rule is a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.</p>
+                    <p className="font-semibold text-[#2A2A2A] mb-1">3. Rabies Titer Test (RNATT): CRITICAL</p>
+                    <p className="text-[#5A5A5A] text-sm">Blood sample taken within 90 days before travel, result at least 0.5 IU/ml. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. Your official vet authority confirms the laboratory. This page does not name labs.</p>
                   </div>
                 </div>
 
@@ -213,8 +213,8 @@ export default function PhilippinesToDubai() {
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p className="font-semibold text-[#2A2A2A] mb-1">5. Philippine BAI Export Permit & Health Certificate</p>
-                    <p className="text-[#5A5A5A] text-sm">No Objection Certificate and export health certificate from the Bureau of Animal Industry (BAI) of the Philippines, issued within 10 days of travel. The BAI vet inspects the pet, verifies the microchip, and issues the export clearance. This is mandatory for all pets leaving the Philippines.</p>
+                    <p className="font-semibold text-[#2A2A2A] mb-1">5. Philippine export health certificate</p>
+                    <p className="text-[#5A5A5A] text-sm">Plan for a Philippine export health certificate before the flight. Your official vet authority confirms the steps and the timing. This page does not state a day-count or an inspection script for that certificate.</p>
                   </div>
                 </div>
 
@@ -238,11 +238,11 @@ export default function PhilippinesToDubai() {
               <ul className="space-y-4 text-[#5A5A5A] text-sm leading-relaxed">
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>The titre rule is the certificate: use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. A passing result does not start a 90-day clock before travel. Start the vaccination-to-sample sequence as soon as the move date is real.</span>
+                  <span>When a titre is required, the blood sample is taken within 90 days before travel and must show at least 0.5 IU/ml. That is the sample date, not a wait after the draw. The MOCCAE import permit is a separate 90 days, counted from issuance.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>BAI offices in Manila can be busy during peak seasons (December–January and June–July). Book your BAI appointment at least 2 weeks before travel to avoid delays.</span>
+                  <span>Export timing is confirmed by your official vet authority. This page does not publish an appointment script or a day-count for the Philippine export certificate.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
@@ -250,16 +250,16 @@ export default function PhilippinesToDubai() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>Philippine Airlines (PAL) is the most reliable carrier for this route, but cargo space is limited. Book at least 3–4 weeks in advance, especially during the December holiday season.</span>
+                  <span>Philippine Airlines and Emirates are the carriers people ask about. Confirm current policy. Cebu Pacific pet cargo is not stated as available on this route.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>The titer test lab must be approved by the UAE. Sending samples to unapproved labs will result in rejection at Dubai customs. Dubai Pet Relocation verifies lab accreditation before sending samples.</span>
+                  <span>Your official vet authority names the laboratory. This page does not publish a lab list.</span>
                 </li>
               </ul>
               <div className="mt-6 p-4 bg-[#4F5BD5]/10 rounded-xl">
                 <p className="text-sm text-[#2A2A2A] font-medium">
-                  <span className="text-[#4F5BD5]">Pro tip:</span> If your pet's titer test result is below 0.5 IU/ml, a booster rabies vaccination is required, followed by another 30-day wait and a second titer test. This can add 2+ months to your timeline. Ensure your pet is healthy and not on any medication before the first blood draw.
+                  <span className="text-[#4F5BD5]">Pro tip:</span> If the result is below 0.5 IU/ml, a booster and a new sample are needed. Build in spare weeks. That is not a fixed wait after the first draw.
                 </p>
               </div>
             </div>
@@ -279,7 +279,7 @@ export default function PhilippinesToDubai() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Philippines to Dubai Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              High-risk files take longer because of the vaccination-to-sample interval and lab turnaround — not because you must sit 90 days after the draw. Schedule the sample so you keep a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.
+              High-risk files take longer because of the vaccination-to-sample interval and lab turnaround. The blood sample is taken within 90 days before travel and must read at least 0.5 IU/ml. That is not a wait after the draw.
             </p>
           </div>
 
@@ -290,25 +290,25 @@ export default function PhilippinesToDubai() {
                 {
                   week: 'Month 1',
                   title: 'Microchip, Rabies Vaccine & Titer Test Blood Draw',
-                  desc: 'Your Philippine vet implants an ISO microchip and administers a rabies vaccine. After 30 days, a blood sample is drawn for the titer test. The sample is sent to an approved lab (Singapore, Hong Kong, or international). Dubai Pet Relocation coordinates the blood draw and courier.',
+                  desc: 'Your vet implants an ISO microchip and gives a rabies vaccine. The blood sample for the titre is taken within 90 days before travel, after at least 21 days when the vaccine is a primary course. Your official vet authority confirms the laboratory. This page does not name labs.',
                   icon: Stethoscope
                 },
                 {
                   week: 'Month 1–2',
                   title: 'Titer Test Results & Sample Window',
-                  desc: 'Lab results arrive in 2–4 weeks. A passing result is ≥ 0.5 IU/ml. Keep the sample date inside 90 days before the actual travel date — do not treat a pass as a 90-day sit after the draw. Dubai Pet Relocation begins preparing the UAE import permit application during lab turnaround.',
+                  desc: 'A passing result is at least 0.5 IU/ml from a sample taken within 90 days before travel. Do not treat the draw as the start of a wait. Apply for the MOCCAE import permit, valid 90 days from issuance, once the travel month is real.',
                   icon: Shield
                 },
                 {
                   week: 'Month 3',
-                  title: 'Import Permit & BAI Export Permit Application',
-                  desc: 'Dubai Pet Relocation applies for the UAE import permit via MOCCAE. We also schedule your BAI appointment in Manila (or the nearest BAI office) for the export permit and health certificate. The BAI vet inspects the pet and issues clearance.',
+                  title: 'Import permit and export certificate',
+                  desc: 'Apply for the MOCCAE import permit, valid 90 days from issuance, and ask your official vet authority how the Philippine export health certificate is issued. We do not publish an appointment script for that office.',
                   icon: FileText
                 },
                 {
                   week: 'Month 4',
                   title: 'Flight Booking & Final Health Check',
-                  desc: 'When the titre certificate is still valid and the MOCCAE permit will cover the flight, Dubai Pet Relocation books cargo space with Philippine Airlines, Emirates, or Cebu Pacific. A final pre-flight health check is conducted. The IATA crate is delivered for acclimatisation. All documents are reviewed.',
+                  desc: 'When the titre sample is still inside 90 days before travel and the MOCCAE permit will cover the flight, confirm cargo with Philippine Airlines or Emirates. Cebu Pacific is confirm current policy. A final health check and the IATA crate come last.',
                   icon: Plane
                 },
                 {
@@ -344,7 +344,7 @@ export default function PhilippinesToDubai() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Airlines</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Airlines Flying Pets from the Philippines to Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              Philippine Airlines dominates this route with direct flights. Emirates and Cebu Pacific offer alternatives depending on your pet's size and budget.
+              Philippine Airlines and Emirates are the carriers to confirm for Manila. Emirates itineraries ending in Dubai carry animals as cargo. Cebu Pacific is confirm current policy, not a stated pet option on this page.
             </p>
           </div>
 
@@ -356,16 +356,16 @@ export default function PhilippinesToDubai() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-[#2A2A2A]">Philippine Airlines (PR)</h3>
-                  <p className="text-sm text-[#5A5A5A]">PAL Cargo — Direct MNL-DXB</p>
+                  <p className="text-sm text-[#5A5A5A]">PAL Cargo: Direct MNL-DXB</p>
                 </div>
               </div>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Direct flights MNL → DXB (9–10 hours)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Most reliable for Philippine pet exports</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Good rates for medium-sized pets</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Limited cargo space — book early</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> People ask about Manila to Dubai cargo</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Confirm current policy before you book</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> A passenger ticket is not crate acceptance</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Heat rules still apply in the hottest months</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">Philippine Airlines is the go-to carrier for most Filipino pet owners relocating to Dubai. Their direct route eliminates connection risks and reduces total travel time.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">Philippine Airlines pet cargo is confirm current policy. Do not treat a direct passenger flight as crate acceptance.</p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
@@ -375,16 +375,16 @@ export default function PhilippinesToDubai() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-[#2A2A2A]">Emirates (EK)</h3>
-                  <p className="text-sm text-[#5A5A5A]">SkyCargo — via Dubai Hub</p>
+                  <p className="text-sm text-[#5A5A5A]">SkyCargo: via Dubai Hub</p>
                 </div>
               </div>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Connections from MNL via DXB</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Best for large dogs and brachycephalic breeds</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Priority animal handling</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Higher freight rates than PAL</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Itineraries ending in Dubai are SkyCargo</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Animals travel as cargo, not in the cabin</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Confirm the flight and the crate desk</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> No freight comparison is published here</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">Emirates is the best option for large dogs or breeds that Philippine Airlines cannot accommodate. Their SkyCargo service is more expensive but offers superior animal handling.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">Emirates cargo into Dubai is the product to confirm. A passenger ticket is not crate acceptance.</p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
@@ -394,16 +394,16 @@ export default function PhilippinesToDubai() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-[#2A2A2A]">Cebu Pacific (5J)</h3>
-                  <p className="text-sm text-[#5A5A5A]">Limited Pet Cargo</p>
+                  <p className="text-sm text-[#5A5A5A]">Confirm current policy</p>
                 </div>
               </div>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Budget option for small pets</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Limited to cats and small dogs</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Restricted crate size limits</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Not available on all routes</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Pet cargo is not stated as accepted here</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> No crate-size claim is published here</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Confirm with the airline before any booking</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> A passenger fare is not crate acceptance</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">Cebu Pacific is the cheapest option for small cats and dogs, but cargo capacity is very limited. Dubai Pet Relocation confirms availability before recommending this carrier.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">Cebu Pacific pet cargo is not confirmed on this route. Do not book on the assumption the airline accepts a crate to Dubai.</p>
             </div>
           </div>
 
@@ -413,7 +413,7 @@ export default function PhilippinesToDubai() {
               Seasonal Considerations for Philippine Pet Travel
             </h3>
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-              Philippine summers (March–May) are extremely hot and humid, which can affect ground handling at NAIA and cargo hold conditions. Dubai Pet Relocation recommends booking early morning flights (6–9 AM) to avoid peak heat. During typhoon season (June–October), flight delays and cancellations are common — plan buffer days around your travel date.
+              Philippine summers (March–May) are extremely hot and humid, which can affect ground handling at NAIA and cargo hold conditions. Dubai Pet Relocation recommends booking early morning flights (6–9 AM) to avoid peak heat. During typhoon season (June–October), flight delays and cancellations are common: plan buffer days around your travel date.
             </p>
             <p className="text-[#5A5A5A] text-sm leading-relaxed">
               Peak relocation season for Filipino pets is December–January, when many families travel during the Christmas and New Year holidays. PAL cargo space fills 3–4 weeks in advance during this period. Start the vaccination-to-sample sequence early enough that the titer draw will still be valid under the 365-day certificate rule if the vaccine stays valid and no booster is given, for the flight you actually book.
@@ -449,38 +449,11 @@ export default function PhilippinesToDubai() {
       <OfficialSources />
 
       {/* CTA */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="bg-[#3A45B0] rounded-[20px] p-8 lg:p-12 text-center text-white">
-            <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet from the Philippines to Dubai?</h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              Dubai Pet Relocation has helped many Filipino families move their pets to Dubai. From Manila, Cebu, Davao, or anywhere in the Philippines — we manage the titer test, BAI permit, flight booking, and Dubai customs.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <WhatsAppBtn label="Get a Philippines to Dubai quote" message="Hi, I want to relocate my pet from the Philippines to Dubai. Can you help me understand the titer test process and cost?" />
-              <a href={`${BASE_URL}/how-it-works/`} className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-semibold text-[#2A2A2A] bg-white hover:bg-[#F5F5F5] transition-colors">
-                <Info className="w-5 h-5" />
-                How It Works
-              </a>
-            </div>
-            <div className="mt-8 grid sm:grid-cols-3 gap-4 text-left">
-              <a href={`${BASE_URL}/guides/pet-relocation-cost-dubai/`} className="block p-4 bg-white/10 rounded-xl hover:bg-white/15 transition-colors">
-                <p className="font-semibold text-white mb-1">Cost Guide</p>
-                <p className="text-sm text-white/70">Full breakdown of pet relocation costs in Dubai</p>
-              </a>
-              <a href={`${BASE_URL}/guides/uae-pet-import-requirements/`} className="block p-4 bg-white/10 rounded-xl hover:bg-white/15 transition-colors">
-                <p className="font-semibold text-white mb-1">Import Requirements</p>
-                <p className="text-sm text-white/70">UAE rules for bringing pets into the country</p>
-              </a>
-              <a href={`${BASE_URL}/dog-relocation-to-dubai/`} className="block p-4 bg-white/10 rounded-xl hover:bg-white/15 transition-colors">
-                <p className="font-semibold text-white mb-1">Dog Relocation</p>
-                <p className="text-sm text-white/70">Specific guidance for relocating dogs to Dubai</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <RouteBuyerFreeHelp
+        tone="band"
+        buyerMessage="Hello Dubai Pet Relocation. I want Get Route Checked for Philippines to Dubai. I will send the pet, the Philippine city and the target month."
+        freeMessage="Hello Dubai Pet Relocation. I would like a free eligibility check for Philippines to Dubai, not a paid quote yet. I will send the pet and the target month."
+      />
 
       {/* Related Routes & Next Steps */}
       <section className="py-16 lg:py-24 bg-white">
@@ -504,7 +477,23 @@ export default function PhilippinesToDubai() {
             </Link>
             <Link to="/routes/dubai-to-philippines/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
               <p className="font-bold text-[#2A2A2A] mb-1">Exporting from Dubai to the Philippines</p>
-              <p className="text-[#5A5A5A] text-sm">The outbound twin — SPSIC and destination rules, not this inbound file.</p>
+              <p className="text-[#5A5A5A] text-sm">The outbound twin. Destination rules first, not this inbound file.</p>
+            </Link>
+            <Link to="/routes/indonesia-to-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">Indonesia to Dubai</p>
+              <p className="text-[#5A5A5A] text-sm">Sibling corridor with its own origin paperwork.</p>
+            </Link>
+            <Link to="/routes/thailand-to-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">Thailand to Dubai</p>
+              <p className="text-[#5A5A5A] text-sm">Sibling corridor with its own origin paperwork.</p>
+            </Link>
+            <Link to="/service/pet-relocation-to-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">Pet relocation to Dubai</p>
+              <p className="text-[#5A5A5A] text-sm">The inbound service page for the move into Dubai.</p>
+            </Link>
+            <Link to="/service/moccae-pet-permit/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">MOCCAE pet permit</p>
+              <p className="text-[#5A5A5A] text-sm">Permit help. Validity is 90 days from issuance.</p>
             </Link>
           </div>
         </div>
@@ -518,6 +507,8 @@ export default function PhilippinesToDubai() {
             <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#4F5BD5] hover:underline">Cost Guide</Link>
             <span className="text-[#EBEBEB]">|</span>
             <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] hover:underline">Import Requirements</Link>
+            <span className="text-[#EBEBEB]">|</span>
+            <Link to="/routes/" className="text-[#4F5BD5] hover:underline">All routes</Link>
             <span className="text-[#EBEBEB]">|</span>
             <Link to="/how-it-works/" className="text-[#4F5BD5] hover:underline">How It Works</Link>
             <span className="text-[#EBEBEB]">|</span>
