@@ -6,7 +6,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
  countryKey: 'saudi-arabia',
  title: 'Pet Relocation Saudi Arabia to Dubai: MEWA Exit, MOCCAE Entry',
  meta: 'Moving a pet from Riyadh, Jeddah or Dammam to Dubai? MEWA exit permit via Anaam, MOCCAE permit valid 90 days, and air options. Get your route checked.',
- h1: 'Pet Relocation from Saudi Arabia to Dubai',
+ h1: 'Pet relocation from Saudi Arabia to Dubai',
  heroAlt: 'Dog with Saudi flag cue ready for pet relocation from Saudi Arabia to Dubai',
  intro:
  'Moving a pet from Saudi Arabia to Dubai is a short flight with two permits. Residents changing postings still need a Saudi exit and a UAE entry. Most dogs and cats leave from Riyadh (RUH), Jeddah (JED) or Dammam (DMM). Madinah (MED) only counts when that airport accepts a live animal.\n\nMEWA issues exit and return permits for pets travelling with their owners through the Anaam platform, also called Naama. If you plan to bring the pet back to the Kingdom, the published return window is 60 days. Arrange that so it overlaps the MOCCAE import permit, which is valid for 90 days from issuance. The pet must enter the UAE inside the MOCCAE window.\n\nUAE clearance is usually manifest cargo at DXB or DWC. A road crossing is sometimes discussed for the Eastern Province. This page does not treat a land border as a confirmed pet route. Confirm any drive with the Saudi and UAE authorities. Inter-emirate taxis inside Dubai are a different service: [pet transport in Dubai](/service/pet-transport-dubai/).',
@@ -15,7 +15,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
  'A pet flying from Riyadh (RUH) or Jeddah (JED) into Dubai should be planned as manifest cargo, not as cabin baggage. Most dogs and cats clear at Dubai International (DXB) or Al Maktoum (DWC). Abu Dhabi (AUH) is the Etihad cabin case, and only when that product is confirmed on the ticket. Hold a MOCCAE import permit that is still inside its 90 days from issuance on the day the pet lands. The Saudi health certificate, the microchip, and the air waybill need the same identity and the same airport code. Confirm the live-animal rule with Saudia, flynas, Emirates, Etihad, or Qatar Airways before you pay for the crate. A short sector from the Kingdom does not change the UAE arrival rule.',
  hubCardDesc: 'Riyadh, Jeddah or Dammam export into Dubai cargo, on a 90-day MOCCAE import permit.',
  rulesSpecialties:
- 'Pet relocation from Riyadh to Dubai, and the same job from Jeddah or Dammam, is two ministries. MEWA exit is requested on Anaam (Naama) for a pet travelling with the owner. A return to Saudi Arabia, if you need one, must fit the published 60-day return window. That product is not a one-way relocation. UAE entry is the MOCCAE import permit, valid 90 days from issuance.\n\nAsk the vet for a health certificate that matches the ISO microchip and the rabies vaccination, and for a carrier that will take a live crate at RUH, JED, DMM, or MED if that desk is open. Saudia publishes its own pet page. Treat any portal registration step as something to confirm with the airline. We do not state it as a condition of UAE entry.\n\nIf the portal asks for a rabies titre, the blood sample is taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is the sample date, not a wait after the draw. Confirm whether a Saudi origin is exempt before you book the draw. flydubai does not carry ordinary pets in the cabin. Other pets move as cargo, and you still confirm that your flight accepts the animal. Emirates itineraries ending in Dubai are SkyCargo, not cabin.',
+ 'Pet relocation from Riyadh to Dubai, and the same job from Jeddah or Dammam, is two ministries. MEWA exit is requested on Anaam (Naama) for a pet travelling with the owner. A return to Saudi Arabia, if you need one, must fit the published 60-day return window. That product is not a one-way relocation. UAE entry is the MOCCAE import permit, valid 90 days from issuance.\n\nAsk the vet for a health certificate that matches the ISO microchip and the rabies vaccination, and for a carrier that will take a live crate at RUH, JED, DMM, or MED if that desk is open. Saudia publishes its own pet page. Treat any portal registration step as something to confirm with the airline. We do not state it as a condition of UAE entry.\n\nIf the portal asks for a rabies titre, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. Confirm whether a Saudi origin is exempt before you book the draw. flydubai does not carry ordinary pets in the cabin. Other pets move as cargo, and you still confirm that your flight accepts the animal. Emirates itineraries ending in Dubai are SkyCargo, not cabin.',
  difficulties:
  'The files that stall usually miss a date, not a stamp. A passenger seat from Riyadh or Jeddah can be booked while the MOCCAE permit uses up its 90 days before cargo space exists. Jeddah is harder when pilgrimage dates fill the apron and the veterinary desk. Keep the import permit as the 90-day clock. If a rabies antibody test is required, follow the certificate rule in the questions below rather than treating the blood draw as the start of a long wait. A crate built for King Khalid (RUH) can be refused at King Fahd (DMM) the same week if the product differs. Madinah (MED) is a named alternate. An Umrah ticket does not prove a live-animal desk there. flynas is listed as confirm, so accept it only after the airline says yes. A Qatar Airways link via DOH adds a transfer that a direct cargo plan to DXB avoids.',
  howItWorks:
@@ -43,7 +43,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
  {
  question: 'When is the rabies titre sample taken for Saudi to Dubai?',
  answer:
- 'Confirm on the official MOCCAE portal whether a Saudi origin needs a titre. If it does, the blood sample is taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is the sample date, not a wait after the draw. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not.',
+ 'Confirm on the official MOCCAE portal whether a Saudi origin needs a titre. If it does, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not.',
  },
  {
  question: 'How much does a Saudi Arabia to Dubai pet relocation cost?',
@@ -63,7 +63,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
  {
  question: 'Do I need a MEWA permit to take my pet out of Saudi Arabia?',
  answer:
- 'Yes. MEWA issues exit and return permits for pets travelling with their owners through the Anaam platform, and a return must happen within 60 days if you plan to bring the pet back. Arrange this alongside the MOCCAE import permit so both windows overlap with your flight date. We can check the timing in a free eligibility review.',
+ 'Yes. MEWA issues exit and return permits for pets travelling with their owners through the Anaam platform, and a return must happen within 60 days if you plan to bring the pet back. Arrange this alongside the MOCCAE import permit so both windows overlap with your flight date. Read the import guide before you lock both dates.',
  },
  {
  question: 'Do I apply for a MEWA import permit to enter Dubai?',
@@ -198,7 +198,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
  {
  question: 'When is the titer sample drawn for Qatar → Dubai?',
  answer:
- 'When a rabies antibody test is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise repeat the test. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. The blood sample is taken within 90 days before travel, not as a wait after the draw. Confirm on the MOCCAE portal whether a Qatari origin is exempt before the blood draw.',
+ 'When a rabies antibody test is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise repeat the test. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. This is not a 90-day sample window. Confirm on the MOCCAE portal whether a Qatari origin is exempt before the blood draw.',
  },
  {
  question: 'How much does a Qatar to Dubai pet move cost?',
@@ -342,7 +342,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
  {
  question: 'When should a titer sample be drawn for Oman → Dubai?',
  answer:
- 'When a rabies antibody test is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise repeat the test. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. The blood sample is taken within 90 days before travel, not as a wait after the draw. Confirm on the MOCCAE portal whether an Omani origin is exempt before the blood draw.',
+ 'When a rabies antibody test is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise repeat the test. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. This is not a 90-day sample window. Confirm on the MOCCAE portal whether an Omani origin is exempt before the blood draw.',
  },
  {
  question: 'How much does an Oman to Dubai pet relocation cost?',
@@ -485,7 +485,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
  {
  question: 'What is the rabies titre certificate rules from Bahrain?',
  answer:
- 'When a rabies antibody test is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise repeat the test. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. The blood sample is taken within 90 days before travel, not as a wait after the draw. Confirm on the MOCCAE portal whether a Bahraini origin is exempt before the blood draw.',
+ 'When a rabies antibody test is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise repeat the test. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. This is not a 90-day sample window. Confirm on the MOCCAE portal whether a Bahraini origin is exempt before the blood draw.',
  },
  {
  question: 'How much does Bahrain to Dubai pet relocation cost?',
@@ -627,7 +627,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
  {
  question: 'What is the titer rule for Kuwait → Dubai?',
  answer:
- 'When a rabies antibody test is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise repeat the test. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. The blood sample is taken within 90 days before travel, not as a wait after the draw. Confirm on the MOCCAE portal whether a Kuwaiti origin is exempt before the blood draw.',
+ 'When a rabies antibody test is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise repeat the test. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. This is not a 90-day sample window. Confirm on the MOCCAE portal whether a Kuwaiti origin is exempt before the blood draw.',
  },
  {
  question: 'How much does a Kuwait to Dubai pet relocation cost?',
@@ -769,7 +769,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
  {
  question: 'When is the titer sample taken for Egypt → Dubai?',
  answer:
- 'When a rabies antibody test is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise repeat the test. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. The blood sample is taken within 90 days before travel, not as a wait after the draw. Confirm on the MOCCAE portal whether an Egyptian origin is exempt before the blood draw.',
+ 'When a rabies antibody test is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise repeat the test. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. This is not a 90-day sample window. Confirm on the MOCCAE portal whether an Egyptian origin is exempt before the blood draw.',
  },
  {
  question: 'How much does an Egypt to Dubai pet relocation cost?',

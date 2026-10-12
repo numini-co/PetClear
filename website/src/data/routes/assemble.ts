@@ -27,7 +27,7 @@ const UAE_AIRPORTS_INBOUND: UaeAirport[] = [
     iata: 'AUH',
     city: 'Abu Dhabi',
     notes:
-      'Relevant when the itinerary uses Etihad. Cabin into AUH is an airline- and route-specific exception. Confirm current policy.',
+      'Relevant when the itinerary uses Etihad. Cabin into AUH is an airline- and OD-specific exception — confirm current policy.',
   },
 ]
 
@@ -46,7 +46,7 @@ const UAE_AIRPORTS_OUTBOUND: UaeAirport[] = [
   {
     iata: 'AUH',
     city: 'Abu Dhabi',
-    notes: 'Alternate UAE departure when Etihad routing is used. Confirm the live pet product.',
+    notes: 'Alternate UAE departure when Etihad routing is used — confirm the live pet product.',
   },
 ]
 
@@ -57,13 +57,13 @@ function inboundUaeRules(countryName: string): UaeRules {
     titerMinIUml: 0.5,
     manifestCargoDefault: true,
     bullets: [
-      `Obtain a MOCCAE import permit before the pet leaves ${countryName}. The permit is valid for 90 days from issuance, and the animal must enter the UAE within that window.`,
-      'UAE entry for most dogs and cats is as manifest cargo under IATA live-animal conditions (cabin into Dubai is not the default). Etihad cabin into Abu Dhabi is a published exception for eligible small pets. Confirm current policy.',
-      'ISO 11784/11785 microchip must match the health certificate. Implant the chip before the rabies vaccination used for UAE import.',
-      'When a rabies antibody test is required, the blood sample is taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is the date of the sample, not a wait after the draw. A first vaccine, or a gap in vaccination, needs at least 21 days before the test. A valid booster does not.',
-      'Confirm on the official MOCCAE portal whether this origin is on the current rabies-controlled or exempt list before you skip a titre. We do not publish an unverified exempt-country list.',
-      'Government-endorsed origin health certificate and parasite treatments must meet MOCCAE timing. Verify current portal requirements before flight week.',
-      'MOCCAE permit and on-arrival release fees: confirm on the official portal. We do not publish fee numerals here.',
+      `Obtain a MOCCAE import permit before the pet leaves ${countryName}; the permit is valid for 90 days from issuance — the animal must enter the UAE within that window.`,
+      'UAE entry for most dogs and cats is as manifest cargo under IATA live-animal conditions (cabin into Dubai is not the default). Etihad cabin into Abu Dhabi is a published exception for eligible small pets — confirm current policy.',
+      'ISO 11784/11785 microchip must match the health certificate; implant the chip before the rabies vaccination used for UAE import.',
+      'When a rabies antibody test is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. A first vaccine, or a gap in vaccination, needs at least 21 days before the test. A valid booster does not. This is not a 90-day pre-travel sample window.',
+      'Confirm on the official MOCCAE portal whether this origin is on the current rabies-controlled / exempt list before you skip a titer. We do not publish an unverified exempt-country list.',
+      'Government-endorsed origin health certificate and parasite treatments must meet MOCCAE timing — verify current portal requirements before flight week.',
+      'MOCCAE and on-arrival release fee amounts: confirm on the official portal — we do not publish fee numerals here.',
     ],
     disclaimer:
       'Rules summarised from the regulatory source of truth. Always re-check MOCCAE and your airline before travel. Dubai Pet Relocation is not affiliated with MOCCAE or any airline.',
@@ -77,11 +77,11 @@ function outboundUaeRules(): UaeRules {
     titerMinIUml: 0.5,
     manifestCargoDefault: true,
     bullets: [
-      'Leaving the UAE needs MOCCAE exit documentation (veterinary health certificate or export pathway via MOCCAE digital services). Plan this after destination rules are clear.',
-      'Export health certificate validity is commonly a short window. The source of truth cites 30 days from issue for the export certificate pathway. Verify that 30-day export window on the MOCCAE portal before you book. It is not the 90-day import permit.',
+      'Leaving the UAE needs MOCCAE exit documentation (veterinary health certificate / export pathway via MOCCAE digital services) — plan this after destination rules are clear.',
+      'Export health certificate validity is commonly a short window (SOT cites 30 days from issue for the export-certificate pathway — verify on the MOCCAE portal before you book).',
       'Do not reuse inbound MOCCAE import-permit logic for an outbound move. A 90-day import permit is for entering the UAE, not for leaving it.',
-      'Airline acceptance leaving Dubai can differ from the inbound product on the same brand. Confirm current policy for the outbound origin and destination pair.',
-      'No package or government fee numerals on this page. Confirm fees on official portals. Dubai Pet Relocation quotes on request.',
+      'Airline acceptance leaving Dubai can differ from the inbound product on the same brand — confirm current policy for the outbound origin-destination pair.',
+      'No package or government fee numerals on this page — confirm fees on official portals; Dubai Pet Relocation quotes on request.',
     ],
     disclaimer:
       'UAE exit rules summarised at high level. Re-verify on the MOCCAE portal. Dubai Pet Relocation is not affiliated with MOCCAE or any airline.',
@@ -104,12 +104,22 @@ function twinHref(slug: string): string | null {
   return `/routes/${twin}/`
 }
 
+/** Week 7 inbound routes only. Other slugs keep main's CTA and related links. */
+const WEEK7_INBOUND = new Set([
+  'uk-to-dubai',
+  'usa-to-dubai',
+  'india-to-dubai',
+  'philippines-to-dubai',
+  'germany-to-dubai',
+  'france-to-dubai',
+  'saudi-arabia-to-dubai',
+  'singapore-to-dubai',
+])
+
 const EXTRA_RELATED: Record<string, RouteRelatedLink[]> = {
-  'uk-to-dubai': [],
   'germany-to-dubai': [
     { label: 'Netherlands to Dubai (sibling corridor)', href: '/routes/netherlands-to-dubai/' },
     { label: 'MOCCAE permit page', href: '/service/moccae-pet-permit/' },
-    { label: 'Pet relocation to Dubai', href: '/service/pet-relocation-to-dubai/' },
   ],
   'france-to-dubai': [
     { label: 'Spain to Dubai (sibling corridor)', href: '/routes/spain-to-dubai/' },
@@ -219,7 +229,7 @@ function mapAirports(countryKey: string, direction: 'inbound' | 'outbound'): Rou
   const role = direction === 'inbound' ? 'export' : 'import_gateway'
   return seed.airports.map((a) => ({
     iata: a.iata,
-    city: a.city === 'via HK note' ? 'Hong Kong (routing note, not a China domestic airport)' : a.city,
+    city: a.city === 'via HK note' ? 'Hong Kong (routing note — not a China domestic airport)' : a.city,
     role: a.iata === 'HKG' && countryKey === 'china' ? 'note' : role,
     notes:
       a.iata === 'HKG' && countryKey === 'china'
@@ -259,7 +269,7 @@ function mapAirlines(countryKey: string, direction: 'inbound' | 'outbound'): Rou
   return seed.airlines.map((a) => {
     const qatarGuard =
       countryKey === 'qatar'
-        ? ' This corridor page is not a Qatar Airways pet-policy guide. Confirm Qatar Airways live-animal rules on the carrier’s official page. For UAE cabin and cargo products see our Etihad and Emirates guides.'
+        ? ' This corridor page is not a Qatar Airways pet-policy guide — confirm QA live-animal rules on the carrier’s official page; for UAE cabin/cargo products see our Etihad and Emirates guides.'
         : ''
     return {
       name: a.name,
@@ -329,7 +339,7 @@ export function assembleRoute(copy: RouteUniqueCopy): RoutePageData {
     depthBar: 'OWNER ≥1000 unique',
     wordCountEstimate,
     cta: {
-      label: direction === 'inbound' ? 'Get Route Checked' : 'Tell us about your move',
+      label: WEEK7_INBOUND.has(copy.slug) ? 'Get Route Checked' : 'Tell us about your move',
       whatsapp: '+971504782999',
       note: 'Share the pet, the route and the dates. We explain the next step and any assessment fee before paid work starts.',
     },

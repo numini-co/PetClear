@@ -13,7 +13,7 @@ type Props = {
 const MODE_LABEL: Record<RouteAirline['mode'], string> = {
   cabin: 'Cabin (confirm seats/eligibility)',
   cargo: 'Manifest cargo / SkyCargo-style',
-  cabin_or_cargo: 'Cabin or cargo: confirm for this route',
+  cabin_or_cargo: 'Cabin or cargo — confirm for this OD',
   generally_not: 'Generally does not accept pets',
   confirm: 'Confirm current pet policy',
 }
@@ -32,11 +32,11 @@ export default function RouteAirportsAirlinesBlock({
       <div className="mx-auto max-w-[1200px] space-y-12 px-5 sm:px-6 lg:px-8">
         <div>
           <h2 className="text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
-            Main airports: {countryName} {direction === 'inbound' ? 'to the UAE' : 'from Dubai'}
+            Main airports — {countryName} {direction === 'inbound' ? '→ UAE' : '← from Dubai'}
           </h2>
           <p className="mt-3 max-w-3xl text-base leading-relaxed text-[#5A5A5A]">
             {airportsNarrative ||
-              'Pets on this corridor typically move through the airports below. UAE clearance for most dogs and cats is via cargo pathways at DXB and/or DWC. Abu Dhabi (AUH) appears when the itinerary uses Etihad cabin rules. Airport names are routing facts, not a partnership claim.'}
+              'Pets on this corridor typically move through the airports below. UAE clearance for most dogs and cats is via cargo pathways at DXB and/or DWC; Abu Dhabi (AUH) appears when the itinerary uses Etihad cabin rules. Airport names are routing facts — not a partnership claim.'}
           </p>
           <div className="mt-6 overflow-x-auto rounded-[20px] border border-[#E6E8F5]">
             <table className="min-w-full text-sm">
@@ -56,7 +56,7 @@ export default function RouteAirportsAirlinesBlock({
                       {a.city}
                       {a.notes ? <span className="mt-1 block text-xs text-[#8A8A8A]">{a.notes}</span> : null}
                     </td>
-                    <td className="px-4 py-3 text-[#5A5A5A]">{a.role || 'n/a'}</td>
+                    <td className="px-4 py-3 text-[#5A5A5A]">{a.role || '—'}</td>
                     <td className="px-4 py-3 text-[#5A5A5A]">{countryName}</td>
                   </tr>
                 ))}
@@ -82,7 +82,7 @@ export default function RouteAirportsAirlinesBlock({
           </h2>
           <p className="mt-3 max-w-3xl text-base leading-relaxed text-[#5A5A5A]">
             {airlinesNarrative ||
-              'Modes below have to be confirmed against the airline’s current pet policy for your exact itinerary. Dubai Pet Relocation is a coordinator, not an airline, and not an affiliate of any carrier listed.'}
+              'Modes below have to be confirmed against the airline’s current pet policy for your exact itinerary. Dubai Pet Relocation is a coordinator — not an airline, and not an official partner of any carrier listed.'}
           </p>
           <div className="mt-6 overflow-x-auto rounded-[20px] border border-[#E6E8F5]">
             <table className="min-w-full text-sm">

@@ -17,13 +17,13 @@ const waIndia = waEligibility({ origin: 'India', need: 'managed move' })
 
 export default function IndiaToDubai() {
   const pageUrl = `${BASE_URL}/routes/india-to-dubai/`
-  const pageTitle = 'Pet Relocation India to Dubai: Titer, AQCS and Timeline'
+  const pageTitle = 'Pet Relocation India to Dubai: Titre, AQCS and Timeline'
   const pageDescription =
     'Moving a dog or cat from India to Dubai? Titre timing, export certificate to confirm, MOCCAE permit valid 90 days, and cargo options. Get your route checked.'
   const faqs = [
     {
       question: 'How do I bring a dog to Dubai from India?',
-      answer: 'Start about four months out. Your vet implants an ISO microchip and gives a rabies vaccine, then a blood sample goes to an approved lab for a titre test that must show at least 0.5 IU/ml and be taken within 90 days before travel. Next comes the MOCCAE import permit, valid 90 days from issuance, the Indian export certificate and a cargo booking into Dubai. Your official vet authority confirms the export step. Reverse twin: [/routes/dubai-to-india/](/routes/dubai-to-india/).',
+      answer: 'Start about four months out. Your vet implants an ISO microchip and gives a rabies vaccine, then a blood sample goes to an approved lab for a titre test. The result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. Next comes the MOCCAE import permit, valid 90 days from issuance, the Indian export certificate and a cargo booking into Dubai. Your official vet authority confirms the export step. Reverse twin: [/routes/dubai-to-india/](/routes/dubai-to-india/).',
     },
     {
       question: 'Why is India classified as a high-risk country for pet import to Dubai?',
@@ -31,7 +31,7 @@ export default function IndiaToDubai() {
     },
     {
       question: 'What is the titre test and when is the sample taken?',
-      answer: 'The titre test measures rabies antibodies. For a move to Dubai the blood sample is taken within 90 days before travel and must show at least 0.5 IU/ml. That is the sample date, not a wait after the draw. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. Your official vet authority names an approved lab. This page does not publish a lab list.'
+      answer: 'The titre test measures rabies antibodies. For a move to Dubai the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. Your official vet authority names an approved lab. This page does not publish a lab list.'
     },
     {
       question: 'Which airlines fly pets from India to Dubai?',
@@ -39,7 +39,7 @@ export default function IndiaToDubai() {
     },
     {
       question: 'How long does the India to Dubai pet relocation process take?',
-      answer: 'A vaccinated adult with a passing titre already in hand is often a shorter file than a new puppy. The sample must still sit within 90 days before travel and read at least 0.5 IU/ml. Then apply for the MOCCAE permit, valid 90 days from issuance, and the Indian export certificate your official vet authority confirms. A puppy needs the microchip, a primary rabies vaccine, at least 21 days before the sample, lab time, and spare weeks if the result is low. These are typical shapes, not promises.'
+      answer: 'A vaccinated adult with a passing titre already in hand is often a shorter file than a new puppy. The result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. Then apply for the MOCCAE permit, valid 90 days from issuance, and the Indian export certificate your official vet authority confirms. A puppy needs the microchip, a primary rabies vaccine, at least 21 days before the sample, lab time, and spare weeks if the result is low. These are typical shapes, not promises.'
     },
     {
       question: 'How much does pet relocation from India to Dubai cost?',
@@ -47,7 +47,7 @@ export default function IndiaToDubai() {
     },
     {
       question: 'What documents are required for an Indian pet to enter Dubai?',
-      answer: 'Plan for an ISO microchip before the rabies vaccine, a rabies certificate, a titre result of at least 0.5 IU/ml from a sample taken within 90 days before travel, a MOCCAE import permit valid 90 days from issuance, and an Indian export health certificate. Your official vet authority confirms the export step at the departure airport. This page does not state a day-count for that certificate.'
+      answer: 'Plan for an ISO microchip before the rabies vaccine, a rabies certificate, and a titre result of at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. This is not a 90-day sample window. You also need a MOCCAE import permit valid 90 days from issuance, and an Indian export health certificate. Your official vet authority confirms the export step at the departure airport. This page does not state a day-count for that certificate.'
     },
     {
       question: 'What is AQCS clearance for pets?',
@@ -110,8 +110,8 @@ export default function IndiaToDubai() {
         fallbackSrc="/images/hero-india.jpg"
         imageAlt="Pet relocation from India to Dubai"
         eyebrow="India → Dubai"
-        title="Pet Relocation from India to Dubai"
-        subtitle="When a titre is required, the blood sample is taken within 90 days before travel and must read at least 0.5 IU/ml. The MOCCAE permit is valid 90 days from issuance."
+        title="Pet relocation from India to Dubai"
+        subtitle="When a titre is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. The MOCCAE permit is valid 90 days from issuance."
         updated="Updated June 2026"
         primaryLabel="Get Route Checked"
         whatsappMessage={waIndia}
@@ -169,7 +169,7 @@ export default function IndiaToDubai() {
       <GuideFunnelCta
         variant="mid"
         title="DIY this corridor, or hand the import file over"
-        subtitle="This page explains the India-to-Dubai titer window and documents. DIY the sequence here, or open pet import / MOCCAE permit assistance when you want the file managed. Permit validity: 90 days from issuance. Titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given, when a titer is required. Confirm portal fees on the official site."
+        subtitle="This page explains the India-to-Dubai titre certificate and documents. DIY the sequence here, or open pet import / MOCCAE permit assistance when you want the file managed. Permit validity: 90 days from issuance. Titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given, when a titre is required. Confirm portal fees on the official site."
         eligibilityMessage={waIndia}
         waLabel="Check India-to-Dubai eligibility"
         links={[
@@ -186,7 +186,7 @@ export default function IndiaToDubai() {
               <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Documentation</span>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2 mb-6">Documents Required for India to Dubai</h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                Because India is a high-risk country, the documentation is more extensive than low-risk routes. Plan the titre sample within 90 days before travel, the MOCCAE import permit, and an Indian export health certificate. Your official vet authority confirms the export step.
+                Because India is a high-risk country, the documentation is more extensive than low-risk routes. Plan the titre certificate (valid 365 days if the vaccine stays valid and continuous and no booster is given; this is not a 90-day sample window), the MOCCAE import permit, and an Indian export health certificate. Your official vet authority confirms the export step.
               </p>
               <RouteMoneyBodyLink path="/routes/india-to-dubai/" />
 
@@ -217,7 +217,7 @@ export default function IndiaToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">3. Rabies Titer Test (RNATT): CRITICAL</p>
-                    <p className="text-[#5A5A5A] text-sm">Blood sample taken within 90 days before travel, result at least 0.5 IU/ml. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. The lab is whichever your official vet authority accepts. This page does not name laboratories.</p>
+                    <p className="text-[#5A5A5A] text-sm">Result at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. This is not a 90-day sample window. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. The lab is whichever your official vet authority accepts. This page does not name laboratories.</p>
                   </div>
                 </div>
 
@@ -261,7 +261,7 @@ export default function IndiaToDubai() {
               <ul className="space-y-4 text-[#5A5A5A] text-sm leading-relaxed">
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>When a titre is required, the blood sample is taken within 90 days before travel and must show at least 0.5 IU/ml. That is the sample date, not a wait after the draw. The MOCCAE import permit is a separate 90 days, counted from issuance.</span>
+                  <span>When a titre is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. The MOCCAE import permit is a separate 90 days, counted from issuance.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
@@ -302,7 +302,7 @@ export default function IndiaToDubai() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">India to Dubai Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              High-risk files take longer because of the vaccination-to-sample interval and lab turnaround. The blood sample is taken within 90 days before travel and must read at least 0.5 IU/ml. That is not a wait after the draw.
+              High-risk files take longer because of the vaccination-to-sample interval and lab turnaround. The result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window.
             </p>
           </div>
 
@@ -313,13 +313,13 @@ export default function IndiaToDubai() {
                 {
                   week: 'Month 1',
                   title: 'Microchip, Rabies Vaccine & Titer Test Blood Draw',
-                  desc: 'Your Indian vet implants an ISO microchip and gives a rabies vaccine. The blood sample is taken within 90 days before travel, after at least 21 days when the vaccine is a primary course. Your official vet authority names the laboratory. This page does not name labs.',
+                  desc: 'Your Indian vet implants an ISO microchip and gives a rabies vaccine. A first vaccine, or a gap, needs at least 21 days before the test. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. This is not a 90-day sample window. Your official vet authority names the laboratory. This page does not name labs.',
                   icon: Stethoscope
                 },
                 {
                   week: 'Month 1–2',
                   title: 'Titer Test Results & Sample Window',
-                  desc: 'A passing result is at least 0.5 IU/ml from a sample taken within 90 days before travel. Do not treat the draw as the start of a wait. Apply for the MOCCAE import permit, valid 90 days from issuance, once the travel month is real.',
+                  desc: 'A passing result is at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. This is not a 90-day sample window. Apply for the MOCCAE import permit, valid 90 days from issuance, once the travel month is real.',
                   icon: Shield
                 },
                 {
@@ -331,7 +331,7 @@ export default function IndiaToDubai() {
                 {
                   week: 'Month 4',
                   title: 'Flight Booking & Final Health Check',
-                  desc: 'When the titre sample is still inside 90 days before travel and the MOCCAE permit will cover the flight, confirm cargo. Emirates itineraries ending in Dubai carry animals as cargo. Air India and IndiGo are confirm current policy. A final health check and the IATA crate come last.',
+                  desc: 'When the titre certificate is still valid and the MOCCAE permit will cover the flight, confirm cargo. Emirates itineraries ending in Dubai carry animals as cargo. Air India and IndiGo are confirm current policy. A final health check and the IATA crate come last.',
                   icon: Plane
                 },
                 {
@@ -439,7 +439,7 @@ export default function IndiaToDubai() {
               Indian summers (April–July) see extreme temperatures that affect both ground handling at Indian airports and cargo hold conditions. Dubai Pet Relocation recommends booking early morning flights (6–9 AM) to avoid peak heat. During monsoon season (July–September), flight delays are common: plan buffer days around your travel date.
             </p>
             <p className="text-[#5A5A5A] text-sm leading-relaxed">
-              December and January are busy travel months. Keep the titre sample inside 90 days before the flight you actually book, with a result of at least 0.5 IU/ml. That timing is the sample date, not a wait after the draw.
+              December and January are busy travel months. Keep a titre result of at least 0.5 IU/ml on a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. This is not a 90-day sample window.
             </p>
           </div>
         </div>
@@ -471,11 +471,7 @@ export default function IndiaToDubai() {
 
       <OfficialSources />
 
-      <RouteBuyerFreeHelp
-        tone="band"
-        buyerMessage={waIndia}
-        freeMessage="Hello Dubai Pet Relocation. I would like a free eligibility check for India to Dubai, not a paid quote yet. I will send the pet, the Indian city and the target month."
-      />
+      <RouteBuyerFreeHelp tone="band" buyerMessage={waIndia} />
 
       {/* Related Routes & Next Steps */}
       <section className="py-16 lg:py-24 bg-white">
@@ -515,7 +511,7 @@ export default function IndiaToDubai() {
             </Link>
             <Link to="/guides/rabies-titer-test-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
               <p className="font-bold text-[#2A2A2A] mb-1">Rabies titre test</p>
-              <p className="text-[#5A5A5A] text-sm">Sample within 90 days before travel, at least 0.5 IU/ml.</p>
+              <p className="text-[#5A5A5A] text-sm">Titre certificate valid 365 days, at least 0.5 IU/ml. Not a 90-day sample window.</p>
             </Link>
           </div>
         </div>

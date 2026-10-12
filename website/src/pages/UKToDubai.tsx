@@ -56,7 +56,7 @@ export default function UKToDubai() {
     {
       question: 'Does a pet from the UK need a rabies titre test for Dubai?',
       answer:
-        'Usually not, because the UK is treated as a lower-risk rabies origin for UAE import. MOCCAE sets the rule, so confirm on the official portal when you apply for the permit. If a titre test is ever required for your file, the blood sample must be taken within 90 days before travel and show at least 0.5 IU/ml. It is never a wait after the draw. Timing notes: [/guides/rabies-titer-test-dubai/](/guides/rabies-titer-test-dubai/).',
+        'Usually not, because the UK is treated as a lower-risk rabies origin for UAE import. MOCCAE sets the rule, so confirm on the official portal when you apply for the permit. If a titre test is ever required for your file, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. Timing notes: [/guides/rabies-titer-test-dubai/](/guides/rabies-titer-test-dubai/).',
     },
     {
       question: 'Which airlines carry pets from the UK to Dubai?',
@@ -159,7 +159,7 @@ export default function UKToDubai() {
         imageAlt="Pet relocation from the UK to Dubai"
         fallbackSrc="/images/hero-uk.jpg"
         eyebrow="United Kingdom to Dubai"
-        title="Pet Relocation from the UK to Dubai"
+        title="Pet relocation from the UK to Dubai"
         subtitle="Confirm on the official MOCCAE portal whether a UK origin needs a titre. You still need a permit valid 90 days from issuance, a UK export health certificate, and cargo into Dubai."
         updated={`Checked ${CHECKED}`}
         whatsappMessage={WA}
@@ -458,11 +458,7 @@ export default function UKToDubai() {
         checkedLabel={`Checked ${CHECKED} against the primary pages linked here. This is a source check for the wording on this route. It is not a veterinary certificate.`}
       />
 
-      <RouteBuyerFreeHelp
-        tone="band"
-        buyerMessage={WA}
-        freeMessage="Hello Dubai Pet Relocation. I would like a free eligibility check for UK to Dubai, not a paid quote yet. I will send the pet and the target month."
-      />
+      <RouteBuyerFreeHelp tone="band" buyerMessage={WA} />
 
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">

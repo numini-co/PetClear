@@ -18,11 +18,11 @@ export default function USAToDubai() {
   const faqs = [
     {
       question: 'Can I bring a dog to Dubai from the USA?',
-      answer: 'Yes. US-origin dogs and cats can enter the UAE with an ISO microchip, a valid rabies vaccination, a MOCCAE import permit issued no more than 90 days before arrival, and a health certificate from an accredited vet that has been government endorsed. Confirm the endorsement path with your official vet authority. Pets land as manifest cargo. Some breeds are restricted, so start with a free eligibility check before booking anything. Rules: [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/).',
+      answer: 'Yes. US-origin dogs and cats can enter the UAE with an ISO microchip, a valid rabies vaccination, a MOCCAE import permit issued no more than 90 days before arrival, and a health certificate from an accredited vet that has been government endorsed. Confirm the endorsement path with your official vet authority. Pets land as manifest cargo. Some breeds are restricted, so read the import requirements before booking anything. Rules: [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/).',
     },
     {
       question: 'Is the USA low-risk for pet import to Dubai?',
-      answer: 'Confirm on the official MOCCAE portal before you skip a titre. This page does not publish an exempt-country list. If a titre is required, the blood sample is taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is the sample date, not a wait after the draw.'
+      answer: 'Confirm on the official MOCCAE portal before you skip a titre. This page does not publish an exempt-country list. If a titre is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window.'
     },
     {
       question: 'Which airlines fly pets from the USA to Dubai?',
@@ -30,7 +30,7 @@ export default function USAToDubai() {
     },
     {
       question: 'How long does it take to move a pet from the USA to Dubai?',
-      answer: 'Allow about 4 to 8 weeks for a typical healthy adult pet with current vaccinations. The main steps are the MOCCAE permit, the accredited vet exam, government endorsement and a cargo booking that fits heat rules. Puppies, new vaccinations or restricted breeds take longer. An East Coast direct routing is not the same clock as a West Coast summer connection. Use the free eligibility check to see which timeline applies to you.'
+      answer: 'Allow about 4 to 8 weeks for a typical healthy adult pet with current vaccinations. The main steps are the MOCCAE permit, the accredited vet exam, government endorsement and a cargo booking that fits heat rules. Puppies, new vaccinations or restricted breeds take longer. An East Coast direct routing is not the same clock as a West Coast summer connection. The import guide shows which timeline applies.'
     },
     {
       question: 'How much does it cost to relocate a pet from the USA to Dubai?',
@@ -105,7 +105,7 @@ export default function USAToDubai() {
         imageAlt="Pet relocation from USA to Dubai"
         fallbackSrc="/images/hero-usa.jpg"
         eyebrow="United States → Dubai"
-        title="Pet Relocation from the USA to Dubai"
+        title="Pet relocation from the USA to Dubai"
         subtitle="Confirm the titre rule on the official MOCCAE portal. The import permit is valid 90 days from issuance. Pets on itineraries ending in Dubai travel as cargo."
         updated="Last verified: 22 September 2026"
       />
@@ -345,7 +345,7 @@ export default function USAToDubai() {
             </p>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-10">Bringing a cat from the USA to Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-3xl">
-              Cats use the same microchip, rabies vaccine, endorsed health certificate and 90-day MOCCAE permit as dogs. They are not on the dog breed ban list. A cat does not travel in the cabin on an itinerary ending in Dubai. Emirates carries those animals as cargo. If a titre is required, the blood sample is taken within 90 days before travel and must show at least 0.5 IU/ml.
+              Cats use the same microchip, rabies vaccine, endorsed health certificate and 90-day MOCCAE permit as dogs. They are not on the dog breed ban list. A cat does not travel in the cabin on an itinerary ending in Dubai. Emirates carries those animals as cargo. If a titre is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window.
             </p>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-10">If you may return to the United States</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-3xl">
@@ -440,7 +440,6 @@ export default function USAToDubai() {
       <RouteBuyerFreeHelp
         tone="band"
         buyerMessage="Hello Dubai Pet Relocation. I want Get Route Checked for USA to Dubai. I will send the pet, the US airport and the target month."
-        freeMessage="Hello Dubai Pet Relocation. I would like a free eligibility check for USA to Dubai, not a paid quote yet. I will send the pet and the target month."
       />
 
       {/* Related Routes & Next Steps */}

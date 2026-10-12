@@ -19,7 +19,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
  countryKey: 'france',
  title: 'Pet Relocation France to Dubai: Certificate, Airlines and Timeline',
  meta: 'Moving a dog or cat from France to Dubai? Official vet certificate, MOCCAE permit valid 90 days, Air France and Emirates cargo. Get your route checked.',
- h1: 'Pet Relocation from France to Dubai',
+ h1: 'Pet relocation from France to Dubai',
  heroAlt: 'Dog with French flag cue ready for pet relocation from France to Dubai',
  intro:
  'Pet relocation from France to Dubai is usually a Paris file. Most dogs and cats leave as cargo from Paris Charles de Gaulle (CDG). Paris Orly (ORY), Lyon (LYS), Nice (NCE) and Marseille (MRS) count only when that airport accepts the crate on the day you need.\n\nThe French paperwork is an export health certificate from an official vet, then an endorsement your state veterinary service will confirm. We do not name a departmental office process that is not logged from a first-party page. The UAE side is a MOCCAE import permit valid for 90 days from issuance. The pet must enter the UAE inside that window. A French pet passport, or the animal health certificate used for travel inside Europe, does not replace either document. Confirm on the official MOCCAE portal whether this origin needs a titre.',
@@ -28,7 +28,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
  'You need French export papers, a live-animal booking, and a MOCCAE import permit that is still valid when the pet lands. The permit lasts 90 days from issuance. Paris Charles de Gaulle (CDG) is the airport to book first. Paris Orly (ORY), Lyon (LYS) and Nice (NCE) work only after that airport accepts the crate. Air France may offer cabin or cargo. Emirates, Etihad and Qatar Airways are listed as cargo. Plan cargo clearance at Dubai International (DXB) or Al Maktoum / Dubai World Central (DWC), then ask the handler where to collect after the veterinary release.',
  hubCardDesc: 'French export from Paris Charles de Gaulle into Dubai cargo, on a 90-day MOCCAE import permit.',
  rulesSpecialties:
- 'France to Dubai is a Paris-led export into a UAE import, and it is not a copy of the Germany page. The French file starts with an official vet who examines the animal and writes the export health certificate for the UAE, not the Great Britain or EU pet-travel form used for a weekend in another EU country. Endorsement by the state veterinary service is a step your official vet authority will confirm. Do not treat a departmental acronym as a published checklist on this page.\n\nThe MOCCAE import permit is valid for 90 days from issuance. The pet must land inside that window. Check the official portal before you treat a French origin as exempt from a rabies titre. If a titre is required, the blood sample is taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is the sample date, not a wait after the draw.\n\nCDG is the airport to plan first. ORY, LYS, NCE and MRS each need a live-animal yes. Emirates itineraries ending in Dubai are cargo. Air France and any KLM connection via Amsterdam stay on confirm current policy. If you may return to France later, the UAE is on the European Commission list that can skip a titre for non-commercial EU entry. That is the return rule. Read [Dubai to France](/routes/dubai-to-france/).',
+ 'France to Dubai is a Paris-led export into a UAE import, and it is not a copy of the Germany page. The French file starts with an official vet who examines the animal and writes the export health certificate for the UAE, not the Great Britain or EU pet-travel form used for a weekend in another EU country. Endorsement by the state veterinary service is a step your official vet authority will confirm. Do not treat a departmental acronym as a published checklist on this page.\n\nThe MOCCAE import permit is valid for 90 days from issuance. The pet must land inside that window. Check the official portal before you treat a French origin as exempt from a rabies titre. If a titre is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window.\n\nCDG is the airport to plan first. ORY, LYS, NCE and MRS each need a live-animal yes. Emirates itineraries ending in Dubai are cargo. Air France and any KLM connection via Amsterdam stay on confirm current policy. If you may return to France later, the UAE is on the European Commission list that can skip a titre for non-commercial EU entry. That is the return rule. Read [Dubai to France](/routes/dubai-to-france/).',
  difficulties:
  'The booking usually fails on the airport. A passenger ticket from Nice (NCE) or Paris Orly (ORY) does not open a crate desk, and many long-haul pets still leave from Paris Charles de Gaulle (CDG). Lyon (LYS) is useful only when the carrier confirms a desk that week. Air France cabin rules inside Europe do not place the dog in the cabin into Dubai. Emirates, Etihad and Qatar Airways are listed as cargo, and a Qatar Airways connection in Doha needs its own live-animal acceptance. The permit fails when the flight slips past 90 days from issuance. The microchip on the French papers must be the chip on the MOCCAE file. In Dubai, collect from cargo at Dubai International (DXB) or Al Maktoum / Dubai World Central (DWC). Abu Dhabi (AUH) applies only to an Etihad itinerary. Tell us about your move before you pay for a seat the airline has not accepted for the animal.',
  howItWorks:
@@ -66,7 +66,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
  {
  question: 'When must the rabies titre blood be drawn for France to Dubai?',
  answer:
- 'Confirm on the official MOCCAE portal before you skip a titre for a French origin. If a test is required, the blood sample is taken within 90 days before travel and the result must be at least 0.5 IU/ml. That is the sample date, not a wait after the draw. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not.',
+ 'Confirm on the official MOCCAE portal before you skip a titre for a French origin. If a test is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not.',
  },
  {
  question: 'Is a French pet passport enough for UAE entry?',
@@ -86,7 +86,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
  {
  question: 'How do I get a quote for France to Dubai pet relocation?',
  answer:
- 'Get Route Checked after a free eligibility check. Tell us the pet, the French airport and your dates on WhatsApp +971504782999 or the quote form. [What changes the cost](/guides/pet-relocation-cost-dubai/) lists drivers only. Say whether the crate leaves Paris Charles de Gaulle (CDG), Orly (ORY), Lyon (LYS), Nice (NCE) or a confirmed Marseille desk. No package total is printed here.',
+ 'Get Route Checked with the pet, the French airport and your dates on WhatsApp +971504782999 or the quote form. [What changes the cost](/guides/pet-relocation-cost-dubai/) lists drivers only. Say whether the crate leaves Paris Charles de Gaulle (CDG), Orly (ORY), Lyon (LYS), Nice (NCE) or a confirmed Marseille desk. No package total is printed here.',
  },
  ],
  },
@@ -204,7 +204,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
  {
  question: 'When is the rabies titer sample taken for Turkey to Dubai?',
  answer:
- 'Check the MOCCAE portal before you skip a rabies antibody test for a Turkish origin. When a test is required, the result must be at least 0.5 IU/ml; the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given; otherwise repeat the test; a first vaccine or a gap needs at least 21 days before the test, and a valid booster does not; the blood sample is taken within 90 days before travel, not as a wait after the draw.',
+ 'Check the MOCCAE portal before you skip a rabies antibody test for a Turkish origin. When a test is required, the result must be at least 0.5 IU/ml; the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given; otherwise repeat the test; a first vaccine or a gap needs at least 21 days before the test, and a valid booster does not; this is not a 90-day sample window.',
  },
  {
  question: 'Can I use a Turkish pet passport instead of MOCCAE papers?',
@@ -351,7 +351,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
  {
  question: 'When should the titer blood be drawn for Spain to Dubai?',
  answer:
- 'Check the MOCCAE portal before you skip a rabies antibody test for a Spanish origin. When a test is required, the result must be at least 0.5 IU/ml; the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given; otherwise repeat the test; a first vaccine or a gap needs at least 21 days before the test, and a valid booster does not; the blood sample is taken within 90 days before travel, not as a wait after the draw.',
+ 'Check the MOCCAE portal before you skip a rabies antibody test for a Spanish origin. When a test is required, the result must be at least 0.5 IU/ml; the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given; otherwise repeat the test; a first vaccine or a gap needs at least 21 days before the test, and a valid booster does not; this is not a 90-day sample window.',
  },
  {
  question: 'Is a Spanish EU pet passport enough for UAE entry?',
@@ -479,7 +479,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
  {
  question: 'When must the titer sample be drawn for the Netherlands to Dubai?',
  answer:
- 'Check the MOCCAE portal before you skip a rabies antibody test for a Dutch origin. When a test is required, the result must be at least 0.5 IU/ml; the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given; otherwise repeat the test; a first vaccine or a gap needs at least 21 days before the test, and a valid booster does not; the blood sample is taken within 90 days before travel, not as a wait after the draw.',
+ 'Check the MOCCAE portal before you skip a rabies antibody test for a Dutch origin. When a test is required, the result must be at least 0.5 IU/ml; the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given; otherwise repeat the test; a first vaccine or a gap needs at least 21 days before the test, and a valid booster does not; this is not a 90-day sample window.',
  },
  {
  question: 'Is a Dutch EU pet passport enough for UAE entry?',
@@ -617,7 +617,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
  {
  question: 'When should the titer blood be drawn for Italy to Dubai?',
  answer:
- 'Check the MOCCAE portal before you skip a rabies antibody test for an Italian origin. When a test is required, the result must be at least 0.5 IU/ml; the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given; otherwise repeat the test; a first vaccine or a gap needs at least 21 days before the test, and a valid booster does not; the blood sample is taken within 90 days before travel, not as a wait after the draw.',
+ 'Check the MOCCAE portal before you skip a rabies antibody test for an Italian origin. When a test is required, the result must be at least 0.5 IU/ml; the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given; otherwise repeat the test; a first vaccine or a gap needs at least 21 days before the test, and a valid booster does not; this is not a 90-day sample window.',
  },
  {
  question: 'Is an Italian EU pet passport enough for UAE entry?',
@@ -750,7 +750,7 @@ export const EUROPE_COPY: RouteUniqueCopy[] = [
  {
  question: 'When should the titer blood be drawn for Ireland to Dubai?',
  answer:
- 'Check the MOCCAE portal before you skip a rabies antibody test for an Irish origin. When a test is required, the result must be at least 0.5 IU/ml; the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given; otherwise repeat the test; a first vaccine or a gap needs at least 21 days before the test, and a valid booster does not; the blood sample is taken within 90 days before travel, not as a wait after the draw.',
+ 'Check the MOCCAE portal before you skip a rabies antibody test for an Irish origin. When a test is required, the result must be at least 0.5 IU/ml; the certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given; otherwise repeat the test; a first vaccine or a gap needs at least 21 days before the test, and a valid booster does not; this is not a 90-day sample window.',
  },
  {
  question: 'Is an Irish EU pet passport enough for UAE entry?',

@@ -13,7 +13,7 @@ import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 
 export default function PhilippinesToDubai() {
   const pageUrl = `${BASE_URL}/routes/philippines-to-dubai/`
-  const pageTitle = 'Pet Relocation Philippines to Dubai: Titer, BAI Permit and Timeline'
+  const pageTitle = 'Pet Relocation Philippines to Dubai: Titre, BAI Permit and Timeline'
   const pageDescription =
     'Moving a dog or cat from the Philippines to Dubai? Titre timing, export permit to confirm, MOCCAE permit valid 90 days and Manila cargo options. Get your route checked.'
   const faqs = [
@@ -23,7 +23,7 @@ export default function PhilippinesToDubai() {
     },
     {
       question: 'What is the titer test (RNATT) and how long does it take for Philippine pets?',
-      answer: 'The titre test measures rabies antibodies. The blood sample is taken within 90 days before travel and must show at least 0.5 IU/ml. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. Your official vet authority confirms which laboratory can test the sample. This page does not name laboratories.'
+      answer: 'The titre test measures rabies antibodies. The result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. Your official vet authority confirms which laboratory can test the sample. This page does not name laboratories.'
     },
     {
       question: 'Which airlines fly pets from the Philippines to Dubai?',
@@ -31,7 +31,7 @@ export default function PhilippinesToDubai() {
     },
     {
       question: 'How can I bring a pet from the Philippines to Dubai?',
-      answer: 'Plan for three to five months. Your vet implants an ISO microchip, vaccinates against rabies, then draws blood for a titre test that must show at least 0.5 IU/ml, taken within 90 days before travel. Apply for the MOCCAE import permit, valid 90 days from issuance, get the Philippine export health certificate and book cargo into Dubai. A Manila departure is simpler than a Cebu or Davao pet that first needs a domestic leg. Your official vet authority confirms the export certificate.'
+      answer: 'Plan for three to five months. Your vet implants an ISO microchip, vaccinates against rabies, then draws blood for a titre test. The result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. Apply for the MOCCAE import permit, valid 90 days from issuance, get the Philippine export health certificate and book cargo into Dubai. A Manila departure is simpler than a Cebu or Davao pet that first needs a domestic leg. Your official vet authority confirms the export certificate.'
     },
     {
       question: 'How much does it cost to relocate a pet from the Philippines to Dubai?',
@@ -39,11 +39,11 @@ export default function PhilippinesToDubai() {
     },
     {
       question: 'What documents are required for a Philippine pet to enter Dubai?',
-      answer: 'Plan for an ISO microchip before the rabies vaccine, a rabies certificate, a titre of at least 0.5 IU/ml from a sample taken within 90 days before travel, a MOCCAE import permit valid 90 days from issuance, and a Philippine export health certificate. Your official vet authority confirms that export step. This page does not state a day-count for the certificate.'
+      answer: 'Plan for an ISO microchip before the rabies vaccine, a rabies certificate, and a titre of at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. This is not a 90-day sample window. You also need a MOCCAE import permit valid 90 days from issuance, and a Philippine export health certificate. Your official vet authority confirms that export step. This page does not state a day-count for the certificate.'
     },
     {
       question: 'Does my pet need a titre test from the Philippines to Dubai?',
-      answer: 'In most cases yes, because the Philippines is treated as a higher-risk rabies origin for UAE import. The blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. If the result is low, a booster and a new sample are needed, so build in spare weeks. Confirm the current rule on the official MOCCAE portal. This page does not name laboratories. Your official vet authority confirms where the sample can be tested.'
+      answer: 'In most cases yes, because the Philippines is treated as a higher-risk rabies origin for UAE import. The result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. If the result is low, a booster and a new sample are needed, so build in spare weeks. Confirm the current rule on the official MOCCAE portal. This page does not name laboratories. Your official vet authority confirms where the sample can be tested.'
     },
     {
       question: 'What happens when my pet arrives in Dubai from the Philippines?',
@@ -102,8 +102,8 @@ export default function PhilippinesToDubai() {
         fallbackSrc="/images/hero-philippines.jpg"
         imageAlt="Pet relocation from Philippines to Dubai"
         eyebrow="Philippines → Dubai"
-        title="Pet Relocation from the Philippines to Dubai"
-        subtitle="The blood sample for a titre is taken within 90 days before travel and must read at least 0.5 IU/ml. The MOCCAE permit is valid 90 days from issuance."
+        title="Pet relocation from the Philippines to Dubai"
+        subtitle="When a titre is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. The MOCCAE permit is valid 90 days from issuance."
         updated="Updated June 2026"
       />
 
@@ -163,7 +163,7 @@ export default function PhilippinesToDubai() {
               <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Documentation</span>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2 mb-6">Documents Required for Philippines to Dubai</h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                Because the Philippines is a high-risk country, the documentation is more extensive than low-risk routes. Plan the titre sample within 90 days before travel, the MOCCAE import permit, and a Philippine export health certificate. Your official vet authority confirms the export step.
+                Because the Philippines is a high-risk country, the documentation is more extensive than low-risk routes. Plan the titre certificate (valid 365 days if the vaccine stays valid and continuous and no booster is given; this is not a 90-day sample window), the MOCCAE import permit, and a Philippine export health certificate. Your official vet authority confirms the export step.
               </p>
               <RouteMoneyBodyLink path="/routes/philippines-to-dubai/" />
 
@@ -194,7 +194,7 @@ export default function PhilippinesToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">3. Rabies Titer Test (RNATT): CRITICAL</p>
-                    <p className="text-[#5A5A5A] text-sm">Blood sample taken within 90 days before travel, result at least 0.5 IU/ml. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. Your official vet authority confirms the laboratory. This page does not name labs.</p>
+                    <p className="text-[#5A5A5A] text-sm">Result at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. This is not a 90-day sample window. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. Your official vet authority confirms the laboratory. This page does not name labs.</p>
                   </div>
                 </div>
 
@@ -238,7 +238,7 @@ export default function PhilippinesToDubai() {
               <ul className="space-y-4 text-[#5A5A5A] text-sm leading-relaxed">
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>When a titre is required, the blood sample is taken within 90 days before travel and must show at least 0.5 IU/ml. That is the sample date, not a wait after the draw. The MOCCAE import permit is a separate 90 days, counted from issuance.</span>
+                  <span>When a titre is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. The MOCCAE import permit is a separate 90 days, counted from issuance.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
@@ -279,7 +279,7 @@ export default function PhilippinesToDubai() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Philippines to Dubai Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              High-risk files take longer because of the vaccination-to-sample interval and lab turnaround. The blood sample is taken within 90 days before travel and must read at least 0.5 IU/ml. That is not a wait after the draw.
+              High-risk files take longer because of the vaccination-to-sample interval and lab turnaround. The result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window.
             </p>
           </div>
 
@@ -290,13 +290,13 @@ export default function PhilippinesToDubai() {
                 {
                   week: 'Month 1',
                   title: 'Microchip, Rabies Vaccine & Titer Test Blood Draw',
-                  desc: 'Your vet implants an ISO microchip and gives a rabies vaccine. The blood sample for the titre is taken within 90 days before travel, after at least 21 days when the vaccine is a primary course. Your official vet authority confirms the laboratory. This page does not name labs.',
+                  desc: 'Your vet implants an ISO microchip and gives a rabies vaccine. A first vaccine, or a gap, needs at least 21 days before the test. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. This is not a 90-day sample window. Your official vet authority confirms the laboratory. This page does not name labs.',
                   icon: Stethoscope
                 },
                 {
                   week: 'Month 1–2',
                   title: 'Titer Test Results & Sample Window',
-                  desc: 'A passing result is at least 0.5 IU/ml from a sample taken within 90 days before travel. Do not treat the draw as the start of a wait. Apply for the MOCCAE import permit, valid 90 days from issuance, once the travel month is real.',
+                  desc: 'A passing result is at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. This is not a 90-day sample window. Apply for the MOCCAE import permit, valid 90 days from issuance, once the travel month is real.',
                   icon: Shield
                 },
                 {
@@ -308,7 +308,7 @@ export default function PhilippinesToDubai() {
                 {
                   week: 'Month 4',
                   title: 'Flight Booking & Final Health Check',
-                  desc: 'When the titre sample is still inside 90 days before travel and the MOCCAE permit will cover the flight, confirm cargo with Philippine Airlines or Emirates. Cebu Pacific is confirm current policy. A final health check and the IATA crate come last.',
+                  desc: 'When the titre certificate is still valid and the MOCCAE permit will cover the flight, confirm cargo with Philippine Airlines or Emirates. Cebu Pacific is confirm current policy. A final health check and the IATA crate come last.',
                   icon: Plane
                 },
                 {
@@ -452,7 +452,6 @@ export default function PhilippinesToDubai() {
       <RouteBuyerFreeHelp
         tone="band"
         buyerMessage="Hello Dubai Pet Relocation. I want Get Route Checked for Philippines to Dubai. I will send the pet, the Philippine city and the target month."
-        freeMessage="Hello Dubai Pet Relocation. I would like a free eligibility check for Philippines to Dubai, not a paid quote yet. I will send the pet and the target month."
       />
 
       {/* Related Routes & Next Steps */}

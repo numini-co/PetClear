@@ -20,11 +20,11 @@ export default function RouteCostTeaser({
         <div className="text-center mb-12">
           <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Pricing</span>
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">
-            {corridor} costs: official fees and a quote
+            {corridor} costs — official fees and a quote
           </h2>
           <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
             We do not publish total package bands on this page. Cargo, crate and coordination depend on the live file.
-            Official MOCCAE permit and release charges are government fees. Confirm live amounts on the official portal. Fees may change. We do not publish contested numerals as current fact.
+            Official MOCCAE permit and release charges are government fees — confirm live amounts on the portal; fees may change. We do not publish contested numerals as current fact.
             Confirm each airline’s current pet acceptance before booking.
           </p>
           <RoutePlanLinks />
@@ -57,8 +57,8 @@ export default function RouteCostTeaser({
           </div>
           <div className="px-6 py-5 bg-[#F5F6FD] border-t border-[#EBEBEB] space-y-4">
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
-              Confirm on the official MOCCAE portal. Fees may change. For cargo, crate and coordination drivers, not a
-              package total, read the{' '}
+              Confirm on the official MOCCAE portal; fees may change. For cargo, crate and coordination drivers — not a
+              package total — read the{' '}
               <Link to="/guides/pet-relocation-cost-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
                 pet relocation cost guide
               </Link>
