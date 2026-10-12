@@ -7,8 +7,9 @@ import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
 import RouteMoneyBodyLink from '../components/RouteMoneyBodyLink.tsx'
 import Hero from '../components/Hero.tsx'
-import RouteCostTeaser, { ROUTE_PACKAGE_COST_FAQ } from '../components/RouteCostTeaser.tsx'
+import RouteCostTeaser from '../components/RouteCostTeaser.tsx'
 import LinkedText from '../components/LinkedText.tsx'
+import RouteBuyerFreeHelp from '../components/RouteBuyerFreeHelp.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { waEligibility } from '../lib/conversionCopy.ts'
 
@@ -16,41 +17,41 @@ const waIndia = waEligibility({ origin: 'India', need: 'managed move' })
 
 export default function IndiaToDubai() {
   const pageUrl = `${BASE_URL}/routes/india-to-dubai/`
-  const pageTitle = 'Pet Relocation India to Dubai | Planning & Quote'
+  const pageTitle = 'Pet Relocation India to Dubai: Titre, AQCS and Timeline'
   const pageDescription =
-    'Moving a dog or cat from India to Dubai? Review documents, travel options and arrival planning, then request a quote for your pet and dates.'
+    'Moving a dog or cat from India to Dubai? Titre timing, export certificate to confirm, MOCCAE permit valid 90 days, and cargo options. Get your route checked.'
   const faqs = [
     {
-      question: 'Can I take my dog to Dubai from India?',
-      answer: 'Yes, when the breed is permitted and the file matches MOCCAE rules. India-origin files often need careful titer and AQCS/export timing before the UAE permit window. Permit validity is 90 days from issuance; titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given, when a titer is required. Corridor process — not volume claims. Export reverse twin: [/routes/dubai-to-india/](/routes/dubai-to-india/). WhatsApp +971504782999.',
+      question: 'How do I bring a dog to Dubai from India?',
+      answer: 'Start about four months out. Your vet implants an ISO microchip and gives a rabies vaccine, then a blood sample goes to an approved lab for a titre test. The result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. Next comes the MOCCAE import permit, valid 90 days from issuance, the Indian export certificate and a cargo booking into Dubai. Your official vet authority confirms the export step. Reverse twin: [/routes/dubai-to-india/](/routes/dubai-to-india/).',
     },
     {
       question: 'Why is India classified as a high-risk country for pet import to Dubai?',
       answer: 'India is classified as a high-risk country for rabies by the UAE Ministry of Climate Change and Environment (MOCCAE) and the World Organisation for Animal Health (WOAH). Rabies is endemic in India, which means the UAE requires additional verification that your pet has sufficient rabies antibody protection before entry. This is done via the Rabies Neutralising Antibody Titre Test (RNATT), commonly known as the titer test.'
     },
     {
-      question: 'What is the titer test (RNATT) and how long does it take?',
-      answer: 'The RNATT (Rabies Neutralising Antibody Titre Test) is a blood test that measures your pet\'s rabies antibody levels. The blood sample must be drawn at least 21 days after a first rabies vaccination, or after a gap in vaccination. A valid booster does not need that wait. Send the sample to a laboratory approved for the export, such as a laboratory the origin authority names. Results typically take 2–4 weeks. The rule is a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.'
+      question: 'What is the titre test and when is the sample taken?',
+      answer: 'The titre test measures rabies antibodies. For a move to Dubai the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. Your official vet authority names an approved lab. This page does not publish a lab list.'
     },
     {
       question: 'Which airlines fly pets from India to Dubai?',
-      answer: 'Families usually ask about Emirates, Air India and IndiGo from Delhi, Mumbai, Bengaluru, Chennai and Hyderabad. Confirm each carrier’s current pet acceptance, crate mode and breed limits for your city and date before booking. We do not treat a passenger timetable as live-animal approval.'
+      answer: 'Emirates carries pets into Dubai as SkyCargo shipments, not in the cabin. Air India and other carriers may also accept pets as cargo on some routes, but policies and summer embargoes change often. IndiGo pet cargo is confirm current policy. Confirm with the airline for your departure city. We check live acceptance for Mumbai, Delhi and other hubs once your pet\'s file is ready.'
     },
     {
       question: 'How long does the India to Dubai pet relocation process take?',
-      answer: 'Plan the calendar around the vaccination-to-test interval, lab turnaround, and the 365-day certificate: Month 1 — microchip and rabies vaccination (then wait at least 21 days after a first vaccine or a gap before the titer draw. A valid booster does not need that wait); Month 1–2 — titer blood draw and lab processing so the certificate can stay valid for 365 days if the vaccine stays valid and no booster is given, ahead of the eventual travel date and read ≥ 0.5 IU/ml; Month 2–3 — apply for the UAE import permit (valid 90 days from issuance) and obtain the Indian export health certificate (NOC from AQCS); then book flight, final health check, and travel. Do not sit 90 days after the draw. That wait is not the rule.'
+      answer: 'A vaccinated adult with a passing titre already in hand is often a shorter file than a new puppy. The result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. Then apply for the MOCCAE permit, valid 90 days from issuance, and the Indian export certificate your official vet authority confirms. A puppy needs the microchip, a primary rabies vaccine, at least 21 days before the sample, lab time, and spare weeks if the result is low. These are typical shapes, not promises.'
     },
     {
-      question: 'How much does it cost to relocate a pet from India to Dubai?',
-      answer: ROUTE_PACKAGE_COST_FAQ
+      question: 'How much does pet relocation from India to Dubai cost?',
+      answer: 'Costs depend on the titre lab, vet visits, crate size, airline cargo rates and coordination, so we do not publish a package total. Government charges in the UAE, such as the MOCCAE permit and arrival release fee, are listed on the official portal and should be confirmed there. Share your pet\'s details and departure city and we quote after the eligibility check.'
     },
     {
       question: 'What documents are required for an Indian pet to enter Dubai?',
-      answer: 'Required documents: (1) ISO-compliant microchip implanted before rabies vaccination; (2) valid rabies vaccination certificate (30+ days old before titer test); (3) Rabies Neutralising Antibody Titre Test (RNATT) certificate with result ≥ 0.5 IU/ml; (4) UAE import permit via MOCCAE; (5) Indian export health certificate (NOC from the Animal Quarantine and Certification Service — AQCS) issued within 10 days of travel; (6) copy of pet owner\'s passport and UAE visa. The titer test is the critical additional document that low-risk countries do not require.'
+      answer: 'Plan for an ISO microchip before the rabies vaccine, a rabies certificate, and a titre result of at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. This is not a 90-day sample window. You also need a MOCCAE import permit valid 90 days from issuance, and an Indian export health certificate. Your official vet authority confirms the export step at the departure airport. This page does not state a day-count for that certificate.'
     },
     {
-      question: 'Can I get the titer test done in India, or do I need to send blood abroad?',
-      answer: 'The titer test can be done in India at the Central Veterinary Laboratory (CVL) in Pune, or through private veterinary laboratories that are approved by the UAE. However, many Indian pet owners choose to send blood samples to international laboratories such as IDEXX (Germany), Kansas State University (USA), or the Animal Health Laboratory (UK) for faster turnaround and wider international recognition. Dubai Pet Relocation can arrange the blood draw, courier, and lab selection for you. Results from any WOAH-approved lab are accepted by the UAE.'
+      question: 'What is AQCS clearance for pets?',
+      answer: 'AQCS is the name people use for India\'s Animal Quarantine and Certification Service. This page does not publish the export steps for a pet leaving India. Confirm the export health certificate with your official vet authority and the office at the departure airport before you book. The UAE side is a MOCCAE import permit valid 90 days from issuance.'
     },
     {
       question: 'What happens when my pet arrives in Dubai from India?',
@@ -110,9 +111,9 @@ export default function IndiaToDubai() {
         imageAlt="Pet relocation from India to Dubai"
         eyebrow="India → Dubai"
         title="Pet relocation from India to Dubai"
-        subtitle="India is a high-risk country for rabies: when a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — not a wait-after-draw rule."
+        subtitle="When a titre is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. The MOCCAE permit is valid 90 days from issuance."
         updated="Updated June 2026"
-        primaryLabel="Check India-to-Dubai eligibility"
+        primaryLabel="Get Route Checked"
         whatsappMessage={waIndia}
         secondary={{ label: 'Pet import to Dubai', to: '/service/pet-import-dubai/' }}
       />
@@ -124,7 +125,7 @@ export default function IndiaToDubai() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Route Overview</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Flying Your Pet from India to Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              India is one of the most common origins for pet relocation to Dubai. The short flight distance (3–4 hours) makes it cost-effective, but the high-risk status means additional documentation is required.
+              The flight from India to Dubai is short. The preparation is not, because a rabies titre usually drives the calendar. Confirm the current rule on the official MOCCAE portal. Mumbai, Delhi, Bengaluru, Chennai, Hyderabad and Kochi are the departure cities families ask about. Pet relocation from Mumbai to Dubai uses the same UAE file as any other Indian city. The difference is the cargo desk at BOM and whether the export certificate names that airport.
             </p>
           </div>
 
@@ -151,7 +152,7 @@ export default function IndiaToDubai() {
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Risk Level</p>
               <p className="text-[#5A5A5A] text-sm">High-Risk</p>
-              <p className="text-[#D4A017] text-xs mt-2 font-medium">Rabies endemic — titer required</p>
+              <p className="text-[#D4A017] text-xs mt-2 font-medium">Rabies endemic. Titre required</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
               <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -167,8 +168,8 @@ export default function IndiaToDubai() {
 
       <GuideFunnelCta
         variant="mid"
-        title="DIY this corridor — or hand the import file over"
-        subtitle="This page explains the India-to-Dubai titer window and documents. DIY the sequence here, or open pet import / MOCCAE permit assistance when you want the file managed. Permit validity: 90 days from issuance. Titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given, when a titer is required. Confirm portal fees on the official site."
+        title="DIY this corridor, or hand the import file over"
+        subtitle="This page explains the India-to-Dubai titre certificate and documents. DIY the sequence here, or open pet import / MOCCAE permit assistance when you want the file managed. Permit validity: 90 days from issuance. Titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given, when a titre is required. Confirm portal fees on the official site."
         eligibilityMessage={waIndia}
         waLabel="Check India-to-Dubai eligibility"
         links={[
@@ -185,7 +186,7 @@ export default function IndiaToDubai() {
               <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Documentation</span>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2 mb-6">Documents Required for India to Dubai</h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                Because India is a high-risk country, the documentation is more extensive than low-risk routes. The titer test and AQCS NOC are the two most critical steps that Indian pet owners must complete.
+                Because India is a high-risk country, the documentation is more extensive than low-risk routes. Plan the titre certificate (valid 365 days if the vaccine stays valid and continuous and no booster is given; this is not a 90-day sample window), the MOCCAE import permit, and an Indian export health certificate. Your official vet authority confirms the export step.
               </p>
               <RouteMoneyBodyLink path="/routes/india-to-dubai/" />
 
@@ -206,7 +207,7 @@ export default function IndiaToDubai() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">2. Rabies Vaccination Certificate</p>
-                    <p className="text-[#5A5A5A] text-sm">Inactivated rabies vaccine administered at least 30 days before the titer test blood draw. The certificate must include the microchip number, vaccine batch, and date. A 3-year vaccine is acceptable if not expired.</p>
+                    <p className="text-[#5A5A5A] text-sm">A first rabies vaccine, or a gap, needs at least 21 days before the blood sample. A valid booster does not. The certificate must include the microchip number, vaccine batch, and date.</p>
                   </div>
                 </div>
 
@@ -215,8 +216,8 @@ export default function IndiaToDubai() {
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p className="font-semibold text-[#2A2A2A] mb-1">3. Rabies Titer Test (RNATT) — CRITICAL</p>
-                    <p className="text-[#5A5A5A] text-sm">Blood sample drawn at least 21 days after a first rabies vaccination, or after a gap. A valid booster does not need that wait. Sent to an approved lab (CVL Pune, IDEXX, Kansas State, or AHL). Result must be ≥ 0.5 IU/ml. The rule is a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.</p>
+                    <p className="font-semibold text-[#2A2A2A] mb-1">3. Rabies Titre Test (RNATT): CRITICAL</p>
+                    <p className="text-[#5A5A5A] text-sm">Result at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. This is not a 90-day sample window. A first vaccine, or a gap, needs at least 21 days before the test. A valid booster does not. The lab is whichever your official vet authority accepts. This page does not name laboratories.</p>
                   </div>
                 </div>
 
@@ -235,8 +236,8 @@ export default function IndiaToDubai() {
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p className="font-semibold text-[#2A2A2A] mb-1">5. Indian Export NOC (AQCS)</p>
-                    <p className="text-[#5A5A5A] text-sm">No Objection Certificate from the Animal Quarantine and Certification Service (AQCS) of India, issued within 10 days of travel. The AQCS office inspects the pet, verifies the microchip and documents, and issues the export clearance. This is a mandatory step for all pets leaving India.</p>
+                    <p className="font-semibold text-[#2A2A2A] mb-1">5. Indian export health certificate</p>
+                    <p className="text-[#5A5A5A] text-sm">Plan for an export health certificate at the departure airport. Your official vet authority confirms that step. This page does not publish the export process or a day-count for the certificate.</p>
                   </div>
                 </div>
 
@@ -260,11 +261,11 @@ export default function IndiaToDubai() {
               <ul className="space-y-4 text-[#5A5A5A] text-sm leading-relaxed">
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>The titre rule is the certificate: use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. A passing result does not start a 90-day clock before travel. Start the vaccination-to-sample sequence as soon as the move date is real.</span>
+                  <span>When a titre is required, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. The MOCCAE import permit is a separate 90 days, counted from issuance.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>AQCS offices in India can be slow during peak seasons (May–July and December). Book your AQCS appointment at least 2 weeks before travel.</span>
+                  <span>Export timing is confirmed by your official vet authority. This page does not publish an appointment script or a day-count for the Indian export certificate.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
@@ -272,16 +273,16 @@ export default function IndiaToDubai() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>Brachycephalic breeds (Pugs, Bulldogs, Persian cats) face additional airline restrictions. Some Indian carriers do not accept these breeds at all. Plan for Emirates or Air India cargo instead.</span>
+                  <span>Brachycephalic breeds (Pugs, Bulldogs, Persian cats) face extra airline limits. Confirm current policy with the carrier. Do not assume Air India or IndiGo cargo acceptance.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>The titer test must be done at a lab approved by the UAE. Not all Indian labs are accepted. Dubai Pet Relocation verifies lab accreditation before sending samples.</span>
+                  <span>Your official vet authority names the laboratory. This page does not publish a lab list.</span>
                 </li>
               </ul>
               <div className="mt-6 p-4 bg-[#4F5BD5]/10 rounded-xl">
                 <p className="text-sm text-[#2A2A2A] font-medium">
-                  <span className="text-[#4F5BD5]">Pro tip:</span> If your pet's titer test result is below 0.5 IU/ml, a booster rabies vaccination is required, followed by another 30-day wait and a second titer test. To avoid this, ensure your pet is healthy and not on immunosuppressive medication before the first blood draw.
+                  <span className="text-[#4F5BD5]">Pro tip:</span> If the result is below 0.5 IU/ml, a booster and a new sample are needed. Build in spare weeks. That is not a fixed wait after the first draw.
                 </p>
               </div>
             </div>
@@ -301,7 +302,7 @@ export default function IndiaToDubai() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Step-by-Step</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">India to Dubai Timeline</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              High-risk files take longer because of the vaccination-to-sample interval and lab turnaround — not because you must sit 90 days after the draw. Schedule the sample so you keep a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given.
+              High-risk files take longer because of the vaccination-to-sample interval and lab turnaround. The result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window.
             </p>
           </div>
 
@@ -312,25 +313,25 @@ export default function IndiaToDubai() {
                 {
                   week: 'Month 1',
                   title: 'Microchip, Rabies Vaccine & Titer Test Blood Draw',
-                  desc: 'Your Indian vet implants an ISO microchip and administers a rabies vaccine. After 30 days, a blood sample is drawn for the titer test (RNATT). The sample is sent to an approved lab. Dubai Pet Relocation coordinates with the vet and lab to ensure correct documentation.',
+                  desc: 'Your Indian vet implants an ISO microchip and gives a rabies vaccine. A first vaccine, or a gap, needs at least 21 days before the test. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. This is not a 90-day sample window. Your official vet authority names the laboratory. This page does not name labs.',
                   icon: Stethoscope
                 },
                 {
                   week: 'Month 1–2',
                   title: 'Titer Test Results & Sample Window',
-                  desc: 'Lab results arrive in 2–4 weeks. A passing result is ≥ 0.5 IU/ml. Keep the sample date inside 90 days before the actual travel date — do not treat a pass as a 90-day sit after the draw. Dubai Pet Relocation begins preparing the UAE import permit application during lab turnaround.',
+                  desc: 'A passing result is at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. This is not a 90-day sample window. Apply for the MOCCAE import permit, valid 90 days from issuance, once the travel month is real.',
                   icon: Shield
                 },
                 {
                   week: 'Month 3',
-                  title: 'Import Permit & AQCS NOC Application',
-                  desc: 'Dubai Pet Relocation applies for the UAE import permit via MOCCAE. We also schedule your AQCS appointment in India for the export NOC. The AQCS vet inspects the pet, verifies the microchip, and issues the export clearance certificate.',
+                  title: 'Import permit and export certificate',
+                  desc: 'Apply for the MOCCAE import permit, valid 90 days from issuance. Ask your official vet authority how the Indian export health certificate is issued. This page does not publish an inspection script or a day-count for that certificate.',
                   icon: FileText
                 },
                 {
                   week: 'Month 4',
                   title: 'Flight Booking & Final Health Check',
-                  desc: 'When the titre certificate is still valid and the MOCCAE permit will cover the flight, Dubai Pet Relocation books cargo space with Emirates, Air India, or IndiGo. A final pre-flight health check is conducted. The IATA crate is delivered for acclimatisation. All documents are reviewed one final time.',
+                  desc: 'When the titre certificate is still valid and the MOCCAE permit will cover the flight, confirm cargo. Emirates itineraries ending in Dubai carry animals as cargo. Air India and IndiGo are confirm current policy. A final health check and the IATA crate come last.',
                   icon: Plane
                 },
                 {
@@ -366,7 +367,7 @@ export default function IndiaToDubai() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Airlines</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Airlines Flying Pets from India to Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              Short 3–4 hour flights from India to Dubai make this a cost-effective route. Emirates, Air India, and IndiGo serve all major Indian cities.
+              Flights from the main Indian cities to Dubai are short. Emirates itineraries ending in Dubai carry animals as cargo, not in the cabin. Air India and IndiGo pet cargo is confirm current policy, not a stated acceptance on this page.
             </p>
           </div>
 
@@ -382,12 +383,12 @@ export default function IndiaToDubai() {
                 </div>
               </div>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Direct from DEL, BOM, BLR, MAA, HYD</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> 3–4 hours non-stop</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Best for large dogs and brachycephalic breeds</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Priority offloading at DXB</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Itineraries ending in Dubai are SkyCargo</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Animals travel as cargo, not in the cabin</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Confirm the flight and the crate desk</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Heat rules still apply in the hottest months</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">Emirates is the most reliable option for Indian pet relocations, with daily direct flights from all major metros and dedicated SkyCargo animal handling.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">Emirates cargo into Dubai is the product to confirm. A passenger ticket is not crate acceptance.</p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
@@ -397,16 +398,16 @@ export default function IndiaToDubai() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-[#2A2A2A]">Air India (AI)</h3>
-                  <p className="text-sm text-[#5A5A5A]">Cargo Division</p>
+                  <p className="text-sm text-[#5A5A5A]">Confirm current policy</p>
                 </div>
               </div>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Cargo from DEL, BOM, MAA, BLR, COK</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> 3–4 hours direct</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Competitive rates for medium-sized pets</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Good for Tier-2 city departures</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Pet cargo is not stated as accepted here</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Confirm the live-animal product for the city</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Summer embargoes change</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> A passenger fare is not crate acceptance</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">Air India is a solid budget option, especially for pets departing from cities where Emirates cargo capacity is limited. Their cargo handling is improving but requires careful booking.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">Air India pet cargo to Dubai is held back until the airline confirms it. Do not book on an assumption.</p>
             </div>
 
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
@@ -416,16 +417,16 @@ export default function IndiaToDubai() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-[#2A2A2A]">IndiGo (6E)</h3>
-                  <p className="text-sm text-[#5A5A5A]">Select International Routes</p>
+                  <p className="text-sm text-[#5A5A5A]">Confirm current policy</p>
                 </div>
               </div>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Limited pet cargo on select routes</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Budget-friendly when available</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Best for cats and small dogs</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Limited crate size acceptance</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Pet cargo is not stated as accepted here</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Confirm the product before you rely on it</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Policies change by city and season</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> No crate-size claim is published here</li>
               </ul>
-              <p className="mt-4 text-xs text-[#5A5A5A]">IndiGo is the most economical option for small pets, but cargo space is limited and must be booked well in advance. Dubai Pet Relocation confirms availability before recommending IndiGo.</p>
+              <p className="mt-4 text-xs text-[#5A5A5A]">IndiGo pet cargo is confirm current policy. Do not treat a passenger fare as acceptance.</p>
             </div>
           </div>
 
@@ -435,10 +436,10 @@ export default function IndiaToDubai() {
               Seasonal Considerations for Indian Pet Travel
             </h3>
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-              Indian summers (April–July) see extreme temperatures that affect both ground handling at Indian airports and cargo hold conditions. Dubai Pet Relocation recommends booking early morning flights (6–9 AM) to avoid peak heat. During monsoon season (July–September), flight delays are common — plan buffer days around your travel date.
+              Indian summers (April–July) see extreme temperatures that affect both ground handling at Indian airports and cargo hold conditions. Dubai Pet Relocation recommends booking early morning flights (6–9 AM) to avoid peak heat. During monsoon season (July–September), flight delays are common: plan buffer days around your travel date.
             </p>
             <p className="text-[#5A5A5A] text-sm leading-relaxed">
-              Peak relocation season for Indian pets is December–January, when many families move during school holidays. Cargo space fills 3–4 weeks in advance during this period. Start the vaccination-to-sample sequence early enough that the titer draw will still be valid under the 365-day certificate rule if the vaccine stays valid and no booster is given, for the flight you actually book.
+              December and January are busy travel months. Keep a titre result of at least 0.5 IU/ml on a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. This is not a 90-day sample window.
             </p>
           </div>
         </div>
@@ -470,17 +471,7 @@ export default function IndiaToDubai() {
 
       <OfficialSources />
 
-      <GuideFunnelCta
-        variant="end"
-        title="Ready to relocate your pet from India to Dubai?"
-        subtitle="DIY this corridor guide, or hand the file to pet import / permit assistance. We coordinate titer sample timing (a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given), AQCS NOC, and the MOCCAE permit (valid 90 days from issuance). Confirm government fees on the official portal — we do not assume amounts."
-        eligibilityMessage={waIndia}
-        waLabel="Check India-to-Dubai eligibility"
-        links={[
-          { to: '/service/pet-import-dubai/', label: 'Pet import to Dubai', icon: 'plane' },
-          { to: '/guides/moccae-import-permit/', label: 'MOCCAE import permit guide', icon: 'file' },
-        ]}
-      />
+      <RouteBuyerFreeHelp tone="band" buyerMessage={waIndia} />
 
       {/* Related Routes & Next Steps */}
       <section className="py-16 lg:py-24 bg-white">
@@ -504,7 +495,23 @@ export default function IndiaToDubai() {
             </Link>
             <Link to="/routes/dubai-to-india/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
               <p className="font-bold text-[#2A2A2A] mb-1">Exporting from Dubai to India</p>
-              <p className="text-[#5A5A5A] text-sm">The outbound twin — AQCS Transfer of Residence, not this inbound file.</p>
+              <p className="text-[#5A5A5A] text-sm">The outbound twin. Destination rules first, not this inbound file.</p>
+            </Link>
+            <Link to="/routes/pakistan-to-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">Pakistan to Dubai</p>
+              <p className="text-[#5A5A5A] text-sm">Sibling corridor with its own origin paperwork.</p>
+            </Link>
+            <Link to="/service/pet-relocation-to-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">Pet relocation to Dubai</p>
+              <p className="text-[#5A5A5A] text-sm">The inbound service page for the move into Dubai.</p>
+            </Link>
+            <Link to="/service/moccae-pet-permit/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">MOCCAE pet permit</p>
+              <p className="text-[#5A5A5A] text-sm">Permit help. Validity is 90 days from issuance.</p>
+            </Link>
+            <Link to="/guides/rabies-titer-test-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">Rabies titre test</p>
+              <p className="text-[#5A5A5A] text-sm">Titre certificate valid 365 days, at least 0.5 IU/ml. Not a 90-day sample window.</p>
             </Link>
           </div>
         </div>
@@ -518,6 +525,8 @@ export default function IndiaToDubai() {
             <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#4F5BD5] hover:underline">Cost Guide</Link>
             <span className="text-[#EBEBEB]">|</span>
             <Link to="/guides/uae-pet-import-requirements/" className="text-[#4F5BD5] hover:underline">Import Requirements</Link>
+            <span className="text-[#EBEBEB]">|</span>
+            <Link to="/routes/" className="text-[#4F5BD5] hover:underline">All routes</Link>
             <span className="text-[#EBEBEB]">|</span>
             <Link to="/how-it-works/" className="text-[#4F5BD5] hover:underline">How It Works</Link>
             <span className="text-[#EBEBEB]">|</span>

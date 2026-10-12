@@ -52,7 +52,7 @@ export interface RouteRelatedLink {
 }
 
 export interface RouteCta {
-  label: 'Tell us about your move'
+  label: 'Tell us about your move' | 'Get Route Checked' | 'Get Route Checked'
   whatsapp: '+971504782999'
   note?: string
 }

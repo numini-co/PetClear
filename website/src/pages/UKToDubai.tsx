@@ -4,11 +4,12 @@ import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import { BASE_URL, LOGO_URL } from '../lib/seo.ts'
 import { waEligibility } from '../lib/conversionCopy.ts'
 import { RoutePlanLinks } from '../components/LinkPlanSlot.tsx'
-import { CheckCircle, Plane, FileText, Clock, Home, AlertTriangle, Info, PawPrint } from 'lucide-react'
+import { CheckCircle, Plane, FileText, Clock, Home, AlertTriangle, Info } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
 import Hero from '../components/Hero.tsx'
 import LinkedText from '../components/LinkedText.tsx'
+import RouteBuyerFreeHelp from '../components/RouteBuyerFreeHelp.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 
 const CHECKED = '22 September 2026'
@@ -43,9 +44,9 @@ const SOURCES = [
 
 export default function UKToDubai() {
   const pageUrl = `${BASE_URL}/routes/uk-to-dubai/`
-  const pageTitle = 'Pet Relocation UK to Dubai | Planning & Quote'
+  const pageTitle = 'Pet Relocation UK to Dubai: Documents, Timeline and Quote'
   const pageDescription =
-    'Moving a dog or cat from UK to Dubai? Review documents, travel options and arrival planning, then request a quote for your pet and dates.'
+    'Moving a dog or cat from the UK to Dubai? Export certificate steps, MOCCAE permit (90 days), timeline and airline options. Get your route checked.'
   const faqs = [
     {
       question: 'Can I move my dog or cat from the UK to Dubai?',
@@ -55,7 +56,7 @@ export default function UKToDubai() {
     {
       question: 'Does a pet from the UK need a rabies titre test for Dubai?',
       answer:
-        'Not on the MOCCAE page checked on 22 September 2026, because the United Kingdom is on the published low-risk list. A rabies antibody test is required for a high-risk origin. The list can change, so confirm the live page before you skip the test. If a test is required, that page asks for at least 0.5 IU/ml and describes a 365-day certificate when the rabies vaccine stays valid and continuous and no booster is given. Timing notes: [/guides/rabies-titer-test-dubai/](/guides/rabies-titer-test-dubai/).',
+        'Usually not, because the UK is treated as a lower-risk rabies origin for UAE import. MOCCAE sets the rule, so confirm on the official portal when you apply for the permit. If a titre test is ever required for your file, the result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. This is not a 90-day sample window. Timing notes: [/guides/rabies-titer-test-dubai/](/guides/rabies-titer-test-dubai/).',
     },
     {
       question: 'Which airlines carry pets from the UK to Dubai?',
@@ -68,14 +69,24 @@ export default function UKToDubai() {
         'There is no single week count. If the rabies vaccine is already valid, the tight clocks are the MOCCAE permit (valid 90 days from issuance; the page estimates 1 working day, or 5 for a service, emotional support or medical dog), parasite treatment less than 14 days before shipping, and a 3926EHC exam within 24 hours of export with the certificate valid for 10 days. A first rabies vaccine must be more than 21 days before export, and the animal must be at least 15 weeks old at export. Airline space can add time. We do not promise a 4 to 6 week file.',
     },
     {
-      question: 'How much does it cost to relocate a pet from the UK to Dubai?',
+      question: 'How much does it cost to fly a dog from the UK to Dubai?',
       answer:
-        'We do not publish a package total. On 22 September 2026 MOCCAE listed government charges of AED 200 to issue an import permit for one animal, AED 500 to request release of one dog, and AED 250 to request release of one cat. Those are not a freight quote. Cargo, the crate, UK veterinary work and coordination are priced for the animal and the date. Cost drivers: [/guides/pet-relocation-cost-dubai/](/guides/pet-relocation-cost-dubai/).',
+        'There is no honest single figure. The total depends on crate size, airline cargo rates, the vet and certificate work in the UK, and coordination. Government charges are separate: the MOCCAE permit and arrival release fee are published on the official portal, so confirm current amounts there. Send us the pet\'s size and travel month and we quote after the eligibility check. Cost drivers: [/guides/pet-relocation-cost-dubai/](/guides/pet-relocation-cost-dubai/).',
     },
     {
       question: 'What documents does a UK pet need to enter Dubai?',
       answer:
         'Plan on these, each with its own condition: a permanent microchip whose number matches the health certificate; rabies and the core vaccines named on 3926EHC; parasite treatment less than 14 days before shipping; MOCCAE import permit valid 90 days from issuance, obtained before the animal travels; and 3926EHC, signed by an Official Veterinarian, valid for 10 days, after an exam within 24 hours of export. England, Scotland and Wales apply online. Northern Ireland applies through DAERA. Owner passport details are part of the permit file. Full checklist: [/guides/uae-pet-import-requirements/](/guides/uae-pet-import-requirements/).',
+    },
+    {
+      question: 'Can my cat fly in the cabin from London to Dubai?',
+      answer:
+        'Not into Dubai. Emirates states that animals on itineraries ending in Dubai travel as cargo, and most carriers on this corridor follow the same pattern. Etihad publishes a limited cabin option into Abu Dhabi for small pets on some routes, so check current airline policy if that route suits you. Our guide to cabin versus cargo explains the trade-offs: [/guides/pet-flight-options-dubai/](/guides/pet-flight-options-dubai/). Cat preparation: [/cat-relocation-to-dubai/](/cat-relocation-to-dubai/).',
+    },
+    {
+      question: 'Can I relocate a pet from London to Dubai?',
+      answer:
+        'Yes. London departures usually mean Heathrow (LHR) or Gatwick (LGW), and only when that airport\'s cargo desk accepts the animal. Manchester, Birmingham, Edinburgh and Glasgow are the same question for households outside the south east. The UAE rules do not change with the UK city. The export certificate must name the airport that actually ships the crate. Get Route Checked once you know the pet and the month.',
     },
     {
       question: 'Can my pet travel in the cabin from the UK to Dubai?',
@@ -148,11 +159,11 @@ export default function UKToDubai() {
         imageAlt="Pet relocation from the UK to Dubai"
         fallbackSrc="/images/hero-uk.jpg"
         eyebrow="United Kingdom to Dubai"
-        title="Pet relocation from UK to Dubai"
-        subtitle="The UK is on MOCCAE's published low-risk list, so a rabies titre is not the usual extra test. You still need a 90-day import permit, UK certificate 3926EHC, and a cargo booking into Dubai."
+        title="Pet relocation from the UK to Dubai"
+        subtitle="Confirm on the official MOCCAE portal whether a UK origin needs a titre. You still need a permit valid 90 days from issuance, a UK export health certificate, and cargo into Dubai."
         updated={`Checked ${CHECKED}`}
         whatsappMessage={WA}
-        primaryLabel="Check this UK to Dubai move"
+        primaryLabel="Get Route Checked"
       />
       <div className="mx-auto max-w-[900px] px-5 pt-8">
         <RoutePlanLinks />
@@ -274,7 +285,7 @@ export default function UKToDubai() {
             What drives the cost, without a fake package total
           </h2>
           <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-3xl">
-            Government charges published on the MOCCAE service page on {CHECKED}, for one animal: AED 200 to issue the import permit, AED 500 to request release of one dog, AED 250 to request release of one cat. Confirm the amount on the payment screen. They are not a door-to-door price.
+            Government charges published on the MOCCAE service page on {CHECKED}, for one animal: AED 200 to issue the import permit, AED 500 to request release of one dog, AED 250 to request release of one cat. Confirm on the official portal. Fees may change. They are not a door-to-door price.
           </p>
           <div className="grid md:grid-cols-2 gap-6 mt-8">
             {[
@@ -337,6 +348,36 @@ export default function UKToDubai() {
         </div>
       </section>
 
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+          <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Certificate</span>
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">
+            Animal health certificate UK to Dubai
+          </h2>
+          <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-3xl">
+            The paper for this move is the UK export health certificate for cats and dogs travelling to the UAE. It is not the Great Britain animal health certificate used when a pet travels into the European Union, and an EU pet passport does not replace it. England, Scotland and Wales use the online export route already described above. Northern Ireland applies through DAERA. Your official vet signs the certificate. Confirm the current endorsement path with that vet authority before you treat a form number as the whole process.
+          </p>
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-10">
+            Pet relocation from London to Dubai
+          </h2>
+          <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-3xl">
+            London intent is Heathrow (LHR) or Gatwick (LGW) as the cargo origin, not a different UAE law. Official veterinarians are easier to find in the London area than in some regions, but the certificate still has to match the airport on the airway bill. Households in Manchester (MAN), Birmingham (BHX), Edinburgh (EDI) or Glasgow (GLA) should confirm a live-animal desk before they assume a local departure. If that desk says no, the crate usually repositions to a London airport or to Manchester, and the certificate is rewritten for that code.
+          </p>
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-10">
+            Bringing a cat from the UK to Dubai
+          </h2>
+          <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-3xl">
+            Cats use the same permit, microchip and export certificate path as dogs. They are not on the dog breed ban list. Bengal and Serval cats need the pedigree paper already noted above. A cat does not travel in the cabin into Dubai. Emirates carries animals on itineraries ending in Dubai as cargo. Etihad publishes a limited cabin option into Abu Dhabi for some small pets. Confirm current policy if Abu Dhabi suits you. Otherwise the cat is manifest cargo, with the same 90-day permit window.
+          </p>
+          <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-10">
+            Two typical London timelines
+          </h2>
+          <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-3xl">
+            These are typical pictures, not promises. A standard London family with a healthy adult pet and a current rabies vaccine often needs about 6 to 8 weeks: permit, official vet exam, export certificate close to the flight, and a cargo booking from LHR or LGW into DXB or DWC. A short-notice posting, when the vaccine is already valid and an airline can take the crate, can be closer to 3 to 4 weeks. A first rabies vaccine adds at least 21 days before export, and the animal must meet the age rule on the certificate. Abu Dhabi (AUH) is only the arrival when the itinerary is Etihad.
+          </p>
+        </div>
+      </section>
+
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Airlines</span>
@@ -367,7 +408,7 @@ export default function UKToDubai() {
             </div>
           </div>
           <p className="text-sm text-[#5A5A5A] mt-6 max-w-3xl">
-            More on modes:{' '}
+            British Airways cargo acceptance on a London to Dubai sector is confirm current policy, including the IAG cargo arm. Virgin Atlantic is the same: confirm current policy before you treat it as a pet carrier on this route. This page does not list United, because a UK origin itinerary on that airline is not the plan here. More on modes:{' '}
             <Link to="/guides/emirates-pet-cargo/" className="font-semibold text-[#4F5BD5] hover:underline">Emirates pet cargo</Link>
             {' '}and{' '}
             <Link to="/guides/pet-flight-options-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">pet flight options</Link>.
@@ -389,8 +430,10 @@ export default function UKToDubai() {
             <Link to="/guides/dubai-pet-arrival-guide/" className="font-semibold text-[#4F5BD5] hover:underline">Dubai pet arrival guide</Link>
             {' '}and, for a tower address, the community page such as{' '}
             <Link to="/dubai/dubai-marina/" className="font-semibold text-[#4F5BD5] hover:underline">Dubai Marina</Link>.
-            {' '}Import coordination sits on{' '}
-            <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">pet import to Dubai</Link>.
+            {' '}Quarantine rules stay on the{' '}
+            <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">UAE pet import requirements</Link>
+            {' '}page. Import coordination sits on{' '}
+            <Link to="/service/pet-relocation-to-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">pet relocation to Dubai</Link>.
           </p>
         </div>
       </section>
@@ -415,38 +458,7 @@ export default function UKToDubai() {
         checkedLabel={`Checked ${CHECKED} against the primary pages linked here. This is a source check for the wording on this route. It is not a veterinary certificate.`}
       />
 
-      <section className="py-16 lg:py-24">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-          <div className="bg-[#3A45B0] rounded-[20px] p-8 lg:p-12 text-center text-white">
-            <PawPrint className="w-12 h-12 mx-auto mb-4" />
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Want this UK file coordinated?</h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              The checklist above is free to use. A managed move covers permit timing, 3926EHC sequencing, the cargo booking and the Dubai handoff. WhatsApp +971504782999 opens the same short form on every page. Email support@dubai-pet-relocation.ae.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <WhatsAppBtn label="Check this UK to Dubai move" message={WA} />
-              <Link to="/how-it-works/" className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-semibold text-[#2A2A2A] bg-white hover:bg-[#F5F5F5] transition-colors">
-                <Info className="w-5 h-5" />
-                How it works
-              </Link>
-            </div>
-            <div className="mt-8 grid sm:grid-cols-3 gap-4 text-left">
-              <Link to="/guides/uae-pet-import-requirements/" className="block p-4 bg-white/10 rounded-xl hover:bg-white/15 transition-colors">
-                <p className="font-semibold text-white mb-1">Import requirements</p>
-                <p className="text-sm text-white/70">Federal checklist for dogs and cats</p>
-              </Link>
-              <Link to="/dog-relocation-to-dubai/" className="block p-4 bg-white/10 rounded-xl hover:bg-white/15 transition-colors">
-                <p className="font-semibold text-white mb-1">Dog relocation</p>
-                <p className="text-sm text-white/70">Breed check and crate fit</p>
-              </Link>
-              <Link to="/cat-relocation-to-dubai/" className="block p-4 bg-white/10 rounded-xl hover:bg-white/15 transition-colors">
-                <p className="font-semibold text-white mb-1">Cat relocation</p>
-                <p className="text-sm text-white/70">Carrier fit and Bengal or Serval papers</p>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <RouteBuyerFreeHelp tone="band" buyerMessage={WA} />
 
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
@@ -464,6 +476,18 @@ export default function UKToDubai() {
             <Link to="/routes/dubai-to-uk/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
               <p className="font-bold text-[#2A2A2A] mb-1">Dubai to UK</p>
               <p className="text-[#5A5A5A] text-sm">The opposite direction uses UK import rules, not this page.</p>
+            </Link>
+            <Link to="/routes/ireland-to-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">Ireland to Dubai</p>
+              <p className="text-[#5A5A5A] text-sm">Sibling corridor when the pet is leaving Ireland, not Great Britain.</p>
+            </Link>
+            <Link to="/routes/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">All routes</p>
+              <p className="text-[#5A5A5A] text-sm">Inbound and outbound corridor index.</p>
+            </Link>
+            <Link to="/service/pet-relocation-to-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
+              <p className="font-bold text-[#2A2A2A] mb-1">Pet relocation to Dubai</p>
+              <p className="text-[#5A5A5A] text-sm">The inbound service page for moves into the UAE.</p>
             </Link>
             <Link to="/guides/moccae-import-permit/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
               <p className="font-bold text-[#2A2A2A] mb-1">MOCCAE import permit</p>

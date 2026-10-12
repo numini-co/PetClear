@@ -104,6 +104,41 @@ function twinHref(slug: string): string | null {
   return `/routes/${twin}/`
 }
 
+/** Week 7 inbound routes only. Other slugs keep main's CTA and related links. */
+const WEEK7_INBOUND = new Set([
+  'uk-to-dubai',
+  'usa-to-dubai',
+  'india-to-dubai',
+  'philippines-to-dubai',
+  'germany-to-dubai',
+  'france-to-dubai',
+  'saudi-arabia-to-dubai',
+  'singapore-to-dubai',
+])
+
+const EXTRA_RELATED: Record<string, RouteRelatedLink[]> = {
+  'germany-to-dubai': [
+    { label: 'Netherlands to Dubai (sibling corridor)', href: '/routes/netherlands-to-dubai/' },
+    { label: 'MOCCAE permit page', href: '/service/moccae-pet-permit/' },
+  ],
+  'france-to-dubai': [
+    { label: 'Spain to Dubai (sibling corridor)', href: '/routes/spain-to-dubai/' },
+    { label: 'MOCCAE permit page', href: '/service/moccae-pet-permit/' },
+  ],
+  'saudi-arabia-to-dubai': [
+    { label: 'Oman to Dubai (GCC sibling)', href: '/routes/oman-to-dubai/' },
+    { label: 'Kuwait to Dubai (GCC sibling)', href: '/routes/kuwait-to-dubai/' },
+    { label: 'Bahrain to Dubai (GCC sibling)', href: '/routes/bahrain-to-dubai/' },
+    { label: 'Pet transport in Dubai', href: '/service/pet-transport-dubai/' },
+    { label: 'MOCCAE permit page', href: '/service/moccae-pet-permit/' },
+  ],
+  'singapore-to-dubai': [
+    { label: 'Malaysia to Dubai (sibling corridor)', href: '/routes/malaysia-to-dubai/' },
+    { label: 'Hong Kong to Dubai (sibling corridor)', href: '/routes/hong-kong-to-dubai/' },
+    { label: 'MOCCAE permit page', href: '/service/moccae-pet-permit/' },
+  ],
+}
+
 const CORRIDOR_FAMILIES: string[][] = [
   ['australia', 'new-zealand'],
   ['india', 'philippines', 'pakistan'],
@@ -151,6 +186,9 @@ function relatedLinks(copy: RouteUniqueCopy, direction: 'inbound' | 'outbound'):
   const sibling = siblingLink(copy.countryKey, direction)
   if (sibling && !links.some((l) => l.href === sibling.href)) {
     links.push(sibling)
+  }
+  for (const extra of EXTRA_RELATED[copy.slug] ?? []) {
+    if (!links.some((l) => l.href === extra.href)) links.push(extra)
   }
   if (direction === 'inbound') {
     links.push({ label: 'Pet relocation to Dubai', href: '/service/pet-relocation-to-dubai/' })
@@ -301,7 +339,7 @@ export function assembleRoute(copy: RouteUniqueCopy): RoutePageData {
     depthBar: 'OWNER ≥1000 unique',
     wordCountEstimate,
     cta: {
-      label: 'Tell us about your move',
+      label: WEEK7_INBOUND.has(copy.slug) ? 'Get Route Checked' : 'Tell us about your move',
       whatsapp: '+971504782999',
       note: 'Share the pet, the route and the dates. We explain the next step and any assessment fee before paid work starts.',
     },
