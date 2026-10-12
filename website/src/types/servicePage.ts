@@ -42,6 +42,11 @@ export interface ServicePageData {
   primaryKeyword: string
   /** pre-filled WhatsApp message for this page's CTAs */
   whatsappMessage: string
+  /**
+   * When set, the multi-step WhatsApp gate preselects this service radio.
+   * Must match a SERVICE_OPTIONS label, for example "Export service".
+   */
+  servicePreset?: string
   /** Final CTA button label. Defaults by slug when omitted. */
   ctaLabel?: string
   /** Hero eyebrow. Defaults to “Pet Relocation Service”. */

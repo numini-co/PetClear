@@ -1,6 +1,5 @@
 import type { ServicePageData } from '../../types/servicePage.ts'
 import { waEligibility } from '../../lib/conversionCopy.ts'
-import { EXPORT_CERT_FEE_VERIFY } from '../../lib/regulatory.ts'
 
 const petRelocationFromDubai: ServicePageData = {
   slug: 'pet-relocation-from-dubai',
@@ -72,7 +71,7 @@ const petRelocationFromDubai: ServicePageData = {
             },
             {
               title: 'Build the timeline backwards',
-              text: 'Destination waiting periods sit on the destination, not on Dubai. They are not the UAE inbound rule. When a titre is required for entry to the UAE, the blood sample is taken within 90 days before travel and must show at least 0.5 IU/ml. That is the sample date, not a wait after the draw. The MOCCAE import permit is a separate 90 days, counted from issuance.',
+              text: 'Destination waiting periods sit on the destination, not on Dubai. They are not the UAE inbound rule. For a high-risk import into the UAE the antibody certificate is valid 365 days if the vaccine stays valid and no booster is given. The 90-day clock on that inbound file is the MOCCAE import permit, counted from issuance.',
             },
             {
               title: 'Veterinary preparation in the UAE',
@@ -80,7 +79,7 @@ const petRelocationFromDubai: ServicePageData = {
             },
             {
               title: 'MOCCAE export health certificate',
-              text: `The UAE export health certificate is issued after a pre-export veterinary inspection. Schedule it close to departure so the window still covers travel day. ${EXPORT_CERT_FEE_VERIFY} The export certificate is commonly valid for 30 days from issue. Verify that 30-day validity on the official portal. That 30-day life is the export certificate, not the MOCCAE import permit (90 days from issuance for animals entering the UAE). Process guide: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).`,
+              text: 'The UAE export health certificate is issued after a pre-export veterinary inspection. Schedule it close to departure so the window still covers travel day, not months ahead. A government fee applies; confirm current fees and validity on the official portal. Contested ranges are not published here. Process guide: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
             },
             {
               title: 'Crate and cargo booking',
@@ -137,13 +136,7 @@ const petRelocationFromDubai: ServicePageData = {
           items: [
             '[Leaving Dubai with your pet: Dubai to UK](/routes/dubai-to-uk/): destination-driven timeline, GB paperwork and tapeworm timing for dogs',
             '[Moving pets out of Dubai: Dubai to USA](/routes/dubai-to-usa/): CDC-facing dog rules and US arrival inspection',
-            '[Dubai to India](/routes/dubai-to-india/): destination rules first, then the UAE export certificate',
-            '[Dubai to Philippines](/routes/dubai-to-philippines/): BAI import file on the destination side',
-            '[Dubai to Australia](/routes/dubai-to-australia/): permit and quarantine planned before the Dubai departure',
-            '[Dubai to Canada](/routes/dubai-to-canada/): Canadian entry file, then the UAE export certificate',
-            '[Dubai to Germany](/routes/dubai-to-germany/): EU entry papers before the export window',
-            '[Dubai to Saudi Arabia](/routes/dubai-to-saudi-arabia/): MEWA permit on Anaam, then the UAE export certificate',
-            'More countries: open the [routes hub](/routes/) and send the country name with your eligibility check',
+            'Other destinations: open the [routes hub](/routes/) and send the country name with your eligibility check. We map current entry rules before you commit',
           ],
         },
         {
@@ -155,7 +148,7 @@ const petRelocationFromDubai: ServicePageData = {
     {
       h2: 'What changes the quote for a move out of Dubai',
       intro:
-        'The quote describes the drivers for your pet and your dates. The labelled export-certificate fee above is a government figure on file. Confirm it on the official portal. This page still does not publish a package total.',
+        'Export-certificate fee ranges circulating online conflict with first-party notes. They stay off this page. The quote describes the drivers for your pet and your dates.',
       body: [
         {
           type: 'p',
@@ -179,7 +172,7 @@ const petRelocationFromDubai: ServicePageData = {
     },
     {
       q: 'What is the MOCCAE export health certificate path?',
-      a: `A pre-export veterinary inspection, then a UAE export health certificate scheduled close to departure. ${EXPORT_CERT_FEE_VERIFY} The export certificate is commonly valid for 30 days from issue. Verify that 30-day validity on the official portal. That 30-day life is the export certificate, not the 90-day import permit. How-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).`,
+      a: 'A pre-export veterinary inspection, then a UAE export health certificate scheduled close to departure so the window still covers travel day. Confirm current fees and validity on the official portal. Contested certificate ranges are not published here. How-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
     },
     {
       q: 'When should I start planning a move out of Dubai?',
@@ -195,7 +188,7 @@ const petRelocationFromDubai: ServicePageData = {
     },
     {
       q: 'Can you help with Dubai to USA as well as Dubai to UK?',
-      a: 'Yes. Published outbound pages include [Dubai to UK](/routes/dubai-to-uk/), [Dubai to USA](/routes/dubai-to-usa/), [Dubai to India](/routes/dubai-to-india/), [Dubai to Philippines](/routes/dubai-to-philippines/), [Dubai to Australia](/routes/dubai-to-australia/), [Dubai to Canada](/routes/dubai-to-canada/), [Dubai to Germany](/routes/dubai-to-germany/) and [Dubai to Saudi Arabia](/routes/dubai-to-saudi-arabia/). The full list is the [routes hub](/routes/).',
+      a: 'Yes. Those two outbound guides are live: [Dubai to UK](/routes/dubai-to-uk/) and [Dubai to USA](/routes/dubai-to-usa/). Other destinations start with a country check on the [routes hub](/routes/), sent with the eligibility request.',
     },
     {
       q: 'How is this different from the pet export Dubai service page?',
@@ -212,12 +205,6 @@ const petRelocationFromDubai: ServicePageData = {
     { label: 'Pet relocation services in Dubai', to: '/service/pet-relocation-dubai/' },
     { label: 'Leaving Dubai with your pet, UK', to: '/routes/dubai-to-uk/' },
     { label: 'Moving pets out of Dubai, USA', to: '/routes/dubai-to-usa/' },
-    { label: 'Dubai to India', to: '/routes/dubai-to-india/' },
-    { label: 'Dubai to Philippines', to: '/routes/dubai-to-philippines/' },
-    { label: 'Dubai to Australia', to: '/routes/dubai-to-australia/' },
-    { label: 'Dubai to Canada', to: '/routes/dubai-to-canada/' },
-    { label: 'Dubai to Germany', to: '/routes/dubai-to-germany/' },
-    { label: 'Dubai to Saudi Arabia', to: '/routes/dubai-to-saudi-arabia/' },
     { label: 'Routes hub', to: '/routes/' },
     { label: 'Request a managed-move quote', to: '/contact/' },
     { label: 'Compare our service tiers', to: '/services/' },

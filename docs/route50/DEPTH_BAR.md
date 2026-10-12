@@ -16,7 +16,7 @@ Every `/routes/{slug}/` page must be **≥1000 words of UNIQUE detailed copy** �
 - [ ] `howItWorks` — scenario timeline (not generic 5-step clone)
 - [ ] Airports (IATA + city) — seed + UAE DXB/DWC/AUH + `airportsNarrative`
 - [ ] Airlines — cabin / cargo / generally not; confirm current policy; no affiliation + `airlinesNarrative`
-- [ ] UAE import: MOCCAE permit **90 days** from issuance (inbound); outbound: destination rules high-level + verify
+- [ ] UAE import: MOCCAE permit **90 days from issuance** (inbound); outbound: destination rules high-level + verify
 - [ ] FAQ 4–6 unique — prefer DataForSEO **PAA** when provided; **no invented fees**
 - [ ] Internal links ≥3 meaningful (hub + reverse twin + guides)
 - [ ] Quote-only packages; WhatsApp **+971504782999**; CTA **Get Route Checked**

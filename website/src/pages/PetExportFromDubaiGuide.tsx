@@ -13,16 +13,19 @@ import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, LOGO_URL, getWhatsAppUrl } from '../lib/seo.ts'
 import { EXPORT_CERT_FEE_VERIFY, EXPORT_CERT_TIMING_VERIFY } from '../lib/regulatory.ts'
 import GuideToc from '../components/GuideToc.tsx'
+import GuideDualPath from '../components/GuideDualPath.tsx'
+import { GUIDE_SOFT_GATE, waEligibility } from '../lib/conversionCopy.ts'
 
 const PATH = '/guides/pet-export-from-dubai/'
-const WA_DOCS =
-  'Hi Dubai Pet Relocation! I am leaving Dubai with my pet and want to check the export documents — destination rules, health certificate timing, and the MOCCAE export path.'
-const WA_COORD =
-  'Hi Dubai Pet Relocation! I need a coordinator to walk me through exporting my pet from Dubai. Destination and travel month are ready to share.'
+const WA_EXPORT = waEligibility({ origin: 'Dubai', need: 'managed export' })
+const PRIMARY_CTA =
+  'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-semibold text-[#0B6B3A] shadow-lg ring-1 ring-black/10 transition hover:bg-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto'
+const WA_CTA =
+  'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#085530] sm:w-auto'
 
 const snippetQuestion = 'How do I export a pet from Dubai?'
 const snippetAnswer =
-  'Plan backwards from the destination country, then complete UAE-side paperwork so every certificate is still valid on departure day. Typical Dubai steps: confirm entry rules, align microchip and rabies records, obtain a Fit to Fly exam close to the flight, apply for the MOCCAE export health certificate on the official portal (UAE Pass), and present the animal for the government veterinary inspection at cargo. The UAE does not quarantine pets that are leaving. Destination titer, tapeworm, permit or quarantine rules — not Dubai — usually set the calendar.'
+  'Plan backwards from the destination country, then complete UAE-side paperwork so every certificate is still valid on departure day. Typical Dubai steps: confirm entry rules, align microchip and rabies records, obtain a Fit to Fly exam close to the flight, apply for the MOCCAE export health certificate on the official portal (UAE Pass), and present the animal for the government veterinary inspection at cargo. The UAE does not quarantine pets that are leaving. Destination titer, tapeworm, permit or quarantine rules, not Dubai, usually set the calendar.'
 
 const faqData = [
   {
@@ -62,16 +65,16 @@ const faqData = [
     a: 'If vaccinations are current and the destination needs no titer or long residency clock, UAE-side paperwork can be days to about two weeks. Destination RNATT, 180-day Australia residency maths, or CDC facility reservations can stretch the file to many weeks or months. We map the destination first rather than quoting a single “typical export takes two weeks” line.',
   },
   {
-    q: 'Who applies on the MOCCAE portal — and do I need UAE Pass?',
+    q: 'Who applies on the MOCCAE portal, and do I need UAE Pass?',
     a: 'The export-certificate application is an official portal step; UAE Pass access is the usual login. A government veterinarian still inspects the animal in person before the export is treated as complete. We can guide the file and timing. We do not issue the certificate and we are not the inspector.',
   },
 ]
 
 export default function PetExportFromDubaiGuide() {
   const canonical = `${BASE_URL}${PATH}`
-  const title = 'Pet Export from Dubai | Owner Document Checklist'
+  const title = 'How to Export a Pet from Dubai | Document Checklist'
   const description =
-    'Prepare your pet export from Dubai with a destination-first checklist. Review documents, appointments and travel planning before requesting support.'
+    'DIY checklist for exporting a pet from Dubai: destination rules, document order and MOCCAE export certificate timing. Confirm fees on the MOCCAE portal.'
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -95,7 +98,7 @@ export default function PetExportFromDubaiGuide() {
       logo: { '@type': 'ImageObject', url: LOGO_URL },
     },
     datePublished: '2026-09-14',
-    dateModified: '2026-09-14',
+    dateModified: '2026-10-12',
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
   }
   const faqSchema = {
@@ -128,11 +131,13 @@ export default function PetExportFromDubaiGuide() {
         imageAlt="Illustration for the complete guide to exporting a pet from Dubai"
         eyebrow="Export process guide"
         title="How to prepare a pet export from Dubai"
-        subtitle="Destination rules first, then the UAE export health-certificate path — a how-to for leaving Dubai with a dog or cat, not a booking page."
-        updated="Updated September 2026"
-        primaryLabel="Check Documents"
-        whatsappMessage={WA_DOCS}
-        secondary={{ label: 'Pet export service', to: '/service/pet-export-dubai/' }}
+        subtitle="A DIY how-to: destination rules first, then the UAE export health certificate. Booking sits on the pet export service."
+        updated="Updated 12 October 2026"
+        primaryLabel="Get a managed export quote"
+        primaryClassName={WA_CTA}
+        whatsappMessage={WA_EXPORT}
+        waService="Export service"
+        secondary={{ label: 'pet export service', to: '/service/pet-export-dubai/' }}
         imageWidth={1920}
         imageHeight={1080}
       />
@@ -140,19 +145,26 @@ export default function PetExportFromDubaiGuide() {
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
+          <GuideDualPath
+            diyNote="Keep reading this checklist if you are preparing the export file yourself."
+            moneyTo="/service/pet-export-dubai/"
+            moneyLabel="pet export service"
+            waMessage={WA_EXPORT}
+            waLabel="Get a managed export quote"
+          />
+          <p className="mb-4 mt-4 text-sm leading-relaxed text-[#5A5A5A]">{GUIDE_SOFT_GATE}</p>
           <p className="mb-4 text-sm text-[#8A8A8A]">
             By Dubai Pet Relocation editorial · UAE pet-relocation coordinators; facts checked against
-            regulatory-source-of-truth.csv · Last updated 14 September 2026
+            regulatory-source-of-truth.csv · Page updated 12 October 2026
           </p>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
-            This page covers the informational question <strong>pet export from Dubai</strong>: how the documents
-            sequence, who inspects the animal, and why the destination — not the airport code on your ticket —
-            sets the clock. The paid export file and the departure journey each have their own page.
-            Paid filing and cargo coordination live on{' '}
+            This page is the DIY checklist for <strong>pet export from Dubai</strong>: the document order, who
+            inspects the animal, and why the destination, not the airport code on your ticket, sets the clock.
+            It is not the booking page. Paid filing and cargo coordination live on the{' '}
             <Link to="/service/pet-export-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-              pet export service from Dubai
+              pet export service
             </Link>
-            . Departure-side timelines and “leaving Dubai” framing live on{' '}
+            . Departure-side timelines live on{' '}
             <Link to="/service/pet-relocation-from-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               pet relocation from Dubai
             </Link>
@@ -165,8 +177,8 @@ export default function PetExportFromDubaiGuide() {
           <p className="mb-6 leading-relaxed text-[#5A5A5A]">
             Two rule-sets must line up. MOCCAE controls how a dog or cat leaves the United Arab Emirates. The
             receiving country decides whether a titer, tapeworm treatment, advance permit or quarantine applies.
-            Families who reverse that order — collecting a UAE certificate first, then discovering a
-            destination waiting period — are the ones who miss their own flight week.
+            Families who reverse that order, collecting a UAE certificate first and then discovering a
+            destination waiting period, are the ones who miss their own flight week.
           </p>
           <ContentImage
             src="/assets/w6/pet-export-from-dubai-guide-suitcase-checklist.png"
@@ -239,7 +251,7 @@ export default function PetExportFromDubaiGuide() {
       <section id="uae-exit-documents" className="section-padding scroll-mt-24 bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
-            Documents to take a pet out of the UAE — in order
+            Documents to take a pet out of the UAE, in order
           </h2>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             The pouch is a consistency test. Every original should tell the same story about the same animal.
@@ -286,10 +298,10 @@ export default function PetExportFromDubaiGuide() {
             </li>
           </ol>
           <p className="leading-relaxed text-[#5A5A5A]">
-            If you only want the pouch reviewed on one WhatsApp thread, use Check Documents. If you want the
-            paid export file held from the destination rules through the handover, that is the{' '}
+            If you are completing the file yourself, keep the order above. If you want the paid export file
+            held from the destination rules through the handover, open the{' '}
             <Link to="/service/pet-export-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-              pet export service from Dubai
+              pet export service
             </Link>
             .
           </p>
@@ -299,7 +311,7 @@ export default function PetExportFromDubaiGuide() {
       <section className="section-padding bg-[#F5F6FD]">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
-            Certificate timing — two short clocks, not one long permit
+            Certificate timing: two short clocks, not one long permit
           </h2>
           <ContentImage
             src="/assets/w6/pet-export-from-dubai-certificate-timing-timeline.png"
@@ -432,7 +444,7 @@ export default function PetExportFromDubaiGuide() {
       <section className="section-padding bg-white">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
-            Who this guide is for — and who it is not
+            Who this guide is for, and who it is not
           </h2>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             It is written for owners leaving the UAE with a personal dog or cat: end-of-posting repatriation,
@@ -469,7 +481,7 @@ export default function PetExportFromDubaiGuide() {
       <section className="section-padding bg-[#F5F6FD]">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
-            How long export takes — scenarios, not one SLA
+            How long an export takes, by scenario
           </h2>
           <p className="mb-4 leading-relaxed text-[#5A5A5A]">
             The UAE-side certificate and inspection are usually the short end of the file. The destination
@@ -538,7 +550,7 @@ export default function PetExportFromDubaiGuide() {
       <section className="section-padding bg-[#F5F6FD]">
         <div className="mx-auto max-w-[900px] px-5 sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-[#2A2A2A] sm:text-[30px]">
-            What can go wrong — and who does what
+            What can go wrong, and who does what
           </h2>
           <ul className="mb-6 space-y-2">
             {[
@@ -652,34 +664,38 @@ export default function PetExportFromDubaiGuide() {
       />
 
       <section className="section-padding bg-[#4F5BD5]">
-        <div className="mx-auto max-w-[800px] px-5 text-center sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-[800px] px-5 pb-4 text-center sm:px-6 lg:px-8">
           <h2 className="mb-4 text-[24px] font-bold text-white sm:text-[30px]">
-            Need the export pouch checked before you book cargo?
+            Want us to manage your pet export?
           </h2>
-          <p className="mb-6 text-base leading-relaxed text-white/80">
-            Send destination, species and the month you want to fly. We will say whether the documents can
-            meet that week. Email{' '}
+          <p className="mb-4 text-base leading-relaxed text-white/90">
+            Check export eligibility and request a managed export quote on the{' '}
+            <Link to="/service/pet-export-dubai/" className="font-semibold text-white underline">
+              pet export service
+            </Link>
+            . The wider departure journey is{' '}
+            <Link to="/service/pet-relocation-from-dubai/" className="font-semibold text-white underline">
+              pet relocation from Dubai
+            </Link>
+            . Email{' '}
             <a href="mailto:support@dubai-pet-relocation.ae" className="underline">
               support@dubai-pet-relocation.ae
             </a>
-            . WhatsApp +971 50 478 2999.
+            . WhatsApp +971 50 478 2999 when you are ready to book.
           </p>
-          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <p className="mb-6 text-sm leading-relaxed text-white/80">{GUIDE_SOFT_GATE}</p>
+          <div className="flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
+            <Link to="/service/pet-export-dubai/" className={PRIMARY_CTA}>
+              Check export eligibility
+            </Link>
             <a
-              href={getWhatsAppUrl(WA_DOCS)}
+              href={getWhatsAppUrl(WA_EXPORT)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-7 py-4 text-sm font-semibold text-[#4F5BD5] hover:bg-white/90"
+              data-wa-service="Export service"
+              className={WA_CTA}
             >
-              Check Documents
-            </a>
-            <a
-              href={getWhatsAppUrl(WA_COORD)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-7 py-4 text-sm font-semibold text-white hover:bg-[#1DA851]"
-            >
-              <MessageCircle className="h-4 w-4" /> WhatsApp a Relocation Coordinator
+              <MessageCircle className="h-4 w-4" aria-hidden="true" /> Get a managed export quote
             </a>
           </div>
         </div>

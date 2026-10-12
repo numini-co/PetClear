@@ -73,7 +73,7 @@ export const FLIGHT_MODE_CARDS: FlightModeCard[] = [
 ]
 
 export const UAE_MANIFEST_CARGO_RULE =
-  'Pets entering the UAE travel as manifested (manifest) cargo under IATA live-animal conditions, not as cabin pets or accompanied checked baggage. The documented exception is Etihad in-cabin arrivals into Abu Dhabi.'
+  'Pets entering the UAE travel as manifested (manifest) cargo under IATA live-animal conditions — not as cabin pets or accompanied checked baggage. The documented exception is Etihad in-cabin arrivals into Abu Dhabi.'
 
 export function flightModeCardsExcept(id?: FlightModeId): FlightModeCard[] {
   if (!id) return FLIGHT_MODE_CARDS

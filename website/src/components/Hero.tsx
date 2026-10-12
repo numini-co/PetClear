@@ -36,6 +36,8 @@ interface HeroProps {
   paidIncludes?: string[]
   /** Soft-gate sentence under the hero CTA. */
   gateLine?: string
+  /** Preselects a service radio in the multi-step WhatsApp gate. */
+  waService?: string
 }
 
 // Shared professional hero: a sharp full-bleed photo, a black gradient scrim for
@@ -57,6 +59,7 @@ export default function Hero({
   primaryClassName,
   paidIncludes,
   gateLine,
+  waService,
   overlayClassName,
   imageWidth = 1536,
   imageHeight = 1024,
@@ -105,6 +108,7 @@ export default function Hero({
               href={getWhatsAppUrl(whatsappMessage || WA_ELIGIBILITY_DEFAULT)}
               target="_blank"
               rel="noopener noreferrer"
+              data-wa-service={waService}
               className={
                 primaryClassName ||
                 'inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-white/20 transition hover:bg-[#1DA851]'
