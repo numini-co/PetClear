@@ -17,7 +17,7 @@ import Breadcrumb from '../components/Breadcrumb.tsx'
 import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import { BASE_URL } from '../lib/seo.ts'
 import GuideDualPath from '../components/GuideDualPath.tsx'
-import { waEligibility } from '../lib/conversionCopy.ts'
+import { GUIDE_SOFT_GATE, waEligibility } from '../lib/conversionCopy.ts'
 
 const CHECKED = '22 September 2026'
 const MOCCAE_IMPORT = 'https://moccae.gov.ae/en/services/import-permit-pets'
@@ -153,9 +153,11 @@ export default function BannedBreedsGuide() {
         title="Dog breed restrictions for importing to Dubai"
         subtitle="Names below are the ban list on the MOCCAE pet import page. The page does not publish a fine amount. A permitted breed still needs a permit valid 90 days from issuance."
         updated={`Last verified: ${CHECKED}`}
-        primaryLabel="Check breed eligibility"
+        primaryLabel="Get a managed dog-move quote"
+        primaryClassName="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#085530] sm:w-auto"
         whatsappMessage={waBreed}
-        secondary={{ label: 'Dog relocation service', to: '/service/dog-relocation-dubai/' }}
+        gateLine={GUIDE_SOFT_GATE}
+        secondary={{ label: 'Managed dog relocation eligibility', to: '/service/dog-relocation-dubai/' }}
       />
 
       <section className="section-padding bg-white">
@@ -163,9 +165,9 @@ export default function BannedBreedsGuide() {
           <GuideDualPath
             diyNote="Stay on this page if you are checking the breed name yourself."
             moneyTo="/service/dog-relocation-dubai/"
-            moneyLabel="Dog relocation service"
+            moneyLabel="Managed dog relocation eligibility"
             waMessage={waBreed}
-            waLabel="Check breed eligibility"
+            waLabel="Get a managed dog-move quote"
           />
         </div>
       </section>
@@ -270,11 +272,12 @@ export default function BannedBreedsGuide() {
       <GuideFunnelCta
         variant="mid"
         title="Breed allowed, and you want the move booked?"
-        subtitle="Use this list as the name check. If the breed is allowed and you want the file managed, open dog relocation or permit assistance. WhatsApp only when you are ready to book. Government fees on the page we checked were AED 200 for the permit, AED 500 to release a dog, and AED 250 to release a cat."
+        subtitle="Use this list as the name check. Guides are free to read. WhatsApp is for people ready to book a managed relocation. If the breed is allowed, open managed dog relocation eligibility. Government fees: confirm on the MOCCAE portal."
         eligibilityMessage={waBreed}
-        waLabel="Check breed eligibility"
+        waLabel="Get a managed dog-move quote"
+        waClassName="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-[#0B6B3A] px-5 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530]"
         links={[
-          { to: '/service/dog-relocation-dubai/', label: 'Dog relocation service', icon: 'dog' },
+          { to: '/service/dog-relocation-dubai/', label: 'Managed dog relocation eligibility', icon: 'dog' },
           { to: '/service/moccae-pet-permit/', label: 'MOCCAE permit assistance', icon: 'file' },
         ]}
       />
@@ -318,12 +321,20 @@ export default function BannedBreedsGuide() {
       <GuideFunnelCta
         variant="end"
         title="Ready to book if the breed is allowed?"
-        subtitle="The names on this page are the first check. WhatsApp only if you are ready to book a managed dog relocation. The MOCCAE permit is valid for 90 days from issuance."
+        subtitle="Guides are free to read. WhatsApp is for people ready to book a managed relocation. Start with managed dog relocation eligibility, then the quote gate. We do not offer a free breed consultation. The MOCCAE import permit is valid for 90 days from issuance."
         eligibilityMessage={waBreed}
-        waLabel="Check breed eligibility"
+        waLabel="Get a managed dog-move quote"
+        waClassName="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-[#0B6B3A] px-5 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530]"
+        paidItems={[
+          'Breed eligibility check against the published import list',
+          'IATA crate sizing',
+          'Airline booking, cabin or cargo',
+          'MOCCAE import permit timing for an allowed breed (90 days from issuance)',
+          'DXB or DWC airport handoff',
+        ]}
         links={[
-          { to: '/dog-relocation-to-dubai/', label: 'Dog relocation to Dubai', icon: 'dog' },
-          { to: '/service/moccae-pet-permit/', label: 'MOCCAE permit assistance', icon: 'file' },
+          { to: '/service/dog-relocation-dubai/', label: 'Managed dog relocation eligibility', icon: 'dog' },
+          { to: '/service/pet-import-dubai/', label: 'Pet import Dubai', icon: 'plane' },
         ]}
       />
     </>

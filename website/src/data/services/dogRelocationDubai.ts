@@ -1,45 +1,58 @@
 import type { ServicePageData } from '../../types/servicePage.ts'
-import { waEligibility } from '../../lib/conversionCopy.ts'
+import { GUIDE_SOFT_GATE, waEligibility } from '../../lib/conversionCopy.ts'
 
 const dogRelocationDubai: ServicePageData = {
   slug: 'dog-relocation-dubai',
   seoTitle: 'Dog Relocation Dubai | Breed Checks, Crates & Flights',
   metaDescription:
-    'Relocate a dog to or from Dubai: a breed check, IATA crate sizing, airline rules and the MOCCAE permit. Send the dog and the route for a quote.',
+    'Check dog relocation eligibility and get a managed dog-move quote. Includes a breed check and the MOCCAE import permit for inbound dogs.',
   h1: 'Dog relocation to and from Dubai',
   primaryKeyword: 'dog relocation dubai',
   heroValueProp:
-    'Moving a dog to or from Dubai? We check breed eligibility against the official UAE rules, size an IATA-compliant crate, map your vaccination timeline and flag the snub-nosed and summer airline restrictions before you book. Transparent pricing, vetted partners, WhatsApp at every step.',
+    'Moving a dog to or from Dubai starts with a breed eligibility check, then a managed dog-move quote.',
   heroImage: '/images/service-dog-relocation-dubai.jpg',
-  heroImageAlt:
-    'Calm dog sitting beside an IATA travel crate at a Dubai airport',
+  heroImageAlt: 'Calm dog sitting beside an IATA travel crate at a Dubai airport',
   whatsappMessage: waEligibility({ pet: 'dog', need: 'managed move' }),
-  trustBadges: ['Breed eligibility checked', 'IATA crate guidance', 'Vetted partners', 'WhatsApp support'],
-  costRange: { low: '2500', high: '22000' },
+  ctaLabel: 'Get a managed dog-move quote',
+  heroEyebrow: 'Dog Relocation',
+  ctaSupport:
+    'Check eligibility first. Send the breed, the route and the month. We reply with a managed dog-move quote. This is not a free breed tutorial.',
+  ctaHeading: 'Ready for a managed dog-move quote?',
+  ctaBody:
+    'Send the breed, weight, origin, destination and month. We check eligibility and reply with a managed dog-move quote. Government fees: confirm on the MOCCAE portal. We do not publish a package total in AED.',
+  gateLine: GUIDE_SOFT_GATE,
+  paidIncludes: [
+    'Breed eligibility check',
+    'IATA crate sizing',
+    'Airline booking, cabin or cargo',
+    'MOCCAE import permit timing for inbound dogs',
+    'DXB or DWC airport handoff',
+  ],
+  trustBadges: ['Breed eligibility checked', 'IATA crate guidance', 'Vetted partners', 'WhatsApp during business hours'],
   hasHowTo: false,
   sections: [
     {
       h2: 'Dog Relocation Across Dubai and Worldwide',
       intro:
-        'Relocating a dog is the most demanding kind of pet move, because dogs span a huge weight range, several breeds face UAE entry rules, and a number of popular breeds carry airline health restrictions. We coordinate every piece so nothing surprises you on travel day.',
+        'Dog relocation in Dubai is the paid file for a dog moving into the UAE, out of the UAE, or between emirates. Guides are free to read. WhatsApp is for people ready to book a managed dog move.',
       body: [
         {
           type: 'p',
-          text: 'Dog relocation in Dubai covers two very different journeys. The first is local and regional transport — a climate-controlled, ground move within Dubai or between emirates such as Dubai to Abu Dhabi or Sharjah. The second is international relocation by air, either importing a dog into the UAE or exporting one out of it. Both depend on the same foundations: a compliant microchip, a valid rabies vaccination, a government health certificate and, for air travel, an airline-approved crate sized correctly for your dog.',
+          text: 'Two journeys share one coordinator. A ground move stays inside Dubai or runs between emirates, such as Dubai to Abu Dhabi or Sharjah. An international move imports a dog into the UAE or exports one. Both need a microchip whose number matches the papers, a valid rabies vaccination, a government health certificate, and, for air travel, an airline-approved crate sized for that dog.',
         },
         {
           type: 'p',
-          text: 'We are a coordination service. We do not physically fly the animals ourselves; instead we connect you with vetted veterinary and transport partners, confirm your dog is eligible and ready, and make sure the paperwork, crate and flight all line up. For the wider picture across both species, see our main pet relocation in Dubai page. The sections below focus on what is specific to dogs: breed rules, crate sizing, snub-nosed and summer travel, the document timeline, and cost.',
+          text: 'We coordinate the file. We do not fly the dog ourselves. Vetted veterinary and transport partners do the physical work. The wider offer is [pet relocation services in Dubai](/service/pet-relocation-dubai/). Inbound dogs use [pet import Dubai](/service/pet-import-dubai/). Owner preparation, including crate practice at home, is on [bringing a dog to Dubai](/dog-relocation-to-dubai/).',
         },
         {
           type: 'list',
           items: [
-            'Breed eligibility checks against the official UAE restricted-breed rules before you commit',
-            'IATA-compliant crate sizing and sourcing through vetted partners',
-            'Rabies vaccination and health-certificate timeline mapped to your travel date',
-            'MOCCAE import or export permit guidance for moves to or from the UAE',
-            'Flight and cargo coordination with dog-experienced airlines, including snub-nosed and summer rules',
-            'Customs clearance at DXB or DWC and door-to-door delivery anywhere in Dubai',
+            'Breed eligibility check against the published UAE import list before you commit',
+            'IATA crate sizing through vetted partners',
+            'Rabies vaccination and health-certificate timing mapped to the travel date',
+            'MOCCAE import permit timing for inbound dogs, valid 90 days from issuance, or export sequencing when the dog is leaving',
+            'Airline booking, including cabin or cargo where that carrier allows it',
+            'Customs clearance at DXB or DWC, and door-to-door delivery in Dubai when that scope is booked',
           ],
         },
       ],
@@ -47,26 +60,26 @@ const dogRelocationDubai: ServicePageData = {
     {
       h2: 'Dog Breed Eligibility',
       intro:
-        'Before anything else, we confirm your dog can legally enter the UAE. The rules separate breeds into three groups, and the most common point of confusion is the difference between banned and restricted.',
+        'The first paid check is whether this dog can travel. A name on the import list blocks the move. We do not offer a free photo review.',
       body: [
         {
           type: 'p',
-          text: 'The UAE maintains an official list of dog breeds that are banned from import. These are typically breeds with a fighting or guarding lineage, such as the American Pit Bull Terrier, American Staffordshire Terrier, Tosa Inu, Dogo Argentino, Brazilian Mastiff (Fila Brasileiro), Japanese Tosa and certain wolf-dog hybrids. Crosses and mixes that include a banned breed are also refused. If your dog falls in this group, it cannot be imported, and no permit will be issued — so we check this first, before you spend on anything else.',
+          text: 'The names are on [banned dog breeds Dubai](/guides/banned-dog-breeds-dubai/). That guide lists the breeds on the MOCCAE pet import page, including Pit Bull-type breeds, the Japanese Tosa, the Dogo Argentino and the Brazilian Mastiff (Fila Brasileiro). If the name on the veterinary record matches that list, we will not file an import permit. The published outcome for a non-compliant import is rejection at the owner\'s expense or confiscation. The page checked on 22 September 2026 does not publish a fine amount.',
         },
         {
           type: 'p',
-          text: 'Separately, there is a group of restricted breeds. This is the part owners most often get wrong: Rottweilers and Dobermans are restricted, not banned. They can be imported, but they may require additional conditions — such as a stronger, reinforced crate, additional handling arrangements, and in some cases extra documentation or local registration on arrival. Restricted simply means more requirements, not refusal. We tell you exactly which conditions apply to your dog so there are no last-minute problems at the airport.',
+          text: 'Rottweiler, Doberman and Boxer were not on that import list. This page does not call them banned, and it does not publish muzzle, leash or insurance rules. A building can still set its own pet policy. Ask the building before cargo is booked.',
         },
         {
           type: 'p',
-          text: 'A third group is the snub-nosed (brachycephalic) breeds, covered in their own section below. These are not banned or restricted by the government, but airlines apply their own health-based rules to them. For the full, current breed lists and the practical detail behind each group, read our banned dog breeds in Dubai guide. WhatsApp the breed only if you are ready to book a managed dog relocation and need eligibility confirmed against the official UAE rules.',
+          text: 'Snub-nosed breeds are an airline question, not a line on the import ban list. Read [snub-nosed dogs flying to the UAE](/guides/snub-nosed-dogs-flying-uae/) and still confirm the carrier. WhatsApp the breed only when you are ready to book a managed dog relocation.',
         },
         {
           type: 'list',
           items: [
-            'Banned — cannot be imported (e.g. Pit Bull-type breeds, Tosa Inu, Dogo Argentino, Fila Brasileiro and crosses of these)',
-            'Restricted — can be imported with extra conditions (Rottweilers and Dobermans are in this group, NOT banned)',
-            'Snub-nosed — eligible by law, but subject to airline health rules and crate upsizing',
+            'On the published ban list: the breed check blocks the move. No permit is filed.',
+            'Not on that list: the rest of the file still has to match, including the [MOCCAE import permit](/guides/moccae-import-permit/) for an inbound dog.',
+            'Snub-nosed: not a government ban. The airline can still refuse that head shape on that date.',
           ],
         },
       ],
@@ -74,50 +87,44 @@ const dogRelocationDubai: ServicePageData = {
     {
       h2: 'IATA Crate Sizing for Dogs',
       intro:
-        'Air travel for dogs uses an airline-approved travel crate built to the IATA Live Animals Regulations. Choosing the right size is the single most important comfort and compliance decision you will make.',
+        'Air travel uses a rigid crate built to the IATA Live Animals Regulations. The dog must be able to stand, turn and lie down. We do not publish crate prices in AED.',
       body: [
         {
           type: 'p',
-          text: 'The crate must be rigid, well-ventilated on at least three sides, secured with metal bolts rather than plastic clips, and large enough for your dog to stand, turn around and lie down naturally. The standard sizing rule is that the crate height must clear the top of your dog’s head (or ear tips, for breeds with upright ears) with room to spare, and the length must comfortably fit the dog from nose to tail base plus its standing leg length. We help you measure your dog and match it to the correct IATA size code through our vetted partners.',
+          text: 'Measure the dog standing. A is nose to the base of the tail. B is floor to elbow. C is width across the shoulders. D is floor to the top of the head, or the ear tip when the ears stand up. Crate length is A plus half of B. Height must be greater than D so the dog can stand without crouching. Width is at least two times C so the dog can turn. Construction is rigid plastic or metal, with metal bolts rather than plastic clips, ventilation on at least three sides, and a solid leak-proof floor. Fix water and food bowls to the door. Full specification: [IATA pet crate requirements](/guides/iata-pet-crate-requirements/).',
         },
         {
           type: 'list',
           items: [
-            'Measure your dog standing: A = nose to base of tail, B = floor to elbow, C = width across shoulders, D = floor to top of head (or ear tip)',
-            'Crate length = A + half of B; crate height must be greater than D so the dog can stand without crouching',
-            'Crate width = at least two times C so the dog can turn around comfortably',
-            'Construction: rigid plastic or metal, metal bolt fasteners, ventilation on at least three sides, a solid leak-proof floor',
-            'Fittings: water and food bowls fixed to the door, absorbent bedding, and clear live-animal labelling',
-            'When a dog measures between two sizes, always choose the larger crate — and for snub-nosed breeds, go one size up as standard',
+            'Between two sizes, choose the larger crate',
+            'Snub-nosed dogs: many airlines ask for one size up. Confirm that booking. We will not promise a summer flight.',
+            'Wire crates are commonly refused',
+            'Let the dog sleep and eat in the crate at home before travel day',
+            'We do not give a sedation plan or a calming-drug dose',
           ],
-        },
-        {
-          type: 'p',
-          text: 'Crate cost rises sharply with size, from a small carrier of around AED 150 to a heavy reinforced crate for a large or restricted breed, which is one reason large dogs cost more to relocate. We size the crate early so you can budget accurately and acclimate your dog to it before travel. For the full technical specification, see our IATA pet crate requirements guide.',
         },
       ],
     },
     {
       h2: 'Snub-Nosed Breeds & Summer Travel Rules',
       intro:
-        'Two factors can ground an otherwise eligible dog: a snub nose and the Dubai summer. Both are about heat and breathing, and both are decided by the airline rather than the government.',
+        'A short nose and Gulf heat are airline limits, not a second government ban. We confirm the carrier\'s rule for that breed and that date before anyone books.',
       body: [
         {
           type: 'p',
-          text: 'Snub-nosed, or brachycephalic, breeds have shortened airways that make it harder for them to cool themselves and breathe under stress. Common examples include the French Bulldog, English Bulldog, Pug, Boxer, Boston Terrier, Shih Tzu, Pekingese and the Bullmastiff. Many airlines restrict or refuse these breeds in cargo, especially in hot weather, and most require the crate to be one size larger than normal to improve airflow. Some carriers ban them outright in the warmer months. We check the specific policy of each airline on your route before booking, so you are never caught out at check-in.',
+          text: 'Brachycephalic breeds have shortened airways. Common examples include the French Bulldog, English Bulldog, Pug, Boxer, Boston Terrier, Shih Tzu and Pekingese. Many airlines restrict or refuse them in cargo, and many ask for a larger crate. Some ask for a vet fitness-to-fly note. None of that is a MOCCAE ban. The detail sits on the snub-nosed guide. We still confirm the live product in writing.',
         },
         {
           type: 'p',
-          text: 'Separately, the Dubai summer drives embargo periods. From roughly May to September, ground temperatures on the tarmac and in airport holding areas can become dangerous for animals, and airlines impose seasonal restrictions on live-animal cargo — sometimes refusing all dogs, sometimes only snub-nosed or large breeds, and sometimes only on certain aircraft or routes. Workarounds include flying on temperature-controlled aircraft, choosing early-morning or late-night departures, routing through cooler hubs, or simply timing the move outside the embargo window. We plan around the season from the start so heat is never the reason your move is delayed.',
+          text: 'Heat on the apron is a real planning problem. This page does not publish a month-by-month embargo, because that calendar was not a rule we can repeat as fact. Emirates itineraries ending in Dubai travel as cargo, and ordinary pets are not in the Emirates cabin. British Airways carries pets in the hold. An Etihad cabin product is a separate Abu Dhabi booking. Modes: [pet flight options](/guides/pet-flight-options-dubai/).',
         },
         {
           type: 'list',
           items: [
-            'Snub-nosed breeds usually require a crate one size larger and may need a vet fitness-to-fly clearance',
-            'Some airlines refuse brachycephalic breeds in cargo during summer; we confirm each carrier’s rule per route',
-            'Dubai summer embargoes (about May to September) restrict live-animal cargo on heat-risk days',
-            'Mitigations: temperature-controlled aircraft, night or early-morning flights, cooler transit hubs, or off-season timing',
-            'For a deeper look at heat planning, see our pet travel in the Dubai summer guidance',
+            'Snub-nosed: confirm the airline, the route and the date. Do not assume acceptance.',
+            'A larger crate is a common airline ask, not a guarantee',
+            'We do not promise a temperature inside the hold',
+            'If the vet says the dog should not fly, the move waits',
           ],
         },
       ],
@@ -125,90 +132,104 @@ const dogRelocationDubai: ServicePageData = {
     {
       h2: 'Dog Vaccination & Document Timeline',
       intro:
-        'Most relocation stress comes from timing, not paperwork itself. Vaccinations and tests have minimum waiting periods that cannot be rushed, so we map the whole calendar backwards from your travel date.',
+        'Timing follows the vaccine already in the dog and whether the origin is high-risk. We do not publish a two-to-six-week promise.',
       body: [
         {
           type: 'p',
-          text: 'Every dog needs an ISO-compliant 15-digit microchip implanted before — or at the same time as — its rabies vaccination, because the rabies record must be tied to the chip number. A current rabies vaccination is mandatory and must usually be given at least 21 days before travel and still be in date. Dogs typically also carry core vaccinations such as DHPPiL. For dogs coming from countries the UAE classifies as high-risk for rabies, a rabies antibody titer test is required: the blood must be drawn at least 21 days after vaccination, show a result of at least 0.5 IU/ml, and the move can only happen after a further waiting period — which is what stretches some imports to around four months.',
+          text: 'Every dog needs an ISO 11784/11785 15-digit microchip implanted before, or at the same time as, the rabies vaccination, because the rabies record must match the chip number. A current rabies vaccination is required and is generally given at least 21 days before travel while still in date. The dog vaccines named for UAE import are rabies, distemper, parvovirus, infectious canine hepatitis and leptospirosis. Leptospirosis can be replaced by a lab test when the exporting country does not vaccinate against it. Parasite products and doses stay with your vet.',
+        },
+        {
+          type: 'p',
+          text: 'When the origin is high-risk, the rabies antibody result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the rabies vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. A first vaccine, or a gap in vaccination, needs at least 21 days before the test. That certificate is not the import permit. Detail: [rabies titre test for Dubai](/guides/rabies-titer-test-dubai/).',
         },
         {
           type: 'list',
           items: [
-            'ISO 11784/11785 15-digit microchip — implanted before or with the rabies shot',
-            'Valid rabies vaccination — generally at least 21 days before travel and still in date',
-            'Core vaccinations (DHPPiL) recorded in the vaccination booklet',
-            'Rabies antibody titer test for high-risk countries — drawn 21+ days post-vaccination, result greater than or equal to 0.5 IU/ml, valid 365 days',
-            'Government veterinary health certificate from the origin country, issued close to travel',
-            'MOCCAE import permit (valid 90 days from issuance) for entering the UAE, or an export certificate for leaving',
+            'ISO 15-digit microchip before or with the rabies vaccination',
+            'Rabies vaccination generally at least 21 days before travel, and still in date',
+            'Dog vaccines: rabies, distemper, parvovirus, infectious canine hepatitis and leptospirosis',
+            'High-risk origin: antibody result of at least 0.5 IU/ml under the 365-day certificate conditions',
+            'Government health certificate from the origin authority, inside its own validity',
+            '[MOCCAE import permit](/guides/moccae-import-permit/) valid 90 days from issuance for a dog entering the UAE',
           ],
         },
         {
           type: 'p',
-          text: 'As a rough guide, a dog moving between two low-risk countries can often be ready in two to six weeks. When a titer is required, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given. We build your exact timeline against your origin, destination and travel date, and verify every requirement against the current MOCCAE rules before you commit money to flights.',
+          text: 'The permit must still be inside those 90 days on the arrival date. It is not a 30-day document. If it expires, a new application is required. Full inbound checklist: [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
         },
       ],
     },
     {
       h2: 'Dog Relocation Cost',
       intro:
-        'Dog relocation cost is driven mostly by your dog’s size and the route. A small dog on a regional move sits at the bottom of the range; a large or restricted breed flying long-haul sits at the top.',
+        'Dog relocation cost is quoted for this dog and this route. This page does not publish a package total in AED.',
       body: [
         {
           type: 'p',
-          text: 'Total dog relocation typically ranges from about AED 2,500 for a simple regional move to AED 22,000 for a long-haul flight with a large dog, a reinforced crate and full door-to-door service. The biggest single variable is air freight, which is priced on the combined weight of the dog plus its crate — so a large breed in a heavy crate costs far more to fly than a small one. Government permit fees are modest by comparison; most of your budget is veterinary work, the crate, the flight and coordination.',
+          text: 'The quote depends on origin veterinary work, crate size, the cargo rate, and whether you want door-to-door delivery. Government permit and release fees: confirm on the MOCCAE portal. We do not treat secondary blog numerals as official fees, and we do not publish a DPR price band.',
         },
         {
           type: 'table',
-          headers: ['Cost component', 'Typical range (AED)'],
+          headers: ['Cost component', 'How this page treats it'],
           rows: [
-            ['MOCCAE permit + release fees', '450 – 700'],
-            ['Veterinary (microchip, vaccines, health cert, titer)', '1,200 – 2,800'],
-            ['IATA crate (small carrier to large reinforced crate)', '150 – 2,000'],
-            ['Flight / cargo (size and route dependent)', '3,000 – 14,000+'],
-            ['Coordination & door-to-door handling', '1,500 – 6,000'],
+            ['MOCCAE permit and release', 'Government fees. Confirm on the MOCCAE portal.'],
+            ['Origin veterinary work', 'Quoted by the clinic. Not a DPR package price.'],
+            ['IATA crate', 'Quoted for that size. No AED band on this page.'],
+            ['Flight or cargo', 'Airline quote for that crate and date.'],
+            ['Coordination and door-to-door handling', 'Quoted after eligibility. No package total on this page.'],
           ],
         },
         {
           type: 'p',
-          text: 'Snub-nosed surcharges, summer embargo workarounds and restricted-breed handling can add to the total, which is why we quote against your specific dog and route rather than a flat price. Send us your dog’s breed, weight, origin and destination on WhatsApp and we will return a clear cost range, usually within fifteen minutes during business hours.',
+          text: 'Send the breed, weight, origin, destination and month for a managed dog-move quote. What a quote is made of, without a made-up total: [pet relocation cost](/guides/pet-relocation-cost-dubai/). Coordination after eligibility: [Prices](/prices/).',
         },
       ],
     },
   ],
   faq: [
     {
-      q: 'Is my dog’s breed allowed in Dubai?',
-      a: 'It depends. The UAE bans certain fighting and guarding breeds outright, such as Pit Bull-type breeds, Tosa Inu, Dogo Argentino and Fila Brasileiro, plus their crosses — these cannot be imported. Rottweilers and Dobermans are restricted, not banned: they can be imported with extra conditions such as a reinforced crate. Send us your breed and we will confirm eligibility against the official UAE rules before you plan further.',
+      q: 'What should I send for a dog relocation quote?',
+      a: 'Send your name, the breed as written by your vet, approximate weight, origin, destination and the month you want to travel, on WhatsApp +971504782999. We check eligibility and reply with a managed dog-move quote. This is not a free breed tutorial. Government fees: confirm on the MOCCAE portal. Names on the import list: [banned dog breeds Dubai](/guides/banned-dog-breeds-dubai/).',
+    },
+    {
+      q: 'When does a breed check block the move?',
+      a: 'The move stops when the veterinary breed name matches the list on [banned dog breeds Dubai](/guides/banned-dog-breeds-dubai/). We will not file a [MOCCAE import permit](/guides/moccae-import-permit/) for that dog. A non-compliant import may be rejected at the owner\'s expense or confiscated. The import page checked on 22 September 2026 does not publish a fine amount. Send photos only when you are ready to book a managed dog relocation.',
+    },
+    {
+      q: 'Is my dog\'s breed allowed in Dubai?',
+      a: 'Compare the veterinary name with [banned dog breeds Dubai](/guides/banned-dog-breeds-dubai/). Pit Bull-type breeds, the Japanese Tosa, the Dogo Argentino and the Brazilian Mastiff (Fila Brasileiro) are on that import list and cannot be imported. Rottweiler, Doberman and Boxer were not on the list checked on 22 September 2026. An allowed breed still needs the rest of the file, including a [MOCCAE import permit](/guides/moccae-import-permit/) valid 90 days from issuance.',
     },
     {
       q: 'What size crate does my dog need to fly?',
-      a: 'Your dog needs an IATA-approved crate large enough to stand, turn around and lie down in, with metal bolt fasteners and ventilation on at least three sides. We measure your dog (nose to tail, height to the top of the head, shoulder width) and match it to the correct IATA size. When a dog falls between two sizes, we choose the larger one — and for snub-nosed breeds we size up by one as standard.',
+      a: 'An IATA crate large enough for the dog to stand, turn and lie down, with metal bolts and ventilation on at least three sides. Measure nose to tail base, height to the top of the head or ear tip, and shoulder width. Between two sizes, choose the larger one. Snub-nosed dogs often need one size up, and the airline still has to accept the booking. We do not publish crate prices in AED. Specification: [IATA pet crate requirements](/guides/iata-pet-crate-requirements/).',
     },
     {
-      q: 'Can snub-nosed dogs like French Bulldogs and Pugs fly to or from Dubai?',
-      a: 'Often yes, but with care. Snub-nosed (brachycephalic) breeds have restricted airways, so many airlines limit or refuse them in cargo, require a larger crate, and may ask for a vet fitness-to-fly clearance. Some carriers refuse them entirely during the hot months. We check each airline’s policy on your route before booking and plan around any restrictions.',
+      q: 'Can snub-nosed dogs such as French Bulldogs and Pugs fly to or from Dubai?',
+      a: 'They are not on the MOCCAE import ban list. An airline can still refuse them, ask for a larger crate, or ask for a fitness-to-fly note. We confirm that carrier, that route and that date before booking. We do not promise a summer flight. Detail: [snub-nosed dogs flying to the UAE](/guides/snub-nosed-dogs-flying-uae/).',
     },
     {
       q: 'Can dogs fly during the Dubai summer?',
-      a: 'It is possible but constrained. From roughly May to September, airlines impose seasonal embargoes on live-animal cargo because tarmac and holding-area temperatures become dangerous. We work around this with temperature-controlled aircraft, night or early-morning departures, cooler transit hubs, or by timing the move outside the embargo window where possible.',
+      a: 'It depends on the airline, the breed and the date. This page does not publish a month-by-month embargo. Heat on the apron is a real planning problem, and snub-nosed dogs need extra care. We confirm the carrier\'s rule before booking. We do not promise a hold temperature.',
     },
     {
       q: 'How long does dog relocation to Dubai take?',
-      a: 'From a low-risk country, often two to six weeks once vaccinations and documents are in order. From a high-risk rabies country that requires a titer, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — that is not a wait after the draw. We map your exact timeline backwards from your travel date.',
+      a: 'It depends on the vaccine already in the dog and on whether the origin is high-risk. When a titre is required, the result must be at least 0.5 IU/ml and the certificate follows the 365-day conditions on the [rabies titre test](/guides/rabies-titer-test-dubai/) page. The [MOCCAE import permit](/guides/moccae-import-permit/) is valid for 90 days from issuance. We do not publish a two-to-six-week promise.',
     },
     {
       q: 'How much does dog relocation in Dubai cost?',
-      a: 'Most dog relocations fall between AED 2,500 and AED 22,000. Size and route are the main drivers, because flights are priced on the combined weight of the dog plus its crate. Government fees are small; the bulk of the cost is veterinary work, the crate, the flight and coordination. We quote against your specific dog and route, usually within fifteen minutes on WhatsApp.',
+      a: 'This page does not publish a package total in AED. Send the breed, weight, origin, destination and month on WhatsApp +971504782999. We check eligibility and reply with a managed dog-move quote. Government fees: confirm on the MOCCAE portal. Drivers, without a made-up total: [pet relocation cost](/guides/pet-relocation-cost-dubai/).',
     },
   ],
   relatedLinks: [
     { label: 'pet relocation Dubai', to: '/' },
     { label: 'Pet relocation services', to: '/service/pet-relocation-dubai/' },
-    { label: 'Pet Import to Dubai', to: '/service/pet-import-dubai/' },
-    { label: 'Banned Dog Breeds in Dubai', to: '/guides/banned-dog-breeds-dubai/' },
-    { label: 'IATA Pet Crate Requirements', to: '/guides/iata-pet-crate-requirements/' },
+    { label: 'pet import Dubai', to: '/service/pet-import-dubai/' },
+    { label: 'MOCCAE import permit', to: '/guides/moccae-import-permit/' },
+    { label: 'banned dog breeds Dubai', to: '/guides/banned-dog-breeds-dubai/' },
+    { label: 'IATA pet crate requirements', to: '/guides/iata-pet-crate-requirements/' },
+    { label: 'Snub-nosed dogs flying to the UAE', to: '/guides/snub-nosed-dogs-flying-uae/' },
     { label: 'Cat relocation to and from Dubai', to: '/service/cat-relocation-dubai/' },
-    { label: 'How It Works', to: '/how-it-works/' },
+    { label: 'How it works', to: '/how-it-works/' },
   ],
 }
 
