@@ -272,7 +272,7 @@ export default function BannedBreedsGuide() {
       <GuideFunnelCta
         variant="mid"
         title="Breed allowed, and you want the move booked?"
-        subtitle="Use this list as the name check. Guides are free to read. WhatsApp is for people ready to book a managed relocation. If the breed is allowed, open managed dog relocation eligibility. Government fees: confirm on the MOCCAE portal."
+        subtitle="Use this list as the name check. Guides are free to read. WhatsApp is for people ready to book a managed relocation. If the breed is allowed, open managed dog relocation eligibility. Government fees on the page we checked were AED 200 for the permit, AED 500 to release a dog, and AED 250 to release a cat. Confirm on the MOCCAE portal."
         eligibilityMessage={waBreed}
         waLabel="Get a managed dog-move quote"
         waClassName="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-[#0B6B3A] px-5 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530]"
