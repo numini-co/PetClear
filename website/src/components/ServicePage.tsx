@@ -141,6 +141,8 @@ function relatedHeading(slug: string): string {
   if (slug === 'moccae-pet-permit') return 'Related permit and import pages'
   if (slug === 'pet-relocation-dubai') return 'Related relocation pages and guides'
   if (slug === 'international-pet-relocation') return 'Corridor pages and flight guides'
+  if (slug === 'dog-relocation-dubai') return 'Dog relocation guides and services'
+  if (slug === 'cat-relocation-dubai') return 'Cat relocation guides and services'
   return 'Related Services & Guides'
 }
 
@@ -148,6 +150,8 @@ function faqHeading(slug: string): string {
   if (slug === 'moccae-pet-permit') return 'MOCCAE permit assistance questions'
   if (slug === 'pet-relocation-dubai') return 'Dubai pet relocation questions'
   if (slug === 'shared-pet-charter') return 'Shared pet charter questions'
+  if (slug === 'dog-relocation-dubai') return 'Dog relocation questions'
+  if (slug === 'cat-relocation-dubai') return 'Cat relocation questions'
   return 'Frequently Asked Questions'
 }
 
@@ -157,6 +161,8 @@ function exploreHeading(slug: string): string {
   if (slug === 'pet-relocation-dubai') return 'Browse every relocation service'
   if (slug === 'shared-pet-charter') return 'Other relocation services if a charter is not the fit'
   if (slug === 'international-pet-relocation') return 'Related services and guides'
+  if (slug === 'dog-relocation-dubai') return 'Cat, import and permit services'
+  if (slug === 'cat-relocation-dubai') return 'Dog, import and permit services'
   return 'Explore All Our Services'
 }
 
@@ -164,6 +170,8 @@ function ctaHeading(slug: string): string {
   if (slug === 'moccae-pet-permit') return 'Ready to start permit assistance?'
   if (slug === 'pet-relocation-dubai') return 'Ready to check a Dubai relocation?'
   if (slug === 'shared-pet-charter') return 'Ready to check charter eligibility?'
+  if (slug === 'dog-relocation-dubai') return 'Ready for a managed dog-move quote?'
+  if (slug === 'cat-relocation-dubai') return 'Ready for a managed cat-move quote?'
   return 'Ready to book a managed move?'
 }
 
@@ -178,7 +186,9 @@ function strongCtaPage(slug: string): boolean {
     slug === 'pet-export-dubai' ||
     slug === 'moccae-pet-permit' ||
     slug === 'shared-pet-charter' ||
-    slug === 'international-pet-relocation'
+    slug === 'international-pet-relocation' ||
+    slug === 'dog-relocation-dubai' ||
+    slug === 'cat-relocation-dubai'
   )
 }
 

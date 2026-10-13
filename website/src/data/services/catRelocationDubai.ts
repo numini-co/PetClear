@@ -1,45 +1,58 @@
 import type { ServicePageData } from '../../types/servicePage.ts'
-import { waEligibility } from '../../lib/conversionCopy.ts'
+import { GUIDE_SOFT_GATE, waEligibility } from '../../lib/conversionCopy.ts'
 
 const catRelocationDubai: ServicePageData = {
   slug: 'cat-relocation-dubai',
   seoTitle: 'Cat Relocation Dubai | Cabin & Cargo Moves for Cats',
   metaDescription:
-    'Move a cat to or from Dubai: cabin limits, carrier practice, the MOCCAE permit, and a calm travel plan. Send the route and dates for a quote.',
+    'Check cat relocation eligibility and get a managed cat-move quote. Cabin or cargo rules, plus the MOCCAE import permit for inbound cats.',
   h1: 'Cat relocation to and from Dubai',
   primaryKeyword: 'cat relocation dubai',
   heroValueProp:
-    'Moving a cat to or from Dubai? Cats travel differently from dogs — calmer routes, careful carrier acclimation and no sedation. We map your documents and timeline, coordinate vetted partners and stay with you on WhatsApp, so the journey is as low-stress as possible for a sensitive animal.',
+    'Moving a cat to or from Dubai starts with an eligibility check, then a managed cat-move quote.',
   heroImage: '/images/service-cat-relocation-dubai.jpg',
-  heroImageAlt:
-    'Relaxed cat resting inside a soft-lined travel carrier in a bright room',
+  heroImageAlt: 'Relaxed cat resting inside a soft-lined travel carrier in a bright room',
   whatsappMessage: waEligibility({ pet: 'cat', need: 'managed move' }),
-  trustBadges: ['Low-stress handling', 'No sedation advised', 'Vetted partners', 'WhatsApp support'],
-  costRange: { low: '2000', high: '18000' },
+  ctaLabel: 'Get a managed cat-move quote',
+  heroEyebrow: 'Cat Relocation',
+  ctaSupport:
+    'Check eligibility first. Send the cat, the route and the month. We reply with a managed cat-move quote. This is not a free carrier tutorial.',
+  ctaHeading: 'Ready for a managed cat-move quote?',
+  ctaBody:
+    'Send the cat\'s origin, destination and month. We check eligibility and reply with a managed cat-move quote. Government fees: confirm on the MOCCAE portal. We do not publish a package total in AED.',
+  gateLine: GUIDE_SOFT_GATE,
+  paidIncludes: [
+    'Carrier acclimatisation',
+    'Cabin versus cargo rules',
+    'MOCCAE import permit for inbound cats',
+    'Airline booking',
+    'DXB or DWC airport handoff',
+  ],
+  trustBadges: ['Carrier acclimatisation', 'No sedation advised', 'Vetted partners', 'WhatsApp during business hours'],
   hasHowTo: false,
   sections: [
     {
       h2: 'Cat Relocation Across Dubai and Worldwide',
       intro:
-        'Cats are creatures of territory and routine, so a move affects them differently from a dog. Our cat relocation service is built around keeping a sensitive animal as calm as possible while meeting every legal requirement to enter or leave the UAE.',
+        'Cat relocation in Dubai is the paid file for a cat moving into the UAE, out of the UAE, or between emirates. Guides are free to read. WhatsApp is for people ready to book a managed cat move.',
       body: [
         {
           type: 'p',
-          text: 'Cat relocation in Dubai spans two kinds of journey. The first is a local or inter-emirate move — a quiet, climate-controlled ground transfer within Dubai or between emirates such as Dubai to Abu Dhabi or Sharjah. The second is international relocation by air, either importing a cat into the UAE or exporting one out of it. In both cases the foundations are the same: an ISO-compliant microchip, a valid rabies vaccination, a government health certificate and, for flights, a correctly sized travel carrier your cat is comfortable in.',
+          text: 'Two journeys share one coordinator. A ground move is a quiet transfer inside Dubai or between emirates, such as Dubai to Abu Dhabi or Sharjah. An international move imports a cat into the UAE or exports one. Both need an ISO microchip, a valid rabies vaccination, a government health certificate, and a carrier the cat can stand, turn and lie down in.',
         },
         {
           type: 'p',
-          text: 'We are a coordination service. We do not physically fly the animals ourselves; we connect you with vetted veterinary and transport partners, confirm your cat is document-ready, and make sure the paperwork, carrier and flight line up. For the full cross-species picture, see our main pet relocation in Dubai page. The sections below focus on what matters specifically for cats: why they travel differently, how to acclimate the carrier, why sedation is discouraged, the documents and timeline, and cost.',
+          text: 'We coordinate the file. We do not fly the cat ourselves. Vetted veterinary and transport partners do the physical work. Inbound cats use [pet import Dubai](/service/pet-import-dubai/). The document checklist is [UAE pet import requirements](/guides/uae-pet-import-requirements/). Owner preparation is on [bringing a cat to Dubai](/cat-relocation-to-dubai/). Dog breed bans are not cat rules: [dog relocation to and from Dubai](/service/dog-relocation-dubai/).',
         },
         {
           type: 'list',
           items: [
-            'Low-stress local and inter-emirate transport in a quiet, climate-controlled vehicle',
-            'International import and export coordination with cat-experienced airlines',
-            'Carrier sizing, acclimation guidance and pre-travel preparation',
-            'Microchip, rabies vaccination and health-certificate timeline mapped to your travel date',
-            'MOCCAE import or export permit guidance for moves to or from the UAE',
-            'Customs clearance at DXB or DWC and gentle door-to-door delivery anywhere in Dubai',
+            'Carrier sizing and an acclimatisation plan before travel day',
+            'Cabin versus cargo checked against the airline and the route, not assumed',
+            'Microchip, rabies vaccination and health-certificate timing mapped to the travel date',
+            'MOCCAE import permit for inbound cats, valid 90 days from issuance, or export sequencing when the cat is leaving',
+            'Airline booking with a cat-accepted product',
+            'Customs clearance at DXB or DWC, and door-to-door delivery in Dubai when that scope is booked',
           ],
         },
       ],
@@ -47,24 +60,23 @@ const catRelocationDubai: ServicePageData = {
     {
       h2: 'Why Cats Travel Differently',
       intro:
-        'Understanding feline behaviour is the difference between a smooth move and a frightened cat. Almost everything we do for cats is shaped by how strongly they bond to place rather than to journeys.',
+        'Cats take comfort from familiar smells and routine. The paid plan reduces novelty. It does not promise that cargo is calm.',
       body: [
         {
           type: 'p',
-          text: 'Cats are territorial animals that take comfort from familiar smells, surfaces and routine. Unlike many dogs, they rarely enjoy car rides, do not see a carrier as a fun outing, and become stressed by unfamiliar noise, motion and handling. They also hide discomfort well, so a cat can be far more anxious than it looks. This is why a successful cat move depends less on logistics horsepower and more on patience, gentle handling and reducing novelty wherever possible.',
+          text: 'A cat often hides stress. A carrier it has never used, a new car, and unfamiliar handling are the usual problems. Preparation is carrier practice at home, a familiar cloth if the airline allows soft items, and a quiet handover. We do not copy a dog crate plan onto a cat, and we do not name a medicine or a dose.',
         },
         {
           type: 'p',
-          text: 'Practically, this changes how we plan. Small cats may be eligible to travel in the aircraft cabin with their owner on some airlines and routes, which is usually far less stressful than cargo — we check whether your cat qualifies on weight and whether your route allows it. Where cabin travel is not possible, cats fly as manifest cargo in the same temperature-controlled, pressurised hold area used for dogs, but we focus on a quiet carrier, a familiar-smelling blanket and minimal transfers. We also pay close attention to settling-in after arrival, because cats commonly show behavioural changes — hiding, reduced appetite or over-grooming — in the first days in a new home.',
+          text: 'Do not assume a cabin seat into Dubai. Emirates requires cargo for itineraries ending in Dubai, and ordinary pets are not in the Emirates cabin. British Airways carries pets in the hold. An Etihad cabin product, where offered, is an Abu Dhabi booking to confirm live: [Etihad pet policy](/guides/etihad-pet-policy/). Modes: [pet flight options](/guides/pet-flight-options-dubai/). Where cargo is required, the cat travels in an IATA crate. A familiar cloth is useful only if that airline allows it.',
         },
         {
           type: 'list',
           items: [
-            'Cats bond to territory, so the goal is to carry their familiar environment with them as much as possible',
-            'They hide stress, so calm preparation matters more than reacting on the day',
-            'Small cats may qualify for in-cabin travel on some airlines — gentler than cargo, so we always check eligibility',
-            'Where cargo is required, the hold is temperature-controlled and pressurised, the same area dogs use',
-            'Expect a settling-in period after arrival; a familiar litter tray, bedding and a quiet room help enormously',
+            'Leave the carrier out at home, door open, for days before travel',
+            'Feed beside it, then inside it. Do not produce it only for vet trips.',
+            'Cabin or cargo is an airline rule for that route. We check it. We do not promise a cabin seat.',
+            'After arrival, a quiet room and the cat\'s own tray and bedding help. We do not promise how long settling takes.',
           ],
         },
       ],
@@ -72,51 +84,48 @@ const catRelocationDubai: ServicePageData = {
     {
       h2: 'Carrier Acclimation Tips',
       intro:
-        'The carrier is the one part of the journey you can fully prepare in advance. A cat that already sees its carrier as a safe den will travel far more calmly than one that meets it for the first time on travel day.',
+        'The carrier is the part you can prepare. Start days or weeks before travel, not on the morning of the flight.',
       body: [
         {
           type: 'p',
-          text: 'Start carrier acclimation two to four weeks before travel, ideally earlier. The aim is to turn the carrier from a once-a-year vet-trip object into an everyday piece of furniture your cat chooses to rest in. Combined with a correctly sized carrier — large enough to stand, turn and lie down, rigid and well-ventilated for cargo, or an airline-approved soft carrier for cabin travel — this is the single most effective thing an owner can do to reduce travel stress.',
+          text: 'Leave the carrier open in a room the cat already uses. Line it with bedding from home. Let the cat enter and leave. Take a few short, calm practice journeys so the carrier and the car are familiar together. On travel day, keep handling quiet and avoid opening the carrier in transit. The cat must be able to stand, turn and lie down. A carrier that only just fits is not a fit.',
         },
         {
           type: 'list',
           items: [
-            'Bring the carrier out early and leave it open in a room your cat already likes, weeks before travel',
-            'Line it with bedding that smells of home, and add a worn t-shirt or familiar blanket',
-            'Feed treats and meals near, then inside, the carrier so it becomes associated with good things',
-            'Let your cat enter and leave freely; never force it in or only produce the carrier for vet visits',
-            'Use a feline calming pheromone spray on the bedding (not the cat) to add a reassuring scent',
-            'Take a few short, calm practice car trips so motion and the carrier together feel familiar',
-            'On travel day, keep handling quiet and minimal, and avoid opening the carrier in transit',
+            'Bring the carrier out early and leave the door open',
+            'Feed treats near it, then inside it',
+            'Do not force the cat in, and do not save the carrier for vet visits only',
+            'Ask your own vet before any product is used. This page does not name a spray or a dose.',
+            'For cargo, the carrier must meet IATA rules: rigid, ventilated, metal bolts, water access. See [IATA pet crate requirements](/guides/iata-pet-crate-requirements/).',
           ],
         },
         {
           type: 'p',
-          text: 'For cargo travel the carrier must meet the IATA Live Animals Regulations — rigid, ventilated on at least three sides, secured with metal bolts and fitted with water access. We size and source the right carrier through our vetted partners and give you the acclimation plan early so your cat has time to make it home.',
+          text: 'We size the cargo crate through vetted partners and send the practice plan early enough for the cat to use it at home. We do not publish carrier prices in AED.',
         },
       ],
     },
     {
       h2: 'Sedation: Why Most Vets and Airlines Advise Against It',
       intro:
-        'It is natural to want to spare an anxious cat the experience by sedating it. In reality, veterinary and airline guidance is clear that sedation usually makes air travel more dangerous, not less.',
+        'A sedated cat is not the safer default for a flight. This page does not recommend a drug or a dose.',
       body: [
         {
           type: 'p',
-          text: 'Major veterinary and airline bodies, including guidance reflected by the IATA Live Animals Regulations and the American Veterinary Medical Association (AVMA), advise against sedating cats and dogs for air travel except in rare cases on the explicit instruction of a veterinarian. The reason is physiological: at altitude, cabin and cargo-hold air pressure is lower than at ground level, and sedatives can depress breathing and heart function, impair the animal’s ability to balance and brace against turbulence, and interfere with its natural temperature regulation. A sedated animal that cannot right itself or breathe efficiently is at far greater risk than a stressed but alert one.',
+          text: 'IATA live-animal guidance and many airlines advise against sedating cats and dogs for air travel except where a veterinarian instructs it for that animal. At altitude, air pressure is lower than on the ground. A sedative can depress breathing and heart function, and a sedated animal may not brace against movement or regulate temperature well. Many airlines refuse an animal that appears sedated.',
         },
         {
           type: 'p',
-          text: 'Because of this, many airlines will refuse to accept an animal that appears sedated, and some require written confirmation that no tranquilliser has been given. The safer path is to manage stress without drugs: thorough carrier acclimation, a familiar-smelling blanket, feline calming pheromones, choosing cabin travel for eligible small cats, and a calm, well-planned route with minimal transfers. If your cat has a specific medical condition, that is a conversation for your own vet, who can weigh the individual risks — but as a default, a relocated cat should travel awake and unsedated.',
+          text: 'The practical path is the carrier the cat already uses, a familiar cloth if the airline allows it, and water fitted the way the carrier instructions allow. We do not give a fasting time. If the cat has a medical condition, that decision belongs to your vet and to the airline\'s written rule. If either says the cat should not fly, the move waits.',
         },
         {
           type: 'list',
           items: [
-            'IATA and AVMA guidance: do not sedate pets for air travel except on a vet’s specific instruction',
-            'Lower cabin pressure at altitude makes sedatives riskier, affecting breathing, heart rate and balance',
-            'Sedated animals cannot brace against turbulence or regulate temperature well',
-            'Many airlines refuse sedated animals and may ask for written confirmation none was given',
-            'Manage stress instead with acclimation, familiar scents, pheromones and a calm route',
+            'Default: the cat travels awake. We do not supply a sedation plan.',
+            'Ask the airline before travel day. Refusal of sedated animals is common enough to check in writing.',
+            'Do not use a dog calming product on a cat',
+            'Fitness to fly is your vet\'s decision, not a sentence on this page',
           ],
         },
       ],
@@ -124,90 +133,98 @@ const catRelocationDubai: ServicePageData = {
     {
       h2: 'Cat Documents & Timeline',
       intro:
-        'Cats and dogs share the same core entry requirements for the UAE. The work is in the timing — vaccinations and tests have minimum waiting periods, so we plan the calendar backwards from your travel date.',
+        'Cats and dogs share the permit window. They do not share the vaccine list. Bengal and Serval cats have an extra pedigree line.',
       body: [
         {
           type: 'p',
-          text: 'Every cat needs an ISO-compliant 15-digit microchip implanted before — or at the same time as — its rabies vaccination, because the rabies record must link to the chip number. A current rabies vaccination is mandatory and is generally required at least 21 days before travel while still being in date. Cats usually also carry their core FVRCP vaccination. For cats arriving from countries the UAE classifies as high-risk for rabies, a rabies antibody titer test is required: the blood is drawn at least 21 days after vaccination, must show a result of at least 0.5 IU/ml, and a further waiting period applies before the cat can travel — which is what extends some imports to around four months.',
+          text: 'Every cat needs an ISO 11784/11785 15-digit microchip implanted before, or at the same time as, the rabies vaccination. A current rabies vaccination is generally required at least 21 days before travel and must still be in date. The cat vaccines named for UAE import are rabies, feline panleukopenia, feline rhinotracheitis and feline calicivirus. Feline leukaemia was not on that required list when the import page was checked on 22 September 2026.',
+        },
+        {
+          type: 'p',
+          text: 'Bengal and Serval cats need a pedigree certificate to the fifth generation. Other domestic cats are not given that extra line on the page we checked. When the origin is high-risk, the rabies antibody result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the rabies vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. A first vaccine, or a gap, needs at least 21 days before the test. Detail: [rabies titre test for Dubai](/guides/rabies-titer-test-dubai/).',
         },
         {
           type: 'list',
           items: [
-            'ISO 11784/11785 15-digit microchip — implanted before or with the rabies shot',
-            'Valid rabies vaccination — generally at least 21 days before travel and still in date',
-            'Core FVRCP vaccination recorded in the vaccination booklet',
-            'Rabies antibody titer test for high-risk countries — drawn 21+ days post-vaccination, result greater than or equal to 0.5 IU/ml, valid 365 days',
-            'Government veterinary health certificate from the origin country, issued close to travel',
-            'MOCCAE import permit (valid 90 days from issuance) for entering the UAE, or an export certificate for leaving',
+            'ISO 15-digit microchip before or with the rabies vaccination',
+            'Rabies vaccination generally at least 21 days before travel, and still in date',
+            'Cat vaccines: rabies, feline panleukopenia, feline rhinotracheitis and feline calicivirus',
+            'Bengal and Serval cats: fifth-generation pedigree certificate',
+            'High-risk origin: antibody result of at least 0.5 IU/ml under the 365-day certificate conditions',
+            '[MOCCAE import permit](/guides/moccae-import-permit/) valid 90 days from issuance for a cat entering the UAE',
           ],
         },
         {
           type: 'p',
-          text: 'As a rough guide, a cat moving between two low-risk countries can often be ready in two to six weeks, while a cat from a high-risk country that needs a titer test should plan for around four months. We build your exact timeline against your origin, destination and travel date, and verify every requirement against the current MOCCAE rules before you commit to flights.',
+          text: 'The permit is 90 days from issuance, not 30. Parasite treatment in the 14 days before shipment is recorded by your vet. Permethrin products sold for dogs can be dangerous for cats. Your vet must choose a cat-safe product. We do not give a dose. Full sequence: [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
         },
       ],
     },
     {
       h2: 'Cat Relocation Cost',
       intro:
-        'Cats are lighter than most dogs and can sometimes travel in the cabin, so cat relocation tends to sit at the gentler end of the price range — though long-haul international moves still carry real freight and veterinary costs.',
+        'Cat relocation cost is quoted for this cat and this route. A smaller carrier is not a published AED band.',
       body: [
         {
           type: 'p',
-          text: 'Total cat relocation typically ranges from about AED 2,000 for a simple regional move to AED 18,000 for a long-haul international flight with full door-to-door service. Because cats and their carriers are light, air freight is usually lower than for a large dog, and an eligible small cat travelling in the cabin can reduce cost further. Government permit fees are modest; most of your budget is veterinary work, the carrier, the flight and coordination.',
+          text: 'A lighter animal can mean a lower freight rate. It does not create a package price on this page. Government permit and release fees: confirm on the MOCCAE portal. Cabin eligibility, the route, and whether a titre is required all move the quote. We do not publish a DPR total in AED.',
         },
         {
           type: 'table',
-          headers: ['Cost component', 'Typical range (AED)'],
+          headers: ['Cost component', 'How this page treats it'],
           rows: [
-            ['MOCCAE permit + release fees', '450 – 700'],
-            ['Veterinary (microchip, vaccines, health cert, titer)', '1,100 – 2,500'],
-            ['IATA carrier (cabin soft carrier to cargo crate)', '110 – 900'],
-            ['Flight / cargo (cabin or hold, route dependent)', '1,500 – 10,000+'],
-            ['Coordination & door-to-door handling', '1,200 – 5,000'],
+            ['MOCCAE permit and release', 'Government fees. Confirm on the MOCCAE portal.'],
+            ['Origin veterinary work', 'Quoted by the clinic. Not a DPR package price.'],
+            ['Carrier or IATA crate', 'Quoted for that size. No AED band on this page.'],
+            ['Flight or cargo', 'Airline quote for that carrier and date.'],
+            ['Coordination and door-to-door handling', 'Quoted after eligibility. No package total on this page.'],
           ],
         },
         {
           type: 'p',
-          text: 'In-cabin eligibility, route and whether a titer test is needed all move the final figure, which is why we quote against your specific cat and journey rather than a flat price. Send us your cat’s origin, destination and travel date on WhatsApp and we will return a clear cost range, usually within fifteen minutes during business hours.',
+          text: 'Send origin, destination and month for a managed cat-move quote. Drivers, without a made-up total: [pet relocation cost](/guides/pet-relocation-cost-dubai/). Coordination after eligibility: [Prices](/prices/).',
         },
       ],
     },
   ],
   faq: [
     {
+      q: 'What should I send for a cat relocation quote?',
+      a: 'Send your name, whether the cat is a domestic cat or a Bengal or Serval, approximate weight, origin, destination and the month you want to travel, on WhatsApp +971504782999. We check eligibility and reply with a managed cat-move quote. This is not a free carrier tutorial. Government fees: confirm on the MOCCAE portal. Inbound rules: [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+    },
+    {
       q: 'Should I sedate my cat for the flight?',
-      a: 'No — as a default, cats should not be sedated for air travel. IATA and AVMA guidance advise against it because lower cabin pressure at altitude makes sedatives risky, affecting breathing, heart rate and balance, and a sedated cat cannot brace against turbulence. Many airlines refuse sedated animals. We manage stress instead with carrier acclimation, familiar scents and a calm route. If your cat has a medical condition, discuss it with your own vet.',
+      a: 'No, as a default. This page does not recommend a drug or a dose. Many airlines refuse a sedated animal. Prepare the carrier at home instead. If the cat has a medical condition, ask your own vet and get the airline\'s rule in writing. WhatsApp +971504782999 is for a managed cat-move quote, not for medicine advice.',
     },
     {
       q: 'Can my cat travel in the cabin to or from Dubai?',
-      a: 'Sometimes. Some airlines allow small cats under a set weight to travel in the cabin with their owner, which is usually far less stressful than cargo. Eligibility depends on the airline, the route and your cat’s weight including the carrier. We check whether your cat qualifies and, if not, prepare a quiet, comfortable cargo journey instead.',
+      a: 'Do not assume a cabin seat into Dubai. Emirates requires cargo for itineraries ending in Dubai, and ordinary pets are not in the cabin. British Airways carries pets in the hold. An Etihad cabin product is a separate Abu Dhabi booking: [Etihad pet policy](/guides/etihad-pet-policy/). We check the live product. We do not promise that cargo is calmer than a cabin.',
     },
     {
       q: 'How do I get my cat used to its carrier before travel?',
-      a: 'Start two to four weeks ahead. Leave the carrier open in a room your cat likes, line it with bedding that smells of home, and feed treats inside so it becomes a safe den rather than a vet-trip object. Add a feline calming pheromone to the bedding and take a few short, calm practice car trips. A cat that already trusts its carrier travels much more calmly.',
+      a: 'Leave the carrier open in a room the cat already uses, line it with bedding from home, and feed inside it over several days. Take a few short practice journeys. The cat must be able to stand, turn and lie down. This page does not name a spray or a dose. Ask your vet before any product is used. A managed file includes the carrier plan: use the quote button when you are ready to book.',
     },
     {
       q: 'What documents does my cat need to enter Dubai?',
-      a: 'An ISO 15-digit microchip, a valid rabies vaccination (generally at least 21 days before travel), the core FVRCP vaccination, a government health certificate, and a MOCCAE import permit. Cats arriving from high-risk rabies countries also need a rabies antibody titer test. We review everything against the current MOCCAE rules before you commit.',
+      a: 'An ISO 15-digit microchip, rabies vaccination generally at least 21 days before travel, the cat vaccines (rabies, feline panleukopenia, feline rhinotracheitis and feline calicivirus), a government health certificate, and a [MOCCAE import permit](/guides/moccae-import-permit/) valid 90 days from issuance. High-risk origins add an antibody result of at least 0.5 IU/ml. Bengal and Serval cats need a fifth-generation pedigree. Checklist: [UAE pet import requirements](/guides/uae-pet-import-requirements/). Paid import coordination: [pet import Dubai](/service/pet-import-dubai/).',
     },
     {
       q: 'How long does cat relocation to Dubai take?',
-      a: 'From a low-risk country, often two to six weeks once vaccinations and documents are in order. From a high-risk rabies country that requires a titer, use a result of at least 0.5 IU/ml and a certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given — that is not a wait after the draw. We map your exact timeline backwards from your travel date.',
+      a: 'It depends on the vaccine already in the cat and on whether the origin is high-risk. When a titre is required, the result must be at least 0.5 IU/ml under the 365-day certificate conditions on the [rabies titre test](/guides/rabies-titer-test-dubai/) page. The [MOCCAE import permit](/guides/moccae-import-permit/) is valid for 90 days from issuance. We do not publish a two-to-six-week promise.',
     },
     {
       q: 'How much does cat relocation in Dubai cost?',
-      a: 'Most cat relocations fall between AED 2,000 and AED 18,000. Cats are light and can sometimes fly in the cabin, so freight is often lower than for a large dog. Government fees are small; the bulk of the cost is veterinary work, the carrier, the flight and coordination. We quote against your specific cat and route, usually within fifteen minutes on WhatsApp.',
+      a: 'This page does not publish a package total in AED. Send origin, destination, the cat and the month on WhatsApp +971504782999. We check eligibility and reply with a managed cat-move quote. Government fees: confirm on the MOCCAE portal.',
     },
   ],
   relatedLinks: [
     { label: 'pet relocation Dubai', to: '/' },
     { label: 'Pet relocation services', to: '/service/pet-relocation-dubai/' },
-    { label: 'Pet Import to Dubai', to: '/service/pet-import-dubai/' },
-    { label: 'Pet Travel in the Dubai Summer', to: '/guides/pet-travel-summer-dubai/' },
+    { label: 'pet import Dubai', to: '/service/pet-import-dubai/' },
+    { label: 'MOCCAE import permit', to: '/guides/moccae-import-permit/' },
+    { label: 'UAE pet import requirements', to: '/guides/uae-pet-import-requirements/' },
     { label: 'Dog relocation to and from Dubai', to: '/service/dog-relocation-dubai/' },
-    { label: 'Pet Transport Dubai', to: '/service/pet-transport-dubai/' },
-    { label: 'How It Works', to: '/how-it-works/' },
+    { label: 'How it works', to: '/how-it-works/' },
   ],
 }
 
