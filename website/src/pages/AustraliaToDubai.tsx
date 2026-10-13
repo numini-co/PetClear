@@ -2,6 +2,7 @@ import SEOHead from '../components/SEOHead.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import { BASE_URL, LOGO_URL } from '../lib/seo.ts'
+import { CTA_MANAGED_QUOTE, GUIDE_SOFT_GATE, waEligibility } from '../lib/conversionCopy.ts'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Clock, Stethoscope, Home, AlertTriangle, Info, PawPrint } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
@@ -9,12 +10,21 @@ import RouteMoneyBodyLink from '../components/RouteMoneyBodyLink.tsx'
 import Hero from '../components/Hero.tsx'
 import RouteCostTeaser, { ROUTE_PACKAGE_COST_FAQ } from '../components/RouteCostTeaser.tsx'
 import LinkedText from '../components/LinkedText.tsx'
+import RouteBuyerFreeHelp from '../components/RouteBuyerFreeHelp.tsx'
+import PaidIncludes from '../components/PaidIncludes.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
+
+const WA = waEligibility({
+  origin: 'Australia',
+  destination: 'Dubai',
+  need: 'managed move',
+})
 
 export default function AustraliaToDubai() {
   const pageUrl = `${BASE_URL}/routes/australia-to-dubai/`
   const pageTitle = 'Pet Relocation Australia to Dubai | Planning & Quote'
-  const pageDescription = 'Moving a dog or cat from Australia to Dubai? Review documents, travel options and arrival planning, then request a quote for your pet and dates.'
+  const pageDescription =
+    'Moving a dog or cat from Australia to Dubai? DAFF export, AQIS inspection, MOCCAE permit (90 days from issuance). Get Route Checked.'
   const faqs = [
     {
       question: 'Is Australia a low-risk or high-risk country for pet import to Dubai?',
@@ -80,7 +90,7 @@ export default function AustraliaToDubai() {
       "author": { "@type": "Organization", "name": "Dubai Pet Relocation" },
       "publisher": { "@type": "Organization", "name": "Dubai Pet Relocation", "logo": { "@type": "ImageObject", "url": LOGO_URL } },
       "datePublished": "2025-01-15",
-      "dateModified": "2025-01-15"
+      "dateModified": "2026-10-13"
     }
   ]
 
@@ -102,8 +112,12 @@ export default function AustraliaToDubai() {
         imageAlt="Pet relocation from Australia to Dubai"
         eyebrow="Australia → Dubai"
         title="Pet relocation from Australia to Dubai"
-        subtitle="Australia is rabies-free and low-risk, but AQIS export rules are among the world's strictest. We navigate every step for you."
+        subtitle="Australia is rabies-free and low-risk, so a titre is not the usual step. You still need a DAFF export permit, an AQIS inspection, and a MOCCAE import permit valid 90 days from issuance."
         updated="Updated June 2026"
+        primaryLabel="Get Route Checked"
+        whatsappMessage={WA}
+        gateLine={GUIDE_SOFT_GATE}
+        showBuyerQualify
       />
 
       {/* ROUTE OVERVIEW */}
@@ -268,7 +282,7 @@ export default function AustraliaToDubai() {
 
       <RouteCostTeaser
         corridor="Australia to Dubai"
-        whatsappMessage="Hi Dubai Pet Relocation! I need a quote for relocating my pet from Australia to Dubai."
+        whatsappMessage={WA}
       />
 
       {/* TIMELINE */}
@@ -428,17 +442,21 @@ export default function AustraliaToDubai() {
 
       <OfficialSources />
 
+      <RouteBuyerFreeHelp tone="band" buyerMessage={WA} />
+
       {/* CTA */}
       <section className="py-16 lg:py-24">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="bg-[#3A45B0] rounded-[20px] p-8 lg:p-12 text-center text-white">
-            <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Relocate Your Pet from Australia to Dubai?</h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              Dubai Pet Relocation understands the unique challenges of Australian pet export. From Sydney, Melbourne, Brisbane, Perth, or anywhere in Australia — we coordinate with AQIS, DAFF, and UAE authorities to ensure a smooth relocation.
+            <PawPrint className="w-12 h-12 mx-auto mb-4 text-white/80" />
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to book a managed move from Australia to Dubai?</h2>
+            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-4 leading-relaxed">
+              From Sydney, Melbourne, Brisbane or Perth, paid coordination sequences the DAFF export permit, the AQIS inspection and the MOCCAE import permit (valid 90 days from issuance), then the cargo booking and Dubai handoff. The quote follows an eligibility check. Self-serve readers use the DAFF portal, an AQIS-accredited vet and the MOCCAE portal themselves.
             </p>
+            <p className="mb-6 text-sm leading-relaxed text-white/80">{GUIDE_SOFT_GATE}</p>
+            <PaidIncludes tone="dark" compact className="mx-auto mb-6 max-w-2xl text-left" />
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <WhatsAppBtn label="Get an Australia to Dubai quote" message="Hi, I want to relocate my pet from Australia to Dubai. Can you help me understand the AQIS process and cost?" />
+              <WhatsAppBtn label={CTA_MANAGED_QUOTE} message={WA} />
               <a href={`${BASE_URL}/how-it-works/`} className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-semibold text-[#2A2A2A] bg-white hover:bg-[#F5F5F5] transition-colors">
                 <Info className="w-5 h-5" />
                 How It Works
