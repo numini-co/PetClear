@@ -23,12 +23,27 @@ import ContentImage from '../components/ContentImage.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import GuideDualPath from '../components/GuideDualPath.tsx'
-import { CTA_ELIGIBILITY_MOVE, GUIDE_SOFT_GATE, waEligibility } from '../lib/conversionCopy.ts'
+import PaidIncludes from '../components/PaidIncludes.tsx'
+import { CTA_ELIGIBILITY_MOVE, CTA_MANAGED_QUOTE, GUIDE_SOFT_GATE, waEligibility } from '../lib/conversionCopy.ts'
 import GuideToc from '../components/GuideToc.tsx'
 
 const CHECKED = '22 September 2026'
 const MOCCAE_IMPORT = 'https://moccae.gov.ae/en/services/import-permit-pets'
 const waImport = waEligibility({ destination: 'Dubai', need: 'managed move' })
+
+const STRONG_WA =
+  'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto'
+
+const FUNNEL_WA =
+  'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-[#0B6B3A] px-5 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] sm:w-auto'
+
+const IMPORT_PAID = [
+  'Eligibility check for origin, breed and age',
+  'MOCCAE import permit timing (valid 90 days from issuance)',
+  'Airline booking for the accepted product',
+  'IATA crate check before the booking is held',
+  'DXB or DWC handoff',
+] as const
 
 const BANNED_DOGS = [
   'Staffordshire Bull Terrier',
@@ -65,11 +80,11 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 const FAQS: { q: string; a: string }[] = [
   {
     q: 'What do I need to bring a dog or cat into the UAE?',
-    a: 'A MOCCAE import permit valid for 90 days from issuance, a permanent microchip whose number matches the health certificate, the vaccines named for that species, parasite treatment in the 14 days before shipment, and an authorised health certificate. High-risk origins also need a rabies antibody test of at least 0.5 IU/ml. Pets are shipped under IATA conditions. Confirm your origin on the live MOCCAE page: the United Kingdom was on the low-risk list on 22 September 2026. Managed import: [/service/pet-import-dubai/](/service/pet-import-dubai/).',
+    a: 'A [MOCCAE import permit](/guides/moccae-import-permit/) valid for 90 days from issuance, a permanent microchip whose number matches the health certificate, the vaccines named for that species, parasite treatment in the 14 days before shipment, and an authorised health certificate. High-risk origins also need a rabies antibody test of at least 0.5 IU/ml. Pets are shipped under IATA conditions. Confirm your origin on the live MOCCAE page: the United Kingdom was on the low-risk list on 22 September 2026. Managed import: [pet import Dubai](/service/pet-import-dubai/).',
   },
   {
     q: 'How long is the MOCCAE import permit valid?',
-    a: '90 days from the date of issuance. The pet must enter inside that window. An expired permit cannot be used. That clock is not the rabies-test certificate and it is not a municipal registration deadline.',
+    a: 'The [MOCCAE import permit](/guides/moccae-import-permit/) is valid for 90 days from the date of issuance. The same approval is the [MOCCAE pet import permit](/guides/moccae-import-permit/). The pet must enter inside that window. An expired permit cannot be used. That clock is not the rabies-test certificate and it is not a municipal registration deadline. Government fees are confirmed on the MOCCAE portal. A managed file is [pet import Dubai](/service/pet-import-dubai/).',
   },
   {
     q: 'Do pets go into quarantine in the UAE?',
@@ -166,7 +181,12 @@ export default function ImportRequirementsPage() {
         subtitle="Permit valid 90 days from issuance, species-specific vaccines, and an airline product that will actually carry the animal. Fees below are the government amounts published on the MOCCAE page."
         updated={`Checked ${CHECKED}`}
         whatsappMessage={waImport}
-        primaryLabel="Check if we can move your pet"
+        primaryLabel={CTA_ELIGIBILITY_MOVE}
+        primaryClassName={STRONG_WA}
+        showBuyerQualify
+        paidIncludes={[...IMPORT_PAID]}
+        gateLine={GUIDE_SOFT_GATE}
+        waService="Import service"
         secondary={{ label: 'pet import Dubai', to: '/service/pet-import-dubai/' }}
       />
 
@@ -181,7 +201,15 @@ export default function ImportRequirementsPage() {
             <a href={MOCCAE_IMPORT} className="font-semibold text-[#4F5BD5] hover:underline" target="_blank" rel="noopener noreferrer">
               MOCCAE import of pets page
             </a>{' '}
-            on {CHECKED}. Where that page is silent or the English wording is unclear, the sentence below says so. {GUIDE_SOFT_GATE} The managed file is{' '}
+            on {CHECKED}. Where that page is silent or the English wording is unclear, the sentence below says so. The approval you apply for is the{' '}
+            <Link to="/guides/moccae-import-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
+              MOCCAE import permit
+            </Link>
+            . Owners also look up the same document as the{' '}
+            <Link to="/guides/moccae-import-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
+              MOCCAE pet import permit
+            </Link>
+            . It is valid for 90 days from issuance. Government fees are confirmed on the MOCCAE portal. {GUIDE_SOFT_GATE} The managed file is{' '}
             <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
               pet import Dubai
             </Link>
@@ -198,6 +226,7 @@ export default function ImportRequirementsPage() {
               moneyLabel="pet import Dubai"
               waMessage={waImport}
               waLabel={CTA_ELIGIBILITY_MOVE}
+              waClassName={FUNNEL_WA}
             />
           </div>
         </div>
@@ -224,10 +253,29 @@ export default function ImportRequirementsPage() {
               <p><strong className="text-[#2A2A2A]">Government fees on {CHECKED}:</strong> AED 200 import permit per animal, AED 500 release per dog, AED 250 release per cat. Confirm the payment screen.</p>
               <p><strong className="text-[#2A2A2A]">Age:</strong> Vaccination not before 12 weeks. High-risk imports not less than 15 weeks. The English page says the low-risk minimum age "will be 12" without a unit, so that figure is not treated as confirmed. UK exports use the 15-week rule on certificate 3926EHC.</p>
             </div>
-            <div className="mt-8">
-              <a href={getWhatsAppUrl(waImport)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold">
-                Check if we can move your pet
+            <p className="mt-6 text-sm text-[#5A5A5A]">
+              Titre rules, when the origin is high-risk, are on the{' '}
+              <Link to="/guides/rabies-titer-test-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+                rabies titre test
+              </Link>{' '}
+              guide. A shorter tick list is the{' '}
+              <Link to="/guides/import-checklist/" className="font-semibold text-[#4F5BD5] hover:underline">
+                import checklist
+              </Link>
+              .
+            </p>
+            <div className="mt-8 max-w-xl space-y-4">
+              <PaidIncludes items={IMPORT_PAID} />
+              <a
+                href={getWhatsAppUrl(waImport)}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-wa-service="Import service"
+                className={STRONG_WA}
+              >
+                {CTA_ELIGIBILITY_MOVE}
               </a>
+              <p className="text-xs leading-relaxed text-[#5A5A5A]">{GUIDE_SOFT_GATE}</p>
             </div>
           </div>
         </div>
@@ -250,8 +298,18 @@ export default function ImportRequirementsPage() {
               </thead>
               <tbody>
                 <tr>
-                  <td className="font-semibold">Import permit</td>
-                  <td>Valid 90 days from issuance. Apply before travel.</td>
+                  <td className="font-semibold">
+                    <Link to="/guides/moccae-import-permit/" className="text-[#4F5BD5] hover:underline">
+                      MOCCAE import permit
+                    </Link>
+                  </td>
+                  <td>
+                    The{' '}
+                    <Link to="/guides/moccae-import-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
+                      MOCCAE pet import permit
+                    </Link>{' '}
+                    is the same approval. Valid 90 days from issuance. Apply before travel. Government fees are confirmed on the MOCCAE portal.
+                  </td>
                   <td>MOCCAE</td>
                 </tr>
                 <tr>
@@ -294,7 +352,7 @@ export default function ImportRequirementsPage() {
           <ol className="mt-8 space-y-4 max-w-3xl text-[#5A5A5A]">
             <li><strong className="text-[#2A2A2A]">Breed and origin.</strong> Dogs: the ban list below. Cats: Bengal and Serval pedigree. Origin: high-risk or low-risk on the live page.</li>
             <li><strong className="text-[#2A2A2A]">Microchip and vaccines.</strong> Chip number must match every certificate. Vaccinate at not less than 12 weeks. Dog and cat vaccine lists are different.</li>
-            <li><strong className="text-[#2A2A2A]">Antibody test, only if the origin is high-risk.</strong> At least 0.5 IU/ml. Respect the 21-day wait after a first or lapsed rabies vaccine. Keep the 365-day conditions, or repeat the test.</li>
+            <li><strong className="text-[#2A2A2A]">Antibody test, only if the origin is high-risk.</strong> At least 0.5 IU/ml. Respect the 21-day wait after a first or lapsed rabies vaccine. Keep the 365-day conditions, or repeat the test. Timing is on the <Link to="/guides/rabies-titer-test-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">rabies titre test</Link> guide.</li>
             <li><strong className="text-[#2A2A2A]">Import permit.</strong> Online through MOCCAE. Valid 90 days from issuance. The import application itself lists no documents for ordinary dogs and cats. Release later needs the customs paper or bill of lading, the vaccine record, the health certificate, and the antibody certificate if the origin is high-risk.</li>
             <li><strong className="text-[#2A2A2A]">Airline.</strong> IATA shipping conditions. Direct shipment is cleaner. If the animal transits, it must not mix with other pet animals. Emirates endings in Dubai are cargo.</li>
             <li><strong className="text-[#2A2A2A]">Last days.</strong> Parasite treatment inside the 14 days before shipment. Health certificate inside the validity of that origin form.</li>
@@ -452,14 +510,16 @@ export default function ImportRequirementsPage() {
 
       <GuideFunnelCta
         variant="end"
-        title="Want the import handled?"
-        subtitle="This page is the checklist. A managed import covers the permit window (90 days from issuance), the airline booking and the handoff. Government fees are the MOCCAE amounts above, confirmed when you pay."
+        title="Get a managed-move quote"
+        subtitle={`${GUIDE_SOFT_GATE} A managed import covers the MOCCAE import permit window (90 days from issuance), the airline booking and the handoff. Government fees are confirmed on the MOCCAE portal.`}
         eligibilityMessage={waImport}
-        waLabel={CTA_ELIGIBILITY_MOVE}
+        waLabel={CTA_MANAGED_QUOTE}
+        waClassName={FUNNEL_WA}
+        paidItems={IMPORT_PAID}
         links={[
           { to: '/service/pet-import-dubai/', label: 'pet import Dubai', icon: 'plane' },
-          { to: '/', label: 'pet relocation Dubai', icon: 'package' },
-          { to: '/guides/moccae-import-permit/', label: 'MOCCAE import permit', icon: 'file' },
+          { to: '/guides/moccae-import-permit/', label: 'MOCCAE pet import permit', icon: 'file' },
+          { to: '/guides/import-checklist/', label: 'import checklist', icon: 'file' },
         ]}
       />
 

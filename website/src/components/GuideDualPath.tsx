@@ -11,6 +11,8 @@ interface GuideDualPathProps {
   moneyLabel: string
   waMessage?: string
   waLabel?: string
+  /** Optional WhatsApp button classes. Default stays the shared green button. */
+  waClassName?: string
 }
 
 /**
@@ -23,6 +25,7 @@ export default function GuideDualPath({
   moneyLabel,
   waMessage = WA_ELIGIBILITY_DEFAULT,
   waLabel = CTA_CHECK_MOVE,
+  waClassName,
 }: GuideDualPathProps) {
   return (
     <aside
@@ -46,7 +49,10 @@ export default function GuideDualPath({
           href={getWhatsAppUrl(waMessage, 'guide-dual-path')}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-semibold text-white hover:bg-[#1DA851]"
+          className={
+            waClassName ||
+            'inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-semibold text-white hover:bg-[#1DA851]'
+          }
         >
           <MessageCircle className="h-4 w-4" aria-hidden="true" />
           {waLabel}
