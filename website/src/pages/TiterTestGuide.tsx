@@ -21,13 +21,27 @@ import OfficialSources from '../components/OfficialSources.tsx'
 import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import RelatedLinks from '../components/RelatedLinks.tsx'
 import LinkedText from '../components/LinkedText.tsx'
-import { CTA_CHECK_MOVE, waEligibility } from '../lib/conversionCopy.ts'
+import { CTA_ELIGIBILITY_MOVE, CTA_MANAGED_QUOTE, GUIDE_SOFT_GATE, waEligibility } from '../lib/conversionCopy.ts'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, siteConfig } from '../lib/seo.ts'
 import GuideToc from '../components/GuideToc.tsx'
 
 const CHECKED = '22 September 2026'
 const MOCCAE_IMPORT = 'https://moccae.gov.ae/en/services/import-permit-pets'
+
+const STRONG_WA =
+  'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto'
+
+const FUNNEL_WA =
+  'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-[#0B6B3A] px-5 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] sm:w-auto'
+
+const TITRE_PAID = [
+  'Titre scheduling against the flight date',
+  'MOCCAE import permit timing for an inbound pet (valid 90 days from issuance)',
+  'Airline booking for the accepted product',
+  'IATA crate check before the booking is held',
+  'DXB or DWC handoff',
+] as const
 
 const TITRE_RULE =
   'High-risk origins need a rabies antibody test of at least 0.5 IU/ml from a laboratory approved by the export country. The certificate is valid for 365 days if the rabies vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. A first vaccine, or a gap in vaccination, needs at least 21 days before the test. A valid booster does not need that 21-day wait. An older 90-day sample window is not on the live MOCCAE page.'
@@ -81,14 +95,19 @@ const faqData = [
   {
     question: 'Is a titre the same as a MOCCAE import permit?',
     answer:
-      'No. The antibody test is a laboratory result for a high-risk origin. The import permit is a separate approval, valid for 90 days from issuance. A passing test does not replace an expired permit. Permit steps: [/guides/moccae-import-permit/](/guides/moccae-import-permit/). Paid filing: [/service/moccae-pet-permit/](/service/moccae-pet-permit/).',
+      'No. The antibody test is a laboratory result for a high-risk origin. The [MOCCAE import permit](/guides/moccae-import-permit/) is a separate approval, valid for 90 days from issuance. A passing test does not replace an expired permit. If you want the import handled, open [pet import Dubai](/service/pet-import-dubai/).',
+  },
+  {
+    question: 'Where do I check titre timing if I am doing it myself?',
+    answer:
+      'On this page. A high-risk origin needs at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. A first vaccine, or a gap in vaccination, needs at least 21 days before the test. A valid booster does not. The blood sample does not have to fall inside 90 days before travel. Buyers who want the move handled should open [pet import Dubai](/service/pet-import-dubai/) and the [MOCCAE import permit](/guides/moccae-import-permit/) guide.',
   },
 ]
 
 export default function TiterTestGuide() {
   const title = 'Rabies Titre Test for Dubai | Eligibility & Timing'
   const description =
-    'Check when a rabies titre test is required for a pet moving to Dubai. Understand test timing, certificate validity and official requirements for your origin.'
+    'Rabies titre timing for a Dubai import: 0.5 IU/ml and a 365-day certificate. Check managed-import eligibility when the titre must match a real flight.'
   const canonical = `${BASE_URL}/guides/rabies-titer-test-dubai/`
   const ogImage = `${BASE_URL}/assets/og-titer-test.jpg`
   const waTitre = waEligibility({ need: 'managed move' })
@@ -211,8 +230,13 @@ export default function TiterTestGuide() {
         subtitle="High-risk origins need at least 0.5 IU/ml. The certificate lasts 365 days while the vaccine stays valid and no booster is given. The import permit is a separate 90 days from issuance."
         updated={`Last verified: ${CHECKED}`}
         whatsappMessage={waTitre}
-        primaryLabel="Check titre timing on WhatsApp"
-        secondary={{ label: 'Full import requirements', to: '/guides/uae-pet-import-requirements/' }}
+        primaryLabel={CTA_ELIGIBILITY_MOVE}
+        primaryClassName={STRONG_WA}
+        showBuyerQualify
+        paidIncludes={[...TITRE_PAID]}
+        gateLine={GUIDE_SOFT_GATE}
+        waService="Import service"
+        secondary={{ label: 'UAE import requirements', to: '/guides/uae-pet-import-requirements/' }}
       />
 
       <section id="what-the-test-is" className="section-padding scroll-mt-24 bg-[#F5F6FD]">
@@ -283,10 +307,17 @@ export default function TiterTestGuide() {
 
       <GuideFunnelCta
         variant="mid"
-        title="Want the test dated against a real flight?"
-        subtitle="WhatsApp is for a managed import when you are ready to book. We explain the next step before any paid work starts. We do not quote a laboratory fee on this page."
+        title="Check if we can move your pet"
+        subtitle={`${GUIDE_SOFT_GATE} This page keeps the self-serve timing rules. A quote is for a managed import when the titre has to match a real flight. We do not publish a laboratory fee.`}
         eligibilityMessage={waTitre}
-        waLabel={CTA_CHECK_MOVE}
+        waLabel={CTA_ELIGIBILITY_MOVE}
+        waClassName={FUNNEL_WA}
+        paidItems={TITRE_PAID}
+        links={[
+          { to: '/service/pet-import-dubai/', label: 'pet import Dubai', icon: 'plane' },
+          { to: '/guides/moccae-import-permit/', label: 'MOCCAE import permit', icon: 'file' },
+          { to: '/guides/uae-pet-import-requirements/', label: 'UAE import requirements', icon: 'file' },
+        ]}
       />
 
       <section id="timeline" className="section-padding bg-white">
@@ -296,7 +327,11 @@ export default function TiterTestGuide() {
               Order of work for a high-risk origin
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed">
-              Do the antibody test before you spend the permit&apos;s 90 days. The steps below are the rule for UAE inbound dogs and cats when a rabies antibody test is required. Source: the MOCCAE import-permit service, checked 6 September 2026. Destination-country clocks stay on their own pages. An older diagram that showed a 90-day sample window is not used.
+              Do the antibody test before you spend the permit&apos;s 90 days. The steps below are the rule for UAE inbound dogs and cats when a rabies antibody test is required. Source: the MOCCAE import-permit service, checked 6 September 2026. Destination-country clocks stay on their own pages. A move out of Dubai is{' '}
+              <Link to="/service/pet-export-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+                pet export Dubai
+              </Link>
+              , and that file follows the destination authority, not this inbound titre rule. An older diagram that showed a 90-day sample window is not used.
             </p>
           </div>
 
@@ -495,13 +530,17 @@ export default function TiterTestGuide() {
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
               Stay on this page if you are timing the test yourself. If you want the import handled, open{' '}
               <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-                pet import to Dubai
+                pet import Dubai
               </Link>
-              . Permit filing on its own is{' '}
-              <Link to="/service/moccae-pet-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
-                MOCCAE permit assistance
+              . The permit steps are the{' '}
+              <Link to="/guides/moccae-import-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
+                MOCCAE import permit
+              </Link>{' '}
+              guide. The wider file is{' '}
+              <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
+                UAE import requirements
               </Link>
-              . WhatsApp +971504782999 and support@dubai-pet-relocation.ae are for a managed file, not a free rewrite of the Ministry page.
+              . WhatsApp +971504782999 and support@dubai-pet-relocation.ae are for a managed-move quote, not a free rewrite of the Ministry page.
             </p>
           </div>
         </div>
@@ -533,10 +572,17 @@ export default function TiterTestGuide() {
 
       <GuideFunnelCta
         variant="end"
-        title="Need the test mapped to a flight?"
-        subtitle="Send origin, vaccination date and a target month on WhatsApp if you want a managed import. We explain the next step before any paid work starts. We do not invent a laboratory fee."
+        title="Get a managed-move quote"
+        subtitle={`${GUIDE_SOFT_GATE} Send the pet, origin and target month when you want the titre dated against a real flight. We do not invent a laboratory fee.`}
         eligibilityMessage={waTitre}
-        waLabel={CTA_CHECK_MOVE}
+        waLabel={CTA_MANAGED_QUOTE}
+        waClassName={FUNNEL_WA}
+        paidItems={TITRE_PAID}
+        links={[
+          { to: '/service/pet-import-dubai/', label: 'pet import Dubai', icon: 'plane' },
+          { to: '/guides/moccae-import-permit/', label: 'MOCCAE import permit', icon: 'file' },
+          { to: '/guides/uae-pet-import-requirements/', label: 'UAE import requirements', icon: 'file' },
+        ]}
       />
     </>
   )

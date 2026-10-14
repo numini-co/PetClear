@@ -23,13 +23,28 @@ import Breadcrumb from '../components/Breadcrumb.tsx'
 import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import LastVerified from '../components/LastVerified.tsx'
+import PaidIncludes from '../components/PaidIncludes.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
 import GuideDualPath from '../components/GuideDualPath.tsx'
-import { waEligibility } from '../lib/conversionCopy.ts'
+import { CTA_ELIGIBILITY_MOVE, CTA_MANAGED_QUOTE, GUIDE_SOFT_GATE, waEligibility } from '../lib/conversionCopy.ts'
 
 const waChecklist = waEligibility({ need: 'managed move' })
 
-/* ─── FAQ accordion helper ─── */
+const STRONG_WA =
+  'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto'
+
+const FUNNEL_WA =
+  'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-[#0B6B3A] px-5 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] sm:w-auto'
+
+const CHECKLIST_PAID = [
+  'Document order checked against the flight date',
+  'MOCCAE import permit timing (valid 90 days from issuance)',
+  'Airline booking for the accepted product',
+  'IATA crate check before the booking is held',
+  'DXB or DWC handoff',
+] as const
+
+/* FAQ accordion helper */
 function FAQItem({ question, answer }: { question: string; answer: React.ReactNode }) {
   const [open, setOpen] = useState(false)
   return (
@@ -43,7 +58,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
   )
 }
 
-/* ─── Checklist step type ─── */
+/* Checklist step type */
 interface ChecklistStep {
   num: number
   title: string
@@ -52,7 +67,7 @@ interface ChecklistStep {
   icon: React.ReactNode
 }
 
-/* ─── Page ─── */
+/* Page */
 export default function ImportChecklistGuide() {
   const title = 'UAE Pet Import Checklist | Before You Travel'
   const description =
@@ -219,9 +234,14 @@ export default function ImportChecklistGuide() {
         title="Your pet import checklist for the UAE"
         subtitle="An ordered list for a dog or cat entering the UAE: matching microchip, species vaccines, titre only when the origin is high-risk, and a permit valid 90 days from issuance."
         updated="Last verified: 22 September 2026"
-        primaryLabel="Tell us about your move"
+        primaryLabel={CTA_ELIGIBILITY_MOVE}
+        primaryClassName={STRONG_WA}
+        showBuyerQualify
+        paidIncludes={[...CHECKLIST_PAID]}
+        gateLine={GUIDE_SOFT_GATE}
+        waService="Import service"
         whatsappMessage={waChecklist}
-        secondary={{ label: 'Pet import service', to: '/service/pet-import-dubai/' }}
+        secondary={{ label: 'pet import Dubai', to: '/service/pet-import-dubai/' }}
       />
 
       {/* Intro + at-a-glance */}
@@ -233,14 +253,20 @@ export default function ImportChecklistGuide() {
                 Everything You Need, In Order
               </h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                Bringing a pet into the UAE is a documents process. Check the breed, the origin, the chip number, the vaccines for that species, and the permit window before you fly. The import permit is valid for 90 days from issuance.
+                Bringing a pet into the UAE is a documents process. Check the breed, the origin, the chip number, the vaccines for that species, and the permit window before you fly. The{' '}
+                <Link to="/guides/moccae-import-permit/" className="font-semibold text-[#4F5BD5] hover:underline">
+                  MOCCAE import permit
+                </Link>{' '}
+                is valid for 90 days from issuance. {GUIDE_SOFT_GATE}
               </p>
               <div className="mb-6">
                 <GuideDualPath
                   diyNote="Keep ticking the list below if you are lining up the file yourself."
                   moneyTo="/service/pet-import-dubai/"
-                  moneyLabel="Pet import to Dubai"
+                  moneyLabel="pet import Dubai"
                   waMessage={waChecklist}
+                  waLabel={CTA_ELIGIBILITY_MOVE}
+                  waClassName={FUNNEL_WA}
                 />
               </div>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
@@ -353,16 +379,19 @@ export default function ImportChecklistGuide() {
             </div>
           </div>
 
-          <div className="mt-8 text-center">
+          <div className="mt-8 mx-auto max-w-xl space-y-4 text-left">
+            <PaidIncludes items={CHECKLIST_PAID} />
             <a
               href={getWhatsAppUrl(waChecklist)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
+              data-wa-service="Import service"
+              className={STRONG_WA}
             >
-              <MessageCircle className="w-5 h-5" />
-              Check if we can move your pet
+              <MessageCircle className="w-5 h-5" aria-hidden="true" />
+              {CTA_ELIGIBILITY_MOVE}
             </a>
+            <p className="text-xs leading-relaxed text-[#5A5A5A]">{GUIDE_SOFT_GATE}</p>
           </div>
         </div>
       </section>
@@ -412,7 +441,11 @@ export default function ImportChecklistGuide() {
                   <td>Not a government fee on this page</td>
                 </tr>
                 <tr>
-                  <td className="font-semibold text-[#2A2A2A]">MOCCAE import permit</td>
+                  <td className="font-semibold text-[#2A2A2A]">
+                    <Link to="/guides/moccae-import-permit/" className="text-[#4F5BD5] hover:underline">
+                      MOCCAE import permit
+                    </Link>
+                  </td>
                   <td>Apply before travel. An expired permit cannot be used.</td>
                   <td>90 days from issuance</td>
                   <td>AED 200 per animal</td>
@@ -538,9 +571,17 @@ export default function ImportChecklistGuide() {
 
       <GuideFunnelCta
         variant="mid"
-        title="Documents lined up — book the import?"
-        subtitle="Use the checklist here if you are filing yourself. Open pet import or door-to-door relocation when you want us to run the file. WhatsApp eligibility only if you are ready to book. Confirm MOCCAE fees on the portal."
+        title="Documents lined up? Book the import"
+        subtitle={`${GUIDE_SOFT_GATE} Use the checklist here if you are filing yourself. Open pet import Dubai when you want the file held. Confirm government fees on the MOCCAE portal.`}
         eligibilityMessage={waChecklist}
+        waLabel={CTA_ELIGIBILITY_MOVE}
+        waClassName={FUNNEL_WA}
+        paidItems={CHECKLIST_PAID}
+        links={[
+          { to: '/service/pet-import-dubai/', label: 'pet import Dubai', icon: 'plane' },
+          { to: '/guides/moccae-import-permit/', label: 'MOCCAE import permit', icon: 'file' },
+          { to: '/guides/uae-pet-import-requirements/', label: 'UAE import requirements', icon: 'file' },
+        ]}
       />
 
       {/* Related Links */}
@@ -555,13 +596,13 @@ export default function ImportChecklistGuide() {
                 <FileCheck className="w-5 h-5 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">UAE Pet Import Requirements</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">The full requirements guide behind this checklist — rules, vaccinations, and banned breeds.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">The full requirements guide behind this checklist: rules, vaccinations, and banned breeds.</p>
             </Link>
             <Link to="/guides/moccae-import-permit/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
               <div className="w-10 h-10 rounded-xl bg-[#4F5BD5]/10 flex items-center justify-center mb-4 group-hover:bg-[#4F5BD5]/20 transition-colors">
                 <FileText className="w-5 h-5 text-[#4F5BD5]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">MOCCAE Import Permit Guide</h3>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2 group-hover:text-[#4F5BD5] transition-colors">MOCCAE import permit</h3>
               <p className="text-sm text-[#5A5A5A] leading-relaxed">How to apply for the import permit, what triggers rejections, and how to fix them.</p>
             </Link>
             <Link to="/service/pet-import-dubai/" className="bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-md transition-shadow group">
@@ -598,9 +639,17 @@ export default function ImportChecklistGuide() {
 
       <GuideFunnelCta
         variant="end"
-        title="Ready to book a managed import?"
-        subtitle="Avoid sequencing mistakes and rejected permits when you want the file held. WhatsApp eligibility if you are ready to book, or open the door-to-door / import service pages. Permit validity: 90 days from issuance."
+        title="Get a managed-move quote"
+        subtitle={`${GUIDE_SOFT_GATE} Open pet import Dubai when you want the file held. The MOCCAE import permit is valid for 90 days from issuance. Government fees are confirmed on the MOCCAE portal.`}
         eligibilityMessage={waChecklist}
+        waLabel={CTA_MANAGED_QUOTE}
+        waClassName={FUNNEL_WA}
+        paidItems={CHECKLIST_PAID}
+        links={[
+          { to: '/service/pet-import-dubai/', label: 'pet import Dubai', icon: 'plane' },
+          { to: '/guides/moccae-import-permit/', label: 'MOCCAE import permit', icon: 'file' },
+          { to: '/guides/uae-pet-import-requirements/', label: 'UAE import requirements', icon: 'file' },
+        ]}
       />
     </>
   )
