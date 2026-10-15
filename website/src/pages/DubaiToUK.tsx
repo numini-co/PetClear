@@ -3,6 +3,8 @@ import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import Hero from '../components/Hero.tsx'
 import { BASE_URL, LOGO_URL } from '../lib/seo.ts'
+import { GUIDE_SOFT_GATE, OUTBOUND_PAID_INCLUDES, STRONG_WA_CLASS } from '../lib/conversionCopy.ts'
+import PaidIncludes from '../components/PaidIncludes.tsx'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Stethoscope, Home, AlertTriangle, Info, PawPrint, Dog } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
@@ -101,6 +103,13 @@ export default function DubaiToUK() {
         title="Pet relocation from Dubai to UK"
         subtitle="On 22 September 2026 the UAE was a listed country. The document is a Great Britain pet health certificate. The pet must enter within 10 days of issue. No package price on this page."
         updated={`Checked ${CHECKED}`}
+        primaryLabel="Get Route Checked"
+        whatsappMessage="Hi Dubai Pet Relocation. I want Get Route Checked for dubai to uk (outbound). Pet details and preferred dates follow."
+        primaryClassName={STRONG_WA_CLASS}
+        showBuyerQualify
+        paidIncludes={[...OUTBOUND_PAID_INCLUDES]}
+        gateLine={GUIDE_SOFT_GATE}
+        waService="Export service"
       />
       <div className="mx-auto max-w-[900px] px-5 pt-8">
         <RoutePlanLinks />
@@ -367,11 +376,17 @@ export default function DubaiToUK() {
           <div className="bg-[#3A45B0] rounded-[20px] p-8 lg:p-12 text-center text-white">
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-white" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to plan a Dubai to Great Britain move?</h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              We coordinate the file, the carrier booking and WhatsApp updates during business hours. We do not issue the Great Britain pet health certificate. WhatsApp +971504782999.
+            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
+              We coordinate the file, the carrier booking and WhatsApp updates during business hours. We do not issue the Great Britain pet health certificate. {GUIDE_SOFT_GATE} WhatsApp +971504782999.
             </p>
+            <PaidIncludes tone="dark" compact items={OUTBOUND_PAID_INCLUDES} className="mx-auto mb-6 max-w-2xl text-left" />
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <WhatsAppBtn label="Check this Dubai to UK move" message="Hi Dubai Pet Relocation, I want a quote for a pet moving from Dubai to Great Britain. Pet, route and travel window:" />
+              <WhatsAppBtn
+                strong
+                service="Export service"
+                label="Get Route Checked"
+                message="Hi Dubai Pet Relocation. I want Get Route Checked for dubai to uk (outbound). Pet details and preferred dates follow."
+              />
               <a href={`${BASE_URL}/how-it-works/`} className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-semibold text-[#2A2A2A] bg-white hover:bg-[#F5F5F5] transition-colors">
                 <Info className="w-5 h-5" />
                 How it works

@@ -93,8 +93,8 @@ export const GCC_COPY: RouteUniqueCopy[] = [
  destinationRules: {
  authorityHint: 'Saudi MEWA pet import mechanism via the Anaam / Naama platform',
  bullets: [
- 'Obtain the MEWA import permit before travel. SOT: permit valid 30 days from issuance; the consignment must enter through the port named on the permit (RUH, JED, DMM or MED as applicable).',
- 'Remaining rabies vaccination validity must meet MEWA’s published remainder (SOT: at least six months at the time of import) — verify the current PDF/mechanism.',
+ 'Obtain the MEWA import permit before travel. Saudi MEWA guidance states the permit is valid 30 days from issuance. The consignment must enter through the port named on the permit (RUH, JED, DMM or MED as applicable).',
+ 'Remaining rabies vaccination validity must meet MEWA’s published remainder (at least six months at the time of import, per Saudi MEWA guidance). Verify the current PDF or mechanism.',
  'Imports sit under GCC veterinary quarantine and animal-welfare rules; MEWA may refuse origins based on WOAH health situation.',
  'Secondary sources restrict who may apply (Saudi / GCC ID or Iqama) and list many dog breeds as limited or banned. Confirm eligibility before you crate the animal.',
  'Exit-and-return companion-pet permits are a different Anaam product (return window published as 60 days) — do not mix that with a one-way import.',
@@ -238,7 +238,7 @@ export const GCC_COPY: RouteUniqueCopy[] = [
  destinationRules: {
  authorityHint: 'Qatar Ministry of Environment and Climate Change (MoECC) pet import permit — verify first-party',
  bullets: [
- 'Obtain the Qatari import permit before the pet leaves the UAE. Secondary SOT synthesis: health certificate typically within about 10 days of travel — confirm the current MoECC instruction.',
+ 'Obtain the Qatari import permit before the pet leaves the UAE. MoECC guidance commonly places the health certificate within about 10 days of travel. Confirm the current MoECC instruction.',
  'Arrival is DOH (Doha Hamad) on this corridor. The permit, AWB and handler must agree on that gateway.',
  'Do not treat this page as Qatar Airways PETC/AVIH policy. Confirm QA live-animal rules on the carrier’s official page; Emirates and Etihad have their own products from Dubai.',
  'ISO microchip and current rabies vaccination are the usual building blocks; confirm any additional Qatari tests or breed limits on the permit form.',

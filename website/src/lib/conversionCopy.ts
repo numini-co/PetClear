@@ -150,3 +150,16 @@ export const PAID_INCLUDES_ITEMS = [
 
 export const PAID_INCLUDES_FOOT =
   'Government permit and release fees are confirmed on the official MOCCAE portal. Amounts are the figures on that portal.'
+
+/** Leaving Dubai. No package prices. Export-certificate window stays confirm-on-portal. */
+export const OUTBOUND_PAID_INCLUDES = [
+  'MOCCAE export health certificate timing (commonly cited as 30 days from issue; verify on the portal)',
+  'Destination import paperwork coordinated to that window',
+  'Airline or cargo booking for the live-animal product leaving Dubai',
+  'IATA crate check before the booking is held',
+  'Airport handover at DXB',
+] as const
+
+/** White on #0B6B3A clears 4.5:1. Full width below 640px, above the sticky bar. */
+export const STRONG_WA_CLASS =
+  'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto'

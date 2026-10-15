@@ -12,6 +12,7 @@ import LastVerified from './LastVerified.tsx'
 import LinkedText from './LinkedText.tsx'
 import { stripInternalMarkdownLinks } from '../lib/linkedText.ts'
 import { BASE_URL, LOGO_URL, getWhatsAppUrl, shortSubtitle, siteConfig } from '../lib/seo.ts'
+import { GUIDE_SOFT_GATE, OUTBOUND_PAID_INCLUDES, STRONG_WA_CLASS } from '../lib/conversionCopy.ts'
 import { titleCaseCountry } from '../data/routes/countryMeta.ts'
 import type { RoutePageData } from '../types/routePage.ts'
 import RouteMoneyBodyLink from './RouteMoneyBodyLink.tsx'
@@ -52,14 +53,15 @@ function displayCountry(name: string): string {
 
 export default function RoutePage({ data }: { data: RoutePageData }) {
   const week7 = WEEK7_SLUGS.has(data.slug)
+  const outbound = data.direction === 'outbound'
   const url = `${BASE_URL}/routes/${data.slug}/`
   const countryLabel = displayCountry(data.countryName)
   const eyebrow =
     data.direction === 'inbound' ? `${countryLabel} → Dubai` : `Dubai → ${countryLabel}`
-  const waMessage = week7
-    ? `Hi Dubai Pet Relocation. I want Get Route Checked for ${data.slug.replace(/-/g, ' ')} (${data.direction}). Pet details and preferred dates follow.`
-    : `Hi Dubai Pet Relocation! I need a route check for ${data.slug.replace(/-/g, ' ')} (${data.direction}). Pet details and preferred dates follow.`
-  const wa = getWhatsAppUrl(waMessage)
+  const waMessage =
+    outbound || week7
+      ? `Hi Dubai Pet Relocation. I want Get Route Checked for ${data.slug.replace(/-/g, ' ')} (${data.direction}). Pet details and preferred dates follow.`
+      : `Hi Dubai Pet Relocation! I need a route check for ${data.slug.replace(/-/g, ' ')} (${data.direction}). Pet details and preferred dates follow.`
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -120,8 +122,13 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
         title={data.h1}
         subtitle={shortSubtitle(data.intro)}
         updated={`Last verified ${data.lastVerified}`}
-        primaryLabel={data.cta.label}
+        primaryLabel={outbound ? 'Get Route Checked' : data.cta.label}
         whatsappMessage={waMessage}
+        primaryClassName={outbound ? STRONG_WA_CLASS : undefined}
+        showBuyerQualify={outbound}
+        paidIncludes={outbound ? [...OUTBOUND_PAID_INCLUDES] : undefined}
+        gateLine={outbound ? GUIDE_SOFT_GATE : undefined}
+        waService={outbound ? 'Export service' : undefined}
         secondary={{ label: 'All routes', to: '/routes/' }}
         overlayClassName={data.slug === 'germany-to-dubai' ? 'from-black/70 via-black/50 to-black/25' : undefined}
       />
@@ -138,6 +145,19 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
           {week7 ? <Prose text={data.intro} /> : <p className="leading-relaxed text-[#5A5A5A]">{data.intro}</p>}
           <LinkPlanSlot path={`/routes/${data.slug}/`} slot="route-summary" />
           {data.direction === 'inbound' ? <RouteMoneyBodyLink path={`/routes/${data.slug}/`} /> : null}
+          {outbound ? (
+            <p className="mt-4 leading-relaxed text-[#5A5A5A]">
+              If this corridor is not the whole move, start with{' '}
+              <Link className="font-semibold text-[#4F5BD5]" to="/service/pet-relocation-from-dubai/">
+                pet relocation from Dubai
+              </Link>
+              . The document order sits on the{' '}
+              <Link className="font-semibold text-[#4F5BD5]" to="/guides/pet-export-from-dubai/">
+                pet export from Dubai guide
+              </Link>
+              .
+            </p>
+          ) : null}
           <LastVerified className="mt-4 text-xs text-[#8A8A8A]" />
         </div>
       </section>
@@ -292,9 +312,9 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
 
       <OfficialSources extra={data.extraSources} />
 
-      {week7 ? (
+      {week7 || outbound ? (
         <>
-          <RouteBuyerFreeHelp tone="band" buyerMessage={waMessage} />
+          <RouteBuyerFreeHelp tone="band" buyerMessage={waMessage} direction={outbound ? 'outbound' : 'inbound'} />
           <section className="bg-white pb-10">
             <div className="mx-auto max-w-[820px] px-5 text-center sm:px-6 lg:px-8">
               <LinkPlanSlot
@@ -324,7 +344,7 @@ export default function RoutePage({ data }: { data: RoutePageData }) {
               linkClass="font-semibold text-white underline"
             />
             <a
-              href={wa}
+              href={getWhatsAppUrl(waMessage)}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-8 py-4 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#1DA851]"

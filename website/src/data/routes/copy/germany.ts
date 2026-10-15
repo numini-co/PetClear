@@ -77,7 +77,7 @@ export const GERMANY_COPY: RouteUniqueCopy[] = [
  bullets: [
  'Plan Germany/EU entry requirements before requesting UAE export paperwork — destination-backwards scheduling avoids expired certificates.',
  'Typical EU third-country steps: ISO microchip before rabies vaccination, a valid rabies vaccine with any required wait, and an EU animal health certificate issued in time for entry.',
- 'Per SOT, the UAE is on the EU list of third countries whose pet dogs/cats/ferrets are exempt from the rabies antibody titration test for non-commercial entry — still verify the current Commission listing before you skip a titer.',
+ 'Under EU rules, the UAE is on the list of third countries whose pet dogs, cats and ferrets are exempt from the rabies antibody titration test for non-commercial entry. Still verify the current Commission listing before you skip a titre.',
  'Non-commercial rules usually cap pets per traveller; commercial/Balai rules differ — confirm which pathway you are on.',
  'Arrival gateway (FRA/MUC/BER/DUS) and carrier must accept the live animal — airport presence on this list does not equal automatic acceptance.',
  ],
