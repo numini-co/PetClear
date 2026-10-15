@@ -153,7 +153,7 @@ export const PAID_INCLUDES_FOOT =
 
 /** Leaving Dubai. No package prices. Export-certificate window stays confirm-on-portal. */
 export const OUTBOUND_PAID_INCLUDES = [
-  'MOCCAE export health certificate timing (commonly cited as 30 days from issue; verify on the portal)',
+  'MOCCAE export health certificate timing (confirm the validity window on the MOCCAE portal)',
   'Destination import paperwork coordinated to that window',
   'Airline or cargo booking for the live-animal product leaving Dubai',
   'IATA crate check before the booking is held',
