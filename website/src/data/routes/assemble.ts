@@ -78,7 +78,7 @@ function outboundUaeRules(): UaeRules {
     manifestCargoDefault: true,
     bullets: [
       'Leaving the UAE needs MOCCAE exit documentation (veterinary health certificate / export pathway via MOCCAE digital services). Plan this after destination rules are clear.',
-      'Export health certificate validity is commonly a short window. MOCCAE guidance is commonly cited as 30 days from issue for the export-certificate pathway. Verify on the MOCCAE portal before you book.',
+      'Export health certificate validity is a short window. Secondary sources commonly cite 30 days from issue, but we have not confirmed this on the MOCCAE portal. Verify on the MOCCAE portal before you book.',
       'Do not reuse inbound MOCCAE import-permit logic for an outbound move. A 90-day import permit is for entering the UAE, not for leaving it.',
       'Airline acceptance leaving Dubai can differ from the inbound product on the same brand. Confirm current policy for the outbound origin-destination pair.',
       'No package or government fee numerals on this page. Confirm fees on official portals. Dubai Pet Relocation quotes on request.',
