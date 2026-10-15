@@ -23,7 +23,7 @@ export const MOCCAE_FEE_FRAMING_NOTE =
 
 export const GOV_FEE_TABLE_CELL = 'Confirm on official MOCCAE portal'
 
-/** MOCCAE export health-certificate fee / timing — secondary-source only (SOT 2026-09-09; portal WAF). */
+/** MOCCAE export health-certificate fee / timing. Secondary-source only (register 2026-09-09; portal WAF). */
 export const EXPORT_CERT_FEE_VERIFY =
   'A government fee applies for the MOCCAE export health certificate. Confirm the current personal-consignment amount on the official portal when you apply — do not treat secondary blog numerals as first-party official fees.'
 

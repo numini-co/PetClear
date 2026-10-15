@@ -98,8 +98,8 @@ export const OUTBOUND_TWIN_COPY: RouteUniqueCopy[] = [
  destinationRules: {
  authorityHint: 'Philippines Bureau of Animal Industry (BAI) pet import / SPSIC rules',
  bullets: [
- 'Obtain an approved SPSIC from BAI before the pet leaves the UAE. BAI publishes the application online; a one-time importation is capped (currently max three animals) and the SPSIC has a published validity window (SOT: 60 days) — verify the live portal.',
- 'Dogs and cats must meet BAI age rules at application (SOT: at least 120 days old). Pregnant animals and pets that gave birth within 12 weeks before travel are not eligible on the published page.',
+ 'Obtain an approved SPSIC from BAI before the pet leaves the UAE. BAI publishes the application online. A one-time importation is capped (currently max three animals) and the SPSIC has a published validity window of 60 days under BAI guidance. Verify the live portal.',
+ 'Dogs and cats must meet BAI age rules at application (at least 120 days old under BAI guidance). Pregnant animals and pets that gave birth within 12 weeks before travel are not eligible on the published page.',
  'The pet must travel with an export permit / international veterinary health certificate issued within 10 calendar days before departure — that is the document you time the MOCCAE export exam to, not a UAE import permit.',
  'ISO microchip and rabies vaccination timing are set by BAI (first rabies vaccination at least 14 days before SPSIC application on the published page), plus species booster combinations. Confirm current BAI lists.',
  'Pets arriving without a valid SPSIC and veterinary health certificate can be seized, confiscated or refused admission.',
@@ -178,7 +178,7 @@ export const OUTBOUND_TWIN_COPY: RouteUniqueCopy[] = [
  destinationRules: {
  authorityHint: 'Government of India DAHD / AQCS and DGFT pet-import pathways',
  bullets: [
- 'Apply for an Advance NOC from AQCS before the pet embarks (SOT: at least seven working days before embarkation). Travel without a valid NOC is the usual refusal mode.',
+ 'Apply for an Advance NOC from AQCS before the pet embarks (AQCS guidance: at least seven working days before embarkation). Travel without a valid NOC is the usual refusal mode.',
  'Know which of the three published pathways you are on: Transfer of Residence (overseas-stay and relocation evidence), Re-import (original AQCS export health certificate), or Short Stay (DGFT import licence — committee timing can be monthly).',
  'Entry is allowed only through designated airports/seaports. Gateways we name we list are DEL, BOM, BLR, HYD and MAA; DGFT also names Kolkata. Quarantine, when required, is at the government station for that port.',
  'ISO microchip before rabies vaccination and a current rabies vaccine are the usual health building blocks. Secondary sources say India does not require a rabies titer for import — verify the current AQCS instruction for your pathway rather than copying UAE inbound titer rules.',

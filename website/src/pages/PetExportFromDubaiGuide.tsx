@@ -345,7 +345,7 @@ export default function PetExportFromDubaiGuide() {
             Destination snapshots (confirm the live page)
           </h2>
           <p className="mb-6 leading-relaxed text-[#5A5A5A]">
-            These are SOT-locked headlines so you can see why the first node branches. They are not a
+            These headlines show why the first step branches by destination. They are not a
             substitute for the corridor page or the authority site.
           </p>
           <div className="mb-6 grid gap-4 sm:grid-cols-2">
@@ -389,7 +389,7 @@ export default function PetExportFromDubaiGuide() {
               <h3 className="mb-2 font-bold text-[#2A2A2A]">Canada</h3>
               <p className="text-sm leading-relaxed text-[#5A5A5A]">
                 CFIA personal-pet rules are rabies-certificate led for dogs and cats over three months;
-                first-party CFIA pet pages 404’d during the SOT check — treat federal detail as
+                first-party CFIA pet pages returned a 404 when last checked. Treat federal detail as
                 verify-on-inspection. Corridor:{' '}
                 <Link to="/routes/dubai-to-canada/" className="font-semibold text-[#4F5BD5] hover:underline">
                   Dubai to Canada

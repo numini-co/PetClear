@@ -46,7 +46,7 @@ const UAE_AIRPORTS_OUTBOUND: UaeAirport[] = [
   {
     iata: 'AUH',
     city: 'Abu Dhabi',
-    notes: 'Alternate UAE departure when Etihad routing is used — confirm the live pet product.',
+    notes: 'Alternate UAE departure when Etihad routing is used. Confirm the live pet product.',
   },
 ]
 
@@ -77,11 +77,11 @@ function outboundUaeRules(): UaeRules {
     titerMinIUml: 0.5,
     manifestCargoDefault: true,
     bullets: [
-      'Leaving the UAE needs MOCCAE exit documentation (veterinary health certificate / export pathway via MOCCAE digital services) — plan this after destination rules are clear.',
-      'Export health certificate validity is commonly a short window (SOT cites 30 days from issue for the export-certificate pathway — verify on the MOCCAE portal before you book).',
+      'Leaving the UAE needs MOCCAE exit documentation (veterinary health certificate / export pathway via MOCCAE digital services). Plan this after destination rules are clear.',
+      'Export health certificate validity is commonly a short window. MOCCAE guidance is commonly cited as 30 days from issue for the export-certificate pathway. Verify on the MOCCAE portal before you book.',
       'Do not reuse inbound MOCCAE import-permit logic for an outbound move. A 90-day import permit is for entering the UAE, not for leaving it.',
-      'Airline acceptance leaving Dubai can differ from the inbound product on the same brand — confirm current policy for the outbound origin-destination pair.',
-      'No package or government fee numerals on this page — confirm fees on official portals; Dubai Pet Relocation quotes on request.',
+      'Airline acceptance leaving Dubai can differ from the inbound product on the same brand. Confirm current policy for the outbound origin-destination pair.',
+      'No package or government fee numerals on this page. Confirm fees on official portals. Dubai Pet Relocation quotes on request.',
     ],
     disclaimer:
       'UAE exit rules summarised at high level. Re-verify on the MOCCAE portal. Dubai Pet Relocation is not affiliated with MOCCAE or any airline.',
@@ -339,7 +339,10 @@ export function assembleRoute(copy: RouteUniqueCopy): RoutePageData {
     depthBar: 'OWNER ≥1000 unique',
     wordCountEstimate,
     cta: {
-      label: WEEK7_INBOUND.has(copy.slug) ? 'Get Route Checked' : 'Tell us about your move',
+      label:
+        direction === 'outbound' || WEEK7_INBOUND.has(copy.slug)
+          ? 'Get Route Checked'
+          : 'Tell us about your move',
       whatsapp: '+971504782999',
       note: 'Share the pet, the route and the dates. We explain the next step and any assessment fee before paid work starts.',
     },

@@ -5,7 +5,7 @@ const EU_DEST = (country: string, airports: string): NonNullable<RouteUniqueCopy
  bullets: [
  `Plan ${country} / EU entry before requesting UAE export paperwork so certificates do not expire on the ramp.`,
  'Typical third-country building blocks: ISO microchip before rabies vaccination, valid rabies vaccination (21-day wait after a primary course), and an EU animal health certificate from an official/authorised vet inside the entry validity window (commonly 10 days for entry).',
- 'SOT: the UAE is on the EU list of third countries whose dogs/cats/ferrets are exempt from rabies antibody titration for non-commercial entry — verify the current Commission listing before you skip a titer.',
+ 'EU rules list the UAE among third countries whose dogs, cats and ferrets are exempt from rabies antibody titration for non-commercial entry. Verify the current Commission listing before you skip a titre.',
  'Non-commercial rules usually cap five pets per traveller; more can trigger commercial/Balai rules.',
  `Arrival airports named for this corridor: ${airports}. Naming an airport here is not automatic live-animal acceptance.`,
  ],

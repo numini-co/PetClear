@@ -3,6 +3,8 @@ import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import Hero from '../components/Hero.tsx'
 import { BASE_URL, LOGO_URL } from '../lib/seo.ts'
+import { GUIDE_SOFT_GATE, OUTBOUND_PAID_INCLUDES, STRONG_WA_CLASS } from '../lib/conversionCopy.ts'
+import PaidIncludes from '../components/PaidIncludes.tsx'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Stethoscope, Home, AlertTriangle, Info, PawPrint, Heart, Dog, Cat, MapPin } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import OfficialSources from '../components/OfficialSources.tsx'
@@ -103,6 +105,13 @@ export default function DubaiToUSA() {
         title="Pet relocation from Dubai to USA"
         subtitle="Plan a dog or cat move from Dubai to the United States. CDC and USDA steps depend on the pet and the state. Confirm the airline’s current pet acceptance before booking."
         updated="Updated June 2026"
+        primaryLabel="Get Route Checked"
+        whatsappMessage="Hi Dubai Pet Relocation. I want Get Route Checked for dubai to usa (outbound). Pet details and preferred dates follow."
+        primaryClassName={STRONG_WA_CLASS}
+        showBuyerQualify
+        paidIncludes={[...OUTBOUND_PAID_INCLUDES]}
+        gateLine={GUIDE_SOFT_GATE}
+        waService="Export service"
       />
       <div className="mx-auto max-w-[900px] px-5 pt-8">
         <RoutePlanLinks />
@@ -454,9 +463,9 @@ export default function DubaiToUSA() {
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">CDC Dog Import Form</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Free</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Free</td>
-                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Free</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">No CDC fee</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">No CDC fee</td>
+                    <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">No CDC fee</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Air Cargo (DXB → JFK/LAX/ORD, one way)</td>
@@ -659,11 +668,17 @@ export default function DubaiToUSA() {
           <div className="bg-[#3A45B0] rounded-[20px] p-8 lg:p-12 text-center text-white">
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Export Your Pet from Dubai to the USA?</h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              We coordinate the Dubai-to-USA corridor: CDC forms, USDA health certificates, flight booking, and WhatsApp updates during business hours. From Dubai to New York, Los Angeles, Chicago, Washington DC, and cities across America — we handle the documents and US customs so you can focus on your move.
+            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
+              We coordinate the Dubai-to-USA corridor: CDC forms, USDA health certificates, flight booking, and WhatsApp updates during business hours. From Dubai to New York, Los Angeles, Chicago, Washington DC, and cities across America, we handle the documents and US customs so you can focus on your move. {GUIDE_SOFT_GATE} WhatsApp +971504782999.
             </p>
+            <PaidIncludes tone="dark" compact items={OUTBOUND_PAID_INCLUDES} className="mx-auto mb-6 max-w-2xl text-left" />
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <WhatsAppBtn label="Get a Dubai to USA quote" message="Hi, I want to relocate my pet from Dubai to the USA. Can you help me understand the CDC requirements, timeline, and cost?" />
+              <WhatsAppBtn
+                strong
+                service="Export service"
+                label="Get Route Checked"
+                message="Hi Dubai Pet Relocation. I want Get Route Checked for dubai to usa (outbound). Pet details and preferred dates follow."
+              />
               <a href={`${BASE_URL}/how-it-works/`} className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-semibold text-[#2A2A2A] bg-white hover:bg-[#F5F5F5] transition-colors">
                 <Info className="w-5 h-5" />
                 How It Works
