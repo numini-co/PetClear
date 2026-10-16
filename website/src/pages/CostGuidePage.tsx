@@ -475,7 +475,7 @@ export default function CostGuidePage() {
           <div className="overflow-x-auto">
             <table className="data-table">
               <thead>
-                <tr><th>Crate Size</th><th>Typical Pet</th><th>Cost (AED)</th></tr>
+                <tr><th>Crate Size</th><th>Typical Pet</th><th>Typical third-party retail price (AED, not a DPR quote)</th></tr>
               </thead>
               <tbody>
                 <tr><td>Small (up to 40cm)</td><td>Cat, small dog (Chihuahua, Pomeranian)</td><td>~110–300</td></tr>
