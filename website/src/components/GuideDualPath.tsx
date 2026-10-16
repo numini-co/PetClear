@@ -13,6 +13,8 @@ interface GuideDualPathProps {
   waLabel?: string
   /** Optional WhatsApp button classes. Default stays the shared green button. */
   waClassName?: string
+  /** Soft-gate sentence. Defaults to the shared paid-work line. */
+  gateLine?: string
 }
 
 /**
@@ -26,6 +28,7 @@ export default function GuideDualPath({
   waMessage = WA_ELIGIBILITY_DEFAULT,
   waLabel = CTA_CHECK_MOVE,
   waClassName,
+  gateLine,
 }: GuideDualPathProps) {
   return (
     <aside
@@ -58,7 +61,7 @@ export default function GuideDualPath({
           {waLabel}
         </a>
       </div>
-      <WhatsAppGate showDiyNote className="mt-3" />
+      <WhatsAppGate showDiyNote className="mt-3" line={gateLine} />
     </aside>
   )
 }

@@ -20,7 +20,7 @@ import {
   PERMIT_VALIDITY,
   TITER_SAMPLE_RULE,
 } from '../lib/regulatory.ts'
-import { CTA_SCOPED_QUOTE, waEligibility } from '../lib/conversionCopy.ts'
+import { CTA_SCOPED_QUOTE, GUIDE_SOFT_GATE, STRONG_WA_CLASS, waEligibility } from '../lib/conversionCopy.ts'
 
 const WA = waEligibility({ need: 'managed move' })
 
@@ -168,9 +168,11 @@ export default function PricesPage() {
         subtitle="Your quote depends on the route, the pet, the flight and the scope you choose. Review what each service includes, then send origin, destination, pet and dates."
         updated="Updated September 2026"
         primaryLabel="Get a scoped quote"
+        primaryClassName={STRONG_WA_CLASS}
         whatsappMessage={WA}
         secondary={{ label: 'Cost types guide', to: '/guides/pet-relocation-cost-dubai/' }}
         showBuyerQualify
+        gateLine={GUIDE_SOFT_GATE}
       />
 
       <section className="section-padding bg-white">
@@ -286,7 +288,7 @@ export default function PricesPage() {
                   href={getWhatsAppUrl(WA, 'prices-package')}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-4 py-3 text-sm font-semibold text-white hover:bg-[#1DA851]"
+                  className={`${STRONG_WA_CLASS} mt-6`}
                 >
                   <MessageCircle className="h-4 w-4" aria-hidden="true" />
                   {CTA_SCOPED_QUOTE}
@@ -300,6 +302,7 @@ export default function PricesPage() {
               </article>
             ))}
           </div>
+          <WhatsAppGate line={GUIDE_SOFT_GATE} className="mt-6 max-w-xl" />
         </div>
       </section>
 
@@ -406,7 +409,7 @@ export default function PricesPage() {
               href={getWhatsAppUrl(WA, 'prices')}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-7 py-4 text-sm font-semibold text-white shadow-sm hover:bg-[#1DA851]"
+                  className={`${STRONG_WA_CLASS} px-7`}
             >
               <MessageCircle className="h-4 w-4" aria-hidden="true" />
               {CTA_SCOPED_QUOTE}
@@ -433,7 +436,7 @@ export default function PricesPage() {
               MOCCAE permit guide
             </Link>
           </div>
-          <WhatsAppGate tone="dark" className="mt-4" />
+          <WhatsAppGate tone="dark" line={GUIDE_SOFT_GATE} className="mt-4 [&_p]:text-white" />
         </div>
       </section>
     </div>

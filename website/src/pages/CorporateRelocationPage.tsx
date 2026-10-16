@@ -25,7 +25,8 @@ import Hero from '../components/Hero.tsx'
 import Breadcrumb from '../components/Breadcrumb.tsx'
 import OfficialSources from '../components/OfficialSources.tsx'
 import { getWhatsAppUrl, BASE_URL } from '../lib/seo.ts'
-import { waEligibility } from '../lib/conversionCopy.ts'
+import { GUIDE_SOFT_GATE, STRONG_WA_CLASS, waEligibility } from '../lib/conversionCopy.ts'
+import WhatsAppGate from '../components/WhatsAppGate.tsx'
 import LinkPlanSlot from '../components/LinkPlanSlot.tsx'
 
 /* ─── Corporate WhatsApp message ─── */
@@ -46,7 +47,7 @@ function WhatsAppCta({
       href={getWhatsAppUrl(message, 'corporate-relocation')}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1ebe57] transition-colors ${className}`}
+      className={`inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] sm:w-auto ${className}`}
     >
       <MessageCircle className="w-4 h-4" />
       {label}
@@ -76,7 +77,7 @@ export default function CorporateRelocationPage() {
     {
       question: 'How does corporate pet relocation pricing work per employee?',
       answer:
-        'Each employee\'s pet move is quoted individually — species, crate, route and season change the file. Official MOCCAE import-permit and arrival-release fees must be confirmed on the portal when you apply — fees may change. We do not publish package or coordination-tier totals here. WhatsApp +971504782999 for a per-employee quote that HR can approve or expense.',
+        'Each employee\'s pet move is quoted individually. Species, crate, route and season change the file. Official MOCCAE import-permit and arrival-release fees must be confirmed on the portal when you apply. Fees may change. We do not publish package or coordination-tier totals here. WhatsApp +971504782999 for a per-employee quote that HR can approve or expense.',
     },
     {
       question: 'Who is the point of contact for a corporate account?',
@@ -172,8 +173,10 @@ export default function CorporateRelocationPage() {
         subtitle="When your employees move, their pets move too. We coordinate the pet side of corporate relocations to and from Dubai — one point of contact, quote-only per-employee pricing, and the paperwork handled."
         whatsappMessage={corporateMsg}
         primaryLabel="Request a managed corporate quote"
-        secondary={{ label: 'Request a Corporate Quote', to: '/contact/' }}
+        primaryClassName={STRONG_WA_CLASS}
+        secondary={{ label: 'Contact our team', to: '/contact/' }}
         showBuyerQualify
+        gateLine={GUIDE_SOFT_GATE}
       />
 
       {/* ═══════════ WHY PETS BELONG IN THE MOBILITY PACKAGE ═══════════ */}
@@ -343,54 +346,65 @@ export default function CorporateRelocationPage() {
               Coordination Tiers You Can Map to Your Policy
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed">
-              The coordination fee sits on top of the unavoidable government, veterinary, crate, and cargo costs.
-              We publish three tiers so you can align the level of service with your relocation policy — a baseline
-              allowance for some grades, a fuller coordination level for senior or executive moves. The figures below
-              are the coordination fee only; the full per-employee quote adds the route-specific costs.
+              Coordination is quoted on WhatsApp after eligibility, once we know the pet, the route, the month and
+              which tier you want: PawPilot, PawPartner or PawVIP. Government permit and release fees are confirmed
+              on the official MOCCAE portal. Airline freight and clinic invoices stay on their own invoices. We do
+              not publish a coordination fee.
             </p>
           </div>
 
           <div className="overflow-x-auto mb-6">
-            <table className="data-table min-w-[640px]">
+            <table className="data-table min-w-[760px]">
               <thead>
                 <tr>
                   <th>Tier</th>
-                  <th>Coordination Fee (AED)</th>
-                  <th>What&apos;s Included</th>
-                  <th>Typical Fit</th>
+                  <th>Coordination fee</th>
+                  <th>What is included</th>
+                  <th>What it leaves out</th>
+                  <th>Typical fit</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td><strong>PawPilot</strong> (Essential)</td>
-                  <td>1,500–2,500</td>
-                  <td>Documentation, MOCCAE permit application, flight booking, basic email/WhatsApp support</td>
+                  <td>Quoted on WhatsApp after eligibility</td>
+                  <td>File review, the document list, and the MOCCAE import-permit window (90 days from issuance). WhatsApp during published business hours.</td>
+                  <td>Airline or cargo booking, airport handoff, and government or clinic invoices.</td>
                   <td>Standard relocation allowance, low-risk routes, organised owners</td>
                 </tr>
                 <tr>
                   <td><strong>PawPartner</strong> (Premium)</td>
-                  <td>3,000–5,000</td>
-                  <td>+ Door-to-door pickup and delivery, IATA crate, vet coordination, WhatsApp updates during the move, photo updates</td>
-                  <td>Most corporate moves — hands-off for the employee</td>
+                  <td>Quoted on WhatsApp after eligibility</td>
+                  <td>Everything in PawPilot, plus booking coordination, an IATA crate check, travel-day updates and document submission.</td>
+                  <td>A dedicated manager (that sits in PawVIP). Government fees and airline freight.</td>
+                  <td>Most corporate moves, where the employee should not run the file</td>
                 </tr>
                 <tr>
                   <td><strong>PawVIP</strong> (Coordination)</td>
-                  <td>5,000–8,000</td>
-                  <td>A dedicated relocation manager, emergency contingency planning, and boarding or nanny arrangements when the route needs them. Insurance, if the company wants it, is quoted separately.</td>
+                  <td>Quoted on WhatsApp after eligibility</td>
+                  <td>Everything in PawPartner, plus a dedicated relocation manager, contingency planning, and boarding or nanny arrangements when the route needs them. Insurance, if the company wants it, is quoted separately.</td>
+                  <td>We do not operate the airline. Municipality registration after arrival is separate.</td>
                   <td>Senior and executive relocations</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <p className="text-sm text-[#5A5A5A] leading-relaxed">
-            These are the same published tiers we offer every client — there is no inflated corporate markup. What
-            a corporate account adds is the single point of contact across multiple moves and per-employee
-            reporting. For the full line-by-line cost structure behind a quote, see our{' '}
+            These are the same tiers on the{' '}
+            <Link to="/prices/" className="text-[#4F5BD5] font-medium hover:underline">
+              prices page
+            </Link>
+            . A corporate account adds one coordinator across moves and per-employee reporting. There is no separate
+            corporate price list. Cost types, without a coordination price, are on the{' '}
             <Link to="/guides/pet-relocation-cost-dubai/" className="text-[#4F5BD5] font-medium hover:underline inline-flex items-center gap-1">
               pet relocation cost guide <ArrowRight className="w-3.5 h-3.5" />
             </Link>
             .
           </p>
+          <div className="mt-6 max-w-xl">
+            <WhatsAppCta label="Request a managed corporate quote" />
+            <WhatsAppGate line={GUIDE_SOFT_GATE} className="mt-3" />
+          </div>
         </div>
       </section>
 
@@ -568,16 +582,16 @@ export default function CorporateRelocationPage() {
           <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-white mb-4">
             Request a Corporate Pet Relocation Quote
           </h2>
-          <p className="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            Tell us how many employees are relocating and in which direction. We&apos;ll come back with a clear,
-            per-employee quote and a single point of contact for your account — so the pet side of your moves is one
-            less thing to manage.
+          <p className="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-4">
+            Send how many employees are moving, the direction of each move, and the pets. We reply with a
+            per-employee quote and one coordinator for the account.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <WhatsAppGate line={GUIDE_SOFT_GATE} tone="dark" className="mb-6 [&_p]:text-white" />
+          <div className="flex flex-col items-stretch justify-center gap-4 sm:flex-row sm:items-center">
             <WhatsAppCta label="Request a managed corporate quote" />
             <Link
               to="/contact/"
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 text-white rounded-2xl font-semibold text-sm hover:bg-white/20 transition-colors"
+              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-white/10 px-6 py-3.5 text-sm font-semibold text-white hover:bg-white/20 sm:w-auto"
             >
               <HelpCircle className="w-4 h-4" />
               Contact Our Team
