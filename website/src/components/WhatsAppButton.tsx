@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { MessageCircle } from 'lucide-react'
 import { getWhatsAppUrl } from '../lib/seo.ts'
-import { CTA_CHECK_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
+import { CTA_ELIGIBILITY_MOVE, WA_ELIGIBILITY_DEFAULT } from '../lib/conversionCopy.ts'
 import WhatsAppGate from './WhatsAppGate.tsx'
 
 interface WhatsAppButtonProps {
@@ -38,7 +38,7 @@ export default function WhatsAppButton({
           className="inline-flex items-center gap-2 rounded-2xl bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#1DA851]"
         >
           <MessageCircle className="h-4 w-4" aria-hidden="true" />
-          {CTA_CHECK_MOVE}
+          {CTA_ELIGIBILITY_MOVE}
         </a>
         <WhatsAppGate />
       </span>
@@ -60,7 +60,7 @@ export default function WhatsAppButton({
             className="flex w-full items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-4 py-3.5 text-sm font-semibold text-white"
           >
             <MessageCircle className="h-5 h-5" aria-hidden="true" />
-            {CTA_CHECK_MOVE}
+            {CTA_ELIGIBILITY_MOVE}
           </a>
           <WhatsAppGate tone="sticky" className="mt-1.5 text-center" />
         </div>
@@ -74,7 +74,7 @@ export default function WhatsAppButton({
       target="_blank"
       rel="noopener noreferrer"
       className={`whatsapp-pulse fixed right-6 bottom-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110 ${className}`}
-      aria-label={CTA_CHECK_MOVE}
+      aria-label={CTA_ELIGIBILITY_MOVE}
     >
       <MessageCircle className="h-6 w-6" aria-hidden="true" />
     </a>

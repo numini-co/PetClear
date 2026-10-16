@@ -35,7 +35,8 @@ import { getWhatsAppUrl, BASE_URL, siteConfig } from '../lib/seo.ts'
 import { PERMIT_FEE_VERIFY, RELEASE_FEE_VERIFY } from '../lib/regulatory.ts'
 import GuideDualPath from '../components/GuideDualPath.tsx'
 import GuideFunnelCta from '../components/GuideFunnelCta.tsx'
-import { CTA_MANAGED_QUOTE, waEligibility } from '../lib/conversionCopy.ts'
+import { CTA_MANAGED_QUOTE, GUIDE_SOFT_GATE, STRONG_WA_CLASS, waEligibility } from '../lib/conversionCopy.ts'
+import WhatsAppGate from '../components/WhatsAppGate.tsx'
 
 const costGuideMsg = waEligibility({ need: 'managed move' })
 
@@ -85,7 +86,7 @@ const WhatsAppCta = ({
     href={getWhatsAppUrl(message)}
     target="_blank"
     rel="noopener noreferrer"
-    className={`inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-2xl font-semibold text-sm hover:bg-[#1ebe57] transition-colors ${fullWidth ? 'w-full' : ''} ${className}`}
+    className={`${STRONG_WA_CLASS} ${fullWidth ? 'w-full sm:w-auto' : ''} ${className}`}
   >
     <MessageCircle className="w-4 h-4" />
     {text}
@@ -183,7 +184,7 @@ export default function CostGuidePage() {
       },
     },
     datePublished: '2026-06-25',
-    dateModified: '2026-09-04',
+    dateModified: '2026-10-16',
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `${BASE_URL}/guides/pet-relocation-cost-dubai/`,
@@ -227,8 +228,10 @@ export default function CostGuidePage() {
         subtitle="A Dubai pet move is government, veterinary, freight, crate, handling and coordination — not one ticket. Contested MOCCAE fees are confirmed on the portal. Our package is quoted after eligibility."
         updated="Updated September 2026"
         primaryLabel="Get a managed-move quote"
+        primaryClassName={STRONG_WA_CLASS}
         whatsappMessage={costGuideMsg}
         secondary={{ label: 'Pet relocation Dubai service', to: '/service/pet-relocation-dubai/' }}
+        gateLine={GUIDE_SOFT_GATE}
       />
 
       {/* ===== SNIPPET + COST TYPES ===== */}
@@ -241,6 +244,8 @@ export default function CostGuidePage() {
             moneyLabel="Pet relocation Dubai"
             waMessage={costGuideMsg}
             waLabel="Get a managed-move quote"
+            waClassName={STRONG_WA_CLASS}
+            gateLine={GUIDE_SOFT_GATE}
           />
         </div>
         <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
@@ -249,7 +254,7 @@ export default function CostGuidePage() {
         <p className="text-[#5A5A5A] max-w-3xl mb-8 leading-relaxed">
           How much it costs to relocate a pet in Dubai depends on six types, not a single airline ticket. Government and
           veterinary amounts are paid to the portal or clinic. Freight and crate follow the animal&apos;s size. Handling is
-          the airport side. Coordination — the Dubai Pet Relocation package — is Get a Quote on{' '}
+          the airport side. Coordination, the Dubai Pet Relocation package, is quoted after eligibility on{' '}
           <Link to="/" className="text-[#4F5BD5] font-medium hover:underline">
             pet relocation Dubai
           </Link>
@@ -332,8 +337,8 @@ export default function CostGuidePage() {
             </div>
             <h3 className="font-bold text-[#2A2A2A] mb-2">Coordination</h3>
             <p className="text-sm text-[#5A5A5A] leading-relaxed">
-              The Dubai Pet Relocation package — document checks, permit timing, booking and WhatsApp updates — is Get a
-              Quote. Competitor “from” bands are labelled market listings only, not our price.
+              The Dubai Pet Relocation package covers document checks, permit timing, booking and WhatsApp updates. It is
+              quoted after eligibility. Competitor from-bands are labelled market listings only, not our price.
             </p>
           </Card>
         </div>
@@ -348,6 +353,8 @@ export default function CostGuidePage() {
         subtitle="This guide stays educational. Eligibility and a scoped quote sit on the service pages and WhatsApp. We do not assume package or government fee amounts here."
         eligibilityMessage={costGuideMsg}
         waLabel={CTA_MANAGED_QUOTE}
+        waClassName={STRONG_WA_CLASS}
+        gateLine={GUIDE_SOFT_GATE}
       />
 
       {/* ===== WHY COSTS VARY ===== */}
@@ -519,10 +526,10 @@ export default function CostGuidePage() {
         {/* Dubai Pet Relocation Service Coordination Fee */}
         <div className="mb-12">
           <h3 className="text-lg font-bold text-[#2A2A2A] mb-4 flex items-center gap-2">
-            <Users className="w-5 h-5 text-[#4F5BD5]" /> Dubai Pet Relocation Service Coordination Fee
+            <Users className="w-5 h-5 text-[#4F5BD5]" /> Dubai Pet Relocation coordination
           </h3>
           <p className="text-sm text-[#5A5A5A] mb-4">
-            This is what we charge to handle everything — permits, paperwork, flight booking, partner coordination, and WhatsApp updates at every step. The Dubai Pet Relocation package is <strong>Get a Quote</strong> after we know the pet, route and month — we do not publish a from-price.
+            This is the coordination we quote for permits, paperwork, flight booking, partner coordination, and WhatsApp updates. The figure is quoted after eligibility, once we know the pet, the route and the month. We do not publish a from-price.
           </p>
           <div className="overflow-x-auto">
             <table className="data-table min-w-[560px]">
@@ -532,17 +539,17 @@ export default function CostGuidePage() {
               <tbody>
                 <tr>
                   <td><strong>PawPilot</strong> (Essential)</td>
-                  <td>Get a Quote</td>
+                  <td>Quoted after eligibility</td>
                   <td>Documentation, MOCCAE permit application, flight booking, basic email/WhatsApp support</td>
                 </tr>
                 <tr>
                   <td><strong>PawPartner</strong> (Premium)</td>
-                  <td>Get a Quote</td>
+                  <td>Quoted after eligibility</td>
                   <td>+ Door-to-door pickup and delivery, IATA crate, vet coordination, WhatsApp updates during the move, photo updates</td>
                 </tr>
                 <tr>
                   <td><strong>PawVIP</strong> (Coordination)</td>
-                  <td>Get a Quote</td>
+                  <td>Quoted after eligibility</td>
                   <td>A dedicated relocation manager, emergency contingency planning, and boarding or nanny arrangements when the route needs them. Insurance, if you want it, is quoted separately.</td>
                 </tr>
               </tbody>
@@ -581,8 +588,9 @@ export default function CostGuidePage() {
           </div>
         </div>
 
-        <div className="mt-8 text-center">
-          <WhatsAppCta text="Get a managed-move quote for your corridor" fullWidth className="sm:w-auto sm:inline-flex" />
+        <div className="mx-auto mt-8 max-w-xl text-center">
+          <WhatsAppCta text="Get a managed-move quote for your corridor" fullWidth />
+          <WhatsAppGate line={GUIDE_SOFT_GATE} className="mt-3" />
         </div>
       </Section>
 
@@ -667,8 +675,28 @@ export default function CostGuidePage() {
           </p>
         </Card>
 
-        <div className="text-center">
-          <WhatsAppCta text="Get a managed-move quote for your route" fullWidth className="sm:w-auto sm:inline-flex" />
+        <div className="mx-auto max-w-xl text-center">
+          <WhatsAppCta text="Get a managed-move quote for your route" fullWidth />
+          <WhatsAppGate line={GUIDE_SOFT_GATE} className="mt-3" />
+          <p className="mt-4 text-sm text-[#5A5A5A]">
+            Quoted packages are on the{' '}
+            <Link to="/prices/" className="font-semibold text-[#4F5BD5] hover:underline">
+              prices page
+            </Link>
+            . The paid jobs are{' '}
+            <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet relocation Dubai
+            </Link>
+            ,{' '}
+            <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet import Dubai
+            </Link>
+            , and{' '}
+            <Link to="/service/pet-export-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet export Dubai
+            </Link>
+            .
+          </p>
         </div>
       </Section>
 
@@ -818,8 +846,9 @@ export default function CostGuidePage() {
           </Link>
         </p>
 
-        <div className="mt-8 text-center">
-          <WhatsAppCta text="Request an itemized managed-move quote" fullWidth className="sm:w-auto sm:inline-flex" />
+        <div className="mx-auto mt-8 max-w-xl text-center">
+          <WhatsAppCta text="Request an itemised managed-move quote" fullWidth />
+          <WhatsAppGate line={GUIDE_SOFT_GATE} className="mt-3" />
         </div>
       </Section>
 
@@ -975,12 +1004,22 @@ export default function CostGuidePage() {
           </Card>
         </div>
 
-        <div id="whatsapp-cta" className="text-center">
-          <WhatsAppCta text="Get a managed-move quote" fullWidth className="sm:w-auto sm:inline-flex" />
-          <div className="flex flex-col sm:flex-row gap-3 justify-center mt-4">
-            <WhatsAppCta text="Check eligibility for a scoped quote" fullWidth className="sm:w-auto sm:inline-flex bg-[#4F5BD5] hover:bg-[#3A45B0]" />
-            <WhatsAppCta text={CTA_MANAGED_QUOTE} fullWidth className="sm:w-auto sm:inline-flex bg-[#4F5BD5] hover:bg-[#3A45B0]" />
-          </div>
+        <div id="whatsapp-cta" className="mx-auto max-w-xl text-center">
+          <WhatsAppCta text="Get a managed-move quote" fullWidth />
+          <WhatsAppGate line={GUIDE_SOFT_GATE} className="mt-3" />
+          <p className="mt-4 text-sm text-[#5A5A5A]">
+            <Link to="/prices/" className="font-semibold text-[#4F5BD5] hover:underline">
+              See quoted packages
+            </Link>
+            {' · '}
+            <Link to="/service/pet-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              Pet relocation Dubai
+            </Link>
+            {' · '}
+            <Link to="/service/pet-import-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              Pet import Dubai
+            </Link>
+          </p>
         </div>
       </Section>
 
@@ -1055,6 +1094,8 @@ export default function CostGuidePage() {
         title="Ready to book a managed move?"
         eligibilityMessage={costGuideMsg}
         waLabel={CTA_MANAGED_QUOTE}
+        waClassName={STRONG_WA_CLASS}
+        gateLine={GUIDE_SOFT_GATE}
       />
 
       {/* ===== DISCLAIMER ===== */}

@@ -32,6 +32,8 @@ interface GuideFunnelCtaProps {
   paidItems?: readonly string[]
   /** Optional WhatsApp button classes. Defaults stay the shared green button. */
   waClassName?: string
+  /** Soft-gate sentence. Defaults to the shared paid-work line. */
+  gateLine?: string
 }
 
 const DEFAULT_ELIGIBILITY = WA_ELIGIBILITY_DEFAULT
@@ -62,6 +64,7 @@ export default function GuideFunnelCta({
   links = DEFAULT_LINKS,
   paidItems,
   waClassName,
+  gateLine,
 }: GuideFunnelCtaProps) {
   const isEnd = variant === 'end'
   const heading =
@@ -125,7 +128,7 @@ export default function GuideFunnelCta({
             {extra ? <p className={bodyClass}>{extra}</p> : null}
             <PaidIncludes compact items={paidItems} className="mb-6 text-left" />
             {buttons}
-            <WhatsAppGate showDiyNote className="mt-4 text-center" />
+            <WhatsAppGate showDiyNote className="mt-4 text-center" line={gateLine} />
             <p className="mt-2 text-center text-xs text-[#8A8A8A]">
               WhatsApp {PHONE_DISPLAY} · Permit validity 90 days from issuance · Titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given, when a titer is required
             </p>
@@ -137,7 +140,7 @@ export default function GuideFunnelCta({
             {extra ? <p className={bodyClass}>{extra}</p> : null}
             <PaidIncludes tone="dark" compact items={paidItems} className="mx-auto mb-6 max-w-2xl text-left" />
             {buttons}
-            <WhatsAppGate showDiyNote tone="dark" className="mt-4" />
+            <WhatsAppGate showDiyNote tone="dark" className="mt-4" line={gateLine} />
             <p className="mt-2 text-sm text-white/60">
               WhatsApp {PHONE_DISPLAY} · We confirm government fees on the official portal
             </p>
