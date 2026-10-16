@@ -472,7 +472,7 @@ export default function HowItWorksPage() {
           <div className="mt-10">
             <WhatsAppLink
               text="Hi, I want to understand how the relocation process works for my [dog/cat] from [country] to Dubai. Can you walk me through it?"
-              label="Tell us about your move"
+              label={CTA_CHECK_MOVE}
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
             />
           </div>
@@ -817,7 +817,7 @@ export default function HowItWorksPage() {
             className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#25D366] text-white rounded-2xl font-semibold hover:bg-[#1ebe57] transition-colors"
           >
             <MessageCircle className="w-5 h-5" />
-            Tell us about your move
+            {CTA_CHECK_MOVE}
           </a>
         </div>
       </section>
