@@ -64,7 +64,7 @@ The homepage is 10,052 words with 48 H2s — it currently tries to be the entire
 4. **Routes strip** — top corridors both directions (UK, USA, India inbound; UK, USA, Australia outbound) → link /routes/ hub.
 5. **How-it-works summary** — 3 steps max → link /how-it-works/.
 6. **Cost teaser** — one AED range line + table screenshot-style card → link /guides/pet-relocation-cost-dubai/.
-7. **Compliance authority block** — MOCCAE permit / banned breeds / titer / IATA crate / summer embargo cards → link the 5 guides (add snub-nosed + airline guides when created). All regulatory figures on the homepage MUST match the corrected source-of-truth values (30-day permit validity after MOCCAE portal verification — the 90-day claim is VETOED).
+7. **Compliance authority block** — MOCCAE permit / banned breeds / titer / IATA crate / summer embargo cards → link the 5 guides (add snub-nosed + airline guides when created). All regulatory figures on the homepage MUST match the corrected source-of-truth values (MOCCAE import permit 90 days from issuance; the earlier 90→30 VETO is superseded, PR #29).
 8. **Local coverage summary** — top 8-10 communities → link /dubai/ hub; one line for other emirates → /cities/.
 9. **Differentiators / why choose us** — partner-vetting blurb, coordination model, animal-welfare line (verified only).
 10. **FAQ** — top 6 only → link /faq/.
@@ -84,6 +84,6 @@ All 234 claims in trust-claims-register.csv are marked REVIEW / needs manual ver
 - Named-vet or "USDA-accredited veterinarians in Dubai" phrasing on /routes/dubai-to-usa/ — verify accreditation claim wording (USDA accredits US vets; UAE vets are "authorized/endorsed by MOCCAE and certificates endorsed by USDA APHIS" — wording review required).
 
 ## REGULATORY NOTES FOR HOMEPAGE COPY
-- Remove "MOCCAE permit valid for 90 days" template line (VETO — first-party says 30 days; verify on MOCCAE portal).
-- Homepage titer "90-day waiting period" statement must be reconciled with first-party "sample within 90 days before travel" rule.
+- Keep "MOCCAE permit valid for 90 days from issuance" (first-party; earlier 90→30 VETO superseded, PR #29).
+- Homepage titer "90-day waiting period" statement must be replaced with titre per MOCCAE Ministerial Resolution 109/2021 Art. 3(4)(c) (https://www.moccae.gov.ae/assets/download/2025/M109-21.pdf.aspx): antibody titration test from an approved laboratory, done before export, result at least 0.5 IU/ml; sample at least 21 days after a first or interrupted vaccination, or directly with a valid booster; confirm current timing on the MOCCAE portal. Never state a certificate validity period or a pre-travel window.
 - Do not publish permit/release fee figures on the homepage until the AED 200 vs 500 and 500/250 vs 1,000/500 conflicts are resolved first-party.
