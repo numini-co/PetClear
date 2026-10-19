@@ -58,7 +58,7 @@ const PERMIT_FINE =
 const PERMIT_PAID = [
   'Line-check of chip number, vaccine dates and pet photo before you pay the portal',
   'Permit timed so the 90-day window covers the booked flight',
-  'Resubmission handled if MOCCAE sends the file back',
+  'Fix-and-resubmit plan if MOCCAE sends the file back',
   'Airline or cargo booking and IATA crate check',
   'DXB arrival release and customs paperwork coordination',
 ] as const
