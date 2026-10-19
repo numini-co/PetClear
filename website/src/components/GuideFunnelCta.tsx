@@ -30,10 +30,20 @@ interface GuideFunnelCtaProps {
   links?: FunnelLink[]
   /** Page-specific paid-scope bullets. Defaults stay the shared list. */
   paidItems?: readonly string[]
+  /** Place the paid-scope list under the buttons. Default stays above them. */
+  paidAfterCta?: boolean
   /** Optional WhatsApp button classes. Defaults stay the shared green button. */
   waClassName?: string
+  /** Optional service-link classes. Defaults stay the shared secondary links. */
+  linkClassName?: string
   /** Soft-gate sentence. Defaults to the shared paid-work line. */
   gateLine?: string
+  /** Page-local DIY sentence. Defaults to the shared line. */
+  diyLine?: string
+  /** Replaces the small assurance line under the buttons. */
+  finePrint?: string
+  /** Preselects a service radio in the multi-step WhatsApp gate. */
+  waService?: string
 }
 
 const DEFAULT_ELIGIBILITY = WA_ELIGIBILITY_DEFAULT
@@ -63,8 +73,13 @@ export default function GuideFunnelCta({
   waLabel = CTA_ELIGIBILITY_MOVE,
   links = DEFAULT_LINKS,
   paidItems,
+  paidAfterCta = false,
   waClassName,
+  linkClassName,
   gateLine,
+  diyLine,
+  finePrint,
+  waService,
 }: GuideFunnelCtaProps) {
   const isEnd = variant === 'end'
   const heading =
@@ -86,14 +101,27 @@ export default function GuideFunnelCta({
   const bodyClass = isEnd
     ? 'text-white/80 text-base leading-relaxed max-w-2xl mx-auto mb-8'
     : 'text-[#5A5A5A] text-sm leading-relaxed text-center mb-8 max-w-2xl mx-auto'
-  const serviceBtn = isEnd
-    ? 'inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-white text-[#4F5BD5] font-semibold text-sm hover:bg-white/90 transition-colors'
-    : 'inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-white text-[#4F5BD5] font-semibold text-sm ring-1 ring-[#4F5BD5]/25 hover:bg-[#E9ECFB] transition-colors shadow-sm'
+  const serviceBtn =
+    linkClassName ||
+    (isEnd
+      ? 'inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-white text-[#4F5BD5] font-semibold text-sm hover:bg-white/90 transition-colors'
+      : 'inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-white text-[#4F5BD5] font-semibold text-sm ring-1 ring-[#4F5BD5]/25 hover:bg-[#E9ECFB] transition-colors shadow-sm')
   const waBtn =
     waClassName ||
     (isEnd
       ? 'inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-[#25D366] text-white font-semibold text-sm hover:bg-[#1DA851] transition-colors whatsapp-pulse'
       : 'inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-[#25D366] text-white font-semibold text-sm hover:bg-[#1DA851] transition-colors shadow-sm')
+
+  const paidClass = isEnd
+    ? `mx-auto max-w-2xl text-left ${paidAfterCta ? 'mt-6' : 'mb-6'}`
+    : `text-left ${paidAfterCta ? 'mt-6' : 'mb-6'}`
+  const paid = (
+    <PaidIncludes tone={isEnd ? 'dark' : 'light'} compact items={paidItems} className={paidClass} />
+  )
+  const midFine =
+    finePrint ??
+    `WhatsApp ${PHONE_DISPLAY} · Permit validity 90 days from issuance · Titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given, when a titer is required`
+  const endFine = finePrint ?? `WhatsApp ${PHONE_DISPLAY} · We confirm government fees on the official portal`
 
   const buttons = (
     <div className="flex flex-wrap justify-center gap-3">
@@ -110,6 +138,7 @@ export default function GuideFunnelCta({
         href={getWhatsAppUrl(eligibilityMessage, 'funnel-eligibility')}
         target="_blank"
         rel="noopener noreferrer"
+        data-wa-service={waService}
         className={waBtn}
       >
         <MessageCircle className="w-4 h-4" aria-hidden="true" />
@@ -126,24 +155,22 @@ export default function GuideFunnelCta({
             <h2 className={headingClass}>{heading}</h2>
             <GuideBridge className={`${bodyClass} mb-4`} />
             {extra ? <p className={bodyClass}>{extra}</p> : null}
-            <PaidIncludes compact items={paidItems} className="mb-6 text-left" />
+            {paidAfterCta ? null : paid}
             {buttons}
-            <WhatsAppGate showDiyNote className="mt-4 text-center" line={gateLine} />
-            <p className="mt-2 text-center text-xs text-[#8A8A8A]">
-              WhatsApp {PHONE_DISPLAY} · Permit validity 90 days from issuance · Titre: at least 0.5 IU/ml, certificate valid for 365 days if the vaccine stays valid and continuous and no booster is given, when a titer is required
-            </p>
+            {paidAfterCta ? paid : null}
+            <WhatsAppGate showDiyNote className="mt-4 text-center" line={gateLine} diyLine={diyLine} />
+            <p className="mt-2 text-center text-xs text-[#8A8A8A]">{midFine}</p>
           </div>
         ) : (
           <>
             <h2 className={headingClass}>{heading}</h2>
             <GuideBridge tone="dark" className={`${bodyClass} mb-4`} />
             {extra ? <p className={bodyClass}>{extra}</p> : null}
-            <PaidIncludes tone="dark" compact items={paidItems} className="mx-auto mb-6 max-w-2xl text-left" />
+            {paidAfterCta ? null : paid}
             {buttons}
-            <WhatsAppGate showDiyNote tone="dark" className="mt-4" line={gateLine} />
-            <p className="mt-2 text-sm text-white/60">
-              WhatsApp {PHONE_DISPLAY} · We confirm government fees on the official portal
-            </p>
+            {paidAfterCta ? paid : null}
+            <WhatsAppGate showDiyNote tone="dark" className="mt-4" line={gateLine} diyLine={diyLine} />
+            <p className="mt-2 text-sm text-white/60">{endFine}</p>
           </>
         )}
       </div>
