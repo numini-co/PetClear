@@ -14,21 +14,28 @@ const SOURCES: { label: string; href: string }[] = [
 export default function OfficialSources({
   extra,
   checkedLabel,
+  heading = 'Official Sources',
+  sources: sourcesProp,
 }: {
   extra?: { label: string; href: string }[]
   /** Page-level check date. Omit to keep the shared Last verified line. */
   checkedLabel?: string
+  /** Page-local heading. Defaults to the shared heading. */
+  heading?: string
+  /** Page-local source list. Defaults to the shared authorities. */
+  sources?: { label: string; href: string }[]
 }) {
+  const base = sourcesProp ?? SOURCES
   const sources = extra?.length
-    ? [...SOURCES, ...extra.filter((s) => !SOURCES.some((b) => b.href === s.href))]
-    : SOURCES
+    ? [...base, ...extra.filter((s) => !base.some((b) => b.href === s.href))]
+    : base
   return (
     <section className="bg-[#EEF0FC] section-padding">
       <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
         <span className="text-sm font-semibold uppercase tracking-wider text-[#4F5BD5]">
           Verify With the Authorities
         </span>
-        <h2 className="text-section mt-3 mb-4">Official Sources</h2>
+        <h2 className="text-section mt-3 mb-4">{heading}</h2>
         <p className="text-body-large max-w-2xl mb-3">
           We coordinate the paperwork, but the rules are set by government and industry
           authorities. Always confirm the current requirements directly with the official sources.

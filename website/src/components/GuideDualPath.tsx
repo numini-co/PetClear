@@ -13,8 +13,14 @@ interface GuideDualPathProps {
   waLabel?: string
   /** Optional WhatsApp button classes. Default stays the shared green button. */
   waClassName?: string
+  /** Optional service-link classes. Default stays the shared filled link. */
+  moneyClassName?: string
   /** Soft-gate sentence. Defaults to the shared paid-work line. */
   gateLine?: string
+  /** Page-local DIY sentence. Defaults to the shared line. */
+  diyLine?: string
+  /** Preselects a service radio in the multi-step WhatsApp gate. */
+  waService?: string
 }
 
 /**
@@ -28,7 +34,10 @@ export default function GuideDualPath({
   waMessage = WA_ELIGIBILITY_DEFAULT,
   waLabel = CTA_CHECK_MOVE,
   waClassName,
+  moneyClassName,
   gateLine,
+  diyLine,
+  waService,
 }: GuideDualPathProps) {
   return (
     <aside
@@ -44,7 +53,10 @@ export default function GuideDualPath({
       <div className="mt-4 flex flex-wrap gap-3">
         <Link
           to={moneyTo}
-          className="inline-flex items-center justify-center rounded-xl bg-[#3A45B0] px-5 py-3 text-sm font-semibold text-white hover:bg-[#2f3894]"
+          className={
+            moneyClassName ||
+            'inline-flex items-center justify-center rounded-xl bg-[#3A45B0] px-5 py-3 text-sm font-semibold text-white hover:bg-[#2f3894]'
+          }
         >
           {moneyLabel}
         </Link>
@@ -52,6 +64,7 @@ export default function GuideDualPath({
           href={getWhatsAppUrl(waMessage, 'guide-dual-path')}
           target="_blank"
           rel="noopener noreferrer"
+          data-wa-service={waService}
           className={
             waClassName ||
             'inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-semibold text-white hover:bg-[#1DA851]'
@@ -61,7 +74,7 @@ export default function GuideDualPath({
           {waLabel}
         </a>
       </div>
-      <WhatsAppGate showDiyNote className="mt-3" line={gateLine} />
+      <WhatsAppGate showDiyNote className="mt-3" line={gateLine} diyLine={diyLine} />
     </aside>
   )
 }
