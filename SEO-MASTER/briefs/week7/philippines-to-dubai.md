@@ -28,12 +28,12 @@
 
 ## FAQs (PAA-led, 40 to 90 words each)
 **How can I bring a pet from the Philippines to Dubai?**
-Plan for three to five months. Your vet implants an ISO microchip, vaccinates against rabies, then draws blood for a titer test that must show at least 0.5 IU/ml, taken within 90 days before travel. Apply for the MOCCAE import permit, valid 90 days from issuance, get the Philippine export health certificate and book cargo into Dubai.
-_(57 words)_
+Plan for three to five months. Your vet implants an ISO microchip and vaccinates against rabies. At least 21 days after a first vaccination, or directly if the pet has a valid booster, blood is drawn for a titre test at an approved laboratory, which must show at least 0.5 IU/ml before export. Confirm current timing on the MOCCAE portal. Then apply for the MOCCAE import permit, valid 90 days from issue, and book cargo into Dubai.
+_(77 words)_
 
 **Does my pet need a titer test from the Philippines to Dubai?**
-In most cases yes, because the Philippines is treated as a higher-risk rabies origin for UAE import. The blood sample must be taken within 90 days before travel and the result must be at least 0.5 IU/ml. If the result is low, a booster and a new sample are needed, so build in spare weeks. Confirm the current rule on the MOCCAE portal.
-_(63 words)_
+In most cases yes, because the Philippines is not on MOCCAE's low-risk rabies list. Before export, an approved laboratory must report a result of at least 0.5 IU/ml. The sample is taken at least 21 days after a first or interrupted vaccination, or directly if the pet has a valid booster. A low result means a booster and a new sample, so build in spare weeks. Confirm current timing on the MOCCAE portal.
+_(73 words)_
 
 **Which airlines fly pets from Manila to Dubai?**
 Philippine Airlines and Emirates are the usual options on the Manila to Dubai corridor, with pets carried as cargo rather than in the cabin. Space is limited and heat rules apply in the hottest months, so book early. Policies change, so confirm current rules with the airline. We check live acceptance once your pet's documents are on track.
@@ -59,7 +59,7 @@ _(58 words)_
 ## Hard locks (apply to every line of proposed copy)
 - British English. No em dashes anywhere (use commas, colons or full stops). The live page currently renders many em dashes from the shared template; Frontend Builder should replace them in this route's strings.
 - MOCCAE import permit: valid 90 days from issuance; the pet must enter the UAE inside that window. Never 30.
-- Titer (when required): blood sample taken within 90 days before travel, result at least 0.5 IU/ml. Never phrase as a wait after the draw.
+- Titre (MOCCAE Ministerial Resolution 109/2021, Art. 3(4)(c), https://www.moccae.gov.ae/assets/download/2025/M109-21.pdf.aspx): for pets from high-risk countries, an antibody titration test certificate from a laboratory approved by the exporting country's competent authorities, done before export, with a result of at least 0.5 IU/ml. The sample is taken at least 21 days after a first or interrupted vaccination, or directly if the animal has a valid booster. Confirm current timing on the MOCCAE portal. Never state a validity period for the titre certificate or a pre-travel window. The MOCCAE import permit (90 days from issue) is a separate clock.
 - Fees: no package totals, no invented AED or airline tables. Government fees only labelled and "confirm on the MOCCAE portal" (portal figures on file: permit AED 200, release AED 500 dog / AED 250 cat, all confirm-on-portal). Everything else: quote after eligibility check.
 - No volume claims ("hundreds of pets", "many families", "thousands of moves"). No SEO volumes printed on page.
 - Origin-side authority claims only where marked VERIFIED below; anything marked VERIFY ships as softened wording ("your official vet authority will confirm") until SEO logs a first-party source in regulatory-source-of-truth.csv.

@@ -22,7 +22,7 @@
 1. Corridor intro: rabies-endemic origin, titer drives the calendar; short flight but long prep
 2. Origin-side rules: AQCS export health certificate / NOC at departure airport [VERIFY: source-of-truth only logs AQCS for IMPORT into India; export-side AQCS steps need first-party]
 3. What is AQCS clearance for pets (owns keyword): explain at high level, mark VERIFY until DAHD/AQCS export page logged
-4. Titer section: sample within 90 days before travel, at least 0.5 IU/ml; approved lab options in India [VERIFY lab list]; never 'wait after draw' (current page compliant)
+4. Titre section: MOCCAE Ministerial Resolution 109/2021 Art. 3(4)(c) wording only (approved laboratory, done before export, result at least 0.5 IU/ml; sample at least 21 days after a first or interrupted vaccination, or directly with a valid booster; confirm current timing on the MOCCAE portal). Approved lab options in India [VERIFY lab list]. Never a wait after the draw, never a stated certificate validity or pre-travel window
 5. Document sequence + 2 scenario timelines (vaccinated adult with existing passing titer vs new puppy)
 6. City intent: Mumbai, Delhi, Bengaluru, Chennai, Hyderabad, Kochi departures; 'pet relocation Mumbai to Dubai' paragraph
 7. Airports/airlines: BOM, DEL, BLR, MAA, HYD, COK -> DXB/AUH. Emirates (cargo, VERIFIED), Air India, IndiGo (confirm current policy, IndiGo pet cargo historically limited: VERIFY)
@@ -31,8 +31,8 @@
 
 ## FAQs (PAA-led, 40 to 90 words each)
 **How do I bring a dog to Dubai from India?**
-Start about four months out. Your vet implants an ISO microchip and gives a rabies vaccine, then a blood sample goes to an approved lab for a titer test that must show at least 0.5 IU/ml and be taken within 90 days before travel. Next comes the MOCCAE import permit, valid 90 days from issuance, the Indian export certificate and a cargo booking into Dubai.
-_(65 words)_
+Start about four months out. Your vet implants an ISO microchip and gives a rabies vaccine. At least 21 days after a first vaccination, or directly if the pet has a valid booster, a blood sample goes to an approved laboratory for a titre test that must show at least 0.5 IU/ml before export. Confirm current timing on the MOCCAE portal. Then come the MOCCAE import permit, valid 90 days from issue, the Indian export certificate and a cargo booking into Dubai.
+_(82 words)_
 
 **What is AQCS clearance for pets?**
 AQCS is India's Animal Quarantine and Certification Service. For pets it is the official step that checks and certifies animals at the port before they leave or enter India. For a move to Dubai, plan for the export health certificate route at your departure airport. Exact steps vary by station, so confirm with the AQCS office before you book a flight.
@@ -66,7 +66,7 @@ _(59 words)_
 ## Hard locks (apply to every line of proposed copy)
 - British English. No em dashes anywhere (use commas, colons or full stops). The live page currently renders many em dashes from the shared template; Frontend Builder should replace them in this route's strings.
 - MOCCAE import permit: valid 90 days from issuance; the pet must enter the UAE inside that window. Never 30.
-- Titer (when required): blood sample taken within 90 days before travel, result at least 0.5 IU/ml. Never phrase as a wait after the draw.
+- Titre (MOCCAE Ministerial Resolution 109/2021, Art. 3(4)(c), https://www.moccae.gov.ae/assets/download/2025/M109-21.pdf.aspx): for pets from high-risk countries, an antibody titration test certificate from a laboratory approved by the exporting country's competent authorities, done before export, with a result of at least 0.5 IU/ml. The sample is taken at least 21 days after a first or interrupted vaccination, or directly if the animal has a valid booster. Confirm current timing on the MOCCAE portal. Never state a validity period for the titre certificate or a pre-travel window. The MOCCAE import permit (90 days from issue) is a separate clock.
 - Fees: no package totals, no invented AED or airline tables. Government fees only labelled and "confirm on the MOCCAE portal" (portal figures on file: permit AED 200, release AED 500 dog / AED 250 cat, all confirm-on-portal). Everything else: quote after eligibility check.
 - No volume claims ("hundreds of pets", "many families", "thousands of moves"). No SEO volumes printed on page.
 - Origin-side authority claims only where marked VERIFIED below; anything marked VERIFY ships as softened wording ("your official vet authority will confirm") until SEO logs a first-party source in regulatory-source-of-truth.csv.

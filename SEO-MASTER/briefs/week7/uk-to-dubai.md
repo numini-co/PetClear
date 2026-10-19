@@ -35,8 +35,8 @@ Yes, if the breed is permitted in the UAE and the paperwork lines up. You need a
 _(68 words)_
 
 **Does a pet from the UK need a rabies titre test for Dubai?**
-Usually not, because the UK is treated as a lower-risk rabies origin for UAE import. MOCCAE sets the rule, so confirm on the portal when you apply for the permit. If a titre test is ever required for your file, the blood sample must be taken within 90 days before travel and show at least 0.5 IU/ml. It is never a waiting period after the draw.
-_(66 words)_
+Usually not, because the United Kingdom is on MOCCAE's list of low-risk rabies countries (Ministerial Resolution 109/2021, Annex 1). Confirm on the MOCCAE portal when you apply, as the list can change. If a titre test is ever required for your file, an approved laboratory must report at least 0.5 IU/ml before export, with the sample taken at least 21 days after a first or interrupted vaccination, or directly after a valid booster.
+_(73 words)_
 
 **How much does it cost to fly a dog from the UK to Dubai?**
 There is no honest single figure. The total depends on crate size, airline cargo rates, the vet and certificate work in the UK, and coordination. Government charges are separate: the MOCCAE permit and arrival release fee are published on the MOCCAE portal, so confirm current amounts there. Send us the pet's size and travel month and we quote after the eligibility check.
@@ -65,13 +65,13 @@ _(57 words)_
 
 ## VERIFY items (ship softened until logged first-party)
 - DEFRA/APHA export certificate endorsement process and naming
-- UK low-risk status wording for UAE titer exemption (MOCCAE portal)
+- UK low-risk status for UAE titre: RESOLVED, listed in MOCCAE Resolution 109/2021 Annex 1 (2025 PDF); reconfirm on portal
 - British Airways and Virgin Atlantic cargo pet acceptance on LHR-DXB
 
 ## Hard locks (apply to every line of proposed copy)
 - British English. No em dashes anywhere (use commas, colons or full stops). The live page currently renders many em dashes from the shared template; Frontend Builder should replace them in this route's strings.
 - MOCCAE import permit: valid 90 days from issuance; the pet must enter the UAE inside that window. Never 30.
-- Titer (when required): blood sample taken within 90 days before travel, result at least 0.5 IU/ml. Never phrase as a wait after the draw.
+- Titre (MOCCAE Ministerial Resolution 109/2021, Art. 3(4)(c), https://www.moccae.gov.ae/assets/download/2025/M109-21.pdf.aspx): for pets from high-risk countries, an antibody titration test certificate from a laboratory approved by the exporting country's competent authorities, done before export, with a result of at least 0.5 IU/ml. The sample is taken at least 21 days after a first or interrupted vaccination, or directly if the animal has a valid booster. Confirm current timing on the MOCCAE portal. Never state a validity period for the titre certificate or a pre-travel window. The MOCCAE import permit (90 days from issue) is a separate clock.
 - Fees: no package totals, no invented AED or airline tables. Government fees only labelled and "confirm on the MOCCAE portal" (portal figures on file: permit AED 200, release AED 500 dog / AED 250 cat, all confirm-on-portal). Everything else: quote after eligibility check.
 - No volume claims ("hundreds of pets", "many families", "thousands of moves"). No SEO volumes printed on page.
 - Origin-side authority claims only where marked VERIFIED below; anything marked VERIFY ships as softened wording ("your official vet authority will confirm") until SEO logs a first-party source in regulatory-source-of-truth.csv.

@@ -33,16 +33,16 @@ Every `/routes/{slug}/` page must be **≥1000 words of UNIQUE detailed copy** �
 | Templated filler / country-name swap intros | Unique corridor prose |
 | Outbound = reverse of inbound (AU/PH/IN extra-strict) | Destination-backwards outbound intent |
 | Invented MOCCAE / airline / package fee numerals | Portal confirm + quote-only CTA |
-| “90-day wait **after** titer/draw” | Sample within **90 days before travel** (≥0.5 IU/ml) |
+| “90-day wait **after** titer/draw” | Titre per MOCCAE Resolution 109/2021 Art. 3(4)(c): approved lab, before export, at least 0.5 IU/ml; sample at least 21 days after first or interrupted vaccination, or directly with a valid booster; confirm timing on the MOCCAE portal |
 | Thin table-only pages | Narrative sections + tables |
 | Airline logos / affiliation / “MOCCAE-approved airline” | Unverified seed + confirm current policy |
 | Printing SEO volumes on the page | Never |
 
 ## Regulatory locks (unchanged)
 
-- Titer = sample within 90 days **before travel** (≥0.5 IU/ml) — NEVER “90-day wait after draw”
+- Titre = MOCCAE Ministerial Resolution 109/2021 Art. 3(4)(c) only (https://www.moccae.gov.ae/assets/download/2025/M109-21.pdf.aspx): antibody titration test from an approved laboratory, done before export, at least 0.5 IU/ml; sample at least 21 days after a first or interrupted vaccination, or directly with a valid booster. Confirm current timing on the MOCCAE portal. Never state a certificate validity period, a pre-travel window or a wait after the draw
 - MOCCAE import permit = **90 days** from issuance (inbound)
-- Outbound export cert = commonly **30 days** from issuance (high-level; verify on portal) — no invented fees
+- Outbound MOCCAE export certificate: fee and validity awaiting David; no numbers in copy, confirm on portal; no invented fees
 - No invented MOCCAE/airline fee numerals
 
 ## PR #25 steer

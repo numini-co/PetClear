@@ -16,7 +16,7 @@ All 8 URLs are live on main and in the live sitemap. All briefs are EXPAND/upgra
 Plus export-gaps.md (W6 fold-in, cheap).
 
 ## Source conflicts to fix
-- route50/DEPTH_BAR.md still says MOCCAE permit 30 days (lines 19 and 44). Hard lock is 90 days from issuance. Update before Frontend Builder reads it.
+- route50/DEPTH_BAR.md 30-day permit lines: fixed to 90 days from issuance (repo PR #75; workspace copy 2026-10-19).
 - regulatory-source-of-truth.csv row 2 still states 30 days (APHIS secondary). Needs MOCCAE first-party 90-day row.
 - Calendar asks for 'verified AED + origin-currency cost tables' on routes: conflicts with fee lock. Briefs use cost-driver narrative + labelled government fees only.
 
