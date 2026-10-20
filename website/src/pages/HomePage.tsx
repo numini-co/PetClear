@@ -223,7 +223,7 @@ export default function HomePage() {
         imageAlt="Illustration of a golden retriever sitting beside a small hard-sided carrier in an airport terminal, with a luggage trolley and a hazy skyline through the windows. The carrier in the picture is not a measured travel crate for a dog of this size."
         eyebrow="Pet relocation coordination for Dubai and the UAE"
         title="Pet relocation Dubai: door-to-door, to and from the UAE"
-        subtitle="Your move month is already fixed, and the dog or cat still needs a permit, a crate and a flight. We hold the MOCCAE file, the IATA crate, the cargo booking and the home handover as one coordinated move."
+        subtitle="Moving with a dog or cat? We coordinate the documents, the flight and the handover. Import, export and local transport are three different jobs."
         primaryLabel={CTA_ELIGIBILITY_MOVE}
         primaryClassName={HOME_PRIMARY_WA}
         ctaSupport={CTA_SUPPORT}
