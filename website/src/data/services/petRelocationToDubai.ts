@@ -25,7 +25,7 @@ const petRelocationToDubai: ServicePageData = {
   howToName: 'How to bring a dog or cat to Dubai',
   sections: [
     {
-      h2: 'This page is inbound only — arrival into Dubai',
+      h2: 'Arriving in Dubai: what we coordinate',
       intro:
         'Arriving in Dubai covers the permit, the landing and the first days after. Leaving the UAE is a different job, on [moving pets out of Dubai](/service/pet-relocation-from-dubai/). The homepage overview is [pet relocation Dubai](/). Door-to-door scope is [pet relocation services](/service/pet-relocation-dubai/). The paid import file is [pet import Dubai](/service/pet-import-dubai/).',
       body: [
@@ -121,7 +121,7 @@ const petRelocationToDubai: ServicePageData = {
       ],
     },
     {
-      h2: 'First week in Dubai — heat, buildings and a vet',
+      h2: 'First week in Dubai: heat, buildings and a vet',
       intro:
         'Clearing cargo is the end of the flight, not the end of the inbound job. Cats and dogs settle faster when the first days are boring on purpose.',
       body: [
@@ -146,7 +146,7 @@ const petRelocationToDubai: ServicePageData = {
       ],
     },
     {
-      h2: 'Inbound cost drivers — quote on WhatsApp, no fee table',
+      h2: 'What shapes an inbound quote',
       intro:
         'We do not publish permit, release or cargo numerals on this inbound page. Those figures are contested or route-specific. Qualitative drivers plus a WhatsApp quote are what we can stand behind today.',
       body: [
