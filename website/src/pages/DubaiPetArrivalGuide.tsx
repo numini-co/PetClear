@@ -58,7 +58,7 @@ const faqData = [
   },
   {
     q: 'What if my pet is delayed at Dubai airport customs?',
-    a: 'Stay on the cargo file, not the passenger terminal. Typical holds are a missing original, a chip that will not scan, an expired permit, or a health certificate outside its short window. We coordinate with the handler and the veterinary desk; we do not override MOCCAE. Non-compliant imports can face a fine of AED 5,000 per animal, and the animal may be rejected or confiscated. WhatsApp +971504782999 with the air waybill if you want the thread held.',
+    a: 'Stay on the cargo file, not the passenger terminal. Typical holds are a missing original, a chip that will not scan, an expired permit, or a health certificate outside its short window. We coordinate with the handler and the veterinary desk; we do not override MOCCAE. Non-compliant imports can face penalties. Check the current rules with MOCCAE. WhatsApp +971504782999 with the air waybill if you want the thread held.',
   },
   {
     q: 'How soon must I register after the pet comes home?',

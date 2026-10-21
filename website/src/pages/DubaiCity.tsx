@@ -18,7 +18,7 @@ export default function DubaiCity() {
   const faqs = [
     {
       question: 'How much does pet relocation to Dubai cost?',
-      answer: 'There is no single published fare for a move to Dubai. The quote separates government charges, the clinic, the airline, the crate, and coordination. On 22 September 2026 MOCCAE listed AED 200 for an import permit, AED 500 to release a dog, and AED 250 to release a cat. Confirm the municipality registration fee on the Aleef or Dubai Municipality channel. Dubai Pet Relocation sends an itemised quote before you agree.'
+      answer: 'There is no single published fare for a move to Dubai. The quote separates government charges, the clinic, the airline, the crate, and coordination. On 22 September 2026 MOCCAE listed AED 200 for an import permit, AED 500 to release a dog, and AED 250 to release a cat. Those are MOCCAE government fees. Confirm on the MOCCAE portal. Confirm the municipality registration fee on the Aleef or Dubai Municipality channel. Dubai Pet Relocation sends an itemised quote before you agree.'
     },
     {
       question: 'Is there quarantine for pets arriving in Dubai?',
@@ -375,14 +375,14 @@ export default function DubaiCity() {
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">A matching file is released. A hold is a paperwork problem, billed if it happens.</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Customs Clearance at DXB</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">MOCCAE release fee at DXB</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">On the government invoice</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Separate from coordination. Dog release was AED 500 and cat release AED 250 on the MOCCAE page checked 22 September 2026.</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Separate from coordination. MOCCAE government fee. Dog release was AED 500 and cat release AED 250 on the MOCCAE page checked 22 September 2026. Confirm on the MOCCAE portal.</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Veterinary Inspection on Arrival</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">On the government invoice</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">The release charge above is the arrival veterinary fee we could verify. Confirm the payment screen.</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">The release charge above is the arrival veterinary fee we could verify. Confirm on the MOCCAE portal.</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Ground Transport (DXB to home)</td>
@@ -394,7 +394,7 @@ export default function DubaiCity() {
             </div>
             <div className="px-6 py-4 bg-[#F5F6FD] border-t border-[#EBEBEB]">
               <p className="text-xs text-[#5A5A5A]">
-                Government amounts are the figures on the payment screen. Coordination, the van, and the airline are separate lines on the quote.
+                MOCCAE government fees: Confirm on the MOCCAE portal. Coordination, the van, and the airline are separate lines on the quote.
               </p>
             </div>
           </div>

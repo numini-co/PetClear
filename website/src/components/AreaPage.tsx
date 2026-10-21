@@ -70,6 +70,25 @@ function Block({ block }: { block: ServiceBlock }) {
   if (block.type === 'image') {
     return <ContentImage src={block.src} alt={block.alt} caption={block.caption} />
   }
+  if (block.type === 'routeGroups') {
+    return (
+      <div className="mb-4 space-y-3">
+        {block.groups.map((group) => (
+          <p key={group.label} className="leading-relaxed text-[#5A5A5A]">
+            <strong className="text-[#2A2A2A]">{group.label}:</strong>{' '}
+            {group.links.map((link, i) => (
+              <span key={link.to}>
+                {i > 0 ? ', ' : null}
+                <Link to={link.to} className="font-semibold text-[#4F5BD5] hover:underline">
+                  {link.label}
+                </Link>
+              </span>
+            ))}
+          </p>
+        ))}
+      </div>
+    )
+  }
   if (block.type === 'cards') {
     return (
       <div className="mb-4 grid gap-4 sm:grid-cols-2">

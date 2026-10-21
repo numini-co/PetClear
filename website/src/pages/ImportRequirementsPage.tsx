@@ -104,7 +104,7 @@ const FAQS: { q: string; a: string }[] = [
   },
   {
     q: 'What are the government fees?',
-    a: 'On 22 September 2026 the MOCCAE service page listed AED 200 to issue an import permit for one animal, AED 500 to request release of one dog, and AED 250 to request release of one cat. These are government charges, not a relocation package. Pay the amount shown when you apply.',
+    a: 'On 22 September 2026 the MOCCAE service page listed AED 200 to issue an import permit for one animal, AED 500 to request release of one dog, and AED 250 to request release of one cat. These are government charges, not a relocation package. Confirm on the MOCCAE portal.',
   },
   {
     q: 'How do I register my pet after arrival?',
@@ -250,7 +250,7 @@ export default function ImportRequirementsPage() {
             <div className="mt-8 grid sm:grid-cols-2 gap-4 text-sm text-[#5A5A5A]">
               <p><strong className="text-[#2A2A2A]">Permit:</strong> 90 days from issuance. Published service time: 1 working day, or 5 working days for a service, emotional support or medical dog. That is an estimate on the page, not a promise.</p>
               <p><strong className="text-[#2A2A2A]">How many:</strong> Individuals may import up to 2 companion animals per person in the year (2 cats, 2 dogs, or 1 of each), except resident animals returning.</p>
-              <p><strong className="text-[#2A2A2A]">Government fees on {CHECKED}:</strong> AED 200 import permit per animal, AED 500 release per dog, AED 250 release per cat. Confirm the payment screen.</p>
+              <p><strong className="text-[#2A2A2A]">Government fees on {CHECKED}:</strong> AED 200 import permit per animal, AED 500 release per dog, AED 250 release per cat. Confirm on the MOCCAE portal.</p>
               <p><strong className="text-[#2A2A2A]">Age:</strong> Vaccination not before 12 weeks. High-risk imports not less than 15 weeks. The English page says the low-risk minimum age "will be 12" without a unit, so that figure is not treated as confirmed. UK exports use the 15-week rule on certificate 3926EHC.</p>
             </div>
             <p className="mt-6 text-sm text-[#5A5A5A]">

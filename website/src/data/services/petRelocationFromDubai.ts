@@ -20,6 +20,13 @@ const petRelocationFromDubai: ServicePageData = {
   ctaHeading: 'Ready for a managed-move quote?',
   ctaBody:
     'Send the destination, pet and month on WhatsApp. We reply with eligibility and a managed-move quote before any booking.',
+  ctaImage: {
+    src: '/assets/week8/pet-relocation-from-dubai-cta-cat-carrier-departure.jpg',
+    alt: 'Owner carrying a cat carrier out of a Dubai villa to begin a relocation abroad',
+    caption: 'Tell us where life is going next. We will get your pet there.',
+    width: 1920,
+    height: 1080,
+  },
   paidIncludes: [
     'Destination rules check before a flight week is discussed',
     'Export certificate timing set against your travel date',
@@ -71,7 +78,7 @@ const petRelocationFromDubai: ServicePageData = {
             },
             {
               title: 'Build the timeline backwards',
-              text: 'Destination waiting periods sit on the destination, not on Dubai. They are not the UAE inbound rule. For a high-risk import into the UAE the antibody certificate is valid 365 days if the vaccine stays valid and no booster is given. The 90-day clock on that inbound file is the MOCCAE import permit, counted from issuance.',
+              text: "The UAE's 90-day MOCCAE import permit is an inbound rule and does not apply when leaving Dubai.",
             },
             {
               title: 'Veterinary preparation in the UAE',
@@ -79,7 +86,7 @@ const petRelocationFromDubai: ServicePageData = {
             },
             {
               title: 'MOCCAE export health certificate',
-              text: 'The UAE export health certificate is issued after a pre-export veterinary inspection. Schedule it close to departure so the window still covers travel day, not months ahead. A government fee applies; confirm current fees and validity on the official portal. Contested ranges are not published here. Process guide: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
+              text: 'The UAE export health certificate is issued after a pre-export veterinary inspection. Schedule it close to departure so the window still covers travel day, not months ahead. A government fee applies; confirm on the MOCCAE portal. Contested ranges are not published here. Process guide: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
             },
             {
               title: 'Crate and cargo booking',
@@ -128,20 +135,71 @@ const petRelocationFromDubai: ServicePageData = {
     },
     {
       h2: 'Routes for taking a dog or cat out of the UAE',
-      intro:
-        'Open the published route page for your country, then send an eligibility check for any corridor that is not listed yet.',
+      intro: 'Each destination has its own rulebook. Open your route, then send the eligibility check.',
       body: [
         {
-          type: 'list',
-          items: [
-            '[Leaving Dubai with your pet: Dubai to UK](/routes/dubai-to-uk/): destination-driven timeline, GB paperwork and tapeworm timing for dogs',
-            '[Moving pets out of Dubai: Dubai to USA](/routes/dubai-to-usa/): CDC-facing dog rules and US arrival inspection',
-            'Other destinations: open the [routes hub](/routes/) and send the country name with your eligibility check. We map current entry rules before you commit',
+          type: 'routeGroups',
+          groups: [
+            {
+              label: 'GCC and Middle East',
+              links: [
+                { label: 'Dubai to Bahrain', to: '/routes/dubai-to-bahrain/' },
+                { label: 'Dubai to Kuwait', to: '/routes/dubai-to-kuwait/' },
+                { label: 'Dubai to Oman', to: '/routes/dubai-to-oman/' },
+                { label: 'Dubai to Qatar', to: '/routes/dubai-to-qatar/' },
+                { label: 'Dubai to Saudi Arabia', to: '/routes/dubai-to-saudi-arabia/' },
+                { label: 'Dubai to Egypt', to: '/routes/dubai-to-egypt/' },
+                { label: 'Dubai to Turkey', to: '/routes/dubai-to-turkey/' },
+              ],
+            },
+            {
+              label: 'Europe and UK',
+              links: [
+                { label: 'Dubai to UK', to: '/routes/dubai-to-uk/' },
+                { label: 'Dubai to Ireland', to: '/routes/dubai-to-ireland/' },
+                { label: 'Dubai to France', to: '/routes/dubai-to-france/' },
+                { label: 'Dubai to Germany', to: '/routes/dubai-to-germany/' },
+                { label: 'Dubai to Italy', to: '/routes/dubai-to-italy/' },
+                { label: 'Dubai to Netherlands', to: '/routes/dubai-to-netherlands/' },
+                { label: 'Dubai to Spain', to: '/routes/dubai-to-spain/' },
+              ],
+            },
+            {
+              label: 'Americas',
+              links: [
+                { label: 'Dubai to USA', to: '/routes/dubai-to-usa/' },
+                { label: 'Dubai to Canada', to: '/routes/dubai-to-canada/' },
+              ],
+            },
+            {
+              label: 'Asia',
+              links: [
+                { label: 'Dubai to India', to: '/routes/dubai-to-india/' },
+                { label: 'Dubai to Pakistan', to: '/routes/dubai-to-pakistan/' },
+                { label: 'Dubai to Philippines', to: '/routes/dubai-to-philippines/' },
+                { label: 'Dubai to Singapore', to: '/routes/dubai-to-singapore/' },
+                { label: 'Dubai to Malaysia', to: '/routes/dubai-to-malaysia/' },
+                { label: 'Dubai to Indonesia', to: '/routes/dubai-to-indonesia/' },
+                { label: 'Dubai to Thailand', to: '/routes/dubai-to-thailand/' },
+                { label: 'Dubai to Hong Kong', to: '/routes/dubai-to-hong-kong/' },
+                { label: 'Dubai to China', to: '/routes/dubai-to-china/' },
+                { label: 'Dubai to Japan', to: '/routes/dubai-to-japan/' },
+                { label: 'Dubai to South Korea', to: '/routes/dubai-to-south-korea/' },
+              ],
+            },
+            {
+              label: 'Oceania and Africa',
+              links: [
+                { label: 'Dubai to Australia', to: '/routes/dubai-to-australia/' },
+                { label: 'Dubai to New Zealand', to: '/routes/dubai-to-new-zealand/' },
+                { label: 'Dubai to South Africa', to: '/routes/dubai-to-south-africa/' },
+              ],
+            },
           ],
         },
         {
           type: 'p',
-          text: 'Australia, New Zealand, the EU and regional hops each have their own clocks. A line that says a typical export from Dubai takes two weeks would be false for some of those files and sloppy for all of them. The destination is checked first.',
+          text: '[All pet relocation routes](/routes/)',
         },
       ],
     },
@@ -172,7 +230,7 @@ const petRelocationFromDubai: ServicePageData = {
     },
     {
       q: 'What is the MOCCAE export health certificate path?',
-      a: 'A pre-export veterinary inspection, then a UAE export health certificate scheduled close to departure so the window still covers travel day. Confirm current fees and validity on the official portal. Contested certificate ranges are not published here. How-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
+      a: 'A pre-export veterinary inspection, then a UAE export health certificate scheduled close to departure so the window still covers travel day. A government fee applies; confirm on the MOCCAE portal. Contested certificate ranges are not published here. How-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
     },
     {
       q: 'When should I start planning a move out of Dubai?',
@@ -188,7 +246,7 @@ const petRelocationFromDubai: ServicePageData = {
     },
     {
       q: 'Can you help with Dubai to USA as well as Dubai to UK?',
-      a: 'Yes. Those two outbound guides are live: [Dubai to UK](/routes/dubai-to-uk/) and [Dubai to USA](/routes/dubai-to-usa/). Other destinations start with a country check on the [routes hub](/routes/), sent with the eligibility request.',
+      a: 'Yes. The published outbound routes are grouped on this page, including [Dubai to UK](/routes/dubai-to-uk/) and [Dubai to USA](/routes/dubai-to-usa/). Open your route, then send the eligibility check. The full list is on the [routes hub](/routes/).',
     },
     {
       q: 'How is this different from the pet export Dubai service page?',
