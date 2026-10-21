@@ -406,7 +406,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
       <OfficialSources />
 
       {/* FINAL CTA */}
-      <section className="bg-[#4F5BD5] section-padding">
+      <section className={`bg-[#4F5BD5] section-padding${data.slug === 'pet-relocation-dubai' ? ' max-sm:pb-28!' : ''}`}>
         <div className="max-w-[820px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
           {data.ctaImage ? (
             <figure className="mx-auto mb-6 max-w-3xl">
