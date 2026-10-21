@@ -108,7 +108,7 @@ export default function ImportChecklistGuide() {
       num: 5,
       title: 'Apply for the MOCCAE import permit',
       when: 'Valid 90 days from issuance',
-      body: 'Apply before travel. The permit is valid for 90 days from issuance. An expired permit cannot be used. That clock is not a 30-day stamp and it is not the antibody certificate. On 22 September 2026 the page listed AED 200 to issue a permit for one animal, AED 500 to release one dog, and AED 250 to release one cat. Published service time: 1 working day, or 5 working days for a service, emotional support or medical dog. The import application itself lists no documents for ordinary dogs and cats.',
+      body: 'Apply before travel. The permit is valid for 90 days from issuance. An expired permit cannot be used. That clock is not a 30-day stamp and it is not the antibody certificate. On 22 September 2026 the page listed AED 200 to issue a permit for one animal, AED 500 to release one dog, and AED 250 to release one cat. These are MOCCAE government fees. Confirm on the MOCCAE portal. Published service time: 1 working day, or 5 working days for a service, emotional support or medical dog. The import application itself lists no documents for ordinary dogs and cats.',
       icon: <FileText className="w-5 h-5" />,
     },
     {
@@ -171,7 +171,7 @@ export default function ImportChecklistGuide() {
     },
     {
       question: 'How much is the MOCCAE import permit and when should I apply?',
-      answer: 'Apply before travel. The permit is valid for 90 days from issuance. On 22 September 2026 the page listed AED 200 for one animal, AED 500 to release one dog, and AED 250 to release one cat. Those are government charges, not a relocation package. Pay the amount shown when you apply.',
+      answer: 'Apply before travel. The permit is valid for 90 days from issuance. On 22 September 2026 the page listed AED 200 for one animal, AED 500 to release one dog, and AED 250 to release one cat. Those are government charges, not a relocation package. Confirm on the MOCCAE portal.',
     },
   ]
 
@@ -311,7 +311,7 @@ export default function ImportChecklistGuide() {
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
                   <p className="font-semibold text-[#4F5BD5] text-sm mb-1">MOCCAE Import Permit</p>
                   <p className="text-lg font-bold text-[#2A2A2A]">Valid 90 days from issuance</p>
-                  <p className="text-sm text-[#5A5A5A] mt-1">Government fees checked 22 September 2026: AED 200 permit, AED 500 dog release, AED 250 cat release.</p>
+                  <p className="text-sm text-[#5A5A5A] mt-1">Government fees checked 22 September 2026: AED 200 permit, AED 500 dog release, AED 250 cat release. Confirm on the MOCCAE portal.</p>
                 </div>
                 <div className="p-4 bg-[#4F5BD5]/5 rounded-xl">
                   <p className="font-semibold text-[#4F5BD5] text-sm mb-1">Permit service time</p>
@@ -448,7 +448,7 @@ export default function ImportChecklistGuide() {
                   </td>
                   <td>Apply before travel. An expired permit cannot be used.</td>
                   <td>90 days from issuance</td>
-                  <td>AED 200 per animal</td>
+                  <td>AED 200 per animal. MOCCAE government fee. Confirm on the MOCCAE portal.</td>
                 </tr>
                 <tr>
                   <td className="font-semibold text-[#2A2A2A]">Health certificate</td>
@@ -466,7 +466,7 @@ export default function ImportChecklistGuide() {
                   <td className="font-semibold text-[#2A2A2A]">Dog or cat release</td>
                   <td>Inspection at the entry port, then release if the animal matches.</td>
                   <td>At arrival</td>
-                  <td>AED 500 per dog, AED 250 per cat</td>
+                  <td>AED 500 per dog, AED 250 per cat. MOCCAE government fee. Confirm on the MOCCAE portal.</td>
                 </tr>
               </tbody>
             </table>

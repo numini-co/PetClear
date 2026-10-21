@@ -75,7 +75,7 @@ export const TWO_PETS_RULE =
   'Personal (non-commercial) import is typically limited to a maximum of 2 pets per person (2 cats, or 2 dogs, or 1 cat and 1 dog) per permit / per year. Confirm the current portal rule for your case.'
 
 export const NONCOMPLIANCE_FINE =
-  'Non-compliant imports can face a fine of AED 5,000 per animal, and the animal may be rejected or confiscated.'
+  'Non-compliant imports can face penalties. Check the current rules with MOCCAE.'
 
 export const MANIFEST_CARGO =
   'Pets must enter the UAE as manifested cargo under IATA live-animal conditions — not as cabin or accompanied checked baggage. Etihad in-cabin arrivals into Abu Dhabi are a published exception for eligible small pets.'

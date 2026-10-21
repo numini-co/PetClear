@@ -62,6 +62,25 @@ function Block({ block }: { block: ServiceBlock }) {
   if (block.type === 'image') {
     return <ContentImage src={block.src} alt={block.alt} caption={block.caption} width={block.width} height={block.height} />
   }
+  if (block.type === 'routeGroups') {
+    return (
+      <div className="mb-4 space-y-3">
+        {block.groups.map((group) => (
+          <p key={group.label} className="leading-relaxed text-[#5A5A5A]">
+            <strong className="text-[#2A2A2A]">{group.label}:</strong>{' '}
+            {group.links.map((link, i) => (
+              <span key={link.to}>
+                {i > 0 ? ', ' : null}
+                <Link to={link.to} className="font-semibold text-[#4F5BD5] hover:underline">
+                  {link.label}
+                </Link>
+              </span>
+            ))}
+          </p>
+        ))}
+      </div>
+    )
+  }
   if (block.type === 'cards') {
     return (
       <div className="mb-4 grid gap-4 sm:grid-cols-2">
@@ -389,6 +408,21 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
       {/* FINAL CTA */}
       <section className="bg-[#4F5BD5] section-padding">
         <div className="max-w-[820px] mx-auto px-5 sm:px-6 lg:px-8 text-center">
+          {data.ctaImage ? (
+            <figure className="mx-auto mb-6 max-w-3xl">
+              <img
+                src={data.ctaImage.src}
+                alt={data.ctaImage.alt}
+                width={data.ctaImage.width}
+                height={data.ctaImage.height}
+                loading="lazy"
+                className="aspect-video w-full rounded-[20px] object-cover"
+              />
+              {data.ctaImage.caption ? (
+                <figcaption className="mt-2 text-sm leading-relaxed text-white/90">{data.ctaImage.caption}</figcaption>
+              ) : null}
+            </figure>
+          ) : null}
           <h2 className="text-[24px] sm:text-[32px] font-bold text-white mb-3">{data.ctaHeading || ctaHeading(data.slug)}</h2>
           <p className="text-white/90 mb-4">{closingBody}</p>
           <LinkPlanSlot

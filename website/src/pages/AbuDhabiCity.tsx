@@ -457,7 +457,7 @@ export default function AbuDhabiCity() {
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Government release</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">MOCCAE invoice</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">MOCCAE invoice</td>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">On 22 September 2026: AED 500 to release a dog, AED 250 to release a cat. Confirm the screen.</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">On 22 September 2026: AED 500 to release a dog, AED 250 to release a cat. MOCCAE government fee. Confirm on the MOCCAE portal.</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-[#5A5A5A]">Airport to address</td>

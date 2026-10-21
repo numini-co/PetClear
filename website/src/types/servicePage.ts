@@ -8,6 +8,7 @@ export type ServiceBlock =
   | { type: 'table'; headers: string[]; rows: string[][] }
   | { type: 'image'; src: string; alt: string; caption?: string; width?: number; height?: number }
   | { type: 'cards'; cards: { title: string; text: string; to: string; kind?: string }[] }
+  | { type: 'routeGroups'; groups: { label: string; links: { label: string; to: string }[] }[] }
 
 export interface ServiceSection {
   /** In-page target for a contextual link. One id per page. */
@@ -74,6 +75,17 @@ export interface ServicePageData {
   /** Closing band heading and sentence. Buyer action only. */
   ctaHeading?: string
   ctaBody?: string
+  /**
+   * Optional closing-band image. Pages that omit it render the CTA unchanged.
+   * Width and height should match the file. Display is 16:9.
+   */
+  ctaImage?: {
+    src: string
+    alt: string
+    caption?: string
+    width: number
+    height: number
+  }
   /** Mid-page booking block. Opens the same WhatsApp lead gate as other CTAs. */
   bookingCta?: {
     heading: string

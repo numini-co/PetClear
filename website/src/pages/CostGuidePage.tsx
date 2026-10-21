@@ -869,12 +869,12 @@ export default function CostGuidePage() {
                 </thead>
                 <tbody>
                   <tr><td>Clinic papers</td><td>Book a clinic that will issue the export file</td><td>The clinic</td><td>A vaccine dated before the microchip is not accepted.</td></tr>
-                  <tr><td>MOCCAE import permit</td><td>Apply on the official portal</td><td>AED 200 on the page checked 22 September 2026</td><td>A wrong field can mean a new application. Confirm the payment screen.</td></tr>
+                  <tr><td>MOCCAE import permit</td><td>Apply on the official portal</td><td>AED 200 on the page checked 22 September 2026. MOCCAE government fee. Confirm on the MOCCAE portal.</td><td>A wrong field can mean a new application.</td></tr>
                   <tr><td>Crate</td><td>Measure the animal and buy a crate the airline accepts</td><td>The supplier</td><td>A crate that is the wrong size can be refused on travel day.</td></tr>
                   <tr><td>Cargo</td><td>Ask the airline for a live-animal booking</td><td>The airline</td><td>A passenger seat is not a cargo booking.</td></tr>
                   <tr><td>Health certificate</td><td>Clinic visit, then the official endorsement</td><td>The clinic and the endorsing office</td><td>An expired certificate is not accepted.</td></tr>
                   <tr><td>Road legs</td><td>Book a vehicle that will carry the crate</td><td>The transport company</td><td>A normal taxi may refuse the crate.</td></tr>
-                  <tr><td>Arrival</td><td>Present the file at the cargo terminal</td><td>MOCCAE release: AED 500 for a dog, AED 250 for a cat, on the same check date</td><td>A mismatch can hold the pet. The terminal does not publish a fixed clearance time.</td></tr>
+                  <tr><td>Arrival</td><td>Present the file at the cargo terminal</td><td>MOCCAE government fee: AED 500 for a dog, AED 250 for a cat, on the same check date. Confirm on the MOCCAE portal.</td><td>A mismatch can hold the pet. The terminal does not publish a fixed clearance time.</td></tr>
                   <tr><td>Municipality registration</td><td>Aleef or Dubai Smart Services, within 30 days</td><td>Confirm on that channel</td><td>Late registration is the municipality’s own rule. Confirm any charge there.</td></tr>
                 </tbody>
               </table>

@@ -3,7 +3,7 @@ import { waEligibility } from '../../lib/conversionCopy.ts'
 import { PERMIT_VALIDITY } from '../../lib/regulatory.ts'
 
 const FEES =
-  'On 22 September 2026 the MOCCAE page listed AED 200 to issue an import permit for one animal, AED 500 to release one dog, and AED 250 to release one cat. These are government charges, not a relocation package.'
+  'On 22 September 2026 the MOCCAE page listed AED 200 to issue an import permit for one animal, AED 500 to release one dog, and AED 250 to release one cat. These are government charges, not a relocation package. Confirm on the MOCCAE portal.'
 const TITRE =
   'High-risk origins need at least 0.5 IU/ml. The certificate is valid for 365 days if the vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. A first vaccine, or a gap in vaccination, needs at least 21 days before the test. A valid booster does not. An older 90-day sample window is not on the live page.'
 const OUTCOME =
@@ -203,8 +203,8 @@ const petImportDubai: ServicePageData = {
           type: 'table',
           headers: ['Cost type', 'How we treat it on this page'],
           rows: [
-            ['MOCCAE import permit (per animal)', 'AED 200 on the page checked 22 September 2026'],
-            ['Dog release / cat release', 'AED 500 per dog, AED 250 per cat, on that same page'],
+            ['MOCCAE government fee: import permit (per animal)', 'AED 200 on the page checked 22 September 2026. Confirm on the MOCCAE portal.'],
+            ['MOCCAE government fee: dog release / cat release', 'AED 500 per dog, AED 250 per cat, on that same page. Confirm on the MOCCAE portal.'],
             ['Origin veterinary (vaccines, certificate, titer if required)', 'Quoted from your origin vet — not a published DPR fee table'],
             ['IATA-compliant crate', 'Sized to the animal; partner quote, not a guess from a chart'],
             ['Manifested cargo', 'Airline and route specific — we itemise before you book'],
@@ -279,7 +279,7 @@ const petImportDubai: ServicePageData = {
     },
     {
       q: 'How much does it cost to import a pet to Dubai?',
-      a: 'This page does not publish a package total. Government charges checked on 22 September 2026 were AED 200 for the permit, AED 500 to release a dog, and AED 250 to release a cat. Cargo, crate and coordination are quoted for your animal. WhatsApp +971504782999.',
+      a: 'This page does not publish a package total. Government charges checked on 22 September 2026 were AED 200 for the permit, AED 500 to release a dog, and AED 250 to release a cat. Confirm on the MOCCAE portal. Cargo, crate and coordination are quoted for your animal. WhatsApp +971504782999.',
     },
     {
       q: 'What does a commercial pet import to Dubai actually include?',

@@ -231,7 +231,7 @@ export default function DubaiPillar() {
             When the origin is high-risk, the antibody result must be at least 0.5 IU/ml and the certificate follows the
             365-day conditions on the live MOCCAE page. A 90-day pre-travel sample window is not that rule. Government
             fees checked on 22 September 2026 were AED 200 for the permit, AED 500 to release a dog and AED 250 to release
-            a cat. The
+            a cat. These are MOCCAE government fees. Confirm on the MOCCAE portal. The
             checklist sits on the{' '}
             <Link to="/guides/uae-pet-import-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
               UAE pet import requirements for dogs and cats
