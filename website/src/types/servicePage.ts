@@ -17,6 +17,16 @@ export interface ServiceSection {
   /** optional short intro under the H2 */
   intro?: string
   body: ServiceBlock[]
+  /**
+   * Optional paid-scope list and one WhatsApp CTA rendered under this section.
+   * Omitted on every page that does not set it.
+   */
+  paidScope?: {
+    items: string[]
+    ctaLabel: string
+    ctaMessage: string
+    secondary?: { prefix: string; label: string; to: string }
+  }
 }
 
 export interface ServiceFAQ {

@@ -21,11 +21,11 @@ export default function DubaiToUSA() {
     },
     {
       question: 'Do cats need a rabies vaccination to enter the USA from Dubai?',
-      answer: 'The CDC does not require rabies vaccination for cats entering the USA from any country. However, the USDA APHIS (Animal and Plant Health Inspection Service) and individual state regulations may require a rabies certificate for cats. Some states, such as California and New York, strongly recommend or require rabies vaccination for all cats. Dubai Pet Relocation recommends vaccinating your cat against rabies before travel and carrying the vaccination certificate, even if not strictly required by federal law. This protects your cat and avoids any issues at state-level veterinary inspections.'
+      answer: 'The CDC does not require rabies vaccination for cats entering the USA from any country. APHIS has no federal animal health requirements for a pet cat. Individual state regulations may still require a rabies certificate for cats. Some states, such as California and New York, strongly recommend or require rabies vaccination for all cats. Dubai Pet Relocation recommends vaccinating your cat against rabies before travel and carrying the vaccination certificate, even if not strictly required by federal law. This protects your cat and avoids any issues at state-level veterinary inspections.'
     },
     {
       question: 'What is the USDA APHIS health certificate for pets entering the USA?',
-      answer: 'A USDA APHIS health certificate is a document issued by an accredited veterinarian in the origin country (the UAE) certifying that the pet is healthy and free from contagious diseases. For pets travelling from Dubai to the USA, a UAE-licensed veterinarian can issue the health certificate if they are accredited by the USDA. The certificate must be issued within 10 days of travel for dogs and cats. It includes the pet\'s identification details, vaccination records, health examination results, and the veterinarian\'s accreditation number. Dubai Pet Relocation works with USDA-accredited veterinarians in Dubai to ensure the health certificate meets US entry requirements. The certificate is presented at the US port of entry (CBP inspection) and may be required by state authorities upon arrival.'
+      answer: 'USDA accreditation applies to veterinarians in the United States, not in the UAE. APHIS does not require a USDA APHIS health certificate issued in the UAE. For a dog, CDC rules apply, and APHIS adds requirements only if the UAE is listed as affected by foot-and-mouth disease or screwworm, so confirm the current APHIS disease-status list before you book. For a cat, APHIS has no federal animal health requirements. Your airline and your US state may still ask for a recent health certificate from a licensed UAE vet, plus the MOCCAE export certificate on the UAE side.'
     },
     {
       question: 'Which airlines fly pets from Dubai to the USA?',
@@ -41,11 +41,11 @@ export default function DubaiToUSA() {
     },
     {
       question: 'Are there state-specific rules for pets entering the USA?',
-      answer: 'Yes. While CDC and USDA APHIS set federal rules, individual states have their own requirements. Most states require a valid rabies certificate and health certificate but do not impose quarantine. However, Hawaii and Guam have strict quarantine rules: Hawaii requires a rabies vaccination, microchip, and a negative rabies titer test (FAVN) with a 120-day waiting period, or a 5-day-or-less quarantine programme if all requirements are met in advance. Guam has a similar quarantine programme. Some states (e.g., California, Florida, New York) have additional veterinary inspection requirements for certain diseases. Dubai Pet Relocation advises on state-specific rules for your destination and coordinates with local veterinarians or quarantine facilities if needed. For most mainland states (Texas, Illinois, Georgia, Washington, etc.), there is no quarantine if federal documents are correct.'
+      answer: 'Yes. While the CDC sets dog import rules, and APHIS adds requirements only if the origin country is on its foot-and-mouth disease or screwworm list, individual states have their own requirements. Most states require a valid rabies certificate and health certificate but do not impose quarantine. However, Hawaii and Guam have strict quarantine rules: Hawaii requires a rabies vaccination, microchip, and a negative rabies titer test (FAVN) with a 120-day waiting period, or a 5-day-or-less quarantine programme if all requirements are met in advance. Guam has a similar quarantine programme. Some states (e.g., California, Florida, New York) have additional veterinary inspection requirements for certain diseases. Dubai Pet Relocation advises on state-specific rules for your destination and coordinates with local veterinarians or quarantine facilities if needed. For most mainland states (Texas, Illinois, Georgia, Washington, etc.), there is no quarantine if federal documents are correct.'
     },
     {
       question: 'What does Dubai Pet Relocation handle for a Dubai to USA pet relocation?',
-      answer: 'Dubai Pet Relocation manages the entire Dubai to USA pet relocation process. We handle: (1) CDC Dog Import Form completion and submission (free online form, but we ensure accuracy); (2) health certificate scheduling with a USDA-accredited UAE veterinarian; (3) document review and airline compliance check; (4) IATA-compliant crate sourcing and fitting; (5) flight booking with Emirates, United, Delta, or American Airlines; (6) pre-flight veterinary health check; (7) DXB cargo check-in and customs clearance; (8) US CBP (Customs and Border Protection) inspection coordination at JFK, LAX, ORD, IAD, SFO, or your arrival airport; (9) ground transport from the US airport to your home or boarding facility; (10) state-specific requirement verification and post-arrival veterinary guidance. We provide WhatsApp updates at every step and a named contact during travel days.'
+      answer: 'Dubai Pet Relocation manages the entire Dubai to USA pet relocation process. We handle: (1) CDC Dog Import Form completion and submission (free online form, but we ensure accuracy); (2) health certificate scheduling with a licensed UAE veterinarian when the airline or your US state asks for one; (3) document review and airline compliance check; (4) IATA-compliant crate sourcing and fitting; (5) flight booking with Emirates, United, Delta, or American Airlines; (6) pre-flight veterinary health check; (7) DXB cargo check-in and customs clearance; (8) US CBP (Customs and Border Protection) inspection coordination at JFK, LAX, ORD, IAD, SFO, or your arrival airport; (9) ground transport from the US airport to your home or boarding facility; (10) state-specific requirement verification and post-arrival veterinary guidance. We provide WhatsApp updates at every step and a named contact during travel days.'
     }
   ]
 
@@ -103,7 +103,7 @@ export default function DubaiToUSA() {
         fallbackSrc="/images/hero-dubai-to-usa.jpg"
         eyebrow="Dubai → United States"
         title="Pet relocation from Dubai to USA"
-        subtitle="Plan a dog or cat move from Dubai to the United States. CDC and USDA steps depend on the pet and the state. Confirm the airline’s current pet acceptance before booking."
+        subtitle="Plan a dog or cat move from Dubai to the United States. CDC rules depend on the pet, and APHIS applies only for the diseases it lists. Confirm the airline’s current pet acceptance before booking."
         updated="Updated June 2026"
         primaryLabel="Get Route Checked"
         whatsappMessage="Hi Dubai Pet Relocation. I want Get Route Checked for dubai to usa (outbound). Pet details and preferred dates follow."
@@ -124,7 +124,7 @@ export default function DubaiToUSA() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">US Requirements</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">US Import Rules for Pets from Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              The USA has federal requirements (CDC and USDA APHIS) and state-level rules. Most states do not require quarantine if federal documents are correct. Here is what you need to know for dogs and cats travelling from Dubai.
+              The USA has CDC rules for dogs. APHIS adds requirements only if the UAE is listed as affected by foot-and-mouth disease or screwworm, so confirm that list before you book. Most states do not require quarantine if the documents they ask for are correct. Here is what you need to know for dogs and cats travelling from Dubai.
             </p>
           </div>
 
@@ -151,13 +151,13 @@ export default function DubaiToUSA() {
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">USDA APHIS Health Certificate</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed mb-3">
-                A health certificate issued by a USDA-accredited UAE veterinarian is required for both dogs and cats. The certificate must:
+                USDA accreditation applies to vets in the United States, not in the UAE. APHIS does not require a health certificate issued in Dubai for every dog or cat.
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Be issued within 10 days of travel</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Include microchip number, vaccination details, and health examination results</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Be completed by a USDA-accredited veterinarian (not all UAE vets hold this accreditation)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Be presented at US CBP inspection on arrival</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> For a dog, CDC rules apply. APHIS adds requirements only if the UAE is listed for foot-and-mouth disease or screwworm. Confirm the current APHIS disease-status list before you book.</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> For a cat, APHIS has no federal animal health requirements.</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Your airline or US state may still ask for a recent health certificate from a licensed UAE vet.</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> On the UAE side, you still need the MOCCAE export certificate.</li>
               </ul>
             </div>
 
@@ -171,7 +171,7 @@ export default function DubaiToUSA() {
               </p>
               <ul className="space-y-2 text-sm text-[#5A5A5A]">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Rabies vaccination (recommended, not federally required)</li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> USDA APHIS health certificate within 10 days of travel</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> APHIS has no federal animal health requirements for a cat. An airline or US state may still ask for a recent health certificate from a licensed UAE vet.</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> ISO-compliant microchip</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /> Check state-specific rules (some states require rabies cert for cats)</li>
               </ul>
@@ -246,7 +246,7 @@ export default function DubaiToUSA() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>Not all UAE veterinarians are USDA-accredited. Only an accredited vet can issue the APHIS health certificate. Dubai Pet Relocation works exclusively with accredited veterinarians in Dubai to ensure your certificate is valid.</span>
+                  <span>USDA accreditation applies to vets in the United States, not in the UAE. A licensed UAE vet can still issue a health certificate if your airline or US state asks for one, alongside the MOCCAE export certificate.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
@@ -419,7 +419,7 @@ export default function DubaiToUSA() {
                 <h3 className="text-lg font-bold text-[#2A2A2A]">All Other States (No Quarantine)</h3>
               </div>
               <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                For the vast majority of US states — including Texas, Illinois, Washington, Georgia, Massachusetts, Pennsylvania, Colorado, Arizona, Oregon, North Carolina, and all others — there is no quarantine for pets arriving from Dubai if the federal CDC and USDA requirements are met. The pet is cleared at the port of entry (airport) by US Customs and Border Protection (CBP) and can go directly to your home. Dubai Pet Relocation provides a list of all states with no additional requirements and helps you plan ground transport from the airport to your final destination. We also recommend a post-arrival veterinary check-up within 48 hours to ensure your pet has recovered well from the flight.
+                For the vast majority of US states, including Texas, Illinois, Washington, Georgia, Massachusetts, Pennsylvania, Colorado, Arizona, Oregon, North Carolina, and all others, there is no quarantine for pets arriving from Dubai if the CDC dog requirements are met and you have confirmed the APHIS disease-status list. The pet is cleared at the port of entry (airport) by US Customs and Border Protection (CBP) and can go directly to your home. Dubai Pet Relocation provides a list of all states with no additional requirements and helps you plan ground transport from the airport to your final destination. We also recommend a post-arrival veterinary check-up within 48 hours to ensure your pet has recovered well from the flight.
               </p>
             </div>
           </div>
@@ -456,7 +456,7 @@ export default function DubaiToUSA() {
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">USDA APHIS Health Certificate</td>
+                    <td className="px-6 py-4 text-sm text-[#5A5A5A]">Health certificate (licensed UAE vet, if asked)</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
                     <td className="px-6 py-4 text-sm font-medium text-[#2A2A2A]">Quoted</td>
@@ -543,7 +543,7 @@ export default function DubaiToUSA() {
                 {
                   week: 'Week 2',
                   title: 'Health Certificate & CDC Form',
-                  desc: 'We schedule the USDA APHIS health certificate examination with an accredited UAE veterinarian. We complete and submit the CDC Dog Import Form online (free) and print the receipt. We also book cargo space with Emirates, United, Delta, or American Airlines and source the correct IATA-compliant crate.',
+                  desc: 'We schedule a health certificate with a licensed UAE vet when the airline or your US state asks for one. We complete and submit the CDC Dog Import Form online (free) and print the receipt. We also book cargo space with Emirates, United, Delta, or American Airlines and source the correct IATA-compliant crate.',
                   icon: FileText
                 },
                 {
@@ -602,7 +602,7 @@ export default function DubaiToUSA() {
                 <Stethoscope className="w-7 h-7 text-[#4F5BD5]" />
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Health Certificate</p>
-              <p className="text-[#5A5A5A] text-sm">We schedule the USDA APHIS health certificate with an accredited UAE veterinarian, review the certificate for accuracy, and ensure it meets US entry requirements.</p>
+              <p className="text-[#5A5A5A] text-sm">We schedule a health certificate with a licensed UAE vet when your airline or US state asks for one, and we check it against the CDC dog rules.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
               <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -669,7 +669,7 @@ export default function DubaiToUSA() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-[#4F5BD5]" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to Export Your Pet from Dubai to the USA?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
-              We coordinate the Dubai-to-USA corridor: CDC forms, USDA health certificates, flight booking, and WhatsApp updates during business hours. From Dubai to New York, Los Angeles, Chicago, Washington DC, and cities across America, we handle the documents and US customs so you can focus on your move. {GUIDE_SOFT_GATE} WhatsApp +971504782999.
+              We coordinate the Dubai-to-USA corridor: CDC forms, the MOCCAE export certificate, flight booking, and WhatsApp updates during business hours. From Dubai to New York, Los Angeles, Chicago, Washington DC, and cities across America, we handle the documents and US customs so you can focus on your move. {GUIDE_SOFT_GATE} WhatsApp +971504782999.
             </p>
             <PaidIncludes tone="dark" compact items={OUTBOUND_PAID_INCLUDES} className="mx-auto mb-6 max-w-2xl text-left" />
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -712,7 +712,7 @@ export default function DubaiToUSA() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link to="/service/pet-export-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
               <p className="font-bold text-[#2A2A2A] mb-1">Pet Export from Dubai</p>
-              <p className="text-[#5A5A5A] text-sm">Our full export service: health certificates, USDA accreditation and cargo.</p>
+              <p className="text-[#5A5A5A] text-sm">Our full export service: health certificates, the MOCCAE export certificate and cargo.</p>
             </Link>
             <Link to="/routes/usa-to-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
               <p className="font-bold text-[#2A2A2A] mb-1">USA to Dubai</p>

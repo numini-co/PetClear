@@ -3,9 +3,9 @@ import { GUIDE_SOFT_GATE, waEligibility } from '../../lib/conversionCopy.ts'
 
 const petExportDubai: ServicePageData = {
   slug: 'pet-export-dubai',
-  seoTitle: 'Pet Export Dubai | Managed Export Eligibility Check',
+  seoTitle: 'Pet Export Dubai | MOCCAE Export Permit, Managed',
   metaDescription:
-    'Check export eligibility and get a managed export quote from Dubai. Destination-first planning and the MOCCAE export health certificate.',
+    'The MOCCAE pet export permit is the export health certificate, with an airport vet inspection and destination rules. Check if we can manage your export.',
   h1: 'Pet export services from Dubai',
   primaryKeyword: 'pet export dubai',
   heroValueProp:
@@ -74,7 +74,7 @@ const petExportDubai: ServicePageData = {
             },
             {
               title: 'Fit to Fly certificate',
-              text: 'A licensed vet issues a Fit to Fly (fit to travel) certificate close to your flight date — usually valid 5 to 10 days depending on the destination. We time this so it stays valid through departure.',
+              text: 'A licensed vet issues a Fit to Fly (fit to travel) certificate close to your flight date, usually valid 5 to 10 days depending on the destination. We time this so it stays valid through departure.',
             },
             {
               title: 'MOCCAE export health certificate',
@@ -93,17 +93,17 @@ const petExportDubai: ServicePageData = {
       ],
     },
     {
-      h2: 'MOCCAE Export Permit and Health Certificate',
+      h2: 'What is the MOCCAE pet export permit?',
       body: [
         {
           type: 'p',
-          text: 'The MOCCAE export health certificate is the document that authorises your pet to leave the UAE. It is applied for online through the MOCCAE portal, but it is not final until a government veterinarian inspects your pet in person at the airport — scanning the microchip and checking that every certificate matches before the export permit is issued.',
+          text: 'The MOCCAE pet export permit most owners search for is the MOCCAE export health certificate for the pet, applied for online through MOCCAE digital services (UAE Pass) and finalised after a MOCCAE government vet inspection at the airport. It is a different application from the MOCCAE import permit. The import permit is only for pets entering the UAE and is valid 90 days from issuance. The destination country’s rules decide the vet and titre sequence. For the government fee and the certificate validity window, confirm on the official MOCCAE portal.',
         },
         {
           type: 'list',
           items: [
             'Applied for online via the MOCCAE portal (UAE Pass access required)',
-            'Government fee applies — confirm the current amount and validity window on the official MOCCAE portal (do not treat secondary blog numerals as official fees)',
+            'Government fee and certificate validity window: confirm on the official MOCCAE portal (do not treat secondary blog numerals as official fees)',
             'Requires an in-person inspection at the airport with a MOCCAE government vet before the export is approved',
             'For EU and UK destinations, the travel certificate is issued by your vet first, then endorsed by MOCCAE',
             'The microchip number must match across the passport, vaccination records, Fit to Fly certificate and export certificate',
@@ -111,9 +111,26 @@ const petExportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'The UAE itself does not require quarantine to leave — there is no export quarantine. What you need to satisfy is the destination country, plus this MOCCAE certificate and its inspection. We coordinate the timing so the inspection lines up with your flight and the certificate is still valid on departure day.',
+          text: 'The UAE itself does not require quarantine to leave. There is no export quarantine. What you need to satisfy is the destination country, plus this MOCCAE certificate and its inspection. We coordinate the timing so the inspection lines up with your flight and the certificate is still valid on departure day.',
         },
       ],
+      paidScope: {
+        items: [
+          'Destination rule check',
+          'Vet and titre sequencing',
+          'MOCCAE export certificate application and airport inspection timing',
+          'IATA crate and airline or cargo booking',
+          'DXB or DWC handover',
+        ],
+        ctaLabel: 'Check if we can manage your pet export',
+        ctaMessage:
+          'Hello Dubai Pet Relocation. Please check if you can manage my pet export from Dubai. Pet type and breed: Weight: Destination country: Travel month: Door-to-door needed (yes or no):',
+        secondary: {
+          prefix: 'Moving a pet into the UAE instead? See',
+          label: 'MOCCAE pet permit assistance',
+          to: '/service/moccae-pet-permit/',
+        },
+      },
     },
     {
       h2: 'Pet Export Timeline',
@@ -132,7 +149,7 @@ const petExportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Some destinations — the UK, EU and Australia in particular — have strict entry protocols that can stretch the timeline well beyond the UAE-side paperwork. The single most common cause of delay is leaving a titer test until late, because the blood draw, lab turnaround and any post-test waiting period cannot be shortened. We map your destination requirements first so the whole plan is built backwards from your travel date.',
+          text: 'Some destinations, the UK, EU and Australia in particular, have strict entry protocols that can stretch the timeline well beyond the UAE-side paperwork. The single most common cause of delay is leaving a titer test until late, because the blood draw, lab turnaround and any post-test waiting period cannot be shortened. We map your destination requirements first so the whole plan is built backwards from your travel date.',
         },
       ],
     },
@@ -170,10 +187,10 @@ const petExportDubai: ServicePageData = {
           type: 'list',
           items: [
             'United Kingdom: Great Britain pet health certificate for a listed country. See the Dubai to UK route guide. Not Model A or Model B.',
-            'United States — destination rules vary by state and airline; see our Dubai to USA route guide',
-            'Australia — among the strictest entry regimes worldwide, often requiring a titer test and advance planning',
-            'European Union — EU-format travel certificate issued by your vet and endorsed by MOCCAE',
-            'India — popular repatriation route with its own documentation requirements',
+            'United States: destination rules vary by state and airline. See our Dubai to USA route guide',
+            'Australia: among the strictest entry regimes worldwide, often requiring a titer test and advance planning',
+            'European Union: EU-format travel certificate issued by your vet and endorsed by MOCCAE',
+            'India: popular repatriation route with its own documentation requirements',
           ],
         },
         {
@@ -187,7 +204,7 @@ const petExportDubai: ServicePageData = {
       body: [
         {
           type: 'p',
-          text: 'If you are leaving Dubai on short notice, export is still possible — but the timeline is dictated by your destination, not by how fast we can move. Where a destination requires only standard vaccinations and no titer test, we can often compress the documentation and inspection into days. Where a titer test is mandatory, that waiting period cannot be skipped, so the realistic priority becomes getting the test started immediately and booking the earliest compliant flight.',
+          text: 'If you are leaving Dubai on short notice, export is still possible, but the timeline is dictated by your destination, not by how fast we can move. Where a destination requires only standard vaccinations and no titer test, we can often compress the documentation and inspection into days. Where a titer test is mandatory, that waiting period cannot be skipped, so the realistic priority becomes getting the test started immediately and booking the earliest compliant flight.',
         },
         {
           type: 'list',
@@ -195,7 +212,7 @@ const petExportDubai: ServicePageData = {
             'Same-day WhatsApp response to map the fastest compliant route for your destination',
             'Expedited coordination of vet appointments, the Fit to Fly certificate and the MOCCAE inspection',
             'Priority cargo and, where needed, charter options for time-critical departures',
-            'Honest guidance — if a titer test makes a date impossible, we tell you up front rather than promising the impossible',
+            'Honest guidance: if a titer test makes a date impossible, we tell you up front rather than promising the impossible',
           ],
         },
         {
@@ -208,11 +225,11 @@ const petExportDubai: ServicePageData = {
   faq: [
     {
       q: 'How do I get an export permit for my pet in the UAE?',
-      a: 'Leaving the UAE uses export documentation (MOCCAE export pathway / veterinary export certification as required for the destination) — not the import permit used to enter. Requirements depend on the destination country. Start with destination rules, then align UAE export timing so certificates do not expire before departure. The departure journey is [pet relocation from Dubai](/service/pet-relocation-from-dubai/). WhatsApp +971504782999 for a managed-move quote.',
+      a: 'Apply online with UAE Pass for the MOCCAE export health certificate, then attend the government vet inspection at the airport before departure. Destination rules decide which vet papers that inspection and the flight must match. Send the pet, country and travel month if you want us to manage the export.',
     },
     {
       q: 'What are the requirements for obtaining a pet export permit from the MOCCAE in Dubai, UAE?',
-      a: 'Export permission is destination-led: microchip and vaccine records, UAE veterinary exam, MOCCAE export steps as applicable, and airline acceptance. Do not apply an import permit (90-day inbound) to an outbound file. Confirm current export portal steps on moccae.gov.ae. We coordinate the export file once the destination checklist is clear.',
+      a: 'You need a matching microchip, the vaccinations your destination requires, a fit to fly certificate, and the MOCCAE export health certificate issued after the airport inspection. Destination rules set the vet sequence before that inspection. Confirm the government fee on the official MOCCAE portal. We manage the timing and the booking when you want the export handled.',
     },
     {
       q: 'How much does it cost to export a pet from Dubai?',
@@ -232,7 +249,7 @@ const petExportDubai: ServicePageData = {
     },
     {
       q: 'What is the MOCCAE export health certificate?',
-      a: 'It is the document that authorises your pet to leave the UAE. You apply online through the MOCCAE portal, and it becomes final only after a government veterinarian inspects your pet in person at the airport, scanning the microchip and reviewing your documents. Confirm current validity and the government fee on the official portal — secondary write-ups discuss a short window, but we do not publish those numerals as first-party facts. How-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
+      a: 'It is the document that authorises your pet to leave the UAE. You apply online through the MOCCAE portal, and it becomes final only after a government veterinarian inspects your pet in person at the airport, scanning the microchip and reviewing your documents. Confirm current validity and the government fee on the official portal. Secondary write-ups discuss a short window, but we do not publish those numerals. How-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
     },
     {
       q: 'Does my pet need to be quarantined to leave the UAE?',

@@ -279,6 +279,13 @@ export default function MOCCAEPermitGuide() {
 
       <section className="section-padding bg-white">
         <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8 space-y-6">
+          <p className="text-base leading-relaxed text-[#5A5A5A]">
+            Leaving the UAE with your pet? The{' '}
+            <Link to="/service/pet-export-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              MOCCAE pet export permit
+            </Link>{' '}
+            is a different application: see our managed pet export service.
+          </p>
           <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
           <GuideDualPath
             diyNote="Keep reading for the UAE Pass path, 90-day validity and rejection fixes if you are filing yourself."
