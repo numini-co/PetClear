@@ -351,6 +351,36 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
               </p>
             )}
             {sec.body.map((b, j) => <Block key={j} block={b} />)}
+            {sec.paidScope ? (
+              <div className="mt-6 max-sm:pb-40">
+                <p className="mb-3 text-sm font-semibold text-[#2A2A2A]">What paid coordination includes</p>
+                <ul className="mb-6 space-y-2">
+                  {sec.paidScope.items.map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm leading-relaxed text-[#2A2A2A]">
+                      <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-[#0B6B3A]" aria-hidden="true" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href={getWhatsAppUrl(sec.paidScope.ctaMessage)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-wa-service={data.servicePreset}
+                  className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#095A31] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#095A31] sm:w-auto"
+                >
+                  <MessageCircle className="h-5 w-5" aria-hidden="true" /> {sec.paidScope.ctaLabel}
+                </a>
+                {sec.paidScope.secondary ? (
+                  <p className="mt-4 text-sm leading-relaxed text-[#5A5A5A]">
+                    {sec.paidScope.secondary.prefix}{' '}
+                    <Link to={sec.paidScope.secondary.to} className="font-semibold text-[#4F5BD5] hover:underline">
+                      {sec.paidScope.secondary.label}
+                    </Link>
+                  </p>
+                ) : null}
+              </div>
+            ) : null}
           </div>
         </section>
       ))}

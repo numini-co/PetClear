@@ -133,7 +133,7 @@ const moccaePetPermit: ServicePageData = {
  },
  {
  type: 'p',
- text: 'If the destination needs an RNATT, that clock starts long before the MOCCAE exam. See [rabies titer test for Dubai](/guides/rabies-titer-test-dubai/) for inbound titer rules, and [pet export from Dubai](/service/pet-export-dubai/) when you want the full outbound job rather than permit-only help.',
+ text: 'If the destination needs an RNATT, that clock starts long before the MOCCAE exam. See [rabies titer test for Dubai](/guides/rabies-titer-test-dubai/) for inbound titer rules, and [MOCCAE pet export permit](/service/pet-export-dubai/) when you want the full outbound job rather than permit-only help.',
  },
  ],
  },
