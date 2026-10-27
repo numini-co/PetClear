@@ -29,11 +29,16 @@ const STRONG_WA =
   'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#0B6B3A] px-6 py-3.5 text-sm font-semibold text-white shadow-lg ring-1 ring-black/10 transition hover:bg-[#085530] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto'
 
 const CRATE_PAID = [
-  'Measure the pet and match an IATA crate before travel',
+  "Measure your pet and match an IATA crate to the airline's rules",
+  'Crate sourced to size, with metal fasteners, bowls and Live Animal labels',
+  'Cargo or cabin booking held only against a crate the airline will accept',
   'MOCCAE import permit timing (valid 90 days from issuance)',
-  'Airline booking against the crate the carrier will accept',
   'Airport handover and customs clearance through to your door',
 ] as const
+
+const CRATE_WA = waEligibility({
+  need: 'pet type and breed, weight, measured length and height if known, route, travel month, and whether crate supply is needed',
+})
 import GuideToc from '../components/GuideToc.tsx'
 
 /* ─── FAQ accordion helper ─── */
@@ -52,9 +57,9 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 /* ─── Page ─── */
 export default function IATACrateGuide() {
-  const title = 'Pet Travel Crate Requirements | Measuring Your Pet'
+  const title = 'IATA Approved Dog Crate Rules | Sizing for UAE Flights'
   const description =
-    'Learn how to measure your dog or cat for a travel crate and check construction, ventilation and airline requirements before booking a flight.'
+    'IATA approved dog crate: a hard shell, metal door and fasteners, ventilation and sizing. The airline makes the final acceptance. Check if we can size it.'
   const canonical = `${BASE_URL}/guides/iata-pet-crate-requirements/`
   const ogImage = `${BASE_URL}/assets/og-crate-guide.jpg`
 
@@ -62,30 +67,30 @@ export default function IATACrateGuide() {
     {
       question: 'What is an IATA approved dog crate?',
       answer:
-        'An IATA-style travel crate meets Live Animals Regulations hardware and sizing so the dog can stand, turn, and lie down, with secure door, ventilation, and water provisions acceptance staff check. “IATA approved” in retail marketing still means built to the standard — the airline does the final acceptance. Measure the dog, not the brochure size chart.',
+        'An IATA approved dog crate is a rigid crate built to the IATA Live Animals Regulations (LAR) container standard, sized so the dog can stand, turn and lie down, with a metal door, secure fasteners and ventilation. IATA does not certify crate brands, and the airline accepts or refuses the crate on the day.',
     },
     {
       question: 'Are pet travel crates airline-approved?',
       answer:
-        'Airlines approve the shipment, not a shopping-cart badge. A crate that matches IATA LAR dimensions and hardware is eligible for acceptance; snub-nosed breeds, heat embargoes, and bolt quality still fail at the desk. Buy rigid, escape-proof crates with metal hardware — then confirm your carrier’s live notes. This page covers the requirements; we are not a marketplace.',
+        'The airline approves the shipment, not a crate brand. A crate that matches IATA size and hardware can be accepted, but snub-nosed breeds, heat embargoes and bolt quality can still fail at the desk. Confirm the carrier notes before you book. If you book a managed move, we measure the pet and match the crate to the airline before the flight is held.',
     },
     {
       question: 'Which dog crates are airline-approved?',
       answer:
-        'Airlines approve the shipment, not a shopping-cart badge. A crate that matches IATA LAR dimensions and hardware is eligible for acceptance; snub-nosed breeds, heat embargoes, and bolt quality still fail at the desk. Buy rigid, escape-proof crates with metal hardware — then confirm your carrier’s live notes. This page covers the requirements; we are not a marketplace.',
+        'Crates that pass cargo checks are a rigid shell with a metal door, metal nuts and bolts, no wheels and the correct size. Soft carriers, wire crates, folding crates and homemade boxes fail. The airline still accepts or refuses the shipment on the day. If you book a managed move, we measure the pet and match the crate to the airline before the flight is held.',
     },
     {
       question: 'Where can I buy IATA approved dog crates?',
       answer:
-        'Buy from pet-travel suppliers or specialty retailers that sell rigid IATA-style crates in the size your dog actually measures. Prioritise correct length/height and hardware over brand claims. Dubai and origin-city pet stores and aviation suppliers often stock them — verify the model against airline notes before flight day. We can advise sizing; we do not run a crate storefront.',
+        'Buy from pet-travel suppliers or specialty retailers that sell rigid IATA-style crates in the size your dog actually measures. Prioritise correct length and height, and the hardware, over brand claims. Dubai and origin-city pet stores and aviation suppliers often stock them. Verify the model against the airline notes before flight day. If you book a managed move, we measure the pet and match the crate to the airline before the flight is held.',
     },
     {
       question: 'Can I use a soft carrier for my pet\'s flight to Dubai?',
-      answer: 'No. Soft carriers, fabric bags, and collapsible carriers are not permitted for cargo hold travel to Dubai. IATA Live Animal Regulations (LAR) require hard-shell plastic or wooden crates with metal doors and ventilation on all four sides. Soft carriers are only acceptable for in-cabin travel (small cats and dogs under 8kg), and even then, not all airlines allow them.',
+      answer: 'Soft carriers, fabric bags and collapsible carriers are not permitted for cargo-hold travel to Dubai. IATA Live Animal Regulations (LAR) require hard-shell plastic or wooden crates with metal doors and ventilation on all four sides. Soft carriers are only acceptable for in-cabin travel with small cats and dogs under 8kg, and even then not every airline allows them.',
     },
     {
       question: 'How do I measure my dog for an IATA crate?',
-      answer: 'Measure your dog standing in a natural position. (A) Length: from nose tip to base of tail. (B) Height: from floor to top of head or ears (whichever is higher). (C) Width: across the widest point of the shoulders. The crate must be: Length = A + 10–15 cm, Height = B + 10 cm, Width = C x 2 (allowing the dog to turn around comfortably). Dubai Pet Relocation provides a measurement guide and video call assistance.',
+      answer: 'Measure your dog standing in a natural position. (A) Length: from nose tip to base of tail. (B) Height: from floor to top of head or ears (whichever is higher). (C) Width: across the widest point of the shoulders. The crate must be: Length = A + 10–15 cm, Height = B + 10 cm, Width = C x 2 (allowing the dog to turn around comfortably). Take those measurements from the formula above. A video-call measurement is part of a booked managed move.',
     },
     {
       question: 'What if my crate is 1 cm too small?',
@@ -97,7 +102,7 @@ export default function IATACrateGuide() {
     },
     {
       question: 'Does Emirates SkyCargo have special crate requirements?',
-      answer: 'Yes. Emirates SkyCargo requires IATA-compliant crates with a metal nut-and-bolt system securing the top and bottom halves. Plastic clips alone are not sufficient. The crate must have water and food bowls attached to the door, and a "Live Animal" sticker and arrow labels on all sides. Brachycephalic breeds require one size larger than standard.',
+      answer: 'Emirates SkyCargo requires IATA-compliant crates with a metal nut-and-bolt system securing the top and bottom halves. Plastic clips alone are not sufficient. The crate must have water and food bowls attached to the door, and a "Live Animal" sticker and arrow labels on all sides. Brachycephalic breeds require one size larger than standard.',
     },
     {
       question: 'How long before travel should I start crate familiarization?',
@@ -105,7 +110,7 @@ export default function IATACrateGuide() {
     },
     {
       question: 'Is it better to buy or rent a travel crate?',
-      answer: 'Buying is recommended if you plan multiple trips or have a young pet that may grow. Renting can be cost-effective for one-time relocations and avoids storage issues. Dubai Pet Relocation offers both options: we sell airline-approved crates and rent IATA-compliant crates with free return shipping after arrival.',
+      answer: 'Buying suits multiple trips or a young pet that may grow. Hiring can suit a one-time relocation and avoids storage. Crate supply or hire can be arranged inside a managed move, and the cost is quoted after eligibility.',
     },
     {
       question: 'Can I put my pet\'s favorite toy in the crate?',
@@ -144,7 +149,7 @@ export default function IATACrateGuide() {
     author: { '@type': 'Organization', name: 'Dubai Pet Relocation', url: BASE_URL },
     publisher: { '@type': 'Organization', name: 'Dubai Pet Relocation', logo: { '@type': 'ImageObject', url: `${BASE_URL}/assets/logo.png` } },
     datePublished: '2025-01-15',
-    dateModified: '2026-01-10',
+    dateModified: '2026-10-27',
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
   }
 
@@ -162,16 +167,18 @@ export default function IATACrateGuide() {
     <>
       <SEOHead meta={meta} schemas={schemas} />
       <Breadcrumb items={[{ label: 'Guides', path: '/guides/' }, { label: 'IATA Pet Crate Requirements' }]} />
-<div className="mx-auto max-w-[900px] px-5 pt-8"><GuideToc items={[{ href: '#what-lar-is', label: 'What IATA LAR is' }, { href: '#measure-your-pet', label: 'Measure your pet' }]} /></div>
+<div className="mx-auto max-w-[900px] px-5 pt-8"><GuideToc items={[{ href: '#what-lar-is', label: 'What makes a crate IATA approved' }, { href: '#measure-your-pet', label: 'Measure your pet' }]} /></div>
 
       {/* Hero */}
       <Hero
         image="/images/guide-iata-crate.jpg"
         imageAlt="A dog resting in a hard-sided travel crate. IATA publishes the sizing rules. It does not approve a crate brand."
         eyebrow="Pet Relocation Guide"
-        title="Choosing and measuring a pet travel crate"
+        title="IATA pet crate requirements: choosing and measuring a travel crate"
         subtitle="The wrong crate can get your pet refused at the airport. IATA LAR sizing, construction rules, and airline-specific policies for safe travel to Dubai."
-        updated="Updated June 2026"
+        updated="Updated October 2026"
+        primaryClassName={STRONG_WA}
+        whatsappMessage={CRATE_WA}
       />
 
       {/* What is IATA LAR */}
@@ -180,13 +187,13 @@ export default function IATACrateGuide() {
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
               <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-                What Is IATA LAR and Why Does It Matter?
+                What makes a crate IATA approved?
               </h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
                 Airlines apply the <strong>IATA Live Animal Regulations (LAR)</strong> to crate design, sizing, ventilation, labeling, and documentation. IATA publishes that standard. It does not approve a crate brand. The airline accepts or refuses the crate on the day.
               </p>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                Airlines flying to Dubai — including Emirates, Etihad, and flydubai — require all pets in cargo to travel in IATA LAR-compliant crates. Failure to meet these standards means your pet will be refused at check-in, potentially causing missed flights, extra fees, and severe stress for your animal. Dog files that need crate sizing inside a managed move sit on the{' '}
+                Airlines flying to Dubai, including Emirates, Etihad and flydubai, require all pets in cargo to travel in IATA LAR-compliant crates. Failure to meet these standards means your pet will be refused at check-in, potentially causing missed flights, extra fees, and severe stress for your animal. A managed dog move that includes crate sizing is on the{' '}
                 <Link to="/service/dog-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
                   dog relocation service
                 </Link>
@@ -201,7 +208,6 @@ export default function IATACrateGuide() {
                   <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Airlines will refuse non-compliant crates at check-in</span></li>
                   <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Ground handlers will not accept pets in unsafe containers</span></li>
                   <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>Non-compliant crates risk injury, escape, or death during transit</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#4F5BD5] shrink-0 mt-0.5" /><span>UAE customs and Dubai Municipality may reject pets in improper crates</span></li>
                 </ul>
               </div>
             </div>
@@ -265,10 +271,11 @@ export default function IATACrateGuide() {
 
       <GuideFunnelCta
         variant="mid"
-        title="Crate rules clear — check a managed move?"
+        title="Crate rules clear? Check if we can manage the move"
         subtitle="This guide stays educational. Eligibility and crate-led booking sit on the service pages and WhatsApp. We do not assume crate or airline fee amounts."
-        eligibilityMessage={waEligibility({ need: 'crate sizing / managed move' })}
+        eligibilityMessage={CRATE_WA}
         waLabel={CTA_CHECK_MOVE}
+        waClassName={STRONG_WA}
       />
 
       {/* Sizing Formula */}
@@ -276,7 +283,7 @@ export default function IATACrateGuide() {
         <div id="sizing-formula" className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-              Crate Sizing Formula — Getting It Exactly Right
+              Crate sizing formula: getting it exactly right
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed">
               The most common reason pets are refused at check-in is incorrect crate size. Use this formula to ensure your pet has enough space to stand, turn, and lie down comfortably.
@@ -322,7 +329,7 @@ export default function IATACrateGuide() {
               <div>
                 <p className="font-semibold text-[#2A2A2A] mb-1">No Margin for Error</p>
                 <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  Airlines and ground handlers will measure your crate at check-in. If it is too small — even by 1 cm — your pet will be refused. Always add a 2–3 cm safety margin to all measurements. For brachycephalic breeds, IATA requires a container 10% larger than the standard calculation — see{' '}
+                  Airlines and ground handlers will measure your crate at check-in. If it is too small, even by 1 cm, your pet will be refused. Always add a 2–3 cm safety margin to all measurements. For brachycephalic breeds, IATA requires a container 10% larger than the standard calculation. See{' '}
                   <Link to="/guides/snub-nosed-dogs-flying-uae/" className="font-semibold text-[#4F5BD5] hover:underline">
                     snub-nosed dog flying rules for the UAE
                   </Link>
@@ -404,7 +411,7 @@ export default function IATACrateGuide() {
                   <td>IATA hard plastic</td>
                   <td>Secure locking; metal preferred</td>
                   <td>One size larger crate</td>
-                  <td>Health cert within 10 days; no sedatives</td>
+                  <td>Confirm health certificate timing and sedation rules with Etihad Cargo</td>
                 </tr>
                 <tr>
                   <td className="font-medium">flydubai</td>
@@ -559,7 +566,7 @@ export default function IATACrateGuide() {
                 </table>
               </div>
               <p className="text-sm text-[#5A5A5A] mt-4 leading-relaxed">
-                Dubai Pet Relocation offers both options. We sell airline-approved crates with a 100% compliance guarantee, and we rent IATA-compliant crates with free return shipping from Dubai after arrival.
+                Inside a managed move we can source a crate to the measured size, or arrange one at the origin, and the cost is part of the quote after the eligibility check.
               </p>
             </div>
           </div>
@@ -571,10 +578,10 @@ export default function IATACrateGuide() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mb-4">
-              How Dubai Pet Relocation Sizes Crates — Our 3-Step Process
+              How Dubai Pet Relocation sizes crates: our 3-step process
             </h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed">
-              We don't guess. Every crate is sized using a rigorous process to ensure your pet passes check-in without issues.
+              On a booked managed move, the crate is sized from the pet in front of us, not from a breed average, so check-in is less likely to fail on dimensions.
             </p>
           </div>
 
@@ -584,21 +591,21 @@ export default function IATACrateGuide() {
                 <PawPrint className="w-6 h-6 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Step 1: Photo & Video Review</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">You send us photos and a short video of your pet standing naturally. We assess body proportions, head shape, and posture to estimate the correct crate size range.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">On a booked move, you send photos and a short video of your pet standing naturally. We assess body proportions, head shape and posture to estimate the crate size range.</p>
             </div>
             <div className="bg-[#F5F6FD] rounded-[20px] p-6 text-center">
               <div className="w-12 h-12 rounded-full bg-[#4F5BD5]/10 flex items-center justify-center mx-auto mb-4">
                 <Ruler className="w-6 h-6 text-[#4F5BD5]" />
               </div>
               <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Step 2: Guided Measurement</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">We schedule a video call to guide you through the exact measurement process. We record length, height, width, and weight, adding a 2–3 cm safety margin to all dimensions.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">For booked clients, we guide the measurement on a video call. We record length, height, width and weight, and add a 2–3 cm safety margin to every dimension.</p>
             </div>
             <div className="bg-[#F5F6FD] rounded-[20px] p-6 text-center">
               <div className="w-12 h-12 rounded-full bg-[#C89F5A]/10 flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-6 h-6 text-[#C89F5A]" />
               </div>
-              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Step 3: Vet Verification</h3>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Our partner veterinarian verifies the measurements and confirms the crate size is appropriate for your pet's breed, weight, and health status. We then source the crate and ship it to you.</p>
+              <h3 className="text-lg font-bold text-[#2A2A2A] mb-2">Step 3: Airline rule check</h3>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">The measurements and breed are checked against the airline's crate rules before the crate is ordered and the booking is held.</p>
             </div>
           </div>
         </div>
@@ -625,15 +632,21 @@ export default function IATACrateGuide() {
 
       <RelatedLinks
         heading="Related guides and services"
-        intro="Crate rules stay educational. Eligibility and a managed dog or door-to-door file live on the service pages."
+        intro="The crate rules are here to use yourself. A managed dog move or a door-to-door move is booked on the service pages."
         path="/guides/iata-pet-crate-requirements/"
       />
+
+      <p className="bg-white px-5 pb-10 text-center text-sm text-[#5A5A5A]">
+        <Link to="/service/dog-relocation-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+          See what a managed dog move includes
+        </Link>
+      </p>
 
       <GuideFunnelCta
         variant="end"
         title="Want us to size and supply the crate as part of your move?"
         subtitle="Eligibility and crate-led booking sit on the service pages and WhatsApp. We explain the next step before any paid work starts. We do not assume crate or airline fee amounts."
-        eligibilityMessage={waEligibility({ need: 'crate sizing / managed move' })}
+        eligibilityMessage={CRATE_WA}
         waLabel={CTA_MANAGED_QUOTE}
         waClassName={STRONG_WA}
         paidItems={CRATE_PAID}
