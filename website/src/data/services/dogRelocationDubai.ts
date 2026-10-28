@@ -3,38 +3,45 @@ import { GUIDE_SOFT_GATE, waEligibility } from '../../lib/conversionCopy.ts'
 
 const dogRelocationDubai: ServicePageData = {
   slug: 'dog-relocation-dubai',
-  seoTitle: 'Dog Relocation Dubai | Breed Checks, Crates & Flights',
+  seoTitle: 'Dog Relocation Dubai | Breed Check, IATA Crate & Flights',
   metaDescription:
-    'Check dog relocation eligibility and get a managed dog-move quote. Includes a breed check and the MOCCAE import permit for inbound dogs.',
+    'Managed dog relocation to and from Dubai and the UAE: breed check, IATA crate sizing, cargo booking, MOCCAE import permit. Check if we can move your dog.',
   h1: 'Dog relocation to and from Dubai',
   primaryKeyword: 'dog relocation dubai',
   heroValueProp:
-    'Moving a dog to or from Dubai starts with a breed eligibility check, then a managed dog-move quote.',
+    'Moving a dog to or from Dubai? We check the breed, size the IATA crate and book the flight against the permit, then hand your dog over at DXB or DWC. Quote after an eligibility check.',
   heroImage: '/images/service-dog-relocation-dubai.jpg',
   heroImageAlt: 'Calm dog sitting beside an IATA travel crate at a Dubai airport',
-  whatsappMessage: waEligibility({ pet: 'dog', need: 'managed move' }),
-  ctaLabel: 'Get a managed dog-move quote',
+  whatsappMessage: waEligibility({
+    pet: 'dog',
+    need: 'breed as written by the vet, weight, origin, destination, travel month, and whether crate supply and door-to-door are needed',
+  }),
+  servicePreset: 'Import and export service',
+  ctaLabel: 'Check if we can move your dog',
   heroEyebrow: 'Dog Relocation',
+  snippetQuestion: 'What does dog relocation in Dubai include?',
+  snippetAnswer:
+    'A managed dog relocation covers the breed check against the UAE import list, IATA crate sizing, vaccine and health-certificate timing, the MOCCAE import permit for an inbound dog (valid 90 days from issuance) or export sequencing for an outbound dog, the airline booking, and the DXB or DWC handover. The quote follows an eligibility check.',
   ctaSupport:
-    'Check eligibility first. Send the breed, the route and the month. We reply with a managed dog-move quote. This is not a free breed tutorial.',
+    'Send the breed, weight, route and travel month. We check eligibility and reply with a managed dog-move quote.',
   ctaHeading: 'Ready for a managed dog-move quote?',
   ctaBody:
-    'Send the breed, weight, origin, destination and month. We check eligibility and reply with a managed dog-move quote. Government fees: confirm on the MOCCAE portal. We do not publish a package total in AED.',
+    'Send the breed, weight, origin, destination and month. We check eligibility and reply with a managed dog-move quote. Government fees: confirm on the official MOCCAE portal. We do not publish a package total in AED.',
   gateLine: GUIDE_SOFT_GATE,
   paidIncludes: [
-    'Breed eligibility check',
-    'IATA crate sizing',
-    'Airline booking, cabin or cargo',
-    'MOCCAE import permit timing for inbound dogs',
-    'DXB or DWC airport handoff',
+    'Breed check against the UAE import list before anything is booked',
+    "Dog measured and IATA crate matched to the airline's rules",
+    'Vaccine, health certificate and MOCCAE import permit timing (permit valid 90 days from issuance)',
+    'Cargo or cabin booking held against the permit and crate',
+    'DXB or DWC handover, customs release and door-to-door delivery when booked',
   ],
-  trustBadges: ['Breed eligibility checked', 'IATA crate guidance', 'Vetted partners', 'WhatsApp during business hours'],
+  trustBadges: ['Breed eligibility checked', 'IATA crate sizing', 'Vetted partners', 'WhatsApp during business hours'],
   hasHowTo: false,
   sections: [
     {
-      h2: 'Dog Relocation Across Dubai and Worldwide',
+      h2: 'Dog relocation to and from Dubai: what we manage',
       intro:
-        'Dog relocation in Dubai is the paid file for a dog moving into the UAE, out of the UAE, or between emirates. Guides are free to read. WhatsApp is for people ready to book a managed dog move.',
+        'Dog relocation in Dubai is a managed move for a dog travelling into the UAE, out of the UAE, or between emirates. Guides are free to read. WhatsApp is for people ready to book.',
       body: [
         {
           type: 'p',
@@ -42,7 +49,7 @@ const dogRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'We coordinate the file. We do not fly the dog ourselves. Vetted veterinary and transport partners do the physical work. The wider offer is [pet relocation services in Dubai](/service/pet-relocation-dubai/). Inbound dogs use [pet import Dubai](/service/pet-import-dubai/). Owner preparation, including crate practice at home, is on [bringing a dog to Dubai](/dog-relocation-to-dubai/).',
+          text: 'We coordinate the paperwork. We do not fly the dog ourselves. Vetted veterinary and transport partners do the physical work. The wider offer is [pet relocation services in Dubai](/service/pet-relocation-dubai/). Inbound dogs use [pet import Dubai](/service/pet-import-dubai/). Outbound dogs use [pet export from Dubai](/service/pet-export-dubai/). Owner preparation, including crate practice at home, is on [bringing a dog to Dubai](/dog-relocation-to-dubai/).',
         },
         {
           type: 'list',
@@ -58,34 +65,34 @@ const dogRelocationDubai: ServicePageData = {
       ],
     },
     {
-      h2: 'Dog Breed Eligibility',
+      h2: "Can your dog's breed enter the UAE?",
       intro:
-        'The first paid check is whether this dog can travel. A name on the import list blocks the move. We do not offer a free photo review.',
+        'The first paid check is whether this dog can travel. A name on the import list blocks the move.',
       body: [
         {
           type: 'p',
-          text: 'The names are on [banned dog breeds Dubai](/guides/banned-dog-breeds-dubai/). That guide lists the breeds on the MOCCAE pet import page, including Pit Bull-type breeds, the Japanese Tosa, the Dogo Argentino and the Brazilian Mastiff (Fila Brasileiro). If the name on the veterinary record matches that list, we will not file an import permit. The published outcome for a non-compliant import is rejection at the owner\'s expense or confiscation. The page checked on 22 September 2026 does not publish a fine amount.',
+          text: 'The names are on [banned dog breeds Dubai](/guides/banned-dog-breeds-dubai/). That guide lists the breeds on the MOCCAE pet import list, including Pit Bull-type breeds, the Japanese Tosa, the Dogo Argentino and the Brazilian Mastiff (Fila Brasileiro). If the name on the veterinary record matches that list, we will not apply for an import permit. The published outcome for a non-compliant import is rejection at the owner\'s expense or confiscation. The list checked on 22 September 2026 does not publish a fine amount.',
         },
         {
           type: 'p',
-          text: 'Rottweiler, Doberman and Boxer were not on that import list. This page does not call them banned, and it does not publish muzzle, leash or insurance rules. A building can still set its own pet policy. Ask the building before cargo is booked.',
+          text: 'Rottweiler, Doberman and Boxer were not on that import list. We do not call them banned, and we do not publish muzzle, leash or insurance rules. A building can still set its own pet policy. Ask the building before cargo is booked.',
         },
         {
           type: 'p',
-          text: 'Snub-nosed breeds are an airline question, not a line on the import ban list. Read [snub-nosed dogs flying to the UAE](/guides/snub-nosed-dogs-flying-uae/) and still confirm the carrier. WhatsApp the breed only when you are ready to book a managed dog relocation.',
+          text: 'Snub-nosed breeds are an airline question, not a line on the import ban list. Read [snub-nosed dogs flying to the UAE](/guides/snub-nosed-dogs-flying-uae/) and still confirm the carrier. The breed check is the first step of a booked move.',
         },
         {
           type: 'list',
           items: [
-            'On the published ban list: the breed check blocks the move. No permit is filed.',
-            'Not on that list: the rest of the file still has to match, including the [MOCCAE import permit](/guides/moccae-import-permit/) for an inbound dog.',
+            'On the published ban list: the breed check blocks the move. No permit application is made.',
+            'Not on that list: the rest of the documents still have to match, including the [MOCCAE import permit](/guides/moccae-import-permit/) for an inbound dog.',
             'Snub-nosed: not a government ban. The airline can still refuse that head shape on that date.',
           ],
         },
       ],
     },
     {
-      h2: 'IATA Crate Sizing for Dogs',
+      h2: 'IATA crate sizing for dogs',
       intro:
         'Air travel uses a rigid crate built to the IATA Live Animals Regulations. The dog must be able to stand, turn and lie down. We do not publish crate prices in AED.',
       body: [
@@ -106,7 +113,7 @@ const dogRelocationDubai: ServicePageData = {
       ],
     },
     {
-      h2: 'Snub-Nosed Breeds & Summer Travel Rules',
+      h2: 'Snub-nosed breeds and summer flights',
       intro:
         'A short nose and Gulf heat are airline limits, not a second government ban. We confirm the carrier\'s rule for that breed and that date before anyone books.',
       body: [
@@ -116,7 +123,7 @@ const dogRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Heat on the apron is a real planning problem. This page does not publish a month-by-month embargo, because that calendar was not a rule we can repeat as fact. Emirates itineraries ending in Dubai travel as cargo, and ordinary pets are not in the Emirates cabin. British Airways carries pets in the hold. An Etihad cabin product is a separate Abu Dhabi booking. Modes: [pet flight options](/guides/pet-flight-options-dubai/).',
+          text: 'Heat on the apron is a real planning problem. Airlines set their own summer embargoes by route and breed, so we confirm the carrier\'s rule for that date before booking. Emirates itineraries ending in Dubai travel as cargo, and ordinary pets are not in the Emirates cabin. British Airways carries pets in the hold. An Etihad cabin product is a separate Abu Dhabi booking. Modes: [pet flight options](/guides/pet-flight-options-dubai/).',
         },
         {
           type: 'list',
@@ -130,7 +137,7 @@ const dogRelocationDubai: ServicePageData = {
       ],
     },
     {
-      h2: 'Dog Vaccination & Document Timeline',
+      h2: 'Dog vaccination and document timeline',
       intro:
         'Timing follows the vaccine already in the dog and whether the origin is high-risk. We do not publish a two-to-six-week promise.',
       body: [
@@ -160,28 +167,28 @@ const dogRelocationDubai: ServicePageData = {
       ],
     },
     {
-      h2: 'Dog Relocation Cost',
+      h2: 'How much does dog relocation in Dubai cost?',
       intro:
-        'Dog relocation cost is quoted for this dog and this route. This page does not publish a package total in AED.',
+        'The quote is for this dog and this route. We do not publish a package total in AED.',
       body: [
         {
           type: 'p',
-          text: 'The quote depends on origin veterinary work, crate size, the cargo rate, and whether you want door-to-door delivery. Government permit and release fees: confirm on the MOCCAE portal. We do not treat secondary blog numerals as official fees, and we do not publish a DPR price band.',
+          text: 'The quote depends on origin veterinary work, crate size, the cargo rate, and whether you want door-to-door delivery. Government fees: confirm on the official MOCCAE portal. Quotes follow the eligibility check.',
         },
         {
           type: 'table',
-          headers: ['Cost component', 'How this page treats it'],
+          headers: ['Cost component', 'How it is quoted'],
           rows: [
-            ['MOCCAE permit and release', 'Government fees. Confirm on the MOCCAE portal.'],
-            ['Origin veterinary work', 'Quoted by the clinic. Not a DPR package price.'],
-            ['IATA crate', 'Quoted for that size. No AED band on this page.'],
-            ['Flight or cargo', 'Airline quote for that crate and date.'],
-            ['Coordination and door-to-door handling', 'Quoted after eligibility. No package total on this page.'],
+            ['MOCCAE permit and release', 'Government fees. Confirm on the official MOCCAE portal.'],
+            ['Origin veterinary work', 'Quoted by the origin clinic, not part of our coordination fee'],
+            ['IATA crate', "Quoted for the dog's measured size"],
+            ['Flight or cargo', 'Airline quote for that crate and date'],
+            ['Coordination and door-to-door handling', 'Quoted after the eligibility check'],
           ],
         },
         {
           type: 'p',
-          text: 'Send the breed, weight, origin, destination and month for a managed dog-move quote. What a quote is made of, without a made-up total: [pet relocation cost](/guides/pet-relocation-cost-dubai/). Coordination after eligibility: [Prices](/prices/).',
+          text: 'Send the breed, weight, origin, destination and month for a managed dog-move quote. What a quote is made of, without a made-up total: [pet relocation cost](/guides/pet-relocation-cost-dubai/). Coordination after eligibility: [Prices](/prices/). Not sure which service you need? [Compare pet relocation services](/service/pet-relocation-dubai/).',
         },
       ],
     },
@@ -189,19 +196,19 @@ const dogRelocationDubai: ServicePageData = {
   faq: [
     {
       q: 'What should I send for a dog relocation quote?',
-      a: 'Send your name, the breed as written by your vet, approximate weight, origin, destination and the month you want to travel, on WhatsApp +971504782999. We check eligibility and reply with a managed dog-move quote. This is not a free breed tutorial. Government fees: confirm on the MOCCAE portal. Names on the import list: [banned dog breeds Dubai](/guides/banned-dog-breeds-dubai/).',
+      a: 'Send your name, the breed as written by your vet, approximate weight, origin, destination and the month you want to travel, on WhatsApp +971504782999. We check eligibility and reply with a managed dog-move quote. Government fees: confirm on the official MOCCAE portal. Names on the import list: [banned dog breeds Dubai](/guides/banned-dog-breeds-dubai/).',
     },
     {
       q: 'When does a breed check block the move?',
-      a: 'The move stops when the veterinary breed name matches the list on [banned dog breeds Dubai](/guides/banned-dog-breeds-dubai/). We will not file a [MOCCAE import permit](/guides/moccae-import-permit/) for that dog. A non-compliant import may be rejected at the owner\'s expense or confiscated. The import page checked on 22 September 2026 does not publish a fine amount. Send photos only when you are ready to book a managed dog relocation.',
+      a: 'The breed check blocks the move when the veterinary breed name matches the list on [banned dog breeds Dubai](/guides/banned-dog-breeds-dubai/). We will not apply for a [MOCCAE import permit](/guides/moccae-import-permit/) for that dog. A non-compliant import may be rejected at the owner\'s expense or confiscated. The list checked on 22 September 2026 does not publish a fine amount. The breed check is the first step of a booked move.',
     },
     {
       q: 'Is my dog\'s breed allowed in Dubai?',
-      a: 'Compare the veterinary name with [banned dog breeds Dubai](/guides/banned-dog-breeds-dubai/). Pit Bull-type breeds, the Japanese Tosa, the Dogo Argentino and the Brazilian Mastiff (Fila Brasileiro) are on that import list and cannot be imported. Rottweiler, Doberman and Boxer were not on the list checked on 22 September 2026. An allowed breed still needs the rest of the file, including a [MOCCAE import permit](/guides/moccae-import-permit/) valid 90 days from issuance.',
+      a: 'Your dog can enter Dubai when the veterinary breed name is not on [banned dog breeds Dubai](/guides/banned-dog-breeds-dubai/). Pit Bull-type breeds, the Japanese Tosa, the Dogo Argentino and the Brazilian Mastiff (Fila Brasileiro) are on that import list and cannot be imported. Rottweiler, Doberman and Boxer were not on the list checked on 22 September 2026. An allowed breed still needs the documents, including a [MOCCAE import permit](/guides/moccae-import-permit/) valid 90 days from issuance.',
     },
     {
       q: 'What size crate does my dog need to fly?',
-      a: 'An IATA crate large enough for the dog to stand, turn and lie down, with metal bolts and ventilation on at least three sides. Measure nose to tail base, height to the top of the head or ear tip, and shoulder width. Between two sizes, choose the larger one. Snub-nosed dogs often need one size up, and the airline still has to accept the booking. We do not publish crate prices in AED. Specification: [IATA pet crate requirements](/guides/iata-pet-crate-requirements/).',
+      a: 'An IATA crate large enough for the dog to stand, turn and lie down, with metal bolts and ventilation on at least three sides. Measure nose to tail base, height to the head or ear tip, and shoulder width. Between two sizes, choose the larger one. Snub-nosed dogs often need one size up, and the airline still has to accept the booking. We do not publish crate prices in AED. Specification: [IATA pet crate requirements](/guides/iata-pet-crate-requirements/).',
     },
     {
       q: 'Can snub-nosed dogs such as French Bulldogs and Pugs fly to or from Dubai?',
@@ -209,7 +216,7 @@ const dogRelocationDubai: ServicePageData = {
     },
     {
       q: 'Can dogs fly during the Dubai summer?',
-      a: 'It depends on the airline, the breed and the date. This page does not publish a month-by-month embargo. Heat on the apron is a real planning problem, and snub-nosed dogs need extra care. We confirm the carrier\'s rule before booking. We do not promise a hold temperature.',
+      a: 'Airlines set their own summer embargoes by route and breed, so we confirm the carrier\'s rule for that date before booking. Heat on the apron is a real planning problem, and snub-nosed dogs need extra care. We do not promise a hold temperature.',
     },
     {
       q: 'How long does dog relocation to Dubai take?',
@@ -217,15 +224,20 @@ const dogRelocationDubai: ServicePageData = {
     },
     {
       q: 'How much does dog relocation in Dubai cost?',
-      a: 'This page does not publish a package total in AED. Send the breed, weight, origin, destination and month on WhatsApp +971504782999. We check eligibility and reply with a managed dog-move quote. Government fees: confirm on the MOCCAE portal. Drivers, without a made-up total: [pet relocation cost](/guides/pet-relocation-cost-dubai/).',
+      a: 'We do not publish a package total in AED. Send the breed, weight, origin, destination and month on WhatsApp +971504782999. Quotes follow the eligibility check. Government fees: confirm on the official MOCCAE portal. Cost drivers, without a made-up total: [pet relocation cost](/guides/pet-relocation-cost-dubai/).',
+    },
+    {
+      q: 'Can you relocate my dog out of Dubai?',
+      a: 'We can relocate your dog out of Dubai as a managed export. Sequencing follows the destination country\'s rules, then the MOCCAE export health certificate after the airport inspection, then the airline booking. See [pet export from Dubai](/service/pet-export-dubai/). The quote follows an eligibility check.',
     },
   ],
   relatedLinks: [
-    { label: 'pet relocation Dubai', to: '/' },
+    { label: 'Pet relocation Dubai', to: '/' },
     { label: 'Pet relocation services', to: '/service/pet-relocation-dubai/' },
-    { label: 'pet import Dubai', to: '/service/pet-import-dubai/' },
+    { label: 'Pet export from Dubai', to: '/service/pet-export-dubai/' },
+    { label: 'Pet import Dubai', to: '/service/pet-import-dubai/' },
     { label: 'MOCCAE import permit', to: '/guides/moccae-import-permit/' },
-    { label: 'banned dog breeds Dubai', to: '/guides/banned-dog-breeds-dubai/' },
+    { label: 'Banned dog breeds Dubai', to: '/guides/banned-dog-breeds-dubai/' },
     { label: 'IATA pet crate requirements', to: '/guides/iata-pet-crate-requirements/' },
     { label: 'Snub-nosed dogs flying to the UAE', to: '/guides/snub-nosed-dogs-flying-uae/' },
     { label: 'Cat relocation to and from Dubai', to: '/service/cat-relocation-dubai/' },
