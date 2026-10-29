@@ -5,36 +5,42 @@ const catRelocationDubai: ServicePageData = {
   slug: 'cat-relocation-dubai',
   seoTitle: 'Cat Relocation Dubai | Cabin & Cargo Moves for Cats',
   metaDescription:
-    'Check cat relocation eligibility and get a managed cat-move quote. Cabin or cargo rules, plus the MOCCAE import permit for inbound cats.',
+    'Managed cat relocation to and from Dubai and the UAE: cabin or cargo checked, carrier sized, MOCCAE import permit timed. Check if we can move your cat.',
   h1: 'Cat relocation to and from Dubai',
   primaryKeyword: 'cat relocation dubai',
   heroValueProp:
-    'Moving a cat to or from Dubai starts with an eligibility check, then a managed cat-move quote.',
+    'Moving a cat to or from Dubai: cabin or cargo confirmed, carrier sized, MOCCAE import permit timed, handover at DXB or DWC after an eligibility check.',
   heroImage: '/images/service-cat-relocation-dubai.jpg',
   heroImageAlt: 'Relaxed cat resting inside a soft-lined travel carrier in a bright room',
-  whatsappMessage: waEligibility({ pet: 'cat', need: 'managed move' }),
-  ctaLabel: 'Get a managed cat-move quote',
+  whatsappMessage: waEligibility({
+    pet: 'cat (number, breed, weight)',
+    need: 'managed cat move: cabin or cargo check, carrier and door-to-door if needed',
+  }),
+  ctaLabel: 'Check if we can move your cat',
   heroEyebrow: 'Cat Relocation',
+  snippetQuestion: 'What does cat relocation in Dubai include?',
+  snippetAnswer:
+    'A managed cat relocation checks cabin or cargo for the route, sizes the carrier or IATA crate, times the microchip, vaccines and health certificate, secures the MOCCAE import permit for an inbound cat (valid 90 days from issuance) or sequences export for an outbound cat, books the flight and hands over at DXB or DWC. Quoted after an eligibility check.',
   ctaSupport:
-    'Check eligibility first. Send the cat, the route and the month. We reply with a managed cat-move quote. This is not a free carrier tutorial.',
-  ctaHeading: 'Ready for a managed cat-move quote?',
+    'Send the number of cats, breed (domestic, Bengal or Serval), weight, route and travel month. We check eligibility and reply with a managed cat-move quote.',
+  ctaHeading: 'Ready to book a managed cat move?',
   ctaBody:
-    'Send the cat\'s origin, destination and month. We check eligibility and reply with a managed cat-move quote. Government fees: confirm on the MOCCAE portal. We do not publish a package total in AED.',
+    'Send the number of cats, origin, destination and month. Quotes follow the eligibility check. Government fees: confirm on the official MOCCAE portal.',
   gateLine: GUIDE_SOFT_GATE,
   paidIncludes: [
-    'Carrier acclimatisation',
-    'Cabin versus cargo rules',
-    'MOCCAE import permit for inbound cats',
-    'Airline booking',
-    'DXB or DWC airport handoff',
+    'Cabin or cargo confirmed with the airline for your route and date',
+    'Carrier or IATA crate sized to your cat, with a home practice plan',
+    'Microchip, vaccine, health certificate and MOCCAE import permit timing (permit valid 90 days from issuance)',
+    'Flight booked against the permit and the carrier',
+    'DXB or DWC handover, customs release and door-to-door delivery when booked',
   ],
-  trustBadges: ['Carrier acclimatisation', 'No sedation advised', 'Vetted partners', 'WhatsApp during business hours'],
+  trustBadges: ['Carrier sizing and practice plan', 'Cats travel awake by default', 'Vetted partners', 'WhatsApp during business hours'],
   hasHowTo: false,
   sections: [
     {
-      h2: 'Cat Relocation Across Dubai and Worldwide',
+      h2: 'Cat relocation to and from Dubai: what we manage',
       intro:
-        'Cat relocation in Dubai is the paid file for a cat moving into the UAE, out of the UAE, or between emirates. Guides are free to read. WhatsApp is for people ready to book a managed cat move.',
+        'Cat relocation in Dubai is a managed move for a cat travelling into the UAE, out of the UAE, or between emirates. Guides are free to read. WhatsApp is for people ready to book.',
       body: [
         {
           type: 'p',
@@ -42,7 +48,7 @@ const catRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'We coordinate the file. We do not fly the cat ourselves. Vetted veterinary and transport partners do the physical work. Inbound cats use [pet import Dubai](/service/pet-import-dubai/). The document checklist is [UAE pet import requirements](/guides/uae-pet-import-requirements/). Owner preparation is on [bringing a cat to Dubai](/cat-relocation-to-dubai/). Dog breed bans are not cat rules: [dog relocation to and from Dubai](/service/dog-relocation-dubai/).',
+          text: 'We coordinate the move. We do not fly the cat ourselves. Vetted veterinary and transport partners do the physical work. Inbound cats use [pet import Dubai](/service/pet-import-dubai/). Outbound cats use [pet export from Dubai](/service/pet-export-dubai/). The document checklist is [UAE pet import requirements](/guides/uae-pet-import-requirements/). Owner preparation is on [bringing a cat to Dubai](/cat-relocation-to-dubai/). Dog breed bans are not cat rules: [dog relocation to and from Dubai](/service/dog-relocation-dubai/).',
         },
         {
           type: 'list',
@@ -58,13 +64,13 @@ const catRelocationDubai: ServicePageData = {
       ],
     },
     {
-      h2: 'Why Cats Travel Differently',
+      h2: 'Why cats travel differently',
       intro:
-        'Cats take comfort from familiar smells and routine. The paid plan reduces novelty. It does not promise that cargo is calm.',
+        'Cats take comfort from familiar smells and routine. Preparation reduces novelty. It does not promise that cargo is calm.',
       body: [
         {
           type: 'p',
-          text: 'A cat often hides stress. A carrier it has never used, a new car, and unfamiliar handling are the usual problems. Preparation is carrier practice at home, a familiar cloth if the airline allows soft items, and a quiet handover. We do not copy a dog crate plan onto a cat, and we do not name a medicine or a dose.',
+          text: 'A cat often hides stress. A carrier it has never used, a new car, and unfamiliar handling are the usual problems. Preparation is carrier practice at home, a familiar cloth if the airline allows soft items, and a quiet handover. We do not copy a dog crate plan onto a cat, and we do not recommend a medicine or a dose.',
         },
         {
           type: 'p',
@@ -82,7 +88,7 @@ const catRelocationDubai: ServicePageData = {
       ],
     },
     {
-      h2: 'Carrier Acclimation Tips',
+      h2: 'Getting your cat used to the carrier',
       intro:
         'The carrier is the part you can prepare. Start days or weeks before travel, not on the morning of the flight.',
       body: [
@@ -96,7 +102,7 @@ const catRelocationDubai: ServicePageData = {
             'Bring the carrier out early and leave the door open',
             'Feed treats near it, then inside it',
             'Do not force the cat in, and do not save the carrier for vet visits only',
-            'Ask your own vet before any product is used. This page does not name a spray or a dose.',
+            'Ask your own vet before any product is used. We do not recommend a spray or a dose.',
             'For cargo, the carrier must meet IATA rules: rigid, ventilated, metal bolts, water access. See [IATA pet crate requirements](/guides/iata-pet-crate-requirements/).',
           ],
         },
@@ -107,9 +113,9 @@ const catRelocationDubai: ServicePageData = {
       ],
     },
     {
-      h2: 'Sedation: Why Most Vets and Airlines Advise Against It',
+      h2: 'Should you sedate a cat for a flight?',
       intro:
-        'A sedated cat is not the safer default for a flight. This page does not recommend a drug or a dose.',
+        'A sedated cat is not the safer default for a flight. We do not recommend a medicine, spray or dose; ask your own vet.',
       body: [
         {
           type: 'p',
@@ -125,13 +131,13 @@ const catRelocationDubai: ServicePageData = {
             'Default: the cat travels awake. We do not supply a sedation plan.',
             'Ask the airline before travel day. Refusal of sedated animals is common enough to check in writing.',
             'Do not use a dog calming product on a cat',
-            'Fitness to fly is your vet\'s decision, not a sentence on this page',
+            'Fitness to fly is your vet\'s decision.',
           ],
         },
       ],
     },
     {
-      h2: 'Cat Documents & Timeline',
+      h2: 'Cat vaccination and document timeline',
       intro:
         'Cats and dogs share the permit window. They do not share the vaccine list. Bengal and Serval cats have an extra pedigree line.',
       body: [
@@ -141,7 +147,7 @@ const catRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Bengal and Serval cats need a pedigree certificate to the fifth generation. Other domestic cats are not given that extra line on the page we checked. When the origin is high-risk, the rabies antibody result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the rabies vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. A first vaccine, or a gap, needs at least 21 days before the test. Detail: [rabies titre test for Dubai](/guides/rabies-titer-test-dubai/).',
+          text: 'Bengal and Serval cats need a pedigree certificate to the fifth generation. Other domestic cats are not given that extra line on the MOCCAE import page we checked. When the origin is high-risk, the rabies antibody result must be at least 0.5 IU/ml. The certificate is valid for 365 days if the rabies vaccine stays valid and continuous and no booster is given. Otherwise the test is repeated. A first vaccine, or a gap, needs at least 21 days before the test. Detail: [rabies titre test for Dubai](/guides/rabies-titer-test-dubai/).',
         },
         {
           type: 'list',
@@ -156,33 +162,33 @@ const catRelocationDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'The permit is 90 days from issuance, not 30. Parasite treatment in the 14 days before shipment is recorded by your vet. Permethrin products sold for dogs can be dangerous for cats. Your vet must choose a cat-safe product. We do not give a dose. Full sequence: [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+          text: 'The permit is 90 days from issuance, not 30. Parasite treatment in the 14 days before shipment is recorded by your vet. Some products sold for dogs can be dangerous for cats. Your vet must choose a cat-safe product. We do not recommend a dose. Full sequence: [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
         },
       ],
     },
     {
-      h2: 'Cat Relocation Cost',
+      h2: 'How much does cat relocation in Dubai cost?',
       intro:
-        'Cat relocation cost is quoted for this cat and this route. A smaller carrier is not a published AED band.',
+        'The quote is for this cat and this route. We do not publish a package total.',
       body: [
         {
           type: 'p',
-          text: 'A lighter animal can mean a lower freight rate. It does not create a package price on this page. Government permit and release fees: confirm on the MOCCAE portal. Cabin eligibility, the route, and whether a titre is required all move the quote. We do not publish a DPR total in AED.',
+          text: 'A lighter cat can mean a lower freight rate. Cabin or cargo, the route, and whether a titre is required all move the quote. Government fees: confirm on the official MOCCAE portal. Quotes follow the eligibility check.',
         },
         {
           type: 'table',
-          headers: ['Cost component', 'How this page treats it'],
+          headers: ['Cost component', 'How it is quoted'],
           rows: [
-            ['MOCCAE permit and release', 'Government fees. Confirm on the MOCCAE portal.'],
-            ['Origin veterinary work', 'Quoted by the clinic. Not a DPR package price.'],
-            ['Carrier or IATA crate', 'Quoted for that size. No AED band on this page.'],
-            ['Flight or cargo', 'Airline quote for that carrier and date.'],
-            ['Coordination and door-to-door handling', 'Quoted after eligibility. No package total on this page.'],
+            ['MOCCAE permit and release', 'Government fees. Confirm on the official MOCCAE portal.'],
+            ['Origin veterinary work', 'Quoted by the origin clinic, not part of our coordination fee'],
+            ['Carrier or IATA crate', "Quoted for the cat's measured size"],
+            ['Flight or cargo', 'Airline quote for that carrier and date'],
+            ['Coordination and door-to-door handling', 'Quoted after the eligibility check'],
           ],
         },
         {
           type: 'p',
-          text: 'Send origin, destination and month for a managed cat-move quote. Drivers, without a made-up total: [pet relocation cost](/guides/pet-relocation-cost-dubai/). Coordination after eligibility: [Prices](/prices/).',
+          text: 'Send origin, destination and month for a managed cat-move quote. What a quote is made of, without a made-up total: [pet relocation cost](/guides/pet-relocation-cost-dubai/). Coordination after eligibility: [Prices](/prices/). Not sure which service you need? [Compare pet relocation services](/service/pet-relocation-dubai/).',
         },
       ],
     },
@@ -190,11 +196,11 @@ const catRelocationDubai: ServicePageData = {
   faq: [
     {
       q: 'What should I send for a cat relocation quote?',
-      a: 'Send your name, whether the cat is a domestic cat or a Bengal or Serval, approximate weight, origin, destination and the month you want to travel, on WhatsApp +971504782999. We check eligibility and reply with a managed cat-move quote. This is not a free carrier tutorial. Government fees: confirm on the MOCCAE portal. Inbound rules: [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
+      a: 'Send your name, the number of cats, whether the cat is domestic, Bengal or Serval, approximate weight, origin, destination and the travel month, on WhatsApp +971504782999. We check eligibility and reply with a managed cat-move quote. Government fees: confirm on the official MOCCAE portal. Inbound rules: [UAE pet import requirements](/guides/uae-pet-import-requirements/).',
     },
     {
       q: 'Should I sedate my cat for the flight?',
-      a: 'No, as a default. This page does not recommend a drug or a dose. Many airlines refuse a sedated animal. Prepare the carrier at home instead. If the cat has a medical condition, ask your own vet and get the airline\'s rule in writing. WhatsApp +971504782999 is for a managed cat-move quote, not for medicine advice.',
+      a: 'Most vets and airlines advise against sedating a cat for a flight. Many airlines refuse a sedated animal. Prepare the carrier at home instead. If the cat has a medical condition, ask your own vet and get the airline\'s rule in writing. WhatsApp +971504782999 is for booking a managed cat move, not for medicine advice.',
     },
     {
       q: 'Can my cat travel in the cabin to or from Dubai?',
@@ -202,7 +208,7 @@ const catRelocationDubai: ServicePageData = {
     },
     {
       q: 'How do I get my cat used to its carrier before travel?',
-      a: 'Leave the carrier open in a room the cat already uses, line it with bedding from home, and feed inside it over several days. Take a few short practice journeys. The cat must be able to stand, turn and lie down. This page does not name a spray or a dose. Ask your vet before any product is used. A managed file includes the carrier plan: use the quote button when you are ready to book.',
+      a: 'Leave the carrier open in a room the cat already uses, line it with bedding from home, and feed inside it over several days. Take a few short practice journeys. The cat must be able to stand, turn and lie down. We do not recommend a spray or a dose; ask your vet. A managed cat move includes the carrier plan.',
     },
     {
       q: 'What documents does my cat need to enter Dubai?',
@@ -214,15 +220,21 @@ const catRelocationDubai: ServicePageData = {
     },
     {
       q: 'How much does cat relocation in Dubai cost?',
-      a: 'This page does not publish a package total in AED. Send origin, destination, the cat and the month on WhatsApp +971504782999. We check eligibility and reply with a managed cat-move quote. Government fees: confirm on the MOCCAE portal.',
+      a: 'Cat relocation in Dubai is quoted for your cat, route and month after an eligibility check; we do not publish a package total. Send origin, destination, the cat and the month on WhatsApp +971504782999. Government fees: confirm on the official MOCCAE portal.',
+    },
+    {
+      q: 'Can you relocate my cat out of Dubai?',
+      a: 'We can relocate your cat out of Dubai as a managed export. Sequencing follows the destination country\'s rules, then the MOCCAE export health certificate after the pre-flight inspection, then the airline booking. See [pet export from Dubai](/service/pet-export-dubai/). The quote follows an eligibility check.',
     },
   ],
   relatedLinks: [
-    { label: 'pet relocation Dubai', to: '/' },
+    { label: 'Pet relocation Dubai', to: '/' },
     { label: 'Pet relocation services', to: '/service/pet-relocation-dubai/' },
-    { label: 'pet import Dubai', to: '/service/pet-import-dubai/' },
+    { label: 'Pet export from Dubai', to: '/service/pet-export-dubai/' },
+    { label: 'Pet import Dubai', to: '/service/pet-import-dubai/' },
     { label: 'MOCCAE import permit', to: '/guides/moccae-import-permit/' },
     { label: 'UAE pet import requirements', to: '/guides/uae-pet-import-requirements/' },
+    { label: 'IATA pet crate requirements', to: '/guides/iata-pet-crate-requirements/' },
     { label: 'Dog relocation to and from Dubai', to: '/service/dog-relocation-dubai/' },
     { label: 'How it works', to: '/how-it-works/' },
   ],
