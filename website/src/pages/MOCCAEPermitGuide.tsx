@@ -280,11 +280,14 @@ export default function MOCCAEPermitGuide() {
       <section className="section-padding bg-white">
         <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8 space-y-6">
           <p className="text-base leading-relaxed text-[#5A5A5A]">
-            Leaving the UAE with your pet? The{' '}
+            Leaving the UAE with your pet? The MOCCAE pet export permit is a different application. Read how
+            to get the MOCCAE export health certificate in our{' '}
+            <Link to="/guides/pet-export-from-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
+              pet export from Dubai guide
+            </Link>{', or see our '}
             <Link to="/service/pet-export-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-              MOCCAE pet export permit
-            </Link>{' '}
-            is a different application: see our managed pet export service.
+              managed pet export service
+            </Link>{'.'}
           </p>
           <SnippetAnswer question={snippetQuestion} answer={snippetAnswer} />
           <GuideDualPath
