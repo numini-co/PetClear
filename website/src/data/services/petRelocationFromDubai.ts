@@ -5,21 +5,24 @@ const petRelocationFromDubai: ServicePageData = {
   slug: 'pet-relocation-from-dubai',
   seoTitle: 'Pet Relocation from Dubai | Managed Outbound Moves',
   metaDescription:
-    'Pet relocation from Dubai: check eligibility, then request a managed-move quote for documents, the crate and handover.',
+    'Pet relocation from Dubai for dogs and cats leaving UAE: destination rules first, MOCCAE export health certificate timed, crate and flight. Check eligibility.',
   h1: 'Pet relocation from Dubai for a managed outbound move',
   primaryKeyword: 'pet relocation from dubai',
   heroValueProp:
-    'Pet relocation from Dubai covers the whole outbound move, from destination rules to the airport handover.',
+    "Leaving Dubai with a dog or cat: we plan from the destination's rules backwards, then run the export, the crate, the flight and the airport handover.",
   heroImage: '/assets/w1-w3/pet-relocation-from-dubai-husky-balcony-golden-hour.jpg',
   heroImageAlt:
     'Husky sitting beside a packed travel crate on a Dubai balcony before relocating from Dubai',
-  whatsappMessage: waEligibility({ origin: 'Dubai', need: 'managed move' }),
-  ctaLabel: 'Get a managed-move quote',
+  whatsappMessage: waEligibility({
+    origin: 'Dubai',
+    need: 'managed move out of Dubai: destination rules, MOCCAE export certificate, crate and flight',
+  }),
+  ctaLabel: 'Check if we can move your pet',
   ctaSupport:
-    'Send the destination, the pet and the month. We reply with eligibility and a managed-move quote.',
+    'Send the pet, breed, destination, travel month and current vaccination dates. We check eligibility and reply with a managed-move quote.',
   ctaHeading: 'Ready for a managed-move quote?',
   ctaBody:
-    'Send the destination, pet and month on WhatsApp. We reply with eligibility and a managed-move quote before any booking.',
+    'Send the destination, pet and travel month on WhatsApp. We check eligibility first and reply with a managed-move quote before anything is booked.',
   ctaImage: {
     src: '/assets/week8/pet-relocation-from-dubai-cta-cat-carrier-departure.jpg',
     alt: 'Owner carrying a cat carrier out of a Dubai villa to begin a relocation abroad',
@@ -28,33 +31,33 @@ const petRelocationFromDubai: ServicePageData = {
     height: 1080,
   },
   paidIncludes: [
-    'Destination rules check before a flight week is discussed',
-    'Export certificate timing set against your travel date',
-    'Airline booking once the document window is clear',
-    'Crate sized for the animal and the route',
-    'Airport handover at DXB or DWC',
+    'Destination entry rules checked for your pet and travel month',
+    'Vaccinations, tests and treatments sequenced against the flight',
+    'MOCCAE export health certificate and government vet inspection booked to fit the flight',
+    'Airline cargo or cabin booking and an IATA crate sized for your pet',
+    'Home collection and airport handover at DXB or DWC',
   ],
   trustBadges: [
-    'Outbound / departure-side only',
+    'Outbound moves from Dubai',
     'Destination rules first',
-    'MOCCAE export path guided',
-    'WhatsApp through departure',
+    'MOCCAE export certificate timed',
+    'WhatsApp updates to departure',
   ],
   hasHowTo: true,
   howToName: 'How to move a pet out of Dubai',
   sections: [
     {
-      h2: 'What you get when leaving Dubai with pets',
+      h2: 'Pet relocation from Dubai: what we manage',
       intro:
-        'Leaving Dubai with pets follows the destination rules, not a reversed arrival checklist. This page is the whole outbound move. Export paperwork and the flight booking sit on [exporting your pet from the UAE](/service/pet-export-dubai/). Arrivals use [bringing pets to Dubai](/service/pet-relocation-to-dubai/). Full coordination uses [pet relocation services in Dubai](/service/pet-relocation-dubai/).',
+        'Pet relocation from Dubai starts with the rules of the country you are moving to, not a reversed arrival checklist. We coordinate the whole outbound move. If you only need the export paperwork and flight, see [pet export from Dubai](/service/pet-export-dubai/). Moving to the UAE instead? See [bringing pets to Dubai](/service/pet-relocation-to-dubai/). Not sure which service you need? [Compare pet relocation services](/service/pet-relocation-dubai/).',
       body: [
         {
           type: 'p',
-          text: 'Taking a dog or cat out of the UAE is destination-first. The United Kingdom, the United States, Australia and a GCC hop do not share an entry file. Dubai’s export certificate is comparatively quick, and useless if it is issued before the destination’s waiting periods, treatments or endorsements are ready. For the document-by-document how-to, read [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
+          text: "Taking a dog or cat out of the UAE is destination-first. The United Kingdom, the United States, Australia and a GCC hop do not share entry rules. Dubai's export certificate is comparatively quick, and useless if it is issued before the destination's waiting periods, treatments or endorsements are ready. For the document-by-document how-to, read [how to export your pet from Dubai](/guides/pet-export-from-dubai/).",
         },
         {
           type: 'p',
-          text: 'A managed move starts with where you are going, then builds the Dubai-side path backwards. We are a coordination service. We do not fly the animal and we are not the destination’s inspector.',
+          text: "A managed move starts with where you are going, then builds the Dubai-side path backwards. We are a coordination service. We do not fly the animal and we are not the destination's inspector.",
         },
       ],
     },
@@ -74,19 +77,19 @@ const petRelocationFromDubai: ServicePageData = {
           steps: [
             {
               title: 'Read the destination rules',
-              text: 'Send pet type, breed, age and destination with the eligibility check. That country’s current entry file (vaccinations, titer, treatments, quarantine) is read before a flight week is discussed. Start with [leaving Dubai with pets on the UK route](/routes/dubai-to-uk/) or [moving a pet out of Dubai to the USA](/routes/dubai-to-usa/) if those are your corridors.',
+              text: "Send pet type, breed, age and destination with the eligibility check. That country's current entry rules (vaccinations, titer, treatments, quarantine) are read before a flight week is discussed. Start with [leaving Dubai with pets on the UK route](/routes/dubai-to-uk/) or [moving a pet out of Dubai to the USA](/routes/dubai-to-usa/) if those are your corridors.",
             },
             {
               title: 'Build the timeline backwards',
-              text: "The UAE's 90-day MOCCAE import permit is an inbound rule and does not apply when leaving Dubai.",
+              text: "Count back from the destination's earliest permitted arrival date. Destination waiting periods, tests or treatments come first, then the MOCCAE export health certificate close to departure, then the flight. The UAE's MOCCAE import permit (valid 90 days from issuance) is an inbound rule and does not apply when leaving Dubai.",
             },
             {
               title: 'Veterinary preparation in the UAE',
-              text: 'Microchip verification, vaccinations and any destination-required tests are booked with a UAE clinic that can produce a consistent file. Names and chip numbers must match every later certificate.',
+              text: 'Microchip verification, vaccinations and any destination-required tests are booked with a UAE clinic that can produce consistent records. Names and chip numbers must match every later certificate.',
             },
             {
               title: 'MOCCAE export health certificate',
-              text: 'The UAE export health certificate is issued after a pre-export veterinary inspection. Schedule it close to departure so the window still covers travel day, not months ahead. A government fee applies; confirm on the MOCCAE portal. Contested ranges are not published here. Process guide: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
+              text: 'The UAE export health certificate is issued after a pre-export veterinary inspection. Schedule it close to departure so the window still covers travel day, not months ahead. A government fee applies; confirm on the official MOCCAE portal. Process guide: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
             },
             {
               title: 'Crate and cargo booking',
@@ -129,13 +132,13 @@ const petRelocationFromDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'The paid export file (paperwork and flight booking) is [pet export from Dubai](/service/pet-export-dubai/). Permit help on its own is [MOCCAE permit assistance](/service/moccae-pet-permit/). This page is the departure journey: what happens from the decision to leave until the handover.',
+          text: 'Prefer us to handle the export paperwork and the flight booking only? See [pet export from Dubai](/service/pet-export-dubai/). Need help with a MOCCAE application on its own? See [MOCCAE permit assistance](/service/moccae-pet-permit/).',
         },
       ],
     },
     {
       h2: 'Routes for taking a dog or cat out of the UAE',
-      intro: 'Each destination has its own rulebook. Open your route, then send the eligibility check.',
+      intro: 'Each destination has its own rules. Open your route, then check eligibility for your move.',
       body: [
         {
           type: 'routeGroups',
@@ -204,9 +207,9 @@ const petRelocationFromDubai: ServicePageData = {
       ],
     },
     {
-      h2: 'What changes the quote for a move out of Dubai',
+      h2: 'How much does pet relocation from Dubai cost?',
       intro:
-        'Export-certificate fee ranges circulating online conflict with first-party notes. They stay off this page. The quote describes the drivers for your pet and your dates.',
+        'The quote depends on your destination, your pet and your dates, so we price it after an eligibility check rather than publishing a package total.',
       body: [
         {
           type: 'p',
@@ -214,7 +217,7 @@ const petRelocationFromDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Arrival quarantine charged by a destination country is not our fee and is not something we invent a number for. We flag it when the destination uses it.',
+          text: 'Arrival quarantine charged by a destination country is not our fee and is not something we invent a number for. We flag it when the destination uses it. Government fees for the MOCCAE export health certificate apply; confirm the current amount on the official MOCCAE portal.',
         },
       ],
     },
@@ -222,23 +225,23 @@ const petRelocationFromDubai: ServicePageData = {
   faq: [
     {
       q: 'How do I relocate my pet from Dubai?',
-      a: 'Outbound moves start with destination import rules, then UAE export paperwork, crate, and a confirmed live-animal flight. That is the reverse of bringing a pet in. Use [/service/pet-export-dubai/](/service/pet-export-dubai/) for export-permit depth and the matching [/routes/dubai-to-{country}/](/routes/) page for corridor detail. WhatsApp +971504782999 for a managed-move quote.',
+      a: "Start with the destination country's import rules, then the UAE export paperwork, the crate and a confirmed live-animal flight. That order is the reverse of bringing a pet in. Use [pet export from Dubai](/service/pet-export-dubai/) when you only need the export paperwork and the flight, and your [route page](/routes/) for the corridor detail. Check eligibility on WhatsApp +971504782999 for a managed-move quote.",
     },
     {
       q: 'Why do destination rules drive the outbound timeline from Dubai?',
-      a: 'Because the UAE export certificate is relatively quick, while the destination sets titer windows, treatments and any quarantine. The destination is read first and the Dubai file is built backwards from it.',
+      a: 'Because the UAE export certificate is relatively quick, while the destination sets titer windows, treatments and any quarantine. The destination is read first and the Dubai side is planned backwards from it.',
     },
     {
       q: 'What is the MOCCAE export health certificate path?',
-      a: 'A pre-export veterinary inspection, then a UAE export health certificate scheduled close to departure so the window still covers travel day. A government fee applies; confirm on the MOCCAE portal. Contested certificate ranges are not published here. How-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
+      a: 'A pre-export veterinary inspection, then a UAE export health certificate scheduled close to departure so the window still covers travel day. A government fee applies; confirm on the official MOCCAE portal. How-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
     },
     {
       q: 'When should I start planning a move out of Dubai?',
-      a: 'As soon as you know the destination. A nearby, low-rule country can be short. A titer or quarantine destination can need many months. Send the country name on WhatsApp for a managed-move quote if you want the month checked against that file.',
+      a: "As soon as you know the destination. A nearby, low-rule country can be short. A titer or quarantine destination can need many months. Send the country name on WhatsApp for a managed-move quote if you want the month checked against that country's rules.",
     },
     {
       q: 'Is a titer always required to take a pet from the UAE to the UK?',
-      a: 'Destination rules change and must be checked for your travel month. The UK file is not a copy of the UAE inbound titer rule. The current destination steps are on [leaving Dubai with pets for the UK](/routes/dubai-to-uk/). A managed-move quote checks that page against your month.',
+      a: 'Destination rules change and must be checked for your travel month. The UK rules are not a copy of the UAE inbound titer rule. The current destination steps are on [leaving Dubai with pets for the UK](/routes/dubai-to-uk/). A managed-move quote checks that page against your month.',
     },
     {
       q: 'What travels with the crate on departure day?',
@@ -246,15 +249,19 @@ const petRelocationFromDubai: ServicePageData = {
     },
     {
       q: 'Can you help with Dubai to USA as well as Dubai to UK?',
-      a: 'Yes. The published outbound routes are grouped on this page, including [Dubai to UK](/routes/dubai-to-uk/) and [Dubai to USA](/routes/dubai-to-usa/). Open your route, then send the eligibility check. The full list is on the [routes hub](/routes/).',
+      a: 'We manage moves from Dubai to both the UK and the USA, plus the other published routes grouped above, including [Dubai to UK](/routes/dubai-to-uk/) and [Dubai to USA](/routes/dubai-to-usa/). Open your route, then send the eligibility check. The full list is on [all pet relocation routes from Dubai](/routes/).',
     },
     {
-      q: 'How is this different from the pet export Dubai service page?',
-      a: 'This page is the departure journey and the order of work. [Pet export from Dubai](/service/pet-export-dubai/) is the paid file: destination permission, the UAE export certificate, and the flight booking. Read them together.',
+      q: 'What is the difference between pet relocation from Dubai and pet export from Dubai?',
+      a: 'Pet relocation from Dubai is the full outbound move from home collection to the handover. [Pet export from Dubai](/service/pet-export-dubai/) covers the export paperwork and the flight booking only. Both start with an eligibility check.',
     },
     {
       q: 'How do I check whether my travel date is realistic?',
       a: 'Send destination, pet details and the month you want to fly. The destination windows are mapped against the MOCCAE export-certificate timing, and the reply says whether the date holds. [Request a managed-move quote](/contact/).',
+    },
+    {
+      q: 'Can you collect my pet from home in Dubai and handle the flight?',
+      a: 'Home collection in Dubai, the flight and the airport handover are part of a managed outbound move when that scope is booked. The full service list is on [pet relocation services in Dubai](/service/pet-relocation-dubai/). Send the pet, destination and travel month so we can check eligibility.',
     },
   ],
   relatedLinks: [
@@ -262,8 +269,9 @@ const petRelocationFromDubai: ServicePageData = {
     { label: 'Exporting your pet from the UAE', to: '/service/pet-export-dubai/' },
     { label: 'Pet relocation services in Dubai', to: '/service/pet-relocation-dubai/' },
     { label: 'Leaving Dubai with your pet, UK', to: '/routes/dubai-to-uk/' },
+    { label: 'All pet relocation routes from Dubai', to: '/routes/' },
+    { label: 'IATA pet crate requirements', to: '/guides/iata-pet-crate-requirements/' },
     { label: 'Moving pets out of Dubai, USA', to: '/routes/dubai-to-usa/' },
-    { label: 'Routes hub', to: '/routes/' },
     { label: 'Request a managed-move quote', to: '/contact/' },
     { label: 'Compare our service tiers', to: '/services/' },
     { label: 'How it works', to: '/how-it-works/' },
