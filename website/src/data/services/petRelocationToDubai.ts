@@ -179,7 +179,7 @@ const petRelocationToDubai: ServicePageData = {
   faq: [
     {
       q: 'What is the first inbound step when bringing a pet to Dubai?',
-      a: 'Confirm breed eligibility and whether your origin requires a titer, then work backwards from a realistic arrival month. Do not buy cargo space first. Country detail is on the [routes hub](/routes/).',
+      a: 'Confirm breed eligibility and whether your origin requires a titer, then work backwards from a realistic arrival month. Do not buy cargo space first. Country detail is on [all pet relocation routes to Dubai](/routes/).',
     },
     {
       q: 'How should I time the permit against the arrival date?',
