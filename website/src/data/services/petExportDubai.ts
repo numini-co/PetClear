@@ -5,11 +5,11 @@ const petExportDubai: ServicePageData = {
   slug: 'pet-export-dubai',
   seoTitle: 'Pet Export Dubai | MOCCAE Export Permit, Managed',
   metaDescription:
-    'The MOCCAE pet export permit is the export health certificate, with an airport vet inspection and destination rules. Check if we can manage your export.',
+    'MOCCAE pet export permit and managed export from Dubai: destination rules, export health certificate, airport vet inspection and flight booking. Get a quote.',
   h1: 'Pet export services from Dubai',
   primaryKeyword: 'pet export dubai',
   heroValueProp:
-    'Pet export services from Dubai start with a destination rule check, then the MOCCAE export health certificate and a managed export quote.',
+    'Leaving Dubai with your dog or cat, we line up destination rules, the export health certificate, airport vet inspection and the flight for a managed quote.',
   heroImage: '/images/service-pet-export-dubai.jpg',
   heroImageAlt:
     'Calm dog and cat beside a travel crate at a Dubai airport departure terminal',
@@ -17,27 +17,30 @@ const petExportDubai: ServicePageData = {
   ctaLabel: 'Get a managed export quote',
   heroEyebrow: 'Pet Export Service',
   ctaSupport:
-    'Check export eligibility first. Send the destination, the pet and the month, and we reply with a managed export quote.',
+    'Send the destination, the pet and the travel month. We check export eligibility and reply with a managed export quote.',
   ctaHeading: 'Ready for a managed export quote?',
   ctaBody:
-    'Send the destination, pet and travel month. We check export eligibility and reply with a managed export quote. Government fees: confirm on the MOCCAE portal. We do not publish a package total in AED.',
+    'Send the destination, pet and travel month. We check export eligibility and reply with a managed export quote. Government fees: confirm on the official MOCCAE portal. We do not publish a package total in AED.',
   gateLine: GUIDE_SOFT_GATE,
   servicePreset: 'Export service',
   paidIncludes: [
-    'Destination rule check',
-    'Vet and titer sequencing',
-    'MOCCAE export health certificate timing',
+    'Destination rule check before the flight is booked',
+    'Vet papers and titre sequencing for that country',
+    'MOCCAE export health certificate and inspection timing',
     'Airline or cargo booking with an IATA crate',
     'DXB or DWC airport handover',
   ],
   trustBadges: ['MOCCAE export guided', 'Vetted partners', 'Fit to Fly coordination', 'WhatsApp support'],
   hasHowTo: true,
   howToName: 'Step-by-Step Pet Export Process from Dubai',
+  snippetQuestion: 'How do I get a MOCCAE pet export permit in Dubai?',
+  snippetAnswer:
+    'The permit people search for is the MOCCAE export health certificate. Apply online with UAE Pass, then finalise it after a government vet inspection at the airport. The destination\'s rules set the vet and titre steps first. For the government fee and validity, confirm on the official MOCCAE portal. We manage the timing and the booking for a quoted fee.',
   sections: [
     {
       h2: 'What our pet export service from Dubai covers',
       intro:
-        'A managed pet export from Dubai lines up the destination country’s entry rules with the MOCCAE export health certificate, then books the flight. The DIY document order lives on the export guide.',
+        'A managed pet export from Dubai is for a known leaving date: destination rules, the export health certificate and the flight, quoted before you book.',
       body: [
         {
           type: 'p',
@@ -61,7 +64,7 @@ const petExportDubai: ServicePageData = {
       ],
     },
     {
-      h2: 'Step-by-Step Pet Export Process',
+      h2: 'Step-by-step pet export process from Dubai',
       intro:
         'Every export from Dubai runs through the same five stages. We manage the sequence and the deadlines so each document is still valid when your pet boards.',
       body: [
@@ -97,7 +100,7 @@ const petExportDubai: ServicePageData = {
       body: [
         {
           type: 'p',
-          text: 'The MOCCAE pet export permit most owners search for is the MOCCAE export health certificate for the pet, applied for online through MOCCAE digital services (UAE Pass) and finalised after a MOCCAE government vet inspection at the airport. It is a different application from the MOCCAE import permit. The import permit is only for pets entering the UAE and is valid 90 days from issuance. The destination country’s rules decide the vet and titre sequence. For the government fee and the certificate validity window, confirm on the official MOCCAE portal.',
+          text: 'The MOCCAE pet export permit most owners search for is the MOCCAE export health certificate for the pet, applied for online through MOCCAE digital services (UAE Pass) and finalised after a MOCCAE government vet inspection at the airport. It is a different application from the MOCCAE import permit. The import permit is only for pets entering the UAE and is valid 90 days from issuance. A pet export permit in the UAE still depends on the destination country’s rules, which decide the vet and titre sequence. For the government fee and the certificate validity window, confirm on the official MOCCAE portal.',
         },
         {
           type: 'list',
@@ -116,11 +119,11 @@ const petExportDubai: ServicePageData = {
       ],
       paidScope: {
         items: [
-          'Destination rule check',
-          'Vet and titre sequencing',
-          'MOCCAE export certificate application and airport inspection timing',
-          'IATA crate and airline or cargo booking',
-          'DXB or DWC handover',
+          'Destination rules checked before booking',
+          'Vet papers and titre sequencing',
+          'MOCCAE export certificate and airport inspection timing',
+          'IATA crate with the airline or cargo booking',
+          'DXB or DWC handover on the departure day',
         ],
         ctaLabel: 'Check if we can manage your pet export',
         ctaMessage:
@@ -133,7 +136,7 @@ const petExportDubai: ServicePageData = {
       },
     },
     {
-      h2: 'Pet Export Timeline',
+      h2: 'Pet export timeline',
       intro:
         'How long export takes depends almost entirely on your destination. If your pet is already fully vaccinated and the destination needs no rabies titer test, it can be quick. If a titer test is required, the lab and waiting times dominate the schedule.',
       body: [
@@ -154,32 +157,32 @@ const petExportDubai: ServicePageData = {
       ],
     },
     {
-      h2: 'Pet Export Cost Dubai',
+      h2: 'Pet export cost from Dubai',
       body: [
         {
           type: 'p',
-          text: 'This page does not publish a package total in AED. The quote depends on the destination, the animal, the crate and whether that country asks for an antibody test. Government fees: confirm on the MOCCAE portal. We do not treat secondary blog numerals as official fees.',
+          text: 'We do not publish a package total in AED. The quote depends on the destination, the animal, the crate and whether that country asks for an antibody test. Government fees: confirm on the official MOCCAE portal. We do not treat secondary blog numerals as official fees.',
         },
         {
           type: 'table',
-          headers: ['Cost component', 'How this page treats it'],
+          headers: ['Cost component', 'How it is priced'],
           rows: [
             ['Veterinary documentation', 'Quoted by the clinic. Not a package price.'],
             ['Fit to fly certificate', 'Quoted by the clinic. Not a package price.'],
-            ['MOCCAE export certificate', 'Government fee. Confirm on the MOCCAE portal.'],
+            ['MOCCAE export certificate', 'Government fee. Confirm on the official MOCCAE portal.'],
             ['Rabies antibody test, if the destination requires one', 'Laboratory fee. Not a published AED band.'],
             ['Flight or cargo', 'Airline quote for that crate and date.'],
-            ['Coordination', 'Quoted after eligibility. No package total on this page.'],
+            ['Coordination', 'Quoted after the eligibility check.'],
           ],
         },
         {
           type: 'p',
-          text: 'There is no package total on this page. Send the destination, breed and weight for a managed export quote. Government fees: confirm on the MOCCAE portal. Coordination packages: [Prices](/prices/).',
+          text: 'Send the destination, breed and weight for a managed export quote after the eligibility check. Government fees: confirm on the official MOCCAE portal. Coordination packages: [Prices](/prices/).',
         },
       ],
     },
     {
-      h2: 'Popular Destinations',
+      h2: 'Popular destinations',
       intro:
         'Destination requirements vary by country, so every export plan starts with the rules of where you are going. These are the routes we coordinate most often from Dubai.',
       body: [
@@ -195,12 +198,12 @@ const petExportDubai: ServicePageData = {
         },
         {
           type: 'p',
-          text: 'Each country sets its own conditions for vaccinations, titer testing, certificate format and entry points, and these change from time to time. We verify the current requirements for your specific destination before you book, so you are never caught out at the other end. The whole outbound move, from the decision to leave through the airport handover, is [pet relocation from Dubai](/service/pet-relocation-from-dubai/). This page stays on the export paperwork and the flight booking.',
+          text: 'Each country sets its own conditions for vaccinations, titer testing, certificate format and entry points, and these change from time to time. We verify the current requirements for your specific destination before you book, so the booking matches the rules in force. The whole outbound move, from the decision to leave through the airport handover, is [pet relocation from Dubai](/service/pet-relocation-from-dubai/). We quote the export paperwork and the flight booking.',
         },
       ],
     },
     {
-      h2: 'Urgent Pet Export Options',
+      h2: 'Urgent pet export options',
       body: [
         {
           type: 'p',
@@ -209,81 +212,90 @@ const petExportDubai: ServicePageData = {
         {
           type: 'list',
           items: [
-            'Same-day WhatsApp response to map the fastest compliant route for your destination',
-            'Expedited coordination of vet appointments, the Fit to Fly certificate and the MOCCAE inspection',
-            'Priority cargo and, where needed, charter options for time-critical departures',
-            'Honest guidance: if a titer test makes a date impossible, we tell you up front rather than promising the impossible',
+            'Fast quote on WhatsApp once you send destination, pet and date',
+            'Expedited coordination of vet appointments, Fit to Fly and the MOCCAE inspection',
+            'Priority cargo and, where needed, charter options',
+            'If a titre wait makes your date impossible, the quote says so before you pay',
           ],
         },
         {
           type: 'p',
-          text: 'Send destination, species and travel month on WhatsApp for a quote if you want us to run the export file. We will say, realistically, the soonest your pet can legally leave Dubai. Coordination is quoted after eligibility on [Prices](/prices/).',
+          text: 'Send the destination, the pet, the breed or weight and the travel date, and we reply with a managed export quote. We will tell you the soonest your pet can legally leave Dubai. Coordination is quoted after eligibility on [Prices](/prices/).',
         },
       ],
+      paidScope: {
+        items: [
+          'Destination rule check before the flight is booked',
+          'Vet papers and titre sequencing for that country',
+          'MOCCAE export health certificate and inspection timing',
+          'Airline or cargo booking with an IATA crate',
+          'DXB or DWC airport handover',
+        ],
+        ctaLabel: 'Get a managed export quote',
+        ctaMessage:
+          'Hello Dubai Pet Relocation. I would like a managed export quote. Pet type and breed: Weight: Destination country: Travel date: Door-to-door needed (yes or no):',
+        secondary: {
+          prefix: 'Planning the whole move out of Dubai? See',
+          label: 'pet relocation from Dubai',
+          to: '/service/pet-relocation-from-dubai/',
+        },
+      },
     },
   ],
   faq: [
     {
-      q: 'How do I get an export permit for my pet in the UAE?',
-      a: 'Apply online with UAE Pass for the MOCCAE export health certificate, then attend the government vet inspection at the airport before departure. Destination rules decide which vet papers that inspection and the flight must match. Send the pet, country and travel month if you want us to manage the export.',
-    },
-    {
-      q: 'What are the requirements for obtaining a pet export permit from the MOCCAE in Dubai, UAE?',
-      a: 'You need a matching microchip, the vaccinations your destination requires, a fit to fly certificate, and the MOCCAE export health certificate issued after the airport inspection. Destination rules set the vet sequence before that inspection. Confirm the government fee on the official MOCCAE portal. We manage the timing and the booking when you want the export handled.',
+      q: 'How do I get a pet export permit from MOCCAE in the UAE?',
+      a: 'Apply online with UAE Pass for the MOCCAE export health certificate, then attend the government vet inspection at the airport before departure. You also need a matching microchip, the vaccinations your destination requires and a fit to fly certificate. Destination rules set the vet sequence before that inspection. Confirm the government fee on the official MOCCAE portal. Send the pet, country and travel month for a managed export quote.',
     },
     {
       q: 'How much does it cost to export a pet from Dubai?',
-      a: 'This page does not publish a package total in AED. Send the destination, species, breed and weight on WhatsApp +971504782999. We check export eligibility and reply with a managed export quote. Government fees: confirm on the MOCCAE portal.',
+      a: 'We do not publish a package total in AED. Send the destination, species, breed and weight on WhatsApp +971504782999. We check export eligibility and reply with a managed export quote. Government fees: confirm on the official MOCCAE portal.',
     },
     {
       q: 'What should I send for a pet export quote from Dubai?',
-      a: 'Send your name, whether the pet is a dog or cat, the destination country and the month you want to fly, on WhatsApp +971504782999. Add breed and approximate weight if you have them. Origin is Dubai. We check export eligibility and reply with a managed export quote. Government fees: confirm on the MOCCAE portal. The DIY document order is on [how to export a pet from Dubai](/guides/pet-export-from-dubai/).',
+      a: 'Send your name, whether the pet is a dog or cat, the destination country and the month you want to fly, on WhatsApp +971504782999. Add breed and approximate weight if you have them. Origin is Dubai. We check export eligibility and reply with a managed export quote. Government fees: confirm on the official MOCCAE portal. The document order, if you prepare it yourself, is on [how to export a pet from Dubai](/guides/pet-export-from-dubai/).',
     },
     {
       q: 'How far ahead should a UK, EU or USA export from Dubai start?',
-      a: 'Start from the destination, not from a Dubai certificate date. Great Britain treats the UAE as a listed country, so the entry document is a Great Britain pet health certificate, not Model A or Model B, issued within 10 days of arrival. Dogs need tapeworm treatment in the 24 to 120 hours before arrival. An EU file uses a travel certificate from your vet, then MOCCAE endorsement. Confirm the live listed-country annex before you assume a titer is not required. A USA dog file follows CDC high-risk rules, and airline rules still vary. If the destination needs a rabies titer, plan for 7 or more weeks. If it does not, UAE-side paperwork is often a few days to two weeks. We do not publish an export-certificate validity figure. Confirm timing on the MOCCAE portal.',
+      a: 'Great Britain treats the UAE as a listed country, so the entry document is a Great Britain pet health certificate, not Model A or Model B, issued within 10 days of arrival. Dogs need tapeworm treatment in the 24 to 120 hours before arrival. The EU uses a vet travel certificate, then MOCCAE endorsement. Confirm the live listed-country annex before you assume a titre is not required. USA dogs follow CDC high-risk rules, and airline rules vary. A rabies titre needs seven or more weeks; without one, allow a few days to two weeks. We do not publish an export-certificate validity figure. Confirm timing on the official MOCCAE portal.',
     },
     {
       q: 'How long does pet export from Dubai take?',
-      a: 'If your pet is fully vaccinated and the destination does not require a rabies titer test, export can take just a few days to two weeks. If a titer test is required, plan for 7 or more weeks because of lab turnaround and any waiting period. The destination country drives the timeline more than the UAE-side paperwork does.',
+      a: 'If your pet is fully vaccinated and the destination does not require a rabies titre test, export can take a few days to two weeks. If a titre test is required, plan for seven or more weeks for lab turnaround and any waiting period. That destination clock is longer than the UAE-side paperwork. Send the country and month for a managed export quote.',
     },
     {
       q: 'What is the MOCCAE export health certificate?',
-      a: 'It is the document that authorises your pet to leave the UAE. You apply online through the MOCCAE portal, and it becomes final only after a government veterinarian inspects your pet in person at the airport, scanning the microchip and reviewing your documents. Confirm current validity and the government fee on the official portal. Secondary write-ups discuss a short window, but we do not publish those numerals. How-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
+      a: 'The MOCCAE export health certificate is the document that authorises your pet to leave the UAE. You apply online through the MOCCAE portal, and it becomes final only after a government veterinarian inspects your pet at the airport, scanning the microchip and reviewing your documents. Confirm the government fee and validity on the official MOCCAE portal. We do not publish a day count. How-to steps: [how to export your pet from Dubai](/guides/pet-export-from-dubai/).',
     },
     {
       q: 'Does my pet need to be quarantined to leave the UAE?',
-      a: 'No. The UAE does not impose quarantine on pets leaving the country. Any quarantine requirement comes from the destination country, not from the UAE, so it depends entirely on where you are travelling to.',
+      a: 'The UAE does not impose quarantine on a pet that is leaving. Any quarantine requirement comes from the destination country, not from the UAE, so it depends on where you are travelling. We quote the managed export after an eligibility check.',
     },
     {
       q: 'Do I need a rabies titer test to export my pet?',
-      a: 'It depends on your destination, not on the UAE. Some countries require a rabies antibody titer test before entry; many do not. Because the test involves a blood draw, lab turnaround of two to three weeks and sometimes a waiting period, we check your destination’s rules first so it is started early enough.',
+      a: 'It depends on your destination, not on the UAE. Some countries require a rabies antibody titre before entry, and many do not. The blood draw, a lab turnaround of two to three weeks and any waiting period cannot be shortened, so the destination rules are checked before anything is booked. Send the country and month for a managed export quote.',
     },
     {
       q: 'Which documents do I need to take my pet out of Dubai?',
-      a: 'A microchip number that matches every certificate, a current rabies vaccination, a fit-to-fly note from the vet, the MOCCAE export steps the destination requires, and that country\'s own travel document. For Great Britain the document is a Great Britain pet health certificate, not Model A or Model B. We review the file so the chip number matches.',
+      a: 'You need a microchip number that matches every certificate, a current rabies vaccination, a fit to fly note from the vet, the MOCCAE export steps the destination requires, and that country\'s own travel document. For Great Britain the document is a Great Britain pet health certificate, not Model A or Model B. We check the chip number matches before the export is quoted.',
     },
     {
       q: 'Do you physically transport the pet yourselves?',
-      a: 'We are a coordination service. We connect you with vetted veterinary and transport partners and manage the documents, timeline and airport inspection so nothing is missed. We do not operate the aircraft ourselves.',
-    },
-    {
-      q: 'How do I get started with exporting my pet from Dubai?',
-      a: 'WhatsApp +971504782999 with destination, species and the month you want to fly if you want a quote and a managed export quote. We reply during business hours with a destination-first checklist. Process how-to: [how to export your pet from Dubai](/guides/pet-export-from-dubai/). Packages: [Prices](/prices/).',
+      a: 'We are a coordination service. We work with vetted veterinary and transport partners and manage the documents, timeline and airport inspection. We do not fly the animals ourselves. A managed export quote follows an eligibility check.',
     },
     {
       q: 'Is pet export the same as door-to-door relocation?',
-      a: 'Use this page when the pet is leaving the UAE and you want the export file coordinated. [pet relocation Dubai](/) covers the wider move if the flight mode is still open. Arrivals use [pet import to Dubai](/service/pet-import-dubai/). WhatsApp +971504782999.',
+      a: 'Pet export is the paperwork and the flight when your pet is leaving the UAE. The whole move out of Dubai is [pet relocation from Dubai](/service/pet-relocation-from-dubai/). Arrivals use [pet import to Dubai](/service/pet-import-dubai/). If the flight mode is still open, start from [pet relocation Dubai](/). WhatsApp +971504782999 for a managed export quote.',
     },
   ],
   relatedLinks: [
     { label: 'How to export your pet from Dubai', to: '/guides/pet-export-from-dubai/' },
-    { label: 'Pet Relocation from Dubai', to: '/service/pet-relocation-from-dubai/' },
-    { label: 'MOCCAE Pet Permit', to: '/service/moccae-pet-permit/' },
-    { label: 'Dubai to UK Pet Transport', to: '/routes/dubai-to-uk/' },
-    { label: 'Dubai to USA Pet Transport', to: '/routes/dubai-to-usa/' },
-    { label: 'How It Works', to: '/how-it-works/' },
-    { label: 'pet relocation Dubai', to: '/' },
+    { label: 'Pet relocation from Dubai', to: '/service/pet-relocation-from-dubai/' },
+    { label: 'MOCCAE pet permit assistance', to: '/service/moccae-pet-permit/' },
+    { label: 'Dubai to UK pet transport', to: '/routes/dubai-to-uk/' },
+    { label: 'Dubai to USA pet transport', to: '/routes/dubai-to-usa/' },
+    { label: 'How it works', to: '/how-it-works/' },
+    { label: 'Pet relocation Dubai', to: '/' },
     { label: 'Pet relocation services', to: '/service/pet-relocation-dubai/' },
     { label: 'Pet import to Dubai', to: '/service/pet-import-dubai/' },
     { label: 'Prices after eligibility', to: '/prices/' },
