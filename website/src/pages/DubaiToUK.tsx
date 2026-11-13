@@ -3,7 +3,7 @@ import Breadcrumb from '../components/Breadcrumb.tsx'
 import WhatsAppBtn from '../components/WhatsAppBtn.tsx'
 import Hero from '../components/Hero.tsx'
 import { BASE_URL, LOGO_URL } from '../lib/seo.ts'
-import { GUIDE_SOFT_GATE, OUTBOUND_PAID_INCLUDES, STRONG_WA_CLASS } from '../lib/conversionCopy.ts'
+import { GUIDE_SOFT_GATE, STRONG_WA_CLASS } from '../lib/conversionCopy.ts'
 import PaidIncludes from '../components/PaidIncludes.tsx'
 import { MessageCircle, CheckCircle, Plane, FileText, Shield, Stethoscope, Home, AlertTriangle, Info, PawPrint, Dog } from 'lucide-react'
 import { Link } from 'react-router-dom'
@@ -12,42 +12,78 @@ import { RoutePlanLinks } from '../components/LinkPlanSlot.tsx'
 
 const CHECKED = '22 September 2026'
 
+const PAGE_TITLE = 'Pet Relocation Dubai to UK | Dog & Cat Move, Quoted'
+const PAGE_DESCRIPTION =
+  'Moving a dog or cat from Dubai to UK? We time the GB health certificate, tapeworm, IATA crate and hold booking from DXB. Check if we can move your pet.'
+
+const WA_MESSAGE =
+  'Hi Dubai Pet Relocation. I want Get Route Checked for dubai to uk (outbound). Pet details and preferred dates follow.'
+
+/** UK-specific paid scope for this route only. Shared OUTBOUND_PAID_INCLUDES stays unchanged. */
+const UK_PAID_INCLUDES = [
+  'MOCCAE export health certificate timing (confirm the validity window on the MOCCAE portal)',
+  'Great Britain pet health certificate timed inside the 10-day window',
+  'Dog tapeworm appointment timed 24 to 120 hours before entry',
+  'IATA crate check before the booking is held',
+  'Hold booking on an approved route',
+  'Airport handover at DXB',
+] as const
+
+const AUTHORITY_SOURCES = [
+  { label: 'UAE MOCCAE: import permits and rules', href: 'https://www.moccae.gov.ae' },
+  { label: 'IATA Live Animals Regulations: travel crates', href: 'https://www.iata.org/en/programs/cargo/live-animals/' },
+  { label: 'Etihad: travelling with pets', href: 'https://www.etihad.com/en-ae/plan/travel-companion/travelling-with-pets' },
+  { label: 'Emirates: pets and unusual baggage allowances', href: 'https://www.emirates.com/english/before-you-fly/baggage/unusual-baggage-and-special-allowances/' },
+  { label: 'USDA APHIS: Pet Travel (US health certificates)', href: 'https://www.aphis.usda.gov/pet-travel' },
+]
+
 export default function DubaiToUK() {
   const pageUrl = `${BASE_URL}/routes/dubai-to-uk/`
-  const pageTitle = 'Pet Relocation Dubai to UK | Planning & Quote'
-  const pageDescription = 'Moving a dog or cat from Dubai to UK? Review documents, travel options and arrival planning, then request a quote for your pet and dates.'
   const faqs = [
     {
       question: 'What document does a pet from Dubai need to enter Great Britain?',
-      answer: 'On 22 September 2026 the United Arab Emirates was a listed country on GOV.UK. The document is a Great Britain pet health certificate, signed, stamped and dated by an official veterinarian. The pet must enter Great Britain within 10 days of that certificate being issued. Countries that are not listed also need a rabies blood test. That extra blood test is not the listed-country step. These rules are for England, Wales and Scotland. Northern Ireland has different guidance. This is not Model A or Model B, and it is not the UK export certificate used for a pet travelling the other way into Dubai.',
+      answer:
+        'A Great Britain pet health certificate signed by an official veterinarian. On 22 September 2026 the UAE was a listed country, so the pet must enter within 10 days of issue. A rabies blood test applies to countries that are not listed, not to the UAE. These rules cover England, Wales and Scotland. Northern Ireland is separate. This is not Model A or Model B, and not the UK export certificate used for a pet travelling into Dubai.',
     },
     {
       question: 'Does the microchip have to be fitted before the rabies vaccine?',
-      answer: 'For entry to Great Britain, GOV.UK says the pet must be microchipped before, or at the same time as, the rabies vaccination. If that order is missed, the pet needs to be vaccinated again. On approved air, train or ferry routes, staff check a chip that meets ISO 11784 and ISO 11785. If the chip does not meet those standards, you may have to bring your own reader. If the chip cannot be read, the pet can be refused entry or put into quarantine. That ISO sentence is a Great Britain entry rule. It is not restated on the live MOCCAE import page as a UAE rejection rule.',
+      answer:
+        'Yes. Microchip the pet before, or at the same time as, the rabies vaccination. If that order is missed, the pet must be vaccinated again. On approved routes, staff check a chip that meets ISO 11784 and ISO 11785. You may need your own reader if it does not. If the chip cannot be read, the pet can be refused entry or quarantined. That ISO rule is for Great Britain entry, not a current MOCCAE import rejection rule.',
     },
     {
       question: 'How long after the rabies vaccine can the pet travel?',
-      answer: 'GOV.UK says the wait depends on the vaccine type. It is at least 21 full days after the first vaccination, or after the last dose of the first course. This page does not shorten that wait and does not publish a clinic fee for the vaccine.',
+      answer:
+        'At least 21 full days. GOV.UK says the wait depends on the vaccine type: at least 21 full days after the first vaccination, or after the last dose of the first course. We do not shorten that wait, and we do not publish a clinic fee.',
     },
     {
       question: 'What tapeworm rule applies to a dog travelling from Dubai?',
-      answer: 'A vet must treat a dog for tapeworm each time it enters Great Britain, unless the dog is coming directly from Finland, Ireland, Northern Ireland, Malta or Norway. Dubai is not one of those exceptions. The product must be approved in the country where it is given and must contain praziquantel, or an equivalent proven against Echinococcus multilocularis. Give it no less than 24 hours and no more than 5 days (120 hours) before entry. The vet records the product name and manufacturer, the date and time, and their stamp and signature on the Great Britain pet health certificate. The published step is for dogs. This page does not give a dose.',
+      answer:
+        'A vet must treat the dog for tapeworm before each entry to Great Britain. Dubai is not exempt. The exempt origins are Finland, Ireland, Northern Ireland, Malta and Norway. The product must be approved where it is given and contain praziquantel, or an equivalent proven against Echinococcus multilocularis. Give it no less than 24 hours and no more than 5 days (120 hours) before entry. The vet records the product, manufacturer, date and time. We do not publish a dose.',
     },
     {
-      question: 'Is there a guaranteed clearance time or no quarantine?',
-      answer: 'GOV.UK says a pet may be put into quarantine for up to 4 months if the rules are not followed, or refused entry if you travelled by sea. You pay any fees. This page does not promise a 1 to 2 hour clearance, and it does not promise that a correct file means no quarantine.',
+      question: 'Can a pet be quarantined when arriving in the UK from Dubai?',
+      answer:
+        'Yes, if the rules are missed. GOV.UK says a pet may be quarantined for up to 4 months, or refused entry if you travelled by sea. You pay any fees. Correct documents reduce the risk of quarantine; nobody can guarantee clearance times.',
     },
     {
-      question: 'Which airline and what does the move cost?',
-      answer: 'Confirm the carrier and an approved pet-travel route in writing. British Airways indexed text says pets travel in the hold, not the cabin. This page does not publish daily flights, aircraft types, hold temperatures, or a cargo tariff. It also does not publish a package total in AED or GBP. Cargo, the crate and coordination are quoted for your animal. WhatsApp +971504782999.',
+      question: 'How much does it cost to move a pet from Dubai to the UK?',
+      answer:
+        'A Dubai to UK move is quoted for your animal after an eligibility check. The quote covers cargo, the crate, the veterinary visit, the Great Britain pet health certificate and border charges. The crate size, the airline that accepts the pet and the travel dates change that quote. We do not publish a package total. Check if we can move your pet.',
     },
     {
       question: 'Does a banned dog breed have a Great Britain exception?',
-      answer: 'GOV.UK says you cannot bring a banned breed of dog into Great Britain unless it already has a valid Certificate of Exemption. This page does not reprint that breed list. The UAE import ban list is a different rule and lives on the banned-breeds guide.',
+      answer:
+        'Only when the dog already has a valid Certificate of Exemption. GOV.UK says you cannot bring a banned breed of dog into Great Britain without that certificate. We do not reprint the breed list. The UAE import ban is a different rule, set out in the banned-breeds guide.',
     },
     {
       question: 'What else should the owner check before booking?',
-      answer: 'Use an approved route. Fill in the declaration if you are not selling or transferring the pet. Extra Balai rules apply if you will sell or rehome the pet, if it arrives more than 5 days before or after you, or if you are bringing more than 5 pets outside a competition, show or sporting event. We coordinate the file. We do not issue the Great Britain pet health certificate.',
+      answer:
+        'Use an approved route, and complete the declaration if you are not selling or transferring the pet. Extra Balai rules apply if you will sell or rehome the pet, if it arrives more than 5 days before or after you, or if you are bringing more than 5 pets outside a competition, show or sporting event. We coordinate the vet appointments and the carrier booking. We do not issue the Great Britain pet health certificate.',
+    },
+    {
+      question: 'How do I take my dog from Dubai to the UK?',
+      answer:
+        'Pet relocation Dubai to UK for a dog is four steps. Microchip the dog. Give the rabies vaccine and wait at least 21 full days. Book dog tapeworm treatment for 24 hours to 5 days before entry. An official veterinarian issues the Great Britain pet health certificate, and the dog must enter within 10 days. We can time and book these steps for you.',
     },
   ]
 
@@ -73,12 +109,12 @@ export default function DubaiToUK() {
     {
       '@context': 'https://schema.org',
       '@type': 'Article',
-      headline: pageTitle,
-      description: pageDescription,
+      headline: PAGE_TITLE,
+      description: PAGE_DESCRIPTION,
       author: { '@type': 'Organization', name: 'Dubai Pet Relocation' },
       publisher: { '@type': 'Organization', name: 'Dubai Pet Relocation', logo: { '@type': 'ImageObject', url: LOGO_URL } },
       datePublished: '2025-01-15',
-      dateModified: '2026-09-22',
+      dateModified: '2026-11-13',
     },
   ]
 
@@ -86,8 +122,8 @@ export default function DubaiToUK() {
     <div className="bg-[#F5F6FD]">
       <SEOHead
         meta={{
-          title: pageTitle,
-          description: pageDescription,
+          title: PAGE_TITLE,
+          description: PAGE_DESCRIPTION,
           canonical: pageUrl,
           ogType: 'article',
         }}
@@ -101,13 +137,13 @@ export default function DubaiToUK() {
         fallbackSrc="/images/hero-dubai-to-uk.jpg"
         eyebrow="Dubai to Great Britain"
         title="Pet relocation from Dubai to UK"
-        subtitle="On 22 September 2026 the UAE was a listed country. The document is a Great Britain pet health certificate. The pet must enter within 10 days of issue. No package price on this page."
+        subtitle="On 22 September 2026 the UAE was a listed country. The document is a Great Britain pet health certificate. The pet must enter within 10 days of issue. Your quote is built on your pet, route and dates."
         updated={`Checked ${CHECKED}`}
         primaryLabel="Get Route Checked"
-        whatsappMessage="Hi Dubai Pet Relocation. I want Get Route Checked for dubai to uk (outbound). Pet details and preferred dates follow."
+        whatsappMessage={WA_MESSAGE}
         primaryClassName={STRONG_WA_CLASS}
         showBuyerQualify
-        paidIncludes={[...OUTBOUND_PAID_INCLUDES]}
+        paidIncludes={[...UK_PAID_INCLUDES]}
         gateLine={GUIDE_SOFT_GATE}
         waService="Export service"
       />
@@ -121,7 +157,7 @@ export default function DubaiToUK() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Great Britain rules</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">What GOV.UK asks for from Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              These steps are for England, Wales and Scotland. Northern Ireland is a separate path. Checked on {CHECKED}.
+              These steps are for England, Wales and Scotland. Northern Ireland follows different rules. Checked on {CHECKED}.
             </p>
           </div>
 
@@ -132,7 +168,7 @@ export default function DubaiToUK() {
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Microchip</p>
               <p className="text-[#5A5A5A] text-sm">Before or with the vaccine</p>
-              <p className="text-[#5A5A5A] text-xs mt-2">ISO 11784 and ISO 11785 are the Great Britain scan standard on approved routes. Not a current MOCCAE import sentence.</p>
+              <p className="text-[#5A5A5A] text-xs mt-2">ISO 11784 and ISO 11785 are the Great Britain scan standard on approved routes. MOCCAE import rules do not restate that standard.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 text-center">
               <div className="w-14 h-14 bg-[#4F5BD5]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -156,7 +192,7 @@ export default function DubaiToUK() {
               </div>
               <p className="font-bold text-[#2A2A2A] text-lg mb-1">Tapeworm</p>
               <p className="text-[#5A5A5A] text-sm">Dogs</p>
-              <p className="text-[#5A5A5A] text-xs mt-2">No less than 24 hours and no more than 5 days before entry. Praziquantel or an equivalent. No dose on this page.</p>
+              <p className="text-[#5A5A5A] text-xs mt-2">No less than 24 hours and no more than 5 days before entry. Praziquantel or an equivalent. We do not publish a dose.</p>
             </div>
           </div>
         </div>
@@ -167,9 +203,9 @@ export default function DubaiToUK() {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Documentation</span>
-              <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2 mb-6">The entry file, in order</h2>
+              <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2 mb-6">Documents for Great Britain, in order</h2>
               <p className="text-[#5A5A5A] text-base leading-relaxed mb-6">
-                GOV.UK sets the Great Britain rules. An official veterinarian in the UAE signs the certificate. This page does not state a MOCCAE export fee or a processing-day promise for that signature.
+                GOV.UK sets the Great Britain rules. An official veterinarian in the UAE signs the certificate. We do not issue the certificate or the vaccine; an official veterinarian does.
               </p>
 
               <div className="space-y-4">
@@ -188,7 +224,7 @@ export default function DubaiToUK() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">2. Rabies vaccination</p>
-                    <p className="text-[#5A5A5A] text-sm">Wait at least 21 full days after the first vaccination, or after the last dose of the first course. The exact wait depends on the vaccine. A listed country does not add the unlisted-country rabies blood test.</p>
+                    <p className="text-[#5A5A5A] text-sm">Wait at least 21 full days after the first vaccination, or after the last dose of the first course. The exact wait depends on the vaccine. A listed country does not add the rabies blood test used for unlisted countries.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 bg-[#F5F6FD] rounded-2xl p-5">
@@ -206,7 +242,7 @@ export default function DubaiToUK() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#2A2A2A] mb-1">4. Dog tapeworm treatment</p>
-                    <p className="text-[#5A5A5A] text-sm">Required for a dog from Dubai. Product approved where it is given, containing praziquantel or an equivalent. Timing is no less than 24 hours and no more than 5 days before entry. Record name, manufacturer, date and time. No dose is published here.</p>
+                    <p className="text-[#5A5A5A] text-sm">Required for a dog from Dubai. The product must be approved where it is given and must contain praziquantel or an equivalent. Timing is no less than 24 hours and no more than 5 days (120 hours) before entry. The vet records the name, manufacturer, date and time. We do not publish a dose.</p>
                   </div>
                 </div>
               </div>
@@ -220,7 +256,7 @@ export default function DubaiToUK() {
               <ul className="space-y-4 text-[#5A5A5A] text-sm leading-relaxed">
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>Check the route is approved for pet travel. This page does not publish a complete airport list.</span>
+                  <span>Check the route is approved for pet travel. We do not publish a complete airport list.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
@@ -228,15 +264,15 @@ export default function DubaiToUK() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>You cannot bring a banned breed of dog into Great Britain unless it already has a valid Certificate of Exemption. This page does not copy that list.</span>
+                  <span>You cannot bring a banned breed of dog into Great Britain unless it already has a valid Certificate of Exemption. We do not reprint that list.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>Snub-nosed animals may be refused by a carrier. This page does not copy a May to September embargo.</span>
+                  <span>Snub-nosed breeds: ask the airline about seasonal limits before booking.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Info className="w-5 h-5 text-[#4F5BD5] shrink-0 mt-0.5" />
-                  <span>Northern Ireland is not the same path. Do not use this page for Belfast or Derry.</span>
+                  <span>Northern Ireland follows different rules. This route covers England, Wales and Scotland.</span>
                 </li>
               </ul>
             </div>
@@ -250,7 +286,7 @@ export default function DubaiToUK() {
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Airlines</span>
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Carriers from Dubai</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              Ask the airline which product it will accept. Frequency, aircraft type, hold temperature and tariff are not stated here.
+              Ask the airline which product it will accept. We do not publish frequency, aircraft type, hold temperature or a cargo tariff.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -259,21 +295,21 @@ export default function DubaiToUK() {
                 <Plane className="w-6 h-6 text-[#D71A21]" />
                 <h3 className="text-lg font-bold text-[#2A2A2A]">Emirates</h3>
               </div>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Confirm the live-animal product in writing. The Emirates rule that an itinerary ending in Dubai is cargo is an inbound rule. Do not reuse it as a UK arrival tariff.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">Confirm the live-animal product in writing before you book. A rule for itineraries that end in Dubai does not set the product or the price for a flight to Great Britain.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
               <div className="flex items-center gap-4 mb-4">
                 <Plane className="w-6 h-6 text-[#C8102E]" />
                 <h3 className="text-lg font-bold text-[#2A2A2A]">British Airways</h3>
               </div>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Indexed official text says pets travel in the hold, not the cabin. Assistance dogs are a separate arrangement. No flight time, temperature or Dubai tariff is copied here.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">British Airways carries pets in the hold, not the cabin. Assistance dogs are a separate arrangement. We do not publish a flight time, a hold temperature or a cargo rate.</p>
             </div>
             <div className="bg-white rounded-[20px] shadow-sm p-6 lg:p-8">
               <div className="flex items-center gap-4 mb-4">
                 <Plane className="w-6 h-6 text-[#E31937]" />
                 <h3 className="text-lg font-bold text-[#2A2A2A]">Other carriers</h3>
               </div>
-              <p className="text-sm text-[#5A5A5A] leading-relaxed">Virgin Atlantic and any other airline need their own written acceptance. This page does not state a weekly frequency, a climate hold, or a rate.</p>
+              <p className="text-sm text-[#5A5A5A] leading-relaxed">Virgin Atlantic and any other airline need their own written acceptance. We do not state a weekly frequency, a climate hold or a rate.</p>
             </div>
           </div>
         </div>
@@ -283,15 +319,28 @@ export default function DubaiToUK() {
         <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Pricing</span>
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">What this page does not price</h2>
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">What your Dubai to UK quote covers</h2>
           </div>
           <div className="bg-[#F5F6FD] rounded-[20px] p-6 lg:p-8">
             <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
-              Cargo, the crate, the veterinary visit, the Great Britain pet health certificate and border charges are quoted for your animal. This page does not publish a package total in AED or GBP, and it does not invent a MOCCAE export endorsement fee.
+              Your quote is built for the animal. It covers cargo, the crate, the veterinary visit, the Great Britain pet health certificate and border charges. The crate is checked against{' '}
+              <Link to="/guides/iata-pet-crate-requirements/" className="font-semibold text-[#4F5BD5] hover:underline">
+                IATA pet crate requirements
+              </Link>{' '}
+              before the hold booking.
             </p>
-            <p className="text-[#5A5A5A] text-sm leading-relaxed">
-              Government figures checked on the MOCCAE import page (AED 200 permit, AED 500 dog release, AED 250 cat release) are inbound UAE charges. They are not the price of a Dubai to Great Britain move. WhatsApp +971504782999 for a quote.
+            <p className="text-[#5A5A5A] text-sm leading-relaxed mb-4">
+              UAE government fees, where they apply, are confirmed on the official MOCCAE portal. They are not the price of a Dubai to UK move.
             </p>
+            <p className="text-[#5A5A5A] text-sm leading-relaxed mb-6">{GUIDE_SOFT_GATE}</p>
+            <div className="flex justify-center">
+              <WhatsAppBtn
+                strong
+                service="Export service"
+                label="Get Route Checked"
+                message={WA_MESSAGE}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -300,13 +349,9 @@ export default function DubaiToUK() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">Sequence</span>
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">How the file is built</h2>
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">How a Dubai to UK move is timed</h2>
             <p className="text-[#5A5A5A] text-base leading-relaxed mt-4 max-w-2xl mx-auto">
-              There is no single week count. The rabies wait is at least 21 full days after a first course. The certificate window is 10 days. The wider outbound move is{' '}
-              <Link to="/service/pet-relocation-from-dubai/" className="font-semibold text-[#4F5BD5] hover:underline">
-                pet relocation from Dubai
-              </Link>
-              . This page stays on the Great Britain entry file.
+              There is no single week count. The rabies wait is at least 21 full days after a first course. The certificate window is 10 days.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -328,12 +373,12 @@ export default function DubaiToUK() {
 
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-[900px] mx-auto px-5 sm:px-6 lg:px-8">
-          <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-4">What changed in the document name</h2>
+          <h2 className="text-[24px] sm:text-[30px] font-bold text-[#2A2A2A] mb-4">The certificate used for Great Britain</h2>
           <p className="text-[#5A5A5A] leading-relaxed mb-4">
-            A pet travelling from Dubai does not use an EU pet passport for Great Britain entry. The listed-country document checked on {CHECKED} is a Great Britain pet health certificate. Model A and Model B are not that document. Category labels used for other journeys are not repeated here.
+            A pet travelling from Dubai does not use an EU pet passport for Great Britain entry. The listed-country document checked on {CHECKED} is a Great Britain pet health certificate. Model A and Model B are not that document.
           </p>
           <p className="text-[#5A5A5A] leading-relaxed">
-            The reverse journey, United Kingdom to Dubai, uses the UK export certificate 3926EHC and the MOCCAE import permit. That permit is valid 90 days from issuance. Do not read the 10-day Great Britain certificate window as the MOCCAE permit life.
+            The reverse journey, United Kingdom to Dubai, uses the UK export certificate 3926EHC and the MOCCAE import permit. That permit is valid 90 days from issuance. The 10-day Great Britain certificate window is not the life of the MOCCAE permit.
           </p>
         </div>
       </section>
@@ -342,7 +387,7 @@ export default function DubaiToUK() {
         <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-sm font-semibold text-[#4F5BD5] uppercase tracking-wide">FAQ</span>
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Dubai to Great Britain questions</h2>
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-[#2A2A2A] mt-2">Questions before you book</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {faqs.map((faq) => (
@@ -362,6 +407,7 @@ export default function DubaiToUK() {
 
       <OfficialSources
         checkedLabel={`Great Britain entry rules checked ${CHECKED} on GOV.UK. Veterinary review was not supplied.`}
+        sources={AUTHORITY_SOURCES}
         extra={[
           { label: 'GOV.UK: bring your pet to Great Britain', href: 'https://www.gov.uk/bring-pet-to-great-britain' },
           { label: 'GOV.UK: which pet travel document', href: 'https://www.gov.uk/bring-pet-to-great-britain/which-pet-travel-document' },
@@ -377,21 +423,32 @@ export default function DubaiToUK() {
             <PawPrint className="w-12 h-12 mx-auto mb-4 text-white" />
             <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-4">Ready to plan a Dubai to Great Britain move?</h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
-              We coordinate the file, the carrier booking and WhatsApp updates during business hours. We do not issue the Great Britain pet health certificate. {GUIDE_SOFT_GATE} WhatsApp +971504782999.
+              For a booked move we coordinate the vet appointments, the certificate window, the carrier booking and the DXB handover, with WhatsApp updates during business hours. We do not issue the Great Britain pet health certificate. {GUIDE_SOFT_GATE} WhatsApp +971504782999.
             </p>
-            <PaidIncludes tone="dark" compact items={OUTBOUND_PAID_INCLUDES} className="mx-auto mb-6 max-w-2xl text-left" />
+            <PaidIncludes tone="dark" compact items={UK_PAID_INCLUDES} className="mx-auto mb-6 max-w-2xl text-left" />
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppBtn
                 strong
                 service="Export service"
                 label="Get Route Checked"
-                message="Hi Dubai Pet Relocation. I want Get Route Checked for dubai to uk (outbound). Pet details and preferred dates follow."
+                message={WA_MESSAGE}
               />
               <a href={`${BASE_URL}/how-it-works/`} className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-semibold text-[#2A2A2A] bg-white hover:bg-[#F5F5F5] transition-colors">
                 <Info className="w-5 h-5" />
                 How it works
               </a>
             </div>
+            <p className="mt-6 text-sm text-white/80">
+              Still choosing the service? See{' '}
+              <Link to="/service/pet-relocation-from-dubai/" className="font-semibold text-white underline">
+                pet relocation from Dubai
+              </Link>
+              {' '}or{' '}
+              <Link to="/service/pet-export-dubai/" className="font-semibold text-white underline">
+                pet export from Dubai
+              </Link>
+              .
+            </p>
             <div className="mt-8 grid sm:grid-cols-3 gap-4 text-left">
               <a href={`${BASE_URL}/dog-relocation-to-dubai/`} className="block p-4 bg-white/10 rounded-xl hover:bg-white/15 transition-colors">
                 <p className="font-semibold text-white mb-1">Dog relocation</p>
@@ -427,7 +484,7 @@ export default function DubaiToUK() {
             </Link>
             <Link to="/routes/dubai-to-usa/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
               <p className="font-bold text-[#2A2A2A] mb-1">Dubai to USA</p>
-              <p className="text-[#5A5A5A] text-sm">A different destination. Do not copy Great Britain rules onto it.</p>
+              <p className="text-[#5A5A5A] text-sm">A different destination, with its own entry rules.</p>
             </Link>
             <Link to="/routes/usa-to-dubai/" className="block bg-[#F5F6FD] rounded-[20px] p-6 hover:shadow-sm transition-shadow">
               <p className="font-bold text-[#2A2A2A] mb-1">USA to Dubai</p>
