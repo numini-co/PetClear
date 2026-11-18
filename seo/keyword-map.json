@@ -1,0 +1,1354 @@
+{
+  "normalization": "Lowercase, trim, and collapse whitespace. Hyphens and punctuation become spaces. Do not stem. Singular and plural stay distinct. UAE and Dubai stay distinct.",
+  "allowedOverlaps": [],
+  "entries": [
+    {
+      "url": "https://dubai-pet-relocation.ae/",
+      "primaryKeyword": "pet relocation dubai",
+      "secondaryKeywords": [
+        "door to door pet moving uae"
+      ],
+      "intent": "service/money",
+      "notes": "Head term for the site. Do not assign this primary to another URL."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/service/pet-relocation-dubai/",
+      "primaryKeyword": "pet relocation services dubai",
+      "secondaryKeywords": [
+        "pet relocation services in dubai managed from documents to doorstep"
+      ],
+      "intent": "service/money",
+      "notes": "Commercial services lane. The homepage keeps the shorter head term \"pet relocation dubai\". The services hub keeps \"compare our pet relocation services\"."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/service/pet-import-dubai/",
+      "primaryKeyword": "pet import dubai",
+      "secondaryKeywords": [
+        "permits clearance delivery 2026"
+      ],
+      "intent": "service/money",
+      "notes": "Commercial import lane. The requirements guide keeps \"uae pet import requirements\" and the checklist keeps \"uae pet import checklist\". Data-file primaryKeyword \"pet import services dubai\" is not locked. The title and H1 target \"pet import dubai\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/service/pet-export-dubai/",
+      "primaryKeyword": "pet export dubai",
+      "secondaryKeywords": [
+        "pet export services from dubai",
+        "moccae export permit managed"
+      ],
+      "intent": "service/money",
+      "notes": "Commercial export lane. The how-to guide keeps \"how to export a pet from dubai\"."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/service/pet-transport-dubai/",
+      "primaryKeyword": "pet taxi dubai",
+      "secondaryKeywords": [
+        "airport city abu dhabi transfers"
+      ],
+      "intent": "service/money",
+      "notes": "Ground taxi lane. Community pages keep \"pet transport in\" plus the community name, not this taxi term."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/service/international-pet-relocation/",
+      "primaryKeyword": "international pet relocation dubai",
+      "secondaryKeywords": [
+        "international pet relocation to and from dubai"
+      ],
+      "intent": "service/money"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/service/pet-relocation-to-dubai/",
+      "primaryKeyword": "pet relocation to dubai",
+      "secondaryKeywords": [
+        "managed moves for dogs cats"
+      ],
+      "intent": "service/money",
+      "notes": "Inbound direction lane. Route pages keep their own country pair, and the homepage keeps \"pet relocation dubai\"."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/service/pet-relocation-from-dubai/",
+      "primaryKeyword": "pet relocation from dubai",
+      "secondaryKeywords": [
+        "managed outbound moves"
+      ],
+      "intent": "service/money",
+      "notes": "Directional outbound service. Export commerce stays on \"pet export dubai\" and the DIY guide stays on \"how to export a pet from dubai\"."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/service/dog-relocation-dubai/",
+      "primaryKeyword": "dog relocation dubai",
+      "secondaryKeywords": [
+        "dog relocation to and from dubai",
+        "breed check iata crate flights"
+      ],
+      "intent": "species",
+      "notes": "Commercial dog lane. The how-to page keeps \"how to bring your dog to dubai\"."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/service/cat-relocation-dubai/",
+      "primaryKeyword": "cat relocation dubai",
+      "secondaryKeywords": [
+        "cat relocation to and from dubai"
+      ],
+      "intent": "species",
+      "notes": "Commercial cat lane. The how-to page keeps \"how to bring your cat to dubai\"."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/service/moccae-pet-permit/",
+      "primaryKeyword": "moccae pet permit assistance",
+      "secondaryKeywords": [
+        "moccae pet permit application assistance"
+      ],
+      "intent": "service/money",
+      "notes": "Managed permit lane. The how-to guide keeps \"moccae import permit\". Data-file primaryKeyword \"moccae pet permit dubai\" is not locked. The title and H1 target \"moccae pet permit assistance\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/",
+      "primaryKeyword": "pet collection across dubai",
+      "secondaryKeywords": [
+        "pet collection and delivery across dubai",
+        "find pet collection and delivery information for dubai communities"
+      ],
+      "intent": "community",
+      "notes": "Community directory. Each area page keeps \"pet transport in\" plus that community."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/dubai-marina/",
+      "primaryKeyword": "pet transport in dubai marina",
+      "secondaryKeywords": [
+        "pet collection and delivery in dubai marina",
+        "plan pet collection or delivery in dubai marina"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation dubai marina\" is not locked. The title and H1 target \"pet transport in dubai marina\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/jumeirah/",
+      "primaryKeyword": "pet transport in jumeirah",
+      "secondaryKeywords": [
+        "pet collection and delivery in jumeirah",
+        "plan pet collection or delivery in jumeirah"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation jumeirah\" is not locked. The title and H1 target \"pet transport in jumeirah\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/jbr/",
+      "primaryKeyword": "pet transport in jbr",
+      "secondaryKeywords": [
+        "pet collection and delivery in jbr",
+        "plan pet collection or delivery in jbr"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation jbr\" is not locked. The title and H1 target \"pet transport in jbr\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/downtown-dubai/",
+      "primaryKeyword": "pet transport in downtown dubai",
+      "secondaryKeywords": [
+        "pet collection and delivery in downtown dubai",
+        "plan pet collection or delivery in downtown dubai"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation downtown dubai\" is not locked. The title and H1 target \"pet transport in downtown dubai\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/palm-jumeirah/",
+      "primaryKeyword": "pet transport in palm jumeirah",
+      "secondaryKeywords": [
+        "pet collection and delivery in palm jumeirah",
+        "plan pet collection or delivery in palm jumeirah"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation palm jumeirah\" is not locked. The title and H1 target \"pet transport in palm jumeirah\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/business-bay/",
+      "primaryKeyword": "pet transport in business bay",
+      "secondaryKeywords": [
+        "pet collection and delivery in business bay",
+        "plan pet collection or delivery in business bay"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation business bay\" is not locked. The title and H1 target \"pet transport in business bay\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/al-barsha/",
+      "primaryKeyword": "pet transport in al barsha",
+      "secondaryKeywords": [
+        "pet collection and delivery in al barsha",
+        "plan pet collection or delivery in al barsha"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation al barsha\" is not locked. The title and H1 target \"pet transport in al barsha\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/arabian-ranches/",
+      "primaryKeyword": "pet transport in arabian ranches",
+      "secondaryKeywords": [
+        "pet collection and delivery in arabian ranches",
+        "plan pet collection or delivery in arabian ranches"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation arabian ranches\" is not locked. The title and H1 target \"pet transport in arabian ranches\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/mirdif/",
+      "primaryKeyword": "pet transport in mirdif",
+      "secondaryKeywords": [
+        "pet collection and delivery in mirdif",
+        "plan pet collection or delivery in mirdif"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation mirdif\" is not locked. The title and H1 target \"pet transport in mirdif\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/dubai-silicon-oasis/",
+      "primaryKeyword": "pet transport in dubai silicon oasis",
+      "secondaryKeywords": [
+        "pet collection and delivery in dubai silicon oasis",
+        "plan pet collection or delivery in dubai silicon oasis"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation dubai silicon oasis\" is not locked. The title and H1 target \"pet transport in dubai silicon oasis\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/jlt/",
+      "primaryKeyword": "pet transport in jlt",
+      "secondaryKeywords": [
+        "pet collection and delivery in jlt",
+        "plan pet collection or delivery in jlt"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation jlt\" is not locked. The title and H1 target \"pet transport in jlt\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/jvc/",
+      "primaryKeyword": "pet transport in jvc",
+      "secondaryKeywords": [
+        "pet collection and delivery in jvc",
+        "plan pet collection or delivery in jvc"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation jvc\" is not locked. The title and H1 target \"pet transport in jvc\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/jvt/",
+      "primaryKeyword": "pet transport in jvt",
+      "secondaryKeywords": [
+        "pet collection and delivery in jvt",
+        "plan pet collection or delivery in jvt"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation jvt\" is not locked. The title and H1 target \"pet transport in jvt\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/dubai-hills/",
+      "primaryKeyword": "pet transport in dubai hills",
+      "secondaryKeywords": [
+        "pet collection and delivery in dubai hills",
+        "plan pet collection or delivery in dubai hills"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation dubai hills\" is not locked. The title and H1 target \"pet transport in dubai hills\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/dubai-south/",
+      "primaryKeyword": "pet transport in dubai south",
+      "secondaryKeywords": [
+        "pet collection and delivery in dubai south",
+        "plan pet collection or delivery in dubai south"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation dubai south\" is not locked. The title and H1 target \"pet transport in dubai south\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/al-quoz/",
+      "primaryKeyword": "pet transport in al quoz",
+      "secondaryKeywords": [
+        "pet collection and delivery in al quoz",
+        "plan pet collection or delivery in al quoz"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation al quoz\" is not locked. The title and H1 target \"pet transport in al quoz\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/deira/",
+      "primaryKeyword": "pet transport in deira",
+      "secondaryKeywords": [
+        "pet collection and delivery in deira",
+        "plan pet collection or delivery in deira"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation deira\" is not locked. The title and H1 target \"pet transport in deira\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/bur-dubai/",
+      "primaryKeyword": "pet transport in bur dubai",
+      "secondaryKeywords": [
+        "pet collection and delivery in bur dubai",
+        "plan pet collection or delivery in bur dubai"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation bur dubai\" is not locked. The title and H1 target \"pet transport in bur dubai\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/al-satwa/",
+      "primaryKeyword": "pet transport in al satwa",
+      "secondaryKeywords": [
+        "pet collection and delivery in al satwa",
+        "plan pet collection or delivery in al satwa"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation al satwa\" is not locked. The title and H1 target \"pet transport in al satwa\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/umm-suqeim/",
+      "primaryKeyword": "pet transport in umm suqeim",
+      "secondaryKeywords": [
+        "pet collection and delivery in umm suqeim",
+        "plan pet collection or delivery in umm suqeim"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation umm suqeim\" is not locked. The title and H1 target \"pet transport in umm suqeim\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/creek-harbour/",
+      "primaryKeyword": "pet transport in creek harbour",
+      "secondaryKeywords": [
+        "pet collection and delivery in creek harbour",
+        "plan pet collection or delivery in creek harbour"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation dubai creek harbour\" is not locked. The title and H1 target \"pet transport in creek harbour\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/mudon/",
+      "primaryKeyword": "pet transport in mudon",
+      "secondaryKeywords": [
+        "pet collection and delivery in mudon",
+        "plan pet collection or delivery in mudon"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation mudon\" is not locked. The title and H1 target \"pet transport in mudon\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/victory-heights/",
+      "primaryKeyword": "pet transport in victory heights",
+      "secondaryKeywords": [
+        "pet collection and delivery in victory heights",
+        "plan pet collection or delivery in victory heights"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation victory heights\" is not locked. The title and H1 target \"pet transport in victory heights\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/sports-city/",
+      "primaryKeyword": "pet transport in sports city",
+      "secondaryKeywords": [
+        "pet collection and delivery in sports city",
+        "plan pet collection or delivery in sports city"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation dubai sports city\" is not locked. The title and H1 target \"pet transport in sports city\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/motor-city/",
+      "primaryKeyword": "pet transport in motor city",
+      "secondaryKeywords": [
+        "pet collection and delivery in motor city",
+        "plan pet collection or delivery in motor city"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation motor city\" is not locked. The title and H1 target \"pet transport in motor city\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/dubai-investment-park/",
+      "primaryKeyword": "pet transport in dubai investment park",
+      "secondaryKeywords": [
+        "pet collection and delivery in dubai investment park",
+        "plan pet collection or delivery in dubai investment park"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation dubai investment park\" is not locked. The title and H1 target \"pet transport in dubai investment park\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/dubai-production-city/",
+      "primaryKeyword": "pet transport in dubai production city",
+      "secondaryKeywords": [
+        "pet collection and delivery in dubai production city",
+        "plan pet collection or delivery in dubai production city"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation dubai production city\" is not locked. The title and H1 target \"pet transport in dubai production city\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/al-furjan/",
+      "primaryKeyword": "pet transport in al furjan",
+      "secondaryKeywords": [
+        "pet collection and delivery in al furjan",
+        "plan pet collection or delivery in al furjan"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation al furjan\" is not locked. The title and H1 target \"pet transport in al furjan\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/damac-hills/",
+      "primaryKeyword": "pet transport in damac hills",
+      "secondaryKeywords": [
+        "pet collection and delivery in damac hills",
+        "plan pet collection or delivery in damac hills"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation damac hills\" is not locked. The title and H1 target \"pet transport in damac hills\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/damac-hills-2/",
+      "primaryKeyword": "pet transport in damac hills 2",
+      "secondaryKeywords": [
+        "pet collection and delivery in damac hills 2",
+        "plan pet collection or delivery in damac hills 2"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation damac hills 2\" is not locked. The title and H1 target \"pet transport in damac hills 2\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/emaar-south/",
+      "primaryKeyword": "pet transport in emaar south",
+      "secondaryKeywords": [
+        "pet collection and delivery in emaar south",
+        "plan pet collection or delivery in emaar south"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation emaar south\" is not locked. The title and H1 target \"pet transport in emaar south\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/dubailand/",
+      "primaryKeyword": "pet transport in dubailand",
+      "secondaryKeywords": [
+        "pet collection and delivery in dubailand",
+        "plan pet collection or delivery in dubailand"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation dubailand\" is not locked. The title and H1 target \"pet transport in dubailand\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/meydan/",
+      "primaryKeyword": "pet transport in meydan",
+      "secondaryKeywords": [
+        "pet collection and delivery in meydan",
+        "plan pet collection or delivery in meydan"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation meydan\" is not locked. The title and H1 target \"pet transport in meydan\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/karama/",
+      "primaryKeyword": "pet transport in karama",
+      "secondaryKeywords": [
+        "pet collection and delivery in karama",
+        "plan pet collection or delivery in karama"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation karama\" is not locked. The title and H1 target \"pet transport in karama\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/bluewaters/",
+      "primaryKeyword": "pet transport in bluewaters",
+      "secondaryKeywords": [
+        "pet collection and delivery in bluewaters",
+        "plan pet collection or delivery in bluewaters"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation bluewaters\" is not locked. The title and H1 target \"pet transport in bluewaters\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/port-de-la-mer/",
+      "primaryKeyword": "pet transport in port de la mer",
+      "secondaryKeywords": [
+        "pet collection and delivery in port de la mer",
+        "plan pet collection or delivery in port de la mer"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation port de la mer\" is not locked. The title and H1 target \"pet transport in port de la mer\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/city-walk/",
+      "primaryKeyword": "pet transport in city walk",
+      "secondaryKeywords": [
+        "pet collection and delivery in city walk",
+        "plan pet collection or delivery in city walk"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation city walk\" is not locked. The title and H1 target \"pet transport in city walk\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/international-city/",
+      "primaryKeyword": "pet transport in international city",
+      "secondaryKeywords": [
+        "pet collection and delivery in international city",
+        "plan pet collection or delivery in international city"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation international city\" is not locked. The title and H1 target \"pet transport in international city\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/al-wasl/",
+      "primaryKeyword": "pet transport in al wasl",
+      "secondaryKeywords": [
+        "pet collection and delivery in al wasl",
+        "plan pet collection or delivery in al wasl"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation al wasl\" is not locked. The title and H1 target \"pet transport in al wasl\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dubai/sheikh-zayed-road/",
+      "primaryKeyword": "pet transport in sheikh zayed road",
+      "secondaryKeywords": [
+        "pet collection and delivery in sheikh zayed road",
+        "plan pet collection or delivery in sheikh zayed road"
+      ],
+      "intent": "community",
+      "notes": "Data-file primaryKeyword \"pet relocation sheikh zayed road\" is not locked. The title and H1 target \"pet transport in sheikh zayed road\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/",
+      "primaryKeyword": "pet relocation routes",
+      "secondaryKeywords": [
+        "find pet relocation information for routes into and out of dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/cities/",
+      "primaryKeyword": "pet relocation across the uae",
+      "secondaryKeywords": [
+        "explore pet relocation support across dubai abu dhabi and sharjah"
+      ],
+      "intent": "community"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/guides/",
+      "primaryKeyword": "dubai pet travel guides",
+      "secondaryKeywords": [
+        "documents costs flights"
+      ],
+      "intent": "guide/informational"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/guides/pet-relocation-cost-dubai/",
+      "primaryKeyword": "pet relocation cost dubai",
+      "secondaryKeywords": [
+        "what affects the cost of pet relocation in dubai"
+      ],
+      "intent": "guide/informational",
+      "notes": "Informational cost lane. The prices page keeps \"pet relocation prices dubai\"."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/guides/uae-pet-import-requirements/",
+      "primaryKeyword": "uae pet import requirements",
+      "secondaryKeywords": [
+        "bringing a dog or cat into the uae"
+      ],
+      "intent": "guide/informational",
+      "notes": "Rules lane. The commercial import page keeps \"pet import dubai\" and the checklist keeps \"uae pet import checklist\"."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/how-it-works/",
+      "primaryKeyword": "how pet relocation works",
+      "secondaryKeywords": [
+        "how your pet relocation works",
+        "dubai moving process"
+      ],
+      "intent": "guide/informational"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/dog-relocation-to-dubai/",
+      "primaryKeyword": "how to bring your dog to dubai",
+      "secondaryKeywords": [
+        "dog relocation to dubai"
+      ],
+      "intent": "species",
+      "notes": "The title says \"Dog Relocation to Dubai\", beside the commercial primary \"dog relocation dubai\". This URL keeps the how-to H1."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/cat-relocation-to-dubai/",
+      "primaryKeyword": "how to bring your cat to dubai",
+      "secondaryKeywords": [
+        "cat relocation to dubai"
+      ],
+      "intent": "species",
+      "notes": "The title says \"Cat Relocation to Dubai\", beside the commercial primary \"cat relocation dubai\". This URL keeps the how-to H1."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/services/",
+      "primaryKeyword": "compare our pet relocation services",
+      "secondaryKeywords": [
+        "compare document assistance managed import and complete pet relocation support"
+      ],
+      "intent": "service/money",
+      "notes": "The title repeats \"pet relocation services dubai\", which stays locked to /service/pet-relocation-dubai/. This page keeps the H1 phrase \"compare our pet relocation services\"."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/prices/",
+      "primaryKeyword": "pet relocation prices dubai",
+      "secondaryKeywords": [
+        "pet relocation prices and quote inclusions"
+      ],
+      "intent": "service/money",
+      "notes": "Quote-inclusions lane. The cost guide keeps \"pet relocation cost dubai\"."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/about/",
+      "primaryKeyword": "about dubai pet relocation",
+      "secondaryKeywords": [
+        "the team behind dubai pet relocation"
+      ],
+      "intent": "guide/informational"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/for-pet-relocators/",
+      "primaryKeyword": "pet relocation partners dubai",
+      "secondaryKeywords": [
+        "work with dubai pet relocation",
+        "discuss pet relocation coordination and handovers with our dubai team"
+      ],
+      "intent": "service/money"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/service/corporate-pet-relocation/",
+      "primaryKeyword": "corporate pet relocation dubai",
+      "secondaryKeywords": [
+        "corporate pet relocation for hr and mobility teams",
+        "hr mobility support",
+        "coordinate employee pet moves to and from dubai"
+      ],
+      "intent": "service/money"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/contact/",
+      "primaryKeyword": "contact dubai pet relocation",
+      "secondaryKeywords": [
+        "plan your pet move",
+        "tell us your route travel dates and pet details"
+      ],
+      "intent": "service/money"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/faq/",
+      "primaryKeyword": "pet relocation dubai faq",
+      "secondaryKeywords": [
+        "pet relocation questions answered",
+        "find answers about pet relocation services documents travel planning costs and booking"
+      ],
+      "intent": "guide/informational"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/uk-to-dubai/",
+      "primaryKeyword": "pet relocation uk to dubai",
+      "secondaryKeywords": [
+        "pet relocation from the uk to dubai",
+        "moving a dog or cat from the uk to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/usa-to-dubai/",
+      "primaryKeyword": "pet relocation usa to dubai",
+      "secondaryKeywords": [
+        "pet relocation from the usa to dubai",
+        "usda certificate timeline and quote",
+        "bringing a dog or cat from the usa to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/india-to-dubai/",
+      "primaryKeyword": "pet relocation india to dubai",
+      "secondaryKeywords": [
+        "pet relocation from india to dubai",
+        "titre aqcs and timeline",
+        "moving a dog or cat from india to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/australia-to-dubai/",
+      "primaryKeyword": "pet relocation australia to dubai",
+      "secondaryKeywords": [
+        "pet relocation from australia to dubai",
+        "moving a dog or cat from australia to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/philippines-to-dubai/",
+      "primaryKeyword": "pet relocation philippines to dubai",
+      "secondaryKeywords": [
+        "pet relocation from the philippines to dubai",
+        "titre bai permit and timeline",
+        "moving a dog or cat from the philippines to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/canada-to-dubai/",
+      "primaryKeyword": "pet relocation canada to dubai",
+      "secondaryKeywords": [
+        "pet relocation from canada to dubai",
+        "moving a dog or cat from canada to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/new-zealand-to-dubai/",
+      "primaryKeyword": "pet relocation new zealand to dubai",
+      "secondaryKeywords": [
+        "pet relocation from new zealand to dubai",
+        "moving a dog or cat from new zealand to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/south-africa-to-dubai/",
+      "primaryKeyword": "pet relocation south africa to dubai",
+      "secondaryKeywords": [
+        "pet relocation from south africa to dubai",
+        "moving a dog or cat from south africa to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-uk/",
+      "primaryKeyword": "pet relocation dubai to uk",
+      "secondaryKeywords": [
+        "pet relocation from dubai to uk",
+        "moving a dog or cat from dubai to uk"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-usa/",
+      "primaryKeyword": "pet relocation dubai to usa",
+      "secondaryKeywords": [
+        "pet relocation from dubai to usa",
+        "moving a dog or cat from dubai to usa"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-india/",
+      "primaryKeyword": "pet relocation dubai to india",
+      "secondaryKeywords": [
+        "pet relocation from dubai to india",
+        "moving a dog or cat from dubai to india"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-philippines/",
+      "primaryKeyword": "pet relocation dubai to philippines",
+      "secondaryKeywords": [
+        "pet relocation from dubai to philippines",
+        "moving a dog or cat from dubai to philippines"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/saudi-arabia-to-dubai/",
+      "primaryKeyword": "pet relocation saudi arabia to dubai",
+      "secondaryKeywords": [
+        "pet relocation from saudi arabia to dubai",
+        "mewa exit moccae entry",
+        "moving a pet from riyadh jeddah or dammam to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-australia/",
+      "primaryKeyword": "pet relocation dubai to australia",
+      "secondaryKeywords": [
+        "pet relocation from dubai to australia",
+        "moving a dog or cat from dubai to australia"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-saudi-arabia/",
+      "primaryKeyword": "pet relocation dubai to saudi arabia",
+      "secondaryKeywords": [
+        "pet relocation from dubai to saudi arabia",
+        "moving a dog or cat from dubai to saudi arabia"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/germany-to-dubai/",
+      "primaryKeyword": "pet relocation germany to dubai",
+      "secondaryKeywords": [
+        "pet relocation from germany to dubai",
+        "moving a dog or cat from germany to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/france-to-dubai/",
+      "primaryKeyword": "pet relocation france to dubai",
+      "secondaryKeywords": [
+        "pet relocation from france to dubai",
+        "moving a dog or cat from france to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-canada/",
+      "primaryKeyword": "pet relocation dubai to canada",
+      "secondaryKeywords": [
+        "pet relocation from dubai to canada",
+        "moving a dog or cat from dubai to canada"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-south-africa/",
+      "primaryKeyword": "pet relocation dubai to south africa",
+      "secondaryKeywords": [
+        "pet relocation from dubai to south africa",
+        "moving a dog or cat from dubai to south africa"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/qatar-to-dubai/",
+      "primaryKeyword": "pet relocation qatar to dubai",
+      "secondaryKeywords": [
+        "pet relocation from qatar to dubai",
+        "moving a dog or cat from qatar to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/singapore-to-dubai/",
+      "primaryKeyword": "pet relocation singapore to dubai",
+      "secondaryKeywords": [
+        "pet relocation from singapore to dubai",
+        "avs airlines timeline",
+        "moving a dog or cat from singapore to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-germany/",
+      "primaryKeyword": "pet relocation dubai to germany",
+      "secondaryKeywords": [
+        "pet relocation from dubai to germany",
+        "moving a dog or cat from dubai to germany"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-qatar/",
+      "primaryKeyword": "pet relocation dubai to qatar",
+      "secondaryKeywords": [
+        "pet relocation from dubai to qatar",
+        "moving a dog or cat from dubai to qatar"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/turkey-to-dubai/",
+      "primaryKeyword": "pet relocation turkey to dubai",
+      "secondaryKeywords": [
+        "pet relocation from turkey to dubai",
+        "moving a dog or cat from turkey to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/spain-to-dubai/",
+      "primaryKeyword": "pet relocation spain to dubai",
+      "secondaryKeywords": [
+        "pet relocation from spain to dubai",
+        "moving a dog or cat from spain to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/netherlands-to-dubai/",
+      "primaryKeyword": "pet relocation netherlands to dubai",
+      "secondaryKeywords": [
+        "pet relocation from netherlands to dubai",
+        "moving a dog or cat from netherlands to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-france/",
+      "primaryKeyword": "pet relocation dubai to france",
+      "secondaryKeywords": [
+        "pet relocation from dubai to france",
+        "moving a dog or cat from dubai to france"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-turkey/",
+      "primaryKeyword": "pet relocation dubai to turkey",
+      "secondaryKeywords": [
+        "pet relocation from dubai to turkey",
+        "moving a dog or cat from dubai to turkey"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-oman/",
+      "primaryKeyword": "pet relocation dubai to oman",
+      "secondaryKeywords": [
+        "pet relocation from dubai to oman",
+        "moving a dog or cat from dubai to oman"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-singapore/",
+      "primaryKeyword": "pet relocation dubai to singapore",
+      "secondaryKeywords": [
+        "pet relocation from dubai to singapore",
+        "moving a dog or cat from dubai to singapore"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/pakistan-to-dubai/",
+      "primaryKeyword": "pet relocation pakistan to dubai",
+      "secondaryKeywords": [
+        "pet relocation from pakistan to dubai",
+        "moving a dog or cat from pakistan to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/oman-to-dubai/",
+      "primaryKeyword": "pet relocation oman to dubai",
+      "secondaryKeywords": [
+        "pet relocation from oman to dubai",
+        "moving a dog or cat from oman to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/bahrain-to-dubai/",
+      "primaryKeyword": "pet relocation bahrain to dubai",
+      "secondaryKeywords": [
+        "pet relocation from bahrain to dubai",
+        "moving a dog or cat from bahrain to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/kuwait-to-dubai/",
+      "primaryKeyword": "pet relocation kuwait to dubai",
+      "secondaryKeywords": [
+        "pet relocation from kuwait to dubai",
+        "moving a dog or cat from kuwait to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/italy-to-dubai/",
+      "primaryKeyword": "pet relocation italy to dubai",
+      "secondaryKeywords": [
+        "pet relocation from italy to dubai",
+        "moving a dog or cat from italy to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/ireland-to-dubai/",
+      "primaryKeyword": "pet relocation ireland to dubai",
+      "secondaryKeywords": [
+        "pet relocation from ireland to dubai",
+        "moving a dog or cat from ireland to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-netherlands/",
+      "primaryKeyword": "pet relocation dubai to netherlands",
+      "secondaryKeywords": [
+        "pet relocation from dubai to netherlands",
+        "moving a dog or cat from dubai to netherlands"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-pakistan/",
+      "primaryKeyword": "pet relocation dubai to pakistan",
+      "secondaryKeywords": [
+        "pet relocation from dubai to pakistan",
+        "moving a dog or cat from dubai to pakistan"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/egypt-to-dubai/",
+      "primaryKeyword": "pet relocation egypt to dubai",
+      "secondaryKeywords": [
+        "pet relocation from egypt to dubai",
+        "moving a dog or cat from egypt to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-egypt/",
+      "primaryKeyword": "pet relocation dubai to egypt",
+      "secondaryKeywords": [
+        "pet relocation from dubai to egypt",
+        "moving a dog or cat from dubai to egypt"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-new-zealand/",
+      "primaryKeyword": "pet relocation dubai to new zealand",
+      "secondaryKeywords": [
+        "pet relocation from dubai to new zealand",
+        "moving a dog or cat from dubai to new zealand"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-spain/",
+      "primaryKeyword": "pet relocation dubai to spain",
+      "secondaryKeywords": [
+        "pet relocation from dubai to spain",
+        "moving a dog or cat from dubai to spain"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-bahrain/",
+      "primaryKeyword": "pet relocation dubai to bahrain",
+      "secondaryKeywords": [
+        "pet relocation from dubai to bahrain",
+        "moving a dog or cat from dubai to bahrain"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-kuwait/",
+      "primaryKeyword": "pet relocation dubai to kuwait",
+      "secondaryKeywords": [
+        "pet relocation from dubai to kuwait",
+        "moving a dog or cat from dubai to kuwait"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-italy/",
+      "primaryKeyword": "pet relocation dubai to italy",
+      "secondaryKeywords": [
+        "pet relocation from dubai to italy",
+        "moving a dog or cat from dubai to italy"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-ireland/",
+      "primaryKeyword": "pet relocation dubai to ireland",
+      "secondaryKeywords": [
+        "pet relocation from dubai to ireland",
+        "moving a dog or cat from dubai to ireland"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/japan-to-dubai/",
+      "primaryKeyword": "pet relocation japan to dubai",
+      "secondaryKeywords": [
+        "pet relocation from japan to dubai",
+        "moving a dog or cat from japan to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-japan/",
+      "primaryKeyword": "pet relocation dubai to japan",
+      "secondaryKeywords": [
+        "pet relocation from dubai to japan",
+        "moving a dog or cat from dubai to japan"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/hong-kong-to-dubai/",
+      "primaryKeyword": "pet relocation hong kong to dubai",
+      "secondaryKeywords": [
+        "pet relocation from hong kong to dubai",
+        "moving a dog or cat from hong kong to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-hong-kong/",
+      "primaryKeyword": "pet relocation dubai to hong kong",
+      "secondaryKeywords": [
+        "pet relocation from dubai to hong kong",
+        "moving a dog or cat from dubai to hong kong"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/thailand-to-dubai/",
+      "primaryKeyword": "pet relocation thailand to dubai",
+      "secondaryKeywords": [
+        "pet relocation from thailand to dubai",
+        "moving a dog or cat from thailand to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-thailand/",
+      "primaryKeyword": "pet relocation dubai to thailand",
+      "secondaryKeywords": [
+        "pet relocation from dubai to thailand",
+        "moving a dog or cat from dubai to thailand"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/indonesia-to-dubai/",
+      "primaryKeyword": "pet relocation indonesia to dubai",
+      "secondaryKeywords": [
+        "pet relocation from indonesia to dubai",
+        "moving a dog or cat from indonesia to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-indonesia/",
+      "primaryKeyword": "pet relocation dubai to indonesia",
+      "secondaryKeywords": [
+        "pet relocation from dubai to indonesia",
+        "moving a dog or cat from dubai to indonesia"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/malaysia-to-dubai/",
+      "primaryKeyword": "pet relocation malaysia to dubai",
+      "secondaryKeywords": [
+        "pet relocation from malaysia to dubai",
+        "moving a dog or cat from malaysia to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-malaysia/",
+      "primaryKeyword": "pet relocation dubai to malaysia",
+      "secondaryKeywords": [
+        "pet relocation from dubai to malaysia",
+        "moving a dog or cat from dubai to malaysia"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/china-to-dubai/",
+      "primaryKeyword": "pet relocation china to dubai",
+      "secondaryKeywords": [
+        "pet relocation from china to dubai",
+        "moving a dog or cat from china to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-china/",
+      "primaryKeyword": "pet relocation dubai to china",
+      "secondaryKeywords": [
+        "pet relocation from dubai to china",
+        "moving a dog or cat from dubai to china"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/south-korea-to-dubai/",
+      "primaryKeyword": "pet relocation south korea to dubai",
+      "secondaryKeywords": [
+        "pet relocation from south korea to dubai",
+        "moving a dog or cat from south korea to dubai"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/routes/dubai-to-south-korea/",
+      "primaryKeyword": "pet relocation dubai to south korea",
+      "secondaryKeywords": [
+        "pet relocation from dubai to south korea",
+        "moving a dog or cat from dubai to south korea"
+      ],
+      "intent": "route"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/guides/banned-dog-breeds-dubai/",
+      "primaryKeyword": "dubai dog breed restrictions",
+      "secondaryKeywords": [
+        "dog breed restrictions for importing to dubai",
+        "check dog breed restrictions before planning a move to dubai"
+      ],
+      "intent": "guide/informational"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/guides/iata-pet-crate-requirements/",
+      "primaryKeyword": "iata approved dog crate rules",
+      "secondaryKeywords": [
+        "iata pet crate requirements choosing and measuring a travel crate"
+      ],
+      "intent": "guide/informational",
+      "notes": "One primary only. The older lock map marked both \"iata approved dog crate\" and \"iata approved pet crate dubai\" as primary on this URL."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/guides/pet-travel-summer-dubai/",
+      "primaryKeyword": "pet travel in dubai summer",
+      "secondaryKeywords": [
+        "planning pet travel during dubai summer",
+        "plan pet travel around dubai summer conditions"
+      ],
+      "intent": "guide/informational"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/guides/moccae-import-permit/",
+      "primaryKeyword": "moccae import permit",
+      "secondaryKeywords": [
+        "how to apply for a moccae pet import permit with uae pass"
+      ],
+      "intent": "guide/informational",
+      "notes": "Informational permit lane. The managed application page keeps \"moccae pet permit assistance\"."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/guides/rabies-titer-test-dubai/",
+      "primaryKeyword": "rabies titre test for dubai",
+      "secondaryKeywords": [
+        "rabies titre testing for pets moving to dubai"
+      ],
+      "intent": "guide/informational"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/guides/pet-flight-options-dubai/",
+      "primaryKeyword": "pet flight options dubai",
+      "secondaryKeywords": [
+        "compare pet flight options to and from dubai"
+      ],
+      "intent": "guide/informational"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/guides/etihad-pet-policy/",
+      "primaryKeyword": "etihad pet policy 2026",
+      "secondaryKeywords": [
+        "etihad pet policy cabin cargo and flying your pet to the uae",
+        "cabin cargo uae import rules"
+      ],
+      "intent": "guide/informational",
+      "notes": "One primary only. The older lock map also marked \"etihad pets in cabin\" as a primary on this URL. That phrase stays off other pages."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/guides/pet-as-checked-baggage/",
+      "primaryKeyword": "pets as checked baggage",
+      "secondaryKeywords": [
+        "travelling with a pet as checked baggage",
+        "dubai route considerations",
+        "understand how accompanied pet baggage differs from cargo"
+      ],
+      "intent": "guide/informational"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/guides/emirates-pet-cargo/",
+      "primaryKeyword": "emirates pet cargo to dubai",
+      "secondaryKeywords": [
+        "emirates pet cargo how to fly your dog or cat to dubai",
+        "rules crates booking"
+      ],
+      "intent": "guide/informational"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/guides/dubai-pet-arrival-guide/",
+      "primaryKeyword": "pet arrival in dubai",
+      "secondaryKeywords": [
+        "what happens when your pet arrives in dubai",
+        "airport handover delivery"
+      ],
+      "intent": "guide/informational"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/guides/pet-export-from-dubai/",
+      "primaryKeyword": "how to export a pet from dubai",
+      "secondaryKeywords": [
+        "how to prepare a pet export from dubai"
+      ],
+      "intent": "guide/informational",
+      "notes": "DIY export lane. The commercial page keeps \"pet export dubai\". The outbound service keeps \"pet relocation from dubai\"."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/guides/snub-nosed-dogs-flying-uae/",
+      "primaryKeyword": "snub nosed dogs and uae flights",
+      "secondaryKeywords": [
+        "flight planning for snub nosed dogs in the uae",
+        "review travel considerations for snub nosed dogs on uae routes"
+      ],
+      "intent": "guide/informational"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/guides/import-checklist/",
+      "primaryKeyword": "uae pet import checklist",
+      "secondaryKeywords": [
+        "your pet import checklist for the uae",
+        "use a practical checklist for a pet move to the uae"
+      ],
+      "intent": "guide/informational",
+      "notes": "Checklist lane. The requirements guide keeps \"uae pet import requirements\"."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/service/private-jet-pet-travel/",
+      "primaryKeyword": "private jet pet travel dubai",
+      "secondaryKeywords": [
+        "private jet travel with your pet from dubai"
+      ],
+      "intent": "service/money"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/service/shared-pet-charter/",
+      "primaryKeyword": "shared pet charter dubai",
+      "secondaryKeywords": [
+        "shared pet charter options from dubai",
+        "explore shared charter options for you and your pet from dubai"
+      ],
+      "intent": "service/money",
+      "notes": "Charter lane. The private-jet page keeps \"private jet pet travel dubai\". Data-file primaryKeyword \"shared pet charter flight dubai\" is not locked. The title and H1 target \"shared pet charter dubai\" instead."
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/cities/abu-dhabi/",
+      "primaryKeyword": "abu dhabi pet relocation",
+      "secondaryKeywords": [
+        "municipality registration and airport handover"
+      ],
+      "intent": "community"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/cities/sharjah/",
+      "primaryKeyword": "pet relocation sharjah",
+      "secondaryKeywords": [
+        "pet relocation support in sharjah"
+      ],
+      "intent": "community"
+    },
+    {
+      "url": "https://dubai-pet-relocation.ae/cities/dubai/",
+      "primaryKeyword": "dubai pet collection",
+      "secondaryKeywords": [
+        "dubai city collection documents and airport handover for a dog or cat"
+      ],
+      "intent": "community",
+      "notes": "City collection lane. The homepage keeps \"pet relocation dubai\"."
+    }
+  ]
+}
