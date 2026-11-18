@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-server && node scripts/prerender.mjs",
+    "build": "npm run check:keywords && tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-server && node scripts/prerender.mjs",
     "lint": "oxlint",
+    "check:keywords": "node --experimental-strip-types scripts/check-keyword-map.ts",
     "check:links": "node --experimental-strip-types scripts/check-internal-links.mjs",
     "preview": "vite preview"
   },
