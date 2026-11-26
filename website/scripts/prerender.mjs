@@ -60,7 +60,20 @@ for (const route of routes) {
     })
 
     if (!ROOT_RE.test(template)) throw new Error('root placeholder not found in template')
-    const html = template
+    // The shell carries a fallback sitewide Organization and WebSite JSON-LD.
+    // When the page renders its own top-level block of the same type, drop the
+    // shell copy so crawlers see one entity per type, not two that disagree.
+    let pageTemplate = template
+    for (const type of ['Organization', 'WebSite']) {
+      const own = `{"@context":"https://schema.org","@type":"${type}"`
+      if (appHtml.includes(own)) {
+        pageTemplate = pageTemplate.replace(
+          new RegExp(`\\s*<script type="application/ld\\+json">\\s*\\{"@context":"https://schema\\.org","@type":"${type}"[\\s\\S]*?<\\/script>`),
+          '',
+        )
+      }
+    }
+    const html = pageTemplate
       .replace(ROOT_RE, `<div id="root">${appHtml}</div>`)
       .replace('</head>', `${head.join('')}</head>`)
 
